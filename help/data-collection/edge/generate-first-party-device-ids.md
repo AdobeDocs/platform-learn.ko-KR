@@ -1,0 +1,147 @@
+---
+title: 자사 디바이스 ID 생성
+description: 자사 디바이스 ID 생성 방법 학습
+feature: Web SDK
+kt: 9728
+thumbnail: KT-9728.jpeg
+exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
+source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 2%
+
+---
+
+# 자사 디바이스 ID 생성
+
+Adobe Experience Cloud 애플리케이션은 일반적으로 다음과 같은 다양한 기술을 사용하여 장치 id를 저장하기 위해 쿠키를 생성합니다.
+
+1. 서드파티 쿠키
+1. 도메인 이름의 CNAME 구성을 사용하여 Adobe 서버에서 설정한 자사 쿠키
+1. JavaScript에서 설정한 자사 쿠키
+
+최근 브라우저 변경 사항은 이러한 유형의 쿠키의 지속 시간을 제한합니다. 자사 쿠키는 DNS CNAME과 대조적으로 DNS A/AAAA-레코드를 사용하여 고객 소유 서버를 사용하여 설정하는 경우에 가장 효과적입니다. 자사 장치 ID(FPID) 기능을 사용하면 Adobe Experience Platform Web SDK를 구현하는 고객이 DNS A/AAAA-레코드를 사용하는 서버의 쿠키에 장치 ID를 사용할 수 있습니다. 그런 다음 이러한 ID를 Adobe으로 전송하고 시드로 사용하여 ECID(Experience Cloud ID)를 생성할 수 있습니다. ID는 Adobe Experience Cloud 애플리케이션에서 기본 식별자로 유지됩니다.
+
+다음은 기능이 작동하는 방식에 대한 빠른 예입니다.
+
+![자사 장치 ID(FPID) 및 ECID(Experience Cloud ID)](../assets/kt-9728.png)
+
+1. 최종 사용자의 브라우저가 고객의 웹 서버 또는 CDN에서 웹 페이지를 요청합니다.
+1. 고객은 웹 서버 또는 CDN에서 FPID(장치 ID)를 생성합니다(웹 서버는 도메인 이름의 DNS A/AAAA-record에 연결되어 있어야 함).
+1. 고객은 최종 사용자의 브라우저에 FPID를 저장하기 위해 자사 쿠키를 설정합니다.
+1. 고객의 Adobe Experience Platform Web SDK 구현에서는 ID 맵에 FPID를 포함하여 Platform Edge 네트워크에 요청을 합니다.
+1. Experience Platform 에지 네트워크는 FPID를 수신하여 ECID(Experience Cloud ID)를 생성하는 데 사용합니다.
+1. Platform Web SDK 응답은 ECID를 최종 사용자의 브라우저로 다시 전송합니다.
+1. Platform Web SDK는 JavaScript를 사용하여 ECID를 `AMCV_` 최종 사용자의 브라우저에 있는 쿠키.
+1. 이벤트 `AMCV_` 쿠키가 만료되면 프로세스가 반복됩니다. 동일한 자사 장치 ID를 사용할 수 있는 한 새 `AMCV_` 쿠키는 전과 동일한 ECID 값으로 만들어집니다.
+
+이 자습서에서는 PHP 스크립팅 언어를 사용하는 특정 예제를 사용하여 다음 방법을 보여 줍니다.
+
+* UUIDv4 생성
+* 쿠키에 UUIDv4 값 쓰기
+* ID 맵에 쿠키 값 포함
+* ECID 생성 유효성 검사
+
+자사 장치 ID와 관련된 추가 설명서는 제품 설명서에서 찾을 수 있습니다.
+
+## UUIDv4 생성
+
+PHP에는 UUID 생성을 위한 기본 라이브러리가 없으므로 이러한 코드 예제는 다른 프로그래밍 언어를 사용하는 경우 필요한 것보다 더 광범위합니다. PHP는 널리 지원되는 서버측 언어이므로 이 예제에 대해 선택되었습니다.
+
+
+다음 함수가 호출되면 임의 UUID 버전-4를 생성합니다.
+
+```
+<?php
+    
+    function guidv4($data)
+    {
+        $data = $data ?? random_bytes(16);
+
+        $data[6] = chr(ord($data[6]) & 0x0f | 0x40); // set version to 0100
+        $data[8] = chr(ord($data[8]) & 0x3f | 0x80); // set bits 6-7 to 10
+
+        return vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex($data), 4));
+    }
+
+?>
+```
+
+## 쿠키에 UUIDv4 값 쓰기
+
+다음 코드는 위 함수에 UUID를 생성하도록 요청합니다. 그러면 조직에서 결정한 쿠키 플래그를 설정합니다. 쿠키가 이미 생성된 경우 만료가 연장됩니다.
+
+```
+<?php
+
+    if(!isset($_COOKIE['FPID'])) {
+        $cookie_value = guidv4(openssl_random_pseudo_bytes(16));        
+        $arr_cookie_options = array (
+        'expires' => time() + 60*60*24*30*13,
+        'path' => '/',
+        'domain' => 'mysiteurl.com',
+        'secure' => true,
+        'httponly' => true,
+        'samesite' => 'lax'
+        );
+        setcookie($cookie_name, $cookie_value, $arr_cookie_options);
+        $_COOKIE[$cookie_name] = $cookie_value;
+    }
+    else {
+        $cookie_value = $_COOKIE[$cookie_name];
+        $arr_cookie_options = array (
+        'expires' => time() + 60*60*24*30*13,
+        'path' => '/',
+        'domain' => 'mysiteurl.com',
+        'secure' => true,
+        'httponly' => true,
+        'samesite' => 'lax'
+        );
+        setcookie($cookie_name, $cookie_value, $arr_cookie_options);
+    }
+
+?>
+```
+
+>[!NOTE]
+>
+>자사 장치 ID가 포함된 쿠키에는 모든 이름이 있을 수 있습니다.
+
+## ID 맵에 쿠키 값 포함
+
+마지막 단계는 PHP를 사용하여 쿠키 값을 ID 맵에 에코 하는 것입니다.
+
+
+```
+{
+    "identityMap": {
+        "FPID": [
+                    {
+                        "id": "<? echo $_COOKIE[$cookie_name] ?>",
+                        "authenticatedState": "ambiguous",
+                        "primary": true
+                    }
+                ]
+        }
+}
+```
+
+>[!IMPORTANT]
+>
+>ID 맵에 사용되는 ID 네임스페이스 기호를 호출해야 합니다 `FPID`.
+>
+> `FPID` 는 ID 네임스페이스의 인터페이스 목록에 표시되지 않는 예약된 ID 네임스페이스입니다.
+
+
+## ECID 생성 유효성 검사
+
+자사 장치 ID에서 동일한 ECID가 생성되었는지 확인하여 구현의 유효성을 검사합니다.
+
+1. FPID 쿠키를 생성합니다.
+1. Platform Web SDK를 사용하여 Platform Edge 네트워크에 요청을 보냅니다.
+1. 형식이 인 쿠키 `AMCV_<IMSORGID@AdobeOrg>` 가 생성됩니다. 이 쿠키에는 ECID가 포함되어 있습니다.
+1. 생성된 쿠키 값을 확인한 다음 를 제외한 사이트의 모든 쿠키를 삭제합니다 `FPID` 쿠키 .
+1. Platform Edge Network에 다른 요청을 보냅니다.
+1. 에서 값을 확인합니다. `AMCV_<IMSORGID@AdobeOrg>` 쿠키는 동일합니다 `ECID` 값 `AMCV_` 삭제된 쿠키입니다. 주어진 FPID에 대해 쿠키 값이 동일한 경우 ECID에 대한 시드 프로세스가 성공했습니다.
+
+이 기능에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
