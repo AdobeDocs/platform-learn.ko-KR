@@ -3,9 +3,9 @@ title: 웹 데이터를 위한 XDM 스키마 만들기
 description: 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다. 이 단원은 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1080'
 ht-degree: 5%
 
 ---
@@ -78,6 +78,7 @@ XDM 스키마는 Experience Platform에서 데이터를 설명하는 표준 방�
 
 1. **[!UICONTROL 컴포지션**] 패널에서 을 선택합니다 `Untitled schema name`
 1. 에서 **[!UICONTROL 스키마 속성]** 패널에서 다음을 입력합니다 **[!UICONTROL 표시 이름]** `Luma Web Event Data`
+1. 의 바깥쪽을 선택합니다 **[!UICONTROL 표시 이름]** 활성화할 필드 **[!UICONTROL 저장]** 옵션
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
 
 ![Luma 웹 이벤트 데이터](assets/schema-luma-web-event-data.png)
