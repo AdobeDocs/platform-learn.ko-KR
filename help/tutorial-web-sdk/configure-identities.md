@@ -3,10 +3,10 @@ title: ID 네임스페이스 구성
 description: Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법을 알아봅니다. 이 단원은 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2b5013ea01bf4e2388a6e1fc046b1685945be238
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 7%
+source-wordcount: '695'
+ht-degree: 6%
 
 ---
 
@@ -52,6 +52,11 @@ Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구�
 
 1. 를 엽니다. [데이터 수집 인터페이스](https://launch.adobe.com/){target=&quot;_blank&quot;}
 1. 자습서에 사용할 샌드박스를 선택합니다
+
+   >[!NOTE]
+   >
+   >실시간 CDP와 같은 플랫폼 기반 애플리케이션을 사용하는 경우에는 이 자습서에 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않은 경우 **[!UICONTROL Prod]** 샌드박스
+
 1. 선택 **[!UICONTROL ID]** 왼쪽 탐색
 1. 선택 **[!UICONTROL 찾아보기]**
 

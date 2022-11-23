@@ -3,9 +3,9 @@ title: 자습서에 대한 권한 구성
 description: 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서를 완료하는 데 필요한 권한을 Experience Platform 웹 SDK에 요청하고 구성하는 방법을 알아봅니다.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 6%
 
 ---
@@ -16,14 +16,14 @@ Experience Platform 웹 SDK에 대한 액세스를 요청하고 이 자습서를
 
 ## 데이터 수집
 
-* 권한 있음 **[!UICONTROL 개발]**, **[!UICONTROL 편집]**, **[!UICONTROL 승인]**, **[!UICONTROL 게시]**, **[!UICONTROL 확장 관리]**, 및 **[!UICONTROL 환경 관리]** 태그 속성을 사용합니다. 태그 권한에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 권한 있음 **[!UICONTROL 개발]**, **[!UICONTROL 편집]**, **[!UICONTROL 승인]**, **[!UICONTROL 게시]**, **[!UICONTROL 확장 관리]**, **[!UICONTROL 환경 관리]**, 및 **[!UICONTROL 속성 관리]**. 태그 권한에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * 선택적 이벤트 전달 단원을 완료할 예정이라면 Edge 전달 및 권한 항목을 포함하는 제품 라이센스가 있어야 합니다 **[!UICONTROL 플랫폼]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 실시간 CDP와 같은 플랫폼 기반 애플리케이션의 고객이 아니더라도 모든 Experience Cloud 고객이 이러한 기능을 사용할 수 있어야 합니다.
 
-* 에 액세스 **기본 프로덕션** 샌드박스
+* 에 액세스 **기본 프로덕션**, **&quot;Prod&quot;** 샌드박스 ( )
 * 액세스 권한 **[!UICONTROL 스키마 관리]** 및 **[!UICONTROL 스키마 보기]** 아래에 **[!UICONTROL 데이터 모델링]**
 * 액세스 권한 **[!UICONTROL ID 네임스페이스 관리]** 및 **[!UICONTROL ID 네임스페이스 보기]** 아래에 **[!UICONTROL Identity Management]**
 * 액세스 권한 **[!UICONTROL 데이터 스트림 관리]** 및 **[!UICONTROL 데이터 스트림 보기]** 아래에 **[!UICONTROL 데이터 수집]**

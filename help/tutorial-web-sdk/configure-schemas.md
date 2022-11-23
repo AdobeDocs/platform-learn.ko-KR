@@ -3,9 +3,9 @@ title: 웹 데이터를 위한 XDM 스키마 만들기
 description: 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다. 이 단원은 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1125'
 ht-degree: 5%
 
 ---
@@ -47,7 +47,7 @@ XDM 스키마는 Experience Platform에서 데이터를 설명하는 표준 방�
 
    >[!NOTE]
    >
-   >실시간 CDP와 같은 플랫폼 기반 애플리케이션을 사용하는 경우에는 이 자습서에 개발 샌드박스를 사용하는 것이 좋습니다.
+   >실시간 CDP와 같은 플랫폼 기반 애플리케이션을 사용하는 경우에는 이 자습서에 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않은 경우 **[!UICONTROL Prod]** 샌드박스
 
 1. 이동 **[!UICONTROL 스키마]** 왼쪽 탐색
 1. 을(를) 선택합니다 **[!UICONTROL 스키마 만들기]** 오른쪽 상단의 단추
@@ -63,10 +63,10 @@ XDM 스키마는 Experience Platform에서 데이터를 설명하는 표준 방�
 
 >[!TIP]
 > 
->이 연습에서는 웹 데이터 수집을 위해 권장되는 사전 정의된 필드 그룹을 추가합니다. _**[!UICONTROL AEP 웹 SDK ExperienceEvent Mixin]**_, 및 _**[!UICONTROL 소비자 경험 이벤트]**_.
+>이 연습에서는 웹 데이터 수집을 위해 권장되는 사전 정의된 필드 그룹을 추가합니다. _**[!UICONTROL AEP 웹 SDK ExperienceEvent]**_, 및 _**[!UICONTROL 소비자 경험 이벤트]**_.
 
-1. 유지 **[!UICONTROL 기존 필드 그룹 사용]** 라디오 단추 선택
-1. 검색 대상 [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`]
+1. 에서 **[!UICONTROL 필드 그룹]** 섹션, **[!UICONTROL 추가]**
+1. 검색 대상 [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. 상자를 선택합니다.
 1. 검색 대상 [!UICONTROL `Consumer Experience Event`]
 1. 상자를 선택합니다.
@@ -83,7 +83,7 @@ XDM 스키마는 Experience Platform에서 데이터를 설명하는 표준 방�
 
 ![Luma 웹 이벤트 데이터](assets/schema-luma-web-event-data.png)
 
-두 필드 그룹을 모두 사용하면 웹에서 데이터 수집을 위해 필요한 가장 일반적으로 사용되는 키-값 쌍에 액세스할 수 있습니다. 필드 그룹 이름 중 하나를 클릭하면 인터페이스에 속하는 키-값 쌍 그룹이 강조 표시됩니다. 아래 예에는 어떤 그룹이 속하는지 알 수 있습니다 **[!UICONTROL 소비자 경험 이벤트]**.
+두 필드 그룹을 모두 사용하면 웹에서 데이터 수집을 위해 필요한 가장 일반적으로 사용되는 키-값 쌍에 액세스할 수 있습니다. 다음 [!UICONTROL 표시 이름] 플랫폼 기반 애플리케이션의 세그먼트 빌더 인터페이스에서 각 필드의 마케터에게 나타나며, 표준 필드의 표시 이름을 사용자의 요구 사항에 맞게 변경할 수 있습니다. 원하지 않는 필드를 제거할 수도 있습니다. 필드 그룹 이름 중 하나를 클릭하면 인터페이스에 속하는 키-값 쌍 그룹이 강조 표시됩니다. 아래 예에는 어떤 그룹이 속하는지 알 수 있습니다 **[!UICONTROL 소비자 경험 이벤트]**.
 
 ![스키마 필드 그룹](assets/schema-consumer-experience-event.jpg)
 
