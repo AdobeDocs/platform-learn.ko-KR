@@ -3,10 +3,10 @@ title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 개체를 사용하여 Platform Edge Network에 이벤트를 전송하는 방법을 알아봅니다. 이 단원은 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 5%
+source-wordcount: '849'
+ht-degree: 4%
 
 ---
 
@@ -54,6 +54,8 @@ ht-degree: 5%
 
 ## 태그 규칙 만들기
 
+태그에서 규칙은 다양한 조건에서 작업(호출 실행)을 실행하는 데 사용됩니다. 이 첫 번째 규칙을 사용하여 웹 SDK의 [!UICONTROL 이벤트 보내기] 작업. 이 자습서의 후반부에서는 방문자가 있는 페이지 유형에 따라 다른 버전의 XDM 개체를 전송합니다. 이러한 이유로, 규칙 조건을 사용하여 이러한 다른 유형의 페이지를 제외합니다.
+
 태그 규칙을 만들려면:
 
 1. 이 자습서에서 사용하는 태그 속성을 엽니다
@@ -84,7 +86,7 @@ ht-degree: 5%
 1. 다음 URL 경로에 대해 3개의 예외를 더 추가합니다
 
    * **`Core - checkout page`** for `/content/luma/us/en/user/checkout.html`
-   * **`Core - thank you page`** 대상 `/content/luma/us/en/user/checkout/order/thank-you.html`
+   * **`Core - thank you page`** for `/content/luma/us/en/user/checkout/order/thank-you.html`
    * **`Core - product page`** 대상 `/products/` Regex 스위치를 켜서
 
    ![조건 추가](assets/rule-condition-exception-all.png)
