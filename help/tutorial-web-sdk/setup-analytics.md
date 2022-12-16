@@ -3,9 +3,9 @@ title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform 웹 SDK를 사용하여 Adobe Analytics을 설정하는 방법을 알아봅니다. 이 단원은 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge 네트워크로 데이터�
 
 ### 전자 상거래 데이터 요소 만들기
 
-데이터 요소 만들기 단원에서 다음을 수행합니다 [만든 JavaScript 데이터 요소](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 컨텐츠 및 ID 세부 사항을 캡처했습니다. 이제 전자 상거래 데이터를 캡처할 추가 데이터 요소를 만듭니다. 왜냐하면 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}에서는 장바구니의 제품 세부 사항 페이지 및 제품에 대해 서로 다른 데이터 계층 구조를 사용하므로 각 시나리오에 대해 데이터 요소를 만들어야 합니다. 아래에 제공된 코드 조각을 사용하십시오.
+데이터 요소 만들기 단원에서 다음을 수행합니다 [만든 JavaScript 데이터 요소](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 컨텐츠 및 ID 세부 사항을 캡처했습니다. 이제 전자 상거래 데이터를 캡처할 추가 데이터 요소를 만듭니다. 왜냐하면 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}에서는 장바구니의 제품 세부 사항 페이지 및 제품에 대해 서로 다른 데이터 계층 구조를 사용하므로 각 시나리오에 대해 데이터 요소를 만들어야 합니다. Luma 데이터 레이어에서 필요한 항목을 선택하려면 일부 사용자 지정 코드 데이터 요소를 만들어야 합니다. 이 요소는 자체 사이트에서 구현할 때 필요할 수도 있고 필요하지 않을 수도 있습니다. 이 경우 각 제품의 특정 세부 사항을 선택하려면 일련의 장바구니 항목을 반복해야 합니다. 아래에 제공된 코드 조각을 사용하십시오.
 
 1. 자습서에서 사용하는 태그 속성을 엽니다
 1. 이동 **[!UICONTROL 데이터 요소]**
