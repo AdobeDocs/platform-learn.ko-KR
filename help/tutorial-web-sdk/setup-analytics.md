@@ -3,7 +3,7 @@ title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform 웹 SDK를 사용하여 Adobe Analytics을 설정하는 방법을 알아봅니다. 이 단원은 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
+source-git-commit: 17b87daf399b11fb698d34bd6f1b93fa8cbaa1d4
 workflow-type: tm+mt
 source-wordcount: '3554'
 ht-degree: 1%
@@ -558,7 +558,7 @@ Adobe Analytics에서 Experience Platform 디버거의 Edge Trace 기능을 사�
 1. 유효성 검사 단계를 반복합니다. 실시간 보고서가 그에 따라 데이터를 채우게 됩니다.
 
    **페이지 보기 횟수**
-   ![실시간 콘텐츠](assets/analytics-real-time-content.png)
+   ![실시간 컨텐츠](assets/analytics-real-time-content.png)
 
    **제품 보기**
    ![실시간 제품 보기](assets/analytics-real-time-prodView.png)

@@ -1,22 +1,22 @@
 ---
 title: Real-time Customer Data Platform 사용자 인터페이스 및 워크플로우
-description: Real-Time Customer Data Platform(CDP) 사용자 인터페이스를 탐색하는 방법에 대해 살펴보고 여러 기능이 통합되어 디지털 고객 여정 전반에 걸쳐 실시간 활성화를 제공하는 방법에 대해 알아보십시오.
+description: CDP(Real-time Customer Data Platform) 사용자 인터페이스를 탐색하여 디지털 고객 여정에서 기능을 함께 활용하여 실시간 활성화를 제공하는 방법을 알아봅니다.
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 3989
 thumbnail: 29762.jpg
 exl-id: bc9fdedd-ce95-4bd2-8b14-30fd74604ea8
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '89'
-ht-degree: 69%
+ht-degree: 6%
 
 ---
 
 # Real-time Customer Data Platform 사용자 인터페이스 및 워크플로우
 
-Real-Time Customer Data Platform(CDP) 사용자 인터페이스를 탐색하는 방법에 대해 살펴보고 여러 기능이 통합되어 디지털 고객 여정 전반에 걸쳐 실시간 활성화를 제공하는 방법에 대해 알아보십시오.
+CDP(Real-time Customer Data Platform) 사용자 인터페이스를 탐색하여 디지털 고객 여정에서 기능을 함께 활용하여 실시간 활성화를 제공하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29762?quality=12&learn=on)
 

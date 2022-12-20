@@ -2,7 +2,7 @@
 title: 데이터 스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 2%

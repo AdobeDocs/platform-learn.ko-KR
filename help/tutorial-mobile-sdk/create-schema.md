@@ -2,7 +2,7 @@
 title: XDM 스키마 만들기
 description: 모바일 앱 이벤트를 위한 XDM 스키마를 만드는 방법을 알아보십시오.
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 6%
@@ -53,7 +53,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
    >[!NOTE]
    >
-   > 실시간 CDP와 같은 플랫폼 기반 애플리케이션 고객은 이 자습서에 개발 샌드박스를 사용해야 합니다. 다른 고객은 기본 프로덕션 샌드박스를 사용합니다.
+   > Real-Time CDP과 같은 플랫폼 기반 애플리케이션 고객은 이 자습서에 개발 샌드박스를 사용해야 합니다. 다른 고객은 기본 프로덕션 샌드박스를 사용합니다.
 
 
 1. 선택 **[!UICONTROL 스키마]** 아래에 **[!UICONTROL 데이터 관리]**.
@@ -66,7 +66,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 * **클래스** 스키마에 포함된 데이터의 동작 측면을 정의합니다. 예: `XDM ExperienceEvent` 시계열, 이벤트 데이터 및 `XDM Individual Profile` 개인에게 대한 속성 데이터를 캡처합니다.
 * **데이터 유형** 는 기본 리터럴 필드와 같은 방식으로 클래스 또는 필드 그룹에서 참조 필드 유형으로 사용됩니다.
 
-위의 설명은 높은 수준의 개요입니다. 자세한 내용은 [스키마 빌딩 블록](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=ko-KR) 비디오 또는 읽기 [스키마 작성 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) 를 참조하십시오.
+위의 설명은 높은 수준의 개요입니다. 자세한 내용은 [스키마 빌딩 블록](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=ko-KR) 비디오 또는 읽기 [스키마 작성 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ko-KR) 를 참조하십시오.
 
 이 자습서에서는 소비자 경험 이벤트 필드 그룹을 사용하고 사용자 지정 이벤트 필드를 만들어 프로세스를 보여줍니다.
 

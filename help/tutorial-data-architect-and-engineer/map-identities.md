@@ -8,7 +8,7 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 3%
@@ -191,7 +191,7 @@ ID 네임스페이스를 만들겠습니다 `Luma CRM Id`:
 
 ## 추가 리소스
 
-* [Identity Service 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ko)
+* [Identity Service 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
 * [ID 서비스 API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 이제 우리의 정체성이 제자리에 있으니 [데이터 세트 만들기](create-datasets.md)!

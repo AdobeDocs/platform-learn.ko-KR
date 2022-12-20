@@ -3,7 +3,7 @@ title: 모바일 앱에서 Adobe Experience Cloud 구현 튜토리얼 개요
 description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는 방법을 알아봅니다. 이 자습서에서는 샘플 Swift 앱에서의 Experience Cloud 애플리케이션 구현을 안내합니다.
 recommendation: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 10%
@@ -61,7 +61,7 @@ Experience Platform Mobile SDK는 Adobe Experience Cloud 고객이 Adobe Experie
    * **[!UICONTROL Identity Management]**- ID 네임스페이스를 관리하고 볼 수 있는 권한 항목입니다.
    * **[!UICONTROL 데이터 수집]**—데이터 저장소를 관리하고 볼 수 있는 권한 항목입니다.
 
-   * 실시간 CDP, Journey Optimizer 또는 Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션의 고객인 경우 다음 작업도 수행해야 합니다.
+   * Real-Time CDP, Journey Optimizer 또는 Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션의 고객인 경우, 다음과 같은 내용이 있어야 합니다.
       * **[!UICONTROL 데이터 관리]**—데이터 세트를 관리하고 보기 위한 권한 항목으로서, _선택적 플랫폼 연습_ ( 플랫폼 기반 애플리케이션에 대한 라이센스가 필요).
       * 개발 **샌드박스** 이 자습서에 사용할 수 있는 항목입니다.
 * Adobe Analytics의 경우 **보고서 세트** 을 사용하여 이 자습서를 완료할 수 있습니다.

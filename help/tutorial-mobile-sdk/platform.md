@@ -2,7 +2,7 @@
 title: Adobe Experience Platform으로 데이터 보내기
 description: Adobe Experience Platform으로 데이터를 보내는 방법을 알아봅니다.
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 7%
@@ -13,7 +13,7 @@ ht-degree: 7%
 
 Adobe Experience Platform으로 데이터를 보내는 방법을 알아봅니다.
 
-이 선택적 단원은 Real-time Customer Data Platform(실시간 CDP), Journey Optimizer 및 Customer Journey Analytics의 모든 고객과 관련이 있습니다. Experience Cloud 제품의 기반인 Experience Platform은 Adobe과 비Adobe의 모든 데이터를 실시간으로 업데이트하는 강력한 고객 프로필로 변환하는 오픈 시스템입니다. 또한 AI 기반의 인사이트를 통해 모든 채널에서 최적의 경험을 제공할 수 있습니다.
+이 선택적 단원은 Real-time Customer Data Platform(Real-Time CDP), Journey Optimizer 및 Customer Journey Analytics의 모든 고객과 관련이 있습니다. Experience Cloud 제품의 기반인 Experience Platform은 Adobe과 비Adobe의 모든 데이터를 실시간으로 업데이트하는 강력한 고객 프로필로 변환하는 오픈 시스템입니다. 또한 AI 기반의 인사이트를 통해 모든 채널에서 최적의 경험을 제공할 수 있습니다.
 
 다음 [이벤트](events.md), [라이프사이클](lifecycle-data.md), 및 [id](identity.md) 이전 단원에서 Platform Edge Network로 전송한 데이터는 Adobe Experience Platform을 포함하여 데이터 스트림에 구성된 서비스로 전달됩니다.
 

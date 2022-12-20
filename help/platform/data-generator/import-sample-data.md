@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 4%
@@ -159,7 +159,7 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
 
 ## 유효성 검사
 
-샘플 데이터는 컬렉션이 실행될 때 여러 시스템의 데이터를 결합하는 실시간 고객 프로필이 빌드되도록 설계되었습니다. 다음은 충성도, CRM 및 오프라인 구매 데이터 세트의 첫 번째 레코드입니다. 해당 프로필을 검색하여 데이터가 수집되었는지 확인합니다. 에서 [Adobe Experience Platform 인터페이스](https://platform.adobe.com/):
+샘플 데이터는 컬렉션을 실행할 때 여러 시스템의 데이터를 결합하는 실시간 고객 프로필이 빌드되도록 설계되었습니다. 다음은 충성도, CRM 및 오프라인 구매 데이터 세트의 첫 번째 레코드입니다. 해당 프로필을 검색하여 데이터가 수집되었는지 확인합니다. 에서 [Adobe Experience Platform 인터페이스](https://platform.adobe.com/):
 
 1. 이동 **[!UICONTROL 프로필]** > **[!UICONTROL 찾아보기]**
 1. 선택 `Luma Loyalty Id` 로서의 **[!UICONTROL ID 네임스페이스]**
@@ -176,10 +176,10 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
 병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 로 이동합니다 [데이터 설계자 및 데이터 엔지니어 시작하기 자습서의 11 단원을 참조하십시오](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). 이 다른 자습서의 이전 단원에서는 이러한 Postman 컬렉션으로 방금 채운 모든 것을 수동으로 빌드하여 시작할 수 있습니다.
 
 이 샌드박스에 연결할 샘플 Web SDK 구현을 빌드하려면 다음을 수행하십시오.
-[웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;태그 구성&quot; 및 &quot;Experience Platform 설정&quot; 단원을 설정한 후, `luma-crm.json` 암호를 사용한 파일 `test` 프로필 조각을 이 자습서에 업로드된 데이터와 병합을 확인하십시오.
+[웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;태그 구성&quot; 및 &quot;Experience Platform 설정&quot; 단원을 설정한 후, `luma-crm.json` 암호를 사용한 파일 `test` 프로필 조각을 이 자습서에 업로드된 데이터와 병합을 확인하십시오.
 
 이 샌드박스에 연결할 샘플 Mobile SDK 구현을 빌드하려면 다음을 수행하십시오.
-[모바일 앱에서 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;앱 구현&quot; 및 &quot;Experience Platform&quot; 단원을 설정한 후에 의 첫 번째 이메일 주소를 사용하여 Luma 웹 사이트에 로그인합니다 `luma-crm.json` 파일 을 참조하십시오.
+[모바일 앱에서 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;앱 구현&quot; 및 &quot;Experience Platform&quot; 단원을 설정한 후에 의 첫 번째 이메일 주소를 사용하여 Luma 웹 사이트에 로그인합니다 `luma-crm.json` 파일 을 참조하십시오.
 
 ## 샌드박스 환경 재설정 {#reset-sandbox}
 

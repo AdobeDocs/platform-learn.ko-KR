@@ -2,7 +2,7 @@
 title: 데이터 스트림 만들기
 description: 데이터 스트림 만들기
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Edge Network에서 데이터를 주고받는 Adobe 제품을 구성하려면 데
 
 회사에는 일반적으로 모든 웹 사이트 업데이트에 대한 프로모션 경로가 있습니다. 회사의 누군가(변경에 따라 마케터 또는 엔지니어)는 일반적으로 해당 사용자만 사용하는 개발 환경에서 변경 사항을 테스트합니다. 변경 사항이 마음에 들면 변경 사항이 추가 테스트를 받는 스테이징 환경으로 승격됩니다. 마지막으로, 변경 사항이 사용자가 보는 프로덕션 웹 사이트에 게시됩니다. 데이터 저장소는 이 프로모션 패턴을 지원합니다.
 
-실시간 CDP, Journey Optimizer 또는 Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션을 지원하는 경우 이러한 환경에 해당하는 별도의 Platform 샌드박스에 추가 데이터 세트를 만들어야 합니다.
+Real-Time CDP, Journey Optimizer 또는 Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션을 지원하는 경우 이러한 환경에 해당하는 별도의 Platform 샌드박스에 추가 데이터 세트를 만들어야 합니다.
 
 Platform 고객이 아닌 경우 단일 샌드박스에 여러 데이터 세트를 만들 수 있으며 데이터 스트림 복사 기능을 사용하여 설정을 복제할 수 있습니다.
 

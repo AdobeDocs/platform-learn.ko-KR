@@ -4,7 +4,7 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 29%
@@ -56,10 +56,10 @@ ht-degree: 29%
    + [데이터 세트 만들기 및 채우기](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=ko-KR){target=&quot;_blank&quot;}
    + [소스 개요](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ko-KR)
    + [Audience Manager에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [클라우드 스토리지에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
-   + [CRM에서 데이터 처리](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+   + [클라우드 스토리지에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=ko-KR)
+   + [CRM에서 데이터 처리](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=ko-KR)
    + [데이터베이스로부터 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [스트리밍 수집 개요](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [HTTP API를 사용하여 데이터 스트림](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=ko-KR)
@@ -103,14 +103,14 @@ ht-degree: 29%
    + [세그먼트 활성화 모니터링](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [데이터 흐름 모니터링](/help/platform/monitoring/data-monitoring.md)
 + 프로필 {#profiles}
-   + [실시간 고객 프로필 이해하기](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
+   + [실시간 고객 프로필 이해](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [프로필 개요 다이어그램](/help/platform/profiles/overview-diagram.md)
    + [프로필로 데이터 가져오기](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [프로필 보기 세부 사항 사용자 지정](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target=&quot;_blank&quot;}
    + [계정 프로필 보기](/help/platform/profiles/view-account-profiles.md)
    + [병합 정책 만들기](/help/platform/profiles/create-merge-policies.md)
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
-+ 개인 정보 및 보안 {#privacy}
++ 개인정보 보호 및 보안 {#privacy}
    + [Privacy Service 소개](/help/platform/privacy/introduction-to-privacy-services.md)
    + [개인 정보 보호 요청의 ID 데이터](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [개인 정보 JavaScript 라이브러리](/help/platform/privacy/using-privacy-javascript-library.md)
@@ -184,7 +184,7 @@ ht-degree: 29%
    + [Customer Journey Analytics 자습서](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Journey Orchestration 자습서](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [offer decisioning 자습서](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=ko){target=&quot;_blank&quot;}
-   + 실시간 CDP 자습서{#rtcdp}
+   + Real-Time CDP 자습서{#rtcdp}
       + [개요](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [B2B 에디션 개요](/help/platform/rtcdp/b2b-overview.md)
       + [엔드 투 엔드 데모](/help/platform/rtcdp/demo.md)

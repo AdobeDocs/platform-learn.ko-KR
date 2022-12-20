@@ -1,13 +1,13 @@
 ---
 title: 파일 기반 클라우드 스토리지 또는 이메일 마케팅 대상 구성
-description: 'Adobe의 실시간 CDP에서 파일 기반 대상을 구성하는 연습을 통해 팁을 얻을 수 있습니다. 클라우드 스토리지 대상(예: S3 또는 SFTP) 및 이메일 마케팅 대상에도 적용됩니다.'
+description: 'Adobe Real-Time CDP에서 파일 기반 대상 구성을 연습하는 동안 팁을 얻을 수 있습니다. 클라우드 스토리지 대상(예: S3 또는 SFTP) 및 이메일 마케팅 대상에도 적용됩니다.'
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 5%
