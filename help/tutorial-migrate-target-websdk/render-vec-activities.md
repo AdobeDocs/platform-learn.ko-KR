@@ -2,10 +2,10 @@
 title: VEC 활동 렌더링 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target의 웹 SDK 구현을 통해 시각적 경험 작성기 활동을 검색하고 적용하는 방법을 알아봅니다.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 8%
+source-wordcount: '885'
+ht-degree: 5%
 
 ---
 
@@ -183,27 +183,6 @@ Platform Web SDK는 개발자에게 컨텐츠 요청 및 렌더링을 매우 유
 >[!TIP]
 >
 > 태그 기능(이전 Launch)을 사용하여 웹 SDK를 구현할 때 태그 포함 코드는 위의 &#39;Platform Web SDK 기본 코드&#39;, &#39;Platform Web SDK 비동기식으로 로드&#39; 및 &#39;Platform Web SDK 구성&#39; 섹션을 대체합니다. &#39;sendEvent&#39; 명령은 [!UICONTROL 이벤트 보내기] 작업 유형 [!UICONTROL 시각적 개인화 결정 렌더링] 선택 사항입니다.
-
-## 시각적 편집 도우미 브라우저 확장을 사용하여 활동 작성
-
-Google Chrome용 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 프로그램을 사용하면 Adobe Target VEC(시각적 경험 작성기)에서 웹 사이트를 안정적으로 로드하여 웹 경험을 빠르게 작성 및 QA할 수 있습니다.
-
-시각적 편집 도우미 브라우저 확장 프로그램은 at.js 또는 Platform Web SDK를 사용하는 웹 사이트에서 작동합니다.
-
->[!IMPORTANT]
->
->새로운 시각적 편집 도우미 확장이 이전 기능을 대체합니다 [Target VEC Helper 브라우저 확장 프로그램](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 이전 VEC Helper 확장이 설치되어 있는 경우 시각적 편집 도우미 확장을 사용하기 전에 해당 확장을 제거하거나 비활성화해야 합니다.
-
-### Visual Editing Helper 가져오기 및 설치
-
-1. 로 이동합니다 [Chrome 웹 스토어의 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. 추가 대상 을 클릭합니다. **Chrome** > **확장 추가**.
-1. Target에서 VEC를 엽니다.
-1. 확장 기능을 사용하려면 VEC 또는 QA 모드에서 Chrome 브라우저 도구 모음의 Visual Editing Helper 브라우저 확장 기능 아이콘(Visual Editing 확장 기능 아이콘)을 클릭합니다.
-
-작성을 지원하도록 Target VEC에서 웹 사이트를 열면 시각적 편집 도우미가 자동으로 활성화됩니다. 확장 기능에는 조건부 설정이 없습니다. 확장 기능은 SameSite 쿠키 설정을 포함한 모든 설정을 자동으로 처리합니다.
-
-에 대한 자세한 내용은 전용 설명서 를 참조하십시오. [시각적 편집 도우미 확장](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 및 [시각적 경험 작성기 문제 해결](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
 
 다음으로, 및 를 요청하는 방법을 알아봅니다 [렌더링 양식 기반 Target 활동](render-form-based-activities.md).
 
