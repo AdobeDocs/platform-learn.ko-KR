@@ -1,0 +1,212 @@
+---
+title: VEC 활동 렌더링 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
+description: Adobe Target의 웹 SDK 구현을 통해 시각적 경험 작성기 활동을 검색하고 적용하는 방법을 알아봅니다.
+feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
+source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 8%
+
+---
+
+# Adobe Target VEC(시각적 경험 작성기) 활동 렌더링
+
+Target 활동은 VEC(시각적 경험 작성기) 또는 양식 기반 작성기를 사용하여 설정됩니다. Platform Web SDK는 at.js와 마찬가지로 VEC 기반 활동을 검색하고 페이지에 적용할 수 있습니다. 마이그레이션의 이 부분에 대해서는 다음을 수행합니다.
+
+* 필요한 경우 Visual Editing Helper 브라우저 확장 프로그램 설치
+* 실행 `sendEvent` 활동을 요청하려면 Platform 웹 SDK로 를 호출합니다.
+* 를 사용하는 at.js 구현에서 참조를 업데이트합니다 `getOffers()` Target 실행 `pageLoad` 요청.
+
+## 시각적 편집 도우미 브라우저 확장
+
+Google Chrome용 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 프로그램을 사용하면 Adobe Target VEC(시각적 경험 작성기)에서 웹 사이트를 안정적으로 로드하여 웹 경험을 빠르게 작성 및 QA할 수 있습니다.
+
+시각적 편집 도우미 브라우저 확장 프로그램은 at.js 또는 Platform Web SDK를 사용하는 웹 사이트에서 작동합니다.
+
+>[!IMPORTANT]
+>
+>새로운 시각적 편집 도우미 확장이 이전 기능을 대체합니다 [Target VEC Helper 브라우저 확장 프로그램](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 이전 VEC Helper 확장이 설치되어 있는 경우 시각적 편집 도우미 확장을 사용하기 전에 해당 확장을 제거하거나 비활성화해야 합니다.
+
+### Visual Editing Helper 가져오기 및 설치
+
+1. 로 이동합니다 [Chrome 웹 스토어의 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
+1. 추가 대상 을 클릭합니다. **Chrome** > **확장 추가**.
+1. Target에서 VEC를 엽니다.
+1. 확장을 사용하려면 Visual Editing Helper 브라우저 확장 프로그램 아이콘을 클릭합니다 ![시각적 편집 확장 아이콘](assets/VEC-Helper.png) VEC 또는 QA 모드에 있는 동안 Chrome 브라우저의 도구 모음에서 를 클릭합니다.
+
+작성 기능을 향상시키기 위해 Target VEC에서 웹 사이트를 열면 Visual Editing Helper가 자동으로 활성화됩니다. 확장 기능에는 조건부 설정이 없습니다. 확장 기능은 SameSite 쿠키 설정을 포함한 모든 설정을 자동으로 처리합니다.
+
+에 대한 자세한 내용은 전용 설명서 를 참조하십시오. [시각적 편집 도우미 확장](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 및 [시각적 경험 작성기 문제 해결](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+
+## 자동으로 콘텐츠 요청 및 적용
+
+페이지에 Platform Web SDK가 구성되어 있으면 Target에서 컨텐츠를 요청할 수 있습니다. 라이브러리가 로드될 때 컨텐츠를 자동으로 요청하도록 구성할 수 있는 at.js와 달리, Platform Web SDK에서는 명령을 명시적으로 실행해야 합니다.
+
+at.js 구현에 `pageLoadEnabled` 설정 `true` VEC 기반 활동을 자동으로 렌더링할 수 있도록 에서는 다음을 실행합니다 `sendEvent` 플랫폼 웹 SDK를 사용하는 명령:
+
+```Javascript
+alloy("sendEvent", {
+  "renderDecisions": true
+});
+```
+
+>[!TIP]
+>
+> 태그 기능(이전 Launch)을 사용하여 웹 SDK를 구현하는 경우 VEC 활동에 대한 &#39;sendEvent&#39; 명령을 [!UICONTROL 이벤트 보내기] 작업 유형 [!UICONTROL 시각적 개인화 결정 렌더링] 선택 사항입니다.
+
+Platform Web SDK가 활동을 `renderDecisions` 설정 `true`인 경우 추가 알림 호출이 자동으로 실행되어 노출을 증가시키고 방문자를 활동에 보냅니다. 이 호출에서는 값이 있는 이벤트 유형을 사용합니다 `decisioning.propositionDisplay`.
+
+![Platform Web SDK 호출이 Target 노출 횟수를 증가시킵니다](assets/target-impression-call.png)
+
+## 주문형 콘텐츠 요청 및 적용
+
+일부 Target at.js 구현에는 `pageLoadEnabled` 설정 `false` 대신 `getOffers()` 함수를 실행하여 `pageLoad` 요청. 이 유형의 설정은 구현에서 추가적인 처리를 필요로 하는 경우 사용됩니다 `getOffers()` 페이지에 콘텐츠를 적용하거나 한 번의 호출로 여러 위치에 대한 콘텐츠를 요청하기 전에 응답합니다.
+
+다음 코드는 를 사용합니다 `getOffers()` 및 `applyOffers()` 라이브러리 로드 시 자동으로 적용되지 않고 VEC 기반 활동을 온디맨드로 적용하려면
+
+```JavaScript
+adobe.target.getOffers({
+  request: {
+    execute: {
+      pageLoad: {}
+    }
+  }
+}).
+then(response => adobe.target.applyOffers({ response: response }));
+```
+
+Platform 웹 SDK에는 특정 기능이 없습니다 `pageLoad` 이벤트. Target 컨텐츠에 대한 모든 요청은 `decisionScopes` 옵션 `sendEvent` 명령. 다음 `__view__` 범위는 `pageLoad` 요청. 동등한 Platform Web SDK `sendEvent` 접근 방식은 다음과 같습니다.
+
+1. 실행 `sendEvent` 포함된 명령 `__view__` 결정 범위
+1. 반환된 컨텐츠를 를 사용하여 페이지에 적용 `applyPropositions` 명령
+1. 실행 `sendEvent` 명령을 사용하여 `decisioning.propositionDisplay` 노출 횟수를 증가시키기 위한 이벤트 유형 및 제안 세부 사항
+
+```Javascript
+alloy("sendEvent", {
+  // Request the special "__view__" scope for target-global-mbox / pageLoad
+  decisionScopes: ["__view__"]
+}).then(function(result) {
+  // Check if content (propositions) were returned
+  if (result.propositions) {
+    var retrievedPropositions = result.propositions;
+    // Apply propositions to the page
+    return alloy("applyPropositions", {
+      propositions: retrievedPropositions
+    }).then(function(applyPropositionsResult) {
+      var renderedPropositions = applyPropositionsResult.propositions;
+      // Send a display notification with the sendEvent command
+      alloy("sendEvent", {
+        "xdm": {
+          "eventType": "decisioning.propositionDisplay",
+          "_experience": {
+            "decisioning": {
+              "propositions": renderedPropositions
+            }
+          }
+        }
+      });
+    });
+  }
+});
+```
+
+>[!NOTE]
+>
+>가능한 작업 [수동 수정 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) 시각적 경험 작성기에서 수행되었습니다. VEC 기반 수정 사항의 수동 렌더링은 일반적이지 않습니다. at.js 구현에서 `getOffers()` 수동으로 Target 실행 `pageLoad` 을 사용하지 않고 요청 `applyOffers()` 을 눌러 페이지에 컨텐츠를 적용합니다.
+
+Platform Web SDK는 개발자에게 컨텐츠 요청 및 렌더링을 매우 유연하게 제공합니다. 자세한 내용은 [개인화된 콘텐츠 렌더링에 대한 전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) 추가 옵션 및 세부 정보
+
+## 구현 예
+
+이제 기본 Platform 웹 SDK 구현이 완료되었습니다. 자동 Target 컨텐츠 렌더링 이 활성화된 기본 예제 페이지는 다음과 같습니다.
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+  <!--Platform Web SDK base code-->
+  <script>
+    !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
+    []).push(o),n[o]=function(){var u=arguments;return new Promise(
+    function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
+    (window,["alloy"]);
+  </script>
+
+  <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
+  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+  
+  <!--Configure Platform Web SDK then send event-->
+  <script>
+    alloy("configure", {
+      "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
+      "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
+    });
+    
+    // Send an event to the Adobe edge network and render Target content automatically 
+    alloy("sendEvent", {
+      "renderDecisions": true
+    });
+  </script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+>[!TIP]
+>
+> 태그 기능(이전 Launch)을 사용하여 웹 SDK를 구현할 때 태그 포함 코드는 위의 &#39;Platform Web SDK 기본 코드&#39;, &#39;Platform Web SDK 비동기식으로 로드&#39; 및 &#39;Platform Web SDK 구성&#39; 섹션을 대체합니다. &#39;sendEvent&#39; 명령은 [!UICONTROL 이벤트 보내기] 작업 유형 [!UICONTROL 시각적 개인화 결정 렌더링] 선택 사항입니다.
+
+## 시각적 편집 도우미 브라우저 확장을 사용하여 활동 작성
+
+Google Chrome용 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 프로그램을 사용하면 Adobe Target VEC(시각적 경험 작성기)에서 웹 사이트를 안정적으로 로드하여 웹 경험을 빠르게 작성 및 QA할 수 있습니다.
+
+시각적 편집 도우미 브라우저 확장 프로그램은 at.js 또는 Platform Web SDK를 사용하는 웹 사이트에서 작동합니다.
+
+>[!IMPORTANT]
+>
+>새로운 시각적 편집 도우미 확장이 이전 기능을 대체합니다 [Target VEC Helper 브라우저 확장 프로그램](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 이전 VEC Helper 확장이 설치되어 있는 경우 시각적 편집 도우미 확장을 사용하기 전에 해당 확장을 제거하거나 비활성화해야 합니다.
+
+### Visual Editing Helper 가져오기 및 설치
+
+1. 로 이동합니다 [Chrome 웹 스토어의 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
+1. 추가 대상 을 클릭합니다. **Chrome** > **확장 추가**.
+1. Target에서 VEC를 엽니다.
+1. 확장 기능을 사용하려면 VEC 또는 QA 모드에서 Chrome 브라우저 도구 모음의 Visual Editing Helper 브라우저 확장 기능 아이콘(Visual Editing 확장 기능 아이콘)을 클릭합니다.
+
+작성을 지원하도록 Target VEC에서 웹 사이트를 열면 시각적 편집 도우미가 자동으로 활성화됩니다. 확장 기능에는 조건부 설정이 없습니다. 확장 기능은 SameSite 쿠키 설정을 포함한 모든 설정을 자동으로 처리합니다.
+
+에 대한 자세한 내용은 전용 설명서 를 참조하십시오. [시각적 편집 도우미 확장](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 및 [시각적 경험 작성기 문제 해결](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+
+다음으로, 및 를 요청하는 방법을 알아봅니다 [렌더링 양식 기반 Target 활동](render-form-based-activities.md).
+
+>[!NOTE]
+>
+>Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
