@@ -2,9 +2,9 @@
 title: VEC 활동 렌더링 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target의 웹 SDK 구현을 통해 시각적 경험 작성기 활동을 검색하고 적용하는 방법을 알아봅니다.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
+source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Target 활동은 VEC(시각적 경험 작성기) 또는 양식 기반 작성기를 사용하여 설정됩니다. Platform Web SDK는 at.js와 마찬가지로 VEC 기반 활동을 검색하고 페이지에 적용할 수 있습니다. 마이그레이션의 이 부분에 대해서는 다음을 수행합니다.
 
-* 필요한 경우 Visual Editing Helper 브라우저 확장 프로그램 설치
+* Visual Editing Helper 브라우저 확장 프로그램 설치
 * 실행 `sendEvent` 활동을 요청하려면 Platform 웹 SDK로 를 호출합니다.
 * 를 사용하는 at.js 구현에서 참조를 업데이트합니다 `getOffers()` Target 실행 `pageLoad` 요청.
 
