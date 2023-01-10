@@ -20,7 +20,7 @@ Adobe Experience Platform Debugger 방법 알아보기 [Chrome 확장 프로그�
 
 ## 추가 리소스
 
-* [Firefox 추가 기능 다운로드](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+* [Firefox 추가 기능 다운로드](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome 확장 프로그램 다운로드](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Experience Platform 디버거 설명서](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html)
 * [태그 구현 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

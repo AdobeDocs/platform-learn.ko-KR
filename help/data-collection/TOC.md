@@ -26,11 +26,11 @@ ht-degree: 34%
    + [사용자 및 권한](tags/users-and-permissions.md)
    + [Web SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target=&quot;_blank&quot;}
    + [솔루션 SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
-   + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko){target=&quot;_blank&quot;}
 + Web SDK{#web-sdk}
    + [개요](web-sdk/overview.md)
    + [데모](web-sdk/demo.md)
-   + [구현 자습서(태그 포함)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [구현 자습서(태그 포함)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target=&quot;_blank&quot;}
    + 동의{#consent}
       + [개요](web-sdk/consent/overview.md)
       + [Adobe 표준을 사용하여 동의 값 설정](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +41,7 @@ ht-degree: 34%
    + [개요](mobile-sdk/overview.md)
    + [모바일 속성 만들기](mobile-sdk/create-mobile-properties.md)
    + [종속성 관리자 사용](mobile-sdk/use-dependency-managers.md)
-   + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko){target=&quot;_blank&quot;}
 + 서버 API{#server-api}
    + [개요](server-api/overview.md)
    + [API의 기본 사항](server-api/introduction.md)

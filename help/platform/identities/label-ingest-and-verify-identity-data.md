@@ -15,7 +15,7 @@ ht-degree: 59%
 
 # ID 데이터 레이블 지정, 처리 및 확인
 
-데이터 필드에 ID로 레이블을 지정하고, ID 데이터를 수집한 다음 Adobe Experience Platform ID 서비스 개인 그래프에서 데이터를 확인하는 방법에 대해 알아봅니다. 자세한 내용은 [id 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ko)
+데이터 필드에 ID로 레이블을 지정하고, ID 데이터를 수집한 다음 Adobe Experience Platform ID 서비스 개인 그래프에서 데이터를 확인하는 방법에 대해 알아봅니다. 자세한 내용은 [id 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28167?quality=12&learn=on)
