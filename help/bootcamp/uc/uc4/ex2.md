@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -60,7 +59,7 @@ Customer Journey Analytics 홈페이지에서 **연결**.
 
 ![데모](./images/cja7.png)
 
-이제 확인란을 검색하고 선택합니다 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 및 `Demo System - Event Dataset for Call Center (Global v1.1)`.
+이제 확인란을 검색하고 선택합니다 `Demo System - Profile Dataset for Loyalty (Global v1.1)` 및 `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 그럼 이걸로 주세요 **다음**&#x200B;을 클릭합니다.
 
@@ -84,7 +83,7 @@ Customer Journey Analytics 홈페이지에서 **연결**.
 
 언급했듯이 각 데이터 세트에 대해 서로 다른 개인 ID를 설정할 수 있습니다. 이를 통해 여러 소스의 다양한 데이터 세트를 CJA에서 함께 가져올 수 있습니다. NPS나 설문 조사 데이터를 가져오면 상황에 대해 이해하고 어떤 일이 왜 일어났는지 이해하는 데 매우 흥미롭고 도움이 됩니다.
 
-개인 ID 필드의 값이 해당하는 한 개인 ID 필드의 이름은 중요하지 않습니다. 이제 `email` 하나의 데이터 세트에 `emailAddress` 를 입력합니다. If `delaigle@adobe.com` 는 두 데이터 세트 모두에서 개인 ID 필드에 대해 동일한 값이며 CJA는 데이터를 결합할 수 있습니다.
+개인 ID 필드의 값이 해당하는 한 개인 ID 필드의 이름은 중요하지 않습니다. 예를 들어 개인 ID가 `email` 하나의 데이터 세트에 `emailAddress` 다른 곳에서 `dnb-bootcamp@adobe.com` 는 데이터 세트 모두에 있는 개인 ID 필드에 대해 동일한 값이며 CJA는 데이터를 결합할 수 있습니다.
 
 현재 알려진 대로 익명 동작을 결합하는 등의 몇 가지 다른 제한 사항이 있습니다. 다음 FAQ를 검토하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ko-KR).
 
@@ -107,7 +106,7 @@ Customer Journey Analytics 홈페이지에서 **연결**.
 | 데이터 세트 | 개인 ID |
 | ----------------- |-------------| 
 | 데모 시스템 - 웹 사이트의 이벤트 데이터 세트(글로벌 v1.1) | 이메일 |
-| 데모 시스템 - 음성 도우미에 대한 이벤트 데이터 세트(글로벌 v1.1) | 이메일 |
+| 데모 시스템 - 충성도 프로필 데이터 세트(글로벌 v1.1) | 이메일 |
 | 데모 시스템 - 콜 센터의 이벤트 데이터 세트(글로벌 v1.1) | 이메일 |
 
 또한 모든 데이터 세트에 대해 이러한 옵션이 활성화되어 있는지 확인해야 합니다.

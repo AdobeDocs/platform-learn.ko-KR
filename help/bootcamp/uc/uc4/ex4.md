@@ -6,10 +6,10 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 3%
+source-wordcount: '755'
+ht-degree: 2%
 
 ---
 
@@ -48,9 +48,7 @@ Customer Journey Analytics은 플랫폼 데이터를 기반으로 이 솔루션�
 
 ![데모](./images/premptyprojects.png)
 
-먼저 화면의 오른쪽 상단 모서리에서 올바른 데이터 보기를 선택해야 합니다. 이 예에서 선택할 데이터 보기는 다음과 같습니다 `vangeluwe - Omnichannel Data View`.
-
-![데모](./images/prdv.png)
+먼저 화면의 오른쪽 상단 모서리에서 올바른 데이터 보기를 선택해야 합니다. 이 예에서 선택할 데이터 보기는 다음과 같습니다 `CJA Bootcamp - Omnichannel Data View`.
 
 그런 다음 프로젝트를 저장하고 이름을 지정합니다. 다음 명령을 사용하여 저장할 수 있습니다.
 
@@ -113,7 +111,7 @@ Customer Journey Analytics은 플랫폼 데이터를 기반으로 이 솔루션�
 
 | Title | 설명 |
 | ----------------- |-------------| 
-| 전환율 | 전환율 |
+| yourLastName - 전환율 | yourLastName - 전환율 |
 
 화면에 다음과 같은 내용이 표시됩니다.
 
