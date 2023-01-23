@@ -3,7 +3,7 @@ title: Experience Makers Bootcamp
 description: Experience Makers Bootcamp 참여자의 시작 지점
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -40,9 +40,9 @@ ht-degree: 1%
 
 14.00 - 15.30: 사용자 흐름 1: &quot;고객 확보&quot; 실습
 
-15.00 - 15.15: 브레이크
+15.30 - 15.45: 브레이크
 
-15.15 - 17.00: 사용자 흐름 2: &quot;등록 및 온보딩&quot; 실습
+15.45 - 17.00: 사용자 흐름 2: &quot;등록 및 온보딩&quot; 실습
 
 18.00 - 19.00: 경험 &quot;Cocktail Making Competition&quot;
 
