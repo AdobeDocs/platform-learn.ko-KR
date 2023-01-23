@@ -3,9 +3,9 @@ title: Platform Web SDK를 사용하여 Adobe Target 설정
 description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법을 알아봅니다. 이 단원은 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Platform Web SDK에서 Target 활동을 제공하려면 먼저 데이터 스트�
 
 데이터 스트림에서 Target을 구성하려면:
 
-1. 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} 인터페이스
+1. 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 를 선택합니다 **[!UICONTROL 데이터 스트림]**
 1. 앞에서 만든 을(를) 선택합니다 `Luma Web SDK` 데이터 스트림
 
@@ -184,7 +184,7 @@ Luma 사이트를 사용하여 이 자습서를 사용하려면 ID 기호를 사
 
 Target에서 시각적 개인화 결정은 데이터 스트림에 Target이 활성화되어 있는 경우 Platform Web SDK에 의해 전달됩니다. 하지만, _자동으로 렌더링되지 않습니다_. 자동 렌더링을 활성화하려면 글로벌 페이지 로드 규칙을 수정해야 합니다.
 
-1. 에서 [데이터 수집](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;} 인터페이스에서 이 자습서에 사용할 태그 속성을 엽니다.
+1. 에서 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스에서 이 자습서에서 사용하는 태그 속성을 엽니다
 1. 를 엽니다. `all pages - library load - AA & AT` 규칙
 1. 을(를) 선택합니다 `Adobe Experience Platform Web SDK - Send event` 작업
 1. 활성화 **[!UICONTROL 시각적 개인화 결정 렌더링]** 확인란을 선택하면
@@ -334,7 +334,7 @@ Target에서 시각적 개인화 결정은 데이터 스트림에 Target이 활�
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
