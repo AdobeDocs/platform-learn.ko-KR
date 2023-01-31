@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1650'
 ht-degree: 4%
 
 ---
@@ -50,6 +50,7 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
 
 1. 다운로드 폴더에서 `platform-utils-main.zip` 파일을 컴퓨터의 원하는 위치에 저장하고 압축을 해제합니다.
 1. 에서 `luma-data` 폴더, 모두 열기 `json` 텍스트 편집기에 있는 파일 및 `_techmarketingdemos` 자신의 테넌트 id를 사용하고 앞에 밑줄을 추가합니다.
+1. 열기 `luma-offline-purchases.json` 텍스트 편집기에서 모든 타임스탬프를 업데이트하여 이벤트가 지난달에 발생하도록(예: `"timestamp":"2022-06` 연도 및 월 대체)
 1. 압축을 푼 폴더의 위치를 나중에 설정할 때 필요할 때 확인합니다 `FILE_PATH` Postman 환경 변수:
 
    >[!NOTE]
