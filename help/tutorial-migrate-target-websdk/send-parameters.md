@@ -1,9 +1,9 @@
 ---
 title: 매개 변수 보내기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 전송하는 방법을 알아봅니다.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # Platform Web SDK를 사용하여 Target에 매개 변수 보내기
 
 Target 구현은 사이트 아키텍처, 비즈니스 요구 사항 및 사용되는 기능으로 인해 웹 사이트 간에 다릅니다. 대부분의 Target 구현에는 컨텍스트 정보, 대상 및 콘텐츠 권장 사항에 대한 다양한 매개 변수 전달이 포함됩니다.
+
+>[!WARNING]
+>
+> 2022년 10월 1일 이후에 시작된 Platform Web SDK 구현은 [미리 가져오기 해결 방법](prefetch-workaround.md) 을 눌러 이 페이지에 설명된 매개 변수를 성공적으로 전달합니다.
 
 간단한 제품 세부 사항 페이지와 주문 확인 페이지를 사용하여 매개 변수를 Target에 전달할 때 라이브러리 간의 차이점을 보여 줍니다.
 
@@ -57,17 +61,17 @@ at.js를 사용하여 다음 예제 페이지를 가정하십시오.
 </html>
 ```
 
-<!--
 
-Order Confirmation:
+
+주문 확인:
 
 ```HTML
 <!doctype html>
 <html>
 <head>
   <title>Order Confirmation</title>-->
-<!--Target parameters -->
-<!--  <script>
+  <!--Target parameters -->
+  <script>
     targetPageParams = function() {
       return {
         // Property token
@@ -80,9 +84,9 @@ Order Confirmation:
         "mbox3rdPartyId": "TT8675309",
       };
     };
-  </script>-->
-<!--Target at.js library loaded asynchonously-->
-<!--  <script src="/libraries/at.js" async></script>
+  </script>
+  <!--Target at.js library loaded asynchonously-->
+  <script src="/libraries/at.js" async></script>
 </head>
 <body>
   <h1 id="title">Order Confirmation</h1>
@@ -90,7 +94,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 
 ## 매개 변수 매핑 요약
@@ -125,15 +128,12 @@ Platform Web SDK를 사용하여 전달된 매개 변수 `sendEvent` 페이로�
 | `cartIds` | `data.__adobe.target.cartIds` | Target의 장바구니 기반 권장 사항 알고리즘에 사용됩니다. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 특정 엔티티 ID가 권장 사항 디자인에서 반환되지 않도록 하는 데 사용됩니다. |
 | `mbox3rdPartyId` | idMap에서 설정합니다. 자세한 내용은 [고객 ID와 프로필 동기화](#synching-profiles-with-a-customer-id) | 장치 및 고객 속성에서 Target 프로필을 동기화하는 데 사용됩니다. 고객 ID에 사용할 네임스페이스는 [데이터 스트림의 Target 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `orderId` | `xdm.commerce.order.purchaseID` | Target 전환 추적에 대한 고유한 순서를 식별하는 데 사용됩니다. |
+| `orderTotal` | `xdm.commerce.order.priceTotal` | Target 전환 및 최적화 목표를 위한 주문 합계를 추적하는 데 사용됩니다. |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>또는<br> `xdm.productListItems[0-n].SKU` | Target 전환 추적 및 권장 사항 알고리즘에 사용됩니다. 자세한 내용은 [엔티티 매개 변수](#entity-parameters) 자세한 내용은 아래 섹션을 참조하십시오. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 에 사용됩니다. [사용자 지정 점수](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) 활동 목표. |
 
 {style=&quot;table-layout:auto&quot;}
-
-<!--
-| `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
-| `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | -->
-
 
 ## 사용자 지정 매개 변수
 
@@ -245,12 +245,12 @@ alloy("sendEvent", {
 >
 >만약 `commerce` 필드 그룹이 사용되고 `productListItems` 배열은 XDM 페이로드에 포함되며 첫 번째 페이로드에 포함됩니다 `SKU` 이 배열의 값이 `entity.id` 제품 보기를 증가시키기 위한 것입니다.
 
-<!-- 
-## Purchase parameters
 
-Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Web SDK implementation, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+## 구매 매개 변수
 
-at.js example using `targetPageParams()`:
+구매 매개 변수는 성공적인 주문 후 주문 확인 페이지에서 전달되며 Target 전환 및 최적화 목표에 사용됩니다. Platform Web SDK 구현을 통해 이러한 매개 변수 및 는 의 일부로 전달된 XDM 데이터에서 자동으로 매핑됩니다 `commerce` 필드 그룹.
+
+at.js 예 사용 `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -262,9 +262,9 @@ targetPageParams = function() {
 };
 ```
 
-Purchase information is passed to Target when the `commerce` field group has `puchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
+구매 정보는 `commerce` 필드 그룹에 있음 `puchases.value` 설정 `1`. 주문 ID 및 주문 합계는 `order` 개체. 만약 `productListItems` 배열이 있으면 `SKU` 값은 `productPurchasedId`.
 
-Platform Web SDK example using `sendEvent` command:
+다음을 사용하는 Platform Web SDK 예 `sendEvent` 명령:
 
 ```JavaScript
 alloy("sendEvent", {
@@ -289,9 +289,8 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->The `productPurchasedId` value can also be passed as a comma-separated list of entity IDs under the `data` object.
+>다음 `productPurchasedId` 값은에서 쉼표로 구분된 엔티티 ID 목록으로 전달될 수도 있습니다 `data` 개체.
 
--->
 
 ## 고객 ID와 프로필 동기화
 
@@ -413,8 +412,8 @@ alloy("sendEvent", {
 </html>
 ```
 
-<!--
-Order Confirmation:
+
+주문 확인:
 
 ```HTML
 <!doctype html>
@@ -422,9 +421,9 @@ Order Confirmation:
 <head>
   <title>Order Confirmation</title>
 
--->
-<!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
-<!--
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+
   <script>
     !function(e,a,n,t){var i=e.head;if(i){
     if (a) return;
@@ -432,21 +431,20 @@ Order Confirmation:
     o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
--->
-<!--Platform Web SDK base code-->
-<!--
+
+  <!--Platform Web SDK base code-->
+
   <script>
     !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
     []).push(o),n[o]=function(){var u=arguments;return new Promise(
     function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
     (window,["alloy"]);
   </script>
--->
-<!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
-<!--  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
--->
-<!--Configure Platform Web SDK and send event-->
-<!--  <script>
+  <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
+  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+
+  <!--Configure Platform Web SDK and send event-->
+  <script>
     alloy("configure", {
       "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
       "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
@@ -483,7 +481,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 다음으로, 다음 방법을 배웁니다. [Target 전환 이벤트 추적](track-events.md) 사용.
 

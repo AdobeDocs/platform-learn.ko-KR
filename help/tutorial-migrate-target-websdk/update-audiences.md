@@ -1,9 +1,9 @@
 ---
 title: 대상자 및 프로필 스크립트 업데이트 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK와의 호환성을 위해 Adobe Target 대상 및 프로필 스크립트를 업데이트하는 방법을 알아봅니다.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ Platform Web SDK로 Target을 마이그레이션하기 위한 기술 업데이�
 * mbox 매개 변수를 사용하는 대상 업데이트
 * mbox 매개 변수를 사용하는 프로필 스크립트 업데이트
 * 모든 오퍼 및 활동을 업데이트하여 mbox 매개 변수 토큰 대체를 사용합니다(예: `${mbox.parameter_name}`)
+
+
+>[!WARNING]
+>
+> 2022년 10월 1일 이후에 시작된 Platform Web SDK 구현은 [미리 가져오기 해결 방법](prefetch-workaround.md) 를 사용하여 이 페이지에 설명된 기능 중 일부를 성공적으로 사용할 수 있습니다.
 
 ## 대상자 조정
 

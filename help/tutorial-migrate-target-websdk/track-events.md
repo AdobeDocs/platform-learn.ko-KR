@@ -1,9 +1,9 @@
 ---
 title: 이벤트 추적 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK를 사용하여 Adobe Target 전환 이벤트를 추적하는 방법을 알아봅니다.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,10 @@ at.js와 유사한 Platform Web SDK를 사용하여 Target에 대한 전환 이�
 * 구성이 필요 없는 자동 추적 이벤트
 * 우수 사례 Platform Web SDK 구현을 위해 조정해야 하는 구매 전환 이벤트
 * 코드 업데이트가 필요한 비구매 전환 이벤트
+
+>[!WARNING]
+>
+> 2022년 10월 1일 이후에 시작된 Platform Web SDK 구현은 [미리 가져오기 해결 방법](prefetch-workaround.md) 를 입력하여 이 페이지에 설명된 일부 이벤트를 성공적으로 추적할 수 있습니다.
 
 ## 목표 추적 비교
 
