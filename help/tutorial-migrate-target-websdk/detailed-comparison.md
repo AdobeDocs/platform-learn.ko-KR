@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x와 웹 SDK 비교 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: 기능, 함수, 설정 및 데이터 흐름 등 at.js 2.x와 Platform Web SDK의 차이점에 대해 알아봅니다.
-source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -43,8 +43,8 @@ Platform Web SDK를 처음 사용하는 경우에는 걱정하지 마십시오. 
 | 원격 오퍼 | 지원됨 | 지원됨 |
 | 리디렉션 오퍼 | 지원됨 | 지원됨. 그러나 Platform Web SDK가 있는 페이지에서 at.js(반대 방향)가 있는 페이지로 리디렉션하는 것은 지원되지 않습니다. |
 | On-Device Decisioning | 지원됨 | 현재 지원되지 않음 |
-| Mbox 미리 가져오기 | 지원됨 | 부분적으로 지원됨. 활동 미리 가져오기 동작이 변경되므로 이 기능을 활성화하려면 고객 지원에 문의하십시오. |
-| 사용자 지정 이벤트 | 지원됨 | 지원되지 않음. 자세한 내용은 [공개 로드맵](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) 을 참조하십시오. |
+| Mbox 미리 가져오기 | 지원됨 | 기본적으로 모든 새 마이그레이션에서 활성화됨 - 2022년 10월 1일 이후에 시작됨 |
+| 사용자 지정 이벤트 | 지원됨 | 지원되지 않음. 자세한 내용은 [공개 로드맵](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 을 참조하십시오. |
 | 응답 토큰 | 지원됨 | 지원됨. 자세한 내용은 [전용 응답 토큰 설명서](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) at.js와 Platform Web SDK 간의 코드 예제 및 차이점에 대해 설명합니다. |
 | 데이터 공급자 | 지원됨 | 지원되지 않음. 사용자 지정 코드는 Platform Web SDK를 트리거하는 데 사용할 수 있습니다 `sendEvent` 다른 공급자에서 데이터를 검색한 후의 명령 |
 
@@ -79,7 +79,7 @@ Platform Web SDK를 처음 사용하는 경우에는 걱정하지 마십시오. 
 | `trackEvent()` 및 `sendNotifications()` | 를 사용하십시오 `sendEvent` 명령을 사용하여 명령 [특정 `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) 설정:<br><br>`decisioning.propositionDisplay` 는 활동을 렌더링한다는 신호를 보냅니다<br><br>`decisioning.propositionInteract` 마우스 클릭과 같은 활동과 사용자의 상호 작용을 신호합니다. |
 | `targetGlobalSettings()` | 직접적인 동기는 없습니다. 자세한 내용은 [Target 설정 비교](detailed-comparison.md) 추가 세부 정보. |
 | `targetPageParams()` 및 `targetPageParamsAll()` | 에 전달된 모든 데이터 `xdm` 옵션 `sendEvent` 명령이 Target mbox 매개 변수에 매핑됩니다. mbox 매개 변수의 이름은 직렬화된 점 표기법을 사용하여 지정되므로 Platform Web SDK로 마이그레이션하려면 새 mbox 매개 변수 이름을 사용하기 위해 기존 대상과 활동을 업데이트해야 할 수 있습니다. <br><br>의 일부로 전달된 데이터 `data.__adobe.target` 의 `sendEvent` 명령이 [Target 프로필 및 Recommendations 특정 매개 변수](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| at.js 사용자 지정 이벤트 | 지원되지 않음. 자세한 내용은 [공개 로드맵](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) 을 참조하십시오. [응답 토큰](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 는 의 일부로 노출됩니다 `propositions` 의 응답으로 `sendEvent` 호출. |
+| at.js 사용자 지정 이벤트 | 지원되지 않음. 자세한 내용은 [공개 로드맵](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 을 참조하십시오. [응답 토큰](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 는 의 일부로 노출됩니다 `propositions` 의 응답으로 `sendEvent` 호출. |
 
 ## at.js 설정 및 이에 상응하는 Platform Web SDK
 

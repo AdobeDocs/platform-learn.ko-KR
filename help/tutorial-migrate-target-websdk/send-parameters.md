@@ -1,9 +1,9 @@
 ---
 title: 매개 변수 보내기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 전송하는 방법을 알아봅니다.
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,6 @@ ht-degree: 0%
 # Platform Web SDK를 사용하여 Target에 매개 변수 보내기
 
 Target 구현은 사이트 아키텍처, 비즈니스 요구 사항 및 사용되는 기능으로 인해 웹 사이트 간에 다릅니다. 대부분의 Target 구현에는 컨텍스트 정보, 대상 및 콘텐츠 권장 사항에 대한 다양한 매개 변수 전달이 포함됩니다.
-
->[!WARNING]
->
-> 2022년 10월 1일 이후에 시작된 Platform Web SDK 구현은 [미리 가져오기 해결 방법](prefetch-workaround.md) 을 눌러 이 페이지에 설명된 매개 변수를 성공적으로 전달합니다.
 
 간단한 제품 세부 사항 페이지와 주문 확인 페이지를 사용하여 매개 변수를 Target에 전달할 때 라이브러리 간의 차이점을 보여 줍니다.
 
