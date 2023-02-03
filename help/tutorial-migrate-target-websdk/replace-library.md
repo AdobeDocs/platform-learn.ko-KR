@@ -1,9 +1,9 @@
 ---
 title: 라이브러리 바꾸기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법을 알아봅니다. 항목에는 라이브러리 개요, 구현 차이점 및 기타 주목할 만한 설명서가 포함됩니다.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -207,6 +207,12 @@ Platform Web SDK에서 플리커를 관리하는 방법에 대한 자세한 내�
 
 Platform Web SDK는 페이지를 로드할 때마다 구성해야 합니다. 다음 `configure` 명령은 항상 호출된 첫 번째 SDK 명령이어야 합니다. 다음 예제에서는 전체 사이트가 단일 배포에서 Platform Web SDK로 업그레이드된다고 가정합니다.
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+다음 `edgeConfigId` 은 [!UICONTROL 데이터 스트림 ID]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB 태그 내에만 게시합니다]
+
+태그 구현에서 많은 필드가 자동으로 채워지거나 드롭다운 메뉴에서 선택할 수 있습니다. 다른 플랫폼 [!UICONTROL 샌드박스] 및 [!UICONTROL 데이터 세트] 각 환경에 대해 선택할 수 있습니다. 데이터 스트림은 게시 프로세스에서 태그 라이브러리의 상태에 따라 변경됩니다.
+
+![웹 SDK 태그 확장 구성](assets/tags-config.png)
+>[!ENDTABS]
+
 페이지별로 at.js에서 Platform Web SDK로 마이그레이션하려는 경우 다음 구성 옵션이 필요합니다.
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -224,6 +242,11 @@ alloy("configure", {
   "idMigrationEnabled":true
 });
 ```
+
+>[!TAB 태그 내에만 게시합니다]
+
+![웹 SDK 태그 확장 마이그레이션 옵션 구성](assets/tags-config-migration.png)
+>[!ENDTABS]
 
 Target과 관련된 주목할 만한 구성 옵션은 다음과 같습니다.
 
