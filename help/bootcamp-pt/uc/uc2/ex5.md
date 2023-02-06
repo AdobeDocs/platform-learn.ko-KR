@@ -5,88 +5,89 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 1%
+source-wordcount: '269'
+ht-degree: 0%
 
 ---
 
-# 2.5 모바일 앱 설치 및 사용
+# 2.5 설치 e 사용 - aplicativo 모델
 
 
-## 모바일 앱 설치
+## Instale o aplicativo movely
 
-앱을 설치하기 전에 **추적** 사용 중인 iOS 장치 이렇게 하려면 로 이동하십시오. **설정** > **개인 정보 및 보안** > **추적** 그리고 옵션을 **앱에서 추적 요청 허용**.
+안테스 데 인살라르 오 아파리타티보, é Consumrio Harstreamento no seu dispositvo iOS. 파라, 세카투세 구성 아퀴드 > 프리바시다데 세구란사 > 라스트래멘토 e는 로슈페르미티케 os aplicativos sendoitem o rstreamento를 확인했습니다.
 
 ![DSN](./../uc3/images/app4.png)
 
-Apple App Store으로 이동하여 을 검색합니다. `aepmobile-bootcamp`. 클릭 **설치** 또는 **다운로드**.
+Acesse a App Store da Apple e 페스퀴즈 `aepmobile-bootcamp`.\
+Clique em **Instalar** ou **다운로드**.
 
 ![DSN](./../uc3/images/app1.png)
 
-앱이 설치되면 을 클릭합니다 **열기**.
+아피카티보 에스티버 인살라도, 클릭 em의 디포이크 **아브리르**.
 
 ![DSN](./../uc3/images/app2.png)
 
-**확인**&#x200B;을 클릭합니다.
+Clique em **확인**.
 
 ![DSN](./../uc3/images/app9.png)
 
-클릭 **허용**.
+Clique em **페르미터**.
 
 ![DSN](./../uc3/images/app3.png)
 
-클릭 **동감이에요**.
+Clique em **콘코르도**.
 
 ![DSN](./../uc3/images/app7.png)
 
-클릭 **앱 사용 허용**.
+Clique em **Permitr enquanto uso o 앱**.
 
 ![DSN](./../uc3/images/app8.png)
 
-클릭 **허용**.
+Clique em **페르미터**.
 
 ![DSN](./../uc3/images/app5.png)
 
-이제 앱의 홈 페이지에서 고객 여정을 확인할 수 있습니다.
+아고라 보스케스타 아플리카티보, 나파지나, 프론토(a) 파라파라 베르시카 두 클리엔테
 
 ![DSN](./../uc3/images/app12.png)
 
-## 고객 여정 흐름
+## 플루소 다 조나다 두 클리엔테
 
-먼저 로그인해야 합니다. **로그인**&#x200B;을 클릭합니다.
+Primeiramente, é requiremazer o login. Clique em **로그인**.
 
 ![DSN](./../uc3/images/app13.png)
 
-이전 연습에서 계정을 만든 후 웹 사이트에서 이를 보았습니다. 이제 앱에서 만든 계정의 이메일 주소를 다시 사용하여 로그인해야 합니다.
+데포이스 데 크리아수아 콘타노 운동선수, 네 엑시비도 현장입니다. Agora é requidatário reutilzar o enderço de e-mail da conca voke voke hack o aplicativo para fazer o login.
 
 ![데모](./../uc3/images/pv1.png)
 
-여기에 웹 사이트에서 사용한 이메일 주소를 입력하고 을(를) 클릭합니다 **로그인**.
+Digite o enderço de e-mail que voke는 사이트 e-clique em을 사용하지 않습니다. **로그인**.
 
 ![DSN](./../uc3/images/app14.png)
 
-로그인했다는 확인이 표시되면 푸시 알림이 전송됩니다.
+Vokheiberá confirmaçao de que está concetado e reberuma notificaçao 푸시
 
 ![DSN](./../uc3/images/app15.png)
 
-앱의 홈 페이지로 이동하면 추가 기능이 표시됩니다.
+레콘 파라 파지나의 인시코 do aplicativo e os recursos adiconais irao aprecreper.
 
 ![DSN](./../uc3/images/app17.png)
 
-이동 **제품**. 이 예에서 임의의 제품을 클릭합니다 **커피 이동**.
+Acesse **제품**. Clique em qualquer produto, neste example: **커피 이동**.
 
 ![DSN](./images/app19.png)
 
-이 표시됩니다 **커피 이동** 앱의 제품 페이지. 클릭 **Buy**.
+보스케라 파지나도 프로두토 **커피 이동** aplicativo가 없습니다. Clique em **Buy**.
 
 ![DSN](./images/app20.png)
 
-이제 이 운동을 끝마쳤으니 다음 운동을 할 준비가 되었습니다.
+아고라 보스케노 연습시오 에스테르 프론토 파라라는 최대 아티비디아드로
 
-다음 단계: [2.6 콜 센터의 개인화](./ex6.md)
+프로시마 에타파: [ 2.6 개인화상 콜 센터 없음](./ex6.md)
 
-[사용자 흐름 2로 돌아가기](./uc2.md)
+[레토나르 플루소 드 우수아리오 2](./uc2.md)
 
-[모든 모듈로 돌아가기](../../overview.md)
+[레토날라 파라 토도스 오모두로스](../../overview.md)

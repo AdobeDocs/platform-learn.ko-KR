@@ -5,67 +5,67 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
 
 # 4. 고객 여정 분석
 
-이 사용자 플로우에서는 Customer Journey Analytics 애플리케이션 서비스를 직접 경험할 수 있습니다.
+네세 플루소 데 우슈아리오, 보테라 experiencia prática com o servço de aplicativo Customer Journey Analytics.
 
-Customer Journey Analytics은 크로스 채널 데이터(온라인 및 오프라인)를 결합 및 분석하는 비즈니스 인텔리전스 및 데이터 과학 팀에 툴킷을 제공합니다. Customer Journey Analytics 내의 기능은 컨텍스트와 명확성을 복잡한 다중 채널 고객 여정에게 제공합니다. 제공된 컨텍스트는 고객 전환 프로세스에서 불만 사항을 제거하고 가장 중요한 순간에 긍정적인 경험을 전달하는 방법에 대한 실용적인 통찰력을 생성합니다.
+O Customer Journey Analytics fornecuma 인터페이스 em que os times de Analytics, Negocios e Technologia conceuem unir todos os dadocia da companies e analisar a jornada cross-channel (online e offline) do clientte de ponta a ponta. O Customer Journey Analytics é capaz de fornecer contexto e clareza para as jornadas de clientte multipanal complexas. O contexto fornecidera gera uma visuam acacacionável mcida dificuldades no processes de conversaum e possibilita experiencias relevant e personalizadas pontos 관련 단원들.
 
-이 비디오에서 값, 고객 여정 및 구성 프로세스를 파악합니다.
+아시스타 a este vídeo para compremender o valor, jonada do cliente o processo de configuration:
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Customer Journey Analytics에 대한 자세한 정보를 찾을 수 있습니다 [여기](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Mais 정보 Sbre 또는 Customer Journey Analytics 모델 Encontradas [아피](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
-## 학습 목표
+## 오베지보스 데 아벤디자도
 
-- Customer Journey Analytics UI에 익숙해지십시오
-- Adobe Experience Platform 데이터 세트를 Customer Journey Analytics으로 가져오기
-- Customer Journey Analytics의 개인 ID 및 데이터 결합 이해
-- 데이터 연결 및 데이터 보기에 대한 개념 이해
-- Adobe Experience Platform 데이터 세트에서 Analysis Workspace 사용
+- F숙지성-se com a UI do Customer Journey Analytics
+- Target os 데이터 세트 da Adobe Experience Platform para o Customer Journey Analytics
+- Customer Journey Analytics 없음 ID da 페소아
+- 엔켄다 os conitos de uma conexacao de dados e uman visualizaçao de dados
+- Analysis Workspace com 데이터 세트 da Adobe Experience Platform 사용
 
 ## 전제 조건
 
-- Analysis Workspace에 대해 잘 알고 있지만 필수는 아닙니다
-- Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Customer Journey Analytics 응용 프로그램 서비스에 대한 액세스
+- É preferível hhaja certa indulidade com o Analysis Workspace, mas né obrigtorio
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso ao Servicho de aplicativo de Customer Journey Analytics
 
 >[!IMPORTANT]
 >
->이 자습서는 특정 bootcamp 형식을 용이하게 하기 위해 만들어졌습니다. 액세스 권한이 없을 수 있는 특정 시스템 및 계정을 사용합니다. 액세스 권한이 없더라도 이 매우 자세한 내용을 통해 많은 것을 배울 수 있을 것입니다. 옵트캠프 참가자 중 하나이고 액세스 자격 증명이 필요한 경우 필요한 정보를 제공할 Adobe 담당자에게 문의하십시오.
+>피트 크림 라도 파라 촉진성 포르마토 베시피코 데 부토캠프 자습서입니다. Sistemas e contaas expificos aos quais voqae pode nao ter acesso, 상유틸리티자네스테 튜토리얼. 메스모 세엠 아케소, 보카인다 포데 아펜더 무이토 com a leitura deste contenudo detalhado. Voke um particante de Bootcamp e preccia das credenciais de acesso를 참조하십시오. e contaato com seu representate da Adobe para는 정보 아수(inforaçaas)로 입력합니다.
 
-## 연습
+## 운동
 
 [4.1 Customer Journey Analytics 101](./ex1.md)
 
-Customer Journey Analytics 개념에 대해 모두 알아봅니다.
+사이바 투도 소브레 오티토스는 Customer Journey Analytics을 한다.
 
-[4.2 Customer Journey Analytics에서 Adobe Experience Platform 데이터 세트 연결](./ex2.md)
+[4.2 Adobe Experience Platform 데이터 세트 다 Customer Journey Analytics 없음](./ex2.md)
 
-Adobe Experience Platform에서 Customer Journey Analytics으로 여러 데이터 세트를 사용하는 방법을 알아봅니다.
+사이바 코모 소비자 뮤틸로스 데이터 세트 다 Adobe Experience Platform은 Customer Journey Analytics을 하지 않습니다.
 
-[4.3 데이터 보기 만들기](./ex3.md)
+[4.3 크리우마 시각화 아상 데 도스](./ex3.md)
 
-Customer Journey Analytics에서 데이터 보기를 구성하는 방법을 알아봅니다.
+사이바 코모 구성 Customer Journey Analytics의 가시화 아상 데 도사.
 
-[4.4 Customer Journey Analytics의 데이터 준비](./ex4.md)
+[4.4 프리카상 데 도스 Customer Journey Analytics](./ex4.md)
 
-분석을 계속하기 전에 일부 데이터 준비를 수행하는 방법을 알아봅니다.
+아펜다 코모 페조 제파상 드 단테스 드 콘티날닷컴아 아날리스
 
-[4.5 Customer Journey Analytics 사용 시각화](./ex5.md)
+[4.5 시각화 아상 우산도 Customer Journey Analytics](./ex5.md)
 
-Customer Journey Analytics을 사용하여 Adobe Experience Platform 데이터를 시각화하는 방법을 알아봅니다.
+사이바 코모 코모 시각화 아르오 다도스 다 Adobe Experience Platform 우산도 o Customer Journey Analytics.
 
-[4.6 인사이트에서 다음으로 시작](./ex6.md)
+[4.6 De insights](./ex6.md)
 
-실시간 CPD 및 Adobe Journey Optimizer을 사용하여 대상의 형태로 통찰력을 활용 가능한 방법을 알아봅니다.
+아펜다 코모 우사르의 인사이트 또는 포르마 데 푸블리코 에아상 우산도 o CPD em 템포 리얼 e o Adobe Journey Optimizer.
 
-[모든 모듈로 돌아가기](../../overview.md)
+[레토날라 파라 토도스 오모두로스](../../overview.md)

@@ -5,106 +5,105 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 3%
+source-wordcount: '793'
+ht-degree: 1%
 
 ---
 
-# 4.4 Analysis Workspace의 데이터 준비
+# 4.4 프리카상 데 도스 Customer Journey Analytics
 
-## 목표
+## 오베티보
 
-- CJA의 Analysis Workspace UI 이해
-- Analysis Workspace의 데이터 준비 개념 이해
-- 데이터 계산 방법 알아보기
+- CJA에서 UO do Analysis Workspace 입력
+- 엔켄다 os conceitos de preaçao de dados no Analysis Workspace
+- 아펜다 아펠르카울쿠로스 데 도도스
 
-## 4.4.1 CJA의 Analysis Workspace UI
+## 4.4.1 UI에서 Analysis Workspace을 CJA에서 실행
 
-Analysis Workspace은 단일 Analytics 보고서의 모든 일반적인 제한 사항을 제거합니다. 사용자 지정 분석 프로젝트를 빌드하기 위한 강력하고 유연한 캔버스를 제공합니다. 많은 데이터 테이블, 시각화 및 구성 요소(차원, 지표, 세그먼트 및 시간 세부기간)를 프로젝트에 드래그하여 놓습니다. 즉시 분류 및 세그먼트를 만들고, 분석에 사용할 집단을 만들고, 경고를 만들고, 세그먼트를 비교하고, 흐름 및 폴아웃 분석을 수행하고, 비즈니스 내 누구와도 공유할 보고서를 큐레이션 및 예약합니다.
+O Analysis Workspace은 Todas를 무한 호스 티피카스 데 움 니코 렐라토리오 도 분석가로 제거합니다. Ele fornece uma tela robusta e flexível para prercriar projetos de analytics personalizados. Arraste e solte qualquer nude tabelas de dados, visualizasules e 구성 요소(차원, 메트리카, 세그멘토스 e granularidades de tempo) para projto. 크리아상 인스타네아 데 아바리아스 세그멘토스, 크리아상 드 코르테 아날리스, 크리아상 드 알랄르타스, 비교라상 드 세그멘토스, 아날라상 드 플루아칸소 e de falhas e relaattorrios de curaradoria e agendpartilhar com quer pessoa em segnocio
 
-Customer Journey Analytics은 플랫폼 데이터를 기반으로 이 솔루션을 제공합니다. 4분 동안의 개요 비디오를 시청하는 것이 좋습니다.
+O Customer Journey Analytics 트라에사 용카상 알렘 두도스 다 플라타포마 É Altamente recomendável asissitir a este vídeo de visugular de quatro minutos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-이전에 Analysis Workspace을 사용하지 않았다면 이 비디오를 보는 것이 좋습니다.
+Analysis Workspace 낭트의 보흐누카 우수, 레코멘데모에스테 비데오:
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### 프로젝트 만들기
+### 크리에서프로제토
 
-이제 첫 번째 CJA 프로젝트를 만들 차례입니다. CJA 내의 프로젝트 탭으로 이동합니다.
-**새로 만들기**&#x200B;를 클릭합니다.
+CJA를 위한 아고레 호라 데 크리아르세우 프라임로 프로빌로 프로제토 CJA를 위한 Vá para aba de projetos dentro do CJA입니다. Clique em **새로 만들기**.
 
 ![데모](./images/prmenu.png)
 
-그러면 이게 보입니다. 선택 **빈 프로젝트** 을 클릭한 다음 **만들기**.
+엠세구이다, 보스케베라 텔라아비아소입니다 셀레치온 **빈 프로젝트** 엔타앙 클레케 **만들기**.
 
 ![데모](./images/prmenu1.png)
 
-그러면 빈 프로젝트가 표시됩니다.
+Vokverá um projito vazio.
 
 ![데모](./images/premptyprojects.png)
 
-먼저 화면의 오른쪽 상단 모서리에서 올바른 데이터 보기를 선택해야 합니다. 이 예에서 선택할 데이터 보기는 다음과 같습니다 `vangeluwe - Omnichannel Data View`.
+Primeiro, certifique-se de selecionar a Visualizaço de dados correta에서 우수한 direito da da tela에 도달할 수 없습니다. 네스테 모예, 사용자 셀레치오나다 `vangeluwe - Omnichannel Data View`.
 
 ![데모](./images/prdv.png)
 
-그런 다음 프로젝트를 저장하고 이름을 지정합니다. 다음 명령을 사용하여 저장할 수 있습니다.
+엠세구이다, 보스케이라엘살바르 세우 프르제토 에다르 엄은 엘레 Vokpode Usar o seguinte comando para salbaar:
 
 | OS | 짧은 컷 |
 | ----------------- |-------------| 
 | Windows | Control + S |
 | Mac | Command+S |
 
-다음 팝업이 표시됩니다.
+Vokheverá este 팝업:
 
 ![데모](./images/prsave.png)
 
-다음 명명 규칙을 사용하십시오.
+상태 모델 사용:
 
 | 이름 | 설명 |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-다음을 클릭합니다. **저장**.
+Em Seguida, Client em **저장**.
 
 ![데모](./images/prsave2.png)
 
-## 4.4.2 계산된 지표
+## 4.4.2 메트리카 계산대
 
-데이터 보기에서 모든 구성 요소를 구성했지만 비즈니스 사용자가 분석을 시작할 준비가 되도록 일부 구성 요소를 조정해야 합니다. 또한 분석 중에 계산된 지표를 만들어 인사이트 검색 결과를 세부적으로 확인할 수 있습니다.
+엠보라 텐하모스 조직도 토도 os 구성 요소, Visualizaçao de dados, vocain da deve adaptar algues husuários de negocios jestein para iniciar suas análises. 알렘 디소, 두란테 퀄퀘어 프로세서 드 분석, 보스포데 크리알메트리카 계산 파라라 프로푼다는 데스코베르타 데 인사이트를 제공합니다.
 
-예를 들어 계산된 지표를 만듭니다 **전환율** 사용 **구매** 데이터 보기에서 정의한 지표/이벤트.
+코모 예시, 크리아레모스 타사 드 컨투아오 주산도 a métrica/evento Compras que definitionas na Visualizaçao de dados.
 
-### 전환율
+## 탁사 드 컨투앙
 
-계산된 지표 빌더 열기를 시작합니다. 을(를) 클릭합니다. **+** Analysis Workspace에서 첫 번째 계산된 지표를 만들려면
+Vamos começar는 De métracas caladas의 축약자 입니다. Clique em **+** 파라 슈아 primeira 메트리카 계산라다 노 Analysis Workspace
 
 ![데모](./images/pradd.png)
 
-다음 **계산된 지표 빌더** 표시됩니다.
+O **계산된 지표 빌더** irla aprecer:
 
 ![데모](./images/prbuilder.png)
 
-를 찾습니다. **구매** 왼쪽 메뉴에 있는 지표 목록에서 을 클릭합니다. 아래 **지표** click **모두 표시**
+Encontre **구매** na lista de métracas no menu do lado esquerdo. Em **지표** clique em **모두 표시**
 
 ![데모](./images/calcbuildercr1.png)
 
-이제 을(를) 끌어서 놓습니다 **구매** 계산된 지표 정의에 대한 지표입니다.
+아고라 아르세트 용테 **구매** na definiçao da métrica calculada.
 
 ![데모](./images/calcbuildercr2.png)
 
-일반적으로 전환율은 **전환 / 세션**. 따라서 계산된 지표 정의 캔버스에서 동일한 계산을 수행하겠습니다. 를 찾습니다. **세션** 지표를 드래그하여 정의 빌더 아래의 **구매** 이벤트.
+정상, 탁사 드 컨버에이션 **전환 / 세션**. 엔탕, 아모스 페이저 o mesmo cálculo na tela de definiçao de métrica calada. 메트리카 **세션** eArraste e solte-a no criador de dedefiniçao, evento 없음 **구매**.
 
 ![데모](./images/calcbuildercr3.png)
 
-분할 연산자가 자동으로 선택되었음을 확인합니다.
+Que o perador de divisao selecionado automaticamente를 관찰하십시오.
 
 ![데모](./images/calcbuildercr4.png)
 
-전환율은 일반적으로 백분율로 표시됩니다. 따라서 형식을 백분율로 변경하고 소수 2개를 선택합니다.
+탁사 드 컨투앙 오무멘테 대표는 em portcentagem입니다. 엔탕, 바모스 무다르 o 포르마토 파라포르센타감 e selecionar 2 casas decimais.
 
 ![데모](./images/calcbuildercr5.png)
 
@@ -114,46 +113,46 @@ Customer Journey Analytics은 플랫폼 데이터를 기반으로 이 솔루션�
 | ----------------- |-------------| 
 | 전환율 | 전환율 |
 
-화면에 다음과 같은 내용이 표시됩니다.
+푸르 피엠, 알테레 노 노메 마르탕 다 메트리카 계산라다:
 
 ![데모](./images/calcbuildercr6.png)
 
-잊지 말고 **저장** 계산된 지표 를 참조하십시오.
+나앙세케사 데 **엘살바르** 메트리카 계산대.
 
 ![데모](./images/pr9.png)
 
-## 4.4.3 계산된 Dimension: 필터(세그먼테이션) 및 날짜 범위
+## 4.4.3 차원 계산: Filtros(segmentaçao) e intervalos de datas
 
-### 필터: 계산된 Dimension
+### 필터: 차원 계산대
 
-계산은 지표에 대해서만 계산되지 않습니다. 분석을 시작하기 전에 몇 가지 분석을 만드는 것도 재미있습니다 **계산된 Dimension**. 이것은 기본적으로 **세그먼트** Adobe Analytics으로 돌아가겠습니다. Customer Journey Analytics에서 이러한 세그먼트를 **필터**.
+알쿠로스 나방 데브엠 사 아페나스 파라메트리카 낭트 드 이니시아 qualquer análise, também é interessante criar algumas **계산된 Dimension**. 아주 중요하며, 의미있고, **세그먼트** Adobe Analytics 없음. Customer Journey Analytics 없음, 세그멘토스 상카모도 드 **필터**.
 
 ![데모](./images/prfilters.png)
 
-필터를 만들면 비즈니스 사용자가 몇 가지 중요한 계산된 차원으로 분석을 시작할 수 있습니다. 이를 통해 몇 가지 작업을 자동화할 수 있을 뿐만 아니라 채택을 지원할 수도 있습니다. 여기 몇 가지 예가 있습니다.
+크리아상 데 필트로스 아주다라로스 데 네고시오는 분석 com algumas dimension sallowas es calculaas. 이소이라오타아살아그라파스 타레파스 알렘 드 아주다르 나파르 데 아도싸오 애비소 에스타오 알구스 엑소스:
 
-1. 자체 미디어, 유료 미디어,
-2. 신규 방문과 재방문
-3. 포기한 장바구니 고객
+1. 미디아 프로프리아, 미디아 파가,
+2. 비지타스 노바스 x 레코드
+3. Clientes.com carrinho abandonado
 
-이러한 필터는 분석 부품 전이나 중에 만들 수 있습니다(다음 연습에서 수행).
+필트로스 포데모체 크림 반테스 우 두란테 드 아나리스 (o que vocfarah no practiimo exilitioncio).
 
-### 날짜 범위: 계산된 시간 Dimension
+### Intervalos de datas: 차원 스템포 계산대
 
-시간 Dimension은 계산된 차원의 다른 유형입니다. 일부는 이미 만들어져 있지만 데이터 준비 단계에서 고유한 사용자 지정 시간 Dimension을 만들 수도 있습니다.
+치수 속도가 상투로 티포 데 차원 계산대로 알건즈 바 포르람 크림도, 마스 보카 캄페 푸데 크리아르스 프라프리아 치메산 데 템포 페르스타아제 나 파제 드 프라카도 드 데카오.
 
-Adobe에서는 분석가 및 비즈니스 사용자가 중요한 날짜를 기억하고 이를 사용하여 보고 시간을 필터링하고 변경할 수 있도록 해주는 이러한 계산된 시간 Dimension을 제공합니다. 우리가 분석을 할 때 우리의 마음에 떠오르는 일반적인 질문들과 의심들.
+에사스 디메수에스 드 템포 계산도 아주다라앙 아날라오스 데 네고시오는 레브르르 데이터를 가져오기 위해 우사-라스 여과르 e 알테르 또는 템포 데 릴라토리오 페르군타스 데 두비다스 타이피카스 취안도 파제모스 아나우리스:
 
-- 작년에 블랙 프라이데이가 언제였나요? 21-29일?
-- 12월에 TV광고를 언제 방송했나요?
-- 2018년 여름 매상은 언제부터입니까? 2019년과 비교하고 싶습니다 그런데, 2019년의 정확한 날을 알고 있나요?
+- 블랙프라이데이 카노 패스카도 요? os dias 21e 29를 입력하시겠습니까?
+- 까팔까르네 아캄파냐 드 TV 까드데브리오?
+- 2018년 벤다스 데 베랑 데 양자도 피제모스가? Quero comparar com 2019. 프로포시토, 보이스 다이아스 2019년 전
 
 ![데모](./images/timedimensions.png)
 
-이제 CJA Analysis Workspace을 사용하여 데이터 준비 연습을 마쳤습니다.
+Analysis Workspace 도 CJA의 아고라 보쿠리우 오 프리히오 드 데프레라상 데 두사오 데 쿠산도
 
-다음 단계: [4.5 Customer Journey Analytics 사용 시각화](./ex5.md)
+프로시마 에타파: [4.5 시각화 아상 우산도 Customer Journey Analytics](./ex5.md)
 
-[사용자 흐름 4로 돌아가기](./uc4.md)
+[레토나르 플루소 드 우시오 4](./uc4.md)
 
-[모든 모듈로 돌아가기](./../../overview.md)
+[레토날라 파라 토도스 오모두로스](./../../overview.md)

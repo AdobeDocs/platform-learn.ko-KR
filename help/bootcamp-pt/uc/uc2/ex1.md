@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '368'
 ht-degree: 2%
 
 ---
 
-# 2.1 웹 사이트를 방문하여 계정을 만드십시오
+# 2.1 사이트 방문자 e크리에이티브 sua 콘텐츠
 
-## 컨텍스트
+## Contextto
 
-알 수 없음에서 알려진 대로 여정은 고객 여정에서 획득까지 유지되는 것 같이 최근 브랜드들 중에서 가장 중요한 항목 중 하나입니다.
+조나다 도 데스코냐오 콘헤퀴도 두도 토피코스는 파라라(marcas atualmente), asim como a jornada do clientte, da aquisao 느슨함 조정(daaquisaang)
 
-Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼이 의사소통의 뇌이고 **기록 경험 시스템**.
+Adobe Experience Platform 데셈펜하 양파펠은 중요한 네사 조냐다 플라타포르마 에오 세레브로 다 코무퀴상, 오 **기록 경험 시스템**.
 
-플랫폼은 고객이 알려진 고객보다 더 광범위한 환경입니다. 웹 사이트의 알 수 없는 방문자도 플랫폼의 관점에서 고객의 경우 알 수 없는 방문자와 같은 모든 동작이 Platform으로 전송됩니다. 이러한 접근 방식 덕분에 이 방문자가 결국 알려진 고객이 되면 브랜드는 그 순간 이전에 발생한 상황을 시각화할 수 있습니다. 이것은 속성 및 경험 최적화 관점에서 도움이 됩니다.
+Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitantte desconhecido no site também é um clientte do ponto de vista da Plataforma e, commo tal, todo o comportamento de um visitantte desconhecido tamphém é enabado à Plataforma. 그라사사 아보다셈과, 양자도 세시탄테 비지탄테 에벤투알멘테 세토르나 um cliente conhecido, uma marca também pode visualizar o que aconteeu antes daquele momento. 이소아주다는 후마 원두보 데 오티미자상 데 트리부이상 e experiencia.
 
-## 고객 여정 흐름
+## 플루소 다 조나다 두 클리엔테
 
-이동 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 클릭 **모두 허용**. 이전 사용자 흐름의 탐색 행동에 따라 웹 사이트의 홈 페이지에서 개인화가 발생하는 것을 확인할 수 있습니다.
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **모두 허용**. com 베이스 no seu comportamento de navegaguaguo no fluxo de usuário anetran, voverá a personalizaçao acontecer na página indic do site.
 
 ![DSN](./images/web8.png)
 
-화면 왼쪽 상단 모서리에서 Adobe 로고 아이콘을 클릭하여 프로필 뷰어를 엽니다. 를 사용하여 프로필 뷰어 패널 및 실시간 고객 프로필을 봅니다. **Experience Cloud ID** 을 현재 알 수 없는 이 고객에 대한 기본 식별자로 사용하십시오.
+Visualizador de perfil에 대해 Clique no ícone do logotipo da Adobe을 더 우수하게 만들 수 없습니다. esquerdo da tela para abrir를 Visualizador de perfil로 요약합니다. Perfil do clientte real com o의 Verifique o painel do Visualizador de perfil e no Perfil do clientte tempo real com o **Experience Cloud ID** 코모 ID 사도르 프리마리오 파르 에스테 에네케 에이지 데스코니치도
 
 ![데모](./images/pv1.png)
 
-고객의 행동을 기반으로 수집된 모든 경험 이벤트를 볼 수도 있습니다.
+Voqtamém pode ver todos os Eventos de experiencia coletados com base no comportamento do clientte.
 
 ![데모](./images/pv3.png)
 
-을(를) 클릭합니다. **프로필** 화면 오른쪽 상단 모서리에 있는 아이콘.
+클리케 노 아이콘 **프로필** 더 좋은 디레토 다 텔라
 
 ![데모](./images/pv4.png)
 
-클릭 **계정 만들기**.
+Clique em **계정 만들기**.
 
 ![데모](./images/pv5.png)
 
-양식의 모든 필드를 채웁니다. 이메일 및 SMS 전달을 위해 나중에 연습에서 사용할 것이므로 이메일 주소 및 전화 번호에 실제 값을 사용하십시오.
+프레엔차 토도 os campos는 공식이다. um valor real para enderço de e-mail e numero de telefone, pois será usiíos poliíores para posterioes de e-메일 e SMS를 사용합니다.
 
 ![데모](./images/pv7.png)
 
-아래로 스크롤하여 클릭 **등록**.
+역할 매개 변수 e clique em **등록**.
 
 ![데모](./images/pv8.png)
 
-그러면 이게 보입니다.
+Em Seguida와 Seguinte serla exibido입니다.
 
 ![데모](./images/pv9.png)
 
-다음 이메일도 받게 됩니다.
+Voqtampém receberá o seguinte e-메일:
 
 ![데모](./images/pv10.png)
 
-그리고 몇 분 후에 이 이메일도 받게 됩니다.
+E alguns minutos depois, vokte tambéberá o seguinte 이메일:
 
 ![데모](./images/pv11.png)
 
-다음은 이 온보딩 여정이 어떻게 구성되었는지 살펴보겠습니다.
+Vamos conferir a seguir como jonada de onboarding foi configuada.
 
-다음 단계: [2.2 이벤트 만들기](./ex2.md)
+프로시마 에타파 [2.2 Crie seu evento](./ex2.md)
 
-[사용자 흐름 2로 돌아가기](./uc2.md)
+[레토나르 플루소 드 우수아리오 2](./uc2.md)
 
-[모든 모듈로 돌아가기](../../overview.md)
+[레토날라 파라 토도스 오모두로스](../../overview.md)

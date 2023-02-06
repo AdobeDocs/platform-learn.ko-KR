@@ -5,181 +5,183 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 4%
+source-wordcount: '984'
+ht-degree: 3%
 
 ---
 
-# 2.3 여정 및 이메일 메시지 만들기
+# 2.3 Crie sua jornada e mensaem de e-mail
 
-이 연습에서는 다른 사람이 데모 웹 사이트에서 계정을 만들 때 트리거해야 하는 여정을 구성합니다.
+네스트 운동료, 보테 이라 구성 조나다 현세서 카시오나다 알구앙 크림 쿠마 현장도 데드라상 현관입니다
 
-다음 위치로 이동하여 Adobe Journey Optimizer에 로그인합니다 [Adobe Experience Cloud](https://experience.adobe.com). 클릭 **Journey Optimizer**.
+Adobe Journey Optimizer Acessando에서 패사 로그인 [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-으로 리디렉션됩니다. **홈**  Journey Optimizer에서 보기. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 이라고 합니다 `Bootcamp`. 한 샌드박스에서 다른 샌드박스로 변경하려면 **Prod** 및 목록에서 샌드박스를 선택합니다. 이 예제에서 샌드박스의 이름은 다음과 같습니다 **Bootcamp**. 그러면 **홈** 샌드박스 보기 `Bootcamp`.
+Vokheserá rereconado para visualizaçao da **홈**  Journey Optimizer 없음. Primeiro, verifique se voca esto o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para, clique em **Prod** lista를 선택합니다. 네스트 모예, 노메 도 샌드박스 é **Bootcamp**. Vokheestarala na visualizahan da **홈** 샌드박스 보내기 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 2.3.1 여정 만들기
+## 2.3.1 설명 아하라
 
-왼쪽 메뉴에서 **여정**. 다음을 클릭합니다. **여정 만들기** 새 여정을 만들려면
+메뉴 항목 없음, 클릭 **여정**. Em Seguida, Client em **여정 만들기** 파라 루마 노바 조나다
 
 ![ACOP](./images/createjourney.png)
 
-그러면 빈 여정 화면이 표시됩니다.
+Vokheverá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-이전 연습에서 새 **이벤트**. 이렇게 이름을 지으셨어요 `yourLastNameAccountCreationEvent` 교체 `yourLastName` 성 이벤트 생성 결과입니다.
+운동 금지 전낭, **이벤트**. 보네오우오에벤토 `yourLastNameAccountCreationEvent` e치슈투유 `yourLastName` 펠로 세우 소브레놈 에벤토:
 
 ![ACOP](./images/eventdone.png)
 
-이제 이 여정의 시작으로 이 이벤트를 가져와야 합니다. 화면 왼쪽으로 이동하고 이벤트 목록에서 이벤트를 검색하여 이 작업을 수행할 수 있습니다.
+아고라 보테 데비는 evento eko o início desta jornada를 고려합니다. 보테 포데 페저소 인도 파라 오 라도 에케르도 다 텔라 에프쿠란도 펠로 에벤토 나리스타 드 에벤토스
 
 ![ACOP](./images/eventlist.png)
 
-이벤트를 선택하고 여정 캔버스에 끌어다 놓습니다. 이제 여정 모습은 다음과 같습니다.
+셀레치온 세우 에벤토, 아르세트 E 솔트 또는 에벤토 또는 텔라 드 조나다. 수아 호르나다 아고라 데베 세멜한테 아오 세구인테:
 
 ![ACOP](./images/journeyevent.png)
 
-여정에서 두 번째 단계로 짧게 추가해야 합니다 **대기** 단계. 화면 왼쪽으로 이동하여 **오케스트레이션** 섹션을 참조하십시오. 프로필 속성을 사용하고, 이 속성이 실시간 고객 프로필에 채워졌는지 확인해야 합니다.
+코모세군다 에타파 다 조나다, 보테 데디치오나르 쿠마 데 **대기**. 바 파라 오 라도 에케르도 다 텔라 아테 아 세상 **오케스트레이션** 파라 엔콘트라서 Vokusará atrivutos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Clientte tempo real.
 
 ![ACOP](./images/journeywait.png)
 
-이제 여정이 다음과 같습니다. 화면 오른쪽에서는 대기 시간을 구성해야 합니다. 1분으로 설정해주세요 이렇게 하면 이벤트가 실행된 후 프로필 속성을 사용할 수 있는 시간이 충분합니다.
+수아 조나라 아고라 데베 세멜한테 아오 세구인테 경. 라도 디레이토 다 텔라 보스케어, 템포 데 에스페라 형태의 구성이 없습니다. 꼬모 1분 이소다라 바스타테 템포 파라 아트리보토스는 헤스테필 잼 디스브로니베는 에벤토(Evento)를 위한 아파오스이다.
 
 ![ACOP](./images/journeywait1.png)
 
-클릭 **확인** 변경 사항을 저장하려면 을 클릭합니다.
+Clique em **확인** 파라 살바도르 아타수
 
-여정에서 세 번째 단계로 다음을 추가해야 합니다 **이메일** 작업. 화면 왼쪽으로 이동하여 **작업**&#x200B;에서 을(를) 선택합니다. **이메일** 작업을 수행한 다음, 여정의 두 번째 노드에 끌어서 놓습니다. 이제 이게 보입니다.
+코모 테세이라 에타파 다 조나다, 보레 데디치오나르 아상 **이메일**. Vá para o lado esquerdo da tela para **작업**, 셀레치온 **이메일** 아르라스트 이 솔테 아싸오 노 세그돈 노 노 다 수아 조나다 아고라오세구인테세라 엑시비도
 
 ![ACOP](./images/journeyactions.png)
 
 설정 **카테고리** to **마케팅** 전자 메일을 보낼 수 있는 전자 메일 서피스를 선택합니다. 이 경우 선택할 이메일 표면은 다음과 같습니다 **이메일**. 에 대한 확인란이 **이메일 클릭 수** 및 **이메일 열기** 둘 다 활성화되어 있습니다.
 
+정의 **카테고리** como **마케팅** e는 셀레치온우마피니시 de e-메일 que permita o enviro de e-mail로 보냅니다. Nesse caso는 Selecionada é E-메일을 피상으로 이메일로 보냅니다. 케익사스 데 셀레찬과 같은 인증피케-세데 케 **이메일 클릭 수** e **이메일 열기** 에스테잼 마카다
+
 ![ACOP](./images/journeyactions1.png)
 
-다음 단계는 메시지를 만드는 것입니다. 이렇게 하려면 **컨텐츠 편집**.
+시미오에타파 에치아르 수아 멘사셈입니다 파라, 회전 **컨텐츠 편집**.
 
 ![ACOP](./images/journeyactions2.png)
 
-## 2.3.2 메시지 만들기
+## 2.3.2 기준 a 메뉴
 
-메시지를 만들려면 **컨텐츠 편집**.
+파라 수아 멘사셈, 패크 **컨텐츠 편집**.
 
 ![ACOP](./images/journeyactions2.png)
 
-이제 이게 보입니다.
+O Seguinte serla exibido.
 
 ![ACOP](./images/journeyactions3.png)
 
-을(를) 클릭합니다. **제목 줄** 텍스트 필드.
+클리크 노 캄포 데 텍토 **제목 줄**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-텍스트 영역에서 쓰기 시작 **안녕**
+나알레아 데 텍토 **올라**
 
 ![Journey Optimizer](./images/msg6.png)
 
-제목란은 아직 끝나지 않았습니다. 다음으로, 필드에 대한 개인화 토큰을 가져와야 합니다 **이름** 다음 위치에 저장됩니다. `profile.person.name.firstName`. 왼쪽 메뉴에서 아래로 스크롤하여 **개인** 요소를 마우스로 가리킨 다음 화살표를 클릭하여 더 깊이 이동합니다.
+라냐데 아산토 나앙 에스타 프론타 Em Seguida, Voke Precision trazer o token de personalizaço **이름** 케 에스타 아르마젠라도 `profile.person.name.firstName`. 메뉴 à esquerda, 역할 para baixo para encontrar 또는 elemento 없음 **개인** e clique na seta para ir um nível mais profundo.
 
 ![Journey Optimizer](./images/msg7.png)
 
-이제 를 찾습니다. **전체 이름** 요소를 마우스로 가리킨 다음 화살표를 클릭하여 더 깊이 이동합니다.
+아고라 엔콘트로 요소 **전체 이름** e clique na seta para ir um nível mais profundo.
 
 ![Journey Optimizer](./images/msg8.png)
 
-마지막으로 **이름** 필드를 클릭하고 **+** 옆에 서명하십시오. 그러면 텍스트 필드에 개인화 토큰이 나타납니다.
+포르 필드, 캄포 현지화 **이름** 에이케 노 시움볼로 **+**  아오 라도 델레 Vokverá o 토큰 드 개인화 아파레서 no campo de texto.
 
 ![Journey Optimizer](./images/msg9.png)
 
-그런 다음 텍스트를 추가합니다 **감사합니다!** 질문에 답합니다. **저장**&#x200B;을 클릭합니다.
+em 스구이다, 아디온과 텍토, **아데데케모스는 수아 인스크사앙!** 팀 살바르 . Clique em **저장**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-그럼 다시 오셔야 합니다 클릭 **이메일 디자이너** 전자 메일의 컨텐츠를 만들려면
+엔탕, 보테 이라르토리나 파라 에스타 Clique em **이메일 디자이너**  파라 크루도 전자 메일
 
 ![Journey Optimizer](./images/msg11.png)
 
-다음 화면에서는 전자 메일의 컨텐츠를 제공하는 세 가지 다른 방법을 묻는 메시지가 표시됩니다.
+나프시마 텔라, 세라 세라이타이두 포네사 오 콘쿠두도 전자 메일 아트라베스 드 3 메토도스 디페렌츠:
 
-- **처음부터 디자인**: 빈 캔버스로 시작하고 WYSIWYG-editor를 사용하여 구조 및 콘텐츠 구성 요소를 드래그하여 놓아 전자 메일의 컨텐츠를 시각적으로 구성합니다.
-- **직접 코드 작성**: HTML을 사용하여 코딩하여 자신만의 이메일 템플릿을 만듭니다
-- **가져오기 HTML**: 편집할 수 있는 기존 HTML 템플릿을 가져옵니다.
+- **처음부터 디자인**: Comece com uma tela em branco는 편집자 WYSIWYG para arrastar e soltar a estrutura e os components de contexutudo para cruar visualmente o o contexudo e-mail을 사용합니다.
+- **직접 코드 작성**: 크리에세우 프로프리오 모델 데 e-메일 코디피카도 우산도 HTML
+- **가져오기 HTML**: Importe modelo HTML 실존엔테, 케 보테 포데라 에드타르입니다.
 
-클릭 **가져오기 HTML**.
+Clique em **가져오기 HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-파일을 끌어서 놓습니다 **mailtemplatebootcamp.html**&#x200B;다운로드할 수 있는 [여기](../../assets/html/mailtemplatebootcamp.html.zip). 가져오기를 클릭합니다.
+아르라스트 E 솔테 오 아르퀴보 **mailtemplatebootcamp.html**, 케 보스포데 바이샤 [여기](../../assets/html/mailtemplatebootcamp.html.zip). Importar를 클릭합니다.
 
 ![Journey Optimizer](./images/msg13.png)
 
-그러면 이 기본 이메일 템플릿이 표시됩니다.
+Vokhee verá este modelo de e-mail padrang:
 
 ![Journey Optimizer](./images/msg14.png)
 
-이메일을 개인화하겠습니다. 텍스트 옆에 있는 를 클릭합니다 **안녕** 그런 다음 **개인화 추가** 아이콘.
+Vamos 개인화 또는 이메일 클리크 아오 라도 텍토 **올라** e.em seguida, clique no ícone **개인화 추가**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-다음으로, **이름** 에 저장된 개인화 토큰 `profile.person.name.firstName`. 메뉴에서 **개인** 요소, 드릴 다운 **전체 이름** 요소를 클릭한 다음 **+** 아이콘 을 클릭하여 표현식 편집기에 이름 필드를 추가합니다.
+Em Seguida, Voke Precision trazer o token de personalizaçao **이름** 케 에스타 아르마젠라도 `profile.person.name.firstName`. 메뉴 없음, 현지화 또는 요소 **개인** e8500500000000000000000000000000000000000000002000000000000000000000070000000000000000000000000000000000000000000000000000000 **전체 이름** e클리크 노 아이콘 **+** 파라라디시오나오 캄포 **이름** 아오 편집장 de expressiang.
 
-**저장**&#x200B;을 클릭합니다.
+Clique em **저장**.
 
 ![Journey Optimizer](./images/msg36.png)
 
-이제 개인화 필드가 텍스트에 추가된 방식을 확인할 수 있습니다.
+아고라 보케 베라 코모 데 페르살리자상 푸이 아디시오나오 두 텍스투.
 
 ![Journey Optimizer](./images/msg37.png)
 
-클릭 **저장** 메시지를 저장합니다.
+Clique em **저장** 파라 살바도르 수아멘사셈
 
 ![Journey Optimizer](./images/msg55.png)
 
-을(를) 클릭하여 메시지 대시보드로 돌아갑니다 **화살표** 왼쪽 상단 모서리의 제목란 텍스트 옆에 있습니다.
+에케르도 항원을 받을 수 없는 린하 데 아센토, 파넬로센 클래리칸도 나세타오 라도 데 텍사스
 
 ![Journey Optimizer](./images/msg56.png)
 
-이제 등록 전자 메일 만들기를 완료했습니다. 왼쪽 상단 모서리의 화살표를 클릭하여 여정으로 돌아갑니다.
+아고라 보케는 크라상 도 세우 e-메일 드 지적을 포함합니다. 란케나 세타는 에스쿠도 파라 레트로나다 보다 우수한 에스쿠르를 얻을 수 없다.
 
 ![Journey Optimizer](./images/msg57.png)
 
-클릭 **확인**.
+Clique em **확인**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 여정 게시
+## 2.3.3 시만타
 
-여정에 이름을 지정해야 합니다. 다음을 클릭하여 수행할 수 있습니다 **속성** 화면 오른쪽 상단의 아이콘을 클릭합니다.
+보카인다 프레시다 엄노메 마르다 보이포데 파저 이소클리칸도 노 아이콘 **속성** 더 좋은 디레토 다 텔라
 
 ![ACOP](./images/journeyname.png)
 
-그런 다음 여기에 여정 이름을 입력할 수 있습니다. 사용 `yourLastName - Account Creation Journey`. 클릭 **확인** 변경 사항을 저장하려면 을 클릭합니다.
+보카인다 프레시다 엄노메 마르다 보이포데 파저 이소클리칸도 노 아이콘 `yourLastName - Account Creation Journey`. Clique em **확인** 파라 살바르는 머드앙차스.
 
 ![ACOP](./images/journeyname1.png)
 
-이제 을(를) 클릭하여 여정을 게시할 수 있습니다 **게시**.
+아고라 포데 퍼블리어 수아 조르나다 **게시**.
 
 ![ACOP](./images/publishjourney.png)
 
-클릭 **게시** 다시 한 번
+Clique em **게시**  노바멘테.
 
 ![ACOP](./images/publish1.png)
 
-이제 여정이 게시되었다는 녹색 확인 표시줄이 표시됩니다.
+Vokverá uma barra de confirmçao verde informando que sua jornada ethla esta publada.
 
 ![ACOP](./images/published.png)
 
-이제 이 운동을 끝마쳤습니다.
+보스케어 운동선수
 
-다음 단계: [2.4 여정 테스트](./ex4.md)
+프로시마 에타파: [2.4 Teste sua jornada](./ex4.md)
 
-[사용자 흐름 2로 돌아가기](./uc2.md)
+[레토나르 플루소 드 우수아리오 2](./uc2.md)
 
-[모든 모듈로 돌아가기](../../overview.md)
+[레토날라 파라 토도스 오모두로스](../../overview.md)

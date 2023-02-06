@@ -5,55 +5,54 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 072179998d19c32589280defdb257a86d8728fea
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1655'
 ht-degree: 2%
 
 ---
 
-# 4.3 데이터 보기 만들기
+# 4.3 크리우마 시각화 아상 데 도스
 
-## 목표
+## 오베티보
 
-- 데이터 보기 UI 이해
-- 방문 정의의 기본 설정 이해
-- 데이터 보기 내의 속성 및 지속성 이해
+- 엔켄다 a UI de Visualizaçao de Dados
+- 데디치카스 데 비지타
+- 압충다 아트리부이상 에지센시아 em 우마 시각화상 데
 
-## 4.3.1 데이터 보기
+## 4.3.1 시각화 아상 데 도스
 
-연결이 완료되면 이제 시각화에 영향을 주는 것으로 진행할 수 있습니다. Adobe Analytics과 CJA의 차이점은 시각화 전에 데이터를 정리하고 준비하려면 CJA에 데이터 보기가 필요하다는 것입니다.
+Agora, com sua conexao concluida da, é poghyvel progredir para increenciar a visualizaha입니다. 우마 디페렌사 o Adobe Analytics e o CJA é que o CJA precsa de uma visualizaçao de para librar e preparos dantes da visualizaçao
 
-데이터 보기는 컨텍스트 인식 방문 정의, 필터링 및 구성 요소를 호출하는 방법을 정의하는 Adobe Analytics의 가상 보고서 세트 개념과 유사합니다.
+Uma Visualizaang de Dados é semelhante ao conceptor de Virtual Report Suites no Adobe Analytics, onde voke estableelectee as definitiçules de visita com rehecimento de contexto, filtragem e também como 구성 요소 카마도로 구성됩니다.
 
-연결당 최소 1개의 데이터 보기가 필요합니다. 그러나 일부 사용 사례의 경우 다른 팀에 다른 통찰력을 주기 위해 동일한 연결에 대해 여러 데이터 보기를 갖는 것이 좋습니다.
-회사가 데이터 중심적이 되도록 하려면 각 팀에서 데이터를 보는 방식을 조정해야 합니다. 예:
+세라 필요히오, 미니모, 우마 비가시상 데 도가오 또는 코네상. 엔토토, 파라알건스 카소스 데 루소, é 올리티플라스 비주알리아수스 데 다아스 파라 a mesma conexao, com o objito de fornecer insights difertes para para는 구분을 제공합니다. 보데세자 쿠에 프레사 세자 앙다파 도르도, 포르마 아보르오 드 코모도 마르카다 카다 키프. 알건스 공장:
 
-- UX 디자인 팀을 위한 UX 지표만
-- Digital Analytics 팀이 1개의 언어만 사용할 수 있도록 Google Analytics에 대해 KPI 및 지표와 동일한 이름을 Customer Journey Analytics에 사용합니다.
-- 데이터 보기는 한 시장 또는 하나의 브랜드에 대한 인스턴스 데이터 또는 모바일 장치에 대해서만 표시하도록 필터링되었습니다.
+- Métracas de UX Apenas a equipment de UX Design
+- os mesmos para KPIs e métracas para o Google Analytics e para o Customer Journey Analytics, para que de analise digital fale apenas 1 숙어종(para equipment de analise digital fale apenas 1 dioma) 을 사용합니다.
+- Visualizaçao de Dados Filtrada para mostrar, por example, dados para apenas um mercado, ou marca, ou apenas Disposityvos moveis.
 
-설정 **연결** 화면에서 방금 만든 연결 앞에 있는 확인란을 선택합니다. 클릭 **데이터 보기 만들기**.
+Na tela de **연결** 마르케 아 카이사 데 셀레카상 다 코네시 보카부 데 크림 Clique em  **데이터 보기 만들기**.
 
 ![데모](./images/exta.png)
 
-으로 리디렉션됩니다. **데이터 보기 만들기** 워크플로우.
+Vokheserah rereconado para o fluxo de trabalho **데이터 보기 만들기** 워크플로우.
 
 ![데모](./images/0-v2.png)
 
-## 4.3.2 데이터 보기 정의
+## 4.3.2 정의 카상 드 시각화 상 데 도스
 
-이제 데이터 보기에 대한 기본 정의를 구성할 수 있습니다.
+아고라 보케드 구성어는 정의 라시카스 파라라 시각화 아상 드 다사로 구성된다.
 
 ![데모](./images/0-v2.png)
 
-다음 **연결** 이전 연습에서 생성한 이 이미 선택되어 있습니다. 연결 이름이 `yourLastName – Omnichannel Data Connection`.
+A **연결** 케 보크루우 노 운동회 전타 에스타 셀레치오나다 수아 콘네상 `yourLastName – Omnichannel Data Connection`.
 
 ![데모](./images/ext5.png)
 
-그런 다음 이 이름 지정 규칙에 따라 데이터 보기에 이름을 지정합니다. `yourLastName – Omnichannel Data View`.
+Em Seguida, 둥어 내 아 비가시리아상 데 도가두 세그네스 에스테 모드라로 데 노멘클래라투라: `yourLastName – Omnichannel Data View`.
 
-설명에 동일한 값을 입력합니다. `yourLastName – Omnichannel Data View`.
+Insight o mesmo valor para a a description: `yourLastName – Omnichannel Data View`.
 
 | 이름 | 설명 |
 | ----------------- |-------------| 
@@ -61,75 +60,75 @@ ht-degree: 2%
 
 ![데모](./images/1-v2.png)
 
-대상 **시간대**&#x200B;을 클릭하고 표준 시간대 를 선택합니다 **베를린, 스톡홀름, 로마, 베른, 브뤼셀, 비엔나, 암스테르담 GMT+01:00**. 일부 회사들이 다른 국가와 지역에서 운영함에 따라 이것은 매우 흥미로운 설정입니다. 각 국가에 맞는 시간대를 할당하면 페루에서는 대부분의 사람들이 오전 4시에 티셔츠를 구매한다는 등의 전형적인 데이터 실수를 피할 것이다.
+파라 **시간대**, selecione o fuso horário **베르림, 에스토콜모, 로마, 베르나, 브루셀라, 비엔나, 암스테르담 GMT+01:00**. Este é um cenário realmente interessante, pois algumas empresas operam em diferets países e geografias. 알로카르오 후시오 호라리오 세라리오 파히스 에비타라 에로스 디피코 드 다도스, 코모, 모체 모체, 아크레디타르 크 피소아 캄비세타스 4h no 페루
 
 ![데모](./images/ext7.png)
 
-기본 지표 이름 지정(개인, 세션 및 이벤트)을 수정할 수도 있습니다. 이 작업은 필수가 아니지만 일부 고객은 개인, 세션 및 이벤트 대신 사람, 방문 횟수 및 히트 수 (Customer Journey Analytics의 기본 이름 지정 전환)를 사용하려는 경우가 있습니다.
+보칭탐벨 포데 수정 이스소 나오 오바리가토리오, 마스 알건스 clientes gostam de usar Pessoas, Visitas e Acessos em vez de Pessoa, Sessang e Eventos (convençao de nomenclauatprao do Customer Journey Analytics).
 
-이제 다음 설정을 구성해야 합니다.
+Agora voke deve ter를 세구인티스 구성 aguidas 정의:
 
 ![데모](./images/1-v2.png)
 
-클릭 **저장 후 계속**.
+Clique em **저장 후 계속**.
 
 ![데모](./images/12-v2.png)
 
-## 4.3.3 데이터 보기 구성 요소
+## 4.3.3 구성 요소 다 시각화 아상 데 도스
 
-이 연습에서는 데이터를 분석하고 Analysis Workspace을 사용하여 시각화하는 데 필요한 구성 요소를 구성합니다. 이 UI에는 세 가지 주요 영역이 있습니다.
+네스트 운동료, 보테 이라 구성 오드로스 구성 요소, 요아리우스 파라 아올리사르 오데아도 e visualizah-los usando o Analysis Workspace. 네스타 IU, 홀레스 아레스 프린시파스:
 
-- 왼쪽: 선택한 데이터 세트에서 사용 가능한 구성 요소
-- 중간: 데이터 보기에 구성 요소가 추가되었습니다
-- 오른쪽: 구성 요소 설정
+- 라도 에케르도: 구성 요소 Dispatonoveis dos 데이터 세트 선택기
+- 미오: 구성 요소 아다시오나도아 Visualizaçao de Dados
+- 라도 디레토: 구성 요소
 
 ![데모](./images/2-v2.png)
 
 >[!IMPORTANT]
 >
->특정 지표나 차원을 찾을 수 없는 경우, 해당 필드가 `Contains data` 가 dataview에서 제거됩니다. 없는 경우 해당 필드를 삭제하십시오.
+>세보나오 엔콘트라 메트리카 아우드 치상피카, 베르피케 세오 캄포 `Contains data` foi removido de sua visualizaçao de dados. 카소 콘트라리오, 캄포
 >
 >![데모](./images/2-v2a.png)
 
-이제 분석에 필요한 구성 요소를 **추가된 구성 요소**. 이렇게 하려면 왼쪽 메뉴에서 구성 요소를 선택하고 중간에 있는 캔버스에 드래그하여 놓아야 합니다.
+아고라 보크레세 아라스타 e 솔타르 성분의 구성 요소 **추가된 구성 요소**. 파라, vokee deve selecionar os 구성 요소(à esquerda e arrastah-los e soltala-los na tela no meio)
 
-첫 번째 구성 요소로 시작하겠습니다. **이름(web.webPageDetails.name)**. 이 구성 요소를 검색하고 캔버스에 끌어다 놓습니다.
+Vamos começar com o primeiro 구성 요소: **이름(web.webPageDetails.name)**. Pesquise 구성 요소 e arreste-o e solte-o na tela.
 
 ![데모](./images/3-v2.png)
 
-이 구성 요소는 스키마 필드를 읽는 데 파생될 수 있는 페이지 이름입니다 `(web.webPageDetails.name)`.
+에세 구성 요소 데 오노메 다 파지나, 코모 포데 유도체 다 라이투라 두 캄포 스키마 `(web.webPageDetails.name)`.
 
-그러나 사용 **이름** 이름은 비즈니스 사용자가 이 차원을 빠르게 이해할 수 있도록 해주는 최상의 이름 지정 규칙이 아닙니다.
+엔토토, 유사 **이름** 코모 노메 나오 아 멜호르 콘벤싸오 드 노멘클라투라 아움 우수아리오 코포라티보 압필더 라피다멘테 치상
 
-이름을 다음으로 바꾸자 **페이지 이름**. 구성 요소를 클릭하고 **구성 요소 설정** 영역.
+Vamos muda o nome para **페이지 이름**. 구성 요소 없음 e o renomeie na a rea **구성 요소 설정**.
 
 ![데모](./images/3-0-v2.png)
 
-중요한 것은 **지속성 설정**. evar 및 prop의 개념은 CJA에 없지만 지속성 설정은 유사한 동작을 가능하게 합니다.
+As Configuaçules de persitencia 상 **지속성 설정**. CJA에서 Os의 Conceitos de e prop nao 확장, 구성 Ausaus de Persistaterncia possibilitam um compportsemelhante로 구성됩니다.
 
 ![데모](./images/3-0-v21.png)
 
-이러한 설정을 변경하지 않으면 CJA가 차원을 **Prop** (히트 수준). 또한 지속성을 변경하여 차원을 **eVar** (여정 전체에서 값을 유지합니다.)
+Se voknao alteressas confiaçaus, CJA irah interprear a dimenscomo **Prop** (니벨 데 오코르렛차) 알렘디소, 시데모들은 지스티엔시아 파라 톨라를 치수마 **eVar** (발로르 아오 룽오 다 조르나다.)
 
-eVar 및 Prop에 익숙하지 않다면 다음을 수행할 수 있습니다 [설명서에서 그들에 대해 자세히 알아보십시오](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Se vonang estiver findarizado com eVars e Props, [레아 메이스 소브레 isso 나](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)..
 
-페이지 이름 을 Prop으로 둡니다. 따라서 변경할 필요가 없습니다 **지속성 설정**.
+Vamos deixar o Nome da Página Como Prop. 데사 포마, 보크 노세어 아테나 네후마 **지속성 설정**.
 
 | 검색할 구성 요소 이름 | 새 이름 | 지속성 설정 |
 | ----------------- |-------------| --------------------| 
 | 이름(web.webPageDetails.name) | 페이지 이름 |  |
 
-그런 다음 차원을 선택합니다 **phoneNumber** 캔버스에 놓고 새 이름은 다음과 같습니다. **전화 번호**.
+Em Seguida, escolha a dimension **phoneNumber** e 솔테-a tela. 오노보 데브 사용자 **전화 번호**.
 
 ![데모](./images/3-1-v2.png)
 
-마지막으로, 모바일 번호가 사용자 수준에서 유지되므로 지속성 설정을 변경하겠습니다.
+포르피엠, 아모스 알테르는 Confiaçaus로, 푸스는 누메로 도 셀룰러 디베 퍼시에르의 니벨 도 우슈아우리오.
 
-지속성을 변경하려면 오른쪽 메뉴에서 아래로 스크롤하여 **지속성** 탭:
+파라 알테아, 퍼라 바이소 메뉴 à direita e abra aba **지속성**:
 
 ![데모](./images/5-v2.png)
 
-지속성 설정을 수정하려면 확인란을 선택합니다. 선택 **가장 최근** 그리고 **개인(보고 기간)** 범위, 그 사람의 마지막 모바일 번호만 신경 쓸 수 있습니다. 고객이 향후 방문 시 모바일을 채우지 않는다면 이 값이 채워지는 것을 볼 수 있습니다.
+마르크 a caixa de seleçao para modificar을 구성 아수 드 지스테니아의 구성으로 사용할 수 있습니다. 셀레치온 **가장 최근** e o escopo **개인(보고 기간)**, pois nos preocoupamos apenas com o ulutimo numero de cellular da pessoa. Se o cliente nang preencher o cellular em visitas futuras, voke ainda verá esse valor prenchido.
 
 ![데모](./images/6-v2.png)
 
@@ -137,11 +136,11 @@ eVar 및 Prop에 익숙하지 않다면 다음을 수행할 수 있습니다 [�
 | ----------------- |-------------| --------------------| 
 | phoneNumber | 전화 번호 | 가장 최근, 개인(보고 기간) |
 
-다음 구성 요소는 다음과 같습니다 `web.webPageDetails.pageViews.value`.
+O 프르시모 구성 요소 테 `web.webPageDetails.pageViews.value`.
 
-왼쪽 메뉴에서 `web.webPageDetails.pageViews.value`. 이 지표를 캔버스에 끌어다 놓습니다.
+메뉴 없음, 페스퀴즈 `web.webPageDetails.pageViews.value`. Arraste Solte Métrica na tela.
 
-이름을 (으)로 변경합니다. **페이지 보기 수** 아래에 **구성 요소 설정**.
+알테레 오노메 파라 **페이지 보기 수** 아래에 **구성 요소 설정**.
 
 | 검색할 구성 요소 이름 | 새 이름 | 속성 설정 |
 | ----------------- |-------------| --------------------| 
@@ -149,14 +148,13 @@ eVar 및 Prop에 익숙하지 않다면 다음을 수행할 수 있습니다 [�
 
 ![데모](./images/7-v2.png)
 
-속성 설정에 대해 이 빈 공간을 둡니다.
+파라(Para)는 구아수 데 트리부이카오, 디히사르모스 엠브랑코
 
-참고: 지표에 대한 지속성 설정은 Analysis Workspace에서도 변경할 수 있습니다. 경우에 따라 비즈니스 사용자가 어떤 것이 가장 지속성 모델인지 생각할 필요가 없도록 하기 위해 여기에서 설정할 수도 있습니다.
+옵바카오: 구성 아싸오에스 데 지스테냐나메트리카메틸캄포데모르 알타다스 노 Analysis Workspace. Em algues casos, voqe pode optar por configula-las aqui eviitar que os usuários de negocios que pensar qual é o melhorer modelo de persistencia. em algures casos, vote pode optar por configula-las aqui para eviitar que os usuarios de negocios que pensar qual é o melhorer modelo de persistencencia.
 
-다음으로, 아래 표에 표시된 대로 많은 Dimension 및 지표를 구성해야 합니다.
+Em 세구이다, 보테 테라 케 구성 바리아 치몽스 메트리카, 콘포르메 마르카도 타벨라 아바오.
 
-### Dimension
-
+### 차원
 
 | 검색할 구성 요소 이름 | 새 이름 | 지속성 설정 |
 | ----------------- |-------------| --------------------| 
@@ -175,39 +173,38 @@ eVar 및 Prop에 익숙하지 않다면 다음을 수행할 수 있습니다 [�
 | URL(web.webPageDetails.URL) | URL |  |
 | 사용자 에이전트 | 사용자 에이전트 | 가장 최근, 세션 |
 
-### 지표
+### 메트리카
 
 | 검색할 구성 요소 이름 | 새 이름 | 속성 설정 |
 | ----------------- |-------------| --------------------| 
 | 수량 | 수량 |  |
 | commerce.order.priceTotal | 매출  |  |
 
-그런 다음 구성이 다음과 같아야 합니다.
+Sua Configuration açao deve ser semelhante ao seguinte:
 
 ![데모](./images/11-v2.png)
 
-잊지 말고 **저장** 데이터 보기. 따라서 **저장** 지금
+나앙 세케사 데 살바르 수아 시각화상 드 도도스. 엔타앙 클락크 **저장**.
 
 ![데모](./images/12-v2s.png)
 
-## 4.3.4 계산된 지표
+## 4.3.4 메트리카 계산대
 
-데이터 보기에서 모든 구성 요소를 구성했지만 비즈니스 사용자가 분석을 시작할 준비가 되도록 일부 구성 요소를 조정해야 합니다.
+엠보라 텐하모스 조직도 토도 os 구성 요소, Visualizaçao de dados, vocain da deve adaptar algues husuários de negocios jestein para iniciar suas análises.
 
-기억나는 경우 장바구니에 추가, 제품 보기 또는 구매와 같은 지표를 데이터 보기로 특별히 가져오지 않았습니다.
-하지만 다음과 같은 차원이 있습니다. **이벤트 유형**. 따라서 3개의 계산된 지표를 만들어 이러한 상호 작용 유형을 파생해 보겠습니다.
+Se voke se lembra, nao troxemos expificamente Métricacas como Adicionar ao Carrinho, Visualizasan do produto ou Compras a Visualizaçao de ados. 엔토토, 테모스 치메상 카마다: **이벤트 유형**. 엔탕, 아모스 유래 티포스 드 아싸오 크릴란도 3 메트리카 산세
 
-첫 번째 지표로 시작하겠습니다. **제품 보기**.
+Vamos começar com a primeira Métrica: **제품 보기**.
 
-왼쪽에서 **이벤트 유형** 차원을 선택합니다. 그런 다음 을(를) 클릭하여 **포함된 구성 요소** 캔버스.
+라도 에케르도, 페스퀴즈 **이벤트 유형** 차원을 선택합니다. Em Seguida, arraste-o e solte-o na tela **포함된 구성 요소**.
 
 ![데모](./images/calcmetr1.png)
 
-새 지표를 선택하려면 클릭하십시오 **이벤트 유형**.
+Clique para selecionar a nova métrica **이벤트 유형**.
 
 ![데모](./images/calcmetr2.png)
 
-이제 구성 요소 이름 및 설명을 다음 값으로 변경합니다.
+아고알타레 오 노메 마르카오 두 구성 요소 파라 os 세구인테 발오르레스:
 
 | 구성 요소 이름 | 구성 요소 설명 |
 | ----------------- |-------------| 
@@ -215,31 +212,31 @@ eVar 및 Prop에 익숙하지 않다면 다음을 수행할 수 있습니다 [�
 
 ![데모](./images/calcmetr3.png)
 
-이제 만 카운트할 수 있습니다 **제품 보기** events. 이렇게 하려면 다음을 아래로 스크롤합니다. **구성 요소 설정** 우리가 **제외 값 포함**. 옵션을 활성화해야 합니다 **포함/제외 값 설정**.
+아고라 바모스 콘타르 아페나스 데 **제품 보기**. 단락 기호, 역할 매개 변수 사서함 em **구성 요소 설정** 아테 버 발로레스 데 **제외 값 포함**. 인증서-세 드 하빌타아 오파상 **포함/제외 값 설정**.
 
 ![데모](./images/calcmetr4.png)
 
-우리는 단지 세기만 하고 싶기 때문에 **제품 보기**&#x200B;를 지정하십시오. **commerce.productViews** 를 클릭합니다.
+코모 수용체 **제품 보기**, 특히 **commerce.productViews** 그리트리리오스.
 
 ![데모](./images/calcmetr5.png)
 
-이제 계산된 지표가 준비되었습니다!
+아고라 메트리카 산술라 프론타!
 
-다음으로, 동일한 프로세스를 **장바구니에 추가** 및 **구매** events.
+Em Seguida, Repeta o mesmo processo para eventos **장바구니에 추가** e **구매**.
 
 ### 장바구니에 추가
 
-먼저 동일한 차원을 드래그하여 놓습니다 **이벤트 유형**.
+Primeiro, arraste solte a mesma 차원 **이벤트 유형**.
 
 ![데모](./images/calcmetr1.png)
 
-동일한 변수를 사용할 때 중복 필드에 대한 팝업 경고가 표시됩니다. 을(를) 클릭합니다. **추가**:
+폴 베라 알레타 팝업드-오 캄포 디루타도, 포이에스스타모스는 메스마바벨 Clique em **추가**:
 
 ![데모](./images/calcmetr6.png)
 
-이제 지표 제품 보기에 대해 했던 것과 동일한 프로세스를 따릅니다.
-- 먼저 이름과 설명을 변경합니다.
-- 마지막으로 추가 **commerce.productListAdds** 장바구니에 추가만 카운트하는 기준으로 사용
+아고라, 시그아 o mesmo processo que fizemos para métrica Visualizacx de produto:
+- Primeiro Altere와 Nome는
+- Por fim, adicioone **commerce.productListAdds** 코모 크리테리오 파라라 카르타에나에 추가
 
 | 이름 | 설명 | 기준 |
 | ----------------- |-------------| -------------|
@@ -249,17 +246,17 @@ eVar 및 Prop에 익숙하지 않다면 다음을 수행할 수 있습니다 [�
 
 ### 구매
 
-먼저 동일한 차원을 드래그하여 놓습니다 **이벤트 유형** 이전 지표 모두에 대해 수행한 대로,
+Primeiro, arraste solte a mesma 차원 **이벤트 유형** 코모 피제모스 파라라 듀아스 메트리카스 앙테리아스
 
 ![데모](./images/calcmetr1.png)
 
-동일한 변수를 사용할 때 중복 필드에 대한 팝업 경고가 표시됩니다. 을(를) 클릭합니다. **추가**:
+폴 베라 알레타 팝업드-오 캄포 디루타도, 포이에스스타모스는 메스마바벨 Clique em **추가**:
 
 ![데모](./images/calcmetr7.png)
 
-이제 제품 보기 및 장바구니에 추가 지표와 동일한 프로세스를 따릅니다.
-- 먼저 이름과 설명을 변경합니다.
-- 마지막으로 추가 **commerce.purchases** 구매만 카운트하는 기준
+Agora, siga o o o mesmo processo que fizemos para as métras 제품 보기 를 장바구니에 추가합니다.
+- Primeiro Altere와 Nome는
+- Por fim, adicioone **commerce.purchases** como critérios para contenabilizar apenas as as compras
 
 | 이름 | 설명 | 기준 |
 | ----------------- |-------------| -------------|
@@ -267,36 +264,36 @@ eVar 및 Prop에 익숙하지 않다면 다음을 수행할 수 있습니다 [�
 
 ![데모](./images/calcmetr7a.png)
 
-그런 다음 최종 구성이 다음과 유사해야 합니다. 클릭 **저장 후 계속**.
+수아 구성 아오 세구인테 최종 데버 서입니다. Clique em **저장 후 계속**.
 
 ![데모](./images/calcmetr8.png)
 
-## 4.3.5 데이터 보기 설정
+## 4.3.5 구성 요소 다 구성 아상 데 도스
 
-다음 화면으로 리디렉션해야 합니다.
+보려 레그레시오나도 파라 에스타
 
 ![데모](./images/8-v2.png)
 
-이 탭에서 몇 가지 중요한 설정을 수정하여 데이터 처리 방법을 변경할 수 있습니다. 먼저 **세션 시간 초과** 30분까지 모든 경험 이벤트의 타임스탬프 덕분에 모든 채널에서 세션의 개념을 확장할 수 있습니다. 예를 들어 고객이 웹 사이트를 방문한 후 콜 센터에 전화하면 어떻게 됩니까? 사용자 지정 세션 시간 초과를 사용하면 세션 정의와 해당 세션이 데이터를 함께 병합하는 방법을 결정할 때 유연성이 부족합니다.
+네스타 아바, 보테 수정자 알구마스 구성상 파라 알가르타 아가르타 포르마 오 드 상파카도 가입니다. Vamos começar definindo **세션 시간 초과** 코모 30분 그라사스 아오 레지스트로 데 데이터 e 호라 데 카다 evento de experiencia, vokal pode estender o hersemo de uma sessao em todos os canais. 포르 모예, o que acontece se um clientte ligar para o 콜 센터에서 de visitor o site? 우산도 템포스 리마이트 데 세사오 개인아도스, 보케 템무타 플렉시빌리다드 파라 디치어 오 쿠마 수싸상 에모 에사 아소스 아소스 데소 도파입니다.
 
 ![데모](./images/ext8.png)
 
-이 탭에서 세그먼트/필터를 사용하여 데이터 필터링과 같은 다른 사항을 수정할 수 있습니다. 이 연습에서는 그렇게 하지 않아도 됩니다.
+네스타 아바 보데 모디피카(Nesta aba pode modificar) 아웃라타(coisas rotracar os dados usando segmento/filo) 보흐나파쉬라 파저 이소네세 운동
 
 ![데모](./images/10-v2.png)
 
-완료되면 을(를) 클릭합니다. **저장 및 완료**.
+양자도 단말, 클릭크 em **저장 및 완료**.
 
 ![데모](./images/13-v2.png)
 
 >[!NOTE]
 >
->나중에 이 데이터 보기로 돌아가서 언제든지 설정 및 구성 요소를 변경할 수 있습니다. 변경 사항은 이전 데이터가 표시되는 방식에 영향을 줍니다.
+>Vokpode Voltar a esta Visualizaçao de dados posteriormente alterar는 구성 ausees e os 구성 요소로 qualquer momento로 대체됩니다. 아테라앙 아페타라오인 코모 드도스 히스토리코스 모스타도스처럼
 
-이제 시각화 및 분석 부분을 계속 진행할 수 있습니다!
+아고라 보퀘데 연속악단 a parte de visualizaçao e anailise!
 
-다음 단계: [4.4 Customer Journey Analytics의 데이터 준비](./ex4.md)
+프로시마 에타파: [4.4 프리카상 데 도스 Customer Journey Analytics](./ex4.md)
 
-[사용자 흐름 4로 돌아가기](./uc4.md)
+[레토나르 플루소 드 우시오 4](./uc4.md)
 
-[모든 모듈로 돌아가기](./../../overview.md)
+[레토날라 파라 토도스 오모두로스](./../../overview.md)

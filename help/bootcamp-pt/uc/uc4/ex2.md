@@ -5,103 +5,104 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 2%
 
 ---
 
-# 4.2 Customer Journey Analytics에서 Adobe Experience Platform 데이터 세트 연결
+# 4.2 Adobe Experience Platform 데이터 세트 다 Customer Journey Analytics 없음
 
-## 목표
+## 오베티보
 
-- Data Connection UI 이해
-- Adobe Experience Platform 데이터를 CJA로 가져오기
-- 개인 ID 및 데이터 결합 이해
-- Customer Journey Analytics의 데이터 스트리밍에 대한 개념을 알아봅니다
+- 포괄적인 UI da conexao de dados
+- Traga os dados da Adobe Experience Platform para o CJA
+- Entenda a ID da 페소아 e a compilaçao de dados
+- 고객 여정에서 Aprendda o conceptor de dados 스트리밍
 
-## 4.2.1 연결
+## 4.2.1 Conexao
 
-이동 [analytics.adobe.com](https://analytics.adobe.com) Customer Journey Analytics에 액세스합니다.
+Acesse [analytics.adobe.com](https://analytics.adobe.com) Customer Journey Analytics에 대한 파라 메시지
 
-Customer Journey Analytics 홈페이지에서 **연결**.
+Na página indicial do Customer Journey Analytics, esse **연결**.
 
 ![데모](./images/cja2.png)
 
-여기서는 CJA와 플랫폼 간에 서로 다른 모든 연결을 볼 수 있습니다. 이러한 연결은 Adobe Analytics의 보고서 세트와 동일한 목표를 갖습니다. 그러나 이 자료의 수집은 전혀 다르다. 모든 데이터는 Adobe Experience Platform 데이터 세트에서 가져옵니다.
+퀘이 보크는 CJA e a Plataforma의 디페렌터스 케엑시르로 베르투 Essas conexauseules tem o mesmo objito dos conjuntos de relatorios no Adobe Analytics. 엔토토가 없고, 콜레타 도스 디도다 메톨트암테 Adobe Experience Platform의 Todos os dados vetm de 데이터 세트
 
-첫 번째 연결을 만들어 보겠습니다. **새 연결 만들기**&#x200B;를 클릭합니다.
+아모스 크리아르수아 코네상 Clique em **새 연결 만들기**.
 
 ![데모](./images/cja4.png)
 
-그러면 **연결 만들기** UI.
+Vokheverla a UI **연결 만들기** UI.
 
 ![데모](./images/cja5.png)
 
-이제 연결에 이름을 지정할 수 있습니다.
+아고라 보케데 다르 움노메 아수아 코네상
 
-다음 명명 규칙을 사용하십시오. `yourLastName – Omnichannel Data Connection`.
+상태 모델 사용: `yourLastName – Omnichannel Data Connection`.
 
-예: `vangeluw - Omnichannel Data Connection`
+예제: `vangeluw - Omnichannel Data Connection`
 
-사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 다음 샌드박스를 선택합니다 `Bootcamp`. 이 예제에서 사용할 샌드박스는 다음과 같습니다 **Bootcamp**. 또한 **일일 평균 이벤트 수** to **100만 미만**.
+Voqtampém deve selecionar 또는 Sandbox correto para usar. 메뉴 샌드박스 없음, 셀렉티온 세트 샌드박스, 사용자 정의 `Bootcamp`. 중첩된 예제, 또는 샌드박스 사용자 usado é o **Bootcamp**. E voktampém definir o **일일 평균 이벤트 수** to **100만 미만**.
 
 ![데모](./images/cjasb.png)
 
-샌드박스를 선택한 후 이 연결에 데이터 세트 추가를 시작할 수 있습니다. 클릭 **데이터 세트 추가**.
+Apos selecionar seu 샌드박스, Voke pode começar는 Esta Conexao의 adiconar 데이터 세트 Clique em **데이터 세트 추가**.
 
 ![데모](./images/cjasb1.png)
 
-## 4.2.2 Adobe Experience Platform 데이터 세트 선택
+## 4.2.2 Selecione 데이터 세트 다 Adobe Experience Platform
 
-데이터 집합 검색 `Demo System - Event Dataset for Website (Global v1.1)`. 클릭 **+** 데이터 세트를 이 연결에 추가하려면
+데이터 집합에 유지 `Demo System - Event Dataset for Website (Global v1.1)`. Clique em **+** 데이터 세트 a esta conexao의 para adiconar
 
 ![데모](./images/cja7.png)
 
-이제 확인란을 검색하고 선택합니다 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 및 `Demo System - Event Dataset for Call Center (Global v1.1)`.
+아고라 페스퀴즈 마르케와 카이사스 데 셀레상 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 및 `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-그럼 이걸로 주세요 **다음**&#x200B;을 클릭합니다.
+엠세구이다, 보스케베라 텔라아비아소입니다 Clique em **다음**.
 
 ![데모](./images/cja9.png)
 
-## 4.2.3 개인 ID 및 데이터 결합
+## 4.2.3 ID da 페소아 e 컴파일라상 드 도스
 
-### 개인 ID
+### ID da 페소아
 
-이제 목표는 이러한 데이터 세트에 참여하는 것입니다. 선택한 모든 데이터 세트에 대해 **개인 ID**. 각 데이터 세트에는 고유한 개인 ID 필드가 있습니다.
+O objetivo oora é juntar는 데이터 세트를 가져옵니다. 파라카다 데이터 세트 셀레치오나도, 보스케어 캄까마도 **개인 ID**. 카다 데이터 세트 세트 세우 프로프리오 데 ID 드 페소아
 
 ![데모](./images/cja11.png)
 
-보시다시피 대부분 개인 ID가 자동으로 선택됩니다. Adobe Experience Platform의 모든 스키마에서 기본 ID가 선택되기 때문입니다. 예를 들어, 다음 식에 대한 스키마가 있습니다 `Demo System - Event Schema for Call Center (Global v1.1)`여기서 기본 ID가 `phoneNumber`.
+코모 보스포데 버, 모리아어가 ID 다 페소아 셀레시오네이도 오토메이트이다. 이스소 오코르레 포르크 식별주체 é selecionado em cada esquema 또는 Adobe Experience Platform. 코모 예시, 아키 에스타 오 에스케마 파라 `Demo System - Event Schema for Call Center (Global v1.1)`, 온드 보스포데 베크 o 식별자 알바르 프리마리오 에스타 디퀴도 코모 `phoneNumber`.
 
 ![데모](./images/cja13.png)
 
-그러나 연결을 위해 데이터 세트를 함께 결합하는 데 사용할 식별자에 여전히 영향을 줄 수 있습니다. 데이터 세트에 연결된 스키마에 구성된 모든 식별자를 사용할 수 있습니다. 드롭다운을 클릭하여 각 데이터 세트에서 사용할 수 있는 ID를 탐색합니다.
+엔토어 없음, 보카앤다 포데 영향력 있는 ID 주체 세라 우샤도 파라 컴파일 데이터 세트 파라 수아 쿠에시 Vokpode Usar qualquer identifier configurado no esquema vinculado seu 데이터 집합을 구성합니다. 메뉴 일시 중단 없음, para explorer os ID의 discoonveis em cada 데이터 세트를 클릭합니다.
 
 ![데모](./images/cja14.png)
 
-언급했듯이 각 데이터 세트에 대해 서로 다른 개인 ID를 설정할 수 있습니다. 이를 통해 여러 소스의 다양한 데이터 세트를 CJA에서 함께 가져올 수 있습니다. NPS나 설문 조사 데이터를 가져오면 상황에 대해 이해하고 어떤 일이 왜 일어났는지 이해하는 데 매우 흥미롭고 도움이 됩니다.
+Conforme mencionado, vopode definir diferentes IDs de pessoa para 데이터 세트에 있습니다. Isso permite reunir diferences 데이터 세트 de mltiplas는 CJA에서 원본으로 사용됩니다. 트레이저 NPS u dados de pesquisa que seriam muito interessantes e uteis para comparender o contextho de acontecimento.
 
-개인 ID 필드의 값이 해당하는 한 개인 ID 필드의 이름은 중요하지 않습니다. 이제 `email` 하나의 데이터 세트에 `emailAddress` 를 입력합니다. If `delaigle@adobe.com` 는 두 데이터 세트 모두에서 개인 ID 필드에 대해 동일한 값이며 CJA는 데이터를 결합할 수 있습니다.
+O nome do campo ID da pessoa nao importante, desde que o valor nos campos ID da pessoa. 디가모스 크 테모스 `email` em um 데이터 세트 e `emailAddress` aem 초과 데이터 세트 정의 como ID da 페소아. Se `delaigle@adobe.com` Tiver o mesmo valor para o campo ID da pessoa em ambos os 데이터 세트 또는 CJA poderá compilar os dados 입니다.
 
-현재 알려진 대로 익명 동작을 결합하는 등의 몇 가지 다른 제한 사항이 있습니다. 다음 FAQ를 검토하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ko-KR).
+아투알멘테, existem algumas algulaus, como compilar o comportamento animo para conhecido. 퍼군타스주파수 아퀴로 영사: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ko-KR).
 
-### 개인 ID를 사용하여 데이터 결합
 
-이제 개인 ID를 사용하여 데이터 세트 결합의 개념을 이해했으므로 `email` 를 각 데이터 세트에 대한 개인 ID로 사용.
+### Compilando dados usando o o ID da 페소아
+
+Agora que vocde o concetito de compilar 데이터 세트, usando o ID da pessoa, vamos escoher `email` como ID da pessoa para cada 데이터 세트.
 
 ![데모](./images/cja15.png)
 
-각 데이터 세트로 이동하여 개인 ID를 업데이트합니다.
+Acesse cada 데이터 세트 단락 또는 ID da 페소아.
 
 ![데모](./images/cja12a.png)
 
-이제 필드 Person ID를 입력하여 `email` 드롭다운 목록에서 클릭합니다.
+아고라 프레엔차 o 캄포 ID 다 페소아 에스콜헨도 오 `email` 멜빵도 들어
 
 ![데모](./images/cja17.png)
 
-세 개의 데이터 세트를 결합하면 계속 진행할 수 있습니다.
+Depois de compilar os tras 데이터 세트, estamos prontos para continuar.
 
 | 데이터 세트 | 개인 ID |
 | ----------------- |-------------| 
@@ -109,22 +110,21 @@ Customer Journey Analytics 홈페이지에서 **연결**.
 | 데모 시스템 - 음성 도우미에 대한 이벤트 데이터 세트(글로벌 v1.1) | 이메일 |
 | 데모 시스템 - 콜 센터의 이벤트 데이터 세트(글로벌 v1.1) | 이메일 |
 
-또한 모든 데이터 세트에 대해 이러한 옵션이 활성화되어 있는지 확인해야 합니다.
+Voqtampém precisa garantir que, para cada 데이터 세트, essas opçaus estejam habilitadas:
 
-- 모든 새 데이터 가져오기
-- 기존 데이터 모두 채우기
+- 이차르토도스 노보스
+- Preencher todos os dexistentes
 
-클릭 **데이터 세트 추가**.
+Clique em **데이터 세트 추가**.
 
 ![데모](./images/cja16.png)
 
-클릭 **저장** 다음 연습으로 가보세요.
-을(를) 만든 후 **연결** CJA에서 데이터를 사용할 수 있으려면 몇 시간이 걸릴 수 있습니다.
+Clique em **저장** e vah para o prokximo 운동 시우 데포이스 데 크리아르 수아 **연결**, pode levar algumas horas até que destesegos jam disclooneveis no CJA.
 
 ![데모](./images/cja20.png)
 
-다음 단계: [4.3 데이터 보기 만들기](./ex3.md)
+프로시마 에타파: [4.3 크리우마 시각화 아상 데 도스](./ex3.md)
 
-[사용자 흐름 4로 돌아가기](./uc4.md)
+[레토나르 플루소 드 우시오 4](./uc4.md)
 
-[모든 모듈로 돌아가기](./../../overview.md)
+[레토날라 파라 토도스 오모두로스](./../../overview.md)

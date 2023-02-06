@@ -5,87 +5,87 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
-# 2.6 콜 센터의 개인화
+# 2.6 개인화상 콜 센터 없음
 
 이미 부트캠프 동안 여러 번 논의했듯이 고객 경험을 개인화하는 것은 옴니채널 방식으로 이루어져야 합니다. 종종 콜 센터는 나머지 고객 여정과 꽤 연결되지 않으며 이로 인해 종종 고객 경험이 좌절되지만 그럴 필요가 없습니다. 콜 센터를 Adobe Experience Platform에 실시간으로 쉽게 연결할 수 있는 방법의 예를 살펴보겠습니다.
 
-## 고객 여정 흐름
+## 플루소 다 조나다 두 클리엔테
 
-이전 연습에서 모바일 애플리케이션을 사용하여 **Buy** 버튼을 클릭합니다.
+운동 금지 전적, 우산도 오 압리카티보 마우벨, 보테 콤프로우 프루투 클리칸도 노 보탄오 **Buy**.
 
 ![DSN](./images/app20.png)
 
-주문 상태에 대해 질문이 있다고 가정해 보겠습니다. 어떻게 하시겠습니까? 일반적으로 콜센터에 전화를 합니다.
+아모스 수퍼 쿠마 테누마 페르군타 소브레가 세우페디도, 쿠포파리아? 정상문, 보레 리가리아 파라 콜센터
 
-콜센터에 전화를 하기 전에 **충성도 ID**. 웹 사이트의 프로필 뷰어에서 충성도 ID를 찾을 수 있습니다.
+낭트 드 리가르라 콜센터, 보정밀 사브르 세우 **충성도 ID**. Visualizador de Perfil 사이트에서 Voqpode Encontrolar Seu ID de Fidelidade.
 
 ![DSN](./images/cc1.png)
 
-이 경우 **충성도 ID** is **5863105**. 데모 환경에서 콜 센터 기능의 사용자 지정 구현의 일부로, **충성도 ID**. 접두사는 다음과 같습니다 **11373**&#x200B;로 설정되므로 이 예제에 사용할 충성도 ID는 **11373 5863105**.
+Nesse caso, o **충성도 ID** é **5863105**. 코모 파르트 드 노사 구현상 페르사아 페르사리사다가 다시 콜 센터 노 앰비앙테 드 데라상, 보테 데 디치오나르 프레픽소 오 세우 **충성도 ID**. O 프레픽소 é **11373**, 포르토어 또는 사용자 usado neste ensé 예시 ID de fidelidade **11373 5863105**.
 
-지금 그렇게 합시다 전화를 사용하고 번호로 전화하세요 **+1 (323) 745-1670**.
+아모스 페이저아고라 Use seu telifone e ligue para o numero **+1 (323) 745-1670**.
 
 ![DSN](./images/cc2.png)
 
-충성도 ID를 입력한 후 **#**. 충성도 ID를 입력합니다.
+세라 세루디타케 인트라 세이디데 세기도 **#**. Digite Seu ID de Vidiidade.
 
 ![DSN](./images/cc3.png)
 
-그러면 **안녕하세요, 이름**. 이 이름은 Adobe Experience Platform의 실시간 고객 프로필에서 가져옵니다. 그럼 3가지 선택사항이 있습니다 누르기 번호 **1**, **주문 상태**.
+보쿠비라 **여보세요, 수놈**&#x200B;네, 네. Esse nome é retirado do Perfil do Cliente em tempo real na Adobe Experience Platform. 보이팀 3 에스코라입니다 프레시온 오누메로 **1**, **주문 상태**.
 
 ![DSN](./images/cc4.png)
 
-주문 상태를 듣고 나면 키를 누를 수 있습니다 **1** 메인 메뉴나 다른 메뉴로 돌아가려면 2번을 누르십시오. 누르기 **2개**.
+데포이스 데 아우비르 o status do seu pedido, vokte terla a opçao de pressionar **1** para voltar 메뉴 주문서 ou pressionar 2. 프레시온 **2개**.
 
 ![DSN](./images/cc5.png)
 
-그런 다음 1에서 5 사이의 숫자를 선택하고 1이 낮음 및 5가 높은 콜 센터 경험을 평가하라는 메시지가 표시됩니다. 선택하세요.
+Em 세구이다, 세라 세라이타도 쿠크 아발리 수아 experiencia de 콜 센터, 셀레치오난도 누메로 1 e 5, 센도 1 baixo e 5 알토. 수아에콜라 파사.
 
 ![DSN](./images/cc6.png)
 
-이제 콜 센터에 대한 통화가 종료됩니다.
+수아차마다파라 콜센터 세라 엔케라다
 
-이동 [Adobe Experience Platform](https://experience.adobe.com/platform). 로그인하면 Adobe Experience Platform 홈 페이지가 표시됩니다.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). 데포이스 데 파저 로그인, 보히라 아세사(Voqiera acessar a página initial da da Adobe Experience Platform)
 
 ![데이터 수집](./images/home.png)
 
-계속하기 전에 **샌드박스**. 선택할 샌드박스의 이름은 다음과 같습니다 ``Bootcamp``. 이 작업은 텍스트를 클릭하여 수행할 수 있습니다 **[!UICONTROL 프로덕션 제품]** 화면 상단에 있는 파란색 줄에 표시됩니다. 적절한 [!UICONTROL 샌드박스]이렇게 하면 화면 변경 사항이 표시되고 이제 전용 화면에 표시됩니다 [!UICONTROL 샌드박스].
+낭트 드 티니어, 보어 정밀 선택 **샌드박스**. ONome do sandbox a ser selecionado ``Bootcamp``. É Poishivel 페이저는 Clicacando no texto **[!UICONTROL 프로덕션 제품]** 나린하 아줄 나파테 수페리어 다 데라 디포이즈 드 셀리시오나 [!UICONTROL 샌드박스] 고유도, 보카 베라 텔라 뮤다 아구 에스파아 [!UICONTROL 샌드박스] 전용.
 
 ![데이터 수집](./images/sb1.png)
 
-왼쪽 메뉴에서 **프로필** 및 **찾아보기**.
+Esquerda 메뉴 없음, Acesse **프로필** e **찾아보기**.
 
 ![고객 프로필](./images/homemenu.png)
 
-을(를) 선택합니다 **ID 네임스페이스** **이메일** 고객 프로필의 이메일 주소를 입력합니다. 클릭 **보기**. 을(를) 클릭하여 프로필을 엽니다.
+셀레치온 오 **ID 네임스페이스** **이메일** e insight o enderço de e-mail do seu perfil de clientte. Clique em **보기**. Clique para abrir seu perfil.
 
 ![DSN](./images/cc7.png)
 
-고객 프로필이 다시 표시됩니다. 이동 **이벤트**.
+Voqe verá seu perfil de clinovanente. Acesse **이벤트**.
 
 ![DSN](./images/cc8.png)
 
-events 아래에 eventType이 있는 2개의 이벤트가 표시됩니다. **callCenter**. 첫 번째 이벤트는 질문에 대한 답변의 결과입니다 **통화 만족도 평가**.
+Em eventos, voke verla 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultado da sua resposta à pergunta Avalie o seu n **통화 만족도 평가**.
 
 ![DSN](./images/cc9.png)
 
-약간 아래로 스크롤하면 옵션을 선택하여 **주문 상태**.
+역할 엄포코 파라오 보카 보베라 오 에벤토 포이 히셀레치오오 포카상 데 베리피카 오 **주문 상태**.
 
 ![DSN](./images/cc10.png)
 
-이동 **세그먼트 멤버십**. 이제 콜 센터를 통해 상호 작용한 경험을 기반으로 두 개의 세그먼트가 프로필에서 실시간으로 자격을 얻게 됩니다. 이러한 세그먼트 멤버십은 다른 채널에서 발생하는 커뮤니케이션 및 개인화에 영향을 줄 수 있으며 이러한 세그먼트 멤버십을 사용해야 합니다.
+Acesse **세그먼트 멤버십**. 아고라 보베르아 케 2 세그멘토스 세퀴피엠 em seu perfil, em tempo real, com base nas interacx que teve por meio do 콜 센터. 에사스의 아서상 데 세그멘토 데브엠 경 우사다 파라 임탄타 쿠알퀴라상 피스타오 아콘테케 em qualquer outtro 운하입니다.
 
 ![DSN](./images/cc11.png)
 
-이제 이 운동을 끝마쳤습니다.
+보스케어 운동선수
 
-[사용자 흐름 2로 돌아가기](./uc2.md)
+[레토나르 플루소 드 우수아리오 2](./uc2.md)
 
-[모든 모듈로 돌아가기](../../overview.md)
+[레토날라 파라 토도스 오모두로스](../../overview.md)

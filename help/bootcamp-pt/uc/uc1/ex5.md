@@ -5,57 +5,57 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 3%
+source-wordcount: '293'
+ht-degree: 1%
 
 ---
 
-# 1.5 조치 수행: facebook에 세그먼트 보내기
+# 1.5 아상: envie segmento para o Facebook
 
-이동 [Adobe Experience Platform](https://experience.adobe.com/platform). 로그인하면 Adobe Experience Platform 홈 페이지가 표시됩니다.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). 데포이스 데 파저 로그인, 보히라 아세사(Voqiera acessar a página initial da da Adobe Experience Platform)
 
 ![데이터 수집](./images/home.png)
 
-계속하기 전에 **샌드박스**. 선택할 샌드박스의 이름은 다음과 같습니다 ``Bootcamp``. 이 작업은 텍스트를 클릭하여 수행할 수 있습니다 **[!UICONTROL 프로덕션 제품]** 화면 상단에 있는 파란색 줄에 표시됩니다. 적절한 [!UICONTROL 샌드박스]이렇게 하면 화면 변경 사항이 표시되고 이제 전용 화면에 표시됩니다 [!UICONTROL 샌드박스].
+낭트 드 티니어, 보어 정밀 선택 **샌드박스**. OHome은 사용자 Selecionado Bootcamp를 샌드박스로 만듭니다. É Poishivel 페이저는 Clicacando no texto **[!UICONTROL 프로덕션 제품]** 나린하 아줄 나파테 수페리어 다 데라 데포이스 드 셀레치오나 샌드박스 고유도, 보스케라 아 데라 무다 아고라 에삼 [!UICONTROL 샌드박스] 전용.
 
 ![데이터 수집](./images/sb1.png)
 
-왼쪽 메뉴에서 **대상**, 그런 다음 **카탈로그**. 그러면 **대상 카탈로그**. in **대상**&#x200B;를 클릭합니다. **세그먼트 활성화** on **Facebook 사용자 지정 대상** 카드.
+메뉴 없음, vala para **대상** e, em seguida, vah para **카탈로그**. 보케베라 오 **대상 카탈로그**. Em **대상**, 클라이언트 **세그먼트 활성화** 카탕 **Facebook 사용자 지정 대상**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-대상을 선택합니다 **bootcamp-facebook** 을(를) 클릭합니다. **다음**.
+셀레치온 오 **bootcamp-facebook** e-clique em **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-사용 가능한 세그먼트 목록에서 이전 연습에서 만든 세그먼트를 선택합니다. **다음**&#x200B;을 클릭합니다.
+Na lista de segmentos dispooniveis, selecione o segmento que voke unitionio an extrunitionio. Clique em **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-설정 **매핑** 페이지에서 다음을 확인하십시오 **변형 적용** 확인란이 활성화되어 있습니다. **다음**&#x200B;을 클릭합니다.
+나파지나 **매핑**, verique se caixa de seleçao **변형 적용** 에스타 마르카다. Clique em **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-설정 **세그먼트 예약** 페이지에서 을 선택합니다 **대상자의 기원** 다음으로 설정 **고객으로부터 직접**. **다음**&#x200B;을 클릭합니다.
+나파지나 **세그먼트 예약**, selecione a **대상자의 기원** e defina como **고객으로부터 직접**. Clique em **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-마지막으로, **검토** 페이지를 클릭한 다음 **완료**.
+포르 피엠, 나파지나 **검토**, 클라이언트 **완료**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-이제 세그먼트가 Facebook 사용자 지정 대상에 연결됩니다. 고객이 이 세그먼트를 사용할 수 있을 때마다 Facebook 측의 사용자 지정 대상에 해당 고객을 포함하도록 Facebook 서버측으로 신호가 전송됩니다.
+Seu Segmento agera esta vinculado aos Publicos Personalizados do Facebook. Sempre um cliente se qualfica sgsegmento, um sinal será enabado do servedor(서버측) do Facebook para에는 Publico Personalizado no lado do Facebook의 Putublico clientte를 포함합니다.
 
-facebook에서는 Adobe Experience Platform 의 사용자 지정 대상 아래에 있는 세그먼트를 찾을 수 있습니다.
+facebook 없음, 보체 엔콘트라세우 세그멘토 다 Adobe Experience Platform em 푸블리코스 개인화:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-이제 Facebook에 사용자 지정 대상이 표시되는 것을 볼 수 있습니다.
+facebook의 아고라 보쿠푸프리코 페르빌리자도
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[사용자 흐름 1로 돌아가기](./uc1.md)
+[레토나르 플루소 드 우시오 1](./uc1.md)
 
-[모든 모듈로 돌아가기](../../overview.md)
+[레토날라 파라 토도스 오모두로스](../../overview.md)

@@ -5,55 +5,56 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 2%
 
 ---
 
-# 2.4 여정 테스트
+# 2.4 Teste sua jornada
 
-## 고객 여정 흐름
+## 플루소 다 조나다 두 클리엔테
 
-새롭고 깨끗하고 시크릿 브라우저 창을 열고 로 이동합니다. [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 클릭 **모두 허용**. 이전 사용자 흐름의 탐색 행동에 따라 웹 사이트의 홈 페이지에서 개인화가 발생하는 것을 확인할 수 있습니다.
+압라우마 노바넬라 네마 도 나베가도르 e vala [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **모두 허용**. com 베이스 no seu comportamento de navegaguaguo no fluxo de usuário anetran, voverá a personalizaçao acontecer na página indic do site.
 
 ![DSN](./images/web8a.png)
 
-을(를) 클릭합니다. **프로필** 화면 오른쪽 상단 모서리에 있는 아이콘.
+클리케 노 아이콘 **프로필** 더 좋은 디레토 다 텔라
 
 ![데모](./images/web8b.png)
 
-클릭 **계정 만들기**.
+Clique em **계정 만들기**.
 
 ![데모](./images/pv5.png)
 
-양식의 모든 필드를 채웁니다. 이메일 및 SMS 전달을 위해 나중에 연습에서 사용할 것이므로 이메일 주소 및 전화 번호에 실제 값을 사용하십시오.
+프레엔차 토도 os campos는 공식이다. um valor real para enderço de e-mail e numero de telefone, pois será usiíos poliíores para posterioes de e-메일 e SMS를 사용합니다.
 
 ![데모](./images/pv7a.png)
 
-아래로 스크롤합니다. 이제 연습 2.2에서 만든 사용자 지정 이벤트의 eventID를 입력해야 합니다. 여기에서 찾을 수 있습니다.
+역할 파라 백소입니다. 아고라 보크레데브 인서르 o eventID do seu evento personalizado vokrimo voke vokcrime no exilitiao 2.2.
 
 ![ACOP](./images/payloadeventID.png)
 
-이벤트 ID는 작성한 여정을 트리거하기 위해 Adobe Experience Platform에 전송해야 하는 것입니다. 다음 예에서 eventID입니다. `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+O eventID é o que precisa ser envado à Adobe Experience Platform para acionar a jornada que voke constructure. Esté o eventID neste 예시:
+`19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-필드에 eventID를 입력합니다 **계정 생성 이벤트 ID** 을(를) 클릭합니다. **등록**.
+Preencha o eventID no campo **계정 생성 이벤트 ID** e-clique em **등록**.
 
 ![데모](./images/pv8a.png)
 
-그러면 이게 보입니다.
+Em 세구이다. 텔라 아비소 세라 exibida:
 
 ![데모](./images/pv9.png)
 
-이 이메일도 받게 됩니다. 이 이메일은 이 연습의 일부로 직접 만든 이메일입니다.
+Voqtampém reciberá este e e-mail, que é o e-mail que voke mesmo criou parte destine explisiacio.
 
 ![데모](./images/pv10a.png)
 
-이제 이 운동을 끝마쳤습니다.
+보스케어 운동선수
 
-다음 단계: [2.5 모바일 앱 설치 및 사용](./ex5.md)
+프로시마 에타파: [2.5 설치 e 사용 - aplicativo 모델](./ex5.md)
 
-[사용자 흐름 2로 돌아가기](./uc2.md)
+[레토나르 플루소 드 우수아리오 2](./uc2.md)
 
-[모든 모듈로 돌아가기](../../overview.md)
+[레토날라 파라 토도스 오모두로스](../../overview.md)

@@ -2,111 +2,109 @@
 title: Experience Makers Bootcamp - 브라질
 description: Experience Makers Bootcamp 참여자의 시작 지점
 doc-type: multipage-overview
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 1%
+source-wordcount: '775'
+ht-degree: 0%
 
 ---
 
 # Experience Makers Bootcamp
 
-## 개요
+## 비상 게랄
 
-포르투갈어: 많은 조직에서는 고객 여정에 존재하는 마찰을 인식하지 못하고 있습니다. 이는 고객 커뮤니케이션을 조정함에 있어 분산된 접근 방식 때문입니다. 뛰어난 고객 경험을 디자인하고 전달하기 위해 데이터, 프로필 및 콘텐츠를 완벽하게 정렬해야 합니다.
+무이타스 엠프레사스 에스타앙 시엔테스 트리투 쿠크, 기존의 na jornada dos clientes, conmonocaçao com o clientte의 결과 Dados, perfil e contexthuam precistoam perfeitamente alinhados para projetar e ofrecencias excepcionais ao consumidor.
 
-이 부트캠프에 참여하여 플랫폼 기반 접근 방식을 통해 고객 여정을 개선하기 위해 마찰점을 식별하고 제거하는 데 필요한 통찰력을 얻는 방법을 알아보십시오.
+참가자 대상 Bootcamp para aprender abrender abordagada em plataforma pode ajuda na obtençao dos insights 필수 매개 변수 식별자 e remover pontos de atrito para aprimorar a jornada do seu clientte.
 
-규모에 따른 개인화는 무엇을 향상시킬 수 있는지를 이해하는 것으로 시작되며, 고객의 실시간 보기가 이에 중요합니다. 인사이트로 인해 작업이 진행되므로 더 많은 인사이트를 얻을 수 있습니다. Adobe의 고유한 플랫폼 중심 접근 방식을 사용하면 기술 변화를 유도할 수 있을 뿐만 아니라, 채널별 고객 경험 대신 조직, 고객 팀 및 전체적인 고객 경험을 제공할 수 있는 효과도 얻을 수 있습니다.
+개인화 아상 에스칼라 코메카 com a compreensang do que pode ser aprimorado e, para isso, uma visao em tempo real do cliente é essencial. Insights Levam à açao, o que leave a mais insights. 페라멘타스 파라로 Adobe 포카다 나 플라타포마 포르네케, 알렘 드 충시야르 아반송 테크노고코스, 임탄타르 수가상, 수에퀴드 수에쿠마 수에쿠마 커패시다데 드 오페레서 exfrecencia 홀리시앗오 트리앙테 드 experiencia 홀리엔시아 드 피치앙테 르 클리앙테
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 
 ## 의제
 
-### 1일
+### 미디어 1
 
-10.00 - 10.30: 킥오프 및 소개
+9.00 - 10.00: 카페 다 만항 및 네트워킹
 
-10.30 - 11.15: 화이트보드 세션: &quot;1-1 개인화, 마찰 사냥, 사일로, Adobe POV&quot;
+10.00 - 10.30: 보아스빈다스 &#x200B;
 
-11.15 - 11.30: 브레이크
+10.30 - 11.00: 조르나다 클리엔테: &quot;가능한 예술품 &quot; (세사앙 우레스)&#x200B;.
 
-11.30 - 12.00: &quot;고객 여정 데모 - 가능한 기술&quot;
+11.00 - 12.00: 개인화 아상 지수 vs. Ecossistemas em 사일로(sessaang&#x200B;다운로드)
 
-12.00 - 12.45: 화이트보드 세션: &quot;솔루션 아키텍처 분류&quot;
+12.00 - 13.30: 알모소 e &#x200B; 네트워킹
 
-12.45 - 13.45: 브레이크
+13.30 - 14.30: 아르키테추라 드 솔카상(수상 우상) &#x200B;
 
-13.45 - 15.00: 사용자 흐름 1: &quot;고객 확보&quot; 실습
+14.30 - 16.00: 직접 수행합니다. 아퀴시상 &#x200B;
 
-15.00 - 15.15: 브레이크
+16.00 - 16.15: 브레이크 시간
 
-15.15 - 17.00: 사용자 흐름 2: &quot;등록 및 온보딩&quot; 실습
+16.15 - 18.00: 직접 수행합니다. 지적 및 &#x200B; 온보딩
 
-### 2일
 
-08.00 - 09.30: 아침식사: &quot;사용자 여정 기반 전달, 팀 구조, 게재 백로그 소개&quot;
+### Dia 2
 
-09.30 - 09.45: 브레이크
+09.00 - 10.00: 카페 다 만항 및 네트워킹
 
-09.45 - 11.15: 사용자 흐름 3: &quot;물리적 및 디지털&quot; 실습
+10.00 - 10.45: Introduçao: 조르나다 클리엔테 에슈투라 데 타임 백로그
 
-11.15 - 11.30: 브레이크
+10.45 - 12.00: 직접 수행합니다. 온라인 또는 오프라인 통합
 
-11.30 - 12.30: 사용자 흐름 3 지속
+12.00 - 13.40: 알모소 e &#x200B; 네트워킹
 
-12.30 - 13.30: 점심
+13.45 - 14.45: 직접 수행합니다. 아나를리스 드 조나다스 - 피들리잔도 예리턴스
 
-13.30 - 14.30: 사용자 흐름 4: &quot;고객 분석&quot; 실습
+14.45 - 16.00: 파스코스
 
-14.30 - 15.00: 결론, 요약 및 다음 단계
+16.00 - 19.00: 사용자 흐름 4: 네트워킹 및 행복한 시간
 
-15:30: 출발
 
-## 사전 요구 사항
+## 전제 조건
 
-- Adobe Experience Platform에 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform 데이터 수집에 대한 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 의 bootcamp 웹 사이트에 액세스 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- 아세소 아 콜레타 데 도다 Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao 사이트는 bootcamp em [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
->이 자습서는 특정 워크숍 형식을 용이하게 하기 위해 만들어졌습니다. 액세스 권한이 없을 수 있는 특정 시스템 및 계정을 사용합니다. 액세스 권한이 없더라도 이 매우 자세한 내용을 통해 많은 것을 배울 수 있을 것입니다. 워크샵 중 하나에 참여하고 액세스 자격 증명이 필요한 경우 Adobe 담당자에게 연락하여 필요한 정보를 제공합니다.
+>Esto 자습서 Foi criado para facilar formato specicio de workshop. Sistemas e contaas expificos aos quais voqae pode nao ter acesso, 상유틸리티자네스테 튜토리얼. 메스모 세엠 아케소, 보카인다 포데 아펜더 무이토 com a leitura deste contenudo detalhado. Voké um particante de um dos workshop e preccia das credenciais de acesso, contaato com seu representate da Adobe para receber를 정보 아수(inforaçaas)로 입력합니다. .
 
-## 아키텍처
+## 아르키테투라
 
-실습 위주의 연습을 시작하기 전에 이 자습서의 뒷부분에 있는 아키텍처를 살펴보십시오. 이 부트스트림은 Adobe Experience Platform과 관련된 다양한 기능과 기능을 심층하고 다양한 소스 및 대상 간의 여러 통합에 대해 논의할 예정입니다. 이 자습서의 아키텍처와 Adobe Experience Platform의 전체 위치를 엔터프라이즈 에코시스템에 제대로 이해하려면 아키텍처 비디오 및 다이어그램을 검토하십시오.
+Anttes de começar os exisioncios práticos, Consulte a arquitteura pertrás destine tutorial. Este bootcamp irah detalhar 바드리오스의 재귀 e funccionalidades da Adobe Experience Platform e discutir multiplas integrauseus em varias fontes e destinos. 파라 압축기 드 포메하다 a arquitteura por trás destttecet e o posionento geral da Adobe Experience Platform no seu ecossistema corporation, comece reviso vídeo e o diaggraphina da arquitaama.
 
-이동 [아키텍처](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Acessar [아르키테투라](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=pt-BR).
 
-## 비디오
+## 비데오스
 
-Adobe Experience Makers Bootcamp의 주요 목적은 조직에서 규모에 따른 개인화의 의미와 현재 대부분의 조직에서 수행하는 것과는 어떻게 다른지를 이해할 수 있도록 돕는 것입니다. 옴니채널 환경에서 일관되고 상황에 맞는 실시간으로 고객 경험을 제공하려면 모든 것을 한 번만 정의하고 모든 곳에서 재사용할 수 있는 플랫폼 중심의 사고방식이 필요합니다. Adobe에서는 실제 여정을 통해 웹 사이트, 모바일 앱, 콜 센터 및 오프라인 매장 환경 전반에서 고객 상호 작용을 결합하여 규모에 맞게 개인화가 실제로 어떤 의미인지 직접 보여줄 수 있습니다.
+O objetivo의 주도자는 nosso bootcamp para Experience Makers é ajular를 주요 개인화 인물인 Escala e como isso é diferente do que a maoria das empresas fazem atualmente의 핵심 인물입니다. 파라 오페레서 experiencias do cliente sejam consistent, contextuais e em tempo real em um mundo omnichannel, voke de uma mentalidade corque a plataforma em primeaio lugar, onde tudo definido apena e reutilizzado em todos os lugares. No Bootcamp, Levamos voke em jornada real que combine eags com o cliente no site, aplicativvo mowel, No call center e no ambiente offline da roja mostrar o que, personalizagul escalation a realmenta realmenta realtica, de maneira prática.
 
 >[!VIDEO](https://video.tv.adobe.com/v/345446?quality=12&enable=on)
 
-Adobe Experience Platform과 Adobe 이외 애플리케이션 간의 강력한 통합 및 부트스트림의 요소를 소개하는 여러 다른 비디오가 생성되었습니다. 아래 링크를 클릭하여 해당 비디오에 대한 개요를 확인합니다.
+바르리오스 아웃로스 피데우스 포르암 크리아도 데바 Adobe do Bootcamp e integraçules poderosas entera Adobe Experience Platform e aplicativos que nsão da. 링크 abaixo para encontra visuma geral des vídeos를 클릭합니다.
 
-이동 [비디오](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+기술: [비데오스](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=pt-BR).
 
 ## YouTube
 
-흥미로운 비디오를 추가로 찾을 수 있습니다 [YouTube 채널](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+É 보유상 엔콘트라바르디오스 이테레스산테스 [em nosso 운하 도 YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## 사용자 흐름
 
-[1. 취득](./uc/uc1/uc1.md)
+[1. 아키시상](./uc/uc1/uc1.md)
 
-이 사용자 흐름에서는 Real-Time CDP을 사용하여 알려진 인증된 사용자와 함께 알 수 없고 인증되지 않은 사용자를 위한 획득 중심 사용 사례를 구현하는 데 필요한 모든 요소를 이해할 수 있습니다.
+네스트 사용자 흐름, 보케라 압축기 todos os elementos perimplementos casos perimplemento casos de afocus o em aquisiao para usuarios desconhecidos e nautcentricados, em conjunto com usuarios auticades e conhecidos usando a Real-Time CDP.
 
-[2. 등록 및 온보딩](./uc/uc2/uc2.md)
+[2. 지적](./uc/uc2/uc2.md)
 
-이 사용자 흐름에서는 Real-Time CDP 및 Adobe Journey Optimizer을 사용하여 등록 및 온보딩 사용 사례를 구현하는 데 필요한 모든 요소를 이해할 수 있습니다.
+네스트 사용자 흐름, 보케이라필더 todos os elementos 필요 브라리오스 구현자 casos de novo e onboarding usando a Real-Time CDP e o Adobe Journey Optimizer.
 
-[3. 물리적 및 디지털을 혼합하는 행위](./uc/uc3/uc3.md)
+[3. 디지털로 하는 콤비나상 두 히시코 ](./uc/uc3/uc3.md)
 
-이 사용자 흐름에서는 Real-Time CDP 및 Adobe Journey Optimizer을 사용하여 온라인 및 오프라인 채널에서 고객 경험을 일관되게 개인화합니다.
+Nesse 사용자 흐름, Voke irah personalizar a experiencia do cliente canais online e offline de maneira consistent, usando a Real-Time CDP e o Adobe Journey Optimizer.
 
 [4. 고객 여정 분석](./uc/uc4/uc4.md)
 
-이 사용자 흐름에서는 Customer Journey Analytics에 익숙해지며 고객이 한 채널에서 다른 채널로, 온라인, 오프라인, 콜센터 등으로 어떻게 진화하고 있는지 파악할 수 있습니다.
+네스트 사용자 흐름, voke irah se 친숙한 아마지르 com o Customer Journey Analytics e obter information acx sobre os clientes estang evolitum de canal para, do online para o offline, para o call center e muito mais.
