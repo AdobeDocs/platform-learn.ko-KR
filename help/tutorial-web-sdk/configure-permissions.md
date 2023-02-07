@@ -3,7 +3,7 @@ title: 자습서에 대한 권한 구성
 description: 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서를 완료하는 데 필요한 권한을 Experience Platform 웹 SDK에 요청하고 구성하는 방법을 알아봅니다.
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4eaa7ae1cf4c4c1478484eaeb877733a43c6fdf5
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 6%
@@ -23,7 +23,7 @@ Experience Platform 웹 SDK에 대한 액세스를 요청하고 이 자습서를
 
 Real-Time CDP과 같은 플랫폼 기반 애플리케이션의 고객이 아닌 경우에도 이러한 기능을 모든 Experience Cloud 고객이 사용할 수 있어야 합니다.
 
-* 에 액세스 **기본 프로덕션**, **&quot;Prod&quot;** 샌드박스 ( )
+* 에 액세스 **기본 프로덕션**, **&quot;Prod&quot;** 샌드박스
 * 액세스 권한 **[!UICONTROL 스키마 관리]** 및 **[!UICONTROL 스키마 보기]** 아래에 **[!UICONTROL 데이터 모델링]**
 * 액세스 권한 **[!UICONTROL ID 네임스페이스 관리]** 및 **[!UICONTROL ID 네임스페이스 보기]** 아래에 **[!UICONTROL Identity Management]**
 * 액세스 권한 **[!UICONTROL 데이터 스트림 관리]** 및 **[!UICONTROL 데이터 스트림 보기]** 아래에 **[!UICONTROL 데이터 수집]**
