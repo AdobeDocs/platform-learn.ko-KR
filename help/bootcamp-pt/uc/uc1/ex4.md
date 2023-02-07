@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Seu Segmento agera esta ativado para o Adobe Target.
 >
 >Imediatamente aplus criar seu destino do Adobe Target no Real-Time CDP, pode levaraté uma hora que o destino seja ativado. 에스테레 엄템포 데 에스페라 니코 데비도 아 디치카오 다 구성상 뒤쪽 끝입니다. 파라 세그멘테이션의 힘 데 에스페라 산 데 1 호라 에 구성 아상 두 끝 포어 concluids, 시그멘토스 드 보르다 궁상 아디시오아오 데스티도 Adobe Target 에스타라상 디스타라상 파르 디스타르메테오 등은 파라 세그멘테이션의 레알
 
-## 1.4.2 sua atividade baseada em coorado do Adobe Target 구성
+## 1.4.2 Adobe Target에서 하위 활동 구성
 
 Real-Time CDP 에스타타구라타족 환경(Agora que segmento esta configurado para envirau ao Adobe Target, é ushivel configuration sua ativade de Segmentaçao 또는 experiencia no Adobe Target. 네스트 연습시오, Vokee irah configuar ativvidade baseada(시각적 경험 작성기)
 
@@ -62,8 +62,6 @@ Real-Time CDP 에스타타구라타족 환경(Agora que segmento esta configurad
 
 ![RTCDP](./images/excl.png)
 
-설정 **Adobe Target** homepage에는 기존의 모든 활동이 표시됩니다.
-클릭 **+ 활동 만들기** 새 활동을 만들려면
 나페지나도 **Adobe Target**아티비데즈(ativedentes)로 음성 베라 토다스
 Clique em **+ 활동 만들기** 파라 루마 노바 타이비데이드
 
@@ -73,7 +71,7 @@ Clique em **+ 활동 만들기** 파라 루마 노바 타이비데이드
 
 ![RTCDP](./images/exclatcrxt.png)
 
-셀레치온 **시각적** e 정의 **활동 URL** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso, substittua XX por um numero entre 01 e 30
+셀레치온 **시각적** e 정의 **활동 URL** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, mas, antes disso, substittua XX por um numero entre 01 e 60
 
 >[!IMPORTANT]
 >
@@ -137,7 +135,7 @@ Vokheverá a nova experiencia com a nova imagem para o Publico selecionado
 
 Para o nhome, use:
 
-- `yourLastName - RTCDP - XT (VEC)`
+- `seuSobrenome - RTCDP - XT (VEC)`
 
 Clique em **다음**.
 
@@ -181,7 +179,7 @@ Se agora vokal voltar au seu site de 데드라상 e 비시타 a página do produ
 
 ![RTCDP](./images/atform12a.png)
 
-프로시마 에타파: [1.5 조치 수행: facebook에 세그먼트 보내기](./ex5.md)
+프로시마 에타파: [1.5 아상: envie segmento para o Facebook](./ex5.md)
 
 [레토나르 플루소 드 우시오 1](./uc1.md)
 

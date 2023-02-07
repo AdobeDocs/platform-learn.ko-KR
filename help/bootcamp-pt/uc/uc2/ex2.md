@@ -5,7 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Vokheverá vischang geral de todos os eventos disoniveis. Clique em **이벤�
 
 ![ACOP](./images/emptyevent1.png)
 
-Em Primeiro Lugar, dre um nome ao seu evento, por example: `yourLastNameAccountCreationEvent` eVar의 예시: `Account Creation Event`.
+Em Primeiro Lugar, dre um nome ao seu evento, por example: `seuSobrenomeAccountCreationEvent` eVar의 예시: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
@@ -79,7 +79,7 @@ Seu evento agora esta configurado e salvo.
 ![ACOP](./images/viewevent.png)
 
 아고라 보베라 우모예 카르가 에스페라다
-Seu evento tem eventID de orqueststraçuniau, que pode encontra rolandlao nessa carutil(payload) até visualiza `_experience.campaign.orchestration.eventID`.
+Seu evento tem eventID de orqueststraçuniau, que pode encontra roballao nessa carutil(payload) até visualizar `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 

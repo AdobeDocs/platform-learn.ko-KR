@@ -2,9 +2,9 @@
 title: Experience Makers Bootcamp - 브라질
 description: Experience Makers Bootcamp 참여자의 시작 지점
 doc-type: multipage-overview
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 무이타스 엠프레사스 에스타앙 시엔테스 트리투 쿠크, 기존의 na jornada dos clientes, conmonocaçao com o clientte의 결과 Dados, perfil e contexthuam precistoam perfeitamente alinhados para projetar e ofrecencias excepcionais ao consumidor.
 
-참가자 대상 Bootcamp para aprender abrender abordagada em plataforma pode ajuda na obtençao dos insights 필수 매개 변수 식별자 e remover pontos de atrito para aprimorar a jornada do seu clientte.
+참가자 대상 Bootcamp para aprender abrender abordagaem Experience Platform pode ajuda na obtençao dos insights 필수 매개 변수 식별자 e remover pontos de atrito para aprimorar a jornada do seu clientte.
 
-개인화 아상 에스칼라 코메카 com a compreensang do que pode ser aprimorado e, para isso, uma visao em tempo real do cliente é essencial. Insights Levam à açao, o que leave a mais insights. 페라멘타스 파라로 Adobe 포카다 나 플라타포마 포르네케, 알렘 드 충시야르 아반송 테크노고코스, 임탄타르 수가상, 수에퀴드 수에쿠마 수에쿠마 커패시다데 드 오페레서 exfrecencia 홀리시앗오 트리앙테 드 experiencia 홀리엔시아 드 피치앙테 르 클리앙테
+개인화 아상 에스칼라 코메카 com a compreensang do que pode ser aprimorado e, para isso, uma visao em tempo real do cliente é essencial. Insights Levam à açao, o que leave a mais insights. 페라멘타스 파라로 Adobe 포카르나 Experience Platform 포네체, 알렘 드 충시야르 아반송 에코놀로기코스, 임파타르 수아초, 수에프 수에프 수에프 수에퀴드 오페레쿠마 exfrecencia 홀리시타 아오 클리엔테 em de experiencia holistia do clipecía 또는 운하
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

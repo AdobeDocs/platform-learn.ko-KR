@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Adobe Journey Optimizer Acessando에서 패사 로그인 [Adobe Experience Clo
 
 ![ACOP](./images/acophome.png)
 
-보스케라 리크레시오나도 파라 **홈** Journey Optimizer 없음. Primeiro, verifique se voca esto o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para, clique em **Prod** lista를 선택합니다. 네스트 모예, 노메 도 샌드박스 é **Bootcamp2**. Vokheestarala na visualizahan da **홈** 샌드박스 보내기 `Bootcamp`.
+보스케라 리크레시오나도 파라 **홈** Journey Optimizer 없음. Primeiro, verifique se voca esto o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para, clique em **Prod** lista를 선택합니다. 네스트 모예, 노메 도 샌드박스 é **Bootcamp**. Vokheestarala na visualizahan da **홈** 샌드박스 보내기 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -68,7 +68,7 @@ Seu evento agora esta configurado e salvo.
 
 ![ACOP](./images/viewevent.png)
 
-아고라 보베라 우모예 카르가 에스페라다
+아고라 보베라 모형이 페이로드 에스페라도
 Seu evento tem eventID de orqueststraçuniau, que pode encontrolar rolandro nessa carutil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)

@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '934'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Vokheverá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-운동 금지 전낭, **이벤트**. 보네오우오에벤토 `yourLastNameAccountCreationEvent` e치슈투유 `yourLastName` 펠로 세우 소브레놈 에벤토:
+운동 금지 전낭, **이벤트**. 보네오우오에벤토 `seuSobrenomeAccountCreationEvent` e치슈투유 `seuSobrenome` 펠로 세우 소브레놈 에벤토:
 
 ![ACOP](./images/eventdone.png)
 
@@ -60,9 +60,7 @@ Clique em **확인** 파라 살바도르 아타수
 
 ![ACOP](./images/journeyactions.png)
 
-설정 **카테고리** to **마케팅** 전자 메일을 보낼 수 있는 전자 메일 서피스를 선택합니다. 이 경우 선택할 이메일 표면은 다음과 같습니다 **이메일**. 에 대한 확인란이 **이메일 클릭 수** 및 **이메일 열기** 둘 다 활성화되어 있습니다.
-
-정의 **카테고리** como **마케팅** e는 셀레치온우마피니시 de e-메일 que permita o enviro de e-mail로 보냅니다. Nesse caso는 Selecionada é E-메일을 피상으로 이메일로 보냅니다. 케익사스 데 셀레찬과 같은 인증피케-세데 케 **이메일 클릭 수** e **이메일 열기** 에스테잼 마카다
+정의 **카테고리** como **마케팅** e selecione uma **이메일 표면** envio e-mail에 고유한 퍼미타 네세 카소, **이메일 표면** 사용자 Selecionada é 이메일. 케익사스 데 셀레찬과 같은 인증피케-세데 케 **이메일 클릭 수** e **이메일 열기** 에스테잼 마카다
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,11 +86,11 @@ O Seguinte serla exibido.
 
 ![Journey Optimizer](./images/msg6.png)
 
-라냐데 아산토 나앙 에스타 프론타 Em Seguida, Voke Precision trazer o token de personalizaço **이름** 케 에스타 아르마젠라도 `profile.person.name.firstName`. 메뉴 à esquerda, 역할 para baixo para encontrar 또는 elemento 없음 **개인** e clique na seta para ir um nível mais profundo.
+라냐데 아산토 나앙 에스타 프론타 Em Seguida, Voke Precision trazer o token de personalizaço **이름** 케 에스타 아르마젠라도 `profile.person.name.firstName`. 메뉴 à esquerda, 역할 para baixo para encontrar 또는 elemento 없음 **개인** e-clique na seta para visualizar mapos
 
 ![Journey Optimizer](./images/msg7.png)
 
-아고라 엔콘트로 요소 **전체 이름** e clique na seta para ir um nível mais profundo.
+아고라 엔콘트로 요소 **전체 이름** e를 사용하여 a seta para visualizar mais campos를 호출합니다.
 
 ![Journey Optimizer](./images/msg8.png)
 
@@ -100,7 +98,7 @@ O Seguinte serla exibido.
 
 ![Journey Optimizer](./images/msg9.png)
 
-em 스구이다, 아디온과 텍토, **아데데케모스는 수아 인스크사앙!** 팀 살바르 . Clique em **저장**.
+em 스구이다, 아디온과 텍토, **아데데케모스는 수아 인스크사앙!** 질문에 답합니다. Clique em **저장**.
 
 ![Journey Optimizer](./images/msg10.png)
 
@@ -118,7 +116,7 @@ Clique em **가져오기 HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-아르라스트 E 솔테 오 아르퀴보 **mailtemplatebootcamp.html**, 케 보스포데 바이샤 [여기](../../assets/html/mailtemplatebootcamp.html.zip). Importar를 클릭합니다.
+아르라스트 E 솔테 오 아르퀴보 **mailtemplatebootcamp.html**, 케 보스포데 바이샤 [아피](../../assets/html/mailtemplatebootcamp.html.zip). Importar를 클릭합니다.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -130,7 +128,7 @@ Vamos 개인화 또는 이메일 클리크 아오 라도 텍토 **올라** e.em 
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em Seguida, Voke Precision trazer o token de personalizaçao **이름** 케 에스타 아르마젠라도 `profile.person.name.firstName`. 메뉴 없음, 현지화 또는 요소 **개인** e8500500000000000000000000000000000000000000002000000000000000000000070000000000000000000000000000000000000000000000000000000 **전체 이름** e클리크 노 아이콘 **+** 파라라디시오나오 캄포 **이름** 아오 편집장 de expressiang.
+Em Seguida, Voke Precision trazer o token de personalizaçao **이름** 케 에스타 아르마젠라도 `profile.person.name.firstName`. 메뉴 없음, 현지화 또는 요소 **개인** e8500500000000000000000000000000000000000000002000000000000000000000070000000000000000000000000000000000000000000000000000000 **전체 이름** e클리크 노 아이콘 **+** 파라라디시오나오 캄포 **이름** ao 편집기.
 
 Clique em **저장**.
 
@@ -162,7 +160,7 @@ Clique em **확인**.
 
 ![ACOP](./images/journeyname.png)
 
-보카인다 프레시다 엄노메 마르다 보이포데 파저 이소클리칸도 노 아이콘 `yourLastName - Account Creation Journey`. Clique em **확인** 파라 살바르는 머드앙차스.
+Vokpode Fazer isso clicando no item cliccano no item &quot;Name&quot; e inserindo seguinte nome `yourLastName - Account Creation Journey`. Clique em **확인** 파라 살바르는 머드앙차스.
 
 ![ACOP](./images/journeyname1.png)
 

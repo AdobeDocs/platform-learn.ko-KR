@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Esquerda 메뉴 없음, Acesse **프로필** e **찾아보기**.
 
 ![고객 프로필](./images/identities.png)
 
-페닐 시각자도르 드 퍼필, 아고라 보테 포데 에스타 식별자 없음:
+페닐 시각화 아도르 드 퍼필, 아고라 포데 우마 식별자 세멜한테:
 
 | 네임스페이스 | 신원 |
 |:-------------:| :---------------:|

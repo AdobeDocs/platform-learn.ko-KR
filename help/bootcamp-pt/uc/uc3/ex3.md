@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '838'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Vokheverá uma tela de jornada vazia.
 
 라도 디레이토 다 테라, 아고라 보케크리아 수아 알피쿠아상 푸시하지 마.
 
-정의 **카테고리** como **마케팅** e selecione uma phecie 푸시 쿠퍼마이트 환경 알림 푸시 네세 카소, 피시 한 사람이 **miewis-app-mobile-bootcamp**.
+정의 **카테고리** como **마케팅** e selecione um 푸시 서피스 que permite 환경 알림 푸시 네세 카소, 피시 한 사람이 **miewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,7 +88,7 @@ Vamos definir o contexutudo da notificaang push.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Em Seguida, Client em  **상황별 속성** 그리고 **Journey Orchestration**.
+Em Seguida, Client em  **상황별 속성** e **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
@@ -127,11 +127,11 @@ Clique em **확인**.
 
 ## 3.3.2 Enviuma mensagem para tela
 
-코모 테세이라 에타파 다 조나다, 보레 데디치오나르 아상  **sendMessageToScreen** 작업. Vá para o lado esquerdo da tela para **작업**, 셀레치온 **sendMessageToScreen** 아르라스트 이 솔테 아싸오 노 테르세이로 노다 수아 조르나다 엠세구이다, 보스케베라 텔라아비아소입니다
+코모 테세이라 에타파 다 조나다, 보레 데디치오나르 아상  **sendMessageToScreen**. Vá para o lado esquerdo da tela para **작업**, 셀레치온 **sendMessageToScreen** 아르라스트 이 솔테 아싸오 노 테르세이로 노다 수아 조르나다 엠세구이다, 보스케베라 텔라아비아소입니다
 
 ![ACOP](./images/jomsg15.png)
 
-**sendMessageToScreen** é uma açao personalizada uala publicar mensagem no ponto de extremidade usado pela exibçao na loja 아상 **sendMessageToScreen** 에스페라 케 뮤티플라 바리바 세잼 정의 Vokpode visualizar essas variables roballao para baixo até ver **작업 매개 변수**.
+**sendMessageToScreen** 에마 아상 푸시갈리사다 히라 아우슈마 멘사셈 노 **끝점** 우샤도 펠라 에시비카오 나 로자 아상 **sendMessageToScreen** 에스페라 케 뮤티플라 바리바 세잼 정의 Vokpode visualizar essas variables roballao para baixo até ver **작업 매개 변수**.
 
 ![ACOP](./images/jomsg16.png)
 

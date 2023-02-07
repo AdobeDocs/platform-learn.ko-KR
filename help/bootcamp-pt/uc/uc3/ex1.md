@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 0%
 
 ## Instale o aplicativo movely
 
-앱을 설치하기 전에 **추적** 사용 중인 iOS 장치 이렇게 하려면 로 이동하십시오. **설정** > **개인 정보 및 보안** > **추적** 그리고 옵션을 **앱에서 추적 요청 허용**.
-
-낭트 데 인살라 오 아파리카티보, é requiremário habilitar **래트레멘토** seu disposito iOS이 없습니다. 파라, 경사 **구성** > **세구란사** > **래트레멘토** e verfique opçao **Permitque os aplicativos sendoitem o rstreamento**.
+낭트 데 인살라 오 아파리타티보, é requiremário habilitar o **래트레멘토** seu disposito iOS이 없습니다. 파라, 경사 **구성** > **세구란사** > **래트레멘토** e verfique opçao **Permitque os aplicativos sendoitem o rstreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -26,7 +24,7 @@ Acesse a App Store da Apple e 페스퀴즈 `aepmobile-bootcamp`. Clique em *
 
 ![DSN](./../uc3/images/app1.png)
 
-아피카티보 에스티버 인살라도, 클릭 em의 디포이크 **열기**.
+아피카티보 에스티버 인살라도, 클릭 em의 디포이크 **아브리르**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -84,7 +82,7 @@ Primeiro, 세밀한 **제품**. Clique em qualquer produto, neste example: *
 
 ![DSN](./images/app20.png)
 
-아고라 보히라 시뮬레이터 evento de sinalizahan (beacon) em um local de armazenamento offline. O objetivo da simaçalizar a experiencia do clientte nas telas da loja. Para visualizar a experiencia na loja, foi criada uma página mostrarla de forma dinaha as informausaçules para o clientao entrar na loja.
+아고라 보케라 시뮬레이어 evento de sinalizaang (beacon) em uma loja 오프라인. O objetivo da simaçalizar a experiencia do clientte nas telas da loja. Para visualizar a experiencia na loja, foi criada uma página mostrarla de forma dinaha as informausaçules para o clientao entrar na loja.
 
 Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
@@ -96,7 +94,6 @@ Em Seguida와, Página의 인시입니다. 클리케 노 아이콘도 **beacon**
 
 ![DSN](./images/app23.png)
 
-그러면 이게 보입니다. 먼저 을 선택합니다. **Bootcamp 화면 비콘** 그런 다음 **시작** 버튼을 클릭합니다. 이렇게 하면 비콘 항목을 시뮬레이션할 수 있습니다.
 아포스 에타파 세구인테 세라 엑시비도 Primeiro, selecione **Bootcamp 화면 비콘** 클리케 노 보카오 데 **시작**. 이소퍼미트라 케 시노마 엔트라다 드 시알리자상 com 비콘.
 
 ![DSN](./images/app21.png)

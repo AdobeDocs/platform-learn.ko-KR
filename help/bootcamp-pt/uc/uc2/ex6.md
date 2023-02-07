@@ -5,16 +5,16 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
 # 2.6 개인화상 콜 센터 없음
 
-이미 부트캠프 동안 여러 번 논의했듯이 고객 경험을 개인화하는 것은 옴니채널 방식으로 이루어져야 합니다. 종종 콜 센터는 나머지 고객 여정과 꽤 연결되지 않으며 이로 인해 종종 고객 경험이 좌절되지만 그럴 필요가 없습니다. 콜 센터를 Adobe Experience Platform에 실시간으로 쉽게 연결할 수 있는 방법의 예를 살펴보겠습니다.
+Conforme discutido barrias는 Durante o bootcamp를 심고, Personalizar a experiencia do clientte deve acontecer de maneira omnichannel을 말합니다. Um 콜 센터 제랄멘테 바스탠테 데스코네타도 도 레판테 다 조르나다 두 클리엔테 이스소 pode, com frequncia, levar a experiencias objectites do cliente, npreccia ser assim. Vamos mostrar example de como o 콜 센터 pode user facility conectado, em tempo real.
 
 ## 플루소 다 조나다 두 클리엔테
 
@@ -38,7 +38,7 @@ Nesse caso, o **충성도 ID** é **5863105**. 코모 파르트 드 노사
 
 ![DSN](./images/cc3.png)
 
-보쿠비라 **여보세요, 수놈**&#x200B;네, 네. Esse nome é retirado do Perfil do Cliente em tempo real na Adobe Experience Platform. 보이팀 3 에스코라입니다 프레시온 오누메로 **1**, **주문 상태**.
+보쿠비라 **여보세요, 수놈**. Esse nome é retirado do Perfil do Cliente em tempo real na Adobe Experience Platform. 보이팀 3 에스코라입니다 프레시온 오누메로 **1**, **주문 상태**.
 
 ![DSN](./images/cc4.png)
 
@@ -72,7 +72,7 @@ Voqe verá seu perfil de clinovanente. Acesse **이벤트**.
 
 ![DSN](./images/cc8.png)
 
-Em eventos, voke verla 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultado da sua resposta à pergunta Avalie o seu n **통화 만족도 평가**.
+Em eventos, voke verla 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultado da sua responsta à pergunta **통화 만족도 평가** (아발리 세우 카마다)
 
 ![DSN](./images/cc9.png)
 
