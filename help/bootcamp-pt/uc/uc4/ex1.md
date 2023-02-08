@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -91,10 +91,8 @@ Adobe Experience Platform에서 스키마 데이터 세트 를 확인합니다.
 
 Certifique-se de verificado ao 메뉴:
 
-- ID: CRMID, phoneNumber, ECID, 이메일. 보조 식별자인 기본 식별자는 무엇입니까?
-스키마를 열고 개체를 보면 식별자를 찾을 수 있습니다 `_experienceplatform.identification.core`. 스키마 보기 [데모 시스템 - 웹 사이트용 이벤트 스키마(글로벌 v1.1)](https://experience.adobe.com/platform/schema).
-
 - 식별자: CRMID, phoneNumber, ECID, 이메일. 퀴스는 상투들을 식별해서 프리마리오스와 퀘이시 상투상 식별자인 시쿤다리오스를 식별합니까?
+
 Vokpode encontrar os identifier abrindo um schema e observando objto `_experienceplatform.identification.core`. 스키마 확인 [데모 시스템 - 웹 사이트용 이벤트 스키마(글로벌 v1.1)](https://experience.adobe.com/platform/schema).
 
 ![데모](./images/identity.png)
@@ -107,7 +105,7 @@ Vokpode encontrar os identifier abrindo um schema e observando objto `_experie
 
 아고라 보케스타 프레온 파라 코케샤는 우아리오 도 Customer Journey Analytics 인터페이스입니다.
 
-프로시마 에타파: [데이터 세트 대신 Adobe Experience Platform에 Customer Journey Analytics 없음](./ex2.md)
+프로시마 에타파: [4.2 Adobe Experience Platform 데이터 세트 다 Customer Journey Analytics 없음](./ex2.md)
 
 [레토나르 플루소 드 우시오 4](./uc4.md)
 

@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 - 코호사 알던은 Analysis Workspace 주앙 디페렌테의 토남 재귀적 소리입니다.
 - Aprenda a analisar no CJA usando o Analysis Workspace
 
-## 컨텍스트
+## Contextto
 
 네스트 연습시오, 보스케우사르로 Analysis Workspace 노 CJA 파라라 알리아사르 시각화수 드 프로두토, 곰팡이 드 프로두토, 로타이비데이드 등
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 압라세우 프로제토 `yourLastName - Omnichannel Analysis`.
 
-Com seu projeto aberto e Visualizaçao de dados `yourLastName - Omnichannel Analysis` 셀레치오나도, 보테 에스테르 프라토 카르코케싸는 프라미이라스 시각화수 같은 건축가입니다.
+Com seu projeto aberto e Visualizaçao de dados `yourLastName - Omnichannel Analysis` 셀레치오나도, 보테 에스테르 프라토 카르코케싸는 primeiras visualizahan과 같은 건축가입니다.
 
 ![데모](./images/prodataView1.png)
 
@@ -316,7 +316,7 @@ Faja o mesmo com **사람**, **장바구니에 추가** e **구매**. 보스
 
 ## Analysis Workspace e 도 Customer Journey Analytics
 
-Analysis Workspace 르우네도 데 두도 os 카네스 파라 아날리사르 알나다 도 클리엔테 알렘디소, 렘브레 드 케 포데 트라저 파라 o mesmo 작업 공간 케 나에스타 빈쿠라도 아 조나다 푸데 경 무이토 툴릴 트라저 도데스코네타도스 파라 아날리스 파라 contextualizar a jornada. 알건 추출물에는 코이사스 코모 도도스 NPS, 사전 요구 사항, 에벤토스 드 아누노스 도 Facebook 우 에퀴수 오프라인(nang identificadas)이 포함됩니다.
+O Analysis Workspace은 Todas를 제한 acx es típicas de lum relateódo Analytics로 제거합니다. Ele fornece uma tela robusta e flexível para prercriar projetos de analytics personalizados. Arraste e solte qualquer nude tabelas de dados, visualizasules e 구성 요소(차원, 메트리카, 세그멘토스 e granularidades de tempo) para projto. Voqpode criar de forma filtros e analisis, graficos de coorte, alertas, segmentos, anallises de luatórios de curaradoria e agendaconpartilhar com quer pessum seru negocio.
 
 프로시마 에타파: [4.6 De insights](./ex6.md)
 

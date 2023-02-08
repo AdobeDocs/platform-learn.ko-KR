@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '718'
 ht-degree: 2%
 
 ---
@@ -114,6 +114,8 @@ Voqtampém precisa garantir que, para cada 데이터 세트, essas opçaus estej
 
 - 이차르토도스 노보스
 - Preencher todos os dexistentes
+- Preencher tipo de fonte de dados com &quot;Other&quot;
+- Preencher a descriçao com o mesmo nome do Dataset
 
 Clique em **데이터 세트 추가**.
 

@@ -5,16 +5,16 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
 # 4. 고객 여정 분석
 
-네세 플루소 데 우슈아리오, 보테라 experiencia prática com o servço de aplicativo Customer Journey Analytics.
+Neste 사용자 흐름, voke terincia pratica com o Customer 여정 분석.
 
 O Customer Journey Analytics fornecuma 인터페이스 em que os times de Analytics, Negocios e Technologia conceuem unir todos os dadocia da companies e analisar a jornada cross-channel (online e offline) do clientte de ponta a ponta. O Customer Journey Analytics é capaz de fornecer contexto e clareza para as jornadas de clientte multipanal complexas. O contexto fornecidera gera uma visuam acacacionável mcida dificuldades no processes de conversaum e possibilita experiencias relevant e personalizadas pontos 관련 단원들.
 
@@ -28,7 +28,7 @@ Mais 정보 Sbre 또는 Customer Journey Analytics 모델 Encontradas [아피](h
 
 - F숙지성-se com a UI do Customer Journey Analytics
 - Target os 데이터 세트 da Adobe Experience Platform para o Customer Journey Analytics
-- Customer Journey Analytics 없음 ID da 페소아
+- CJA에서 엔덴다 오 개인 ID e junçao de dados
 - 엔켄다 os conitos de uma conexacao de dados e uman visualizaçao de dados
 - Analysis Workspace com 데이터 세트 da Adobe Experience Platform 사용
 
