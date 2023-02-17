@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 29%
+source-wordcount: '950'
+ht-degree: 31%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 29%
    + [기본 아키텍처](/help/platform/intro-to-platform/basic-architecture.md)
    + [플랫폼 사용자 인터페이스 사용](/help/platform/intro-to-platform/interface-tour.md)
    + [역할 및 프로젝트 단계](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ [시작하기: 데이터 설계자 및 데이터 엔지니어](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target=&quot;_blank&quot;}
++ [시작하기: 데이터 설계자 및 데이터 엔지니어](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md)
 + [ Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
 + 관리 {#admin}
@@ -36,7 +36,7 @@ ht-degree: 29%
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [제품 프로필 관리](/help/platform/admin/managing-product-profiles.md)
 + [감사 로그](/help/platform/governance/audit-logs.md)
-+ [데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target=&quot;_blank&quot;}
++ [데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + 대시보드 {#dashboards}
    + [대시보드 만들기](/help/platform/dashboards/create-a-dashboard.md)
 + 데이터 거버넌스 {#data-governance}
@@ -47,14 +47,12 @@ ht-degree: 29%
    + [데이터 사용 정책 적용](/help/platform/governance/enforce-data-usage-policies.md)
    + [동의 적용](/help/platform/governance/enforce-consent.md)
 + 데이터 위생 {#data-hygiene}
-   + [개요](/help/platform/data-hygiene/overview.md)
-   + [소비자 삭제](/help/platform/data-hygiene/delete-consumers.md)
    + [데이터 세트 삭제](/help/platform/data-hygiene/delete-datasets.md)
 + 데이터 수집 {#data-ingestion}
    + [개요](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [배치 수집 개요](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [데이터 세트 만들기 및 채우기](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=ko-KR){target=&quot;_blank&quot;}
+   + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=ko-KR){target="_blank"}
    + [소스 개요](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ko-KR)
    + [Audience Manager에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -64,8 +62,8 @@ ht-degree: 29%
    + [스트리밍 수집 개요](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [HTTP API를 사용하여 데이터 스트림](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=ko-KR)
    + [소스 커넥터를 사용하여 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ko-KR)
-   + [웹 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
-   + [모바일 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [웹 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [모바일 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + 데이터 과학 작업 영역 {#data-science-workspace}
    + [개요](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [아키텍처](data-science-workspace/architecture-overview.md)
@@ -79,9 +77,9 @@ ht-degree: 29%
    + [훈련된 모델 만들기 및 게시(UI)](data-science-workspace/create-model-ui.md)
    + [서비스에 대한 자동 교육 및 점수 예약](data-science-workspace/schedule-training-scoring.md)
    + [머신 러닝 인사이트로 실시간 고객 프로필 보강](data-science-workspace/dsw-profile-segmentation.md)
-   + [배합식에 소스 파일 패키지](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target=&quot;_blank&quot;}
-   + [패키지된 레서피(UI) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target=&quot;_blank&quot;}
-   + [패키지된 레서피(API) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target=&quot;_blank&quot;}
+   + [배합식에 소스 파일 패키지](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [패키지된 레서피(UI) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [패키지된 레서피(API) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 대상 {#destinations}
    + [대상 개요](/help/platform/destinations/understanding-destinations.md)
    + [대상에 연결하는 중](/help/platform/destinations/connecting-to-destinations.md)
@@ -106,7 +104,7 @@ ht-degree: 29%
    + [실시간 고객 프로필 이해](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [프로필 개요 다이어그램](/help/platform/profiles/overview-diagram.md)
    + [프로필로 데이터 가져오기](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [프로필 보기 세부 사항 사용자 지정](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target=&quot;_blank&quot;}
+   + [프로필 보기 세부 사항 사용자 지정](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [계정 프로필 보기](/help/platform/profiles/view-account-profiles.md)
    + [병합 정책 만들기](/help/platform/profiles/create-merge-policies.md)
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
@@ -131,12 +129,12 @@ ht-degree: 29%
    + [Adobe 정의 함수](/help/platform/queries/adobe-defined-functions.md)
    + [데이터 사용 패턴](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [쿼리 실행](/help/platform/queries/run-queries.md)
-   + [쿼리 결과에서 데이터 세트 생성](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target=&quot;_blank&quot;}
+   + [쿼리 결과에서 데이터 세트 생성](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [타블로](/help/platform/queries/psql-client-tableau.md)
    + [데이터 분석 및 시각화](/help/platform/queries/analyze-and-visualize.md)
    + [BI 도구를 사용하여 대시보드 작성](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [고객 데이터 재충전](/help/platform/queries/recharge-your-customer-data.md)
-   + [클라이언트를 Query Service에 연결](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target=&quot;_blank&quot;}
+   + [클라이언트를 Query Service에 연결](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + 스키마 {#schemas}
    + [개요](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [빌딩 블록](/help/platform/schemas/schema-building-blocks.md)
@@ -151,7 +149,7 @@ ht-degree: 29%
    + [열거형 필드 및 제안 값 사용](/help/platform/schemas/use-enumerated-fields.md)
    + [샌드박스 간에 스키마 복사](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [스키마 업데이트](/help/platform/schemas/update-schemas.md)
-   + [임시 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target=&quot;_blank&quot;}
+   + [임시 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + 세그먼트 {#segments}
    + [세그먼트 빌더 개요](/help/platform/segments/segment-builder-overview.md)
    + [세그먼트 만들기](/help/platform/segments/create-segments.md)
@@ -163,8 +161,8 @@ ht-degree: 29%
    + [다중 엔티티 세그먼트 만들기](/help/platform/segments/create-multi-entity-segments.md)
    + [B2B 데이터를 사용하여 세그먼트 만들기](/help/platform/segments/create-segments-with-b2b-data.md)
    + [스트리밍 세그멘테이션 데모](/help/platform/segments/streaming-segmentation-demo.md)
-   + [세그먼트 평가](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target=&quot;_blank&quot;}
-   + [데이터를 내보낼 데이터 세트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target=&quot;_blank&quot;}
+   + [세그먼트 평가](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [데이터를 내보낼 데이터 세트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [세그먼트 매치 연결 설정](/help/platform/segments/segment-match-connection-setup.md)
    + [세그먼트 매치 데이터 거버넌스](/help/platform/segments/segment-match-data-governance.md)
    + [세그먼트 매치 구성 플로우](/help/platform/segments/segment-match-configuration-flow.md)
@@ -181,9 +179,9 @@ ht-degree: 29%
    + [HTTP API를 사용하여 데이터 스트림](/help/platform/sources/streaming-ingestion-http-api.md)
    + [소스 커넥터를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-source-connector.md)
 + 응용 프로그램 서비스 {#application-services}
-   + [Customer Journey Analytics 자습서](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
-   + [Journey Orchestration 자습서](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
-   + [offer decisioning 자습서](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=ko){target=&quot;_blank&quot;}
+   + [Customer Journey Analytics 튜토리얼](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
+   + [Journey Orchestration 자습서](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
+   + [offer decisioning 자습서](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=ko){target="_blank"}
    + Real-Time CDP 자습서{#rtcdp}
       + [개요](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [B2B 에디션 개요](/help/platform/rtcdp/b2b-overview.md)

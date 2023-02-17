@@ -4,33 +4,16 @@ description: Adobe Experience Platform에 대해 알아보기
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 73313bf0b2f9a0f539c8b52bda2d9bd66bed65d1
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 19%
+source-wordcount: '164'
+ht-degree: 21%
 
 ---
 
 # Adobe Experience Platform 자습서
 
 Adobe Experience Platform은 고객 경험을 이끄는 완벽한 솔루션을 구축하고 관리할 수 있는 시장에서 가장 강력하고 유연하며 개방적인 시스템입니다. Experience Platform을 사용하면 조직 내 모든 시스템의 고객 데이터와 컨텐츠를 중앙 집중화 및 표준화하고 데이터 과학 및 시스템 학습을 적용하여 풍부한 개인별 경험을 더 잘 설계하고 전달할 수 있습니다. 이 비디오와 자습서를 사용하여 Experience Platform의 다양한 구성 요소를 학습할 수 있습니다.
-
-
-<div id="whats-new-section">
-
-## 새로운 기능
-
-* **[속성 기반 액세스 제어 구성(비디오)](admin/configure-attribute-based-access-control.md)**
-
-   *특정 리소스에 대한 액세스 제한*
-* **[데이터 위생 개요(비디오)](/help/platform/data-hygiene/overview.md)**
-
-   *데이터 최소화 사례 개선*
-* **[데이터 세트 삭제(비디오)](/help/platform/data-hygiene/delete-datasets.md)**
-
-   *데이터 세트에 대한 사용 시간 설정*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
