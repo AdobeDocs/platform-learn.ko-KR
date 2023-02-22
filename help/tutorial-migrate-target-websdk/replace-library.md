@@ -1,9 +1,9 @@
 ---
 title: 라이브러리 바꾸기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법을 알아봅니다. 항목에는 라이브러리 개요, 구현 차이점 및 기타 주목할 만한 설명서가 포함됩니다.
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ at.js를 사용하여 간단한 Target 구현을 가정해 보십시오.
 * Target 활동에 기능을 사용할 수 있는 하나 이상의 타사 도우미 라이브러리(예: jQuery)
 * 깜박임을 완화하도록 코드 조각 사전 숨김
 * at.js Target 라이브러리는 활동을 자동으로 요청 및 렌더링하기 위해 기본 설정으로 비동기적으로 로드됩니다.
+
++++at.js의 HTML 코드 예제 참조
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ at.js를 사용하여 간단한 Target 구현을 가정해 보십시오.
 </body>
 </html>
 ```
+
++++
 
 Platform Web SDK를 사용하도록 Target을 업그레이드하려면 먼저 at.js를 제거합니다.
 
@@ -220,7 +224,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB 태그 내에만 게시합니다]
+>[!TAB 태그]
 
 태그 구현에서 많은 필드가 자동으로 채워지거나 드롭다운 메뉴에서 선택할 수 있습니다. 다른 플랫폼 [!UICONTROL 샌드박스] 및 [!UICONTROL 데이터 세트] 각 환경에 대해 선택할 수 있습니다. 데이터 스트림은 게시 프로세스에서 태그 라이브러리의 상태에 따라 변경됩니다.
 
@@ -267,7 +271,7 @@ Target과 관련된 주목할 만한 구성 옵션은 다음과 같습니다.
 >
 > 태그 기능(이전 Launch)을 사용하여 Web SDK를 구현할 때 Adobe Experience Platform Web SDK 확장 구성에서 이러한 구성을 관리할 수 있습니다.
 
-전체 옵션 목록이 필요하면 [platform Web SDK 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) 안내서.
+전체 옵션 목록이 필요하면 [platform Web SDK 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko-KR) 안내서.
 
 ## 구현 예
 

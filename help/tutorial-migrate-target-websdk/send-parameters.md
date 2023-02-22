@@ -1,10 +1,10 @@
 ---
 title: 매개 변수 보내기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 전송하는 방법을 알아봅니다.
-source-git-commit: cc958fdbf438943ba4fd5ca8974a8408b2bf624f
+source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 0%
+source-wordcount: '1652'
+ht-degree: 1%
 
 ---
 
@@ -14,11 +14,9 @@ Target 구현은 사이트 아키텍처, 비즈니스 요구 사항 및 사용�
 
 간단한 제품 세부 사항 페이지와 주문 확인 페이지를 사용하여 매개 변수를 Target에 전달할 때 라이브러리 간의 차이점을 보여 줍니다.
 
-at.js를 사용하여 다음 예제 페이지를 가정하십시오.
+at.js를 사용하여 다음 두 예제 페이지를 가정하십시오.
 
-<!--Assume the following two example pages using at.js:-->
-
-제품 세부 정보:
+제품 세부 사항 페이지의 +++at.js:
 
 ```HTML
 <!doctype html>
@@ -57,9 +55,10 @@ at.js를 사용하여 다음 예제 페이지를 가정하십시오.
 </html>
 ```
 
++++
 
 
-주문 확인:
++++at.js를 주문 확인 페이지에서 참조하십시오.
 
 ```HTML
 <!doctype html>
@@ -90,6 +89,8 @@ at.js를 사용하여 다음 예제 페이지를 가정하십시오.
 </body>
 </html>
 ```
+
++++
 
 
 ## 매개 변수 매핑 요약
@@ -140,12 +141,16 @@ at.js 예 사용 `targetPageParams()`:
 ```JavaScript
 targetPageParams = function() {
   return {
-    "siteSection": "product detail"
+    "pageName": "product detail"
   };
 };
 ```
 
-다음을 사용하는 Platform Web SDK 예 `sendEvent` 명령:
+다음을 사용하는 Platform Web SDK JavaScript 예 `sendEvent` 명령:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -153,12 +158,25 @@ alloy("sendEvent", {
     "web": {
       "webPageDetails": {
         // Other attributes included according to xdm schema
-        "siteSection": "product detail"
+        "name": "product detail"
       }
     }
   }
 });
 ```
+
+>[!TAB 태그]
+
+태그에서 먼저 [!UICONTROL XDM 개체] xdm 필드에 매핑할 데이터 요소:
+
+![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-pageName.png)
+
+그런 다음 [!UICONTROL XDM 개체] 다음 위치에서 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업] (여러 개) [!UICONTROL XDM 개체] 다음을 수행할 수 있습니다. [병합됨](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -184,6 +202,10 @@ targetPageParams = function() {
 
 다음을 사용하는 Platform Web SDK 예 `sendEvent` 명령:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```JavaScript
 alloy("sendEvent", {
   "data": {
@@ -196,6 +218,18 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB 태그]
+
+태그에서 먼저 데이터 요소를 만들어 `data.__adobe.target` 개체:
+
+![데이터 요소에서 데이터 개체 정의](assets/params-tags-dataObject.png)
+
+그런 다음 데이터 개체를 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업] (여러 개) [!UICONTROL 개체] 다음을 수행할 수 있습니다. [병합됨](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
 
 ## 엔티티 매개 변수
 
@@ -219,6 +253,10 @@ targetPageParams = function() {
 
 다음을 사용하는 Platform Web SDK 예 `sendEvent` 명령:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```JavaScript
 alloy("sendEvent", {
   "data": {
@@ -234,6 +272,22 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB 태그]
+
+태그에서 먼저 데이터 요소를 만들어 `data.__adobe.target` 개체:
+
+![데이터 요소에서 데이터 개체 정의](assets/params-tags-dataObject-entities.png)
+
+그런 다음 데이터 개체를 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업] (여러 개) [!UICONTROL 개체] 다음을 수행할 수 있습니다. [병합됨](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
+
+
+
+
 
 모두 [엔티티 매개 변수](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js에서 지원하는 Platform Web SDK도 사용할 수 있습니다.
 
@@ -258,9 +312,13 @@ targetPageParams = function() {
 };
 ```
 
-구매 정보는 `commerce` 필드 그룹에 있음 `puchases.value` 설정 `1`. 주문 ID 및 주문 합계는 `order` 개체. 만약 `productListItems` 배열이 있으면 `SKU` 값은 `productPurchasedId`.
+구매 정보는 `commerce` 필드 그룹에 있음 `purchases.value` 설정 `1`. 주문 ID 및 주문 합계는 `order` 개체. 만약 `productListItems` 배열이 있으면 `SKU` 값은 `productPurchasedId`.
 
 다음을 사용하는 Platform Web SDK 예 `sendEvent` 명령:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -282,6 +340,19 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB 태그]
+
+태그에서 먼저 [!UICONTROL XDM 개체] xdm 필드에 매핑할 데이터 요소:
+
+![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-purchase.png)
+
+그런 다음 [!UICONTROL XDM 개체] 다음 위치에서 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업] (여러 개) [!UICONTROL XDM 개체] 다음을 수행할 수 있습니다. [병합됨](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -311,6 +382,10 @@ targetPageParams = function() {
 
 다음을 사용하는 Platform Web SDK 예 `sendEvent` 명령:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```JavaScript
 alloy("sendEvent", {
   "xdm": {
@@ -324,6 +399,22 @@ alloy("sendEvent", {
 });
 ```
 
+>[!TAB 태그]
+
+다음 [!UICONTROL ID] 값, [!UICONTROL 인증됨 상태] 및 [!UICONTROL 네임스페이스] 이 [!UICONTROL ID 맵] 데이터 요소:
+![고객 ID를 캡처하는 ID 맵 데이터 요소](assets/params-tags-customerIdDataElement.png)
+
+다음 [!UICONTROL ID 맵] 그런 다음 데이터 요소를 사용하여 [!UICONTROL identityMap] 의 필드 [!UICONTROL XDM 개체] 데이터 요소:
+![XDM 개체 데이터 요소에 사용되는 ID 맵 데이터 요소](assets/params-tags-customerIdInXDMObject.png)
+
+다음 [!UICONTROL XDM 개체] 그러면 이 [!UICONTROL 이벤트 보내기] 규칙 작업:
+
+![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent.png)
+
+데이터 스트림의 Adobe Target 서비스에서 [!UICONTROL Target 타사 ID 네임스페이스] 에 사용된 동일한 네임스페이스로 [!UICONTROL ID 맵] 데이터 요소
+![데이터 스트림에서 Target 타사 ID 네임스페이스 설정](assets/params-tags-customerIdNamespaceInDatastream.png)
+
+>[!ENDTABS]
 
 ## Platform 웹 SDK 예
 
@@ -335,7 +426,7 @@ alloy("sendEvent", {
 - A `configure` 라이브러리를 초기화하는 명령
 - A `sendEvent` 데이터를 보내고 Target 콘텐츠를 렌더링하도록 요청하는 명령
 
-제품 세부 정보:
++++제품 세부 사항 페이지의 웹 SDK:
 
 ```HTML
 <!doctype html>
@@ -408,8 +499,9 @@ alloy("sendEvent", {
 </html>
 ```
 
++++
 
-주문 확인:
++++주문 확인 페이지의 웹 SDK:
 
 ```HTML
 <!doctype html>
@@ -477,6 +569,8 @@ alloy("sendEvent", {
 </body>
 </html>
 ```
+
++++
 
 다음으로, 다음 방법을 배웁니다. [Target 전환 이벤트 추적](track-events.md) 사용.
 
