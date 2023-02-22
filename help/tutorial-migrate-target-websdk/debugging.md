@@ -1,9 +1,9 @@
 ---
 title: 디버그 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Experience Platform Web SDK를 사용하여 Adobe Target 구현을 디버깅하는 방법을 알아봅니다. 항목에는 디버깅 옵션, 브라우저 확장, at.js와 Platform Web SDK 간의 차이점이 포함됩니다.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1534'
 ht-degree: 3%
 
 ---
@@ -120,7 +120,7 @@ Adobe Experience Platform Debugger를 사용하여 Platform Web SDK Target 추�
 1. 페이지를 다시 로드하면 로그가 에지 네트워크 상호 작용에 대한 자세한 정보로 채워집니다
 1. 설명에서 &quot;Target 추적&quot;으로 시작하는 로그 항목에 초점을 맞추고 을 선택합니다 **[!UICONTROL 보기]** Target 추적 세부 사항을 보려면
 
-![Adobe Experience Platform Debugger를 사용하여 Target 추적을 보는 방법](assets/target-trace-debugger.png)
+![Adobe Experience Platform Debugger를 사용하여 Target 추적을 보는 방법](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 선택 후 **[!UICONTROL 보기]**&#x200B;과 같은 오버레이가 표시되므로 요청과 관련된 다음 정보를 확인할 수 있습니다.
 
@@ -142,7 +142,7 @@ Target 추적 정보는 Adobe Experience Platform Debugger 브라우저 확장 �
 1. 유형이 있는 로그 항목을 선택합니다 `com.adobe.target.trace`
 1. 페이로드의 세부 사항을 확장하고 아래의 정보를 확인합니다 `context > targetTrace`
 
-![Assurance를 사용하여 Target 추적을 보는 방법](assets/target-trace-assurance.png)
+![Assurance를 사용하여 Target 추적을 보는 방법](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## 네트워크 요청 및 응답 검사
 
@@ -150,7 +150,7 @@ Platform Web SDK의 요청 페이로드 및 응답 `sendEvent` 호출은 at.js�
 
 ### 콘텐츠 요청 페이로드
 
-![플랫폼 웹 SDK 페이로드의 특정 요소 Target](assets/target-payload.png)
+![플랫폼 웹 SDK 페이로드의 특정 요소 Target](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - 프로필, 엔티티 및 기타 mbox가 아닌 매개 변수는 아래의 이벤트 배열에 전달됩니다 `data.__adobe.target`
 - 결정 범위는 아래의 이벤트 배열에 있습니다 `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ Platform Web SDK의 요청 페이로드 및 응답 `sendEvent` 호출은 at.js�
 
 ### 컨텐츠 응답 본문
 
-![플랫폼 웹 SDK 응답 본문의 Target 특정 요소](assets/target-response.png)
+![플랫폼 웹 SDK 응답 본문의 Target 특정 요소](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - Platform 웹 SDK는 `handle` 개체
 - 다음 `personalization:decisions` 작업은 Target 또는 offer decisioning의 응답을 나타냅니다
@@ -169,7 +169,7 @@ Platform Web SDK의 요청 페이로드 및 응답 `sendEvent` 호출은 at.js�
 
 ### 제안 이벤트 페이로드
 
-![Target 제안 이벤트 예](assets/target-proposition-event.png)
+![Target 제안 이벤트 예](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Target 특정 SDK 이벤트는 `decisioning.propositionDisplay` 노출 또는 `decisioning.propositionInteract` 클릭 등의 상호 작용에 대해
 - 제안 이벤트의 세부 사항은 아래의 events 배열에 있습니다. `xdm._experience.decisioning`

@@ -1,9 +1,9 @@
 ---
 title: 매개 변수 보내기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 전송하는 방법을 알아봅니다.
-source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Platform Web SDK를 사용하여 전달된 매개 변수 `sendEvent` 페이로�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 사용자 지정 엔티티 매개 변수는 Recommendations 제품 카탈로그를 업데이트하는 데 사용됩니다. 이러한 사용자 지정 매개 변수는 `data` 개체. |
 | `cartIds` | `data.__adobe.target.cartIds` | Target의 장바구니 기반 권장 사항 알고리즘에 사용됩니다. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 특정 엔티티 ID가 권장 사항 디자인에서 반환되지 않도록 하는 데 사용됩니다. |
-| `mbox3rdPartyId` | idMap에서 설정합니다. 자세한 내용은 [고객 ID와 프로필 동기화](#synching-profiles-with-a-customer-id) | 장치 및 고객 속성에서 Target 프로필을 동기화하는 데 사용됩니다. 고객 ID에 사용할 네임스페이스는 [데이터 스트림의 Target 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | idMap에서 설정합니다. | 장치 및 고객 속성에서 Target 프로필을 동기화하는 데 사용됩니다. 고객 ID에 사용할 네임스페이스는 [데이터 스트림의 Target 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Target 전환 추적에 대한 고유한 순서를 식별하는 데 사용됩니다. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Target 전환 및 최적화 목표를 위한 주문 합계를 추적하는 데 사용됩니다. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>또는<br> `xdm.productListItems[0-n].SKU` | Target 전환 추적 및 권장 사항 알고리즘에 사용됩니다. 자세한 내용은 [엔티티 매개 변수](#entity-parameters) 자세한 내용은 아래 섹션을 참조하십시오. |
@@ -134,7 +134,7 @@ Platform Web SDK를 사용하여 전달된 매개 변수 `sendEvent` 페이로�
 
 ## 사용자 지정 매개 변수
 
-모든 사용자 지정 mbox 매개 변수는 `sendEvent` 명령. XDM 스키마에 Target 구현에 필요한 모든 데이터 포인트가 포함되어 있는지 확인하는 것이 중요합니다.
+사용자 지정 mbox 매개 변수는 `sendEvent` 명령. XDM 스키마에 Target 구현에 필요한 모든 필드가 포함되어 있는지 확인하는 것이 중요합니다.
 
 at.js 예 사용 `targetPageParams()`:
 
@@ -359,7 +359,7 @@ alloy("sendEvent", {
 >다음 `productPurchasedId` 값은에서 쉼표로 구분된 엔티티 ID 목록으로 전달될 수도 있습니다 `data` 개체.
 
 
-## 고객 ID와 프로필 동기화
+## 고객 Id(mbox3rdPartyId)
 
 Target을 사용하면 단일 고객 ID를 사용하여 장치 및 시스템 간에 프로필을 동기화할 수 있습니다. at.js를 사용할 때 `mbox3rdPartyId` Target 요청에서 또는 Experience Cloud Identity 서비스로 전송된 첫 번째 고객 id로. at.js와 달리, Platform Web SDK 구현을 통해 로 사용할 고객 ID를 지정할 수 있습니다 `mbox3rdPartyId` 여러 개가 있는 경우 예를 들어, 비즈니스에 글로벌 고객 ID와 다른 업무 라인에 대한 별도의 고객 ID가 있는 경우, 사용해야 하는 ID Target을 구성할 수 있습니다.
 
@@ -411,7 +411,7 @@ alloy("sendEvent", {
 
 ![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
-데이터 스트림의 Adobe Target 서비스에서 [!UICONTROL Target 타사 ID 네임스페이스] 에 사용된 동일한 네임스페이스로 [!UICONTROL ID 맵] 데이터 요소
+데이터 스트림의 Adobe Target 서비스에서 [!UICONTROL Target 타사 ID 네임스페이스] 에 사용된 동일한 네임스페이스로 [!UICONTROL ID 맵] 데이터 요소:
 ![데이터 스트림에서 Target 타사 ID 네임스페이스 설정](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]

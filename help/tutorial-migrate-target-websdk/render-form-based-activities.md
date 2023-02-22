@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법을 알아봅니다. 항목에는 라이브러리 개요, 구현 차이점 및 기타 주목할 만한 설명서가 포함됩니다.
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '411'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 2%
 
 Target의 양식 기반 작성기를 사용하여 작성되고 지역 mbox에 전달된 활동은 Platform Web SDK에서 자동으로 렌더링할 수 없습니다. at.js와 마찬가지로 특정 Target 위치에 전달된 오퍼를 요청 시 렌더링해야 합니다.
 
-at.js 사용 예제 `getOffer()` 및 `applyOffer()`:
+
++++at.js 사용 예제 `getOffer()` 및 `applyOffer()`:
 
 1. 실행 `getOffer()` 위치에 대한 오퍼를 요청하다
 1. 실행 `applyOffer()` 오퍼를 지정된 선택기에 렌더링하려면
@@ -45,7 +46,9 @@ adobe.target.getOffer({
 });
 ```
 
-Platform Web SDK에 상응하는 `applyPropositions` 명령:
++++
+
++++ `applyPropositions` 명령:
 
 1. 실행 `sendEvent` 하나 이상의 위치(범위)에 대한 오퍼(proposition)를 요청하는 명령
 1. 실행 `applyPropositions` 각 범위에 대해 페이지에 컨텐츠를 적용하는 방법에 대한 지침을 제공하는 메타데이터 개체를 사용하는 명령
@@ -86,6 +89,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 Platform Web SDK는 `applyPropositions` 명령을 사용하여 명령 `actionType` 지정된 날짜:
 
 | `actionType` | 설명 | at.js `applyOffer()` | Platform 웹 SDK `applyPropositions` |
@@ -99,6 +104,8 @@ Platform Web SDK는 `applyPropositions` 명령을 사용하여 명령 `actionTyp
 ## 구현 예
 
 아래 예제 페이지는 이전 섹션에 요약된 구현을 기반으로 구축되며, `sendEvent` 명령.
+
++++여러 범위가 있는 Platform Web SDK 예
 
 ```HTML
 <!doctype html>

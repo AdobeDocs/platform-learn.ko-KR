@@ -2,9 +2,9 @@
 title: VEC 활동 렌더링 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target의 웹 SDK 구현을 통해 시각적 경험 작성기 활동을 검색하고 적용하는 방법을 알아봅니다.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '812'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Google Chrome용 Adobe Experience Cloud Visual Editing Helper 브라우저 확�
 1. 로 이동합니다 [Chrome 웹 스토어의 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 1. 추가 대상 을 클릭합니다. **Chrome** > **확장 추가**.
 1. Target에서 VEC를 엽니다.
-1. 확장을 사용하려면 Visual Editing Helper 브라우저 확장 프로그램 아이콘을 클릭합니다 ![시각적 편집 확장 아이콘](assets/VEC-Helper.png) VEC 또는 QA 모드에 있는 동안 Chrome 브라우저의 도구 모음에서 를 클릭합니다.
+1. 확장을 사용하려면 Visual Editing Helper 브라우저 확장 프로그램 아이콘을 클릭합니다 ![시각적 편집 확장 아이콘](assets/VEC-Helper.png)VEC 또는 QA 모드에 있는 동안 Chrome 브라우저의 도구 모음에서 {zoomable=&quot;yes&quot;}.
 
 작성 기능을 향상시키기 위해 Target VEC에서 웹 사이트를 열면 Visual Editing Helper가 자동으로 활성화됩니다. 확장 기능에는 조건부 설정이 없습니다. 확장 기능은 SameSite 쿠키 설정을 포함한 모든 설정을 자동으로 처리합니다.
 
@@ -44,25 +44,35 @@ Google Chrome용 Adobe Experience Cloud Visual Editing Helper 브라우저 확�
 
 at.js 구현에 `pageLoadEnabled` 설정 `true` VEC 기반 활동을 자동으로 렌더링할 수 있도록 에서는 다음을 실행합니다 `sendEvent` 플랫폼 웹 SDK를 사용하는 명령:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```Javascript
 alloy("sendEvent", {
   "renderDecisions": true
 });
 ```
 
->[!TIP]
->
-> 태그 기능(이전 Launch)을 사용하여 웹 SDK를 구현하는 경우 VEC 활동에 대한 &#39;sendEvent&#39; 명령을 [!UICONTROL 이벤트 보내기] 작업 유형 [!UICONTROL 시각적 개인화 결정 렌더링] 선택 사항입니다.
+>[!TAB 태그]
 
-Platform Web SDK가 활동을 `renderDecisions` 설정 `true`인 경우 추가 알림 호출이 자동으로 실행되어 노출을 증가시키고 방문자를 활동에 보냅니다. 이 호출에서는 값이 있는 이벤트 유형을 사용합니다 `decisioning.propositionDisplay`.
+태그에서 [!UICONTROL 이벤트 보내기] 작업 유형 [!UICONTROL 시각적 개인화 결정 렌더링] 선택:
 
-![Platform Web SDK 호출이 Target 노출 횟수를 증가시킵니다](assets/target-impression-call.png)
+![태그에서 렌더링 개인화 가 true로 설정된 이벤트를 보냅니다.](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
+
+<!--
+When the Platform Web SDK renders an activity to the page with `renderDecisions` set to `true`, an additional notification call fires automatically to increment an impression and attribute the visitor to the activity. This call uses an event type with the value `decisioning.propositionDisplay`.
+
+![Platform Web SDK call incrementing a Target impression](assets/target-impression-call.png){zoomable="yes"}
+-->
 
 ## 주문형 콘텐츠 요청 및 적용
 
-일부 Target at.js 구현에는 `pageLoadEnabled` 설정 `false` 대신 `getOffers()` 함수를 실행하여 `pageLoad` 요청. 이 유형의 설정은 구현에서 추가적인 처리를 필요로 하는 경우 사용됩니다 `getOffers()` 페이지에 콘텐츠를 적용하거나 한 번의 호출로 여러 위치에 대한 콘텐츠를 요청하기 전에 응답합니다.
+일부 Target 구현에서는 VEC 오퍼를 페이지에 적용하기 전에 일부 사용자 지정 처리를 필요로 합니다. 또는 한 번의 호출로 여러 위치를 요청합니다. at.js 구현에서 다음을 설정하여 수행할 수 있습니다 `pageLoadEnabled` to `false` 그리고 `getOffers()` 함수를 실행하여 `pageLoad` 요청.
 
-다음 코드는 를 사용합니다 `getOffers()` 및 `applyOffers()` 라이브러리 로드 시 자동으로 적용되지 않고 VEC 기반 활동을 온디맨드로 적용하려면
++++ at.js 예 사용 `getOffers()` 및 `applyOffers()` vec 기반 활동을 수동으로 렌더링하려면
 
 ```JavaScript
 adobe.target.getOffers({
@@ -75,7 +85,11 @@ adobe.target.getOffers({
 then(response => adobe.target.applyOffers({ response: response }));
 ```
 
-Platform 웹 SDK에는 특정 기능이 없습니다 `pageLoad` 이벤트. Target 컨텐츠에 대한 모든 요청은 `decisionScopes` 옵션 `sendEvent` 명령. 다음 `__view__` 범위는 `pageLoad` 요청. 동등한 Platform Web SDK `sendEvent` 접근 방식은 다음과 같습니다.
++++
+
+Platform 웹 SDK에는 특정 기능이 없습니다 `pageLoad` 이벤트. Target 컨텐츠에 대한 모든 요청은 `decisionScopes` 옵션 `sendEvent` 명령. 다음 `__view__` 범위는 `pageLoad` 요청.
+
++++ 동등한 Platform Web SDK `sendEvent` 접근 방법:
 
 1. 실행 `sendEvent` 포함된 명령 `__view__` 결정 범위
 1. 반환된 컨텐츠를 를 사용하여 페이지에 적용 `applyPropositions` 명령
@@ -110,6 +124,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 >[!NOTE]
 >
 >가능한 작업 [수동 수정 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) 시각적 경험 작성기에서 수행되었습니다. VEC 기반 수정 사항의 수동 렌더링은 일반적이지 않습니다. at.js 구현에서 `getOffers()` 수동으로 Target 실행 `pageLoad` 을 사용하지 않고 요청 `applyOffers()` 을 눌러 페이지에 컨텐츠를 적용합니다.
@@ -118,7 +134,9 @@ Platform Web SDK는 개발자에게 컨텐츠 요청 및 렌더링을 매우 유
 
 ## 구현 예
 
-이제 기본 Platform 웹 SDK 구현이 완료되었습니다. 자동 Target 컨텐츠 렌더링 이 활성화된 기본 예제 페이지는 다음과 같습니다.
+이제 기본 Platform 웹 SDK 구현이 완료되었습니다.
+
++++자동 Target 컨텐츠 렌더링 이 있는 웹 SDK 예제 페이지:
 
 ```HTML
 <!doctype html>
@@ -179,6 +197,8 @@ Platform Web SDK는 개발자에게 컨텐츠 요청 및 렌더링을 매우 유
 </body>
 </html>
 ```
+
++++
 
 >[!TIP]
 >

@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x와 웹 SDK 비교 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: 기능, 함수, 설정 및 데이터 흐름 등 at.js 2.x와 Platform Web SDK의 차이점에 대해 알아봅니다.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2156'
 ht-degree: 8%
 
 ---
@@ -118,7 +118,7 @@ at.js 라이브러리는 Target UI의 다양한 설정을 사용하여 구성 �
 
 ### at.js 2.x 시스템 다이어그램
 
-![페이지 로드 시 at.js 2.0 동작](assets/target-at-js-2x-diagram.png)
+![페이지 로드 시 at.js 2.0 동작](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
 
 | 호출 | 세부 사항 |
 | --- | --- |

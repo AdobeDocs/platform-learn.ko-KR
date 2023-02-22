@@ -1,9 +1,9 @@
 ---
 title: 대상자 및 프로필 스크립트 업데이트 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK와의 호환성을 위해 Adobe Target 대상 및 프로필 스크립트를 업데이트하는 방법을 알아봅니다.
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Platform Web SDK로 Target을 마이그레이션하기 위한 기술 업데이�
 
 at.js 및 Platform Web SDK와의 호환성을 보장하는 한 가지 접근 방법은 다음과 같이 관련 대상을 업데이트하여 `OR` 조건은 아래와 같이 사용됩니다.
 
-![Platform Web SDK 호환성을 위해 Target 대상자 업데이트를 보는 방법](assets/target-audience-update.png)
+![Platform Web SDK 호환성을 위해 Target 대상자 업데이트를 보는 방법](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
 
 ## 프로필 스크립트 편집
 

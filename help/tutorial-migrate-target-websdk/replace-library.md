@@ -1,9 +1,9 @@
 ---
 title: 라이브러리 바꾸기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법을 알아봅니다. 항목에는 라이브러리 개요, 구현 차이점 및 기타 주목할 만한 설명서가 포함됩니다.
-source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ at.js를 사용하여 간단한 Target 구현을 가정해 보십시오.
 * 깜박임을 완화하도록 코드 조각 사전 숨김
 * at.js Target 라이브러리는 활동을 자동으로 요청 및 렌더링하기 위해 기본 설정으로 비동기적으로 로드됩니다.
 
-+++at.js의 HTML 코드 예제 참조
++++at.js HTML 페이지에 구현된 예제
 
 ```HTML
 <!doctype html>
@@ -201,21 +201,17 @@ Adobe은 최상의 전체 페이지 성능을 위해 Platform Web SDK를 비동�
 
 동기 구현을 위한 사전 숨김 스타일은 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) 선택 사항입니다. Platform Web SDK 구성은 다음 섹션에서 다룹니다.
 
->[!TIP]
->
-> 태그 기능(이전 Launch)을 사용하여 웹 SDK를 구현하는 경우 Adobe Experience Platform Web SDK 확장 구성에서 사전 숨김 스타일을 편집할 수 있습니다.
-
 Platform Web SDK에서 플리커를 관리하는 방법에 대한 자세한 내용은 안내서 섹션을 참조하십시오.  [개인화된 경험에 대한 플리커 관리](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## Platform Web SDK 구성
 
-Platform Web SDK는 페이지를 로드할 때마다 구성해야 합니다. 다음 `configure` 명령은 항상 호출된 첫 번째 SDK 명령이어야 합니다. 다음 예제에서는 전체 사이트가 단일 배포에서 Platform Web SDK로 업그레이드된다고 가정합니다.
+Platform Web SDK는 페이지를 로드할 때마다 구성해야 합니다. 다음 예제에서는 전체 사이트가 단일 배포에서 Platform Web SDK로 업그레이드된다고 가정합니다.
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-다음 `edgeConfigId` 은 [!UICONTROL 데이터 스트림 ID]
+다음 `configure` 명령은 항상 호출된 첫 번째 SDK 명령이어야 합니다. 다음 `edgeConfigId` 은 [!UICONTROL 데이터 스트림 ID]
 
 ```JavaScript
 alloy("configure", {
@@ -228,7 +224,7 @@ alloy("configure", {
 
 태그 구현에서 많은 필드가 자동으로 채워지거나 드롭다운 메뉴에서 선택할 수 있습니다. 다른 플랫폼 [!UICONTROL 샌드박스] 및 [!UICONTROL 데이터 세트] 각 환경에 대해 선택할 수 있습니다. 데이터 스트림은 게시 프로세스에서 태그 라이브러리의 상태에 따라 변경됩니다.
 
-![웹 SDK 태그 확장 구성](assets/tags-config.png)
+![웹 SDK 태그 확장 구성](assets/tags-config.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 페이지별로 at.js에서 Platform Web SDK로 마이그레이션하려는 경우 다음 구성 옵션이 필요합니다.
@@ -247,9 +243,9 @@ alloy("configure", {
 });
 ```
 
->[!TAB 태그 내에만 게시합니다]
+>[!TAB 태그]
 
-![웹 SDK 태그 확장 마이그레이션 옵션 구성](assets/tags-config-migration.png)
+![웹 SDK 태그 확장 마이그레이션 옵션 구성](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 Target과 관련된 주목할 만한 구성 옵션은 다음과 같습니다.
@@ -263,19 +259,15 @@ Target과 관련된 주목할 만한 구성 옵션은 다음과 같습니다.
 | `thirdPartyCookiesEnabled` | 타사 쿠키 Adobe 설정을 활성화합니다. SDK는 타사 컨텍스트에서 방문자 ID를 유지하여 여러 사이트에서 동일한 방문자 ID를 사용할 수 있습니다. 여러 사이트가 있는 경우 이 옵션을 사용합니다. 그러나 경우에 따라 이 옵션은 개인 정보용으로 필요하지 않습니다. | `true` |
 | `prehidingStyle` | 서버에서 개인화된 콘텐츠를 로드하는 동안 웹 페이지의 콘텐츠 영역을 숨기는 CSS 스타일 정의를 만드는 데 사용됩니다. SDK의 동기식 배포에서만 사용됩니다. | `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` 를 로 설정할 수 있습니다. `true` 여러 도메인에서 일관된 Target 방문자 프로필을 유지하기 위해. 이 옵션은 `false` 다중 도메인 방문자 프로필 지속성이 필요하지 않으면 생략하거나 생략합니다.
-
->[!TIP]
->
-> 태그 기능(이전 Launch)을 사용하여 Web SDK를 구현할 때 Adobe Experience Platform Web SDK 확장 구성에서 이러한 구성을 관리할 수 있습니다.
-
 전체 옵션 목록이 필요하면 [platform Web SDK 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko-KR) 안내서.
 
 ## 구현 예
 
 Platform Web SDK가 제대로 준비되면 예제 페이지는 다음과 같습니다.
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!doctype html>
@@ -332,9 +324,61 @@ Platform Web SDK가 제대로 준비되면 예제 페이지는 다음과 같습�
 </html>
 ```
 
->[!TIP]
->
-> 태그 기능(이전 Launch)을 사용하여 웹 SDK를 구현할 때 태그 포함 코드는 위의 &#39;Platform Web SDK 기본 코드&#39;, &#39;Platform Web SDK 비동기식으로 로드&#39; 및 &#39;Platform Web SDK 구성&#39; 섹션을 대체합니다.
+>[!TAB 태그]
+
+페이지 코드:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+태그에서 Adobe Experience Platform Web SDK 확장을 추가합니다.
+
+![Adobe Experience Platform 웹 SDK 확장 추가](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+원하는 구성을 추가합니다.
+![웹 SDK 태그 확장 마이그레이션 옵션 구성](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
+
 
 위에 표시된 대로 Platform Web SDK 라이브러리를 단순히 포함 및 구성하면 Adobe Edge 네트워크에 대한 네트워크 호출이 실행되지 않습니다.
 
