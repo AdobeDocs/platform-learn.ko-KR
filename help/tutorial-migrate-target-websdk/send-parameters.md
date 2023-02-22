@@ -1,9 +1,9 @@
 ---
 title: 매개 변수 보내기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 전송하는 방법을 알아봅니다.
-source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
+source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1663'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ at.js를 사용하여 다음 두 예제 페이지를 가정하십시오.
         // Property token
         "at_property": "5a0fd9bb-67de-4b5a-0fd7-9cc09f50a58d",
         // Mbox parameters
-        "siteSection": "product details",
+        "pageName": "product detail",
         // Profile parameters
         "profile.gender": "male",
         "user.categoryId": "clothing",
@@ -95,16 +95,16 @@ at.js를 사용하여 다음 두 예제 페이지를 가정하십시오.
 
 ## 매개 변수 매핑 요약
 
-이러한 두 예제 페이지에서 사용되는 Target 매개 변수는 Platform Web SDK를 사용하여 약간 다르게 전송해야 합니다. at.js를 사용하여 Target에 매개 변수를 전달하는 방법에는 여러 가지가 있습니다.
+이러한 페이지에 대한 Target 매개 변수는 Platform Web SDK를 사용하여 다르게 전송됩니다. at.js를 사용하여 Target에 매개 변수를 전달하는 방법에는 여러 가지가 있습니다.
 
 - 설정 `targetPageParams()` 페이지 로드 이벤트에 대한 함수
 - 설정 `targetPageParamsAll()` 페이지의 모든 Target 요청에 대해 작동합니다.
 - 를 사용하여 직접 매개 변수 전송 `getOffer()` 단일 위치에 대한 함수
 - 를 사용하여 직접 매개 변수 전송 `getOffers()` 하나 이상의 위치에 대한 함수
 
-이 예제를 위해 `targetPageParams()` 접근 방식이 사용됩니다.
+이러한 예제의 경우 `targetPageParams()` 접근 방식이 사용됩니다.
 
-Platform Web SDK는 추가 기능 없이 데이터를 전송하는 일관된 방법을 제공하여 이를 단순화합니다. 모든 매개 변수를 와 함께 페이로드에서 전달해야 합니다. `sendEvent` 명령.
+Platform Web SDK는 추가 기능 없이 데이터를 전송하는 단일 일관된 방법을 제공합니다. 모든 매개 변수를 와 함께 페이로드에서 전달해야 합니다. `sendEvent` 명령.
 
 Platform Web SDK를 사용하여 전달된 매개 변수 `sendEvent` 페이로드는 두 가지 카테고리에 속합니다.
 
@@ -116,7 +116,7 @@ Platform Web SDK를 사용하여 전달된 매개 변수 `sendEvent` 페이로�
 | at.js 매개 변수 예 | Platform Web SDK 옵션 | 참고 |
 | --- | --- | --- |
 | `at_property` | 해당 없음 | 속성 토큰은 [데이터 스트림](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) 및 는 `sendEvent` 호출. |
-| `siteSection` | `xdm.web.webPageDetails.siteSection` | 모든 Target mbox 매개 변수는 의 일부로 전달해야 합니다 `xdm` XDM ExperienceEvent 클래스를 사용하여 스키마를 따르며, mbox 매개 변수는 의 일부로 전달할 수 없습니다 `data` 개체. |
+| `pageName` | `xdm.web.webPageDetails.name` | 모든 Target mbox 매개 변수는 의 일부로 전달해야 합니다 `xdm` XDM ExperienceEvent 클래스를 사용하여 스키마를 따르며, mbox 매개 변수는 의 일부로 전달할 수 없습니다 `data` 개체. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 모든 Target 프로필 매개 변수는 `data` 개체 앞에 `profile.` 매핑됩니다. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Target의 카테고리 친화성 기능에 사용되는 예약된 매개 변수로서 `data` 개체. |
 | `entity.id` | `data.__adobe.target.entity.id` <br>또는<br> `xdm.productListItems[0].SKU` | 엔티티 ID는 Recommendations 동작 카운터에 사용됩니다. 이러한 엔티티 ID는 `data` 개체 또는 의 첫 번째 항목에서 자동으로 매핑됩니다 `xdm.productListItems` 구현에서 해당 필드 그룹을 사용하는 경우 배열합니다. |
@@ -169,18 +169,18 @@ alloy("sendEvent", {
 
 태그에서 먼저 [!UICONTROL XDM 개체] xdm 필드에 매핑할 데이터 요소:
 
-![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-pageName.png)
+![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-pageName.png){zoomable=&quot;yes&quot;}
 
 그런 다음 [!UICONTROL XDM 개체] 다음 위치에서 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업] (여러 개) [!UICONTROL XDM 개체] 다음을 수행할 수 있습니다. [병합됨](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent.png)
+![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->사용자 지정 mbox 매개 변수는 의 일부로 전송해야 하므로 `xdm` 의 개체 `sendEvent` 명령을 사용하면 at.js Target 구현에 사용된 모든 mbox 매개 변수를 그에 해당하는 XDM에 재할당해야 합니다. 즉, 이러한 mbox 매개 변수를 참조하는 대상, 활동 또는 프로필 스크립트를 업데이트해야 합니다.
+>사용자 지정 mbox 매개 변수가 의 일부이므로 `xdm` 개체 사용자는 새 이름을 사용하여 이러한 mbox 매개 변수를 참조하는 대상, 활동 또는 프로필 스크립트를 업데이트해야 합니다. 자세한 내용은 [Platform Web SDK 호환성을 위해 Target 대상 및 프로필 스크립트 업데이트](update-audiences.md) 자세한 내용은 이 자습서의 페이지를 참조하십시오.
 
 
 ## 프로필 매개 변수
@@ -223,11 +223,11 @@ alloy("sendEvent", {
 
 태그에서 먼저 데이터 요소를 만들어 `data.__adobe.target` 개체:
 
-![데이터 요소에서 데이터 개체 정의](assets/params-tags-dataObject.png)
+![데이터 요소에서 데이터 개체 정의](assets/params-tags-dataObject.png){zoomable=&quot;yes&quot;}
 
 그런 다음 데이터 개체를 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업] (여러 개) [!UICONTROL 개체] 다음을 수행할 수 있습니다. [병합됨](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png)
+![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -277,11 +277,11 @@ alloy("sendEvent", {
 
 태그에서 먼저 데이터 요소를 만들어 `data.__adobe.target` 개체:
 
-![데이터 요소에서 데이터 개체 정의](assets/params-tags-dataObject-entities.png)
+![데이터 요소에서 데이터 개체 정의](assets/params-tags-dataObject-entities.png){zoomable=&quot;yes&quot;}
 
 그런 다음 데이터 개체를 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업] (여러 개) [!UICONTROL 개체] 다음을 수행할 수 있습니다. [병합됨](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png)
+![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -345,11 +345,11 @@ alloy("sendEvent", {
 
 태그에서 먼저 [!UICONTROL XDM 개체] xdm 필드에 매핑할 데이터 요소:
 
-![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-purchase.png)
+![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-purchase.png){zoomable=&quot;yes&quot;}
 
 그런 다음 [!UICONTROL XDM 개체] 다음 위치에서 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업] (여러 개) [!UICONTROL XDM 개체] 다음을 수행할 수 있습니다. [병합됨](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent.png)
+![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent-purchase.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -402,17 +402,17 @@ alloy("sendEvent", {
 >[!TAB 태그]
 
 다음 [!UICONTROL ID] 값, [!UICONTROL 인증됨 상태] 및 [!UICONTROL 네임스페이스] 이 [!UICONTROL ID 맵] 데이터 요소:
-![고객 ID를 캡처하는 ID 맵 데이터 요소](assets/params-tags-customerIdDataElement.png)
+![고객 ID를 캡처하는 ID 맵 데이터 요소](assets/params-tags-customerIdDataElement.png){zoomable=&quot;yes&quot;}
 
 다음 [!UICONTROL ID 맵] 그런 다음 데이터 요소를 사용하여 [!UICONTROL identityMap] 의 필드 [!UICONTROL XDM 개체] 데이터 요소:
-![XDM 개체 데이터 요소에 사용되는 ID 맵 데이터 요소](assets/params-tags-customerIdInXDMObject.png)
+![XDM 개체 데이터 요소에 사용되는 ID 맵 데이터 요소](assets/params-tags-customerIdInXDMObject.png){zoomable=&quot;yes&quot;}
 
 다음 [!UICONTROL XDM 개체] 그러면 이 [!UICONTROL 이벤트 보내기] 규칙 작업:
 
-![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent.png)
+![전송 이벤트에 XDM 개체 데이터 요소 포함](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
 데이터 스트림의 Adobe Target 서비스에서 [!UICONTROL Target 타사 ID 네임스페이스] 에 사용된 동일한 네임스페이스로 [!UICONTROL ID 맵] 데이터 요소
-![데이터 스트림에서 Target 타사 ID 네임스페이스 설정](assets/params-tags-customerIdNamespaceInDatastream.png)
+![데이터 스트림에서 Target 타사 ID 네임스페이스 설정](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -472,7 +472,7 @@ alloy("sendEvent", {
         "web": {
           "webPageDetails": {
             // Other attributes included according to XDM schema
-            "siteSection": "product detail"
+            "pageName": "product detail"
           }
         }
       },
