@@ -3,9 +3,9 @@ title: Platform Web SDK를 사용하여 Adobe Target 설정
 description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법을 알아봅니다. 이 단원은 웹 SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '3779'
+source-wordcount: '3801'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법을 알아봅니다. 경험을 전달하는 방법과 추가 매개 변수를 Target에 전달하는 방법을 알아봅니다.
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) 은 사용자의 웹 및 모바일 사이트, 앱 및 기타 디지털 채널에서 매출을 극대화하도록 고객의 경험을 조정하고 개인화하는 데 필요한 모든 기능을 제공하는 Adobe Experience Cloud 애플리케이션입니다.
+
 
 ## 학습 목표
 
@@ -26,6 +27,10 @@ Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법을 알아�
 * XDM 데이터를 Target에 전달하고 Target 매개 변수에 대한 매핑을 이해합니다
 * 프로필 및 엔티티 매개 변수와 같은 Target에 사용자 지정 데이터 전달
 * Platform Web SDK를 사용하여 Target 구현 유효성 검사
+
+>[!TIP]
+>
+>다음 문서를 참조하십시오 [at.js 2.x에서 Platform Web SDK로 Target 마이그레이션](/help/tutorial-migrate-target-websdk/introduction.md) 기존 at.js 구현을 마이그레이션하기 위한 단계별 안내서용 자습서입니다.
 
 
 ## 전제 조건
@@ -123,7 +128,7 @@ Platform Web SDK에서 Target 활동을 제공하려면 먼저 데이터 스트�
 
    ![Luma Web SDK 데이터 스트림을 선택합니다](assets/datastream-luma-web-sdk.png)
 
-1. 선택 **[!UICONTROL 서비스 추가]**
+1. **[!UICONTROL 서비스 추가]**를 선택합니다
 
    ![데이터 스트림에 서비스 추가](assets/target-datastream-addService.png)
 1. 선택 **[!UICONTROL Adobe Target]** 로서의 **[!UICONTROL 서비스]**

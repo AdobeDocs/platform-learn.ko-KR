@@ -3,23 +3,22 @@ user-guide-title: at.js 2.x에서 웹 SDK로 Target 마이그레이션
 breadcrumb-title: at.js 2.x에서 웹 SDK로 Target 마이그레이션
 user-guide-description: at.js에서 웹 SDK 구현으로 성공적으로 마이그레이션하는 방법을 다루는 Target 고객을 위한 실습 자습서입니다.
 feature-set: Target,Experience Platform
-solution: Experience Platform,Data Collection,Target
+solution: Target,Data Collection,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
 role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-hide: true
 kt: 11159
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
 workflow-type: tm+mt
-source-wordcount: '87'
+source-wordcount: '88'
 ht-degree: 5%
 
 ---
 
 
-# Target at.js 구현을 웹 SDK로 마이그레이션 {#migrate-target-to-websdk}
+# at.js 2.x에서 Platform Web SDK로 Target 마이그레이션 {#migrate-target-to-websdk}
 
 + [튜토리얼 소개](introduction.md)
 
