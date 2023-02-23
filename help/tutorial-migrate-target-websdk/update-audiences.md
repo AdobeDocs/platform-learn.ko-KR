@@ -1,9 +1,9 @@
 ---
 title: 대상자 및 프로필 스크립트 업데이트 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK와의 호환성을 위해 Adobe Target 대상 및 프로필 스크립트를 업데이트하는 방법을 알아봅니다.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ if(mbox.param('pageName') == 'Product Details'){
 Platform Web SDK 호환성을 위한 프로필 스크립트가 업데이트되었습니다.
 
 ```Javascript
-if((mbox.param('pageName') == 'Product Details') || (mbox.param('page.webpagedetails.pageName') =='Product Details')){
+if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDetails.pageName') =='Product Details')){
   return true
 }
 ```
@@ -69,7 +69,7 @@ Platform Web SDK 매개 변수 이름을 사용하는 JSON 오퍼 예:
 
 ```JSON
 {
-  "pageName" : "${mbox.web.webpagedetails.pageName}",
+  "pageName" : "${mbox.web.webPagedDetails.pageName}",
   "layoutVariation" : "grid"
 }
 ```
@@ -80,4 +80,4 @@ Platform Web SDK 매개 변수 이름을 사용하는 JSON 오퍼 예:
 
 >[!NOTE]
 >
->Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

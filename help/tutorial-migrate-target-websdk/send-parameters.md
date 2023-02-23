@@ -1,9 +1,9 @@
 ---
 title: 매개 변수 보내기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 전송하는 방법을 알아봅니다.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -97,19 +97,16 @@ at.js를 사용하여 다음 두 예제 페이지를 가정하십시오.
 
 이러한 페이지에 대한 Target 매개 변수는 Platform Web SDK를 사용하여 다르게 전송됩니다. at.js를 사용하여 Target에 매개 변수를 전달하는 방법에는 여러 가지가 있습니다.
 
-- 설정 `targetPageParams()` 페이지 로드 이벤트에 대한 함수
+- 설정 `targetPageParams()` 페이지 로드 이벤트에 대한 함수(이 페이지의 예에서 사용됨)입니다.
 - 설정 `targetPageParamsAll()` 페이지의 모든 Target 요청에 대해 작동합니다.
 - 를 사용하여 직접 매개 변수 전송 `getOffer()` 단일 위치에 대한 함수
 - 를 사용하여 직접 매개 변수 전송 `getOffers()` 하나 이상의 위치에 대한 함수
 
-이러한 예제의 경우 `targetPageParams()` 접근 방식이 사용됩니다.
 
-Platform Web SDK는 추가 기능 없이 데이터를 전송하는 단일 일관된 방법을 제공합니다. 모든 매개 변수를 와 함께 페이로드에서 전달해야 합니다. `sendEvent` 명령.
+Platform Web SDK는 추가 기능 없이 데이터를 전송하는 단일 일관된 방법을 제공합니다. 모든 매개 변수를 와 함께 페이로드에서 전달해야 합니다. `sendEvent` 명령 및 는 두 가지 카테고리에 속합니다.
 
-Platform Web SDK를 사용하여 전달된 매개 변수 `sendEvent` 페이로드는 두 가지 카테고리에 속합니다.
-
-1. 에서 자동으로 매핑됨 `xdm` 개체
-1. 를 사용하여 수동으로 전달 `data.__adobe.target` 개체
+- 에서 자동으로 매핑됨 `xdm` 개체
+- 를 사용하여 수동으로 전달 `data.__adobe.target` 개체
 
 아래 표에서는 Platform Web SDK를 사용하여 예제 매개 변수를 다시 매핑하는 방법을 설명합니다.
 
@@ -124,7 +121,7 @@ Platform Web SDK를 사용하여 전달된 매개 변수 `sendEvent` 페이로�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 사용자 지정 엔티티 매개 변수는 Recommendations 제품 카탈로그를 업데이트하는 데 사용됩니다. 이러한 사용자 지정 매개 변수는 `data` 개체. |
 | `cartIds` | `data.__adobe.target.cartIds` | Target의 장바구니 기반 권장 사항 알고리즘에 사용됩니다. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 특정 엔티티 ID가 권장 사항 디자인에서 반환되지 않도록 하는 데 사용됩니다. |
-| `mbox3rdPartyId` | idMap에서 설정합니다. | 장치 및 고객 속성에서 Target 프로필을 동기화하는 데 사용됩니다. 고객 ID에 사용할 네임스페이스는 [데이터 스트림의 Target 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | 에서 를 설정합니다. `xdm.identityMap` 개체 | 장치 및 고객 속성에서 Target 프로필을 동기화하는 데 사용됩니다. 고객 ID에 사용할 네임스페이스는 [데이터 스트림의 Target 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | Target 전환 추적에 대한 고유한 순서를 식별하는 데 사용됩니다. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Target 전환 및 최적화 목표를 위한 주문 합계를 추적하는 데 사용됩니다. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>또는<br> `xdm.productListItems[0-n].SKU` | Target 전환 추적 및 권장 사항 알고리즘에 사용됩니다. 자세한 내용은 [엔티티 매개 변수](#entity-parameters) 자세한 내용은 아래 섹션을 참조하십시오. |
@@ -233,7 +230,7 @@ alloy("sendEvent", {
 
 ## 엔티티 매개 변수
 
-엔티티 매개 변수는 Target Recommendations에 대한 동작 데이터 및 추가 카탈로그 정보를 전달하는 데 사용됩니다. 프로필 매개 변수와 마찬가지로 모든 엔티티 매개 변수를 `data.__adobe.target` 플랫폼 웹 SDK의 개체 `sendEvent` 명령 페이로드입니다.
+엔티티 매개 변수는 Target Recommendations에 대한 동작 데이터 및 추가 카탈로그 정보를 전달하는 데 사용됩니다. 모두 [엔티티 매개 변수](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js에서 지원하는 Platform Web SDK도 사용할 수 있습니다. 프로필 매개 변수와 마찬가지로 모든 엔티티 매개 변수를 `data.__adobe.target` 플랫폼 웹 SDK의 개체 `sendEvent` 명령 페이로드입니다.
 
 특정 항목의 엔티티 매개 변수 접두사는 `entity.` 를 반환합니다. 예약됨 `cartIds` 및 `excludedIds` 권장 사항 알고리즘에 대한 매개 변수 접두사를 사용하지 않아야 하며 각 값에 쉼표로 구분된 엔티티 ID 목록이 포함되어야 합니다.
 
@@ -284,12 +281,6 @@ alloy("sendEvent", {
 ![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
-
-
-
-
-
-모두 [엔티티 매개 변수](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) at.js에서 지원하는 Platform Web SDK도 사용할 수 있습니다.
 
 >[!NOTE]
 >
@@ -576,4 +567,4 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

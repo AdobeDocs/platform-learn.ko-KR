@@ -1,9 +1,9 @@
 ---
 title: 라이브러리 바꾸기 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법을 알아봅니다. 항목에는 라이브러리 개요, 구현 차이점 및 기타 주목할 만한 설명서가 포함됩니다.
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1654'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 * Target 관리 설정을 검토하고 IMS 조직 ID를 기록해 둡니다
 * at.js 라이브러리를 Platform Web SDK로 바꾸기
 * 동기 라이브러리 구현을 위해 코드 조각 사전 숨김을 업데이트합니다
-* 페이지에서 Platform Web SDK 구성
+* Platform Web SDK 구성
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ at.js를 사용하여 간단한 Target 구현을 가정해 보십시오.
 * 깜박임을 완화하도록 코드 조각 사전 숨김
 * at.js Target 라이브러리는 활동을 자동으로 요청 및 렌더링하기 위해 기본 설정으로 비동기적으로 로드됩니다.
 
-+++at.js HTML 페이지에 구현된 예제
++++at.js 예 HTML 페이지 구현
 
 ```HTML
 <!doctype html>
@@ -138,7 +138,11 @@ Platform Web SDK를 사용하도록 Target을 업그레이드하려면 먼저 at
 <script src="/libraries/at.js" async></script>
 ```
 
-및 을 현재 지원되는 Platform Web SDK 버전(alloy.js)으로 바꿉니다.
+및 를 합금 JavsScript 라이브러리 또는 태그 포함 코드 및 Adobe Experience Platform Web SDK 확장으로 바꿉니다.
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -152,12 +156,21 @@ Platform Web SDK를 사용하도록 Target을 업그레이드하려면 먼저 at
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB 태그]
+
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+```
+
+태그 속성에서 Adobe Experience Platform Web SDK 확장을 추가합니다.
+
+![Adobe Experience Platform 웹 SDK 확장 추가](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
 사전 빌드된 독립형 버전은 합금이라는 글로벌 기능을 만드는 페이지에 직접 추가된 &quot;기본 코드&quot;가 필요합니다. 이 함수를 사용하여 SDK와 상호 작용합니다. 전역 함수에 다른 이름을 지정하려면 `alloy` 이름.
-
->[!TIP]
->
-> 태그 기능(이전 Launch)을 사용하여 웹 SDK를 구현할 때 Adobe Experience Platform Web SDK 확장을 추가하여 alloy.js 라이브러리가 태그 라이브러리에 추가됩니다.
-
 
 자세한 내용은 [Platform Web SDK 설치](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=ko-KR?lang=ko-KR) 추가 세부 사항 및 배포 옵션에 대한 설명서입니다.
 
@@ -168,7 +181,7 @@ Platform Web SDK 구현에서는 라이브러리가 비동기식으로 로드되
 
 ### 비동기 구현
 
-at.js와 마찬가지로 Platform Web SDK 라이브러리가 비동기적으로 로드되는 경우 Target이 컨텐츠 교환을 수행하기 전에 페이지가 렌더링을 완료할 수 있습니다. 이 동작은 Target에서 지정한 개인화된 콘텐츠로 대체되기 전에 기본 콘텐츠가 잠깐 나타나는 &quot;깜박임&quot;이라고 하는 것이 나타날 수 있습니다. 이러한 깜박임이 발생하지 않도록 하려면 비동기 Platform Web SDK 스크립트 참조 바로 앞에 특수 코드 조각 사전 숨김을 추가하는 것이 좋습니다.
+at.js와 마찬가지로 Platform Web SDK 라이브러리가 비동기적으로 로드되는 경우 Target이 컨텐츠 교환을 수행하기 전에 페이지가 렌더링을 완료할 수 있습니다. 이 동작은 Target에서 지정한 개인화된 콘텐츠로 대체되기 전에 기본 콘텐츠가 잠깐 나타나는 &quot;깜박임&quot;이라고 하는 것이 나타날 수 있습니다. 이러한 깜박임이 발생하지 않도록 하려면 비동기 Platform Web SDK 스크립트 참조 또는 태그 포함 코드 바로 앞에 특수 코드 조각 사전 숨김을 추가하는 것이 좋습니다.
 
 구현이 위의 예와 같이 비동기식으로 작동하면 at.js 사전 숨김 코드 조각을 Platform Web SDK와 호환되는 아래 버전으로 바꾸십시오.
 
@@ -191,13 +204,13 @@ at.js와 마찬가지로 Platform Web SDK 라이브러리가 비동기적으로 
 
 * `3000` 사전 숨김에 대한 시간 제한(밀리초)을 지정합니다. 시간 초과 전에 Target의 응답을 받지 못하면 사전 숨김 스타일 태그가 제거됩니다. 이 시간 초과는 거의 발생하지 않습니다.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Platform Web SDK는 다른 스타일 ID를 사용하므로 올바른 코드 조각을 사용해야 합니다 `alloy-prehiding`. at.js에 대한 코드 조각 사전 숨김을 사용하는 경우 제대로 작동하지 않을 수 있습니다.
 
 ### 동기식 구현
 
-Adobe은 최상의 전체 페이지 성능을 위해 Platform Web SDK를 비동기식으로 구현하는 것이 좋습니다. 그러나 라이브러리가 동기식으로 로드되면 코드 조각 사전 숨김이 필요하지 않습니다. 대신 Platform Web SDK 구성에 사전 숨김 스타일이 지정됩니다.
+Adobe은 최상의 전체 페이지 성능을 위해 Platform Web SDK를 비동기식으로 구현하는 것이 좋습니다. 그러나 alloy.js 라이브러리 또는 태그 포함 코드가 동기식으로 로드되면 코드 조각 사전 숨김이 필요하지 않습니다. 대신 Platform Web SDK 구성에 사전 숨김 스타일이 지정됩니다.
 
 동기 구현을 위한 사전 숨김 스타일은 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) 선택 사항입니다. Platform Web SDK 구성은 다음 섹션에서 다룹니다.
 
@@ -246,6 +259,7 @@ alloy("configure", {
 >[!TAB 태그]
 
 ![웹 SDK 태그 확장 마이그레이션 옵션 구성](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
 >[!ENDTABS]
 
 Target과 관련된 주목할 만한 구성 옵션은 다음과 같습니다.
@@ -352,9 +366,8 @@ Platform Web SDK가 제대로 준비되면 예제 페이지는 다음과 같습�
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -386,4 +399,4 @@ Platform Web SDK가 제대로 준비되면 예제 페이지는 다음과 같습�
 
 >[!NOTE]
 >
->Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

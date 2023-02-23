@@ -2,9 +2,9 @@
 title: VEC 활동 렌더링 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target의 웹 SDK 구현을 통해 시각적 경험 작성기 활동을 검색하고 적용하는 방법을 알아봅니다.
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '824'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 태그에서 [!UICONTROL 이벤트 보내기] 작업 유형 [!UICONTROL 시각적 개인화 결정 렌더링] 선택:
 
-![태그에서 렌더링 개인화 가 true로 설정된 이벤트를 보냅니다.](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![태그에서 선택한 시각적 개인화 결정 렌더링 을 사용하여 이벤트를 보냅니다.](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -136,7 +136,11 @@ Platform Web SDK는 개발자에게 컨텐츠 요청 및 렌더링을 매우 유
 
 이제 기본 Platform 웹 SDK 구현이 완료되었습니다.
 
-+++자동 Target 컨텐츠 렌더링 이 있는 웹 SDK 예제 페이지:
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+자동 Target 컨텐츠 렌더링 사용 JavaScript 예:
 
 ```HTML
 <!doctype html>
@@ -198,14 +202,65 @@ Platform Web SDK는 개발자에게 컨텐츠 요청 및 렌더링을 매우 유
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> 태그 기능(이전 Launch)을 사용하여 웹 SDK를 구현할 때 태그 포함 코드는 위의 &#39;Platform Web SDK 기본 코드&#39;, &#39;Platform Web SDK 비동기식으로 로드&#39; 및 &#39;Platform Web SDK 구성&#39; 섹션을 대체합니다. &#39;sendEvent&#39; 명령은 [!UICONTROL 이벤트 보내기] 작업 유형 [!UICONTROL 시각적 개인화 결정 렌더링] 선택 사항입니다.
+>[!TAB 태그]
+
+태그 예제 페이지에 자동 Target 콘텐츠 렌더링 사용:
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+태그에서 Adobe Experience Platform Web SDK 확장을 추가합니다.
+
+![Adobe Experience Platform 웹 SDK 확장 추가](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+원하는 구성을 추가합니다.
+![웹 SDK 태그 확장 마이그레이션 옵션 구성](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+을 사용하여 규칙 만들기 [!UICONTROL 이벤트 보내기] 작업 및 [!UICONTROL 시각적 개인화 결정 렌더링] 선택:
+![태그에서 선택한 렌더링 개인화를 사용하여 이벤트 보내기](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
 
 다음으로, 및 를 요청하는 방법을 알아봅니다 [렌더링 양식 기반 Target 활동](render-form-based-activities.md).
 
 >[!NOTE]
 >
->Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
