@@ -1,10 +1,10 @@
 ---
 title: VEC 활동 렌더링 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: Adobe Target의 웹 SDK 구현을 통해 시각적 경험 작성기 활동을 검색하고 적용하는 방법을 알아봅니다.
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+source-git-commit: ca2fade972a2f7f84134ee4ef9c0f24c5ab1c5c6
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 5%
+source-wordcount: '830'
+ht-degree: 6%
 
 ---
 
@@ -22,10 +22,6 @@ Google Chrome용 Adobe Experience Cloud Visual Editing Helper 브라우저 확�
 
 시각적 편집 도우미 브라우저 확장 프로그램은 at.js 또는 Platform Web SDK를 사용하는 웹 사이트에서 작동합니다.
 
->[!IMPORTANT]
->
->새로운 시각적 편집 도우미 확장이 이전 기능을 대체합니다 [Target VEC Helper 브라우저 확장 프로그램](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 이전 VEC Helper 확장이 설치되어 있는 경우 시각적 편집 도우미 확장을 사용하기 전에 해당 확장을 제거하거나 비활성화해야 합니다.
-
 ### Visual Editing Helper 가져오기 및 설치
 
 1. 로 이동합니다 [Chrome 웹 스토어의 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
@@ -36,6 +32,10 @@ Google Chrome용 Adobe Experience Cloud Visual Editing Helper 브라우저 확�
 작성 기능을 향상시키기 위해 Target VEC에서 웹 사이트를 열면 Visual Editing Helper가 자동으로 활성화됩니다. 확장 기능에는 조건부 설정이 없습니다. 확장 기능은 SameSite 쿠키 설정을 포함한 모든 설정을 자동으로 처리합니다.
 
 에 대한 자세한 내용은 전용 설명서 를 참조하십시오. [시각적 편집 도우미 확장](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 및 [시각적 경험 작성기 문제 해결](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+
+>[!IMPORTANT]
+>
+>새로운 [시각적 편집 도우미 확장](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) 이전 항목 바꾸기 [Target VEC Helper 브라우저 확장 프로그램](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 이전 VEC Helper 확장이 설치되어 있는 경우 시각적 편집 도우미 확장을 사용하기 전에 해당 확장을 제거하거나 비활성화해야 합니다.
 
 ## 자동으로 콘텐츠 요청 및 적용
 

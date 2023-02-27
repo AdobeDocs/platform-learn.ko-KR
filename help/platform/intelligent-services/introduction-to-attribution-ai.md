@@ -1,13 +1,12 @@
 ---
 title: Attribution AI 소개
 description: 마케터와 분석가가 Attribution AI을 사용하여 마케팅 채널 및 캠페인의 영향을 이해하는 방법에 대한 높은 수준의 개요입니다.
-role: User
-solution: Intelligent Services
 feature: Attribution AI
+role: User
 kt: 4808
 thumbnail: 32667.jpg
 exl-id: abb4a09d-7cb6-4cb8-a49d-9a6f4a654a52
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 0%

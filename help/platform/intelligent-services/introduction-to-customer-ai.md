@@ -1,13 +1,13 @@
 ---
 title: Customer AI 소개
 description: 마케터가 Customer AI를 사용하여 고객 예측을 생성하는 방법에 대한 높은 수준의 개요입니다.
-role: User
-solution: Intelligent Services
+solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
+role: User
 kt: 4807
 thumbnail: 32664.jpg
 exl-id: a6a9302f-b9dd-4201-a81e-5c8a2f58b82d
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%

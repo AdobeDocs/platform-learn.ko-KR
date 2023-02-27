@@ -1,13 +1,13 @@
 ---
 title: Intelligent Services 소개
 description: 마케팅 분석가 및 전문가가 데이터 과학에 대한 전문 지식 없이도 고객 경험 사용 사례에서 인공 지능(AI) 및 머신 러닝을 사용할 수 있는 인텔리전트 서비스에 대한 높은 수준의 소개입니다.
-role: User
-solution: Intelligent Services
+solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI, Attribution AI
+role: User
 kt: 4170
 thumbnail: 32654.jpg
 exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '110'
 ht-degree: 56%
