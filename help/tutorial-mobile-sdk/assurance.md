@@ -2,9 +2,9 @@
 title: 보증 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7df759ec0ea248ee91ae673e3468ffa3f6cc5be5
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '583'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 다음 단계를 완료하여 조직에서 보증에 액세스할 수 있는지 확인합니다.
 
-1. 방문 [https://experience.adobe.com/griffon](https://experience.adobe.com/griffon){target=&quot;_blank&quot;}
+1. 방문 [https://experience.adobe.com/#/assurance](https://experience.adobe.com/griffon){target="_blank"}
 1. Experience Cloud에 대한 Adobe ID 자격 증명을 사용하여 로그인합니다.
 1. 을(를) 통해 **[!UICONTROL 세션]** 화면, 액세스 권한. 베타 액세스 페이지로 이동한 경우 **[!UICONTROL 등록]**.
 
@@ -61,7 +61,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-자세한 내용 [여기](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target=&quot;_blank&quot;}.
+자세한 내용 [여기](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target="_blank"}.
 
 ## 기본 URL 설정
 
@@ -73,13 +73,13 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 
 ![보증 url](assets/mobile-assurance-url-type.png)
 
-iOS의 URL 구성표에 대한 자세한 내용은 [Apple 설명서](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=&quot;_blank&quot;}.
+iOS의 URL 구성표에 대한 자세한 내용은 [Apple 설명서](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 보증은 브라우저나 QR 코드를 통해 URL을 열면 작동합니다. 해당 URL은 앱을 열고 추가 매개 변수를 포함하는 기본 URL로 시작됩니다. 이러한 고유한 매개 변수는 세션을 연결하는 데 사용됩니다.
 
 ## 세션에 연결
 
-1. 로 이동합니다 [보증 UI](https://experience.adobe.com/griffon){target=&quot;_blank&quot;}.
+1. 로 이동합니다 [보증 UI](https://experience.adobe.com/griffon){target="_blank"}.
 1. 선택 **[!UICONTROL 세션 만들기]**.
 1. 제공 **[!UICONTROL 세션 이름]** 예 `Luma App QA` 그리고 **[!UICONTROL 기본 URL]** `lumadeeplink://default`
 1. **[!UICONTROL 다음]**을 선택합니다.
@@ -94,7 +94,7 @@ iOS의 URL 구성표에 대한 자세한 내용은 [Apple 설명서](https://dev
    * 웹 UI에서 수신되는 Experience Cloud 이벤트.
       ![보증 이벤트](assets/mobile-assurance-events.png)
 
-문제가 발생하는 경우 [기술](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target=&quot;_blank&quot;} 및 [일반 설명서](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target=&quot;_blank&quot;}.
+문제가 발생하는 경우 [기술](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target="_blank"} and [general documentation](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target="_blank"}.
 
 다음: **[동의](consent.md)**
 
