@@ -4,7 +4,7 @@ description: Adobe Experience Platform에 대해 알아보기
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: 73313bf0b2f9a0f539c8b52bda2d9bd66bed65d1
+source-git-commit: dcd7219ad6073727f66a8d1f30e67ce98f1b8a73
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 21%
@@ -26,7 +26,7 @@ Adobe Experience Platform은 고객 경험을 이끄는 완벽한 솔루션을 �
 
 ## 직원 추천
 
-<table style="margin-top: 0">
+<table style="margin-top: 0 !important">
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
