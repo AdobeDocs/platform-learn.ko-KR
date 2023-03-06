@@ -4,7 +4,7 @@ breadcrumb-title: 데이터 수집 튜토리얼
 user-guide-description: Experience Platform의 데이터 수집의 강력한 사용자에게 유용한 방법 비디오 및 튜토리얼입니다.
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
+source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 40%
@@ -31,13 +31,13 @@ ht-degree: 40%
    + [개요](web-sdk/overview.md)
    + [데모](web-sdk/demo.md)
    + [구현 자습서(태그 포함)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target="_blank"}
-   + [Target 마이그레이션 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target="_blank"}
+   + [Target 마이그레이션 자습서](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + 동의{#consent}
       + [개요](web-sdk/consent/overview.md)
       + [Adobe 표준을 사용하여 동의 값 설정](web-sdk/consent/set-consent-adobe.md)
       + [IAB TCF 2.0 표준을 사용하여 동의 값 설정](web-sdk/consent/set-consent-iab.md)
       + [Inspect 및 동의 데이터 유효성 검사](web-sdk/consent/inspect.md)
-      + [동의 처리 종단간 자습서](web-sdk/consent/tutorial.md)
+      + [동의 처리 전체 튜토리얼](web-sdk/consent/tutorial.md)
 + Mobile SDK{#mobile-sdk}
    + [개요](mobile-sdk/overview.md)
    + [모바일 속성 만들기](mobile-sdk/create-mobile-properties.md)
@@ -45,7 +45,7 @@ ht-degree: 40%
    + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko){target="_blank"}
 + 서버 API{#server-api}
    + [개요](server-api/overview.md)
-   + [API의 기본 사항](server-api/introduction.md)
+   + [API 기본 사항](server-api/introduction.md)
 + 이벤트 전달{#event-forwarding}
    + [개요](event-forwarding/overview.md)
    + [속성 만들기](event-forwarding/create-a-property.md)
@@ -54,13 +54,13 @@ ht-degree: 40%
    + [규칙 만들기](event-forwarding/create-a-rule.md)
    + [이벤트 전달 모니터링](event-forwarding/monitor.md)
    + [클라이언트측 태그 이동](event-forwarding/consider-moving-tags.md)
-   + [Google 광고 설정 향상된 전환](event-forwarding/set-up-google-ads-enhanced-conversions.md)
+   + [Google Ads 고급 전환 설정](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Mailchimp용 Adobe 확장](event-forwarding/adobe-extension-for-mailchimp.md)
-+ 데이터 스트림 및 에지 네트워크{#edge-network}
++ 데이터스트림 및 에지 네트워크{#edge-network}
    + [데이터스트림 구성](edge/configure-datastreams.md)
    + [데이터 준비](edge/data-prep.md)
    + [중요 데이터 관리](edge/manage-sensitive-data-in-datastreams.md)
-   + [자사 장치 ID](edge/generate-first-party-device-ids.md)
+   + [자사 디바이스 ID](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
    + [개요](debugger/overview.md)
    + Experience Cloud Debugger{#experience-cloud}
