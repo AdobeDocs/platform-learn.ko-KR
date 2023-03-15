@@ -1,6 +1,6 @@
 ---
 title: 이벤트 전달 개요
-description: 이벤트 전달이 Adobe Experience Platform Edge Network를 통해 데이터 수집을 중앙 집중화하고, 웹 및 모바일 앱에서 필요한 코드의 양을 줄이고, 비 Adobe 솔루션에 대한 데이터를 스트리밍하는 방법에 대해 알아봅니다.
+description: 이벤트 게재가 Adobe Experience Platform Edge Network를 통해 데이터 수집을 중앙 집중화하고, 웹 및 모바일 앱에서 필요한 코드의 양을 줄이고, 비 Adobe 솔루션에 대한 데이터를 스트리밍하는 방법에 대해 알아봅니다.
 feature: Event Forwarding
 kt: 6419
 thumbnail: 331937.jpeg
@@ -14,7 +14,7 @@ ht-degree: 45%
 
 # 이벤트 전달 개요
 
-이벤트 전달이 Adobe Experience Platform Edge Network를 통해 데이터 수집을 중앙 집중화하고, 웹 및 모바일 앱에서 필요한 코드의 양을 줄이고, 비 Adobe 솔루션에 대한 데이터를 스트리밍하는 방법에 대해 알아봅니다.
+이벤트 게재가 Adobe Experience Platform Edge Network를 통해 데이터 수집을 중앙 집중화하고, 웹 및 모바일 앱에서 필요한 코드의 양을 줄이고, 비 Adobe 솔루션에 대한 데이터를 스트리밍하는 방법에 대해 알아봅니다.
 
 >[!NOTE]
 >
