@@ -2,10 +2,11 @@
 title: Adobe Experience Cloud Debugger 사용 방법
 description: Adobe Experience Cloud Debugger를 사용하여 Experience Cloud 구현을 이해하고 문제를 해결하는 방법에 대해 알아봅니다.
 landing-page-description: Experience Cloud Debugger를 사용하여 구현 문제를 해결하는 방법을 알아봅니다. 구현되는 Adobe 솔루션과 이러한 솔루션의 특징을 파악합니다.
+short-description: Learn to use the Experience Cloud Debugger to troubleshoot your implementations. Understand what Adobe solutions are implemented and what calls they're making.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 44%

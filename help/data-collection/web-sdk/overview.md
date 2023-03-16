@@ -1,14 +1,15 @@
 ---
 title: Adobe Experience Platform Web SDK 및 Edge 네트워크 개요
 description: Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScript 라이브러리와 하나의 비콘 유형을 사용하여 Adobe 애플리케이션 및 서드파티 대상으로 데이터를 전송하는 방법에 대해 알아봅니다.
-landing-page-description: 웹 SDK 및 Edge Network에 대한 개요를 살펴보십시오.
+landing-page-description: Web SDK 및 Edge Network에 대한 개요를 살펴보십시오.
+short-description: Get an overview of Web SDK and Edge Network.
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -26,7 +27,7 @@ Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScrip
 
 ## 추가 리소스
 
-* [Adobe Experience Platform 웹 SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Adobe Experience Platform Web SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ko-KR)
 * [Adobe Experience Platform Web SDK 블로그 게시물을 사용하여 고객 워크플로우 간소화](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
 * [Adobe Experience Platform Experience Edge 블로그 게시물과의 클라이언트-서버 통합 간소화](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 * [Adobe Experience Platform 서비스와 Adobe Experience Platform Web SDK 블로그 게시물 통합](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
