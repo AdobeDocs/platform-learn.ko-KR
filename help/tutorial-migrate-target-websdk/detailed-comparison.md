@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x와 웹 SDK 비교 | at.js 2.x에서 웹 SDK로 Target 마이그레이션
 description: 기능, 함수, 설정 및 데이터 흐름 등 at.js 2.x와 Platform Web SDK의 차이점에 대해 알아봅니다.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+source-git-commit: 28a88e6865211d7d39c18bd48b95070ae0ba259b
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2159'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ Platform Web SDK를 처음 사용하는 경우에는 걱정하지 마십시오. 
 | 원격 오퍼 | 지원됨 | 지원됨 |
 | 리디렉션 오퍼 | 지원됨 | 지원됨. 그러나 Platform Web SDK가 있는 페이지에서 at.js(반대 방향)가 있는 페이지로 리디렉션하는 것은 지원되지 않습니다. |
 | On-Device Decisioning | 지원됨 | 현재 지원되지 않음 |
-| Mbox 미리 가져오기 | 지원됨 | 기본적으로 모든 새 마이그레이션에서 활성화됨 - 2022년 10월 1일 이후에 시작됨 |
+| Mbox 미리 가져오기 | 사용자 지정 범위 및 SPA VEC에 대해 지원됨 | 현재 일반 VEC에 대해 지원되지 않음 |
 | 사용자 지정 이벤트 | 지원됨 | 지원되지 않음. 자세한 내용은 [공개 로드맵](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 을 참조하십시오. |
 | 응답 토큰 | 지원됨 | 지원됨. 자세한 내용은 [전용 응답 토큰 설명서](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) at.js와 Platform Web SDK 간의 코드 예제 및 차이점에 대해 설명합니다. |
 | 데이터 공급자 | 지원됨 | 지원되지 않음. 사용자 지정 코드는 Platform Web SDK를 트리거하는 데 사용할 수 있습니다 `sendEvent` 다른 공급자에서 데이터를 검색한 후의 명령 |
