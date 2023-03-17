@@ -7,9 +7,9 @@ kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: f19d3851c5d8e8c54823aa115cc7068f91776da6
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 0%
 특정 Experience Platform 리소스에 대한 액세스를 제한하도록 특성 기반 액세스 제어를 구성하는 방법을 알아봅니다. 자세한 내용은 [액세스 제어 설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
+
+>[!NOTE]
+>
+> 이 비디오에 표시된 정책 작성 기능을 완전히 사용할 수는 없지만 고객 계정의 기본 정책은 표시된 정책과 유사하게 구성됩니다.
 
 >[!IMPORTANT]
 >
