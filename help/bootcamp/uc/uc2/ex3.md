@@ -6,9 +6,9 @@ audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '938'
 ht-degree: 4%
 
 ---
@@ -113,11 +113,11 @@ ht-degree: 4%
 - **직접 코드 작성**: HTML을 사용하여 코딩하여 자신만의 이메일 템플릿을 만듭니다
 - **가져오기 HTML**: 편집할 수 있는 기존 HTML 템플릿을 가져옵니다.
 
-클릭 **가져오기 HTML**.
+클릭 **가져오기 HTML**. 또는, **저장된 템플릿** 템플릿을 선택하고 **Bootcamp - 이메일 템플릿**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-파일을 끌어서 놓습니다 **mailtemplatebootcamp.html**&#x200B;다운로드할 수 있는 [여기](../../assets/html/mailtemplatebootcamp.html.zip). 가져오기를 클릭합니다.
+선택한 경우 **가져오기 HTML**&#x200B;로 지정하는 경우 이제 파일을 끌어다 놓을 수 있습니다 **mailtemplatebootcamp.html**&#x200B;다운로드할 수 있는 [여기](../../assets/html/mailtemplatebootcamp.html.zip). 가져오기를 클릭합니다.
 
 ![Journey Optimizer](./images/msg13.png)
 
