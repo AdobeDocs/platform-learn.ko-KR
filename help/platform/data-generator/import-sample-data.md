@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 4%
+source-wordcount: '1752'
+ht-degree: 5%
 
 ---
 
@@ -25,10 +25,10 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
 
 >[!NOTE]
 >
->이 자습서의 최종 결과는 와 동일한 샘플 데이터를 포함하는 샌드박스입니다 [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기 자습서](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>이 자습서의 최종 결과는 와 유사한 데이터가 포함된 샌드박스입니다 [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기 자습서](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). 이 보고서는 을 지원하기 위해 2023년 4월에 업데이트되었습니다 [Journey Optimizer의 당면 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko).
 
 
-## 전제 조건
+## 사전 요구 사항
 
 * Experience Platform API에 액세스할 수 있고 인증 방법을 알 수 있습니다. 없는 경우 이 내용을 검토하십시오 [튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ko).
 * Experience Platform 개발 샌드박스에 액세스할 수 있습니다.
@@ -48,9 +48,9 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
    >
    >에 포함된 사용자 데이터 [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) 파일은 가상 파일이며 데모용으로만 사용됩니다.
 
-1. 다운로드 폴더에서 `platform-utils-main.zip` 파일을 컴퓨터의 원하는 위치에 저장하고 압축을 해제합니다.
-1. 에서 `luma-data` 폴더, 모두 열기 `json` 텍스트 편집기에 있는 파일 및 `_techmarketingdemos` 자신의 테넌트 id를 사용하고 앞에 밑줄을 추가합니다.
-1. 열기 `luma-offline-purchases.json` 텍스트 편집기에서 모든 타임스탬프를 업데이트하여 이벤트가 지난달에 발생하도록(예: `"timestamp":"2022-06` 연도 및 월 대체)
+1. 다운로드 폴더의 `platform-utils-main.zip` 파일을 컴퓨터에서 원하는 위치로 옮긴 다음 압축을 풉니다.
+1. 에서 `luma-data` 폴더, 모두 열기 `json` 텍스트 편집기에 있는 파일 및 `_yourOrganizationID` 자신의 테넌트 id를 사용하고 앞에 밑줄을 추가합니다.
+1. 열기 `luma-offline-purchases.json` 및 `luma-web-events.json` 텍스트 편집기에서 모든 타임스탬프를 업데이트하여 이벤트가 지난달에 발생하도록(예: `"timestamp":"2022-11` 연도 및 월 대체)
 1. 압축을 푼 폴더의 위치를 나중에 설정할 때 필요할 때 확인합니다 `FILE_PATH` Postman 환경 변수:
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![컬렉션 가져오기](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
    * `3-Luma-Product-Catalog.postman_collection.json` 제품 카탈로그 정보에 대한 스키마 및 채워진 데이터 세트를 만듭니다. 스키마는 사용자 지정 제품 카탈로그 클래스를 기반으로 하며 사용자 지정 제품 카탈로그 필드 그룹을 사용합니다.
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` 고객의 오프라인 구매 이벤트 데이터를 위해 스키마와 채워진 데이터 세트를 만듭니다. 이 스키마는 XDM ExperienceEvent 클래스를 기반으로 하며, 사용자 지정 ID 및 상거래 세부 사항 필드 그룹을 포함합니다.
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` 는 재고 내외진 제품과 관련된 이벤트에 대해 스키마와 채워진 데이터 세트를 만듭니다. 스키마는 사용자 지정 비즈니스 이벤트 클래스와 사용자 지정 필드 그룹을 기반으로 합니다.
+   * `6-Luma-Test-Profiles.postman_collection.json` 스키마를 만들고 Adobe Journey Optimizer에서 사용할 테스트 프로필로 채워진 데이터 세트 만들기
+   * `7-Luma-Web-Events.postman_collection.json` 스키마를 만들고 간단한 내역 웹 데이터로 채워진 데이터 세트를 만듭니다.
+
+
 ## 유효성 검사
 
 샘플 데이터는 컬렉션을 실행할 때 여러 시스템의 데이터를 결합하는 실시간 고객 프로필이 빌드되도록 설계되었습니다. 다음은 충성도, CRM 및 오프라인 구매 데이터 세트의 첫 번째 레코드입니다. 해당 프로필을 검색하여 데이터가 수집되었는지 확인합니다. 에서 [Adobe Experience Platform 인터페이스](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
 ![오프라인 구매 이벤트 파일의 이벤트 데이터](../assets/data-generator/images/validation-profile-events.png)
 
 ## 다음 단계
+
+Adobe Journey Optimizer에 대해 알아보려면 이 샌드박스 에는 필요한 모든 것이 포함되어 있습니다 [Journey Optimizer의 당면 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)
 
 병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 로 이동합니다 [데이터 설계자 및 데이터 엔지니어 시작하기 자습서의 11 단원을 참조하십시오](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). 이 다른 자습서의 이전 단원에서는 이러한 Postman 컬렉션으로 방금 채운 모든 것을 수동으로 빌드하여 시작할 수 있습니다.
 
