@@ -2,14 +2,14 @@
 title: Adobe Experience Platform Debugger 개요
 description: Adobe Experience Platform Debugger Chrome 확장 기능 및 Firefox 추가 기능을 사용하여 Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, 태그 등의 웹 구현을 디버깅하는 방법에 대해 알아봅니다.
 landing-page-description: Adobe Experience Platform Web SDK 및 Experience Cloud 애플리케이션의 웹 구현을 디버깅하십시오.
-short-description: Debug your web implementations of the Adobe Experience Platform Web SDK and Experience Cloud applications.
+short-description: Adobe Experience Platform Web SDK 및 Experience Cloud 애플리케이션의 웹 구현을 디버깅하십시오.
 kt: 4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 59%
+source-wordcount: '166'
+ht-degree: 63%
 
 ---
 

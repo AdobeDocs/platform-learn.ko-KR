@@ -2,14 +2,14 @@
 title: Adobe Experience Platform Web SDK 및 Edge 네트워크 개요
 description: Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScript 라이브러리와 하나의 비콘 유형을 사용하여 Adobe 애플리케이션 및 서드파티 대상으로 데이터를 전송하는 방법에 대해 알아봅니다.
 landing-page-description: Web SDK 및 Edge Network에 대한 개요를 살펴보십시오.
-short-description: Get an overview of Web SDK and Edge Network.
+short-description: Web SDK 및 Edge Network에 대한 개요를 살펴보십시오.
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 38%
+source-wordcount: '217'
+ht-degree: 41%
 
 ---
 
