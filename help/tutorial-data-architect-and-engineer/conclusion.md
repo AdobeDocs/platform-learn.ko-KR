@@ -6,10 +6,10 @@ description: 이 단원에서는 Adobe의 Admin Console을 사용하여 Adobe Ex
 role: Data Architect, Data Engineer
 kt: 4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -50,9 +50,5 @@ Platform을 사용하여 더 실험해 보시는 것이 좋습니다. 여기에�
 * [Experience Platform 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 * [Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ko)
 * [Experience League 교육 과정](https://experienceleague.adobe.com/#dashboard/learning)
-
-다음은 타사 애플리케이션과의 연결에 대해 자세히 알아보기 위해 검토할 수 있는 또 다른 자습서입니다.
-
-* [Adobe Experience Platform을 위한 포괄적인 기술 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Adobe Experience Platform과의 여정에 수고하고 행운을 빌어요!
