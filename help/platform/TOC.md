@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
+source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 32%
 
 ---
 
@@ -26,6 +26,12 @@ ht-degree: 31%
    + [기본 아키텍처](/help/platform/intro-to-platform/basic-architecture.md)
    + [플랫폼 사용자 인터페이스 사용](/help/platform/intro-to-platform/interface-tour.md)
    + [역할 및 프로젝트 단계](/help/platform/intro-to-platform/roles-and-project-phases.md)
++ Real-Time CDP 소개 {#rtcdp}
+   + [개요](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [엔드 투 엔드 데모](/help/platform/rtcdp/demo.md)
+   + [워크플로](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+   + [B2B 에디션 개요](/help/platform/rtcdp/b2b-overview.md)
+   + [Marketo Engage으로 캠페인 오케스트레이션](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [시작하기: 데이터 설계자 및 데이터 엔지니어](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md)
 + [ Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
@@ -46,21 +52,22 @@ ht-degree: 31%
    + [데이터 사용 정책 만들기](/help/platform/governance/create-data-usage-policies.md)
    + [데이터 사용 정책 적용](/help/platform/governance/enforce-data-usage-policies.md)
    + [동의 적용](/help/platform/governance/enforce-consent.md)
+   + [IAB Transparency and Consent Framework 2.0과 통합](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 데이터 위생 {#data-hygiene}
    + [데이터 세트 삭제](/help/platform/data-hygiene/delete-datasets.md)
 + 데이터 수집 {#data-ingestion}
    + [개요](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [배치 수집 개요](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [데이터 세트 만들기 및 채우기](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=ko-KR){target="_blank"}
+   + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [소스 개요](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=ko-KR)
+   + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [클라우드 스토리지에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=ko-KR)
    + [CRM에서 데이터 처리](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=ko-KR)
    + [데이터베이스로부터 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [스트리밍 수집 개요](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [HTTP API를 사용하여 데이터 스트림](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=ko-KR)
+   + [HTTP API로 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
    + [소스 커넥터를 사용하여 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ko-KR)
    + [웹 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [모바일 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
@@ -90,12 +97,25 @@ ht-degree: 31%
    + [Marketo 대상 구성](/help/platform/destinations/configure-the-marketo-destination.md)
    + [파일 기반 클라우드 스토리지 또는 이메일 마케팅 대상 구성](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [소셜 대상 구성](/help/platform/destinations/configure-a-social-destination.md)
-   + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ko-KR)
+   + Adobe Target 및 사용자 지정 개인화{#target}
+      + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ko-KR)
+      + [Adobe Target 대상 구성](/help/platform/destinations/target/configure-the-target-destination.md)
+      + [세그먼트 및 프로필 속성 활성화](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
    + [비 Adobe 응용 프로그램으로 데이터 활성화 웨비나](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + ID {#identities}
    + [ID 및 ID 그래프 개요](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [ID 데이터 레이블 지정, 처리 및 확인](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [ID 그래프 보기](/help/platform/identities/view-identity-graphs.md)
++ Intelligent Services {#intelligent-services}
+   + [개요](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [Attribution AI 개요](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
+   + [Attribution AI 값](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [Attribution AI 구성](/help/platform/intelligent-services/configure-attribution-ai.md)
+   + [Attribution AI 스코어 및 인사이트 사용](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
+   + [고객 AI 개요](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [고객 AI 값](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+   + [고객 AI 구성](/help/platform/intelligent-services/configure-customer-ai.md)
+   + [고객 AI 스코어 및 인사이트 사용](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + 모니터링 {#monitoring}
    + [데이터 수집 모니터링](/help/platform/monitoring/monitoring-dashboard.md)
    + [세그먼트 활성화 모니터링](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
@@ -176,30 +196,9 @@ ht-degree: 31%
    + [클라우드 스토리지에서 데이터 수집](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [CRM에서 데이터 처리](/help/platform/sources/ingest-data-from-crm.md)
    + [데이터베이스로부터 데이터 수집](/help/platform/sources/ingest-data-from-databases.md)
-   + [HTTP API를 사용하여 데이터 스트림](/help/platform/sources/streaming-ingestion-http-api.md)
+   + [HTTP API로 데이터 스트리밍](/help/platform/sources/streaming-ingestion-http-api.md)
    + [소스 커넥터를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-source-connector.md)
-+ 응용 프로그램 서비스 {#application-services}
-   + [Customer Journey Analytics 튜토리얼](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
-   + [Journey Orchestration 자습서](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
-   + [offer decisioning 자습서](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=ko){target="_blank"}
-   + Real-Time CDP 자습서{#rtcdp}
-      + [개요](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-      + [B2B 에디션 개요](/help/platform/rtcdp/b2b-overview.md)
-      + [엔드 투 엔드 데모](/help/platform/rtcdp/demo.md)
-      + [워크플로](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-      + [Marketo Engage으로 캠페인 오케스트레이션](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-      + [IAB Transparency and Consent Framework 2.0과 통합](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-      + [데이터 사용 정책 적용](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
-+ Intelligent Services {#intelligent-services}
-   + [개요](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
-   + [Attribution AI 개요](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [Attribution AI 값](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
-   + [Attribution AI 구성](/help/platform/intelligent-services/configure-attribution-ai.md)
-   + [Attribution AI 스코어 및 인사이트 사용](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-   + [고객 AI 개요](/help/platform/intelligent-services/introduction-to-customer-ai.md)
-   + [고객 AI 값](/help/platform/intelligent-services/business-value-of-customer-ai.md)
-   + [고객 AI 구성](/help/platform/intelligent-services/configure-customer-ai.md)
-   + [고객 AI 스코어 및 인사이트 사용](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
+
 + Experience Cloud 통합 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Marketo Engage으로 캠페인 오케스트레이션](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
