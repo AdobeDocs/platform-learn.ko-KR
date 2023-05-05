@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
+source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 32%
+source-wordcount: '931'
+ht-degree: 31%
 
 ---
 
@@ -101,6 +101,7 @@ ht-degree: 32%
       + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ko-KR)
       + [Adobe Target 대상 구성](/help/platform/destinations/target/configure-the-target-destination.md)
       + [세그먼트 및 프로필 속성 활성화](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [Target에서 Real-Time CDP 세그먼트 사용](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
    + [비 Adobe 응용 프로그램으로 데이터 활성화 웨비나](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + ID {#identities}
    + [ID 및 ID 그래프 개요](/help/platform/identities/understanding-identity-and-identity-graphs.md)
