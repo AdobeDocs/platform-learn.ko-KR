@@ -1,16 +1,16 @@
 ---
 title: 실시간 CDP에서 Adobe Target으로 세그먼트 및 프로필 속성을 공유하려면 어떻게 합니까?
-description: 설명 누락
+description: Adobe Real-time Customer Data Platform에서 Adobe Target으로 세그먼트 및 프로필 속성을 공유하여 웹 사이트, 모바일 앱 및 기타 디지털 속성에 개인화된 실시간 콘텐츠를 표시하는 방법을 알아봅니다.
 feature: Destinations
 role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-source-git-commit: fc6d129f473e4d26f57980bb239f95462c3f3cc9
+source-git-commit: 0931e2305d8013e469aee2b015befb3d06614784
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 1%
+source-wordcount: '145'
+ht-degree: 0%
 
 ---
 

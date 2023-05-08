@@ -4,9 +4,9 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
+source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '932'
 ht-degree: 31%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 31%
    + [파일 기반 클라우드 스토리지 또는 이메일 마케팅 대상 구성](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [소셜 대상 구성](/help/platform/destinations/configure-a-social-destination.md)
    + Adobe Target 및 사용자 지정 개인화{#target}
-      + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ko-KR)
+      + [Adobe Target을 사용한 다음 히트 개인화](/help/platform/destinations/target/next-hit-personalization.md)
       + [Adobe Target 대상 구성](/help/platform/destinations/target/configure-the-target-destination.md)
       + [세그먼트 및 프로필 속성 활성화](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Target에서 Real-Time CDP 세그먼트 사용](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
@@ -199,11 +199,10 @@ ht-degree: 31%
    + [데이터베이스로부터 데이터 수집](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API로 데이터 스트리밍](/help/platform/sources/streaming-ingestion-http-api.md)
    + [소스 커넥터를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-source-connector.md)
-
+   + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 통합 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [Marketo Engage으로 캠페인 오케스트레이션](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Adobe Target을 사용한 다음 히트 개인화](/help/platform/experience-cloud/next-hit-personalization.md)
 + 업계 동향 {#industry}
    + [데이터 관리의 미래와 변화하는 환경](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [두 가지 인식에 대한 이야기 - 브랜드 대 소비자](/help/platform/industry/brands-vs-consumers.md)
