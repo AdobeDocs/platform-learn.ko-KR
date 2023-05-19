@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
+source-git-commit: bc55e75f7bfdde878f4e95bfb1fdd02fca9018b5
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 31%
+source-wordcount: '939'
+ht-degree: 30%
 
 ---
 
@@ -17,21 +17,21 @@ ht-degree: 31%
 + [Platform 자습서](/help/platform/overview.md)
 + 플랫폼 소개 {#intro-to-platform}
    + [Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-   + [무대 뒤에서: Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [배경: Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform 개요](/help/platform/intro-to-platform/overview.md)
    + [주요 기능](/help/platform/intro-to-platform/key-capabilities.md)
    + [애플리케이션 및 지능형 서비스](/help/platform/intro-to-platform/application-and-intelligent-services.md)
-   + [Experience Cloud 애플리케이션과의 통합](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [Experience Cloud 애플리케이션과 통합](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [주요 사용 사례](/help/platform/intro-to-platform/key-use-cases.md)
    + [기본 아키텍처](/help/platform/intro-to-platform/basic-architecture.md)
-   + [플랫폼 사용자 인터페이스 사용](/help/platform/intro-to-platform/interface-tour.md)
+   + [Platform 사용자 인터페이스 사용](/help/platform/intro-to-platform/interface-tour.md)
    + [역할 및 프로젝트 단계](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Real-Time CDP 소개 {#rtcdp}
    + [개요](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [엔드 투 엔드 데모](/help/platform/rtcdp/demo.md)
    + [워크플로](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [B2B 에디션 개요](/help/platform/rtcdp/b2b-overview.md)
-   + [Marketo Engage으로 캠페인 오케스트레이션](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
+   + [Marketo Engage을 사용하여 캠페인 오케스트레이션](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [시작하기: 데이터 설계자 및 데이터 엔지니어](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md)
 + [ Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
@@ -50,42 +50,42 @@ ht-degree: 31%
    + [엔드 투 엔드 데모](/help/platform/governance/introduction-to-data-governance.md)
    + [거버넌스 레이블을 사용하여 데이터 분류](/help/platform/governance/classify-data-using-governance-labels.md)
    + [데이터 사용 정책 만들기](/help/platform/governance/create-data-usage-policies.md)
-   + [데이터 사용 정책 적용](/help/platform/governance/enforce-data-usage-policies.md)
-   + [동의 적용](/help/platform/governance/enforce-consent.md)
-   + [IAB Transparency and Consent Framework 2.0과 통합](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
+   + [데이터 사용 정책 시행](/help/platform/governance/enforce-data-usage-policies.md)
+   + [동의 시행](/help/platform/governance/enforce-consent.md)
+   + [IAB 투명성 및 동의 프레임워크 2.0과 통합](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 데이터 위생 {#data-hygiene}
    + [데이터 세트 삭제](/help/platform/data-hygiene/delete-datasets.md)
 + 데이터 수집 {#data-ingestion}
    + [개요](/help/platform/data-ingestion/understanding-data-ingestion.md)
-   + [배치 수집 개요](/help/platform/data-ingestion/batch-ingestion-overview.md)
+   + [일괄 처리 수집 개요](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [데이터 세트 만들기 및 채우기](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [소스 개요](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [클라우드 스토리지에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=ko-KR)
-   + [CRM에서 데이터 처리](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=ko-KR)
+   + [CRM에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=ko-KR)
    + [데이터베이스로부터 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [스트리밍 수집 개요](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [HTTP API로 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
    + [소스 커넥터를 사용하여 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ko-KR)
-   + [웹 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Web SDK 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [모바일 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + 데이터 과학 작업 영역 {#data-science-workspace}
    + [개요](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [아키텍처](data-science-workspace/architecture-overview.md)
-   + [교육 과정 스키마 및 데이터 세트 만들기](data-science-workspace/create-the-course-schema-and-dataset.md)
+   + [강의 스키마 및 데이터 세트 만들기](data-science-workspace/create-the-course-schema-and-dataset.md)
    + [JupyterLab 노트북에 데이터 로드](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [JupiterLab 노트북에서 데이터를 쿼리 및 검색](data-science-workspace/dsw-query-service.md)
-   + [예비 데이터 분석](data-science-workspace/eda.md)
+   + [JupyterLab 노트북에서 데이터 쿼리 및 검색](data-science-workspace/dsw-query-service.md)
+   + [탐색적 데이터 분석](data-science-workspace/eda.md)
    + [레서피, 모델 및 서비스 개요](data-science-workspace/recipes-models-services-overview.md)
-   + [레서피 빌더 템플릿을 사용하여 모델 작성](data-science-workspace/recipe-builder-template.md)
-   + [모델 성과 분석](data-science-workspace/analyze-model-performance.md)
-   + [훈련된 모델 만들기 및 게시(UI)](data-science-workspace/create-model-ui.md)
-   + [서비스에 대한 자동 교육 및 점수 예약](data-science-workspace/schedule-training-scoring.md)
-   + [머신 러닝 인사이트로 실시간 고객 프로필 보강](data-science-workspace/dsw-profile-segmentation.md)
-   + [배합식에 소스 파일 패키지](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [패키지된 레서피(UI) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [레시피 빌더 템플릿을 사용하여 모델 구축](data-science-workspace/recipe-builder-template.md)
+   + [모델 성능 분석](data-science-workspace/analyze-model-performance.md)
+   + [교육된 모델(UI) 만들기 및 게시](data-science-workspace/create-model-ui.md)
+   + [서비스에 대한 자동화된 교육 및 채점 예약](data-science-workspace/schedule-training-scoring.md)
+   + [머신 러닝 통찰력을 통해 실시간 고객 프로필 강화](data-science-workspace/dsw-profile-segmentation.md)
+   + [소스 파일을 레시피에 패키징](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [패키지된 레시피(UI) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
    + [패키지된 레서피(API) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 대상 {#destinations}
    + [대상 개요](/help/platform/destinations/understanding-destinations.md)
@@ -102,7 +102,8 @@ ht-degree: 31%
       + [Adobe Target 대상 구성](/help/platform/destinations/target/configure-the-target-destination.md)
       + [세그먼트 및 프로필 속성 활성화](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Target에서 Real-Time CDP 세그먼트 사용](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
-   + [비 Adobe 응용 프로그램으로 데이터 활성화 웨비나](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+      + [Target에서 Real-Time CDP 프로필 속성 사용](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
+   + [Adobe 이외의 애플리케이션에 대한 데이터 활성화 웨비나](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + ID {#identities}
    + [ID 및 ID 그래프 개요](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [ID 데이터 레이블 지정, 처리 및 확인](/help/platform/identities/label-ingest-and-verify-identity-data.md)
@@ -114,7 +115,7 @@ ht-degree: 31%
    + [Attribution AI 구성](/help/platform/intelligent-services/configure-attribution-ai.md)
    + [Attribution AI 스코어 및 인사이트 사용](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
    + [고객 AI 개요](/help/platform/intelligent-services/introduction-to-customer-ai.md)
-   + [고객 AI 값](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+   + [고객 AI 가치](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [고객 AI 구성](/help/platform/intelligent-services/configure-customer-ai.md)
    + [고객 AI 스코어 및 인사이트 사용](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + 모니터링 {#monitoring}
@@ -125,7 +126,7 @@ ht-degree: 31%
    + [실시간 고객 프로필 이해](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [프로필 개요 다이어그램](/help/platform/profiles/overview-diagram.md)
    + [프로필로 데이터 가져오기](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [프로필 보기 세부 사항 사용자 지정](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+   + [프로필 보기 세부 정보 사용자 지정](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [계정 프로필 보기](/help/platform/profiles/view-account-profiles.md)
    + [병합 정책 만들기](/help/platform/profiles/create-merge-policies.md)
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
@@ -134,13 +135,13 @@ ht-degree: 31%
    + [개인 정보 보호 요청의 ID 데이터](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [개인 정보 JavaScript 라이브러리](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics의 개인 정보 레이블](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
-   + [Privacy Service API 시작](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
-   + [개인 정보 보호 이벤트에 가입](/help/platform/privacy/subscribe-to-privacy-events.md)
+   + [Privacy Service API 시작하기](/help/platform/privacy/getting-started-with-privacy-services-api.md)
+   + [PRIVACY SERVICE UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [PRIVACY SERVICE API](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [개인 정보 이벤트 구독](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [고객 관리 키 설정](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [책임 있는 고객 데이터 관리를 위한 10가지 고려 사항](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
-   + [데이터 처리자로서의 마케터의 역할 향상](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
+   + [데이터 관리자로서 마케터의 역할 강화](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + 쿼리 {#queries}
    + [개요](/help/platform/queries/understanding-query-service.md)
    + [쿼리 서비스 UI](/help/platform/queries/query-service-ui.md)
@@ -153,9 +154,9 @@ ht-degree: 31%
    + [쿼리 결과에서 데이터 세트 생성](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [타블로](/help/platform/queries/psql-client-tableau.md)
    + [데이터 분석 및 시각화](/help/platform/queries/analyze-and-visualize.md)
-   + [BI 도구를 사용하여 대시보드 작성](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
-   + [고객 데이터 재충전](/help/platform/queries/recharge-your-customer-data.md)
-   + [클라이언트를 Query Service에 연결](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [BI 도구를 사용하여 대시보드 빌드](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
+   + [고객 데이터 충전](/help/platform/queries/recharge-your-customer-data.md)
+   + [클라이언트를 쿼리 서비스에 연결](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + 스키마 {#schemas}
    + [개요](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [빌딩 블록](/help/platform/schemas/schema-building-blocks.md)
@@ -170,7 +171,7 @@ ht-degree: 31%
    + [열거형 필드 및 제안 값 사용](/help/platform/schemas/use-enumerated-fields.md)
    + [샌드박스 간에 스키마 복사](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [스키마 업데이트](/help/platform/schemas/update-schemas.md)
-   + [임시 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
+   + [애드혹 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + 세그먼트 {#segments}
    + [세그먼트 빌더 개요](/help/platform/segments/segment-builder-overview.md)
    + [세그먼트 만들기](/help/platform/segments/create-segments.md)
@@ -181,7 +182,7 @@ ht-degree: 31%
    + [동적 세그먼트 만들기](/help/platform/segments/create-dynamic-segments.md)
    + [다중 엔티티 세그먼트 만들기](/help/platform/segments/create-multi-entity-segments.md)
    + [B2B 데이터를 사용하여 세그먼트 만들기](/help/platform/segments/create-segments-with-b2b-data.md)
-   + [스트리밍 세그멘테이션 데모](/help/platform/segments/streaming-segmentation-demo.md)
+   + [스트리밍 세분화 데모](/help/platform/segments/streaming-segmentation-demo.md)
    + [세그먼트 평가](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [데이터를 내보낼 데이터 세트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [세그먼트 매치 연결 설정](/help/platform/segments/segment-match-connection-setup.md)
@@ -195,18 +196,18 @@ ht-degree: 31%
    + [Audience Manager에서 데이터 수집](/help/platform/sources/ingest-data-from-aam.md)
    + [Marketo에서 데이터 수집](/help/platform/sources/ingest-data-from-marketo.md)
    + [클라우드 스토리지에서 데이터 수집](/help/platform/sources/ingest-data-from-cloud-storage.md)
-   + [CRM에서 데이터 처리](/help/platform/sources/ingest-data-from-crm.md)
+   + [CRM에서 데이터 수집](/help/platform/sources/ingest-data-from-crm.md)
    + [데이터베이스로부터 데이터 수집](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API로 데이터 스트리밍](/help/platform/sources/streaming-ingestion-http-api.md)
    + [소스 커넥터를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 통합 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Marketo Engage으로 캠페인 오케스트레이션](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Marketo Engage을 사용하여 캠페인 오케스트레이션](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + 업계 동향 {#industry}
    + [데이터 관리의 미래와 변화하는 환경](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [두 가지 인식에 대한 이야기 - 브랜드 대 소비자](/help/platform/industry/brands-vs-consumers.md)
-   + [Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
+   + [Audience Center of Excellence 진화](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [고객 프로필을 통해 더 나은 경험 구축](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [자사 데이터 컨텍스트에서의 데이터 공동 작업](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
    + [번역](translate.md)
