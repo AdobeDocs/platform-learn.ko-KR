@@ -1,26 +1,22 @@
 ---
-title: 데이터 과학 작업 공간에서 데이터 쿼리 및 검색
-description: Adobe Experience Platform에서는 표준 기능으로 Query Service를 JupiterLab에 통합하여 데이터 과학 작업 공간에서 SQL(구조화된 쿼리 언어)을 사용할 수 있습니다.
+title: 데이터 과학 작업 영역에서 데이터 쿼리 및 검색
+description: Adobe Experience Platform에서는 쿼리 서비스를 JupyterLab에 표준 기능으로 통합하여 Data Science Workspace에서 SQL(Structured Query Language)을 사용할 수 있습니다.
 role: User
 feature: Data Science Workspace
 kt: 7286
 thumbnail: 333311.jpg
 exl-id: c946d462-42bc-4adf-a4db-47a61fa6bbff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 3%
+source-wordcount: '99'
+ht-degree: 0%
 
 ---
 
-# 데이터 과학 작업 공간에서 데이터 쿼리 및 검색
+# 데이터 과학 작업 영역에서 데이터 쿼리 및 검색
 
-Adobe Experience Platform에서는 표준 기능으로 Query Service를 JupiterLab에 통합하여 데이터 과학 작업 공간에서 SQL(구조화된 쿼리 언어)을 사용할 수 있습니다. 이 자습서에서는 데이터를 탐색, 변환 및 분석하는 몇 가지 일반적인 사용 사례를 보여줍니다.
+Adobe Experience Platform에서는 쿼리 서비스를 JupyterLab에 표준 기능으로 통합하여 Data Science Workspace에서 SQL(Structured Query Language)을 사용할 수 있습니다. 이 자습서에서는 데이터를 탐색, 변환 및 분석하는 몇 가지 일반적인 사용 사례를 보여줍니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333311)
 
->[!INFO]
->
-> 이 비디오는 물론 [데이터 과학자를 위한 데이터 과학 작업 공간 시작하기](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw): Experience League에서 무료로 사용할 수 있습니다.
-
-자세한 내용은 [데이터 과학 작업 공간 설명서의 쿼리 서비스](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/query-service.html).
+자세한 내용은 다음을 참조하십시오. [데이터 과학 작업 영역 설명서의 쿼리 서비스](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/query-service.html).

@@ -6,10 +6,10 @@ feature: Profiles
 kt: 2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '94'
-ht-degree: 57%
+source-wordcount: '68'
+ht-degree: 73%
 
 ---
 
@@ -19,8 +19,4 @@ ht-degree: 57%
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 
->[!INFO]
->
-> 이 비디오는 과정의 일부입니다 [데이터 엔지니어를 위한 Adobe Experience Platform 시작하기](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2): Experience League에서 무료로 사용할 수 있습니다.
-
-자세한 내용은 [실시간 고객 프로필 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ko).
+자세한 내용은 다음을 참조하십시오. [실시간 고객 프로필 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ko).

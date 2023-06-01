@@ -6,9 +6,9 @@ role: User
 kt: 4808
 thumbnail: 32667.jpg
 exl-id: abb4a09d-7cb6-4cb8-a49d-9a6f4a654a52
-source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '93'
+source-wordcount: '68'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/32667?quality=12&learn=on)
 
->[!INFO]
->
-> 이 비디오는 물론 [마케터를 위한 Intelligent Services 시작하기](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices): Experience League에서 무료로 사용할 수 있습니다.
-
-자세한 내용은 [Attribution AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)
+자세한 내용은 다음을 참조하십시오. [Attribution AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)

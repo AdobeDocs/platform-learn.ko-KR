@@ -6,21 +6,17 @@ feature: Sources
 kt: 3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 31%
+source-wordcount: '77'
+ht-degree: 33%
 
 ---
 
 # 소스 개요
 
-Adobe Experience Platform 인터페이스에서 소스 또는 소스 커넥터를 사용하는 방법을 알아봅니다. 소스는 Adobe, 자사 및 타사 애플리케이션의 데이터를 Platform의 실시간 고객 프로필 및 데이터 레이크에 수집할 수 있는 쉽게 구성할 수 있는 통합입니다.
+Adobe Experience Platform 인터페이스에서 소스 또는 소스 커넥터를 사용하는 방법을 알아봅니다. 소스는 간편하게 구성 가능한 통합 기능으로, 이를 통해 Adobe, 자사 및 서드파티 애플리케이션에서 플랫폼의 실시간 고객 프로필 및 데이터 레이크로 데이터를 수집할 수 있습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29694?quality=12&learn=on)
 
->[!INFO]
->
-> 이 비디오는 과정의 일부입니다 [데이터 엔지니어를 위한 데이터 수집](https://experienceleague.adobe.com/?lang=ko-KR?recommended=ExperiencePlatform-D-1-2020.1.dataingestion): Experience League에서 무료로 사용할 수 있습니다.
-
-자세한 내용은 [소스 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ko).
+자세한 내용은 다음을 참조하십시오. [소스 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ko).
