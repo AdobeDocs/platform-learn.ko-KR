@@ -4,9 +4,9 @@ description: Adobe Experience Platform Mobile SDK가 모바일 애플리케이�
 feature: Mobile SDK
 kt: 3698
 exl-id: 0d55971d-35cc-4684-b1fb-f1aabd0b561c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 82%
 
 ---
@@ -17,8 +17,8 @@ Adobe Experience Platform Mobile SDK가 모바일 애플리케이션에서 전�
 
 >[!NOTE]
 >
-> 이제 Launch입니다. **[!DNL tags]**
+> 이제 Launch가 **[!DNL tags]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28948?quality=12&learn=on)
 
-자세한 내용은 [Platform 모바일 SDK 설명서](https://aep-sdks.gitbook.io/docs/).
+자세한 내용은 다음을 참조하십시오. [Platform 모바일 SDK 설명서](https://developer.adobe.com/client-sdks/documentation/).
