@@ -5,50 +5,50 @@ role: Developer
 feature: API
 kt: 3688
 thumbnail: 28832.jpeg
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 60f509ef55ce121f572466a8f13953dba982a0ce
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 10%
+source-wordcount: '260'
+ht-degree: 15%
 
 ---
 
 # 인증 및 액세스 [!DNL Experience Platform] API
 
-Adobe Experience Platform API를 호출하려면 먼저 Experience Platform 개발자 계정에 액세스할 수 있어야 합니다.
+Adobe Experience Platform API에 대한 요청을 수행하려면 Experience Platform 개발자 계정이 있어야 합니다.
 
-개발자 계정에 액세스하는 방법에 대한 단계별 지침은 [Experience Platform API 인증 자습서](https://www.adobe.com/go/platform-api-authentication-en).
+## Adobe Developer 콘솔에서 프로젝트 만들기 및 Postman 환경 내보내기
 
-## Experience Platform API를 만들어 Postman으로 내보내기
+[[!DNL Postman]](https://www.postman.com/) 는 개발자가 Adobe Experience Platform API와 빠르고 쉽게 상호 작용할 수 있는 도구입니다.
 
-[Postman](https://www.getpostman.com/) 는 개발자가 Adobe Experience Platform API와 빠르고 쉽게 상호 작용할 수 있는 도구입니다.
-
-Adobe Developer 콘솔 **Postman 내보내기 세부 사항** 기능을 사용하면 단일 Postman 환경 파일에서 Experience Platform API에 액세스하고 상호 작용하는 데 필요한 모든 계정 세부 사항을 손쉽게 내보낼 수 있으므로 Adobe Developer 콘솔에서 값을 복사하여 Postman에 붙여넣을 필요가 없습니다.
+Adobe Developer 콘솔 **Postman에 대한 세부 정보 내보내기** 기능은 단일 Postman 환경 파일의 Experience Platform API에 액세스하고 상호 작용하는 데 필요한 모든 계정 세부 정보를 쉽게 내보낼 수 있는 방법을 제공하여 Adobe Developer 콘솔에서 Postman으로 값을 복사하고 붙여넣을 필요가 없습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 
+>[!IMPORTANT]
+>
+>API 자격 증명을 만든 후 회사의 시스템 관리자가 자격 증명을 Experience Platform 역할과 연결해야 합니다.
+
+
 ## Postman으로 액세스 토큰 생성
 
-를 사용하십시오 [Identity Management 서비스 API Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) 비프로덕션 사용을 위해 Adobe Experience Platform API에 액세스하기 위한 액세스 토큰 가져오기
+사용 [Identity Management 서비스 API Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) Adobe Experience Platform API에 액세스하기 위해 액세스 토큰을 얻습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
 
->[!WARNING]
->
-> Adobe I/O 액세스 토큰 생성 Postman 컬렉션에서 언급한 대로, 선언된 생성 방법은 비프로덕션 사용에 적합합니다. 로컬 서명은 타사 호스트에서 JavaScript 라이브러리를 로드하고 원격 서명은 개인 키를 소유 및 운영되는 웹 서비스로 보냅니다. Adobe은 이 개인 키를 저장하지 않지만 프로덕션 키는 다른 사람과 공유해서는 안 됩니다.
 
-## Postman을 사용하여 Adobe I/O API와 상호 작용
+## Postman을 사용하여 Experience Platform API와 상호 작용
 
-를 사용하여 Adobe I/O API와 상호 작용 탐색 [Adobe 제공 Experience Platform API Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), [Adobe I/O 환경 변수](#export-adobe-io-integration-details-to-postman) 및 [생성된 액세스 토큰](#generate-an-access-token-with-postman).
+다음을 사용하여 Adobe Experience Platform API와 상호 작용 탐색 [Adobe 제공 Experience Platform API Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), 을 기반으로 구축 [Adobe Developer 콘솔 환경 변수](#export-adobe-io-integration-details-to-postman) 및 [생성된 액세스 토큰](#generate-an-access-token-with-postman).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
 
-Adobe에서 제공한 Postman 컬렉션은 모든 Adobe I/O API에 대해 존재할 수 없지만 제공된 [Experience Platform API Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) 는 이러한 사용 사례에 대해 고유한 Postman 컬렉션을 정의하는 방법에 대한 안내서로 사용할 수 있습니다.
 
 ## 추가 리소스
 
-* [Adobe I/O 콘솔](https://console.adobe.io)
+* [Adobe Developer Console](https://developer.adobe.com/console/home)
 * [Adobe Experience Platform Postman 샘플](https://github.com/adobe/experience-platform-postman-samples)
-   * [Adobe I/O 액세스 토큰 생성 Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
+   * [액세스 토큰 생성을 위한 Identity Management System Postman Collection](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
    * [Adobe Experience Platform API Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
-* [Postman 다운로드](https://www.getpostman.com/)
+* [Postman 다운로드](https://www.postman.com/)
