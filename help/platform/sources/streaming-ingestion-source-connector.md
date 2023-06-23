@@ -3,10 +3,10 @@ title: 소스 커넥터를 사용하여 데이터 스트리밍
 description: 이 비디오는 실시간으로 클라우드 스토리지 소스의 데이터를 플랫폼으로 스트리밍하고 고객 참여를 위해 데이터를 실시간으로 사용하는 방법을 보여 줍니다.
 role: Data Engineer, Data Architect
 feature: Sources
-kt: 7100
+jira: KT-7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 52%

@@ -1,60 +1,61 @@
 ---
 title: Bootcamp - Journey Optimizer 여정 만들기 - 브라질
 description: Bootcamp - Journey Optimizer 여정 만들기 - 브라질
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: 674a9baa-5900-405e-b744-ea211f60a16d
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 2%
 
 ---
 
-# 2.4 Teste sua jornada
+# 2.4 테스테 수아 조르나다
 
-## 플루소 다 조나다 두 클리엔테
+## 플루소 다 조르나다 두 클리엔테
 
-압라우마 노바넬라 네마 도 나베가도르 e vala [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **모두 허용**. com 베이스 no seu comportamento de navegaguaguo no fluxo de usuário anetran, voverá a personalizaçao acontecer na página indic do site.
+아브라 우마 노바 자넬라 이 아노니마 두 나베가도르 이 바 파라 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 클리크 **모두 허용**. Com base no seu comportamento de navegação no fluxo de usuário anterior, você verá a personalizaão acontecer na página inciial do site.
 
 ![DSN](./images/web8a.png)
 
-클리케 노 아이콘 **프로필** 더 좋은 디레토 다 텔라
+클리케 노 이콘 **프로필** 칸토 수페리어 디레이토 다 텔라.
 
 ![데모](./images/web8b.png)
 
-Clique em **계정 만들기**.
+클리크 **계정 만들기**.
 
 ![데모](./images/pv5.png)
 
-프레엔차 토도 os campos는 공식이다. um valor real para enderço de e-mail e numero de telefone, pois será usiíos poliíores para posterioes de e-메일 e SMS를 사용합니다.
+Preencha todos os campos do formulário. Use um valor real para endereço de e-mail e número de telefone, pois será usado em exercícios posteriores para envio de e-mail SMS.
 
 ![데모](./images/pv7a.png)
 
-역할 파라 백소입니다. 아고라 보크레데브 인서르 o eventID do seu evento personalizado vokrimo voke vokcrime no exilitiao 2.2.
+역할 para baixo. Agora você deve inserir o eventID do seu evento personalizado que você criou no exercício 2.2. Você pode encontrá-lo aqui:
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventID é o que precisa ser envado à Adobe Experience Platform para acionar a jornada que voke constructure. Esté o eventID neste 예시:
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada que você construiu. eventID neste 예제 설정:
 `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-Preencha o eventID no campo **계정 생성 이벤트 ID** e-clique em **등록**.
+Preencha o eventID no campo **계정 생성 이벤트 ID** e clique em **등록**.
 
 ![데모](./images/pv8a.png)
 
-Em 세구이다. 텔라 아비소 세라 exibida:
+Em seguida, a tela abaixo será exibida :
 
 ![데모](./images/pv9.png)
 
-Voqtampém reciberá este e e-mail, que é o e-mail que voke mesmo criou parte destine explisiacio.
+Você também receberá este 이메일, que é o 이메일 que você mesmo criou como parte deste exercício.
 
 ![데모](./images/pv10a.png)
 
-보스케어 운동선수
+보테노우 에스티시우
 
-프로시마 에타파: [2.5 설치 e 사용 - aplicativo 모델](./ex5.md)
+프록시마 에타파: [2.5 Instale e use o aplicativo móvel](./ex5.md)
 
-[레토나르 플루소 드 우수아리오 2](./uc2.md)
+[레토르나르 파라 플루소 데 우수아리오 2](./uc2.md)
 
-[레토날라 파라 토도스 오모두로스](../../overview.md)
+[레토르나르 파라 토도스](../../overview.md)

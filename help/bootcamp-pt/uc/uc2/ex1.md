@@ -1,73 +1,74 @@
 ---
-title: Bootcamp - 웹 사이트 방문 및 계정 만들기 - 브라질
-description: Bootcamp - 웹 사이트 방문 및 계정 만들기 - 브라질
-kt: 5342
+title: Bootcamp - 웹사이트를 방문하여 계정을 만드세요 - 브라질
+description: Bootcamp - 웹사이트를 방문하여 계정을 만드세요 - 브라질
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: c71f6789-25cd-4fac-b026-e981744dbe95
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 2%
 
 ---
 
-# 2.1 사이트 방문자 e크리에이티브 sua 콘텐츠
+# 2.1 Visite o site e crie sua conta
 
-## Contextto
+## Contexto
 
-조나다 도 데스코냐오 콘헤퀴도 두도 토피코스는 파라라(marcas atualmente), asim como a jornada do clientte, da aquisao 느슨함 조정(daaquisaang)
+A jornada do desconhecido ao conhecido é um dos tópicos mais importantes para as marcas atualmente, asim como a jornada do cliente, da aquisição à retenção.
 
-Adobe Experience Platform 데셈펜하 양파펠은 중요한 네사 조냐다 플라타포르마 에오 세레브로 다 코무퀴상, 오 **기록 경험 시스템**.
+Adobe Experience Platform 데셈펜하 움 파펠 임포르탕테 네사 호르나다. A plataforma é o cérebro da comunicação, o **경험적 기록 시스템**.
 
-Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitantte desconhecido no site também é um clientte do ponto de vista da Plataforma e, commo tal, todo o comportamento de um visitantte desconhecido tamphém é enabado à Plataforma. 그라사사 아보다셈과, 양자도 세시탄테 비지탄테 에벤투알멘테 세토르나 um cliente conhecido, uma marca também pode visualizar o que aconteeu antes daquele momento. 이소아주다는 후마 원두보 데 오티미자상 데 트리부이상 e experiencia.
+Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecydos. Um visitante desconhecido no site também é um cliente do ponto de vista da Plataforma e, como tal, todo o comportamento de um visitante desconhecido também é enviado à Plataforma. Graças a essa abordagem, quando esse visitante eventualmente se torna um cliente conheido, uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência.
 
-## 플루소 다 조나다 두 클리엔테
+## 플루소 다 조르나다 두 클리엔테
 
-Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **모두 허용**. com 베이스 no seu comportamento de navegaguaguo no fluxo de usuário anetran, voverá a personalizaçao acontecer na página indic do site.
+액세스 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 클리크 **모두 허용**. Com base no seu comportamento de navegação no fluxo de usuário anterior, você verá a personalizaão acontecer na página inciial do site.
 
 ![DSN](./images/web8.png)
 
-Visualizador de perfil에 대해 Clique no ícone do logotipo da Adobe을 더 우수하게 만들 수 없습니다. esquerdo da tela para abrir를 Visualizador de perfil로 요약합니다. Perfil do clientte real com o의 Verifique o painel do Visualizador de perfil e no Perfil do clientte tempo real com o **Experience Cloud ID** 코모 ID 사도르 프리마리오 파르 에스테 에네케 에이지 데스코니치도
+Clique no ícone do logotipo da Adobe no canto superior esquerdo da tela para abrir o Visualizador de perfil. Verifique o painel do Visualizador de perfil e no Perfil do cliente em tempo real com o **EXPERIENCE CLOUD ID** como o identificador primário para este cliente que ainda é desconhecido.
 
 ![데모](./images/pv1.png)
 
-Voqtamém pode ver todos os Eventos de experiencia coletados com base no comportamento do clientte.
+Você também pode ver todos os Eventos de experiencia coletados com base no comportamento do cliente.
 
 ![데모](./images/pv3.png)
 
-클리케 노 아이콘 **프로필** 더 좋은 디레토 다 텔라
+클리케 노 이콘 **프로필** 칸토 수페리어 디레이토 다 텔라.
 
 ![데모](./images/pv4.png)
 
-Clique em **계정 만들기**.
+클리크 **계정 만들기**.
 
 ![데모](./images/pv5.png)
 
-프레엔차 토도 os campos는 공식이다. um valor real para enderço de e-mail e numero de telefone, pois será usiíos poliíores para posterioes de e-메일 e SMS를 사용합니다.
+Preencha todos os campos do formulário. Use um valor real para endereço de e-mail e número de telefone, pois será usado em exercícios posteriores para envio de e-mail SMS.
 
 ![데모](./images/pv7.png)
 
-역할 매개 변수 e clique em **등록**.
+역할 para baixo e clique em **등록**.
 
 ![데모](./images/pv8.png)
 
-Em Seguida와 Seguinte serla exibido입니다.
+세구이다, 세구인테 세라 엑시비도
 
 ![데모](./images/pv9.png)
 
-Voqtampém receberá o seguinte e-메일:
+Você também reecberá o seguinte 이메일:
 
 ![데모](./images/pv10.png)
 
-E alguns minutos depois, vokte tambéberá o seguinte 이메일:
+e alguns minutos depois, você também receberá o seguinte e-mail:
 
 ![데모](./images/pv11.png)
 
-Vamos conferir a seguir como jonada de onboarding foi configuada.
+Vamos conferir a seguir como essa jornada de onboarding foi configurada.
 
-프로시마 에타파 [2.2 Crie seu evento](./ex2.md)
+프록시마 에타파 [2.2 크리 세우 에벤토](./ex2.md)
 
-[레토나르 플루소 드 우수아리오 2](./uc2.md)
+[레토르나르 파라 플루소 데 우수아리오 2](./uc2.md)
 
-[레토날라 파라 토도스 오모두로스](../../overview.md)
+[레토르나르 파라 토도스](../../overview.md)

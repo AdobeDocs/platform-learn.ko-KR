@@ -3,10 +3,10 @@ title: Data Science Workspace 아키텍처 개요
 description: 이 비디오에서는 주요 아키텍처에 대해 설명하고 Adobe Experience Platform에 있는 데이터 과학 작업 영역의 기본 구성 요소를 보여 줍니다.
 role: User
 feature: Data Science Workspace
-kt: 7181
+jira: KT-7181
 thumbnail: 332368.jpg
 exl-id: de40f58b-36bd-458c-b792-c8963546f42e
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 8%

@@ -3,10 +3,10 @@ title: 데이터 모델 계획
 description: Adobe Experience Platform에서 스키마 빌드를 시작하기 전에 이러한 작업을 수행합니다.
 role: Data Architect
 feature: Schemas
-kt: 7932
+jira: KT-7932
 thumbnail: 333478.jpg
 exl-id: f3912973-0f15-4113-8706-6a36b6d24c17
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 50%

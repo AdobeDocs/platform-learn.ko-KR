@@ -1,91 +1,92 @@
 ---
 title: Bootcamp - 콜 센터의 개인화 - 브라질
 description: Bootcamp - 콜 센터의 개인화 - 브라질
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 7acf778b-042f-4deb-9406-ddcf63daacda
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# 2.6 개인화상 콜 센터 없음
+# 2.6 Personalização no call center
 
-Conforme discutido barrias는 Durante o bootcamp를 심고, Personalizar a experiencia do clientte deve acontecer de maneira omnichannel을 말합니다. Um 콜 센터 제랄멘테 바스탠테 데스코네타도 도 레판테 다 조르나다 두 클리엔테 이스소 pode, com frequncia, levar a experiencias objectites do cliente, npreccia ser assim. Vamos mostrar example de como o 콜 센터 pode user facility conectado, em tempo real.
+Conforme discutido várias vezes durante o bootcamp, personalizar a experiencia do cliente é algo que deve acontecer de maneira omnichannel. Um call center geralmente é bastante desconectado do restante da jornada do cliente e isso pode, com frequência, levar a experiências frustrantes do cliente, mas não precisa ser assim. Vamos mostrar um modeo de como call center pode ser facilmente conectado à Adobe Experience Platform, em 템포 리얼.
 
-## 플루소 다 조나다 두 클리엔테
+## 플루소 다 조르나다 두 클리엔테
 
-운동 금지 전적, 우산도 오 압리카티보 마우벨, 보테 콤프로우 프루투 클리칸도 노 보탄오 **Buy**.
+No exercício anterior, usando o aplicativo móvel, você comprou um produto clicando no botão **구매**.
 
 ![DSN](./images/app20.png)
 
-아모스 수퍼 쿠마 테누마 페르군타 소브레가 세우페디도, 쿠포파리아? 정상문, 보레 리가리아 파라 콜센터
+Vamos supor que você tenha uma pergunta sobre o status do seu peedo, o que você faria? Normalmente, você ligaria para o 콜 센터.
 
-낭트 드 리가르라 콜센터, 보정밀 사브르 세우 **충성도 ID**. Visualizador de Perfil 사이트에서 Voqpode Encontrolar Seu ID de Fidelidade.
+Antes de ligar para o 콜 센터, você precisa saber seu **고객 충성도 ID**. Você pode encontrar seu ID de fidelidade no Visualizador de Perfil do site.
 
 ![DSN](./images/cc1.png)
 
-Nesse caso, o **충성도 ID** é **5863105**. 코모 파르트 드 노사 구현상 페르사아 페르사리사다가 다시 콜 센터 노 앰비앙테 드 데라상, 보테 데 디치오나르 프레픽소 오 세우 **충성도 ID**. O 프레픽소 é **11373**, 포르토어 또는 사용자 usado neste ensé 예시 ID de fidelidade **11373 5863105**.
+네스카소, o **고객 충성도 ID** é **5863105**. Como parte de nossa implementação personalizada do recurso de call center no ambiente de demonstração, você deve adicionar um prefixo seu **고객 충성도 ID**. O prefivo é **11373**, portanto, o ID de fidelidade a ser usado neste orimo é **11373 5863105**.
 
-아모스 페이저아고라 Use seu telifone e ligue para o numero **+1 (323) 745-1670**.
+바모스 파제르 아고라 Use seu telefone e ligue para o número **+1 (323) 745-1670**.
 
 ![DSN](./images/cc2.png)
 
-세라 세루디타케 인트라 세이디데 세기도 **#**. Digite Seu ID de Vidiidade.
+Será solicitado que você insira seu ID de fidelidade, 세기도 **#**. Digite seu ID de fidelidade.
 
 ![DSN](./images/cc3.png)
 
-보쿠비라 **여보세요, 수놈**. Esse nome é retirado do Perfil do Cliente em tempo real na Adobe Experience Platform. 보이팀 3 에스코라입니다 프레시온 오누메로 **1**, **주문 상태**.
+보사이오우비라 **안녕하세요, 스놈**. Esse nome é retirado Perfil do Cliente em tempo real na Adobe Experience Platform. Você tem 3 escolas. 프레시오네오누메로 **1**, **주문 상태**.
 
 ![DSN](./images/cc4.png)
 
-데포이스 데 아우비르 o status do seu pedido, vokte terla a opçao de pressionar **1** para voltar 메뉴 주문서 ou pressionar 2. 프레시온 **2개**.
+Depois de ouvir o status do seu peedo, você terá a opção de pressionar **1** para voltar ao 메뉴 principal ou pressionar 2. 프레시오네 **2**.
 
 ![DSN](./images/cc5.png)
 
-Em 세구이다, 세라 세라이타도 쿠크 아발리 수아 experiencia de 콜 센터, 셀레치오난도 누메로 1 e 5, 센도 1 baixo e 5 알토. 수아에콜라 파사.
+Em seguida, será solicitado que você avalie sua experiência de call centre, selectionando um número entre 1 e 5, sendo 1 baixo e 5 alto. Faça sua escolha.
 
 ![DSN](./images/cc6.png)
 
-수아차마다파라 콜센터 세라 엔케라다
+Sua chamada para o 콜 센터 세라 엔세라다.
 
-Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). 데포이스 데 파저 로그인, 보히라 아세사(Voqiera acessar a página initial da da Adobe Experience Platform)
+액세스 [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer 로그인, você irá acesssar a página inicial da Adobe Experience Platform.
 
 ![데이터 수집](./images/home.png)
 
-낭트 드 티니어, 보어 정밀 선택 **샌드박스**. ONome do sandbox a ser selecionado ``Bootcamp``. É Poishivel 페이저는 Clicacando no texto **[!UICONTROL 프로덕션 제품]** 나린하 아줄 나파테 수페리어 다 데라 디포이즈 드 셀리시오나 [!UICONTROL 샌드박스] 고유도, 보카 베라 텔라 뮤다 아구 에스파아 [!UICONTROL 샌드박스] 전용.
+Antes de continar, você precisa selecionar um **샌드박스**. 샌드박스 a ser selectionado é ``Bootcamp``. 레 포시벨 파제 이스소 클리칸도 노 텍토 **[!UICONTROL 프로덕션 프로덕션]** 나 리냐 아줄 나 파르테 수페리어 다 텔라. Depois de selectionar o [!UICONTROL 샌드박스] apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL 샌드박스] 헌신.
 
 ![데이터 수집](./images/sb1.png)
 
-Esquerda 메뉴 없음, Acesse **프로필** e **찾아보기**.
+메뉴 없음, 에스케다 **프로필** e **찾아보기**.
 
 ![고객 프로필](./images/homemenu.png)
 
-셀레치온 오 **ID 네임스페이스** **이메일** e insight o enderço de e-mail do seu perfil de clientte. Clique em **보기**. Clique para abrir seu perfil.
+다음 중 하나 선택 **ID 네임스페이스** **이메일** e insira o endereço de e-mail do seu perfil de cliente. 클리크 **보기**. 파라 아브리 수 페필
 
 ![DSN](./images/cc7.png)
 
-Voqe verá seu perfil de clinovanente. Acesse **이벤트**.
+Você verá seu perfil de cliente novamente. 액세스 **이벤트**.
 
 ![DSN](./images/cc8.png)
 
-Em eventos, voke verla 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultado da sua responsta à pergunta **통화 만족도 평가** (아발리 세우 카마다)
+Em eventos, você verá 2 eventos com um eventType de **콜 센터**. O primeiro evento é o resultado da sua resposta à pergunta **통화 만족도 평가** (아발리 슈 카마다).
 
 ![DSN](./images/cc9.png)
 
-역할 엄포코 파라오 보카 보베라 오 에벤토 포이 히셀레치오오 포카상 데 베리피카 오 **주문 상태**.
+역할 um pouco para baixo e você verá o evento que foi registrado quando você seleionou a opção de verificar o **주문 상태**.
 
 ![DSN](./images/cc10.png)
 
-Acesse **세그먼트 멤버십**. 아고라 보베르아 케 2 세그멘토스 세퀴피엠 em seu perfil, em tempo real, com base nas interacx que teve por meio do 콜 센터. 에사스의 아서상 데 세그멘토 데브엠 경 우사다 파라 임탄타 쿠알퀴라상 피스타오 아콘테케 em qualquer outtro 운하입니다.
+액세스 **세그먼트 멤버십**. Agora você verá que 2 segmentos se qualificam em seu perfil, em tempo real, com base nas interações que você por meio do 콜 센터 Essas associações de segmento podem e devem ser usadas para impactar qual comunicação e personalização acontece em qualquer outo canal.
 
 ![DSN](./images/cc11.png)
 
-보스케어 운동선수
+보테노우 에스티시우
 
-[레토나르 플루소 드 우수아리오 2](./uc2.md)
+[레토르나르 파라 플루소 데 우수아리오 2](./uc2.md)
 
-[레토날라 파라 토도스 오모두로스](../../overview.md)
+[레토르나르 파라 토도스](../../overview.md)

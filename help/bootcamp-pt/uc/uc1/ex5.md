@@ -1,61 +1,62 @@
 ---
-title: Bootcamp - 실시간 CDP - 세그먼트 구축 및 조치 수행 - DV360으로 세그먼트 보내기 - 브라질
-description: Bootcamp - 실시간 CDP - 세그먼트 구축 및 조치 수행 - DV360으로 세그먼트 보내기 - 브라질
-kt: 5342
+title: Bootcamp - Real-time CDP - 세그먼트 작성 및 조치 - 세그먼트를 DV360으로 전송 - 브라질
+description: Bootcamp - Real-time CDP - 세그먼트 작성 및 조치 - 세그먼트를 DV360으로 전송 - 브라질
+jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: acb32859-6f82-44e0-8948-a045a9fe2afe
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 1%
 
 ---
 
-# 1.5 아상: envie segmento para o Facebook
+# 1.5 아상: 앙비에 세그멘토 파라 오 Facebook
 
-Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). 데포이스 데 파저 로그인, 보히라 아세사(Voqiera acessar a página initial da da Adobe Experience Platform)
+액세스 [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer 로그인, você irá acesssar a página inicial da Adobe Experience Platform.
 
 ![데이터 수집](./images/home.png)
 
-낭트 드 티니어, 보어 정밀 선택 **샌드박스**. OHome은 사용자 Selecionado Bootcamp를 샌드박스로 만듭니다. É Poishivel 페이저는 Clicacando no texto **[!UICONTROL 프로덕션 제품]** 나린하 아줄 나파테 수페리어 다 데라 데포이스 드 셀레치오나 샌드박스 고유도, 보스케라 아 데라 무다 아고라 에삼 [!UICONTROL 샌드박스] 전용.
+Antes de continar, você precisa selecionar um **샌드박스**. O nome do sandbox a ser selectionado é Bootcamp. 레 포시벨 파제 이스소 클리칸도 노 텍토 **[!UICONTROL 프로덕션 프로덕션]** 나 리냐 아줄 나 파르테 수페리어 다 텔라. Depois de seleionar o sandbox apropriado, você verá a a tela mudando e agora você está em seu [!UICONTROL 샌드박스] 헌신.
 
 ![데이터 수집](./images/sb1.png)
 
-메뉴 없음, vala para **대상** e, em seguida, vah para **카탈로그**. 보케베라 오 **대상 카탈로그**. Em **대상**, 클라이언트 **세그먼트 활성화** 카탕 **Facebook 사용자 지정 대상**.
+메뉴 없음 à esquerda, vá para **대상** e, em seguida, vá para **카탈로그**. 보체베라오 **대상 카탈로그**. Em **대상**, 클릭 em **세그먼트 활성화** 카르탕 없음 **Facebook 사용자 지정 대상**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-셀레치온 오 **bootcamp-facebook** e-clique em **다음**.
+다음 중 하나 선택 **부트캠프-facebook** e clique em **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de segmentos dispooniveis, selecione o segmento que voke unitionio an extrunitionio. Clique em **다음**.
+Na lista de segmentos disponíveis, segmento que você criou no exercício anterior의 셀렉시오네. 클리크 **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-나파지나 **매핑**, verique se caixa de seleçao **변형 적용** 에스타 마르카다. Clique em **다음**.
+나파기나 **매핑**, verifique se a caixa de seleção **변환 적용** 에스타 마르카다 클리크 **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-나파지나 **세그먼트 예약**, selecione a **대상자의 기원** e defina como **고객으로부터 직접**. Clique em **다음**.
+나파기나 **세그먼트 일정**, a 선택 **대상의 출처** e defina como **고객으로부터 직접**. 클리크 **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-포르 피엠, 나파지나 **검토**, 클라이언트 **완료**.
+포르 핌, 나 파기나 **리뷰**, 클릭 em **완료**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Seu Segmento agera esta vinculado aos Publicos Personalizados do Facebook. Sempre um cliente se qualfica sgsegmento, um sinal será enabado do servedor(서버측) do Facebook para에는 Publico Personalizado no lado do Facebook의 Putublico clientte를 포함합니다.
+Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre que um cliente se qualificar para esse segmento, um sinal será venado lado do servidor (server-side) do Facebook para incluir esse cliente no Público Personalizado no lado Facebook.
 
-facebook 없음, 보체 엔콘트라세우 세그멘토 다 Adobe Experience Platform em 푸블리코스 개인화:
+No Facebook , você encontrará seu segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-facebook의 아고라 보쿠푸프리코 페르빌리자도
+Agora você pode ver seu público personalizado aparecer no Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[레토나르 플루소 드 우시오 1](./uc1.md)
+[레토르나르 파라 플루소 데 우수아리오 1](./uc1.md)
 
-[레토날라 파라 토도스 오모두로스](../../overview.md)
+[레토르나르 파라 토도스](../../overview.md)

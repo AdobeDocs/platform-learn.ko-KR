@@ -1,93 +1,94 @@
 ---
 title: Bootcamp - 모바일 앱 설치 및 사용 - 브라질
 description: Bootcamp - 모바일 앱 설치 및 사용 - 브라질
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# 2.5 설치 e 사용 - aplicativo 모델
+# 2.5 Instale e use o aplicativo móvel
 
 
-## Instale o aplicativo movely
+## 아플리카티보 모벨
 
-안테스 데 인살라르 오 아파리타티보, é Consumrio Harstreamento no seu dispositvo iOS. 파라, 세카투세 구성 아퀴드 > 프리바시다데 세구란사 > 라스트래멘토 e는 로슈페르미티케 os aplicativos sendoitem o rstreamento를 확인했습니다.
+Antes de instalar o aplicativo, é necessário habilitar Rastreamento no seu dispositivo iOS. Para isso, accesse Configurações > Privacidade e segurança > Rastreamento e confirmme a opção Permiter que os aplicativos solicitem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesse a App Store da Apple e 페스퀴즈 `aepmobile-bootcamp`.\
-Clique em **Instalar** ou **다운로드**.
+Accesse a App Store da Apple e pesquise `aepmobile-bootcamp`.\
+클리크 **설치 관리자** ou **다운로드**.
 
 ![DSN](./../uc3/images/app1.png)
 
-아피카티보 에스티버 인살라도, 클릭 em의 디포이크 **아브리르**.
+Depois que o aplicativo estimver instalado, clique em **아브리르**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Clique em **확인**.
+클리크 **확인**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Clique em **페르미터**.
+클리크 **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Clique em **콘코르도**.
+클리크 **콩코르도**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Clique em **Permitr enquanto uso o 앱**.
+클리크 **Permiter enquanto uso 앱**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Clique em **페르미터**.
+클리크 **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-아고라 보스케스타 아플리카티보, 나파지나, 프론토(a) 파라파라 베르시카 두 클리엔테
+Agora você está no aplicativo, na página inicial, pronto(a) para verificar toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## 플루소 다 조나다 두 클리엔테
+## 플루소 다 조르나다 두 클리엔테
 
-Primeiramente, é requiremazer o login. Clique em **로그인**.
+Primeiramente, é necessário fazer 로그인. 클리크 **로그인**.
 
 ![DSN](./../uc3/images/app13.png)
 
-데포이스 데 크리아수아 콘타노 운동선수, 네 엑시비도 현장입니다. Agora é requidatário reutilzar o enderço de e-mail da conca voke voke hack o aplicativo para fazer o login.
+Depois de criar sua conta nos exercícios anteriores, isso é exibido no site. Agora é necessário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
 
 ![데모](./../uc3/images/pv1.png)
 
-Digite o enderço de e-mail que voke는 사이트 e-clique em을 사용하지 않습니다. **로그인**.
+Digite o endereço de e-mail que você usou no site e clique em **로그인**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Vokheiberá confirmaçao de que está concetado e reberuma notificaçao 푸시
+Você receberá uma confirmmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-레콘 파라 파지나의 인시코 do aplicativo e os recursos adiconais irao aprecreper.
+Returne para a página inicial do aplicativo e os recursos adicionais irão aparecer.
 
 ![DSN](./../uc3/images/app17.png)
 
-Acesse **제품**. Clique em qualquer produto, neste example: **커피 이동**.
+액세스 **제품**. Clique em qualquer 제품, neste 모형: **테이크아웃 커피**.
 
 ![DSN](./images/app19.png)
 
-보스케라 파지나도 프로두토 **커피 이동** aplicativo가 없습니다. Clique em **Buy**.
+Você verá a página do produto **테이크아웃 커피** aplicativo가 없습니다. 클리크 **구매**.
 
 ![DSN](./images/app20.png)
 
-아고라 보스케노 연습시오 에스테르 프론토 파라라는 최대 아티비디아드로
+Agora você terminou este exercício e está pronto para as próximas atividades.
 
-프로시마 에타파: [ 2.6 개인화상 콜 센터 없음](./ex6.md)
+프록시마 에타파: [ 2.6 Personalização no call center](./ex6.md)
 
-[레토나르 플루소 드 우수아리오 2](./uc2.md)
+[레토르나르 파라 플루소 데 우수아리오 2](./uc2.md)
 
-[레토날라 파라 토도스 오모두로스](../../overview.md)
+[레토르나르 파라 토도스](../../overview.md)

@@ -1,51 +1,52 @@
 ---
-title: Bootcamp - Acquisition - 브라질
-description: Bootcamp - Acquisition - 브라질
-kt: 5342
+title: Bootcamp - 획득 - 브라질
+description: Bootcamp - 획득 - 브라질
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+exl-id: 4392bdc2-ec43-4f2d-99af-719e9979f0c5
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
-# 1. 아키시상
+# 1. 아퀴시상
 
-## 오베지보스 데 아벤디자도
+## Objetivos de aprendizado
 
-## 전제 조건
+## 프레-리퀴지토스
 
 - Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 아세소 아 콜레타 데 도다 Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 아케소 사이트 드 데드라상
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- 아세소아오 지 드 데몬스트라상
 
 >[!IMPORTANT]
 >
->피트 크림 라도 파라 촉진성 포르마토 베시피코 데 부토캠프 자습서입니다. Sistemas e contaas expificos aos quais voqae pode nao ter acesso, 상유틸리티자네스테 튜토리얼. 메스모 세엠 아케소, 보카인다 포데 아펜더 무이토 com a leitura deste contenudo detalhado. Voke um particante de Bootcamp e preccia das credenciais de acesso를 참조하십시오. e contaato com seu representate da Adobe para는 정보 아수(inforaçaas)로 입력합니다.
+>Este 튜토리얼 foi criado para facilitar um formato espicífico de Bootcamp. Sisemas e contas espaceficos aos quais você pode não ter aceso são utilizados neste 튜토리얼 . Mesmo sem aceso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Adobe Se você um participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu representant da para receber as informatoções neesirárias.
 
-## 운동
+## 엑세르시오스
 
-[1.1 사이트에 표시](./ex1.md)
+[1.1 현장 방문](./ex1.md)
 
-네스트 연습시오, 보레 이구이르 로테이로
+Neste exercício, você irá seguir um roteiro e percorrer o site.
 
-[1.2 Visualize seu prio perfil de clientte em tempo real - UI](./ex2.md)
+[1.2 Visualize seu próprio perfil de cliente em tempo real - UI](./ex2.md)
 
-네스트 연습시오, 보테 이라 페이저 로그인 na Adobe Experience Platform e visualizar seu prlorprio Perfil de clientte em tempo real na UI.
+Neste exercício, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI.
 
-[1.3 Cribe segmento - UI](./ex3.md)
+[1.3 크림 세그멘토 - UI](./ex3.md)
 
-네스트 연습시오, 보레 이라 크림 세그멘토 우산도 오 시멘토스 드 Adobe Experience Platform
+Neste exercício, você irá criar um segmento usando o Construtor de Segmentos da Adobe Experience Platform.
 
-[1.4 아상: envie segmento para o Adobe Target](./ex4.md)
+[1.4 아상: 앙비에 세그멘토 파라 오 Adobe Target](./ex4.md)
 
-Segmento Constrydo에서 운동하지 않음 1.1 para configuration uma Atividade de segmentaçao 또는 Adobe Target의 경험
+Use o segmento construído no exercício 1.1 para configurar uma Atividade de segmentação por experiência no Adobe Target.
 
-[1.5 아상: envie segmento para o Facebook](./ex5.md)
+[1.5 아상: 앙비에 세그멘토 파라 오 Facebook](./ex5.md)
 
-Conecte o segmento que vokriu no exilitioncio 1.1 ao destination Facebook.
+facebook의 1.1 아오 destino에서 코네크테 오 세멘토 케 보세 크리우 노 엑세시우
 
-[레토날파라 토도스 오모두로스](../../overview.md)
+[레토르나르 파라 토도스](../../overview.md)

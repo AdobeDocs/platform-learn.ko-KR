@@ -1,33 +1,33 @@
 ---
-title: Bootcamp - 실시간 CDP - 세그먼트 구축 및 작업 수행 - DV360으로 세그먼트 보내기
-description: Bootcamp - 실시간 CDP - 세그먼트 구축 및 작업 수행 - DV360으로 세그먼트 보내기
-kt: 5342
+title: Bootcamp - Real-time CDP - 세그먼트 작성 및 조치 수행 - 세그먼트를 DV360으로 전송
+description: Bootcamp - Real-time CDP - 세그먼트 작성 및 조치 수행 - 세그먼트를 DV360으로 전송
+jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 3%
 
 ---
 
-# 1.5 조치 수행: facebook에 세그먼트 보내기
+# 1.5 조치 취하기: 세그먼트를 Facebook에 보내기
 
-이동 [Adobe Experience Platform](https://experience.adobe.com/platform). 로그인하면 Adobe Experience Platform 홈 페이지가 표시됩니다.
+다음으로 이동 [Adobe Experience Platform](https://experience.adobe.com/platform). 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
 ![데이터 수집](./images/home.png)
 
-계속하기 전에 **샌드박스**. 선택할 샌드박스의 이름은 다음과 같습니다 ``Bootcamp``. 이 작업은 텍스트를 클릭하여 수행할 수 있습니다 **[!UICONTROL 프로덕션 제품]** 화면 상단에 있는 파란색 줄에 표시됩니다. 적절한 [!UICONTROL 샌드박스]이렇게 하면 화면 변경 사항이 표시되고 이제 전용 화면에 표시됩니다 [!UICONTROL 샌드박스].
+계속하기 전에 **샌드박스**. 선택할 샌드박스 이름이 로 지정됩니다. ``Bootcamp``. 텍스트를 클릭하여 이 작업을 수행할 수 있습니다 **[!UICONTROL 프로덕션 프로덕션]** 화면 상단의 파란색 선. 적절한 을(를) 선택한 후 [!UICONTROL 샌드박스], 화면 변경 사항이 표시되며 이제 전용 모드로 전환됩니다. [!UICONTROL 샌드박스].
 
 ![데이터 수집](./images/sb1.png)
 
-왼쪽 메뉴에서 **대상**, 그런 다음 **카탈로그**. 그러면 **대상 카탈로그**. in **대상**&#x200B;를 클릭합니다. **세그먼트 활성화** on **Facebook 사용자 지정 대상** 카드.
+왼쪽 메뉴에서 **대상**&#x200B;로 이동한 다음 로 이동합니다. **카탈로그**. 그러면 다음을 볼 수 있습니다. **대상 카탈로그**. 위치 **대상**, 클릭 **세그먼트 활성화** 다음에 있음 **Facebook 사용자 지정 대상** 카드.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-대상을 선택합니다 **bootcamp-facebook** 을(를) 클릭합니다. **다음**.
+대상 선택 **부트캠프-facebook** 및 클릭 **다음**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
@@ -35,25 +35,25 @@ ht-degree: 3%
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-설정 **매핑** 페이지에서 다음을 확인하십시오 **변형 적용** 확인란이 활성화되어 있습니다. **다음**&#x200B;을 클릭합니다.
+다음에서 **매핑** 페이지, 다음을 확인합니다. **변환 적용** 확인란이 활성화되어 있습니다. **다음**&#x200B;을 클릭합니다.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-설정 **세그먼트 예약** 페이지에서 을 선택합니다 **대상자의 기원** 다음으로 설정 **고객으로부터 직접**. **다음**&#x200B;을 클릭합니다.
+다음에서 **세그먼트 일정** 페이지에서 **대상의 출처** 및 설정 **고객으로부터 직접**. **다음**&#x200B;을 클릭합니다.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-마지막으로, **검토** 페이지를 클릭한 다음 **완료**.
+마지막으로 **리뷰** 페이지, 클릭 **완료**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-이제 세그먼트가 Facebook 사용자 지정 대상에 연결됩니다. 고객이 이 세그먼트를 사용할 수 있을 때마다 Facebook 측의 사용자 지정 대상에 해당 고객을 포함하도록 Facebook 서버측으로 신호가 전송됩니다.
+이제 세그먼트가 Facebook 사용자 지정 대상자에 연결됩니다. 고객이 이 세그먼트에 대한 자격이 될 때마다, Facebook 측의 사용자 지정 대상에 해당 고객을 포함하라는 신호가 Facebook 서버측으로 전송됩니다.
 
-facebook에서는 Adobe Experience Platform 의 사용자 지정 대상 아래에 있는 세그먼트를 찾을 수 있습니다.
+facebook의 Adobe Experience Platform에서 사용자 지정 대상 아래에 세그먼트를 찾습니다.
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-이제 Facebook에 사용자 지정 대상이 표시되는 것을 볼 수 있습니다.
+이제 Facebook에서 사용자 지정 대상이 표시되는 것을 볼 수 있습니다.
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 

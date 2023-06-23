@@ -2,10 +2,10 @@
 title: 쿼리 서비스에 타블로 연결
 description: PostgreSQL 프로토콜을 지원하는 다양한 데스크탑 클라이언트 응용 프로그램에서 쿼리 서비스에 연결하는 방법과 PostgreSQL 도구 및 드라이버를 사용하여 쿼리를 연결하고 작성하는 방법에 대해 알아봅니다.
 feature: Queries
-kt: 7688
+jira: KT-7688
 thumbnail: 333702.jpg
 exl-id: c81e669e-af61-4b6b-8eb6-a516731b6529
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 18%

@@ -2,10 +2,10 @@
 title: '배경: Adobe Experience Platform 기반의 고객 경험'
 description: 이전 비디오에서는 예제 브랜드인 Luma가 어떻게 풍부하고, 보람 있고, 적절한 고객 경험을 만들 수 있는지 보았습니다. 이 비디오에서는 Adobe Experience Platform을 사용하여 이 여정을 수행하는 방법을 살펴봅니다.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-kt: 4340
+jira: KT-4340
 thumbnail: 28144.jpg
 exl-id: 5ae7707d-799d-4979-9e53-b882e74324ad
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%

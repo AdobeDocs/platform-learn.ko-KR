@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
+source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 30%
+source-wordcount: '937'
+ht-degree: 31%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 30%
    + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 통합 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Marketo Engage을 사용하여 캠페인 오케스트레이션](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Marketo Engage을 사용하여 캠페인 오케스트레이션](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + 업계 동향 {#industry}
    + [데이터 관리의 미래와 변화하는 환경](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [두 가지 인식에 대한 이야기 - 브랜드 대 소비자](/help/platform/industry/brands-vs-consumers.md)

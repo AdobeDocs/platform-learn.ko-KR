@@ -3,10 +3,10 @@ title: 데이터 수집 개요
 description: Adobe Experience Platform의 데이터 수집 기능을 사용하면 통합 프로필 관리를 위해 데이터를 하나의 개방적이고 확장 가능한 플랫폼으로 통합할 수 있습니다.
 role: Data Engineer, Data Architect
 feature: Data Ingestion
-kt: 2699
+jira: KT-2699
 thumbnail: 27106.jpg
 exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 12%

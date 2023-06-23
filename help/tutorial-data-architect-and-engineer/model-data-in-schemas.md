@@ -5,10 +5,10 @@ breadcrumb-title: 스키마의 모델 데이터
 description: 이 단원에서는 Luma의 데이터를 스키마로 모델링합니다. 이것은 자습서에서 가장 긴 수업 중 하나이므로, 물 한 잔을 마시고 버클을 착용하세요!
 role: Data Architect
 feature: Schemas
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 5%

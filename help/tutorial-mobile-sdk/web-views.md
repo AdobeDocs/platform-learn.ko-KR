@@ -1,9 +1,9 @@
 ---
 title: 웹 보기 처리
 description: 모바일 앱에서 WebViews를 사용하여 데이터 수집을 처리하는 방법에 대해 알아봅니다.
-kt: 6987
+jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 1%

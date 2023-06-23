@@ -3,10 +3,10 @@ title: 스트리밍 연결 HTTP API 끝점을 사용하여 데이터 수집
 description: 이 비디오는 HTTP API 끝점을 사용하여 실시간으로 Adobe Experience Platform에 데이터를 스트리밍하는 방법을 보여 줍니다.
 role: Data Engineer, Data Architect
 feature: Sources
-kt: 6686
+jira: KT-6686
 thumbnail: 331028.jpg
 exl-id: 2f9c3f6f-169a-431f-b697-a5ed86c274f5
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 37%

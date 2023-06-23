@@ -3,11 +3,11 @@ title: 속성 기반 액세스 제어 구성
 description: 특정 Experience Platform 리소스에 대한 액세스를 제어하기 위해 속성 기반 액세스 제어를 구성하는 방법에 대해 알아봅니다.
 role: Admin, User
 feature: Access Control
-kt: 10363
+jira: KT-10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: 3df5214a445cbf4c9862bb82cd32a9f243228539
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%

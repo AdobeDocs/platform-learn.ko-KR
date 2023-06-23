@@ -1,72 +1,73 @@
 ---
 title: Bootcamp - Journey Optimizer 이벤트 만들기 - 브라질
 description: Bootcamp - Journey Optimizer 이벤트 만들기 - 브라질
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 1b9d7a35-cddf-4f4a-ad0a-95723b00c278
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# 2.2 Crie seu evento
+# 2.2 크리 세우 에벤토
 
-Adobe Journey Optimizer Acessando에서 패사 로그인 [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
+Adobe Journey Optimizer 로그인 [Adobe Experience Cloud](https://experience.adobe.com). 클리크 **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Vokheserá rereconado para visualizaçao da **홈** Journey Optimizer 없음. Primeiro, verifique se voca esto o sandbox correto. O nome do sandbox que deve ser usado `Bootcamp`. Para alternar de um sandbox para, lista를 클릭합니다. 네스트 모예, 노메 도 샌드박스 é **Bootcamp**. Vokheestarala na visualizahan da **홈** 샌드박스 보내기 `Bootcamp`.
+Você será redirectionado para a visualização da **홈** Journey Optimizer 없음. Primeiro , verifique se você está usando o sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternator de um sandbox para outr, select o sandbox na lista를 클릭합니다. Neste 모형아, nome do sandbox é **부트캠프**. Você estará na visualização da **홈** do seu 샌드박스 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-메뉴 항목 없음, 역할 파라 바이소 e clique em **구성**. Em Seguida, Client no botang **관리** 에이소드 **이벤트**.
+메뉴 없음 à esquerda, 역할 para baixo e clique em **구성**. Em seguida, 클리크 노 보탕 **관리** 아베이소 데 **이벤트**.
 
 ![ACOP](./images/acopmenu.png)
 
-Vokheverá vischang geral de todos os eventos disoniveis. Clique em **이벤트 만들기** 파라 코카 치아 세우 프로프리오 evento.
+Você verá uma visão geral de todos os eventos disponíveis. 클리크 **이벤트 만들기** para começar a criar seu próprio evento.
 
 ![ACOP](./images/emptyevent.png)
 
-우마 노바 야넬라 데 에벤토 바지라 아파레서
+우마 노바 자넬라 데 에벤토 바지아 이라파레체입니다.
 
 ![ACOP](./images/emptyevent1.png)
 
-Em Primeiro Lugar, dre um nome ao seu evento, por example: `seuSobrenomeAccountCreationEvent` eVar의 예시: `Account Creation Event`.
+Em primeiro lugar , dê um nome ao seu evento como , por moremo : `seuSobrenomeAccountCreationEvent` e adicione uma descrição como, por orimo: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Em Seguida, certifique-se de que **유형** 에스파디니도 코모 **단일** e, 파라 셀레카오 드 **이벤트 ID 유형**, selecione **시스템 생성**.
+Em seguida, certifique-se de que **유형** 에스타 디피도 코모 **단일** e, para seleção de **이벤트 ID 유형**, 선택 항목 **시스템 생성됨**.
 
 ![ACOP](./images/eventidtype.png)
 
-에타파 세구인테-셀레상 두 스키마. Um 스키마 Foi Prepara Explisioncio 스키마 사용 `Demo System - Event Schema for Website (Global v1.1) v.1`.
+에타파 세귄테 é a seleção do schema. Um schema foi preparado para este exercício. 스키마 사용 `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-데포이스 드 셀레치오나 스키마, 보케 베라 바드리오스 캄포스 센카도 셀레치오나오 **필드**. 아고라 보케 데 파사르 마우스소브레아 세상 **필드** 세라오 엑시비도스 클리케 노 아이콘 **편집**.
+Depois de seleionar o Schema, você verá vários campos sendo seleionados na seção **필드**. Agora você deve passar o mouse sobre a seção **필드** e três ícones 팝업 serão exibidos. 클리케 노 이콘 **편집**.
 
 ![ACOP](./images/eventpayload.png)
 
-Vokheverá janela 팝업 드 **필드** e- 메일 전자 메일, 음성 데브 셀리시온어 알건스 도스 캄포스(campos que precisamozamas para personalizar o e-mail. Escolheremos outoutros attriputos de perfil posteriormente, utilizzando os djah existenthas Adobe Experience Platform.
+Você verá uma janela 팝업 드 **필드**, onde você deve selectionar alguns dos campos que precisamos para personalizar o e-mail. Escoleheremos outos atributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform.
 
 ![ACOP](./images/eventfields.png)
 
-옵저토 없음 `_experienceplatform.demoEnvironment`, pcertifique se de selecionar os campos **brandLogo** e **brandName**.
+오브젝트 없음 `_experienceplatform.demoEnvironment`, pcertificate-se de selectionar os campos **brandLogo** e **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-옵저토 없음 `_experienceplatform.identification.core`, certifique se de selecionar o campo **이메일**.
+오브젝트 없음 `_experienceplatform.identification.core`, campo의 certificate-se de selectionar **이메일**.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Clique em **확인** 파라 소아제
+클리크 **확인** &#39;알테라수에스&#39;라는 이름의 파라 살바르
 
 ![ACOP](./images/saveok.png)
 
-Em Seguida, Tela Abaixo deve Ser Exibida. Clique em **저장**  마아베스 파라 아터라수..
+Em seguida, a tela abaixo deve ser exibida. 클리크 **저장**  mais uma vez para salvar suas alterações ..
 
 ![ACOP](./images/eventsave.png)
 
@@ -74,24 +75,24 @@ Seu evento agora esta configurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-클리케 노 세벤토 노바멘테 파라 브리어 마이스 우마 **이벤트 편집**. 마우스소브레 **필드** 파라버 os 3 비아콘 아우트라베스 클리케 노 아이콘 **페이로드 보기**.
+Clique no seu evento novamente para abrir mais uma vez a tela **이벤트 편집**. 파세오마우스소브레 **필드** para ver os 3 ícones outra vez. 클리케 노 이콘 **페이로드 보기**.
 
 ![ACOP](./images/viewevent.png)
 
-아고라 보베라 우모예 카르가 에스페라다
-Seu evento tem eventID de orqueststraçuniau, que pode encontra roballao nessa carutil(payload) até visualizar `_experience.campaign.orchestration.eventID`.
+Agora você verá um examo da carga útil esperada.
+Seu evento tem um eventID de orquestração único, que você pode encontrar rolando para baixo nessa carga útil (payload) até visualizar `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventID é o que deve ser envado a Adobe Experience Platform para acionar a jornada que vociraem um dos prluxiomos exlicios. Lembre-se destine eventID, voke pode precyar posteriormente.
+O eventID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que você construirá em um dos próximos exerccios. Lembre-se deste eventID, você pode precisar dele posterionte.
 `"eventID": "19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f"`
 
-Clique em **확인** e, em seguida, client em **취소**.
+클리크 **확인** e, em seguida, clique em **취소**.
 
-아고라 보케어 운동
+아고라보사이테누에스티시우
 
-프로시마 에타파: [ 2.3 Crie sua mensaem de e-mail](./ex3.md)
+프록시마 에타파: [ 2.3 Crie sua mensagem de email](./ex3.md)
 
-[레토나르 플루소 드 우수아리오 2](./uc2.md)
+[레토르나르 파라 플루소 데 우수아리오 2](./uc2.md)
 
-[레토날라 파라 토도스 오모두로스](../../overview.md)
+[레토르나르 파라 토도스](../../overview.md)

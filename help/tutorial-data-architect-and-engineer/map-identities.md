@@ -5,10 +5,10 @@ breadcrumb-title: ID 매핑
 description: 이 단원에서는 ID 네임스페이스를 만들고 스키마에 ID 필드를 추가합니다.
 role: Data Architect
 feature: Profiles
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 9%

@@ -3,10 +3,10 @@ title: 레시피 빌더 템플릿을 사용하여 모델 구축
 description: 이 비디오는 JupyterLab 런처의 레시피 빌더 템플릿을 사용하여 성향 모델을 교육하고 점수화하고 레시피를 만드는 방법을 보여 줍니다.
 role: User
 feature: Data Science Workspace
-kt: 7290
+jira: KT-7290
 thumbnail: 333570.jpg
 exl-id: 49b86450-d49a-4467-805d-02bd65e7ca95
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 7%

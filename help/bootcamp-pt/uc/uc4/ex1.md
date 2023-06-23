@@ -1,11 +1,12 @@
 ---
-title: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101 - 브라질
-description: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101 - 브라질
-kt: 5342
+title: 부트캠프 - Customer Journey Analytics - Customer Journey Analytics 101 - 브라질
+description: 부트캠프 - Customer Journey Analytics - Customer Journey Analytics 101 - 브라질
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
+exl-id: 63933d9e-b774-483f-b547-188c77440595
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -14,99 +15,99 @@ ht-degree: 0%
 
 # 4.1 Customer Journey Analytics 101
 
-## 오베티보
+## Objetivos
 
-- 엔텐다 오 케 오 CJA
-- CJA를 위한 엔엔엔덴다 메테 오파펠도
-- CJA에서 워크플로우의 내용을 입력합니다. da conexaang de dados insights
+- 엔텐다 오 케 에 오 CJA
+- Entenda qual é o papel do CJA
+- Entenda o workflow do CJA: da conexão de dados aos insights
 
-## 4.1.1 Customer Journey Analytics의 É?
+## 4.1.1 O que é o Customer Journey Analytics?
 
-O Customer Journey Analytics(CJA) for necuma 인터페이스 em que os times de Analytics, Negocios e Technologia conceguem unir todos os os dados da companies e analisar a jornada cross-channel (online e offline) do clientte de ponta a ponta 를 참조하십시오. O CJA é capaz de fornecer contexto e clareza para jonada, trazendo visacionavel em cima dificuldades no processesso de conversaway e possibilitando o planenceponcias de experienceancias 관계 e personalizadas pontos는 관련이 있습니다.
+O Customer Journey Analytics (CJA) fornece uma 인터페이스 em que os times de Analytics, Negócios e Tecnologia conseguem unir todos os dados da companhia e analisar a jornada cross-channel (online e offline) do cliente de ponta a ponta. O CJA é capaz de fornecer contexto e clareza para essa jornada, trazendo uma visão acionável em cima das dificuldades no processo de conversão e possibilitando o planejamento de experiências relevantes e personalizadas nos pontos mais relevantes.
 
-O CJA에서 Analysis Workspace으로 Contado Adobe Experience Platform으로 이동합니다. Adobe Experience Platform é o cébro da comunicaçao e da orqueststraçao, com o CJA에서 마르카스 아고라 podepodepodepocontextualizar e visualizar todos dedos, parque de negocios e insights posam aprender com eles, analnada on-line do clientte를 제공하는 데 negonsios e insights posam aprender com elers, anda a jornada on-line do clientte.
+O CJA traz o Analysis Workspace conectado à Adobe Experience Platform. A Adobe Experience Platform é o cérebro da comunicação e da orquestração e, com o CJA, as marcas agora podem contextualizar e visualizar todos seses dados, para que as equipes de negócios e insights possam aprender com eles, analisando toda a jornada on-line para off-line do cliente.
 
-de negocios e insights podem conversar com o CJA로서, fazer perguntas e obter retempostas real com은 usuário de arrastar e soltar, apontar e callicar e fácil de usar do Analysis Workspace의 인터페이스를 통해 제공됩니다.
+As equipes de negócios e insights podem conversar com o CJA, fazer perguntas e obter respoas em tempo real com a interface do usuário de arrastar e soltar, apontar e clicar e fácil de usar do Analysis Workspace.
 
 ![데모](./images/cja-adv-analysis1.png)
 
-## 4.1.2 원칙 변수
+## 4.1.2 Principais vantagens
 
-상:
+Os três principais beneficios para os clientes são:
 
-- 커패시디드 de disponibilizar insights para todos(ou seja, dematizar 또는 acesso aos dados).
-- Aem uma jonada 문맥(ou seja, os dados podeos podeos pedos sequencialmente, abrangendo mltiplos online on-line e off-line) 캐시어를 위한 캐패시드 드입니다.
-- 커패시다드 드 아프로베이타 o 포더 도스 델 카도 하하(ou seja, permite que individos usem dblood insights e anallises profundas para ativaçao de marketing).
+- A capacidade de disponibilizar insights para todos (ou seja, democratizar o acesso aos dados).
+- A capacidade de de ver o cliente em uma jornada contextual (ou seja, os dados podem ser visualizados sequencialmente, abrangendo múltiplos canais on-line e off-line).
+- A capacidade de de aproveitar o poder dos dados sem que haja a necessidade (ou seja, permite que indivíduos usm dados para desbloquear insights e análises profundas para ativação de marketing).
 
-## 4.1.3 ## 4.1.3 포어(또는 Customer Journey Analytics)
+## 4.1.3 ## 4.1.3 Por que escoler o Customer Journey Analytics?
 
-O CJA nang se destina a substittuir um aplicativo de BI atual, como Power BI, 마이크로전략, Locker ou Tableau. O objetivo에서 aplicativos de BI é visualizar para painéis corativos que todos em uma organizaçao posam ver méristates rapidamente te. O objetivo do CJA é trazer poder de análise para as de Marketing e Negocios, torndo-o uma ferramenta de análise obrigtoria paras pessoas
+O CJA não se destina a substicir um aplicativo de BI atual, como Power BI, Microstrategy, Locker ou Tableau. O objetivo deses aplicativos de BI é visualizar dados para criar painéis corporativos para que todos em uma organização possam ver métricas importantes rapidamente. O objetivo do CJA é trazer poder de análise para as equipes de Marketing e Negócios, tornando-o uma ferramenta de análise obrigatória para essas pessoas
 
 
 
-Tradicionalmente, os aplicativos de BI tetum sido incapazes de permiter a verdadeira intelligencia do cliente:
+Tradicionalmente, os aplicativos de BI têm sido incapazes de permitur a verdadeira inteligência do cliente:
 
-- 엘레스 나오 포데모족 페처트베이상 나흐장 안나레스 데 조나다 두 클리엔테.
-- Os aplicatitvos de BI precassam shave a pergunta com antecencia
-- 컨설팅으로, 상투리미트라에스트라두루타도 방코디도스
-- Habilidades de SQL 상투성.
-- Os aplicativos de BI nang permitem que vopergunte o 동기를 부여 de um acontecimento.
-- Os aplicativos de BI nao conexaang direta com os pontos de conato do clientte.
+- Eles não podem fazer atribuição e não fazem análises de jornada do cliente.
+- Os aplicativos de BI precisam saber a pergunta com antecedência
+- As consultas interativas são limitadas pela estrutura do banco de dados
+- 하빌리다데스 데 상에니까리아스
+- Os aplicativos de BI não permitem você pergunte o motivo de um acontecimento.
+- Os aplicativos de BI não têm conexão direta com os pontos de contato do cliente.
 
-포르토어, 우아시로스 데 네고르시오스 에날리스타스 체감, 007 사이다 쿠아제 이메디아타멘테, 토르난도 아날리스카라, 렌타, 인프렉시벨 e 데스코타다 시스테마오 드 아상.
+Portanto , usuários de negócios e analistas chegam a becos sem saída quase imediatamente, tornando a análise cara, lenta, infilexível e desconectada dos sisemas de ação.
 
-Com o CJA vopode ter vischo complete a jornada do clientte, usando dadodes offline e online, com as ferramentas certas para reduzir o tempo de insight, tornado os usuários independentepor phr que algo aconteeu e como responder a isso.
+Com o CJA você pode ter uma visão competa da jornada do cliente, usando dados offline e online, com as ferramantas certas para reduzir o tempo de insight, tornando os usários de negócios independentes para entender por que algo aconteceu e como responder a isso.
 
 ![데모](./images/cja-use-case.png)
 
-## 4.1.4 Compreenda o fluxo de trabalho do Customer Journey Analytics
+## 4.1.4 Comprenda o fluxo de trabalho do Customer Journey Analytics
 
-낭트 드 인시어 os 프롤시모스 운동장, é essencial complemental quais etapas 상투과자 드라자 다 Adobe Experience Platform 파라 o CJA 파라 시각화-로스 e obter algins insights profumdos. CJA에서 É o que chamamos de fluxo de trabalho입니다. Vamos verificar:
+Antes de iniciar os próximos exercícios, é essential compreender quais etapas são necessárias para trazer dados da Adobe Experience Platform para o CJA para visualizá-los e obter alguns insights profundos. É o que chamamos de fluxo de trabalho do CJA. Vamos 유효성 검사:
 
 ![데모](./images/cja-work-flow.jpg)
 
-에타파스 아키마로서 낭트 드 이니시아르, 나오 세케사 다 에타파 0, que é compremender os estao is estao disoniveis na Adobe Experience Platform.
+Antes de iniciar as etapas acima, não se equeça da etapa 0, que é compreender os dados que estão disponíveis na Adobe Experience Platform.
 
-**쓰레기통, 쓰레기통** Vokde teruma ideia clara de quais ados disoniveis e como os esquemas na Adobe Experience Platform 상투체 구성 도입니다. 아멕더 os 데카오 또는 Adobe Experience Platform 촉진라(coisas), 나오 소 파르테 드 콘나사오 데 다도스, 마스타베임 나 호라 드 포르주르 아마지르 e 페서 아날레스.
+**쓰레기가 들어오면, 쓰레기가 나와요.** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são configurados. Compreender os dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexão de dados, mas também na hora de construir visualizações e fazer análiss.
 
-## 4.1.5 Etapa 0: Adobe Experience Platform에서 포괄적인 esquemas e 데이터 세트
+## 4.1.5 Etapa 0: Compreender esquemas e dataset da Adobe Experience Platform
 
-URL을 사용하여 Adobe Experience Platform에 로그인할 수 있습니다. [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Adobe Experience Platform에 대한 URL 로그인: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
-데포이스 데 파저 로그인, 보히라 아세사(Voqiera acessar a página initial da da Adobe Experience Platform)
+Depois de fazer 로그인, você irá acesssar a página inicial da Adobe Experience Platform.
 
 ![데이터 수집](../uc1/images/home.png)
 
-낭트 드 티니어, 보어 정밀 선택 **샌드박스**. ONome do sandbox a ser selecionado ``Bootcamp``. 보이포데 파저 이소클리칸도 노 아이콘 **[!UICONTROL Prod]** 더 좋은 디레토 다 텔라 데포이스 드 셀레치오나와 샌드박스 고유도, 보스케라 알라 아구아 에스파아셈스 세우 샌드박스
+Antes de continar, você precisa selecionar um **샌드박스**. 샌드박스 a ser selectionado é ``Bootcamp``. 보테 포데 파제 이소 클리칸도 노 이콘 **[!UICONTROL Prod]** 칸토 수페리어 디레이토 다 텔라. Depois de seleionar o sandbox adopriado, você verá a tela mudando e agora você está em seu sandbox dedicado.
 
 ![데이터 수집](../uc1/images/sb1.png)
 
-Adobe Experience Platform에서 스키마 데이터 세트 를 확인합니다.
+Adobe Experience Platform에서 스키마 e 데이터 세트를 확인합니다.
 
 | 데이터 세트 | 스키마 |
 | ----------------- |-------------| 
-| 데모 시스템 - 웹 사이트의 이벤트 데이터 세트(글로벌 v1.1) | 데모 시스템 - 웹 사이트용 이벤트 스키마(글로벌 v1.1) |
-| 데모 시스템 - 콜 센터의 이벤트 데이터 세트(글로벌 v1.1) | 데모 시스템 - 콜 센터용 이벤트 스키마(글로벌 v1.1) |
-| 데모 시스템 - 음성 도우미에 대한 이벤트 데이터 세트(글로벌 v1.1) | 데모 시스템 - Voice Assistants용 이벤트 스키마(글로벌 v1.1) |
+| 데모 시스템 - 웹 사이트에 대한 이벤트 데이터 세트(전역 v1.1) | 데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1) |
+| 데모 시스템 - 콜 센터용 이벤트 데이터 세트(글로벌 v1.1) | 데모 시스템 - 콜 센터용 이벤트 스키마(글로벌 v1.1) |
+| 데모 시스템 - Voice Assistant용 이벤트 데이터 세트(글로벌 v1.1) | 데모 시스템 - Voice Assistant용 이벤트 스키마(전역 v1.1) |
 
-Certifique-se de verificado ao 메뉴:
+Certifique-se de ter verificado ao menos:
 
-- 식별자: CRMID, phoneNumber, ECID, 이메일. 퀴스는 상투들을 식별해서 프리마리오스와 퀘이시 상투상 식별자인 시쿤다리오스를 식별합니까?
+- 식별자: CRMID, 전화번호, ECID, 이메일. Quais identities são os identificadores primários, quais são os identificadores secundários?
 
-Vokpode encontrar os identifier abrindo um schema e observando objto `_experienceplatform.identification.core`. 스키마 확인 [데모 시스템 - 웹 사이트용 이벤트 스키마(글로벌 v1.1)](https://experience.adobe.com/platform/schema).
+Você pode encontrar os identificadores abrindo um schema e observando o objeto `_experienceplatform.identification.core`. 스키마 확인 [데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)](https://experience.adobe.com/platform/schema).
 
 ![데모](./images/identity.png)
 
-- Objto de comércio dentro do 스키마 탐색 [데모 시스템 - 웹 사이트용 이벤트 스키마(글로벌 v1.1)](https://experience.adobe.com/platform/schema).
+- Objeto de comércio dentro do schema 살펴보기 [데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)](https://experience.adobe.com/platform/schema).
 
 ![데모](./images/commerce.png)
 
-- 시각화 도구 os [데이터 세트](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
+- 할 일 시각화 [데이터 세트](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
 
-아고라 보케스타 프레온 파라 코케샤는 우아리오 도 Customer Journey Analytics 인터페이스입니다.
+Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
 
-프로시마 에타파: [4.2 Adobe Experience Platform 데이터 세트 다 Customer Journey Analytics 없음](./ex2.md)
+프록시마 에타파: [4.2 데이터 세트 연결 da Adobe Experience Platform Customer Journey Analytics 없음](./ex2.md)
 
-[레토나르 플루소 드 우시오 4](./uc4.md)
+[레토르나르 파라 플루소 데 우수아리오 4](./uc4.md)
 
-[레토날라 파라 토도스 오모두로스](../../overview.md)
+[레토르나르 파라 토도스](../../overview.md)

@@ -3,10 +3,10 @@ title: 교육된 모델 만들기 및 게시
 description: JupyterLab 레시피 빌더 전자 필기장으로 만든 레시피를 사용하여 모델을 만들고, 교육하고, 평가하고, 게시하는 방법에 대해 알아봅니다.
 role: User
 feature: Data Science Workspace
-kt: 7291
+jira: KT-7291
 thumbnail: 333595.jpg
 exl-id: 149909cf-8294-45ed-b854-b9db5582858e
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 4%

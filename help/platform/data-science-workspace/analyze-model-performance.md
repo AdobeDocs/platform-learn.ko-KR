@@ -3,10 +3,10 @@ title: 모델 성능 분석
 description: 혼동 행렬, 정확도, 리콜 및 정밀도와 같이 모델의 성능을 분석하는 데 사용되는 다양한 방법에 대해 알아봅니다.
 role: User
 feature: Data Science Workspace
-kt: 7288
+jira: KT-7288
 thumbnail: 333427.jpg
 exl-id: 32fa15ca-a301-41eb-9a8a-c570ab856555
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 8%

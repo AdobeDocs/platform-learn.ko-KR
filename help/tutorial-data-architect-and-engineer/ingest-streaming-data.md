@@ -5,10 +5,10 @@ breadcrumb-title: 스트리밍 데이터 수집
 description: 이 단원에서는 Web SDK를 사용하여 데이터를 Experience Platform에 스트리밍합니다.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '3346'
 ht-degree: 2%
@@ -82,7 +82,6 @@ ht-degree: 2%
 다음을 만들려면 [!UICONTROL 데이터스트림]:
 
 1. 에 로그인합니다 [Experience Platform 데이터 수집 사용자 인터페이스](https://experience.adobe.com/launch/)
-
    <!--when will the edge config go live?-->
 
 1. 선택 **[!UICONTROL 데이터스트림]** 왼쪽 탐색
@@ -103,7 +102,6 @@ ht-degree: 2%
 1. 대상 **[!UICONTROL 이벤트 데이터 세트]**, 선택 `Luma Web Events Dataset`
 1. 다른 Adobe 애플리케이션을 사용하는 경우 언제든지 다른 섹션을 탐색하여 이러한 다른 솔루션의 Edge 구성에 필요한 정보를 확인하십시오. Web SDK는 데이터를 Experience Platform으로 스트리밍할 뿐만 아니라 다른 Adobe 애플리케이션에서 사용하는 모든 이전 JavaScript 라이브러리를 대체하기 위해 개발되었습니다. Edge 구성은 데이터를 전송하려는 각 애플리케이션의 계정 세부 사항을 지정하는 데 사용됩니다.
 1. **[!UICONTROL 저장]**을 선택합니다
-
    ![데이터 스트림 구성 및 저장](assets/websdk-edgeConfig-addEnvironment.png)
 
 Edge 구성이 저장되면 결과 화면에 개발, 스테이징 및 프로덕션용으로 만들어진 세 가지 환경이 표시됩니다. 추가 개발 환경을 추가할 수 있습니다.
@@ -124,7 +122,6 @@ Edge 구성이 저장되면 결과 화면에 개발, 스테이징 및 프로덕�
 1. 다음으로: **[!UICONTROL 이름]**, 입력 `Luma Platform Tutorial` (회사에서 여러 사람이 이 튜토리얼을 수강하는 경우 이름 추가)
 1. 다음으로: **[!UICONTROL 도메인]**, 입력 `enablementadobe.com` (나중에 설명)
 1. **[!UICONTROL 저장]**을 선택합니다
-
    ![속성 세부 정보](assets/websdk-property-propertyDetails.png)
 
 <!--
@@ -281,7 +278,6 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 1. 이제 다음으로 이동 **[!UICONTROL 시작]** 왼쪽 탐색
 1. 구성 탭을 선택합니다.
 1. 오른쪽에 표시되는 **[!UICONTROL 페이지 포함 코드]**&#x200B;를 열고 **[!UICONTROL 작업]** 드롭다운, 선택 **[!UICONTROL 바꾸기]**
-
    ![Actions > Replace 를 선택합니다.](assets/websdk-debugger-replaceLibrary.png)
 1. 사용자가 인증되었으므로 디버거는 사용 가능한 Launch 속성 및 환경을 가져옵니다. 다음 항목 선택 `Luma Platform Tutorial` 속성
 1. 다음 항목 선택 `Development` 환경
@@ -364,7 +360,6 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 1. 다음 항목 선택 `web.webPageDetails.name` 필드
 1. 다음으로: **[!UICONTROL 값]**&#x200B;아이콘을 선택하여 데이터 요소 선택 모달을 열고 다음을 선택합니다. `Page Name` 데이터 요소
 1. 선택 **[!UICONTROL 라이브러리에 저장]**
-
    ![페이지 이름을 XDM 개체 데이터 요소에 매핑합니다](assets/websdk-property-dataElement-createXDMObject.png)
 
 동일한 프로세스를 사용하여 웹 사이트의 추가 사용자 정의 데이터를 XDM 필드에 매핑합니다.

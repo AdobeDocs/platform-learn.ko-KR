@@ -3,35 +3,39 @@ title: Experience Platform API 인증 및 액세스
 description: Adobe Experience Platform API에 액세스하는 방법에 대해 알아봅니다.
 role: Developer
 feature: API
-kt: 3688
+jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 60f509ef55ce121f572466a8f13953dba982a0ce
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 15%
+source-wordcount: '334'
+ht-degree: 11%
 
 ---
 
 # 인증 및 액세스 [!DNL Experience Platform] API
 
-Adobe Experience Platform API에 대한 요청을 수행하려면 Experience Platform 개발자 계정이 있어야 합니다.
+Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 이 튜토리얼에서는 인증 자격 증명을 만들고 Experience Platform API 요청을 시작하는 프로세스를 안내합니다.
 
-## Adobe Developer 콘솔에서 프로젝트 만들기 및 Postman 환경 내보내기
+## Adobe Developer 콘솔에서 프로젝트 만들기 및 Postman 환경 내보내기{#export-integration-details-to-postman}
 
-[[!DNL Postman]](https://www.postman.com/) 는 개발자가 Adobe Experience Platform API와 빠르고 쉽게 상호 작용할 수 있는 도구입니다.
+[[!DNL Postman]](https://www.postman.com/) 는 개발자가 Adobe Experience Platform API와 빠르고 쉽게 상호 작용할 수 있도록 지원하는 타사 애플리케이션입니다.
 
-Adobe Developer 콘솔 **Postman에 대한 세부 정보 내보내기** 기능은 단일 Postman 환경 파일의 Experience Platform API에 액세스하고 상호 작용하는 데 필요한 모든 계정 세부 정보를 쉽게 내보낼 수 있는 방법을 제공하여 Adobe Developer 콘솔에서 Postman으로 값을 복사하고 붙여넣을 필요가 없습니다.
-
->[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
+[Adobe Developer 콘솔](https://developer.adobe.com/console/home) **Postman에 대한 세부 정보 내보내기** 기능은 단일 Postman 환경 파일의 Experience Platform API에 액세스하고 상호 작용하는 데 필요한 계정 세부 정보를 쉽게 내보낼 수 있으므로 Adobe Developer 콘솔에서 Postman으로 값을 복사하여 붙여넣을 필요가 없습니다.
 
 >[!IMPORTANT]
 >
->API 자격 증명을 만든 후 회사의 시스템 관리자가 자격 증명을 Experience Platform 역할과 연결해야 합니다.
+>에 액세스하려면 [Adobe Developer 콘솔](https://developer.adobe.com/console/home), 다음 중 하나여야 합니다. [시스템 관리자](https://helpx.adobe.com/enterprise/using/admin-roles.html) 또는 [개발자](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) 다음에서 [Adobe Admin Console](https://adminconsole.adobe.com).
+>
+> API 자격 증명을 만든 후 시스템 관리자는 자격 증명을 Experience Platform의 역할과 연결해야 합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 
 
-## Postman으로 액세스 토큰 생성
+
+
+## Postman으로 액세스 토큰 생성{#generate-an-access-token-with-postman}
 
 사용 [Identity Management 서비스 API Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) Adobe Experience Platform API에 액세스하기 위해 액세스 토큰을 얻습니다.
 
@@ -40,12 +44,12 @@ Adobe Developer 콘솔 **Postman에 대한 세부 정보 내보내기** 기능�
 
 ## Postman을 사용하여 Experience Platform API와 상호 작용
 
-다음을 사용하여 Adobe Experience Platform API와 상호 작용 탐색 [Adobe 제공 Experience Platform API Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), 을 기반으로 구축 [Adobe Developer 콘솔 환경 변수](#export-adobe-io-integration-details-to-postman) 및 [생성된 액세스 토큰](#generate-an-access-token-with-postman).
+다음을 사용하여 Adobe Experience Platform API와 상호 작용 탐색 [Adobe 제공 Experience Platform API Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), 을 기반으로 구축 [Adobe Developer 콘솔 환경 변수](#export-integration-details-to-postman) 및 [생성된 액세스 토큰](#generate-an-access-token-with-postman).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
 
 
-## 추가 리소스
+## 이 비디오에서 참조된 리소스
 
 * [Adobe Developer Console](https://developer.adobe.com/console/home)
 * [Adobe Experience Platform Postman 샘플](https://github.com/adobe/experience-platform-postman-samples)

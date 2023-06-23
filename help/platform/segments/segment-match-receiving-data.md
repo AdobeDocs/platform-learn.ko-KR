@@ -4,10 +4,10 @@ description: 세그먼트 일치 기능을 사용하면 전략적 파트너가 �
 feature: Segments
 role: User
 level: Intermediate
-kt: 10250
+jira: KT-10250
 thumbnail: 344419.jpeg
 exl-id: ef3dc334-f733-4ffa-94a5-1ff7ef3999cb
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 100%
@@ -20,4 +20,4 @@ ht-degree: 100%
 
 >[!VIDEO](https://video.tv.adobe.com/v/344419/?quality=12&learn=on)
 
-자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en)를 참조하십시오.
+자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ko)를 참조하십시오.

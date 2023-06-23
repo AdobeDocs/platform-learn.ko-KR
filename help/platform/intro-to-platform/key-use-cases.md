@@ -2,10 +2,10 @@
 title: 주요 사용 사례
 description: Experience Platform Real-time Customer Data Platform, 고객 여정 인텔리전스, 전달 및 크로스 채널 경험, 고객 경험 애플리케이션 개발의 네 가지 주요 사용 사례에 대한 개요를 살펴보십시오.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-kt: 4337
+jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%

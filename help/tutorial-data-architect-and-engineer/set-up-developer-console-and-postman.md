@@ -5,10 +5,10 @@ breadcrumb-title: 개발자 콘솔 및 Postman 설정
 description: 이 단원에서는 Adobe Developer 콘솔에서 프로젝트를 설정하고 다음을 제공합니다 [!DNL Postman] Platform API 사용을 시작할 수 있는 컬렉션
 role: Data Architect, Data Engineer
 feature: API
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-set-up-developer-console-and-postman.jpg
 exl-id: 72b541fa-3ea1-4352-b82b-c5b79ff98491
-source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1320'
 ht-degree: 1%

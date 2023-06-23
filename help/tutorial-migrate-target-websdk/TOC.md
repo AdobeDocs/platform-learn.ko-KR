@@ -1,7 +1,7 @@
 ---
-user-guide-title: at.js 2.x에서 웹 SDK로 Target 마이그레이션
-breadcrumb-title: at.js 2.x에서 웹 SDK로 Target 마이그레이션
-user-guide-description: at.js에서 웹 SDK 구현으로 성공적으로 마이그레이션하는 방법을 다루는 Target 고객을 위한 실습 자습서입니다.
+user-guide-title: at.js 2.x에서 Web SDK로 Target 마이그레이션
+breadcrumb-title: at.js 2.x에서 Web SDK로 Target 마이그레이션
+user-guide-description: at.js에서 Web SDK 구현으로 성공적으로 마이그레이션하는 방법에 대해 설명하는 Target 고객을 위한 실습 튜토리얼입니다.
 feature-set: Target,Experience Platform
 solution: Target,Data Collection,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
@@ -9,8 +9,8 @@ role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-kt: 11159
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+jira: KT-11159
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 5%
@@ -30,7 +30,7 @@ ht-degree: 5%
 
 + [초기 설정 수행](initial-setup.md)
 
-+ [라이브러리 바꾸기 및 사전 숨김 방식](replace-library.md)
++ [라이브러리 바꾸기 및 미리 숨기기 방법](replace-library.md)
 
 + [VEC 기반 활동 렌더링](render-vec-activities.md)
 

@@ -1,14 +1,14 @@
 ---
 title: 대상에 연결하는 중
-description: Real-Time CDP에서 대상 파트너에게 데이터를 보내려면 먼저 해당 파트너에 연결해야 합니다. 이 비디오에서는 해당 pr을 살펴봅니다(설명은 60~160자 사이여야 함).
+description: Real-Time CDP에서 대상 파트너에게 데이터를 보내려면 먼저 해당 파트너에 연결해야 합니다. 이 비디오는 이러한 내용을 소개합니다. (설명은 60~160자 사이여야 함)
 feature: Destinations
 topic: Administration
 role: Admin
 level: Beginner
-kt: 10291
+jira: KT-10291
 thumbnail: 342471.jpg
 exl-id: b228a612-3ecd-40c1-85ef-81fd49d6bde0
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 26%

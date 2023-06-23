@@ -1,23 +1,23 @@
 ---
-title: Audience Center of Excellence
-description: 고객 데이터 관리를 용이하게 하는 플랫폼으로서 고객 및 활성화 프로그램도 발전해야 합니다. 따라서 이러한 플랫폼을 지원하는 사람들과 프로세스도 그렇습니다. DMP(데이터 관리 플랫폼)를 지원하는 최적의 방법으로 COE(Audience Center of Excellence) 모델이 오랫동안 개발되었습니다.
+title: Audience Center of Excellence 진화
+description: 고객 데이터 관리를 용이하게 하는 플랫폼으로, 대상과 활성화 프로그램도 진화해야 한다. 이러한 플랫폼을 지원하는 인력과 프로세스도 마찬가지입니다. COE(Audience Center of Excellence) 모델은 오랫동안 데이터 관리 플랫폼(DMP)을 지원하는 최적의 방법으로 확립되었습니다.
 feature: Data Governance
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 thumbnail: 336938.jpg
-kt: 8864
+jira: KT-8864
 exl-id: d0e1235d-a1a0-4da9-a209-92bc8c2b9d4f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 0%
 
 ---
 
-# Audience Center of Excellence
+# Audience Center of Excellence 진화
 
-고객 데이터 관리를 용이하게 하는 플랫폼으로서 고객 및 활성화 프로그램도 발전해야 합니다. 따라서 이러한 플랫폼을 지원하는 사람들과 프로세스도 그렇습니다. DMP(데이터 관리 플랫폼)를 지원하는 최적의 방법으로 COE(Audience Center of Excellence) 모델이 오랫동안 개발되었습니다.
+고객 데이터 관리를 용이하게 하는 플랫폼으로, 대상과 활성화 프로그램도 진화해야 한다. 이러한 플랫폼을 지원하는 인력과 프로세스도 마찬가지입니다. COE(Audience Center of Excellence) 모델은 오랫동안 데이터 관리 플랫폼(DMP)을 지원하는 최적의 방법으로 확립되었습니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336938/?quality=12&learn=on)
 
-이 비디오를 보완하려면 다음을 수행할 수도 있습니다 [백서 다운로드](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf)
+이 비디오를 보완하기 위해 다음 작업을 수행할 수도 있습니다 [백서 다운로드](assets/whitepaper-evolving-the-audience-center-of-excellence.pdf)
