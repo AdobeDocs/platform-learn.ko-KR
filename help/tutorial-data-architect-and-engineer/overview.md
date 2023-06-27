@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 ### 타사 기술
 
 이 자습서에서는 여러 기술을 사용하지만 거의 완전히 Adobe 에코시스템 내에 있게 됩니다. 자체 플랫폼 구현에서는 Platform을 특정 타사 기술과 통합할 수 있습니다. 모든 고객과 관련된 이 자습서를 유지하기 위해 보다 일반적인 구현을 사용합니다.
+
+## 튜토리얼 업데이트
+
+* 2023년 6월: 새 권한 워크플로를 포함하고 OAuth 서버 간 API 자격 증명을 사용하도록 업데이트되었습니다
+
 
 이제 첫 번째 단원으로 넘어갑시다.[권한 구성](configure-permissions.md).
