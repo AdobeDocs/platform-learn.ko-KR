@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 31%
+source-wordcount: '943'
+ht-degree: 32%
 
 ---
 
@@ -130,6 +130,7 @@ ht-degree: 31%
    + [계정 프로필 보기](/help/platform/profiles/view-account-profiles.md)
    + [병합 정책 만들기](/help/platform/profiles/create-merge-policies.md)
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
+   + [업데이트를 사용하여 특정 속성 업데이트](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 개인정보 보호 및 보안 {#privacy}
    + [Privacy Service 소개](/help/platform/privacy/introduction-to-privacy-services.md)
    + [개인 정보 보호 요청의 ID 데이터](/help/platform/privacy/identity-data-in-privacy-requests.md)
