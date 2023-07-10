@@ -1,8 +1,9 @@
 ---
 title: 태그 속성 구성
 description: 에서 태그 속성을 구성하는 방법을 알아봅니다 [!UICONTROL 데이터 수집] 인터페이스.
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 11%
@@ -35,7 +36,6 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 1. 새 모바일 태그 속성을 만듭니다.
    1. 다음에서 [데이터 수집 인터페이스](https://experience.adobe.com/data-collection/){target="_blank"}, 선택 **[!UICONTROL 태그]** 왼쪽 탐색
    1. **[!UICONTROL 새 속성]**을 선택합니다
-
       ![태그 속성 만들기](assets/mobile-tags-new-property.png).
    1. 의 경우 **[!UICONTROL 이름]**, 입력 `Mobile SDK Course`.
    1. 의 경우 **[!UICONTROL 플랫폼]**, 선택 **[!UICONTROL 모바일]**.

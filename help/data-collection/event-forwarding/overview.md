@@ -2,10 +2,12 @@
 title: 이벤트 전달 개요
 description: 이벤트 게재가 Adobe Experience Platform Edge Network를 통해 데이터 수집을 중앙 집중화하고, 웹 및 모바일 앱에서 필요한 코드의 양을 줄이고, 비 Adobe 솔루션에 대한 데이터를 스트리밍하는 방법에 대해 알아봅니다.
 feature: Event Forwarding
+role: Data Engineer
+level: Beginner
 jira: KT-6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 45%

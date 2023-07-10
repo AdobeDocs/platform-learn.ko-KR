@@ -1,12 +1,12 @@
 ---
 title: 쿼리 서비스로 쿼리 실행
 description: 이 비디오는 Adobe Experience Platform 인터페이스 및 PSQL 클라이언트에서 쿼리를 실행하는 방법을 보여 줍니다. 또한 XDM 개체에서 개별 속성 사용, Adobe 정의 함수 사용 및 CREATE TABLE AS SELECT(CTAS) 사용이 표시됩니다.
-role: Data Engineer,User
 feature: Queries
+role: Data Engineer
 jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 11%

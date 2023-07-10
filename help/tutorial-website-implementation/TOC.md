@@ -4,9 +4,11 @@ breadcrumb-title: 웹 튜토리얼
 user-guide-description: 태그를 사용하여 웹 사이트에서 Adobe Experience Cloud 솔루션을 구현하는 방법에 대해 알아봅니다.
 solution: Data Collection
 feature: Tags
+role: Data Engineer
+level: Beginner,Intermediate
 jira: KT-2179
 recommendations: noDisplay,noCatalog
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 61%

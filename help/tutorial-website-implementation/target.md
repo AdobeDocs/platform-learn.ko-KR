@@ -1,9 +1,9 @@
 ---
-title: 태그와 함께 Adobe Target 추가
-description: at.js, 페이지 로드 요청, 매개 변수, 순서 요청 및 사용자 지정 머리글/바닥글 코드와 함께 태그를 사용하여 Adobe Target을 구현하는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
+title: 태그를 사용하여 Adobe Target 추가
+description: at.js, 페이지 로드 요청, 매개 변수, 순서 요청 및 사용자 지정 머리글/바닥글 코드와 함께 태그를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 74%
@@ -18,12 +18,11 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch은 데이터 수집 기술 세트로 Adobe Experience Platform에 통합되고 있습니다. 인터페이스에서 이 컨텐츠를 사용하는 동안 알고 있어야 하는 몇 가지 용어 변경 사항이 롤아웃되었습니다.
+>Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 platform launch(클라이언트측)가 **[!DNL tags]**
-> * 이제 platform launch 서버 측 **[!DNL event forwarding]**
-> * 이제 Edge 구성이 제공됩니다. **[!DNL datastreams]**
-
+> * 이제 platform launch(클라이언트측)이 **[!DNL tags]**
+> * 이제 platform launch 서버측이 **[!DNL event forwarding]**
+> * 이제 Edge 구성이 **[!DNL datastreams]**
 
 ## 학습 목표
 
@@ -44,7 +43,7 @@ ht-degree: 74%
 
 ## Target 사전 숨김 코드 조각 추가
 
-시작하기 전에 태그 포함 코드를 약간 업데이트해야 합니다. 태그 포함 코드가 비동기식으로 로드되면 Target 라이브러리가 완전히 로드되고 컨텐츠 교환이 수행되기 전에 페이지에서 렌더링을 완료할 수 있습니다. 이렇게 하면 Target에서 지정한 개인화된 컨텐츠로 대체되기 전에 기본 컨텐츠가 잠깐 나타나는 &quot;깜박임&quot;이라고 하는 것이 나타날 수 있습니다. 이러한 깜박임을 방지하려면 태그의 비동기 포함 코드 바로 앞에 특수 사전 숨김 코드 조각을 하드코딩하는 것을 강력히 추천합니다.
+시작하기 전에 태그 포함 코드를 약간 업데이트해야 합니다. 태그 포함 코드가 비동기식으로 로드되면 Target 라이브러리가 완전히 로드되고 콘텐츠 교환이 수행되기 전에 페이지에서 렌더링을 완료할 수 있습니다. 이렇게 하면 Target에서 지정한 개인화된 컨텐츠로 대체되기 전에 기본 컨텐츠가 잠깐 나타나는 &quot;깜박임&quot;이라고 하는 것이 나타날 수 있습니다. 이러한 깜박임을 방지하려면 태그의 비동기 포함 코드 바로 앞에 특수 사전 숨김 코드 조각을 하드코딩하는 것이 좋습니다.
 
 이 작업은 이미 Luma 사이트에서 수행되었지만 구현을 이해할 수 있도록 샘플 페이지에서 수행해 보겠습니다. 다음 코드 줄을 복사합니다.
 
@@ -83,9 +82,9 @@ ht-degree: 74%
 </script>
 ```
 
-샘플 페이지를 열고 아래 그림과 같이 태그 포함 코드 바로 앞에 붙여넣습니다(줄 번호가 다른 경우 걱정하지 마십시오). 이 스크린샷에서는 코드 조각 사전 숨김을 축소했습니다.
+샘플 페이지를 열고 아래 그림과 같이 태그 포함 코드 바로 앞에 붙여 넣습니다(줄 번호가 다른 경우 걱정하지 마십시오). 이 스크린샷에서는 코드 조각 사전 숨김이 축소되었습니다.
 
-![확장을 마우스로 가리킵니다](images/target-prehidingSnippet.png)
+![확장을 마우스로 가리키기](images/target-prehidingSnippet.png)
 
 샘플 페이지를 다시 로드합니다. 페이지는 표시되기 전에 3초 동안 숨겨집니다. 이 동작은 일시적이며 Target을 배포하면 사라집니다. 이 사전 숨김 동작은 사용자 지정할 수 있지만 일반적으로 기본 설정에서 맨 왼쪽 위에 있는 코드 조각의 맨 끝에서 다음 두 가지 구성으로 제어됩니다.
 
@@ -96,7 +95,7 @@ ht-degree: 74%
 
 ## Target 확장 추가
 
-Adobe Target 확장은 최신 웹, at.js에 Target의 JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 여전히 Target의 이전 라이브러리인 mbox.js를 사용하는 고객 [at.js 2.x로 업그레이드해야 합니다.](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) 를 사용하여 태그를 지정합니다.
+Adobe Target 확장은 최신 웹, at.js에 Target의 JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 고객이 여전히 Target의 이전 라이브러리인 mbox.js를 사용 중 [at.js 2.x로 업그레이드해야 함](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) 태그를 사용하려면
 
 Target v2 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
@@ -137,7 +136,7 @@ Target v2 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
 **Target을 로드하려면**
 
-1. 로 이동합니다. **[!UICONTROL 규칙]** 왼쪽 탐색에서 를 클릭하고 `All Pages - Library Loaded` 규칙 편집기를 열려면
+1. 로 이동 **[!UICONTROL 규칙]** 왼쪽 탐색에서 을(를) 클릭한 다음 `All Pages - Library Loaded` 규칙 편집기를 열려면
 
    ![All Pages - Library Loaded 규칙 열기](images/target-editRule.png)
 
@@ -179,7 +178,7 @@ Target v2 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
 ### 페이지 로드 요청의 유효성 확인
 
-이제 Target v2 확장을 추가하고 을(를) 실행했으므로 `Load Target` 및 `Fire Page Load Request` 작업을 수행하면, 태그 속성이 사용되는 모든 페이지에서 페이지 로드 요청이 수행되어야 합니다.
+Target v2 확장을 추가하고 을 실행했으므로 `Load Target` 및 `Fire Page Load Request` 작업: 태그 속성이 사용되는 모든 페이지에서 페이지 로드 요청이 수행되어야 합니다.
 
 **Target 로드 및 페이지 로드 요청 실행 작업의 유효성을 검사하려면**
 
@@ -187,7 +186,7 @@ Target v2 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
 1. [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
 
-1. 디버거가 태그 속성을 *your* 에 설명된 대로 개발 환경 [이전 단원](switch-environments.md)
+1. 디버거가 태그 속성을 다음에 매핑하는지 확인합니다. *본인* 에 설명된 개발 환경 [이전 단원](switch-environments.md)
 
    ![디버거에 표시된 태그 개발 환경](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -226,7 +225,7 @@ Target 요청에 매개 변수를 전달하면 타깃팅, 테스트 및 개인�
 
 **요청 매개 변수를 추가하려면**
 
-1. 로 이동합니다. **[!UICONTROL 규칙]** 왼쪽 탐색에서 를 클릭하고 `All Pages - Library Loaded` 규칙 편집기를 엽니다.
+1. 로 이동 **[!UICONTROL 규칙]** 왼쪽 탐색에서 을(를) 클릭한 다음 `All Pages - Library Loaded` 규칙 편집기를 엽니다.
 
    ![All Pages - Library Loaded 규칙 열기](images/target-editRule.png)
 
@@ -292,17 +291,17 @@ Target 요청에 매개 변수를 전달하면 타깃팅, 테스트 및 개인�
 1. 최근에 본 제품 또는 가장 많이 본 제품과 같은 추천 알고리즘을 실행하는 방문자 행동을 수집하기 위해.
 1. 추천 카탈로그를 채우기 위해. Recommendations는 웹 사이트의 모든 제품이나 문서에 대한 데이터베이스를 포함하고 있으므로 추천 오퍼에서 제공할 수 있습니다. 예를 들어 제품을 추천할 때 일반적으로 제품 이름(`entity.name`) 및 이미지(`entity.thumbnailUrl`) 와 같은 속성을 표시할 수 있습니다. 일부 고객이 백엔드 피드를 사용하여 자신의 카탈로그를 채우지만 Target 요청에 엔티티 매개 변수를 사용하여 채울 수도 있습니다.
 
-이 자습서에서는 엔티티 매개 변수를 전달할 필요가 없지만, 워크플로우는 을 전달할 때 이전에 수행한 작업과 동일합니다 `pageName` 요청 매개 변수 - 매개 변수에 &quot;entity&quot; 접두사가 붙은 이름을 지정합니다. 이것을 적절한 데이터 요소에 매핑하기만 하면 됩니다. 일부 일반 엔티티는 사용해야 하는 이름을 예약했습니다(예: 제품 sku의 경우 entity.id). 다음은 `Add Params to Page Load Request` 작업에서 엔티티 매개 변수를 설정할 때의 모습입니다.
+이 자습서에서는 엔티티 매개 변수를 전달할 필요가 없지만, 워크플로우는 을 전달할 때 이전에 수행한 것과 동일합니다. `pageName` 요청 매개변수(request parameter) - 매개변수에 &quot;entity&quot; 접두어가 있는 이름을 지정합니다. 이것을 적절한 데이터 요소에 매핑하기만 하면 됩니다. 일부 일반 엔티티는 사용해야 하는 이름을 예약했습니다(예: 제품 sku의 경우 entity.id). 다음은 `Add Params to Page Load Request` 작업에서 엔티티 매개 변수를 설정할 때의 모습입니다.
 
 ![엔티티 매개 변수 추가](images/target-entityParameters.png)
 
 ### 고객 ID 매개 변수 추가
 
-Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe Experience Cloud의 [사용자 특성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) 기능을 사용하여 CRM 데이터를 Target에 쉽게 가져올 수 있습니다. 또한 [장치 간 방문자 스티칭](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)을 지원하므로 고객이 랩톱 및 모바일 장치 간을 전환할 때 일관된 사용자 환경을 유지할 수 있습니다.
+Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe Experience Cloud의 [사용자 특성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=ko-KR) 기능을 사용하여 CRM 데이터를 Target에 쉽게 가져올 수 있습니다. 또한 [장치 간 방문자 스티칭](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)을 지원하므로 고객이 랩톱 및 모바일 장치 간을 전환할 때 일관된 사용자 환경을 유지할 수 있습니다.
 
 페이지 로드 요청을 실행하기 전에 ID 서비스의 `Set Customer IDs` 작업에서 고객 ID를 설정해야 합니다. 이렇게 하려면 사이트에 다음과 같은 기능이 있는지 확인하십시오.
 
-* 고객 ID는 태그 포함 코드 앞의 페이지에서 사용할 수 있어야 합니다
+* 고객 ID는 태그 포함 코드 앞의 페이지에서 사용할 수 있어야 합니다.
 * Adobe Experience Platform ID 서비스 확장이 설치되어 있어야 합니다.
 * Library Loaded (Page Top) 이벤트에서 실행되는 규칙에서 `Set Customer IDs` 작업을 사용해야 합니다.
 * 고객 ID 설정 작업 *후* 실행되는 규칙에서 `Fire Page Load Request` 작업을 사용하십시오.
@@ -317,7 +316,7 @@ Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe
 
 1. [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
 
-1. 디버거가 태그 속성을 *your* 에 설명된 대로 개발 환경 [이전 단원](switch-environments.md)
+1. 디버거가 태그 속성을 다음에 매핑하는지 확인합니다. *본인* 에 설명된 개발 환경 [이전 단원](switch-environments.md)
 
    ![디버거에 표시된 태그 개발 환경](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -355,21 +354,21 @@ Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe
 Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다. 여러 브랜드, 웹 사이트 및 마케팅 팀이 있는 기업은 각 웹 사이트 또는 모바일 앱에서 다른 Target 속성, 태그 속성 및 Analytics 보고서 세트를 사용할 수 있습니다. 태그 속성은 해당 포함 코드로 구별되고, Analytics 보고서 세트는 해당 보고서 세트 ID로 구별되며, Target 속성은 해당 속성 토큰 매개 변수로 구별됩니다.
 
 
-속성 토큰은 `targetPageParams()` 함수 위에 있어야 합니다. 단일 태그 속성으로 다른 at_property 값을 사용하여 서로 다른 여러 사이트를 구현하는 경우 데이터 요소를 통해 at_property 값을 관리할 수 있습니다.
+속성 토큰은 와 함께 태그의 사용자 지정 코드 작업을 사용하여 구현해야 합니다. `targetPageParams()` 함수. 단일 태그 속성으로 서로 다른 at_property 값을 사용하여 서로 다른 여러 사이트를 구현하는 경우 데이터 요소를 통해 at_property 값을 관리할 수 있습니다.
 
 다음은 Target Premium 고객이 자습서 속성에 속성 토큰을 구현하려는 경우에 대한 선택적 연습입니다.
 
 1. 별도의 탭에서 Target 사용자 인터페이스를 엽니다.
 
-1. 이동 **[!UICONTROL 관리 > 속성]**
+1. 다음으로 이동 **[!UICONTROL 관리 > 속성]**
 
-1. 사용할 속성을 확인하고 **[!UICONTROL &lt;/>]** (또는 새 속성을 만듭니다.)
+1. 사용할 속성을 확인하고 **[!UICONTROL &lt;/>]** (또는 새 속성 만들기)
 
-1. 코드 조각을 `<script></script>` 클립보드에
+1. 내에서 코드 조각 복사 `<script></script>` 클립보드에
 
    ![Adobe Target 인터페이스에서 속성 토큰 가져오기](images/target-addATProperty-targetProperties.png)
 
-1. 태그 탭에서 **[!UICONTROL 규칙]** 왼쪽 탐색에서 를 클릭하고 `All Pages - Library Loaded` 규칙 편집기를 엽니다.
+1. 태그 탭에서 **[!UICONTROL 규칙]** 왼쪽 탐색에서 을(를) 클릭한 다음 `All Pages - Library Loaded` 규칙 편집기를 엽니다.
 
    ![All Pages - Library Loaded 규칙 열기](images/target-editRule.png)
 
@@ -377,23 +376,22 @@ Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다
 
    ![Add Params to Page Load Request 작업 열기](images/target-openCustomCodeAction.png)
 
-1. 코드 편집기를 열고 가 포함된 Target 인터페이스에서 코드를 붙여넣습니다. `targetPageParams()` 함수
-1. 을(를) 클릭하고 **[!UICONTROL 저장]** 버튼
+1. 코드 편집기를 열고 를 포함하는 Target 인터페이스에서 코드를 붙여넣습니다. `targetPageParams()` 함수
+1. 을(를) 클릭합니다 **[!UICONTROL 저장]** 단추
 
    ![Add Params to Page Load Request 작업 열기](images/target-addATProperty.png)
 
-1. 을(를) 확인합니다. **[!UICONTROL 전역적으로 실행]** 다음과 같이 `targetPageParams()` 는 전역 범위에서 선언됩니다
+1. 다음 확인: **[!UICONTROL 전역 실행]** 상자 소 `targetPageParams()` 전역 범위에 선언됩니다.
 1. **[!UICONTROL Keep Changes]**&#x200B;를 클릭합니다.
 
    ![Keep Changes 클릭](images/target-addATProperty-keepChanges.png)
 
 1. **[!UICONTROL Save to Library and Build]**를 클릭합니다.
-
    ![Save and Build to Library 클릭](images/target-addATProperty-save.png)
 
 >[!WARNING]
 >
->를 추가하려고 하면 `at_property` 를 통한 매개 변수 **[!UICONTROL 페이지 로드 요청에 매개 변수 추가]** 작업을 수행하면 매개 변수가 네트워크 요청에 채워지지만, Target의 VEC(시각적 경험 작성기)가 페이지를 로드할 때 매개 변수를 자동으로 감지할 수 없습니다. 항상 채우기 `at_property` 사용 `targetPageParams()` 함수를 사용자 지정 코드 작업에 사용할 수 없습니다.
+>을(를) 추가하려고 하면 `at_property` 매개 변수 **[!UICONTROL 페이지 로드 요청에 매개 변수 추가]** 작업을 수행하면 매개 변수가 네트워크 요청에 채워지지만 Target을 로드할 때 페이지의 VEC(시각적 경험 작성기)가 자동으로 검색되지 않습니다. 항상 채우기 `at_property` 사용 `targetPageParams()` 함수를 추가합니다.
 
 #### 속성 토큰 유효성 검사
 
@@ -402,7 +400,7 @@ Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다
 **속성 토큰 매개 변수의 유효성을 검사하려면**
 
 1. [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
-1. 디버거가 태그 속성을 *your* 에 설명된 대로 개발 환경 [이전 단원](switch-environments.md)
+1. 디버거가 태그 속성을 다음에 매핑하는지 확인합니다. *본인* 에 설명된 개발 환경 [이전 단원](switch-environments.md)
 
    ![디버거에 표시된 태그 개발 환경](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -432,7 +430,7 @@ Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다
 
 모범 사례는 비소매 사이트에서도 모든 주문 유입 경로에 주문 확인 요청을 사용하는 것입니다. 예를 들어 리드 생성 사이트에는 일반적으로 끝에 고유한 &quot;리드 ID&quot;가 생성되는 리드 유입 경로가 있습니다. 이러한 사이트에서는 orderTotal에 정적 값(예: &quot;1&quot;)을 사용하여 주문 요청을 구현해야 합니다.
 
-대부분의 보고에 A4T(Target 분석) 통합을 사용하는 고객은 A4T를 지원하지 않는 Automated Personalization 활동을 사용하는 경우 주문 요청을 구현할 수도 있습니다. 또한 주문 요청은 Recommendations 구현에 중요한 요소로, 구매 행동에 따라 알고리즘을 강화합니다. A4T 지원에 대한 최신 정보는 다음을 참조하십시오 [설명서](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+대부분의 보고에 A4T(Target 분석) 통합을 사용하는 고객은 A4T를 지원하지 않는 Automated Personalization 활동을 사용하는 경우 주문 요청을 구현하고자 할 수도 있습니다. 또한 주문 요청은 Recommendations 구현에 중요한 요소로, 구매 행동에 따라 알고리즘을 강화합니다. A4T 지원에 대한 최신 정보는 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 주문 확인 요청은 주문 확인 페이지나 이벤트에서만 트리거되는 규칙에서 실행해야 합니다. 이 요청은 종종 Adobe Analytics 구매 이벤트를 설정하는 규칙과 결합될 수 있습니다. 적절한 데이터 요소를 사용하여 orderId, orderTotal 및 productPurchasedId 매개 변수를 설정하는 Core 확장의 사용자 지정 코드 작업을 사용하여 구성해야 합니다.
 
@@ -488,7 +486,7 @@ Luma 사이트에서 주문 확인 요청을 실행하기 위해 필요한 데�
 1. 규칙 이름을 지정합니다 `Order Confirmation Page - Library Loaded - 60`
 1. **[!UICONTROL Events > Add]**&#x200B;를 클릭합니다.
    1. **[!UICONTROL Event Type > Library Loaded (Page Top)]**&#x200B;을 선택합니다.
-   1. 아래 **[!UICONTROL 고급 옵션]**, 변경 `Order` to `60` 그 다음 `Load Target` 작업(Adobe에서 `All Pages - Library Loaded` 규칙 위치 `Order` 가 로 설정되어 있습니다. `50`)
+   1. 아래 **[!UICONTROL 고급 옵션]**, 변경 `Order` 끝 `60` 그 후에 발화하도록 `Load Target` 작업(에 있음) `All Pages - Library Loaded` 규칙 위치 `Order` 이(가) (으)로 설정됨 `50`)
    1. **[!UICONTROL Keep Changes]**&#x200B;를 클릭합니다.
 1. **[!UICONTROL Conditions > Add]**&#x200B;를 클릭합니다.
    1. **[!UICONTROL Condition Type > Path Without Query String]**&#x200B;을 선택합니다.
@@ -533,7 +531,7 @@ Luma 사이트에서 주문 확인 요청을 실행하기 위해 필요한 데�
 
 1. [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
 
-1. 디버거가 태그 속성을 *your* 에 설명된 대로 개발 환경 [이전 단원](switch-environments.md)
+1. 디버거가 태그 속성을 다음에 매핑하는지 확인합니다. *본인* 에 설명된 개발 환경 [이전 단원](switch-environments.md)
 
    ![디버거에 표시된 태그 개발 환경](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -563,9 +561,9 @@ Luma 사이트에서 주문 확인 요청을 실행하기 위해 필요한 데�
 
 ### 사용자 지정 요청
 
-드물게 페이지 로드 및 주문 확인 요청 이외의 Target 요청을 해야 하는 경우가 있습니다. 예를 들어 개인화에 사용하려는 중요한 데이터가 태그 포함 코드 전에 페이지에 정의되지 않은 경우가 있습니다. 이 데이터는 페이지 하단에 하드코딩되거나 비동기 API 요청에서 반환될 수 있습니다. 페이지가 이미 표시되므로 이 요청을 콘텐츠 제공에 사용하는 것이 최적은 아니지만, 추가 요청을 사용하여 이 데이터를 Target으로 보낼 수 있습니다. 이 데이터는 나중에 사용하기 위해 방문자 프로필을 보강하거나(프로필 매개 변수 사용) Recommendations 카탈로그를 채우는 데 사용할 수 있습니다.
+드물게 페이지 로드 및 Target 확인 요청 이외의 주문 요청을 수행해야 하는 경우가 있습니다. 예를 들어 개인화에 사용하려는 중요한 데이터가 태그 포함 코드 앞에 페이지에 정의되지 않은 경우가 있습니다. 이 데이터는 페이지 하단에 하드코딩되거나 비동기 API 요청에서 반환될 수 있습니다. 페이지가 이미 표시되므로 이 요청을 Target 전달에 사용하는 것이 최적은 아니지만, 추가 요청을 사용하여 이 데이터를 콘텐츠로 보낼 수 있습니다. 이 데이터는 나중에 사용하기 위해 방문자 프로필을 보강하거나(프로필 매개 변수 사용) Recommendations 카탈로그를 채우는 데 사용할 수 있습니다.
 
-이러한 경우 [getOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) 및 [trackEvent()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html) 메서드를 사용하여 요청을 실행하도록 Core 확장에서 사용자 지정 코드 작업을 수행합니다. 이는 [주문 확인 요청](#order-confirmation-request) 연습에서 수행한 것과 매우 유사하지만, 다른 요청 이름을 사용하고 특별한 주문 매개 변수는 사용하지 않습니다. 사용자 지정 코드에서 Target 요청을 수행하기 전에 **[!UICONTROL Target 로드]** 작업을 사용하십시오.
+이러한 경우 [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) 및 [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) 메서드를 사용하여 요청을 실행하도록 Core 확장에서 사용자 지정 코드 작업을 수행합니다. 이는 [주문 확인 요청](#order-confirmation-request) 연습에서 수행한 것과 매우 유사하지만, 다른 요청 이름을 사용하고 특별한 주문 매개 변수는 사용하지 않습니다. 사용자 지정 코드에서 Target 요청을 수행하기 전에 **[!UICONTROL Target 로드]** 작업을 사용하십시오.
 
 ## 라이브러리 머리글 및 라이브러리 바닥글
 

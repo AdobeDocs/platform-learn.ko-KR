@@ -1,8 +1,9 @@
 ---
 title: 동의
 description: 모바일 앱에서 동의를 구현하는 방법을 알아봅니다.
+feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 3%

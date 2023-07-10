@@ -1,8 +1,9 @@
 ---
 title: 보증 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 2%
@@ -90,9 +91,9 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
    ![보증 pin 입력](assets/mobile-assurance-enter-pin.png)
 1. 연결에 성공하면 Assurance 웹 UI에 이벤트가 표시되고 앱에 부동 Assurance 아이콘이 표시됩니다.
    * 보증 아이콘 부동.
-      ![보증 양식](assets/mobile-assurance-modal.png)
+     ![보증 양식](assets/mobile-assurance-modal.png)
    * 웹 UI에서 전달되는 Experience Cloud 이벤트.
-      ![보증 이벤트](assets/mobile-assurance-events.png)
+     ![보증 이벤트](assets/mobile-assurance-events.png)
 
 문제가 발생하는 경우 다음을 검토하십시오. [기술](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 

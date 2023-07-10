@@ -1,12 +1,12 @@
 ---
 title: 쿼리 서비스를 사용하여 타블로에서 옴니채널 인사이트 분석 및 시각화
 description: 이탈 분석 예제를 사용하여 외부 데이터 시각화 도구와 함께 Adobe Experience Platform 쿼리 서비스를 사용하는 방법을 알아봅니다.
-role: Data Engineer, User
 feature: Queries
+role: Data Engineer
 jira: KT-10191
 thumbnail: 342115.jpeg
 exl-id: d39d4bc5-550f-4cb2-875d-2e81a6f4c2b8
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 88%

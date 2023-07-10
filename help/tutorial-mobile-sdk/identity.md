@@ -1,8 +1,9 @@
 ---
 title: 신원
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
+feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 4%

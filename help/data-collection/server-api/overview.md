@@ -2,10 +2,12 @@
 title: Adobe Experience Platform Edge Network Server API 개요
 description: 안전하고 인증된 서버 API를 사용하여 Platform Edge Network에 데이터를 전송할 때의 이점에 대해 알아보십시오.
 role: Developer,Data Engineer
+feature: Server API
+level: Beginner
 jira: KT-10013
 thumbnail: 341448.jpeg
 exl-id: 282ecadc-c475-4b4b-bfd0-aaa4f8d8f0a8
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 61%
