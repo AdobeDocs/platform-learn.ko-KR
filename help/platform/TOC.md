@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
+source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 32%
+source-wordcount: '955'
+ht-degree: 33%
 
 ---
 
@@ -41,6 +41,26 @@ ht-degree: 32%
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [제품 프로필 관리](/help/platform/admin/managing-product-profiles.md)
++ 대상 및 세분화 {#audiences}
+   + [Audience Portal 및 구성 소개](audiences/introduction-to-audience-portal-and-composition.md)
+   + [대상자 업로드](audiences/upload-audiences.md)
+   + [대상 규칙 빌더 개요](audiences/audience-rule-builder-overview.md)
+   + [대상자 만들기](audiences/create-audiences.md)
+   + [콘텐츠 기반 대상 만들기](audiences/create-content-based-audiences.md)
+   + [전환 대상자 만들기](audiences/create-conversion-audiences.md)
+   + [기존 대상에서 대상 만들기](audiences/create-audiences-from-existing-audiences.md)
+   + [순차적 대상자 만들기](audiences/create-sequential-audiences.md)
+   + [동적 대상자 만들기](audiences/create-dynamic-audiences.md)
+   + [다중 엔티티 대상 만들기](audiences/create-multi-entity-audiences.md)
+   + [B2B 데이터를 사용하여 대상 만들기](audiences/create-audiences-with-b2b-data.md)
+   + [스트리밍 세분화 데모](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [대상 규칙 평가](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [데이터를 내보낼 데이터 세트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [세그먼트 매치 연결 설정](/help/platform/segments/segment-match-connection-setup.md)
+   + [세그먼트 매치 데이터 거버넌스](/help/platform/segments/segment-match-data-governance.md)
+   + [세그먼트 매치 구성 플로우](/help/platform/segments/segment-match-configuration-flow.md)
+   + [세그먼트 매치 사전 공유 인사이트](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [세그먼트 일치 수신 데이터](/help/platform/segments/segment-match-receiving-data.md)
 + [감사 로그](/help/platform/governance/audit-logs.md)
 + [데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + 대시보드 {#dashboards}
@@ -137,9 +157,9 @@ ht-degree: 32%
    + [개인 정보 JavaScript 라이브러리](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics의 개인 정보 레이블](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy Service API 시작하기](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [PRIVACY SERVICE UI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [PRIVACY SERVICE API](/help/platform/privacy/using-the-privacy-service-api.md)
-   + [개인 정보 이벤트 구독](/help/platform/privacy/subscribe-to-privacy-events.md)
+   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [개인정보 보호 이벤트 구독](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [고객 관리 키 설정](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [책임 있는 고객 데이터 관리를 위한 10가지 고려 사항](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [데이터 관리자로서 마케터의 역할 강화](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
@@ -173,24 +193,6 @@ ht-degree: 32%
    + [샌드박스 간에 스키마 복사](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [스키마 업데이트](/help/platform/schemas/update-schemas.md)
    + [애드혹 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
-+ 세그먼트 {#segments}
-   + [세그먼트 빌더 개요](/help/platform/segments/segment-builder-overview.md)
-   + [세그먼트 만들기](/help/platform/segments/create-segments.md)
-   + [컨텐츠 기반 세그먼트 만들기](/help/platform/segments/create-content-based-segments.md)
-   + [전환 세그먼트 만들기](/help/platform/segments/create-conversion-segments.md)
-   + [기존 세그먼트에서 세그먼트 만들기](/help/platform/segments/create-segments-from-existing-segments.md)
-   + [순차적 세그먼트 만들기](/help/platform/segments/create-sequential-segments.md)
-   + [동적 세그먼트 만들기](/help/platform/segments/create-dynamic-segments.md)
-   + [다중 엔티티 세그먼트 만들기](/help/platform/segments/create-multi-entity-segments.md)
-   + [B2B 데이터를 사용하여 세그먼트 만들기](/help/platform/segments/create-segments-with-b2b-data.md)
-   + [스트리밍 세분화 데모](/help/platform/segments/streaming-segmentation-demo.md)
-   + [세그먼트 평가](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [데이터를 내보낼 데이터 세트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-   + [세그먼트 매치 연결 설정](/help/platform/segments/segment-match-connection-setup.md)
-   + [세그먼트 매치 데이터 거버넌스](/help/platform/segments/segment-match-data-governance.md)
-   + [세그먼트 매치 구성 플로우](/help/platform/segments/segment-match-configuration-flow.md)
-   + [세그먼트 매치 사전 공유 인사이트](/help/platform/segments/segment-match-pre-share-insights.md)
-   + [세그먼트 일치 수신 데이터](/help/platform/segments/segment-match-receiving-data.md)
 + 소스 {#sources}
    + [소스 개요](/help/platform/sources/overview.md)
    + [Adobe Analytics에서 데이터 수집](/help/platform/sources/ingest-data-from-adobe-analytics.md)
