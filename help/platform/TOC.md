@@ -4,9 +4,9 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
+source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '978'
 ht-degree: 33%
 
 ---
@@ -205,8 +205,11 @@ ht-degree: 33%
    + [소스 커넥터를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 통합 {#experience-cloud}
-   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [Marketo Engage을 사용하여 캠페인 오케스트레이션](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
+   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + 업계 동향 {#industry}
    + [데이터 관리의 미래와 변화하는 환경](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [두 가지 인식에 대한 이야기 - 브랜드 대 소비자](/help/platform/industry/brands-vs-consumers.md)
