@@ -6,14 +6,14 @@ feature: Segments
 jira: KT-2705
 thumbnail: 27428.jpg
 exl-id: 5e3b7d65-10e6-418f-98ab-99a3ac47e839
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: f1930db43c5e6fbfd4fe3daf116049fa09fcfb8b
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 7%
 
 ---
 
-# 동적 세그먼트 만들기
+# 동적 대상자 만들기
 
 동적 대상은 Adobe Experience Platform의 고급 세분화 기능으로, 마케터가 마케팅 캠페인용 대상을 구축할 때 일반적으로 직면했던 확장성 문제를 해결합니다.
 
