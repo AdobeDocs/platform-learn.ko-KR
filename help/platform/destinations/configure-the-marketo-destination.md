@@ -1,13 +1,13 @@
 ---
 title: Marketo 대상 구성
 description: Marketo Engage 인스턴스에 Platform 세그먼트를 활성화할 수 있도록 Adobe Experience Platform에서 Marketo 대상을 구성하는 방법에 대해 알아봅니다.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
 jira: KT-9262
 thumbnail: 338248.jpg
 exl-id: 7e7e2647-0eb8-4f37-8a91-a506c9c2abb9
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 0%

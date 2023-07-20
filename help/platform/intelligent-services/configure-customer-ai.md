@@ -1,13 +1,13 @@
 ---
 title: 고객 AI 구성
 description: 고객 AI 인스턴스를 만들어 고객 행동을 예측하는 방법을 알아봅니다.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-4172
 thumbnail: 32665.jpg
 exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 35%

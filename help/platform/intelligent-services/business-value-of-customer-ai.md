@@ -1,13 +1,13 @@
 ---
 title: 고객 AI의 비즈니스 가치
 description: 이 비디오에서는 고객 AI가 AI 기반 에셋으로 고객 프로필을 강화하고 고객 세분화와 타겟팅 활동을 강화하는 방법을 보여줍니다.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-6247
 thumbnail: 40374.jpg
 exl-id: 2dc34425-62e7-4d56-ab13-6855371b1d7d
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 75%

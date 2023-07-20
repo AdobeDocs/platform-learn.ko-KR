@@ -1,13 +1,13 @@
 ---
 title: 고객 AI 스코어 및 인사이트 사용
 description: 고객 AI 성향 점수와 인사이트를 활용하여 고객을 전환하고 유지하는 방법을 살펴볼 수 있습니다.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-4171
 thumbnail: 32666.jpg
 exl-id: f3f628ef-223a-48d9-979e-86f038268923
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 72%

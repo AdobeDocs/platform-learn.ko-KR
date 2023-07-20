@@ -1,14 +1,14 @@
 ---
 title: Marketo Engage에서 데이터 수집
 description: 표준 및 템플릿 워크플로우를 사용하여 소스 커넥터를 사용하여 Marketo Engage에서 데이터를 수집하는 방법에 대해 알아봅니다.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 feature: Sources
 role: Data Engineer, Data Architect
 jira: KT-9259, 13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
