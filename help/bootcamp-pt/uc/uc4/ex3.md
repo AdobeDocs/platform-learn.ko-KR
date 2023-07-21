@@ -5,8 +5,11 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Data Views
 exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
 source-wordcount: '1655'
 ht-degree: 2%
@@ -113,7 +116,7 @@ Se voche não alterar essas configurações, o CJA irá intertar a dimensão com
 
 Se você não estiver familiarizado com eVars e Props, [라이아 마이스 소브레 이소 나 다큐멘타상](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)..
 
-Vamos deixar o Nome da Página como Prop. 데사 포르마, 보체 낭 precisa alterar nenhuma **지속성 설정**.
+Vamos deixar o Nome da Página como Prop. 데사 포르마, 보추 네오 프리사이사 알테라 네후마 **지속성 설정**.
 
 | 검색할 구성 요소 이름 | 새 이름 | 지속성 설정 |
 | ----------------- |-------------| --------------------| 
