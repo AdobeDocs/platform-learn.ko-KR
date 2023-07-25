@@ -3,7 +3,7 @@ title: 데이터 요소 만들기
 description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 0c9c8c679c2c0b3446e802bf52028194b08e6644
+source-git-commit: e1c7ab68d0292edaaa3a93ae8da8cd49d8b4874c
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 5%
@@ -141,7 +141,7 @@ XDM 개체 만들기를 시작하기 전에 [Luma 데모 사이트](https://luma
 >
 > Adobe은 다음과 같이 개인을 나타내는 ID를 전송할 것을 권장합니다. `Luma CRM Id`를 로 사용 [!UICONTROL 기본] 신원.
 >
-> ID 맵에 둘 다 포함된 경우 `Luma CRM Id` ECID를 선택한 다음 `Luma CRM Id` 이(가) [!UICONTROL 기본] 신원. ID 맵에 ECID만 포함되어 있으면 ECID는 [!UICONTROL 기본] 신원.
+> ID 맵에 개인 식별자(예: Luma CRM ID)가 포함된 경우 개인 식별자는 가 됩니다. [!UICONTROL 기본] 신원. 그렇지 않으면 ECID는 [!UICONTROL 기본] 신원.
 
 
 
