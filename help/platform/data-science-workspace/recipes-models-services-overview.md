@@ -1,12 +1,13 @@
 ---
 title: 레서피, 모델 및 서비스 개요
 description: Adobe Experience Platform 데이터 과학 작업 영역의 레시피, 모델 및 서비스에 대해 알아봅니다.
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7807
 thumbnail: 333380.jpg
 exl-id: 1aa07a46-5997-4288-959d-2d255fd76983
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 11%

@@ -1,20 +1,21 @@
 ---
 title: Experience Platform API 인증 및 액세스
 description: Adobe Experience Platform API에 액세스하는 방법에 대해 알아봅니다.
-role: Developer
 feature: API
+role: Developer
+level: Beginner
 jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 11%
+ht-degree: 18%
 
 ---
 
-# 인증 및 액세스 [!DNL Experience Platform] API
+# [!DNL Experience Platform]API 인증 및 액세스
 
 Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 이 튜토리얼에서는 인증 자격 증명을 만들고 Experience Platform API 요청을 시작하는 프로세스를 안내합니다.
 

@@ -3,12 +3,11 @@ title: 순차적 대상자 만들기
 description: 이 비디오에서는 특정 시간 내에 특정 순서로 작업을 수행한 대상자를 만들기 위해 대상자의 타임라인에 경험 이벤트를 추가하는 방법을 알아봅니다.
 feature: Segments
 role: User
-level: Beginner
-doc-type: feature video
-thumbnail: 333305.jpg
+level: Intermediate
 jira: KT-7892
+thumbnail: 333305.jpg
 exl-id: b7b5111c-4e30-4a69-bde1-d75df03fbf86
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 6%

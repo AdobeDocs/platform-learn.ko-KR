@@ -4,10 +4,11 @@ description: Real-Time CDP B2B 에디션에서 계정 프로필을 보는 방법
 solution: Real-Time Customer Data Platform
 feature: Profiles
 role: User, Data Engineer, Data Architect
+level: Beginner
 jira: KT-9260
 thumbnail: 338251.jpg
 exl-id: 2b739872-0f15-429c-8d19-f3bcc81f2f89
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 0%

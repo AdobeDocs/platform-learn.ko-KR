@@ -3,10 +3,11 @@ title: 고객 데이터를 재충전하여 혁신적인 경험 제공
 description: 다양한 사용 사례에 동일한 데이터를 사용하여 저품질 데이터의 영향을 완화하고, 가치 창출 시간을 줄이고, ROI를 증대하는 방법에 대해 알아봅니다.
 feature: Queries
 role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%

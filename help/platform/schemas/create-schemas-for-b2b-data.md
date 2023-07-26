@@ -3,11 +3,12 @@ title: B2B용 스키마 만들기
 description: Real-time Customer Data Platform, B2B Edition을 사용하여 비즈니스 데이터에 대한 스키마를 만드는 방법을 알아봅니다.
 solution: Real-Time Customer Data Platform
 feature: Schemas
-role: Data Architect
+role: Data Architect, Developer
+level: Beginner
 jira: KT-9258
 thumbnail: 338241.jpg
 exl-id: bbb47887-f982-4831-8002-6d1fa539a39b
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 7%

@@ -1,15 +1,16 @@
 ---
 title: 소스 개요
 description: Adobe, 자사 및 서드파티 애플리케이션의 데이터를 Platform의 실시간 고객 프로필 및 데이터 레이크로 손쉽게 수집하는 방법에 대해 알아봅니다.
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '77'
-ht-degree: 33%
+ht-degree: 38%
 
 ---
 

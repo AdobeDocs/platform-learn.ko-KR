@@ -1,13 +1,14 @@
 ---
 title: Adobe Analytics 소스 커넥터를 사용하여 데이터 수집
 description: Adobe Analytics 소스 커넥터를 사용하면 Adobe Analytics의 데이터를 Adobe Experience Platform의 실시간 고객 프로필 및 경험 데이터 레이크로 손쉽게 스트리밍, 매핑 및 필터링할 수 있습니다.
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 last-substantial-update: 2023-02-23T00:00:00Z
 jira: KT-3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '127'
 ht-degree: 19%

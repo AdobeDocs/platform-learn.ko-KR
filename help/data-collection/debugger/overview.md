@@ -4,12 +4,11 @@ description: Adobe Experience Platform Debugger Chrome 확장 기능 및 Firefox
 landing-page-description: Adobe Experience Platform Web SDK 및 Experience Cloud 애플리케이션의 웹 구현을 디버깅하십시오.
 short-description: Adobe Experience Platform Web SDK 및 Experience Cloud 애플리케이션의 웹 구현을 디버깅하십시오.
 feature: Debugger
-role: Data Engineer
 level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 63%

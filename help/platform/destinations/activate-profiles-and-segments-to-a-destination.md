@@ -2,13 +2,12 @@
 title: 대상에 대한 프로필 및 세그먼트 활성화
 description: Real-Time CDP의 대상에 대상 세그먼트를 활성화하는 방법을 알아봅니다.  대상 또는 세그먼트 인터페이스에서 이 작업 스트림을 시작합니다.
 feature: Destinations
-role: User
+role: User, Admin
 level: Beginner
-doc-type: video
-thumbnail: 336046.jpg
 jira: KT-8483
+thumbnail: 336046.jpg
 exl-id: 659e7739-8d24-4b75-a0d2-56d087d5eea9
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 29%

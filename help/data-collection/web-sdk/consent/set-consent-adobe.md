@@ -2,10 +2,10 @@
 title: Adobe 표준을 사용하여 동의 설정
 description: Adobe Experience Platform Web SDK를 사용하여 Adobe 표준 1.0 및 2.0에 따라 동의 값을 설정하는 방법을 알아봅니다.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 jira: KT-7570
 exl-id: aa042e2f-5b22-429f-9028-19eadc288fdc
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%

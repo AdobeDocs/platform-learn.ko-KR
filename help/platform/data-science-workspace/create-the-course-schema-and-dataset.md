@@ -1,13 +1,14 @@
 ---
 title: 강의 스키마 및 데이터 세트 만들기
 description: 과정의 나머지 부분에서 사용되는 Data Science Workspace 과정 데이터 세트 및 스키마를 만드는 방법을 알아봅니다.
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7285
 thumbnail: 333312.jpg
 hidefromtoc: true
 exl-id: c7f927d1-87fc-4bf3-83c3-6efb97f88c9e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 8%

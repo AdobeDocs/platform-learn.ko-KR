@@ -2,11 +2,10 @@
 title: 종속성 관리자 사용
 description: CocoaPods 및 Gradle을 사용하여 Mobile SDK 확장 기능 및 종속성을 관리하는 방법을 알아봅니다.
 feature: Mobile SDK
-role: Developer
 level: Beginner
 jira: KT-2638
 exl-id: 92b8c63a-0ce5-493e-8ebd-2fabfa88d37e
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%

@@ -1,13 +1,14 @@
 ---
 title: 레이블을 사용하여 데이터 분류
 description: 스키마 및 데이터 세트에 레이블을 적용하는 방법에 대해 알아봅니다.
-role: Data Architect
 feature: Data Governance, Consent, Access Control
+role: Data Architect, Admin
+level: Beginner
 jira: KT-3992
-last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 29709.jpg
+last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 96ef86eb-458a-4fc3-a62a-b3d5202942c8
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 31%

@@ -1,11 +1,12 @@
 ---
 title: 감사 로그
 description: 감사 로그 기능이 규정 준수 요구 사항을 충족하고 Adobe Experience Platform 구현 문제를 해결하는 데 어떻게 도움이 되는지 알아보십시오.
+feature: Audits
 role: Admin
-feature: Data Governance
+level: Beginner
 jira: KT-9934
 exl-id: af2c7ec3-82bf-43e9-8b52-f90a39e72926
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 75%

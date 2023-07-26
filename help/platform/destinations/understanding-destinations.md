@@ -2,12 +2,13 @@
 title: Adobe Real-time Customer Data Platform(RTCDP)의 대상 이해
 description: 이 비디오는 두 가지 유형의 대상&mdash, 프로필 내보내기 및 세그먼트 내보내기&mdash를 정의하며 각 대상 유형에 대한 예제/사용 사례를 제공합니다.
 solution: Real-Time Customer Data Platform
-role: User
 feature: Destinations
+role: User, Admin
+level: Beginner
 jira: KT-3797
 thumbnail: 29707.jpg
 exl-id: d6e78ec2-f9e0-4794-b585-9bebef9b036b
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 30%

@@ -5,11 +5,10 @@ landing-page-description: Experience Cloud Debugger를 사용하여 구현 문�
 short-description: Experience Cloud Debugger를 사용하여 구현 문제를 해결하는 방법을 알아봅니다. 구현되는 Adobe 솔루션과 이러한 솔루션의 특징을 파악합니다.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
 feature: Debugger
-role: Data Engineer
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 50%
@@ -22,7 +21,7 @@ Adobe Experience Cloud Debugger를 사용하여 Experience Cloud 구현을 이�
 
 >[!NOTE]
 >
->로 업그레이드하는 것이 좋습니다. [Adobe Experience Platform 디버거](../overview.md): 이 비디오에 포함된 확장 프로그램의 업데이트된 버전이며 Platform Web SDK와 같은 최신 기능에 대한 지원을 포함합니다.
+>로 업그레이드하는 것이 좋습니다. [Adobe Experience Platform Debugger](../overview.md): 이 비디오에 포함된 확장 프로그램의 업데이트된 버전이며 Platform Web SDK와 같은 최신 기능에 대한 지원을 포함합니다.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/23064/?quality=12)

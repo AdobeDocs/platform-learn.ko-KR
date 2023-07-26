@@ -2,12 +2,13 @@
 title: Adobe의 RTCDP(Real-time Customer Data Platform) 데모
 description: Real-Time CDP를 사용하여 여러 소스에서 데이터를 수집하고 데이터를 하나의 실시간 고객 프로필에 병합하며 해당 데이터를 활성화하여 개인화된 고객 경험을 만드는 방법에 대한 데모를 참조하십시오.
 solution: Real-Time Customer Data Platform
-role: User
 feature: Destinations
+role: User
+level: Beginner
 jira: KT-5291
 thumbnail: 34558.jpg
 exl-id: 1e766a0f-7b4f-4c3d-a908-5cb4cba8b334
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 40%

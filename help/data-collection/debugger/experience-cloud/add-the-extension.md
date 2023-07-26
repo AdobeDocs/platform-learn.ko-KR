@@ -3,11 +3,10 @@ title: Experience Cloud Debugger 추가
 description: Experience Cloud 구현을 이해하고 문제를 해결할 수 있도록 Chrome 웹 브라우저에 Adobe Experience Cloud Debugger 확장 프로그램을 추가하는 방법을 알아봅니다.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/add-the-extension.html
 feature: Debugger
-role: Data Engineer
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: ba94065e-ef18-4b8c-8f83-c772287bbfe4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 16%
@@ -20,7 +19,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->로 업그레이드하는 것이 좋습니다. [Adobe Experience Platform 디버거](../overview.md): 이 비디오에 포함된 확장 프로그램의 업데이트된 버전이며 Platform Web SDK와 같은 최신 기능에 대한 지원을 포함합니다.
+>로 업그레이드하는 것이 좋습니다. [Adobe Experience Platform Debugger](../overview.md): 이 비디오에 포함된 확장 프로그램의 업데이트된 버전이며 Platform Web SDK와 같은 최신 기능에 대한 지원을 포함합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/23114/?quality=12)
 

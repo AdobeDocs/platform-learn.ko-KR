@@ -1,12 +1,13 @@
 ---
 title: 샌드박스 간에 스키마 복사
 description: 이 비디오는 스키마 API 내보내기/가져오기를 사용하여 Adobe Experience Platform의 한 샌드박스에서 다른 샌드박스로 스키마를 복사하는 방법을 보여 줍니다.
-role: Data Architect
-feature: Schemas
+feature: Schemas, Sandboxes
+role: Data Architect, Developer
+level: Intermediate
 jira: KT-7939
 thumbnail: 333592.jpg
 exl-id: d0d23739-3a3a-4938-a400-684f36b0ae82
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '82'
 ht-degree: 17%

@@ -2,10 +2,10 @@
 title: IAB TCF 2.0 표준을 사용하여 동의 설정
 description: Adobe Experience Platform Web SDK를 사용하여 IAB TCF 2.0 표준에 따라 동의 값을 설정하는 방법을 알아봅니다.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 jira: KT-7572
 exl-id: 341a4e01-02a9-4e21-b3d6-b2657d75c233
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 0%

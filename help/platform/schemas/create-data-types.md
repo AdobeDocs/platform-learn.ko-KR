@@ -1,12 +1,13 @@
 ---
 title: 데이터 유형 만들기
 description: 이 비디오는 XDM(경험 데이터 모델) 스키마에서 사용하기 위해 Adobe Experience Platform에서 고유한 데이터 유형을 만드는 방법을 보여 줍니다.
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-7934
 thumbnail: 333537.jpg
 exl-id: 00239ee1-db57-4bd0-acfc-5ba27a9c8fb6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 9%

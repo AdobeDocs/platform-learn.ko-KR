@@ -1,12 +1,13 @@
 ---
 title: 샌드박스 사용
 description: Experience Platform 샌드박스가 새로운 기능이나 기존 기능을 시도해 보고, 'fail fast' 접근 방식을 사용하여 작업하고, 개발 이니셔티브를 재설정하고 다시 시작할 수 있는 데이터 격리 및 환경을 제공하는 방법을 살펴봅니다.
-role: Data Architect, Data Engineer
 feature: Sandboxes
+role: Data Architect, Data Engineer, Admin
+level: Beginner
 jira: KT-4018
 thumbnail: 29838.jpg
 exl-id: 65e50b0e-0999-4992-86e9-037065ed0d01
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 4%
@@ -25,4 +26,4 @@ Experience Platform 샌드박스가 데이터 격리를 제공하는 방법과 �
 >
 > ![샌드박스 전환기 재배치](../assets/sandbox-switcher.gif)
 
-자세한 내용은 다음을 참조하십시오. [샌드박스 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ko).
+자세한 내용은 다음을 참조하십시오. [샌드박스 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ko-KR).

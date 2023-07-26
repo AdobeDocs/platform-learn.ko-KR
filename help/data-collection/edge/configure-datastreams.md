@@ -1,11 +1,11 @@
 ---
 title: 데이터스트림 구성
 description: 데이터스트림을 만들고 구성하는 방법 학습
-feature: Web SDK
+feature: Datastreams
 jira: KT-9762
 thumbnail: 340825.jpeg
 exl-id: 890a2129-1c17-43d1-9568-ce8025470306
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 63%

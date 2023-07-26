@@ -2,10 +2,10 @@
 title: CMP(동의 관리 플랫폼)로 동의 구현
 description: 데이터 수집에서 Adobe Experience Platform Web SDK 확장을 사용하여 CMP(동의 관리 플랫폼)에서 얻은 동의 데이터를 구현하고 활성화하는 방법을 알아봅니다.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '3321'
 ht-degree: 1%
@@ -105,7 +105,7 @@ Web SDK 확장 구성에 대한 자세한 내용은 [Platform Web SDK 확장 개
 
 참고: 웹 사이트 방문자가 옵트아웃하면 SDK에서에 대한 사용자 동의를 설정할 수 없습니다.
 
-태그 규칙은 다양한 기본 제공 또는 사용자 지정에 의해 트리거될 수 있습니다 [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) 방문자 세션 중 적절한 시간에 이 동의 데이터를 전달하는 데 사용할 수 있습니다. 위의 예에서는 window loaded 이벤트를 사용하여 규칙을 트리거했습니다. 이후 섹션에서는 CMP의 동의 환경 설정 이벤트를 사용하여 동의 설정 작업을 트리거합니다. 옵트인 환경 설정 설정을 나타내는 원하는 이벤트에 의해 트리거되는 규칙에서 동의 설정 작업을 사용할 수 있습니다.
+태그 규칙은 다양한 기본 제공 또는 사용자 지정에 의해 트리거될 수 있습니다 [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) 방문자 세션 중 적절한 시간에 이 동의 데이터를 전달하는 데 사용할 수 있습니다. 위의 예에서는 window loaded 이벤트를 사용하여 규칙을 트리거했습니다. 이후 섹션에서는 CMP의 동의 환경 설정 이벤트를 사용하여 동의 설정 작업을 트리거합니다. 옵트인 환경 설정 지정을 나타내는 원하는 이벤트에 의해 트리거되는 규칙에서 동의 설정 작업을 사용할 수 있습니다.
 
 #### Platform Consent Standard 2.0으로 동의 설정
 
@@ -240,7 +240,7 @@ GDPR 개인 데이터 포함 아래에서 이 사용자의 데이터에 개인 �
 
 ![](./images/build-date.png)
 
-또한 표시되는 네트워크 요청의 POST 본문 줄에서 을 선택하여 디버거 플랫폼 웹 SDK 섹션에서 Adobe 1.0 또는 2.0 표준에 대한 setConsent 호출을 검사할 수도 있습니다 `{"consent":[{"value":{"general":"in"},"version…`:
+또한 표시되는 네트워크 요청의 Adobe 본문 줄에서 을 선택하여 디버거 Platform Web SDK 섹션에서 POST 1.0 또는 2.0 표준에 대한 setConsent 호출을 검사할 수도 있습니다 `{"consent":[{"value":{"general":"in"},"version…`:
 
 ![](./images/inspect-consent-call.png)
 

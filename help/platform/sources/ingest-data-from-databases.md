@@ -1,12 +1,13 @@
 ---
 title: 데이터베이스 소스 커넥터를 사용하여 데이터 수집
 description: 이 비디오는 원활하고 확장 가능한 방식으로 데이터베이스 소스의 데이터를 Adobe Experience Platform의 실시간 고객 프로필 및 Experience 데이터 레이크로 일괄 수집하는 방법을 안내합니다.
-role: Data Engineer
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 jira: KT-6546
 thumbnail: 329317.jpg
 exl-id: c881e088-9569-4342-8f27-3815f187b217
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%

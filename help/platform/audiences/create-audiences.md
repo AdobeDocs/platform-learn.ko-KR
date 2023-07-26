@@ -1,21 +1,22 @@
 ---
 title: 대상자 만들기
 description: Adobe Experience Platform에서 대상자를 만드는 방법을 알아봅니다.
-role: User
 feature: Segments
+role: User
+level: Beginner
 jira: KT-2704
 thumbnail: 27254.jpg
 exl-id: 5d2a8b17-baf9-4c52-9ebc-7f058ab0e64d
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 9%
+ht-degree: 16%
 
 ---
 
 # 대상자 만들기
 
-Adobe Experience Platform에서 대상자를 만드는 방법을 알아봅니다. 대상 규칙을 작성하고 실시간 고객 프로필에 적용하여 고객 경험을 강화할 대상을 생성합니다. 자세한 제품 설명서는 [ui에서 세그먼트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html) 및 [api를 사용하여 세그먼트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html).
+Adobe Experience Platform에서 대상자를 만드는 방법을 알아봅니다. 대상 규칙을 작성하고 실시간 고객 프로필에 적용하여 고객 경험을 강화할 대상을 생성합니다. 자세한 제품 설명서는 [ui에서 세그먼트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ko) 및 [api를 사용하여 세그먼트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html).
 
 >[!NOTE]
 >

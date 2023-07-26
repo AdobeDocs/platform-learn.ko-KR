@@ -1,12 +1,13 @@
 ---
 title: 데이터 거버넌스 엔드투엔드 데모
 description: Adobe Experience Platform의 데이터 거버넌스 기능에 대해 알아보고 브랜드가 고객 데이터를 완전히 제어하면서 개인화된 경험을 고객에게 전달하는 방법을 알아봅니다.
-role: Data Architect
 feature: Data Governance
+role: User, Developer, Data Architect, Admin
+level: Beginner
 jira: KT-5802
 thumbnail: 36653.jpg
 exl-id: 84ac047f-eb46-41c3-a6b0-d0a9d0ec0d79
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 8%

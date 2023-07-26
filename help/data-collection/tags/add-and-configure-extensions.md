@@ -2,9 +2,10 @@
 title: 태그 확장 추가 및 구성(이전의 Launch 확장)
 description: 태그 속성에서 확장을 추가하고 구성하는 방법에 대해 알아봅니다.
 feature: Tags
+level: Beginner
 jira: KT-3528
 exl-id: c4115da3-d779-4fe8-90e5-32581fb968cb
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%

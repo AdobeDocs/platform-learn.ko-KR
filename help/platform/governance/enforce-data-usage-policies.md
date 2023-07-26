@@ -1,12 +1,13 @@
 ---
 title: 데이터 사용 정책 시행
 description: 대상을 대상으로 활성화할 때 데이터 사용 정책을 적용하는 방법에 대해 알아봅니다. 대상에 마케팅 액션을 추가하는 방법, 활성화 도중 정책 위반을 분석하는 방법 및 데이터 계보를 사용하여 정책 위반을 이해하고 수정하는 방법에 대해 알아봅니다.
-role: Data Architect, User
 feature: Data Governance
+role: User, Developer, Data Architect, Admin
+level: Beginner
 jira: KT-4380
 thumbnail: 33631.jpg
 exl-id: 9372f240-73a0-4262-8c23-122007786ea5
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%

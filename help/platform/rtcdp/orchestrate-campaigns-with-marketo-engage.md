@@ -2,11 +2,13 @@
 title: Marketo Engage 및 Real-time Customer Data Platform, B2B 에디션으로 캠페인 오케스트레이션
 description: Marketo Engage 및 Real-time Customer Data Platform(CDP), B2B 에디션을 사용하여 캠페인을 오케스트레이션하는 방법에 대해 알아봅니다.
 solution: Real-Time Customer Data Platform
+feature: Data Ingestion, Segments, Destinations, Profiles, Destinations
 role: User
+level: Intermediate
 jira: KT-9263
 thumbnail: 338254.jpg
 exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: cd12d146be122c2b0dc94f1b60816a57ccbb296d
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%

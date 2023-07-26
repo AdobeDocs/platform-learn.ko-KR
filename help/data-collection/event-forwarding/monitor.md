@@ -2,12 +2,11 @@
 title: 이벤트 전달 모니터링
 description: 데이터 수집 인터페이스에서 이벤트 전달을 모니터링하는 방법에 대해 알아봅니다.
 feature: Event Forwarding
-role: Data Engineer
 level: Experienced
 jira: KT-10611
 thumbnail: 343999.jpeg
 exl-id: 15948005-53d7-413d-9379-0d7b5189b839
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 63%

@@ -4,11 +4,11 @@ breadcrumb-title: 모바일 앱 튜토리얼
 user-guide-description: Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Adobe Experience Cloud 애플리케이션을 구현하는 방법을 알아봅니다.
 solution: Data Collection
 feature: Mobile SDK
-role: Developer
+role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 66%

@@ -1,12 +1,13 @@
 ---
 title: 결합 스키마 개요
 description: 실시간 고객 프로필을 통해 고객 여정의 각 단계에서 채널 간 개인 맞춤화를 규모에 맞게 확장할 수 있습니다. 스키마와 해당 데이터 세트를 모두 활성화하여 실시간 고객 프로필에 대해 배치 또는 스트리밍 데이터를 활성화할 수 있습니다.
-role: Data Architect, Data Engineer
 feature: Profiles
+role: Data Engineer, Data Architect, Developer, User
+level: Beginner
 jira: KT-6754
 thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 19%

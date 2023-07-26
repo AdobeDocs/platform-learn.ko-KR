@@ -1,12 +1,13 @@
 ---
 title: 스키마 빌딩 블록
 description: 이 비디오는 필드, 데이터 유형, 스키마 필드 그룹, 클래스 및 비헤이비어를 포함한 XDM(Experience Data Model) 스키마의 주요 빌딩 블록 요소를 검토합니다.
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-7937
 thumbnail: 333469.jpg
 exl-id: 8b74c923-e629-42dc-8e4a-9289a61fe4cf
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 18%

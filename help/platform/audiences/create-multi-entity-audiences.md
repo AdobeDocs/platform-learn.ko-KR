@@ -1,12 +1,13 @@
 ---
 title: 다중 엔티티 대상 만들기
 description: 이 비디오는 Adobe Experience Platform의 대상 규칙 빌더에서 다중 엔티티 대상을 구축하는 방법을 보여 줍니다.  다중 엔티티 세그멘테이션 또는 클래스 간 세그멘테이션을 사용하면 여러 XDM 클래스를 기반으로 데이터를 결합하는 대상을 빌드할 수 있습니다.
-role: User
 feature: Segments
+role: User
+level: Intermediate
 jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
