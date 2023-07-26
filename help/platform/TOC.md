@@ -4,9 +4,9 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '975'
 ht-degree: 33%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 33%
    + [Experience Cloud 애플리케이션과 통합](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [주요 사용 사례](/help/platform/intro-to-platform/key-use-cases.md)
    + [기본 아키텍처](/help/platform/intro-to-platform/basic-architecture.md)
-   + [Platform 사용자 인터페이스 사용](/help/platform/intro-to-platform/interface-tour.md)
+   + [사용자 인터페이스](/help/platform/intro-to-platform/interface-tour.md)
    + [역할 및 프로젝트 단계](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Real-Time CDP 소개 {#rtcdp}
    + [개요](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
