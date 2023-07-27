@@ -4,9 +4,9 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
+source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '969'
 ht-degree: 34%
 
 ---
@@ -217,4 +217,3 @@ ht-degree: 34%
    + [Audience Center of Excellence 진화](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [고객 프로필을 통해 더 나은 경험 구축](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [자사 데이터 컨텍스트에서의 데이터 공동 작업](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
-   + [번역](translate.md)
