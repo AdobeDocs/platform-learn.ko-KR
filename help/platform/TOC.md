@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
+source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 33%
+source-wordcount: '965'
+ht-degree: 34%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 33%
    + [데이터베이스로부터 데이터 수집](/help/platform/sources/ingest-data-from-databases.md)
    + [HTTP API로 데이터 스트리밍](/help/platform/sources/streaming-ingestion-http-api.md)
    + [소스 커넥터를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-source-connector.md)
-   + [Adobe Target을 사용한 다음 히트 개인화](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [문제 해결: SFTP 커넥터](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Experience Cloud 통합 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
