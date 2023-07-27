@@ -4,9 +4,9 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
+source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '970'
 ht-degree: 34%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 34%
    + [BI 도구를 사용하여 대시보드 빌드](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [고객 데이터 충전](/help/platform/queries/recharge-your-customer-data.md)
    + [클라이언트를 쿼리 서비스에 연결](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [데이터 레이크에서 데이터 유효성 검사](/help/platform/queries/validate-data-in-the-datalake.md)
 + 스키마 {#schemas}
    + [개요](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [빌딩 블록](/help/platform/schemas/schema-building-blocks.md)
