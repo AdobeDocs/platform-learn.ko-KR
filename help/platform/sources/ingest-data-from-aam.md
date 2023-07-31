@@ -1,6 +1,6 @@
 ---
 title: Adobe Audience Manager Data Connector를 사용하여 데이터 수집
-description: Adobe Audience Manager에서 Real-time Customer Data Platform으로 이동하도록 프로세스 및 인력을 재구성할 때 Audience Manager 데이터 커넥터 를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져와서 다른 풍부한 데이터(PII 포함)와 결합하고 대상 파트너에게 보낼 수 있습니다. 이 비디오는 Real-Time CDP용 AAM Data Connector의 구성을 소개합니다.
+description: Audience Manager 데이터 커넥터를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고 다른 풍부한 데이터와 결합하는 방법을 알아봅니다.
 feature: Sources
 topic: Integrations
 badgeIntegration: label="통합" type="positive"
@@ -9,18 +9,20 @@ level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+source-git-commit: 97008a03dbafdca044bfc9c1fed3672feb7fe0f7
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '286'
 ht-degree: 3%
 
 ---
 
 # Adobe Audience Manager Data Connector를 사용하여 데이터 수집
 
-프로세스와 직원을 Adobe Audience Manager에서 Real-time Customer Data Platform(Real-Time CDP)로 이동하도록 재구성할 때 Audience Manager 데이터 커넥터를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고, 이를 다른 풍부한 데이터(PII 포함)와 결합하여 대상 파트너에게 보낼 수 있습니다. 이 비디오는 Real-Time CDP용 AAM Data Connector의 구성을 소개합니다.
+이 통합 비디오에서는 Audience Manager 데이터 커넥터를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고 다른 풍부한 데이터와 결합하는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?quality=12&learn=on)
+
+프로세스와 직원을 Adobe Audience Manager에서 Real-time Customer Data Platform(Real-Time CDP)로 이동하도록 재구성할 때 Audience Manager 데이터 커넥터를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고, 이를 다른 풍부한 데이터(PII 포함)와 결합하여 대상 파트너에게 보낼 수 있습니다. 이 비디오는 Real-Time CDP용 AAM Data Connector의 구성을 소개합니다.
 
 >[!WARNING]
 >
