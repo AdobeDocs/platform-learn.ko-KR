@@ -4,10 +4,10 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
+source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 34%
+source-wordcount: '989'
+ht-degree: 33%
 
 ---
 
@@ -142,6 +142,11 @@ ht-degree: 34%
    + [데이터 수집 모니터링](/help/platform/monitoring/monitoring-dashboard.md)
    + [세그먼트 활성화 모니터링](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [데이터 흐름 모니터링](/help/platform/monitoring/data-monitoring.md)
++ 파트너 데이터 지원 {#partner-data-support}
+   + [파트너 데이터 지원 개요](/platform/partner-data-support/partner-data-support-overview.md)
+   + [오프사이트 전망 지원](/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [프로필에 파트너 속성 추가](/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [알 수 없는 방문자에 대한 온사이트 개인화](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + 프로필 {#profiles}
    + [실시간 고객 프로필 이해](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [프로필 개요 다이어그램](/help/platform/profiles/overview-diagram.md)
