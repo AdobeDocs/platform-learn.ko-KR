@@ -4,9 +4,9 @@ description: 에서 태그 속성을 구성하는 방법을 알아봅니다 [!UI
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1015'
 ht-degree: 9%
 
 ---
@@ -136,7 +136,12 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
    설치 지침은 구현을 위한 좋은 시작점을 제공합니다. 추가 정보를 찾을 수 있습니다 [여기](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. 다음 항목 선택 **[!UICONTROL Swift]** 아래 탭 **[!UICONTROL 초기화 코드 추가]**. 이 코드 블록은 launch에서 필요한 SDK를 가져오고 확장을 등록하는 방법을 보여 줍니다.
+   >[!INFO]
+   >
+   >이 자습서의 나머지 부분에서 **아님** cocoaPods 지침을 대신 사용하는 대신 기본 SPM(Swift Package Manager) 기반 설정을 사용합니다.
+   >
+
+1. 다음 항목 선택 **[!UICONTROL Swift]** 아래 탭 **[!UICONTROL 초기화 코드 추가]**. 이 코드 블록은 launch에서 필요한 SDK를 가져오고 확장을 등록하는 방법을 보여 줍니다. 이에 대해서는 다음에서 자세히 다룹니다. [SDK 설치](install-sdks.md).
 
 1. 복사 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 다음 **[!UICONTROL 환경 파일 ID]** 나중에 필요할 때 원하는 곳에 보관하십시오. 이 고유 ID는 개발 환경을 가리킵니다. 각 환경(프로덕션, 스테이징, 개발)에는 고유한 ID 값이 있습니다.
 
@@ -145,11 +150,6 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 >[!NOTE]
 >
 >설치 지침은 시작점으로 간주되어야 하며 명확한 설명서는 아닙니다. 최신 SDK 버전 및 코드 샘플은 [설명서](https://developer.adobe.com/client-sdks/documentation/).
-
->[!INFO]
->
->이 자습서의 나머지 부분에서 **아님** cocoaPods 지침을 사용하되 기본 Swift 패키지 기반 설정을 확인합니다.
-
 
 ## 모바일 태그 아키텍처
 
