@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 2%
@@ -97,8 +97,8 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 1. 다음에서 **[!UICONTROL 확장 설치]** 대화 상자
    1. 환경 선택(예: ) **[!UICONTROL 개발]**.
    1. 다음 항목 선택 **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 데이터 세트 **[!UICONTROL 이벤트 데이터 세트]** 드롭다운 목록입니다.
-      ![AJO 확장 설정](assets/push-tags-ajo.png)
    1. 선택 **[!UICONTROL 라이브러리 및 빌드에 저장]**.
+      ![AJO 확장 설정](assets/push-tags-ajo.png)
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    1. 다음을 제공합니다. **[!UICONTROL 설명]**, 예 `Test event to trigger push notifications in Luma app`.
 
    1. 앞에서 만든 모바일 앱 경험 이벤트 스키마를 선택합니다. [XDM 스키마 만들기](create-schema.md) 다음에서 **[!UICONTROL 스키마]** 목록, 예 **[!UICONTROL Luma 모바일 앱 이벤트 스키마 v.1]**.
-   1. 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 필드 목록 옆에 있습니다.
+   1. 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 다음 옆에 **[!UICONTROL 필드]** 목록을 표시합니다.
 
       ![이벤트 편집 1단계](assets/ajo-edit-event1.png)
 

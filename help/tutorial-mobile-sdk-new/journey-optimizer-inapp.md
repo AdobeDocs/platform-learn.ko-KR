@@ -4,7 +4,7 @@ description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -123,6 +123,7 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
 1. 로 이동 **[!UICONTROL 설정]** 탭.
 
 1. 누르기 **[!UICONTROL 인앱 메시지]**. 인앱 메시지가 앱에 표시되는 것을 볼 수 있습니다.
+
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 

@@ -3,12 +3,13 @@ title: 데이터스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 6%
 
 ---
+
 
 # 데이터 스트림 만들기
 
