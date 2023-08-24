@@ -2,11 +2,10 @@
 title: 프로필
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 1%
+source-wordcount: '591'
+ht-degree: 2%
 
 ---
 
@@ -40,39 +39,19 @@ ht-degree: 1%
 * 사용자 속성을 검색합니다.
 
 
-## 설정 및 업데이트
+## 사용자 특성 설정 및 업데이트
 
 사용자가 이전에 앱에서 구매했는지 여부를 빠르게 알 수 있는 타겟팅 및/또는 개인화에 유용합니다. Luma 앱에서 설정해 보겠습니다.
 
-1. 다음으로 이동 **[!UICONTROL 제품 보기]** (in **[!UICONTROL 보기]** > **[!UICONTROL 제품]**)를 클릭하여 Xcode Luma 앱 프로젝트를 실행하고 `updateUserAttributes` (구매 버튼 내):
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** >  **[!UICONTROL MobileSDK]** 및 찾기 `func updateUserAttribute(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
 
-   ```swift {highlight="8-9"}
-   Button {
-       Task {
-           if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-               // Send purchase commerce experience event
-               MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
-               // Update attributes
-               MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
-           }
-       }
-       showPurchaseDialog.toggle()
-   } label: {
-       Label("", systemImage: "creditcard")
-   }
-   .alert(isPresented: $showPurchaseDialog, content: {
-       Alert(title: Text( "Purchases"), message: Text("The selected item is purchased…"))
-   })
-   ```
-
-2. 다음으로 이동 **[!UICONTROL MobileSDK]** 및 찾기 `updateUserAttributes` 함수. 강조 표시된 다음 코드를 추가합니다.
-
-   ```swift {highlight="2-4"}
-   func updateUserAttributes(attributeName: String, attributeValue: String) {
-       var profileMap = [String: Any]()
-       profileMap[attributeName] = attributeValue
-       UserProfile.updateUserAttributes(attributeDict: profileMap)
-   }
+   ```swift
+   // Create a profile map
+   var profileMap = [String: Any]()
+   // Add attributes to profile map
+   profileMap[attributeName] = attributeValue
+   // Use profile map to update user attributes
+   UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
    이 코드:
@@ -83,27 +62,29 @@ ht-degree: 1%
 
    1. 를 사용합니다. `profileMap` 사전을 값에 추가 `attributeDict` 매개 변수 `UserProfile.updateUserAttributes` API 호출.
 
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 제품]** > **[!UICONTROL 제품 보기]** xcode Project Navigator에서 `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 추가할 수 있습니다):
 
-추가 `updateUserAttributes` 설명서를 찾을 수 있음 [여기](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+   ```swift
+   // Update attributes
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   ```
 
-## 가져오기
+추가 설명서를 찾을 수 있습니다 [여기](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+
+## 사용자 속성 가져오기
 
 사용자의 속성을 업데이트하면 다른 Adobe SDK에서 사용할 수 있지만 속성을 명시적으로 검색할 수도 있습니다.
 
-1. 다음으로 이동 **[!UICONTROL HomeView]** (in **[!UICONTROL 보기]** > **[!UICONTROL 일반]**) 및 찾기 `.onAppear` 수정자. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > 일반 > **[!UICONTROL HomeView]** xcode Project navigator에서 `.onAppear` 수정자. 다음 코드를 추가합니다.
 
-   ```swift {highlight="3-11"}
-   .onAppear {
-       // Track view screen
-       MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: home")
-       // Get attributes
-       UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-           if attributes?["isPaidUser"] as! String == "yes" {
-               showBadgeForUser = true
-           }
-           else {
-               showBadgeForUser = false
-           }
+   ```swift
+   // Get attributes
+   UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
+       if attributes?["isPaidUser"] as! String == "yes" {
+           showBadgeForUser = true
+       }
+       else {
+           showBadgeForUser = false
        }
    }
    ```
@@ -111,9 +92,9 @@ ht-degree: 1%
    이 코드:
 
    1. 호출 `UserProfile.getUserAttributes` 을(를) 사용하여 종료 `iPaidUser` 속성 이름 을 단일 요소로 사용 `attributeNames` 배열입니다.
-   1. 그런 다음 의 값을 확인합니다. `isPaidUser` 속성 및 시기 `yes`을 눌러 오른쪽 상단의 개인 아이콘에 배지를 추가합니다.
+   1. 그런 다음 의 값을 확인합니다. `isPaidUser` 속성 및 시기 `yes`, 다음에 배지를 추가합니다. <img src="assets/paiduser.png" width="20" /> 아이콘 을 클릭하여 제품에서 사용할 수 있습니다.
 
-추가 `getUserAttributes` 설명서를 찾을 수 있음 [여기](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+추가 설명서를 찾을 수 있습니다 [여기](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Assurance를 통해 유효성 검사
 
@@ -124,23 +105,23 @@ ht-degree: 1%
 
    1. Assurance 아이콘을 왼쪽으로 이동합니다.
    1. 선택 **[!UICONTROL 홈]** 을 클릭합니다.
-   1. 로그인 시트를 열려면 다음을 선택합니다 **[!UICONTROL 로그인]** 단추를 클릭합니다.
-   1. 임의의 이메일과 고객 ID를 삽입하려면 **[!UICONTROL A|]** 단추 .
+   1. 로그인 시트를 열려면 다음을 선택합니다 <img src="assets/login.png" width="15" /> 추가할 수 있습니다.
+   1. 임의의 이메일과 고객 ID를 삽입하려면 <img src="assets/insert.png" width="15" /> 추가할 수 있습니다 .
    1. 선택 **[!UICONTROL 로그인]**.
    1. 선택 **[!UICONTROL 제품]** 을 클릭합니다.
    1. 제품 하나를 선택하십시오.
-   1. 선택 **[!UICONTROL 나중에 저장]**.
-   1. 선택 **[!UICONTROL 장바구니에 추가]**.
-   1. 선택 **[!UICONTROL 구매]**.
-   1. 다음으로 돌아가기: **[!UICONTROL 홈]** 화면. 업데이트된 로그인 버튼이 표시됩니다.
+   1. 선택 <img src="assets/saveforlater.png" width="15" />.
+   1. 선택 <img src="assets/addtocart.png" width="20" />.
+   1. 선택 <img src="assets/purchase.png" width="15" />.
+   1. 다음으로 돌아가기: **[!UICONTROL 홈]** 화면. 다음에 대한 업데이트된 값이 표시됩니다. **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]**.
 
       <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
 
-1. 다음이 표시됩니다. **[!UICONTROL 사용자 프로필 업데이트]** 및 **[!UICONTROL getUserAttributes]** 를 사용하여 Assurance UI의 이벤트 `profileMap` 값.
+1. Assurance UI에 **[!UICONTROL 사용자 프로필 업데이트]** 및 **[!UICONTROL getUserAttributes]** 업데이트된 이벤트 `profileMap` 값.
    ![프로필 유효성 검사](assets/profile-validate.png)
 
 >[!SUCCESS]
 >
->이제 Edge Network 및 Adobe Experience Platform을 사용하여 (설정 시) 프로필의 속성을 업데이트하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 Edge Network 및 Adobe Experience Platform을 사용하여 (설정 시) 프로필의 속성을 업데이트하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[Adobe Analytics에 데이터 매핑](analytics.md)**

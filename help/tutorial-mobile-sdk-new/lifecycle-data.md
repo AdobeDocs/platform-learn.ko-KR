@@ -2,10 +2,9 @@
 title: 라이프사이클 데이터
 description: 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '612'
 ht-degree: 3%
 
 ---
@@ -51,23 +50,22 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 ## 구현 변경 사항
 
-이제 를 업데이트할 수 있습니다. `SceneDelegate` 라이프사이클 이벤트를 등록하려면
+이제 프로젝트를 업데이트하여 라이프사이클 이벤트를 등록할 수 있습니다.
 
-1. 앱을 시작할 때 앱이 백그라운드 상태에서 다시 시작되는 경우 iOS에서 `sceneWillEnterForeground:` delegate 메서드 및 여기서 라이프사이클 시작 이벤트를 트리거할 수 있습니다. 강조 표시된 코드를 추가합니다.
+1. Xcode 프로젝트 탐색기에서 Luma > Luma > SceneDelegate로 이동합니다.
 
-   ```swift {highlight="3"}
-   func sceneWillEnterForeground(_ scene: UIScene) {
-      // When in foreground start lifecycle data collection
-      MobileCore.lifecycleStart(additionalContextData: nil)
-   }
+1. 앱을 시작할 때 앱이 백그라운드 상태에서 다시 시작되는 경우 iOS에서 `sceneWillEnterForeground:` delegate 메서드 및 여기서 라이프사이클 시작 이벤트를 트리거할 수 있습니다. 이 코드를 추가할 위치 `func sceneWillEnterForeground(_ scene: UIScene)`:
+
+   ```swift
+   // When in foreground start lifecycle data collection
+   MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. 앱이 백그라운드로 전환되면 앱의 `sceneDidEnterBackground:` 위임 메서드. 강조 표시된 코드를 추가합니다.
+1. 앱이 백그라운드로 전환되면 앱의 라이프사이클 데이터 수집을 일시 중지하려는 경우 `sceneDidEnterBackground:` 위임 메서드. 이 코드를 추가할 위치  `func sceneDidEnterBackground(_ scene: UIScene)`:
 
-   ```swift {highlight="3"}
-   func sceneDidEnterBackground(_ scene: UIScene) {
-      // When in background pause lifecycle data collection
-      MobileCore.lifecyclePause()
+   ```swift
+   // When in background pause lifecycle data collection
+   MobileCore.lifecyclePause()
    }
    ```
 

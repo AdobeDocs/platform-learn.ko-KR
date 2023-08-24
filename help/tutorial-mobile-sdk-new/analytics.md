@@ -3,10 +3,9 @@ title: Analytics 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하는 방법에 대해 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '653'
 ht-degree: 3%
 
 ---
@@ -174,9 +173,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 다음은 이 데이터를 사용하는 처리 규칙의 모습입니다.
 
-* 값을 덮어쓰고 있습니다. `App Screen Name (eVar2)` (1) ( 값 포함) `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` (2) 다음과 같은 경우 `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` 이(가) 설정되어 있습니다.
+* 본인 **[!UICONTROL 값 덮어쓰기]** (1) **[!UICONTROL 앱 화면 이름(eVar2)]** (2) ( 값 포함) **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) 다음과 같은 경우 **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL 은(는) 설정되어 있습니다.]** (5)
 
-* 을(를) 설정했습니다. `Add to Wishlist (Event 3)` 끝 `a.x.commerce.saveForLaters.value(Context)` if `a.x.commerce.saveForLaters.value(Context)` 이(가) 설정되어 있습니다.
+* 본인 **[!UICONTROL 이벤트 설정]** (6) **[!UICONTROL 위시리스트에 추가(이벤트 3)]** (7)~에서 **[!UICONTROL a.x.commerce.saveForLaters.value(컨텍스트)]** (8) 다음과 같은 경우 **[!UICONTROL a.x.commerce.saveForLaters.value(컨텍스트)]** (9) **[!UICONTROL 은(는) 설정되어 있습니다.]** (10).
 
 ![analytics 처리 규칙](assets/analytics-processing-rules.png)
 

@@ -2,10 +2,9 @@
 title: Adobe Experience Platform Mobile SDK 설치
 description: 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법을 알아봅니다.
 hide: true
-hidefromtoc: true
-source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 1%
 
 ---
@@ -58,9 +57,10 @@ Xcode에서 다음을 사용합니다. **[!UICONTROL 파일]** > **[!UICONTROL �
 
 ## 확장 가져오기
 
-Xcode에서에 대한 소스에서에 **[!UICONTROL AppDelegate]** 및 **[!UICONTROL MobileSDK]**, 다음 가져오기를 추가합니다.
+Xcode에서 다음으로 이동합니다. **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 다음 가져오기를 추가합니다.
 
 ```swift
+// import AEP MobileSDK libraries
 import AEPCore
 import AEPServices
 import AEPIdentity
@@ -76,9 +76,11 @@ import AEPOptimize
 import AEPAssurance
 ```
 
+에 대해서도 동일한 작업 수행 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]**.
+
 ## AppDelegate 업데이트
 
-위치 **AppDelegate**,
+다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** Xcode Project navigator에서.
 
 1. 설정 `@AppStorage` 값 `environmentFileId` 의 6단계에서 태그에서 검색한 개발 환경 파일 ID 값으로 [SDK 설치 지침 생성](configure-tags.md#generate-sdk-install-instructions).
 

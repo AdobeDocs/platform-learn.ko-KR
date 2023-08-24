@@ -3,8 +3,7 @@ title: 데이터스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Datastreams
 hide: true
-hidefromtoc: true
-source-git-commit: 45481ca81f2ee4119bc900a0dd2652818269df6b
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 6%
@@ -88,7 +87,7 @@ Adobe Experience Platform 서비스를 활성화할 수도 있습니다.
 >
 >조직에서 사용하는 각 서비스를 활성화하면 모바일 앱에서 수집한 데이터를 어디에서나 사용할 수 있습니다. 데이터 스트림 설정에 대한 자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-자체 웹 사이트에서 Platform Mobile SDK를 구현할 때 세 개의 태그 환경(개발, 스테이지 및 프로덕션)에 매핑할 세 개의 데이터스트림을 만들어야 합니다. Adobe Real-time Customer Data Platform 또는 Adobe Journey Optimizer과 같은 플랫폼 기반 애플리케이션과 함께 Platform Mobile SDK를 사용하는 경우 적절한 Platform 샌드박스에서 이러한 데이터스트림을 만들어야 합니다.
+자체 앱에서 Platform Mobile SDK를 구현할 때 세 개의 태그 환경(개발, 스테이지 및 프로덕션)에 매핑할 세 개의 데이터스트림을 만들어야 합니다. Adobe Real-time Customer Data Platform 또는 Adobe Journey Optimizer과 같은 플랫폼 기반 애플리케이션과 함께 Platform Mobile SDK를 사용하는 경우 적절한 Platform 샌드박스에서 이러한 데이터스트림을 만들어야 합니다.
 
 >[!SUCCESS]
 >

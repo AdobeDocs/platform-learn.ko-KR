@@ -3,10 +3,9 @@ title: 신원
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 feature: Mobile SDK,Identities
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '653'
 ht-degree: 6%
 
 ---
@@ -52,35 +51,20 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 사용자가 앱에 로그인할 때 표준 ID(이메일)와 사용자 지정 ID(Luma CRM ID)를 모두 업데이트하려고 합니다.
 
-1. 다음으로 이동 **[!UICONTROL 로그인 시트]** (in **[!UICONTROL 보기]** > **[!UICONTROL 일반]**)를 클릭하여 Xcode Luma 앱 프로젝트를 실행하고 `updateIdentities`:
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func updateIdentities(emailAddress: String, crmId: String)` 함수 구현. 다음 코드를 함수에 추가합니다.
 
-   ```swift {highlight="3,4"}
-   Button("Login") {
-       // call updaeIdentities
-       MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   ```swift
+   // Set up identity map
+   let identityMap: IdentityMap = IdentityMap()
    
-       // Send app interaction event
-       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-       dismiss()
-   }
-   .disabled(currentEmailId.isValidEmail == false)
-   .buttonStyle(.bordered)
-   ```
-
-1. 다음 위치로 이동 `updateIdentities` 에서 함수 구현 **[!UICONTROL MobileSDK]** (in **[!UICONTROL 유틸리티]**)을 클릭하여 제품에서 사용할 수 있습니다. 다음 강조 표시된 코드를 함수에 추가합니다.
-
-   ```swift {highlight="2-12"}
-   func updateIdentities(emailAddress: String, crmId: String) {
-       let identityMap: IdentityMap = IdentityMap()
-       // Add identity items
-       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
-       identityMap.add(item:emailIdentity, withNamespace: "Email")
-       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
+   // Add identity items to identity map
+   let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   identityMap.add(item:emailIdentity, withNamespace: "Email")
+   identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
-       // Update identities
-       Identity.updateIdentities(with: identityMap)
-   }
+   // Update identities
+   Identity.updateIdentities(with: identityMap)
    ```
 
    이 코드:
@@ -111,6 +95,13 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
       Identity.updateIdentities(with: identityMap) 
       ```
 
+1. 다음으로 이동 **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL 로그인 시트]** xcode 프로젝트 탐색기에서 를 선택하고 **[!UICONTROL 로그인]** 단추를 클릭합니다. 다음 코드를 추가합니다.
+
+   ```swift
+   // call updaeIdentities
+   MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
+   ```
+
 
 >[!NOTE]
 >
@@ -121,27 +112,22 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 다음을 사용할 수 있습니다. `removeIdentity` 저장된 클라이언트측 IdentityMap에서 id를 제거합니다. ID 확장은 Edge 네트워크에 대한 식별자 전송을 중지합니다. 이 API를 사용해도 서버측 사용자 프로필 그래프 또는 ID 그래프에서 식별자가 제거되지 않습니다.
 
-1. 다음으로 이동 **[!UICONTROL 로그인 시트]** (in **[!UICONTROL 보기]** > **[!UICONTROL 일반]**)를 클릭하여 Xcode Luma 앱 프로젝트를 실행하고 `removeIdentities`:
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 일반]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 다음 코드를 `func removeIdentities(emailAddress: String, crmId: String)` 함수:
 
-   ```swift {highlight="3"}
-   Button("Logout", role: .destructive) {
-       // call removeIdentities
-       MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-       dismiss()                   
-   }
-   .buttonStyle(.bordered)
+   ```swift
+   Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
+   Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
+   // reset email and CRM Id to their defaults
+   currentEmailId = "testUser@gmail.com"
+   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. 에 다음 코드를 추가합니다 `removeIdentities` 의 함수 `MobileSDK`:
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL 로그인 시트]** xcode Project 탐색기에서 를 선택하고 **[!UICONTROL 로그아웃]** 단추를 클릭합니다. 다음 코드를 추가합니다.
 
-   ```swift {highlight="2-8"}
-   func removeIdentities(emailAddress: String, crmId: String) {
-       Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
-       Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-       // reset email and CRM Id to their defaults
-       currentEmailId = "testUser@gmail.com"
-       currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
-   }
+   ```swift
+   // call removeIdentities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   dismiss()                   
    ```
 
 
@@ -150,9 +136,9 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 1. 리뷰 [설치 지침](assurance.md) 시뮬레이터 또는 장치를 Assurance에 연결하고 연결합니다.
 1. Luma 앱에서
    1. 다음 항목 선택 **[!UICONTROL 홈]** 탭.
-   1. 다음 항목 선택 **[!UICONTROL 로그인]** 오른쪽 상단의 아이콘
+   1. 다음 항목 선택 <img src="assets/login.png" width="15" /> 오른쪽 상단의 아이콘
    1. 이메일 주소와 CRM ID를 제공하거나
-   1. 임의로 생성하려면 |을(를) 선택하십시오 **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]**.
+   1. 선택 <img src="assets/insert.png" width="15" /> 을(를) 임의로 생성하려면 **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]**.
    1. 선택 **[!UICONTROL 로그인]**.
 
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">

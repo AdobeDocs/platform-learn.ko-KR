@@ -3,11 +3,10 @@ title: Assurance 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 9%
+source-wordcount: '741'
+ht-degree: 10%
 
 ---
 
@@ -43,17 +42,19 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 
 ## 구현
 
-일반에 더해서 [SDK 설치](install-sdks.md), 이전 단원에서 을(를) 완료했습니다. iOS에서도 앱의 Assurance 세션을 시작하려면 다음 항목을 추가해야 합니다. 에 다음 코드를 추가합니다 **[!UICONTROL SceneDelegate]**:
+일반에 더해서 [SDK 설치](install-sdks.md), 이전 단원에서 을(를) 완료했습니다. iOS에서도 앱의 Assurance 세션을 시작하려면 다음 항목을 추가해야 합니다.
 
-```swift {highlight="5"}
-func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Called when the app in background is opened with a deep link.
-        if let deepLinkURL = URLContexts.first?.url {
-            // Start the Assurance session
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-```
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** Xcode의 Project navigator에서.
+
+1. `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`에 다음 코드를 추가합니다.
+
+   ```swift
+   // Called when the app in background is opened with a deep link.
+   if let deepLinkURL = URLContexts.first?.url {
+       // Start the Assurance session
+       Assurance.startSession(url: deepLinkURL)
+   }
+   ```
 
 추가 정보를 찾을 수 있음 [여기](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
 
@@ -94,7 +95,7 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
 1. 다음을 제공합니다. **[!UICONTROL 세션 이름]** 과 같은 `Luma Mobile App Session` 및 **[!UICONTROL 기본 URL]**: Xcode에 입력한 URL 체계, 그 뒤에 오는 `://`. 예: `lumatutorialswiftui://`.
 1. **[!UICONTROL 다음]**을 선택합니다.
    ![보증 생성 세션](assets/assurance-create-session.png)
-1. 새 세션 만들기 대화 상자에서 다음을 수행합니다.
+1. 다음에서 **[!UICONTROL 새 세션 만들기]** 모달 대화 상자:
 
    실제 장치를 사용하는 경우:
 

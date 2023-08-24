@@ -3,8 +3,7 @@ title: 태그 속성 구성
 description: 에서 태그 속성을 구성하는 방법을 알아봅니다 [!UICONTROL 데이터 수집] 인터페이스.
 feature: Mobile SDK,Tags
 hide: true
-hidefromtoc: true
-source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 9%
