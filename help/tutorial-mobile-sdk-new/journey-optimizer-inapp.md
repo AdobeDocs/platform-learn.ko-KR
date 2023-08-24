@@ -4,7 +4,7 @@ description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 3%
@@ -73,11 +73,11 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
 1. 아래로 스크롤하여 **[!UICONTROL 작업]**, 및 선택 **[!UICONTROL 콘텐츠 편집]**.
 1. 다음에서 **[!UICONTROL 인앱 메시지]** 화면:
    1. 선택 **[!UICONTROL 모달]** (으)로 **[!UICONTROL 메시지 레이아웃]**.
-   1. 입력 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 대상 **[!UICONTROL 미디어 URL]**.
-   1. 입력 **[!UICONTROL 머리글]**, 예 `Welcome to this Luma In-App Message` 을(를) 입력합니다. **[!UICONTROL 본문]**, 예 `Triggered by pushing that button in the app...`.
-   1. 입력 **[!UICONTROL 닫기]** (으)로 **[!UICONTROL 단추 #1 텍스트(기본)]**.
-   1. 미리보기가 어떻게 업데이트되는지 확인합니다.
-   1. 선택 **[!UICONTROL 활성화하려면 검토]**.
+   2. 입력 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 대상 **[!UICONTROL 미디어 URL]**.
+   3. 입력 **[!UICONTROL 머리글]**, 예 `Welcome to this Luma In-App Message` 을(를) 입력합니다. **[!UICONTROL 본문]**, 예 `Triggered by pushing that button in the app...`.
+   4. 입력 **[!UICONTROL 닫기]** (으)로 **[!UICONTROL 단추 #1 텍스트(기본)]**.
+   5. 미리보기가 어떻게 업데이트되는지 확인합니다.
+   6. 선택 **[!UICONTROL 활성화하려면 검토]**.
       ![인앱 편집기](assets/ajo-in-app-editor.png)
 1. 다음에서 **[!UICONTROL 활성화 검토(Luma - 인앱 메시지 캠페인)]** 화면, 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 다음에서 **[!UICONTROL 예약]** 타일.
    ![일정 검토 일정 선택](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
    1. **[!UICONTROL 완료]**를 클릭합니다.
       ![트리거 논리](assets/ajo-trigger-logic.png)
 
-   다음과 같은 추적 작업을 정의했습니다. **[!UICONTROL 작업]** 다음과 같음 `in-app` 및 **[!UICONTROL 컨텍스트 데이터]** 작업이 다음의 키 값 쌍인 경우 `showMessage = true`.
+   다음과 같은 추적 작업을 정의했습니다. **[!UICONTROL 작업]** 다음과 같음 `in-app` 및 **[!UICONTROL 컨텍스트 데이터]** 작업이 다음의 키 값 쌍인 경우 `"showMessage" : "true"`.
 
 1. 뒤로 이동 **[!UICONTROL Luma - 인앱 메시지 캠페인]** 화면, 선택 **[!UICONTROL 활성화하려면 검토]**.
 1. 다음에서 **[!UICONTROL 활성화 검토(Luma - 인앱 메시지 캠페인)]** 화면, 선택 **[!UICONTROL 활성화]**.
@@ -103,14 +103,14 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
 1. Xcode Project navigator에서 Luma > Luma > Utils > MobileSDK 로 이동하여 `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 호출하고 다음 코드를 추가합니다 `MobileCore.track` 함수, 매개 변수 기반 `action` 및 `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. Xcode Project Navigator에서 Luma > Luma > 보기 > 일반 > ConfigView 로 이동합니다. 인앱 메시지 단추에 대한 코드를 찾아 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL ConfigView]** Xcode Project Navigator에서 인앱 메시지 단추에 대한 코드를 찾아 다음 코드를 추가합니다.
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
