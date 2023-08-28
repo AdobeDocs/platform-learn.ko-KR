@@ -4,10 +4,10 @@ description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 3%
+source-wordcount: '1070'
+ht-degree: 2%
 
 ---
 
@@ -26,13 +26,27 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Adobe Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 또한 다음 Adobe Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
-   * 캠페인 만들기.
+   * 캠페인을 관리합니다.
 * 인증서, 식별자 및 키를 만들 수 있는 충분한 액세스 권한이 있는 유료 Apple 개발자 계정입니다.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
-* [APN에 앱 ID를 등록했습니다](journey-optimizer-push.md#register-app-id-with-apn)
+* [Apple 푸시 알림 서비스에 앱 ID가 등록됨](journey-optimizer-push.md#register-app-id-with-apn)
 * [데이터 수집에 앱 푸시 자격 증명 추가됨](journey-optimizer-push.md#add-your-app-push-credentials-in-data-collection)
 * [설치된 Adobe Journey Optimizer 태그 확장](journey-optimizer-push.md#install-adobe-journey-optimizer-tags-extension)
 * [앱에서 Adobe Journey Optimizer 구현](journey-optimizer-push.md#implement-adobe-journey-optimizer-in-the-app)
+
+
+## 학습 목표
+
+이 단원에서는 다음과 같은 작업을 수행합니다
+
+* APN(Apple 푸시 알림 서비스)에 앱 ID를 등록합니다.
+* 만들기 **[!UICONTROL 앱 표면]** AJO에서.
+* 업데이트 **[!UICONTROL 스키마]** 푸시 메시지 필드를 포함합니다.
+* 설치 및 구성 **[!UICONTROL Adobe Journey Optimizer]** 태그 확장.
+* AJO 태그 확장을 포함하도록 앱을 업데이트합니다.
+* Assurance에서 설정의 유효성을 검사합니다.
+* Journey Optimizer에서 나만의 캠페인 및 인앱 메시지 경험을 정의합니다.
+* 앱 내에서 고유한 인앱 메시지를 보냅니다.
 
 
 ## Assurance를 통해 유효성 검사
@@ -146,4 +160,4 @@ Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 >
 >이제 인앱 메시징을 위해 앱을 활성화하고 Adobe Journey Optimizer 및 Adobe Experience Platform Mobile SDK용 Adobe Journey Optimizer 확장을 사용하여 인앱 메시지 캠페인을 추가했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-다음: **[결론 및 다음 단계](conclusion.md)**
+다음: **[Journey Optimizer에서 오퍼 표시](journey-optimizer-offers.md)**
