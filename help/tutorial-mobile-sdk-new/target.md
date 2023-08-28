@@ -5,7 +5,7 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 2%
@@ -42,7 +42,7 @@ Target Standard도 사용할 수 있어야 하지만 자습서에서는 Target P
 * 스키마를 업데이트하여 제안 이벤트를 캡처합니다.
 * Assurance에서 설정의 유효성을 검사합니다.
 * Target에서 간단한 A/B 테스트를 만듭니다.
-* Optimize 확장을 포함하도록 앱을 업데이트합니다.
+* Optimizer 확장을 포함하도록 앱을 업데이트합니다.
 * 앱에서 A/B 테스트를 구현합니다.
 * Assurance에서 구현의 유효성을 검사합니다.
 
@@ -192,9 +192,9 @@ Assurance에서 설정을 확인하려면:
    * XDM 사전 `xdmData`A/B 테스트를 제시해야 하는 프로필을 식별하기 위한 ECID가 포함된 와
    * 다음 `decisionScope`: A/B 테스트를 표시할 위치의 배열입니다.
 
-   그런 다음 함수는 다음 두 개의 API를 호출합니다. [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
+   그런 다음 함수는 다음 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL TargetOffersView]** 를 입력합니다. 다음 찾기 `func getPropositionAT(location: String) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 호출,
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL TargetOffersView]** 를 입력합니다. 다음 찾기 `func getPropositionAT(location: String) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 호출,
    * 의사 결정 범위(A/B 테스트에서 정의한 위치)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
    * 앱에서 제대로 표시할 수 있는 콘텐츠의 결과를 래핑 해제합니다.
 
