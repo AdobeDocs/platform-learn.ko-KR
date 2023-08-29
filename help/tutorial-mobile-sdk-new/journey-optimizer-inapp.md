@@ -3,36 +3,37 @@ title: Adobe Journey Optimizer 인앱 메시지
 description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모바일 앱에 대한 인앱 메시지를 만드는 방법을 알아봅니다.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
+feature: In App
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1607'
 ht-degree: 2%
 
 ---
 
-# Adobe Journey Optimizer 인앱 메시지
+# Journey Optimizer 인앱 메시지
 
-Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모바일 앱용 인앱 메시지를 만드는 방법을 알아봅니다.
+Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 인앱 메시지를 만드는 방법을 알아봅니다.
 
-Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟팅된 대상자에게 보낼 수 있습니다. Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한 구성 및 통합이 제대로 되어 있는지 확인해야 합니다. Adobe Journey Optimizer의 인앱 메시지 데이터 흐름을 이해하려면 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자에게 인앱 메시지를 보낼 수 있습니다. Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한 구성 및 통합이 제대로 되어 있는지 확인해야 합니다. Journey Optimizer의 인앱 메시지 데이터 흐름을 이해하려면 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
->이 단원은 선택 사항이며 인앱 메시지를 전송하려는 Adobe Journey Optimizer 사용자에게만 적용됩니다.
+>이 단원은 선택 사항이며 인앱 메시지를 전송하려는 Journey Optimizer 사용자에게만 적용됩니다.
 
 
 ## 전제 조건
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
-* Adobe Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 또한 다음 Adobe Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
+* Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
    * 캠페인을 관리합니다.
 * 인증서, 식별자 및 키를 만들 수 있는 충분한 액세스 권한이 있는 유료 Apple 개발자 계정입니다.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
-* [Apple 푸시 알림 서비스에 앱 ID가 등록됨](journey-optimizer-push.md#register-app-id-with-apn)
-* [데이터 수집에 앱 푸시 자격 증명 추가됨](journey-optimizer-push.md#add-your-app-push-credentials-in-data-collection)
-* [설치된 Adobe Journey Optimizer 태그 확장](journey-optimizer-push.md#install-adobe-journey-optimizer-tags-extension)
-* [앱에서 Adobe Journey Optimizer 구현](journey-optimizer-push.md#implement-adobe-journey-optimizer-in-the-app)
+* Apple 푸시 알림 서비스에 앱 ID가 등록됨
+* 데이터 수집에 앱 푸시 자격 증명 추가됨
+* 설치된 Journey Optimizer 태그 확장
+* 앱에서 Journey Optimizer 구현
 
 
 ## 학습 목표
@@ -40,16 +41,121 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
 이 단원에서는 다음과 같은 작업을 수행합니다
 
 * APN(Apple 푸시 알림 서비스)에 앱 ID를 등록합니다.
-* 만들기 **[!UICONTROL 앱 표면]** AJO에서.
-* 업데이트 **[!UICONTROL 스키마]** 푸시 메시지 필드를 포함합니다.
-* 설치 및 구성 **[!UICONTROL Adobe Journey Optimizer]** 태그 확장.
-* AJO 태그 확장을 포함하도록 앱을 업데이트합니다.
+* AJO에서 앱 표면을 만듭니다.
+* Journey Optimizer 태그 확장 설치 및 구성
+* Journey Optimizer 태그 확장을 포함하도록 앱을 업데이트합니다.
 * Assurance에서 설정의 유효성을 검사합니다.
 * Journey Optimizer에서 나만의 캠페인 및 인앱 메시지 경험을 정의합니다.
 * 앱 내에서 고유한 인앱 메시지를 보냅니다.
 
+## 앱 설정
 
-## Assurance를 통해 유효성 검사
+>[!TIP]
+>
+>앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 푸시 메시지](journey-optimizer-push.md) 자습서에서는 이 섹션을 건너뛸 수 있습니다.
+
+### APNS에 앱 ID 등록
+
+다음 단계는 Adobe Experience Cloud에만 해당되지 않으며 APNS 구성을 안내하도록 설계되었습니다.
+
+### 개인 키 만들기
+
+1. Apple 개발자 포털에서 **[!UICONTROL 키]**.
+1. 키를 만들려면 다음을 선택합니다. **[!UICONTROL +]**.
+   ![새 키 만들기](assets/mobile-push-apple-dev-new-key.png)
+
+1. 다음을 제공합니다. **[!UICONTROL 키 이름]**.
+1. 다음 항목 선택 **[!UICONTROL Apple 푸시 알림 서비스] (APNs)** 확인란.
+1. 선택 **[!UICONTROL 계속]**.
+   ![새 키 구성](assets/mobile-push-apple-dev-config-key.png)
+1. 구성을 검토하고 다음을 선택합니다. **[!UICONTROL 등록]**.
+1. 다운로드 `.p8` 개인 키. 앱 표면 구성에서 사용됩니다.
+1. 다음을 기록해 둡니다. **[!UICONTROL 키 ID]**. 앱 표면 구성에서 사용됩니다.
+1. 다음을 기록해 둡니다. **[!UICONTROL 팀 ID]**. 앱 표면 구성에서 사용됩니다.
+   ![주요 세부 정보](assets/push-apple-dev-key-details.png)
+
+추가 설명서는 다음과 같습니다. [여기에서 찾음](https://help.apple.com/developer-account/#/devcdfbb56a3).
+
+### 데이터 수집에서 앱 푸시 자격 증명 추가
+
+1. 다음에서 [데이터 수집 인터페이스](https://experience.adobe.com/data-collection/), 선택 **[!UICONTROL 앱 표면]** 왼쪽 패널에서
+1. 구성을 만들려면 다음을 선택합니다 **[!UICONTROL 앱 표면 만들기]**.
+   ![앱 표면 홈](assets/push-app-surface.png)
+1. 입력 **[!UICONTROL 이름]** 예를 들어 구성의 경우 `Luma App Tutorial`  .
+1. 출처: **[!UICONTROL 모바일 애플리케이션 구성]**, 선택 **[!UICONTROL Apple iOS]**.
+1. 에 모바일 앱 번들 ID 입력 **[!UICONTROL 앱 ID (iOS 번들 ID)]** 필드. 예,  `com.adobe.luma.tutorial.swiftui`.
+1. 전환 **[!UICONTROL 푸시 자격 증명]** 자격 증명을 추가하려면 전환합니다.
+1. 을(를) 끌어다 놓기 `.p8` **Apple 푸시 알림 인증 키** 파일.
+1. 다음을 제공합니다 **[!UICONTROL 키 ID]**&#x200B;를 만드는 동안 할당된 10자 문자열 `p8` 인증 키. 다음 아래에서 찾을 수 있습니다 **[!UICONTROL 키]** 의 탭 **인증서, 식별자 및 프로필** Apple 개발자 포털 페이지의 페이지입니다. 참조: [개인 키 만들기](#create-a-private-key).
+1. 다음을 제공합니다 **[!UICONTROL 팀 ID]**. 팀 ID는 **멤버십** Apple 개발자 포털 페이지 상단에 있는 탭이나 를 참조하십시오. 참조: [개인 키 만들기](#create-a-private-key).
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+
+   ![앱 표면 구성](assets/push-app-surface-config.png)
+
+### Journey Optimizer 태그 확장 설치
+
+앱이 Journey Optimizer에서 작동하려면 태그 속성을 업데이트해야 합니다.
+
+1. 다음으로 이동 **[!UICONTROL 태그]** > **[!UICONTROL 확장]** > **[!UICONTROL 카탈로그]**,
+1. 속성을 엽니다. 예 **[!UICONTROL Luma 모바일 앱 튜토리얼]**.
+1. 선택 **[!UICONTROL 카탈로그]**.
+1. 검색 **[!UICONTROL Adobe Journey Optimizer]** 확장명.
+1. 확장을 설치합니다.
+1. 다음에서 **[!UICONTROL 확장 설치]** 대화 상자
+   1. 환경 선택(예: ) **[!UICONTROL 개발]**.
+   1. 다음 항목 선택 **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 데이터 세트 **[!UICONTROL 이벤트 데이터 세트]** 목록을 표시합니다.
+   1. 선택 **[!UICONTROL 라이브러리 및 빌드에 저장]**.
+      ![AJO 확장 설정](assets/push-tags-ajo.png)
+
+>[!NOTE]
+>
+>표시되지 않으면 `AJO Push Tracking Experience Event Dataset` 선택 사항으로 고객 지원 센터에 문의하십시오.
+>
+
+### 앱에서 Journey Optimizer 구현
+
+이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 메시징 SDK를 설치하고 등록해야 합니다. 이러한 단계가 명확하지 않으면 다음을 검토하십시오. [SDK 설치](install-sdks.md) 섹션.
+
+>[!NOTE]
+>
+>을(를) 완료한 경우 [SDK 설치](install-sdks.md) 섹션에서 SDK가 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
+>
+
+1. Xcode에서 다음을 확인합니다 [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
+1. 확인 `AEPMessaging` 는 가져오기 목록의 일부입니다.
+
+   `import AEPMessaging`
+
+1. 확인 `Messaging.self` 는 등록 중인 확장 배열의 일부입니다.
+
+   ```swift
+   let extensions = [
+       AEPIdentity.Identity.self,
+       Lifecycle.self,
+       Signal.self,
+       Edge.self,
+       AEPEdgeIdentity.Identity.self,
+       Consent.self,
+       UserProfile.self,
+       Places.self,
+       Messaging.self,
+       Optimize.self,
+       Assurance.self
+   ]
+   ```
+
+1. 추가 `MobileCore.setPushIdentifier` (으)로 `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 함수.
+
+   ```swift
+   // Send push token to Experience Platform
+   MobileCore.setPushIdentifier(deviceToken)
+   ```
+
+   이 함수는 앱이 설치된 장치에 고유한 장치 토큰을 검색합니다. 그런 다음 설정한 구성을 사용하여 푸시 알림 전달을 위한 토큰을 설정하고 Apple의 APNs(푸시 알림 서비스)를 사용합니다.
+
+
+## 설정 보증 유효성 검사
 
 1. 리뷰 [설치 지침](assurance.md) 섹션.
 1. 물리적 장치 또는 시뮬레이터에 앱을 설치합니다.
@@ -79,7 +185,7 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
 1. Journey Optimizer UI에서 **[!UICONTROL 캠페인]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 캠페인 만들기]**.
 1. 다음에서 **[!UICONTROL 캠페인 만들기]** 화면:
-   1. 선택 **[!UICONTROL 인앱 메시지]** 및 선택 **[!UICONTROL Luma 모바일 앱]** 다음에서 **[!UICONTROL 앱 표면]** 목록을 표시합니다.
+   1. 선택 **[!UICONTROL 인앱 메시지]** 에서 앱 표면 선택 **[!UICONTROL 앱 표면]** 목록, 예 **[!UICONTROL Luma 모바일 앱]**.
    1. **[!UICONTROL 만들기]**를 선택합니다
       ![캠페인 속성](assets/ajo-campaign-properties.png)
 1. 캠페인 정의 화면의 **[!UICONTROL 속성]**, 를 입력합니다. **[!UICONTROL 이름]** 예를 들어 캠페인용 `Luma - In-App Messaging Campaign`, 및 **[!UICONTROL 설명]**, 예 `In-app messaging campaign for Luma app`.
@@ -112,9 +218,9 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
 
 ## 인앱 메시지 트리거
 
-인앱 메시지를 보낼 수 있는 모든 구성 요소가 준비되었습니다. 남아 있는 것은 코드에서 이 인앱 메시지를 트리거하는 방법입니다.
+인앱 메시지를 보낼 수 있는 모든 구성 요소가 준비되었습니다. 남은 것은 앱에서 이 인앱 메시지를 트리거하는 방법입니다.
 
-1. Xcode Project navigator에서 Luma > Luma > Utils > MobileSDK 로 이동하여 `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 호출하고 다음 코드를 추가합니다 `MobileCore.track` 함수, 매개 변수 기반 `action` 및 `data`.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 호출하고 다음 코드를 추가합니다 `MobileCore.track` 함수, 매개 변수 기반 `action` 및 `data`.
 
 
    ```swift
@@ -122,7 +228,7 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
    MobileCore.track(action: action, data: data)
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL ConfigView]** Xcode Project Navigator에서 인앱 메시지 단추에 대한 코드를 찾아 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL ConfigView]** 를 입력합니다. 인앱 메시지 단추에 대한 코드를 찾아 다음 코드를 추가합니다.
 
    ```swift
    Task {
@@ -141,7 +247,7 @@ Journey Optimizer을 사용하면 여정을 만들고 인앱 메시지를 타겟
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
-## Assurance에서 유효성 검사
+## Assurance에서 구현 유효성 검사
 
 Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 
@@ -152,12 +258,12 @@ Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
    ![보증 인앱 메시지](assets/assurance-in-app-display-message.png)
 
 
-## 앱에서 구현
+## 다음 단계
 
-이제 Luma 앱에 관련 있고 적용 가능한 경우 푸시 알림을 추가하기 시작하는 모든 도구가 있어야 합니다. 예를 들어, 앱에 로그인하거나 특정 지리적 위치에 접근할 때 사용자를 반기는 경우가 있습니다.
+이제 Luma 앱에 관련 있고 적용 가능한 경우 인앱 메시지를 추가하기 시작할 수 있는 모든 도구가 있어야 합니다. 예를 들어 앱에서 추적한 특정 상호 작용을 기반으로 제품을 홍보할 수 있습니다.
 
 >[!SUCCESS]
 >
->이제 인앱 메시징을 위해 앱을 활성화하고 Adobe Journey Optimizer 및 Adobe Experience Platform Mobile SDK용 Adobe Journey Optimizer 확장을 사용하여 인앱 메시지 캠페인을 추가했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Experience Platform Mobile SDK용 Journey Optimizer 및 Journey Optimizer 확장을 사용하여 인앱 메시지를 활성화하고 인앱 메시지 캠페인을 추가했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[Journey Optimizer에서 오퍼 표시](journey-optimizer-offers.md)**
