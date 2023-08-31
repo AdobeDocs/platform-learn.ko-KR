@@ -3,9 +3,9 @@ title: Assurance 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '738'
 ht-degree: 10%
 
 ---
@@ -36,7 +36,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 
 다음 단계를 완료하여 조직에서 Assurance에 액세스할 수 있는지 확인하십시오.
 
-1. 방문 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance{target="_blank"}).
+1. 방문 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
 1. Experience Cloud에 대해 Adobe ID 자격 증명을 사용하여 로그인합니다.
 1. 다음 항목이 표시되면 **[!UICONTROL 세션]** 그런 다음 액세스 권한을 갖습니다. (베타) 액세스 페이지가 표시되면 다음을 선택합니다. **[!UICONTROL 등록]** 등록합니다.
 
@@ -56,7 +56,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
    }
    ```
 
-추가 정보를 찾을 수 있음 [여기](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
+추가 정보를 찾을 수 있음 [여기](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## 서명
 
@@ -81,7 +81,7 @@ Xcode에서 응용 프로그램을 처음 실행하기 전에 서명을 업데�
 
    ![보증 url](assets/assurance-url-type.png)
 
-iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [Apple 설명서](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app{target="_blank"}).
+iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [Apple 설명서](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 보증은 브라우저 또는 QR 코드를 통해 URL을 열어 작동합니다. 해당 URL은 앱을 열고 추가 매개 변수를 포함하는 기본 URL로 시작합니다. 이러한 고유한 매개 변수는 세션을 연결하는 데 사용됩니다.
 
@@ -129,7 +129,7 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
 
      ![보증 이벤트](assets/assurance-events.png)
 
-문제가 발생하는 경우 다음을 검토하십시오. [기술](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/{target="_blank"}) 및 [일반 설명서](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html{target="_blank"}).
+문제가 발생하는 경우 다음을 검토하십시오. [기술](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 >[!SUCCESS]
 >
