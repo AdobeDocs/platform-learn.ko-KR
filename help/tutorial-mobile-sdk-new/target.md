@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
+source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1418'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ Platform Mobile SDK 및 Adobe Target을 사용하여 모바일 앱에서 A/B 테
 
 Target은 고객의 경험을 조정하고 개인화해야 하는 모든 기능을 제공합니다. Target을 사용하면 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화할 수 있습니다. 이 자습서에서는 Target의 A/B 테스트 기능에 초점을 맞춥니다. 다음을 참조하십시오. [A/B 테스트 개요](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 추가 정보.
 
-Target Premium으로 A/B 테스트를 수행하려면 먼저 적절한 구성 및 통합이 있는지 확인해야 합니다.
+Target에서 A/B 테스트를 수행하려면 먼저 적절한 구성 및 통합이 있는지 확인해야 합니다.
 
 >[!NOTE]
 >
->이 단원은 선택 사항이며 A/B 테스트를 수행하려는 Adobe Target Premium 사용자에게만 적용됩니다.
+>이 단원은 선택 사항이며 A/B 테스트를 수행하려는 Adobe Target 사용자에게만 적용됩니다.
 
 
 ## 전제 조건
@@ -47,7 +47,13 @@ Target Standard도 사용할 수 있어야 하지만 자습서에서는 Target P
 * Assurance에서 구현의 유효성을 검사합니다.
 
 
-## Edge 구성 업데이트
+## 앱 설정
+
+>[!TIP]
+>
+>앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 오퍼](journey-optimizer-offers.md) 튜토리얼,
+
+### Edge 구성 업데이트
 
 모바일 앱에서 Edge Network로 전송된 데이터가 Adobe Target으로 전달되도록 하려면 Experience Edge 구성을 업데이트해야 합니다.
 
@@ -62,7 +68,7 @@ Target Standard도 사용할 수 있어야 하지만 자습서에서는 Target P
    ![데이터 스트림에 대상 추가](assets/edge-datastream-target.png)
 
 
-## Adobe Journey Optimizer - Decisioning 태그 확장 설치
+### Adobe Journey Optimizer - Decisioning 태그 확장 설치
 
 1. 다음으로 이동 **[!UICONTROL 태그]** 모바일 태그 속성을 찾아 속성을 엽니다.
 1. 선택 **[!UICONTROL 확장]**.
@@ -73,7 +79,7 @@ Target Standard도 사용할 수 있어야 하지만 자습서에서는 Target P
    ![Decisioning 확장 추가](assets/tag-add-decisioning-extension.png)
 
 
-## 스키마 업데이트
+### 스키마 업데이트
 
 1. 데이터 수집 UI로 이동하고 왼쪽 레일에서 스키마 를 선택합니다.
 1. 선택 **[!UICONTROL 찾아보기]** 을 클릭합니다.
@@ -84,7 +90,7 @@ Target Standard도 사용할 수 있어야 하지만 자습서에서는 Target P
 1. 스키마에 변경 사항을 저장하려면 을 선택합니다. **[!UICONTROL 저장]** .
 
 
-## Assurance에서 설정 확인
+### Assurance에서 설정 확인
 
 Assurance에서 설정을 확인하려면:
 
@@ -161,12 +167,12 @@ Assurance에서 설정을 확인하려면:
 
 >[!NOTE]
 >
->을(를) 완료한 경우 [SDK 설치](install-sdks.md) 섹션에서 SDK가 이미 설치되어 있는 경우 #7단계로 건너뛸 수 있습니다.
+>을(를) 완료한 경우 [SDK 설치](install-sdks.md) 섹션에서 SDK가 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
 >
 
 1. Xcode에서 다음을 확인합니다 [AEP 최적화](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
-1. 확인 `AEPMessaging` 는 가져오기 목록의 일부입니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
+1. 확인 `AEPOptimize` 는 가져오기 목록의 일부입니다.
 
    `import AEPOptimize`
 
@@ -239,17 +245,17 @@ Assurance에서 A/B 테스트를 확인하려면 다음을 수행하십시오.
 1. 선택 **[!UICONTROL 구성]** 왼쪽 레일에서 다음을 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 검토 및 시뮬레이션]** 아래 **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 선택 **[!UICONTROL 검토 및 시뮬레이션]** 왼쪽 레일에서. 데이터 스트림 설정과 SDK 설정이 모두 애플리케이션에서 검증되었습니다.
-1. 선택 **[!UICONTROL 요청]** 맨 위 막대에서. Target 요청이 표시됩니다.
+1. 선택 **[!UICONTROL 요청]** 맨 위 막대에서. 다음을 확인함: **[!UICONTROL Target]** 요청.
    ![AJO 의사 결정 유효성 검사](assets/assurance-decisioning-requests.png)
 
 1. Target 오퍼에 대한 설정을 확인하는 추가 기능을 위해 시뮬레이트 및 이벤트 목록 탭을 탐색할 수 있습니다.
 
-## 앱에서 구현
+## 다음 단계
 
-관련성이 있고 적용 가능한 경우 더 많은 A/B 테스트 또는 기타 Target 활동을 Luma 앱에 추가하기 시작할 수 있는 모든 도구가 있어야 합니다.
+관련성이 있고 적용 가능한 경우 더 많은 A/B 테스트 또는 다른 Target 활동(예: 경험 타기팅, 다변량 테스트)을 Luma 앱에 추가하기 시작할 수 있는 모든 도구가 있어야 합니다.
 
 >[!SUCCESS]
 >
->이제 A/B 테스트용 앱을 활성화하고 Adobe Target 및 Adobe Experience Platform Mobile SDK용 Adobe Journey Optimizer - Decisioning 확장을 사용한 A/B 테스트의 결과를 표시했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>A/B 테스트용 앱을 활성화하고 Adobe Target 및 Adobe Experience Platform Mobile SDK용 Adobe Journey Optimizer - Decisioning 확장을 사용한 A/B 테스트의 결과를 표시했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[결론 및 다음 단계](conclusion.md)**

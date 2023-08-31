@@ -5,28 +5,28 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2175'
 ht-degree: 2%
 
 ---
 
-# Adobe Journey Optimizer 푸시 메시지
+# Journey Optimizer 푸시 메시지
 
-Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모바일 앱용 푸시 메시지를 만드는 방법을 알아봅니다.
+Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 푸시 메시지를 만드는 방법을 알아봅니다.
 
-Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에게 메시지를 보낼 수 있습니다. Journey Optimizer을 사용하여 푸시 알림을 전송하기 전에 적절한 구성 및 통합이 있는지 확인해야 합니다. Adobe Journey Optimizer의 푸시 알림 데이터 흐름을 이해하려면 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에게 메시지를 보낼 수 있습니다. Journey Optimizer을 사용하여 푸시 알림을 전송하기 전에 적절한 구성 및 통합이 있는지 확인해야 합니다. Journey Optimizer의 푸시 알림 데이터 흐름을 이해하려면 다음을 참조하십시오 [설명서](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
 >[!NOTE]
 >
->이 단원은 선택 사항이며 푸시 메시지를 전송하려는 Adobe Journey Optimizer 사용자에게만 적용됩니다.
+>이 단원은 선택 사항이며 푸시 메시지를 전송하려는 Journey Optimizer 사용자에게만 적용됩니다.
 
 
 ## 전제 조건
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
-* Adobe Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 또한 다음 Adobe Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
+* Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
    * 앱 표면을 만듭니다.
    * 여정 만들기
    * 메시지 만들기.
@@ -38,20 +38,26 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 이 단원에서는 다음과 같은 작업을 수행합니다
 
-* APN(Apple 푸시 알림 서비스)에 앱 ID를 등록합니다.
-* 만들기 **[!UICONTROL 앱 표면]** AJO에서.
-* 업데이트 **[!UICONTROL 스키마]** 푸시 메시지 필드를 포함합니다.
-* 설치 및 구성 **[!UICONTROL Adobe Journey Optimizer]** 태그 확장.
-* AJO 태그 확장을 포함하도록 앱을 업데이트합니다.
+* Apple 푸시 알림 서비스(APNS)에 앱 ID를 등록합니다.
+* AJO에서 앱 표면을 만듭니다.
+* 푸시 메시지 필드를 포함하도록 스키마를 업데이트합니다.
+* Journey Optimizer 태그 확장 설치 및 구성
+* Journey Optimizer 태그 확장을 포함하도록 앱을 업데이트합니다.
 * Assurance에서 설정의 유효성을 검사합니다.
-* 테스트 메시지를 보냅니다.
+* Assurance에서 테스트 메시지 보내기
 * Journey Optimizer에서 고유한 푸시 알림 이벤트, 여정 및 경험을 정의합니다.
 * 앱 내에서 나만의 푸시 알림을 보냅니다.
 
 
-## APN에 앱 ID 등록
+## 앱 설정
 
-다음 단계는 Adobe Experience Cloud 전용이 아니며 APN 구성을 안내하도록 설계되었습니다.
+>[!TIP]
+>
+>앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 인앱 메시지](journey-optimizer-inapp.md) 자습서에서는 이 섹션을 건너뛸 수 있습니다.
+
+### APNS에 앱 ID 등록
+
+다음 단계는 Adobe Experience Cloud에만 해당되지 않으며 APNS 구성을 안내하도록 설계되었습니다.
 
 ### 개인 키 만들기
 
@@ -60,34 +66,36 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    ![새 키 만들기](assets/mobile-push-apple-dev-new-key.png)
 
 1. 다음을 제공합니다. **[!UICONTROL 키 이름]**.
-1. 다음 항목 선택 **[!UICONTROL APN]** 확인란.
+1. 다음 항목 선택 **[!UICONTROL Apple 푸시 알림 서비스] (APNs)** 확인란.
 1. 선택 **[!UICONTROL 계속]**.
    ![새 키 구성](assets/mobile-push-apple-dev-config-key.png)
 1. 구성을 검토하고 다음을 선택합니다. **[!UICONTROL 등록]**.
 1. 다운로드 `.p8` 개인 키. 앱 표면 구성에서 사용됩니다.
-1. 다음을 기록해 둡니다. [!UICONTROL 키 ID]. 앱 표면 구성에서 사용됩니다.
-1. 다음을 기록해 둡니다. [!UICONTROL 팀 ID]. 앱 표면 구성에서 사용됩니다.
+1. 다음을 기록해 둡니다. **[!UICONTROL 키 ID]**. 앱 표면 구성에서 사용됩니다.
+1. 다음을 기록해 둡니다. **[!UICONTROL 팀 ID]**. 앱 표면 구성에서 사용됩니다.
    ![주요 세부 정보](assets/push-apple-dev-key-details.png)
 
 추가 설명서는 다음과 같습니다. [여기에서 찾음](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
-## 데이터 수집에서 앱 푸시 자격 증명 추가
+### 데이터 수집에서 앱 푸시 자격 증명 추가
 
 1. 다음에서 [데이터 수집 인터페이스](https://experience.adobe.com/data-collection/), 선택 **[!UICONTROL 앱 표면]** 왼쪽 패널에서
 1. 구성을 만들려면 다음을 선택합니다 **[!UICONTROL 앱 표면 만들기]**.
    ![앱 표면 홈](assets/push-app-surface.png)
 1. 입력 **[!UICONTROL 이름]** 예를 들어 구성의 경우 `Luma App Tutorial`  .
-1. 모바일 애플리케이션 구성에서 을 선택합니다. **[!UICONTROL Apple iOS]**.
-1. 앱 ID(iOS 번들 ID) 필드에 모바일 앱 번들 ID를 입력합니다. Luma 앱과 함께 다음을 수행하는 경우 해당 값은 다음과 같습니다. `com.adobe.luma.tutorial.swiftui`.
-1. 전환 **[!UICONTROL 푸시 자격 증명]** 자격 증명을 추가하는 버튼입니다.
+1. 출처: **[!UICONTROL 모바일 애플리케이션 구성]**, 선택 **[!UICONTROL Apple iOS]**.
+1. 에 모바일 앱 번들 ID 입력 **[!UICONTROL 앱 ID (iOS 번들 ID)]** 필드. 예,  `com.adobe.luma.tutorial.swiftui`.
+1. 전환 **[!UICONTROL 푸시 자격 증명]** 자격 증명을 추가하려면 전환합니다.
 1. 을(를) 끌어다 놓기 `.p8` **Apple 푸시 알림 인증 키** 파일.
-1. 다음을 제공합니다 **[!UICONTROL 키 ID]**&#x200B;를 만드는 동안 할당된 10자 문자열 `p8` 인증 키. 다음 아래에서 찾을 수 있습니다 **[!UICONTROL 키]** 의 탭 **인증서, 식별자 및 프로필** Apple 개발자 포털 페이지의 페이지입니다.
-1. 다음을 제공합니다 **[!UICONTROL 팀 ID]**. 팀 ID는 **멤버십** Apple 개발자 포털 페이지 상단에 있는 탭이나 를 참조하십시오.
+1. 다음을 제공합니다 **[!UICONTROL 키 ID]**&#x200B;를 만드는 동안 할당된 10자 문자열 `p8` 인증 키. 다음 아래에서 찾을 수 있습니다 **[!UICONTROL 키]** 의 탭 **인증서, 식별자 및 프로필** Apple 개발자 포털 페이지의 페이지입니다. 참조: [개인 키 만들기](#create-a-private-key).
+1. 다음을 제공합니다 **[!UICONTROL 팀 ID]**. 팀 ID는 **멤버십** Apple 개발자 포털 페이지 상단에 있는 탭이나 를 참조하십시오. 참조: [개인 키 만들기](#create-a-private-key).
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    ![앱 표면 구성](assets/push-app-surface-config.png)
 
-## Adobe Journey Optimizer 태그 확장 설치
+### Journey Optimizer 태그 확장 설치
+
+앱이 Journey Optimizer에서 작동하려면 태그 속성을 업데이트해야 합니다.
 
 1. 다음으로 이동 **[!UICONTROL 태그]** > **[!UICONTROL 확장]** > **[!UICONTROL 카탈로그]**,
 1. 속성을 엽니다. 예 **[!UICONTROL Luma 모바일 앱 튜토리얼]**.
@@ -96,7 +104,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 1. 확장을 설치합니다.
 1. 다음에서 **[!UICONTROL 확장 설치]** 대화 상자
    1. 환경 선택(예: ) **[!UICONTROL 개발]**.
-   1. 다음 항목 선택 **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 데이터 세트 **[!UICONTROL 이벤트 데이터 세트]** 드롭다운 목록입니다.
+   1. 다음 항목 선택 **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 데이터 세트 **[!UICONTROL 이벤트 데이터 세트]** 목록을 표시합니다.
    1. 선택 **[!UICONTROL 라이브러리 및 빌드에 저장]**.
       ![AJO 확장 설정](assets/push-tags-ajo.png)
 
@@ -105,17 +113,17 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 >표시되지 않으면 `AJO Push Tracking Experience Event Dataset` 선택 사항으로 고객 지원 센터에 문의하십시오.
 >
 
-## 앱에서 Journey Optimizer 구현
+### 앱에서 Journey Optimizer 구현
 
 이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 메시징 SDK를 설치하고 등록해야 합니다. 이러한 단계가 명확하지 않으면 다음을 검토하십시오. [SDK 설치](install-sdks.md) 섹션.
 
 >[!NOTE]
 >
->을(를) 완료한 경우 [SDK 설치](install-sdks.md) 섹션에서 SDK가 이미 설치되어 있는 경우 #7단계로 건너뛸 수 있습니다.
+>을(를) 완료한 경우 [SDK 설치](install-sdks.md) 섹션에서 SDK가 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
 >
 
 1. Xcode에서 다음을 확인합니다 [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPMessaging` 는 가져오기 목록의 일부입니다.
 
    `import AEPMessaging`
@@ -145,16 +153,16 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    MobileCore.setPushIdentifier(deviceToken)
    ```
 
-   이 함수는 앱이 설치된 장치에 고유한 장치 토큰을 검색합니다. 그런 다음 설정한 구성을 사용하고 Apple의 푸시 알림 서비스(APNS)를 사용하는 푸시 알림 전달을 위한 토큰을 설정합니다.
+   이 함수는 앱이 설치된 장치에 고유한 장치 토큰을 검색합니다. 그런 다음 설정한 구성을 사용하여 푸시 알림 전달을 위한 토큰을 설정하고 Apple의 APNs(푸시 알림 서비스)를 사용합니다.
 
-## Assurance를 통해 유효성 검사
+## 설정 보증 유효성 검사
 
 1. 리뷰 [설치 지침](assurance.md) 섹션.
 1. 물리적 장치 또는 시뮬레이터에 앱을 설치합니다.
 1. 보증 생성 URL을 사용하여 앱을 실행합니다.
 1. Assurance UI에서 **[!UICONTROL 구성]**.
    ![구성 클릭](assets/push-validate-config.png)
-1. 다음 항목 선택 ![플러스](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 단추 옆에 있음 **[!UICONTROL 푸시 디버그]**.
+1. 선택 ![플러스](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 푸시 디버그]**.
 1. **[!UICONTROL 저장]**을 선택합니다.
    ![저장](assets/push-validate-save.png)
 1. 선택 **[!UICONTROL 푸시 디버그]** 왼쪽 탐색에서.
@@ -166,7 +174,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 1. (선택 사항) 의 기본 세부 정보 변경 **[!UICONTROL 제목]** 및 **[!UICONTROL 본문]**
 1. 선택 ![버그](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL 테스트 푸시 알림 보내기]**.
 1. 다음 확인: **[!UICONTROL 테스트 결과]**.
-1. 앱에 푸시 알림이 표시됩니다.
+1. 앱에 테스트 푸시 알림이 표시되는 것을 확인해야 합니다.
 
    <img src="assets/luma-app-push.png" width="300" />
 
@@ -177,7 +185,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 ### 스키마 업데이트
 
-스키마에 정의된 이벤트 목록의 일부로 아직 사용할 수 없는 새 이벤트 유형을 정의하려고 합니다.
+스키마에 정의된 이벤트 목록의 일부로 아직 사용할 수 없는 새 이벤트 유형을 정의하려고 합니다. 나중에 푸시 알림을 트리거할 때 이 이벤트 유형을 사용합니다.
 
 1. Journey Optimizer UI에서 **[!UICONTROL 스키마]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 찾아보기]** 을 클릭합니다.
@@ -190,6 +198,8 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
       ![이벤트 유형에 값 추가](assets/ajo-update-schema-eventtype-enum.png)
 
 ### 이벤트 정의
+
+Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지를 전송하기 위해 여정을 통합적으로 트리거할 수 있습니다. 다음을 참조하십시오 [이벤트 정보](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) 추가 정보.
 
 1. Journey Optimizer UI에서 **[!UICONTROL 구성]** 왼쪽 레일에서.
 
@@ -220,15 +230,15 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    1. 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 다음 옆에 **[!UICONTROL 이벤트 ID 조건]** 필드.
 
       1. 다음에서 **[!UICONTROL 이벤트 ID 조건 추가]** 대화 상자, 끌어서 놓기 **[!UICONTROL 이벤트 유형(eventType)]** 에 **[!UICONTROL 여기에 요소 드래그 앤 드롭]**.
-      1. 팝오버에서 아래로 스크롤하여 을 선택합니다. **[!UICONTROL application.test]**. 그런 다음 위로 스크롤하여 을 선택합니다. **[!UICONTROL 확인]**.
-      1. 클릭 **[!UICONTROL 확인]**.
+      1. 팝오버에서 아래로 스크롤하여 을 선택합니다. **[!UICONTROL application.test]** (이벤트 유형 목록에 이전에 의 일부로 추가한 이벤트 유형입니다. [스키마 업데이트](#update-your-schema)). 그런 다음 위로 스크롤하여 을 선택합니다. **[!UICONTROL 확인]**.
+      1. 선택 **[!UICONTROL 확인]** 을 눌러 조건을 저장합니다.
          ![이벤트 조건 편집](assets/ajo-edit-condition.png)
 
    1. 선택 **[!UICONTROL ECID (ECID)]** 다음에서 **[!UICONTROL 네임스페이스]** 목록을 표시합니다. 자동으로 **[!UICONTROL 프로필 식별자]** 필드는 로 채워집니다. **[!UICONTROL 맵 identityMap 키 ECID의 첫 번째 요소 ID]**.
    1. **[!UICONTROL 저장]**을 선택합니다.
       ![이벤트 편집 2단계](assets/ajo-edit-event2.png)
 
-이 자습서의 일부로 이전에 만든 모바일 앱 경험 이벤트 스키마를 기반으로 하는 이벤트 구성을 방금 만들었습니다. 이 이벤트 구성은 모바일 앱 식별자를 사용하여 들어오는 경험 이벤트를 필터링하므로 모바일 앱에서 시작된 이벤트만 다음 단계에서 빌드할 여정을 트리거하도록 합니다.
+이 자습서의 일부로 이전에 만든 모바일 앱 경험 이벤트 스키마를 기반으로 하는 이벤트 구성을 방금 만들었습니다. 이 이벤트 구성은 모바일 앱 식별자를 사용하여 들어오는 경험 이벤트를 필터링하므로 모바일 앱에서 시작된 이벤트만 다음 단계에서 빌드할 여정을 트리거하도록 합니다. 실제 시나리오에서는 외부 서비스에서 푸시 알림을 전송할 수 있지만 동일한 개념이 적용됩니다. 외부 애플리케이션에서 여정이 트리거되기 전에 이러한 이벤트에 조건을 적용하는 데 사용할 수 있는 특정 필드가 있는 Experience Platform으로 경험 이벤트를 보냅니다.
 
 ### 여정 만들기
 
@@ -244,11 +254,11 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    1. 선택 **[!UICONTROL 확인]**.
       ![여정 속성](assets/ajo-journey-properties.png)
 
-1. 여정 캔버스에서 **[!UICONTROL 이벤트]**&#x200B;을(를) 끌어다 놓습니다. ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!UICONTROL LumaTestEvent]** 캔버스에 **[!UICONTROL 시작 이벤트 또는 대상자 읽기 활동 선택]**.
+1. 여정 캔버스에서 **[!UICONTROL 이벤트]**&#x200B;을(를) 끌어다 놓습니다. ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!UICONTROL LumaTestEvent]** 표시되는 캔버스 **[!UICONTROL 시작 이벤트 또는 대상자 읽기 활동 선택]**.
 
-   * 이벤트: **[!UICONTROL LumaTestEvent]** 패널, 입력 **[!UICONTROL 레이블]**, 예 `Luma Test Event`.
+   * 다음에서 **[!UICONTROL 이벤트: LumaTestEvent]** 패널, 입력 **[!UICONTROL 레이블]**, 예 `Luma Test Event`.
 
-1. 다음에서 **[!UICONTROL 작업]** 드롭다운, 드래그 앤 드롭 ![푸시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL 푸시]** 다음에 있음 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 에 바로 표시 **[!UICONTROL LumaTestEvent]** 활동. 다음에서 **[!UICONTROL 작업: 푸시]** 창:
+1. 다음에서 **[!UICONTROL 작업]** 드롭다운, 드래그 앤 드롭 ![푸시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL 푸시]** 다음에 있음 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 의 오른쪽에 표시 **[!UICONTROL LumaTestEvent]** 활동. 다음에서 **[!UICONTROL 작업: 푸시]** 창:
 
    1. 다음을 제공합니다. **[!UICONTROL 레이블]**, 예 `Luma Test Push Notification`, 다음을 제공합니다. **[!UICONTROL 설명]**, 예 `Test push notification for Luma mobile app`, 선택 **[!UICONTROL 트랜잭션]** 다음에서 **[!UICONTROL 범주]** 나열 및 선택 **[!UICONTROL Luma]** 다음에서 **[!UICONTROL 푸시 표면]**.
    1. 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 콘텐츠 편집]** 실제 푸시 알림 편집을 시작합니다.
@@ -268,11 +278,11 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 ## 푸시 알림 트리거
 
-푸시 알림을 보낼 수 있는 모든 구성 요소가 준비되었습니다. 남은 것은 이 푸시 알림을 트리거하는 방법입니다. 본질적으로 이전에 확인한 것과 동일합니다. 적절한 페이로드가 있는 경험 이벤트를 보내면 됩니다.
+푸시 알림을 보낼 수 있는 모든 구성 요소가 준비되었습니다. 남은 것은 이 푸시 알림을 트리거하는 방법입니다. 본질적으로 앞에서 보았듯이 다음과 같습니다. 적절한 페이로드가 있는 경험 이벤트를 보내면 됩니다(에서와 같이) ![이벤트](events.md)).
 
 이번에는 보내려는 경험 이벤트가 간단한 XDM 사전을 빌드하여 생성되지 않습니다. 푸시 알림 페이로드를 나타내는 구조체를 사용합니다. 전용 데이터 유형 정의는 애플리케이션에서 경험 이벤트 페이로드 구성을 구현하는 방법에 대한 대체 방법입니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 모델]** > **[!UICONTROL XDM]** > **[!UICONTROL 테스트 푸시 페이로드]** 코드를 검사합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 모델]** > **[!UICONTROL XDM]** > **[!UICONTROL 테스트 푸시 페이로드]** 를 클릭하고 코드를 검사합니다.
 
    ```swift
    import Foundation
@@ -339,13 +349,13 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    <img src="assets/ajo-test-push.png" width="300" />
 
 
-## 앱에서 구현
+## 다음 단계
 
-이제 Luma 앱에 관련 있고 적용 가능한 경우 푸시 알림을 추가하기 시작하는 모든 도구가 있어야 합니다. 예를 들어, 앱에 로그인하거나 특정 지리적 위치에 접근할 때 사용자를 반기는 경우가 있습니다.
+이제 Journey Optimizer에서 푸시 알림을 전송하고 앱을 처리하여 여정을 작성할 수 있는 모든 도구가 있어야 합니다. 예를 들어, 앱에 로그인할 때 사용자를 환영합니다.
 
 >[!SUCCESS]
 >
->이제 Adobe Experience Platform Mobile SDK용 Adobe Journey Optimizer 및 Adobe Journey Optimizer 확장을 사용하여 푸시 알림에 대한 앱을 활성화했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>이제 Experience Platform Mobile SDK용 Journey Optimizer 및 Journey Optimizer 확장을 사용하여 푸시 알림용 앱을 활성화했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[Journey Optimizer으로 인앱 메시지](journey-optimizer-inapp.md)**
 
