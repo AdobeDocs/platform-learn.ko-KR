@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -48,11 +48,11 @@ Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자�
 * Journey Optimizer에서 나만의 캠페인 및 인앱 메시지 경험을 정의합니다.
 * 앱 내에서 고유한 인앱 메시지를 보냅니다.
 
-## 앱 설정
+## 설정
 
 >[!TIP]
 >
->앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 푸시 메시지](journey-optimizer-push.md) 자습서에서는 이 섹션을 건너뛸 수 있습니다.
+>환경을 의 일부로 이미 설정한 경우 [Journey Optimizer 푸시 메시지](journey-optimizer-push.md) 자습서에서는 이 섹션을 건너뛸 수 있습니다.
 
 ### APNS에 앱 ID 등록
 

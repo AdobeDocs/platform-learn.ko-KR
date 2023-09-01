@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2173'
 ht-degree: 2%
 
 ---
@@ -49,11 +49,11 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 * 앱 내에서 나만의 푸시 알림을 보냅니다.
 
 
-## 앱 설정
+## 설정
 
 >[!TIP]
 >
->앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 인앱 메시지](journey-optimizer-inapp.md) 자습서에서는 이 섹션을 건너뛸 수 있습니다.
+>환경을 의 일부로 이미 설정한 경우 [Journey Optimizer 인앱 메시지](journey-optimizer-inapp.md) 자습서에서는 이 섹션을 건너뛸 수 있습니다.
 
 ### APNS에 앱 ID 등록
 

@@ -2,9 +2,9 @@
 title: 프로필
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 2%
 
 ---
@@ -128,4 +128,4 @@ ht-degree: 2%
 >
 >이제 Edge Network 및 Adobe Experience Platform을 사용하여 (설정 시) 프로필의 속성을 업데이트하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-다음: **[Adobe Analytics에 데이터 매핑](analytics.md)**
+다음: **[지리적 위치 서비스 사용](places.md)**

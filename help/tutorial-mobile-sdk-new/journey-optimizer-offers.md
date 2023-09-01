@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,11 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 * 앱에서 의사 결정 관리의 오퍼를 구현합니다.
 
 
-## 앱 설정
+## 설정
 
 >[!TIP]
 >
->앱을 의 일부로 이미 설정한 경우 [Target을 사용하여 A/B 테스트 설정](target.md) 자습서를 건너뛸 수 있습니다. [Adobe Journey Optimizer - Decisioning 태그 확장 설치](#install-adobe-journey-optimizer---decisioning-tags-extension) 및 [스키마 업데이트](#update-your-schema).
+>환경을 의 일부로 이미 설정한 경우 [Target을 사용하여 A/B 테스트 설정](target.md) 자습서를 건너뛸 수 있습니다. [Adobe Journey Optimizer - Decisioning 태그 확장 설치](#install-adobe-journey-optimizer---decisioning-tags-extension) 및 [스키마 업데이트](#update-your-schema).
 
 ### Edge 구성 업데이트
 
@@ -368,7 +368,7 @@ Assurance에서 오퍼 구현을 확인하려면 다음을 수행하십시오.
 
 * 오퍼에 다른 매개 변수 적용(예: 우선 순위, 최대 가용량)
 * 앱에서 프로필 속성 수집(참조 [프로필](profile.md))을 만들고 이러한 프로필 속성을 사용하여 대상자를 빌드합니다. 그런 다음 이러한 대상을 의사 결정의 자격 규칙의 일부로 사용합니다.
-* 두 개 이상의 결정 범위 결합
+* 두 개 이상의 결정 범위를 결합합니다.
 
 >[!SUCCESS]
 >
