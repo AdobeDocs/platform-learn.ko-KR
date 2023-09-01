@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK 설치
 description: 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법을 알아봅니다.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 * 에 설명된 확장을 사용하여 태그 라이브러리를 성공적으로 빌드했습니다. [이전 단원](configure-tags.md).
 * 의 개발 환경 파일 ID [모바일 설치 지침](configure-tags.md#generate-sdk-install-instructions).
-* 다운로드됨, 비어 있음 [샘플 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}).
-* 경험 [XCode](https://developer.apple.com/xcode/{target="_blank"}).
+* 다운로드됨, 비어 있음 [샘플 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* 경험 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 학습 목표
 
@@ -80,7 +80,7 @@ import AEPAssurance
 
 ## AppDelegate 업데이트
 
-다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** Xcode Project navigator에서.
+다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** 를 입력합니다.
 
 1. 설정 `@AppStorage` 값 `environmentFileId` 의 6단계에서 태그에서 검색한 개발 환경 파일 ID 값으로 [SDK 설치 지침 생성](configure-tags.md#generate-sdk-install-instructions).
 

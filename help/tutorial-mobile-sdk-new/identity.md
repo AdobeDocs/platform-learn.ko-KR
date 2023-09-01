@@ -3,9 +3,9 @@ title: 신원
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 6%
 
 ---
@@ -51,7 +51,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 사용자가 앱에 로그인할 때 표준 ID(이메일)와 사용자 지정 ID(Luma CRM ID)를 모두 업데이트하려고 합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func updateIdentities(emailAddress: String, crmId: String)` 함수 구현. 다음 코드를 함수에 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 `func updateIdentities(emailAddress: String, crmId: String)` 함수 구현. 다음 코드를 함수에 추가합니다.
 
    ```swift
    // Set up identity map
@@ -122,7 +122,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL 로그인 시트]** xcode Project 탐색기에서 를 선택하고 **[!UICONTROL 로그아웃]** 단추를 클릭합니다. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL 로그인 시트]** xcode 프로젝트 탐색기에서 를 선택하고 **[!UICONTROL 로그아웃]** 단추를 클릭합니다. 다음 코드를 추가합니다.
 
    ```swift
    // call removeIdentities
@@ -144,7 +144,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. **에 대한 Assurance 웹 UI를 살펴봅니다[!UICONTROL Edge Identity 업데이트 Id]**이벤트 **[!UICONTROL com.adobe.grifcon.mobile]** 공급업체.
+1. 에 대한 Assurance 웹 UI를 살펴봅니다. **[!UICONTROL Edge Identity 업데이트 Id]** 다음에서 이벤트 발생 **[!UICONTROL com.adobe.grifcon.mobile]** 공급업체.
 1. 이벤트를 선택하고 **[!UICONTROL ACPExtensionEventData]** 개체. 업데이트한 ID가 표시됩니다.
    ![id 업데이트 확인](assets/identity-validate-assurance.png)
 

@@ -2,9 +2,9 @@
 title: 라이프사이클 데이터
 description: 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 이제 프로젝트를 업데이트하여 라이프사이클 이벤트를 등록할 수 있습니다.
 
-1. Xcode 프로젝트 탐색기에서 Luma > Luma > SceneDelegate로 이동합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** 를 입력합니다.
 
 1. 앱을 시작할 때 앱이 백그라운드 상태에서 다시 시작되는 경우 iOS에서 `sceneWillEnterForeground:` delegate 메서드 및 여기서 라이프사이클 시작 이벤트를 트리거할 수 있습니다. 이 코드를 추가할 위치 `func sceneWillEnterForeground(_ scene: UIScene)`:
 
@@ -87,24 +87,23 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 1. 선택 **[!UICONTROL 초기 빌드]** 사용할 라이브러리로 사용됩니다.
 1. **[!UICONTROL 새 규칙 만들기]**를 선택합니다.
    ![새 규칙 만들기](assets/rules-create-new.png)
-1. 다음에서 [!UICONTROL 규칙 만들기] 화면, 입력 `Application Status` 대상 **[!UICONTROL 이름]**.
+1. 다음에서 **[!UICONTROL 규칙 만들기]** 화면, 입력 `Application Status` 대상 **[!UICONTROL 이름]**.
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]** 아래 **[!UICONTROL 이벤트]**.
    ![규칙 만들기 대화 상자](assets/rule-create-name.png)
-1. 다음에서 [!UICONTROL 이벤트 구성] 단계:
+1. 다음에서 **[!UICONTROL 이벤트 구성]** 단계:
    1. 선택 **[!UICONTROL 모바일 코어]** (으)로 **[!UICONTROL 확장]**.
    1. 선택 **[!UICONTROL 전경]** (으)로 **[!UICONTROL 이벤트 유형]**.
    1. **[!UICONTROL 변경사항 유지]**를 선택합니다.
       ![규칙 이벤트 구성](assets/rule-event-configuration.png)
-1. Create Rule 화면으로 돌아가서 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]** 다음에 **[!UICONTROL 모바일 코어 - 전경]**.
+1. 뒤로 이동 **[!UICONTROL 규칙 만들기]** 화면, 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]** 다음에 **[!UICONTROL 모바일 코어 - 전경]**.
    ![다음 이벤트 구성](assets/rule-event-configuration-next.png)
-1. 다음에서 [!UICONTROL 이벤트 구성] 단계:
+1. 다음에서 **[!UICONTROL 이벤트 구성]** 단계:
    1. 선택 **[!UICONTROL 모바일 코어]** (으)로 **[!UICONTROL 확장]**.
    1. 선택 **[!UICONTROL 배경]** (으)로 **[!UICONTROL 이벤트 유형]**.
    1. **[!UICONTROL 변경사항 유지]**를 선택합니다.
       ![규칙 이벤트 구성](assets/rule-event-configuration-background.png)
-1. Create Rule 화면으로 돌아가서 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]** 아래 **[!UICONTROL 작업]**.
-   ![규칙 추가 작업](assets/rule-action-button.png)
-1. 다음에서 [!UICONTROL 작업 구성] 단계:
+      ![규칙 추가 작업](assets/rule-action-button.png)
+1. 다음에서 **[!UICONTROL 작업 구성]** 단계:
    1. 선택 **[!UICONTROL Experience Edge 네트워크 Adobe]** (으)로 **[!UICONTROL 확장]**.
    1. 선택 **[!UICONTROL Edge Network로 이벤트 전달]** (으)로 **[!UICONTROL 작업 유형]**.
    1. **[!UICONTROL 변경사항 유지]**를 선택합니다.

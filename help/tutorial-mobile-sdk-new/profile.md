@@ -2,9 +2,9 @@
 title: 프로필
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '594'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 사용자가 이전에 앱에서 구매했는지 여부를 빠르게 알 수 있는 타겟팅 및/또는 개인화에 유용합니다. Luma 앱에서 설정해 보겠습니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** >  **[!UICONTROL MobileSDK]** 및 찾기 `func updateUserAttribute(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** >  **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func updateUserAttribute(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
 
    ```swift
    // Create a profile map
@@ -62,7 +62,7 @@ ht-degree: 2%
 
    1. 를 사용합니다. `profileMap` 사전을 값에 추가 `attributeDict` 매개 변수 `UserProfile.updateUserAttributes` API 호출.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 제품]** > **[!UICONTROL 제품 보기]** xcode Project Navigator에서 `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 추가할 수 있습니다):
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 제품]** > **[!UICONTROL 제품 보기]** 를 클릭하고 호출을 찾습니다. `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 추가할 수 있습니다):
 
    ```swift
    // Update attributes
@@ -75,7 +75,7 @@ ht-degree: 2%
 
 사용자의 속성을 업데이트하면 다른 Adobe SDK에서 사용할 수 있지만 속성을 명시적으로 검색할 수도 있습니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > 일반 > **[!UICONTROL HomeView]** xcode Project navigator에서 `.onAppear` 수정자. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > 일반 > **[!UICONTROL HomeView]** xcode Project 탐색기에서 `.onAppear` 수정자. 다음 코드를 추가합니다.
 
    ```swift
    // Get attributes
@@ -113,9 +113,13 @@ ht-degree: 2%
    1. 선택 <img src="assets/saveforlater.png" width="15" />.
    1. 선택 <img src="assets/addtocart.png" width="20" />.
    1. 선택 <img src="assets/purchase.png" width="15" />.
-   1. 다음으로 돌아가기: **[!UICONTROL 홈]** 화면. 다음에 대한 업데이트된 값이 표시됩니다. **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]**.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+   1. 다음으로 돌아가기: **[!UICONTROL 홈]** 화면. 추가된 배지가 표시됩니다. <img src="assets/person-badge-icon.png" width="15" />.
+
+      <img src="./assets/personbadges.png" width="200">
+
+
 
 1. Assurance UI에 **[!UICONTROL 사용자 프로필 업데이트]** 및 **[!UICONTROL getUserAttributes]** 업데이트된 이벤트 `profileMap` 값.
    ![프로필 유효성 검사](assets/profile-validate.png)
