@@ -3,10 +3,10 @@ title: 모바일 앱에서 Adobe Experience Cloud 구현 자습서 개요
 description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는 방법을 알아봅니다. 이 튜토리얼에서는 샘플 Swift 앱에서의 Experience Cloud 애플리케이션 구현을 안내합니다.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 11%
+source-wordcount: '725'
+ht-degree: 10%
 
 ---
 
@@ -30,6 +30,8 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 * 모바일 태그 속성을 구성합니다.
 * Experience Platform 데이터 세트를 설정합니다(선택 사항).
 * 앱에 태그 확장 설치 및 구현
+* 에 Experience Cloud 매개 변수를 올바르게 전달 [웹 보기](web-views.md).
+* 을 사용하여 구현의 유효성 검사 [Adobe Experience Platform 보증](assurance.md).
 * 다음 Adobe Experience Cloud 애플리케이션/확장을 추가합니다.
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [라이프사이클 데이터 수집](lifecycle-data.md)
@@ -37,14 +39,14 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
    * [동의](consent.md)
    * [신원](identity.md)
    * [프로필](profile.md)
+   * [장소](places.md)
+   * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Journey Optimizer을 사용한 푸시 메시지](journey-optimizer-push.md)
    * [Journey Optimizer으로 Im-App 메시지 보내기](journey-optimizer-inapp.md)
    * [Journey Optimizer이 포함된 오퍼](journey-optimizer-offers.md)
    * [Target을 사용한 A/B 테스트](target.md)
 
-* 에 Experience Cloud 매개 변수를 올바르게 전달 [웹 보기](web-views.md).
-* 을 사용하여 구현의 유효성 검사 [Adobe Experience Platform 보증](assurance.md).
 
 >[!NOTE]
 >
@@ -72,14 +74,18 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 
 모든 Experience Cloud 고객은 Mobile SDK를 배포하는 데 필요한 기능에 액세스할 수 있어야 합니다.
 
-또한 사용자가 익숙하다고 가정합니다. [!DNL Swift]. 전문가가 아니어도 단원을 완료할 수는 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
+>[!NOTE]
+>
+>iOS을 플랫폼으로 사용합니다. [!DNL Swift] 프로그래밍 언어로, [!DNL SwiftUI] UI 프레임워크 및 [!DNL Xcode] as the integrated development environment (IDE). 그러나 설명된 구현 개념의 대부분은 다른 개발 플랫폼에 대해 유사합니다. 이는 사용자가 익숙하다고 가정합니다. [!DNL Swift] 및 [!DNL SwiftUI]. 전문가가 아니어도 단원을 완료할 수는 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
+
 
 ## Luma 앱 다운로드
 
-두 가지 버전의 샘플 앱을 다운로드할 수 있습니다.
+두 가지 버전의 샘플 앱을 다운로드할 수 있습니다. 두 버전 모두 다운로드/클론 복제 가능 [Github](https://git.corp.adobe.com/rmaur/Luma). 다음 두 개의 폴더를 찾을 수 있습니다.
 
-1. [비어 있음](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): 이 자습서에서 실습 연습을 완료하는 데 필요한 Experience Cloud 코드가 없는 버전
-1. [전체 구현](https://git.corp.adobe.com/Luma{target="_blank"}): 참조용으로 전체 Experience Cloud 구현이 포함된 버전입니다.
+
+1. [시작](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): 이 자습서에서 실습형 연습을 완료하는 데 사용해야 하는 대부분의 Experience Platform Mobile SDK 코드에 대해 코드가 없거나 자리 표시자 코드가 있는 프로젝트.
+1. [완료](https://git.corp.adobe.com/Luma{target="_blank"}): 전체 구현이 포함된 버전을 참조할 수 있습니다.
 
 그럼 시작해 보겠습니다!
 

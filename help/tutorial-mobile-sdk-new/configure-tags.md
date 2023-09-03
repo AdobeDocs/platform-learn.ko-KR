@@ -3,7 +3,7 @@ title: 태그 속성 구성
 description: 에서 태그 속성을 구성하는 방법을 알아봅니다 [!UICONTROL 데이터 수집] 인터페이스.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 9%
@@ -129,7 +129,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
    ![환경 홈 화면](assets/tags-environments.png)
 
-1. 다음에서 [!UICONTROL 모바일 설치 지침] 대화 상자에서 **[!UICONTROL iOS]** 탭.
+1. 다음에서 **[!UICONTROL 모바일 설치 지침]** 대화 상자에서 **[!UICONTROL iOS]** 탭.
 
 1. 복사할 수 있습니다. ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 코코아팟을 사용하여 프로젝트를 설정하는 지침입니다. CocoaPod는 SDK 버전 및 다운로드를 관리하는 데 사용됩니다. 자세한 내용은 다음을 참조하십시오. [설명서](https://cocoapods.org/).
 

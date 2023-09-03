@@ -3,10 +3,10 @@ title: Assurance 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '738'
-ht-degree: 10%
+source-wordcount: '765'
+ht-degree: 9%
 
 ---
 
@@ -37,7 +37,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 다음 단계를 완료하여 조직에서 Assurance에 액세스할 수 있는지 확인하십시오.
 
 1. 방문 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Experience Cloud에 대해 Adobe ID 자격 증명을 사용하여 로그인합니다.
+1. Experience Cloud을 위해 Adobe ID 자격 증명을 사용하여 로그인합니다.
 1. 다음 항목이 표시되면 **[!UICONTROL 세션]** 그런 다음 액세스 권한을 갖습니다. (베타) 액세스 페이지가 표시되면 다음을 선택합니다. **[!UICONTROL 등록]** 등록합니다.
 
 ## 구현
@@ -56,6 +56,8 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
    }
    ```
 
+   이 코드는 앱이 백그라운드에 있고 딥링크를 사용하여 열리면 보증 세션을 시작합니다.
+
 추가 정보를 찾을 수 있음 [여기](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## 서명
@@ -63,21 +65,21 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 Xcode에서 응용 프로그램을 처음 실행하기 전에 서명을 업데이트하십시오.
 
 1. Xcode에서 프로젝트를 엽니다.
-1. 선택 **[!UICONTROL Luma]** 네비게이터에서.
+1. 선택 **[!UICONTROL Luma]** 프로젝트 탐색기를 참조하십시오.
 1. 다음 항목 선택 **[!UICONTROL Luma]** 타겟.
 1. 다음 항목 선택 **서명 및 기능** 탭.
-1. 구성 **[!UICONTROL 서명 자동 관리]**, **[!UICONTROL 팀]**, 및 **[!UICONTROL 번들 식별자]**.
+1. 구성 **[!UICONTROL 서명 자동 관리]**, **[!UICONTROL 팀]**, 및 **[!UICONTROL 번들 식별자]**&#x200B;또는 특정 Apple 개발 프로비저닝 세부 정보를 사용하십시오.
 
    ![Xcode 서명 기능](assets/xcode-signing-capabilities.png)
 
 ## 기본 URL 설정
 
 1. Xcode에서 프로젝트로 이동합니다.
-1. 선택 **[!UICONTROL Luma]** 네비게이터에서.
+1. 선택 **[!UICONTROL Luma]** 프로젝트 탐색기를 참조하십시오.
 1. 다음 항목 선택 **[!UICONTROL Luma]** 타겟.
 1. 다음 항목 선택 **정보** 탭.
 1. 기본 URL을 추가하려면 아래로 스크롤하여 **URL 유형** 및 선택 **+** 단추를 클릭합니다.
-1. 설정 **식별자** 을(를) 구성하는 번들 식별자 [서명](#signing) (예 `com.adobe.luma.tutorial.swiftui`) 및 **URL 체계** 끝 `lumatutorialswiftui`.
+1. 설정 **식별자** 을(를) 구성하는 번들 식별자 [서명](#signing) (예 `com.adobe.luma.tutorial.swiftui`) 및 a 설정 **URL 체계**, 예 `lumatutorialswiftui`.
 
    ![보증 url](assets/assurance-url-type.png)
 
@@ -106,7 +108,7 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
    시뮬레이터를 사용하는 경우:
 
    1. 선택 **[!UICONTROL 링크 복사]**.
-   1. 복사본을 사용하여 딥링크 복사 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 버튼을 클릭하고 딥링크를 사용하여 시뮬레이터에서 Safari가 있는 앱을 엽니다.
+   1. 다음을 사용하여 딥링크 복사 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  딥 링크를 사용하여 시뮬레이터에서 Safari로 앱을 엽니다.
       ![보증 복사 링크](assets/assurance-copy-link.png)
 
 1. 앱이 로드되면 7단계에 표시된 PIN을 입력하라는 모달 대화 상자가 표시됩니다.
@@ -119,15 +121,15 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
 1. 연결에 성공하면 다음을 볼 수 있습니다.
    * 앱 위에 떠 있는 보증 아이콘.
 
-   <img src="assets/assurance-modal.png" width="300">
+     <img src="assets/assurance-modal.png" width="300">
 
-   * Assurance 웹 기반 UI에서 제공되는 Experience Cloud 업데이트로, 다음을 표시합니다.
+   * Assurance UI에서 제공되는 Experience Cloud 업데이트로, 다음을 표시합니다.
 
       1. 앱에서 들어오는 경험 이벤트.
       1. 선택한 이벤트에 대한 세부 정보.
       1. 장치 및 타임라인.
 
-     ![보증 이벤트](assets/assurance-events.png)
+         ![보증 이벤트](assets/assurance-events.png)
 
 문제가 발생하는 경우 다음을 검토하십시오. [기술](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 

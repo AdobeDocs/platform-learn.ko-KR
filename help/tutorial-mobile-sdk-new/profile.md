@@ -2,9 +2,9 @@
 title: 프로필
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '612'
 ht-degree: 2%
 
 ---
@@ -41,16 +41,14 @@ ht-degree: 2%
 
 ## 사용자 특성 설정 및 업데이트
 
-사용자가 이전에 앱에서 구매했는지 여부를 빠르게 알 수 있는 타겟팅 및/또는 개인화에 유용합니다. Luma 앱에서 설정해 보겠습니다.
+사용자의 과거 또는 최근 구매 여부를 빠르게 파악하려면 앱의 타겟팅 및/또는 개인화에 유용합니다. Luma 앱에서 설정해 보겠습니다.
 
 1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** >  **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func updateUserAttribute(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
 
    ```swift
-   // Create a profile map
+   // Create a profile map, add attributes to the map and update profile using the map
    var profileMap = [String: Any]()
-   // Add attributes to profile map
    profileMap[attributeName] = attributeValue
-   // Use profile map to update user attributes
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
@@ -60,22 +58,21 @@ ht-degree: 2%
 
    1. 를 사용하여 사전에 요소를 추가합니다. `attributeName` (예 `isPaidUser`), 및 `attributeValue` (예 `yes`).
 
-   1. 를 사용합니다. `profileMap` 사전을 값에 추가 `attributeDict` 매개 변수 `UserProfile.updateUserAttributes` API 호출.
+   1. 를 사용합니다. `profileMap` 사전을 값에 추가 `attributeDict` 매개 변수 [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 호출.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 제품]** > **[!UICONTROL 제품 보기]** 를 클릭하고 호출을 찾습니다. `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 추가할 수 있습니다):
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 제품]** > **[!UICONTROL 제품 보기]** 를 클릭하고 호출을 찾습니다. `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 추가할 수 있습니다). 다음 코드를 추가합니다.
 
    ```swift
    // Update attributes
    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
-추가 설명서를 찾을 수 있습니다 [여기](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## 사용자 속성 가져오기
 
-사용자의 속성을 업데이트하면 다른 Adobe SDK에서 사용할 수 있지만 속성을 명시적으로 검색할 수도 있습니다.
+사용자의 속성을 업데이트하면 다른 Adobe SDK에서 사용할 수 있지만, 속성을 명시적으로 검색하여 앱이 원하는 대로 동작하도록 할 수도 있습니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > 일반 > **[!UICONTROL HomeView]** xcode Project 탐색기에서 `.onAppear` 수정자. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL HomeView]** xcode Project 탐색기에서 `.onAppear` 수정자. 다음 코드를 추가합니다.
 
    ```swift
    // Get attributes
@@ -91,7 +88,7 @@ ht-degree: 2%
 
    이 코드:
 
-   1. 호출 `UserProfile.getUserAttributes` 을(를) 사용하여 종료 `iPaidUser` 속성 이름 을 단일 요소로 사용 `attributeNames` 배열입니다.
+   1. 호출 [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 을 사용한 API `iPaidUser` 속성 이름 을 단일 요소로 사용 `attributeNames` 배열입니다.
    1. 그런 다음 의 값을 확인합니다. `isPaidUser` 속성 및 시기 `yes`, 다음에 배지를 추가합니다. <img src="assets/paiduser.png" width="20" /> 아이콘 을 클릭하여 제품에서 사용할 수 있습니다.
 
 추가 설명서를 찾을 수 있습니다 [여기](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
@@ -106,18 +103,25 @@ ht-degree: 2%
    1. Assurance 아이콘을 왼쪽으로 이동합니다.
    1. 선택 **[!UICONTROL 홈]** 을 클릭합니다.
    1. 로그인 시트를 열려면 다음을 선택합니다 <img src="assets/login.png" width="15" /> 추가할 수 있습니다.
+
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
    1. 임의의 이메일과 고객 ID를 삽입하려면 <img src="assets/insert.png" width="15" /> 추가할 수 있습니다 .
    1. 선택 **[!UICONTROL 로그인]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
+
    1. 선택 **[!UICONTROL 제품]** 을 클릭합니다.
    1. 제품 하나를 선택하십시오.
    1. 선택 <img src="assets/saveforlater.png" width="15" />.
    1. 선택 <img src="assets/addtocart.png" width="20" />.
    1. 선택 <img src="assets/purchase.png" width="15" />.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
    1. 다음으로 돌아가기: **[!UICONTROL 홈]** 화면. 추가된 배지가 표시됩니다. <img src="assets/person-badge-icon.png" width="15" />.
 
-      <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/personbadges.png" width="300">
 
 
 

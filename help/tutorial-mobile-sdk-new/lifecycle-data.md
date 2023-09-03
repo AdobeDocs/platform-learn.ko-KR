@@ -2,9 +2,9 @@
 title: 라이프사이클 데이터
 description: 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '613'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,8 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 선택 **[!UICONTROL 배경]** (으)로 **[!UICONTROL 이벤트 유형]**.
    1. **[!UICONTROL 변경사항 유지]**를 선택합니다.
       ![규칙 이벤트 구성](assets/rule-event-configuration-background.png)
-      ![규칙 추가 작업](assets/rule-action-button.png)
+1. 뒤로 이동 **[!UICONTROL 규칙 만들기]** 화면, 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]** 아래 **[!UICONTROL 작업]**.
+   ![규칙 추가 작업](assets/rule-action-button.png)
 1. 다음에서 **[!UICONTROL 작업 구성]** 단계:
    1. 선택 **[!UICONTROL Experience Edge 네트워크 Adobe]** (으)로 **[!UICONTROL 확장]**.
    1. 선택 **[!UICONTROL Edge Network로 이벤트 전달]** (으)로 **[!UICONTROL 작업 유형]**.

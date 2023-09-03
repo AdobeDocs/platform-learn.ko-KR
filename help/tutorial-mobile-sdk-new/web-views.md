@@ -3,9 +3,9 @@ title: 웹 보기 처리
 description: 모바일 앱에서 WebViews를 사용하여 데이터 수집을 처리하는 방법에 대해 알아봅니다.
 jira: KT-6987
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '456'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 잠재적 추적 문제
 
-앱의 기본 부분과 WebView에서 데이터를 전송하는 경우 각각은 고유한 Experience Cloud ID(ECID)를 생성하므로 히트가 끊기고 방문/방문자 데이터가 부풀려집니다. ECID에 대한 자세한 내용은 [ECID 개요](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+앱의 기본 부분과 앱 내의 WebView에서 데이터를 전송하는 경우 각각은 고유한 Experience Cloud ID(ECID)를 생성하므로 히트가 끊기고 방문/방문자 데이터가 부풀려집니다. ECID에 대한 자세한 내용은 [ECID 개요](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
 이러한 바람직하지 않은 상황을 해결하려면 사용자의 ECID를 앱의 기본 부분에서 앱에서 사용할 WebView로 전달하는 것이 중요합니다.
 
@@ -39,7 +39,7 @@ WebView의 Experience Cloud ID 서비스 JavaScript 확장은 새 ID에 대한 �
 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 정보]** > **[!UICONTROL 서비스 약관]**&#x200B;을 클릭하고 `func loadUrl()` 의 함수 `final class SwiftUIWebViewModel: ObservableObject` 클래스. 웹 보기를 처리하기 위해 다음 호출을 추가합니다.
 
 ```swift
-// Adobe Experience Platform - Handle Web View
+// Handle web view
 AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
     if let error = error {
         print("Error with Webview", error)
@@ -59,7 +59,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 }
 ```
 
-다음 `AEPEdgeIdentity.Identity.getUrlVariables` API는 URL에 대해 ECID 등과 같은 모든 관련 정보를 포함하도록 변수를 설정합니다. 이 예에서는 로컬 파일을 사용하고 있지만 원격 페이지에도 동일한 개념이 적용됩니다.
+다음 [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API는 URL에 대해 ECID 등과 같은 모든 관련 정보를 포함하도록 변수를 설정합니다. 이 예에서는 로컬 파일을 사용하고 있지만 원격 페이지에도 동일한 개념이 적용됩니다.
 
 다음에 대해 자세히 알아볼 수 있습니다. `Identity.getUrlVariables` 의 API [Edge Network 확장 API 참조 안내서를 위한 ID](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 

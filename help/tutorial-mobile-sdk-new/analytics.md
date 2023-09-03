@@ -3,9 +3,9 @@ title: Analytics 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하는 방법에 대해 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 ### 예 #1 - s.products
 
-좋은 예는 다음과 같습니다. [products 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=ko-KR) 처리 규칙을 사용하여 채울 수 없습니다. XDM 구현을 사용하면 productListItems에 필요한 모든 데이터를 전달하고 s.products는 Analytics 매핑을 통해 자동으로 채워집니다.
+좋은 예는 다음과 같습니다. [products 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=ko-KR) 처리 규칙을 사용하여 채울 수 없습니다. XDM 구현을 사용하면에서 필요한 모든 데이터를 전달합니다 `productListItems` 및 `s.products` Analytics 매핑을 통해 자동으로 채워집니다.
 
 이 개체:
 
@@ -56,7 +56,7 @@ ht-degree: 3%
 ]
 ```
 
-이 경우 다음과 같은 결과가 발생합니다.
+결과 위치:
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >현재 `productListItems[N].SKU` 자동 매핑에서 무시됩니다.
+
 
 ### 예 #2 - scAdd
 
@@ -80,7 +81,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 }
 ```
 
-이 경우 다음과 같은 결과가 발생합니다.
+결과 위치:
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ s.events = "scAdd"
 }
 ```
 
-이 경우 다음과 같은 결과가 발생합니다.
+결과 위치:
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## Assurance를 통해 유효성 검사
 
-사용 [보증 QA 도구](assurance.md) experienceEvent를 보내고 있으며 XDM 데이터가 올바르고 Analytics 매핑이 예상대로 발생하고 있는지 확인할 수 있습니다. 예:
+사용 [보증](assurance.md) 경험 이벤트를 보내고 있으며 XDM 데이터가 올바르고 Analytics 매핑이 예상대로 발생하고 있는지 확인할 수 있습니다. 예:
 
 1. productListAdds 이벤트를 보냅니다.
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 예:
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 

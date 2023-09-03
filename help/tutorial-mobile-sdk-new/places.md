@@ -2,9 +2,9 @@
 title: 장소
 description: 모바일 앱에서 위치 지리적 위치 서비스를 사용하는 방법을 알아봅니다.
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1754'
 ht-degree: 3%
 
 ---
@@ -88,8 +88,8 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. 다음으로 이동 **[!UICONTROL 태그]** 모바일 태그 속성을 찾아 속성을 엽니다.
 1. 선택 **[!UICONTROL 확장]**.
 1. 선택 **[!UICONTROL 카탈로그]**.
-1. 검색 **[!UICONTROL Adobe Journey Optimizer - Decisioning]** 확장명.
-1. 확장을 설치합니다. 확장은 추가 구성이 필요하지 않습니다.
+1. 검색 **[!UICONTROL 위치]** 확장명.
+1. 확장을 설치합니다.
 
    ![Decisioning 확장 추가](assets/tag-places-extension.png)
 
@@ -116,7 +116,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 
 ### 태그 업데이트
 
-위치 확장은 지리적 위치 이벤트를 모니터링하는 기능을 제공하며 이러한 이벤트를 기반으로 작업을 트리거할 수 있습니다. 이 기능을 사용하면 앱에서 구현해야 하는 API 코딩을 최소화할 수 있습니다.
+태그에 대한 위치 확장 기능은 지리적 위치 이벤트를 모니터링하고 이러한 이벤트를 기반으로 작업을 트리거할 수 있는 기능을 제공합니다. 이 기능을 사용하면 앱에서 구현해야 하는 API 코딩을 최소화할 수 있습니다.
 
 **데이터 요소**
 
@@ -128,7 +128,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. 다음에서 **[!UICONTROL 데이터 요소 만들기]** 화면에서 이름을 입력합니다(예: ). `Name - Entered`.
 1. 선택 **[!UICONTROL 위치]** 다음에서 **[!UICONTROL 확장]** 목록을 표시합니다.
 1. 선택 **[!UICONTROL 이름]** 다음에서 **[!UICONTROL 데이터 요소 유형]** 목록을 표시합니다.
-1. ** 선택[!UICONTROL 현재 POI]**아래 **[!UICONTROL TARGET]**.
+1. 선택 **[!UICONTROL 현재 POI]** 아래 **[!UICONTROL TARGET]**.
 1. 선택 **[!UICONTROL 라이브러리에 저장]**.
    ![데이터 요소](assets/tags-create-data-element.png)
 
@@ -148,9 +148,9 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 
 **규칙**
 
-이제 이러한 데이터 요소로 작업할 규칙을 정의하려고 합니다.
+그런 다음 이러한 데이터 요소로 작업할 규칙을 정의합니다.
 
-1. 선택 **[!UICONTROL 규칙]** 왼쪽 레일에서.
+1. 태그 속성에서 다음을 수행합니다. 선택 **[!UICONTROL 규칙]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 규칙 추가]**.
 1. 다음에서 **[!UICONTROL 규칙 만들기]** 화면에서 규칙 이름을 입력합니다(예: ). `POI - Entry`.
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래 **[!UICONTROL 이벤트]**.
@@ -158,7 +158,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
    1. **[!UICONTROL 변경사항 유지]**를 선택합니다.
       ![태그 이벤트](assets/tags-event-mobile-core.png).
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래 **[!UICONTROL 작업]**.
-   1. 선택 **[!UICONTROL 모바일 코어]** 출처: **[!UICONTROL 확장]** 목록, 선택 **[!UICONTROL 데이터 첨부]** 출처: **[!UICONTROL 작업 유형]** 목록을 표시합니다. 이 작업은 페이로드 데이터를 첨부합니다.
+   1. 선택 **[!UICONTROL 모바일 코어]** 다음에서 **[!UICONTROL 확장]** 목록, 선택 **[!UICONTROL 데이터 첨부]** 출처: **[!UICONTROL 작업 유형]** 목록. 이 작업은 페이로드 데이터를 첨부합니다.
    1. 다음에서 **[!UICONTROL JSON 페이로드]**&#x200B;을(를) 클릭하고 다음 페이로드를 붙여 넣습니다.
 
       ```json
@@ -183,7 +183,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
       }
       ```
 
-      다음 `{%% ... %%}` 를 선택하여 값을 쉽게 삽입할 수도 있습니다 ![데이터](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 대화 상자 옆의 대화 상자에서 데이터 요소 선택
+      을 삽입할 수도 있습니다 `{%% ... %%}` 를 선택하여 JSON의 데이터 요소 자리 표시자 값 ![데이터](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). 팝업 대화 상자를 통해 만든 데이터 요소를 선택할 수 있습니다.
 
    1. **[!UICONTROL 변경사항 유지]**를 선택합니다.
       ![태그 작업](assets/tags-action-mobile-core.png)
@@ -249,7 +249,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 Assurance에서 설정을 확인하려면:
 
 1. Assurance UI로 이동합니다.
-1. 왼쪽 레일에서 아직 사용할 수 없는 경우 선택 **[!UICONTROL 구성]** 왼쪽 레일에서 다음을 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 이벤트]** 및 **[!UICONTROL 맵 및 시뮬레이션]** 아래 **[!UICONTROL 장소 서비스]**.
+1. 왼쪽 레일에서 아직 사용할 수 없는 경우 **[!UICONTROL 구성]** 왼쪽 레일에서 다음을 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 이벤트]** 및 **[!UICONTROL 맵 및 시뮬레이션]** 아래 **[!UICONTROL 장소 서비스]**.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 선택 **[!UICONTROL 맵 및 시뮬레이션]** 왼쪽 레일에서.
 1. Places 서비스에 정의된 POI 중 하나를 선택하고 팝업에서 을 선택합니다. ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 시작 이벤트 시뮬레이션]**.
@@ -291,12 +291,21 @@ Assurance에서 설정을 확인하려면:
    ]
    ```
 
-1. Xcode 프로젝트 탐색기에서 Luma > Luma > Utils > MobileSDK로 이동하여 함수 processRegionEvent(regionEvent: PlacesRegionEvent, forRegion: CLRregion) async 함수를 찾습니다. 이 함수는 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API.
-1. Xcode의 프로젝트 탐색기에서 Luma > Luma > 보기 > 위치 > GeofenceSheet로 이동합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.다음 코드를 추가합니다.
+
+   ```swift
+   // Process geolocation event
+   Places.processRegionEvent(regionEvent, forRegion: region)
+   ```
+
+   이 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API는 지리적 위치 정보를 장소 서비스에 전달합니다.
+
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 위치]** > **[!UICONTROL Geofence 시트]** Xcode의 Project navigator에서.
 
    1. [입력] 단추에 다음 코드를 입력합니다
 
    ```swift
+   // Simulate geofence entry event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
    }
@@ -305,6 +314,7 @@ Assurance에서 설정을 확인하려면:
    1. Exit 단추에 다음 코드를 입력합니다
 
    ```swift
+   // Simulate geofence exit event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
    }
@@ -321,13 +331,13 @@ iOS 내의 위치 관리자 구현에 대한 세부 사항을 설명하는 것�
 
 1. 지도를 빙빙 돌려 가운데에 있는 파란색 원이 POI 중 하나(예: 런던) 위에 있는지 확인합니다.
 
-1. 파란색 탭 <img src="assets/geobutton.png" width="20" /> 오른쪽 하단에 카테고리와 이름이 표시될 때까지 반복합니다.
+1. 누르기 <img src="assets/geobutton.png" width="20" /> 오른쪽 하단에 카테고리와 이름이 표시될 때까지 반복합니다.
 
-1. POI 레이블을 탭하여 근처 POI 시트를 엽니다.
+1. POI의 레이블을 탭하면 **[!UICONTROL 인근 POI]** 시트.
 
    <img src="assets/appgeolocation.png" width="300" />
 
-1. 시작 또는 종료 단추를 눌러 앱의 지리적 위치 이벤트를 시뮬레이션합니다.
+1. 누르기 **[!UICONTROL 시작]** 또는 **[!UICONTROL 종료]** 앱에서 지오펜스 시작 및 지오펜스 종료 이벤트를 시뮬레이션하는 단추입니다.
 
    <img src="assets/appentryexit.png" width="300" />
 
@@ -337,9 +347,11 @@ iOS 내의 위치 관리자 구현에 대한 세부 사항을 설명하는 것�
 
 ## 다음 단계
 
-이제 앱에서 지리적 위치 기능에 더 많은 기능을 추가하려면 모든 도구가 있어야 합니다. 이벤트를 Edge Network로 전달하고 데이터스트림을 통해 Experience Platform으로 전달하면 앱에 사용된 프로필에 대해 경험 이벤트가 표시되는 것을 볼 수 있습니다. 이러한 경험 이벤트는 Journey Optimizer에서 여정을 트리거하는 데 사용할 수 있습니다(참조). [푸시 알림](journey-optimizer-inapp.md) 및 [인앱 메시징](journey-optimizer-push.md) (Journey Optimizer 포함). 예를 들어, 누군가 실제 스토어의 geofence에 입장할 때 앱 사용자에게 푸시 알림을 보내는 일반적인 예.
+이제 앱에서 지리적 위치 기능에 더 많은 기능을 추가하려면 모든 도구가 있어야 합니다. Edge Network에 이벤트를 전달했으므로 앱을 설치했으면 다음과 같습니다. [Experience Platform](platform.md)앱에서 사용되는 프로필에 대해 경험 이벤트가 표시되는 것을 확인해야 합니다.
 
-앱에 대한 기능이 구현된 것을 보았습니다. 대부분은 태그 속성에서 정의한 위치 서비스 및 데이터 요소와 규칙에 의해 구동됩니다. 또는 를 사용하여 앱에서 직접 동일한 기능을 구현할 수 있습니다 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API(참조) [이벤트](events.md) (추가 정보) 를 채우지 않은 placeContext 개체가 포함된 XDM 페이로드가 있는 경우
+이 자습서의 Journey Optimizer 섹션에서 경험 이벤트를 사용하여 여정을 트리거할 수 있습니다( 참조) [푸시 알림](journey-optimizer-inapp.md) 및 [인앱 메시징](journey-optimizer-push.md) (Journey Optimizer 포함). 예를 들어 앱 사용자가 실제 스토어의 geofence에 들어오면 일부 제품 프로모션과 함께 푸시 알림을 전송하는 일반적인 사례입니다.
+
+주로 태그 속성에서 정의한 Places 서비스 및 데이터 요소와 규칙에 의해 앱에 대한 기능이 구현된 것을 보았습니다. 따라서 앱의 코드를 최소화합니다. 또는 를 사용하여 앱에서 직접 동일한 기능을 구현할 수 있습니다 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API(참조) [이벤트](events.md) (자세한 내용) 를 채우지 않고 `placeContext` 개체.
 
 >[!SUCCESS]
 >

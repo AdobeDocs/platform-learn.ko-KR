@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK 설치
 description: 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법을 알아봅니다.
 hide: true
-source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '943'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 * 에 설명된 확장을 사용하여 태그 라이브러리를 성공적으로 빌드했습니다. [이전 단원](configure-tags.md).
 * 의 개발 환경 파일 ID [모바일 설치 지침](configure-tags.md#generate-sdk-install-instructions).
-* 다운로드됨, 비어 있음 [샘플 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* 비어 있는 을(를) 다운로드했습니다. [샘플 앱](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
 * 경험 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 학습 목표
@@ -44,10 +44,10 @@ Xcode에서 다음을 사용합니다. **[!UICONTROL 파일]** > **[!UICONTROL �
 | [AEP Edge ID](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | AEP Edge Identity 모바일 확장을 사용하면 Adobe Experience Platform SDK 및 Edge Network 확장을 사용할 때 모바일 애플리케이션에서 사용자 ID 데이터를 처리할 수 있습니다. |
 | [AEP Edge 동의](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | AEP 동의 수집 모바일 확장을 사용하면 Adobe Experience Platform SDK 및 Edge Network 확장을 사용할 때 모바일 애플리케이션에서 동의 환경 설정을 수집할 수 있습니다. |
 | [AEP 사용자 프로필](https://github.com/adobe/aepsdk-userprofile-ios.git) | Adobe Experience Platform 사용자 프로필 모바일 확장 기능은 Adobe Experience Platform SDK에 대한 사용자 프로필을 관리하기 위한 확장 기능입니다. |
-| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | Adobe Experience Platform Places 확장은 Adobe Experience Platform Swift SDK용 확장입니다. AEPPlaces 확장을 사용하면 위치 UI 및 Adobe Adobe 실행 규칙에 정의된 대로 지리적 위치 이벤트를 추적할 수 있습니다. |
-| [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP 메시징 확장은 Adobe Experience Platform Swift SDK용 확장입니다. AEP 메시징 확장을 사용하면 푸시 알림 토큰과 푸시 알림 클릭스루 피드백을 Adobe Experience Platform에 보낼 수 있습니다. |
+| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | AEPPlaces 확장을 사용하면 Adobe 위치 UI 및 Adobe 데이터 수집 태그 규칙에 정의된 대로 지리적 위치 이벤트를 추적할 수 있습니다. |
+| [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP 메시징 확장을 사용하면 푸시 알림 토큰과 푸시 알림 클릭스루 피드백을 Adobe Experience Platform에 보낼 수 있습니다. |
 | [AEP 최적화](https://github.com/adobe/aepsdk-optimize-ios) | AEP 최적화 확장은 Adobe Target 또는 Adobe Journey Optimizer Offer decisioning을 사용하여 Adobe Experience Platform Mobile SDK에서 실시간 개인화 워크플로우를 가능하게 하는 API를 제공합니다. 이를 위해서는 `AEPCore` 및 `AEPEdge` experience Edge 네트워크에 개인화 쿼리 이벤트를 전송하는 확장입니다. |
-| [AEP 보증](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance(프로젝트 그리폰)는 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 새롭고 혁신적인 제품입니다. |
+| [AEP 보증](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance(프로젝트 그리폰)는 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 새롭고 혁신적인 제품입니다. 이 확장 기능을 사용하면 앱을 보증 용도로 사용할 수 있습니다. |
 
 
 모든 패키지를 설치한 후 Xcode **[!UICONTROL 패키지 종속성]** 화면은 다음과 같아야 합니다.
@@ -57,7 +57,7 @@ Xcode에서 다음을 사용합니다. **[!UICONTROL 파일]** > **[!UICONTROL �
 
 ## 확장 가져오기
 
-Xcode에서 다음으로 이동합니다. **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 다음 가져오기를 추가합니다.
+Xcode에서 다음으로 이동합니다. **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 그리고 다음 가져오기가 이 소스 파일의 일부인지 확인하십시오.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -91,6 +91,7 @@ import AEPAssurance
 1. 에 다음 코드를 추가합니다 `application(_, didFinishLaunchingWithOptions)` 함수.
 
    ```swift
+   // Define extensions
    let extensions = [
        AEPIdentity.Identity.self,
        Lifecycle.self,
@@ -105,6 +106,7 @@ import AEPAssurance
        Assurance.self
    ]
    
+   // Register extensions
    MobileCore.registerExtensions(extensions, {
        // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
        Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
@@ -120,10 +122,6 @@ import AEPAssurance
    
        // assume unknown, adapt to your needs.
        MobileCore.setPrivacyStatus(.unknown)
-   
-       // update version and build
-       Logger.configuration.info("Luma - Updating version and build number...")
-       SettingsBundleHelper.setVersionAndBuildNumber()
    })
    ```
 
@@ -132,6 +130,8 @@ import AEPAssurance
 1. 필요한 확장을 등록합니다.
 1. 태그 속성 구성을 사용하도록 MobileCore 및 기타 확장을 구성합니다.
 1. 디버그 로깅을 활성화합니다. 자세한 내용 및 옵션은 [Adobe Experience Platform Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. 주기 모니터링을 시작합니다. 다음을 참조하십시오 [라이프사이클](lifecycle-data.md) 자세한 내용은 튜토리얼의 단계를 참조하십시오.
+1. 기본 동의를 알 수 없음으로 설정합니다. 다음을 참조하십시오 [동의](consent.md) 자세한 내용은 튜토리얼의 단계를 참조하십시오.
 
 >[!IMPORTANT]
 >
