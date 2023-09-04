@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2368'
 ht-degree: 2%
 
 ---
 
 # Journey Optimizer 오퍼
 
-Platform Mobile SDK를 사용하여 모바일 앱에서 Journey Optimizer 의사 결정 관리의 오퍼를 표시하는 방법을 알아봅니다.
+Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Journey Optimizer 의사 결정 관리의 오퍼를 표시하는 방법을 알아봅니다.
 
 Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모든 접점에서 고객에게 최상의 오퍼와 경험을 제공할 수 있습니다. 디자인한 후에는 개인화된 오퍼로 대상을 타기팅하십시오.
 
@@ -23,7 +23,7 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 
 >[!NOTE]
 >
->이 단원은 선택 사항이며 의사 결정 관리 기능을 사용하여 모바일 앱에 오퍼를 표시하려는 여정 최적화 사용자에게만 적용됩니다.
+>이 단원은 선택 사항이며 의사 결정 관리 기능을 사용하여 모바일 앱에 오퍼를 표시하려는 Journey Optimizer 사용자에게만 적용됩니다.
 
 
 ## 전제 조건
@@ -92,7 +92,7 @@ Assurance에서 설정을 확인하려면:
 1. Assurance UI로 이동합니다.
 1. 선택 **[!UICONTROL 구성]** 왼쪽 레일에서 다음을 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 설정 유효성 검사]** 아래 **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. 선택 **[!UICONTROL 설정 유효성 검사]** 왼쪽 레일에서. 데이터 스트림 설정과 SDK 설정이 모두 애플리케이션에서 검증되었습니다.
+1. 선택 **[!UICONTROL 설정 유효성 검사]** 왼쪽 레일에서. 애플리케이션의 데이터 스트림 설정과 SDK 설정이 모두 검증됩니다.
    ![AJO 의사 결정 유효성 검사](assets/ajo-decisioning-validation.png)
 
 
@@ -144,7 +144,7 @@ Assurance에서 설정을 확인하려면:
 
       아래 표를 사용하여 네 개의 다른 오퍼를 정의합니다.
 
-      | 오퍼 이름 | 오퍼 콘텐츠 |
+      | 오퍼 이름 | JSON의 오퍼 콘텐츠 |
       |---|---|
       | Luma - 물병 확인 | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luma - Desiree 피트니스 티 | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
@@ -192,10 +192,11 @@ Assurance에서 설정을 확인하려면:
 1. Journey Optimizer UI에서 **[!UICONTROL 오퍼]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 컬렉션]** 을 클릭합니다.
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 컬렉션 만들기]**.
-1. 다음에서 **[!UICONTROL 새 컬렉션]** 모달, 를 입력합니다. **[!UICONTROL 이름]** 컬렉션용, 예 `Luma - Mobile App Collection`, 선택 **[!UICONTROL 정적 컬렉션 만들기]**, 및 클릭 **[!UICONTROL 다음]**.
-1. 위치 **[!UICONTROL Luma - 모바일 앱 컬렉션]**컬렉션에 포함할 오퍼를 선택합니다. 이 자습서에서는 만든 오퍼 5개를 선택합니다.
-   ![오퍼 - 컬렉션](assets/ajo-collection-offersselected.png)
+1. 다음에서 **[!UICONTROL 새 컬렉션]** 대화 상자에서 **[!UICONTROL 이름]** 컬렉션용, 예 `Luma - Mobile App Collection`, 선택 **[!UICONTROL 정적 컬렉션 만들기]**, 및 클릭 **[!UICONTROL 다음]**.
+1. 위치 **[!UICONTROL Luma - 모바일 앱 컬렉션]**&#x200B;컬렉션에 포함할 오퍼를 선택합니다. 이 자습서에서는 만든 오퍼 5개를 선택합니다. 검색 필드를 사용하여 목록을 쉽게 필터링할 수 있습니다. 예를 들면 다음과 같습니다 **[!UICONTROL Luma]**.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+
+   ![오퍼 - 컬렉션](assets/ajo-collection-offersselected.png)
 
 
 ## 의사 결정 만들기
@@ -207,10 +208,10 @@ Assurance에서 설정을 확인하려면:
 평가 기준은 다음 두 가지를 결합한 것입니다.
 
 * 오퍼 컬렉션,
-* 자격 규칙: 예를 들어 오퍼는 특정 대상에만 사용할 수 있습니다.
+* 자격 규칙: 예를 들어, 오퍼는 특정 대상에만 사용할 수 있습니다.
 * 순위 방법: 여러 오퍼를 사용할 수 있는 경우 순위를 매기는 데 사용할 방법(예: 오퍼 우선 순위, 공식 또는 AI 모델 사용)을 선택합니다.
 
-다음을 참조하십시오 [오퍼를 만들고 관리하는 주요 단계](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 배치, 규칙, 등급, 오퍼, 표시, 컬렉션, 의사 결정 등이 서로 상호 작용하고 관련되는 방식을 더 잘 이해하고자 하는 경우. 이 자습서는 결정을 정의하는 유연성보다는 결정의 결과를 사용하는 데에만 중점을 둡니다.
+다음을 참조하십시오 [오퍼를 만들고 관리하는 주요 단계](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 배치, 규칙, 등급, 오퍼, 표시, 컬렉션, 의사 결정 등이 서로 상호 작용하고 관련되는 방식을 더 잘 이해하고자 하는 경우. 이 튜토리얼은 Journey Optimizer - 의사 결정 관리 내에서 결정을 정의하는 유연성이 아니라 의사 결정의 결과를 사용하는 데만 중점을 둡니다.
 
 1. Journey Optimizer UI에서 **[!UICONTROL 오퍼]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 결정]** 을 클릭합니다.
@@ -286,24 +287,38 @@ Assurance에서 설정을 확인하려면:
    ]
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 함수. 다음 코드 Inspect:
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 함수. 다음 코드를 추가합니다.
+
+   ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
+   Task {  
+      let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+      let identityMap = ["identityMap" : ecid]
+      let xdmData = ["xdm" : identityMap]
+      let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
+      Optimize.clearCachedPropositions()
+      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   이 함수:
 
    * xdm 사전 설정 `xdmData`오퍼를 제공해야 하는 프로필을 식별하는 ECID가 포함되어 있습니다.
-   * 정의 `decisionScope`, Journey Optimizer - 의사 결정 관리 UI에서 정의한 의사 결정을 기반으로 하며 다음 위치에서 복사된 의사 결정 범위를 사용하여 정의된 개체 [의사 결정 만들기](#create-a-decision).
-   * 는 다음 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다. Luma 앱은 구성 파일(`decisions.json`)는 다음 JSON 형식을 기반으로 범위 매개 변수를 검색합니다.
+   * 정의 `decisionScope`, Journey Optimizer - 의사 결정 관리 UI에서 정의한 의사 결정을 기반으로 하며 다음 위치에서 복사된 의사 결정 범위를 사용하여 정의된 개체 [의사 결정 만들기](#create-a-decision).  Luma 앱은 구성 파일(`decisions.json`)는 다음 JSON 형식을 기반으로 범위 매개 변수를 검색합니다.
 
      ```swift
      "scopes": [
          {
-             "name": "luma - Mobile App Decision",
-             "activityId": "xcore:offer-activity:177cdaa5e1fd589d",
-             "placementId": "xcore:offer-placement:13a3b264ce69bb14",
+             "name": "name of the scope",
+             "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
+             "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
              "itemCount": 2
          }
      ]
      ```
 
      그러나 모든 종류의 구현을 사용하여 API 최적화가 적절한 매개 변수를 가져오는지 확인할 수 있습니다(`activityId`, `placementId` 및, `itemCount`), 유효한 을 생성합니다. [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 구현을 위한 개체입니다.
+   * 는 다음 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
 1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL EdgeOffersView]** 를 입력합니다. 다음 찾기 `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 호출,
 
@@ -313,22 +328,24 @@ Assurance에서 설정을 확인하려면:
 1. 아직 **[!UICONTROL EdgeOffersView]**, 다음을 찾습니다. `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` 함수를 실행하고 다음 코드를 추가합니다.
 
    ```swift
-       Task {
-           await self.updatePropositionOD(
-               ecid: currentEcid,
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionOD(
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
+   // Update and then get propositions
+   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
+   Task {
+      await self.updatePropositionOD(
+          ecid: currentEcid,
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+     )
+   }
+   try? await Task.sleep(seconds: 2.0)
+   Task {
+      await self.getPropositionOD(
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+      )
+   }
    ```
 
    이 코드는 5단계와 6단계에서 설명한 함수를 사용하여 제안을 업데이트한 다음 결과를 검색합니다.

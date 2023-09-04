@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1569'
 ht-degree: 2%
 
 ---
 
 # Journey Optimizer 인앱 메시지
 
-Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 인앱 메시지를 만드는 방법을 알아봅니다.
+Experience Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 인앱 메시지를 만드는 방법을 알아봅니다.
 
 Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자에게 인앱 메시지를 보낼 수 있습니다. Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한 구성 및 통합이 제대로 되어 있는지 확인해야 합니다. Journey Optimizer의 인앱 메시지 데이터 흐름을 이해하려면 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
@@ -145,17 +145,8 @@ Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자�
    ]
    ```
 
-1. 추가 `MobileCore.setPushIdentifier` (으)로 `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 함수.
 
-   ```swift
-   // Send push token to Experience Platform
-   MobileCore.setPushIdentifier(deviceToken)
-   ```
-
-   이 함수는 앱이 설치된 장치에 고유한 장치 토큰을 검색합니다. 그런 다음 설정한 구성을 사용하여 푸시 알림 전달을 위한 토큰을 설정하고 Apple의 APNs(푸시 알림 서비스)를 사용합니다.
-
-
-## 설정 보증 유효성 검사
+## Assurance를 사용하여 설정 유효성 검사
 
 1. 리뷰 [설치 지침](assurance.md) 섹션.
 1. 물리적 장치 또는 시뮬레이터에 앱을 설치합니다.
@@ -166,8 +157,8 @@ Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자�
 1. **[!UICONTROL 저장]**을 선택합니다.
    ![저장](assets/assurance-in-app-config.png)
 1. 선택 **[!UICONTROL 인앱 메시징]** 왼쪽 탐색에서.
-1. 다음 항목 선택 **[!UICONTROL 유효성 검사]** 탭.
-1. 오류가 발생하지 않는지 확인합니다.
+1. 다음 항목 선택 **[!UICONTROL 유효성 검사]** 탭. 오류가 발생하지 않는지 확인합니다.
+
    ![인앱 유효성 검사](assets/assurance-in-app-validate.png)
 
 
@@ -193,7 +184,7 @@ Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자�
 1. 아래로 스크롤하여 **[!UICONTROL 작업]**, 및 선택 **[!UICONTROL 콘텐츠 편집]**.
 1. 다음에서 **[!UICONTROL 인앱 메시지]** 화면:
    1. 선택 **[!UICONTROL 모달]** (으)로 **[!UICONTROL 메시지 레이아웃]**.
-   2. 입력 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 대상 **[!UICONTROL 미디어 URL]**.
+   2. 입력 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 대상: **[!UICONTROL 미디어 URL]**.
    3. 입력 **[!UICONTROL 머리글]**, 예 `Welcome to this Luma In-App Message` 을(를) 입력합니다. **[!UICONTROL 본문]**, 예 `Triggered by pushing that button in the app...`.
    4. 입력 **[!UICONTROL 닫기]** (으)로 **[!UICONTROL 단추 #1 텍스트(기본)]**.
    5. 미리보기가 어떻게 업데이트되는지 확인합니다.
@@ -220,17 +211,18 @@ Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자�
 
 인앱 메시지를 보낼 수 있는 모든 구성 요소가 준비되었습니다. 남은 것은 앱에서 이 인앱 메시지를 트리거하는 방법입니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 호출하고 다음 코드를 추가합니다 `MobileCore.track` 함수, 매개 변수 기반 `action` 및 `data`.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 호출하고 다음 코드를 추가합니다 [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 함수, 매개 변수 기반 `action` 및 `data`.
 
 
    ```swift
-   // send trackAction event
+   // Send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
 1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL ConfigView]** 를 입력합니다. 인앱 메시지 단추에 대한 코드를 찾아 다음 코드를 추가합니다.
 
    ```swift
+   // Setting parameters and calling function to send in-app message
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }

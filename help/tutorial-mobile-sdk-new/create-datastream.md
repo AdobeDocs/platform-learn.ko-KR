@@ -3,10 +3,10 @@ title: 데이터스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 6%
+source-wordcount: '551'
+ht-degree: 7%
 
 ---
 
@@ -50,6 +50,8 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
 
 그런 다음 Experience Cloud 서비스를 데이터 스트림에 연결합니다. Platform Mobile SDK가 Edge Network로 데이터를 전송할 때 데이터 스트림은 다음 서비스로 데이터를 전송합니다.
 
+### Adobe Analytics
+
 1. **[!UICONTROL 서비스 추가]**&#x200B;를 선택합니다.
 
 1. 추가 **[!UICONTROL Adobe Analytics]** 다음에서 [!UICONTROL 서비스] 목록,
@@ -61,6 +63,9 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    ![데이터 스트림 서비스로 Adobe Analytics 추가](assets/datastream-service-aa.png)
+
+
+### Adobe Experience Platform
 
 Adobe Experience Platform 서비스를 활성화할 수도 있습니다.
 

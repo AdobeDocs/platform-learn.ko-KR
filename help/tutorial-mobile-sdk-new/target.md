@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1434'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Target Standard도 사용할 수 있어야 하지만 자습서에서는 Target P
 
 >[!TIP]
 >
->앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 오퍼](journey-optimizer-offers.md) 튜토리얼,
+>앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 오퍼](journey-optimizer-offers.md) 자습서를 건너뛸 수 있습니다. [Adobe Journey Optimizer - Decisioning 태그 확장 설치](#install-adobe-journey-optimizer---decisioning-tags-extension) 및 [스키마 업데이트](#update-your-schema).
 
 ### Edge 구성 업데이트
 
@@ -104,13 +104,13 @@ Assurance에서 설정을 확인하려면:
 
 1. Target UI에서 다음을 선택합니다. **[!UICONTROL 활동]** 을 클릭합니다.
 1. 선택 **[!UICONTROL 활동 만들기]** 및 **[!UICONTROL A/B 테스트]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
-1. 다음에서 **[!UICONTROL A/B 테스트 활동 만들기]** 모달, 선택 **[!UICONTROL 모바일]** (으)로 **[!UICONTROL 유형]**&#x200B;에서 작업 공간을 선택합니다. **[!UICONTROL 작업 영역 선택]** 목록을 만든 다음 목록에서 속성을 선택합니다. **[!UICONTROL 속성 선택]** 목록을 표시합니다.
+1. 다음에서 **[!UICONTROL A/B 테스트 활동 만들기]** 대화 상자, 선택 **[!UICONTROL 모바일]** (으)로 **[!UICONTROL 유형]**&#x200B;에서 작업 공간을 선택합니다. **[!UICONTROL 작업 영역 선택]** 목록을 만든 다음 목록에서 속성을 선택합니다. **[!UICONTROL 속성 선택]** 목록을 표시합니다.
 1. **[!UICONTROL 만들기]**를 선택합니다.
    ![Target 활동 만들기](assets/target-create-activity1.png)
 
 1. 다음에서 **[!UICONTROL 제목 없는 활동]** 화면, **[!UICONTROL 경험]** 단계:
 
-   1. 입력 `luma-mobileapp-abtest` 위치: **[!UICONTROL 위치 선택]** L** 아래[!UICONTROL 위치 1]**.
+   1. 입력 `luma-mobileapp-abtest` 위치: **[!UICONTROL 위치 선택]** 아래 **[!UICONTROL 위치 1]**.
    1. 선택 ![크레브론 다운](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) 다음에 **[!UICONTROL 기본 컨텐츠]** 및 선택 **[!UICONTROL JSON 오퍼 만들기]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
    1. 다음 JSON을에 복사 **[!UICONTROL 올바른 JSON 개체 입력]**.
 
@@ -194,9 +194,23 @@ Assurance에서 설정을 확인하려면:
    ]
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 ` func updatePropositionAT(ecid: String, location: String) async` 함수. Inspect 를 설정하는 코드
-   * XDM 사전 `xdmData`A/B 테스트를 제시해야 하는 프로필을 식별하기 위한 ECID가 포함된 와
-   * 다음 `decisionScope`: A/B 테스트를 표시할 위치의 배열입니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 ` func updatePropositionAT(ecid: String, location: String) async` 함수. 다음 코드를 추가합니다.
+
+   ```swift
+   Task {
+       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+       let identityMap = ["identityMap" : ecid]
+       let xdmData = ["xdm" : identityMap]
+       let decisionScope = DecisionScope(name: location)
+       Optimize.clearCachedPropositions()
+       Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   이 함수
+
+   * xdm 사전 설정 `xdmData`A/B 테스트를 제시해야 하는 프로필을 식별하기 위한 ECID가 포함된 와
+   * 다음을 정의합니다. `decisionScope`: A/B 테스트를 표시할 위치의 배열입니다.
 
    그런 다음 함수는 다음 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
