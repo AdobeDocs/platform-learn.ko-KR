@@ -4,10 +4,10 @@ description: Adobe Experience Platform으로 데이터를 전송하는 방법에
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 4%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -133,6 +133,9 @@ Platform 인터페이스에서
    이 시각화는 프로필에 함께 연결된 모든 ID와 해당 출처를 보여 줍니다. 다음은 이 Mobile SDK 자습서(데이터 소스 2)와 를 모두 완료하여 수집된 데이터로 구성된 ID 그래프의 예입니다. [Web SDK 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR) (데이터 소스 1):
 
    ![id 값 가져오기](assets/platform-profile-identitygraph.png)
+
+
+## 다음 단계
 
 Customer Journey Analytics에서 분석하고 Real-time Customer Data Platform에서 세그먼트를 작성하는 작업을 포함하여 마케터와 분석가가 Experience Platform에서 캡처한 데이터로 수행할 수 있는 작업이 훨씬 더 많습니다. 출발이 좋으시네요!
 

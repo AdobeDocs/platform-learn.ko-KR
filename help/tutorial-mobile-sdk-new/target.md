@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -218,7 +218,7 @@ Assurance에서 설정을 확인하려면:
    * 의사 결정 범위(A/B 테스트에서 정의한 위치)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
    * 앱에서 제대로 표시할 수 있는 콘텐츠의 결과를 래핑 해제합니다.
 
-1. 아직 **[!UICONTROL TargetOffersView]**, f 찾기`unc updatePropositions(location: String) async` 함수를 실행하고 다음 코드를 추가합니다.
+1. 아직 **[!UICONTROL TargetOffersView]**, 다음을 찾습니다. `func updatePropositions(location: String) async` 함수를 실행하고 다음 코드를 추가합니다.
 
    ```swift
        Task {
