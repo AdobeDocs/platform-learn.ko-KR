@@ -3,9 +3,9 @@ title: 웹 데이터에 대한 XDM 스키마 만들기
 description: 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1122'
 ht-degree: 6%
 
 ---
@@ -32,7 +32,7 @@ XDM 스키마에 대한 자세한 내용은 &quot; 과정을 참조하십시오.
 * XDM 스키마에 필드 그룹 추가
 * 모범 사례를 사용하여 웹 이벤트 데이터에 대한 XDM 스키마 만들기
 
-## 사전 요구 사항
+## 전제 조건
 
 데이터 수집 및 Adobe Experience Platform에 필요한 모든 프로비저닝 및 사용자 권한은에 설명되어 있습니다. [권한 구성](configure-permissions.md) 레슨.
 
@@ -87,7 +87,7 @@ XDM 스키마는 Experience Platform의 데이터를 설명하는 표준 방법�
 
 ![스키마 필드 그룹](assets/schema-consumer-experience-event.jpg)
 
-이 단원은 시작에 불과합니다. 고유한 웹 이벤트 스키마를 구축할 때 비즈니스 요구 사항을 탐색하고 문서화해야 합니다. 이 프로세스는 을(를) 만드는 것과 유사합니다 [비즈니스 요구 사항 문서](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html) 및 [솔루션 디자인 참조](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) Adobe Analytics 구현의 경우, 단, 다음과 같은 요구 사항이 포함되어야 합니다. _모든 다운스트림 데이터 수신자_ 플랫폼, Target 및 이벤트 전달 대상 등.
+이 단원은 시작에 불과합니다. 고유한 웹 이벤트 스키마를 구축할 때 비즈니스 요구 사항을 탐색하고 문서화해야 합니다. 이 프로세스는 을(를) 만드는 것과 유사합니다 [비즈니스 요구 사항 문서](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html) 및 [솔루션 디자인 참조](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) Adobe Analytics 구현의 경우, 단, 다음과 같은 요구 사항이 포함되어야 합니다. _모든 다운스트림 데이터 수신자_ Platform, Target 및 이벤트 전달 대상 등.
 
 
 ### identityMap 개체
