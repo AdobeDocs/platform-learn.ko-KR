@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2412'
 ht-degree: 2%
 
 ---
@@ -326,6 +326,23 @@ Assurance에서 설정을 확인하려면:
    * 제안에서 오퍼를 검색합니다.
    * 앱에서 제대로 표시될 수 있도록 오퍼의 콘텐츠를 래핑 해제합니다.
    * 트리거 `displayed()` 오퍼를 알리는 이벤트를 Edge Network로 다시 전송하는 오퍼에 대한 작업이 표시됩니다.
+
+1. 아직 **[!UICONTROL EdgeOffersView]**&#x200B;에 다음 코드를 추가합니다. `.onFirstAppear` 수정자. 이 코드는 오퍼를 업데이트하기 위한 콜백이 한 번만 등록되도록 합니다.
+
+   ```swift
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateOD(activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   }
+   ```
+
+1. 아직 **[!UICONTROL EdgeOffersView]**&#x200B;에 다음 코드를 추가합니다. `.task` 수정자. 이 코드는 보기를 새로 고칠 때 오퍼를 업데이트합니다.
+
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   ```
+
 
 
 ## 앱을 사용하여 유효성 검사
