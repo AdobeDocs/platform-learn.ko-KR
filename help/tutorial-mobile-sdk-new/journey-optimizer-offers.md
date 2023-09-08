@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2367'
 ht-degree: 2%
 
 ---
@@ -320,35 +320,12 @@ Assurance에서 설정을 확인하려면:
      그러나 모든 종류의 구현을 사용하여 API 최적화가 적절한 매개 변수를 가져오는지 확인할 수 있습니다(`activityId`, `placementId` 및, `itemCount`), 유효한 을 생성합니다. [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 구현을 위한 개체입니다.
    * 는 다음 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL EdgeOffersView]** 를 입력합니다. 다음 찾기 `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 호출,
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL EdgeOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,
 
-   * 의사 결정 범위(Journey Optimizer - 의사 결정 관리에서 정의함)를 기반으로 현재 프로필에 대한 제안을 검색하고
-   * 앱에서 제대로 표시할 수 있는 콘텐츠의 결과를 래핑 해제합니다.
-
-1. 아직 **[!UICONTROL EdgeOffersView]**, 다음을 찾습니다. `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` 함수를 실행하고 다음 코드를 추가합니다.
-
-   ```swift
-   // Update and then get propositions
-   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
-   Task {
-      await self.updatePropositionOD(
-          ecid: currentEcid,
-          activityId: activityId,
-          placementId: placementId,
-          itemCount: itemCount
-     )
-   }
-   try? await Task.sleep(seconds: 2.0)
-   Task {
-      await self.getPropositionOD(
-          activityId: activityId,
-          placementId: placementId,
-          itemCount: itemCount
-      )
-   }
-   ```
-
-   이 코드는 5단계와 6단계에서 설명한 함수를 사용하여 제안을 업데이트한 다음 결과를 검색합니다.
+   * 의사 결정 범위(Journey Optimizer - 의사 결정 관리에서 정의함)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
+   * 제안에서 오퍼를 검색합니다.
+   * 앱에서 제대로 표시될 수 있도록 오퍼의 콘텐츠를 래핑 해제합니다.
+   * 트리거 `displayed()` 오퍼를 알리는 이벤트를 Edge Network로 다시 전송하는 오퍼에 대한 작업이 표시됩니다.
 
 
 ## 앱을 사용하여 유효성 검사

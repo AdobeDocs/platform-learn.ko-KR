@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1519'
+ht-degree: 2%
 
 ---
 
@@ -214,29 +214,27 @@ Assurance에서 설정을 확인하려면:
 
    그런 다음 함수는 다음 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL TargetOffersView]** 를 입력합니다. 다음 찾기 `func getPropositionAT(location: String) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API 호출,
-   * 의사 결정 범위(A/B 테스트에서 정의한 위치)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
-   * 앱에서 제대로 표시할 수 있는 콘텐츠의 결과를 래핑 해제합니다.
+1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL TargetOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateAT(location: String) async {` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,
+   * 결정 범위(A/B 테스트에서 정의한 위치)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
+   * 제안에서 오퍼를 검색합니다.
+   * 앱에서 제대로 표시될 수 있도록 오퍼의 콘텐츠를 래핑 해제합니다.
+   * 트리거 `displayed()` 오퍼를 알리는 이벤트를 Edge Network로 다시 전송하는 오퍼에 대한 작업이 표시됩니다.
 
-1. 아직 **[!UICONTROL TargetOffersView]**, 다음을 찾습니다. `func updatePropositions(location: String) async` 함수를 실행하고 다음 코드를 추가합니다.
+1. 아직 **[!UICONTROL TargetOffersView]**&#x200B;에 다음 코드를 추가합니다. `.onFirstAppear` 수정자. 이 코드는 오퍼를 업데이트하기 위한 콜백이 한 번만 등록되도록 합니다.
 
    ```swift
-       Task {
-           await self.updatePropositionAT(
-               ecid: currentEcid,
-               location: location
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionAT(
-               location: location
-           )
-       }
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateAT(location: location)
+   }
    ```
 
-   이 코드는 5단계와 6단계에서 설명한 함수를 사용하여 제안을 업데이트한 다음 결과를 검색합니다.
+1. 아직 **[!UICONTROL TargetOffersView]**&#x200B;에 다음 코드를 추가합니다. `.task` 수정자. 이 코드는 보기를 새로 고칠 때 오퍼를 업데이트합니다.
 
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsAT(ecid: currentEcid, location: location)
+   ```
 
 ## 앱을 사용하여 유효성 검사
 
@@ -262,11 +260,11 @@ Assurance에서 A/B 테스트를 확인하려면 다음을 수행하십시오.
 1. 선택 **[!UICONTROL 요청]** 맨 위 막대에서. 다음을 확인함: **[!UICONTROL Target]** 요청.
    ![AJO 의사 결정 유효성 검사](assets/assurance-decisioning-requests.png)
 
-1. Target 오퍼에 대한 설정을 확인하는 추가 기능을 위해 시뮬레이트 및 이벤트 목록 탭을 탐색할 수 있습니다.
+1. 다음을 살펴볼 수 있습니다. **[!UICONTROL 시뮬레이트]** 및 **[!UICONTROL 이벤트 목록]** Target 오퍼에 대한 설정을 확인하는 추가 기능에 대한 탭입니다.
 
 ## 다음 단계
 
-관련성이 있고 적용 가능한 경우 더 많은 A/B 테스트 또는 다른 Target 활동(예: 경험 타기팅, 다변량 테스트)을 Luma 앱에 추가하기 시작할 수 있는 모든 도구가 있어야 합니다.
+관련성이 있고 적용 가능한 경우 더 많은 A/B 테스트 또는 다른 Target 활동(예: 경험 타기팅, 다변량 테스트)을 Luma 앱에 추가하기 시작할 수 있는 모든 도구가 있어야 합니다. 다음에서 사용할 수 있는 보다 심층적인 정보가 있습니다. [최적화 확장을 위한 Github 리포지토리](https://github.com/adobe/aepsdk-optimize-ios) 전용 링크에 대한 링크도 찾을 수 있습니다 [튜토리얼](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) Adobe Target 오퍼를 추적하는 방법에 대해 알아봅니다.
 
 >[!SUCCESS]
 >
