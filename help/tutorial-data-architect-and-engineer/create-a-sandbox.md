@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 2%
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 이 단원에서는 자습서의 나머지 부분에서 사용할 개발 환경 샌드박스를 만듭니다.
 
-샌드박스는 프로덕션 환경과 리소스 및 데이터를 혼합하지 않고 기능을 사용해 볼 수 있는 격리된 환경을 제공합니다. 자세한 내용은 [샌드박스 설명서](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ko).
+샌드박스는 프로덕션 환경과 리소스 및 데이터를 혼합하지 않고 기능을 사용해 볼 수 있는 격리된 환경을 제공합니다. 자세한 내용은 [샌드박스 설명서](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ko-KR).
 
 **데이터 설계자** 및 **데이터 엔지니어** 이 자습서 외부에서 샌드박스를 만들어야 합니다.
 
@@ -62,13 +62,13 @@ ht-degree: 2%
 
 샌드박스가 &quot;&quot;일 때까지 대기[!UICONTROL 활성]다음 연습을 계속하기 전에 &quot;.
 
-## 제품 프로필에 새 샌드박스 추가
+## 역할에 새 샌드박스 추가
 
 샌드박스가 활성화되면 이를 사용하려면 해당 샌드박스를 역할에 포함해야 합니다. 역할에 추가하려면(시스템 관리자 또는 제품 관리자 권한 필요):
 
 1. 로 이동 [!UICONTROL 권한] 화면
 1. 를 엽니다. `Luma Tutorial Platform` 역할
-1. _제거_ 다음 `Prod` 역할의 샌드박스
+1. 선택 사항 _제거_ 다음 `Prod` 역할의 샌드박스
 1. 추가 `Luma Tutorial` 샌드박스
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
 1. 다음에서 [!UICONTROL 샌드박스] 행, 선택 **[!UICONTROL 편집]**
