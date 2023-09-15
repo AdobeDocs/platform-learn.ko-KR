@@ -2,9 +2,9 @@
 title: 이벤트
 description: 모바일 앱에서 이벤트 데이터를 수집하는 방법에 대해 알아봅니다.
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Adobe Experience Platform Edge 확장은 이전에 정의한 XDM 스키마 다�
    * `commerce.productViews.id`: 제품의 SKU를 나타내는 문자열 값
    * `commerce.productViews.value`: 이벤트의 숫자 또는 부울 값. 부울(또는 Adobe Analytics의 &quot;카운터&quot;)인 경우 값은 항상 1로 설정됩니다. 숫자 또는 통화 이벤트인 경우 값은 1보다 클 수 있습니다.
 
-* 스키마에서 상거래 제품 보기 이벤트와 관련된 추가 데이터를 식별합니다. 이 예에서는 다음을 포함합니다 **[!UICONTROL productListItem]** 상거래 관련 이벤트와 함께 사용되는 표준 필드 세트입니다.
+* 스키마에서 상거래 제품 보기 이벤트와 관련된 추가 데이터를 식별합니다. 이 예에서는 다음을 포함합니다 **[!UICONTROL productListItem]** 상거래 관련 이벤트에 사용되는 표준 필드 세트입니다.
 
   ![제품 목록 항목 스키마](assets/datacollection-prodListItems-schema.png)
    * 주의: **[!UICONTROL productListItem]** 는 여러 제품을 제공할 수 있는 배열입니다.
@@ -189,6 +189,11 @@ var xdmData: [String: Any] = [
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>Android용으로 개발하는 경우 맵(`java.util.Map`)를 XDM 페이로드를 구성하는 기본 인터페이스입니다.
+
 
 ### 사용자 정의 필드 그룹
 
@@ -339,15 +344,7 @@ var xdmData: [String: Any] = [
 1. 앱을 실행하고 로그인하며 제품과 상호 작용합니다.
 
    1. Assurance 아이콘을 왼쪽으로 이동합니다.
-   1. 선택 **[!UICONTROL 홈]** 을 클릭합니다.
-   1. 다음 항목 선택 <img src="assets/login.png" width="15" /> 단추를 클릭하여 로그인 시트를 엽니다.
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. 다음 항목 선택 <img src="assets/insert.png" width="15" /> 임의의 이메일과 고객 id를 삽입하는 버튼입니다.
-   1. 선택 **[!UICONTROL 로그인]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. 선택 **[!UICONTROL 홈]** 탭 표시줄에서 **[!UICONTROL ECID]**, **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]** 홈 화면에서 다음을 수행합니다.
    1. 선택 **[!UICONTROL 제품]** 을 클릭합니다.
    1. 제품을 선택합니다.
    1. 선택 <img src="assets/saveforlater.png" width="15" />.

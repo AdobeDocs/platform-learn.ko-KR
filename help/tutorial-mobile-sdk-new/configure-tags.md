@@ -3,10 +3,10 @@ title: 태그 속성 구성
 description: 에서 태그 속성을 구성하는 방법을 알아봅니다 [!UICONTROL 데이터 수집] 인터페이스.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 9%
+source-wordcount: '1095'
+ht-degree: 8%
 
 ---
 
@@ -45,7 +45,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
       >[!NOTE]
       >
-      > 이 자습서에서 수행하는 것과 같은 Edge 기반 Mobile SDK 구현에 대한 기본 동의 설정은 [!UICONTROL 동의 확장] 및 이 아님 [!UICONTROL 개인 정보 보호] 를 태그 속성 구성에서 설정합니다. 이 단원의 뒷부분에서 동의 확장을 추가하고 구성합니다. 자세한 내용은 [설명서](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > 이 단원에서 수행하는 것과 같은 Edge 기반 Mobile SDK 구현에 대한 기본 동의 설정은 [!UICONTROL 동의 확장] 및 이 아님 [!UICONTROL 개인 정보 보호] 를 태그 속성 구성에서 설정합니다. 이 단원의 뒷부분에서 동의 확장을 추가하고 구성합니다. 자세한 내용은 [설명서](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. 새 속성을 엽니다.
@@ -112,13 +112,13 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
    1. 위치 **[!UICONTROL 데이터스트림]** 선택 **[!UICONTROL 데이터스트림]** 에서 생성한 항목 [이전 단계](create-datastream.md) 각 환경(예: **[!UICONTROL Luma 모바일 앱]**.
 
-   1. 다음을 지정합니다. **[!UICONTROL 에지 네트워크 도메인]** 다음 범위 내 **[!UICONTROL 도메인 구성]**. Edge Network 도메인은 샌드박스의 이름이며, 다음에 `data.adobedc.net`, 예 `techmarketingdemos.data.adobedc.net`.
+   1. 다음을 지정합니다. **[!UICONTROL 에지 네트워크 도메인]** 다음 범위 내 **[!UICONTROL 도메인 구성]**. Edge Network 도메인은 조직의 이름이며, 다음이 옵니다. `data.adobedc.net`, 예 `techmarketingdemos.data.adobedc.net`.
 
    1. 다음에서 **[!UICONTROL 라이브러리에 저장]** 메뉴, 선택 **[!UICONTROL 라이브러리 및 빌드에 저장]**.
 
       ![에지 네트워크 설정](assets/tags-extension-edge.png)
 
-라이브러리는 새로운 확장 및 구성을 위해 빌드됩니다. 성공적인 빌드는 <span style="color:green">●</span> 다음에서 **[!UICONTROL 초기 빌드]** 단추를 클릭합니다.
+라이브러리는 새로운 확장 및 구성을 위해 빌드되었습니다. 성공적인 빌드는 <span style="color:green">●</span> 다음에서 **[!UICONTROL 초기 빌드]** 단추를 클릭합니다.
 
 
 ## SDK 설치 지침 생성
@@ -131,7 +131,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 1. 다음에서 **[!UICONTROL 모바일 설치 지침]** 대화 상자에서 **[!UICONTROL iOS]** 탭.
 
-1. 복사할 수 있습니다. ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 코코아팟을 사용하여 프로젝트를 설정하는 지침입니다. CocoaPod는 SDK 버전 및 다운로드를 관리하는 데 사용됩니다. 자세한 내용은 다음을 참조하십시오. [설명서](https://cocoapods.org/).
+1. 복사할 수 있습니다. ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 코코아팟을 사용하여 프로젝트를 설정하는 지침입니다. CocoaPod는 SDK 버전 및 다운로드를 관리하는 데 사용됩니다. 자세한 내용은 다음을 참조하십시오. [Cocoapods 설명서](https://cocoapods.org/). Android를 개발 플랫폼으로 사용하는 경우 Gradle은 SDK 버전, 다운로드 및 종속성을 관리하는 도구입니다. 자세한 내용은 다음을 참조하십시오. [Gradle 설명서](https://gradle.org/)
 
    설치 지침은 구현을 위한 좋은 시작점을 제공합니다. 추가 정보를 찾을 수 있습니다 [여기](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 * 웹에서 태그 속성은 JavaScript로 렌더링되고, 그러면 일반적으로 클라우드에서 호스팅됩니다. 해당 JavaScript 파일은 웹 사이트에서 직접 참조됩니다.
 
-* 모바일 태그 속성에서 규칙 및 구성은 클라우드에서 호스팅되는 JSON 파일로 렌더링됩니다. JSON 파일은 모바일 앱의 Mobile Core 확장에 의해 다운로드되고 읽혀집니다. 확장은 함께 작동하는 별도의 SDK입니다. 태그 속성에 확장을 추가하는 경우 앱도 업데이트해야 합니다. 확장 설정을 변경하거나 규칙을 만드는 경우 업데이트된 태그 라이브러리를 게시하면 해당 변경 사항이 앱에 반영됩니다.
+* 모바일 태그 속성에서 규칙 및 구성은 클라우드에서 호스팅되는 JSON 파일로 렌더링됩니다. JSON 파일은 모바일 앱의 Mobile Core 확장에 의해 다운로드되고 읽혀집니다. 확장은 함께 작동하는 별도의 SDK입니다. 태그 속성에 확장을 추가하는 경우 앱도 업데이트해야 합니다. 확장 설정을 변경하거나 규칙을 만드는 경우 업데이트된 태그 라이브러리를 게시하면 해당 변경 사항이 앱에 반영됩니다. 이러한 유연성으로 인해 앱의 코드를 변경하고 앱을 앱스토어에 다시 제출하지 않고도 설정(예: Adobe 분석 보고서 세트 ID)을 수정하거나 앱의 동작(이후 단원에서 볼 수 있듯이 데이터 요소 및 규칙 사용)을 변경할 수 있습니다.
 
 >[!SUCCESS]
 >

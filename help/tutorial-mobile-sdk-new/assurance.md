@@ -3,9 +3,9 @@ title: Assurance 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 9%
 
 ---
@@ -34,11 +34,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 
 ## 액세스 확인
 
-다음 단계를 완료하여 조직에서 Assurance에 액세스할 수 있는지 확인하십시오.
-
-1. 방문 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Experience Cloud을 위해 Adobe ID 자격 증명을 사용하여 로그인합니다.
-1. 다음 항목이 표시되면 **[!UICONTROL 세션]** 그런 다음 액세스 권한을 갖습니다. (베타) 액세스 페이지가 표시되면 다음을 선택합니다. **[!UICONTROL 등록]** 등록합니다.
+조직에서 Assurance에 액세스할 수 있는지 확인합니다. 사용자는 Adobe Experience Platform의 프로필에 추가되어야 합니다. 다음을 참조하십시오 [사용자 액세스](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) 자세한 내용은 Assurance 안내서 를 참조하십시오.
 
 ## 구현
 
@@ -70,7 +66,7 @@ Xcode에서 응용 프로그램을 처음 실행하기 전에 서명을 업데�
 1. 다음 항목 선택 **서명 및 기능** 탭.
 1. 구성 **[!UICONTROL 서명 자동 관리]**, **[!UICONTROL 팀]**, 및 **[!UICONTROL 번들 식별자]**&#x200B;또는 특정 Apple 개발 프로비저닝 세부 정보를 사용하십시오.
 
-   ![Xcode 서명 기능](assets/xcode-signing-capabilities.png)
+   ![Xcode 서명 기능](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## 기본 URL 설정
 

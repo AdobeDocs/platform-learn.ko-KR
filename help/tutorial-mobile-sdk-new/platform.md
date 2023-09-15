@@ -4,20 +4,22 @@ description: Adobe Experience Platform으로 데이터를 전송하는 방법에
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '968'
+ht-degree: 5%
 
 ---
 
 # Adobe Experience Platform으로 데이터 보내기
 
-Adobe Experience Platform으로 데이터를 전송하는 방법에 대해 알아봅니다.
+모바일 앱 데이터를 Adobe Experience Platform으로 전송하는 방법에 대해 알아봅니다.
 
 이 선택적 단원은 Real-time Customer Data Platform(Real-Time CDP), Journey Optimizer 및 Customer Journey Analytics의 모든 고객과 관련이 있습니다. Experience Cloud 제품의 기반인 Experience Platform은 모든 데이터(Adobe 및 비Adobe)를 강력한 고객 프로필로 변환하는 개방형 시스템입니다. 이러한 고객 프로필은 실시간으로 업데이트되며 AI 기반 인사이트를 사용하여 모든 채널에 적합한 경험을 제공할 수 있습니다.
 
 다음 [이벤트](events.md), [라이프사이클](lifecycle-data.md), 및 [신원](identity.md) 이전 단원에서 수집하여 Platform Edge Network로 전송한 데이터는 Adobe Experience Platform을 포함하여 데이터스트림에 구성된 서비스로 전달됩니다.
+
+![아키텍처](assets/architecture-aep.png)
 
 
 ## 전제 조건

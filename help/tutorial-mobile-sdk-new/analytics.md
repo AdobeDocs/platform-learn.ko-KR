@@ -3,7 +3,7 @@ title: Analytics 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하는 방법에 대해 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 3%
@@ -15,6 +15,8 @@ ht-degree: 3%
 모바일 데이터를 Adobe Analytics에 매핑하는 방법을 알아봅니다.
 
 다음 [이벤트](events.md) 이전 단원에서 수집하여 Platform Edge Network로 전송한 데이터는 Adobe Analytics을 포함하여 데이터스트림에 구성된 서비스로 전달됩니다. 데이터를 보고서 세트의 올바른 변수에 매핑합니다.
+
+![아키텍처](assets/architecture-aa.png)
 
 ## 전제 조건
 
@@ -186,7 +188,7 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >자동으로 매핑된 변수 중 일부는 처리 규칙에서 사용하지 못할 수 있습니다.
 >
 >
->UI가 XDM 개체의 컨텍스트 데이터 변수를 표시하지 않는 처리 규칙에 처음 매핑할 때. 이 문제를 해결하려면 를 저장하고 다시 편집하십시오. 이제 모든 XDM 변수가 표시됩니다.
+>처리 규칙에 처음 매핑하면 XDM 객체의 컨텍스트 데이터 변수가 인터페이스에 표시되지 않습니다. 이 문제를 해결하려면 를 저장하고 다시 편집하십시오. 이제 모든 XDM 변수가 표시됩니다.
 
 
 처리 규칙 및 컨텍스트 데이터에 대한 추가 정보를 찾을 수 있습니다 [여기](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).

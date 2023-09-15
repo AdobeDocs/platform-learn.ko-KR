@@ -3,10 +3,10 @@ title: 모바일 앱에서 Adobe Experience Cloud 구현 자습서 개요
 description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는 방법을 알아봅니다. 이 튜토리얼에서는 샘플 Swift 앱에서의 Experience Cloud 애플리케이션 구현을 안내합니다.
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 10%
+source-wordcount: '873'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ Adobe Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Adobe E
 
 Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Experience Platform Edge Network를 통해 Adobe 애플리케이션 및 서드파티 서비스와 모두 상호 작용할 수 있도록 하는 클라이언트측 SDK입니다. 다음을 참조하십시오. [Adobe Experience Platform Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/) 를 참조하십시오.
 
-![빌드 설정](assets/data-collection-mobile-sdk.png)
+![아키텍처](assets/architecture.png)
 
 
 이 튜토리얼에서는 샘플 소매 앱인 Luma에서 Platform Mobile SDK를 구현하는 과정을 안내합니다. 다음 [Luma 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 에는 사실적인 구현을 구축할 수 있는 기능이 있습니다. 이 자습서를 완료한 후에는 자체 모바일 앱에서 Mobile SDK Experience Platform을 통해 모든 마케팅 솔루션 구현을 시작할 준비가 되어 있어야 합니다.
@@ -35,7 +35,6 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 * 다음 Adobe Experience Cloud 애플리케이션/확장을 추가합니다.
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [라이프사이클 데이터 수집](lifecycle-data.md)
-   * [XDM을 통한 Adobe Analytics](analytics.md)
    * [동의](consent.md)
    * [신원](identity.md)
    * [프로필](profile.md)
@@ -43,7 +42,7 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
    * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [Journey Optimizer을 사용한 푸시 메시지](journey-optimizer-push.md)
-   * [Journey Optimizer으로 Im-App 메시지 보내기](journey-optimizer-inapp.md)
+   * [Journey Optimizer을 사용한 인앱 메시지](journey-optimizer-inapp.md)
    * [Journey Optimizer이 포함된 오퍼](journey-optimizer-offers.md)
    * [Target을 사용한 A/B 테스트](target.md)
 
@@ -70,13 +69,19 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
    * Real-Time CDP, Journey Optimizer 또는 Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션의 고객인 경우 다음 기능도 갖추어야 합니다.
       * **[!UICONTROL 데이터 관리]**—데이터 세트를 관리하고 확인하여 다음을 완료할 권한 항목 _선택적 플랫폼 연습_ ( 플랫폼 기반 애플리케이션에 대한 라이센스 필요).
       * 개발 **샌드박스** 이 자습서에 사용할 수 있습니다.
+
 * Adobe Analytics의 경우 다음 사항을 알고 있어야 합니다. **보고서 세트** 를 사용하여 이 자습서를 완료할 수 있습니다.
+
+* Adobe Target의 경우 권한이 있어야 하며 올바르게 구성되어 있어야 합니다 **역할**, **작업 공간**, 및 **속성** 설명한 대로 [여기](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=ko).
+
+* Adobe Journey Optimizer의 경우 를 구성할 수 있는 충분한 권한이 있어야 합니다. **푸시 알림 서비스** 및 를 **앱 표면**, a **여정**, a **메시지** 및 **메시지 사전 설정**. [의사 결정 관리]를 위해서는 다음에 대한 적절한 권한이 필요합니다. **오퍼 관리** 및 **결정** 설명한 대로 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 모든 Experience Cloud 고객은 Mobile SDK를 배포하는 데 필요한 기능에 액세스할 수 있어야 합니다.
 
+
 >[!NOTE]
 >
->iOS을 플랫폼으로 사용합니다. [!DNL Swift] 프로그래밍 언어로, [!DNL SwiftUI] UI 프레임워크 및 [!DNL Xcode] as the integrated development environment (IDE). 그러나 설명된 구현 개념의 대부분은 다른 개발 플랫폼에 대해 유사합니다. 이는 사용자가 익숙하다고 가정합니다. [!DNL Swift] 및 [!DNL SwiftUI]. 전문가가 아니어도 단원을 완료할 수는 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
+>이 자습서의 일부로 스키마, 데이터 세트, ID 등을 만듭니다. 단일 샌드박스에 여러 사람이 있는 이 자습서를 진행하거나 공유 계정을 사용하는 경우, 이러한 개체를 만들 때 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예: 추가 ` - <your name or initials>` 작성해야 하는 객체의 이름입니다.
 
 
 ## Luma 앱 다운로드
@@ -86,6 +91,11 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 
 1. [시작](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: 이 자습서에서 실습형 연습을 완료하는 데 사용해야 하는 대부분의 Experience Platform Mobile SDK 코드에 대해 코드가 없거나 자리 표시자 코드가 있는 프로젝트.
 1. [완료](https://git.corp.adobe.com/Luma){target="_blank"}: 전체 구현이 포함된 버전을 참조할 수 있습니다.
+
+>[!NOTE]
+>
+>iOS을 플랫폼으로 사용합니다. [!DNL Swift] 프로그래밍 언어로, [!DNL SwiftUI] UI 프레임워크 및 [!DNL Xcode] as the integrated development environment (IDE). 그러나 설명된 구현 개념의 대부분은 다른 개발 플랫폼에 대해 유사합니다. 또한 많은 사용자가 이전 iOS/Swift(UI) 경험이 전혀 없는 상태에서 이 자습서를 이미 성공적으로 완료했습니다. 전문가가 아니어도 단원을 완료할 수는 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
+
 
 그럼 시작해 보겠습니다!
 

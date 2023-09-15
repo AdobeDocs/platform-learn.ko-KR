@@ -3,9 +3,9 @@ title: 신원
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '681'
 ht-degree: 6%
 
 ---
@@ -108,7 +108,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 ## ID 제거
 
-다음을 사용할 수 있습니다. [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 저장된 클라이언트측 ID 맵에서 ID를 제거하기 위한 API. ID 확장은 Edge 네트워크에 대한 식별자 전송을 중지합니다. 이 API를 사용해도 서버측 사용자 프로필 그래프 또는 ID 그래프에서 식별자가 제거되지 않습니다.
+다음을 사용할 수 있습니다. [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 저장된 클라이언트측 ID 맵에서 ID를 제거하기 위한 API. ID 확장은 Edge 네트워크에 대한 식별자 전송을 중지합니다. 이 API를 사용해도 서버측 ID 그래프에서 식별자가 제거되지는 않습니다. 다음을 참조하십시오 [ID 그래프 보기](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) 를 참조하십시오.
 
 1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 일반]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 다음 코드를 `func removeIdentities(emailAddress: String, crmId: String)` 함수:
 
@@ -144,7 +144,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
       <img src="./assets/identity2.png" width="300">
 
 
-1. 에 대한 Assurance 웹 UI를 살펴봅니다. **[!UICONTROL Edge Identity 업데이트 Id]** 다음에서 이벤트 발생 **[!UICONTROL com.adobe.grifcon.mobile]** 공급업체.
+1. 에 대한 Assurance 웹 인터페이스를 살펴봅니다. **[!UICONTROL Edge Identity 업데이트 Id]** 다음에서 이벤트 발생 **[!UICONTROL com.adobe.grifcon.mobile]** 공급업체.
 1. 이벤트를 선택하고 **[!UICONTROL ACPExtensionEventData]** 개체. 업데이트한 ID가 표시됩니다.
    ![id 업데이트 확인](assets/identity-validate-assurance.png)
 

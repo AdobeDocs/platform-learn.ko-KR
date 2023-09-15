@@ -2,9 +2,9 @@
 title: 라이프사이클 데이터
 description: 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Platform 모바일 SDK 라이프사이클 확장을 사용하�
 
 ## 전제 조건
 
-* SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
+* SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다. 이 단원의 일부로 라이프사이클 모니터링을 이미 시작했습니다. 다음을 참조하십시오 [SDK 설치 - AppDelegate 업데이트](install-sdks.md#update-appdelegate) 검토해 보십시오.
 * 에 설명된 대로 Assurance 확장을 등록했습니다 [이전 단원](install-sdks.md).
 
 ## 학습 목표

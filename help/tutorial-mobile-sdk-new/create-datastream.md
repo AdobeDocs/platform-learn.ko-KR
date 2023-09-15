@@ -3,9 +3,9 @@ title: 데이터스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '598'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 7%
 Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 
 데이터 스트림은 Platform Edge Network의 서버측 구성입니다. 데이터 스트림은 Platform Edge Network로 들어오는 데이터가 Adobe Experience Cloud 애플리케이션 및 서비스로 적절하게 라우팅되도록 합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) 또는 이 [비디오](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=ko).
+
+![아키텍처](assets/architecture.png)
 
 ## 전제 조건
 
@@ -33,13 +35,18 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
 
 데이터 스트림은 [!UICONTROL 데이터 수집] 를 사용한 인터페이스 [!UICONTROL 데이터스트림] 구성 도구입니다. 데이터 스트림을 생성하려면 다음을 수행합니다.
 
-1. 데이터 스트림은 샌드박스 수준에서 정의되므로 올바른 Experience Platform 샌드박스에 있는지 확인합니다.
+1. 데이터 스트림은 샌드박스 수준에서 정의되므로 올바른 Experience Platform 샌드박스에 있는지 확인하십시오.
 1. 선택 **[!UICONTROL 데이터스트림]** 왼쪽 레일에서.
 1. **[!UICONTROL 새 데이터스트림]**&#x200B;을 선택합니다.
 
    ![데이터스트림 홈](assets/datastream-new.png)
 
 1. 다음을 제공합니다. **[!UICONTROL 이름]**, 예 `Luma Mobile App` 및 a **[!UICONTROL 설명]**, 예 `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >최종 미리 알림: 단일 샌드박스에 여러 사람과 함께 이 자습서를 진행하거나 공유 계정을 사용하는 경우 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예를 들어 `Luma Mobile App Event Dataset` 대신 `Luma Mobile App Event Dataset - Joe Smith`을 사용합니다. 다음에서 참고 참조: [개요](overview.md).
+
 1. 의 이전 단원에서 만든 스키마를 선택합니다 **이벤트 스키마**&#x200B;목록을 표시합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -83,7 +90,7 @@ Adobe Experience Platform 서비스를 활성화할 수도 있습니다.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-   ![Adobe Experience Platform as a Datastream 서비스 추가](assets/datastream-service-aep.png)
+   ![Adobe Experience Platform을 데이터스트림 서비스로 추가](assets/datastream-service-aep.png)
 1. 최종 구성은 다음과 같아야 합니다.
 
    ![데이터 스트림 설정](assets/datastream-settings.png)

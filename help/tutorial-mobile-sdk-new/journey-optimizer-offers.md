@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2467'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,11 @@ Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Journey Optim
 
 Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모든 접점에서 고객에게 최상의 오퍼와 경험을 제공할 수 있습니다. 디자인한 후에는 개인화된 오퍼로 대상을 타기팅하십시오.
 
+![아키텍처](assets/architecture-od.png)
+
 의사 결정 관리를 사용하면 마케팅 오퍼의 중앙 라이브러리와 Adobe Experience Platform에서 만든 풍부한 실시간 프로필에 규칙과 제한을 적용하는 의사 결정 엔진을 통해 손쉽게 개인화할 수 있습니다. 따라서 고객에게 적절한 시기에 적절한 오퍼를 보낼 수 있습니다. 다음을 참조하십시오 [의사 결정 관리 정보](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) 추가 정보.
+
+
 
 
 >[!NOTE]
@@ -29,6 +33,7 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 ## 전제 조건
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
+* Adobe Experience Platform용 앱을 설정합니다.
 * Journey Optimizer 액세스 - 설명된 대로 오퍼 및 결정을 관리할 수 있는 적절한 권한이 있는 의사 결정 관리 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
@@ -41,7 +46,7 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 * 스키마를 업데이트하여 제안 이벤트를 캡처합니다.
 * Assurance에서 설정의 유효성을 검사합니다.
 * Journey Optimizer - 의사 결정 관리의 오퍼를 기반으로 오퍼 의사 결정을 만듭니다.
-* Optimizer 확장을 포함하도록 앱을 업데이트합니다.
+* 앱을 업데이트하여 Optimizer 확장을 등록합니다.
 * 앱에서 의사 결정 관리의 오퍼를 구현합니다.
 
 
@@ -49,9 +54,9 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 
 >[!TIP]
 >
->환경을 의 일부로 이미 설정한 경우 [Target을 사용하여 A/B 테스트 설정](target.md) 자습서를 건너뛸 수 있습니다. [Adobe Journey Optimizer - Decisioning 태그 확장 설치](#install-adobe-journey-optimizer---decisioning-tags-extension) 및 [스키마 업데이트](#update-your-schema).
+>의 일부로 환경을 이미 설정한 경우 [Target을 사용하여 A/B 테스트 설정](target.md) 자습서를 건너뛸 수 있습니다. [Adobe Journey Optimizer - Decisioning 태그 확장 설치](#install-adobe-journey-optimizer---decisioning-tags-extension) 및 [스키마 업데이트](#update-your-schema).
 
-### Edge 구성 업데이트
+### 데이터 스트림 구성 업데이트
 
 모바일 앱에서 Edge Network로 전송된 데이터가 의사 결정 관리인 Journey Optimizer으로 전달되도록 하려면 Experience Edge 구성을 업데이트 하십시오.
 
@@ -76,11 +81,11 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 
 ### 스키마 업데이트
 
-1. 데이터 수집 UI로 이동하여 다음을 선택합니다. **[!UICONTROL 스키마]** 왼쪽 레일에서.
+1. 데이터 수집 인터페이스로 이동하여 **[!UICONTROL 스키마]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 찾아보기]** 을 클릭합니다.
 1. 스키마를 선택하여 엽니다.
 1. 스키마 편집기에서 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]** 필드 그룹 옆에 있습니다.
-1. 다음에서 **[!UICONTROL 필드 그룹 추가]** 대화 상자, ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 검색 대상 `proposition`, 선택 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]** 및 선택 **[!UICONTROL 필드 그룹 추가]**.
+1. 다음에서 **[!UICONTROL 필드 그룹 추가]** 대화 상자, ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 검색 대상 `proposition`, 선택 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]** 및 선택 **[!UICONTROL 필드 그룹 추가]**. 이 필드 그룹은 오퍼와 관련된 경험 이벤트 데이터(제공 사항, 수집, 결정 및 기타 매개 변수의 일부)를 수집합니다(이 단원의 뒷부분 참조). 그러나 그 제의가 지금 일어나고 있는 것은, 그것이 전시되고, 상호작용되고, 기각되고, 등입니다.
    ![제안](assets/schema-fieldgroup-proposition.png)
 1. 선택 **[!UICONTROL 저장]** 를 클릭하여 스키마에 대한 변경 사항을 저장합니다.
 
@@ -211,7 +216,7 @@ Assurance에서 설정을 확인하려면:
 * 자격 규칙: 예를 들어, 오퍼는 특정 대상에만 사용할 수 있습니다.
 * 순위 방법: 여러 오퍼를 사용할 수 있는 경우 순위를 매기는 데 사용할 방법(예: 오퍼 우선 순위, 공식 또는 AI 모델 사용)을 선택합니다.
 
-다음을 참조하십시오 [오퍼를 만들고 관리하는 주요 단계](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 배치, 규칙, 등급, 오퍼, 표시, 컬렉션, 의사 결정 등이 서로 상호 작용하고 관련되는 방식을 더 잘 이해하고자 하는 경우. 이 튜토리얼은 Journey Optimizer - 의사 결정 관리 내에서 결정을 정의하는 유연성이 아니라 의사 결정의 결과를 사용하는 데만 중점을 둡니다.
+다음을 참조하십시오 [오퍼를 만들고 관리하는 주요 단계](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 배치, 규칙, 등급, 오퍼, 표시, 컬렉션, 의사 결정 등이 서로 상호 작용하고 관련되는 방식을 더 잘 이해하고자 하는 경우. 이 단원은 Journey Optimizer - 의사 결정 관리 내에서 결정을 정의하는 유연성보다는 의사 결정의 결과를 사용하는 데에만 중점을 둡니다.
 
 1. Journey Optimizer UI에서 **[!UICONTROL 오퍼]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 결정]** 을 클릭합니다.
@@ -304,7 +309,7 @@ Assurance에서 설정을 확인하려면:
    이 함수:
 
    * xdm 사전 설정 `xdmData`오퍼를 제공해야 하는 프로필을 식별하는 ECID가 포함되어 있습니다.
-   * 정의 `decisionScope`, Journey Optimizer - 의사 결정 관리 UI에서 정의한 의사 결정을 기반으로 하며 다음 위치에서 복사된 의사 결정 범위를 사용하여 정의된 개체 [의사 결정 만들기](#create-a-decision).  Luma 앱은 구성 파일(`decisions.json`)는 다음 JSON 형식을 기반으로 범위 매개 변수를 검색합니다.
+   * 정의 `decisionScope`: Journey Optimizer - 의사 결정 관리 인터페이스에서 정의한 의사 결정을 기반으로 하며 다음 위치에서 복사된 의사 결정 범위를 사용하여 정의된 개체입니다. [의사 결정 만들기](#create-a-decision).  Luma 앱은 구성 파일(`decisions.json`)는 다음 JSON 형식을 기반으로 범위 매개 변수를 검색합니다.
 
      ```swift
      "scopes": [
@@ -318,7 +323,7 @@ Assurance에서 설정을 확인하려면:
      ```
 
      그러나 모든 종류의 구현을 사용하여 API 최적화가 적절한 매개 변수를 가져오는지 확인할 수 있습니다(`activityId`, `placementId` 및, `itemCount`), 유효한 을 생성합니다. [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 구현을 위한 개체입니다.
-   * 는 다음 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
+   * 는 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
 1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL EdgeOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,
 
