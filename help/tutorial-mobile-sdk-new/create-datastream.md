@@ -3,9 +3,9 @@ title: 데이터스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '615'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
    >
    >최종 미리 알림: 단일 샌드박스에 여러 사람과 함께 이 자습서를 진행하거나 공유 계정을 사용하는 경우 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예를 들어 `Luma Mobile App Event Dataset` 대신 `Luma Mobile App Event Dataset - Joe Smith`을 사용합니다. 다음에서 참고 참조: [개요](overview.md).
 
-1. 의 이전 단원에서 만든 스키마를 선택합니다 **이벤트 스키마**&#x200B;목록을 표시합니다.
+1. 의 이전 단원에서 만든 스키마를 선택합니다 **이벤트 스키마** 목록을 표시합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    ![새 데이터스트림](assets/datastream-name.png)
@@ -55,7 +55,7 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
 
 ## 서비스 추가
 
-그런 다음 Experience Cloud 서비스를 데이터 스트림에 연결합니다. Platform Mobile SDK가 Edge Network로 데이터를 전송할 때 데이터 스트림은 다음 서비스로 데이터를 전송합니다.
+(선택 사항)을 보낼 때 [분석](analytics.md) 및 [Experience Platform](platform.md) 이 자습서의 단원에서는 Platform Mobile SDK가 Edge Network에 데이터를 전송할 때 데이터 스트림이 구성된 서비스에 해당 데이터를 전송하도록 데이터 스트림에 서비스를 추가하는 것입니다.
 
 ### Adobe Analytics
 

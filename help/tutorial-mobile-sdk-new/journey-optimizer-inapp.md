@@ -1,18 +1,18 @@
 ---
-title: Adobe Journey Optimizer 인앱 메시지
-description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모바일 앱에 대한 인앱 메시지를 만드는 방법을 알아봅니다.
+title: 인앱 메시지 만들기 및 보내기
+description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 인앱 메시지를 만들고 모바일 앱으로 전송하는 방법에 대해 알아봅니다.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 3%
+source-wordcount: '1547'
+ht-degree: 4%
 
 ---
 
-# Journey Optimizer 인앱 메시지
+# 인앱 메시지 만들기 및 보내기
 
 Experience Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 인앱 메시지를 만드는 방법을 알아봅니다.
 
@@ -35,10 +35,6 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
    * 캠페인을 관리합니다.
 * 인증서, 식별자 및 키를 만들 수 있는 충분한 액세스 권한이 있는 유료 Apple 개발자 계정입니다.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
-* Apple 푸시 알림 서비스에 앱 ID가 등록됨
-* 데이터 수집에 앱 푸시 자격 증명 추가됨
-* 설치된 Journey Optimizer 태그 확장
-* 앱에서 Journey Optimizer 구현
 
 
 ## 학습 목표
@@ -57,31 +53,10 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 >[!TIP]
 >
->환경을 의 일부로 이미 설정한 경우 [Journey Optimizer 푸시 메시지](journey-optimizer-push.md) 자습서에서는 이 섹션을 건너뛸 수 있습니다.
+>환경을 의 일부로 이미 설정한 경우 [Journey Optimizer 푸시 메시지](journey-optimizer-push.md) 단원, 이 설정 섹션의 일부 단계를 이미 수행했을 수 있습니다.
 
-### APNS에 앱 ID 등록
 
-다음 단계는 Adobe Experience Cloud에만 해당되지 않으며 APNS 구성을 안내하도록 설계되었습니다.
-
-### 개인 키 만들기
-
-1. Apple 개발자 포털에서 **[!UICONTROL 키]**.
-1. 키를 만들려면 다음을 선택합니다. **[!UICONTROL +]**.
-   ![새 키 만들기](assets/mobile-push-apple-dev-new-key.png)
-
-1. 다음을 제공합니다. **[!UICONTROL 키 이름]**.
-1. 다음 항목 선택 **[!UICONTROL Apple 푸시 알림 서비스] (APNs)** 확인란.
-1. 선택 **[!UICONTROL 계속]**.
-   ![새 키 구성](assets/mobile-push-apple-dev-config-key.png)
-1. 구성을 검토하고 다음을 선택합니다. **[!UICONTROL 등록]**.
-1. 다운로드 `.p8` 개인 키. 앱 표면 구성에서 사용됩니다.
-1. 다음을 기록해 둡니다. **[!UICONTROL 키 ID]**. 앱 표면 구성에서 사용됩니다.
-1. 다음을 기록해 둡니다. **[!UICONTROL 팀 ID]**. 앱 표면 구성에서 사용됩니다.
-   ![주요 세부 정보](assets/push-apple-dev-key-details.png)
-
-추가 설명서는 다음과 같습니다. [여기에서 찾음](https://help.apple.com/developer-account/#/devcdfbb56a3).
-
-### 데이터 수집에서 앱 푸시 자격 증명 추가
+### 데이터 수집에서 앱 표면 추가
 
 1. 다음에서 [데이터 수집 인터페이스](https://experience.adobe.com/data-collection/), 선택 **[!UICONTROL 앱 표면]** 왼쪽 패널에서
 1. 구성을 만들려면 다음을 선택합니다 **[!UICONTROL 앱 표면 만들기]**.
@@ -89,20 +64,28 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 1. 입력 **[!UICONTROL 이름]** 예를 들어 구성의 경우 `Luma App Tutorial`  .
 1. 출처: **[!UICONTROL 모바일 애플리케이션 구성]**, 선택 **[!UICONTROL Apple iOS]**.
 1. 에 모바일 앱 번들 ID 입력 **[!UICONTROL 앱 ID (iOS 번들 ID)]** 필드. 예,  `com.adobe.luma.tutorial.swiftui`.
-1. 전환 **[!UICONTROL 푸시 자격 증명]** 자격 증명을 추가하려면 전환합니다.
-1. 을(를) 끌어다 놓기 `.p8` **Apple 푸시 알림 인증 키** 파일.
-1. 다음을 제공합니다 **[!UICONTROL 키 ID]**&#x200B;를 만드는 동안 할당된 10자 문자열 `p8` 인증 키. 다음 아래에서 찾을 수 있습니다 **[!UICONTROL 키]** 의 탭 **인증서, 식별자 및 프로필** Apple 개발자 포털 페이지의 페이지입니다. 참조: [개인 키 만들기](#create-a-private-key).
-1. 다음을 제공합니다 **[!UICONTROL 팀 ID]**. 팀 ID는 **멤버십** Apple 개발자 포털 페이지 상단에 있는 탭이나 를 참조하십시오. 참조: [개인 키 만들기](#create-a-private-key).
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    ![앱 표면 구성](assets/push-app-surface-config.png)
+
+### 데이터 스트림 구성 업데이트
+
+모바일 앱에서 Edge Network로 전송된 데이터가 Journey Optimizer으로 전달되도록 하려면 Experience Edge 구성 을 업데이트합니다.
+
+1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!DNL Luma Mobile App]**.
+1. 선택 ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 대상 **[!UICONTROL Experience Platform]** 및 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
+1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
+1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]**.
+
+   ![AEP 데이터스트림 구성](assets/datastream-aep-configuration.png)
+
 
 ### Journey Optimizer 태그 확장 설치
 
 앱이 Journey Optimizer에서 작동하려면 태그 속성을 업데이트해야 합니다.
 
 1. 다음으로 이동 **[!UICONTROL 태그]** > **[!UICONTROL 확장]** > **[!UICONTROL 카탈로그]**.
-1. 속성을 엽니다. 예 **[!UICONTROL Luma 모바일 앱 튜토리얼]**.
+1. 속성을 엽니다. 예 **[!DNL Luma Mobile App Tutorial]**.
 1. 선택 **[!UICONTROL 카탈로그]**.
 1. 검색 **[!UICONTROL Adobe Journey Optimizer]** 확장명.
 1. 확장을 설치합니다.
@@ -127,7 +110,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 >
 
 1. Xcode에서 다음을 확인합니다 [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPMessaging` 는 가져오기 목록의 일부입니다.
 
    `import AEPMessaging`
@@ -182,7 +165,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 1. Journey Optimizer UI에서 **[!UICONTROL 캠페인]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 캠페인 만들기]**.
 1. 다음에서 **[!UICONTROL 캠페인 만들기]** 화면:
-   1. 선택 **[!UICONTROL 인앱 메시지]** 에서 앱 표면 선택 **[!UICONTROL 앱 표면]** 목록, 예 **[!UICONTROL Luma 모바일 앱]**.
+   1. 선택 **[!UICONTROL 인앱 메시지]** 에서 앱 표면 선택 **[!UICONTROL 앱 표면]** 목록, 예 **[!DNL Luma Mobile App]**.
    1. **[!UICONTROL 만들기]**를 선택합니다
       ![캠페인 속성](assets/ajo-campaign-properties.png)
 1. 캠페인 정의 화면의 **[!UICONTROL 속성]**, 를 입력합니다. **[!UICONTROL 이름]** 예를 들어 캠페인용 `Luma - In-App Messaging Campaign`, 및 **[!UICONTROL 설명]**, 예 `In-app messaging campaign for Luma app`.
@@ -198,7 +181,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
       ![인앱 편집기](assets/ajo-in-app-editor.png)
 1. 다음에서 **[!UICONTROL 활성화 검토(Luma - 인앱 메시지 캠페인)]** 화면, 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 다음에서 **[!UICONTROL 예약]** 타일.
    ![일정 검토 일정 선택](assets/ajo-review-select-schedule.png)
-1. 뒤로 이동 **[!UICONTROL Luma - 인앱 메시지 캠페인]** 화면, 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 트리거 편집]**.
+1. 뒤로 이동 **[!DNL Luma - In-App Messaging Campaign]** 화면, 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 트리거 편집]**.
 1. 다음에서 **[!UICONTROL 인앱 메시지 트리거]** 대화 상자에서 인앱 메시지를 트리거하는 추적 작업의 세부 사항을 구성합니다.
    1. 제거하려면 **[!UICONTROL 애플리케이션 실행 이벤트]**, 선택 ![닫기](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
    1. 사용 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 조건 추가]** 에 대해 다음 논리를 구축하기 위해 반복적으로 **[!UICONTROL 다음과 같은 경우 메시지 표시]**.
@@ -207,9 +190,9 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
    다음과 같은 추적 작업을 정의했습니다. **[!UICONTROL 작업]** 다음과 같음 `in-app` 및 **[!UICONTROL 컨텍스트 데이터]** 작업이 다음의 키 값 쌍인 경우 `"showMessage" : "true"`.
 
-1. 뒤로 이동 **[!UICONTROL Luma - 인앱 메시지 캠페인]** 화면, 선택 **[!UICONTROL 활성화하려면 검토]**.
+1. 뒤로 이동 **[!DNL Luma - In-App Messaging Campaign]** 화면, 선택 **[!UICONTROL 활성화하려면 검토]**.
 1. 다음에서 **[!UICONTROL 활성화 검토(Luma - 인앱 메시지 캠페인)]** 화면, 선택 **[!UICONTROL 활성화]**.
-1. 다음을 확인함: **[!UICONTROL Luma - 인앱 메시지 캠페인]** (상태) **[!UICONTROL 라이브]** 다음에서 **[!UICONTROL 캠페인]** 목록을 표시합니다.
+1. 다음을 확인함: **[!DNL Luma - In-App Messaging Campaign]** (상태) **[!UICONTROL 라이브]** 다음에서 **[!UICONTROL 캠페인]** 목록을 표시합니다.
    ![캠페인 목록](assets/ajo-campaign-list.png)
 
 
@@ -217,7 +200,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 인앱 메시지를 보낼 수 있는 모든 구성 요소가 준비되었습니다. 남은 것은 앱에서 이 인앱 메시지를 트리거하는 방법입니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 호출하고 다음 코드를 추가합니다 [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 함수, 매개 변수 기반 `action` 및 `data`.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 호출하고 다음 코드를 추가합니다 [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 함수, 매개 변수 기반 `action` 및 `data`.
 
 
    ```swift
@@ -225,7 +208,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
    MobileCore.track(action: action, data: data)
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL ConfigView]** 를 입력합니다. 인앱 메시지 단추에 대한 코드를 찾아 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** 를 입력합니다. 인앱 메시지 단추에 대한 코드를 찾아 다음 코드를 추가합니다.
 
    ```swift
    // Setting parameters and calling function to send in-app message

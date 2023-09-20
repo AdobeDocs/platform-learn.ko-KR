@@ -3,14 +3,14 @@ title: Assurance 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '776'
 ht-degree: 9%
 
 ---
 
-# 보증
+# Assurance 설정
 
 모바일 앱에서 Adobe Experience Platform Assurance를 설정하는 방법을 알아봅니다.
 
@@ -40,7 +40,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 
 일반에 더해서 [SDK 설치](install-sdks.md), 이전 단원에서 을(를) 완료했습니다. iOS에서도 앱의 Assurance 세션을 시작하려면 다음 항목을 추가해야 합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** Xcode의 Project navigator에서.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** Xcode의 Project navigator에서.
 
 1. `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`에 다음 코드를 추가합니다.
 
@@ -61,18 +61,23 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 Xcode에서 응용 프로그램을 처음 실행하기 전에 서명을 업데이트하십시오.
 
 1. Xcode에서 프로젝트를 엽니다.
-1. 선택 **[!UICONTROL Luma]** 프로젝트 탐색기를 참조하십시오.
-1. 다음 항목 선택 **[!UICONTROL Luma]** 타겟.
+1. 선택 **[!DNL Luma]** 프로젝트 탐색기를 참조하십시오.
+1. 다음 항목 선택 **[!DNL Luma]** 타겟.
 1. 다음 항목 선택 **서명 및 기능** 탭.
 1. 구성 **[!UICONTROL 서명 자동 관리]**, **[!UICONTROL 팀]**, 및 **[!UICONTROL 번들 식별자]**&#x200B;또는 특정 Apple 개발 프로비저닝 세부 정보를 사용하십시오.
+
+   >[!IMPORTANT]
+   >
+   >각 번들 식별자는 고유해야 하므로 시작 프로젝트에 이미 입력된 기본값과 다른 고유한 번들 식별자를 선택해야 합니다.
+
 
    ![Xcode 서명 기능](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## 기본 URL 설정
 
 1. Xcode에서 프로젝트로 이동합니다.
-1. 선택 **[!UICONTROL Luma]** 프로젝트 탐색기를 참조하십시오.
-1. 다음 항목 선택 **[!UICONTROL Luma]** 타겟.
+1. 선택 **[!DNL Luma]** 프로젝트 탐색기를 참조하십시오.
+1. 다음 항목 선택 **[!DNL Luma]** 타겟.
 1. 다음 항목 선택 **정보** 탭.
 1. 기본 URL을 추가하려면 아래로 스크롤하여 **URL 유형** 및 선택 **+** 단추를 클릭합니다.
 1. 설정 **식별자** 을(를) 구성하는 번들 식별자 [서명](#signing) (예 `com.adobe.luma.tutorial.swiftui`) 및 a 설정 **URL 체계**, 예 `lumatutorialswiftui`.
@@ -90,7 +95,7 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
 1. 선택 **[!UICONTROL 보증]** (데이터 수집 UI의 왼쪽 레일)
 1. 선택 **[!UICONTROL 세션 만들기]**.
 1. 선택 **[!UICONTROL 시작]**.
-1. 다음을 제공합니다. **[!UICONTROL 세션 이름]** 과 같은 `Luma Mobile App Session` 및 **[!UICONTROL 기본 URL]**: Xcode에 입력한 URL 체계, 그 뒤에 오는 `://`. 예: `lumatutorialswiftui://`.
+1. 다음을 제공합니다. **[!UICONTROL 세션 이름]** 과 같은 `Luma Mobile App Session` 및 **[!UICONTROL 기본 URL]**: Xcode에 입력한 URL 체계, 그 뒤에 오는 `://` 예: `lumatutorialswiftui://`
 1. **[!UICONTROL 다음]**을 선택합니다.
    ![보증 생성 세션](assets/assurance-create-session.png)
 1. 다음에서 **[!UICONTROL 새 세션 만들기]** 모달 대화 상자:

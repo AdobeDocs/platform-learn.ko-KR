@@ -1,18 +1,18 @@
 ---
-title: Adobe Journey Optimizer 오퍼
+title: 오퍼 만들기 및 표시
 description: Platform Mobile SDK 및 Adobe Journey Optimizer 의사 결정 관리를 사용하여 오퍼를 만들고 표시하는 방법을 알아봅니다.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 2%
+source-wordcount: '2443'
+ht-degree: 3%
 
 ---
 
-# Journey Optimizer 오퍼
+# 오퍼 만들기 및 표시
 
 Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Journey Optimizer 의사 결정 관리의 오퍼를 표시하는 방법을 알아봅니다.
 
@@ -54,18 +54,20 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 
 >[!TIP]
 >
->의 일부로 환경을 이미 설정한 경우 [Target을 사용하여 A/B 테스트 설정](target.md) 자습서를 건너뛸 수 있습니다. [Adobe Journey Optimizer - Decisioning 태그 확장 설치](#install-adobe-journey-optimizer---decisioning-tags-extension) 및 [스키마 업데이트](#update-your-schema).
+>의 일부로 환경을 이미 설정한 경우 [Target을 사용하여 A/B 테스트 설정](target.md) 단원, 이 설정 섹션의 일부 단계를 이미 수행했을 수 있습니다.
 
 ### 데이터 스트림 구성 업데이트
 
 모바일 앱에서 Edge Network로 전송된 데이터가 의사 결정 관리인 Journey Optimizer으로 전달되도록 하려면 Experience Edge 구성을 업데이트 하십시오.
 
-1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!UICONTROL Luma 모바일 앱]**.
+1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!DNL Luma Mobile App]**.
 1. 선택 ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 대상 **[!UICONTROL Experience Platform]** 및 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
-1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Offer decisioning]**, **[!UICONTROL Edge 세그멘테이션]**, **[!UICONTROL 개인화 대상]**, 및 **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
+1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Offer decisioning]**, **[!UICONTROL Edge 세그멘테이션]**, 및 **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. Target 단원을 따르는 경우 다음을 선택해야 합니다. **[!UICONTROL 개인화 대상]** 또한. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
 1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]** .
 
-   ![AEP 데이터스트림 구성](assets/datastream-aep-configuration.png)
+   ![AEP 데이터스트림 구성](assets/datastream-aep-configuration-offers.png)
+
+
 
 
 ### Journey Optimizer - Decisioning 태그 확장 설치
@@ -198,7 +200,7 @@ Assurance에서 설정을 확인하려면:
 1. 선택 **[!UICONTROL 컬렉션]** 을 클릭합니다.
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 컬렉션 만들기]**.
 1. 다음에서 **[!UICONTROL 새 컬렉션]** 대화 상자에서 **[!UICONTROL 이름]** 컬렉션용, 예 `Luma - Mobile App Collection`, 선택 **[!UICONTROL 정적 컬렉션 만들기]**, 및 클릭 **[!UICONTROL 다음]**.
-1. 위치 **[!UICONTROL Luma - 모바일 앱 컬렉션]**&#x200B;컬렉션에 포함할 오퍼를 선택합니다. 이 자습서에서는 만든 오퍼 5개를 선택합니다. 검색 필드를 사용하여 목록을 쉽게 필터링할 수 있습니다. 예를 들면 다음과 같습니다 **[!UICONTROL Luma]**.
+1. 위치 **[!DNL Luma - Mobile App Collection]**&#x200B;컬렉션에 포함할 오퍼를 선택합니다. 이 자습서에서는 만든 오퍼 5개를 선택합니다. 검색 필드를 사용하여 목록을 쉽게 필터링할 수 있습니다. 예를 들면 다음과 같습니다 **[!DNL Luma]**.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    ![오퍼 - 컬렉션](assets/ajo-collection-offersselected.png)
@@ -228,14 +230,14 @@ Assurance에서 설정을 확인하려면:
 1. 다음에서 **[!UICONTROL 결정 범위 추가]** / 단계 **[!UICONTROL 새 오퍼 결정 만들기]**:
    1. 선택 **[!UICONTROL 모바일 JSON]** 출처: **[!UICONTROL 배치]** 목록을 표시합니다.
    1. 다음에서 **[!UICONTROL 평가 기준]** 타일, 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**.
-      1. 다음에서 **[!UICONTROL 오퍼 컬렉션 추가]** 대화 상자에서 오퍼 컬렉션을 선택합니다. 예를 들어, **[!UICONTROL Luma - 모바일 앱 컬렉션]**.
+      1. 다음에서 **[!UICONTROL 오퍼 컬렉션 추가]** 대화 상자에서 오퍼 컬렉션을 선택합니다. 예: **[!DNL Luma - Mobile App Collection]**.
       1. 선택 **[!UICONTROL 추가]**.
          ![결정 - 컬렉션 선택](assets/ajo-decision-selectcollection.png)
    1. 다음을 확인합니다. **[!UICONTROL 없음]** 다음에 대해 선택됨: **[!UICONTROL 자격 요건]**, 및 **[!UICONTROL 오퍼 우선 순위]** 이(가) (으)로 선택됨 **[!UICONTROL 순위 방법]**.
    1. **[!UICONTROL 다음]**을 선택합니다.
       ![결정 범위](assets/ajo-decision-scopes.png).
 1. 다음에서 **[!UICONTROL 대체 오퍼 추가]** / 단계 **[!UICONTROL 새 오퍼 결정 만들기]**:
-   1. 대체 오퍼 선택(예: ) **[!UICONTROL Luma - 대체 오퍼]**.
+   1. 대체 오퍼 선택(예: ) **[!DNL Luma - Fallback offer]**.
    1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 1. 다음에서 **[!UICONTROL 요약]** / 단계 **[!UICONTROL 새 오퍼 결정 만들기]**:
    1. **[!UICONTROL 마침]**&#x200B;을 선택합니다.
@@ -246,7 +248,7 @@ Assurance에서 설정을 확인하려면:
 
 1. Journey Optimizer UI에서 **[!UICONTROL 오퍼]**.
 1. 선택 **[!UICONTROL 결정]** 을 클릭합니다.
-1. 예를 들어, 결정을 선택합니다. **[!UICONTROL Luma - 모바일 앱 결정]**.
+1. 예를 들어, 결정을 선택합니다. **[!DNL Luma - Mobile App Decision]**.
 1. 다음에서 **[!UICONTROL 결정 범위]** 타일, 선택 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 복사]**.
 1. 상황별 메뉴에서 **[!UICONTROL 결정 범위]**.
    ![결정 범위 복사](assets/ajo-copy-decisionscope.png)
@@ -269,7 +271,7 @@ Assurance에서 설정을 확인하려면:
 >
 
 1. Xcode에서 다음을 확인합니다 [AEP 최적화](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPOptimize` 는 가져오기 목록의 일부입니다.
 
    `import AEPOptimize`
@@ -292,7 +294,7 @@ Assurance에서 설정을 확인하려면:
    ]
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 함수. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 함수. 다음 코드를 추가합니다.
 
    ```swift
    // set up the XDM dictionary, define decision scope and call update proposition API
@@ -325,14 +327,14 @@ Assurance에서 설정을 확인하려면:
      그러나 모든 종류의 구현을 사용하여 API 최적화가 적절한 매개 변수를 가져오는지 확인할 수 있습니다(`activityId`, `placementId` 및, `itemCount`), 유효한 을 생성합니다. [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 구현을 위한 개체입니다.
    * 는 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL EdgeOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL 개인화]** > **[!UICONTROL EdgeOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,
 
    * 의사 결정 범위(Journey Optimizer - 의사 결정 관리에서 정의함)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
    * 제안에서 오퍼를 검색합니다.
    * 앱에서 제대로 표시될 수 있도록 오퍼의 콘텐츠를 래핑 해제합니다.
    * 트리거 `displayed()` 오퍼를 알리는 이벤트를 Edge Network로 다시 전송하는 오퍼에 대한 작업이 표시됩니다.
 
-1. 아직 **[!UICONTROL EdgeOffersView]**&#x200B;에 다음 코드를 추가합니다. `.onFirstAppear` 수정자. 이 코드는 오퍼를 업데이트하기 위한 콜백이 한 번만 등록되도록 합니다.
+1. 아직 **[!DNL EdgeOffersView]**&#x200B;에 다음 코드를 추가합니다. `.onFirstAppear` 수정자. 이 코드는 오퍼를 업데이트하기 위한 콜백이 한 번만 등록되도록 합니다.
 
    ```swift
    // Invoke callback for offer updates
@@ -354,11 +356,11 @@ Assurance에서 설정을 확인하려면:
 
 1. 장치 또는 시뮬레이터에서 앱을 엽니다.
 
-1. 로 이동 **[!UICONTROL 개인화]** 탭.
+1. **[!DNL Personalisation]** 탭으로 이동합니다.
 
-1. 선택 **[!UICONTROL Edge Personalization]**.
+1. **[!DNL Edge Personalisation]**&#x200B;를 선택합니다.
 
-1. 맨 위로 스크롤하면 정의한 컬렉션에서 두 개의 무작위 오퍼가 표시됩니다. **[!UICONTROL 의사 결정 LUMA - 모바일 앱 결정]** 타일.
+1. 맨 위로 스크롤하면 정의한 컬렉션에서 두 개의 무작위 오퍼가 표시됩니다. **[!DNL DECISION LUMA - MOBILE APP DECISION]** 타일.
 
    <img src="assets/ajo-app-offers.png" width="300">
 

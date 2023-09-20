@@ -3,9 +3,9 @@ title: 태그 속성 구성
 description: 에서 태그 속성을 구성하는 방법을 알아봅니다 [!UICONTROL 데이터 수집] 인터페이스.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 8%
 
 ---
@@ -110,9 +110,9 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 1. 사용 ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 검색]** 필드를 찾아 설치합니다. **Adobe Experience Platform 에지 네트워크** 확장명.
 
-   1. 위치 **[!UICONTROL 데이터스트림]** 선택 **[!UICONTROL 데이터스트림]** 에서 생성한 항목 [이전 단계](create-datastream.md) 각 환경(예: **[!UICONTROL Luma 모바일 앱]**.
+   1. 위치 **[!UICONTROL 데이터스트림]** 선택 **[!UICONTROL 데이터스트림]** 에서 생성한 항목 [이전 단계](create-datastream.md) 각 환경(예: **[!DNL Luma Mobile App]**.
 
-   1. 다음을 지정합니다. **[!UICONTROL 에지 네트워크 도메인]** 다음 범위 내 **[!UICONTROL 도메인 구성]**. Edge Network 도메인은 조직의 이름이며, 다음이 옵니다. `data.adobedc.net`, 예 `techmarketingdemos.data.adobedc.net`.
+   1. 아직 채워지지 않은 경우 **[!UICONTROL 에지 네트워크 도메인]** 다음 범위 내 **[!UICONTROL 도메인 구성]**. Edge Network 도메인은 조직의 이름이며, 다음이 옵니다. `data.adobedc.net`, 예 `techmarketingdemos.data.adobedc.net`.
 
    1. 다음에서 **[!UICONTROL 라이브러리에 저장]** 메뉴, 선택 **[!UICONTROL 라이브러리 및 빌드에 저장]**.
 

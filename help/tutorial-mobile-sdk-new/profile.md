@@ -1,15 +1,15 @@
 ---
-title: 프로필
+title: 프로필 데이터 수집
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 2%
+source-wordcount: '601'
+ht-degree: 1%
 
 ---
 
-# 프로필
+# 프로필 데이터 수집
 
 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 사용자의 과거 또는 최근 구매 여부를 빠르게 파악하려면 앱의 타겟팅 및/또는 개인화에 유용합니다. Luma 앱에서 설정해 보겠습니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** >  **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func updateUserAttribute(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** xcode Project 탐색기에서 `func updateUserAttribute(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ ht-degree: 2%
 
    1. 를 사용합니다. `profileMap` 사전을 값에 추가 `attributeDict` 매개 변수 [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 호출.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 제품]** > **[!UICONTROL 제품 보기]** 를 클릭하고 호출을 찾습니다. `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 추가할 수 있습니다). 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** 를 클릭하고 호출을 찾습니다. `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 추가할 수 있습니다). 다음 코드를 추가합니다.
 
    ```swift
    // Update attributes
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 사용자의 속성을 업데이트하면 다른 Adobe SDK에서 사용할 수 있지만, 속성을 명시적으로 검색하여 앱이 원하는 대로 동작하도록 할 수도 있습니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL HomeView]** xcode Project 탐색기에서 `.onAppear` 수정자. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** xcode Project 탐색기에서 `.onAppear` 수정자. 다음 코드를 추가합니다.
 
    ```swift
    // Get attributes
@@ -111,7 +111,7 @@ ht-degree: 2%
 
       <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. 선택 **[!UICONTROL 제품]** 을 클릭합니다.
+   1. 선택 **[!DNL Products]** 을 클릭합니다.
    1. 제품 하나를 선택하십시오.
    1. 선택 <img src="assets/saveforlater.png" width="15" />.
    1. 선택 <img src="assets/addtocart.png" width="20" />.

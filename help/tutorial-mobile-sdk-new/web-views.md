@@ -3,9 +3,9 @@ title: 웹 보기 처리
 description: 모바일 앱에서 WebViews를 사용하여 데이터 수집을 처리하는 방법에 대해 알아봅니다.
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ WebView 내에서 사용된 AEP Edge Identity 확장은 새 ID에 대한 Adobe �
 
 ## 구현
 
-다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 정보]** > **[!UICONTROL 서비스 약관]**&#x200B;을 클릭하고 `func loadUrl()` 의 함수 `final class SwiftUIWebViewModel: ObservableObject` 클래스. 웹 보기를 처리하기 위해 다음 호출을 추가합니다.
+다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**&#x200B;을 클릭하고 `func loadUrl()` 의 함수 `final class SwiftUIWebViewModel: ObservableObject` 클래스. 웹 보기를 처리하기 위해 다음 호출을 추가합니다.
 
 ```swift
 // Handle web view
@@ -68,7 +68,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 코드를 실행하려면:
 
 1. 로 이동 **[!UICONTROL 설정]** 앱에서
-1. 탭 **[!UICONTROL 보기...]** 단추 표시 **[!UICONTROL 사용 약관]**.
+1. 탭 **[!DNL View...]** 단추 표시 **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+죄송합니다. 웹 세션 디버깅은 제한되어 있습니다. 예를 들어, 브라우저의 Adobe Experience Platform Debugger을 사용하여 Webview 세션을 계속 디버깅할 수는 없습니다.
 
 >[!NOTE]
 >

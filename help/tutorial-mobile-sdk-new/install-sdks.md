@@ -2,9 +2,9 @@
 title: Adobe Experience Platform Mobile SDK 설치
 description: 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법을 알아봅니다.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -33,9 +33,12 @@ ht-degree: 1%
 
 ## Swift 패키지 관리자
 
-CocoaPod를 사용하지 않고 Pod 파일을 사용합니다(모바일 설치 지침에 설명된 대로). [SDK 설치 지침 생성](./configure-tags.md#generate-sdk-install-instructions))에서는 Xcode의 기본 Swift 패키지 관리자를 사용하여 개별 패키지를 추가합니다.
+CocoaPod를 사용하지 않고 Pod 파일을 사용합니다(모바일 설치 지침에 설명된 대로). [SDK 설치 지침 생성](./configure-tags.md#generate-sdk-install-instructions))에서는 Xcode의 기본 Swift 패키지 관리자를 사용하여 개별 패키지를 추가합니다. Xcode 프로젝트에 이미 모든 패키지 종속성이 추가되었습니다. Xcode **[!UICONTROL 패키지 종속성]** 화면은 다음과 같아야 합니다.
 
-Xcode에서 다음을 사용합니다. **[!UICONTROL 파일]** > **[!UICONTROL 패키지 추가...]** 아래 표에 나열된 모든 패키지를 설치합니다. 특정 패키지에 대한 전체 URL을 얻으려면 테이블에서 패키지의 링크를 선택하십시오.
+![Xcode 패키지 종속성](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
+
+
+Xcode에서 다음을 사용할 수 있습니다 **[!UICONTROL 파일]** > **[!UICONTROL 패키지 추가...]** 패키지를 추가합니다. 아래 표는 패키지를 추가하는 데 사용할 URL에 대한 링크를 제공합니다. 또한 링크는 각 특정 패키지에 대한 자세한 정보를 안내합니다.
 
 | 패키지 | 설명 |
 |---|---|
@@ -50,14 +53,9 @@ Xcode에서 다음을 사용합니다. **[!UICONTROL 파일]** > **[!UICONTROL �
 | [AEP 보증](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance(Grifson 프로젝트) 는 새롭고 혁신적인 확장 프로그램입니다(`AEPAssurance`)를 사용하여 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인할 수 있습니다. 이 확장 기능을 사용하면 앱을 보증 용도로 사용할 수 있습니다. |
 
 
-모든 패키지를 설치한 후 Xcode **[!UICONTROL 패키지 종속성]** 화면은 다음과 같아야 합니다.
-
-![Xcode 패키지 종속성](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
-
-
 ## 확장 가져오기
 
-Xcode에서 다음으로 이동합니다. **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 그리고 다음 가져오기가 이 소스 파일의 일부인지 확인하십시오.
+Xcode에서 다음으로 이동합니다. **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 그리고 다음 가져오기가 이 소스 파일의 일부인지 확인하십시오.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -76,16 +74,16 @@ import AEPOptimize
 import AEPAssurance
 ```
 
-에 대해서도 동일한 작업 수행 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]**.
+에 대해서도 동일한 작업 수행 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## AppDelegate 업데이트
 
-다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** 를 입력합니다.
+다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** 를 입력합니다.
 
-1. 설정 `@AppStorage` 값 `environmentFileId` 의 6단계에서 태그에서 검색한 개발 환경 파일 ID 값으로 [SDK 설치 지침 생성](configure-tags.md#generate-sdk-install-instructions).
+1. 바꾸기 `@AppStorage` 값 `YOUR_ENVIRONMENT_ID_GOES_HERE` 대상 `environmentFileId` 의 6단계에서 태그에서 검색한 개발 환경 파일 ID 값으로 [SDK 설치 지침 생성](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
-   @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
    ```
 
 1. 에 다음 코드를 추가합니다 `application(_, didFinishLaunchingWithOptions)` 함수.

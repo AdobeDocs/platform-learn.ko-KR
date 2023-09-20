@@ -4,9 +4,9 @@ description: Adobe Experience Platform으로 데이터를 전송하는 방법에
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1056'
 ht-degree: 5%
 
 ---
@@ -33,6 +33,7 @@ Adobe Experience Platform에 대해 조직이 프로비저닝되고 권한이 �
 이 단원에서는 다음 작업을 수행합니다.
 
 * Experience Platform 데이터 세트를 만듭니다.
+* 데이터를 Experience Platform에 전달하도록 데이터 스트림을 구성합니다.
 * 데이터 세트의 데이터를 확인합니다.
 * 실시간 고객 프로필에 대한 스키마 및 데이터 세트를 활성화합니다.
 * 실시간 고객 프로필에서 데이터의 유효성을 검사합니다.
@@ -54,7 +55,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
    ![데이터 세트 홈](assets/dataset-create.png)
 
 1. 스키마를 검색합니다. 예: 사용 `Luma Mobile` 을 클릭합니다.
-1. 스키마 선택(예: ) **[!UICONTROL Luma 모바일 앱 이벤트 스키마]**.
+1. 스키마 선택(예: ) **[!DNL Luma Mobile App Event Schema]**.
 
 1. **[!UICONTROL 다음]**을 선택합니다.
    ![데이터 세트 구성](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 1. **[!UICONTROL 마침]**을 선택합니다.
    ![데이터 세트 완료](assets/dataset-finish.png)
 
-## 데이터 스트림 업데이트
 
-데이터 세트를 만들었으면 다음을 확인하십시오. [데이터 스트림 업데이트](create-datastream.md#adobe-experience-platform) Adobe Experience Platform 추가. 이 업데이트를 통해 데이터가 플랫폼으로 전송됩니다.
+## Adobe Experience Platform 데이터스트림 서비스 추가
+
+Edge Network에서 Adobe Experience Platform으로 XDM 데이터를 전송하려면 의 일부로 설정한 데이터스트림에 Adobe Experience Platform 서비스를 구성해야 합니다 [데이터 스트림 만들기](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>이벤트 데이터 세트를 만든 경우에만 Adobe Experience Platform 서비스를 활성화할 수 있습니다.
+
+1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]** 및 데이터 스트림입니다.
+
+1. 그런 다음 을 선택합니다 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 서비스 추가]**.
+
+1. [!UICONTROL 서비스] 목록에서 **[!UICONTROL Adobe Experience Platform]**&#x200B;을 선택합니다.
+
+1. 전환하여 서비스 활성화 **[!UICONTROL 활성화됨]** 켜짐.
+
+1. 다음 항목 선택 **[!UICONTROL 이벤트 데이터 세트]** 이전에 생성한 항목, 예 **[!DNL Luma Mobile App Event Dataset]**.
+
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+
+   ![Adobe Experience Platform을 데이터스트림 서비스로 추가](assets/datastream-service-aep.png)
+1. 최종 구성은 다음과 같아야 합니다.
+
+   ![데이터 스트림 설정](assets/datastream-settings.png)
+
 
 ## 데이터 세트의 데이터 유효성 검사
 
@@ -89,7 +113,7 @@ Experience Platform의 실시간 고객 프로필을 사용하면 온라인, 오
 
 ### 스키마 활성화
 
-1. 스키마 열기(예: **[!UICONTROL Luma 모바일 앱 이벤트 스키마]**.
+1. 스키마 열기(예: **[!DNL Luma Mobile App Event Schema]**.
 1. 사용 **[!UICONTROL 프로필]**.
 1. 선택 **[!UICONTROL 이 스키마의 데이터는 identityMap 필드에 기본 ID를 포함합니다.]** 을 클릭합니다.
 1. **[!UICONTROL 저장]** 스키마.
@@ -98,7 +122,7 @@ Experience Platform의 실시간 고객 프로필을 사용하면 온라인, 오
 
 ### 데이터 세트 활성화
 
-1. 데이터 세트를 엽니다. 예 **[!UICONTROL Luma 모바일 앱 이벤트 데이터 세트]**.
+1. 데이터 세트를 엽니다. 예 **[!DNL Luma Mobile App Event Dataset]**.
 1. 사용 **[!UICONTROL 프로필]**.
 
    ![프로필에 대한 데이터 세트 활성화](assets/platform-profile-dataset.png)

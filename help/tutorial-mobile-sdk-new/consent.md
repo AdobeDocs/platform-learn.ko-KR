@@ -1,16 +1,16 @@
 ---
-title: 동의
+title: 동의 구현
 description: 모바일 앱에서 동의를 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# 동의
+# 동의 구현
 
 모바일 앱에서 동의를 구현하는 방법을 알아봅니다.
 
@@ -36,7 +36,7 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
 
 1. 사용자에게 한 번만 묻습니다. 따라서 Mobile SDK 동의와 Apple을 사용한 추적에 필요한 권한을 결합하려고 합니다. [앱 추적 투명도 프레임워크](https://developer.apple.com/documentation/apptrackingtransparency). 이 앱에서는 사용자가 추적을 승인할 때 이벤트도 수집하는 것에 동의한다고 가정합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 를 입력합니다.
 
    에 이 코드 추가 `updateConsent` 함수.
 
@@ -48,7 +48,7 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL 면책조항 보기]** 응용 프로그램을 설치 또는 다시 설치하고 앱을 처음 시작한 후에 표시되는 보기인 Xcode의 Project navigator에 있습니다. Apple에 따라 추적을 승인하라는 메시지가 표시됩니다. [앱 추적 투명도 프레임워크](https://developer.apple.com/documentation/apptrackingtransparency). 사용자가 권한을 부여하면 동의도 업데이트됩니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 면책조항 보기]** 응용 프로그램을 설치 또는 다시 설치하고 앱을 처음 시작한 후에 표시되는 보기인 Xcode의 Project navigator에 있습니다. Apple에 따라 추적을 승인하라는 메시지가 표시됩니다. [앱 추적 투명도 프레임워크](https://developer.apple.com/documentation/apptrackingtransparency). 사용자가 권한을 부여하면 동의도 업데이트됩니다.
 
    에 다음 코드를 추가합니다 `ATTrackingManager.requestTrackingAuthorization { status in` 종료.
 
@@ -68,7 +68,7 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
 
 동의 모바일 확장은 현재 동의 값을 기반으로 추적을 자동으로 억제/보류/허용합니다. 현재 동의 상태에 직접 액세스할 수도 있습니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** Xcode의 Project navigator에서.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** Xcode의 Project navigator에서.
 
    에 다음 코드를 추가합니다 `getConsents` 함수:
 
@@ -82,7 +82,7 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
    }
    ```
 
-2. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL HomeView]** Xcode의 Project navigator에서.
+2. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** Xcode의 Project navigator에서.
 
    에 다음 코드를 추가합니다 `.task` 수정자:
 

@@ -1,15 +1,15 @@
 ---
-title: 장소
+title: 지리적 위치 서비스 사용
 description: 모바일 앱에서 위치 지리적 위치 서비스를 사용하는 방법을 알아봅니다.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1745'
 ht-degree: 3%
 
 ---
 
-# 장소
+# 지리적 위치 서비스 사용
 
 앱에서 지리적 위치 서비스를 사용하는 방법을 알아봅니다.
 
@@ -72,7 +72,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. 닫으려면 **[!UICONTROL 라이브러리 관리]** 대화 상자, 선택 **[!UICONTROL 닫기]**.
 1. 다시 시작 **[!UICONTROL POI 관리]**, 선택 **[!UICONTROL POI 가져오기]**.
 1. 선택 **[!UICONTROL 시작]** t**[!UICONTROL 위치 가져오기]** 대화 상자.
-1. 선택 **[!UICONTROL Luma]** 라이브러리 목록에서
+1. 선택 **[!DNL Luma]** 라이브러리 목록에서
 1. **[!UICONTROL 다음]**을 선택합니다.
    ![라이브러리 선택](assets/places-import-select-library.png)
 1. 다운로드 [Luma POI ZIP 파일](assets/luma_pois.csv.zip) 컴퓨터의 위치에 압축을 풉니다.
@@ -94,7 +94,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
    ![Decisioning 확장 추가](assets/tag-places-extension.png)
 
 1. 다음에서 **[!UICONTROL 확장 설치]** 대화 상자:
-   1. 선택 **[!UICONTROL Luma]** 다음에서 **[!UICONTROL 라이브러리 선택]** 목록을 표시합니다.
+   1. 선택 **[!DNL Luma]** 다음에서 **[!UICONTROL 라이브러리 선택]** 목록을 표시합니다.
    1. 작업 라이브러리(예: )를 선택했는지 확인합니다. **[!UICONTROL 초기 빌드]**.
    1. 선택 **[!UICONTROL 라이브러리 및 빌드에 저장]** 출처: **[!UICONTROL 라이브러리에 저장]**.
       ![위치 확장 설치](assets/places-install-extension.png).
@@ -268,7 +268,7 @@ Assurance에서 설정을 확인하려면:
 >
 
 1. Xcode에서 다음을 확인합니다 [AEP Places](https://github.com/adobe/aepsdk-places-ios) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPPlaces` 는 가져오기 목록의 일부입니다.
 
    `import AEPPlaces`
@@ -291,7 +291,7 @@ Assurance에서 설정을 확인하려면:
    ]
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.다음 코드를 추가합니다.
 
    ```swift
    // Process geolocation event
@@ -300,7 +300,7 @@ Assurance에서 설정을 확인하려면:
 
    이 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API는 지리적 위치 정보를 장소 서비스에 전달합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 위치]** > **[!UICONTROL Geofence 시트]** Xcode의 Project navigator에서.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** Xcode의 Project navigator에서.
 
    1. [입력] 단추에 다음 코드를 입력합니다
 

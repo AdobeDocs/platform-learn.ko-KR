@@ -1,20 +1,20 @@
 ---
-title: Adobe Journey Optimizer 푸시 메시지
-description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모바일 앱에 푸시 메시지를 만드는 방법을 알아봅니다.
+title: 푸시 알림 만들기 및 전송
+description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모바일 앱에 대한 푸시 알림을 만드는 방법을 알아봅니다.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '2241'
-ht-degree: 2%
+source-wordcount: '2554'
+ht-degree: 3%
 
 ---
 
-# Journey Optimizer 푸시 메시지
+# 푸시 알림 만들기 및 전송
 
-Experience Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 푸시 메시지를 만드는 방법을 알아봅니다.
+Experience Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 푸시 알림을 만드는 방법을 알아봅니다.
 
 Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에게 메시지를 보낼 수 있습니다. Journey Optimizer을 사용하여 푸시 알림을 전송하기 전에 적절한 구성 및 통합이 있는지 확인해야 합니다. Journey Optimizer의 푸시 알림 데이터 흐름을 이해하려면 다음을 참조하십시오 [설명서](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -22,7 +22,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 >[!NOTE]
 >
->이 단원은 선택 사항이며 푸시 메시지를 전송하려는 Journey Optimizer 사용자에게만 적용됩니다.
+>이 단원은 선택 사항이며 푸시 알림을 전송하려는 Journey Optimizer 사용자에게만 적용됩니다.
 
 
 ## 전제 조건
@@ -56,13 +56,13 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 >[!TIP]
 >
->의 일부로 환경을 이미 설정한 경우 [Journey Optimizer 인앱 메시지](journey-optimizer-inapp.md) 자습서에서는 이 섹션을 건너뛸 수 있습니다.
+>의 일부로 환경을 이미 설정한 경우 [Journey Optimizer 인앱 메시지](journey-optimizer-inapp.md) 단원, 이 설정 섹션의 일부 단계를 이미 수행했을 수 있습니다.
 
 ### APNs에 앱 ID 등록
 
 다음 단계는 Adobe Experience Cloud 전용이 아니며 APNs 구성을 안내하도록 설계되었습니다.
 
-### 개인 키 만들기
+#### 개인 키 만들기
 
 1. Apple 개발자 포털에서 **[!UICONTROL 키]**.
 1. 키를 만들려면 다음을 선택합니다. **[!UICONTROL +]**.
@@ -80,7 +80,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 추가 설명서는 다음과 같습니다. [여기에서 찾음](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
-### 데이터 수집에서 앱 푸시 자격 증명 추가
+#### 데이터 수집에서 앱 표면 추가
 
 1. 다음에서 [데이터 수집 인터페이스](https://experience.adobe.com/data-collection/), 선택 **[!UICONTROL 앱 표면]** 왼쪽 패널에서
 1. 구성을 만들려면 다음을 선택합니다 **[!UICONTROL 앱 표면 만들기]**.
@@ -96,12 +96,25 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
    ![앱 표면 구성](assets/push-app-surface-config.png)
 
+### 데이터 스트림 구성 업데이트
+
+모바일 앱에서 Edge Network로 전송된 데이터가 Journey Optimizer으로 전달되도록 하려면 Experience Edge 구성 을 업데이트합니다.
+
+1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!DNL Luma Mobile App]**.
+1. 선택 ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 대상 **[!UICONTROL Experience Platform]** 및 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
+1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
+1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]**.
+
+   ![AEP 데이터스트림 구성](assets/datastream-aep-configuration.png)
+
+
+
 ### Journey Optimizer 태그 확장 설치
 
 앱이 Journey Optimizer에서 작동하려면 태그 속성을 업데이트해야 합니다.
 
 1. 다음으로 이동 **[!UICONTROL 태그]** > **[!UICONTROL 확장]** > **[!UICONTROL 카탈로그]**,
-1. 속성을 엽니다. 예 **[!UICONTROL Luma 모바일 앱 튜토리얼]**.
+1. 속성을 엽니다. 예 **[!DNL Luma Mobile App Tutorial]**.
 1. 선택 **[!UICONTROL 카탈로그]**.
 1. 검색 **[!UICONTROL Adobe Journey Optimizer]** 확장명.
 1. 확장을 설치합니다.
@@ -116,6 +129,49 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 >표시되지 않으면 **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 선택 사항으로 고객 지원 센터에 문의하십시오.
 >
 
+## Assurance를 사용하여 설정 유효성 검사
+
+1. 리뷰 [설치 지침](assurance.md) 섹션.
+1. 물리적 장치 또는 시뮬레이터에 앱을 설치합니다.
+1. 보증 생성 URL을 사용하여 앱을 실행합니다.
+1. Assurance UI에서 **[!UICONTROL 구성]**.
+   ![구성 클릭](assets/push-validate-config.png)
+1. 선택 ![플러스](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 푸시 디버그]**.
+1. **[!UICONTROL 저장]**을 선택합니다.
+   ![저장](assets/push-validate-save.png)
+1. 선택 **[!UICONTROL 푸시 디버그]** 왼쪽 탐색에서.
+1. 다음 항목 선택 **[!UICONTROL 설정 유효성 검사]** 탭.
+1. 에서 장치 선택 **[!UICONTROL 클라이언트]** 목록을 표시합니다.
+1. 오류가 발생하지 않는지 확인합니다.
+   ![유효성 검사](assets/push-validate-confirm.png)
+1. 다음 항목 선택 **[!UICONTROL 테스트 푸시 보내기]** 탭.
+1. (선택 사항) 의 기본 세부 정보 변경 **[!UICONTROL 제목]** 및 **[!UICONTROL 본문]**
+1. 선택 ![버그](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL 테스트 푸시 알림 보내기]**.
+1. 다음 확인: **[!UICONTROL 테스트 결과]**.
+1. 앱에 테스트 푸시 알림이 표시되는 것을 확인해야 합니다.
+
+   <img src="assets/luma-app-push.png" width="300" />
+
+
+### 앱에 푸시 알림 기능 추가
+
+>[!IMPORTANT]
+>
+>iOS 앱에서 푸시 알림을 구현하고 테스트하려면 **유료** Apple 개발자 계정입니다. 유료 Apple 개발자 계정이 없는 경우 이 단원의 나머지 부분을 건너뛸 수 있습니다.
+
+1. Xcode에서 **[!DNL Luma]** 다음에서 **[!UICONTROL 타겟]** 목록에서 **[!UICONTROL 서명 및 기능]** 탭에서 **[!UICONTROL + 기능]** 버튼을 누른 다음 선택 **[!UICONTROL 푸시 알림]**. 이렇게 하면 앱에서 푸시 알림을 받을 수 있습니다.
+
+1. 그런 다음 앱에 알림 확장 기능을 추가해야 합니다. 로 돌아가기 **[!DNL General]** 탭을 클릭하고 다음을 선택합니다. **[!UICONTROL +]** 아이콘(맨 아래) **[!UICONTROL 타겟]** 섹션.
+
+1. 새 타겟에 대한 템플릿을 선택하라는 메시지가 표시됩니다. 선택 **[!UICONTROL 알림 서비스 확장]** 그런 다음 선택 **[!UICONTROL 다음]**.
+
+1. 다음 창에서 `NotificationExtension` 를 확장 이름으로 사용하고 **[!UICONTROL 완료]** 단추를 클릭합니다.
+
+이제 아래 화면과 유사하게 앱에 푸시 알림 확장 기능이 추가되어야 합니다.
+
+![푸시 알림 확장](assets/xcode-signing-capabilities-pushnotifications.png)
+
+
 ### 앱에서 Journey Optimizer 구현
 
 이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 메시징 SDK를 설치하고 등록해야 합니다. 이러한 단계가 명확하지 않으면 다음을 검토하십시오. [SDK 설치](install-sdks.md) 섹션.
@@ -126,7 +182,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 >
 
 1. Xcode에서 다음을 확인합니다 [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPMessaging` 는 가져오기 목록의 일부입니다.
 
    `import AEPMessaging`
@@ -160,28 +216,9 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
    이 함수는 앱이 설치된 장치에 고유한 장치 토큰을 검색합니다. 그런 다음 설정한 구성을 사용하여 푸시 알림 전달을 위한 토큰을 설정하고 Apple의 APNs(푸시 알림 서비스)를 사용합니다.
 
-## Assurance를 사용하여 설정 유효성 검사
-
-1. 리뷰 [설치 지침](assurance.md) 섹션.
-1. 물리적 장치 또는 시뮬레이터에 앱을 설치합니다.
-1. 보증 생성 URL을 사용하여 앱을 실행합니다.
-1. Assurance UI에서 **[!UICONTROL 구성]**.
-   ![구성 클릭](assets/push-validate-config.png)
-1. 선택 ![플러스](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 푸시 디버그]**.
-1. **[!UICONTROL 저장]**을 선택합니다.
-   ![저장](assets/push-validate-save.png)
-1. 선택 **[!UICONTROL 푸시 디버그]** 왼쪽 탐색에서.
-1. 다음 항목 선택 **[!UICONTROL 설정 유효성 검사]** 탭.
-1. 에서 장치 선택 **[!UICONTROL 클라이언트]** 목록을 표시합니다.
-1. 오류가 발생하지 않는지 확인합니다.
-   ![유효성 검사](assets/push-validate-confirm.png)
-1. 다음 항목 선택 **[!UICONTROL 테스트 푸시 보내기]** 탭.
-1. (선택 사항) 의 기본 세부 정보 변경 **[!UICONTROL 제목]** 및 **[!UICONTROL 본문]**
-1. 선택 ![버그](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL 테스트 푸시 알림 보내기]**.
-1. 다음 확인: **[!UICONTROL 테스트 결과]**.
-1. 앱에 테스트 푸시 알림이 표시되는 것을 확인해야 합니다.
-
-   <img src="assets/luma-app-push.png" width="300" />
+>[!IMPORTANT]
+>
+>다음 `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` 푸시 알림이 푸시 알림을 전송하기 위해 APNs 샌드박스 또는 프로덕션 서버를 사용하는지 여부를 결정합니다. 시뮬레이터 또는 장치에서 앱을 테스트할 때 `messaging.useSandbox` 이(가) (으)로 설정됨 `true` 푸시 알림을 받을 수 있습니다. Apple의 Testflight를 사용하여 테스트할 프로덕션 앱을 배포할 때 다음을 설정하십시오. `messaging.useSandbox` 끝 `false` 그렇지 않으면 프로덕션 앱에서 푸시 알림을 받을 수 없습니다.
 
 
 ## 나만의 푸시 알림 만들기
@@ -194,7 +231,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 1. Journey Optimizer UI에서 **[!UICONTROL 스키마]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 찾아보기]** 을 클릭합니다.
-1. 스키마 선택(예: ) **[!UICONTROL Luma 모바일 앱 이벤트 스키마]** 열려고.
+1. 스키마 선택(예: ) **[!DNL Luma Mobile App Event Schema]** 열려고.
 1. 스키마 편집기에서:
    1. 다음 항목 선택 **[!UICONTROL eventType]** 필드.
    1. 다음에서 **[!UICONTROL 필드 속성]** 창에서 아래로 스크롤하여 이벤트 유형에 사용할 수 있는 값 목록을 확인합니다. 선택 **[!UICONTROL 행 추가]**, 및 추가 `application.test` (으)로 **[!UICONTROL 값]** 및 `[!UICONTROL Test event for push notification]` (으)로 `DISPLAY NAME`.
@@ -217,7 +254,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
    1. 입력 `LumaTestEvent` (으)로 **[!UICONTROL 이름]** 이벤트.
    1. 다음을 제공합니다. **[!UICONTROL 설명]**, 예 `Test event to trigger push notifications in Luma app`.
 
-   1. 앞에서 만든 모바일 앱 경험 이벤트 스키마를 선택합니다. [XDM 스키마 만들기](create-schema.md) 다음에서 **[!UICONTROL 스키마]** 목록, 예 **[!UICONTROL Luma 모바일 앱 이벤트 스키마 v.1]**.
+   1. 앞에서 만든 모바일 앱 경험 이벤트 스키마를 선택합니다. [XDM 스키마 만들기](create-schema.md) 다음에서 **[!UICONTROL 스키마]** 목록, 예 **[!DNL Luma Mobile App Event Schema v.1]**.
    1. 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 다음 옆에 **[!UICONTROL 필드]** 목록을 표시합니다.
 
       ![이벤트 편집 1단계](assets/ajo-edit-event1.png)
@@ -259,13 +296,13 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
    1. 선택 **[!UICONTROL 확인]**.
       ![여정 속성](assets/ajo-journey-properties.png)
 
-1. 여정 캔버스에서 **[!UICONTROL 이벤트]**&#x200B;을(를) 끌어다 놓습니다. ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!UICONTROL LumaTestEvent]** 표시되는 캔버스 **[!UICONTROL 시작 이벤트 또는 대상자 읽기 활동 선택]**.
+1. 여정 캔버스에서 **[!UICONTROL 이벤트]**&#x200B;을(를) 끌어다 놓습니다. ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]** 표시되는 캔버스 **[!UICONTROL 시작 이벤트 또는 대상자 읽기 활동 선택]**.
 
    * 다음에서 **[!UICONTROL 이벤트: LumaTestEvent]** 패널, 입력 **[!UICONTROL 레이블]**, 예 `Luma Test Event`.
 
-1. 다음에서 **[!UICONTROL 작업]** 드롭다운, 드래그 앤 드롭 ![푸시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL 푸시]** 다음에 있음 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 의 오른쪽에 표시 **[!UICONTROL LumaTestEvent]** 활동. 다음에서 **[!UICONTROL 작업: 푸시]** 창:
+1. 다음에서 **[!UICONTROL 작업]** 드롭다운, 드래그 앤 드롭 ![푸시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL 푸시]** 다음에 있음 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 의 오른쪽에 표시 **[!DNL LumaTestEvent]** 활동. 다음에서 **[!UICONTROL 작업: 푸시]** 창:
 
-   1. 다음을 제공합니다. **[!UICONTROL 레이블]**, 예 `Luma Test Push Notification`, 다음을 제공합니다. **[!UICONTROL 설명]**, 예 `Test push notification for Luma mobile app`, 선택 **[!UICONTROL 트랜잭션]** 다음에서 **[!UICONTROL 범주]** 나열 및 선택 **[!UICONTROL Luma]** 다음에서 **[!UICONTROL 푸시 표면]**.
+   1. 다음을 제공합니다. **[!UICONTROL 레이블]**, 예 `Luma Test Push Notification`, 다음을 제공합니다. **[!UICONTROL 설명]**, 예 `Test push notification for Luma mobile app`, 선택 **[!UICONTROL 트랜잭션]** 다음에서 **[!UICONTROL 범주]** 나열 및 선택 **[!DNL Luma]** 다음에서 **[!UICONTROL 푸시 표면]**.
    1. 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 콘텐츠 편집]** 실제 푸시 알림 편집을 시작합니다.
       ![푸시 속성](assets/ajo-push-properties.png)
 
@@ -287,7 +324,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 
 이번에는 보내려는 경험 이벤트가 간단한 XDM 사전을 빌드하여 생성되지 않습니다. 다음을 사용합니다. `struct` 푸시 알림 페이로드를 나타냅니다. 전용 데이터 유형 정의는 애플리케이션에서 경험 이벤트 페이로드 구성을 구현하는 방법에 대한 대체 방법입니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 모델]** > **[!UICONTROL XDM]** > **[!UICONTROL 테스트 푸시 페이로드]** 를 클릭하고 코드를 검사합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL 모델]** > **[!UICONTROL XDM]** > **[!UICONTROL 테스트 푸시 페이로드]** 를 클릭하고 코드를 검사합니다.
 
    ```swift
    import Foundation
@@ -315,7 +352,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
    }
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 다음 코드를 `func sendTestPushEvent(applicationId: String, eventType: String)`:
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 다음 코드를 `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
    ```swift
    // Create payload and send experience event
@@ -335,7 +372,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 
    이 코드는 `testPushPayload` 함수에 제공된 매개 변수를 사용하는 인스턴스(`applicationId` 및 `eventType`) 및 호출 `sendExperienceEvent` 페이로드를 사전으로 변환하는 동안 오류가 발생했습니다. 이 코드는 또한 다음에 기반한 Swift의 동시성 모델을 사용하여 Adobe Experience Platform SDK를 호출하는 비동기 측면을 고려합니다. `await` 및 `async`.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL ConfigView]** 를 입력합니다. 푸시 알림 단추 정의에서 다음 코드를 추가하여 테스트 푸시 알림 경험 이벤트 페이로드를 전송하여 해당 단추를 누를 때마다 여정을 트리거합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL ConfigView]** 를 입력합니다. 푸시 알림 단추 정의에서 다음 코드를 추가하여 테스트 푸시 알림 경험 이벤트 페이로드를 전송하여 해당 단추를 누를 때마다 여정을 트리거합니다.
 
    ```swift
    // Setting parameters and calling function to send push notification
@@ -360,7 +397,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 
 ## 다음 단계
 
-이제 앱에서 푸시 알림을 처리할 수 있는 모든 도구가 있어야 합니다. 예를 들어 앱 사용자가 로그인할 때 환영 푸시 알림을 전송하는 여정을 Journey Optimizer에 빌드할 수 있습니다. 또는 사용자가 앱에서 제품을 구매할 때 표시되는 확인 푸시 메시지입니다. 또는 의 위치에 geofence를 입력합니다(에서 볼 수 있듯이). [위치](places.md) 단원).
+이제 앱에서 푸시 알림을 처리할 수 있는 모든 도구가 있어야 합니다. 예를 들어 앱 사용자가 로그인할 때 환영 푸시 알림을 전송하는 여정을 Journey Optimizer에 빌드할 수 있습니다. 또는 사용자가 앱에서 제품을 구매할 때 확인 푸시 알림이 표시됩니다. 또는 의 위치에 geofence를 입력합니다(에서 볼 수 있듯이). [위치](places.md) 단원).
 
 >[!SUCCESS]
 >

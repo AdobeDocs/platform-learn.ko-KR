@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 2%
+source-wordcount: '1771'
+ht-degree: 3%
 
 ---
 
@@ -48,17 +48,19 @@ Target에서 A/B 테스트를 수행하려면 먼저 적절한 구성 및 통합
 * Assurance에서 구현의 유효성을 검사합니다.
 
 
-## 앱 설정
+## 설정
 
 >[!TIP]
 >
->앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 오퍼](journey-optimizer-offers.md) 단원, 두 가지를 모두 건너뛸 수 있습니다. [Adobe Journey Optimizer - Decisioning 태그 확장 설치](#install-adobe-journey-optimizer---decisioning-tags-extension) 및 [스키마 업데이트](#update-your-schema).
+>앱을 의 일부로 이미 설정한 경우 [Journey Optimizer 오퍼](journey-optimizer-offers.md) 단원, 이 설정 섹션의 일부 단계를 이미 수행했을 수 있습니다.
 
 ### 데이터 스트림 구성 업데이트
 
+### Adobe Target
+
 모바일 앱에서 Experience Platform Edge Network로 전송된 데이터가 Adobe Target으로 전달되도록 하려면 데이터 스트림 구성을 업데이트해야 합니다.
 
-1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!UICONTROL Luma 모바일 앱]**.
+1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!DNL Luma Mobile App]**.
 1. 선택 **[!UICONTROL 서비스 추가]** 및 선택 **[!UICONTROL Adobe Target]** 다음에서 **[!UICONTROL 서비스]** 목록을 표시합니다.
 1. Target Premium 고객이 속성 토큰을 사용하려면 Target을 입력합니다 **[!UICONTROL 속성 토큰]** 이 통합에 사용할 값입니다. Target Standard 사용자는 이 단계를 건너뛸 수 있습니다.
 
@@ -67,6 +69,18 @@ Target에서 A/B 테스트를 수행하려면 먼저 적절한 구성 및 통합
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    ![데이터 스트림에 대상 추가](assets/edge-datastream-target.png)
+
+
+#### Adobe Journey Optimizer
+
+모바일 앱에서 Edge Network로 전송된 데이터가 의사 결정 관리인 Journey Optimizer으로 전달되도록 하려면 Experience Edge 구성을 업데이트 하십시오.
+
+1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!DNL Luma Mobile App]**.
+1. 선택 ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 대상 **[!UICONTROL Experience Platform]** 및 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
+1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Offer decisioning]**, **[!UICONTROL Edge 세그멘테이션]**, 및 **[!UICONTROL 개인화 대상]** 이(가) 선택되어 있습니다. Journey Optimizer 단원을 따르는 경우 다음을 선택해야 합니다. **[!UICONTROL Adobe Journey Optimizer]** 또한. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
+1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]** .
+
+   ![AEP 데이터스트림 구성](assets/datastream-aep-configuration-target.png)
 
 
 ### Adobe Journey Optimizer - Decisioning 태그 확장 설치
@@ -143,7 +157,7 @@ Assurance에서 설정을 확인하려면:
 
       ![경험 B](assets/target-create-activity-experienceB.png)
 
-1. 다음에서 **[!UICONTROL 타겟팅]** 단계: A/B 테스트 설정을 검토합니다. 기본적으로 두 오퍼는 모두 모든 방문자에게 동일하게 할당됩니다. 계속하려면 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. 다음에서 **[!DNL Targeting]** 단계: A/B 테스트 설정을 검토합니다. 기본적으로 두 오퍼는 모두 모든 방문자에게 동일하게 할당됩니다. 계속하려면 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
    ![](assets/taget-targeting.png) 타겟팅 
 
@@ -151,7 +165,7 @@ Assurance에서 설정을 확인하려면:
 
    1. 제목 없는 활동의 이름을 (예: )으로 변경합니다. `Luma Mobile SDK Tutorial - A/B Test Example`.
    1. 다음을 입력하십시오. **[!UICONTROL 목표]** A/B 테스트의 경우 예 `A/B Test for Luma mobile app tutorial`.
-   1. 선택 **[!UICONTROL 전환]**, **[!UICONTROL mbox를 클릭함]** 다음에서 **[!UICONTROL 목표 지표]** > **[!UICONTROL 내 기본 목표]** 타일을 지정하고 위치(mbox) 이름을 입력합니다(예: ) `luma-mobileapp-abtest`.
+   1. 선택 **[!UICONTROL 전환]**, **[!UICONTROL mbox 확인함]** 다음에서 **[!UICONTROL 목표 지표]** > **[!UICONTROL 내 기본 목표]** 타일을 지정하고 위치(mbox) 이름을 입력합니다(예: ) `luma-mobileapp-abtest`.
    1. 선택 **[!UICONTROL 저장 및 닫기]**.
 
       ![목표 설정](assets/target-goals.png)
@@ -174,7 +188,7 @@ Assurance에서 설정을 확인하려면:
 >
 
 1. Xcode에서 다음을 확인합니다 [AEP 최적화](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPOptimize` 는 가져오기 목록의 일부입니다.
 
    `import AEPOptimize`
@@ -197,7 +211,7 @@ Assurance에서 설정을 확인하려면:
    ]
    ```
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 ` func updatePropositionAT(ecid: String, location: String) async` 함수. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** 를 입력합니다. 다음 찾기 ` func updatePropositionAT(ecid: String, location: String) async` 함수. 다음 코드를 추가합니다.
 
    ```swift
    Task {
@@ -217,13 +231,13 @@ Assurance에서 설정을 확인하려면:
 
    그런 다음 함수는 다음 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 개인화]** > **[!UICONTROL TargetOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateAT(location: String) async {` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateAT(location: String) async {` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,
    * 결정 범위(A/B 테스트에서 정의한 위치)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
    * 제안에서 오퍼를 검색합니다.
    * 앱에서 제대로 표시될 수 있도록 오퍼의 콘텐츠를 래핑 해제합니다.
    * 트리거 `displayed()` 오퍼를 알리는 이벤트를 Edge Network로 다시 전송하는 오퍼에 대한 작업이 표시됩니다.
 
-1. 아직 **[!UICONTROL TargetOffersView]**&#x200B;에 다음 코드를 추가합니다. `.onFirstAppear` 수정자. 이 코드는 오퍼를 업데이트하기 위한 콜백이 한 번만 등록되도록 합니다.
+1. 아직 **[!DNL TargetOffersView]**&#x200B;에 다음 코드를 추가합니다. `.onFirstAppear` 수정자. 이 코드는 오퍼를 업데이트하기 위한 콜백이 한 번만 등록되도록 합니다.
 
    ```swift
    // Invoke callback for offer updates
@@ -232,12 +246,15 @@ Assurance에서 설정을 확인하려면:
    }
    ```
 
-1. 아직 **[!UICONTROL TargetOffersView]**&#x200B;에 다음 코드를 추가합니다. `.task` 수정자. 이 코드는 보기를 새로 고칠 때 오퍼를 업데이트합니다.
+1. 아직 **[!DNL TargetOffersView]**&#x200B;에 다음 코드를 추가합니다. `.task` 수정자. 이 코드는 보기를 새로 고칠 때 오퍼를 업데이트합니다.
 
    ```swift
    // Clear and update offers
    await self.updatePropositionsAT(ecid: currentEcid, location: location)
    ```
+
+을 호출할 때 데이터 사전에 추가하여 개인화 쿼리 요청의 추가 Target 매개 변수(예: mbox, 프로필, 제품 또는 주문 매개 변수)를 Experience Edge 네트워크에 보낼 수 있습니다. [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions) API. 자세한 내용은 을 참조하십시오 [Target 매개 변수](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#target-parameters).
+
 
 ## 앱을 사용하여 유효성 검사
 
@@ -260,7 +277,7 @@ Assurance에서 A/B 테스트를 확인하려면 다음을 수행하십시오.
 1. 선택 **[!UICONTROL 구성]** 왼쪽 레일에서 다음을 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 검토 및 시뮬레이션]** 아래 **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 선택 **[!UICONTROL 검토 및 시뮬레이션]** 왼쪽 레일에서. 데이터 스트림 설정과 SDK 설정이 모두 애플리케이션에서 검증되었습니다.
-1. 선택 **[!UICONTROL 요청]** 맨 위 막대에서. 다음을 확인함: **[!UICONTROL Target]** 요청.
+1. 선택 **[!UICONTROL 요청]** 맨 위 막대에서. 다음을 확인함: **[!DNL Target]** 요청.
    ![AJO 의사 결정 유효성 검사](assets/assurance-decisioning-requests.png)
 
 1. 다음을 살펴볼 수 있습니다. **[!UICONTROL 시뮬레이트]** 및 **[!UICONTROL 이벤트 목록]** Target 오퍼에 대한 설정을 확인하는 추가 기능에 대한 탭입니다.

@@ -1,15 +1,15 @@
 ---
-title: 이벤트
+title: 이벤트 데이터 수집
 description: 모바일 앱에서 이벤트 데이터를 수집하는 방법에 대해 알아봅니다.
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 0%
+source-wordcount: '1309'
+ht-degree: 1%
 
 ---
 
-# 이벤트
+# 이벤트 데이터 수집
 
 모바일 앱에서 이벤트를 추적하는 방법에 대해 알아봅니다.
 
@@ -127,7 +127,7 @@ var xdmData: [String: Any] = [
 
 재사용 가능한 방식으로 상거래 관련 경험 이벤트 전송을 구현하려면 전용 함수를 사용합니다.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 다음을 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 함수.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 다음을 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 함수.
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -158,7 +158,7 @@ var xdmData: [String: Any] = [
    * 사전을 사용하여 경험 이벤트를 설정합니다.
    * 을(를) 사용하여 경험 이벤트를 전송합니다. [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 제품]** > **[!UICONTROL 제품 보기]** xcode 프로젝트 탐색기에서 `sendCommerceExperienceEvent` 함수:
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL 제품 보기]** xcode 프로젝트 탐색기에서 `sendCommerceExperienceEvent` 함수:
 
    1. 위치: `.task` 수정자, 다음 범위 내 `ATTrackingManager.trackingAuthorizationStatus` 종료. 이 `.task` 수정자는 제품 보기가 초기화되어 표시될 때 호출되므로 특정 시점에 제품 보기 이벤트를 보내려고 합니다.
 
@@ -263,7 +263,7 @@ var xdmData: [String: Any] = [
 
 여기서도 Xcode 프로젝트에서 이 코드를 실제로 구현해 보겠습니다.
 
-1. 편의를 위해 **[!UICONTROL MobileSDK]**. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 유틸리티]** > **[!UICONTROL MobileSDK]** 를 입력합니다.
+1. 편의를 위해 **[!UICONTROL MobileSDK]**. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 를 입력합니다.
 
    1. 앱 상호 작용을 위한 것입니다. 에 이 코드 추가 `func sendAppInteractionEvent(actionName: String)` 함수:
 
@@ -321,7 +321,7 @@ var xdmData: [String: Any] = [
       * 사전을 사용하여 경험 이벤트를 설정합니다.
       * 을(를) 사용하여 경험 이벤트를 전송합니다. [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. 다음으로 이동 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 보기]** > **[!UICONTROL 일반]** > **[!UICONTROL 로그인 시트]**.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 로그인 시트]**.
 
    1. 로그인 단추 닫기에 다음과 같은 강조 표시된 코드를 추가합니다.
 
@@ -345,7 +345,7 @@ var xdmData: [String: Any] = [
 
    1. Assurance 아이콘을 왼쪽으로 이동합니다.
    1. 선택 **[!UICONTROL 홈]** 탭 표시줄에서 **[!UICONTROL ECID]**, **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]** 홈 화면에서 다음을 수행합니다.
-   1. 선택 **[!UICONTROL 제품]** 을 클릭합니다.
+   1. 선택 **[!DNL Products]** 을 클릭합니다.
    1. 제품을 선택합니다.
    1. 선택 <img src="assets/saveforlater.png" width="15" />.
    1. 선택 <img src="assets/addtocart.png" width="20" />.
@@ -361,7 +361,7 @@ var xdmData: [String: Any] = [
 
 ## 다음 단계
 
-이제 Luma 앱에 데이터 수집을 추가할 수 있는 모든 도구가 있어야 합니다. 사용자가 앱에서 제품과 상호 작용하는 방식에 더 많은 인텔리전스를 추가하고 앱에 더 많은 앱 상호 작용 및 화면 추적 호출을 추가할 수 있습니다.
+이제 앱에 데이터 수집을 추가할 수 있는 모든 도구가 있어야 합니다. 사용자가 앱에서 제품과 상호 작용하는 방식에 더 많은 인텔리전스를 추가하고 앱에 더 많은 앱 상호 작용 및 화면 추적 호출을 추가할 수 있습니다.
 
 * 앱에 주문, 체크아웃, 빈 장바구니 및 기타 기능을 구현하고 이 기능에 관련 상거래 경험 이벤트를 추가합니다.
 * 호출 반복 `sendAppInteractionEvent` 를 적절한 매개 변수로 사용하여 사용자가 다른 앱 상호 작용을 추적합니다.

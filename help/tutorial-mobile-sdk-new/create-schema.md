@@ -3,9 +3,9 @@ title: XDM 스키마 만들기
 description: 모바일 앱 이벤트에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1482'
 ht-degree: 8%
 
 ---
@@ -28,7 +28,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 >[!TIP]
 >
->Analytics 솔루션 디자인 참조(SDR)에 익숙하다면 스키마를 더 강력한 SDR로 생각할 수 있습니다.
+>Analytics 솔루션 디자인 참조(SDR)에 익숙하다면 스키마를 더 강력한 SDR로 생각할 수 있습니다. 다음을 참조하십시오 [솔루션 디자인 참조(SDR) 문서 생성 및 유지 관리](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=ko-KR) 추가 정보.
 
 ## 전제 조건
 
@@ -214,7 +214,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 1. 오른쪽 레일에서 **[!UICONTROL 필드 이름]** / `appInformation`, a **[!UICONTROL 표시 이름]** / `App Information`, 및 **[!UICONTROL 유형]** / `App Information`.
 
-1. 선택 **[!UICONTROL 앱 상호 작용]** 다음에서 **[!UICONTROL 유형]** 드롭다운은 이전 연습에서 만든 사용자 지정 데이터 유형입니다.
+1. 선택 **[!UICONTROL 앱 상호 작용]** 다음에서 **[!UICONTROL 필드 그룹]** 드롭다운을 사용하여 필드를 새 필드 그룹에 할당합니다.
 
 1. **[!UICONTROL 적용]**&#x200B;을 선택합니다.
 
@@ -224,7 +224,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 >[!NOTE]
 >
->사용자 정의 필드 그룹은 항상 Experience Cloud 조직 식별자 아래에 배치됩니다. So `_techmarketingdemos`스크린샷에 사용되는 는 조직의 고유 값으로 대체됩니다.
+>사용자 정의 필드 그룹은 항상 Experience Cloud 조직 식별자 아래에 배치됩니다.
 
 
 >[!SUCCESS]
