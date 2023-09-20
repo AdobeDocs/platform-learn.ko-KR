@@ -1,15 +1,15 @@
 ---
-title: 이벤트 데이터 수집
-description: 모바일 앱에서 이벤트 데이터를 수집하는 방법에 대해 알아봅니다.
+title: 이벤트 데이터 추적
+description: 모바일 앱에서 이벤트 데이터를 추적하는 방법에 대해 알아봅니다.
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 1%
+source-wordcount: '1310'
+ht-degree: 0%
 
 ---
 
-# 이벤트 데이터 수집
+# 이벤트 데이터 추적
 
 모바일 앱에서 이벤트를 추적하는 방법에 대해 알아봅니다.
 
@@ -380,4 +380,4 @@ var xdmData: [String: Any] = [
 >
 >이제 Adobe Experience Platform Edge Network와 데이터 스트림에 정의한 모든 서비스에 대한 상거래, 앱 상호 작용 및 화면 추적 이벤트를 추적하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-다음: **[웹 보기 수](web-views.md)**
+다음: **[웹 보기 처리](web-views.md)**

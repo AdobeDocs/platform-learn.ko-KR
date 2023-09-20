@@ -5,15 +5,15 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1769'
 ht-degree: 3%
 
 ---
 
 
-# Target을 사용하여 A/B 테스트 수행
+# A/B 테스트 수행
 
 Platform Mobile SDK 및 Adobe Target을 사용하여 모바일 앱에서 A/B 테스트를 수행하는 방법을 알아봅니다.
 

@@ -1,11 +1,11 @@
 ---
-title: Analytics 데이터 수집 및 매핑
+title: 데이터를 Analytics 데이터에 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하고 매핑하는 방법을 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 4%
 
 ---
@@ -230,4 +230,4 @@ Additional information about processing rules and context data can be found [her
 >
 >앱을 설정하여 Experience Edge XDM 개체를 Adobe Analytics 변수에 매핑합니다. 이 변수는 데이터스트림에서 Adobe Analytics 서비스를 활성화하고 가능한 경우 처리 규칙을 사용합니다.<br/> Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-다음: **[Experience Platform](platform.md)**
+다음: **[Experience Platform으로 데이터 보내기](platform.md)**

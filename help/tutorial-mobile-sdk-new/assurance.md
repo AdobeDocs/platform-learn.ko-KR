@@ -3,9 +3,9 @@ title: Assurance 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '775'
 ht-degree: 9%
 
 ---
@@ -68,7 +68,7 @@ Xcode에서 응용 프로그램을 처음 실행하기 전에 서명을 업데�
 
    >[!IMPORTANT]
    >
-   >각 번들 식별자는 고유해야 하므로 시작 프로젝트에 이미 입력된 기본값과 다른 고유한 번들 식별자를 선택해야 합니다.
+   >기본적으로 다른 고유한 번들 식별자를 사용하는지 확인합니다. `com.adobe.luma.tutorial.swiftui`  각 번들 식별자가 고유해야 하므로 시작 프로젝트에 입력되었습니다.
 
 
    ![Xcode 서명 기능](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -139,4 +139,4 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
 >이제 자습서의 나머지 부분에서 Assurance를 사용하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-다음: **[동의](consent.md)**
+다음: **[동의 구현](consent.md)**

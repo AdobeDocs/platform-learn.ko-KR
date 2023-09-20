@@ -1,10 +1,10 @@
 ---
 title: 지리적 위치 서비스 사용
-description: 모바일 앱에서 위치 지리적 위치 서비스를 사용하는 방법을 알아봅니다.
+description: 모바일 앱에서 Places geolocation 서비스를 사용하는 방법을 알아봅니다.
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1669'
 ht-degree: 3%
 
 ---
@@ -33,24 +33,6 @@ Adobe Experience Platform 데이터 수집 위치 서비스 는 위치를 인식
 * Assurance에서 설정의 유효성을 검사합니다.
 * 앱을 업데이트하여 Places 확장을 등록합니다.
 * 앱의 위치 서비스에서 지리적 위치 추적을 구현합니다.
-
-
-## 전제 조건
-
-* 적절한 SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
-
-
-## 학습 목표
-
-이 단원에서는 다음과 같은 작업을 수행합니다
-
-* 의사 결정 관리에 사용할 Edge 구성을 업데이트합니다.
-* Journey Optimizer - Decisioning 확장을 사용하여 태그 속성을 업데이트합니다.
-* 스키마를 업데이트하여 제안 이벤트를 캡처합니다.
-* Assurance에서 설정의 유효성을 검사합니다.
-* Journey Optimizer - 의사 결정 관리의 오퍼를 기반으로 오퍼 의사 결정을 만듭니다.
-* 앱을 업데이트하여 Optimizer 확장을 등록합니다.
-* 앱에서 의사 결정 관리의 오퍼를 구현합니다.
 
 
 ## 설정

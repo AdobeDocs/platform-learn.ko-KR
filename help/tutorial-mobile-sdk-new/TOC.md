@@ -8,7 +8,7 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
 source-wordcount: '74'
 ht-degree: 68%
@@ -37,8 +37,8 @@ ht-degree: 68%
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)
    + 여정 옵티처{#journey-optimizer}
-      + [푸시 메시지](journey-optimizer-push.md)
-      + [인앱 메시징](journey-optimizer-inapp.md)
+      + [푸시 알림](journey-optimizer-push.md)
+      + [인앱 메시지](journey-optimizer-inapp.md)
       + [오퍼](journey-optimizer-offers.md)
    + [Target](target.md)
 + [결론](conclusion.md)

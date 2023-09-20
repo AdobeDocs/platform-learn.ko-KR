@@ -3,9 +3,9 @@ title: ID 데이터 수집
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -171,4 +171,4 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 >
 >이제 Edge Network에서 ID를 업데이트하고 Adobe Experience Platform으로 (설정 시) 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-다음: **[프로필](profile.md)**
+다음: **[프로필 데이터 수집](profile.md)**

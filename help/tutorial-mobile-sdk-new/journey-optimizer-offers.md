@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '2443'
+source-wordcount: '2441'
 ht-degree: 3%
 
 ---
@@ -392,4 +392,4 @@ Assurance에서 오퍼 구현을 확인하려면 다음을 수행하십시오.
 >
 >Experience Platform Mobile SDK용 Journey Optimizer - Decisioning 확장을 사용하여 오퍼를 표시하도록 앱을 활성화했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-다음: **[Target을 사용하여 A/B 테스트 수행](target.md)**
+다음: **[A/B 테스트 수행](target.md)**
