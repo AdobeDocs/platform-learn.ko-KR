@@ -4,9 +4,9 @@ breadcrumb-title: 튜토리얼
 user-guide-description: Experience Platform의 다양한 구성 요소에 대해 알아봅니다.
 audience: all
 doc-type: video
-source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
+source-git-commit: c61d9d10c25cba92136d1dca635e12cbf222b947
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '994'
 ht-degree: 33%
 
 ---
@@ -112,6 +112,7 @@ ht-degree: 33%
    + [대상에 연결하는 중](/help/platform/destinations/connecting-to-destinations.md)
    + [대상 만들기 및 데이터 활성화](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [대상에 대한 프로필 및 세그먼트 활성화](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [데이터 세트 내보내기 대상 구성](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Google Customer Match와 통합](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Azure Blob 대상 구성](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [Marketo 대상 구성](/help/platform/destinations/configure-the-marketo-destination.md)
