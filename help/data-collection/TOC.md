@@ -4,8 +4,9 @@ breadcrumb-title: 데이터 수집 튜토리얼
 user-guide-description: Experience Platform의 데이터 수집의 강력한 사용자에게 유용한 방법 비디오 및 튜토리얼입니다.
 solution: Data Collection,Experience Platform
 doc-type: video
+auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e3ef25638384554bf21a50dc57db3152805bfac2
+source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 39%
