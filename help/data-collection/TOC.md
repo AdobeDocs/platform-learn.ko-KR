@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 데이터 수집의 강력한 사
 solution: Data Collection,Experience Platform
 doc-type: video
 role: Developer, Data Engineer
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e3ef25638384554bf21a50dc57db3152805bfac2
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 40%
+source-wordcount: '242'
+ht-degree: 39%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 40%
    + [데이터스트림 설정](event-forwarding/set-up-a-datastream.md)
    + [확장 추가](event-forwarding/add-an-extension.md)
    + [규칙 만들기](event-forwarding/create-a-rule.md)
+   + [빠른 시작 워크플로우](event-forwarding/quick-start-workflows.md)
    + [이벤트 전달 모니터링](event-forwarding/monitor.md)
    + [클라이언트측 태그 이동](event-forwarding/consider-moving-tags.md)
    + [Google Ads 고급 전환 설정](event-forwarding/set-up-google-ads-enhanced-conversions.md)
