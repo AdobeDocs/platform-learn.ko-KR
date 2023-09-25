@@ -3,7 +3,7 @@ title: ID 네임스페이스 구성
 description: Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 13%
@@ -30,7 +30,7 @@ Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구�
 * 사용자 정의 ID 네임스페이스를 만들어 내부 CRM ID 캡처
 
 
-## 사전 요구 사항
+## 전제 조건
 
 다음 이전 단원을 이미 완료했을 것입니다.
 
@@ -46,7 +46,7 @@ Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구�
 이 연습에서는 Luma의 사용자 지정 ID 필드에 대한 ID 네임스페이스를 만듭니다. `lumaCrmId`. 동일한 네임스페이스 내에 일치하는 두 값이 있으면 두 개의 데이터 소스가 하나의 아이덴티티 그래프를 구성할 수 있기 때문에 신원 네임스페이스는 실시간 고객 프로필을 작성하는 데 중요한 역할을 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 Adobe Experience Platform의 ID에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 이제 Luma CRM ID에 대한 네임스페이스를 만듭니다.
 
@@ -93,7 +93,7 @@ Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구�
 
 ## 추가 리소스
 
-* [Identity Service 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko)
+* [Identity Service 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR)
 * [ID 서비스 API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 ID가 준비되었으므로 데이터 스트림을 구성할 수 있습니다.

@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 5%
@@ -43,7 +43,7 @@ Key terms:
 **데이터 설계자** 이 자습서 외부에 스키마를 만들어야 하지만 **데이터 엔지니어** 는 데이터 설계자가 생성한 스키마와 밀접하게 작동합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 스키마 및 XDM(Experience Data Model)에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
 
 >[!TIP]
 >
@@ -326,7 +326,7 @@ API 응답과 인터페이스를 모두 확인하여 스키마에 필드 그룹�
 
 >[!NOTE]
 >
->기존 Analytics 또는 Target 고객인 경우 스키마 관계가 있는 엔티티를 분류하는 것은 SAINT 분류 또는 Recommendations에 대한 제품 카탈로그 업로드와 유사합니다
+>기존 Analytics 또는 Target 고객의 경우 스키마 관계가 있는 엔티티를 분류하는 것은 SAINT 분류 또는 Recommendations에 대한 제품 카탈로그 업로드와 유사합니다
 
 먼저 사용자 지정 클래스를 사용하여 Luma의 제품 카탈로그에 대한 스키마를 만들어야 합니다.
 

@@ -6,16 +6,17 @@ level: Intermediate
 jira: KT-6421
 thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '104'
 ht-degree: 0%
 
 ---
 
 # 이벤트 전달을 위한 데이터스트림 설정
 
-이벤트 전달을 위한 데이터스트림을 설정하는 방법에 대해 알아봅니다.
+이벤트 전달을 위한 데이터스트림을 설정하는 방법에 대해 알아봅니다. 자세한 내용은 다음을 참조하십시오. [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+
 
 >[!NOTE]
 >
@@ -25,6 +26,4 @@ ht-degree: 0%
 > * 이제 platform launch 서버측이 **[!DNL event forwarding]**
 > * 이제 Edge 구성이 **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?quality=12&learn=on)
-
-자세한 내용은 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+>[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on)

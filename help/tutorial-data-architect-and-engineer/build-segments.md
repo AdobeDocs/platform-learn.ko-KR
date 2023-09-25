@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 2%
@@ -25,7 +25,7 @@ ht-degree: 2%
 **데이터 설계자** 은(는) 이 자습서 외부에 세그먼트를 만들고 이 작업으로 동료를 지원해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 세그먼트 만들기에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
 
 
 ## 권한 필요
@@ -115,7 +115,7 @@ ht-degree: 2%
 
 ## 추가 리소스
 
-* [세그먼테이션 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
+* [세그먼테이션 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html?lang=ko)
 * [세그먼테이션 서비스 API 참조](https://www.adobe.io/experience-platform-apis/references/segmentation/)
 
 세분화, 특히 세그먼트 활성화와 관련된 내용이 더 있습니다. 이러한 주제는 다른 튜토리얼에서 다루어질 것입니다.

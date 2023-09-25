@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-8483
 thumbnail: 336046.jpg
 exl-id: 659e7739-8d24-4b75-a0d2-56d087d5eea9
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 29%
@@ -16,8 +16,7 @@ ht-degree: 29%
 
 # 대상에 대한 프로필 및 세그먼트 활성화
 
-Real-Time CDP의 대상에 대상 세그먼트를 활성화하는 방법을 알아봅니다.  대상 또는 세그먼트 인터페이스에서 이 작업 스트림을 시작합니다.
+Real-Time CDP의 대상에 대상 세그먼트를 활성화하는 방법을 알아봅니다.  대상 또는 세그먼트 인터페이스에서 이 작업 스트림을 시작합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activation-overview.html)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/336046/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on)
 
-자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activation-overview.html)를 참조하십시오.

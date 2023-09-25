@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3139
 thumbnail: 29795.jpg
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 10%
@@ -16,8 +16,6 @@ ht-degree: 10%
 
 # 쿼리 서비스 개요
 
-Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 영향력 있는 통찰력을 생성하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
+Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 영향력 있는 통찰력을 생성하는 데 어떻게 도움이 되는지에 대해 알아봅니다. 자세한 내용은 다음을 참조하십시오. [쿼리 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ko).
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
-
-자세한 내용은 다음을 참조하십시오. [쿼리 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ko).
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)

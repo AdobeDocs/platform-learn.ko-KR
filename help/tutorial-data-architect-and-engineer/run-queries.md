@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 4%
@@ -25,7 +25,7 @@ Adobe Experience Platform Query Service를 사용하면 표준 SQL을 사용하�
 **데이터 설계자** 및 **데이터 엔지니어** 은(는) 이 자습서 외부에서 쿼리 서비스를 사용해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 쿼리 서비스에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## 권한 필요
 

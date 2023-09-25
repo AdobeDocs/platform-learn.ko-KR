@@ -8,10 +8,10 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -26,7 +26,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 **데이터 설계자** 은(는) 이 자습서 외부에 데이터 세트를 만들어야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 데이터 세트에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 
 ## 권한 필요
 
@@ -114,7 +114,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 
 >[!TIP]
 >
-> 이 요청을 하는 일반적인 문제 및 수정 가능성:
+> 이 요청을 수행하는 일반적인 문제 및 수정 가능성:
 >
 > * `400: There was a problem retrieving xdm schema` 질문에 답합니다. 위 샘플의 id를 자신의 id로 교체한 적이 있는지 확인합니다 `Luma CRM Schema`
 > * 인증 토큰 없음: 다음을 실행합니다 **OAuth: 액세스 토큰 요청** 새 토큰 생성 요청

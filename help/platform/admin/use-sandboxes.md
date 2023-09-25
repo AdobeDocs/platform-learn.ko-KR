@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-4018
 thumbnail: 29838.jpg
 exl-id: 65e50b0e-0999-4992-86e9-037065ed0d01
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 4%
@@ -16,9 +16,9 @@ ht-degree: 4%
 
 # 샌드박스 사용
 
-Experience Platform 샌드박스가 데이터 격리를 제공하는 방법과 새로운 기능 또는 기존 기능을 시도해 보고, &quot;실패 빠른&quot; 접근 방식으로 작업하고, 개발 이니셔티브를 재설정하고 다시 시작할 수 있는 환경을 살펴봅니다.
+Experience Platform 샌드박스가 데이터 격리를 제공하는 방법과 새로운 기능 또는 기존 기능을 시도해 보고, &quot;실패 빠른&quot; 접근 방식으로 작업하고, 개발 이니셔티브를 재설정하고 다시 시작할 수 있는 환경을 살펴봅니다. 자세한 내용은 다음을 참조하십시오. [샌드박스 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ko-KR).
 
->[!VIDEO](https://video.tv.adobe.com/v/29838/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
 
 >[!NOTE]
 >
@@ -26,4 +26,3 @@ Experience Platform 샌드박스가 데이터 격리를 제공하는 방법과 �
 >
 > ![샌드박스 전환기 재배치](../assets/sandbox-switcher.gif)
 
-자세한 내용은 다음을 참조하십시오. [샌드박스 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=ko-KR).

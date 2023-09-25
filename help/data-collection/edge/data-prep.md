@@ -7,15 +7,15 @@ level: Intermediate
 jira: KT-10194
 thumbnail: 342120.jpeg
 exl-id: f42aec0c-f76a-4cf5-a874-4b8698a77387
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 88%
+source-wordcount: '73'
+ht-degree: 73%
 
 ---
 
 # 데이터 수집을 위한 데이터 준비
 
-데이터 수집의 새 데이터스트림에 데이터 레이어를 추가하는 방법에 대해 알아봅니다. 또한 데이터 수집을 위한 데이터 준비 기능을 사용하여 기본 매핑 기능을 수행하는 방법도 알아보십시오. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#data-prep)를 참조하십시오.
+데이터 수집의 새 데이터스트림에 데이터 레이어를 추가하는 방법에 대해 알아봅니다. 또한 데이터 수집을 위한 데이터 준비 기능을 사용하여 기본 매핑 기능을 수행하는 방법도 알아보십시오. 자세한 내용은 [데이터 수집을 위한 데이터 준비 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#data-prep).
 
->[!VIDEO](https://video.tv.adobe.com/v/342120/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342120/?learn=on)

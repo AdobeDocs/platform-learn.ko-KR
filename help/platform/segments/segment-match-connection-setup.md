@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10246
 thumbnail: 342211.jpeg
 exl-id: bf3c7297-ea60-45fc-a784-5c576e7935cf
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 45%
@@ -16,8 +16,6 @@ ht-degree: 45%
 
 # 세그먼트 매치 연결 설정
 
-이 비디오에서는 대상을 공유할 수 있도록 귀하와 파트너 간의 연결을 설정하는 방법에 대해 알아봅니다. 이 세그먼트 일치 기능을 구성한 후 데이터 파트너와 데이터를 주고받을 수 있습니다.
+이 비디오에서는 대상을 공유할 수 있도록 귀하와 파트너 간의 연결을 설정하는 방법에 대해 알아봅니다. 이 세그먼트 일치 기능을 구성한 후 데이터 파트너와 데이터를 주고받을 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?quality=12&learn=on)
-
-자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ko)를 참조하십시오.
+>[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on)

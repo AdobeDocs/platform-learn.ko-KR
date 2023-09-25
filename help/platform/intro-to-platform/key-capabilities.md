@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-4332
 thumbnail: 32502.jpg
 exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
@@ -23,5 +23,5 @@ Experience Platform의 주요 기능에 대해 알아봅니다.
 1. 실시간 경험의 전달 및 개인화 개선
 1. 거버넌스, 보안 및 개인 정보 보호 제어 기능에 대한 신뢰 확보
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on)
 

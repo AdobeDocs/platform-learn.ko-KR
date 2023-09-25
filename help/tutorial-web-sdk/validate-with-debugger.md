@@ -3,7 +3,7 @@ title: Experience Platform 디버거를 사용하여 Web SDK 구현 확인
 description: Adobe Experience Platform Debugger을 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 이전에 디버거를 사용한 적이 없고 이 디버거가 이전 Adobe Experience Cloud 디버거와 다른 경우에는 5분 분량의 개요 비디오를 시청하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 이 단원에서는 [Adobe Experience Cloud 디버거 확장](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 에서 하드코딩된 태그 속성을 바꾸려면 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 자신의 재산과 함께
 
@@ -34,7 +34,7 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 * 대체 태그 라이브러리 로드
 * XDM 개체가 데이터를 예상 Edge Network로 캡처하고 보내고 있는지 확인합니다.
 
-## 사전 요구 사항
+## 전제 조건
 
 데이터 수집 태그 및 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 을(를) 통해 다음 자습서의 이전 단원을 완료했습니다.
 
@@ -95,7 +95,7 @@ Experience Platform 디버거에는 기존 태그 라이브러리를 다른 태�
 
 1. 다음을 확인하는 방법에 주목하십시오. `web.webpagedetails.pageView` 에 지정한 이벤트 유형 [!UICONTROL 이벤트 보내기] 작업 및 기타 기본 제공 변수 `AEP Web SDK ExperienceEvent Mixin` 형식
 
-   ![이벤트 세부 정보](assets/validate-event-pageViews.png)
+   ![이벤트 세부 사항](assets/validate-event-pageViews.png)
 
 1. 아래로 스크롤하여 `web` 개체를 선택하여 열고 `webPageDetails.name`, `webPageDetails.server`, 및 `webPageDetails.siteSection`. 홈 페이지의 해당 digitalData 데이터 레이어 변수와 일치해야 합니다
 

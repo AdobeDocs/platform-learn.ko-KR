@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 9%
@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service를 사용하면 디바이스와 시�
 **데이터 설계자** 은(는) 이 자습서 외부에 있는 id를 매핑해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 Adobe Experience Platform의 ID에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 >[!NOTE]
 >
@@ -190,7 +190,7 @@ ID 네임스페이스를 만들어 보겠습니다. `Luma CRM Id`:
 
 ## 추가 리소스
 
-* [Identity Service 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko)
+* [Identity Service 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR)
 * [ID 서비스 API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 이제 우리의 정체성이 갖춰졌으니 [데이터 세트 만들기](create-datasets.md)!

@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 41%
@@ -20,7 +20,7 @@ ht-degree: 41%
 
 Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScript 라이브러리와 하나의 비콘 유형을 사용하여 Adobe 애플리케이션 및 서드파티 대상으로 데이터를 전송하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >

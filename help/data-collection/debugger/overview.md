@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 63%
@@ -19,7 +19,7 @@ ht-degree: 63%
 
 Adobe Experience Platform Debugger 방법 알아보기 [Chrome 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 및 [Firefox 추가 기능](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/) 는 Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, 태그 등의 웹 구현을 디버깅하는 데 도움이 됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ## 추가 리소스
 

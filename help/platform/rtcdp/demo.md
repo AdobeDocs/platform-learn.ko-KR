@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-5291
 thumbnail: 34558.jpg
 exl-id: 1e766a0f-7b4f-4c3d-a908-5cb4cba8b334
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 40%
@@ -17,9 +17,6 @@ ht-degree: 40%
 
 # Real-time Customer Data Platform 데모
 
-이 비디오는 Real-Time CDP을 사용하여 여러 소스에서 데이터를 수집하고 데이터를 하나의 실시간 고객 프로필에 병합하며 해당 데이터를 활성화하여 개인화된 고객 경험을 만드는 방법을 보여 줍니다.
+이 비디오는 Real-Time CDP을 사용하여 여러 소스에서 데이터를 수집하고 데이터를 하나의 실시간 고객 프로필에 병합하며 해당 데이터를 활성화하여 개인화된 고객 경험을 만드는 방법을 보여 줍니다. 자세한 내용은 다음을 참조하십시오. [Real-time Customer Data Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko-KR).
 
->[!VIDEO](https://video.tv.adobe.com/v/34558?quality=12&learn=on)
-
-
-자세한 내용은 다음을 참조하십시오. [Real-time Customer Data Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko-KR).
+>[!VIDEO](https://video.tv.adobe.com/v/34558?learn=on)

@@ -9,7 +9,7 @@ jira: KT-3797
 thumbnail: 29707.jpg
 last-substantial-update: 2023-09-20T00:00:00Z
 exl-id: d6e78ec2-f9e0-4794-b585-9bebef9b036b
-source-git-commit: 72f02def711baf507913abce4fc665971b465905
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 17%
@@ -18,8 +18,7 @@ ht-degree: 17%
 
 # 대상 개요
 
-대상은 데이터를 활성화하고 원활한 방법으로 해당 파트너에게 내보내는 대상 플랫폼과의 사전 구축된 통합입니다. 에서 데이터를 가져오는 데 사용할 수 있는 대상 유형에 대해 알아봅니다. [!DNL Real-Time CDP], [!DNL Experience Platform], 및 [!DNL Tags] 다양한 사용 사례를 지원합니다.
+대상은 데이터를 활성화하고 원활한 방법으로 해당 파트너에게 내보내는 대상 플랫폼과의 사전 구축된 통합입니다. 에서 데이터를 가져오는 데 사용할 수 있는 대상 유형에 대해 알아봅니다. [!DNL Real-Time CDP], [!DNL Experience Platform], 및 [!DNL Tags] 다양한 사용 사례를 지원합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/29707?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29707?learn=on)
 
-자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ko)를 참조하십시오.

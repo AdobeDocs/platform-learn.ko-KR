@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '3344'
 ht-degree: 2%
@@ -31,9 +31,9 @@ ht-degree: 2%
 
 연습을 시작하기 전에 다음 두 개의 짧은 비디오를 시청하여 데이터 수집 및 웹 SDK 스트리밍에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >
@@ -255,7 +255,7 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 이전에 Debugger를 사용한 적이 없고 이전 Adobe Experience Cloud Debugger와 다른 경우 다음 5분 길이의 개요 비디오를 시청해 보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ### Luma 웹 사이트를 엽니다.
 
@@ -293,7 +293,7 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 
    ![Adobe Experience Platform Web SDK 요청](assets/websdk-debugger-platformNetwork.png)
 1. 다음을 확인하는 방법에 주목하십시오. `web.webpagedetails.pageView` 에 지정한 이벤트 유형 [!UICONTROL 이벤트 보내기] 작업 및 기타 기본 제공 변수 `AEP Web SDK ExperienceEvent Mixin` 형식
-   ![이벤트 세부 정보](assets/websdk-debugger-eventDetails.png)
+   ![이벤트 세부 사항](assets/websdk-debugger-eventDetails.png)
 1. 이러한 유형의 요청 세부 사항은 브라우저의 웹 개발자 도구에도 표시됩니다 **네트워크** 탭. 페이지를 열고 다시 로드합니다. 다음을 포함한 호출 필터링 `interact` 호출을 찾으려면 해당 호출을 선택한 다음 **헤더** 탭, **요청 페이로드** 영역입니다.
    ![네트워크 탭](assets/websdk-debugger-networkTab.png)
 1. 로 이동 **응답** 를 탭하고 ECID 값이 응답에 어떻게 포함되는지 확인합니다. 다음 연습에서 프로필 정보의 유효성을 검사하는 데 사용할 값으로 이 값을 복사하십시오.
@@ -332,7 +332,7 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 1. 이제 다음으로 이동 **[!UICONTROL 데이터 요소]** 왼쪽 탐색
 1. 다음 항목 선택 **[!UICONTROL 새 데이터 요소 만들기]** 단추
 
-   ![새 데이터 요소 만들기](assets/websdk-property-createNewDataElement.png)
+   ![새 데이터 요소를 만듭니다](assets/websdk-property-createNewDataElement.png)
 1. 다음으로: **[!UICONTROL 이름]**, 입력 `Page Name`
 1. 다음으로: **[!UICONTROL 데이터 요소 유형]**, 선택 `JavaScript Variable`
 1. 다음으로: **[!UICONTROL JavaScript 변수 이름]**, 입력 `digitalData.page.pageInfo.pageName`
@@ -352,7 +352,7 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 
 다음에서 **[!UICONTROL 데이터 요소]** 페이지:
 
-1. 새 데이터 요소 만들기
+1. 새 데이터 요소를 만듭니다
 1. 다음으로: **[!UICONTROL 이름]**, 입력 `XDM Object`
 1. 다음으로: **[!UICONTROL 확장]**, 선택 `Adobe Experience Platform Web SDK`
 1. 다음으로: **[!UICONTROL 데이터 요소 유형]**, 선택 `XDM object`

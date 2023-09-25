@@ -8,7 +8,7 @@ jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 18%
@@ -31,23 +31,20 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 이 튜
 >
 > API 자격 증명을 만든 후 시스템 관리자는 자격 증명을 Experience Platform의 역할과 연결해야 합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
-
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on)
 
 ## Postman으로 액세스 토큰 생성{#generate-an-access-token-with-postman}
 
 사용 [Identity Management 서비스 API Adobe](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) Adobe Experience Platform API에 액세스하기 위해 액세스 토큰을 얻습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on)
 
 
 ## Postman을 사용하여 Experience Platform API와 상호 작용
 
 다음을 사용하여 Adobe Experience Platform API와 상호 작용 탐색 [Adobe 제공 Experience Platform API Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), 을 기반으로 구축 [Adobe Developer 콘솔 환경 변수](#export-integration-details-to-postman) 및 [생성된 액세스 토큰](#generate-an-access-token-with-postman).
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on)
 
 
 ## 이 비디오에서 참조된 리소스

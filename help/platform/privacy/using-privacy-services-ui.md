@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-7719
 thumbnail: 336079.png
 exl-id: 8436345a-7e0b-40af-8bd8-534fdf1f8e44
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 9%
@@ -17,8 +17,6 @@ ht-degree: 9%
 
 # Privacy Service 인터페이스 사용
 
-대시보드에서 개인 정보 보호 요청을 만드는 방법과 Privacy Service에서 해당 상태를 모니터링하고 검토하는 방법을 알아봅니다.
+대시보드에서 개인 정보 보호 요청을 만드는 방법과 Privacy Service에서 해당 상태를 모니터링하고 검토하는 방법을 알아봅니다. 자세한 내용은 다음을 참조하십시오. [Privacy Service 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko-KR).
 
->[!VIDEO](https://video.tv.adobe.com/v/336079?quality=12&learn=on)
-
-자세한 내용은 다음을 참조하십시오. [Privacy Service 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko-KR)
+>[!VIDEO](https://video.tv.adobe.com/v/336079?learn=on)

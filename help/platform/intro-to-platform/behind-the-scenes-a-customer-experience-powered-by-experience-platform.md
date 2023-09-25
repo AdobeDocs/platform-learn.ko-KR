@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-4340
 thumbnail: 28144.jpg
 exl-id: 5ae7707d-799d-4979-9e53-b882e74324ad
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '94'
 ht-degree: 0%
@@ -17,5 +17,5 @@ ht-degree: 0%
 
 이전 비디오에서는 예제 브랜드인 Luma가 어떻게 풍부하고, 보람 있고, 적절한 고객 경험을 만들 수 있는지 보았습니다. 이 비디오에서는 Adobe Experience Platform을 사용하여 이 여정을 수행하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on)
 

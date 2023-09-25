@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-10291
 thumbnail: 342471.jpg
 exl-id: b228a612-3ecd-40c1-85ef-81fd49d6bde0
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 26%
@@ -17,8 +17,6 @@ ht-degree: 26%
 
 # 대상에 연결하는 중
 
-Real-Time CDP에서 대상 파트너에게 데이터를 보내려면 먼저 해당 파트너에 연결해야 합니다. 이 비디오에서는 일반적으로 관리자가 수행하는 프로세스를 설명합니다.
+Real-Time CDP에서 대상 파트너에게 데이터를 보내려면 먼저 해당 파트너에 연결해야 합니다. 이 비디오에서는 일반적으로 관리자가 수행하는 프로세스를 설명합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=en)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?quality=12&learn=on)
-
-자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/connect-destination.html?lang=en)를 참조하십시오.
+>[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on)

@@ -6,7 +6,7 @@ level: Intermediate
 jira: KT-6422
 thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 이벤트 전달 확장 추가
 
-데이터 수집에서 이벤트 전달 확장을 추가하는 방법을 알아봅니다.
+데이터 수집에서 이벤트 전달 확장을 추가하는 방법을 알아봅니다. 자세한 내용은 다음을 참조하십시오. [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -25,6 +25,4 @@ ht-degree: 0%
 > * 이제 platform launch 서버측이 **[!DNL event forwarding]**
 > * 이제 Edge 구성이 **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331941?quality=12&learn=on)
-
-자세한 내용은 다음을 참조하십시오. [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on)
