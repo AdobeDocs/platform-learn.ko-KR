@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 3%
@@ -153,7 +153,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### 앱에 푸시 알림 기능 추가
+## 앱에 푸시 알림 기능 추가
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 ![푸시 알림 확장](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### 앱에서 Journey Optimizer 구현
+## 앱에서 Journey Optimizer 구현
 
 이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 메시징 SDK를 설치하고 등록해야 합니다. 이러한 단계가 명확하지 않으면 다음을 검토하십시오. [SDK 설치](install-sdks.md) 섹션.
 
@@ -205,7 +205,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    ]
    ```
 
-### 푸시 알림용 장치 토큰 등록
+## 푸시 알림용 장치 토큰 등록
 
 1. 추가 [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) 에 대한 API `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 함수.
 
