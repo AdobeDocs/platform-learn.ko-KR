@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
+source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 33%
+source-wordcount: '998'
+ht-degree: 34%
 
 ---
 
@@ -38,7 +38,8 @@ ht-degree: 33%
 + [ Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
 + 관리 {#admin}
    + [경고 사용](/help/platform/admin/use-alerts.md)
-   + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
+   + [샌드박스 사용](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [샌드박스 간 개체 복사](/help/platform/admin/use-sandboxes.md)
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [제품 프로필 관리](/help/platform/admin/managing-product-profiles.md)
@@ -180,7 +181,7 @@ ht-degree: 33%
    + [데이터 사용 패턴](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [쿼리 실행](/help/platform/queries/run-queries.md)
    + [쿼리 결과에서 데이터 세트 생성](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
-   + [타블로](/help/platform/queries/psql-client-tableau.md)
+   + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [데이터 분석 및 시각화](/help/platform/queries/analyze-and-visualize.md)
    + [BI 도구를 사용하여 대시보드 빌드](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [고객 데이터 충전](/help/platform/queries/recharge-your-customer-data.md)
