@@ -3,10 +3,11 @@ title: 데이터를 Analytics 데이터에 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하고 매핑하는 방법을 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 4%
+source-wordcount: '901'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 4%
 
 * ExperienceEvent 추적에 대한 이해.
 * 샘플 앱에서 XDM 데이터를 성공적으로 보냈습니다.
-* Adobe Analytics에 구성된 데이터스트림
+* 이 단원에 사용할 수 있는 Adobe Analytics 보고서 세트입니다.
 
 ## 학습 목표
 
@@ -128,9 +129,11 @@ s.events = "scAdd:321435"
 
 ## Assurance를 통해 유효성 검사
 
-사용 [보증](assurance.md) 경험 이벤트를 보내고 있으며 XDM 데이터가 올바르고 Analytics 매핑이 예상대로 발생하고 있는지 확인할 수 있습니다. 예:
+사용 [보증](assurance.md) 경험 이벤트를 보내고 있으며 XDM 데이터가 올바르고 Analytics 매핑이 예상대로 발생하고 있는지 확인할 수 있습니다.
 
-1. productListAdds 이벤트를 보냅니다.
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
+
+1. 보내기 **[!UICONTROL 제품 목록 추가]** 이벤트(장바구니에 제품 추가).
 
 1. ExperienceEvent 히트를 봅니다.
 
@@ -149,7 +152,6 @@ s.events = "scAdd:321435"
    "eventType" : "commerce.productListAdds",
    "commerce" : {
      "productListAdds" : {
-       "id" : "LLWS05.1-XS",
        "value" : 1
      }
    }
@@ -193,38 +195,45 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >`_techmarketingdemos` 은 조직의 고유 값으로 대체됩니다.
 
+
+
 이 XDM 컨텍스트 데이터를 보고서 세트의 Analytics 데이터에 매핑하려면 다음을 수행할 수 있습니다.
+
+### 필드 그룹 사용
 
 * 추가 **[!UICONTROL Adobe Analytics ExperienceEvent 전체 확장]** 스키마에 대한 필드 그룹입니다.
 
   ![Analytics ExperienceEvent FullExtension 필드 그룹](assets/schema-analytics-extension.png)
-* Tags 속성에서 규칙을 작성하여 컨텍스트 데이터를 Adobe Analytics ExperienceEvent 전체 확장 필드 그룹의 필드에 매핑합니다. 예를 들어, 맵 `_techmarketingdemo.appinformation.appstatedetails.screenname` 끝 `_experience.analytics.customDimensions.eVars.eVar2`.
 
-<!-- Old processing rules section
-Here is what a processing rule using this data might look like:
+* 앱에서 수행한 작업과 유사한 Adobe Analytics ExperienceEvent 전체 확장 필드 그룹을 따라 XDM 페이로드를 빌드합니다. [이벤트 데이터 추적](events.md) 단원 또는
+* 규칙 작업을 사용하여 Adobe Analytics ExperienceEvent 전체 확장 필드 그룹에 데이터를 첨부하거나 수정하는 규칙을 Tags 속성에 작성합니다. 자세한 내용은 을 참조하십시오 [SDK 이벤트에 데이터 첨부](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) 또는 [SDK 이벤트의 데이터 수정](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
-* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
 
-* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+### 처리 규칙 사용
 
-![analytics processing rules](assets/analytics-processing-rules.png)
+다음은 이 데이터를 사용하는 처리 규칙의 모습입니다.
+
+* 본인 **[!UICONTROL 값 덮어쓰기]** (1) **[!UICONTROL 앱 화면 이름(eVar2)]** (2) ( 값 포함) **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) 다음과 같은 경우 **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL 은(는) 설정되어 있습니다.]** (5)
+
+* 본인 **[!UICONTROL 이벤트 설정]** (6) **[!UICONTROL 위시리스트에 추가(이벤트 3)]** (7)~에서 **[!UICONTROL a.x.commerce.saveForLaters.value(컨텍스트)]** (8) 다음과 같은 경우 **[!UICONTROL a.x.commerce.saveForLaters.value(컨텍스트)]** (9) **[!UICONTROL 은(는) 설정되어 있습니다.]** (10).
+
+![analytics 처리 규칙](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->Some of the automatically mapped variables may not be available for use in processing rules.
+>자동으로 매핑된 변수 중 일부는 처리 규칙에서 사용하지 못할 수 있습니다.
 >
 >
->The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
+>처리 규칙에 처음 매핑하면 XDM 객체의 컨텍스트 데이터 변수가 인터페이스에 표시되지 않습니다. 이 문제를 해결하려면 를 저장하고 다시 편집하십시오. 이제 모든 XDM 변수가 표시됩니다.
 
 
-Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+처리 규칙 및 컨텍스트 데이터에 대한 추가 정보를 찾을 수 있습니다 [여기](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+>이전 모바일 앱 구현과 달리 페이지/화면 보기와 다른 이벤트 사이에는 차이가 없습니다. 대신 를 증가시킬 수 있습니다. **[!UICONTROL 페이지 보기]** 지표 설정: **[!UICONTROL 페이지 이름]** 처리 규칙의 차원입니다. 사용자 정의 파일을 수집하고 있으므로 `screenName` 자습서의 필드에는 화면 이름을 매핑하는 것이 좋습니다. **[!UICONTROL 페이지 이름]** 처리 규칙.
 
--->
 
 >[!SUCCESS]
 >

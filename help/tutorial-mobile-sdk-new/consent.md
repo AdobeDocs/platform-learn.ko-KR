@@ -3,10 +3,11 @@ title: 동의 구현
 description: 모바일 앱에서 동의를 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +33,9 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
 
 처음부터 자습서를 따랐다면 동의 확장에서 기본 동의를 로 설정했음을 기억할 수 있습니다 **[!UICONTROL 보류 중 - 사용자가 동의 환경 설정을 제공하기 전에 발생하는 이벤트를 큐에 추가합니다.]**
 
-데이터 수집을 시작하려면 사용자의 동의를 받아야 합니다. 이 자습서에서는 경고를 사용하여 요청하기만 하면 사용자의 동의를 받습니다. 실제 앱에서는 지역에 대한 동의 모범 사례를 참조해야 합니다.
+데이터 수집을 시작하려면 사용자의 동의를 받아야 합니다. 실제 앱에서는 지역에 대한 동의 모범 사례를 참조해야 합니다. 이 자습서에서는 경고를 사용하여 요청하기만 하면 사용자의 동의를 받습니다.
 
-1. 사용자에게 한 번만 묻습니다. 따라서 Mobile SDK 동의와 Apple을 사용한 추적에 필요한 권한을 결합하려고 합니다. [앱 추적 투명도 프레임워크](https://developer.apple.com/documentation/apptrackingtransparency). 이 앱에서는 사용자가 추적을 승인할 때 이벤트도 수집하는 것에 동의한다고 가정합니다.
+1. 사용자에게 동의를 한 번만 요청하려고 합니다. 따라서 Mobile SDK 동의와 Apple을 사용한 추적에 필요한 권한을 결합하려고 합니다. [앱 추적 투명도 프레임워크](https://developer.apple.com/documentation/apptrackingtransparency). 이 앱에서는 사용자가 추적을 승인할 때 이벤트도 수집하는 것에 동의한다고 가정합니다.
 
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 를 입력합니다.
 
@@ -95,9 +96,7 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
 
 ## Assurance를 통해 유효성 검사
 
-1. 리뷰 [보증](assurance.md) 레슨.
-1. 앱을 설치하십시오.
-1. 보증 생성 URL을 사용하여 앱을 실행합니다.
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. 위의 코드를 올바르게 추가한 경우 동의를 입력하라는 메시지가 표시됩니다.
 
    선택 **[!UICONTROL 계속...]** 다음을 선택합니다. **[!UICONTROL 허용]**.
@@ -107,6 +106,17 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
 
 1. 다음이 표시됩니다. **[!UICONTROL 동의 응답 받기]** 이벤트를 추가합니다.
    ![동의 확인](assets/consent-update.png)
+
+
+## 동의 재설정
+
+동의를 재설정하려면:
+
+1. 다음으로 이동 **[!UICONTROL 설정]** 앱에서.
+
+1. 선택 **[!UICONTROL 앱 설정...]** 이렇게 하면 iOS 설정 앱에서 Luma 앱 설정이 열립니다.
+
+1. 전환 **[!UICONTROL 추적 허용]** 꺼져.
 
 
 

@@ -5,14 +5,15 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2441'
-ht-degree: 3%
+source-wordcount: '2618'
+ht-degree: 2%
 
 ---
 
-# 오퍼 만들기 및 표시
+# 의사 결정 관리를 사용하여 오퍼 만들기 및 표시
 
 Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Journey Optimizer 의사 결정 관리의 오퍼를 표시하는 방법을 알아봅니다.
 
@@ -101,6 +102,27 @@ Assurance에서 설정을 확인하려면:
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 선택 **[!UICONTROL 설정 유효성 검사]** 왼쪽 레일에서. 애플리케이션의 데이터 스트림 설정과 SDK 설정이 모두 검증됩니다.
    ![AJO 의사 결정 유효성 검사](assets/ajo-decisioning-validation.png)
+
+
+## 배치 만들기
+
+오퍼를 실제로 만들려면 먼저 모바일 앱에서 이러한 오퍼를 배치할 방법과 위치를 정의해야 합니다. 의사 결정 관리에서 이 목적을 위한 배치를 정의하고 JSON 페이로드를 지원하는 모바일 채널에 대한 배치를 정의합니다.
+
+1. Journey Optimizer UI에서 다음을 선택합니다. ![구성 요소](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL 구성 요소]** 출처: **[!UICONTROL 의사 결정 관리]** 왼쪽 레일에서.
+
+1. 선택 **[!UICONTROL 배치]** 을 클릭합니다.
+
+1. 이름이 인 배치가 없는 경우 **[!UICONTROL 모바일 JSON]**,  **[!UICONTROL 모바일]** 다음으로: **[!UICONTROL 채널 유형]** 및 **[!UICONTROL JSON]** 다음으로: **[!UICONTROL 컨텐츠 유형]** 이 나열되면 배치를 생성해야 합니다. 그렇지 않으면 계속 [오퍼 만들기](#create-offers).
+
+모바일 JSON 배치를 만들려면 다음 작업을 수행하십시오.
+
+1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 배치를 생성합니다.
+
+   1. 다음에서 **[!UICONTROL 세부 사항]** 섹션, 입력 `Mobile JSON` (으)로 **[!UICONTROL 이름]**, 선택 **[!UICONTROL 모바일]** 출처: **[!UICONTROL 채널 유형]** 및 **[!UICONTROL JSON]** 출처: **[!UICONTROL 컨텐츠 유형]**.
+   1. 선택 **[!UICONTROL 저장]** 를 클릭하여 배치를 저장합니다.
+
+   ![배치 만들기](assets/ajo-create-placement.png)
+
 
 
 ## 오퍼 만들기
@@ -354,7 +376,7 @@ Assurance에서 설정을 확인하려면:
 
 ## 앱을 사용하여 유효성 검사
 
-1. 장치 또는 시뮬레이터에서 앱을 엽니다.
+1. 를 사용하여 시뮬레이터나 Xcode의 물리적 장치에서 앱을 다시 빌드하고 실행합니다. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. **[!DNL Personalisation]** 탭으로 이동합니다.
 
@@ -371,7 +393,7 @@ Assurance에서 설정을 확인하려면:
 
 Assurance에서 오퍼 구현을 확인하려면 다음을 수행하십시오.
 
-1. Assurance UI로 이동합니다.
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. 선택 **[!UICONTROL 구성]** 왼쪽 레일에서 다음을 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 검토 및 시뮬레이션]** 아래 **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 선택 **[!UICONTROL 검토 및 시뮬레이션]** 왼쪽 레일에서. 데이터 스트림 설정과 SDK 설정이 모두 애플리케이션에서 검증되었습니다.

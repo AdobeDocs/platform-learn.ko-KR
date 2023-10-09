@@ -3,9 +3,10 @@ title: XDM 스키마 만들기
 description: 모바일 앱 이벤트에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1506'
 ht-degree: 8%
 
 ---
@@ -96,9 +97,22 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 1. 선택 **[!UICONTROL 스키마 만들기]**.
 
-1. 선택 **[!UICONTROL XDM ExperienceEvent]** 메뉴에서 삭제할 수 있습니다.
+1. 다음에서 **[!UICONTROL 클래스 선택]** 의 단계 **[!UICONTROL 스키마 만들기]** 마법사, 선택 **[!UICONTROL 경험 이벤트]** 아래 **[!UICONTROL 이 스키마에 대한 기본 클래스 선택]**.
 
-   ![드롭다운에서 ExperienceEvent 선택](assets/schema-create.png)
+1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+
+   ![스키마 마법사 기본 클래스](assets/schema-wizard-base-class.png)
+
+1. 다음에서 **[!UICONTROL 이름 및 검토]** 의 단계 **[!UICONTROL 스키마 만들기]** 마법사, 다음을 입력하십시오. **[!UICONTROL 스키마 표시 이름]**, 예 `Luma Mobile Event Schema` 및 a [!UICONTROL 설명], 예 `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >단일 샌드박스에 여러 사람이 있는 이 자습서를 진행하거나 공유 계정을 사용하는 경우 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예를 들어 `Luma Mobile App Event Schema` 대신 `Luma Mobile App Event Schema - Joe Smith`을 사용합니다. 다음에서 참고 참조: [개요](overview.md).
+
+1. 선택 **[!UICONTROL 완료]** 마법사를 마칩니다.
+
+   ![스키마 이름 및 검토](assets/schema-wizard-name-and-review.png)
+
 
 1. 선택 ![플러스](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **추가** 다음에 **[!UICONTROL 필드 그룹]**.
 
@@ -116,16 +130,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
    사용 가능한 모든 필드를 볼 수 있는 기본 스키마 작성 화면으로 돌아갑니다.
 
-1. 을 선택하여 스키마 이름 지정 **[!UICONTROL 제목 없는 스키마]** 다음에서 **[!UICONTROL 컴포지션]** 창(아래) **[!UICONTROL 스키마]**) 및 **[!UICONTROL 표시 이름]** 및 **[!UICONTROL 설명]**, 예 `Luma Mobile App Event Schema` 및 `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >단일 샌드박스에 여러 사람이 있는 이 자습서를 진행하거나 공유 계정을 사용하는 경우 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예를 들어 `Luma Mobile App Event Schema` 대신 `Luma Mobile App Event Schema - Joe Smith`을 사용합니다. 다음에서 참고 참조: [개요](overview.md).
-
-
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-
-   ![적용 선택](assets/schema-name-save.png)
 
 >[!NOTE]
 >

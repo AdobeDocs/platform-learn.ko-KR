@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 4%
 
 ---
@@ -32,7 +33,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Adobe Experience Platform용 앱을 설정합니다.
 * Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
-   * 캠페인을 관리합니다.
+   * 캠페인 관리.
 * 인증서, 식별자 및 키를 만들 수 있는 충분한 액세스 권한이 있는 유료 Apple 개발자 계정입니다.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
 
@@ -136,9 +137,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 ## Assurance를 사용하여 설정 유효성 검사
 
-1. 리뷰 [설치 지침](assurance.md) 섹션.
-1. 물리적 장치 또는 시뮬레이터에 앱을 설치합니다.
-1. 보증 생성 URL을 사용하여 앱을 실행합니다.
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. Assurance UI에서 **[!UICONTROL 구성]**.
    ![구성 클릭](assets/push-validate-config.png)
 1. 다음 항목 선택 ![플러스](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 단추 옆에 있음 **[!UICONTROL 인앱 메시징]**.
@@ -159,7 +158,8 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 * 시작, 설치, 업그레이드, 닫기 또는 충돌과 같은 애플리케이션 라이프사이클 이벤트
 * 관심 영역 입력 또는 종료와 같은 지리적 위치 이벤트.
 
-이 자습서에서는 모바일 코어 범용 및 확장 독립적인 API를 사용합니다(참조) [모바일 코어 일반 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis))를 사용하여 사용자 화면, 작업 및 PII 데이터의 이벤트 추적을 용이하게 합니다. 이러한 API에 의해 생성된 이벤트는 SDK 이벤트 허브에 게시되고 확장에서 사용할 수 있습니다. SDK 이벤트 허브는 등록된 확장 및 내부 모듈 목록, 등록된 이벤트 리스너 목록 및 공유 상태 데이터베이스를 유지 관리하며 모든 AEP Mobile SDK 확장에 연결된 핵심 데이터 구조를 제공합니다.
+이 자습서에서는 모바일 코어 범용 및 확장 독립적인 API를 사용합니다(참조) [모바일 코어 일반 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis))를 사용하여 사용자 화면, 작업 및 PII 데이터의 이벤트 추적을 용이하게 합니다. 이러한 API에 의해 생성된 이벤트는 SDK 이벤트 허브에 게시되고 확장에서 사용할 수 있습니다. SDK 이벤트 허브는 등록된 확장 및 내부 모듈 목록, 등록된 이벤트 리스너 목록 및 공유 상태 데이터베이스를 유지 관리하며 모든 Mobile Platform SDK 확장에 연결된 핵심 데이터 구조를 제공합니다.
+
 SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하고 수신하여 Adobe 및 서드파티 솔루션과의 통합을 단순화합니다. 예를 들어 최적화 확장이 설치되면, 모든 요청 및 Journey Optimizer - 의사 결정 관리 오퍼 엔진과의 상호 작용은 이벤트 허브에 의해 처리됩니다.
 
 1. Journey Optimizer UI에서 **[!UICONTROL 캠페인]** 왼쪽 레일에서.
@@ -219,7 +219,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 ## 앱을 사용하여 유효성 검사
 
-1. 장치 또는 시뮬레이터에서 앱을 엽니다.
+1. 를 사용하여 시뮬레이터나 Xcode의 물리적 장치에서 앱을 다시 빌드하고 실행합니다. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 로 이동 **[!UICONTROL 설정]** 탭.
 
@@ -232,6 +232,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. 선택 **[!UICONTROL 인앱 메시징]**.
 1. 선택 **[!UICONTROL 이벤트 목록]**.
 1. 선택 **[!UICONTROL 메시지 표시]** 입력.

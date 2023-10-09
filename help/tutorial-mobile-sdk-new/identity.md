@@ -3,10 +3,11 @@ title: ID 데이터 수집
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 5%
+source-wordcount: '860'
+ht-degree: 4%
 
 ---
 
@@ -103,7 +104,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 1. 다음으로 이동 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 로그인 시트]** xcode 프로젝트 탐색기에서 를 선택하고 **[!UICONTROL 로그인]** 단추를 클릭합니다. 다음 코드를 추가합니다.
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 다음을 사용할 수 있습니다. [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 저장된 클라이언트측 ID 맵에서 ID를 제거하기 위한 API. ID 확장은 Edge 네트워크에 대한 식별자 전송을 중지합니다. 이 API를 사용해도 서버측 ID 그래프에서 식별자가 제거되지는 않습니다. 다음을 참조하십시오 [ID 그래프 보기](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) 를 참조하십시오.
 
-1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 다음 코드를 `func removeIdentities(emailAddress: String, crmId: String)` 함수:
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 다음 코드를 `func removeIdentities(emailAddress: String, crmId: String)` 함수:
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 ## Assurance를 통해 유효성 검사
 
-1. 리뷰 [설치 지침](assurance.md) 시뮬레이터 또는 장치를 Assurance에 연결하고 연결합니다.
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. Luma 앱에서
-   1. 다음 항목 선택 **[!UICONTROL 홈]** 탭.
+   1. 다음 항목 선택 **[!UICONTROL 홈]** 을 탭하고 Assurance 아이콘을 왼쪽으로 이동합니다.
    1. 다음 항목 선택 <img src="assets/login.png" width="15" /> 오른쪽 상단의 아이콘
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 1. 다음을 볼 수 있습니다. **[!UICONTROL ID]** 나열됨.
 
    ![id 그래프 유효성 검사](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>앱에는 ECID를 재설정하는 코드가 없습니다. 즉, 응용 프로그램을 제거하고 다시 설치하는 경우에만 ECID를 재설정하고 장치에 새 ECID를 사용하여 새 프로필을 효과적으로 만들 수 있습니다. 식별자 재설정을 구현하려면 다음을 참조하십시오 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 및 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 호출. 하지만 푸시 알림 식별자를 사용할 때는 반드시 알아야 합니다( 참조) [푸시 알림 보내기](journey-optimizer-push.md)), 이 식별자는 디바이스에서 다른 &quot;고정&quot; 프로필 식별자가 됩니다.
 
 
 >[!SUCCESS]

@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
+exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2607'
 ht-degree: 3%
 
 ---
@@ -102,8 +103,13 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!DNL Luma Mobile App]**.
 1. 선택 ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 대상 **[!UICONTROL Experience Platform]** 및 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
-1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
-1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]**.
+1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면:
+
+   1. 아직 선택하지 않은 경우 다음을 선택합니다. **[!UICONTROL AJO 푸시 프로필 데이터 세트]** 출처: **[!UICONTROL 프로필 데이터 세트]**. 을(를) 사용할 때 이 프로필 데이터 세트가 필요합니다. `MobileCore.setPushIdentifier` API 호출(참조) [푸시 알림용 장치 토큰 등록](#register-device-token-for-push-notifications)): 푸시 알림에 대한 고유 식별자(푸시 식별자)가 사용자 프로필의 일부로 저장됩니다.
+
+   1. **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
+
+   1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]**.
 
    ![AEP 데이터스트림 구성](assets/datastream-aep-configuration.png)
 
@@ -131,9 +137,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 ## Assurance를 사용하여 설정 유효성 검사
 
-1. 리뷰 [설치 지침](assurance.md) 섹션.
-1. 물리적 장치 또는 시뮬레이터에 앱을 설치합니다.
-1. 보증 생성 URL을 사용하여 앱을 실행합니다.
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. Assurance UI에서 **[!UICONTROL 구성]**.
    ![구성 클릭](assets/push-validate-config.png)
 1. 선택 ![플러스](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 푸시 디버그]**.
@@ -386,7 +390,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 
 ## 앱을 사용하여 유효성 검사
 
-1. 장치 또는 시뮬레이터에서 앱을 엽니다.
+1. 를 사용하여 시뮬레이터나 Xcode의 물리적 장치에서 앱을 다시 빌드하고 실행합니다. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 로 이동 **[!UICONTROL 설정]** 탭.
 
@@ -404,4 +408,3 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 >이제 Experience Platform Mobile SDK용 Journey Optimizer 및 Journey Optimizer 확장을 사용하여 푸시 알림용 앱을 활성화했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[인앱 메시지 만들기 및 보내기](journey-optimizer-inapp.md)**
-

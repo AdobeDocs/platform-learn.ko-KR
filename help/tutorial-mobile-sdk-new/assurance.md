@@ -3,10 +3,11 @@ title: Assurance 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 9%
+source-wordcount: '962'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +69,7 @@ Xcode에서 응용 프로그램을 처음 실행하기 전에 서명을 업데�
 
    >[!IMPORTANT]
    >
-   >기본적으로 다른 고유한 번들 식별자를 사용하는지 확인합니다. `com.adobe.luma.tutorial.swiftui`  각 번들 식별자가 고유해야 하므로 시작 프로젝트에 입력되었습니다.
+   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자 및 바꾸기 `Luma` 각 번들 식별자가 고유해야 하므로 번들 식별자. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`. 이 자습서의 완료된 버전은 예를 들어 `com.adobe.luma.tutorial.swiftui`.
 
 
    ![Xcode 서명 기능](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -91,7 +92,7 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
 
 ## 세션에 연결
 
-1. 시뮬레이터 또는 연결된 물리적 장치에서 애플리케이션을 실행합니다.
+1. 를 사용하여 시뮬레이터나 Xcode의 물리적 장치에서 앱을 다시 빌드하고 실행합니다. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 1. 선택 **[!UICONTROL 보증]** (데이터 수집 UI의 왼쪽 레일)
 1. 선택 **[!UICONTROL 세션 만들기]**.
 1. 선택 **[!UICONTROL 시작]**.
@@ -133,6 +134,34 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
          ![보증 이벤트](assets/assurance-events.png)
 
 문제가 발생하는 경우 다음을 검토하십시오. [기술](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+
+
+## 확장 확인
+
+앱에서 최신 확장을 사용하는지 확인하려면:
+
+1. 선택 **[!UICONTROL 구성]**.
+
+1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 대상 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 확장 버전]**.
+
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+
+   ![확장 버전 구성](assets/assurance-configure-extension-versions.png)
+
+1. 선택 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 확장 버전]**. 사용 가능한 최신 확장과 앱 버전에서 사용된 확장에 대한 개요가 표시됩니다.
+
+   ![확장 버전](assets/assurance-extension-versions.png)
+
+1. 확장 버전을 업데이트하려면(예: **[!UICONTROL 메시징]** 및 **[!UICONTROL 최적화]**)의 Xcode에서 업그레이드가 필요한 특정 확장에 대해 패키지(확장)를 **[!UICONTROL 패키지 종속성]** (예: **[!UICONTROL AEPMessaging]**) 컨텍스트 메뉴에서 를 선택합니다 **[!UICONTROL 패키지 업데이트]**. Xcode는 패키지 종속성을 업데이트합니다.
+
+
+>[!NOTE]
+>
+>Xcode에서 확장(패키지)을 업데이트한 경우 현재 세션을 닫았다가 삭제하고 의 모든 단계를 반복해야 합니다. [세션에 연결](#connecting-to-a-session) 및 [확장 확인](#verify-extensions) 를 사용하면 Assurance가 새 Assurance 세션에서 올바른 확장을 제대로 보고할 수 있습니다.
+
+
+
+
 
 >[!SUCCESS]
 >

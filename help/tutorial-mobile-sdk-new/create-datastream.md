@@ -3,13 +3,13 @@ title: 데이터스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 7%
+source-wordcount: '459'
+ht-degree: 5%
 
 ---
-
 
 # 데이터 스트림 만들기
 
@@ -57,43 +57,47 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
 
 (선택 사항)을 보낼 때 [분석](analytics.md) 및 [Experience Platform](platform.md) 이 자습서의 단원에서는 Platform Mobile SDK가 Edge Network에 데이터를 전송할 때 데이터 스트림이 구성된 서비스에 해당 데이터를 전송하도록 데이터 스트림에 서비스를 추가하는 것입니다.
 
+<!--
+
 ### Adobe Analytics
 
-1. **[!UICONTROL 서비스 추가]**&#x200B;를 선택합니다.
+1. Select **[!UICONTROL Add Service]**.
 
-1. 추가 **[!UICONTROL Adobe Analytics]** 다음에서 [!UICONTROL 서비스] 목록,
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
 
-1. 사용할 보고서 사이트의 이름을 입력하십시오. **[!UICONTROL 보고서 세트 ID]**.
+1. Enter the name of the report site that you want to use in **[!UICONTROL Report Suite ID]**.
 
-1. 전환하여 서비스 활성화 **[!UICONTROL 활성화됨]** 켜짐.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+1. Select **[!UICONTROL Save]**.
 
-   ![데이터 스트림 서비스로 Adobe Analytics 추가](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
 
-Adobe Experience Platform 서비스를 활성화할 수도 있습니다.
+You might also want to enable the Adobe Experience Platform service. 
 
 >[!IMPORTANT]
 >
->이벤트 데이터 세트를 만든 경우에만 Adobe Experience Platform 서비스를 활성화할 수 있습니다. 아직 생성된 이벤트 데이터 세트가 없는 경우 지침을 따르십시오 [여기](platform.md).
+>You can only enable the Adobe Experience Platform service when having created an event dataset. If you don't already have an event dataset created, follow the instructions [here](platform.md).
 
-1. 클릭 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 서비스 추가]** 다른 서비스를 추가합니다.
+1. Click ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]** to add another service.
 
-1. [!UICONTROL 서비스] 목록에서 **[!UICONTROL Adobe Experience Platform]**&#x200B;을 선택합니다.
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
 
-1. 전환하여 서비스 활성화 **[!UICONTROL 활성화됨]** 켜짐.
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. 다음 항목 선택 **[!UICONTROL 이벤트 데이터 세트]** 의 일부로 생성한 [데이터 세트 만들기](platform.md#create-a-dataset) 지침, 예 **Luma 모바일 앱 이벤트 데이터 세트**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+1. Select **[!UICONTROL Save]**.
 
-   ![Adobe Experience Platform을 데이터스트림 서비스로 추가](assets/datastream-service-aep.png)
-1. 최종 구성은 다음과 같아야 합니다.
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
 
-   ![데이터 스트림 설정](assets/datastream-settings.png)
+-->
 
 
 >[!NOTE]

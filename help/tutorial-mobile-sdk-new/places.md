@@ -1,17 +1,18 @@
 ---
-title: 지리적 위치 서비스 사용
+title: 위치 사용
 description: 모바일 앱에서 Places geolocation 서비스를 사용하는 방법을 알아봅니다.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 3%
 
 ---
 
-# 지리적 위치 서비스 사용
+# 위치 사용
 
-앱에서 지리적 위치 서비스를 사용하는 방법을 알아봅니다.
+앱에서 위치 지리적 위치 서비스를 사용하는 방법을 알아봅니다.
 
 Adobe Experience Platform 데이터 수집 위치 서비스 는 위치를 인식하는 모바일 앱이 위치 컨텍스트를 이해할 수 있도록 해주는 지리적 위치 서비스입니다. 이 서비스는 유연한 관심 영역(POI) 데이터베이스를 동반하는 풍부하고 사용하기 쉬운 SDK 인터페이스를 사용합니다.
 
@@ -81,7 +82,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
    1. 선택 **[!UICONTROL 라이브러리 및 빌드에 저장]** 출처: **[!UICONTROL 라이브러리에 저장]**.
       ![위치 확장 설치](assets/places-install-extension.png).
 
-1. 라이브러리를 다시 빌드하고 있습니다.
+1. 라이브러리가 다시 빌드되었습니다.
 
 
 ### 스키마 확인
@@ -96,7 +97,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
    ![스키마 위치](assets/schema-places-context.png).
 
 
-### 태그 업데이트
+### 태그 속성 업데이트
 
 태그에 대한 위치 확장 기능은 지리적 위치 이벤트를 모니터링하고 이러한 이벤트를 기반으로 작업을 트리거할 수 있는 기능을 제공합니다. 이 기능을 사용하면 앱에서 구현해야 하는 API 코딩을 최소화할 수 있습니다.
 
@@ -132,7 +133,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 
 그런 다음 이러한 데이터 요소로 작업할 규칙을 정의합니다.
 
-1. 태그 속성에서 다음을 수행합니다. 선택 **[!UICONTROL 규칙]** 왼쪽 레일에서.
+1. 태그 속성에서 **[!UICONTROL 규칙]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 규칙 추가]**.
 1. 다음에서 **[!UICONTROL 규칙 만들기]** 화면에서 규칙 이름을 입력합니다(예: ). `POI - Entry`.
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래 **[!UICONTROL 이벤트]**.
@@ -215,6 +216,10 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음 옆에 **[!UICONTROL Mobile Core - 데이터 첨부]** 작업.
    1. 선택 **[!UICONTROL Adobe Experience Platform 에지 네트워크]** 다음에서 **[!UICONTROL 확장]** 나열 및 선택 **[!UICONTROL Edge Network로 이벤트 전달]**.
    1. **[!UICONTROL 변경사항 유지]**&#x200B;를 선택합니다.
+
+1. 규칙을 저장하려면 을 선택합니다. **[!UICONTROL 라이브러리에 저장]**.
+
+   ![규칙](assets/tags-rule-poi-exit.png)
 
 
 태그의 모든 변경 사항이 게시되도록 하려면
@@ -302,18 +307,15 @@ Assurance에서 설정을 확인하려면:
    }
    ```
 
-iOS 내의 위치 관리자 구현에 대한 세부 사항을 설명하는 것은 이 단원의 주제를 벗어납니다.
-
-
 ## 앱을 사용하여 유효성 검사
 
 1. 장치 또는 시뮬레이터에서 앱을 엽니다.
 
 1. 로 이동 **[!UICONTROL 위치]** 탭.
 
-1. 지도를 빙빙 돌려 가운데에 있는 파란색 원이 POI 중 하나(예: 런던) 위에 있는지 확인합니다.
+1. 맵을 주위로 이동하여(드래그) 파란색 중간 원이 POI 중 하나(예: 런던) 위에 있는지 확인합니다.
 
-1. 누르기 <img src="assets/geobutton.png" width="20" /> 오른쪽 하단에 카테고리와 이름이 표시될 때까지 반복합니다.
+1. 누르기 <img src="assets/geobutton.png" width="20" /> 카테고리와 이름이 빨간색 위치에 있는 레이블에 핀과 함께 표시될 때까지.
 
 1. POI의 레이블을 탭하면 **[!UICONTROL 인근 POI]** 시트.
 

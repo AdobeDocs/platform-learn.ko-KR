@@ -2,9 +2,10 @@
 title: 라이프사이클 데이터 수집
 description: 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -66,13 +67,11 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
-   }
    ```
 
 ## Assurance를 통해 유효성 검사
 
-1. 리뷰 [설치 지침](assurance.md) 시뮬레이터 또는 장치를 Assurance에 연결하고 연결합니다.
-1. 앱을 실행합니다.
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. 앱을 백그라운드로 보냅니다. 확인 **[!UICONTROL 라이프사이클 일시 중지]** 보증 UI의 이벤트.
 1. 앱을 전경으로 가져옵니다. 확인 **[!UICONTROL 주기 다시 시작]** 보증 UI의 이벤트.
    ![라이프사이클 유효성 검사](assets/lifecycle-lifecycle-assurance.png)
@@ -82,7 +81,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 이전 연습에서는 전경 및 배경 이벤트를 Adobe Experience Platform Mobile SDK에 전달했습니다. 이러한 이벤트를 Platform Edge Network에 전달하려면:
 
-1. 선택 **[!UICONTROL 규칙]** (데이터 수집 UI)
+1. 선택 **[!UICONTROL 규칙]** 태그 속성에서 참조할 수 있습니다.
    ![규칙 만들기](assets/rule-create.png)
 1. 선택 **[!UICONTROL 초기 빌드]** 사용할 라이브러리로 사용됩니다.
 1. **[!UICONTROL 새 규칙 만들기]**를 선택합니다.
