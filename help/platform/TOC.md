@@ -5,7 +5,7 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
+source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 34%
@@ -38,8 +38,8 @@ ht-degree: 34%
 + [ Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
 + 관리 {#admin}
    + [경고 사용](/help/platform/admin/use-alerts.md)
-   + [샌드박스 사용](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [샌드박스 간 개체 복사](/help/platform/admin/use-sandboxes.md)
+   + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
+   + [샌드박스 간 개체 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [제품 프로필 관리](/help/platform/admin/managing-product-profiles.md)
