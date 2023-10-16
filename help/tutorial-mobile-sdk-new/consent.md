@@ -4,10 +4,10 @@ description: 모바일 앱에서 동의를 구현하는 방법을 알아봅니�
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 1%
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -96,28 +96,10 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
 
 ## Assurance를 통해 유효성 검사
 
+1. 추적과 동의를 올바르게 재설정하고 초기화하려면 장치 또는 시뮬레이터에서 애플리케이션을 삭제하십시오.
 1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
-1. 위의 코드를 올바르게 추가한 경우 동의를 입력하라는 메시지가 표시됩니다.
-
-   선택 **[!UICONTROL 계속...]** 다음을 선택합니다. **[!UICONTROL 허용]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. 다음이 표시됩니다. **[!UICONTROL 동의 응답 받기]** 이벤트를 추가합니다.
+1. 에서 앱으로 이동할 때 **[!UICONTROL 홈]** 화면 대상 **[!UICONTROL 제품]** 화면으로 돌아가기 **[!UICONTROL 홈]** 화면에 다음이 표시됩니다. **[!UICONTROL 동의 응답 받기]** 이벤트를 추가합니다.
    ![동의 확인](assets/consent-update.png)
-
-
-## 동의 재설정
-
-동의를 재설정하려면:
-
-1. 다음으로 이동 **[!UICONTROL 설정]** 앱에서.
-
-1. 선택 **[!UICONTROL 앱 설정...]** 이렇게 하면 iOS 설정 앱에서 Luma 앱 설정이 열립니다.
-
-1. 전환 **[!UICONTROL 추적 허용]** 꺼져.
-
 
 
 >[!SUCCESS]

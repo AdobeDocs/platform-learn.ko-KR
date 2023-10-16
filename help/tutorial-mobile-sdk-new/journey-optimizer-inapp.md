@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1690'
 ht-degree: 4%
 
 ---
@@ -100,6 +100,27 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 >
 >표시되지 않으면 `AJO Push Tracking Experience Event Dataset` 선택 사항으로 고객 지원 센터에 문의하십시오.
 >
+
+
+## 서명
+
+Luma 앱 서명은 [푸시 알림 만들기 및 전송](journey-optimizer-push.md) 및 [인앱 메시지 만들기 및 보내기](journey-optimizer-inapp.md) 이 자습서의 단원. 이러한 단원에는 다음과 같은 Apple 프로비저닝 프로필이 필요합니다. **유료 Apple 개발자 계정 필요**.
+
+앱에 대한 서명을 업데이트하려면:
+
+1. Xcode에서 앱으로 이동합니다.
+1. 선택 **[!DNL Luma]** 프로젝트 탐색기를 참조하십시오.
+1. 다음 항목 선택 **[!DNL Luma]** 타겟.
+1. 다음 항목 선택 **서명 및 기능** 탭.
+1. 구성 **[!UICONTROL 서명 자동 관리]**, **[!UICONTROL 팀]**, 및 **[!UICONTROL 번들 식별자]**&#x200B;또는 특정 Apple 개발 프로비저닝 세부 정보를 사용하십시오.
+
+   >[!IMPORTANT]
+   >
+   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자 및 바꾸기 `com.adobe.luma.tutorial.swiftui` 각 번들 식별자가 고유해야 하므로 번들 식별자. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`. 이 자습서의 완료된 버전은 예를 들어 `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode 서명 기능](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+
 
 ### 앱에서 Journey Optimizer 구현
 
@@ -213,7 +234,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
    ```swift
    // Setting parameters and calling function to send in-app message
    Task {
-       AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
+       MobileSDK.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
    ```
 

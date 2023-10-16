@@ -3,9 +3,9 @@ title: 위치 사용
 description: 모바일 앱에서 Places geolocation 서비스를 사용하는 방법을 알아봅니다.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 3%
 
 ---
@@ -239,7 +239,10 @@ Assurance에서 설정을 확인하려면:
 1. 왼쪽 레일에서 아직 사용할 수 없는 경우 **[!UICONTROL 구성]** 왼쪽 레일에서 다음을 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음에 **[!UICONTROL 이벤트]** 및 **[!UICONTROL 맵 및 시뮬레이션]** 아래 **[!UICONTROL 장소 서비스]**.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 선택 **[!UICONTROL 맵 및 시뮬레이션]** 왼쪽 레일에서.
-1. Places 서비스에 정의된 POI 중 하나를 선택하고 팝업에서 을 선택합니다. ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 시작 이벤트 시뮬레이션]**.
+1. 지도를 POI 중 하나의 위치로 이동합니다.
+1. 선택 ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 로드 POI를 시뮬레이션합니다.  POI는 원과 핀을 사용하여 식별됩니다.
+1. POI를 선택합니다.
+1. 팝업에서 을 선택합니다. ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 시작 이벤트 시뮬레이션]**.
    ![시작 이벤트 시뮬레이션](assets/places-simulate.png)
 1. 선택 **[!UICONTROL 이벤트]** 왼쪽 레일에서 시뮬레이트한 이벤트가 표시됩니다.
    ![AJO 의사 결정 유효성 검사](assets/places-events.png)
@@ -258,7 +261,9 @@ Assurance에서 설정을 확인하려면:
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPPlaces` 는 가져오기 목록의 일부입니다.
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. 확인 `Places.self` 는 등록 중인 확장 배열의 일부입니다.
 

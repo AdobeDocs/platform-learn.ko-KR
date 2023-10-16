@@ -3,13 +3,13 @@ title: 웹 보기 처리
 description: 모바일 앱에서 WebViews를 사용하여 데이터 수집을 처리하는 방법에 대해 알아봅니다.
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
-
 
 # 웹 보기 처리
 
@@ -67,6 +67,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 코드를 실행하려면:
 
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. 로 이동 **[!UICONTROL 설정]** 앱에서
 1. 탭 **[!DNL View...]** 단추 표시 **[!DNL Terms of Use]**.
 

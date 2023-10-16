@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
 source-wordcount: '2618'
 ht-degree: 2%
@@ -296,7 +296,9 @@ Assurance에서 설정을 확인하려면:
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPOptimize` 는 가져오기 목록의 일부입니다.
 
-   `import AEPOptimize`
+   ```swift
+   import AEPOptimize
+   ```
 
 1. 확인 `Optimize.self` 는 등록 중인 확장 배열의 일부입니다.
 

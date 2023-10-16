@@ -4,9 +4,9 @@ description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알�
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '976'
 ht-degree: 7%
 
 ---
@@ -57,22 +57,28 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 
 추가 정보를 찾을 수 있음 [여기](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-## 서명
+<!-- not initially required
 
-Xcode에서 응용 프로그램을 처음 실행하기 전에 서명을 업데이트하십시오.
+## Signing
 
-1. Xcode에서 프로젝트를 엽니다.
-1. 선택 **[!DNL Luma]** 프로젝트 탐색기를 참조하십시오.
-1. 다음 항목 선택 **[!DNL Luma]** 타겟.
-1. 다음 항목 선택 **서명 및 기능** 탭.
-1. 구성 **[!UICONTROL 서명 자동 관리]**, **[!UICONTROL 팀]**, 및 **[!UICONTROL 번들 식별자]**&#x200B;또는 특정 Apple 개발 프로비저닝 세부 정보를 사용하십시오.
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
 
+To update the signing for the lessons that require that you sign the application:
+
+1. Open the project in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
    >[!IMPORTANT]
    >
-   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자 및 바꾸기 `Luma` 각 번들 식별자가 고유해야 하므로 번들 식별자. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`. 이 자습서의 완료된 버전은 예를 들어 `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Xcode 서명 기능](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
 
 ## 기본 URL 설정
 
@@ -81,9 +87,13 @@ Xcode에서 응용 프로그램을 처음 실행하기 전에 서명을 업데�
 1. 다음 항목 선택 **[!DNL Luma]** 타겟.
 1. 다음 항목 선택 **정보** 탭.
 1. 기본 URL을 추가하려면 아래로 스크롤하여 **URL 유형** 및 선택 **+** 단추를 클릭합니다.
-1. 설정 **식별자** 을(를) 구성하는 번들 식별자 [서명](#signing) (예 `com.adobe.luma.tutorial.swiftui`) 및 a 설정 **URL 체계**, 예 `lumatutorialswiftui`.
+1. 설정 **식별자** 을(를) 선택한 번들 식별자로 설정하고 **URL 체계** 원하는 대로 선택할 수 있습니다.
 
    ![보증 url](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자 및 바꾸기 `com.adobe.luma.tutorial.swiftui` 각 번들 식별자가 고유해야 하므로 번들 식별자. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`.<br/>마찬가지로 고유한 URL 체계를 사용하고 이미 제공된 을 바꿉니다 `lumatutorialswiftui` 와 함께 사용하십시오.
 
 iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [Apple 설명서](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -92,8 +102,31 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
 
 ## 세션에 연결
 
-1. 를 사용하여 시뮬레이터나 Xcode의 물리적 장치에서 앱을 다시 빌드하고 실행합니다. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
-1. 선택 **[!UICONTROL 보증]** (데이터 수집 UI의 왼쪽 레일)
+Xcode에서:
+
+1. 를 사용하여 시뮬레이터나 Xcode의 물리적 장치에서 앱을 빌드하거나 다시 빌드하고 실행합니다. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. 다음에서 **[!UICONTROL &quot;Luma 앱&quot;에서 내 위치를 사용할 수 있도록 허용]** 대화 상자, 선택 **[!UICONTROL 앱을 사용하는 동안 허용]**.
+
+   <img src="assets/geolocation-permissions.png" width="300">
+
+1. 다음에서 **[!UICONTROL &quot;Luma 앱&quot;이 알림을 보내려고 합니다.]** 대화 상자, 선택 **[!UICONTROL 허용]**.
+
+   <img src="assets/notification-permissions.png" width="300">
+
+1. 선택 **[!UICONTROL 계속...]** 앱이 활동을 추적할 수 있도록 허용합니다.
+
+   <img src="assets/tracking-continue.png" width="300">
+
+1. 다음에서 **[!UICONTROL &quot;Luma 앱&quot;이 다른 회사의 앱과 웹 사이트에서 활동을 추적할 수 있도록 허용]** 대화 상자, 선택 **[!UICONTROL 허용]**.
+
+   <img src="assets/tracking-allow.png" width="300">
+
+
+브라우저에서:
+
+1. 데이터 수집 UI로 이동합니다.
+1. 선택 **[!UICONTROL 보증]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 세션 만들기]**.
 1. 선택 **[!UICONTROL 시작]**.
 1. 다음을 제공합니다. **[!UICONTROL 세션 이름]** 과 같은 `Luma Mobile App Session` 및 **[!UICONTROL 기본 URL]**: Xcode에 입력한 URL 체계, 그 뒤에 오는 `://` 예: `lumatutorialswiftui://`

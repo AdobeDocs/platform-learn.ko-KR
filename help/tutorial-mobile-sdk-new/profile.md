@@ -3,9 +3,9 @@ title: 프로필 데이터 수집
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '593'
 ht-degree: 1%
 
 ---
@@ -26,11 +26,6 @@ ht-degree: 1%
 ## 전제 조건
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
-* 프로필 SDK를 가져왔습니다.
-
-  ```swift
-  import AEPUserProfile
-  ```
 
 ## 학습 목표
 
@@ -78,11 +73,13 @@ ht-degree: 1%
    ```swift
    // Get attributes
    UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-       if attributes?["isPaidUser"] as! String == "yes" {
-           showBadgeForUser = true
-       }
-       else {
-           showBadgeForUser = false
+       if attributes?.count ?? 0 > 0 {
+           if attributes?["isPaidUser"] as? String == "yes" {
+               showBadgeForUser = true
+           }
+           else {
+               showBadgeForUser = false
+           }
        }
    }
    ```
