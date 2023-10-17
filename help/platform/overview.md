@@ -4,16 +4,16 @@ description: Adobe Experience Platform에 대해 알아보기
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: dcd7219ad6073727f66a8d1f30e67ce98f1b8a73
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 21%
+ht-degree: 33%
 
 ---
 
 # Adobe Experience Platform 자습서
 
-Adobe Experience Platform은 고객 경험을 이끄는 완벽한 솔루션을 구축하고 관리할 수 있는 시장에서 가장 강력하고 유연하며 개방적인 시스템입니다. Experience Platform을 사용하면 조직 내 모든 시스템의 고객 데이터와 컨텐츠를 중앙 집중화 및 표준화하고 데이터 과학 및 시스템 학습을 적용하여 풍부한 개인별 경험을 더 잘 설계하고 전달할 수 있습니다. 이 비디오와 자습서를 사용하여 Experience Platform의 다양한 구성 요소를 학습할 수 있습니다.
+Adobe Experience Platform은 고객 경험을 주도하는 완벽한 솔루션을 구축하고 관리하기 위해 시장에서 가장 강력하고 유연하며 개방적인 시스템입니다. Experience Platform을 사용하면 조직 내 모든 시스템의 고객 데이터와 컨텐츠를 중앙 집중화 및 표준화하고 데이터 과학 및 시스템 학습을 적용하여 풍부한 개인별 경험을 더 잘 설계하고 전달할 수 있습니다. 이 비디오와 자습서를 통해 Experience Platform의 다양한 구성 요소를 학습할 수 있습니다.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -30,7 +30,7 @@ Adobe Experience Platform은 고객 경험을 이끄는 완벽한 솔루션을 �
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="Experience Platform 비디오 기반의 고객 경험" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="Experience Platform 비디오로 구동되는 고객 경험" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
@@ -38,12 +38,12 @@ Adobe Experience Platform은 고객 경험을 이끄는 완벽한 솔루션을 �
     </a>
     </div>
     <p>
-    <em>Platform을 사용하여 고객 경험을 향상시키는 방법 을 참조하십시오</em>
+    <em>플랫폼을 사용하여 고객 경험을 향상시키는 방법 보기</em>
     <p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-      <img alt="데이터 설계자 및 데이터 엔지니어를 위한 시작하기 자습서의 축소판 이미지" src="assets/thumb_Getting_started.jpg" />
+      <img alt="&apos;데이터 설계자 및 데이터 엔지니어 시작하기&apos; 자습서에 대한 썸네일 이미지" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
@@ -51,12 +51,12 @@ Adobe Experience Platform은 고객 경험을 이끄는 완벽한 솔루션을 �
     </a>
     </div>
     <p>
-    <em>시작하기 위한 실습 연습</em>
+    <em>시작하기 위한 실습</em>
     <p>
   </td>
   <td>
     <a href="sources/overview.md">
-      <img alt="'소스 커넥터 이해' 비디오에 대한 축소판 이미지" src="assets/thumb_Sources.png" />
+      <img alt="&quot;소스 커넥터 이해&quot; 비디오의 썸네일 이미지" src="assets/thumb_Sources.png" />
     </a>
     <div>
       <a href="sources/overview.md">

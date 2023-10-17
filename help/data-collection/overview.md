@@ -3,9 +3,9 @@ title: 데이터 수집 튜토리얼
 description: 데이터 수집의 강력한 사용자에게 유용한 방법 비디오 및 튜토리얼
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 37%
 
 ---
@@ -64,6 +64,19 @@ ht-degree: 37%
     </div>
     <p>
     <em>태그를 사용하여 Platform Mobile SDK 구현</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="Target을 웹 SDK로 마이그레이션" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Adobe Target을 웹 SDK로 마이그레이션</strong>
+    </a>
+    </div>
+    <p>
+    <em>at.js에서 Web SDK로 마이그레이션</em>
     <p>
   </td>
 </tr>
