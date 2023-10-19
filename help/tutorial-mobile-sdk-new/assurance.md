@@ -4,9 +4,9 @@ description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알�
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 7%
 
 ---
@@ -105,6 +105,11 @@ iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [A
 Xcode에서:
 
 1. 를 사용하여 시뮬레이터나 Xcode의 물리적 장치에서 앱을 빌드하거나 다시 빌드하고 실행합니다. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >선택적으로, 특히 예상치 못한 결과가 표시될 때 빌드를 &#39;정리&#39;할 수 있습니다. 이렇게 하려면 다음을 선택합니다. **[!UICONTROL 빌드 폴더 정리...]** Xcode에서 **[!UICONTROL 제품]** 메뉴 아래의 제품에서 사용할 수 있습니다.
+
 
 1. 다음에서 **[!UICONTROL &quot;Luma 앱&quot;에서 내 위치를 사용할 수 있도록 허용]** 대화 상자, 선택 **[!UICONTROL 앱을 사용하는 동안 허용]**.
 
