@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
+source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1002'
 ht-degree: 34%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 34%
    + [Marketo 대상 구성](/help/platform/destinations/configure-the-marketo-destination.md)
    + [파일 기반 클라우드 스토리지 또는 이메일 마케팅 대상 구성](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [소셜 대상 구성](/help/platform/destinations/configure-a-social-destination.md)
+   + [LiveRamp 대상을 통해 활성화](/help/platform/destinations/liveramp-destinations.md)
    + Adobe Target 및 사용자 지정 개인화{#target}
       + [Adobe Target을 사용한 다음 히트 개인화](/help/platform/destinations/target/next-hit-personalization.md)
       + [Adobe Target 대상 구성](/help/platform/destinations/target/configure-the-target-destination.md)
