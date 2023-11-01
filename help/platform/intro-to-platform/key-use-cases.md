@@ -1,12 +1,13 @@
 ---
 title: 주요 사용 사례
-description: Experience Platform Real-time Customer Data Platform, 고객 여정 인텔리전스, 전달 및 크로스 채널 경험, 고객 경험 애플리케이션 개발의 네 가지 주요 사용 사례에 대한 개요를 살펴보십시오.
+description: Experience Platform&mdash의 5가지 주요 사용 사례, 지능형 재참여, "잃지 않음" 캠페인, 고객 전환 최적화, 컨텍스트 인식 및 일회성 가치 대 라이프타임 값에 대한 개요를 살펴보십시오.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
+last-substantial-update: 2023-11-01T00:00:00Z
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: cc38679e0e7f27a10fe2513b4b4986347e501010
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Adobe Experience Platform의 주요 사용 사례
 
-실시간 고객 데이터 플랫폼, 고객 여정 인텔리전스, 게재 및 크로스 채널 경험, 고객 경험 애플리케이션 개발의 네 가지 주요 Experience Platform 사용 사례에 대한 개요를 살펴보십시오.
+지능형 재참여, &quot;잃지 않음&quot; 캠페인, 고객 전환 최적화, 상황별 인식 및 일회성 가치 대 라이프타임 가치 등 5가지 Experience Platform의 주요 사용 사례에 대한 개요를 살펴보십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on)
 
