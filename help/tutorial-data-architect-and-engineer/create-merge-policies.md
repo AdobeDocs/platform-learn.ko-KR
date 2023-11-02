@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 1%
@@ -61,7 +61,7 @@ Adobe Experience Platform을 사용하면 여러 소스에서 데이터를 결�
 
 ExperienceEvent 클래스에 대한 유니온 스키마는 없습니다. ExperienceEvent 데이터가 여전히 프로필에 도착하지만, 시계열 기반이므로 각 이벤트에는 타임스탬프와 ID가 포함되어 있으며 충돌은 문제가 되지 않습니다.
 
-기본 병합 정책이 마음에 들지 않으면 어떻게 해야 합니까? 충돌이 있을 때 Luma가 CRM 시스템이 진실의 소스가 되어야 한다고 결정하면 어떻게 됩니까? 이를 위해 병합 정책을 만듭니다.
+기본 병합 정책이 마음에 들지 않으면 어떻게 해야 합니까? 충돌이 있을 때 Luma가 충성도 시스템이 진실의 출처가 되어야 한다고 결정하면 어떻게 됩니까? 이를 위해 병합 정책을 만듭니다.
 
 ## UI에서 병합 정책 만들기
 
