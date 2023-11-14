@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
+source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 34%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 34%
    + [배경: Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform 개요](/help/platform/intro-to-platform/overview.md)
    + [주요 기능](/help/platform/intro-to-platform/key-capabilities.md)
-   + [애플리케이션 및 지능형 서비스](/help/platform/intro-to-platform/application-and-intelligent-services.md)
+   + [플랫폼 기반 애플리케이션](/help/platform/intro-to-platform/native-applications.md)
    + [Experience Cloud 애플리케이션과 통합](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [주요 사용 사례](/help/platform/intro-to-platform/key-use-cases.md)
    + [기본 아키텍처](/help/platform/intro-to-platform/basic-architecture.md)
