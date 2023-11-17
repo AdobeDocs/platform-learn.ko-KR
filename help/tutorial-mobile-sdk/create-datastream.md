@@ -3,10 +3,10 @@ title: 데이터스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -14,9 +14,13 @@ ht-degree: 5%
 
 Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+
 데이터 스트림은 Platform Edge Network의 서버측 구성입니다.  데이터 스트림은 Platform Edge Network로 들어오는 데이터가 Adobe Experience Cloud 애플리케이션 및 서비스로 적절하게 라우팅되도록 합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) 또는 이 [비디오](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=ko).
 
-## 사전 요구 사항
+## 전제 조건
 
 데이터 스트림을 생성하려면 조직에서 데이터 수집 인터페이스(이전의 )에서 이 기능에 대해 프로비저닝해야 합니다 [!UICONTROL 시작])에 대한 사용자 권한이 있어야 합니다. [!UICONTROL Experience Platform] > [!UICONTROL 데이터 수집] > **[!UICONTROL 데이터 스트림 관리]** 및 **[!UICONTROL 데이터스트림 보기]**.
 

@@ -1,12 +1,12 @@
 ---
-title: 보증 설정
+title: Assurance 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 2%
+source-wordcount: '603'
+ht-degree: 11%
 
 ---
 
@@ -14,12 +14,16 @@ ht-degree: 2%
 
 모바일 앱에서 Adobe Experience Platform Assurance를 설정하는 방법을 알아봅니다.
 
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+
 Assurance는 정식적으로 프로젝트 그리폰이라고 하며, 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되도록 설계되었습니다.
 
-보증은 Adobe Experience Platform Mobile SDK에서 생성한 원시 SDK 이벤트를 검사하는 데 도움이 됩니다. SDK에서 수집한 모든 이벤트를 검사할 수 있습니다. SDK 이벤트는 시간별로 정렬된 목록 보기에 로드됩니다. 각 이벤트에는 추가 세부 정보를 제공하는 세부 보기가 있습니다. SDK 구성, 데이터 요소, 공유 상태 및 SDK 확장 버전을 검색할 수 있는 추가 보기도 제공됩니다. 에 대해 자세히 알아보기 [보증](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) 를 참조하십시오.
+Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 SDK 이벤트를 검사할 수 있습니다. SDK에서 수집한 모든 이벤트를 검사할 수 있습니다. SDK 이벤트는 시간별로 정렬된 목록 보기에 로드됩니다. 각 이벤트에는 추가 정보를 제공하는 상세 보기가 있습니다. SDK 구성, 데이터 요소, 공유 상태 및 SDK 확장 버전을 검색할 수 있는 추가 보기도 제공됩니다. 에 대해 자세히 알아보기 [보증](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html) 를 참조하십시오.
 
 
-## 사전 요구 사항
+## 전제 조건
 
 * SDK가 설치 및 구성된 샘플 앱을 빌드하고 실행했습니다.
 
@@ -30,7 +34,7 @@ Assurance는 정식적으로 프로젝트 그리폰이라고 하며, 모바일 �
 * 조직에 액세스 권한이 있는지 확인합니다(없는 경우 요청).
 * 기본 URL을 설정합니다.
 * 필요한 iOS 관련 코드를 추가합니다.
-* 세션에 연결합니다.
+* 세션에 연결.
 
 ## 액세스 확인
 

@@ -2,9 +2,9 @@
 title: 이벤트
 description: 모바일 앱에서 이벤트 데이터를 수집하는 방법에 대해 알아봅니다.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '955'
 ht-degree: 1%
 
 ---
@@ -13,9 +13,13 @@ ht-degree: 1%
 
 모바일 앱에서 이벤트를 추적하는 방법에 대해 알아봅니다.
 
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+
 Edge Network 확장은 Platform Edge Network에 경험 이벤트를 전송하기 위한 API를 제공합니다. 경험 이벤트 는 XDM ExperienceEvent 스키마 정의를 따르는 데이터가 포함된 개체입니다. 보다 간단하게, 모바일 앱에서 사람들이 하는 작업을 캡처합니다. Platform Edge Network에서 데이터를 수신하면 Adobe Analytics 및 Experience Platform과 같이 데이터 스트림에 구성된 애플리케이션 및 서비스로 전달할 수 있습니다. 에 대해 자세히 알아보기 [경험 이벤트](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) 를 참조하십시오.
 
-## 사전 요구 사항
+## 전제 조건
 
 * 필요한 SDK를 사용하여 PodFile을 업데이트했습니다.
 * AppDelegate에 등록된 확장입니다.

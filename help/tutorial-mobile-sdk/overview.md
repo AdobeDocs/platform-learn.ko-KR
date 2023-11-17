@@ -3,9 +3,9 @@ title: 모바일 앱에서 Adobe Experience Cloud 구현 자습서 개요
 description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는 방법을 알아봅니다. 이 튜토리얼에서는 샘플 Swift 앱에서의 Experience Cloud 애플리케이션 구현을 안내합니다.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '661'
 ht-degree: 11%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 11%
 # 모바일 앱에서 Adobe Experience Cloud 구현 튜토리얼
 
 Adobe Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Adobe Experience Cloud 애플리케이션을 구현하는 방법을 알아봅니다.
+
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
 
 Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Experience Platform Edge Network를 통해 Adobe 애플리케이션 및 서드파티 서비스와 모두 상호 작용할 수 있도록 하는 클라이언트측 SDK입니다. 다음을 참조하십시오. [Adobe Experience Platform Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/) 를 참조하십시오.
 
@@ -55,7 +59,7 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
    * **[!UICONTROL 속성 권한]**—권한 항목 대상 **[!UICONTROL 개발]**, **[!UICONTROL 승인]**, **[!UICONTROL 게시]**, **[!UICONTROL 확장 관리]**, 및 **[!UICONTROL 환경 관리]**.
    * **[!UICONTROL 회사 권한]**—권한 항목 대상 **[!UICONTROL 속성 관리]** 그리고 선택적 푸시 메시지 단원을 완료하면 **[!UICONTROL 앱 구성 관리]**
 
-      태그 권한에 대한 자세한 내용은 [태그에 대한 사용자 권한](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ko-KR){target="_blank"} 를 참조하십시오.
+     태그 권한에 대한 자세한 내용은 [태그에 대한 사용자 권한](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ko-KR){target="_blank"} 를 참조하십시오.
 * Experience Platform에서 다음을 수행해야 합니다.
    * **[!UICONTROL 데이터 모델링]**—스키마를 관리하고 볼 수 있는 권한 항목입니다.
    * **[!UICONTROL Identity Management]**—id 네임스페이스를 관리하고 볼 수 있는 권한 항목입니다.

@@ -2,7 +2,8 @@
 title: Adobe Experience Platform Mobile SDK 설치
 description: 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법을 알아봅니다.
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 86348d8b-f428-465d-a79e-ce73d140da79
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 * 에 설명된 확장을 사용하여 태그 라이브러리를 성공적으로 빌드했습니다. [이전 단원](configure-tags.md).
 * 의 개발 환경 파일 ID [모바일 설치 지침](configure-tags.md#generate-sdk-install-instructions).
-* 비어 있는 을(를) 다운로드했습니다. [샘플 앱](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
+* 비어 있는 을(를) 다운로드했습니다. [샘플 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
 * 경험 [Xcode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 학습 목표

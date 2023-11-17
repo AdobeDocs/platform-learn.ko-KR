@@ -3,7 +3,7 @@ title: 이벤트 데이터 추적
 description: 모바일 앱에서 이벤트 데이터를 추적하는 방법에 대해 알아봅니다.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -367,7 +367,7 @@ Adobe Experience Platform Edge 확장은 이전에 정의한 XDM 스키마 다�
 
 >[!TIP]
 >
->리뷰 [완료된 앱](https://git.corp.adobe.com/rmaur/Luma) 추가 예제를 보려면 다음을 수행하십시오.
+>리뷰 [완료된 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 추가 예제를 보려면 다음을 수행하십시오.
 
 
 ## Analytics 및 Platform에 이벤트 보내기

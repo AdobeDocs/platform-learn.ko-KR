@@ -3,9 +3,9 @@ title: 동의
 description: 모바일 앱에서 동의를 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '391'
 ht-degree: 3%
 
 ---
@@ -14,9 +14,13 @@ ht-degree: 3%
 
 모바일 앱에서 동의를 구현하는 방법을 알아봅니다.
 
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+
 Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experience Platform Mobile SDK 및 Edge Network 확장을 사용할 때 모바일 앱에서 동의 환경 설정을 수집할 수 있습니다. 에 대해 자세히 알아보기 [동의 확장](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)을 참조하십시오.
 
-## 사전 요구 사항
+## 전제 조건
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 

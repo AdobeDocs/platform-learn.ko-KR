@@ -3,9 +3,9 @@ title: XDM 스키마 만들기
 description: 모바일 앱 이벤트에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1315'
 ht-degree: 7%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 7%
 # XDM 스키마 만들기
 
 모바일 앱 이벤트에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
+
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
 
 표준화와 상호 운용성은 Adobe Experience Platform의 핵심 개념입니다. Adobe을 기반으로 하는 XDM(Experience Data Model)은 고객 경험 데이터를 표준화하고 고객 경험 관리를 위한 스키마를 정의하는 작업입니다.
 
@@ -30,7 +34,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 >
 >Analytics 솔루션 디자인 참조(SDR)에 익숙하다면 스키마를 더 강력한 SDR로 생각할 수 있습니다.
 
-## 사전 요구 사항
+## 전제 조건
 
 단원을 완료하려면 Experience Platform 스키마를 만들 수 있는 권한이 있어야 합니다.
 

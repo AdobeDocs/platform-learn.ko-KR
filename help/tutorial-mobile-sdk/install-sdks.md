@@ -2,10 +2,10 @@
 title: Adobe Experience Platform Mobile SDK 설치
 description: 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법을 알아봅니다.
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 1%
+source-wordcount: '591'
+ht-degree: 2%
 
 ---
 
@@ -13,7 +13,11 @@ ht-degree: 1%
 
 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법을 알아봅니다.
 
-## 사전 요구 사항
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+
+## 전제 조건
 
 * 에 설명된 확장을 사용하여 태그 라이브러리를 성공적으로 빌드했습니다. [이전 단원](configure-tags.md).
 * 의 개발 환경 파일 ID [모바일 설치 지침](configure-tags.md#generate-sdk-install-instructions).
@@ -146,6 +150,7 @@ MobileCore.registerExtensions(extensions, {
 
 >[!IMPORTANT]
 >프로덕션 앱에서는 현재 환경(dev/stag/prod)을 기반으로 AppId를 전환해야 합니다.
+>
 
 다음: **[보증 설정](assurance.md)**
 

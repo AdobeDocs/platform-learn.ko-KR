@@ -3,10 +3,10 @@ title: Analytics 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하는 방법에 대해 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
-ht-degree: 4%
+source-wordcount: '609'
+ht-degree: 3%
 
 ---
 
@@ -14,9 +14,14 @@ ht-degree: 4%
 
 모바일 데이터를 Adobe Analytics에 매핑하는 방법을 알아봅니다.
 
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+
+
 다음 [이벤트](events.md) 이전 단원에서 수집하여 Platform Edge Network로 전송한 데이터는 Adobe Analytics을 포함하여 데이터스트림에 구성된 서비스로 전달됩니다. 데이터를 보고서 세트의 올바른 변수에 매핑하기만 하면 됩니다.
 
-## 사전 요구 사항
+## 전제 조건
 
 * ExperienceEvent 추적에 대한 이해.
 * 샘플 앱에서 XDM 데이터를 성공적으로 보냈습니다.

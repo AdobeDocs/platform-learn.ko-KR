@@ -2,10 +2,10 @@
 title: 라이프사이클 데이터
 description: 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '508'
+ht-degree: 3%
 
 ---
 
@@ -13,17 +13,21 @@ ht-degree: 2%
 
 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+
 Adobe Experience Platform 모바일 SDK 라이프사이클 확장을 사용하면 모바일 앱에서 수집 라이프사이클 데이터를 사용할 수 있습니다. Adobe Experience Platform Edge Network 확장은 이 라이프사이클 데이터를 Platform Edge Network로 보낸 다음 데이터스트림 구성에 따라 다른 애플리케이션 및 서비스로 전달합니다. 에 대해 자세히 알아보기 [라이프사이클 확장](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) 를 참조하십시오.
 
 
-## 사전 요구 사항
+## 전제 조건
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Assurance SDK를 가져옵니다.
 
-   ```swift
-   import AEPAssurance
-   ```
+  ```swift
+  import AEPAssurance
+  ```
 
 * 에 설명된 대로 Assurance 확장을 등록했습니다 [이전 단원](install-sdks.md).
 

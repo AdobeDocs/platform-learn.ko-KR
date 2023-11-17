@@ -3,9 +3,9 @@ title: 신원
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 4%
 
 ---
@@ -14,11 +14,15 @@ ht-degree: 4%
 
 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 
+>[!INFO]
+>
+> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+
 Adobe Experience Platform Identity Service를 사용하면 디바이스와 시스템 간에 ID를 연결하여 고객과 고객의 행동을 더 잘 볼 수 있으므로 효과적인 개인 디지털 경험을 실시간으로 제공할 수 있습니다. ID 필드와 네임스페이스는 서로 다른 데이터 소스를 함께 연결하여 360도 실시간 고객 프로필을 만드는 접착제입니다.
 
-에 대해 자세히 알아보기 [ID 확장](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) 및 [id 서비스](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko) 설명서에서 참조하십시오.
+에 대해 자세히 알아보기 [ID 확장](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) 및 [id 서비스](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR) 설명서에서 참조하십시오.
 
-## 사전 요구 사항
+## 전제 조건
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 
@@ -66,7 +70,7 @@ Adobe Experience Platform Identity Service를 사용하면 디바이스와 시�
 
 ## 사용자 정의 ID 네임스페이스 설정
 
-ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR) id가 연관되는 컨텍스트의 지표 역할을 합니다. 예를 들어 이메일 주소로 &quot;name@email.com&quot; 값을 구별하거나 숫자 CRM ID로 &quot;443522&quot;값을 구별합니다.
+ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR) id가 연관되는 컨텍스트의 지표 역할을 합니다. 예를 들어 값 &quot;name@email.com&quot;을 이메일 주소로 구별하거나 &quot;443522&quot;을 숫자 CRM ID로 구별합니다.
 
 1. 데이터 수집 인터페이스에서 다음을 선택합니다. **[!UICONTROL ID]** 왼쪽 레일 탐색에서
 1. **[!UICONTROL 신원 네임스페이스 만들기]**&#x200B;를 선택합니다.
