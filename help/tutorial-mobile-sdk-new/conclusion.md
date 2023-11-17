@@ -4,7 +4,7 @@ description: 자습서를 완료한 후 수행할 작업
 recommendations: display,noCatalog
 hide: true
 exl-id: be256529-fd4f-428b-b023-409b7a35c204
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
 workflow-type: tm+mt
 source-wordcount: '464'
 ht-degree: 7%
@@ -50,4 +50,4 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
