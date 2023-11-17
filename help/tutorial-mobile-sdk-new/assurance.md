@@ -4,9 +4,9 @@ description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알�
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 7%
 
 ---
@@ -93,7 +93,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자 및 바꾸기 `com.adobe.luma.tutorial.swiftui` 각 번들 식별자가 고유해야 하므로 번들 식별자. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`.<br/>마찬가지로 고유한 URL 체계를 사용하고 이미 제공된 을 바꿉니다 `lumatutorialswiftui` 와 함께 사용하십시오.
+   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자 및 바꾸기 `com.adobe.luma.tutorial.swiftui` 번들 식별자. 각 번들 식별자는 고유해야 합니다. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`.<br/>마찬가지로 고유한 URL 체계를 사용하고 이미 제공된 을 바꿉니다 `lumatutorialswiftui` 와 함께 사용하십시오.
 
 iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [Apple 설명서](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -123,7 +123,7 @@ Xcode에서:
 
    <img src="assets/tracking-continue.png" width="300">
 
-1. 다음에서 **[!UICONTROL &quot;Luma 앱&quot;이 다른 회사의 앱과 웹 사이트에서 활동을 추적할 수 있도록 허용]** 대화 상자, 선택 **[!UICONTROL 허용]**.
+1. 다음에서 **[!UICONTROL &quot;Luma 앱&quot;이 다른 회사의 앱 및 웹 사이트 간 활동을 추적할 수 있도록 허용]** 대화 상자, 선택 **[!UICONTROL 허용]**.
 
    <img src="assets/tracking-allow.png" width="300">
 
@@ -141,7 +141,7 @@ Xcode에서:
 
    실제 장치를 사용하는 경우:
 
-   * 선택 **[!UICONTROL QR 코드 스캔]**. 실제 장치에서 카메라를 사용하여 QR 코드를 스캔하고 링크를 탭하여 앱을 엽니다.
+   * 선택 **[!UICONTROL QR 코드 스캔]**. 앱을 열려면 실제 장치의 카메라를 사용하여 QR 코드를 스캔하고 링크를 탭합니다.
 
      ![보증 qa 코드](assets/assurance-qr-code.png)
 
@@ -186,16 +186,16 @@ Xcode에서:
 
    ![확장 버전 구성](assets/assurance-configure-extension-versions.png)
 
-1. 선택 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 확장 버전]**. 사용 가능한 최신 확장과 앱 버전에서 사용된 확장에 대한 개요가 표시됩니다.
+1. 선택 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 확장 버전]** 사용 가능한 최신 확장과 앱 버전에서 사용된 확장에 대한 개요를 살펴보십시오.
 
    ![확장 버전](assets/assurance-extension-versions.png)
 
-1. 확장 버전을 업데이트하려면(예: **[!UICONTROL 메시징]** 및 **[!UICONTROL 최적화]**)의 Xcode에서 업그레이드가 필요한 특정 확장에 대해 패키지(확장)를 **[!UICONTROL 패키지 종속성]** (예: **[!UICONTROL AEPMessaging]**) 컨텍스트 메뉴에서 를 선택합니다 **[!UICONTROL 패키지 업데이트]**. Xcode는 패키지 종속성을 업데이트합니다.
+1. 확장 버전을 업데이트하려면(예: **[!UICONTROL 메시징]** 및 **[!UICONTROL 최적화]**)에서 패키지(확장)를 선택합니다 **[!UICONTROL 패키지 종속성]** (예: **[!UICONTROL AEPMessaging]**) 컨텍스트 메뉴에서 를 선택합니다 **[!UICONTROL 패키지 업데이트]**. Xcode는 패키지 종속성을 업데이트합니다.
 
 
 >[!NOTE]
 >
->Xcode에서 확장(패키지)을 업데이트한 경우 현재 세션을 닫았다가 삭제하고 의 모든 단계를 반복해야 합니다. [세션에 연결](#connecting-to-a-session) 및 [확장 확인](#verify-extensions) 를 사용하면 Assurance가 새 Assurance 세션에서 올바른 확장을 제대로 보고할 수 있습니다.
+>Xcode에서 확장(패키지)을 업데이트했으면 현재 세션을 닫았다가 삭제하고 의 모든 단계를 반복합니다 [세션에 연결](#connecting-to-a-session) 및 [확장 확인](#verify-extensions) 를 사용하면 Assurance가 새 Assurance 세션에서 올바른 확장을 제대로 보고할 수 있습니다.
 
 
 
@@ -203,7 +203,9 @@ Xcode에서:
 
 >[!SUCCESS]
 >
->이제 자습서의 나머지 부분에서 Assurance를 사용하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 자습서의 나머지 부분에서 Assurance를 사용하도록 앱을 설정했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 다음: **[동의 구현](consent.md)**

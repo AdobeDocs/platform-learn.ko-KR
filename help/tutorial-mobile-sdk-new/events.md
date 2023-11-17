@@ -3,7 +3,7 @@ title: 이벤트 데이터 추적
 description: 모바일 앱에서 이벤트 데이터를 추적하는 방법에 대해 알아봅니다.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -171,7 +171,7 @@ Adobe Experience Platform Edge 확장은 이전에 정의한 XDM 스키마 다�
       1. 대상 <img src="assets/saveforlater.png" width="15" />:
 
          ```swift
-         // Send saveForLaters commerce experience event
+         // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
@@ -185,13 +185,13 @@ Adobe Experience Platform Edge 확장은 이전에 정의한 XDM 스키마 다�
       1. 대상 <img src="assets/purchase.png" width="20" />:
 
          ```swift
-         // Send purchases commerce experience event
+         // Send purchase commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
 
 >[!TIP]
 >
->Android용으로 개발하는 경우 맵(`java.util.Map`)를 XDM 페이로드를 구성하는 기본 인터페이스입니다.
+>Android™용으로 개발하는 경우 맵(`java.util.Map`)를 XDM 페이로드를 구성하는 기본 인터페이스입니다.
 
 
 ### 사용자 정의 필드 그룹
@@ -205,9 +205,9 @@ Adobe Experience Platform Edge 확장은 이전에 정의한 XDM 스키마 다�
 
   >[!NOTE]
   >
-  >* 표준 필드 그룹은 항상 오브젝트 루트에서 시작합니다.
+  * 표준 필드 그룹은 항상 오브젝트 루트에서 시작합니다.
   >
-  >* 사용자 정의 필드 그룹은 항상 Experience Cloud 조직에 고유한 개체에서 시작합니다. `_techmarketingdemos` 이 예제에서
+  * 사용자 정의 필드 그룹은 항상 Experience Cloud 조직에 고유한 개체에서 시작합니다. `_techmarketingdemos` 이 예제에서
 
   앱 상호 작용 이벤트의 경우 다음과 같은 개체를 구성합니다.
 
@@ -338,10 +338,10 @@ Adobe Experience Platform Edge 확장은 이전에 정의한 XDM 스키마 다�
 
 ## 유효성 검사
 
-1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
+1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance와 연결하는 섹션입니다.
 
    1. Assurance 아이콘을 왼쪽으로 이동합니다.
-   1. 선택 **[!UICONTROL 홈]** 탭 표시줄에서 **[!UICONTROL ECID]**, **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]** 홈 화면에서 다음을 수행합니다.
+   1. 선택 **[!UICONTROL 홈]** 탭 표시줄에서 **[!UICONTROL ECID]**, **[!UICONTROL 이메일]**, 및 **[!UICONTROL CRM ID]** 홈 화면에서 다음을 수행합니다.
    1. 선택 **[!DNL Products]** 을 클릭합니다.
    1. 제품을 선택합니다.
    1. 선택 <img src="assets/saveforlater.png" width="15" />.
@@ -367,15 +367,17 @@ Adobe Experience Platform Edge 확장은 이전에 정의한 XDM 스키마 다�
 
 >[!TIP]
 >
->리뷰 [완료된 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 추가 예제를 보려면 다음을 수행하십시오.
+리뷰 [완료된 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 추가 예제를 보려면 다음을 수행하십시오.
 
 
 ## Analytics 및 Platform에 이벤트 보내기
 
-이벤트를 수집하여 Platform Edge Network로 전송했으므로 이제 [데이터스트림](create-datastream.md). 이후 단원에서는 이 데이터를 다음에 매핑합니다 [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) 및 과 같은 기타 Adobe Experience Cloud 솔루션 [Adobe Target](target.md) 그리고 Adobe Journey Optimizer.
+이벤트를 수집하여 Platform Edge Network로 전송했으므로 이제 [데이터스트림](create-datastream.md). 이후 단원에서는 이 데이터를 다음에 매핑합니다 [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md), 및 과 같은 기타 Adobe Experience Cloud 솔루션 [Adobe Target](target.md) 그리고 Adobe Journey Optimizer.
 
 >[!SUCCESS]
 >
->이제 Adobe Experience Platform Edge Network와 데이터 스트림에 정의한 모든 서비스에 대한 상거래, 앱 상호 작용 및 화면 추적 이벤트를 추적하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+이제 Adobe Experience Platform Edge Network와 데이터 스트림에 정의한 모든 서비스에 대한 상거래, 앱 상호 작용 및 화면 추적 이벤트를 추적하도록 앱을 설정했습니다.
+>
+Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[웹 보기 처리](web-views.md)**

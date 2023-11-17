@@ -3,9 +3,9 @@ title: XDM 스키마 만들기
 description: 모바일 앱 이벤트에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1314'
 ht-degree: 7%
 
 ---
@@ -214,4 +214,4 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 >[!NOTE]
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

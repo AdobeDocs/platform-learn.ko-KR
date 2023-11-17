@@ -3,10 +3,10 @@ title: 결론 및 다음 단계
 description: 자습서를 완료한 후 수행할 작업
 recommendations: display,noCatalog
 exl-id: 69db6cf3-0d5d-4864-aac2-e5e1aea4c02e
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 4%
+source-wordcount: '522'
+ht-degree: 7%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 4%
 * **Journey Optimizer에서 여정 트리거**. Luma 앱에서 구현한 이벤트를 사용하여 여정을 트리거할 수 있습니다. 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html).
 * **연결 Customer Journey Analytics**. 을(를) 생성한 경우 [플랫폼 데이터 세트](platform.md), 데이터 세트를 Customer Journey Analytics에 연결할 수 있습니다. 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
 * **Audience Manager 활성화** 데이터스트림에서 Audience Manager을 활성화하여 XDM 경험 이벤트를 전송하고 모바일 앱 참여를 기반으로 세그먼트 작성을 시작합니다.
-* **Adobe Target 구현**. Target은 이제 모바일 속성에 연결된 데이터 스트림 구성으로 지원되며 [Adobe Journey Optimizer - Decisioning 확장](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/).
+* **Adobe Target 구현**. 이제 Target은 모바일 속성에 연결된 데이터 스트림 구성으로 지원되며, [Adobe Journey Optimizer - Decisioning 확장](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/).
 * **플랫폼에서 세그먼트 작성**. 다음을 활성화한 경우 [실시간 고객 프로필에 대한 스키마 및 데이터 세트](platform.md), 모바일 앱 이벤트를 기반으로 세그먼트를 작성하고 다른 소스의 데이터와 결합한 다음 이러한 세그먼트를 Real-time Customer Data Platform의 대상으로 보낼 수 있습니다. 세그먼트 빌더에 대해 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
 * **Platform Web SDK 구현**. 이제 SDK를 마스터했으므로 다른 SDK를 학습하세요! Adobe Experience Platform Web SDK는 웹 사이트에서 Experience Cloud 및 타사 서비스를 제공하는 데 사용되는 JavaScript SDK입니다. 비슷한 것이 있습니다 [Web SDK용 실습 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR). 둘 다 완료하고 장치 간 프로필 병합을 확인합니다!
 * **Experience Platform에 대해 자세히 알아보기**. 에서 다른 소스의 데이터를 수집하고 모바일 SDK 데이터와 결합하는 방법에 대해 자세히 알아보십시오 [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
@@ -49,4 +49,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '2618'
+source-wordcount: '2630'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Journey Optim
 
 Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모든 접점에서 고객에게 최상의 오퍼와 경험을 제공할 수 있습니다. 디자인한 후에는 개인화된 오퍼로 대상을 타기팅하십시오.
 
-![아키텍처](assets/architecture-od.png)
+![아키텍처](assets/architecture-ajo.png)
 
 의사 결정 관리를 사용하면 마케팅 오퍼의 중앙 라이브러리와 Adobe Experience Platform에서 만든 풍부한 실시간 프로필에 규칙과 제한을 적용하는 의사 결정 엔진을 통해 손쉽게 개인화할 수 있습니다. 따라서 고객에게 적절한 시기에 적절한 오퍼를 보낼 수 있습니다. 다음을 참조하십시오 [의사 결정 관리 정보](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) 추가 정보.
 
@@ -59,11 +59,11 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 
 ### 데이터 스트림 구성 업데이트
 
-모바일 앱에서 Edge Network로 전송된 데이터가 의사 결정 관리인 Journey Optimizer으로 전달되도록 하려면 Experience Edge 구성을 업데이트 하십시오.
+모바일 앱에서 Platform Edge Network로 전송된 데이터가 의사 결정 관리인 Journey Optimizer으로 전달되도록 하려면 데이터스트림을 업데이트합니다.
 
 1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!DNL Luma Mobile App]**.
 1. 선택 ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 대상 **[!UICONTROL Experience Platform]** 및 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
-1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Offer decisioning]**, **[!UICONTROL Edge 세그멘테이션]**, 및 **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. Target 단원을 따르는 경우 다음을 선택해야 합니다. **[!UICONTROL 개인화 대상]** 또한. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
+1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Offer decisioning]**, **[!UICONTROL Edge 세그멘테이션]**, 및 **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. Target 단원을 수행하려면 다음을 선택합니다. **[!UICONTROL 개인화 대상]**,. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
 1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]** .
 
    ![AEP 데이터스트림 구성](assets/datastream-aep-configuration-offers.png)
@@ -88,7 +88,7 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 1. 선택 **[!UICONTROL 찾아보기]** 을 클릭합니다.
 1. 스키마를 선택하여 엽니다.
 1. 스키마 편집기에서 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]** 필드 그룹 옆에 있습니다.
-1. 다음에서 **[!UICONTROL 필드 그룹 추가]** 대화 상자, ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 검색 대상 `proposition`, 선택 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]** 및 선택 **[!UICONTROL 필드 그룹 추가]**. 이 필드 그룹은 오퍼와 관련된 경험 이벤트 데이터(제공 사항, 수집, 결정 및 기타 매개 변수의 일부)를 수집합니다(이 단원의 뒷부분 참조). 그러나 그 제의가 지금 일어나고 있는 것은, 그것이 전시되고, 상호작용되고, 기각되고, 등입니다.
+1. 다음에서 **[!UICONTROL 필드 그룹 추가]** 대화 상자, ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 검색 대상 `proposition`, 선택 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]** 및 선택 **[!UICONTROL 필드 그룹 추가]**. 이 필드 그룹은 오퍼와 관련된 경험 이벤트 데이터(제공 사항, 수집, 결정 및 기타 매개 변수의 일부)를 수집합니다(이 단원의 뒷부분 참조). 하지만 또한 그 제안은 어떻게 되어가고 있나요? 표시됩니까, 상호 작용합니까, 해제됩니까, 등입니다.
    ![제안](assets/schema-fieldgroup-proposition.png)
 1. 선택 **[!UICONTROL 저장]** 를 클릭하여 스키마에 대한 변경 사항을 저장합니다.
 
@@ -108,7 +108,7 @@ Assurance에서 설정을 확인하려면:
 
 오퍼를 실제로 만들려면 먼저 모바일 앱에서 이러한 오퍼를 배치할 방법과 위치를 정의해야 합니다. 의사 결정 관리에서 이 목적을 위한 배치를 정의하고 JSON 페이로드를 지원하는 모바일 채널에 대한 배치를 정의합니다.
 
-1. Journey Optimizer UI에서 다음을 선택합니다. ![구성 요소](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL 구성 요소]** 출처: **[!UICONTROL 의사 결정 관리]** 왼쪽 레일에서.
+1. Journey Optimizer UI에서 ![구성 요소](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL 구성 요소]** 출처: **[!UICONTROL 의사 결정 관리]** 왼쪽 레일에서.
 
 1. 선택 **[!UICONTROL 배치]** 을 클릭합니다.
 
@@ -145,7 +145,7 @@ Assurance에서 설정을 확인하려면:
          ```json
          { 
              "title": "Juno Jacket",
-             "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performanc Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
+             "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
              "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
          }  
          ```
@@ -178,39 +178,37 @@ Assurance에서 설정을 확인하려면:
       | Luma - 물병 확인 | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luma - Desiree 피트니스 티 | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
       | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-      | Luma - Aero 일일 피트니스 티 | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
+      | Luma - Aero 일일 피트니스 티 | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
 
       {style="table-layout:fixed"}
 
 1. 마지막 단계로 고객에게 다른 오퍼에 대한 자격이 없는 경우 전송되는 대체 오퍼를 만들어야 합니다.
    1. 선택 **[!UICONTROL 오퍼 만들기]**.
-   1. 다음에서 **[!UICONTROL 세부 사항]** / 단계 **[!UICONTROL 새로운 맞춤형 오퍼 만들기]**:
-   1. 입력 **[!UICONTROL 이름]** 오퍼의 경우, 예 `Luma - Fallback Offer`을 누르고 을(를) 입력합니다. **[!UICONTROL 시작 날짜 및 시간]** 및 **[!UICONTROL 종료 날짜 및 시간]**.
-   1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+   1. 다음에서 **[!UICONTROL 새 오퍼]** 대화 상자, 선택 **[!UICONTROL 개인화된 오퍼]** 및 선택 **[!UICONTROL 다음]**.
+   1. 다음에서 **[!UICONTROL 세부 사항]** / 단계 **[!UICONTROL 새 대체 오퍼 만들기]**, 를 입력합니다. **[!UICONTROL 이름]** 오퍼의 경우, 예 `Luma - Fallback Offer`, 및 선택 **[!UICONTROL 다음]**.
 
-1. 다음에서 **[!UICONTROL 표시 추가]** 의 단계 **[!UICONTROL 새로운 맞춤형 오퍼 만들기]** 화면:
-   1. 선택 ![모바일](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL 모바일]** 출처: **[!UICONTROL 채널]** 목록 및 선택 **[!UICONTROL 모바일 JSON]** 출처: **[!UICONTROL 배치]** 목록을 표시합니다.
-   1. 선택 **[!UICONTROL 사용자 정의]** 대상 **[!UICONTROL 콘텐츠]**.
-   1. 선택 **[!UICONTROL 콘텐츠 추가]**. 다음에서 **[!UICONTROL 개인화 추가]** 대화 상자:
-      1. 다음 JSON을 입력합니다.
+   1. 다음에서 **[!UICONTROL 표시 추가]** / 단계  **[!UICONTROL 새 대체 오퍼 만들기]**:
+      1. 선택 ![모바일](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL 모바일]** 출처: **[!UICONTROL 채널]** 목록 및 선택 **[!UICONTROL 모바일 JSON]** 출처: **[!UICONTROL 배치]** 목록을 표시합니다.
+      1. 선택 **[!UICONTROL 사용자 정의]** 대상 **[!UICONTROL 콘텐츠]**.
+      1. 선택 **[!UICONTROL 콘텐츠 추가]**.
+      1. 다음에서 **[!UICONTROL 개인화 추가]** 대화 상자에서 다음 JSON을 입력하고 다음을 선택합니다. **[!UICONTROL 저장]**:
 
          ```json
          {  
-             "title": "Luma",
-             "text": "Your store for sports wear and equipment.", 
-             "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+            "title": "Luma",
+            "text": "Your store for sports wear and equipment.", 
+            "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
          }  
          ```
 
-      1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-   1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+      1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
 
-1. 다음에서 **[!UICONTROL 리뷰]** / 단계 **[!UICONTROL 새 개인화된 항목 만들기]** 오퍼:
+1. 다음에서 **[!UICONTROL 리뷰]** / 단계 **[!UICONTROL 새 대체 항목 만들기]** 오퍼:
    1. 오퍼를 검토한 다음 을 선택합니다. **[!UICONTROL 완료]**.
    1. 다음에서 **[!UICONTROL 오퍼 저장]** 대화 상자, 선택 **[!UICONTROL 저장 및 승인]**.
 
-이제 다음 오퍼 목록이 있습니다.
+이제 다음 오퍼 목록이 있어야 합니다.
 ![오퍼 목록](assets/ajo-offers-list.png)
 
 
@@ -292,7 +290,7 @@ Assurance에서 설정을 확인하려면:
 >을(를) 완료한 경우 [SDK 설치](install-sdks.md) 섹션에서 SDK가 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
 >
 
-1. Xcode에서 다음을 확인합니다 [AEP 최적화](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
+1. Xcode에서 다음을 확인합니다 [AEP 최적화](https://github.com/adobe/aepsdk-messaging-ios) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPOptimize` 는 가져오기 목록의 일부입니다.
 
@@ -317,6 +315,8 @@ Assurance에서 설정을 확인하려면:
        Assurance.self
    ]
    ```
+
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL 결정]** 를 입력합니다. 업데이트 `activityId` 및 `placementId` Journey Optimizer 인터페이스에서 복사한 결정 범위 세부 정보가 있는 값입니다.
 
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 를 입력합니다. 다음 찾기 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 함수. 다음 코드를 추가합니다.
 
@@ -348,7 +348,7 @@ Assurance에서 설정을 확인하려면:
      ]
      ```
 
-     그러나 모든 종류의 구현을 사용하여 API 최적화가 적절한 매개 변수를 가져오는지 확인할 수 있습니다(`activityId`, `placementId` 및, `itemCount`), 유효한 을 생성합니다. [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 구현을 위한 개체입니다.
+     그러나 모든 종류의 구현을 사용하여 API 최적화가 적절한 매개 변수를 가져오도록 할 수 있습니다(`activityId`, `placementId` 및, `itemCount`), 유효한 을 생성합니다. [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 구현을 위한 개체입니다.
    * 는 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL 개인화]** > **[!UICONTROL EdgeOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,
@@ -356,7 +356,7 @@ Assurance에서 설정을 확인하려면:
    * 의사 결정 범위(Journey Optimizer - 의사 결정 관리에서 정의함)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
    * 제안에서 오퍼를 검색합니다.
    * 앱에서 제대로 표시될 수 있도록 오퍼의 콘텐츠를 래핑 해제합니다.
-   * 트리거 `displayed()` 오퍼를 알리는 이벤트를 Edge Network로 다시 전송하는 오퍼에 대한 작업이 표시됩니다.
+   * 트리거 `displayed()` 오퍼를 알리는 이벤트를 Edge Network로 다시 보내는 오퍼에 대한 작업이 표시됩니다.
 
 1. 아직 **[!DNL EdgeOffersView]**&#x200B;에 다음 코드를 추가합니다. `.onFirstAppear` 수정자. 이 코드는 오퍼를 업데이트하기 위한 콜백이 한 번만 등록되도록 합니다.
 
@@ -414,6 +414,8 @@ Assurance에서 오퍼 구현을 확인하려면 다음을 수행하십시오.
 
 >[!SUCCESS]
 >
->Experience Platform Mobile SDK용 Journey Optimizer - Decisioning 확장을 사용하여 오퍼를 표시하도록 앱을 활성화했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Experience Platform Mobile SDK용 Journey Optimizer - Decisioning 확장을 사용하여 오퍼를 표시하도록 앱을 활성화했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[A/B 테스트 수행](target.md)**

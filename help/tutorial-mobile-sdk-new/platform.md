@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
 exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 
 ## Adobe Experience Platform 데이터스트림 서비스 추가
 
-Edge Network에서 Adobe Experience Platform으로 XDM 데이터를 전송하려면 의 일부로 설정한 데이터스트림에 Adobe Experience Platform 서비스를 구성해야 합니다 [데이터 스트림 만들기](create-datastream.md).
+Edge Network에서 Adobe Experience Platform으로 XDM 데이터를 보내려면 의 일부로 설정한 데이터스트림에 Adobe Experience Platform 서비스를 추가합니다. [데이터 스트림 만들기](create-datastream.md).
 
 >[!IMPORTANT]
 >
@@ -169,6 +169,6 @@ Customer Journey Analytics에서 분석하고 Real-time Customer Data Platform�
 
 >[!SUCCESS]
 >
->이제 Edge Network뿐만 아니라 Adobe Experience Platform에도 데이터를 전송하도록 앱을 설정했습니다.<br>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>이제 Edge Network뿐만 아니라 Adobe Experience Platform에도 데이터를 전송하도록 앱을 설정했습니다.<br>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[푸시 알림 만들기 및 전송](journey-optimizer-push.md)**

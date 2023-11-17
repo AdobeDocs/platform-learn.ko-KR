@@ -4,9 +4,9 @@ description: 모바일 앱에서 동의를 구현하는 방법을 알아봅니�
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '539'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 모바일 앱에서 동의를 구현하는 방법을 알아봅니다.
 
-Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experience Platform Mobile SDK 및 Edge Network 확장을 사용할 때 모바일 앱에서 동의 환경 설정을 수집할 수 있습니다. 에 대해 자세히 알아보기 [동의 확장](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)을 참조하십시오.
+Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experience Platform Mobile SDK 및 Edge Network 확장을 사용할 때 모바일 앱에서 동의 환경 설정을 수집할 수 있습니다. 에 대해 자세히 알아보기 [동의 확장](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) 설명서에서 참조하십시오.
 
 ## 전제 조건
 
@@ -35,7 +35,7 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
 
 데이터 수집을 시작하려면 사용자의 동의를 받아야 합니다. 실제 앱에서는 지역에 대한 동의 모범 사례를 참조해야 합니다. 이 자습서에서는 경고를 사용하여 요청하기만 하면 사용자의 동의를 받습니다.
 
-1. 사용자에게 동의를 한 번만 요청하려고 합니다. 따라서 Mobile SDK 동의와 Apple을 사용한 추적에 필요한 권한을 결합하려고 합니다. [앱 추적 투명도 프레임워크](https://developer.apple.com/documentation/apptrackingtransparency). 이 앱에서는 사용자가 추적을 승인할 때 이벤트도 수집하는 것에 동의한다고 가정합니다.
+1. 사용자에게 동의를 한 번만 요청하려고 합니다. 이렇게 하려면 Mobile SDK 동의와 Apple을 사용한 추적에 필요한 인증을 결합하면 됩니다. [앱 추적 투명도 프레임워크](https://developer.apple.com/documentation/apptrackingtransparency). 이 앱에서는 사용자가 추적 권한을 부여할 때 이벤트 수집에 동의한다고 가정합니다.
 
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 를 입력합니다.
 
@@ -96,14 +96,16 @@ Adobe Experience Platform Consent 모바일 확장을 사용하면 Adobe Experie
 
 ## Assurance를 통해 유효성 검사
 
-1. 추적과 동의를 올바르게 재설정하고 초기화하려면 장치 또는 시뮬레이터에서 애플리케이션을 삭제하십시오.
-1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
+1. 장치 또는 시뮬레이터에서 애플리케이션을 삭제하여 추적 및 동의를 올바르게 재설정하고 초기화합니다.
+1. 시뮬레이터 또는 장치를 Assurance에 연결하려면 다음을 검토하십시오. [설치 지침](assurance.md#connecting-to-a-session) 섹션.
 1. 에서 앱으로 이동할 때 **[!UICONTROL 홈]** 화면 대상 **[!UICONTROL 제품]** 화면으로 돌아가기 **[!UICONTROL 홈]** 화면에 다음이 표시됩니다. **[!UICONTROL 동의 응답 받기]** 이벤트를 추가합니다.
    ![동의 확인](assets/consent-update.png)
 
 
 >[!SUCCESS]
 >
->이제 Adobe Experience Platform Mobile SDK를 사용하여 설치(또는 재설치) 후 초기 시작 시 사용자에게 동의를 묻는 메시지를 표시하도록 앱을 활성화했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 Adobe Experience Platform Mobile SDK를 사용하여 설치(또는 재설치) 후 초기 시작 시 사용자에게 동의를 묻는 메시지를 표시하도록 앱을 활성화했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 다음: **[라이프사이클 데이터 수집](lifecycle-data.md)**

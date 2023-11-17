@@ -4,10 +4,10 @@ description: Experience Platform에서 데이터 스트림을 만드는 방법�
 feature: Mobile SDK,Datastreams
 hide: true
 exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 5%
+source-wordcount: '444'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 
-데이터 스트림은 Platform Edge Network의 서버측 구성입니다. 데이터 스트림은 Platform Edge Network로 들어오는 데이터가 Adobe Experience Cloud 애플리케이션 및 서비스로 적절하게 라우팅되도록 합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) 또는 이 [비디오](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=ko).
+데이터 스트림은 Platform Edge Network의 서버측 구성입니다. 데이터 스트림은 Platform Edge Network로 들어오는 데이터가 Adobe Experience Cloud 애플리케이션 및 서비스로 적절하게 라우팅되도록 합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ko-KR) 또는 이 [비디오](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=ko).
 
 ![아키텍처](assets/architecture.png)
 
@@ -55,7 +55,7 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
 
 ## 서비스 추가
 
-(선택 사항)을 보낼 때 [분석](analytics.md) 및 [Experience Platform](platform.md) 이 자습서의 단원에서는 Platform Mobile SDK가 Edge Network에 데이터를 전송할 때 데이터 스트림이 구성된 서비스에 해당 데이터를 전송하도록 데이터 스트림에 서비스를 추가하는 것입니다.
+다음 단계를 거칠 때(선택 사항) [분석](analytics.md) 및 [Experience Platform](platform.md) 이 자습서의 단원에서는 Platform Edge Network로 전송된 데이터가 이러한 응용 프로그램으로 전달되도록 데이터 스트림에 서비스를 추가합니다.
 
 <!--
 
@@ -102,12 +102,14 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->조직에서 사용하는 각 서비스를 활성화하면 모바일 앱에서 수집한 데이터를 어디에서나 사용할 수 있습니다. 데이터 스트림 설정에 대한 자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>조직에서 사용하는 각 서비스를 활성화하면 모바일 앱에서 수집한 데이터를 어디에서나 사용할 수 있습니다. 데이터 스트림 설정에 대한 자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ko-KR).
 
 자체 앱에서 Platform Mobile SDK를 구현할 때 궁극적으로 세 개의 데이터 스트림을 만들어 세 개의 태그 환경(개발, 스테이지 및 프로덕션)에 매핑해야 합니다. Adobe Real-time Customer Data Platform 또는 Adobe Journey Optimizer과 같은 플랫폼 기반 애플리케이션과 함께 Platform Mobile SDK를 사용하는 경우 적절한 샌드박스에서 이러한 데이터스트림을 만들어야 합니다.
 
 >[!SUCCESS]
 >
->이제 자습서의 나머지 부분에서 사용할 데이터 스트림이 있습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 자습서의 나머지 부분에서 사용할 데이터 스트림이 있습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 다음: **[태그 속성 구성](configure-tags.md)**

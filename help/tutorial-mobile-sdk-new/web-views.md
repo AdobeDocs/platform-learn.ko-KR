@@ -4,9 +4,9 @@ description: 모바일 앱에서 WebViews를 사용하여 데이터 수집을 �
 jira: KT-6987
 hide: true
 exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 이 단원에서는 다음 작업을 수행합니다.
 
-* 앱에서 WebViews에 대해 특별한 고려 사항을 적용해야 하는 이유를 이해합니다.
+* 앱에서 WebViews에 대해 특별히 고려해야 하는 이유를 이해합니다.
 * 추적 문제를 방지하는 데 필요한 코드를 이해합니다.
 
 ## 잠재적 추적 문제
@@ -92,7 +92,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
 
-죄송합니다. 웹 세션 디버깅은 제한되어 있습니다. 예를 들어, 브라우저의 Adobe Experience Platform Debugger을 사용하여 Webview 세션을 계속 디버깅할 수는 없습니다.
+죄송합니다. 웹 세션 디버깅은 제한됩니다. 예를 들어 브라우저의 Adobe Experience Platform Debugger을 사용하여 Webview 세션을 계속 디버깅할 수는 없습니다.
 
 >[!NOTE]
 >
@@ -101,6 +101,8 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 >[!SUCCESS]
 >
->이제 Adobe Experience Platform Mobile SDK에서 이미 발급한 ECID와 동일한 ECID를 사용하여 웹 보기에서 URL을 기반으로 콘텐츠를 표시하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 Adobe Experience Platform Mobile SDK에서 이미 발급한 ECID와 동일한 ECID를 사용하여 웹 보기에서 URL을 기반으로 콘텐츠를 표시하도록 앱을 설정했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 다음: **[신원](identity.md)**

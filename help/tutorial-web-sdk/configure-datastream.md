@@ -3,9 +3,9 @@ title: 데이터스트림 구성
 description: 데이터 스트림을 활성화하고 Experience Cloud 솔루션을 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '447'
 ht-degree: 7%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 7%
 * Experience Cloud 애플리케이션 활성화
 * Experience Platform 활성화
 
-## 사전 요구 사항
+## 전제 조건
 
 데이터 스트림을 구성하기 전에 다음 단원을 이미 완료해야 합니다.
 
@@ -60,7 +60,7 @@ ht-degree: 7%
 
 
 
-다음 화면에서는 데이터 스트림에 Adobe 응용 프로그램과 같은 서비스를 추가할 수 있지만 자습서의 이 시점에서는 서비스를 추가하지 않습니다. 나중에 단원에서 그렇게 할 것입니다 [Experience Platform 설정](setup-experience-platform.md), [Analytics 설정](setup-analytics.md), [Audience Manager 설정](setup-audience-manager.md), [설정 Target](setup-target.md), 또는 [이벤트 전달](setup-event-forwarding.md).
+다음 화면에서는 데이터 스트림에 Adobe 응용 프로그램과 같은 서비스를 추가할 수 있지만 자습서의 이 시점에서는 서비스를 추가하지 않습니다. 나중에 단원에서 그렇게 할 것입니다 [Experience Platform 설정](setup-experience-platform.md), [Analytics 설정](setup-analytics.md), [Audience Manager 설정](setup-audience-manager.md), [Target 설정](setup-target.md), 또는 [이벤트 전달](setup-event-forwarding.md).
 
 >[!NOTE]
 >
@@ -72,4 +72,4 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

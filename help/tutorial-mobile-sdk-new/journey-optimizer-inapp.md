@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1690'
-ht-degree: 4%
+source-wordcount: '1546'
+ht-degree: 5%
 
 ---
 
@@ -32,9 +32,8 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Adobe Experience Platform용 앱을 설정합니다.
-* Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
+* Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
    * 캠페인 관리.
-* 인증서, 식별자 및 키를 만들 수 있는 충분한 액세스 권한이 있는 유료 Apple 개발자 계정입니다.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
 
 
@@ -67,16 +66,19 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 1. 에 모바일 앱 번들 ID 입력 **[!UICONTROL 앱 ID (iOS 번들 ID)]** 필드. 예,  `com.adobe.luma.tutorial.swiftui`.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-   ![앱 표면 구성](assets/push-app-surface-config.png)
+   ![앱 표면 구성](assets/push-app-surface-config-inapp.png)
 
 ### 데이터 스트림 구성 업데이트
 
-모바일 앱에서 Edge Network로 전송된 데이터가 Journey Optimizer으로 전달되도록 하려면 Experience Edge 구성 을 업데이트합니다.
+모바일 앱에서 Edge Network로 전송된 데이터가 Journey Optimizer으로 전달되도록 하려면 Experience Edge 구성을 업데이트하십시오.
+
+
 
 1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을 누르고 데이터 스트림을 선택합니다(예: ). **[!DNL Luma Mobile App]**.
 1. 선택 ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 대상 **[!UICONTROL Experience Platform]** 및 선택 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]** 컨텍스트 메뉴 아래의 제품에서 사용할 수 있습니다.
 1. 다음에서 **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 화면, 확인 **[!UICONTROL Adobe Journey Optimizer]** 이(가) 선택되어 있습니다. 다음을 참조하십시오 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 추가 정보.
 1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]**.
+
 
    ![AEP 데이터스트림 구성](assets/datastream-aep-configuration.png)
 
@@ -101,27 +103,6 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 >표시되지 않으면 `AJO Push Tracking Experience Event Dataset` 선택 사항으로 고객 지원 센터에 문의하십시오.
 >
 
-
-## 서명
-
-Luma 앱 서명은 [푸시 알림 만들기 및 전송](journey-optimizer-push.md) 및 [인앱 메시지 만들기 및 보내기](journey-optimizer-inapp.md) 이 자습서의 단원. 이러한 단원에는 다음과 같은 Apple 프로비저닝 프로필이 필요합니다. **유료 Apple 개발자 계정 필요**.
-
-앱에 대한 서명을 업데이트하려면:
-
-1. Xcode에서 앱으로 이동합니다.
-1. 선택 **[!DNL Luma]** 프로젝트 탐색기를 참조하십시오.
-1. 다음 항목 선택 **[!DNL Luma]** 타겟.
-1. 다음 항목 선택 **서명 및 기능** 탭.
-1. 구성 **[!UICONTROL 서명 자동 관리]**, **[!UICONTROL 팀]**, 및 **[!UICONTROL 번들 식별자]**&#x200B;또는 특정 Apple 개발 프로비저닝 세부 정보를 사용하십시오.
-
-   >[!IMPORTANT]
-   >
-   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자 및 바꾸기 `com.adobe.luma.tutorial.swiftui` 각 번들 식별자가 고유해야 하므로 번들 식별자. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`. 이 자습서의 완료된 버전은 예를 들어 `com.adobe.luma.tutorial.swiftui`.
-
-
-   ![Xcode 서명 기능](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
-
-
 ### 앱에서 Journey Optimizer 구현
 
 이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 메시징 SDK를 설치하고 등록해야 합니다. 이러한 단계가 명확하지 않으면 다음을 검토하십시오. [SDK 설치](install-sdks.md) 섹션.
@@ -131,7 +112,7 @@ Luma 앱 서명은 [푸시 알림 만들기 및 전송](journey-optimizer-push.m
 >을(를) 완료한 경우 [SDK 설치](install-sdks.md) 섹션에서 SDK가 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
 >
 
-1. Xcode에서 다음을 확인합니다 [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios.git) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
+1. Xcode에서 다음을 확인합니다 [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios) 패키지 종속 항목의 패키지 목록에 추가됩니다. 다음을 참조하십시오 [Swift 패키지 관리자](install-sdks.md#swift-package-manager).
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 를 입력합니다.
 1. 확인 `AEPMessaging` 는 가져오기 목록의 일부입니다.
 
@@ -263,10 +244,12 @@ Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 
 ## 다음 단계
 
-관련 있고 적용 가능한 경우 인앱 메시지 추가를 시작할 수 있는 모든 도구가 있어야 합니다.  예를 들어 앱에서 추적 중인 특정 상호 작용을 기반으로 제품을 홍보할 수 있습니다.
+관련 있고 적용 가능한 경우 인앱 메시지 추가를 시작할 수 있는 모든 도구가 있어야 합니다. 예를 들어 앱에서 추적 중인 특정 상호 작용을 기반으로 제품을 홍보할 수 있습니다.
 
 >[!SUCCESS]
 >
->Experience Platform Mobile SDK용 Journey Optimizer 및 Journey Optimizer 확장을 사용하여 인앱 메시지를 활성화하고 인앱 메시지 캠페인을 추가했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Experience Platform Mobile SDK용 Journey Optimizer 및 Journey Optimizer 확장을 사용하여 인앱 메시지를 활성화하고 인앱 메시지 캠페인을 추가했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[오퍼 만들기 및 표시](journey-optimizer-offers.md)**

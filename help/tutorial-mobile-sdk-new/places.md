@@ -3,9 +3,9 @@ title: 위치 사용
 description: 모바일 앱에서 Places geolocation 서비스를 사용하는 방법을 알아봅니다.
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
    ![라이브러리 만들기](assets/places-create-library.png)
 1. 닫으려면 **[!UICONTROL 라이브러리 관리]** 대화 상자, 선택 **[!UICONTROL 닫기]**.
 1. 다시 시작 **[!UICONTROL POI 관리]**, 선택 **[!UICONTROL POI 가져오기]**.
-1. 선택 **[!UICONTROL 시작]** t**[!UICONTROL 위치 가져오기]** 대화 상자.
+1. 선택 **[!UICONTROL 시작]** 다음에서 **[!UICONTROL 위치 가져오기]** 대화 상자.
 1. 선택 **[!DNL Luma]** 라이브러리 목록에서
 1. **[!UICONTROL 다음]**을 선택합니다.
    ![라이브러리 선택](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
       ![태그 작업](assets/tags-action-mobile-core.png)
 
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 다음 옆에 **[!UICONTROL Mobile Core - 데이터 첨부]** 작업.
-   1. 선택 **[!UICONTROL Adobe Experience Platform 에지 네트워크]** 다음에서 **[!UICONTROL 확장]** 나열 및 선택 **[!UICONTROL Edge Network로 이벤트 전달]**. 이 작업을 수행하면 이벤트 및 추가 페이로드 데이터가 Edge Network로 전달됩니다.
+   1. 선택 **[!UICONTROL Adobe Experience Platform 에지 네트워크]** 다음에서 **[!UICONTROL 확장]** 나열 및 선택 **[!UICONTROL Edge Network로 이벤트 전달]**. 이 작업을 수행하면 이벤트 및 추가 페이로드 데이터가 Platform Edge Network로 전달됩니다.
    1. **[!UICONTROL 변경사항 유지]**&#x200B;를 선택합니다.
 
 1. 규칙을 저장하려면 을 선택합니다. **[!UICONTROL 라이브러리에 저장]**.
@@ -240,7 +240,7 @@ Assurance에서 설정을 확인하려면:
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 선택 **[!UICONTROL 맵 및 시뮬레이션]** 왼쪽 레일에서.
 1. 지도를 POI 중 하나의 위치로 이동합니다.
-1. 선택 ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 로드 POI를 시뮬레이션합니다.  POI는 원과 핀을 사용하여 식별됩니다.
+1. 선택 ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 로드 POI를 시뮬레이션합니다. POI는 원과 핀을 사용하여 식별됩니다.
 1. POI를 선택합니다.
 1. 팝업에서 을 선택합니다. ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 시작 이벤트 시뮬레이션]**.
    ![시작 이벤트 시뮬레이션](assets/places-simulate.png)
@@ -283,7 +283,7 @@ Assurance에서 설정을 확인하려면:
    ]
    ```
 
-1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 함수. 다음 코드를 추가합니다.
 
    ```swift
    // Process geolocation event
@@ -318,7 +318,7 @@ Assurance에서 설정을 확인하려면:
 
 1. 로 이동 **[!UICONTROL 위치]** 탭.
 
-1. 맵을 주위로 이동하여(드래그) 파란색 중간 원이 POI 중 하나(예: 런던) 위에 있는지 확인합니다.
+1. 맵을 이동하고(드래그) POI 중 하나(예: 런던) 위에 파란색 중간 원이 있는지 확인합니다.
 
 1. 누르기 <img src="assets/geobutton.png" width="20" /> 카테고리와 이름이 빨간색 위치에 있는 레이블에 핀과 함께 표시될 때까지.
 
@@ -344,6 +344,8 @@ Assurance에서 설정을 확인하려면:
 
 >[!SUCCESS]
 >
->이제 Experience Platform Mobile SDK에서 위치 확장 기능을 사용하여 지리적 위치 서비스용 앱을 활성화했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>이제 Experience Platform Mobile SDK에서 위치 확장 기능을 사용하여 지리적 위치 서비스용 앱을 활성화했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[Adobe Analytics에 데이터 매핑](analytics.md)**

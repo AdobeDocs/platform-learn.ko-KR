@@ -3,9 +3,9 @@ title: Adobe Experience Platform Mobile SDK 설치
 description: 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법을 알아봅니다.
 hide: true
 exl-id: 86348d8b-f428-465d-a79e-ce73d140da79
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: c74053b99729269fa42d18372f84fd7c6c2c2e0c
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '940'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## Swift 패키지 관리자
 
-CocoaPod를 사용하지 않고 Pod 파일을 사용합니다(모바일 설치 지침에 설명된 대로). [SDK 설치 지침 생성](./configure-tags.md#generate-sdk-install-instructions))에서는 Xcode의 기본 Swift 패키지 관리자를 사용하여 개별 패키지를 추가합니다. Xcode 프로젝트에 이미 모든 패키지 종속성이 추가되었습니다. Xcode **[!UICONTROL 패키지 종속성]** 화면은 다음과 같아야 합니다.
+CocoaPod 및 Pod 파일 사용(설명 참조) 대신 [SDK 설치 지침 생성](./configure-tags.md#generate-sdk-install-instructions))에서는 Xcode의 기본 Swift 패키지 관리자를 사용하여 개별 패키지를 추가합니다. Xcode 프로젝트에 이미 모든 패키지 종속성이 추가되었습니다. Xcode **[!UICONTROL 패키지 종속성]** 화면은 다음과 같아야 합니다.
 
 ![Xcode 패키지 종속성](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
 
@@ -43,15 +43,15 @@ Xcode에서 다음을 사용할 수 있습니다 **[!UICONTROL 파일]** > **[!U
 
 | 패키지 | 설명 |
 |---|---|
-| [AEP 코어](https://github.com/adobe/aepsdk-core-ios.git) | 다음 `AEPCore`, `AEPServices`, 및 `AEPIdentity` 확장은 Adobe Experience Platform SDK의 기반을 나타냅니다. SDK를 사용하는 모든 앱에는 확장이 포함되어야 합니다. 이러한 모듈에는 모든 SDK 확장에 필요한 일반적인 기능 및 서비스 세트가 포함되어 있습니다.<br/><ul><li>`AEPCore` 이벤트 허브의 구현을 포함합니다. 이벤트 허브는 앱과 SDK 간에 이벤트를 전달하는 데 사용되는 메커니즘입니다. 이벤트 허브는 확장 간에 데이터를 공유하는 데에도 사용됩니다.</li><li>`AEPServices` 는 네트워킹, 디스크 액세스 및 데이터베이스 관리를 포함하여 플랫폼 지원에 필요한 몇 가지 재사용 가능한 구현을 제공합니다.</li><li>`AEPIdentity` 는 Adobe Experience Platform ID 서비스와의 통합을 구현합니다.</li><li>`AEPSignal` 마케터가 앱에 &quot;신호&quot;를 전송하여 데이터를 외부 대상으로 보내거나 URL을 열 수 있는 Adobe Experience Platform SDK 신호 확장을 나타냅니다.</li><li>`AEPLifecycle` 는 애플리케이션 설치 또는 업그레이드 정보, 애플리케이션 실행 및 세션 정보, 디바이스 정보 및 애플리케이션 개발자가 제공하는 추가 컨텍스트 데이터와 같은 애플리케이션 라이프사이클 지표를 수집하는 데 도움이 되는 Adobe Experience Platform SDK 라이프사이클 확장을 나타냅니다.</li></ul> |
-| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios.git) | Adobe Experience Platform Edge Network 모바일 확장(`AEPEdge`)를 사용하면 모바일 애플리케이션에서 Adobe Edge 네트워크로 데이터를 보낼 수 있습니다. 이 확장을 사용하면 보다 강력한 방식으로 Adobe Experience Cloud 기능을 구현하고, 하나의 네트워크 호출을 통해 여러 Adobe 솔루션을 제공하고, 동시에 이 정보를 Adobe Experience Platform에 전달할 수 있습니다.<br/>Edge Network 모바일 확장은 Adobe Experience Platform SDK용 확장으로, `AEPCore` 및 `AEPServices` 이벤트 처리를 위한 확장 및 `AEPEdgeIdentity` id 검색을 위한 확장(예: ECID) |
-| [AEP Edge ID](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | AEP Edge Identity 모바일 확장(`AEPEdgeIdentity`) Adobe Experience Platform SDK 및 Edge Network 확장을 사용할 때 모바일 애플리케이션에서 사용자 ID 데이터를 처리할 수 있습니다. |
-| [AEP Edge 동의](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | AEP 동의 컬렉션 모바일 확장(`AEPConsent`)는 Adobe Experience Platform SDK 및 Edge Network 확장을 사용할 때 모바일 애플리케이션에서 동의 환경 설정 수집을 활성화합니다. |
-| [AEP 사용자 프로필](https://github.com/adobe/aepsdk-userprofile-ios.git) | Adobe Experience Platform 사용자 프로필 모바일 확장(`AEPUserProfile`)는 Adobe Experience Platform SDK의 사용자 프로필을 관리하기 위한 확장입니다. |
+| [AEP 코어](https://github.com/adobe/aepsdk-core-ios) | 다음 `AEPCore`, `AEPServices`, 및 `AEPIdentity` 확장은 Adobe Experience Platform SDK의 기반을 나타냅니다. SDK를 사용하는 모든 앱에는 확장이 포함되어야 합니다. 이러한 모듈에는 모든 SDK 확장에 필요한 일반적인 기능 및 서비스 세트가 포함되어 있습니다.<br/><ul><li>`AEPCore` 이벤트 허브의 구현을 포함합니다. 이벤트 허브는 앱과 SDK 간에 이벤트를 전달하는 데 사용되는 메커니즘입니다. 이벤트 허브는 확장 간에 데이터를 공유하는 데에도 사용됩니다.</li><li>`AEPServices` 는 네트워킹, 디스크 액세스 및 데이터베이스 관리를 포함하여 플랫폼 지원에 필요한 몇 가지 재사용 가능한 구현을 제공합니다.</li><li>`AEPIdentity` 는 Adobe Experience Platform ID 서비스와의 통합을 구현합니다.</li><li>`AEPSignal` 마케터가 앱에 &quot;신호&quot;를 전송하여 데이터를 외부 대상으로 보내거나 URL을 열 수 있는 Adobe Experience Platform SDK 신호 확장을 나타냅니다.</li><li>`AEPLifecycle` 는 애플리케이션 설치 또는 업그레이드 정보, 애플리케이션 실행 및 세션 정보, 디바이스 정보 및 애플리케이션 개발자가 제공하는 추가 컨텍스트 데이터와 같은 애플리케이션 라이프사이클 지표를 수집하는 데 도움이 되는 Adobe Experience Platform SDK 라이프사이클 확장을 나타냅니다.</li></ul> |
+| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios) | Adobe Experience Platform Edge Network 모바일 확장(`AEPEdge`)를 사용하면 모바일 애플리케이션에서 Adobe Edge 네트워크로 데이터를 보낼 수 있습니다. 이 확장을 사용하면 보다 강력한 방식으로 Adobe Experience Cloud 기능을 구현하고, 하나의 네트워크 호출을 통해 여러 Adobe 솔루션을 제공하고, 동시에 이 정보를 Adobe Experience Platform에 전달할 수 있습니다.<br/>Edge Network 모바일 확장은 Adobe Experience Platform SDK용 확장으로, `AEPCore` 및 `AEPServices` 이벤트 처리를 위한 확장 및 `AEPEdgeIdentity` id 검색을 위한 확장(예: ECID) |
+| [AEP Edge ID](https://github.com/adobe/aepsdk-edgeidentity-ios) | AEP Edge Identity 모바일 확장(`AEPEdgeIdentity`) Adobe Experience Platform SDK 및 Edge Network 확장을 사용할 때 모바일 애플리케이션에서 사용자 ID 데이터를 처리할 수 있습니다. |
+| [AEP Edge 동의](https://github.com/adobe/aepsdk-edgeconsent-ios) | AEP 동의 컬렉션 모바일 확장(`AEPConsent`)는 Adobe Experience Platform SDK 및 Edge Network 확장을 사용할 때 모바일 애플리케이션에서 동의 환경 설정 수집을 활성화합니다. |
+| [AEP 사용자 프로필](https://github.com/adobe/aepsdk-userprofile-ios) | Adobe Experience Platform 사용자 프로필 모바일 확장(`AEPUserProfile`)는 Adobe Experience Platform SDK의 사용자 프로필을 관리하기 위한 확장입니다. |
 | [AEP Places](https://github.com/adobe/aepsdk-places-ios) | AEP 위치 확장(`AEPPlaces`)를 사용하면 Adobe 위치 인터페이스 및 Adobe 데이터 수집 태그 규칙에 정의된 대로 지리적 위치 이벤트를 추적할 수 있습니다. |
-| [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP 메시징 확장(`AEPMessaging`)을 사용하면 푸시 알림 토큰을 전송하고 푸시 알림 클릭스루 피드백을 Adobe Experience Platform에 보낼 수 있습니다. |
+| [AEP 메시징](https://github.com/adobe/aepsdk-messaging-ios) | AEP 메시징 확장(`AEPMessaging`)을 사용하면 푸시 알림 토큰을 전송하고 푸시 알림 클릭스루 피드백을 Adobe Experience Platform에 보낼 수 있습니다. |
 | [AEP 최적화](https://github.com/adobe/aepsdk-optimize-ios) | AEP 최적화 확장(`AEPOptimize`)은 Adobe Target 또는 Adobe Journey Optimizer Offer decisioning을 사용하여 Adobe Experience Platform Mobile SDK에서 실시간 개인화 워크플로우를 가능하게 하는 API를 제공합니다. 이를 위해서는 `AEPCore` 및 `AEPEdge` experience Edge 네트워크에 개인화 쿼리 이벤트를 전송하는 확장입니다. |
-| [AEP 보증](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance(Grifson 프로젝트) 는 새롭고 혁신적인 확장 프로그램입니다(`AEPAssurance`)를 사용하여 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인할 수 있습니다. 이 확장 기능을 사용하면 앱을 보증 용도로 사용할 수 있습니다. |
+| [AEP 보증](https://github.com/adobe/aepsdk-assurance-ios) | Assurance(Grifson 프로젝트) 는 새롭고 혁신적인 확장 프로그램입니다(`AEPAssurance`)를 사용하여 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인할 수 있습니다. 이 확장 기능을 사용하면 앱을 보증 용도로 사용할 수 있습니다. |
 
 
 ## 확장 가져오기
@@ -81,7 +81,7 @@ import AEPAssurance
 
 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** 를 입력합니다.
 
-1. 바꾸기 `@AppStorage` 값 `YOUR_ENVIRONMENT_ID_GOES_HERE` 대상 `environmentFileId` 의 6단계에서 태그에서 검색한 개발 환경 파일 ID 값으로 [SDK 설치 지침 생성](configure-tags.md#generate-sdk-install-instructions).
+1. 바꾸기 `@AppStorage` 값 `YOUR_ENVIRONMENT_ID_GOES_HERE` 대상 `environmentFileId` 의 태그에서 검색한 개발 환경 파일 ID 값으로 [SDK 설치 지침 생성](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
    @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
@@ -139,6 +139,8 @@ import AEPAssurance
 
 >[!SUCCESS]
 >
->이제 자습서의 나머지 부분에서 사용할 필수 Adobe Experience Platform Mobile SDK 확장을 올바르게 등록하기 위해 필요한 패키지를 설치하고 프로젝트를 업데이트했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 자습서의 나머지 부분에서 사용할 필수 Adobe Experience Platform Mobile SDK 확장을 올바르게 등록하기 위해 필요한 패키지를 설치하고 프로젝트를 업데이트했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 다음: **[보증 설정](assurance.md)**

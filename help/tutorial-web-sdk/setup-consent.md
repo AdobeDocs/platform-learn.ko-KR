@@ -3,9 +3,9 @@ title: Platform Web SDK를 사용하여 동의 설정
 description: Experience Platform 웹 SDK 태그 확장의 개인 정보 설정을 구성하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1623'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Experience Platform 웹 SDK 태그 확장의 개인 정보 설정을 구성하�
 * Web SDK 태그 확장 Experience Platform에서 개인 정보 설정 구성
 * 방문자의 작업을 기반으로 Experience Platform 웹 SDK에 대한 동의 설정
 
-## 사전 요구 사항
+## 전제 조건
 
 Experience Platform 디버거를 사용하여 규칙, 데이터 요소를 만들고, 라이브러리를 환경에 빌드하고, 태그 라이브러리를 전환하는 태그와 단계에 익숙해야 합니다.
 
@@ -224,4 +224,4 @@ Web SDK의 동의에 대한 자세한 내용은 [고객 동의 환경 설정 지
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

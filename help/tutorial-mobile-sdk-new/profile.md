@@ -3,9 +3,9 @@ title: 프로필 데이터 수집
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 사용자의 과거 또는 최근 구매 여부를 빠르게 파악하려면 앱의 타겟팅 및/또는 개인화에 유용합니다. Luma 앱에서 설정해 보겠습니다.
 
-1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** xcode Project 탐색기에서 `func updateUserAttribute(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** xcode Project 탐색기에서 `func updateUserAttributes(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -56,11 +56,11 @@ ht-degree: 1%
 
    1. 를 사용합니다. `profileMap` 사전을 값에 추가 `attributeDict` 매개 변수 [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API 호출.
 
-1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** 를 클릭하고 호출을 찾습니다. `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 추가할 수 있습니다). 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** 를 클릭하고 호출을 찾습니다. `updateUserAttributes` (구매 코드 내 <img src="assets/purchase.png" width="15" /> 단추). 다음 코드를 추가합니다.
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -98,11 +98,11 @@ ht-degree: 1%
 
    1. Assurance 아이콘을 왼쪽으로 이동합니다.
    1. 선택 **[!UICONTROL 홈]** 을 클릭합니다.
-   1. 로그인 시트를 열려면 다음을 선택합니다 <img src="assets/login.png" width="15" /> 추가할 수 있습니다.
+   1. 로그인 시트를 열려면 다음을 선택합니다 <img src="assets/login.png" width="15" /> 단추를 클릭합니다.
 
       <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. 임의의 이메일과 고객 ID를 삽입하려면 <img src="assets/insert.png" width="15" /> 추가할 수 있습니다 .
+   1. 임의의 이메일과 고객 ID를 삽입하려면 <img src="assets/insert.png" width="15" /> 단추 .
    1. 선택 **[!UICONTROL 로그인]**.
 
       <img src="./assets/mobile-app-events-2.png" width="300">
@@ -115,7 +115,7 @@ ht-degree: 1%
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. 다음으로 돌아가기: **[!UICONTROL 홈]** 화면. 추가된 배지가 표시됩니다. <img src="assets/person-badge-icon.png" width="15" />.
+   1. 다음으로 돌아가기: **[!UICONTROL 홈]** 화면. 배지가 추가된 것을 확인해야 합니다 <img src="assets/person-badge-icon.png" width="15" />.
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ ht-degree: 1%
 
 >[!SUCCESS]
 >
->이제 Edge Network 및 Adobe Experience Platform을 사용하여 (설정 시) 프로필의 속성을 업데이트하도록 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>이제 Edge Network 및 Adobe Experience Platform을 사용하여 (설정 시) 프로필의 속성을 업데이트하도록 앱을 설정했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[위치 사용](places.md)**

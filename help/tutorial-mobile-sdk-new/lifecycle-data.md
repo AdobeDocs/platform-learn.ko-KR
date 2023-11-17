@@ -3,7 +3,7 @@ title: 라이프사이클 데이터 수집
 description: 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 hide: true
 exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -121,6 +121,8 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 >[!SUCCESS]
 >
->이제 응용 프로그램 상태(전경, 배경) 이벤트를 Adobe Experience Platform Edge Network와 데이터 스트림에 정의한 모든 서비스에 보내도록 앱을 설정했습니다.<br>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 응용 프로그램 상태(전경, 배경) 이벤트를 Adobe Experience Platform Edge Network와 데이터 스트림에 정의한 모든 서비스에 보내도록 앱을 설정했습니다.
+>
+> Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 다음: **[이벤트 데이터 추적](events.md)**

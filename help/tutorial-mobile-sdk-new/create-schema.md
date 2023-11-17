@@ -4,9 +4,9 @@ description: 모바일 앱 이벤트에 대한 XDM 스키마를 만드는 방법
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 8%
 
 ---
@@ -134,7 +134,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 >[!NOTE]
 >
->그룹의 모든 필드를 사용할 필요는 없습니다. 스키마를 간결하고 이해할 수 있도록 유지하는 데 도움이 되는 경우 필드를 제거할 수도 있습니다. 유용한 경우 스키마를 빈 데이터 레이어로 생각할 수 있습니다. 앱에서 적절한 시간에 관련 값을 채웁니다.
+>그룹의 모든 필드를 사용할 필요는 없습니다. 필드를 제거하여 스키마를 간결하고 이해하기 쉽게 유지할 수도 있습니다. 유용한 경우 스키마를 빈 데이터 레이어로 생각할 수 있습니다. 앱에서 적절한 시간에 관련 값을 채웁니다.
 
 다음 [!UICONTROL 고객 경험 이벤트] 필드 그룹에는 이름이 인 데이터 형식이 있습니다. [!UICONTROL 웹 정보]페이지 보기 및 링크 클릭과 같은 이벤트에 대해 설명합니다. 작성 시에는 이 기능에 대한 모바일 앱 패리티가 없으므로 직접 만듭니다.
 
@@ -234,6 +234,8 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 >[!SUCCESS]
 >
->이제 자습서의 나머지 부분에서 사용할 스키마가 있습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>이제 자습서의 나머지 부분에서 사용할 스키마가 있습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 다음: **[만들기 [!UICONTROL 데이터스트림]](create-datastream.md)**

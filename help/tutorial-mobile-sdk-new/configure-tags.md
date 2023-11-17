@@ -3,10 +3,11 @@ title: 태그 속성 구성
 description: 에서 태그 속성을 구성하는 방법을 알아봅니다 [!UICONTROL 데이터 수집] 인터페이스.
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 8%
+source-wordcount: '1090'
+ht-degree: 7%
 
 ---
 
@@ -45,7 +46,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
       >[!NOTE]
       >
-      > 이 단원에서 수행하는 것과 같은 Edge 기반 Mobile SDK 구현에 대한 기본 동의 설정은 [!UICONTROL 동의 확장] 및 이 아님 [!UICONTROL 개인 정보 보호] 를 태그 속성 구성에서 설정합니다. 이 단원의 뒷부분에서 동의 확장을 추가하고 구성합니다. 자세한 내용은 [설명서](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > 이 단원에서 수행하는 것과 같은 Edge 기반 Mobile SDK 구현에 대한 기본 동의 설정은 [!UICONTROL 동의 확장] 및 이 아님 [!UICONTROL 개인 정보 보호] 를 태그 속성 구성에서 설정합니다. 이 단원의 뒷부분에서 동의 확장을 추가하고 구성합니다. 자세한 내용은 [설명서](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. 새 속성을 엽니다.
@@ -131,7 +132,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 1. 다음에서 **[!UICONTROL 모바일 설치 지침]** 대화 상자에서 **[!UICONTROL iOS]** 탭.
 
-1. 복사할 수 있습니다. ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 코코아팟을 사용하여 프로젝트를 설정하는 지침입니다. CocoaPod는 SDK 버전 및 다운로드를 관리하는 데 사용됩니다. 자세한 내용은 다음을 참조하십시오. [Cocoapods 설명서](https://cocoapods.org/). Android를 개발 플랫폼으로 사용하는 경우 Gradle은 SDK 버전, 다운로드 및 종속성을 관리하는 도구입니다. 자세한 내용은 다음을 참조하십시오. [Gradle 설명서](https://gradle.org/)
+1. 복사할 수 있습니다. ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 코코아팟을 사용하여 프로젝트를 설정하는 지침입니다. CocoaPod는 SDK 버전 및 다운로드를 관리하는 데 사용됩니다. 자세한 내용은 다음을 참조하십시오. [CocoaPod 설명서](https://cocoapods.org/). Android™을 개발 플랫폼으로 사용하는 경우 Gradle은 SDK 버전, 다운로드 및 종속성을 관리하는 도구입니다. 자세한 내용은 다음을 참조하십시오. [Gradle 설명서](https://gradle.org/)
 
    설치 지침은 구현을 위한 좋은 시작점을 제공합니다. 추가 정보를 찾을 수 있습니다 [여기](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -148,7 +149,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 >[!NOTE]
 >
->설치 지침은 시작점으로 간주되어야 하며 명확한 설명서는 아닙니다. 최신 SDK 버전 및 코드 샘플은 [설명서](https://developer.adobe.com/client-sdks/documentation/).
+>설치 지침은 시작점으로 간주되어야 하며 명확한 설명서는 아닙니다. 최신 SDK 버전 및 코드 샘플은 [설명서](https://developer.adobe.com/client-sdks/home/).
 
 ## 모바일 태그 아키텍처
 
@@ -156,10 +157,12 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 * 웹에서 태그 속성은 JavaScript로 렌더링되고, 그러면 일반적으로 클라우드에서 호스팅됩니다. 해당 JavaScript 파일은 웹 사이트에서 직접 참조됩니다.
 
-* 모바일 태그 속성에서 규칙 및 구성은 클라우드에서 호스팅되는 JSON 파일로 렌더링됩니다. JSON 파일은 모바일 앱의 Mobile Core 확장에 의해 다운로드되고 읽혀집니다. 확장은 함께 작동하는 별도의 SDK입니다. 태그 속성에 확장을 추가하는 경우 앱도 업데이트해야 합니다. 확장 설정을 변경하거나 규칙을 만드는 경우 업데이트된 태그 라이브러리를 게시하면 해당 변경 사항이 앱에 반영됩니다. 이러한 유연성으로 인해 앱의 코드를 변경하고 앱을 앱스토어에 다시 제출하지 않고도 설정(예: Adobe 분석 보고서 세트 ID)을 수정하거나 앱의 동작(이후 단원에서 볼 수 있듯이 데이터 요소 및 규칙 사용)을 변경할 수 있습니다.
+* 모바일 태그 속성에서 규칙 및 구성은 클라우드에서 호스팅되는 JSON 파일로 렌더링됩니다. JSON 파일은 모바일 앱의 Mobile Core 확장에 의해 다운로드되고 읽혀집니다. 확장은 함께 작동하는 별도의 SDK입니다. 태그 속성에 확장을 추가하는 경우 앱도 업데이트해야 합니다. 확장 설정을 변경하거나 규칙을 만드는 경우 업데이트된 태그 라이브러리를 게시하면 해당 변경 사항이 앱에 반영됩니다. 이러한 유연성으로 인해 앱의 코드를 변경하고 앱스토어를 다시 제출하지 않고도 설정(Adobe Analytics 보고서 세트 ID 등)을 수정하거나 앱의 동작(이후 단원에서 볼 수 있듯이 데이터 요소 및 규칙 사용)을 변경할 수 있습니다.
 
 >[!SUCCESS]
 >
->이제 이 자습서의 나머지 부분에서 사용할 모바일 태그 속성이 있습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 이 자습서의 나머지 부분에서 사용할 모바일 태그 속성이 있습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 다음: **[SDK 설치](install-sdks.md)**

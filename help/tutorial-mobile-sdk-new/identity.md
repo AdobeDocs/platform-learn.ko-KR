@@ -4,9 +4,9 @@ description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 �
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 >[!NOTE]
 >
->Mobile SDK는 앱이 설치되면 자체 네임스페이스에 ECID(Experience Cloud ID)라는 고유 ID를 생성합니다. 이 ECID는 모바일 장치의 영구 메모리에 저장되고 모든 히트와 함께 전송됩니다. 사용자가 앱을 제거할 때 또는 Mobile SDK 전역 개인 정보 상태를 optedout으로 설정할 때 ECID가 제거됩니다. 샘플 Luma 앱에서는 앱을 제거하고 다시 설치하여 고유한 ECID로 새 프로필을 만들어야 합니다.
+>Mobile SDK는 앱이 설치되면 자체 네임스페이스에 ECID(Experience Cloud ID)라는 고유 ID를 생성합니다. 이 ECID는 모바일 장치의 영구 메모리에 저장되고 모든 히트와 함께 전송됩니다. 사용자가 앱을 제거할 때 또는 Mobile SDK 전역 개인 정보 상태를 옵트아웃으로 설정할 때 ECID가 제거됩니다. 샘플 Luma 앱에서는 앱을 제거하고 다시 설치하여 고유한 ECID로 새 프로필을 만들어야 합니다.
 
 
 새 ID 네임스페이스를 만들려면 다음 작업을 수행하십시오.
@@ -59,7 +59,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 사용자가 앱에 로그인할 때 표준 ID(이메일)와 사용자 지정 ID(Luma CRM ID)를 모두 업데이트하려고 합니다.
 
-1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** xcode 프로젝트 탐색기에서 `func updateIdentities(emailAddress: String, crmId: String)` 함수 구현. 다음 코드를 함수에 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** xcode Project 탐색기에서 `func updateIdentities(emailAddress: String, crmId: String)` 함수 구현. 다음 코드를 함수에 추가합니다.
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -101,10 +101,10 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. 다음으로 이동 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 로그인 시트]** xcode 프로젝트 탐색기에서 를 선택하고 **[!UICONTROL 로그인]** 단추를 클릭합니다. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 로그인 시트]** xcode 프로젝트 탐색기에서 를 선택하고 **[!UICONTROL 로그인]** 단추를 클릭합니다. 다음 코드를 추가합니다.
 
    ```swift
-   // Call updateIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -169,11 +169,13 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
 
 >[!INFO]
 >
->앱에는 ECID를 재설정하는 코드가 없습니다. 즉, 응용 프로그램을 제거하고 다시 설치하는 경우에만 ECID를 재설정하고 장치에 새 ECID를 사용하여 새 프로필을 효과적으로 만들 수 있습니다. 식별자 재설정을 구현하려면 다음을 참조하십시오 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 및 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 호출. 하지만 푸시 알림 식별자를 사용할 때는 반드시 알아야 합니다( 참조) [푸시 알림 보내기](journey-optimizer-push.md)), 이 식별자는 디바이스에서 다른 &quot;고정&quot; 프로필 식별자가 됩니다.
+>앱에는 ECID를 재설정하는 코드가 없습니다. 즉, 응용 프로그램을 제거하고 다시 설치하는 경우에만 ECID를 재설정하고 새 ECID로 새 프로필을 효과적으로 만들 수 있습니다. 식별자 재설정을 구현하려면 다음을 참조하십시오 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 및 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API 호출. 하지만 푸시 알림 식별자를 사용할 때는 반드시 알아야 합니다( 참조) [푸시 알림 보내기](journey-optimizer-push.md)), 이 식별자는 디바이스에서 다른 &quot;고정&quot; 프로필 식별자가 됩니다.
 
 
 >[!SUCCESS]
 >
->이제 Edge Network에서 ID를 업데이트하고 Adobe Experience Platform으로 (설정 시) 앱을 설정했습니다.<br/>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이제 Edge Network에서 ID를 업데이트하고 Adobe Experience Platform으로 (설정 시) 앱을 설정했습니다.
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 다음: **[프로필 데이터 수집](profile.md)**

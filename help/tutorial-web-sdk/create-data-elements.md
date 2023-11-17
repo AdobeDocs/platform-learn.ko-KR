@@ -3,9 +3,9 @@ title: 데이터 요소 만들기
 description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: fe03ee89bfccd0105b45383c84403b6a3d230235
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1201'
 ht-degree: 5%
 
 ---
@@ -45,7 +45,7 @@ Platform Web SDK에 관계없이, 데이터 레이어, HTML 속성 또는 기타
 * 데이터 요소를 XDM 개체 데이터 요소에 매핑
 
 
-## 사전 요구 사항
+## 전제 조건
 
 데이터 계층이 무엇인지 이해하고 있으며 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 데이터 레이어 및 태그의 데이터 요소를 참조하는 방법을 알아봅니다. 자습서에서 다음 이전 단계를 완료해야 합니다
 
@@ -226,4 +226,4 @@ XDM 개체 만들기를 시작하기 전에 [Luma 데모 사이트](https://luma
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
