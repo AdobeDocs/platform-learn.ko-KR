@@ -3,7 +3,7 @@ title: 프로필 데이터 수집
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 사용자의 과거 또는 최근 구매 여부를 빠르게 파악하려면 앱의 타겟팅 및/또는 개인화에 유용합니다. Luma 앱에서 설정해 보겠습니다.
 
-1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** xcode Project 탐색기에서 `func updateUserAttributes(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
+1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** xcode Project 탐색기에서 `func updateUserAttribute(attributeName: String, attributeValue: String)` 함수. 다음 코드를 추가합니다.
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ ht-degree: 1%
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -86,7 +86,7 @@ ht-degree: 1%
 
    이 코드:
 
-   1. 호출 [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 을 사용한 API `iPaidUser` 속성 이름 을 단일 요소로 사용 `attributeNames` 배열입니다.
+   1. 호출 [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 을 사용한 API `isPaidUser` 속성 이름 을 단일 요소로 사용 `attributeNames` 배열입니다.
    1. 그런 다음 의 값을 확인합니다. `isPaidUser` 속성 및 시기 `yes`, 다음에 배지를 추가합니다. <img src="assets/paiduser.png" width="20" /> 아이콘 을 클릭하여 제품에서 사용할 수 있습니다.
 
 추가 설명서를 찾을 수 있습니다 [여기](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
