@@ -3,10 +3,10 @@ title: 태그를 사용하여 웹 사이트에서 Experience Cloud 구현
 description: 태그를 사용하여 웹 사이트에서 Experience Cloud을 구현하는 것은 웹 사이트에서 Adobe Experience Cloud 솔루션을 구현하는 방법을 배우고자 하는 프런트엔드 개발자나 기술 마케터에게 완벽한 시작점입니다.
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 8c3b487691c95b16da2a270b7d71cfd3bab1f0eb
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 39%
+source-wordcount: '896'
+ht-degree: 37%
 
 ---
 
@@ -80,7 +80,7 @@ Adobe Experience Platform의 태그 기능은 Adobe의 차세대 웹 사이트 �
 ## 도구 가져오기
 
 1. 브라우저 전용 확장을 사용할 예정이므로 [Chrome 웹 브라우저](https://www.google.com/chrome/)를 사용하여 자습서를 완료해 주십시오
-1. [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 확장을 Chrome 브라우저에 추가합니다.
+1. 추가 [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome 브라우저로의 확장
 1. 샘플 html 페이지 코드 복사
 
    +++샘플 html 페이지 코드

@@ -3,9 +3,9 @@ title: Experience Platform 디버거를 사용하여 Web SDK 구현 확인
 description: Adobe Experience Platform Debugger을 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1071'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-이 단원에서는 [Adobe Experience Cloud 디버거 확장](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 에서 하드코딩된 태그 속성을 바꾸려면 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 자신의 재산과 함께
+이 단원에서는 [Adobe Experience Platform Debugger 확장](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 에서 하드코딩된 태그 속성을 바꾸려면 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 자신의 재산과 함께
 
 이 기법은 환경 전환이라고 하며 나중에 웹 사이트에서 태그를 사용하여 작업할 때 유용합니다. 브라우저에서 프로덕션 웹 사이트를 로드할 수 있지만 *개발* 태그 환경입니다. 이 기능을 사용하면 일반 코드 릴리스와 독립적으로 태그 변경 사항을 만들고 확인할 수 있습니다. 결국, 일반 코드 릴리스에서 마케팅 태그 릴리스가 이렇게 분리되는 것은 고객이 태그를 우선 사용하는 주요 이유 중 하나입니다!
 

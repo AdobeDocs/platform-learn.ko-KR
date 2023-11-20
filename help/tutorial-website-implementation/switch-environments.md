@@ -1,28 +1,27 @@
 ---
-title: Adobe Experience Cloud Debugger를 사용하여 태그 환경 전환
-description: Experience Cloud Debugger을 사용하여 다양한 태그 포함 코드를 로드하는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
+title: Adobe Experience Cloud 디버거를 사용하여 태그 환경 전환
+description: Experience Cloud Debugger을 사용하여 다양한 태그 포함 코드를 로드하는 방법에 대해 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 36%
+source-wordcount: '623'
+ht-degree: 32%
 
 ---
 
 # Experience Cloud Debugger을 사용하여 태그 환경 전환
 
-이 단원에서는 [Adobe Experience Cloud Debugger 확장 프로그램](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 에서 하드코딩된 태그 속성을 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 자신의 자산과 함께 사용할 수 있습니다.
+이 단원에서는 [Adobe Experience Platform Debugger 확장](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 에서 하드코딩된 태그 속성을 바꾸려면 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 자신의 재산과 함께
 
-이 기법은 환경 전환이라고 하며 나중에 자신의 웹 사이트에서 태그를 사용하여 작업할 때 유용합니다. 브라우저에서 프로덕션 웹 사이트를 로드할 수 있지만 *개발* 태그 환경을 지정합니다. 이렇게 하면 일반 코드 릴리스와 독립적으로 태그 변경 사항을 만들고 확인할 수 있습니다.  결국, 일반적인 코드 릴리스에서 마케팅 태그 릴리스가 이렇게 분리되는 것은 고객이 태그를 우선 사용하는 주된 이유 중 하나입니다!
+이 기법은 환경 전환이라고 하며 나중에 웹 사이트에서 태그를 사용하여 작업할 때 유용합니다. 브라우저에서 프로덕션 웹 사이트를 로드할 수 있지만 *개발* 태그 환경. 이렇게 하면 일반 코드 릴리스와 독립적으로 태그 변경 사항을 만들고 확인할 수 있습니다.  결국, 일반 코드 릴리스에서 마케팅 태그 릴리스가 이렇게 분리되는 것은 고객이 태그를 우선 사용하는 주요 이유 중 하나입니다!
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch은 데이터 수집 기술 세트로 Adobe Experience Platform에 통합되고 있습니다. 인터페이스에서 이 컨텐츠를 사용하는 동안 알고 있어야 하는 몇 가지 용어 변경 사항이 롤아웃되었습니다.
+>Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 platform launch(클라이언트측)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * 이제 platform launch 서버 측 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 이제 Edge 구성이 제공됩니다. **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * 이제 platform launch(클라이언트측)이 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 학습 목표
 
@@ -33,7 +32,7 @@ ht-degree: 36%
 
 ## 개발 환경의 URL 가져오기
 
-1. 태그 속성에서 을 엽니다. `Environments` 페이지
+1. 태그 속성에서 `Environments` 페이지
 
 1. **[!UICONTROL Development]** 행에서 Install 아이콘 ![Install 아이콘](images/launch-installIcon.png)을 클릭하여 모달을 엽니다.
 
@@ -47,7 +46,7 @@ ht-degree: 36%
 
 1. Chrome 브라우저에서 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
 
-1. ![Debugger 아이콘](images/icon-debugger.png) 아이콘을 클릭하여 [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)을 엽니다.
+1. 를 엽니다. [Experience Platform 디버거 확장](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 을(를) 클릭하여 ![Debugger 아이콘](images/icon-debugger.png) 아이콘
 
    ![Debugger 아이콘 클릭](images/switchEnvironments-openDebugger.png)
 
@@ -57,7 +56,7 @@ ht-degree: 36%
 
 1. Tools 탭으로 이동합니다.
 1. **[!UICONTROL Replace Launch Embed Code]** 섹션으로 스크롤합니다.
-1. Luma 사이트의 Chrome 탭이 디버거(이 자습서를 사용하는 탭이나 Data Collection 인터페이스를 사용하는 탭이 아님) 뒤에서 초점이 맞춰져 있는지 확인합니다.  클립보드에 있는 포함 코드를 입력 필드에 붙여 넣습니다.
+1. Luma 사이트가 있는 Chrome 탭이 디버거(이 자습서가 있는 탭이나 데이터 수집 인터페이스가 있는 탭이 아님) 뒤에서 초점이 맞춰져 있는지 확인합니다.  클립보드에 있는 포함 코드를 입력 필드에 붙여 넣습니다.
 1. Luma 사이트의 모든 페이지가 태그 속성에 매핑되도록 &quot;Apply across luma.enablementadobe.com&quot; 기능을 전환합니다.
 1. **[!UICONTROL Save]** 단추를 클릭합니다.
 
@@ -71,6 +70,6 @@ ht-degree: 36%
 >
 >Luma 사이트로 돌아올 때마다 디버거가 이 구성을 저장하고 태그 포함 코드를 바꿉니다. 이 경우 열려 있는 다른 탭에서 방문하는 다른 사이트에는 영향을 주지 않습니다. 디버거가 포함 코드를 바꾸지 않도록 하려면 디버거의 Tools 탭에서 포함 코드 옆에 있는 **[!UICONTROL Remove]** 단추를 클릭하십시오.
 
-자습서를 계속 진행하면 이렇게 Luma 사이트를 자신의 태그 속성에 매핑하여 태그 구현의 유효성을 검사하는 기법을 사용하게 됩니다. 프로덕션 웹 사이트에서 태그 사용을 시작할 때 이와 동일한 기술을 사용하여 변경 내용의 유효성을 검사할 수 있습니다.
+자습서를 계속 진행하면 Luma 사이트를 자신의 태그 속성에 매핑하여 태그 구현의 유효성을 검사하는 이 기술을 사용하게 됩니다. 프로덕션 웹 사이트에서 태그 사용을 시작할 때 이와 동일한 기술을 사용하여 변경 내용의 유효성을 검사할 수 있습니다.
 
 [다음 &quot;Adobe Experience Platform ID 서비스 추가&quot; >](id-service.md)

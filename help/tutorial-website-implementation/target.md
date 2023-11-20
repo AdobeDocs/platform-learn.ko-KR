@@ -3,7 +3,7 @@ title: 태그를 사용하여 Adobe Target 추가
 description: at.js, 페이지 로드 요청, 매개 변수, 순서 요청 및 사용자 지정 머리글/바닥글 코드와 함께 태그를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 74%
@@ -95,7 +95,7 @@ ht-degree: 74%
 
 ## Target 확장 추가
 
-Adobe Target 확장은 최신 웹, at.js에 Target의 JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 고객이 여전히 Target의 이전 라이브러리인 mbox.js를 사용 중 [at.js 2.x로 업그레이드해야 함](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) 태그를 사용하려면
+Adobe Target 확장은 최신 웹, at.js에 Target의 JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 고객이 여전히 Target의 이전 라이브러리인 mbox.js를 사용하고 있음 [at.js 2.x로 업그레이드해야 함](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html) 태그를 사용하려면
 
 Target v2 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
@@ -391,7 +391,7 @@ Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다
 
 >[!WARNING]
 >
->을(를) 추가하려고 하면 `at_property` 매개 변수 **[!UICONTROL 페이지 로드 요청에 매개 변수 추가]** 작업을 수행하면 매개 변수가 네트워크 요청에 채워지지만 Target을 로드할 때 페이지의 VEC(시각적 경험 작성기)가 자동으로 검색되지 않습니다. 항상 채우기 `at_property` 사용 `targetPageParams()` 함수를 추가합니다.
+>을(를) 추가하려고 하면 `at_property` 매개 변수 **[!UICONTROL 페이지 로드 요청에 매개 변수 추가]** 작업을 수행하면 매개 변수가 네트워크 요청에 채워지지만 페이지를 로드할 때 Target의 VEC(시각적 경험 작성기)가 이 매개 변수를 자동으로 감지할 수 없습니다. 항상 채우기 `at_property` 사용 `targetPageParams()` 함수를 추가합니다.
 
 #### 속성 토큰 유효성 검사
 
@@ -430,7 +430,7 @@ Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다
 
 모범 사례는 비소매 사이트에서도 모든 주문 유입 경로에 주문 확인 요청을 사용하는 것입니다. 예를 들어 리드 생성 사이트에는 일반적으로 끝에 고유한 &quot;리드 ID&quot;가 생성되는 리드 유입 경로가 있습니다. 이러한 사이트에서는 orderTotal에 정적 값(예: &quot;1&quot;)을 사용하여 주문 요청을 구현해야 합니다.
 
-대부분의 보고에 A4T(Target 분석) 통합을 사용하는 고객은 A4T를 지원하지 않는 Automated Personalization 활동을 사용하는 경우 주문 요청을 구현하고자 할 수도 있습니다. 또한 주문 요청은 Recommendations 구현에 중요한 요소로, 구매 행동에 따라 알고리즘을 강화합니다. A4T 지원에 대한 최신 정보는 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+대부분의 보고에 A4T(Analytics for Target) 통합을 사용하는 고객은 A4T를 지원하지 않는 Automated Personalization 활동을 사용하는 경우 주문 요청을 구현하고자 할 수도 있습니다. 또한 주문 요청은 Recommendations 구현에 중요한 요소로, 구매 행동에 따라 알고리즘을 강화합니다. A4T 지원에 대한 최신 정보는 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 주문 확인 요청은 주문 확인 페이지나 이벤트에서만 트리거되는 규칙에서 실행해야 합니다. 이 요청은 종종 Adobe Analytics 구매 이벤트를 설정하는 규칙과 결합될 수 있습니다. 적절한 데이터 요소를 사용하여 orderId, orderTotal 및 productPurchasedId 매개 변수를 설정하는 Core 확장의 사용자 지정 코드 작업을 사용하여 구성해야 합니다.
 
@@ -561,13 +561,13 @@ Luma 사이트에서 주문 확인 요청을 실행하기 위해 필요한 데�
 
 ### 사용자 지정 요청
 
-드물게 페이지 로드 및 Target 확인 요청 이외의 주문 요청을 수행해야 하는 경우가 있습니다. 예를 들어 개인화에 사용하려는 중요한 데이터가 태그 포함 코드 앞에 페이지에 정의되지 않은 경우가 있습니다. 이 데이터는 페이지 하단에 하드코딩되거나 비동기 API 요청에서 반환될 수 있습니다. 페이지가 이미 표시되므로 이 요청을 Target 전달에 사용하는 것이 최적은 아니지만, 추가 요청을 사용하여 이 데이터를 콘텐츠로 보낼 수 있습니다. 이 데이터는 나중에 사용하기 위해 방문자 프로필을 보강하거나(프로필 매개 변수 사용) Recommendations 카탈로그를 채우는 데 사용할 수 있습니다.
+드물게 페이지 로드 및 주문 확인 요청 이외의 Target 요청을 수행해야 하는 경우가 있습니다. 예를 들어 개인화에 사용하려는 중요한 데이터가 태그 포함 코드 앞에 페이지에 정의되지 않은 경우가 있습니다. 이 데이터는 페이지 하단에 하드코딩되거나 비동기 API 요청에서 반환될 수 있습니다. 페이지가 이미 표시되므로 이 요청을 컨텐츠 전달에 사용하는 것이 최적은 아니지만, 추가 요청을 사용하여 이 데이터를 Target에 보낼 수 있습니다. 이 데이터는 나중에 사용하기 위해 방문자 프로필을 보강하거나(프로필 매개 변수 사용) Recommendations 카탈로그를 채우는 데 사용할 수 있습니다.
 
 이러한 경우 [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) 및 [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) 메서드를 사용하여 요청을 실행하도록 Core 확장에서 사용자 지정 코드 작업을 수행합니다. 이는 [주문 확인 요청](#order-confirmation-request) 연습에서 수행한 것과 매우 유사하지만, 다른 요청 이름을 사용하고 특별한 주문 매개 변수는 사용하지 않습니다. 사용자 지정 코드에서 Target 요청을 수행하기 전에 **[!UICONTROL Target 로드]** 작업을 사용하십시오.
 
 ## 라이브러리 머리글 및 라이브러리 바닥글
 
-Target 사용자 인터페이스의 Edit at.js 화면에는 at.js 파일 전후에 바로 실행되는 사용자 지정 JavaScript를 붙여넣을 수 있는 위치가 있습니다. 라이브러리 헤더는 경우에 따라 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 함수를 통해 at.js 설정을 재정의하거나 [데이터 공급자](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) 기능을 사용하여 타사의 데이터를 전달하는 데 사용됩니다. 라이브러리 바닥글은 경우에 따라 [at.js 사용자 지정 이벤트](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html) 리스너를 추가하는 데 사용됩니다.
+Target 사용자 인터페이스의 Edit at.js 화면에는 at.js 파일 전후에 바로 실행되는 사용자 지정 JavaScript를 붙여넣을 수 있는 위치가 있습니다. 라이브러리 헤더는 경우에 따라 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 함수를 통해 at.js 설정을 재정의하거나 [데이터 공급자](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) 기능을 사용하여 타사의 데이터를 전달하는 데 사용됩니다. 라이브러리 바닥글은 경우에 따라 [at.js 사용자 지정 이벤트](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html) 리스너를 추가하는 데 사용됩니다.
 
 태그에서 이 기능을 복제하려면 코어 확장에서 사용자 지정 코드 작업을 사용하고, 이 작업 순서를 Target 로드 작업 전(라이브러리 헤더) 또는 후(라이브러리 바닥글)로 지정합니다. 이 작업은 아래 그림에 표시된 대로 `Load Target` 작업과 동일한 규칙으로 수행하거나, `Load Target`가 들어 있는 규칙 전이나 후에 안정적으로 실행되는 이벤트 또는 주문 설정을 사용하여 별도의 규칙으로 수행할 수 있습니다.
 

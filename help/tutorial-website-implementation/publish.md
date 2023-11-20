@@ -1,11 +1,11 @@
 ---
 title: 태그 속성 게시
-description: 개발 환경의 태그 속성을 스테이징 및 프로덕션 환경에 게시하는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
+description: 개발 환경의 태그 속성을 스테이징 및 프로덕션 환경에 게시하는 방법을 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 67%
+source-wordcount: '597'
+ht-degree: 64%
 
 ---
 
@@ -15,12 +15,11 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch은 데이터 수집 기술 세트로 Adobe Experience Platform에 통합되고 있습니다. 인터페이스에서 이 컨텐츠를 사용하는 동안 알고 있어야 하는 몇 가지 용어 변경 사항이 롤아웃되었습니다.
+>Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 platform launch(클라이언트측)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * 이제 platform launch 서버 측 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 이제 Edge 구성이 제공됩니다. **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * 이제 platform launch(클라이언트측)이 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 학습 목표
 
@@ -34,7 +33,7 @@ ht-degree: 67%
 
 이제 개발 환경에서 라이브러리를 만들고 유효성을 검사했으므로 이것을 스테이징에 게시할 차례입니다.
 
-1. 로 이동합니다. **[!UICONTROL 게시 흐름]** 페이지
+1. 로 이동 **[!UICONTROL 게시 플로우]** 페이지
 
 1. 라이브러리 옆의 드롭다운을 열고 **[!UICONTROL Submit for Approval]**&#x200B;을 선택합니다.
 
@@ -56,7 +55,7 @@ ht-degree: 67%
 
 **스테이징 라이브러리의 변경 사항에 대한 유효성을 검사하려면**
 
-1. 태그 속성에서 을 엽니다. [!UICONTROL 환경] 페이지
+1. 태그 속성에서 [!UICONTROL 환경] 페이지
 
 1. [!UICONTROL Staging] 행에서 Install 아이콘 ![Install 아이콘](images/launch-installIcon.png)을 클릭하여 모달을 엽니다.
 
@@ -70,20 +69,20 @@ ht-degree: 67%
 
 1. Chrome 브라우저에서 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
 
-1. ![Debugger 아이콘](images/icon-debugger.png) 아이콘을 클릭하여 [Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)을 엽니다.
+1. 를 엽니다. [Experience Platform 디버거 확장](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 을(를) 클릭하여 ![Debugger 아이콘](images/icon-debugger.png) 아이콘
 
    ![Debugger 아이콘 클릭](images/switchEnvironments-openDebugger.png)
 
 1. Tools 탭으로 이동합니다.
 
-1. 에서 **[!UICONTROL Adobe 시작 > Replace Launch Embed Code]** 섹션에 클립보드에 있는 스테이징 포함 코드를 붙여넣습니다.
-1. 켜기 **[!UICONTROL luma.enablementadobe.com에 적용]** 스위치
+1. 다음에서 **[!UICONTROL Adobe Launch > Launch 포함 코드 바꾸기]** 섹션에 클립보드에 있는 스테이징 포함 코드를 붙여 넣습니다.
+1. 켜기 **[!UICONTROL luma.enablementadobe.com에 적용]** 전환
 
 1. 디스크 아이콘을 클릭하여 저장합니다.
 
    ![디버거에 표시된 태그 환경](images/switchEnvironments-debugger-save.png)
 
-1. 디버거의 Summary 탭을 다시 로드하고 확인합니다. 이제 Launch 섹션 아래에 스테이징 속성이 구현되었다고 표시되고 속성 이름(즉, &quot;tags Tutorial&quot; 또는 지정한 모든 속성 이름)!
+1. 디버거의 Summary 탭을 다시 로드하고 확인합니다. 이제 Launch 섹션 아래에 스테이징 속성이 구현되었다고 표시되고 속성 이름(즉, &quot;태그 자습서&quot; 또는 지정한 모든 속성 이름)이 표시됩니다.
 
    ![디버거에 표시된 태그 환경](images/publishing-debugger-staging.png)
 

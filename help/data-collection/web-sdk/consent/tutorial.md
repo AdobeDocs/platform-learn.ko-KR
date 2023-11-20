@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3320'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 이 자습서에서는 Platform Web SDK 확장을 사용하여 동의 데이터를 Platform으로 보냅니다. Web SDK에 대한 개요는 를 참조하십시오. [이 페이지](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ko-KR).
 
-## 사전 요구 사항
+## 전제 조건
 
 웹 SDK를 사용하기 위한 사전 요구 사항이 나열되어 있습니다 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html#fundamentals).
 
@@ -172,7 +172,7 @@ IAB TCF 2.0 동의 표준을 사용하여 태그에서 동의 이벤트 데이�
 * **`containsPersonalData`**:  `False` (값 선택 단추에서 선택됨)
 * **`gdprApplies`**:  `%IAB TCF Consent GDPR%`
 
-다음 `consentStandard` 및 `consentStandardVersion` 필드는 모두 사용 중인 표준(IAB TCF 버전 2.0)의 텍스트 문자열일 뿐입니다. 다음 `consentStringValue` 은 &quot;IAB TCF 동의 문자열&quot;이라는 데이터 요소를 참조합니다. 텍스트 주위의 퍼센트 기호는 데이터 요소의 이름을 나타내며 잠시 후 살펴보도록 하겠습니다. 다음 `containsPersonalData` 필드는 IAB TCF 2.0 동의 문자열에 &quot;True&quot; 또는 &quot;False&quot;가 있는 개인 데이터가 포함되어 있는지 여부를 나타냅니다. 다음 `gdprApplies` 필드는 GDPR이 적용되는 경우 &quot;true&quot;를, GDPR이 적용되지 않는 경우 &quot;false&quot;를, GDPR이 적용되는지 여부를 알 수 없는 경우 &quot;정의되지 않음&quot;을 나타냅니다. 현재 웹 SDK는 &quot;정의되지 않음&quot;을 &quot;true&quot;로 처리하므로 &quot;gdprApply: 정의되지 않음&quot;으로 전송된 동의 데이터는 방문자가 GDPR이 적용되는 영역에 있는 것처럼 처리됩니다.
+다음 `consentStandard` 및 `consentStandardVersion` 필드는 모두 사용 중인 표준(IAB TCF 버전 2.0)의 텍스트 문자열일 뿐입니다. 다음 `consentStringValue` 은 &quot;IAB TCF 동의 문자열&quot;이라는 데이터 요소를 참조합니다. 텍스트를 둘러싼 퍼센트 기호는 데이터 요소의 이름을 나타내며 잠시 후 살펴보도록 하겠습니다. 다음 `containsPersonalData` 필드는 IAB TCF 2.0 동의 문자열에 &quot;True&quot; 또는 &quot;False&quot;가 있는 개인 데이터가 포함되어 있는지 여부를 나타냅니다. 다음 `gdprApplies` 필드는 GDPR이 적용되는 경우 &quot;true&quot;를, GDPR이 적용되지 않는 경우 &quot;false&quot;를, GDPR이 적용되는지 여부를 알 수 없는 경우 &quot;정의되지 않음&quot;을 나타냅니다. 현재 웹 SDK는 &quot;정의되지 않음&quot;을 &quot;true&quot;로 처리하므로 &quot;gdprApply: 정의되지 않음&quot;으로 전송된 동의 데이터는 방문자가 GDPR이 적용되는 영역에 있는 것처럼 처리됩니다.
 
 다음을 참조하십시오. [동의 문서](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started) 태그의 이러한 속성 및 IAB TCF 2.0에 대한 자세한 내용.
 
@@ -236,7 +236,7 @@ GDPR 개인 데이터 포함 아래에서 이 사용자의 데이터에 개인 �
 
 ### 4단계: Inspect 및 데이터 수집 유효성 검사
 
-사이트에서 페이지를 새로 고침하고 [디버거](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 태그 메뉴 섹션의 Chrome 확장 프로그램:
+사이트에서 페이지를 새로 고침하고 [디버거](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 태그 메뉴 섹션의 Chrome 확장 프로그램:
 
 ![](./images/build-date.png)
 
