@@ -4,9 +4,9 @@ description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알�
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 7%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. 선택 **[!DNL Luma]** 프로젝트 탐색기를 참조하십시오.
 1. 다음 항목 선택 **[!DNL Luma]** 타겟.
 1. 다음 항목 선택 **정보** 탭.
-1. 기본 URL을 추가하려면 아래로 스크롤하여 **URL 유형** 및 선택 **+** 단추를 클릭합니다.
+1. 아래로 스크롤하여 **URL 유형 (1)** 열려 있지 않은 경우 V자형 화살표(>)를 사용하여 섹션을 엽니다.
 1. 설정 **식별자** 을(를) 선택한 번들 식별자로 설정하고 **URL 체계** 원하는 대로 선택할 수 있습니다.
 
    ![보증 url](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자 및 바꾸기 `com.adobe.luma.tutorial.swiftui` 번들 식별자. 각 번들 식별자는 고유해야 합니다. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`.<br/>마찬가지로 고유한 URL 체계를 사용하고 이미 제공된 을 바꿉니다 `lumatutorialswiftui` 와 함께 사용하십시오.
+   >다음을 사용하는지 확인합니다. _고유_ 번들 식별자이므로 `com.adobe.luma.tutorial.swiftui` 번들 식별자. 각 번들 식별자는 고유해야 합니다. 일반적으로 와 같은 번들 ID 문자열에 역방향 DNS 형식을 사용합니다 `com.organization.brand.uniqueidentifier`.<br/>마찬가지로 고유한 URL 체계를 사용하므로 이미 제공된 을 바꿉니다 `lumatutorialswiftui` 와 함께 사용하십시오.
 
 iOS의 URL 체계에 대해 자세히 알아보려면 을 검토하십시오. [Apple 설명서](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 

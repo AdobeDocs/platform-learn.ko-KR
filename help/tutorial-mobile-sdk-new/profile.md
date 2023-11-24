@@ -3,7 +3,7 @@ title: 프로필 데이터 수집
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -96,8 +96,8 @@ ht-degree: 1%
 1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
 1. 앱을 실행하여 로그인하고 제품과 상호 작용합니다.
 
-   1. Assurance 아이콘을 왼쪽으로 이동합니다.
    1. 선택 **[!UICONTROL 홈]** 을 클릭합니다.
+   1. Assurance 아이콘을 왼쪽으로 이동합니다.
    1. 로그인 시트를 열려면 다음을 선택합니다 <img src="assets/login.png" width="15" /> 단추를 클릭합니다.
 
       <img src="./assets/mobile-app-events-1.png" width="300">

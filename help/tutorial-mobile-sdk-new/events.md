@@ -3,9 +3,9 @@ title: 이벤트 데이터 추적
 description: 모바일 앱에서 이벤트 데이터를 추적하는 방법에 대해 알아봅니다.
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -322,7 +322,7 @@ Adobe Experience Platform Edge 확장은 이전에 정의한 XDM 스키마 다�
 
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 로그인 시트]**.
 
-   1. 로그인 단추 닫기에 다음과 같은 강조 표시된 코드를 추가합니다.
+   1. 다음 강조 표시된 코드를 `Button("Login") {` 종료:
 
       ```swift
       // Send app interaction event

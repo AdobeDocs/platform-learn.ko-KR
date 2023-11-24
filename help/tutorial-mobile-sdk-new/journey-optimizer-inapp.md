@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1536'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,6 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 이 단원에서는 다음과 같은 작업을 수행합니다
 
-* APN(Apple 푸시 알림 서비스)에 앱 ID를 등록합니다.
 * AJO에서 앱 표면을 만듭니다.
 * Journey Optimizer 태그 확장 설치 및 구성
 * 앱을 업데이트하여 Journey Optimizer 태그 확장을 등록합니다.

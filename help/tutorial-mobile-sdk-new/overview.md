@@ -4,9 +4,9 @@ description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: 6726b0d0570311987b7edac4bf0cd2da35e72f30
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '850'
 ht-degree: 6%
 
 ---
@@ -91,10 +91,14 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 1. [시작](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 이 자습서에서 실습형 연습을 완료하는 데 사용해야 하는 대부분의 Experience Platform Mobile SDK 코드에 대해 코드가 없거나 자리 표시자 코드가 있는 프로젝트.
 1. [완료](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 전체 구현이 포함된 버전을 참조할 수 있습니다.
 
-
 >[!NOTE]
 >
 >iOS을 플랫폼으로 사용하고 [!DNL Swift] 프로그래밍 언어로, [!DNL SwiftUI] UI 프레임워크 및 [!DNL Xcode] 를 IDE(통합 개발 환경)로 사용하십시오. 그러나 설명된 구현 개념의 대부분은 다른 개발 플랫폼에 대해 유사합니다. 많은 사용자가 이전 iOS/Swift(UI) 경험을 거의 또는 전혀 사용하지 않고 이미 이 자습서를 성공적으로 완료했습니다. 전문가가 아니어도 단원을 완료할 수는 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
+
+>[!INFO]
+>
+>최종 앱으로 테스트하려는 경우 Apple App Store에서 직접 앱을 다운로드할 수도 있습니다.
+>[![다운로드](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 그럼 시작해 보겠습니다!

@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2672'
 ht-degree: 2%
 
 ---
@@ -140,6 +140,7 @@ Assurance에서 설정을 확인하려면:
    1. 선택 ![모바일](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL 모바일]** 출처: **[!UICONTROL 채널]** 목록 및 선택 **[!UICONTROL 모바일 JSON]** 다음에서 **[!UICONTROL 배치]** 목록을 표시합니다.
    1. 선택 **[!UICONTROL 사용자 정의]** 대상 **[!UICONTROL 콘텐츠]**.
    1. 선택 **[!UICONTROL 콘텐츠 추가]**. 다음에서 **[!UICONTROL 개인화 추가]** 대화 상자:
+      1. 케이스 a [!UICONTROL 모드] 선택기를 사용할 수 있습니다. 선택기가 로 설정되어 있는지 확인하십시오. **[!UICONTROL JSON]**.
       1. 다음 JSON을 입력합니다.
 
          ```json
@@ -348,7 +349,8 @@ Assurance에서 설정을 확인하려면:
      ]
      ```
 
-     그러나 모든 종류의 구현을 사용하여 API 최적화가 적절한 매개 변수를 가져오도록 할 수 있습니다(`activityId`, `placementId` 및, `itemCount`), 유효한 을 생성합니다. [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 구현을 위한 개체입니다.
+     그러나 모든 종류의 구현을 사용하여 API 최적화가 적절한 매개 변수를 가져오도록 할 수 있습니다(`activityId`, `placementId` 및, `itemCount`), 유효한 을 생성합니다. [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 구현을 위한 개체입니다. <br/>정보: 의 기타 키-값 `decisions.json` 파일은 나중에 사용하기 위한 것이며 관련성이 없으며 현재 이 단원에서 자습서의 일부로 사용됩니다.
+
    * 는 두 개의 API를 호출합니다. [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
 1. 다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL 개인화]** > **[!UICONTROL EdgeOffersView]** 를 입력합니다. 다음 찾기 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 함수 및 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출,

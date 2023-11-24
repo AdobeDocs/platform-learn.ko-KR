@@ -4,9 +4,9 @@ description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 �
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '919'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
    let identityMap: IdentityMap = IdentityMap()
    
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
@@ -81,12 +81,14 @@ ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://expe
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. 설정 `IdentityItem` 이메일 및 CRM ID에 대한 개체입니다.
+   1. 설정 `IdentityItem` 이메일 및 CRM ID에 대한 개체입니다. Adobe은 Luma CRM ID와 같이 개인을 나타내는 ID를 기본 ID로 전송하는 것을 권장합니다. ID 맵에 개인 식별자(예: Luma CRM ID)가 포함된 경우 개인 식별자가 기본 ID가 됩니다. 그렇지 않으면 ECID가 기본 ID가 됩니다. 개인 ID를 기본 ID로 설정하면 후속 API 호출에서 프로필을 보다 효율적으로 조회할 수 있습니다.
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
       ```
+
+
 
    1. 다음 항목 추가 `IdentityItem` 에 대한 오브젝트 `IdentityMap` 개체.
 
