@@ -3,9 +3,9 @@ title: 모바일 앱에서 Adobe Experience Cloud 구현 자습서 개요
 description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는 방법을 알아봅니다. 이 튜토리얼에서는 샘플 Swift 앱에서의 Experience Cloud 애플리케이션 구현을 안내합니다.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
+source-git-commit: ebc283c041dcacd262dfa6cdb3b8a05a288e6664
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '844'
 ht-degree: 6%
 
 ---
@@ -81,6 +81,10 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 >
 >이 자습서의 일부로 스키마, 데이터 세트, ID 등을 만듭니다. 한 샌드박스에서 여러 사람이 이 자습서를 진행하는 경우 이러한 개체를 만들 때 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예: 추가 ` - <your name or initials>` 작성해야 하는 객체의 이름입니다.
 
+## 버전 기록
+
+* 2023년 11월 29일: 새로운 샘플 앱과 인앱 메시지, 의사 결정 관리 및 Adobe Target에 대한 새로운 단원으로 주요 검토.
+* 2022년 3월 9일: 최초 게시
 
 ## Luma 앱 다운로드
 
