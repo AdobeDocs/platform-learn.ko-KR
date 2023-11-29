@@ -3,10 +3,10 @@ title: 모바일 앱에서 Adobe Experience Cloud 구현 자습서 개요
 description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는 방법을 알아봅니다. 이 튜토리얼에서는 샘플 Swift 앱에서의 Experience Cloud 애플리케이션 구현을 안내합니다.
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 11%
+source-wordcount: '821'
+ht-degree: 6%
 
 ---
 
@@ -14,18 +14,14 @@ ht-degree: 11%
 
 Adobe Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Adobe Experience Cloud 애플리케이션을 구현하는 방법을 알아봅니다.
 
->[!INFO]
->
-> 이 튜토리얼은 2023년 11월 말에 새 샘플 모바일 앱을 사용하는 새 튜토리얼로 대체됩니다
+Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Experience Platform Edge Network를 통해 Adobe 애플리케이션 및 서드파티 서비스와 모두 상호 작용할 수 있도록 하는 클라이언트측 SDK입니다. 다음을 참조하십시오. [Adobe Experience Platform Mobile SDK 설명서](https://developer.adobe.com/client-sdks/home/) 를 참조하십시오.
 
-Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Experience Platform Edge Network를 통해 Adobe 애플리케이션 및 서드파티 서비스와 모두 상호 작용할 수 있도록 하는 클라이언트측 SDK입니다. 다음을 참조하십시오. [Adobe Experience Platform Mobile SDK 설명서](https://developer.adobe.com/client-sdks/documentation/) 를 참조하십시오.
-
-![빌드 설정](assets/data-collection-mobile-sdk.png)
+![아키텍처](assets/architecture.png)
 
 
-이 튜토리얼에서는 샘플 소매 앱인 Luma에서 Platform Mobile SDK를 구현하는 과정을 안내합니다. 다음 [Luma 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 에는 사실적인 구현을 구축할 수 있는 기능이 있습니다. 이 자습서를 완료하고 나면 보유한 모바일 앱에서 Platform Mobile SDK를 통해 모든 마케팅 솔루션 구현을 시작할 수 있습니다.
+이 튜토리얼에서는 샘플 소매 앱인 Luma에서 Platform Mobile SDK를 구현하는 과정을 안내합니다. 다음 [Luma 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 에는 사실적인 구현을 구축할 수 있는 기능이 있습니다. 이 자습서를 완료한 후에는 자체 모바일 앱에서 Mobile SDK Experience Platform을 통해 모든 마케팅 솔루션 구현을 시작할 준비가 되어 있어야 합니다.
 
-단원은 iOS용으로 설계되고 Swift로 작성되지만 많은 개념이 Android™에도 적용됩니다.
+단원은 iOS용으로 설계되고 Swift/SwiftUI로 작성되지만 많은 개념이 Android™에도 적용됩니다.
 
 이 자습서를 완료하면 다음 작업을 수행할 수 있습니다.
 
@@ -34,17 +30,22 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 * 모바일 태그 속성을 구성합니다.
 * Experience Platform 데이터 세트를 설정합니다(선택 사항).
 * 앱에 태그 확장 설치 및 구현
+* 에 Experience Cloud 매개 변수를 올바르게 전달 [웹 보기](web-views.md).
+* 을 사용하여 구현의 유효성 검사 [Adobe Experience Platform 보증](assurance.md).
 * 다음 Adobe Experience Cloud 애플리케이션/확장을 추가합니다.
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [라이프사이클 데이터 수집](lifecycle-data.md)
-   * [XDM을 통한 Adobe Analytics](analytics.md)
    * [동의](consent.md)
    * [신원](identity.md)
    * [프로필](profile.md)
-   * [Adobe Experience Platform](platform.md)
+   * [장소](places.md)
+   * [Analytics](analytics.md)
+   * [Experience Platform](platform.md)
    * [Journey Optimizer을 사용한 푸시 메시지](journey-optimizer-push.md)
-* 에 Experience Cloud 매개 변수를 올바르게 전달 [웹 보기](web-views.md).
-* 을 사용하여 구현의 유효성 검사 [Adobe Experience Platform 보증](assurance.md).
+   * [Journey Optimizer을 사용한 인앱 메시지](journey-optimizer-inapp.md)
+   * [Journey Optimizer을 통한 의사 결정 관리](journey-optimizer-offers.md)
+   * [Target](target.md)
+
 
 >[!NOTE]
 >
@@ -52,7 +53,7 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 
 ## 전제 조건
 
-이 단원들에서는 사용자에게 Adobe ID와 연습을 완료하는 데 필요한 권한이 있다고 가정합니다. 그렇지 않은 경우 Adobe 관리자에게 연락하여 액세스 권한을 요청해야 합니다.
+이 단원들에서는 사용자에게 Adobe ID와 연습을 완료하는 데 필요한 사용자 수준 권한이 있다고 가정합니다. 그렇지 않은 경우 Adobe 관리자에게 연락하여 액세스 권한을 요청해야 합니다.
 
 * 데이터 수집에서 다음을 수행해야 합니다.
    * **[!UICONTROL 플랫폼]**—권한 항목 **[!UICONTROL 모바일]**
@@ -65,27 +66,40 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
    * **[!UICONTROL Identity Management]**—id 네임스페이스를 관리하고 볼 수 있는 권한 항목입니다.
    * **[!UICONTROL 데이터 수집]**—데이터스트림을 관리하고 볼 수 있는 권한 항목입니다.
 
-   * Real-Time CDP, Journey Optimizer 또는 Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션의 고객인 경우 다음 기능도 갖추어야 합니다.
-      * **[!UICONTROL 데이터 관리]**—데이터 세트를 관리하고 확인하여 다음을 완료할 권한 항목 _선택적 플랫폼 연습_ ( 플랫폼 기반 애플리케이션에 대한 라이센스 필요).
+   * Real-Time CDP, Journey Optimizer 또는 Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션의 고객이며, 다음과 같은 관련 단원을 수행합니다.
+      * **[!UICONTROL 데이터 관리]**—데이터 세트를 관리하고 볼 수 있는 권한 항목입니다.
       * 개발 **샌드박스** 이 자습서에 사용할 수 있습니다.
+
+   * Journey Optimizer 단원의 경우 다음을 구성할 권한이 필요합니다. **푸시 알림 서비스** 및 를 **앱 표면**, a **여정**, a **메시지**, 및 **메시지 사전 설정**. [의사 결정 관리]를 위해서는 다음에 대한 적절한 권한이 필요합니다. **오퍼 관리** 및 **결정** 설명한 대로 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+
 * Adobe Analytics의 경우 다음 사항을 알고 있어야 합니다. **보고서 세트** 를 사용하여 이 자습서를 완료할 수 있습니다.
 
-모든 Experience Cloud 고객은 Mobile SDK를 배포하는 데 필요한 기능에 액세스할 수 있어야 합니다.
+* Adobe Target의 경우 활동을 만들고 활성화할 수 있는 권한이 있어야 합니다.
 
-또한 사용자가 익숙하다고 가정합니다. [!DNL Swift]. 전문가가 아니어도 단원을 완료할 수 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
-
-## Luma 앱 다운로드
-
-두 가지 버전의 샘플 앱을 다운로드할 수 있습니다.
-
-1. [비어 있음](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} - 이 자습서의 실습 연습을 완료하는 데 필요한 Experience Cloud 코드가 없는 버전
-1. [전체 구현](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} - 참조용으로 전체 Experience Cloud 구현이 포함된 버전입니다.
-
-그럼 시작해 보겠습니다!
-
-
-다음: **[XDM 스키마 만들기](create-schema.md)**
 
 >[!NOTE]
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>이 자습서의 일부로 스키마, 데이터 세트, ID 등을 만듭니다. 한 샌드박스에서 여러 사람이 이 자습서를 진행하는 경우 이러한 개체를 만들 때 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예: 추가 ` - <your name or initials>` 작성해야 하는 객체의 이름입니다.
+
+
+## Luma 앱 다운로드
+
+두 가지 버전의 샘플 앱을 다운로드할 수 있습니다. 두 버전 모두 다운로드/클론 복제 가능 [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). 다음 두 개의 폴더를 찾을 수 있습니다.
+
+
+1. [시작](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 이 자습서에서 실습형 연습을 완료하는 데 사용해야 하는 대부분의 Experience Platform Mobile SDK 코드에 대해 코드가 없거나 자리 표시자 코드가 있는 프로젝트.
+1. [완료](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 전체 구현이 포함된 버전을 참조할 수 있습니다.
+
+
+>[!NOTE]
+>
+>iOS을 플랫폼으로 사용하고 [!DNL Swift] 프로그래밍 언어로, [!DNL SwiftUI] UI 프레임워크 및 [!DNL Xcode] 를 IDE(통합 개발 환경)로 사용하십시오. 그러나 설명된 구현 개념의 대부분은 다른 개발 플랫폼에 대해 유사합니다. 많은 사용자가 이전 iOS/Swift(UI) 경험을 거의 또는 전혀 사용하지 않고 이미 이 자습서를 성공적으로 완료했습니다. 전문가가 아니어도 단원을 완료할 수는 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
+
+
+그럼 시작해 보겠습니다!
+
+>[!SUCCESS]
+>
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
+다음: **[XDM 스키마 만들기](create-schema.md)**
