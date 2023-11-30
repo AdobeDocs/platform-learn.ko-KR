@@ -3,7 +3,7 @@ title: Platform Mobile SDK로 수집된 데이터를 Adobe Analytics에 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하고 매핑하는 방법을 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 29b9771d81395676547b93ab3a1475a6a69c763f
+source-git-commit: 1025e7a7f0e8f994ecc05ddb5362a66c8d89a978
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 3%
@@ -81,7 +81,7 @@ Edge Network에서 Adobe Analytics으로 XDM 데이터를 전송하려면 의 �
 결과 위치:
 
 ```
-s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
+s.products = ";5829,1,49.99;9841,3,30.00"
 ```
 
 >[!NOTE]
