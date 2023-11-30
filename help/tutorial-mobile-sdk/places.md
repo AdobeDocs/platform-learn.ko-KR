@@ -2,7 +2,7 @@
 title: Platform Mobile SDK로 위치 사용
 description: 모바일 앱에서 Places geolocation 서비스를 사용하는 방법을 알아봅니다.
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 3%
@@ -182,7 +182,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 
 1. 다음에서 **[!UICONTROL 규칙 만들기]** 화면에서 규칙 이름을 입력합니다(예: ). `POI - Exit`.
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래 **[!UICONTROL 이벤트]**.
-   1. 선택 **[!UICONTROL 위치]** 다음에서 **[!UICONTROL 확장]** 나열 및 선택 **[!UICONTROL POI 입력]** 다음에서 **[!UICONTROL 이벤트 유형]** 목록을 표시합니다.
+   1. 선택 **[!UICONTROL 위치]** 다음에서 **[!UICONTROL 확장]** 나열 및 선택 **[!UICONTROL POI 종료]** 다음에서 **[!UICONTROL 이벤트 유형]** 목록을 표시합니다.
    1. **[!UICONTROL 변경사항 유지]**&#x200B;를 선택합니다.
 1. 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래 **[!UICONTROL 작업]**.
    1. 선택 **[!UICONTROL 모바일 코어]** 출처: **[!UICONTROL 확장]** 목록, 선택 **[!UICONTROL 데이터 첨부]** 출처: **[!UICONTROL 작업 유형]** 목록을 표시합니다.

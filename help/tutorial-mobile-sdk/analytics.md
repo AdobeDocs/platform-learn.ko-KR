@@ -3,10 +3,10 @@ title: Platform Mobile SDK로 수집된 데이터를 Adobe Analytics에 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하고 매핑하는 방법을 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 29b9771d81395676547b93ab3a1475a6a69c763f
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 2%
+source-wordcount: '931'
+ht-degree: 3%
 
 ---
 
@@ -86,7 +86,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 
 >[!NOTE]
 >
->현재 `productListItems[N].SKU` 자동 매핑에서 무시됩니다.
+>`productListItems[].SKU` 및 `productListItems[].name`에 모두 데이터가 포함되어 있으면 `productListItems[].SKU`의 값이 사용됩니다. 다음을 참조하십시오 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) 추가 정보.
 
 
 ### 예 #2 - scAdd
