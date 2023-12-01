@@ -6,7 +6,7 @@ role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
 jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 7edf8fc46943ae2f1e6e2e20f4d589d7959310c8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 3%
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ## 사용 사례 및 데이터 {#use-cases-data}
 
-첫 번째 단계는 클라이언트측 공급업체 태그로 구현된 사용 사례를 정의하는 것입니다. 예를 들어 Facebook(메타) 픽셀을 생각해 보십시오. 사이트에서 로 이동 [Facebook 전환 API](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) 이벤트 전달 확장을 사용하면 특정 사용 사례를 먼저 문서화할 수 있습니다.
+첫 번째 단계는 클라이언트측 공급업체 태그로 구현된 사용 사례를 정의하는 것입니다. 예를 들어 Facebook(메타) 픽셀을 생각해 보십시오. 사이트에서 로 이동 [메타 전환 API](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) 이벤트 전달 확장을 사용하면 특정 사용 사례를 먼저 문서화할 수 있습니다.
 
 현재 클라이언트측 공급업체 코드의 경우:
 
