@@ -2,8 +2,9 @@
 title: 모바일 앱에서 Adobe Experience Cloud 구현 자습서 개요
 description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는 방법을 알아봅니다. 이 튜토리얼에서는 샘플 Swift 앱에서의 Experience Cloud 애플리케이션 구현을 안내합니다.
 recommendations: noDisplay,catalog
+last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: ebc283c041dcacd262dfa6cdb3b8a05a288e6664
+source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 6%
