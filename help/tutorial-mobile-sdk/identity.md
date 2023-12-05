@@ -2,11 +2,12 @@
 title: Mobile SDK를 사용하여 모바일 앱에서 ID 데이터 수집
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 4%
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +35,7 @@ Adobe Experience Platform Identity Service를 사용하면 디바이스와 시�
 
 ## 사용자 정의 ID 네임스페이스 설정
 
-ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR) id가 연관되는 컨텍스트의 지표 역할을 합니다. 예를 들어 `name@email.com` 값은 이메일 주소로, `443522` 값은 숫자 CRM ID로 구분합니다.
+ID 네임스페이스는 의 구성 요소입니다. [ID 서비스](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR) id가 연관되는 컨텍스트의 지표 역할을 합니다. 예를 들어, 다음 값은 구별합니다 `name@email.com` 이메일 주소 또는 `443522` 숫자 CRM ID로.
 
 >[!NOTE]
 >

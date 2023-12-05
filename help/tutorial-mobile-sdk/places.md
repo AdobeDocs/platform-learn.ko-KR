@@ -1,10 +1,11 @@
 ---
 title: Platform Mobile SDK로 위치 사용
 description: 모바일 앱에서 Places geolocation 서비스를 사용하는 방법을 알아봅니다.
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1588'
 ht-degree: 3%
 
 ---
@@ -60,7 +61,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. 다운로드 [Luma POI ZIP 파일](assets/luma_pois.csv.zip) 컴퓨터의 위치에 압축을 풉니다.
 1. 다음에서 **[!UICONTROL 위치 가져오기]** 대화 상자, 추출된 항목 드래그 앤 드롭 `luma_pois.csv` 에 대한 파일 **[!UICONTROL CSV 파일 선택 - 파일을 끌어서 놓습니다.]**. 다음이 표시됩니다. **[!UICONTROL 유효성 확인 성공]** - **[!UICONTROL CSV 파일의 유효성을 검사했습니다.]**.
 1. 선택 **[!UICONTROL 가져오기 시작]**. 다음이 표시됩니다. **[!UICONTROL 성공]** - **[!UICONTROL 6개의 새 POI를 추가했습니다.]**.
-1. 선택 **[!UICONTROL 완료]**.
+1. **[!UICONTROL 완료]**&#x200B;를 선택합니다.
 1. 위치 **[!UICONTROL POI 관리]**, 6개의 새로운 Luma 스토어가 목록에 추가됩니다. 다음 간을 전환할 수 있습니다. ![목록](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) 목록 및 ![맵](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) 맵 보기입니다.
    ![위치 목록](assets/places-list.png).
 

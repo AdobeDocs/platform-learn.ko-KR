@@ -2,15 +2,16 @@
 title: Platform Mobile SDK 구현에 대한 보증 설정
 description: 모바일 앱에서 Assurance 확장을 구현하는 방법을 알아봅니다.
 feature: Mobile SDK,Assurance
+jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 7%
+source-wordcount: '925'
+ht-degree: 6%
 
 ---
 
-# Assurance 설정
+# 보증 설정
 
 모바일 앱에서 Adobe Experience Platform Assurance를 설정하는 방법을 알아봅니다.
 
@@ -30,7 +31,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 * 조직에 액세스 권한이 있는지 확인합니다(없는 경우 요청).
 * 기본 URL을 설정합니다.
 * 필요한 iOS 관련 코드를 추가합니다.
-* 세션에 연결.
+* 세션에 연결합니다.
 
 ## 액세스 확인
 
@@ -132,7 +133,7 @@ Xcode에서:
 1. 데이터 수집 UI로 이동합니다.
 1. 선택 **[!UICONTROL 보증]** 왼쪽 레일에서.
 1. 선택 **[!UICONTROL 세션 만들기]**.
-1. 선택 **[!UICONTROL 시작]**.
+1. **[!UICONTROL 시작]**&#x200B;을 선택합니다.
 1. 다음을 제공합니다. **[!UICONTROL 세션 이름]** 과 같은 `Luma Mobile App Session` 및 **[!UICONTROL 기본 URL]**: Xcode에 입력한 URL 체계, 그 뒤에 오는 `://` 예: `lumatutorialswiftui://`
 1. **[!UICONTROL 다음]**을 선택합니다.
    ![보증 생성 세션](assets/assurance-create-session.png)

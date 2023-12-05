@@ -3,11 +3,12 @@ title: Platform Mobile SDK를 사용하여 Experience Platform에 데이터 전�
 description: Experience Platform으로 데이터를 전송하는 방법에 대해 알아봅니다.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
+jira: KT-14637
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 5%
+source-wordcount: '1032'
+ht-degree: 4%
 
 ---
 

@@ -1,10 +1,11 @@
 ---
 title: Platform Mobile SDK를 사용하여 모바일 앱에서 이벤트 데이터 추적
 description: 모바일 앱에서 이벤트 데이터를 추적하는 방법에 대해 알아봅니다.
+jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---

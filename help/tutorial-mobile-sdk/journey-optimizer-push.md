@@ -4,11 +4,12 @@ description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 모
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 3%
+source-wordcount: '2556'
+ht-degree: 1%
 
 ---
 
@@ -31,9 +32,9 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 * Adobe Experience Platform용 앱을 설정합니다.
 * Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
    * 앱 표면을 만듭니다.
-   * 여정 만들기.
-   * 메시지 만들기.
-   * 메시지 사전 설정 만들기.
+   * 여정 만들기
+   * 메시지를 만듭니다.
+   * 메시지 사전 설정을 만듭니다.
 * **유료 Apple 개발자 계정** 인증서, 식별자 및 키를 만들 수 있는 충분한 액세스 권한.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
 
@@ -70,7 +71,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 1. 다음을 제공합니다. **[!UICONTROL 키 이름]**.
 1. 다음 항목 선택 **[!UICONTROL Apple 푸시 알림 서비스] (APNs)** 확인란.
-1. 선택 **[!UICONTROL 계속]**.
+1. **[!UICONTROL 계속]**을 선택합니다.
    ![새 키 구성](assets/mobile-push-apple-dev-config-key.png)
 1. 구성을 검토하고 다음을 선택합니다. **[!UICONTROL 등록]**.
 1. 다운로드 `.p8` 개인 키. 이 메서드는 이 단원의 뒷부분에서 앱 표면 구성에 사용됩니다.
@@ -87,7 +88,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    ![앱 표면 홈](assets/push-app-surface.png)
 1. 입력 **[!UICONTROL 이름]** 예를 들어 구성의 경우 `Luma App Tutorial`  .
 1. 출처: **[!UICONTROL 모바일 애플리케이션 구성]**, 선택 **[!UICONTROL Apple iOS]**.
-1. 에 모바일 앱 번들 ID 입력 **[!UICONTROL 앱 ID (iOS 번들 ID)]** 필드. 예,  `com.adobe.luma.tutorial.swiftui`.
+1. 에 모바일 앱 번들 ID 입력 **[!UICONTROL 앱 ID (iOS 번들 ID)]** 필드. 예를 들어,  `com.adobe.luma.tutorial.swiftui`.
 1. 전환 **[!UICONTROL 푸시 자격 증명]** 자격 증명을 추가하려면 전환합니다.
 1. 을(를) 끌어다 놓기 `.p8` **Apple 푸시 알림 인증 키** 파일.
 1. 다음을 제공합니다 **[!UICONTROL 키 ID]**&#x200B;를 만드는 동안 할당된 10자 문자열 `p8` 인증 키. 다음 아래에서 찾을 수 있습니다 **[!UICONTROL 키]** 의 탭 **인증서, 식별자 및 프로필** Apple 개발자 포털 페이지의 페이지입니다. 참조: [개인 키 만들기](#create-a-private-key).

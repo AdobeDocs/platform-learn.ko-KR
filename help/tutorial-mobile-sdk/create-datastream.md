@@ -2,11 +2,12 @@
 title: Platform Mobile SDK 구현을 위한 데이터스트림 구성
 description: Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Datastreams
+jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 8%
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 8%
 
 Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅니다.
 
-데이터 스트림은 Platform Edge Network의 서버측 구성입니다. 데이터 스트림은 Platform Edge Network로 들어오는 데이터가 Adobe Experience Cloud 애플리케이션 및 서비스로 적절하게 라우팅되도록 합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ko-KR) 또는 이 [비디오](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=ko).
+데이터 스트림은 Platform Edge Network의 서버측 구성입니다. 데이터 스트림은 Platform Edge Network로 들어오는 데이터가 Adobe Experience Cloud 애플리케이션 및 서비스로 적절하게 라우팅되도록 합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) 또는 이 [비디오](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=ko).
 
 ![아키텍처](assets/architecture.png)
 
@@ -28,7 +29,7 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
 
 * 데이터 스트림을 사용할 시기를 알 수 있습니다.
 * 데이터 스트림을 만듭니다.
-* 데이터스트림 구성.
+* 데이터 스트림을 구성합니다.
 
 ## 데이터 스트림 만들기
 
@@ -44,7 +45,7 @@ Experience Platform에서 데이터 스트림을 만드는 방법을 알아봅�
 
    >[!NOTE]
    >
-   >최종 미리 알림: 단일 샌드박스에 여러 사람과 함께 이 자습서를 진행하거나 공유 계정을 사용하는 경우 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예를 들어 `Luma Mobile App Event Dataset` 대신 `Luma Mobile App Event Dataset - Joe Smith`을 사용합니다. 다음에서 참고 참조: [개요](overview.md).
+   >최종 미리 알림: 단일 샌드박스에 여러 사람과 함께 이 자습서를 진행하거나 공유 계정을 사용하는 경우 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예를 들어, 대신 `Luma Mobile App Event Dataset`, 사용 `Luma Mobile App Event Dataset - Joe Smith`. 다음에서 참고 참조: [개요](overview.md).
 
 1. 의 이전 단원에서 만든 스키마를 선택합니다 **이벤트 스키마** 목록을 표시합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
@@ -101,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->조직에서 사용하는 각 서비스를 활성화하면 모바일 앱에서 수집한 데이터를 어디에서나 사용할 수 있습니다. 데이터 스트림 설정에 대한 자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=ko-KR).
+>조직에서 사용하는 각 서비스를 활성화하면 모바일 앱에서 수집한 데이터를 어디에서나 사용할 수 있습니다. 데이터 스트림 설정에 대한 자세한 내용은 설명서를 참조하십시오 [여기](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 자체 앱에서 Platform Mobile SDK를 구현할 때 궁극적으로 세 개의 데이터 스트림을 만들어 세 개의 태그 환경(개발, 스테이지 및 프로덕션)에 매핑해야 합니다. Adobe Real-time Customer Data Platform 또는 Adobe Journey Optimizer과 같은 플랫폼 기반 애플리케이션과 함께 Platform Mobile SDK를 사용하는 경우 적절한 샌드박스에서 이러한 데이터스트림을 만들어야 합니다.
 

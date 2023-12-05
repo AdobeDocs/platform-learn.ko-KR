@@ -2,11 +2,12 @@
 title: Platform Mobile SDK 구현을 위한 XDM 스키마 만들기
 description: 모바일 앱 이벤트에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 8%
+source-wordcount: '1414'
+ht-degree: 4%
 
 ---
 
@@ -106,7 +107,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
    >[!NOTE]
    >
-   >단일 샌드박스에 여러 사람이 있는 이 자습서를 진행하거나 공유 계정을 사용하는 경우 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예를 들어 `Luma Mobile App Event Schema` 대신 `Luma Mobile App Event Schema - Joe Smith`을 사용합니다. 다음에서 참고 참조: [개요](overview.md).
+   >단일 샌드박스에 여러 사람이 있는 이 자습서를 진행하거나 공유 계정을 사용하는 경우 이름 지정 규칙의 일부로 ID를 추가하거나 앞에 추가하는 것이 좋습니다. 예를 들어, 대신 `Luma Mobile App Event Schema`, 사용 `Luma Mobile App Event Schema - Joe Smith`. 다음에서 참고 참조: [개요](overview.md).
 
 1. 선택 **[!UICONTROL 완료]** 마법사를 마칩니다.
 
@@ -117,7 +118,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
    ![필드 그룹 추가](assets/add-field-group.png)
 
-1. `Consumer Experience Event`을 검색합니다. 
+1. 검색 대상 `Consumer Experience Event`.
 
 1. 선택 ![미리 보기](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Preview_18_N.svg) 필드 그룹을 선택하기 전에 필드를 미리 보거나 설명에 대한 자세한 내용을 읽어 보십시오.
 

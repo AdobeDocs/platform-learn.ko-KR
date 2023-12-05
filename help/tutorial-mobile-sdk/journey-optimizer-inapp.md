@@ -4,11 +4,12 @@ description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 인
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 5%
+source-wordcount: '1434'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 5%
 
 Experience Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 인앱 메시지를 만드는 방법을 알아봅니다.
 
-Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자에게 인앱 메시지를 보낼 수 있습니다. Journey Optimizer의 캠페인은 다양한 채널을 사용하여 특정 대상에게 일회성 콘텐츠를 전달하는 데 사용됩니다. 캠페인을 사용하면 작업을 동시에 즉시 또는 지정한 일정에 따라 수행합니다. 여정 사용 시( [Journey Optimizer 푸시 알림](journey-optimizer-push.md) 단원), 작업이 순서대로 실행됩니다.
+Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자에게 인앱 메시지를 보낼 수 있습니다. Journey Optimizer의 캠페인은 다양한 채널을 사용하여 특정 대상에게 일회성 콘텐츠를 전달하는 데 사용됩니다. 캠페인을 사용하면 작업을 동시에 즉시 또는 지정된 일정에 따라 수행합니다. 여정 사용 시( [Journey Optimizer 푸시 알림](journey-optimizer-push.md) 단원), 작업이 순서대로 실행됩니다.
 
 ![아키텍처](assets/architecture-ajo.png)
 
@@ -32,7 +33,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Adobe Experience Platform용 앱을 설정합니다.
 * Journey Optimizer에 대한 액세스 및 설명된 대로 충분한 권한 [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
-   * 캠페인 관리.
+   * 캠페인을 관리합니다.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
 
 
@@ -61,7 +62,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
    ![앱 표면 홈](assets/push-app-surface.png)
 1. 입력 **[!UICONTROL 이름]** 예를 들어 구성의 경우 `Luma App Tutorial`  .
 1. 출처: **[!UICONTROL 모바일 애플리케이션 구성]**, 선택 **[!UICONTROL Apple iOS]**.
-1. 에 모바일 앱 번들 ID 입력 **[!UICONTROL 앱 ID (iOS 번들 ID)]** 필드. 예,  `com.adobe.luma.tutorial.swiftui`.
+1. 에 모바일 앱 번들 ID 입력 **[!UICONTROL 앱 ID (iOS 번들 ID)]** 필드. 예를 들어,  `com.adobe.luma.tutorial.swiftui`.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
    ![앱 표면 구성](assets/push-app-surface-config-inapp.png)
@@ -166,7 +167,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 1. 선택 **[!UICONTROL 캠페인 만들기]**.
 1. 다음에서 **[!UICONTROL 캠페인 만들기]** 화면:
    1. 선택 **[!UICONTROL 인앱 메시지]** 에서 앱 표면 선택 **[!UICONTROL 앱 표면]** 목록, 예 **[!DNL Luma Mobile App]**.
-   1. **[!UICONTROL 만들기]**를 선택합니다
+   1. 선택 **[!UICONTROL 만들기]**
       ![캠페인 속성](assets/ajo-campaign-properties.png)
 1. 캠페인 정의 화면의 **[!UICONTROL 속성]**, 를 입력합니다. **[!UICONTROL 이름]** 예를 들어 캠페인용 `Luma - In-App Messaging Campaign`, 및 **[!UICONTROL 설명]**, 예 `In-app messaging campaign for Luma app`.
    ![캠페인 이름](assets/ajo-campaign-properties-name.png)

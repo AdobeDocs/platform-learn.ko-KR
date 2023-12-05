@@ -2,11 +2,12 @@
 title: Platform Mobile SDK로 수집된 데이터를 Adobe Analytics에 매핑
 description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집하고 매핑하는 방법을 알아봅니다.
 solution: Data Collection,Experience Platform,Analytics
+jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 1025e7a7f0e8f994ecc05ddb5362a66c8d89a978
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 3%
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
@@ -57,7 +58,7 @@ Edge Network에서 Adobe Analytics으로 XDM 데이터를 전송하려면 의 �
 
 ### 예 #1 - s.products
 
-좋은 예는 다음과 같습니다. [products 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=ko-KR) 처리 규칙을 사용하여 채울 수 없습니다. XDM 구현을 사용하면에서 필요한 모든 데이터를 전달합니다 `productListItems` 및 `s.products` Analytics 매핑을 통해 자동으로 채워집니다.
+좋은 예는 다음과 같습니다. [products 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) 처리 규칙을 사용하여 채울 수 없습니다. XDM 구현을 사용하면에서 필요한 모든 데이터를 전달합니다 `productListItems` 및 `s.products` Analytics 매핑을 통해 자동으로 채워집니다.
 
 이 개체:
 
@@ -86,7 +87,7 @@ s.products = ";5829,1,49.99;9841,3,30.00"
 
 >[!NOTE]
 >
->`productListItems[].SKU` 및 `productListItems[].name`에 모두 데이터가 포함되어 있으면 `productListItems[].SKU`의 값이 사용됩니다. 다음을 참조하십시오 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) 추가 정보.
+>If `productListItems[].SKU` 및 `productListItems[].name` 둘 다 데이터를 포함합니다. `productListItems[].SKU` 를 사용합니다. 다음을 참조하십시오 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) 추가 정보.
 
 
 ### 예 #2 - scAdd

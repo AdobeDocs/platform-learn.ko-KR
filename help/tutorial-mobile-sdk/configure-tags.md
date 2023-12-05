@@ -2,11 +2,12 @@
 title: Platform Mobile SDK 구현에 대한 태그 속성 구성
 description: 에서 태그 속성을 구성하는 방법을 알아봅니다 [!UICONTROL 데이터 수집] 인터페이스.
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 7%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -35,11 +36,11 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 1. 데이터 수집 인터페이스에서 새 모바일 태그 속성을 만듭니다.
    1. 선택 **[!UICONTROL 태그]** 왼쪽 탐색.
-   1. **[!UICONTROL 새 속성]**을 선택합니다
+   1. 선택 **[!UICONTROL 새 속성]**
       ![태그 속성 만들기](assets/tags-new-property.png).
    1. 의 경우 **[!UICONTROL 이름]**, 입력 `Luma Mobile App Tutorial`.
    1. 의 경우 **[!UICONTROL 플랫폼]**, 선택 **[!UICONTROL 모바일]**.
-   1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+   1. 선택  **[!UICONTROL 저장]**.
 
       ![태그 속성 구성](assets/tags-property-config.png)
 
@@ -87,7 +88,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 1. 사용 ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 검색]** 필드 찾기 **신원** 확장명.
 
-   1. `Identity`을 검색합니다. 
+   1. 검색 대상 `Identity`.
 
    2. 다음 항목 선택 **[!UICONTROL 신원]** 확장명.
 

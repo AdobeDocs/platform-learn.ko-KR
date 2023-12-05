@@ -4,10 +4,11 @@ description: Platform Mobile SDK 및 Adobe Journey Optimizer 의사 결정 관�
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2676'
+source-wordcount: '2470'
 ht-degree: 2%
 
 ---
@@ -251,7 +252,7 @@ Assurance에서 설정을 확인하려면:
    1. 선택 **[!UICONTROL 모바일 JSON]** 출처: **[!UICONTROL 배치]** 목록을 표시합니다.
    1. 다음에서 **[!UICONTROL 평가 기준]** 타일, 선택 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**.
       1. 다음에서 **[!UICONTROL 오퍼 컬렉션 추가]** 대화 상자에서 오퍼 컬렉션을 선택합니다. 예: **[!DNL Luma - Mobile App Collection]**.
-      1. 선택 **[!UICONTROL 추가]**.
+      1. **[!UICONTROL 추가]**를 선택합니다.
          ![결정 - 컬렉션 선택](assets/ajo-decision-selectcollection.png)
    1. 다음을 확인합니다. **[!UICONTROL 없음]** 다음에 대해 선택됨: **[!UICONTROL 자격 요건]**, 및 **[!UICONTROL 오퍼 우선 순위]** 이(가) (으)로 선택됨 **[!UICONTROL 순위 방법]**.
    1. **[!UICONTROL 다음]**을 선택합니다.

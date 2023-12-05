@@ -4,11 +4,12 @@ description: Platform Mobile SDK 및 Adobe Target과 함께 모바일 앱에서 
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 2%
 
 ---
 
@@ -162,14 +163,14 @@ Assurance에서 설정을 확인하려면:
 
 1. 다음에서 **[!DNL Targeting]** 단계: A/B 테스트 설정을 검토합니다. 기본적으로 두 오퍼는 모두 모든 방문자에게 동일하게 할당됩니다. 계속하려면 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-   ![](assets/taget-targeting.png) 타겟팅 
+   ![타겟팅](assets/taget-targeting.png)
 
 1. 다음에서 **[!UICONTROL 목표 및 설정]** 단계:
 
    1. 제목 없는 활동의 이름을 (예: )으로 변경합니다. `Luma Mobile SDK Tutorial - A/B Test Example`.
    1. 다음을 입력하십시오. **[!UICONTROL 목표]** A/B 테스트의 경우 예 `A/B Test for Luma mobile app tutorial`.
    1. 선택 **[!UICONTROL 전환]**, **[!UICONTROL mbox 확인함]** 다음에서 **[!UICONTROL 목표 지표]** > **[!UICONTROL 내 기본 목표]** 타일을 지정하고 위치(mbox) 이름을 입력합니다(예: ) `luma-mobileapp-abtest`.
-   1. 선택 **[!UICONTROL 저장 및 닫기]**.
+   1. **[!UICONTROL 저장 후 닫기]**&#x200B;를 선택합니다.
 
       ![목표 설정](assets/target-goals.png)
 
