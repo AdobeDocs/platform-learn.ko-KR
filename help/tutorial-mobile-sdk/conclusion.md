@@ -2,11 +2,12 @@
 title: Platform Mobile SDK 자습서를 완료한 후 종료 및 다음 단계
 description: 자습서를 완료한 후 수행할 작업
 recommendations: display,noCatalog
+jira: KT-14642
 exl-id: 69db6cf3-0d5d-4864-aac2-e5e1aea4c02e
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 7%
+source-wordcount: '438'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 7%
 당신이 이룬 모든 것을 빨리 검토해 봅시다. 다음을 보유하고 있습니다.
 
 * 표준 및 사용자 지정 필드 그룹을 사용하여 스키마를 만들었습니다.
-* 데이터스트림 설정.
+* 데이터 스트림을 설정합니다.
 * 모바일 태그 속성을 구성했습니다.
 * 앱에 태그 확장을 설치 및 구현했습니다.
 * 앱에 다음 기능을 구현했습니다.

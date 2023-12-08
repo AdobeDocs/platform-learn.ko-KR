@@ -5,17 +5,17 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 34%
+source-wordcount: '847'
+ht-degree: 16%
 
 ---
 
 
 # Adobe Experience Platform 자습서 {#tutorials}
 
-+ [Platform 자습서](/help/platform/overview.md)
++ [플랫폼 Tutorials](/help/platform/overview.md)
 + 플랫폼 소개 {#intro-to-platform}
    + [Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [배경: Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
@@ -35,14 +35,14 @@ ht-degree: 34%
    + [Marketo Engage을 사용하여 캠페인 오케스트레이션](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [시작하기: 데이터 설계자 및 데이터 엔지니어](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md)
-+ [ Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
++ [Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
 + 관리 {#admin}
    + [경고 사용](/help/platform/admin/use-alerts.md)
    + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
    + [샌드박스 간 개체 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [사용자 추가](/help/platform/admin/add-users.md)
+   + [제품 관리자 추가](/help/platform/admin/add-product-administrators.md)
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
-   + [Admin Console](/help/platform/admin/admin-console.md)
-   + [제품 프로필 관리](/help/platform/admin/managing-product-profiles.md)
 + 대상 및 세분화 {#audiences}
    + [Audience Portal 및 구성 소개](audiences/introduction-to-audience-portal-and-composition.md)
    + [대상자 업로드](audiences/upload-audiences.md)
@@ -159,6 +159,7 @@ ht-degree: 34%
    + [계정 프로필 보기](/help/platform/profiles/view-account-profiles.md)
    + [병합 정책 만들기](/help/platform/profiles/create-merge-policies.md)
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
+   + [계산된 속성 만들기](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
    + [업데이트를 사용하여 특정 속성 업데이트](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 개인정보 보호 및 보안 {#privacy}
    + [Privacy Service 소개](/help/platform/privacy/introduction-to-privacy-services.md)
@@ -166,8 +167,8 @@ ht-degree: 34%
    + [개인 정보 JavaScript 라이브러리](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics의 개인 정보 레이블](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy Service API 시작하기](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [PRIVACY SERVICE UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [PRIVACY SERVICE API](/help/platform/privacy/using-the-privacy-service-api.md)
    + [개인정보 보호 이벤트 구독](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [고객 관리 키 설정](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [책임 있는 고객 데이터 관리를 위한 10가지 고려 사항](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
@@ -182,7 +183,7 @@ ht-degree: 34%
    + [데이터 사용 패턴](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [쿼리 실행](/help/platform/queries/run-queries.md)
    + [쿼리 결과에서 데이터 세트 생성](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
-   + [Tableau](/help/platform/queries/psql-client-tableau.md)
+   + [타블로](/help/platform/queries/psql-client-tableau.md)
    + [데이터 분석 및 시각화](/help/platform/queries/analyze-and-visualize.md)
    + [BI 도구를 사용하여 대시보드 빌드](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [고객 데이터 충전](/help/platform/queries/recharge-your-customer-data.md)
@@ -210,8 +211,8 @@ ht-degree: 34%
    + [Marketo에서 데이터 수집](/help/platform/sources/ingest-data-from-marketo.md)
    + [클라우드 스토리지에서 데이터 수집](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [CRM에서 데이터 수집](/help/platform/sources/ingest-data-from-crm.md)
-   + [데이터베이스로부터 데이터 수집](/help/platform/sources/ingest-data-from-databases.md)
-   + [HTTP API로 데이터 스트리밍](/help/platform/sources/streaming-ingestion-http-api.md)
+   + [데이터베이스에서 데이터 수집](/help/platform/sources/ingest-data-from-databases.md)
+   + [HTTP API를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-http-api.md)
    + [소스 커넥터를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [문제 해결: SFTP 커넥터](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Experience Cloud 통합 {#experience-cloud}
