@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '849'
 ht-degree: 16%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 16%
    + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
    + [샌드박스 간 개체 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [사용자 추가](/help/platform/admin/add-users.md)
+   + [개발자 추가](/help/platform/admin/add-developers.md)
    + [제품 관리자 추가](/help/platform/admin/add-product-administrators.md)
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
 + 대상 및 세분화 {#audiences}
