@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 4d1a0ff598b822e2228d8719488b9dbb91c9870d
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 Real-time Customer Data Platform 및 Journey Optimizer과 같은 Adobe Experience Platform 기반 애플리케이션에 개발자를 추가하는 방법을 알아봅니다. 개발자는 Admin Console에서 처음 추가됩니다. 개발자는 개발자 콘솔에서 플랫폼 프로젝트를 만든 후 API 자격 증명에 플랫폼 또는 Journey Optimizer 인터페이스에서 권한이 할당됩니다. 자세한 내용은 다음을 참조하십시오. [액세스 제어 설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko).
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
 
 >[!ADMIN]
 >
