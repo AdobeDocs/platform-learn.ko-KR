@@ -1,24 +1,20 @@
 ---
-title: 태그 개요 및 속성 만들기(이전 Launch)
-description: 데이터 수집의 태그에 대한 간단한 개요를 살펴보고, 속성을 생성하여 사이트에 코드를 보관하는 방법에 대해 알아봅니다.
-original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
+title: 태그 속성 만들기
+description: 웹 사이트에서 마케팅 태그를 관리하기 위해 태그 속성을 만드는 방법을 알아봅니다.
 feature: Tags
 level: Beginner
 jira: KT-3524
+last-substantial-update: 2023-12-15T00:00:00Z
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 65a1b8a042fa4330a1aed8bdcf319312c76eac22
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 72%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
 
-# 태그 개요 및 속성 만들기
+# 태그 속성 만들기
 
-데이터 수집의 태그에 대한 간단한 개요를 살펴보고, 속성을 생성하여 사이트에 코드를 보관하는 방법에 대해 알아봅니다.
-
->[!NOTE]
->
-> 이제 Launch가 **[!DNL tags]**
+웹 사이트에서 마케팅 태그를 관리하기 위해 태그 속성을 만드는 방법을 알아봅니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)
