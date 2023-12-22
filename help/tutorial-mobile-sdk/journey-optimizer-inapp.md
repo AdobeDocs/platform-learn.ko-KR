@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1447'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 1. 데이터 스트림 구성을 저장하려면 을 선택합니다. **[!UICONTROL 저장]**.
 
 
-   ![AEP 데이터스트림 구성](assets/datastream-aep-configuration.png)
+   ![AEP 데이터스트림 구성](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Journey Optimizer 태그 확장 설치
@@ -91,16 +91,9 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 1. 선택 **[!UICONTROL 카탈로그]**.
 1. 검색 **[!UICONTROL Adobe Journey Optimizer]** 확장명.
 1. 확장을 설치합니다.
-1. 다음에서 **[!UICONTROL 확장 설치]** 대화 상자
-   1. 환경 선택(예: ) **[!UICONTROL 개발]**.
-   1. 다음 항목 선택 **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 데이터 세트 **[!UICONTROL 이벤트 데이터 세트]** 목록을 표시합니다.
-   1. 선택 **[!UICONTROL 라이브러리 및 빌드에 저장]**.
-      ![AJO 확장 설정](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->표시되지 않으면 `AJO Push Tracking Experience Event Dataset` 선택 사항으로 고객 지원 센터에 문의하십시오.
->
+날짜 *전용* 앱에서 인앱 메시지 사용 **[!UICONTROL 확장 설치]** 또는 **[!UICONTROL 확장 구성]**&#x200B;를 지정하는 경우 아무것도 구성할 필요가 없습니다. 하지만 이미 다음을 따랐다면 [푸시 알림](journey-optimizer-push.md) 튜토리얼의 단원에서 다음에 대해 해당 내용을 보게 됩니다. **[!UICONTROL 개발]** 환경, **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 데이터 세트가 다음에서 선택됨: **[!UICONTROL 이벤트 데이터 세트]** 목록을 표시합니다.
+
 
 ### 앱에서 Journey Optimizer 구현
 

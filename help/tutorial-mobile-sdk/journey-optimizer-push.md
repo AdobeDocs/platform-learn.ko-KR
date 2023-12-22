@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2584'
 ht-degree: 1%
 
 ---
@@ -333,6 +333,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
       다음에서 **[!UICONTROL 푸시 알림]** 편집기:
 
       1. 입력 **[!UICONTROL 제목]**, 예 `Luma Test Push Notification` 을(를) 입력합니다. **[!UICONTROL 본문]**, 예 `Test push notification for Luma mobile app`.
+      1. 원할 경우 다음 위치에 이미지(.png 또는 .jpg)에 대한 링크를 입력할 수 있습니다. **[!UICONTROL 미디어 추가]**. 그렇게 하면 이미지가 푸시 알림의 일부가 됩니다.
       1. 를 저장하고 편집기에서 나가려면 을 선택합니다. ![V자형 화살표 왼쪽](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
          ![푸시 편집기](assets/ajo-push-editor.png)
 
