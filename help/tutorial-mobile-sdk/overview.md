@@ -4,14 +4,14 @@ description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
+source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 6%
+source-wordcount: '826'
+ht-degree: 3%
 
 ---
 
-# 모바일 앱에서 Adobe Experience Cloud 구현 튜토리얼
+# 모바일 앱에서 Adobe Experience Cloud 구현 자습서
 
 Adobe Experience Platform Mobile SDK를 사용하여 모바일 앱에서 Adobe Experience Cloud 애플리케이션을 구현하는 방법을 알아봅니다.
 
@@ -27,7 +27,7 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 이 자습서를 완료하면 다음 작업을 수행할 수 있습니다.
 
 * 표준 및 사용자 정의 필드 그룹을 사용하여 스키마를 만듭니다.
-* 데이터스트림 설정.
+* 데이터 스트림을 설정합니다.
 * 모바일 태그 속성을 구성합니다.
 * Experience Platform 데이터 세트를 설정합니다(선택 사항).
 * 앱에 태그 확장 설치 및 구현
@@ -95,10 +95,14 @@ Experience Platform 모바일 SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 1. [시작](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 이 자습서에서 실습형 연습을 완료하는 데 사용해야 하는 대부분의 Experience Platform Mobile SDK 코드에 대해 코드가 없거나 자리 표시자 코드가 있는 프로젝트.
 1. [완료](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 전체 구현이 포함된 버전을 참조할 수 있습니다.
 
-
 >[!NOTE]
 >
 >iOS을 플랫폼으로 사용하고 [!DNL Swift] 프로그래밍 언어로, [!DNL SwiftUI] UI 프레임워크 및 [!DNL Xcode] 를 IDE(통합 개발 환경)로 사용하십시오. 그러나 설명된 구현 개념의 대부분은 다른 개발 플랫폼에 대해 유사합니다. 많은 사용자가 이전 iOS/Swift(UI) 경험을 거의 또는 전혀 사용하지 않고 이미 이 자습서를 성공적으로 완료했습니다. 전문가가 아니어도 단원을 완료할 수는 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
+
+
+App Store에서 최종 프로덕션 버전의 앱을 다운로드할 수 있습니다.
+
+[![다운로드](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 그럼 시작해 보겠습니다!
