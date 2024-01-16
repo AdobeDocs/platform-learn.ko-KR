@@ -2,7 +2,7 @@
 title: Platform Web SDK를 사용하여 Audience Manager 설정
 description: Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 1%
@@ -85,7 +85,7 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 1. 다음 항목 선택 **[!UICONTROL 데이터 소스]** 이전 섹션에서 을(를) 만들었습니다.
 1. **[!UICONTROL 폴더 선택]** 오른쪽 창에서 트레이트를 저장할 때 사용합니다. 다음 방법으로 폴더를 만들 수 있습니다. **+ 아이콘 선택** 기존 상위 폴더 옆에 있습니다. 이 새 폴더의 이름을 지정할 수 있습니다. `Platform Web SDK tutorial`.
 1. 확장 **[!UICONTROL 트레이트 표현식]** 삽입 및 선택 **[!UICONTROL 표현식 빌더]** 홈 페이지 방문을 나타내는 키 값 쌍을 제공해야 합니다.
-1. 를 엽니다. [Luma 홈페이지](https://luma.enablementadobe.com/content/luma/us/en.html) (태그 속성에 매핑됨) 및 **Platform 웹 SDK 디버거** 페이지를 새로 고칩니다.
+1. 를 엽니다. [Luma 홈페이지](https://luma.enablementadobe.com/content/luma/us/en.html) (태그 속성에 매핑됨) 및 **Adobe Experience Platform Debugger** 페이지를 새로 고칩니다.
 1. Platform Web SDK에 대한 네트워크 요청 및 이벤트 세부 정보를 확인하여 홈페이지의 키 및 이름 값을 찾습니다.
    ![Adobe Experience Platform Audience Manager XDM 데이터](assets/xdm-keyvalue.jpg)
 1. Audience Manager UI에서 표현식 빌더로 돌아가 키를 입력합니다. **`web.webPageDetails.name`** 및 값 **`content:luma:us:en`**. 이 단계에서는 홈 페이지를 로드할 때마다 트레이트를 실행합니다.
@@ -100,7 +100,8 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 1. 선택 **[!UICONTROL 새로 추가]** 을 클릭하여 세그먼트 빌더를 엽니다.
 1. 세그먼트에 다음과 같은 친숙한 이름과 설명을 지정합니다. `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL 폴더 선택]** 오른쪽 창에 세그먼트가 저장됩니다. 다음 방법으로 폴더를 만들 수 있습니다. **+ 아이콘 선택** 기존 상위 폴더 옆에 있습니다. 이 새 폴더의 이름을 지정할 수 있습니다. `Platform Web SDK tutorial`.
-1. 통합 코드를 추가합니다. 이 경우 임의의 숫자 집합입니다. 1. **[!UICONTROL 데이터 소스]** 섹션, 선택 **[!UICONTROL Audience Manager]** 이전에 만든 데이터 소스
+1. 통합 코드를 추가합니다. 이 경우 임의의 숫자 집합입니다.
+1. 다음에서 **[!UICONTROL 데이터 소스]** 섹션, 선택 **[!UICONTROL Audience Manager]** 이전에 만든 데이터 소스
 1. 확장 **[!UICONTROL 트레이트]** 생성한 트레이트를 섹션으로 검색하고
 1. 선택 **[!UICONTROL 트레이트 추가]**.
 1. 선택 **[!UICONTROL 저장]** 페이지 하단
@@ -181,4 +182,4 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

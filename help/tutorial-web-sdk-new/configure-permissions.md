@@ -2,9 +2,9 @@
 title: 자습서에 대한 권한 구성
 description: Web SDK Experience Platform에 대한 액세스 권한을 요청하고 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서를 완료하는 데 필요한 권한을 구성하는 방법에 대해 알아봅니다.
 feature: Web SDK,Tags,Access Control
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
@@ -23,9 +23,9 @@ Experience Platform Web SDK에 대한 액세스를 요청하고 이 자습서를
 Real-Time CDP과 같은 플랫폼 기반 애플리케이션의 고객이 아닌 경우에도 모든 Experience Cloud 고객이 이러한 기능을 사용할 수 있어야 합니다.
 
 * 액세스 권한: **기본 프로덕션**, **&quot;Prod&quot;** 샌드박스.
-* 액세스 대상: **[!UICONTROL 스키마 관리]** 및 **[!UICONTROL 스키마 보기]** 아래에 **[!UICONTROL 데이터 모델링]**
-* 액세스 대상: **[!UICONTROL ID 네임스페이스 관리]** 및 **[!UICONTROL ID 네임스페이스 보기]** 아래에 **[!UICONTROL Identity Management]**
-* 액세스 대상: **[!UICONTROL 데이터 스트림 관리]** 및 **[!UICONTROL 데이터스트림 보기]** 아래에 **[!UICONTROL 데이터 수집]**
+* 액세스 대상: **[!UICONTROL 스키마 관리]** 및 **[!UICONTROL 스키마 보기]** 아래에 **[!UICONTROL 데이터 모델링]**.
+* 액세스 대상: **[!UICONTROL ID 네임스페이스 관리]** 및 **[!UICONTROL ID 네임스페이스 보기]** 아래에 **[!UICONTROL Identity Management]**.
+* 액세스 대상: **[!UICONTROL 데이터 스트림 관리]** 및 **[!UICONTROL 데이터스트림 보기]** 아래에 **[!UICONTROL 데이터 수집]**.
 * 플랫폼 기반 애플리케이션의 고객이고 다음을 완료할 경우 [Experience Platform 설정](setup-experience-platform.md) 단원:
    * 액세스 권한: **개발** 샌드박스.
    * 아래의 모든 권한 항목 **[!UICONTROL 데이터 관리]**, 및 **[!UICONTROL 프로필 관리]**:
@@ -51,4 +51,4 @@ Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://expe
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

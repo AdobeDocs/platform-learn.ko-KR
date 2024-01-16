@@ -1,9 +1,9 @@
 ---
 title: Web SDK를 사용하여 Adobe Experience Platform에 데이터 스트리밍
 description: Web SDK를 사용하여 웹 데이터를 Adobe Experience Platform에 스트리밍하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1601'
 ht-degree: 5%
 
 ---
@@ -30,7 +30,6 @@ Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용
 다음 단원을 이미 완료했어야 합니다.
 
 * 다음 **초기 구성** 단원:
-   * [권한 구성](configure-permissions.md)
    * [XDM 스키마 구성](configure-schemas.md)
    * [데이터스트림 구성](configure-datastream.md)
    * [ID 네임스페이스 구성](configure-identities.md)
@@ -38,6 +37,7 @@ Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용
 * 다음 **태그 구성** 단원:
    * [웹 SDK 확장 기능 설치](install-web-sdk.md)
    * [데이터 요소 만들기](create-data-elements.md)
+   * [ID 만들기](create-identities.md)
    * [태그 규칙 만들기](create-tag-rule.md)
 
 
@@ -54,7 +54,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 
 1. 로 이동 [Experience Platform 인터페이스](https://experience.adobe.com/platform/)
 1. 이 자습서에서 사용하는 개발 샌드박스에 있는지 확인합니다
-1. 열기 **[!UICONTROL 데이터 세트]** 왼쪽 탐색에서
+1. 열기 **[!UICONTROL 데이터 관리 > 데이터 세트]** 왼쪽 탐색에서
 1. 선택 **[!UICONTROL 데이터 세트 만들기]**
 
    ![스키마 만들기](assets/experience-platform-create-dataset.png)
@@ -92,7 +92,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 
    ![데이터 스트림 구성](assets/experience-platform-datastream-config.png)
 
-에서 트래픽을 생성할 때 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 태그 속성에 매핑되면 데이터가 Experience Platform의 데이터 세트를 채웁니다!
+에 대한 트래픽을 생성할 때 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 태그 속성에 매핑되면 데이터가 Experience Platform의 데이터 세트를 채웁니다!
 
 ## 데이터 세트 유효성 검사
 
@@ -129,7 +129,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 
 데이터가 플랫폼의 데이터 레이크에 도착했는지 확인하려면 를 사용하는 것이 빠른 옵션입니다. **[!UICONTROL 데이터 세트 미리 보기]** 기능. Web SDK 데이터는 데이터 레이크에 마이크로 패치되며 정기적으로 Platform 인터페이스에서 새로 고쳐집니다. 생성한 데이터를 보려면 10~15분이 걸릴 수 있습니다.
 
-1. 다음에서 [Experience Platform](https://experience.adobe.com/platform/) 인터페이스, 선택 **[!UICONTROL 데이터 세트]** 을(를) 왼쪽 탐색에서 열어 **[!UICONTROL 데이터 세트]** 대시보드입니다.
+1. 다음에서 [Experience Platform](https://experience.adobe.com/platform/) 인터페이스, 선택 **[!UICONTROL 데이터 관리 > 데이터 세트]** 을(를) 왼쪽 탐색에서 열어 **[!UICONTROL 데이터 세트]** 대시보드입니다.
 
    대시보드에는 조직에서 사용 가능한 모든 데이터 세트가 나열됩니다. 목록에 있는 각 데이터 세트에 대해 이름, 데이터 세트가 준수하는 스키마, 최근 수집 실행 상태 등 세부 정보가 표시됩니다.
 
@@ -220,7 +220,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 1. 다음에서 [Experience Platform](https://experience.adobe.com/platform/) 인터페이스, 선택 **[!UICONTROL 프로필]** 왼쪽 탐색
 
 1. 다음으로: **[!UICONTROL ID 네임스페이스]** 사용 `lumaCRMId`
-1. 값 복사 및 붙여넣기 `lumaCRMId` Experience Platform 디버거에서 검사한 호출에서 전달되었습니다(아마도 `112ca06ed53d3db37e4cea49cc45b71e`).
+1. 값 복사 및 붙여넣기 `lumaCRMId` 이 경우 Experience Platform 디버거에서 검사한 호출에서 전달되었습니다. `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![프로필](assets/experience-platform-validate-dataset-profile.png)
 
@@ -228,15 +228,22 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 
    ![프로필](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. 을(를) 클릭하여 [!UICONTROL 프로필 ID] 및 a [!UICONTROL 고객 프로필] 콘솔이 채워집니다. 여기에서 연결된 모든 ID를 볼 수 있습니다. `lumaCRMId`, 예: `ECID`:
+1. 전체 보기 **[!UICONTROL 고객 프로필]** 각 ID에 대해 **[!UICONTROL 프로필 ID]** 기본 창에서 을 클릭합니다.
+
+   >[!NOTE]
+   >
+   >참고 프로파일 ID의 하이퍼링크를 선택할 수도 있고, 행을 선택하면 프로파일 ID 하이퍼링크를 선택할 수 있는 오른쪽 메뉴가 열립니다
+   > ![고객 프로필](assets/experience-platform-select-profileId.png)
+
+   여기에서 연결된 모든 ID를 볼 수 있습니다. `lumaCRMId`, 예: `ECID`.
 
    ![고객 프로필](assets/experience-platform-validate-dataset-custProfile.png)
 
-이제 Experience Platform(및 Real-Time CDP!)용으로 Platform Web SDK를 활성화했습니다. 그리고 Customer Journey Analytics! 그리고 Journey Optimizer!)
+이제 Experience Platform(및 Real-Time CDP!)용으로 Platform Web SDK를 활성화했습니다. 그리고 Journey Optimizer!)
 
 
 [다음: ](setup-analytics.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

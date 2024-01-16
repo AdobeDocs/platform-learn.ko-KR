@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 28%
+source-wordcount: '96'
+ht-degree: 23%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 28%
 + 태그 구성 {#tags-configuration}
    + [웹 SDK 확장 기능 설치](install-web-sdk.md)
    + [데이터 요소 만들기](create-data-elements.md)
+   + [ID 만들기](create-identities.md)
    + [태그 규칙 만들기](create-tag-rule.md)
    + [디버거를 사용하여 유효성 검사](validate-with-debugger.md)
 
@@ -37,6 +38,9 @@ ht-degree: 28%
    + [Adobe Analytics 설정](setup-analytics.md)
    + [Audience Manager 설정](setup-audience-manager.md)
    + [Target 설정](setup-target.md)
+   + Journey Optimizer 기능 설정 {#journey-optimizer}
+      + [웹 채널 설정](journey-optimizer/setup-web-channel.md)
+      + [의사 결정 관리 설정](journey-optimizer/setup-decision-management.md)
 
 + 동의 관리 {#consent-management}
    + [동의 설정](setup-consent.md)

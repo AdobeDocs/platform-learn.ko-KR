@@ -2,16 +2,16 @@
 title: Adobe Experience Platform 웹 SDK 태그 확장 설치 및 구성
 description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '604'
 ht-degree: 12%
 
 ---
 
 # Adobe Experience Platform 웹 SDK 태그 확장 설치
 
-데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 태그 확장은 _태그 확장만 해당_ 데이터를 (으)로 전송하는 데 필요 _모든 Adobe Experience Cloud 애플리케이션_, 포함 [분석](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform 및 Journey Optimizer!
+Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. Web SDK를 구현하는 가장 쉬운 방법은 Adobe의 태그 관리자인 태그(이전의 Launch)를 사용하는 것입니다. Platform 웹 SDK 태그 확장은 _태그 확장만 해당_ 데이터를 (으)로 전송하는 데 필요 _모든 Adobe Experience Cloud 애플리케이션_, 포함 [분석](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform 및 Journey Optimizer!
 
 ## 학습 목표
 
@@ -25,9 +25,6 @@ ht-degree: 12%
 
 이 자습서에서는 이전 단원을 완료했어야 합니다.
 
-* [권한 구성](configure-permissions.md)
-* [XDM 스키마 구성](configure-schemas.md)
-* [ID 네임스페이스 구성](configure-identities.md)
 * [데이터스트림 구성](configure-datastream.md)
 
 ## Experience Platform 웹 SDK 확장 설치
@@ -66,6 +63,7 @@ ht-degree: 12%
 1. 아래 **[!UICONTROL 데이터스트림]**&#x200B;를 선택하고 **[!UICONTROL 목록에서 선택]** 입력 방법
 1. 이전에 생성한 데이터 스트림을 선택합니다. `Luma Web SDK`
 1. 선택 **[!UICONTROL 저장]**
+
    >[!NOTE]
    >
    > 데이터 스트림을 찾을 수 없는 경우 [데이터 스트림 구성](configure-datastream.md) 단원 및 단계에 따라 단원을 만듭니다.
@@ -76,9 +74,7 @@ Platform Web SDK를 설치하고 데이터 스트림에 연결했으므로 만�
 
 >[!NOTE]
 >
->이 자습서에서는 하나의 데이터스트림만 구성하고 모든 태그 환경(개발, 스테이지 및 프로덕션)과 연결합니다. 자체 웹 사이트에서 Platform Web SDK를 구현할 때에는 각 환경에 대해 별도의 데이터 스트림을 구성하고 다음을 사용하여 태그 환경에 매핑해야 합니다. **[!UICONTROL 입력 방법]** > **[!UICONTROL 값 입력]**
->
->![데이터 스트림 선택](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>이 자습서에서는 하나의 데이터스트림만 구성하고 모든 태그 환경(개발, 스테이지 및 프로덕션)과 연결합니다. 자체 웹 사이트에서 Platform Web SDK를 구현할 때에는 각 환경에 대해 별도의 데이터 스트림을 구성하고 이를 태그 환경에 매핑해야 합니다.
 
 >[!NOTE]
 >
@@ -92,4 +88,4 @@ Platform Web SDK를 설치하고 데이터 스트림에 연결했으므로 만�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

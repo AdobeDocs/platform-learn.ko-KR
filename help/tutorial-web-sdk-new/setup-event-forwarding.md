@@ -2,9 +2,9 @@
 title: 이벤트 전달 속성 설정
 description: Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 2%
 
 ---
@@ -59,6 +59,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
       * [웹 SDK 확장 기능 설치](install-web-sdk.md)
       * [데이터 요소 만들기](create-data-elements.md)
+      * [ID 만들기](create-identities.md)
       * [태그 규칙 만들기](create-tag-rule.md)
       * [Adobe Experience Platform Debugger로 유효성 검사](validate-with-debugger.md)
 
@@ -320,4 +321,4 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 >[!NOTE]
 >
-Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
