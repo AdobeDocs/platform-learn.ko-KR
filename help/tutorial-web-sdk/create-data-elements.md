@@ -3,10 +3,10 @@ title: 데이터 요소 만들기
 description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 5%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
@@ -70,11 +70,11 @@ XDM 개체 만들기를 시작하기 전에 [Luma 데모 사이트](https://luma
 1. 데이터 요소에 이름을 지정합니다 `page.pageInfo.pageName`
 1. 사용 **[!UICONTROL JavaScript 변수]** **[!UICONTROL 데이터 요소 유형]** luma의 데이터 레이어에 있는 값을 가리키려면 다음을 수행합니다. `digitalData.page.pageInfo.pageName`
 
-1. **[!UICONTROL Force lowercase value]** 및 **[!UICONTROL Clean text]** 상자를 체크하여 케이스를 표준화하고 외부 공백을 제거합니다
+1. 다음 확인란을 선택합니다. **[!UICONTROL 소문자 강제 적용 값]** 및 **[!UICONTROL 텍스트 정리]** 케이스를 표준화하고 외부 공백을 제거하려면
 
 1. 나가기 `None` (으)로 **[!UICONTROL 저장 기간]** 이 값은 모든 페이지에서 다르므로 설정
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
    ![페이지 이름 데이터 요소](assets/data-element-pageName.jpg)
 
@@ -133,7 +133,7 @@ XDM 개체 만들기를 시작하기 전에 [Luma 데모 사이트](https://luma
 1. 다음으로: **[!UICONTROL 인증 상태]**, 선택 **[!UICONTROL 인증됨]**
 1. 선택 **[!UICONTROL 기본]**
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
    ![데이터 수집 인터페이스](assets/identity-id-namespace.png)
 
@@ -166,13 +166,13 @@ XDM 개체 만들기를 시작하기 전에 [Luma 데모 사이트](https://luma
 
 만드는 모든 데이터 요소는 XDM 개체에 매핑해야 합니다. 이 개체는 다음 작업 중에 만든 XDM 스키마를 준수해야 합니다. [스키마 구성](configure-schemas.md) 레슨.
 
-데이터 요소를 XDM 개체 필드에 매핑하는 방법에는 여러 가지가 있습니다. 데이터 요소가 XDM 개체에 있는 정확한 키-값 쌍 스키마와 일치하는 경우 개별 데이터 요소를 개별 XDM 필드에 매핑하거나 데이터 요소를 전체 XDM 개체에 매핑할 수 있습니다. 이 단원에서는 캡처하여 개별 필드에 매핑하여 컨텐츠 데이터를 캡처합니다. 다음 방법을 배울 수 있습니다. [전체 XDM 개체에 데이터 요소 매핑](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) 다음에서 [Analytics 설정](setup-analytics.md) 레슨.
+데이터 요소를 XDM 개체 필드에 매핑하는 방법에는 여러 가지가 있습니다. 데이터 요소가 XDM 개체에 있는 정확한 키-값 쌍 스키마와 일치하는 경우 개별 데이터 요소를 개별 XDM 필드에 매핑하거나 데이터 요소를 전체 XDM 개체에 매핑할 수 있습니다. 이 단원에서는 개별 필드에 매핑하여 컨텐츠 데이터를 캡처합니다. 다음 방법을 배울 수 있습니다. [전체 XDM 개체에 데이터 요소 매핑](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) 다음에서 [Analytics 설정](setup-analytics.md) 레슨.
 
 콘텐츠 데이터를 캡처할 XDM 개체 만들기:
 
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터 요소]**
-1. **[!UICONTROL 데이터 요소 추가]**&#x200B;를 선택합니다
-1. ****&#x200B;데이터 요소에 이름을 지정합니다 **`xdm.content`**
+1. 선택 **[!UICONTROL 데이터 요소 추가]**
+1. **[!UICONTROL 이름]** 데이터 요소 **`xdm.content`**
 1. 다음으로: **[!UICONTROL 확장]** 선택 `Adobe Experience Platform Web SDK`
 1. 다음으로: **[!UICONTROL 데이터 요소 유형]** 선택 `XDM object`
 1. 플랫폼 선택 **[!UICONTROL 샌드박스]** 에서 를 수행하는 동안 XDM 스키마를 만든 경우 [XDM 스키마 구성](configure-schemas.md) 단원, 이 예에서 `DEVELOPMENT Mobile and Web SDK Courses`
@@ -202,7 +202,7 @@ XDM 개체 만들기를 시작하기 전에 [Luma 데모 사이트](https://luma
 
 1. 에 매핑 `identityMap.loginID` 데이터 요소
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
    ![데이터 수집 인터페이스](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
 
