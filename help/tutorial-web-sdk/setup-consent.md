@@ -3,9 +3,9 @@ title: Platform Web SDK를 사용하여 동의 설정
 description: Experience Platform 웹 SDK 태그 확장의 개인 정보 설정을 구성하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Experience Platform 웹 SDK 태그 확장의 개인 정보 설정을 구성하�
 
 >[!NOTE]
 > 
->이 자습서에서는 데모용으로 [클라로](https://heyklaro.com/) CMP로서 Klaro 또는 웹 사이트에 사용하는 CMP를 따르십시오.
+>이 자습서에서는 데모용으로 [클라로](https://heyklaro.com/){target="_blank"} CMP로서 Klaro 또는 웹 사이트에 사용하는 CMP를 따르십시오.
 
 
 ## 학습 목표
