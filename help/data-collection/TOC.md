@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 42%
+source-wordcount: '185'
+ht-degree: 27%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 42%
 # 데이터 수집 튜토리얼{#data-collection}
 
 + [데이터 수집 튜토리얼](overview.md)
++ [사용자 및 권한](admin/users-and-permissions.md)
 + 태그{#tags}
    + [개요 및 속성 만들기](tags/create-a-property.md)
    + [호스팅 옵션 선택](tags/choose-a-hosting-option.md)
@@ -25,11 +26,10 @@ ht-degree: 42%
    + [데이터 요소 만들기](tags/create-data-elements.md)
    + [규칙 작성](tags/build-rules.md)
    + [라이브러리 빌드 및 게시](tags/build-and-publish-a-library.md)
-   + [사용자 및 권한](tags/users-and-permissions.md)
    + [Web SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target="_blank"}
    + [솔루션 SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko){target="_blank"}
-+ Web SDK{#web-sdk}
++ 웹 SDK{#web-sdk}
    + [개요](web-sdk/overview.md)
    + [데모](web-sdk/demo.md)
    + [구현 자습서(태그 포함)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target="_blank"}
@@ -40,7 +40,7 @@ ht-degree: 42%
       + [IAB TCF 2.0 표준을 사용하여 동의 값 설정](web-sdk/consent/set-consent-iab.md)
       + [Inspect 및 동의 데이터 유효성 검사](web-sdk/consent/inspect.md)
       + [동의 처리 전체 튜토리얼](web-sdk/consent/tutorial.md)
-+ Mobile SDK{#mobile-sdk}
++ 모바일 SDK{#mobile-sdk}
    + [개요](mobile-sdk/overview.md)
    + [모바일 속성 만들기](mobile-sdk/create-mobile-properties.md)
    + [종속성 관리자 사용](mobile-sdk/use-dependency-managers.md)
@@ -64,5 +64,5 @@ ht-degree: 42%
    + [데이터 준비](edge/data-prep.md)
    + [중요 데이터 관리](edge/manage-sensitive-data-in-datastreams.md)
    + [자사 디바이스 ID](edge/generate-first-party-device-ids.md)
-+ Debugger{#debugger}
++ 디버거{#debugger}
    + [개요](debugger/overview.md)
