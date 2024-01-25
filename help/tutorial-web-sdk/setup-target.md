@@ -3,10 +3,10 @@ title: Platform Web SDK를 사용하여 Adobe Target 설정
 description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
 workflow-type: tm+mt
-source-wordcount: '3800'
-ht-degree: 2%
+source-wordcount: '3582'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +67,7 @@ Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 �
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -128,11 +128,11 @@ Platform Web SDK에서 Target 활동을 제공하려면 먼저 데이터 스트�
 
    ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk.png)
 
-1. **[!UICONTROL 서비스 추가]**를 선택합니다
+1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/target-datastream-addService.png)
 1. 선택 **[!UICONTROL Adobe Target]** (으)로 **[!UICONTROL 서비스]**
 1. 원하는 경우 아래 지침에 따라 Target 구현에 대한 선택적 세부 정보를 입력합니다.
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
    ![대상 데이터 스트림 구성](assets/target-datastream.png)
 
@@ -151,7 +151,7 @@ Target Premium 고객은 속성을 사용하여 사용자 권한을 관리할 �
 
 ### 대상 환경 ID
 
-[](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) Target의 환경을 사용하여 모든 단계의 개발을 통해 구현을 관리할 수 있습니다. 이 선택적 설정은 각 데이터 스트림에 사용할 Target 환경을 지정합니다.
+[환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) target에서는 모든 개발 단계를 통해 구현을 관리할 수 있습니다. 이 선택적 설정은 각 데이터 스트림에 사용할 Target 환경을 지정합니다.
 
 Adobe은 개발, 스테이징 및 프로덕션 데이터스트림마다 타겟 환경 ID를 다르게 설정하여 작업을 단순화할 것을 권장합니다.
 
