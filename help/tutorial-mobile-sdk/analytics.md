@@ -4,9 +4,9 @@ description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집�
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ Edge Network에서 Adobe Analytics으로 XDM 데이터를 전송하려면 의 �
 결과 위치:
 
 ```
-s.products = ";5829,1,49.99;9841,3,30.00"
+s.products = ";5829;1;49.99,9841;3;30.00"
 ```
 
 >[!NOTE]
@@ -207,6 +207,79 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 * 앱에서 수행한 작업과 유사한 Adobe Analytics ExperienceEvent 전체 확장 필드 그룹을 따라 XDM 페이로드를 빌드합니다. [이벤트 데이터 추적](events.md) 단원 또는
 * 규칙 작업을 사용하여 Adobe Analytics ExperienceEvent 전체 확장 필드 그룹에 데이터를 첨부하거나 수정하는 규칙을 Tags 속성에 작성합니다. 자세한 내용은 을 참조하십시오 [SDK 이벤트에 데이터 첨부](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) 또는 [SDK 이벤트의 데이터 수정](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+
+
+### 머천다이징 eVar
+
+을 사용하는 경우 [머천다이징 eVar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) 예를 들어 Analytics 설정에서 다음과 같은 제품의 색상을 캡처합니다 `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`에서 정의한 XDM 페이로드를 확장해야 합니다 [이벤트 데이터 추적](events.md) 를 클릭하여 해당 머천다이징 정보를 캡처합니다.
+
+* JSON에서:
+
+  ```json
+  {
+    "productListItems": [
+        {
+            "SKU": "LLWS05.1-XS",
+            "name": "Desiree Fitness Tee",
+            "priceTotal": 24,
+            "_experience": {
+                "analytics": {
+                    "events1to100": {
+                        "event10": {
+                            "value": 50
+                        }
+                    },
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "red",
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "eventType": "commerce.productListAdds",
+    "commerce": {
+        "productListAdds": {
+            "value": 1
+        }
+    }
+  }
+  ```
+
+* 코드에서:
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "productListItems": [
+      [
+        "name":  productName,
+        "SKU": sku,
+        "priceTotal": priceString,
+        "_experience" : [
+          "analytics": [
+            "events1to100": [
+              "event10": [
+                "value:": value
+              ]
+            ],
+            "customDimensions": [
+              "eVars": [
+                "eVar1": color
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "eventType": "commerce.productViews",
+    "commerce": [
+      "productViews": [
+        "value": 1
+      ]
+    ]
+  ]
+  ```
 
 
 ### 처리 규칙 사용
