@@ -4,9 +4,9 @@ description: Platform Web SDK를 사용하여 웹 채널을 구현하는 방법�
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2444'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알
 
 이 섹션의 학습 내용을 완료하려면 먼저 다음을 수행해야 합니다.
 
-* AEP 웹 SDK 버전이 2.16 이상인지 확인하십시오.
+* Adobe Experience Platform Web SDK 태그 확장 버전이 2.16 이상인지 확인하십시오.
 * Journey Optimizer 웹 디자이너를 사용하여 웹 채널 경험을 작성하는 경우 Google Chrome 또는 Microsoft® Edge 브라우저를 사용하는지 확인하십시오.
 * 또한 Adobe Experience Cloud Visual Editing Helper 브라우저 확장 기능을 다운로드했는지 확인합니다. 웹 채널 경험을 만들기 전에 브라우저 도구 모음에서 Visual Editing Helper 브라우저 확장 기능 을 활성화합니다.
    * Journey Optimizer 웹 디자이너에서 특정 웹 사이트는 다음 이유 중 하나로 인해 안정적으로 열리지 않을 수 있습니다.
@@ -46,7 +46,7 @@ Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알
 * 콘텐츠 실험 기능을 사용하는 경우 웹 데이터 세트도 보고 구성에 포함되어야 합니다.
 * 현재, 웹 속성에서 웹 채널 캠페인을 작성하고 게재하기 위해 두 가지 유형의 구현이 지원됩니다.
    * 클라이언트측 전용: 웹 사이트를 수정하려면 Adobe Experience Platform Web SDK를 구현해야 합니다.
-   * 하이브리드 모드: AEP Edge Network Server API를 활용하여 서버측에 개인화 요청을 할 수 있습니다. 그런 다음 API의 응답이 클라이언트측에서 수정 사항을 렌더링하기 위해 Adobe Experience Platform Web SDK에 제공됩니다. 자세한 내용은 Adobe Experience Platform Edge Network Server API 설명서를 참조하십시오. 하이브리드 모드에 대한 추가 세부 정보 및 구현 샘플은 이 블로그 게시물에서 찾을 수 있습니다.
+   * 하이브리드 모드: Platform Edge Network Server API를 활용하여 서버측에 개인화 요청을 할 수 있습니다. 그런 다음 API의 응답이 클라이언트측에서 수정 사항을 렌더링하기 위해 Adobe Experience Platform Web SDK에 제공됩니다. 자세한 내용은 Adobe Experience Platform Edge Network Server API 설명서를 참조하십시오. 하이브리드 모드에 대한 추가 세부 정보 및 구현 샘플은 이 블로그 게시물에서 찾을 수 있습니다.
 
 >[!NOTE]
 >
@@ -76,39 +76,39 @@ Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알
 
 데이터 스트림에서 Adobe Journey Optimizer을 구성하려면 다음 작업을 수행하십시오.
 
-1. 데이터 수집 인터페이스로 이동합니다.
-1. 왼쪽 탐색에서 을 선택합니다. **데이터스트림**.
+1. 로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스.
+1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**.
 1. 이전에 만든 Luma 웹 SDK 데이터스트림을 선택합니다.
 
    ![데이터 스트림 선택](../assets/web-channel-select-datastream.png)
 
-1. 선택 **편집** Adobe Experience Platform 서비스 내에서 사용할 수 있습니다.
+1. 선택 **[!UICONTROL 편집]** Adobe Experience Platform 서비스 내에서 사용할 수 있습니다.
 
    ![데이터 스트림 편집](../assets/web-channel-edit-datastream.png)
 
-1. 다음 확인: **Adobe Journey Optimizer** 상자.
+1. 다음 확인: **[!UICONTROL Adobe Journey Optimizer]** 상자.
 
    ![AJO 확인란 선택](../assets/web-channel-check-ajo-box.png)
 
-1. **저장**&#x200B;을 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 이렇게 하면 Journey Optimizer에 대한 인바운드 이벤트가 Adobe Experience Platform Edge에서 올바르게 처리됩니다.
 
 ## 병합 정책 구성
 
-병합 정책이 다음을 사용하여 정의되었는지 확인합니다. **Active-On-Edge 병합 정책** 옵션이 활성화되었습니다. 이 병합 정책 옵션은 에지에서 인바운드 캠페인의 정확한 활성화 및 게시를 보장하기 위해 Journey Optimizer 인바운드 채널에 사용됩니다.
+병합 정책이 다음을 사용하여 정의되었는지 확인합니다. **[!UICONTROL Active-On-Edge 병합 정책]** 옵션이 활성화되었습니다. 이 병합 정책 옵션은 에지에서 인바운드 캠페인의 정확한 활성화 및 게시를 보장하기 위해 Journey Optimizer 인바운드 채널에 사용됩니다.
 
 병합 정책에서 옵션을 구성하려면 다음을 수행합니다.
 
-1. 로 이동 **고객 > 프로필** 인터페이스.
-1. 탐색 내에서 를 선택합니다. **병합 정책**.
-1. 정책을 선택하고 **Active-On-Edge 병합 정책** 내의 옵션 **구성** 단계.
+1. 로 이동 **[!UICONTROL 고객]** > **[!UICONTROL 프로필]** Experience Platform 또는 Journey Optimizer 인터페이스의 페이지
+1. 다음 항목 선택 **[!UICONTROL 병합 정책]** 탭.
+1. 정책을 선택하고 **[!UICONTROL Active-On-Edge 병합 정책]** 내의 옵션 **[!UICONTROL 구성]** 단계.
 
    ![병합 정책 전환](..//assets/web-channel-active-on-edge-merge-policy.png)
 
 ## 콘텐츠 실험을 위한 웹 데이터 세트 구성
 
-웹 채널 캠페인 내에서 콘텐츠 실험을 사용하려면 사용된 웹 데이터 세트도 보고 구성에 포함되어야 합니다. Journey Optimizer 보고 시스템은 읽기 전용 방식으로 데이터 세트를 사용하여 OOTB 콘텐츠 실험 보고서를 채웁니다.
+웹 채널 캠페인 내에서 콘텐츠 실험을 사용하려면 사용된 웹 데이터 세트도 보고 구성에 포함되어야 합니다. Journey Optimizer 보고 시스템은 읽기 전용 방식으로 데이터 세트를 사용하여 기본 제공 콘텐츠 실험 보고서를 채웁니다.
 
 [콘텐츠 실험 보고를 위한 데이터 세트 추가는 이 섹션에 자세히 설명되어 있습니다](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=en#add-datasets).
 
@@ -120,7 +120,7 @@ Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알
 
 >[!NOTE]
 >
->이 튜토리얼은 구현자를 대상으로 하므로 이 단원에는 AJO의 실질적인 UI 작업이 포함되어 있습니다. 이러한 UI 작업은 일반적으로 마케터가 처리하지만, 구현자가 결국 웹 채널 캠페인 생성에 책임을 지지 않더라도 프로세스에 대한 통찰력을 얻는 것이 유익할 수 있습니다.
+>이 자습서는 구현자를 대상으로 하므로 이 단원에는 Journey Optimizer의 실질적인 인터페이스 작업이 포함되어 있습니다. 이러한 인터페이스 작업은 일반적으로 마케터가 처리하지만, 결과적으로 웹 채널 캠페인 생성에 대한 책임이 없더라도 구현자가 프로세스에 대한 통찰력을 얻는 것이 유용할 수 있습니다.
 
 ### 충성도 보상 캠페인 만들기
 
@@ -128,73 +128,73 @@ Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알
 
 샘플 캠페인을 만들려면:
 
-1. 왼쪽 탐색 영역에서 여정 관리 > 캠페인 으로 이동합니다.
-1. 클릭 **캠페인 만들기** 오른쪽 상단에 있습니다.
-1. 다음에서 **속성** 섹션에서 캠페인을 실행할 방법을 지정합니다. 충성도 보상 사용 사례의 경우 **예약됨**.
+1. 다음으로 이동 **[!UICONTROL 여정 관리]** > **[!UICONTROL 캠페인]** 왼쪽 탐색
+1. 클릭 **[!UICONTROL 캠페인 만들기]** 오른쪽 상단에 있습니다.
+1. 다음에서 **[!UICONTROL 속성]** 섹션에서 캠페인을 실행할 방법을 지정합니다. 충성도 보상 사용 사례의 경우 **예약됨**.
 
    ![예약된 캠페인](../assets/web-channel-campaign-properties-scheduled.png)
 
-1. 다음에서 **작업** 섹션에서 다음을 선택합니다. **웹 채널**. 이 단계에서 웹 표면도 선택합니다.
+1. 다음에서 **[!UICONTROL 작업]** 섹션에서 다음을 선택합니다. **[!UICONTROL 웹 채널]**. 다음으로:  **[!UICONTROL 웹 표면]**, 선택 **[!UICONTROL 페이지 URL]**.
 
 >[!NOTE]
 >
 >웹 표면은 콘텐츠가 전달되는 URL로 식별되는 웹 속성을 나타냅니다. 단일 페이지 URL에 해당하거나 여러 페이지를 포함할 수 있으므로 하나 또는 여러 웹 페이지에 수정 사항을 적용할 수 있습니다.
 
-다음을 선택합니다. **페이지 URL** 이 캠페인의 한 페이지에 경험을 배포하기 위한 웹 표면 옵션 Luma 페이지의 URL을 입력합니다.
+다음을 선택합니다. **[!UICONTROL 페이지 URL]** 이 캠페인의 한 페이지에 경험을 배포하기 위한 웹 표면 옵션 Luma 페이지의 URL을 입력합니다.
 
-1. 웹 표면이 정의되면 다음을 선택합니다 **만들기**.
+1. 웹 표면이 정의되면 다음을 선택합니다 **[!UICONTROL 만들기]**.
 
    ![웹 표면 선택](../assets/web-channel-web-surface.png)
 
-1. 이제 새 웹 채널 캠페인에 몇 가지 추가 세부 정보를 추가합니다. 먼저 캠페인 이름을 지정합니다. 호출 &#39;*Luma 충성도 보상 - 골드 상태 - 2023년 10월*&#39;. 원할 경우 캠페인에 설명을 추가할 수 있습니다. 추가 **태그** 전체 캠페인 분류를 개선합니다.
+1. 이제 새 웹 채널 캠페인에 몇 가지 추가 세부 정보를 추가합니다. 먼저 캠페인 이름을 지정합니다. 호출 `Luma Loyalty Rewards – Gold Status – October 2023`. 원할 경우 캠페인에 설명을 추가할 수 있습니다. 추가 **[!UICONTROL 태그]** 전체 캠페인 분류를 개선합니다.
 
    ![캠페인 이름 지정](../assets/web-channel-campaign-name.png)
 
-1. 기본적으로 캠페인은 모든 사이트 방문자에 대해 활성화됩니다. 이 사용 사례에서는 gold status 보상 멤버만 경험을 볼 수 있습니다. 활성화하려면 **대상자 선택** 및 을(를) 선택합니다.*Luma 충성도 보상 - 골드 상태*&#39; 대상.
+1. 기본적으로 캠페인은 모든 사이트 방문자에 대해 활성화됩니다. 이 사용 사례에서는 gold status 보상 멤버만 경험을 볼 수 있습니다. 활성화하려면 **[!UICONTROL 대상자 선택]** 및 선택 `Luma Loyalty Rewards – Gold Status` 대상입니다.
 
-1. 다음에서 **ID 네임스페이스** 필드에서 선택한 세그먼트 내의 개인을 식별하기 위한 네임스페이스를 선택합니다. Luma 사이트에 캠페인을 배포하므로 ECID 네임스페이스를 선택할 수 있습니다. &#39; 내의 프로필&#x200B;*Luma 충성도 보상 - 골드 상태*&#39; 다양한 ID 중 ECID 네임스페이스가 없는 대상은 웹 채널 캠페인에서 타깃팅되지 않습니다.
+1. 다음에서 **[!UICONTROL ID 네임스페이스]** 필드에서 선택한 세그먼트 내의 개인을 식별하기 위한 네임스페이스를 선택합니다. Luma 사이트에 캠페인을 배포하므로 ECID 네임스페이스를 선택할 수 있습니다. 내 프로필 `Luma Loyalty Rewards – Gold Status` 다양한 ID 중 ECID 네임스페이스가 없는 대상자는 웹 채널 캠페인에서 타깃팅되지 않습니다.
 
    ![ID 유형 선택](../assets/web-channel-indentity-type.png)
 
-1. 다음을 사용하여 캠페인을 12월 1일에 시작하도록 예약합니다. **캠페인 시작** 옵션을 선택한 다음 를 사용하여 12월 31일에 종료됩니다. **캠페인 종료** 옵션을 선택합니다.
+1. 다음을 사용하여 캠페인을 12월 1일에 시작하도록 예약합니다. **[!UICONTROL 캠페인 시작]** 옵션을 선택한 다음 를 사용하여 12월 31일에 종료됩니다. **[!UICONTROL 캠페인 종료]** 옵션을 선택합니다.
 
    ![캠페인 일정](../assets/web-channel-campaign-schedule.png)
 
 >[!NOTE]
 >
->웹 채널 캠페인의 경우 방문자가 페이지를 열면 웹 경험이 표시됩니다. 따라서 Adobe Journey Optimizer의 다른 유형의 캠페인과 달리 **작업 트리거** 섹션을 구성할 수 없습니다.
+>웹 채널 캠페인의 경우 방문자가 페이지를 열면 웹 경험이 표시됩니다. 따라서 Adobe Journey Optimizer의 다른 유형의 캠페인과 달리 **[!UICONTROL 작업 트리거]** 섹션을 구성할 수 없습니다.
 
 ### 충성도 보상 콘텐츠 실험
 
-다음에서 **작업** 섹션에서 선택적으로 실험을 만들어 에 대해 더 잘 작동하는 콘텐츠를 테스트할 수 있습니다.*Luma 충성도 보상 - 골드 상태*&#39; 대상. 캠페인 구성의 구성 요소로 두 가지 처리를 만들고 테스트해 보겠습니다.
+다음에서 **[!UICONTROL 작업]** 섹션에서 선택적으로 실험을 만들어 에 대해 더 잘 작동하는 콘텐츠를 테스트할 수 있습니다. `Luma Loyalty Rewards – Gold Status` 대상입니다. 캠페인 구성의 구성 요소로 두 가지 처리를 만들고 테스트해 보겠습니다.
 
 콘텐츠 실험을 만들려면 다음 작업을 수행하십시오.
 
-1. 클릭 **실험 만들기**.
+1. 클릭 **[!UICONTROL 실험 만들기]**.
 
    ![실험 만들기](../assets/web-channel-create-content-experiment.png)
 
-1. 먼저 선택 **성공 지표**. 콘텐츠 효과를 결정하는 지표입니다. 선택 **고유 인바운드 클릭수**&#x200B;를 클릭하여 웹 경험 CTA에서 더 많은 클릭 수를 생성하는 컨텐츠 처리를 확인합니다.
+1. 먼저 선택 **[!UICONTROL 성공 지표]**. 콘텐츠 효과를 결정하는 지표입니다. 선택 **[!UICONTROL 고유 인바운드 클릭수]**&#x200B;를 클릭하여 웹 경험 CTA에서 더 많은 클릭 수를 생성하는 컨텐츠 처리를 확인합니다.
 
    ![성공 지표 선택](../assets/web-channel-content-experiment-metric.png)
 
-1. 웹 채널을 사용하여 실험을 설정하고 **인바운드 클릭수**, **고유 인바운드 클릭수**, **페이지 보기 수**, 또는 **고유 페이지 조회수** 지표, **클릭 동작** 드롭다운을 사용하면 특정 페이지의 클릭 수 및 보기를 정확하게 추적하고 모니터링할 수 있습니다.
+1. 웹 채널을 사용하여 실험을 설정하고 **[!UICONTROL 인바운드 클릭수]**, **[!UICONTROL 고유 인바운드 클릭수]**, **[!UICONTROL 페이지 보기 수]**, 또는 **[!UICONTROL 고유 페이지 조회수]** 지표, **[!UICONTROL 클릭 동작]** 드롭다운을 사용하면 특정 페이지의 클릭 수 및 보기를 정확하게 추적하고 모니터링할 수 있습니다.
 
-1. 선택적으로 다음을 지정할 수 있습니다. **유지** 그것은 두 가지 치료 중 어느 것도 받지 않습니다. 지금은 선택하지 않은 상태로 둡니다.
+1. 선택적으로 다음을 지정할 수 있습니다. **[!UICONTROL 유지]** 그것은 두 가지 치료 중 어느 것도 받지 않습니다. 지금은 선택하지 않은 상태로 둡니다.
 
-1. 또한 다음을 선택할 수 있습니다. **균등 분배**. 처리 분할이 항상 균일하게 분할되도록 하려면 이 옵션을 선택합니다.
+1. 또한 다음을 선택할 수 있습니다. **[!UICONTROL 균등 분배]**. 처리 분할이 항상 균일하게 분할되도록 하려면 이 옵션을 선택합니다.
 
 [Adobe Journey Optimizer 웹 채널의 콘텐츠 실험에 대해 자세히 알아보기](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
 
 ### Visual Helper를 사용하여 콘텐츠 편집
 
-이제 웹 채널 경험을 작성해 보겠습니다. 이렇게 하려면 Adobe Experience Cloud을 사용합니다 **Visual Helper**. 이 도구는 Google Chrome 및 Microsoft® Edge와 호환되는 브라우저 확장 기능입니다. 경험을 빌드하기 전에 확장을 다운로드했는지 확인하십시오. 또한 웹 페이지에 웹 SDK가 포함되어 있는지 확인합니다.
+이제 웹 채널 경험을 작성해 보겠습니다. 이렇게 하려면 Adobe Experience Cloud을 사용합니다 **[!UICONTROL Visual Helper]**. 이 도구는 Google Chrome 및 Microsoft® Edge와 호환되는 브라우저 확장 기능입니다. 경험을 빌드하기 전에 확장을 다운로드했는지 확인하십시오. 또한 웹 페이지에 웹 SDK가 포함되어 있는지 확인합니다.
 
-1. 다음 범위 내 **작업** 캠페인의 탭에서 **콘텐츠 편집**. 단일 페이지 URL을 표면으로 입력했으므로 작성기에서 작업을 시작할 준비가 되어 있어야 합니다.
+1. 다음 범위 내 **[!UICONTROL 작업]** 캠페인의 탭에서 **[!UICONTROL 콘텐츠 편집]**. 단일 페이지 URL을 표면으로 입력했으므로 작성기에서 작업을 시작할 준비가 되어 있어야 합니다.
 
    ![콘텐츠 편집](../assets/web-channel-edit-content.png)
 
-1. 이제 클릭 **웹 페이지 편집** 작성을 시작합니다.
+1. 이제 클릭 **[!UICONTROL 웹 페이지 편집]** 작성을 시작합니다.
 
    ![웹 페이지 편집](../assets/web-channel-edit-web-page.png)
 
@@ -202,32 +202,32 @@ Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알
 
    ![상황별 편집 추가](../assets/web-channel-some-contextual-edit.png)
 
-1. 또한 을 사용하여 컨테이너에 개인화를 추가합니다. **표현식 편집기**.
+1. 또한 을 사용하여 컨테이너에 개인화를 추가합니다. **[!UICONTROL 표현식 편집기]**.
 
    ![개인화 추가](../assets/web-channel-add-basic-personalization.png)
 
-1. 클릭 수에 대해 경험이 제대로 추적되는지 확인합니다. 선택 **클릭 추적 요소** 상황별 메뉴에서 사용할 수 있습니다.
+1. 클릭 수에 대해 경험이 제대로 추적되는지 확인합니다. 선택 **[!UICONTROL 클릭 추적 요소]** 상황별 메뉴에서 사용할 수 있습니다.
 
    ![클릭 추적](../assets/web-channel-click-tracking.png)
 
-1. 사용 **오퍼 결정 구성 요소** 을 클릭하여 웹 페이지에 오퍼를 삽입합니다. 이 구성 요소는 **의사 결정 관리** Luma 방문자에게 제공할 최상의 오퍼를 선택합니다.
+1. 사용 **[!UICONTROL 오퍼 결정 구성 요소]** 을 클릭하여 웹 페이지에 오퍼를 삽입합니다. 이 구성 요소는 **[!UICONTROL 의사 결정 관리]** Luma 방문자에게 제공할 최상의 오퍼를 선택합니다.
 
 
 ### HTML 디자인 변경 사항
 
 충성도 보상 캠페인의 구성 요소로서 사이트를 보다 발전시키거나 사용자 지정 변경하려는 경우 사용할 수 있는 몇 가지 방법이 있습니다.
 
-사용 **구성 요소** HTML 또는 다른 컨텐츠를 Luma 사이트에 직접 추가하는 창입니다.
+사용 **[!UICONTROL 구성 요소]** HTML 또는 다른 컨텐츠를 Luma 사이트에 직접 추가하는 창입니다.
 
 ![구성 요소 창 탐색](../assets/web-channel-components-pane.png)
 
-페이지 상단에 새 HTML 구성 요소를 추가합니다. HTML 디자인 인터페이스 또는 **상황별** 창.
+페이지 상단에 새 HTML 구성 요소를 추가합니다. HTML 디자인 인터페이스 또는 **[!UICONTROL 상황별]** 창.
 
 ![사용자 정의 HTML 추가](../assets/web-channel-add-html-component.png)
 
-HTML 또는 **수정 사항** 창. 이 창에서는 페이지에서 구성 요소를 선택하고 디자이너 인터페이스에서 편집할 수 있습니다.
+HTML 또는 **[!UICONTROL 수정 사항]** 창. 이 창에서는 페이지에서 구성 요소를 선택하고 디자이너 인터페이스에서 편집할 수 있습니다.
 
-편집기 내에서 &quot;&quot;에 대한 HTML을 추가합니다.*Luma 충성도 보상 - 골드 상태*&#39; 대상. 클릭 **유효성 검사**.
+편집기 내에서 HTML을 `Luma Loyalty Rewards – Gold Status` 대상입니다. 선택 **[!UICONTROL 유효성 검사]**.
 
 ![HTML 확인](../assets/web-channel-add-custom-html-validate.png)
 
@@ -235,7 +235,7 @@ HTML 또는 **수정 사항** 창. 이 창에서는 페이지에서 구성 요�
 
 ![사용자 정의 HTML 검토](../assets/web-channel-review-custom-html.png)
 
-다음을 사용하여 특정 구성 요소 편집 **CSS 선택기 유형** 수정했습니다.
+다음을 사용하여 특정 구성 요소 편집 **[!UICONTROL CSS 선택기 유형]** 수정했습니다.
 
 ![CSS 수정](../assets/web-channel-css-selector.png)
 
@@ -243,7 +243,7 @@ HTML 또는 **수정 사항** 창. 이 창에서는 페이지에서 구성 요�
 
 ![헤드 수정](../assets/web-channel-page-head-modification.png)
 
-가능성은 다음을 사용하여 무한합니다. **Visual Helper**.
+가능성은 다음을 사용하여 무한합니다. **[!UICONTROL Visual Helper]**.
 
 ### 충성도 보상 콘텐츠 시뮬레이션
 
@@ -251,11 +251,11 @@ HTML 또는 **수정 사항** 창. 이 창에서는 페이지에서 구성 요�
 
 경험을 시뮬레이션하려면 다음 작업을 수행하십시오.
 
-1. 선택 **콘텐츠 시뮬레이션** 캠페인 내.
+1. 선택 **[!UICONTROL 콘텐츠 시뮬레이션]** 캠페인 내.
 
    ![콘텐츠 시뮬레이션](../assets/web-channel-simulate-content.png)
 
-1. 시뮬레이션을 수신할 테스트 프로필을 선택하십시오. 테스트 프로필은 다음에 있어야 합니다.*Luma 충성도 보상 - 골드 상태*&#39; 적절한 치료를 받을 대상.
+1. 시뮬레이션을 수신할 테스트 프로필을 선택하십시오. 테스트 프로필은 `Luma Loyalty Rewards – Gold Status` 적절한 치료를 받을 대상자.
 
 1. 테스트 프로필에 대한 미리보기가 표시됩니다.
 
@@ -265,11 +265,11 @@ HTML 또는 **수정 사항** 창. 이 창에서는 페이지에서 구성 요�
 
 1. 선택 **활성화하려면 검토**.
 
-1. 마지막으로 캠페인 세부 정보를 확인하라는 메시지가 표시됩니다. 선택 **활성화**. 캠페인이 사이트에서 라이브 상태가 되는 데 최대 15분 정도 소요될 수 있습니다.
+1. 마지막으로 캠페인 세부 정보를 확인하라는 메시지가 표시됩니다. 선택 **[!UICONTROL 활성화]**. 캠페인이 사이트에서 라이브 상태가 되는 데 최대 15분 정도 소요될 수 있습니다.
 
 ### 충성도 보상 QA
 
-모범 사례로서 다음을 모니터링합니다. **웹** 캠페인 특정 KPI에 대한 캠페인 라이브 및 글로벌 보고서의 탭입니다. 이 캠페인의 경우 경험 노출 횟수를 모니터링하고 클릭 비율을 표시합니다.
+모범 사례로서 다음을 모니터링합니다. **[!UICONTROL 웹]** 캠페인 특정 KPI에 대한 캠페인 라이브 및 글로벌 보고서의 탭입니다. 이 캠페인의 경우 경험 노출 횟수를 모니터링하고 클릭 비율을 표시합니다.
 
 ![웹 보고서 보기](../assets/web-channel-web-report.png)
 
@@ -287,27 +287,27 @@ Luma 사이트에서 디버거를 사용하여 프로덕션의 웹 채널 경험
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 웹 페이지에서 를 엽니다. **Adobe Experience Platform 디버거**.
+1. 웹 페이지에서 를 엽니다. **[!UICONTROL Adobe Experience Platform Debugger]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 다음으로 이동 **요약**. 다음을 확인합니다 **데이터 스트림 ID** 와 일치 **데이터스트림** 위치: **Adobe 데이터 수집** Adobe Journey Optimizer을 활성화한 경우.
+1. 다음으로 이동 **요약**. 다음을 확인합니다 **[!UICONTROL 데이터 스트림 ID]** 와 일치 **[!UICONTROL 데이터스트림]** 위치: **[!UICONTROL Adobe 데이터 수집]** Adobe Journey Optimizer을 활성화한 경우.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 그런 다음 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 Adobe Experience Platform Edge 네트워크로 전송된 요청의 유효성을 검사할 수 있습니다.
+1. 그런 다음 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 Adobe Experience Platform Edge Network로 전송된 요청의 유효성을 검사할 수 있습니다.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 아래 **솔루션** 다음으로 이동 **Experience Platform Web SDK**.
+1. 아래 **[!UICONTROL 솔루션]** 다음으로 이동 **[!UICONTROL Experience Platform Web SDK]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 다음 범위 내 **구성** 탭, 켜기/끄기 **디버깅 활성화**. 이렇게 하면 내의 세션에 대한 로깅을 사용할 수 있습니다. **Adobe Experience Platform 보증** 세션.
+1. 다음 범위 내 **구성** 탭, 켜기/끄기 **[!UICONTROL 디버깅 활성화]**. 이렇게 하면 내의 세션에 대한 로깅을 사용할 수 있습니다. **[!UICONTROL Adobe Experience Platform 보증]** 세션.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 로 전송된 요청의 유효성을 검사합니다. **Adobe Experience Platform Edge 네트워크**. 이러한 모든 요청은에서 캡처해야 합니다. **보증** 로그 추적용.
+1. 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 로 전송된 요청의 유효성을 검사합니다. **[!UICONTROL Adobe Experience Platform Edge 네트워크]**. 이러한 모든 요청은에서 캡처해야 합니다. **[!UICONTROL 보증]** 로그 추적용.
 <!--
    ![ADD SCREENSHOT](#)
 -->

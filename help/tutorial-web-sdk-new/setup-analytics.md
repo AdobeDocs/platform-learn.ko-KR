@@ -2,9 +2,9 @@
 title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4675'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
    * [태그 규칙 만들기](create-tag-rule.md)
    * [Adobe Experience Platform Debugger로 유효성 검사](validate-with-debugger.md)
 
-또한 다음을 수행해야 합니다 [Adobe Experience Platform Assurance에 대한 사용자 액세스 활성화](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) Adobe Experience Platform Assurance를 통해 Adobe Analytics 데이터의 유효성을 검사할 수 있습니다.
+또한 다음을 수행해야 합니다 [Adobe Experience Platform Assurance에 대한 사용자 액세스 활성화](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) Adobe Experience Platform Assurance를 통해 Adobe Analytics 데이터의 유효성을 검사할 수 있습니다. (액세스 스키마, ID 네임스페이스 및 데이터스트림이 있으면 Assurance에 이미 액세스할 수 있습니다.)
 
 ## XDM 스키마 및 Analytics 변수
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
 
-1. **제품에 관계없는 XDM**: 의미 체계 키-값 쌍 XDM 스키마 유지 및 사용 [Adobe Analytics 처리 규칙](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) XDM 필드를 eVar, prop 등에 매핑합니다.
+1. **제품에 관계없는 XDM**: 의미 체계 키-값 쌍 XDM 스키마 유지 및 사용 [Adobe Analytics 처리 규칙](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) XDM 필드를 eVar, prop 등에 매핑합니다. 의미 체계 XDM 스키마에서는 필드 이름 자체에 의미가 있다는 의미입니다. 예: 필드 이름 `web.webPageDetails.pageName` 말보다 더 많은 의미를 갖습니다. `prop1` 또는 `evar3`.
 
    >[!IMPORTANT]
    >
@@ -140,7 +140,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 방문자가 특정 페이지에 있을 때 전송할 Adobe Analytics 보고서 세트 데이터를 변경할 수 있습니다. Adobe Analytics에 대한 데이터스트림 재정의 설정을 구성하려면 다음 작업을 수행하십시오.
 
-1. 편집 **[!UICONTROL Adobe Analytics]** shish-kabab 메뉴를 연 다음 선택하여 구성 **[!UICONTROL 편집]**
+1. 편집 **[!UICONTROL Adobe Analytics]** 를 열어 구성 ![기타](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 메뉴를 선택한 다음 선택 **[!UICONTROL 편집]**
 
    ![데이터 스트림 덮어쓰기](assets/datastream-edit-analytics.png)
 
@@ -306,19 +306,16 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 ### 페이지 보기 수 증가
 
-이제 Adobe Analytics으로 데이터를 전송하므로 추가 XDM 필드도 매핑하여 비콘이 Analytics 페이지 보기로 처리되어야 함을 표시해야 합니다.
+이제 Adobe Analytics으로 데이터를 보내므로 추가 XDM 필드를 매핑하여 페이지 보기를 나타내는 것이 좋습니다. Analytics에서 비콘을 페이지 보기로 처리하는 데에는 기술적으로 필요하지 않지만, 다른 다운스트림 애플리케이션에 대한 페이지 보기를 표시하는 표준 방법을 사용하는 것이 유용합니다.
 
 1. 를 엽니다. `all pages global content variables - page bottom - AA (order 1)` 규칙
+1. 를 엽니다. **[!UICONTROL 변수 업데이트]** 작업
 1. 아래로 스크롤한 다음 을(를) 선택하여 까지 열기 `web.webPageDetails`
 1. 을(를) 선택하여 열기 **[!UICONTROL pageViews]** 오브젝트
 1. 설정 **[!UICONTROL 값]** 끝 `1`
 1. 선택 **[!UICONTROL 변경 내용 유지]**
 
    ![페이지 조회수 XDM 개체](assets/set-up-analytics-pageviews.png)
-
-   >[!TIP]
-   >
-   >이 필드는 을(를) 보내는 것과 같습니다. **`s.t()`** 를 사용하는 Analytics용 페이지 보기 비콘 `AppMeasurement.js`. 링크 클릭 비콘의 경우 `webInteraction.linkClicks.value` 끝 `1`
 
 
 ### 데이터 스트림 재정의로 다른 보고서 세트에 페이지 보기 보내기
@@ -381,9 +378,9 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 1. 아래 **[!UICONTROL 보고서 세트]**&#x200B;을(를) 통해 재정의하는 데 사용할 보고서 사이트를 선택합니다. 이 경우, `tmd-websdk-course-stg`.
 
 
->[!TIP]
->
->여기에 표시되는 보고서 세트 목록은 다음을 통해 결정됩니다. [데이터 스트림 보고서 세트 재정의 구성](configure-datastream.md###configure-a-datastream-report-suite-override) 단계. 보고서 세트 추가는 다중 세트 태깅과 같습니다.
+   >[!TIP]
+   >
+   >여기에 표시되는 보고서 세트 목록은 다음을 통해 결정됩니다. [데이터 스트림 보고서 세트 재정의 구성](configure-datastream.md###configure-a-datastream-report-suite-override) 단계. 보고서 세트 추가는 다중 세트 태깅과 같습니다.
 
 1. 선택 **[!UICONTROL 변경 내용 유지]**
 
@@ -415,6 +412,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 규칙]** 다음을 선택합니다. **[!UICONTROL 규칙 추가]**
 1. 이름 지정  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
 1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
 1. 이름 지정 `Core - Page Bottom - order 20`
@@ -520,6 +518,7 @@ Luma의 데이터 레이어 구조 때문에 개별 변수에 매핑하여 Luma 
 이제 전체 어레이에 XDM 개체 매핑으로 돌아갑니다. 를 생성하는 것과 동일한 단계를 반복합니다. `ecommerce - pdp page bottom - AA (order 20)` 규칙:
 
 1. 이름 지정  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
 1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
 1. 이름 지정 `Core - Page Bottom - order 20`
@@ -670,16 +669,10 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
 ### Experience Cloud ID 유효성 검사
 
-1. 로 이동 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Experience Platform 디버거를 사용하여 [사이트의 태그 속성을 자신의 개발 속성으로 전환합니다.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 로 이동 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
+1. 오른쪽 상단에 있는 로그인 단추를 선택하고 자격 증명 u: test@adobe.com p: 테스트를 사용하여 인증합니다.
+1. Experience Platform 디버거 를 열고 [사이트의 태그 속성을 자신의 개발 속성으로 전환합니다.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
-
-   >[!WARNING]
-   >
-   >계속하기 전에 Luma 사이트에 로그인했는지 확인하십시오.  로그인하지 않은 경우 Luma 사이트에서 체크아웃을 허용하지 않습니다.
-   >
-   > 1. Luma에서 오른쪽 상단의 로그인 버튼을 선택하고 자격 증명을 사용합니다 **u: `test@adobe.com` p: 테스트** 인증하려면
-   >
-   > 1. 에 자동으로 리디렉션됩니다. [Didi Sport Watch 제품 페이지](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 다음 페이지 로드 시
 
 1. Edge 추적을 활성화하려면 왼쪽 탐색에서 Experience Platform 디버거 로 이동한 다음 **[!UICONTROL 로그]**&#x200B;을(를) 선택한 다음 **[!UICONTROL Edge]** 탭을 클릭하고 다음을 선택합니다 **[!UICONTROL 연결]**
 
@@ -689,7 +682,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
    ![연결된 에지 추적](assets/analytics-debugger-edge-connected.png)
 
-1. 새로 고침 [Didi Sport Watch 제품 페이지](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) Experience Platform 디버거를 다시 확인하십시오. 데이터가 통과되는 것을 볼 수 있습니다. 다음으로 시작하는 행 **[!UICONTROL Analytics 자동 매핑]** Adobe Analytics 비콘임
+1. Luma 페이지를 새로 고치고 Experience Platform 디버거를 다시 확인합니다. 데이터가 들어오는 것을 볼 수 있습니다. 다음으로 시작하는 행 **[!UICONTROL Analytics 자동 매핑]** Adobe Analytics 비콘임
 1. 을(를) 선택하여 둘 다 엽니다. `[!UICONTROL mappedQueryParams]` 드롭다운 및 Analytics 변수를 볼 두 번째 드롭다운
 
    ![Analytics 비콘 Edge Trace](assets/analytics-debugger-edge-analytics.png)
@@ -700,6 +693,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
 1. 아래로 스크롤하여 찾기 `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. ECID를 캡처하는 컨텍스트 데이터 변수입니다
 1. Analytics가 표시될 때까지 아래로 계속 스크롤 `[!UICONTROL mid]` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 두 ID 모두 장치의 Experience Cloud ID와 일치합니다.
+1. Luma 사이트에서,
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
@@ -711,7 +705,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
 위에서 의 데이터 스트림 재정의를 구성했습니다. [Luma 홈페이지](https://luma.enablementadobe.com/content/luma/us/en.html).  이 구성의 유효성을 검사하려면
 
-1. 다음 행을 찾습니다. **[!UICONTROL 재정의 적용 후 데이터 스트림 구성입니다.]** 질문에 답합니다. 여기에서 보고서 세트 무시를 위해 구성된 기본 보고서 세트와 추가 보고서 세트를 찾을 수 있습니다.
+1. 다음 행을 찾습니다. **[!UICONTROL 재정의 적용 후 데이터 스트림 구성]**. 여기에서 보고서 세트 무시를 위해 구성된 기본 보고서 세트와 추가 보고서 세트를 찾을 수 있습니다.
 
    ![Analytics 보고서 세트 재정의 목록 유효성 검사](assets/aep-debugger-datastream-override.png)
 
@@ -721,9 +715,9 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
 ### 콘텐츠 페이지 보기 수
 
-로 돌아가기 [Didi Sport Watch 제품 페이지](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  이번에는 콘텐츠 페이지 보기가 Analytics에 의해 캡처되는지 확인합니다.
+다음과 같은 제품 페이지로 이동합니다. [Didi Sport Watch 제품 페이지](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Analytics에서 컨텐츠 페이지 보기를 캡처하는지 확인합니다.
 
-1. 다음을 찾습니다. `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. 이는 다음을 말해줍니다. `s.t()` 페이지 보기 비콘이 Analytics로 전송되고 있습니다.
+1. 다음을 찾습니다. `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. 아래로 스크롤하여 `[!UICONTROL gn]` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 다음에 대한 Analytics 동적 구문입니다. `[!UICONTROL s.pageName]` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 데이터 레이어에서 페이지 이름을 캡처합니다.
 
    ![Analytics 제품 문자열](assets/analytics-debugger-edge-page-view.png)
@@ -737,7 +731,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 1. 다음을 찾습니다. `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. 변수는 매핑한 데이터 요소 값을 캡처합니다. `productListItems.item1.sku` 이 단원의 앞 부분
 1. 다음을 찾습니다. `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL _experience.analytics.customdimensions.evars.evar1]`. 변수는 매핑한 데이터 요소 값을 캡처합니다 `productListItems.item1._experience.analytics.customdimensions.evars.evar1`
 1. 아래로 스크롤하여 `[!UICONTROL pl]` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. Analytics 제품 문자열 변수의 동적 구문입니다
-1. 데이터 레이어의 제품 이름은 둘 다 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` 및 `[!UICONTROL product]` 프로덕션 문자열의 매개 변수.  또한 데이터 레이어의 제품 제목이 프로덕션 문자열의 머천다이징 evar1에 매핑됩니다.
+1. 데이터 레이어의 제품 이름은 둘 다 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` 및 `[!UICONTROL product]` 제품 문자열의 매개 변수.  또한 데이터 계층의 제품 제목은 제품 문자열의 머천다이징 evar1에 매핑됩니다.
 
    ![Analytics 제품 문자열](assets/analytics-debugger-prodstring.png)
 
@@ -840,9 +834,9 @@ Adobe Experience Platform Assurance는 웹 사이트 및 모바일 애플리케�
 
 보증에 액세스할 수 있는 방법에는 여러 가지가 있습니다.
 
-1. Adobe Experience Platform을 통한 액세스 보장
-1. Adobe Experience Platform 데이터 수집을 통한 액세스 보장
-1. Adobe Experience Platform Debugger 내 로그를 통한 액세스 보장
+1. Adobe Experience Platform 인터페이스를 통해
+1. Adobe Experience Platform 데이터 수집 인터페이스를 통해
+1. Adobe Experience Platform Debugger 내 로그를 통해(권장)
 
 Adobe Experience Platform을 통해 Assurance에 액세스하려면 아래로 스크롤하여 을 선택합니다. **[!UICONTROL 보증]** 의 왼쪽 레일 탐색 **[!UICONTROL 데이터 수집]**.  다음 항목 선택 **[!UICONTROL &quot;Web SDK 튜토리얼 3&quot;]** 세션 을 클릭하여 이전 섹션에서 생성된 이벤트에 액세스합니다.
 ![Adobe Experience Platform을 통한 보증](assets/assurance-open-aep.png)
@@ -850,7 +844,7 @@ Adobe Experience Platform을 통해 Assurance에 액세스하려면 아래로 �
 Adobe Experience Platform 데이터 수집을 통해 보증에 액세스하려면 다음을 선택합니다 **[!UICONTROL 보증]** 의 왼쪽 레일 탐색 **[!UICONTROL 데이터 수집]**.  다음 항목 선택 **[!UICONTROL &quot;Web SDK 튜토리얼 3&quot;]** 세션 을 클릭하여 이전 섹션에서 생성된 이벤트에 액세스합니다.\
 ![Adobe Experience Platform 데이터 수집을 통한 보증](assets/assurance-open-data-collection.png)
 
-Adobe Experience Platform Debugger을 통해 보증에 액세스하려면 왼쪽 탐색에서 Experience Platform 디버거 로 이동한 후 **[!UICONTROL 로그]**&#x200B;을(를) 선택한 다음 **[!UICONTROL Edge]** 탭을 클릭하고 다음을 선택합니다 **[!UICONTROL 연결]**.  Edge Network에 대한 연결이 설정되면 외부 링크 아이콘을 선택합니다\
+Adobe Experience Platform Debugger을 통해 보증에 액세스하려면 왼쪽 탐색에서 Experience Platform 디버거 로 이동한 후 **[!UICONTROL 로그]**&#x200B;을(를) 선택한 다음 **[!UICONTROL Edge]** 탭을 클릭하고 다음을 선택합니다 **[!UICONTROL 연결]**.  Edge Network에 대한 연결이 설정되면 외부 링크 아이콘을 선택합니다. 현재 웹 세션은 디버거에서 시작해야 하므로 디버거를 통해 Assurance에 액세스하는 것이 좋습니다.
 ![Adobe Experience Platform 데이터 수집을 통한 보증](assets/assurance-open-aep-debugger.png)
 
 다음 범위 내 **[!UICONTROL &quot;Web SDK 튜토리얼 3&quot;]** 보증 세션 입력 **[!UICONTROL &quot;hitdebugger&quot;]** 를 이벤트 검색 창으로 가져와서 Adobe 분석 후 처리된 데이터로 결과를 필터링합니다.

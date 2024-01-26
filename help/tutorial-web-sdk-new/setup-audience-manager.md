@@ -2,7 +2,7 @@
 title: Platform Web SDK를 사용하여 Audience Manager 설정
 description: Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Audience Manager
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 1%
@@ -59,7 +59,7 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 
    ![Adobe Experience Platform Audience Manager 데이터 소스](assets/data-sources-list.jpg)
 
-1. 데이터 원본에 친숙한 이름과 설명을 지정합니다. 초기 설정의 경우 이름을 다음과 같이 지정할 수 있습니다`Platform Web SDK tutorial`.
+1. 데이터 원본에 친숙한 이름과 설명을 지정합니다. 초기 설정의 경우 이름을 다음과 같이 지정할 수 있습니다 `Platform Web SDK tutorial`.
 1. 설정 **[!UICONTROL ID 유형]** 끝 **[!UICONTROL 쿠키]**
 1. 다음에서 **[!UICONTROL 데이터 내보내기 제어]** 섹션, 선택 **[!UICONTROL 제한 없음]**
 
