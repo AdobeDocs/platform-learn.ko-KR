@@ -8,10 +8,10 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
-source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 10%
+source-wordcount: '91'
+ht-degree: 9%
 
 ---
 
@@ -23,6 +23,8 @@ ht-degree: 10%
 1. 을 사용하여 개발 샌드박스 만들기 `-ucp` 이름에 접미사로
 1. 샌드박스에 권한 및 사용자 추가
 1. 이메일, 푸시 및 SMS에 대한 채널 표면 구성
+
+자세한 내용은 [시작](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
 
