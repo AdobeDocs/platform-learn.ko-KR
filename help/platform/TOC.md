@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '868'
 ht-degree: 16%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 16%
    + [스키마 업데이트](/help/platform/schemas/update-schemas.md)
    + [애드혹 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + 소스 {#sources}
-   + [소스 개요](/help/platform/sources/overview.md)
+   + [개요](/help/platform/sources/overview.md)
    + [Adobe Analytics에서 데이터 수집](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [Audience Manager에서 데이터 수집](/help/platform/sources/ingest-data-from-aam.md)
    + [Marketo에서 데이터 수집](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 16%
    + [HTTP API를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-http-api.md)
    + [소스 커넥터를 사용하여 데이터 스트리밍](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [문제 해결: SFTP 커넥터](/help/platform/sources/troubleshoot-sftp-connector.md)
++ 사용 사례 플레이북 {#use-case-playbooks}
+   + [개요](/help/platform/use-case-playbooks/overview.md)
+   + [플레이북 샌드박스 구성](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [플레이북 인스턴스 만들기 및 게시](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud 통합 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
