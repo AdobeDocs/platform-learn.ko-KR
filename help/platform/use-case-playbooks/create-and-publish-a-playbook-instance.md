@@ -1,6 +1,6 @@
 ---
 title: 플레이북 인스턴스 만들기 및 게시
-description: 사용 사례 플레이북의 인스턴스를 만들고 게시하는 방법을 알아봅니다.
+description: 이 전체적인 데모 비디오에서 사용 사례 플레이북의 인스턴스를 검색, 만들고, 게시하고, 문제를 해결하는 방법을 알아봅니다.
 feature: Playbooks
 role: Developer, User
 level: Beginner
@@ -8,17 +8,17 @@ doc-type: Feature Video
 duration: 389
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14075
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: c3f975177fc8cef66110c722d8087e5835c0b51c
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 13%
+source-wordcount: '82'
+ht-degree: 10%
 
 ---
 
 
 # 플레이북 인스턴스 만들기 및 게시
 
-사용 사례 플레이북의 인스턴스를 만들고 게시하는 방법을 알아봅니다. 자세한 내용은 [플레이북 인스턴스 만들기, 공유 및 재사용](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
+이 전체적인 데모 비디오에서 사용 사례 플레이북의 인스턴스를 검색, 만들고, 게시하고, 문제를 해결하는 방법을 알아봅니다. 자세한 내용은 [플레이북 인스턴스 만들기, 공유 및 재사용](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on)
 
