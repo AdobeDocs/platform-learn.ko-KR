@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 27%
+source-wordcount: '188'
+ht-degree: 26%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 27%
 + 태그{#tags}
    + [개요 및 속성 만들기](tags/create-a-property.md)
    + [호스팅 옵션 선택](tags/choose-a-hosting-option.md)
-   + [환경 사용](tags/use-environments.md)
+   + [환경 및 포함 코드 사용](tags/use-environments-and-embed-codes.md)
    + [확장 추가 및 구성](tags/add-and-configure-extensions.md)
    + [데이터 요소 만들기](tags/create-data-elements.md)
    + [규칙 작성](tags/build-rules.md)

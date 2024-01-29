@@ -5,19 +5,19 @@ feature: Tags
 level: Beginner
 jira: KT-3529
 exl-id: 0be71b74-758e-4952-ab77-55deb8a02eda
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 0%
+source-wordcount: '75'
+ht-degree: 5%
 
 ---
 
 # 데이터 요소 만들기
 
-데이터 레이어에서 가져온 값을 저장하는 데이터 요소를 만들고 태그 속성의 규칙 및 확장에 사용할 수 있도록 하는 방법에 대해 알아봅니다.
+데이터 레이어에서 가져온 값을 저장하는 데이터 요소를 만들고 태그 속성의 규칙 및 확장에 사용할 수 있도록 하는 방법에 대해 알아봅니다. 자세한 내용은 [데이터 요소](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html) 설명서를 참조하십시오.
 
 >[!NOTE]
 >
-> 이제 Launch가 **[!DNL tags]**
+> 이제 **[!DNL tags]** 실행
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on)
