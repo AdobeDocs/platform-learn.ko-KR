@@ -1,9 +1,9 @@
 ---
 title: Web SDK를 사용하여 Adobe Experience Platform에 데이터 스트리밍
 description: Web SDK를 사용하여 웹 데이터를 Adobe Experience Platform에 스트리밍하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1608'
 ht-degree: 5%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 5%
 Platform Web SDK를 사용하여 Adobe Experience Platform에 웹 데이터를 스트리밍하는 방법에 대해 알아봅니다.
 
 Experience Platform은 Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics 및 Adobe Journey Optimizer과 같은 모든 새로운 Experience Cloud 애플리케이션의 백본입니다. 이러한 애플리케이션은 Platform Web SDK를 최적의 웹 데이터 수집 방법으로 사용하도록 설계되었습니다.
+
+
+![Web SDK 및 Adobe Experience Platform 다이어그램](assets/dc-websdk-aep.png)
 
 Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용하여 Luma 웹 사이트에서 이벤트 데이터를 캡처합니다. 해당 데이터가 Platform Edge Network로 전송되면 데이터 스트림 구성은 이를 Experience Platform으로 전달할 수 있습니다.
 

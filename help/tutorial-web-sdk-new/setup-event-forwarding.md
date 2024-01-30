@@ -2,9 +2,9 @@
 title: 이벤트 전달 속성 설정
 description: Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 2%
 Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다.
 
 이벤트 전달은 데이터 수집에서 사용할 수 있는 새로운 유형의 속성입니다. 이벤트 전달을 사용하면 기존의 클라이언트측 브라우저 대신 Adobe Experience Platform Edge Network에서 직접 타사, Adobe 이외의 공급업체에 데이터를 보낼 수 있습니다. 에서 이벤트 전달의 장점에 대해 자세히 알아보십시오. [이벤트 전달 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![웹 SDK 및 이벤트 전달 다이어그램](assets/dc-websdk-eventforwarding.png)
 
 Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다음 세 가지 옵션 중 하나 이상을 사용하여 Adobe Experience Platform Edge Network로 데이터를 보내야 합니다.
 
@@ -50,7 +53,6 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
    * 초기 구성
 
-      * [권한 구성](configure-permissions.md)
       * [XDM 스키마 구성](configure-schemas.md)
       * [ID 네임스페이스 구성](configure-identities.md)
       * [데이터스트림 구성](configure-datastream.md)

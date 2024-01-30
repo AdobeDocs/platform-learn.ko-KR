@@ -2,9 +2,9 @@
 title: 데이터스트림 구성
 description: 데이터 스트림을 활성화하고 Experience Cloud 솔루션을 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Datastreams
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '557'
 ht-degree: 3%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 3%
 데이터 스트림을 활성화하고 Experience Cloud 애플리케이션을 구성하는 방법에 대해 알아봅니다.
 
 데이터 스트림은 Adobe Experience Platform Edge Network에 Platform Web SDK에서 수집한 데이터를 보낼 위치를 알려줍니다. 데이터스트림 구성에서 Experience Cloud 애플리케이션, Experience Platform 계정 및 이벤트 전달을 활성화합니다. 다음을 참조하십시오. [데이터 스트림 구성의 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko-KR) 를 참조하십시오.
+
+
+![웹 SDK, 데이터스트림 및 Edge Network 다이어그램](assets/dc-websdk-datastreams.png)
 
 ## 학습 목표
 

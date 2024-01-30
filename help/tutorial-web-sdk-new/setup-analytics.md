@@ -2,9 +2,9 @@
 title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '4675'
+source-wordcount: '4681'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 다음을 사용하여 Adobe Analytics을 설정하는 방법 알아보기 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), 태그 규칙을 만들어 데이터를 Adobe Analytics으로 전송하고, Analytics가 데이터를 예상대로 캡처하는지 확인합니다.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) 은 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
+
+![Web SDK에서 Adobe Analytics 다이어그램으로](assets/dc-websdk-aa.png)
 
 ## 학습 목표
 
