@@ -2,9 +2,9 @@
 title: Platform Web SDK를 사용하여 Adobe Target 설정
 description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '4288'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -394,22 +394,9 @@ XDM 오브젝트에서 매핑되지 않은 Target에 유용할 수 있는 일부
 * [Recommendations 예약 매개 변수](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * 다음에 대한 범주 값: [카테고리 친화성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Target 매개 변수에 대한 데이터 요소 만들기
+### 특수 Target 매개 변수에 대한 데이터 요소 만들기
 
-먼저 프로필 속성, 엔티티 속성, 카테고리 값에 대한 몇 가지 추가 데이터 요소를 설정한 다음 `data` 비 XDM 데이터를 전달하는 데 사용되는 개체:
-
-* **`target.entity.id`** 매핑됨 `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** 매핑됨 `digitalData.product.0.productInfo.title`
-* **`target.user.categoryId`** 다음 사용자 지정 코드를 사용하여 최상위 카테고리에 대한 사이트 URL을 구문 분석합니다.
-
-  ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
-  ```
+먼저,에서 만들어진 데이터 요소를 사용합니다. [데이터 요소 만들기](create-data-elements.md) 를 구성하는 단원 `data` 비 XDM 데이터를 전달하는 데 사용되는 개체:
 
 * **`data.content`** 다음 사용자 지정 코드 사용:
 
@@ -417,10 +404,10 @@ XDM 오브젝트에서 매핑되지 않은 Target에 유용할 수 있는 일부
   var data = {
      __adobe: {
         target: {
-           "entity.id": _satellite.getVar("target.entity.id"),
-           "entity.name": _satellite.getVar("target.entity.name"),
+           "entity.id": _satellite.getVar("product.productInfo.sku"),
+           "entity.name": _satellite.getVar("product.productInfo.title"),
            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-           "user.categoryId": _satellite.getVar("target.user.categoryId")
+           "user.categoryId": _satellite.getVar("product.category")
         }
      }
   }

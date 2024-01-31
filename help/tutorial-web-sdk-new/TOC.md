@@ -9,9 +9,9 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '97'
 ht-degree: 23%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 23%
 
 + [튜토리얼 개요](overview.md)
 + 초기 구성 {#initial-configuration}
-   + [권한 구성](configure-permissions.md)
    + [XDM 스키마 구성](configure-schemas.md)
    + [ID 네임스페이스 구성](configure-identities.md)
    + [데이터스트림 구성](configure-datastream.md)
@@ -32,6 +31,7 @@ ht-degree: 23%
    + [ID 만들기](create-identities.md)
    + [태그 규칙 만들기](create-tag-rule.md)
    + [디버거를 사용하여 유효성 검사](validate-with-debugger.md)
+   + [Assurance를 통해 유효성 검사](validate-with-assurance.md)
 
 + 응용 프로그램 설정 {#applications-setup}
    + [Experience Platform 설정](setup-experience-platform.md)

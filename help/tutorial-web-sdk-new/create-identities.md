@@ -2,9 +2,9 @@
 title: ID 만들기
 description: XDM에서 ID를 만들고 ID 맵 데이터 요소를 사용하여 사용자 ID를 캡처하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -13,14 +13,7 @@ ht-degree: 1%
 
 Experience Platform 웹 SDK를 사용하여 ID를 캡처하는 방법을 알아봅니다. 에서 인증되지 않은 ID 데이터와 인증된 ID 데이터를 모두 캡처합니다 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html). ID 맵이라는 Platform Web SDK 데이터 요소 유형을 사용하여 인증된 데이터를 수집하기 위해 이전에 만든 데이터 요소를 사용하는 방법에 대해 알아봅니다.
 
-Platform Web SDK 태그 확장에는 네 가지 새로운 데이터 요소 유형이 도입되었습니다.
-
-1. 이벤트 병합 ID
-1. ID 맵
-1. 변수
-1. XDM 개체
-
-이 단원에서는 ID 맵 데이터 요소에 중점을 둡니다. 인증된 사용자 ID 및 인증 상태가 포함된 데이터 요소를 XDM에 매핑합니다.
+이 단원에서는 Adobe Experience Platform Web SDK 태그 확장에서 사용할 수 있는 ID 맵 데이터 요소에 중점을 둡니다. 인증된 사용자 ID 및 인증 상태가 포함된 데이터 요소를 XDM에 매핑합니다.
 
 ## 학습 목표
 
@@ -32,7 +25,7 @@ Platform Web SDK 태그 확장에는 네 가지 새로운 데이터 요소 유�
 
 ## 전제 조건
 
-데이터 계층이 무엇인지 이해하고 있으며 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 데이터 레이어 및 태그의 데이터 요소를 참조하는 방법을 알아봅니다. 자습서에서 다음 이전 단계를 완료해야 합니다.
+데이터 계층이 무엇인지 이해하고 있으며 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 데이터 레이어 및 태그의 데이터 요소를 참조하는 방법을 알아봅니다. 자습서에서 다음 이전 단원을 완료했어야 합니다.
 
 * [XDM 스키마 구성](configure-schemas.md)
 * [ID 네임스페이스 구성](configure-identities.md)
@@ -40,14 +33,10 @@ Platform Web SDK 태그 확장에는 네 가지 새로운 데이터 요소 유�
 * [태그 속성에 설치된 Web SDK 확장](install-web-sdk.md)
 * [데이터 요소 만들기](create-data-elements.md)
 
->[!IMPORTANT]
->
->다음 [Experience Cloud ID 서비스 확장](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) ID 서비스 기능이 Platform Web SDK에 내장되어 있으므로 Adobe Experience Platform Web SDK를 구현할 때에는 이 필요하지 않습니다.
 
 ## Experience Cloud ID
 
-다음 [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) 는 Adobe Experience Platform 및 Adobe Experience Cloud 애플리케이션에서 사용되는 공유 id 네임스페이스입니다. ECID는 고객 ID의 기반을 제공하며 디지털 속성의 기본 ID입니다. 따라서 ECID는 항상 존재하므로 인증되지 않은 사용자 행동을 추적하는 데 이상적인 식별자입니다.
-
+다음 [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) 는 Adobe Experience Platform 및 Adobe Experience Cloud 애플리케이션에서 사용되는 공유 id 네임스페이스입니다. ECID는 고객 ID의 기반을 제공하며 디지털 속성의 기본 ID입니다. 따라서 ECID는 항상 존재하므로 인증되지 않은 사용자 행동을 추적하는 데 이상적인 식별자입니다
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -59,6 +48,10 @@ Platform Web SDK 태그 확장에는 네 가지 새로운 데이터 요소 유�
 자세한 내용 [ECID는 Platform Web SDK를 사용하여 추적됩니다](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
 ECID는 자사 쿠키와 Platform Edge Network의 조합을 사용하여 설정됩니다. 기본적으로 자사 쿠키는 웹 SDK에 의해 설정됩니다. 쿠키 수명에 대한 브라우저 제한 사항을 고려하기 위해 대신 고유한 자사 쿠키를 설정하고 관리하도록 선택할 수 있습니다. 이를 자사 디바이스 ID(FPID)라고 합니다.
+
+>[!IMPORTANT]
+>
+>다음 [Experience Cloud ID 서비스 확장](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) ID 서비스 기능이 Platform Web SDK에 내장되어 있으므로 Adobe Experience Platform Web SDK를 구현할 때에는 이 필요하지 않습니다.
 
 ## 자사 디바이스 ID(FPID)
 

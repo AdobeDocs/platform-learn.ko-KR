@@ -2,9 +2,9 @@
 title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '2005'
 ht-degree: 1%
 
 ---
@@ -59,11 +59,18 @@ ht-degree: 1%
 * **[!UICONTROL 변수 업데이트]** 데이터 요소를 XDM 필드에 매핑
 * **[!UICONTROL 이벤트 보내기]** Experience Platform 에지 네트워크에 XDM 개체 전송
 
-### 변수 업데이트
+먼저 다음을 사용하여 규칙을 정의합니다. **[!UICONTROL 변수 업데이트]** 작업은 사이트의 모든 페이지(예: 페이지 이름)에서 전송하려는 XDM 필드의 &quot;전역 구성&quot;을 정의합니다.
 
-Platform Web SDK의 **[!UICONTROL 변수 업데이트]** 작업. 그런 다음 첫 번째 규칙 다음에 트리거되도록 시퀀싱된 두 번째 규칙을 만들어 를 사용하여 XDM 개체를 Platform Edge Network로 보냅니다. **[!UICONTROL 이벤트 보내기]** 작업. 이후 이 자습서에서는 방문자가 있는 페이지 유형(예: 제품 페이지의 제품 SKU)에 따라 다양한 XDM 필드를 보냅니다. 다음을 포함하는 규칙의 순서를 지정하여 이를 수행합니다 **[!UICONTROL 변수 업데이트]** 를 사용하는 규칙 앞에 있는 작업 **[!UICONTROL 이벤트 보내기]** 작업.
+그런 다음 를 사용하여 추가 규칙을 정의할 수 있습니다. **[!UICONTROL 변수 업데이트]** 전역 XDM 필드를 특정 조건(예: 제품 페이지에 제품 세부 사항 추가)에서만 사용할 수 있는 추가 필드로 보완하는 작업입니다.
 
-태그 규칙을 만들려면 다음을 수행하십시오.
+마지막으로 와 함께 다른 규칙을 사용합니다. **[!UICONTROL 이벤트 보내기]** 전체 XDM 개체를 Adobe Experience Platform Edge Network로 보내는 작업.
+
+
+### 변수 규칙 업데이트
+
+#### 전역 필드
+
+글로벌 XDM 필드에 대한 태그 규칙을 만들려면 다음을 수행하십시오.
 
 1. 이 자습서에서 사용하는 태그 속성을 엽니다
 
@@ -119,6 +126,8 @@ Platform Web SDK의 **[!UICONTROL 변수 업데이트]** 작업. 그런 다음 �
    * **`web.webPageDetials.server`** 끝 `%page.pageInfo.server%`
    * **`web.webPageDetials.siteSection`** 끝 `%page.pageInfo.hierarchie1%`
 
+1. `web.webPageDetials.pageViews.value`을 `1`로 설정합니다.
+
    ![변수 콘텐츠 업데이트](assets/create-rule-xdm-variable-content.png)
 
 1. 그런 다음 `identityMap` 스키마의 객체를 선택하고
@@ -133,16 +142,202 @@ Platform Web SDK의 **[!UICONTROL 변수 업데이트]** 작업. 그런 다음 �
 
    >[!WARNING]
    >
-   > 이 드롭다운은 **`xdm.eventType`** 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 이 필드에는 자유 형식 레이블을 입력할 수도 있지만, 반드시 입력하는 것이 좋습니다 **금지** Platform과 역효과가 있기 때문입니다.
+   > 이 드롭다운은 **`xdm.eventType`** 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 이 필드에는 자유 형식 레이블을 입력할 수도 있지만, 반드시 입력하는 것이 좋습니다 **금지** 플랫폼에 부정적인 영향을 미치기 때문입니다.
 
    >[!TIP]
    >
    > 에서 채울 값을 이해하려면 `eventType` 필드: 스키마 페이지로 이동하여 `eventType` 오른쪽 레일에서 제안된 값을 보기 위한 필드입니다.
 
+   >[!TIP]
+   >
+   > While nothing `web.webPageDetials.pageViews.value` nor `eventType` 을 로 설정 `web.webpagedetails.pageViews` Adobe Analytics에서 비콘을 페이지 보기로 처리하는 데 필요한 경우, 다른 다운스트림 애플리케이션에 대한 페이지 보기를 표시하는 표준 방법을 사용하는 것이 유용합니다.
+
    ![변수 ID 맵 업데이트](assets/create-tag-rule-eventType.png)
 
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 그런 다음 **[!UICONTROL 저장]** 다음 화면의 규칙 을 클릭하여 규칙 만들기를 완료합니다
+
+
+#### 변수 업데이트 작업으로 추가 규칙을 사용하여 XDM 개체 강화
+
+다음을 사용할 수 있습니다. **[!UICONTROL 변수 업데이트]**  다수의 순차적 규칙은에 보내기 전에 XDM 개체를 보완하는 것입니다. [!UICONTROL 플랫폼 에지 네트워크].
+
+>[!TIP]
+>
+>규칙 순서는 이벤트가 트리거될 때 먼저 실행되는 규칙을 결정합니다. 두 규칙의 이벤트 유형이 동일한 경우 숫자가 가장 낮은 규칙이 먼저 실행됩니다.
+> 
+>![규칙 순서](assets/set-up-analytics-sequencing.png)
+
+##### 제품 페이지 필드
+
+Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시작합니다.
+
+1. 선택 **[!UICONTROL 규칙 추가]**
+1. 이름 지정  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
+1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
+1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
+1. 이름 지정 `Core - Page Bottom - order 20`
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - page bottom - AA (order 1)` 전역 콘텐츠 변수를 설정하는 데 사용됩니다. `all pages send event - page bottom - AA (order 50)` xdm 이벤트를 전송합니다.
+
+   ![Analytics XDM 규칙](assets/set-up-analytics-pdp.png)
+
+1. 아래 **[!UICONTROL 조건]**&#x200B;을(를) 선택합니다 **[!UICONTROL 추가]**
+1. 나가기 **[!UICONTROL 논리 유형]** 다음으로: **[!UICONTROL 보통]**
+1. 나가기 **[!UICONTROL 확장]** 다음으로: **[!UICONTROL 코어]**
+1. 선택 **[!UICONTROL 조건 유형]** 다음으로: **[!UICONTROL 쿼리 문자열이 없는 경로]**
+1. 오른쪽에서 **[!UICONTROL 정규 표현식]** 전환
+1. 아래 **[!UICONTROL 경로가 다음과 같음]** set `/products/`. Luma 데모 사이트의 경우 규칙이 제품 페이지에서만 트리거되도록 합니다
+1. 선택 **[!UICONTROL 변경 내용 유지]**
+
+   ![Analytics XDM 규칙](assets/set-up-analytics-product-condition.png)
+
+1. 아래 **[!UICONTROL 작업]** 선택 **[!UICONTROL 추가]**
+1. 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** 확장
+1. 선택 **[!UICONTROL 작업 유형]** 다음으로: **[!UICONTROL 변수 업데이트]**
+1. 아래로 스크롤하여 `commerce` 을(를) 개체하고 을(를) 선택하여 엽니다.
+1. 를 엽니다. **[!UICONTROL 제품 보기]** 오브젝트 및 세트 **[!UICONTROL 값]** 끝 `1`
+
+   ![제품 보기 설정](assets/set-up-analytics-prodView.png)
+
+   >[!TIP]
+   >
+   >XDM에서 commerce.productViews.value=1 을 설정하면 `prodView` analytics의 이벤트
+
+
+1. 아래로 스크롤하여 선택 `productListItems` 배열
+1. 선택 **[!UICONTROL 개별 항목 제공]**
+1. 선택 **[!UICONTROL 항목 추가]**
+
+   ![제품 보기 이벤트 설정 중](assets/set-up-analytics-xdm-individual.png)
+
+   >[!CAUTION]
+   >
+   >다음 **`productListItems`** 은(는) `array` 데이터가 요소의 컬렉션으로 들어올 것을 예상하도록 데이터 유형입니다. Luma 데모 사이트의 데이터 레이어 구조와 Luma 사이트에서 한 번에 하나의 제품만 볼 수 있으므로 항목을 개별적으로 추가합니다. 자체 웹 사이트에서 를 구현할 때 데이터 레이어 구조에 따라 전체 어레이를 제공할 수 있습니다.
+
+1. 열려면 선택하십시오. **[!UICONTROL 항목 1]**
+1. **`productListItems.item1.SKU`**&#x200B;를 `%product.productInfo.sku%`에 매핑
+
+   ![제품 SKU XDM 개체 변수](assets/set-up-analytics-sku.png)
+
+1. 찾기 `eventType` 및 설정 `commerce.productViews`
+
+1. 선택 **[!UICONTROL 변경 내용 유지]**
+
+1. 선택 **[!UICONTROL 저장]** 규칙을 저장하려면
+
+
+
+
+### 장바구니 필드
+
+배열이 XDM 스키마의 형식과 일치하는 경우 전체 배열을 XDM 개체에 매핑할 수 있습니다. 사용자 지정 코드 데이터 요소 `cart.productInfo` 다음을 통해 이전 루프를 만들었습니다. `digitalData.cart.cartEntries` luma의 데이터 레이어 개체를 필요한 형식의 `productListItems` XDM 스키마 오브젝트.
+
+이를 설명하기 위해서는 아래 Luma 사이트 데이터 레이어(왼쪽)와 번역된 데이터 요소(오른쪽)의 비교를 참조하십시오.
+
+![XDM 개체 배열 형식](assets/data-element-xdm-array.png)
+
+데이터 요소를 `productListItems` 구조(힌트, 일치해야 함).
+
+>[!IMPORTANT]
+>
+>숫자 변수가 데이터 레이어의 문자열 값과 함께 변환되는 방식을 확인합니다. `price` 및 `qty` 데이터 요소의 숫자로 형식이 변경되었습니다. 이러한 형식 요구 사항은 플랫폼의 데이터 무결성에 중요하며 다음 기간 동안 결정됩니다. [스키마 구성](configure-schemas.md) 단계. 이 예에서는 **[!UICONTROL 수량]** 를 사용합니다. **[!UICONTROL 정수]** 데이터 유형.
+> ![XDM 스키마 데이터 유형](assets/set-up-analytics-quantity-integer.png)
+
+이제 배열을 XDM 개체에 매핑해 보겠습니다.&quot;
+
+
+1. (이)라는 이름의 새 규칙 만들기 `ecommerce - cart page bottom - AA (order 20)`
+1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
+1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
+1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
+1. 이름 지정 `Core - Page Bottom - order 20`
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`
+1. 선택 **[!UICONTROL 변경 내용 유지]**
+
+   ![Analytics XDM 규칙](assets/set-up-analytics-cart-sequence.png)
+
+1. 아래 **[!UICONTROL 조건]**&#x200B;을(를) 선택합니다 **[!UICONTROL 추가]**
+1. 나가기 **[!UICONTROL 논리 유형]** 다음으로: **[!UICONTROL 보통]**
+1. 나가기 **[!UICONTROL 확장]** 다음으로: **[!UICONTROL 코어]**
+1. 선택 **[!UICONTROL 조건 유형]** 다음으로: **[!UICONTROL 쿼리 문자열이 없는 경로]**
+1. 오른쪽이요 **금지** 활성화 **[!UICONTROL 정규 표현식]** 전환
+1. 아래 **[!UICONTROL 경로가 다음과 같음]** set `/content/luma/us/en/user/cart.html`. Luma 데모 사이트의 경우 규칙이 장바구니 페이지에서 트리거만 하는지 확인합니다
+1. 선택 **[!UICONTROL 변경 내용 유지]**
+
+   ![Analytics XDM 규칙](assets/set-up-analytics-cart-condition.png)
+
+1. 아래 **[!UICONTROL 작업]** 선택 **[!UICONTROL 추가]**
+1. 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** 확장
+1. 선택 **[!UICONTROL 작업 유형]** 다음으로: **[!UICONTROL 변수 업데이트]**
+1. 아래로 스크롤하여 `commerce` 을(를) 개체하고 을(를) 선택하여 엽니다.
+1. 를 엽니다. **[!UICONTROL 제품 목록 보기 수]** 오브젝트 및 세트 **[!UICONTROL 값]** 끝 `1`
+
+   ![제품 보기 설정](assets/set-up-analytics-cart-view.png)
+
+   >[!TIP]
+   >
+   >XDM에서 commerce.productListViews.value=1 을 설정하면 `scView` analytics의 이벤트
+
+
+
+1. 아래로 스크롤하여 선택 **[!UICONTROL productListItem]** 배열
+
+1. 선택 **[!UICONTROL 전체 스토리지 제공]**
+
+1. 다음에 매핑 **`cart.productInfo`** 데이터 요소
+
+1. 선택 `eventType` 및 을 (으)로 설정 `commerce.productListViews`
+
+1. 선택 **[!UICONTROL 변경 내용 유지]**
+
+1. 선택 **[!UICONTROL 저장]** 규칙을 저장하려면
+
+아래 차이점을 사용하여 동일한 패턴에 따라 체크아웃 및 구매를 위한 다른 두 규칙을 만듭니다.
+
+**규칙 이름**: `ecommerce - checkout page bottom - AA (order 20)`
+
+* **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout.html
+* `eventType`을 `commerce.checkouts`로 설정합니다.
+* 설정 **XDM 상거래 이벤트**: commerce.checkout.value 종료 `1`
+
+  >[!TIP]
+  >
+  >이는 설정에 해당합니다. `scCheckout` analytics의 이벤트
+
+**규칙 이름**: `ecommerce - purchase page bottom - AA (order 20)`
+
+* **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout/order/thank-you.html
+* `eventType`을 `commerce.purchases`로 설정합니다.
+* 설정 **XDM 상거래 이벤트**: commerce.purchases.value 종료 `1`
+
+  >[!TIP]
+  >
+  >이는 설정에 해당합니다. `purchase` analytics의 이벤트
+
+필요한 모든 항목을 캡처하는 추가 단계가 있습니다 `purchase` 이벤트 변수:
+
+1. 열기 **[!UICONTROL commerce]** 오브젝트
+1. 를 엽니다. **[!UICONTROL 주문]** 오브젝트
+1. 맵 **[!UICONTROL purchaseID]** (으)로 `cart.orderId` 데이터 요소
+1. 설정 **[!UICONTROL currencyCode]** 하드코딩된 값에 `USD`
+
+   ![Analytics용 purchaseID 설정](assets/set-up-analytics-purchase.png)
+
+   >[!TIP]
+   >
+   >이는 설정에 해당합니다. `s.purchaseID` 및 `s.currencyCode` analytics의 변수
+
+
+1. 아래로 스크롤하여 선택 **[!UICONTROL productListItem]** 배열
+1. 선택 **[!UICONTROL 전체 스토리지 제공]**
+1. 다음에 매핑 **`cart.productInfo.purchase`** 데이터 요소
+1. 선택 **[!UICONTROL 저장]**
+
+완료되면 다음 규칙이 생성됩니다.
+
+![Analytics XDM 규칙](assets/set-up-analytics-rules.png)
+
 
 ### 이벤트 보내기
 

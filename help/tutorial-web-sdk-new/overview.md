@@ -2,7 +2,7 @@
 title: Web SDK 튜토리얼을 통해 Adobe Experience Cloud 구현
 description: Adobe Experience Platform Web SDK를 사용하여 Experience Cloud 애플리케이션을 구현하는 방법에 대해 알아봅니다.
 recommendations: catalog, noDisplay
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 4%
@@ -40,7 +40,7 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
 모든 Experience Cloud 고객은 Platform Web SDK를 사용할 수 있습니다. Web SDK를 사용하기 위해 Real-time Customer Data Platform 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션에 라이센스를 부여할 필요는 없습니다.
 
-이 단원들에서는 Adobe 계정과 [필수 권한](configure-permissions.md) 레슨을 완료합니다. 그렇지 않은 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청해야 합니다.
+이 단원들에서는 사용자에게 Adobe 계정과 단원을 완료하는 데 필요한 권한이 있다고 가정합니다. 그렇지 않은 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청해야 합니다.
 
 * 대상 **데이터 수집**, 다음을 보유해야 합니다.
    * **[!UICONTROL 플랫폼]**—다음에 대한 권한 **[!UICONTROL 웹]** 그리고 라이센스가 부여되면 **[!UICONTROL Edge]**
