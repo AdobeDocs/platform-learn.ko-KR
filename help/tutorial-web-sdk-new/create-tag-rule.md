@@ -2,7 +2,7 @@
 title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 1%
@@ -80,7 +80,7 @@ ht-degree: 1%
 
    ![규칙 만들기](assets/rules-create.png)
 
-1. 규칙 이름을 지정합니다 `all pages global content variables - page bottom - AA (order 1)`
+1. 규칙 이름을 지정합니다 `all pages global content variables - library loaded - AA (order 1)`
 
 1. 다음에서 **[!UICONTROL 이벤트]** 섹션, 선택 **[!UICONTROL 추가]**
 
@@ -173,12 +173,12 @@ ht-degree: 1%
 Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시작합니다.
 
 1. 선택 **[!UICONTROL 규칙 추가]**
-1. 이름 지정  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 이름 지정  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
 1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
 1. 이름 지정 `Core - Page Bottom - order 20`
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - page bottom - AA (order 1)` 전역 콘텐츠 변수를 설정하는 데 사용됩니다. `all pages send event - page bottom - AA (order 50)` xdm 이벤트를 전송합니다.
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - library loaded - AA (order 1)` 전역 콘텐츠 변수를 설정하는 데 사용됩니다. `all pages send event - library loaded - AA (order 50)` xdm 이벤트를 전송합니다.
 
    ![Analytics XDM 규칙](assets/set-up-analytics-pdp.png)
 
@@ -247,7 +247,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 이제 배열을 XDM 개체에 매핑해 보겠습니다.&quot;
 
 
-1. (이)라는 이름의 새 규칙 만들기 `ecommerce - cart page bottom - AA (order 20)`
+1. (이)라는 이름의 새 규칙 만들기 `ecommerce - cart library loaded - AA (order 20)`
 1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
 1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
@@ -295,7 +295,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 아래 차이점을 사용하여 동일한 패턴에 따라 체크아웃 및 구매를 위한 다른 두 규칙을 만듭니다.
 
-**규칙 이름**: `ecommerce - checkout page bottom - AA (order 20)`
+**규칙 이름**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout.html
 * `eventType`을 `commerce.checkouts`로 설정합니다.
@@ -305,7 +305,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
   >
   >이는 설정에 해당합니다. `scCheckout` analytics의 이벤트
 
-**규칙 이름**: `ecommerce - purchase page bottom - AA (order 20)`
+**규칙 이름**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * `eventType`을 `commerce.purchases`로 설정합니다.
@@ -345,7 +345,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 1. 오른쪽에서 다음을 선택합니다. **[!UICONTROL 규칙 추가]** 다른 규칙을 만들려면
 
-1. 규칙 이름을 지정합니다 `all pages send event - page bottom - AA (order 50)`
+1. 규칙 이름을 지정합니다 `all pages send event - library loaded - AA (order 50)`
 
 1. 다음에서 **[!UICONTROL 이벤트]** 섹션, 선택 **[!UICONTROL 추가]**
 
@@ -390,7 +390,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
    >[!NOTE]
    >
-   >    Adobe Experience Platform 웹 SDK 확장 및 `all pages global content variables - page bottom - AA (order 50)` 규칙에서는 이전 단원에서 만든 태그 구성 요소를 볼 수 있습니다. 코어 확장에는 모든 웹 태그 속성에 필요한 기본 JavaScript가 포함되어 있습니다.
+   >    Adobe Experience Platform 웹 SDK 확장 및 `all pages global content variables - library loaded - AA (order 50)` 규칙에서는 이전 단원에서 만든 태그 구성 요소를 볼 수 있습니다. 코어 확장에는 모든 웹 태그 속성에 필요한 기본 JavaScript가 포함되어 있습니다.
 
 1. 선택 **[!UICONTROL 개발을 위한 저장 및 구축]**
 

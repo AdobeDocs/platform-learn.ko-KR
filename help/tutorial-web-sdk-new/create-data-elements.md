@@ -2,7 +2,7 @@
 title: 데이터 요소 만들기
 description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 1%
@@ -154,7 +154,7 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://luma.enablementad
 
 1. 다음으로 이동 **[!UICONTROL 데이터 요소]** 및 선택 **[!UICONTROL 데이터 요소 추가]** (또는 **[!UICONTROL 새 데이터 요소 만들기]** 태그 속성에 기존 데이터 요소가 없는 경우)
 
-   ![데이터 요소 만들기](assets/data-element-create.jpg)
+   ![데이터 요소 만들기](assets/data-element-create.png)
 
 1. 데이터 요소에 이름을 지정합니다 `page.pageInfo.pageName`
 1. 사용 **[!UICONTROL JavaScript 변수]** **[!UICONTROL 데이터 요소 유형]** luma의 데이터 레이어에 있는 값을 가리키려면 다음을 수행합니다. `digitalData.page.pageInfo.pageName`
@@ -165,7 +165,7 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://luma.enablementad
 
 1. 선택 **[!UICONTROL 저장]**
 
-   ![페이지 이름 데이터 요소](assets/data-element-pageName.jpg)
+   ![페이지 이름 데이터 요소](assets/data-element-pageName.png)
 
 동일한 단계를 수행하여 이러한 추가 데이터 요소를 만듭니다.
 

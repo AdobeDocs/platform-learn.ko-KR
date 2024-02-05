@@ -2,7 +2,7 @@
 title: Platform Web SDK를 사용하여 Adobe Target 설정
 description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '4264'
 ht-degree: 0%
@@ -125,9 +125,9 @@ Platform Web SDK에서 Target 활동을 제공하려면 먼저 데이터 스트�
 
 1. 로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
-1. 이전에 만든 항목 선택 `Luma Web SDK` 데이터스트림
+1. 이전에 만든 항목 선택 `Luma Web SDK: Development Environment` 데이터스트림
 
-   ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk.png)
+   ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk-development.png)
 
 1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/target-datastream-addService.png)

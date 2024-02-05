@@ -2,7 +2,7 @@
 title: 이벤트 전달 속성 설정
 description: Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1862'
 ht-degree: 2%
@@ -88,9 +88,9 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 1. 다음으로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
-1. 이전에 만든 항목 선택 `Luma Web SDK` 데이터스트림
+1. 이전에 만든 항목 선택 `Luma Web SDK: Development Environment` 데이터스트림
 
-   ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk.png)
+   ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk-development.png)
 
 1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/event-forwarding-datastream-addService.png)

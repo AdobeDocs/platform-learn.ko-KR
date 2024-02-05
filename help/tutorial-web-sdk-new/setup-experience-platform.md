@@ -1,7 +1,7 @@
 ---
 title: Web SDK를 사용하여 Adobe Experience Platform에 데이터 스트리밍
 description: Web SDK를 사용하여 웹 데이터를 Adobe Experience Platform에 스트리밍하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -84,7 +84,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 1. 선택 **[!UICONTROL 데이터스트림]** 왼쪽 탐색에서
 1. 에서 생성한 데이터 스트림을 엽니다. [데이터 스트림 구성](configure-datastream.md) 단원, `Luma Web SDK`
 
-   ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk.png)
+   ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk-development.png)
 
 1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/experience-platform-addService.png)

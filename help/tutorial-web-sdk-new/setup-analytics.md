@@ -2,7 +2,7 @@
 title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '4681'
 ht-degree: 0%
@@ -304,13 +304,13 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 ## 추가 규칙 만들기
 
-다음에서 [태그 규칙 만들기](create-tag-rule.md) 단원, 다음을 설정함: `all pages global content variables - page bottom - AA (order 1)` 규칙 [을(를) 사용하여 기본 XDM 개체를 만들었습니다. **[!UICONTROL 변수 업데이트]** **[!UICONTROL 작업 유형]**](create-tag-rule.md#create-tag-rule). 다음 연습에서는 해당 XDM 개체를 보강하여 특정 페이지와 관련된 추가 데이터를 캡처합니다.
+다음에서 [태그 규칙 만들기](create-tag-rule.md) 단원, 다음을 설정함: `all pages global content variables - library loaded - AA (order 1)` 규칙 [을(를) 사용하여 기본 XDM 개체를 만들었습니다. **[!UICONTROL 변수 업데이트]** **[!UICONTROL 작업 유형]**](create-tag-rule.md#create-tag-rule). 다음 연습에서는 해당 XDM 개체를 보강하여 특정 페이지와 관련된 추가 데이터를 캡처합니다.
 
 ### 페이지 보기 수 증가
 
 이제 Adobe Analytics으로 데이터를 보내므로 추가 XDM 필드를 매핑하여 페이지 보기를 나타내는 것이 좋습니다. Analytics에서 비콘을 페이지 보기로 처리하는 데에는 기술적으로 필요하지 않지만, 다른 다운스트림 애플리케이션에 대한 페이지 보기를 표시하는 표준 방법을 사용하는 것이 유용합니다.
 
-1. 를 엽니다. `all pages global content variables - page bottom - AA (order 1)` 규칙
+1. 를 엽니다. `all pages global content variables - library loaded - AA (order 1)` 규칙
 1. 를 엽니다. **[!UICONTROL 변수 업데이트]** 작업
 1. 아래로 스크롤한 다음 을(를) 선택하여 까지 열기 `web.webPageDetails`
 1. 을(를) 선택하여 열기 **[!UICONTROL pageViews]** 오브젝트
@@ -324,17 +324,17 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 다른 보고서 세트에 추가 페이지 보기 호출을 전송하는 규칙을 만듭니다. 데이터 스트림 재정의 기능을 사용하여 다음을 사용하여 페이지에 대한 보고서 세트를 변경합니다. **[!UICONTROL 이벤트 보내기]** 작업.
 
-1. 새 규칙을 만들어 이름을 지정합니다. `homepage report suite override - page bottom - AA (order 51)`
+1. 새 규칙을 만들어 이름을 지정합니다. `homepage report suite override - library loaded - AA (order 51)`
 
 1. 아래에서 더하기 기호를 선택합니다. **[!UICONTROL 이벤트]** 새 트리거를 추가하려면
 
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
 
-1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
+1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨]**
 
-1. 이름 지정 `Core - Page Bottom - order 51`
+1. 이름 지정 `Core - library loaded - order 51`
 
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `51`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - page bottom - AA (order 50)` 를 사용하여 기본 XDM을 설정하는 경우 **[!UICONTROL 변수 업데이트]** 작업 유형.
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `51`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - library loaded - AA (order 50)` 를 사용하여 기본 XDM을 설정하는 경우 **[!UICONTROL 변수 업데이트]** 작업 유형.
 
    ![Analytics 보고서 세트 재정의](assets/set-up-analytics-rs-override.png)
 
@@ -392,7 +392,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 ### Update 변수를 사용하여 XDM 개체 강화
 
-사용 **[!UICONTROL 변수 업데이트]** 작업 유형 추가 규칙을 만들어 &quot;전역 콘텐츠 XDM&quot;을(를) 로 보내기 전에 보강할 수 있습니다. [!UICONTROL 플랫폼 에지 네트워크]. 새 규칙의 순서를 다음 앞에 지정하여 이를 수행합니다. `all pages send event - page bottom - AA (order 50)` 이벤트를 보내는 이벤트 [!UICONTROL 플랫폼 에지 네트워크].
+사용 **[!UICONTROL 변수 업데이트]** 작업 유형 추가 규칙을 만들어 &quot;전역 콘텐츠 XDM&quot;을(를) 로 보내기 전에 보강할 수 있습니다. [!UICONTROL 플랫폼 에지 네트워크]. 새 규칙의 순서를 다음 앞에 지정하여 이를 수행합니다. `all pages send event - library loaded - AA (order 50)` 이벤트를 보내는 이벤트 [!UICONTROL 플랫폼 에지 네트워크].
 
 >[!TIP]
 >
@@ -413,12 +413,12 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시작합니다.
 
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 규칙]** 다음을 선택합니다. **[!UICONTROL 규칙 추가]**
-1. 이름 지정  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 이름 지정  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
-1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
-1. 이름 지정 `Core - Page Bottom - order 20`
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - page bottom - AA (order 1)` 전역 콘텐츠 변수를 설정하는 데 사용됩니다. `all pages send event - page bottom - AA (order 50)` xdm 이벤트를 전송합니다.
+1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨]**
+1. 이름 지정 `Core - library loaded - order 20`
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - library loaded - AA (order 1)` 전역 콘텐츠 변수를 설정하는 데 사용됩니다. `all pages send event - library loaded - AA (order 50)` xdm 이벤트를 전송합니다.
 
    ![Analytics XDM 규칙](assets/set-up-analytics-pdp.png)
 
@@ -517,13 +517,13 @@ Luma의 데이터 레이어 구조 때문에 개별 변수에 매핑하여 Luma 
 >숫자 변수가 데이터 레이어의 문자열 값과 함께 변환되는 방식을 확인합니다. `price` 및 `qty` 데이터 요소의 숫자로 형식이 변경되었습니다. 이러한 형식 요구 사항은 플랫폼의 데이터 무결성에 중요하며 다음 기간 동안 결정됩니다. [스키마 구성](configure-schemas.md) 단계. 이 예에서는 **[!UICONTROL 수량]** 를 사용합니다. **[!UICONTROL 정수]** 데이터 유형.
 > ![XDM 스키마 데이터 유형](assets/set-up-analytics-quantity-integer.png)
 
-이제 전체 어레이에 XDM 개체 매핑으로 돌아갑니다. 를 생성하는 것과 동일한 단계를 반복합니다. `ecommerce - pdp page bottom - AA (order 20)` 규칙:
+이제 전체 어레이에 XDM 개체 매핑으로 돌아갑니다. 를 생성하는 것과 동일한 단계를 반복합니다. `ecommerce - pdp library loaded - AA (order 20)` 규칙:
 
-1. 이름 지정  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. 이름 지정  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
 1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
-1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
-1. 이름 지정 `Core - Page Bottom - order 20`
+1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨]**
+1. 이름 지정 `Core - library loaded - order 20`
 1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`
 1. 선택 **[!UICONTROL 변경 내용 유지]**
 
@@ -574,7 +574,7 @@ Luma의 데이터 레이어 구조 때문에 개별 변수에 매핑하여 Luma 
 
 아래 차이점을 사용하여 동일한 패턴에 따라 체크아웃 및 구매를 위한 다른 두 규칙을 만듭니다.
 
-**규칙 이름**: `ecommerce - checkout page bottom - AA (order 20)`
+**규칙 이름**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout.html
 * `eventType`을 `commerce.checkouts`로 설정합니다.
@@ -584,7 +584,7 @@ Luma의 데이터 레이어 구조 때문에 개별 변수에 매핑하여 Luma 
   >
   >이는 설정에 해당합니다. `scCheckout` analytics의 이벤트
 
-**규칙 이름**: `ecommerce - purchase page bottom - AA (order 20)`
+**규칙 이름**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * `eventType`을 `commerce.purchases`로 설정합니다.
@@ -745,7 +745,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
    >[!TIP]
    >
-   > 다음 `ecommerce - pdp page bottom - AA (order 20)` 규칙이 값을 덮어쓰고 있습니다. `eventType` 에 의해 설정됨 `all pages global content variables - page bottom - AA (order 1)` 규칙이 시퀀스 뒷부분에서 트리거되도록 설정된 경우
+   > 다음 `ecommerce - pdp library loaded - AA (order 20)` 규칙이 값을 덮어쓰고 있습니다. `eventType` 에 의해 설정됨 `all pages global content variables - library loaded - AA (order 1)` 규칙이 시퀀스 뒷부분에서 트리거되도록 설정된 경우
 
 
    ![Analytics 제품 보기](assets/analytics-debugger-prodView.png)
