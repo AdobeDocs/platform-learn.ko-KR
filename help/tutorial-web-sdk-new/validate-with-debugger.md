@@ -2,9 +2,9 @@
 title: Experience Platform 디버거를 사용하여 Web SDK 구현 확인
 description: Adobe Experience Platform Debugger을 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Debugger
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -49,14 +49,10 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 ## 디버거를 사용하여 대체 태그 라이브러리 로드
 
-이 튜토리얼에서는 공개적으로 호스팅되는 [Luma 데모 웹 사이트](https://luma.enablementadobe.com/content/luma/us/en.html). 홈페이지를 열고 책갈피를 지정합니다.
-
-![Luma 홈페이지](assets/validate-luma-site.png)
-
 Experience Platform 디버거에는 기존 태그 라이브러리를 다른 태그 라이브러리로 바꿀 수 있는 멋진 기능이 있습니다. 이 기법은 유효성 검사에 유용하며, 이를 통해 이 자습서의 많은 구현 단계를 건너뛸 수 있습니다.
 
-1. Luma 사이트가 열려 있는지 확인하고 Experience Platform 디버거 확장 아이콘을 선택합니다.
-1. 디버거가 열리고 이 자습서와 관련이 없는 하드코딩된 구현에 대한 일부 세부 정보가 표시됩니다(디버거를 연 후 Luma 사이트를 다시 로드해야 할 수 있음).
+1. 다음 항목이 있는지 확인하십시오. [Luma 데모 웹 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} Experience Platform 디버거 확장 아이콘을 열고 선택합니다.
+1. 디버거가 열리고, 하드코딩된 구현에 대한 몇 가지 세부 사항이 표시됩니다(디버거를 연 후 Luma 사이트를 다시 로드해야 할 수 있음)
 1. 디버거가 &quot;&quot;인지 확인합니다.**[!UICONTROL Luma에 연결됨]**&#x200B;아래 그림과 같이 &quot;을(를) 선택한 다음 &quot;**[!UICONTROL 잠금]**&quot; 아이콘을 클릭하여 Luma 사이트에 디버거를 잠급니다.
 1. 다음 항목 선택 **[!UICONTROL 로그인]** 버튼을 클릭하고 Adobe ID를 사용하여 Adobe Experience Cloud에 로그인합니다.
 1. 이제 다음으로 이동 **[!UICONTROL Experience Platform 태그]** 왼쪽 탐색
@@ -78,7 +74,7 @@ Experience Platform 디버거에는 기존 태그 라이브러리를 다른 태�
 
    ![태그 속성이 대체됨](assets/validate-switch-success.png)
 
-자습서를 계속 진행하면 이 기술을 사용하여 Luma 사이트를 고유한 태그 속성에 매핑하여 Platform Web SDK 구현의 유효성을 검사합니다. 프로덕션 웹 사이트에서 태그 사용을 시작할 때 이와 동일한 기술을 사용하여 변경 내용의 유효성을 검사할 수 있습니다.
+자습서를 계속 진행하면 이 기술을 사용하여 Luma 사이트를 고유한 태그 속성에 매핑하여 Platform Web SDK 구현의 유효성을 검사합니다. 프로덕션 웹 사이트에서 태그 사용을 시작할 때 이와 동일한 기술을 사용하여 태그의 개발 환경에서 변경 사항을 확인하면서 변경 사항의 유효성을 검사할 수 있습니다.
 
 ## Experience Platform 디버거를 사용하여 클라이언트측 네트워크 요청 확인
 
@@ -138,18 +134,20 @@ ID 맵 세부 정보의 유효성을 검사할 수도 있습니다.
 
    ![네트워크 탭](assets/validate-dev-console-ecid.png)
 
+   >[!NOTE]
+   >
+   > ECID 값은 네트워크 응답에 표시됩니다. 에는 포함되어 있지 않습니다. `identityMap` 네트워크 요청의 일부이며, 쿠키에 이 형식으로 저장되지 않습니다.
 
 ## Experience Platform 디버거를 사용하여 서버측 네트워크 요청 확인
 
-에서 배웠듯이 [데이터 스트림 구성](configure-datastream.md) 단원: Platform Web SDK 는 먼저 디지털 속성의 데이터를 Platform Edge Network로 전송합니다. 그런 다음 Platform Edge Network는 데이터 스트림에서 활성화된 해당 서비스에 대해 추가 서버측 요청을 수행합니다.
+에서 배웠듯이 [데이터 스트림 구성](configure-datastream.md) 단원: Platform Web SDK 는 먼저 디지털 속성의 데이터를 Platform Edge Network로 전송합니다. 그런 다음 Platform Edge Network는 데이터 스트림에서 활성화된 해당 서비스에 대해 추가 서버측 요청을 수행합니다. 디버거의 Edge Trace 를 사용하여 Platform Edge Network에서 수행한 서버측 요청의 유효성을 검사할 수 있습니다.
 
-디버거에서 Edge Trace 를 활성화하여 서버측 요청의 유효성을 검사할 수 있습니다. 또한 를 사용하여 완전히 처리된 페이로드가 Adobe 애플리케이션에 도달한 후 유효성을 검사할 수도 있습니다. [Adobe Experience Platform 보증](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
 
-다음 두 연습에서는 Edge Trace 를 활성화하고 Assurance를 사용하여 Platform Edge Network에서 생성된 Experience Cloud ID를 확인합니다.
 
 ### Edge 추적 활성화
 
-Edge 추적을 활성화하려면
+Edge Trace를 활성화하려면
 
 1. 의 왼쪽 탐색 **[!UICONTROL Experience Platform 디버거]** 선택 **[!UICONTROL 로그]**
 1. 다음 항목 선택 **[!UICONTROL Edge]** 탭을 클릭하고 다음을 선택합니다 **[!UICONTROL 연결]**
@@ -164,37 +162,9 @@ Edge 추적을 활성화하려면
 
    ![Analytics 비콘 Edge Trace](assets/validate-edge-trace.png)
 
-이 시점에서는 데이터 스트림에서 를 활성화하지 않았기 때문에 Adobe 애플리케이션으로 이동하는 Platform Edge Network 요청을 볼 수 없습니다. 향후 단원에서는 Edge Trace 를 사용하여 Adobe 애플리케이션에 대한 보내는 서버측 요청을 확인합니다. 그러나 Assurance를 사용하면 Platform Edge Network에서 생성한 Experience Cloud ID를 계속 볼 수 있습니다.
+이 시점에서는 데이터 스트림에서 를 활성화하지 않았기 때문에 Adobe 애플리케이션으로 이동하는 Platform Edge Network 요청을 볼 수 없습니다. 향후 단원에서는 Edge Trace 를 사용하여 Adobe 애플리케이션 및 이벤트 전달에 대한 보내는 서버측 요청을 확인합니다. 그러나 먼저 Platform Edge Network에서 수행한 서버측 요청의 유효성을 검사하는 다른 도구인 Adobe Experience Platform Assurance에 대해 알아보십시오.
 
-### 보증 세션 시작
-
-Adobe Experience Platform Assurance는 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 Adobe Experience Cloud의 제품입니다.
-
-자세한 내용 [Adobe 보증](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
-
-Edge Trace를 활성화할 때마다 백그라운드에서 Assurance 세션이 시작됩니다.
-
-보증 세션을 보려면
-
-1. Edge Trace 가 활성화된 경우 맨 위에 발신 링크 아이콘이 표시됩니다. Assurance를 열려면 아이콘을 선택합니다. 브라우저에서 새 탭이 열립니다.
-
-   ![보증 세션 시작](assets/validate-debugger-start-assurnance.png)
-
-1. Adobe 응답 핸들이라는 이벤트가 있는 행을 선택합니다.
-1. 메뉴가 오른쪽에 표시됩니다. 다음 항목 선택 `+` 다음 옆에 서명 `[!UICONTROL ACPExtensionEvent]`
-1. 을 선택하여 드릴다운 `[!UICONTROL payload > 0 > payload > 0 > namespace]`. 마지막 항목 아래에 표시된 ID `0` 다음에 해당 `ECID`. 아래에 표시되는 값으로 알 수 있습니다. `namespace` 일치 `ECID`
-
-   ![보증 유효성 확인 ECID](assets/validate-assurance-ecid.png)
-
-   >[!CAUTION]
-   >
-   >창의 너비로 인해 잘린 ECID 값이 표시될 수 있습니다. 인터페이스에서 핸들 막대를 선택하고 왼쪽으로 드래그하여 전체 ECID를 표시하면 됩니다.
-
-향후 단원에서는 Assurance를 사용하여 데이터 스트림에서 활성화된 Adobe 애플리케이션에 도달하기 위해 완전히 처리된 페이로드를 확인합니다.
-
-이제 페이지에서 실행되는 XDM 개체와 데이터 수집의 유효성을 검사하는 방법에 대한 지식이 있으면 Platform Web SDK를 사용하여 개별 Adobe 애플리케이션을 설정할 수 있습니다.
-
-[다음: ](setup-experience-platform.md)
+[다음: ](validate-with-assurance.md)
 
 >[!NOTE]
 >

@@ -2,7 +2,7 @@
 title: Web SDK 튜토리얼을 통해 Adobe Experience Cloud 구현
 description: Adobe Experience Platform Web SDK를 사용하여 Experience Cloud 애플리케이션을 구현하는 방법에 대해 알아봅니다.
 recommendations: catalog, noDisplay
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 4%
@@ -76,9 +76,9 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
 ## Luma 웹 사이트 로드
 
-을(를) 로드합니다 [Luma 웹 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 자습서 중에 필요할 때마다 쉽게 로드할 수 있도록 별도의 브라우저 탭에서 책갈피를 지정합니다. 호스팅된 프로덕션 사이트를 로드할 수 있는 것 외에 Luma에 대한 추가 액세스 권한이 필요하지 않습니다.
+을(를) 로드합니다 [Luma 웹 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} 자습서 중에 필요할 때마다 쉽게 로드할 수 있도록 별도의 브라우저 탭에서 책갈피를 지정합니다. 호스팅된 프로덕션 사이트를 로드할 수 있는 것 외에 Luma에 대한 추가 액세스 권한이 필요하지 않습니다.
 
-[![Luma 웹 사이트](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma 웹 사이트](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"}
 
 그럼 시작해 보겠습니다!
 

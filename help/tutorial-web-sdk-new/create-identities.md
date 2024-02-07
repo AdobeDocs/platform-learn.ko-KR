@@ -2,9 +2,9 @@
 title: ID 만들기
 description: XDM에서 ID를 만들고 ID 맵 데이터 요소를 사용하여 사용자 ID를 캡처하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ Experience Platform 웹 SDK를 사용하여 ID를 캡처하는 방법을 알아�
 
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
-* Experience Cloud ID(ECID)와 자사 디바이스 ID의 차이점 이해
+* Experience Cloud ID(ECID)와 자사 디바이스 ID(FPID) 간의 관계 이해
 * 인증되지 않은 ID와 인증된 ID의 차이점 이해
 * ID 맵 데이터 요소 만들기
 
 ## 전제 조건
 
-데이터 계층이 무엇인지 이해하고 있으며 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 데이터 레이어 및 태그의 데이터 요소를 참조하는 방법을 알아봅니다. 자습서에서 다음 이전 단원을 완료했어야 합니다.
+데이터 계층이 무엇인지 이해하고 있으며 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 데이터 레이어 및 태그의 데이터 요소를 참조하는 방법을 알아봅니다. 자습서의 이전 단원을 완료했어야 합니다.
 
 * [XDM 스키마 구성](configure-schemas.md)
 * [ID 네임스페이스 구성](configure-identities.md)
@@ -55,11 +55,11 @@ ECID는 자사 쿠키와 Platform Edge Network의 조합을 사용하여 설정�
 
 ## 자사 디바이스 ID(FPID)
 
-FPID는 자사 쿠키입니다. _고유한 웹 서버를 사용하여 을 설정합니다._ 그런 다음 웹 SDK에서 설정한 자사 쿠키를 사용하는 대신 를 사용하여 ECID를 설정하는 Adobe. 자사 쿠키는 DNS CNAME 또는 JavaScript 코드와 반대로 DNS A 레코드(IPv4의 경우) 또는 AAAA 레코드(IPv6의 경우)를 활용하는 서버를 사용하여 설정할 때 가장 효과적입니다.
+FPID는 자사 쿠키입니다. _고유한 웹 서버를 사용하여 을 설정합니다._ 그런 다음 웹 SDK에서 설정한 자사 쿠키를 사용하는 대신 를 사용하여 ECID를 생성하는 Adobe. 브라우저 지원은 다를 수 있지만 자사 쿠키는 DNS CNAME 또는 JavaScript 코드로 설정하는 경우와는 대조적으로, DNS A 레코드(IPv4의 경우) 또는 AAAA 레코드(IPv6의 경우)를 활용하는 서버에서 설정하는 경우 내구성이 더 뛰어난 경향이 있습니다.
 
 FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수집될 때 Adobe으로 보낼 수 있습니다. 수집된 FPID는 Platform Edge Network에서 ECID를 생성하는 시드로 사용되며 Adobe Experience Cloud 애플리케이션에서 계속 기본 식별자입니다.
 
-자세한 내용 [Platform Web SDK의 자사 디바이스 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ko-KR)
+이 자습서에서는 FPID를 사용하지 않지만 자체 웹 SDK 구현에서는 FPID를 사용하는 것이 좋습니다. 자세한 내용 [Platform Web SDK의 자사 디바이스 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ko-KR)
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수�
 
 위에서 언급했듯이 Platform Web SDK를 사용할 때 디지털 속성에 대한 모든 방문자에게 Adobe에 의해 ECID가 지정됩니다. 이렇게 하면 ECID가 인증되지 않은 디지털 동작을 추적할 기본 ID가 됩니다.
 
-또한 인증된 사용자 ID를 전송하여 Platform에서 [ID 그래프](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ko-KR), Target은 타사 를 설정할 수 있습니다. 이 작업은 다음을 사용하여 수행합니다 [!UICONTROL ID 맵] 데이터 요소 유형입니다.
+또한 인증된 사용자 ID를 전송하여 Platform에서 [ID 그래프](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=ko-KR) 및 Target에서 다음을 설정할 수 있습니다. [타사 Id](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). 이 작업은 다음을 사용하여 수행합니다 [!UICONTROL ID 맵] 데이터 요소 유형입니다.
 
 다음을 만들려면 [!UICONTROL ID 맵] 데이터 요소:
 
@@ -133,12 +133,17 @@ FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수�
 
 이러한 단계를 마치면 다음 데이터 요소를 만들어야 합니다.
 
-| 코어 확장 데이터 요소 | Platform Web SDK 데이터 요소 |
+| 코어 확장 데이터 요소 | Platform 웹 SDK 확장 데이터 요소 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.variable.content` |
+| `cart.productInfo` | `xdm.variable.content` |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 

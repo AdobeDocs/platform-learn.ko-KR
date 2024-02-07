@@ -2,10 +2,10 @@
 title: ID 네임스페이스 구성
 description: Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Identities
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 7%
+source-wordcount: '640'
+ht-degree: 8%
 
 ---
 
@@ -13,13 +13,15 @@ ht-degree: 7%
 
 Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법에 대해 알아봅니다.
 
-다음 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html) 는 애플리케이션 간의 대상 공유와 같은 Experience Cloud 기능을 지원하기 위해 Adobe 애플리케이션 간에 공통 방문자 ID를 설정합니다. 또한 고유한 고객 ID를 서비스로 보내어 장치 간 타깃팅 및 CRM(고객 관계 관리) 시스템과 같은 다른 시스템과의 통합을 가능하게 할 수 있습니다.
+다음 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html) 는 애플리케이션 간의 대상 공유와 같은 Experience Cloud 기능을 지원하기 위해 SDK 기반 Adobe 애플리케이션에 공통 방문자 ID(ECID)를 설정합니다. 또한 고유한 고객 ID를 서비스로 보내어 장치 간 타깃팅 및 CRM(고객 관계 관리) 시스템과 같은 다른 시스템과의 통합을 가능하게 할 수 있습니다.
 
-웹 사이트에서 이미 방문자 API 또는 Experience Cloud ID 서비스 태그 확장 기능을 통해 웹 사이트에서 Experience Cloud ID 서비스를 사용하고 있으며, Adobe Experience Platform Web SDK로 마이그레이션하는 동안 계속 사용하려면, 최신 버전의 방문자 API 또는 Experience Cloud ID 서비스 태그 확장 기능을 사용해야 합니다. 다음을 참조하십시오 [ID 마이그레이션](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) 추가 정보.
+다음 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR) (예, 두 개 있습니다!) 는 ECID 및 고객 ID를 사용하여 ID 그래프를 생성하므로 속성 및 동작을 실시간 고객 프로필에 병합할 수 있습니다.
+
+
 
 >[!NOTE]
 >
-> 이 단원의 연습에서는 데모용으로 가상 고객에 로그인한 ID의 세부 정보를 캡처합니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 자격 증명을 사용하여 **사용자: `test@adobe.com` / 암호: 테스트**. 이러한 단계를 사용하여 고유한 목적을 위해 다른 ID를 만들 수 있지만 데이터 수집 인터페이스에서 ID 맵의 기능을 알아보려면 먼저 예제 ID를 캡처하는 방법을 따르는 것이 좋습니다.
+> 이 단원의 연습에서는 데모용으로 가상 고객에 로그인한 ID의 세부 정보를 캡처합니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 자격 증명을 사용하여 **사용자: `test@adobe.com` / 암호: 테스트**.
 
 ## 학습 목표
 
@@ -38,6 +40,8 @@ Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구�
 >[!IMPORTANT]
 >
 >다음 [Experience Cloud ID 확장](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) 웹 SDK JavaScript 라이브러리에는 방문자 ID 서비스 기능이 포함되어 있으므로 Adobe Experience Platform 웹 SDK를 구현할 때에는 이 필요하지 않습니다.
+>
+> 웹 사이트에서 이미 방문자 API 또는 Experience Cloud ID 서비스 태그 확장 기능을 통해 웹 사이트에서 Experience Cloud ID 서비스를 사용하고 있으며, Adobe Experience Platform Web SDK로 마이그레이션하는 동안 계속 사용하려면, 최신 버전의 방문자 API 또는 Experience Cloud ID 서비스 태그 확장 기능을 사용해야 합니다. 다음을 참조하십시오 [ID 마이그레이션](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) 추가 정보.
 
 ## ID 네임스페이스 만들기
 
@@ -54,12 +58,12 @@ Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구�
 
    >[!NOTE]
    >
-   >Real-Time CDP과 같은 플랫폼 기반 애플리케이션의 고객인 경우 이 자습서에서는 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않으면 **[!UICONTROL Prod]** 샌드박스.
+   >Real-Time CDP 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션의 고객인 경우 이 자습서에서는 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않으면 **[!UICONTROL Prod]** 샌드박스.
 
 1. 선택 **[!UICONTROL ID]** 왼쪽 탐색
 1. 선택 **[!UICONTROL 찾아보기]**
 
-   페이지의 기본 인터페이스에 ID 네임스페이스 목록이 표시되어 이름, ID 기호, 마지막으로 업데이트된 날짜 및 표준 네임스페이스인지 사용자 정의 네임스페이스인지 여부를 보여 줍니다. 오른쪽 레일에는 ID 그래프 강도에 대한 정보가 포함되어 있습니다.
+   페이지의 기본 인터페이스에 ID 네임스페이스 목록이 표시되어 이름, ID 기호, 마지막으로 업데이트된 날짜 및 표준 네임스페이스인지 사용자 정의 네임스페이스인지 여부를 보여 줍니다. 오른쪽 레일에는 다음 정보가 포함됩니다. [!UICONTROL ID 그래프 강도].
 
 1. 선택 **[!UICONTROL ID 네임스페이스 만들기]**
 

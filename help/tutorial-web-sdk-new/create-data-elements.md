@@ -2,9 +2,9 @@
 title: 데이터 요소 만들기
 description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 1%
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
 * 데이터 레이어를 XDM에 매핑하는 다양한 방법 이해
-* 콘텐츠 데이터를 캡처할 데이터 요소 만들기
-* 데이터 요소를 XDM 개체 데이터 요소에 매핑
+* 데이터 요소를 만들어 데이터 캡처
+* XDM 개체에 데이터 요소 매핑
 
 
 ## 전제 조건
 
-데이터 계층이 무엇인지 이해하고 있으며 자습서에서 다음 이전 단원을 완료했습니다.
+데이터 계층이 무엇인지 이해하고 자습서의 이전 단원을 완료했습니다.
 
 * [XDM 스키마 구성](configure-schemas.md)
 * [ID 네임스페이스 구성](configure-identities.md)
@@ -41,9 +41,9 @@ ht-degree: 1%
 
 Adobe Experience Platform의 태그 기능을 사용하여 데이터 레이어의 데이터를 XDM에 매핑하는 방법에는 여러 가지가 있습니다. 다음은 세 가지 접근 방식에 대한 몇 가지 장단점입니다.
 
-* [데이터 레이어에서 XDM 구현](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [데이터 스트림의 XDM에 매핑](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [태그의 XDM에 매핑](create-data-elements.md#map-data-layer-in-tags)
+1. 데이터 레이어에서 XDM 구현
+1. 태그의 XDM에 매핑
+1. 데이터 스트림의 XDM에 매핑
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Adobe Experience Platform의 태그 기능을 사용하여 데이터 레이어�
 
 ### 데이터 레이어에서 XDM 구현
 
-이 접근 방법에는 데이터 레이어의 구조로 완전히 정의된 XDM 개체를 사용하는 작업이 포함됩니다. 그런 다음 전체 데이터 레이어를 Adobe 태그의 XDM 개체 데이터 요소에 매핑합니다. 구현에서 태그 관리자를 사용하지 않는 경우 를 사용하여 애플리케이션에서 직접 XDM으로 데이터를 전송할 수 있으므로 이 방법이 이상적일 수 있습니다. [XDM sendEvent 명령](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). Adobe 태그를 사용하는 경우 전체 데이터 레이어를 XDM에 대한 통과 JSON 개체로 캡처하는 사용자 지정 코드 데이터 요소를 만들 수 있습니다. 그런 다음 통과 JSON을 이벤트 보내기 작업의 XDM 개체 필드에 매핑합니다.
+이 접근 방법에는 데이터 레이어의 구조로 완전히 정의된 XDM 개체를 사용하는 작업이 포함됩니다. 그런 다음 전체 데이터 레이어를 태그의 XDM 개체 데이터 요소에 매핑합니다. 구현에서 태그 관리자를 사용하지 않는 경우 를 사용하여 애플리케이션에서 직접 XDM으로 데이터를 전송할 수 있으므로 이 방법이 이상적일 수 있습니다. [XDM sendEvent 명령](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). 태그를 사용하는 경우 전체 데이터 레이어를 XDM에 대한 통과 JSON 개체로 캡처하는 사용자 지정 코드 데이터 요소를 만들 수 있습니다. 그런 다음 통과 JSON을 이벤트 보내기 작업의 XDM 개체 필드에 매핑합니다.
 
 다음은 Adobe 클라이언트 데이터 레이어 형식을 사용하는 데이터 레이어의 모습에 대한 예입니다.
 
@@ -97,7 +97,7 @@ window.adobeDataLayer.push({
 
 장점
 
-* 개별 데이터 레이어 변수를 XDM에 매핑하는 단계를 건너뜁니다.
+* 데이터 레이어 변수를 XDM으로 다시 매핑하는 추가 단계를 제거합니다.
 * 개발 팀이 태그 지정 디지털 동작을 담당하는 경우 배포하는 것이 더 빠를 수 있습니다.
 
 단점
@@ -108,41 +108,44 @@ window.adobeDataLayer.push({
 * 타사 픽셀에 데이터 레이어를 사용할 수 없습니다.
 * 데이터 레이어와 XDM 간에 데이터를 변환할 수 없음
 
-### 데이터 스트림의 XDM에 매핑
-
-이 방법에서는 이라는 데이터 스트림 구성에 내장된 기능을 사용합니다. [데이터 수집을 위한 데이터 준비](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) 및 는 태그의 데이터 레이어 변수를 XDM에 매핑하는 것을 건너뜁니다.
-
-장점
-
-* 개별 변수를 XDM에 매핑할 수 있어 유연함
-* 다음에 대한 기능: [새 값 계산](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) 또는 [데이터 유형 변환](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) xdm으로 이동하기 전에 데이터 레이어에서
-* 활용 [매핑 UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 포인트 앤 클릭 UI를 사용하여 소스 데이터의 필드를 XDM에 매핑하려면
-
-단점
-
-* 데이터 레이어 변수를 클라이언트측 타사 픽셀에 대한 데이터 요소로 사용할 수 없지만 Adobe 태그에서 이벤트 전달에 사용할 수 있습니다
-* Adobe Experience Platform의 태그 기능에 있는 스크래핑 기능을 사용할 수 없습니다.
-* 태그와 데이터스트림 모두에서 데이터 레이어를 매핑할 경우 유지 관리 복잡성이 증가합니다
-
 ### 태그의 데이터 레이어 매핑
 
 이 접근 방법에는 개별 데이터 계층 변수 또는 데이터 계층 개체를 태그의 데이터 요소와 최종적으로 XDM에 매핑하는 작업이 포함됩니다. 이는 태그 관리 시스템을 사용하여 를 구현하는 기존 접근 방식입니다.
 
-장점
+#### 장점
 
 * XDM에 도달하기 전에 개별 변수를 제어하고 데이터를 변환할 수 있는 가장 유연한 접근 방법입니다
 * Adobe 태그 트리거 및 스크래핑 기능을 사용하여 데이터를 XDM에 전달할 수 있음
 * 클라이언트측 서드파티 픽셀에 데이터 요소 매핑 가능
 
-단점
+#### 단점
 
-* 구현에 더 오래 걸릴 수 있음
+* 데이터 레이어를 데이터 요소로 재구성하는 데 시간이 걸립니다.
+
 
 >[!TIP]
 >
 > Google 데이터 레이어
 > 
-> 조직에서 이미 Google Analytics을 사용하고 있고 웹 사이트에 기존 Google dataLayer 개체가 있는 경우 다음을 사용할 수 있습니다. [Google 데이터 레이어 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) Adobe 태그에서 참조할 수 있습니다. 이렇게 하면 IT 팀에 지원을 요청하지 않고도 Adobe 기술을 보다 신속하게 배포할 수 있습니다. Google 데이터 레이어를 XDM에 매핑하면 위와 동일한 단계를 따릅니다.
+> 조직에서 이미 Google Analytics을 사용하고 있고 웹 사이트에 기존 Google dataLayer 개체가 있는 경우 다음을 사용할 수 있습니다. [Google 데이터 레이어 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) 태그에 있습니다. 이렇게 하면 IT 팀에 지원을 요청하지 않고도 Adobe 기술을 보다 신속하게 배포할 수 있습니다. Google 데이터 레이어를 XDM에 매핑하면 위와 동일한 단계를 따릅니다.
+
+### 데이터 스트림의 XDM에 매핑
+
+이 방법에서는 이라는 데이터 스트림 구성에 내장된 기능을 사용합니다. [데이터 수집을 위한 데이터 준비](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) 및 는 태그의 데이터 레이어 변수를 XDM에 매핑하는 것을 건너뜁니다.
+
+#### 장점
+
+* 개별 변수를 XDM에 매핑할 수 있어 유연함
+* 다음에 대한 기능: [새 값 계산](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) 또는 [데이터 유형 변환](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) xdm으로 이동하기 전에 데이터 레이어에서
+* 활용 [매핑 UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 포인트 앤 클릭 UI를 사용하여 소스 데이터의 필드를 XDM에 매핑하려면
+
+#### 단점
+
+* 데이터 레이어 변수를 클라이언트측 타사 픽셀에 대한 데이터 요소로 사용할 수 없지만 이벤트 전달과 함께 사용할 수 있습니다
+* Adobe Experience Platform의 태그 기능에 있는 스크래핑 기능을 사용할 수 없습니다.
+* 태그와 데이터스트림 모두에서 데이터 레이어를 매핑할 경우 유지 관리 복잡성이 증가합니다
+
+
 
 >[!IMPORTANT]
 >
@@ -270,7 +273,7 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://luma.enablementad
 
 이러한 단계를 마치면 다음 데이터 요소를 만들어야 합니다.
 
-| 코어 확장 데이터 요소 | Platform Web SDK 데이터 요소 |
+| 코어 확장 데이터 요소 | Platform 웹 SDK 확장 데이터 요소 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo` | |
@@ -278,6 +281,7 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://luma.enablementad
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
 | `product.productInfo.sku` | |
 | `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
@@ -285,7 +289,7 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://luma.enablementad
 
 >[!TIP]
 >
->향후 [태그 규칙 만들기](create-tag-rule.md) 단원, 당신은 어떻게 **[!UICONTROL 변수]** 데이터 요소를 사용하여 태그에 여러 규칙을 스택할 수 있습니다. **[!UICONTROL 변수 작업 유형 업데이트]**. 그런 다음 별도의 메서드를 사용하여 XDM 개체를 Adobe Experience Platform Edge Network로 독립적으로 보낼 수 있습니다 **[!UICONTROL 이벤트 전송 작업 유형]**.
+>향후 [태그 규칙 만들기](create-tag-rule.md) 단원, 당신은 어떻게 **[!UICONTROL 변수]** 데이터 요소를 사용하여 태그에 여러 규칙을 스택할 수 있습니다. **[!UICONTROL 변수 작업 유형 업데이트]**.
 
 이러한 데이터 요소가 준비되면 태그 규칙을 사용하여 Platform Edge Network에 데이터를 전송할 수 있습니다. 하지만 먼저 웹 SDK를 사용하여 ID를 수집하는 방법에 대해 알아봅니다.
 

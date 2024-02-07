@@ -2,9 +2,9 @@
 title: 데이터스트림 구성
 description: 데이터 스트림을 활성화하고 Experience Cloud 솔루션을 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >Real-Time CDP과 같은 플랫폼 기반 애플리케이션의 고객인 경우 이 자습서에서는 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않으면 **[!UICONTROL Prod]** 샌드박스.
+   >Real-Time CDP 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션의 고객인 경우 이 자습서에서는 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않으면 **[!UICONTROL Prod]** 샌드박스.
 
 1. 다음으로 이동 **[!UICONTROL 데이터스트림]** 왼쪽 탐색
 1. 선택 **[!UICONTROL 새 데이터스트림]** 화면의 오른쪽
@@ -52,13 +52,6 @@ ht-degree: 3%
 1. 선택 **[!UICONTROL 저장]**
 
    ![데이터 스트림 만들기](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >매핑 기능은 나중에 이 자습서에 통합될 예정입니다.
-
-
-
 
 다음 화면에서는 데이터 스트림에 Adobe 응용 프로그램과 같은 서비스를 추가할 수 있지만 자습서의 이 시점에서는 서비스를 추가하지 않습니다. 나중에 단원에서 그렇게 할 것입니다 [Experience Platform 설정](setup-experience-platform.md), [Analytics 설정](setup-analytics.md), [Audience Manager 설정](setup-audience-manager.md), [Target 설정](setup-target.md), 또는 [이벤트 전달](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ ht-degree: 3%
 1. 먼저 데이터 스트림 구성에서 데이터 스트림 재정의를 정의합니다. 이 작업은 재정의하려는 Adobe 애플리케이션별로 수행해야 합니다.
 1. 그런 다음 웹 SDK 이벤트 전송 작업 또는 웹 SDK 태그 확장의 구성으로 Edge Network에 재정의를 전송합니다.
 
-다음을 참조하십시오. [데이터 스트림 구성 무시 설명서](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 데이터스트림 구성을 재정의하는 방법에 대한 자세한 지침을 확인하십시오.
+다음에서 [Adobe Analytics 설정](setup-analytics.md) 단원 Platform Web SDK 이벤트 보내기 작업을 사용하여 페이지에 대한 보고서 세트를 재정의합니다.
 
-Adobe Analytics 설정 단원에서 다음을 수행합니다 [platform 웹 SDK 이벤트 보내기 작업을 사용하여 페이지에 대한 보고서 세트 재정의](setup-analytics.md).
+다음을 참조하십시오. [데이터 스트림 구성 무시 설명서](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 데이터스트림 구성을 재정의하는 방법에 대한 자세한 지침을 확인하십시오.
 
 이제 태그 속성에 Platform Web SDK 확장을 설치할 준비가 되었습니다!
 

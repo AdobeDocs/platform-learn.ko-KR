@@ -2,20 +2,20 @@
 title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2006'
 ht-degree: 1%
 
 ---
 
 # 태그 규칙 만들기
 
-태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 태그 규칙은 태그 속성에 작업을 수행하도록 지시하는 이벤트, 조건 및 작업의 조합입니다.
+태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 태그 규칙은 태그 속성에 작업을 수행하도록 지시하는 이벤트, 조건 및 작업의 조합입니다. Platform Web SDK를 사용하는 경우, 규칙은 올바른 XDM 필드가 있는 Platform Edge Network로 이벤트를 전송하는 데 사용됩니다.
 
 >[!NOTE]
 >
-> 데모 목적으로 이 단원의 연습은 다음 기간 동안 사용한 예를 기반으로 합니다. [ID 만들기](create-identities.md) 단계; XDM 이벤트 작업을 전송하여 의 사용자로부터 콘텐츠 및 ID 캡처 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html).
+> 데모 목적으로 이 단원의 연습은 이전 단원을 기반으로 하여 의 사용자에게서 이벤트를 보냅니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
 
 
 ## 학습 목표
@@ -29,12 +29,12 @@ ht-degree: 1%
 
 ## 전제 조건
 
-데이터 수집 태그 및 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html), 그리고 자습서에서 다음 이전 단원을 완료해야 합니다.
+데이터 수집 태그 및 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 을(를) 통해 다음 자습서의 이전 단원을 완료했습니다.
 
 * [XDM 스키마 구성](configure-schemas.md)
 * [ID 네임스페이스 구성](configure-identities.md)
 * [데이터스트림 구성](configure-datastream.md)
-* [태그 속성에 설치된 Web SDK 확장](install-web-sdk.md)
+* [웹 SDK 확장 기능 설치](install-web-sdk.md)
 * [데이터 요소 만들기](create-data-elements.md)
 * [ID 만들기](create-identities.md)
 
@@ -59,16 +59,17 @@ ht-degree: 1%
 * **[!UICONTROL 변수 업데이트]** 데이터 요소를 XDM 필드에 매핑
 * **[!UICONTROL 이벤트 보내기]** Experience Platform 에지 네트워크에 XDM 개체 전송
 
-먼저 다음을 사용하여 규칙을 정의합니다. **[!UICONTROL 변수 업데이트]** 작업은 사이트의 모든 페이지(예: 페이지 이름)에서 전송하려는 XDM 필드의 &quot;전역 구성&quot;을 정의합니다.
+먼저 를 사용하여 웹 사이트의 모든 페이지(예: 페이지 이름)에서 전송할 XDM 필드의 &quot;전역 구성&quot;을 정의합니다. **[!UICONTROL 변수 업데이트]** 작업.
 
-그런 다음 를 사용하여 추가 규칙을 정의할 수 있습니다. **[!UICONTROL 변수 업데이트]** 전역 XDM 필드를 특정 조건(예: 제품 페이지에 제품 세부 사항 추가)에서만 사용할 수 있는 추가 필드로 보완하는 작업입니다.
+그런 다음 다음을 포함하는 추가 규칙을 정의합니다 **[!UICONTROL 변수 업데이트]** 특정 조건(예: 제품 페이지에 제품 세부 사항 추가)에서만 사용할 수 있는 추가 XDM 필드로 &quot;전역 구성&quot;을 보완하기 위해.
 
 마지막으로 와 함께 다른 규칙을 사용합니다. **[!UICONTROL 이벤트 보내기]** 전체 XDM 개체를 Adobe Experience Platform Edge Network로 보내는 작업.
 
+이러한 모든 규칙의 순서는 를 사용하여 올바르게 지정됩니다.[!UICONTROL 주문]&quot; 옵션입니다.
 
 ### 변수 규칙 업데이트
 
-#### 전역 필드
+#### 전역 구성
 
 글로벌 XDM 필드에 대한 태그 규칙을 만들려면 다음을 수행하십시오.
 
@@ -94,7 +95,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > 입력하는 숫자가 높을수록 트리거되는 전체 작업 순서가 늦어집니다.
+   > 주문 번호가 낮을수록 더 빨리 실행됩니다. 따라서 &quot;글로벌 구성&quot;에 낮은 주문 번호를 제공합니다.
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 기본 규칙 화면으로 돌아가기
    ![페이지 하단 트리거 선택](assets/create-tag-rule-trigger-bottom.png)
@@ -115,6 +116,25 @@ ht-degree: 1%
 > 
 > 개별 속성 또는 전체 객체에 매핑할 수 있습니다. 이 예제에서는 개별 속성에 매핑합니다.
 
+1. eventType 필드를 찾아 선택합니다.
+
+1. 값 입력 `web.webpagedetails.pageViews`
+
+   >[!TIP]
+   >
+   > 에서 채울 값을 이해하려면 `eventType` 필드: 스키마 페이지로 이동하여 `eventType` 오른쪽 레일에서 제안된 값을 보기 위한 필드입니다.
+   > ![스키마 페이지의 eventType 제안 값](assets/create-tag-rule-eventType.png)
+
+1. 그런 다음 `identityMap` 스키마의 객체를 선택하고
+
+1. 에 매핑 `identityMap.loginID` 데이터 요소
+
+   ![변수 ID 맵 업데이트](assets/create-rule-variable-identityMap.png)
+
+
+   >[!TIP]
+   >
+   > 데이터 요소가 null인 경우 XDM 필드는 네트워크 요청에 포함되지 않습니다. 따라서 사용자가 인증되지 않은 경우 및 `identityMap.loginID` 데이터 요소가 null이면 `identityMap` 개체가 전송되지 않습니다. 이것이 &quot;전역 구성&quot;에서 이 구성을 정의할 수 있는 이유입니다.
 
 1. 에 도달할 때까지 아래로 스크롤합니다. **`web`** 오브젝트
 
@@ -130,45 +150,23 @@ ht-degree: 1%
 
    ![변수 콘텐츠 업데이트](assets/create-rule-xdm-variable-content.png)
 
-1. 그런 다음 `identityMap` 스키마의 객체를 선택하고
-
-1. 에 매핑 `identityMap.loginID` 데이터 요소
-
-   ![변수 ID 맵 업데이트](assets/create-rule-variable-identityMap.png)
-
-1. 그런 다음 eventType 필드를 찾아 선택합니다.
-
-1. 값 입력 `web.webpagedetails.pageViews`
-
-   >[!WARNING]
-   >
-   > 이 드롭다운은 **`xdm.eventType`** 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 이 필드에는 자유 형식 레이블을 입력할 수도 있지만, 반드시 입력하는 것이 좋습니다 **금지** 플랫폼에 부정적인 영향을 미치기 때문입니다.
-
    >[!TIP]
    >
-   > 에서 채울 값을 이해하려면 `eventType` 필드: 스키마 페이지로 이동하여 `eventType` 오른쪽 레일에서 제안된 값을 보기 위한 필드입니다.
-
-   >[!TIP]
-   >
-   > While nothing `web.webPageDetials.pageViews.value` nor `eventType` 을 로 설정 `web.webpagedetails.pageViews` Adobe Analytics에서 비콘을 페이지 보기로 처리하는 데 필요한 경우, 다른 다운스트림 애플리케이션에 대한 페이지 보기를 표시하는 표준 방법을 사용하는 것이 유용합니다.
-
-   ![변수 ID 맵 업데이트](assets/create-tag-rule-eventType.png)
+   > While nothing `eventType` 을 로 설정 `web.webpagedetails.pageViews` nor `web.webPageDetials.pageViews.value` Adobe Analytics에서 비콘을 페이지 보기로 처리하는 데 필요한 경우, 다른 다운스트림 애플리케이션에 대한 페이지 보기를 표시하는 표준 방법을 사용하는 것이 유용합니다.
 
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 그런 다음 **[!UICONTROL 저장]** 다음 화면의 규칙 을 클릭하여 규칙 만들기를 완료합니다
 
 
-#### 변수 업데이트 작업으로 추가 규칙을 사용하여 XDM 개체 강화
+#### 제품 페이지 필드
 
-다음을 사용할 수 있습니다. **[!UICONTROL 변수 업데이트]**  다수의 순차적 규칙은에 보내기 전에 XDM 개체를 보완하는 것입니다. [!UICONTROL 플랫폼 에지 네트워크].
+이제 **[!UICONTROL 변수 업데이트]** 다수의 순차적 규칙은에 보내기 전에 XDM 개체를 보완하는 것입니다. [!UICONTROL 플랫폼 에지 네트워크].
 
 >[!TIP]
 >
 >규칙 순서는 이벤트가 트리거될 때 먼저 실행되는 규칙을 결정합니다. 두 규칙의 이벤트 유형이 동일한 경우 숫자가 가장 낮은 규칙이 먼저 실행됩니다.
 > 
 >![규칙 순서](assets/set-up-analytics-sequencing.png)
-
-##### 제품 페이지 필드
 
 Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시작합니다.
 
@@ -178,7 +176,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
 1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
 1. 이름 지정 `Core - Page Bottom - order 20`
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - library loaded - AA (order 1)` 전역 콘텐츠 변수를 설정하는 데 사용됩니다. `all pages send event - library loaded - AA (order 50)` xdm 이벤트를 전송합니다.
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - library loaded - AA (order 1)` 전역 콘텐츠 변수를 설정합니다.
 
    ![Analytics XDM 규칙](assets/set-up-analytics-pdp.png)
 
@@ -195,7 +193,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 1. 아래 **[!UICONTROL 작업]** 선택 **[!UICONTROL 추가]**
 1. 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** 확장
 1. 선택 **[!UICONTROL 작업 유형]** 다음으로: **[!UICONTROL 변수 업데이트]**
-1. 아래로 스크롤하여 `commerce` 을(를) 개체하고 을(를) 선택하여 엽니다.
+1. 아래로 스크롤하여 `commerce` 오브젝트
 1. 를 엽니다. **[!UICONTROL 제품 보기]** 오브젝트 및 세트 **[!UICONTROL 값]** 끝 `1`
 
    ![제품 보기 설정](assets/set-up-analytics-prodView.png)
@@ -204,6 +202,11 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
    >
    >XDM에서 commerce.productViews.value=1 을 설정하면 `prodView` analytics의 이벤트
 
+1. 아래로 스크롤하여 `eventType` 및 설정 `commerce.productViews`
+
+   >[!NOTE]
+   >
+   >이 규칙의 순서가 높으므로 `eventType` &quot;전역 구성&quot; 규칙으로 설정합니다. `eventType` 은(는) 하나의 값만 포함할 수 있으며 가장 높은 값 이벤트로 설정하는 것이 좋습니다.
 
 1. 아래로 스크롤하여 선택 `productListItems` 배열
 1. 선택 **[!UICONTROL 개별 항목 제공]**
@@ -220,16 +223,12 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
    ![제품 SKU XDM 개체 변수](assets/set-up-analytics-sku.png)
 
-1. 찾기 `eventType` 및 설정 `commerce.productViews`
-
 1. 선택 **[!UICONTROL 변경 내용 유지]**
 
 1. 선택 **[!UICONTROL 저장]** 규칙을 저장하려면
 
 
-
-
-### 장바구니 필드
+#### 장바구니 필드
 
 배열이 XDM 스키마의 형식과 일치하는 경우 전체 배열을 XDM 개체에 매핑할 수 있습니다. 사용자 지정 코드 데이터 요소 `cart.productInfo` 다음을 통해 이전 루프를 만들었습니다. `digitalData.cart.cartEntries` luma의 데이터 레이어 개체를 필요한 형식의 `productListItems` XDM 스키마 오브젝트.
 
@@ -244,7 +243,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 >숫자 변수가 데이터 레이어의 문자열 값과 함께 변환되는 방식을 확인합니다. `price` 및 `qty` 데이터 요소의 숫자로 형식이 변경되었습니다. 이러한 형식 요구 사항은 플랫폼의 데이터 무결성에 중요하며 다음 기간 동안 결정됩니다. [스키마 구성](configure-schemas.md) 단계. 이 예에서는 **[!UICONTROL 수량]** 를 사용합니다. **[!UICONTROL 정수]** 데이터 유형.
 > ![XDM 스키마 데이터 유형](assets/set-up-analytics-quantity-integer.png)
 
-이제 배열을 XDM 개체에 매핑해 보겠습니다.&quot;
+이제 배열을 XDM 개체에 매핑하겠습니다.
 
 
 1. (이)라는 이름의 새 규칙 만들기 `ecommerce - cart library loaded - AA (order 20)`
@@ -279,15 +278,13 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
    >
    >XDM에서 commerce.productListViews.value=1 을 설정하면 `scView` analytics의 이벤트
 
-
+1. 선택 `eventType` 및 을 (으)로 설정 `commerce.productListViews`
 
 1. 아래로 스크롤하여 선택 **[!UICONTROL productListItem]** 배열
 
 1. 선택 **[!UICONTROL 전체 스토리지 제공]**
 
 1. 다음에 매핑 **`cart.productInfo`** 데이터 요소
-
-1. 선택 `eventType` 및 을 (으)로 설정 `commerce.productListViews`
 
 1. 선택 **[!UICONTROL 변경 내용 유지]**
 
@@ -297,37 +294,33 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 **규칙 이름**: `ecommerce - checkout library loaded - AA (order 20)`
 
-* **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout.html
-* `eventType`을 `commerce.checkouts`로 설정합니다.
-* 설정 **XDM 상거래 이벤트**: commerce.checkout.value 종료 `1`
+1. **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout.html
+1. `eventType`을 `commerce.checkouts`로 설정합니다.
+1. `commerce.checkout.value`을 `1`로 설정합니다.
 
-  >[!TIP]
-  >
-  >이는 설정에 해당합니다. `scCheckout` analytics의 이벤트
+   >[!TIP]
+   >
+   >이는 설정에 해당합니다. `scCheckout` analytics의 이벤트
+
 
 **규칙 이름**: `ecommerce - purchase library loaded - AA (order 20)`
 
-* **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout/order/thank-you.html
-* `eventType`을 `commerce.purchases`로 설정합니다.
-* 설정 **XDM 상거래 이벤트**: commerce.purchases.value 종료 `1`
+1. **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout/order/thank-you.html
+1. `eventType`을 `commerce.purchases`로 설정합니다.
+1. `commerce.purchases.value`을 `1`로 설정합니다.
 
-  >[!TIP]
-  >
-  >이는 설정에 해당합니다. `purchase` analytics의 이벤트
+   >[!TIP]
+   >
+   >이는 설정에 해당합니다. `purchase` analytics의 이벤트
 
-필요한 모든 항목을 캡처하는 추가 단계가 있습니다 `purchase` 이벤트 변수:
-
-1. 열기 **[!UICONTROL commerce]** 오브젝트
-1. 를 엽니다. **[!UICONTROL 주문]** 오브젝트
-1. 맵 **[!UICONTROL purchaseID]** (으)로 `cart.orderId` 데이터 요소
-1. 설정 **[!UICONTROL currencyCode]** 하드코딩된 값에 `USD`
+1. 설정 `commerce.order.purchaseID` (으)로 `cart.orderId` 데이터 요소
+1. 설정 `commerce.order.currencyCode` 하드코딩된 값에 `USD`
 
    ![Analytics용 purchaseID 설정](assets/set-up-analytics-purchase.png)
 
    >[!TIP]
    >
    >이는 설정에 해당합니다. `s.purchaseID` 및 `s.currencyCode` analytics의 변수
-
 
 1. 아래로 스크롤하여 선택 **[!UICONTROL productListItem]** 배열
 1. 선택 **[!UICONTROL 전체 스토리지 제공]**
@@ -339,11 +332,11 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 ![Analytics XDM 규칙](assets/set-up-analytics-rules.png)
 
 
-### 이벤트 보내기
+### 이벤트 규칙 보내기
 
-변수를 설정했으므로 이제 를 사용하여 XDM 개체를 Platform Edge Network로 전송하는 두 번째 규칙을 만들 수 있습니다. **[!UICONTROL 이벤트 보내기]** 작업 유형.
+변수를 설정했으므로 를 사용하여 전체 XDM 개체를 Platform Edge Network로 전송하는 규칙을 만들 수 있습니다. **[!UICONTROL 이벤트 보내기]** 작업.
 
-1. 오른쪽에서 다음을 선택합니다. **[!UICONTROL 규칙 추가]** 다른 규칙을 만들려면
+1. 오른쪽에서 을 선택합니다. **[!UICONTROL 규칙 추가]** 다른 규칙을 만들려면
 
 1. 규칙 이름을 지정합니다 `all pages send event - library loaded - AA (order 50)`
 
