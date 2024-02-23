@@ -3,29 +3,16 @@ title: 데이터 수집 튜토리얼
 description: 데이터 수집의 강력한 사용자에게 유용한 방법 비디오 및 튜토리얼
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 37%
+source-wordcount: '165'
+ht-degree: 32%
 
 ---
 
 # 데이터 수집 튜토리얼
 
 데이터 수집은 Adobe의 차세대 웹 사이트 태그 및 모바일 SDK 관리 기능입니다. 데이터 수집은 관련 고객 환경을 향상시키는 데 필요한 분석, 마케팅 및 광고 솔루션을 배포하고 관리하는 간단한 방법을 고객에게 제공합니다. 이 비디오와 튜토리얼을 사용하여 이 중요한 기술을 학습하십시오.
-
-<div id="whats-new-section">
-
-## 새로운 기능
-
-* **[서버 API 개요(비디오)](server-api/overview.md)**
-  *안전하고 인증된 서버 API를 사용하여 데이터를 전송합니다.*
-* **[모바일 앱에서 Adobe Experience Cloud 구현(튜토리얼)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko)**
-  *Mobile SDK를 사용하여 Experience Cloud 애플리케이션을 구현합니다.*
-* **[클라이언트측 태그 이동(튜토리얼)](event-forwarding/consider-moving-tags.md)**
-  *클라이언트측 태그를 이벤트 전달로 이동하는 것이 좋습니다.*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -54,11 +41,11 @@ ht-degree: 37%
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko" target="_blank">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR" target="_blank">
       <img alt="모바일 앱에서 구현" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko" target="_blank">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR" target="_blank">
     <strong>모바일 앱에서 Experience Cloud 구현</strong>
     </a>
     </div>
