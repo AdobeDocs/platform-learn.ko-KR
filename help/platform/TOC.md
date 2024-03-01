@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '869'
 ht-degree: 16%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 16%
    + [순차적 대상자 만들기](audiences/create-sequential-audiences.md)
    + [동적 대상자 만들기](audiences/create-dynamic-audiences.md)
    + [다중 엔티티 대상 만들기](audiences/create-multi-entity-audiences.md)
-   + [B2B 데이터를 사용하여 대상 만들기](audiences/create-audiences-with-b2b-data.md)
+   + [계정 대상자 만들기 및 활성화(B2B)](audiences/create-audiences-with-b2b-data.md)
    + [스트리밍 세분화 데모](/help/platform/audiences/streaming-segmentation-demo.md)
    + [대상 규칙 평가](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [데이터를 내보낼 데이터 세트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}

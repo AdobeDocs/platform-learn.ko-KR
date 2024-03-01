@@ -3,12 +3,13 @@ title: Real-Time CDP의 파트너 데이터 지원 개요
 description: 방법 알아보기 [!DNL Real-Time Customer Data Platform] 은 타사 쿠키가 더 이상 사용되지 않으므로 자사 데이터를 보강하고 사용 사례를 예측하기 위해 파트너 데이터를 사용하는 전체 단계 마케팅을 지원합니다. 
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: User
 level: Beginner
 jira: KT-13805
 last-substantial-update: 2023-08-23T00:00:00Z
 exl-id: 5059b376-ab06-4fec-946d-deb6b6c22ffa
-source-git-commit: 3e8f68c89b5ab94045ec1120a95b1e2cc1d1c97a
+source-git-commit: c0ad9603e3e954eb8438418062657f41b3d91b67
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 0%
