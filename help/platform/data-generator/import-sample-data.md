@@ -5,13 +5,12 @@ feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 6%
+source-wordcount: '1776'
+ht-degree: 3%
 
 ---
 
@@ -30,9 +29,9 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
 >이 자습서의 최종 결과는 과 유사한 데이터가 포함된 샌드박스입니다. [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기 자습서](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). 을 지원하도록 2023년 4월에 업데이트되었습니다. [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko). 인증 방법을 OAuth로 전환하도록 2023년 6월에 업데이트했습니다.
 
 
-## 사전 요구 사항
+## 전제 조건
 
-* Experience Platform API에 대한 액세스 권한이 있으며 인증 방법을 알고 있습니다. 그렇지 않은 경우 다음을 검토하십시오. [튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ko).
+* Experience Platform API에 대한 액세스 권한이 있으며 인증 방법을 알고 있습니다. 그렇지 않은 경우 다음을 검토하십시오. [튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html).
 * Experience Platform 개발 샌드박스에 액세스할 수 있습니다.
 * Experience Platform 테넌트 ID를 알고 있습니다. 를 인증하여 가져올 수 있습니다 [API 요청](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
 또는 Platform 계정에 로그인할 때 URL에서 추출하여 사용할 수 있습니다. 예를 들어 다음 URL에서 테넌트는 &quot;입니다`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`.
@@ -50,7 +49,7 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
    >에 포함된 사용자 데이터 [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) 파일은 가상 파일이며 데모용으로만 사용됩니다.
 
 1. 다운로드 폴더의 `platform-utils-main.zip` 파일을 컴퓨터에서 원하는 위치로 옮긴 다음 압축을 풉니다.
-1. 다음에서 `luma-data` 폴더, 모든 폴더 열기 `json` 텍스트 편집기의 파일 및 `_yourTenantId` 자신의 테넌트 id를 사용하고, 앞에 밑줄이 그어집니다.
+1. 다음에서 `luma-data` 폴더, 모든 폴더 열기 `json` 텍스트 편집기의 파일 및 `_yourTenantId` 자신의 테넌트 id를 사용하고, 앞에 밑줄이 옵니다.
 1. 열기 `luma-offline-purchases.json`, `luma-inventory-events.json`, 및 `luma-web-events.json` 텍스트 편집기에서 이벤트가 지난 달에 발생하도록 모든 타임스탬프를 업데이트합니다(예: 검색 `"timestamp":"2022-11` 및 연도 및 월 대체)
 1. 나중에 를 설정할 때 필요하므로 압축 해제된 폴더의 위치를 확인합니다. `FILE_PATH` [!DNL Postman] 환경 변수:
 
@@ -194,7 +193,7 @@ Adobe Journey Optimizer에 대해 알아보려면 이 샌드박스에는 [Journe
 [Web SDK 튜토리얼을 사용하여 Adobe Experience Cloud 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;태그 구성&quot; 및 &quot;Experience Platform 설정&quot; 단원을 설정한 후에 의 처음 10개 이메일 주소를 사용하여 Luma 웹 사이트에 로그인합니다. `luma-crm.json` 암호를 사용하는 파일 `test` 이 자습서에서 업로드한 데이터와 프로필 조각을 병합하는 방법을 살펴봅니다.
 
 이 샌드박스에 연결되는 샘플 Mobile SDK 구현을 빌드하려면 다음을 수행하십시오.
-[모바일 앱에서 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;앱 구현&quot; 및 &quot;Experience Platform&quot; 단원을 설정한 후에 의 첫 번째 이메일 주소를 사용하여 Luma 웹 사이트에 로그인합니다. `luma-crm.json` 이 자습서에서 업로드한 데이터와 프로필 조각을 병합하는 방법을 볼 수 있는 파일입니다.
+[모바일 앱에서 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;앱 구현&quot; 및 &quot;Experience Platform&quot; 단원을 설정한 후에 의 첫 번째 이메일 주소를 사용하여 Luma 웹 사이트에 로그인합니다. `luma-crm.json` 이 자습서에서 업로드한 데이터와 프로필 조각을 병합하는 방법을 볼 수 있는 파일입니다.
 
 ## 샌드박스 환경 재설정 {#reset-sandbox}
 
