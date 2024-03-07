@@ -6,9 +6,9 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
+source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '190'
 ht-degree: 26%
 
 ---
@@ -25,10 +25,11 @@ ht-degree: 26%
    + [확장 추가 및 구성](tags/add-and-configure-extensions.md)
    + [데이터 요소 만들기](tags/create-data-elements.md)
    + [규칙 작성](tags/build-rules.md)
+   + [스택 규칙](tags/stack-rules.md)
    + [라이브러리 빌드 및 게시](tags/build-and-publish-a-library.md)
    + [Web SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target="_blank"}
    + [솔루션 SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
-   + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko){target="_blank"}
+   + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR){target="_blank"}
 + 웹 SDK{#web-sdk}
    + [개요](web-sdk/overview.md)
    + [데모](web-sdk/demo.md)
@@ -44,7 +45,7 @@ ht-degree: 26%
    + [개요](mobile-sdk/overview.md)
    + [모바일 속성 만들기](mobile-sdk/create-mobile-properties.md)
    + [종속성 관리자 사용](mobile-sdk/use-dependency-managers.md)
-   + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko){target="_blank"}
+   + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR){target="_blank"}
 + 서버 API{#server-api}
    + [개요](server-api/overview.md)
    + [API 기본 사항](server-api/introduction.md)
