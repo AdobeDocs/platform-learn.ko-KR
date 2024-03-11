@@ -3,14 +3,19 @@ title: ID 네임스페이스 구성
 description: Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 13%
+source-wordcount: '694'
+ht-degree: 7%
 
 ---
 
 # ID 네임스페이스 구성
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법에 대해 알아봅니다.
 
@@ -62,7 +67,7 @@ Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구�
 
    페이지의 기본 인터페이스에 ID 네임스페이스 목록이 표시되어 이름, ID 기호, 마지막으로 업데이트된 날짜 및 표준 네임스페이스인지 사용자 정의 네임스페이스인지 여부를 보여 줍니다. 오른쪽 레일에는 ID 그래프 강도에 대한 정보가 포함되어 있습니다.
 
-1. **[!UICONTROL 신원 네임스페이스 만들기]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL ID 네임스페이스 만들기]**
 
    ![ID 보기](assets/configure-identities-screen.png)
 

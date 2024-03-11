@@ -3,14 +3,19 @@ title: 웹 데이터에 대한 XDM 스키마 만들기
 description: 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 6%
+source-wordcount: '1093'
+ht-degree: 2%
 
 ---
 
 # 웹 데이터에 대한 XDM 스키마 만들기
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
 
@@ -50,7 +55,7 @@ XDM 스키마는 Experience Platform의 데이터를 설명하는 표준 방법�
    >Real-Time CDP과 같은 플랫폼 기반 애플리케이션의 고객인 경우 이 자습서에서는 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않으면 **[!UICONTROL Prod]** 샌드박스.
 
 1. 다음으로 이동 **[!UICONTROL 스키마]** 왼쪽 탐색
-1. 오른쪽 위의 **[!UICONTROL 스키마 만들기]** 버튼을 선택합니다
+1. 다음 항목 선택 **[!UICONTROL 스키마 만들기]** 오른쪽 상단의 단추
 1. 드롭다운 메뉴에서 을(를) 선택합니다 **[!UICONTROL XDM ExperienceEvent]**
 
 ![스키마 경험 이벤트](assets/schema-XDM-experience-event.jpg)
@@ -70,7 +75,7 @@ XDM 스키마는 Experience Platform의 데이터를 설명하는 표준 방법�
 1. 상자를 선택합니다.
 1. 검색 대상 [!UICONTROL `Consumer Experience Event`]
 1. 상자를 선택합니다.
-1. **[!UICONTROL 필드 그룹 추가]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL 필드 그룹 추가]**
 
    ![필드 그룹 추가](assets/schema-add-field-group.jpg)
 
@@ -79,7 +84,7 @@ XDM 스키마는 Experience Platform의 데이터를 설명하는 표준 방법�
 1. **[!UICONTROL 컴포지션**] 패널, 선택 `Untitled schema name`
 1. 다음에서 **[!UICONTROL 스키마 속성]** 패널, 다음을 입력합니다. **[!UICONTROL 표시 이름]** `Luma Web Event Data`
 1. 을(를) 제외한 모든 항목 선택 **[!UICONTROL 표시 이름]** 를 활성화하는 필드 **[!UICONTROL 저장]** 옵션
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
 ![Luma 웹 이벤트 데이터](assets/schema-luma-web-event-data.png)
 

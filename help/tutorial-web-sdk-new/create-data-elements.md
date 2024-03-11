@@ -2,22 +2,16 @@
 title: 데이터 요소 만들기
 description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
 
 # 데이터 요소 만들기
 
-의 컨텐츠, 상거래 및 ID 데이터에 대한 태그에서 데이터 요소를 만드는 방법을 알아봅니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html). 그런 다음 변수 데이터 요소 유형을 사용하여 XDM 스키마의 필드를 채웁니다.
-
-
->[!IMPORTANT]
->
->이 단원의 데이터는 `[!UICONTROL digitalData]` Luma 사이트의 데이터 레이어 데이터 레이어를 보려면 개발자 콘솔을 열고 을 입력합니다. `[!UICONTROL digitalData]` 전체 데이터 레이어를 확인할 수 있습니다.![digitalData 데이터 레이어](assets/data-element-data-layer.png)
-
+의 컨텐츠, 상거래 및 ID 데이터에 대한 태그에서 데이터 요소를 만드는 방법을 알아봅니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html). 그런 다음 XDM 스키마의 필드를 Platform 웹 SDK 확장 변수 데이터 요소 유형으로 채웁니다.
 
 ## 학습 목표
 
@@ -37,9 +31,15 @@ ht-degree: 1%
 * [데이터스트림 구성](configure-datastream.md)
 * [태그 속성에 설치된 Web SDK 확장](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>이 단원의 데이터는 `[!UICONTROL digitalData]` Luma 사이트의 데이터 레이어 데이터 레이어를 보려면 개발자 콘솔을 열고 을 입력합니다. `[!UICONTROL digitalData]` 전체 데이터 레이어를 확인할 수 있습니다.![digitalData 데이터 레이어](assets/data-element-data-layer.png)
+
+
 ## 데이터 레이어 접근 방식
 
-Adobe Experience Platform의 태그 기능을 사용하여 데이터 레이어의 데이터를 XDM에 매핑하는 방법에는 여러 가지가 있습니다. 다음은 세 가지 접근 방식에 대한 몇 가지 장단점입니다.
+Adobe Experience Platform의 태그 기능을 사용하여 데이터 레이어의 데이터를 XDM에 매핑하는 방법에는 여러 가지가 있습니다. 아래는 세 가지 다른 접근 방식의 몇 가지 장단점입니다. 원하는 경우 접근 방식을 결합할 수 있습니다.
 
 1. 데이터 레이어에서 XDM 구현
 1. 태그의 XDM에 매핑
@@ -104,7 +104,7 @@ window.adobeDataLayer.push({
 
 * XDM으로 이동되는 데이터를 업데이트하기 위해 개발 팀 및 개발 주기에 전적으로 의존
 * XDM이 데이터 레이어에서 정확한 페이로드를 수신하므로 유연성이 제한됨
-* 빠른 배포를 위해 스크래핑, 지속성, 기능과 같은 태그 내장 기능을 사용할 수 없음
+* 빠른 배포를 위해 스크래핑, 지속성, 기능과 같은 내장 태그 기능을 사용할 수 없음
 * 타사 픽셀에 데이터 레이어를 사용할 수 없습니다.
 * 데이터 레이어와 XDM 간에 데이터를 변환할 수 없음
 

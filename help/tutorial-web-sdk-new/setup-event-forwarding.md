@@ -2,9 +2,9 @@
 title: 이벤트 전달 속성 설정
 description: Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 2%
 
 ---
@@ -185,8 +185,8 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
    >[!TIP]
    >
-   자체 웹 사이트로 작업할 때 웹 브라우저 네트워크 도구를 사용하여 XDM 개체 경로를 찾을 수 있습니다. `/ee` 요청, 비콘 열기 [!UICONTROL **페이로드**] 원하는 변수로 드릴다운할 수 있습니다. 그런 다음 마우스로 마우스 오른쪽 단추를 클릭하고 &quot;속성 경로 복사&quot;를 선택합니다. 다음은 브라우저 뷰포트 높이에 대한 예입니다.
-   ![이벤트 전달 XDM 경로](assets/event-forwarding-xdm-path.png)
+   >자체 웹 사이트로 작업할 때 웹 브라우저 네트워크 도구를 사용하여 XDM 개체 경로를 찾을 수 있습니다. `/ee` 요청, 비콘 열기 [!UICONTROL **페이로드**] 원하는 변수로 드릴다운할 수 있습니다. 그런 다음 마우스로 마우스 오른쪽 단추를 클릭하고 &quot;속성 경로 복사&quot;를 선택합니다. 다음은 브라우저 뷰포트 높이에 대한 예입니다.
+   > ![이벤트 전달 XDM 경로](assets/event-forwarding-xdm-path.png)
 
 ### Adobe Cloud Connector 확장 설치
 
@@ -280,7 +280,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 >[!NOTE]
 >
-스테이징 및 프로덕션 이벤트 전달 속성을 데이터 스트림에 연결하지 않은 경우 개발 환경이 라이브러리를 빌드할 수 있는 유일한 옵션으로 표시됩니다.
+>스테이징 및 프로덕션 이벤트 전달 속성을 데이터 스트림에 연결하지 않은 경우 개발 환경이 라이브러리를 빌드할 수 있는 유일한 옵션으로 표시됩니다.
 
 ![이벤트 전달 규칙 저장](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 >[!NOTE]
 >
-Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

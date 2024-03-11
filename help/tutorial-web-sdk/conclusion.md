@@ -3,14 +3,19 @@ title: 결론 및 다음 단계
 description: 자습서를 완료한 후 수행할 작업
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 8%
+source-wordcount: '427'
+ht-degree: 3%
 
 ---
 
 # 결론 및 다음 단계
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 축하합니다! &quot;웹 SDK로 Adobe Experience Cloud 구현&quot; 자습서를 완료했습니다!
 
@@ -37,7 +42,7 @@ ht-degree: 8%
 * **Journey Optimizer에서 여정 트리거**. Luma 웹 사이트에서 구현한 이벤트를 사용하여 여정을 트리거할 수 있습니다. 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html).
 * **연결 Customer Journey Analytics**. 을(를) 생성한 경우 [플랫폼 데이터 세트](setup-experience-platform.md), 데이터 세트를 Customer Journey Analytics에 연결할 수 있습니다. 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
 * **플랫폼에서 세그먼트 작성**. 다음을 활성화한 경우 [실시간 고객 프로필에 대한 스키마 및 데이터 세트](setup-experience-platform.md), 웹 이벤트를 기반으로 세그먼트를 작성하고 다른 소스의 데이터와 결합한 다음 이러한 세그먼트를 Real-time Customer Data Platform의 대상으로 보낼 수 있습니다. 세그먼트 빌더에 대해 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
-* **Platform Mobile SDK 구현**. 이제 SDK를 마스터했으므로 다른 SDK를 학습하세요! Adobe Experience Platform Mobile SDK는 모바일 앱에서 Experience Cloud 및 서드파티 서비스를 제공하는 데 사용됩니다. 비슷한 것이 있습니다 [모바일 SDK용 실습 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko). 둘 다 완료하고 장치 간 프로필 병합을 확인합니다!
+* **Platform Mobile SDK 구현**. 이제 SDK를 마스터했으므로 다른 SDK를 학습하세요! Adobe Experience Platform Mobile SDK는 모바일 앱에서 Experience Cloud 및 서드파티 서비스를 제공하는 데 사용됩니다. 비슷한 것이 있습니다 [모바일 SDK용 실습 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR). 둘 다 완료하고 장치 간 프로필 병합을 확인합니다!
 * **Experience Platform에 대해 자세히 알아보기**. 다른 소스에서 데이터를 수집하여 웹 SDK 데이터와 결합하는 방법에 대해 자세히 알아보십시오. [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 
 

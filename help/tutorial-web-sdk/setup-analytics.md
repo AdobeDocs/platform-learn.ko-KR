@@ -3,18 +3,23 @@ title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 2%
+source-wordcount: '3473'
+ht-degree: 0%
 
 ---
 
 # Platform Web SDK를 사용하여 Adobe Analytics 설정
 
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
+
 다음을 사용하여 Adobe Analytics을 설정하는 방법 알아보기 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), 태그 규칙을 만들어 데이터를 Adobe Analytics으로 전송하고, Analytics가 데이터를 예상대로 캡처하는지 확인합니다.
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) 은 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=ko-KR) 은 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
 
 ## 학습 목표
 
@@ -97,11 +102,11 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
    ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk.png)
 
-1. **[!UICONTROL 서비스 추가]**를 선택합니다
+1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/analytics-addService.png)
 1. 선택 **[!UICONTROL Adobe Analytics]** (으)로 **[!UICONTROL 서비스]**
 1. 다음을 입력합니다.  **[!UICONTROL 보고서 세트 ID]** 개발 보고서 세트 의
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
    ![데이터스트림 저장 분석](assets/analytics-datastream-save.png)
 
@@ -124,7 +129,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 1. 자습서에 사용 중인 태그 속성을 엽니다
 1. 다음으로 이동 **[!UICONTROL 데이터 요소]**
-1. **[!UICONTROL 데이터 요소 추가]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL 데이터 요소 추가]**
 1. 이름 지정 **`product.productInfo.sku`**
 1. 사용 **[!UICONTROL 사용자 지정 코드]** **[!UICONTROL 데이터 요소 유형]**
 1. 다음에 대한 확인란 남기기 **[!UICONTROL 소문자 강제 적용 값]** 및 **[!UICONTROL 텍스트 정리]** 선택되지 않음
@@ -212,7 +217,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 1. 아래로 스크롤한 다음 을(를) 선택하여 까지 열기 `web.webPageDetails`
 1. 을(를) 선택하여 열기 **[!UICONTROL pageViews]** 오브젝트
 1. 설정 **[!UICONTROL 값]** 끝 `1`
-1. [!UICONTROL **저장**]&#x200B;을 선택합니다
+1. 선택 [!UICONTROL **저장**]
 
    ![페이지 조회수 XDM 개체](assets/analytics-xdm-pageviews.png)
 
@@ -273,7 +278,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
    >이 XDM 개체를 저장하기 전에 &quot;전역&quot; 변수와 페이지 보기 증가자도 설정해야 합니다.
    >![XDM에서 전역 변수 다시 설정](assets/analytics-global-xdm.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
 ### XDM 개체에 전체 어레이 매핑
 
@@ -312,7 +317,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
    >이 XDM 개체를 저장하기 전에 &quot;전역&quot; 변수와 페이지 보기 증가자도 설정해야 합니다.
    >![XDM에서 전역 변수 다시 설정](assets/analytics-global-xdm.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
 다른 항목 만들기 **[!UICONTROL XDM 개체]**  **[!UICONTROL 데이터 요소 유형]** 체크아웃 호출 `xdm.commerce.checkout`. 이 시간은 **[!UICONTROL commerce.checkouts.value]** 끝 `1`, 맵 **[!UICONTROL productListItem]** 끝 **`cart.productInfo`** 방금 한 것처럼 &quot;전역&quot; 변수와 페이지 보기 카운터를 추가합니다.
 
@@ -345,7 +350,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
    >이 XDM 개체를 저장하기 전에 &quot;전역&quot; 변수와 페이지 보기 증가자도 설정해야 합니다.
    >![XDM에서 전역 변수 다시 설정](assets/analytics-global-xdm.png)
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
 이러한 단계를 마치면 다음 5개의 XDM 개체 데이터 요소를 만들어야 합니다.
 
@@ -375,7 +380,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 1. 선택 **[!UICONTROL 조건 유형]** 다음으로: **[!UICONTROL 쿼리 문자열이 없는 경로]**
 1. 오른쪽에서 **[!UICONTROL 정규 표현식]** 전환
 1. 아래 **[!UICONTROL 경로가 다음과 같음]** set `/products/`. Luma 데모 사이트의 경우 규칙이 제품 페이지에서만 트리거되도록 합니다
-1. **[!UICONTROL 변경사항 유지]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL 변경 내용 유지]**
 
    ![Analytics XDM 규칙](assets/analytics-tags-prodView.png)
 
@@ -389,11 +394,11 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
    >여기서 선택한 값은 데이터가 Analytics에 매핑되는 방식에는 영향을 주지 않지만 이 변수는 Adobe Experience Platform의 세그먼트 빌더 인터페이스에서 사용되므로 신중하게 적용하는 것이 좋습니다. 선택한 값은 다음에서 사용할 수 있습니다. `[!UICONTROL c.a.x.eventtype]` 컨텍스트 데이터 변수 다운스트림
 
 1. 아래 **[!UICONTROL XDM 데이터]**&#x200B;를 선택하고 `[!UICONTROL xdm.commerce.prodView]` XDM 개체 데이터 요소
-1. **[!UICONTROL 변경사항 유지]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL 변경 내용 유지]**
 
    ![Analytics XDM 규칙](assets/analytics-rule-commerce-productViews.png)
 
-1. 규칙은 아래와 유사해야 합니다. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 규칙은 아래와 유사해야 합니다. 선택 **[!UICONTROL 저장]**
 
    ![Analytics XDM 규칙](assets/analytics-rule-product-view.png)
 
@@ -540,7 +545,7 @@ Edge Trace를 사용하여 Analytics 비콘의 유효성을 검사했으므로 �
 
    ![Analytics 구매](assets/analytics-process-rules.png)
 
-1. 규칙 만들기 **[!UICONTROL 값 덮어쓰기]** `[!UICONTROL Product Name (prop1)]` 끝 `a.x.productlistitems.0.name`. 규칙을 만드는 이유를 메모에 추가하고 규칙 제목에 이름을 지정해야 합니다. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 규칙 만들기 **[!UICONTROL 값 덮어쓰기]** `[!UICONTROL Product Name (prop1)]` 끝 `a.x.productlistitems.0.name`. 규칙을 만드는 이유를 메모에 추가하고 규칙 제목에 이름을 지정해야 합니다. 선택 **[!UICONTROL 저장]**
 
    ![Analytics 구매](assets/analytics-set-processing-rule.png)
 
@@ -554,7 +559,7 @@ Edge Trace를 사용하여 Analytics 비콘의 유효성을 검사했으므로 �
 
 1. 유효성 검사 단계를 반복하면 실시간 보고서가 그에 따라 데이터를 채웁니다.
 
-   **페이지 보기 횟수**
+   **페이지 보기 수**
    ![실시간 컨텐츠](assets/analytics-real-time-content.png)
 
    **제품 보기**

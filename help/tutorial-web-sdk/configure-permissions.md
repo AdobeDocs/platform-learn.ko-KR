@@ -3,14 +3,19 @@ title: 자습서에 대한 권한 구성
 description: Web SDK Experience Platform에 대한 액세스 권한을 요청하고 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서를 완료하는 데 필요한 권한을 구성하는 방법에 대해 알아봅니다.
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 6%
+source-wordcount: '403'
+ht-degree: 3%
 
 ---
 
 # 자습서에 대한 권한 구성
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 Experience Platform Web SDK에 대한 액세스를 요청하고 이 자습서를 완료하는 데 필요한 권한을 구성하는 방법에 대해 알아봅니다. 데이터 수집 인터페이스의 태그를 사용하여 Platform Web SDK를 구현하려면에 적절한 사용자 권한이 구성되어 있어야 합니다 [Admin Console](https://adminconsole.adobe.com).
 
@@ -36,7 +41,7 @@ Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://expe
 
 ## Adobe Analytics
 
-선택적 Adobe Analytics 단원의 경우 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ko-KR)
+선택적 Adobe Analytics 단원의 경우 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 ## Adobe Target
 

@@ -2,14 +2,19 @@
 title: Web SDK를 사용하여 Adobe Experience Platform에 데이터 스트리밍
 description: Web SDK를 사용하여 웹 데이터를 Adobe Experience Platform에 스트리밍하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 8%
+source-wordcount: '1600'
+ht-degree: 5%
 
 ---
 
 # Web SDK를 사용하여 Experience Platform에 데이터 스트리밍
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 Platform Web SDK를 사용하여 Adobe Experience Platform에 웹 데이터를 스트리밍하는 방법에 대해 알아봅니다.
 
@@ -56,7 +61,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 1. 로 이동 [Experience Platform 인터페이스](https://experience.adobe.com/platform/)
 1. 이 자습서에서 사용하는 개발 샌드박스에 있는지 확인합니다
 1. 열기 **[!UICONTROL 데이터 세트]** 왼쪽 탐색에서
-1. **[!UICONTROL 데이터 세트 만들기]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL 데이터 세트 만들기]**
 
    ![스키마 만들기](assets/experience-platform-create-dataset.png)
 
@@ -84,7 +89,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 
    ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk.png)
 
-1. **[!UICONTROL 서비스 추가]**를 선택합니다
+1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/experience-platform-addService.png)
 1. 선택 **[!UICONTROL Adobe Experience Platform]** (으)로 **[!UICONTROL 서비스]**
 1. 선택 `Luma Web Event Data` (으)로 **[!UICONTROL 이벤트 데이터 세트]**

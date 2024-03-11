@@ -3,14 +3,19 @@ title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 5%
+source-wordcount: '871'
+ht-degree: 3%
 
 ---
 
 # 태그 규칙 만들기
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 태그 규칙은 태그 속성에 작업을 수행하도록 지시하는 이벤트, 조건 및 작업의 조합입니다.
 
@@ -45,7 +50,7 @@ ht-degree: 5%
 
 * [위치] - [이벤트] - [도구]
 
-다음의 경우;
+다음의 경우
 
 1. 위치는 규칙이 실행되는 사이트의 페이지입니다
 1. event 는 비콘을 실행하는 트리거입니다.
@@ -79,7 +84,7 @@ ht-degree: 5%
    ![조건 추가](assets/rules-add-conditions.png)
 1. 선택 **[!UICONTROL 논리 유형]** `Exception`, **[!UICONTROL 확장]** `Core`, 및 **[!UICONTROL 조건 유형]** `Path Without Query String`
 1. URL 경로 입력 `/content/luma/us/en/user/cart.html` 다음에서 **[!UICONTROL 경로가 다음과 같음]** 필드 및 **[!UICONTROL 이름]** it `Core - cart page`
-1. **[!UICONTROL 변경사항 유지]**를 선택합니다
+1. 선택 **[!UICONTROL 변경 내용 유지]**
    ![조건 추가](assets/rule-condition-exception.png)
 1. 다음 URL 경로에 대해 세 가지 예외를 더 추가합니다
 

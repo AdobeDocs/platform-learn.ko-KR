@@ -3,14 +3,19 @@ title: 데이터스트림 구성
 description: 데이터 스트림을 활성화하고 Experience Cloud 솔루션을 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 7%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
 # 데이터스트림 구성
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 데이터 스트림을 활성화하고 Experience Cloud 솔루션을 구성하는 방법에 대해 알아봅니다.
 
@@ -49,7 +54,7 @@ ht-degree: 7%
 1. 선택 **[!UICONTROL 새 데이터스트림]** 화면의 오른쪽
 1. 입력 `Luma Web SDK` (으)로 **[!UICONTROL 이름]**. 이 이름은 나중에 태그 속성에서 Web SDK 확장을 구성할 때 참조됩니다.
 1. 다음 항목 선택 `Luma Web Event Data` (으)로 **[!UICONTROL 이벤트 스키마]**
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
    ![데이터 스트림 만들기](assets/datastream-create-datastream.png)
 

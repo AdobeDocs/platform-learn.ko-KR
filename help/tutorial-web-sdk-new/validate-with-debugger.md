@@ -2,9 +2,9 @@
 title: Experience Platform 디버거를 사용하여 Web SDK 구현 확인
 description: Adobe Experience Platform Debugger을 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Debugger
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,6 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 * 대체 태그 라이브러리 로드
 * 클라이언트측 XDM 이벤트가 Platform Edge Network에 예상대로 데이터를 캡처하여 전송하고 있는지 확인합니다.
 * 플랫폼 에지 네트워크에서 보낸 서버측 요청을 보려면 에지 추적 활성화
-* Adobe Experience Platform Assurance 세션을 시작하여 Platform Edge Network에서 생성한 Experience Cloud ID를 봅니다
 
 ## 전제 조건
 

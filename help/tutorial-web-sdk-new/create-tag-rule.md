@@ -2,9 +2,9 @@
 title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
@@ -40,15 +40,16 @@ ht-degree: 1%
 
 ## 이름 지정 규칙
 
-태그의 규칙을 더 잘 관리하려면 표준 명명 규칙을 따르는 것이 좋습니다. 이 튜토리얼에서는 세 부분으로 구성된 명명 규칙을 사용합니다.
+태그의 규칙을 더 잘 관리하려면 표준 명명 규칙을 따르는 것이 좋습니다. 이 자습서에서는 5가지 부분으로 구성된 명명 규칙을 사용합니다.
 
-* [**위치**] - [**이벤트**] - [**도구**] (**시퀀스**)
+* [**위치**] - [**이벤트**] - [**목적**] - [**도구**] - [**주문**]
 
 다음의 경우
 
 1. **위치** 는 규칙이 실행되는 사이트의 페이지입니다
 1. **이벤트** 는 규칙의 트리거입니다.
-1. **도구** 은 해당 규칙의 작업 단계에서 사용되는 특정 응용 프로그램입니다
+1. **목적** 는 규칙에서 수행하는 기본 작업입니다
+1. **도구** 는 해당 규칙의 작업 단계에서 사용되는 특정 애플리케이션으로, 웹 SDK에서는 드물게 사용됩니다
 1. **시퀀스** 은 다른 규칙과 관련하여 규칙이 실행되는 순서입니다
 <!-- minor update -->
 
@@ -59,13 +60,19 @@ ht-degree: 1%
 * **[!UICONTROL 변수 업데이트]** 데이터 요소를 XDM 필드에 매핑
 * **[!UICONTROL 이벤트 보내기]** Experience Platform 에지 네트워크에 XDM 개체 전송
 
-먼저 를 사용하여 웹 사이트의 모든 페이지(예: 페이지 이름)에서 전송할 XDM 필드의 &quot;전역 구성&quot;을 정의합니다. **[!UICONTROL 변수 업데이트]** 작업.
+이 단원의 나머지 부분에서
 
-그런 다음 다음을 포함하는 추가 규칙을 정의합니다 **[!UICONTROL 변수 업데이트]** 특정 조건(예: 제품 페이지에 제품 세부 사항 추가)에서만 사용할 수 있는 추가 XDM 필드로 &quot;전역 구성&quot;을 보완하기 위해.
+1. XDM 필드의 &quot;전역 구성&quot;을 정의하는 규칙 만들기(사용) [!UICONTROL 변수 업데이트] 를 사용하여 웹 사이트의 모든 페이지(예: 페이지 이름)에 전송하려는 경우 **[!UICONTROL 변수 업데이트]** 작업.
 
-마지막으로 와 함께 다른 규칙을 사용합니다. **[!UICONTROL 이벤트 보내기]** 전체 XDM 개체를 Adobe Experience Platform Edge Network로 보내는 작업.
+1. &quot;전역 구성&quot;을 재정의하는 추가 규칙을 생성하거나 추가 XDM 필드를 기여합니다(사용). [!UICONTROL 변수 업데이트] 다시 말하지만, 특정 조건에서만 관련이 있는 것은 아닙니다(예: 제품 페이지에 제품 세부 사항 추가).
+
+1. 을(를) 사용하여 다른 규칙 만들기 **[!UICONTROL 이벤트 보내기]** 전체 XDM 개체를 Adobe Experience Platform Edge Network로 보내는 작업.
 
 이러한 모든 규칙의 순서는 를 사용하여 올바르게 지정됩니다.[!UICONTROL 주문]&quot; 옵션입니다.
+
+이 비디오에서는 프로세스에 대한 개요를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
 ### 변수 규칙 업데이트
 
@@ -81,24 +88,22 @@ ht-degree: 1%
 
    ![규칙 만들기](assets/rules-create.png)
 
-1. 규칙 이름을 지정합니다 `all pages global content variables - library loaded - AA (order 1)`
+1. 규칙 이름을 지정합니다 `all pages - library loaded - set global variables - 1`
 
 1. 다음에서 **[!UICONTROL 이벤트]** 섹션, 선택 **[!UICONTROL 추가]**
 
    ![규칙에 이름 지정 및 이벤트 추가](assets/rule-name-new.png)
 
-1. 사용 **[!UICONTROL 코어 확장]** 및 선택 `Page Bottom` (으)로 **[!UICONTROL 이벤트 유형]**
+1. 사용 **[!UICONTROL 코어 확장]** 및 선택 **[!UICONTROL 라이브러리가 로드됨 (페이지 상단)]** (으)로 **[!UICONTROL 이벤트 유형]**
 
-1. 아래 **[!UICONTROL 이름]** 필드, 이름 지정 `Core - Page Bottom - order 1`. 이렇게 하면 의미 있는 이름으로 트리거를 설명하는 데 도움이 됩니다.
-
-1. 선택 **[!UICONTROL 고급]** 드롭다운 및 enter `1` 위치: **[!UICONTROL 주문]**
+1. 선택 **[!UICONTROL 고급]** 드롭다운 및 enter `1` (으)로 **[!UICONTROL 주문]**
 
    >[!NOTE]
    >
    > 주문 번호가 낮을수록 더 빨리 실행됩니다. 따라서 &quot;글로벌 구성&quot;에 낮은 주문 번호를 제공합니다.
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 기본 규칙 화면으로 돌아가기
-   ![페이지 하단 트리거 선택](assets/create-tag-rule-trigger-bottom.png)
+   ![Library Loaded 트리거 선택](assets/create-tag-rule-trigger-bottom.png)
 
 1. 다음에서 **[!UICONTROL 작업]** 섹션, 선택 **[!UICONTROL 추가]**
 
@@ -122,7 +127,7 @@ ht-degree: 1%
 
    >[!TIP]
    >
-   > 에서 채울 값을 이해하려면 `eventType` 필드: 스키마 페이지로 이동하여 `eventType` 오른쪽 레일에서 제안된 값을 보기 위한 필드입니다.
+   > 에서 채울 값을 이해하려면 `eventType` 필드: 스키마 페이지로 이동하여 `eventType` 오른쪽 레일에서 제안된 값을 보기 위한 필드입니다. 필요한 경우 새 값을 입력할 수도 있습니다.
    > ![스키마 페이지의 eventType 제안 값](assets/create-tag-rule-eventType.png)
 
 1. 그런 다음 `identityMap` 스키마의 객체를 선택하고
@@ -160,7 +165,7 @@ ht-degree: 1%
 
 #### 제품 페이지 필드
 
-이제 **[!UICONTROL 변수 업데이트]** 다수의 순차적 규칙은에 보내기 전에 XDM 개체를 보완하는 것입니다. [!UICONTROL 플랫폼 에지 네트워크].
+이제 **[!UICONTROL 변수 업데이트]** 또한 순차적 규칙은에 보내기 전에 XDM 개체를 보강하는 것입니다. [!UICONTROL 플랫폼 에지 네트워크].
 
 >[!TIP]
 >
@@ -171,12 +176,11 @@ ht-degree: 1%
 Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시작합니다.
 
 1. 선택 **[!UICONTROL 규칙 추가]**
-1. 이름 지정  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
+1. 이름 지정  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
 1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
-1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
-1. 이름 지정 `Core - Page Bottom - order 20`
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - library loaded - AA (order 1)` 전역 콘텐츠 변수를 설정합니다.
+1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨 (페이지 상단)]**
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages - library loaded - set global variables - 1` 전역 구성을 설정합니다.
 
    ![Analytics XDM 규칙](assets/set-up-analytics-pdp.png)
 
@@ -246,11 +250,10 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 이제 배열을 XDM 개체에 매핑하겠습니다.
 
 
-1. (이)라는 이름의 새 규칙 만들기 `ecommerce - cart library loaded - AA (order 20)`
+1. (이)라는 이름의 새 규칙 만들기 `ecommerce - library loaded - set shopping cart variables - 20`
 1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
-1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 페이지 하단]**
-1. 이름 지정 `Core - Page Bottom - order 20`
+1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨 (페이지 상단)]**
 1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`
 1. 선택 **[!UICONTROL 변경 내용 유지]**
 
@@ -292,7 +295,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 아래 차이점을 사용하여 동일한 패턴에 따라 체크아웃 및 구매를 위한 다른 두 규칙을 만듭니다.
 
-**규칙 이름**: `ecommerce - checkout library loaded - AA (order 20)`
+**규칙 이름**: `ecommerce  - library loaded - set checkout variables - 20`
 
 1. **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout.html
 1. `eventType`을 `commerce.checkouts`로 설정합니다.
@@ -303,7 +306,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
    >이는 설정에 해당합니다. `scCheckout` analytics의 이벤트
 
 
-**규칙 이름**: `ecommerce - purchase library loaded - AA (order 20)`
+**규칙 이름**: `ecommerce - library loaded - set purchase variables -  20`
 
 1. **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout/order/thank-you.html
 1. `eventType`을 `commerce.purchases`로 설정합니다.
@@ -338,18 +341,16 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 1. 오른쪽에서 을 선택합니다. **[!UICONTROL 규칙 추가]** 다른 규칙을 만들려면
 
-1. 규칙 이름을 지정합니다 `all pages send event - library loaded - AA (order 50)`
+1. 규칙 이름을 지정합니다 `all pages - library loaded - set send event - 50`
 
 1. 다음에서 **[!UICONTROL 이벤트]** 섹션, 선택 **[!UICONTROL 추가]**
 
-1. 사용 **[!UICONTROL 코어 확장]** 및 선택 `Page Bottom` (으)로 **[!UICONTROL 이벤트 유형]**
-
-1. 아래 **[!UICONTROL 이름]** 필드, 이름 지정 `Core - Page Bottom - order 50`. 이렇게 하면 의미 있는 이름으로 트리거를 설명하는 데 도움이 됩니다.
+1. 사용 **[!UICONTROL 코어 확장]** 및 선택 `Library Loaded (Page Top)` (으)로 **[!UICONTROL 이벤트 유형]**
 
 1. 선택 **[!UICONTROL 고급]** 드롭다운 및 enter `50` 위치: **[!UICONTROL 주문]**. 이렇게 하면 로 트리거하도록 설정한 첫 번째 규칙 이후에 두 번째 규칙이 트리거됩니다. `1`.
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 기본 규칙 화면으로 돌아가기
-   ![페이지 하단 트리거 선택](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Library Loaded 트리거 선택](assets/create-tag-rule-trigger-bottom-send.png)
 
 1. 다음에서 **[!UICONTROL 작업]** 섹션, 선택 **[!UICONTROL 추가]**
 
@@ -383,7 +384,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
    >[!NOTE]
    >
-   >    Adobe Experience Platform 웹 SDK 확장 및 `all pages global content variables - library loaded - AA (order 50)` 규칙에서는 이전 단원에서 만든 태그 구성 요소를 볼 수 있습니다. 코어 확장에는 모든 웹 태그 속성에 필요한 기본 JavaScript가 포함되어 있습니다.
+   >    이전 단원에서 만든 모든 태그 구성 요소가 표시됩니다. 코어 확장에는 모든 웹 태그 속성에 필요한 기본 JavaScript가 포함되어 있습니다.
 
 1. 선택 **[!UICONTROL 개발을 위한 저장 및 구축]**
 

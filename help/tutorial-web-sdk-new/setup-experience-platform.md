@@ -1,10 +1,10 @@
 ---
 title: Web SDK를 사용하여 Adobe Experience Platform에 데이터 스트리밍
 description: Web SDK를 사용하여 웹 데이터를 Adobe Experience Platform에 스트리밍하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 5%
+source-wordcount: '1587'
+ht-degree: 4%
 
 ---
 
@@ -13,7 +13,6 @@ ht-degree: 5%
 Platform Web SDK를 사용하여 Adobe Experience Platform에 웹 데이터를 스트리밍하는 방법에 대해 알아봅니다.
 
 Experience Platform은 Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics 및 Adobe Journey Optimizer과 같은 모든 새로운 Experience Cloud 애플리케이션의 백본입니다. 이러한 애플리케이션은 Platform Web SDK를 최적의 웹 데이터 수집 방법으로 사용하도록 설계되었습니다.
-
 
 ![Web SDK 및 Adobe Experience Platform 다이어그램](assets/dc-websdk-aep.png)
 
@@ -30,29 +29,17 @@ Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용
 
 ## 전제 조건
 
-다음 단원을 이미 완료했어야 합니다.
+이 단원을 완료하려면 먼저 다음 작업을 수행해야 합니다.
 
-* 다음 **초기 구성** 단원:
-   * [XDM 스키마 구성](configure-schemas.md)
-   * [데이터스트림 구성](configure-datastream.md)
-   * [ID 네임스페이스 구성](configure-identities.md)
-
-* 다음 **태그 구성** 단원:
-   * [웹 SDK 확장 기능 설치](install-web-sdk.md)
-   * [데이터 요소 만들기](create-data-elements.md)
-   * [ID 만들기](create-identities.md)
-   * [태그 규칙 만들기](create-tag-rule.md)
+* Real-time Customer Data Platform, Journey Optimizer 또는 Customer Journey Analytics과 같은 Adobe Experience Platform 애플리케이션에 액세스할 수 있습니다
+* 이 자습서의 초기 구성 및 태그 구성 섹션에서 이전 단원을 완료합니다.
 
 
 ## 데이터 세트 만들기
 
 Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. A [데이터 세트](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 는 스키마(열) 및 필드(행)를 포함하는 데이터 수집을 위한 저장 및 관리 구문입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
 
-이 연습에서는 의 콘텐츠 및 전자 상거래 세부 사항을 추적하는 데이터 세트를 만듭니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->을(를) 이미 만들었어야 합니다. `Luma Web Event Data` 이전 단원에서 설명한 대로 스키마, [XDM 스키마 구성](configure-schemas.md).
+Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습니다.
 
 
 1. 로 이동 [Experience Platform 인터페이스](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 > * 먼저 일부 데이터를 데이터 세트에 수집합니다.
 > * 데이터 수집 프로세스 중에 발생하는 모든 문제(예: 데이터 유효성 검사 또는 매핑 문제)를 해결합니다.
 > * 프로필에 대해 데이터 세트 및 스키마 활성화
-> * 데이터 다시 수집
+> * 필요한 경우 데이터 다시 수집
 
 
 ### 프로필 유효성 검사

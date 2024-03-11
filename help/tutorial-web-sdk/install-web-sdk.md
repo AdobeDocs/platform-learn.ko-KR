@@ -3,14 +3,19 @@ title: Adobe Experience Platform 웹 SDK 태그 확장 설치 및 구성
 description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 15%
+source-wordcount: '644'
+ht-degree: 11%
 
 ---
 
 # Adobe Experience Platform 웹 SDK 태그 확장 설치
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 태그 확장은 _태그 확장만 해당_ 데이터를 (으)로 전송하는 데 필요 _모든 Adobe Experience Cloud 애플리케이션_, 포함 [분석](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform 및 Journey Optimizer!
 
@@ -41,11 +46,11 @@ ht-degree: 15%
 
 1. 를 엽니다. [데이터 수집 인터페이스](https://launch.adobe.com/){target="_blank"}
 1. 선택 **[!UICONTROL 태그]** 왼쪽 탐색
-1. **[!UICONTROL 새 속성]** 버튼을 선택합니다
+1. 다음 항목 선택 **[!UICONTROL 새 속성]** 단추
    ![새 속성 추가](assets/websdk-property-addNewProperty.png)
 1. 다음으로: **[!UICONTROL 이름]**, 입력 `Web SDK Course` (회사에서 여러 사람이 이 튜토리얼을 수강하는 경우 이름 추가)
 1. 다음으로: **[!UICONTROL 도메인]**, 입력 `enablementadobe.com` (나중에 설명)
-1. **[!UICONTROL 저장]**을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
    ![속성 세부 정보](assets/websdk-property-propertyDetails.png)
 
 ## 웹 SDK 확장 추가
@@ -66,7 +71,7 @@ ht-degree: 15%
 
 1. 아래 **[!UICONTROL 데이터스트림]**&#x200B;를 선택하고 **[!UICONTROL 목록에서 선택]** 입력 방법
 1. 이전에 생성한 데이터 스트림을 선택합니다. `Luma Web SDK`
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
    >[!NOTE]
    >
    > 데이터 스트림을 찾을 수 없는 경우 [데이터 스트림 구성](configure-datastream.md) 단원 및 단계에 따라 단원을 만듭니다.

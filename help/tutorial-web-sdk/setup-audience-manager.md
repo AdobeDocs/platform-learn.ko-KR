@@ -3,14 +3,19 @@ title: Platform Web SDK를 사용하여 Audience Manager 설정
 description: Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1385'
-ht-degree: 4%
+source-wordcount: '1368'
+ht-degree: 1%
 
 ---
 
 # Platform Web SDK를 사용하여 Audience Manager 설정
+
+
+>[!CAUTION]
+>
+>2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다.
 
@@ -42,11 +47,11 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 
    ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk.png)
 
-1. **[!UICONTROL 서비스 추가]**를 선택합니다
+1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/aam-datastream-addService.png)
 1. 선택 **[!UICONTROL Adobe Audience Manager]** (으)로 **[!UICONTROL 서비스]**
 1. 다음을 확인합니다 **[!UICONTROL 쿠키 대상 활성화됨]** 및 **[!UICONTROL URL 대상 활성화됨]** 선택됨
-1. **[!UICONTROL 저장]**을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
    ![Audience Manager 데이터 스트림 설정을 확인하고 저장합니다.](assets/aam-datastream-save.png)
 
 ## 데이터 소스 만들기
@@ -93,7 +98,7 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 1. **[!UICONTROL 저장]** 트레이트.
 
 
-## 세그먼트를 만듭니다
+## 세그먼트 만들기
 
 다음 단계는 를 만드는 것입니다. **세그먼트**&#x200B;을 누르고 새로 정의된 트레이트를 이 세그먼트에 지정합니다.
 
@@ -144,7 +149,7 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 
 1. 세그먼트를 추가하면 쿠키에 대한 예상 값을 제공해야 하는 팝업이 열립니다. 이 연습에서는 &quot;hpvisitor&quot; 값을 입력합니다.
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다
+1. 선택 **[!UICONTROL 저장]**
 
 1. 선택 **[!UICONTROL 완료]**
    ![Adobe Experience Platform Audience Manager 트레이트 추가](assets/luma-cookie-segment-dw.png)

@@ -2,9 +2,9 @@
 title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '4681'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 다음을 사용하여 Adobe Analytics을 설정하는 방법 알아보기 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), 태그 규칙을 만들어 데이터를 Adobe Analytics으로 전송하고, Analytics가 데이터를 예상대로 캡처하는지 확인합니다.
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) 은 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=ko-KR) 은 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
 
 ![Web SDK에서 Adobe Analytics 다이어그램으로](assets/dc-websdk-aa.png)
 
@@ -37,84 +37,17 @@ ht-degree: 0%
 
 ## 전제 조건
 
-태그, Adobe Analytics 및 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 로그인 및 쇼핑 기능.
+이 단원을 완료하려면 먼저 다음 작업을 수행해야 합니다.
 
-하나 이상의 테스트/개발 보고서 세트 ID가 필요합니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [하나를 만드십시오.](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+* Adobe Analytics에 대해 잘 알고 있고 액세스할 수 있습니다.
 
-자습서의 이전 섹션에서 모든 단계를 완료했어야 합니다.
+* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [하나를 만드십시오.](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
 
-* 초기 구성
-   * [XDM 스키마 구성](configure-schemas.md)
-   * [ID 네임스페이스 구성](configure-identities.md)
-   * [데이터스트림 구성](configure-datastream.md)
-* 태그 구성
-   * [웹 SDK 확장 기능 설치](install-web-sdk.md)
-   * [데이터 요소 만들기](create-data-elements.md)
-   * [ID 만들기](create-identities.md)
-   * [태그 규칙 만들기](create-tag-rule.md)
-   * [Adobe Experience Platform Debugger로 유효성 검사](validate-with-debugger.md)
-
-또한 다음을 수행해야 합니다 [Adobe Experience Platform Assurance에 대한 사용자 액세스 활성화](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) Adobe Experience Platform Assurance를 통해 Adobe Analytics 데이터의 유효성을 검사할 수 있습니다. (액세스 스키마, ID 네임스페이스 및 데이터스트림이 있으면 Assurance에 이미 액세스할 수 있습니다.)
-
-## XDM 스키마 및 Analytics 변수
-
-축하합니다! 에서 Adobe Analytics과 호환되는 스키마를 이미 구성했습니다. [스키마 구성](configure-schemas.md) 레슨! 그러나 Adobe Analytics의 경우 Adobe Analytics용 XDM을 정의하는 두 가지 일반적인 접근 방식이 있습니다.
-
-<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
-
-1. Automatically mapped variables using reserved XDM fields
-1. Manually mapped variables using Analytics Processing Rules
-
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
-
-1. **제품에 관계없는 XDM**: 의미 체계 키-값 쌍 XDM 스키마 유지 및 사용 [Adobe Analytics 처리 규칙](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) XDM 필드를 eVar, prop 등에 매핑합니다. 의미 체계 XDM 스키마에서는 필드 이름 자체에 의미가 있다는 의미입니다. 예: 필드 이름 `web.webPageDetails.pageName` 말보다 더 많은 의미를 갖습니다. `prop1` 또는 `evar3`.
-
-   >[!IMPORTANT]
-   >
-   > XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 데이터 변수로 Adobe Analytics에서 사용할 수 있습니다 `a.x.`. 예, `a.x.web.webinteraction.region`
-
-1. **Analytics 관련 XDM**: 라는 XDM 스키마에서 특별히 빌드된 Adobe Analytics 필드 그룹 사용 `Adobe Analytics ExperienceEvent Template`
-
-Adobe 고객이 선호하는 접근 방식은 다음과 같습니다. **Analytics 관련 XDM**: Adobe Analytics 처리 규칙 인터페이스에서 매핑 단계를 건너뜁니다. 이 단원의 단계는 **Analytics 관련 XDM** 접근.
-
-## XDM을 Adobe Analytics에 매핑
-
-많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다.
-
-에서 생성된 스키마 [스키마 구성](configure-schemas.md) 단원에는 이 표에 설명된 대로 Analytics 변수에 자동으로 매핑된 몇 가지 기능이 포함되어 있습니다.
-
-| XDM을 Analytics에 자동 매핑된 변수로 | Adobe Analytics 변수 |
-|-------|---------|
-| `identitymap.ecid.[0].id` | mid |
-| `web.webPageDetails.name` | s.pageName |
-| `web.webPageDetails.server` | s.server |
-| `web.webPageDetails.siteSection` | s.channel |
-| `commerce.productViews.value` | prodView |
-| `commerce.productListViews.value` | scView |
-| `commerce.checkouts.value` | scCheckout |
-| `commerce.purchases.value` | 구매 |
-| `commerce.order.currencyCode` | s.currencyCode |
-| `commerce.order.purchaseID` | s.purchaseID |
-| `productListItems[].SKU` | s.products=;product name;;;; (primary - 아래 참고 사항 참조) |
-| `productListItems[].name` | s.products=;product name;;;; (fallback - 아래 참고 사항 참조) |
-| `productListItems[].quantity` | s.products=;;product quantity;;; |
-| `productListItems[].priceTotal` | s.product=;;;product price;; |
-
->[!NOTE]
->
->Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체.
->2022년 8월 18일 기준 `productListItems[].SKU` 는 s.products 변수의 제품 이름에 매핑하는 데 우선 순위를 둡니다.
->값이 로 설정된 경우 `productListItems[].name` 는 다음과 같은 경우에만 제품 이름에 매핑됩니다. `productListItems[].SKU` 존재하지 않습니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
->빈 문자열 또는 null을 로 설정하지 마십시오.  `productListItems[].SKU`. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
-
-매핑의 최신 목록을 확인하려면 다음을 참조하십시오. [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html).
-
-자동으로 매핑되지 않는 XDM 변수의 경우 `Adobe Analytics ExperienceEvent Template` 아래 예정된 섹션에 자세히 설명된 필드 그룹입니다.
-
+* 이 자습서의 초기 구성 및 태그 구성 섹션에서 이전 단원을 완료합니다.
 
 ## 데이터 스트림 구성
 
-Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 전송합니다. 그런 다음 데이터 스트림은 Platform Edge Network에 해당 데이터를 전달할 Adobe Analytics 보고서 세트를 알려줍니다.
+Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 전송합니다. 그런 다음 데이터 스트림은 데이터가 전달되는 Adobe Analytics 보고서 세트가 있는 Platform Edge Network에 알려줍니다.
 
 1. 다음으로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
@@ -138,10 +71,132 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 >
 >이 자습서에서는 개발 환경에 대해서만 Adobe Analytics 보고서 세트를 구성합니다. 자체 웹 사이트에 대한 데이터스트림을 생성할 때 스테이징 및 프로덕션 환경에 대한 추가 데이터스트림 및 보고서 세트를 생성합니다.
 
-### 데이터 스트림 보고서 세트 재정의 구성
+## XDM 스키마 및 Analytics 변수
 
-방문자가 특정 페이지에 있을 때 전송할 Adobe Analytics 보고서 세트 데이터를 변경할 수 있습니다. Adobe Analytics에 대한 데이터스트림 재정의 설정을 구성하려면 다음 작업을 수행하십시오.
+축하합니다! 에서 Adobe Analytics과 호환되는 스키마를 이미 구성했습니다. [스키마 구성](configure-schemas.md) 레슨!
 
+하지만 여러분은 궁금하실 겁니다. 어떻게 모든 소품, evar, 이벤트를 설정할까요?
+
+다음과 같은 몇 가지 접근 방식을 사용하여 동시에 사용할 수 있습니다.
+
+1. 표준 XDM 필드를 설정하면 일부 필드가 Analytics 변수에 자동으로 매핑됩니다.
+1. Analytics 처리 규칙에서 추가 XDM 필드를 Analytics 변수에 매핑합니다.
+1. XDM 스키마에서 Analytics 변수에 직접 매핑합니다.
+
+<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
+
+1. Automatically mapped variables using reserved XDM fields
+1. Manually mapped variables using Analytics Processing Rules
+
+To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. 
+
+ 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
+
+
+ 1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
+ 
+The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, because it skips the mapping step in the Adobe Analytics Processing Rules interface. The steps in this lesson use the **Analytics-specific XDM** approach.
+-->
+
+### 자동으로 매핑된 필드
+
+많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다.
+
+에서 생성된 스키마 [스키마 구성](configure-schemas.md) 단원에는 이 표에 설명된 대로 Analytics 변수에 자동으로 매핑된 몇 가지 기능이 포함되어 있습니다.
+
+| XDM을 Analytics에 자동 매핑된 변수로 | Adobe Analytics 변수 |
+|-------|---------|
+| `identitymap.ecid.[0].id` | mid |
+| `web.webPageDetails.name` | s.pageName |
+| `web.webPageDetails.server` | s.server |
+| `web.webPageDetails.siteSection` | s.channel |
+| `commerce.productViews.value` | prodView |
+| `commerce.productListViews.value` | scView |
+| `commerce.checkouts.value` | scCheckout |
+| `commerce.purchases.value` | 구매 |
+| `commerce.order.currencyCode` | s.currencyCode |
+| `commerce.order.purchaseID` | s.purchaseID |
+| `productListItems[].SKU` | s.products=;product name;;;; (primary - 아래 참고 사항 참조) |
+| `productListItems[].name` | s.products=;product name;;;; (fallback - 아래 참고 사항 참조) |
+| `productListItems[].quantity` | s.products=;;product quantity;;; |
+| `productListItems[].priceTotal` | s.product=;;;product price;; |
+
+Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체.
+>2022년 8월 18일 기준 `productListItems[].SKU` 는 s.products 변수의 제품 이름에 매핑하는 데 우선 순위를 둡니다.
+>값이 로 설정된 경우 `productListItems[].name` 는 다음과 같은 경우에만 제품 이름에 매핑됩니다. `productListItems[].SKU` 존재하지 않습니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
+>빈 문자열 또는 null을 로 설정하지 마십시오.  `productListItems[].SKU`. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
+
+매핑의 최신 목록을 확인하려면 다음을 참조하십시오. [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html).
+
+
+### Analytics 처리 규칙을 사용한 매핑
+
+XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 데이터 변수로 Adobe Analytics에서 사용할 수 있습니다 `a.x.`. 예, `a.x.web.webinteraction.region`
+
+이 연습에서는 하나의 XDM 변수를 prop에 매핑합니다. 에 대해 수행해야 하는 모든 사용자 지정 매핑에 대해 다음과 동일한 단계를 수행합니다 `eVar`, `prop`, `event`또는 처리 규칙을 통해 액세스할 수 있는 변수입니다.
+
+1. Analytics 인터페이스로 이동
+1. 다음으로 이동 [!UICONTROL 관리자] > [!UICONTROL 관리 도구] > [!UICONTROL 보고서 세트]
+1. 자습서에 사용할 개발/테스트 보고서 세트를 선택합니다. > [!UICONTROL 설정 편집] > [!UICONTROL 일반] > [!UICONTROL 처리 규칙]
+
+   ![Analytics 구매](assets/analytics-process-rules.png)
+
+1. 규칙 만들기 **[!UICONTROL 값 덮어쓰기]** `[!UICONTROL Product SKU (prop1)]` 끝 `a.x.productlistitems.0.sku`. 규칙을 만드는 이유에 대한 메모를 추가하고 규칙 제목에 이름을 지정해야 합니다. 선택 **[!UICONTROL 저장]**
+
+   ![Analytics 구매](assets/analytics-set-processing-rule.png)
+
+   >[!IMPORTANT]
+   >
+   >처리 규칙에 처음 매핑할 때 UI는 XDM 개체의 컨텍스트 데이터 변수를 표시하지 않습니다. 이 문제를 해결하려면 를 저장하고 다시 편집하십시오. 이제 모든 XDM 변수가 표시됩니다.
+
+### XDM 스키마의 Analytics 변수에 매핑
+
+처리 규칙에 대한 대체 방법은 를 사용하여 XDM 스키마의 Analytics 변수에 매핑하는 것입니다. `Adobe Analytics ExperienceEvent Template` 필드 그룹입니다. 이 방법은 많은 사용자가 처리 규칙을 구성하는 것보다 간단하다고 생각하기 때문에 인기를 얻었지만 XDM 페이로드 크기를 늘리면 Real-Time CDP과 같은 다른 애플리케이션에서 프로필 크기가 늘어날 수 있습니다.
+
+을(를) 추가하려면 `Adobe Analytics ExperienceEvent Template` 스키마에 대한 필드 그룹:
+
+1. 를 엽니다. [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
+1. 선택 **[!UICONTROL 스키마]** 왼쪽 탐색에서
+1. 자습서에서 사용 중인 샌드박스에 있는지 확인합니다
+1. 을(를) 엽니다 `Luma Web Event Data` 스키마
+1. 다음에서 **[!UICONTROL 필드 그룹]** 섹션, 선택 **[!UICONTROL 추가]**
+1. 다음 찾기 `Adobe Analytics ExperienceEvent Template` 필드 그룹 및 스키마에 추가
+
+
+이제 제품 문자열에서 머천다이징 eVar을 설정합니다. 포함 `Adobe Analytics ExperienceEvent Template` 필드 그룹에서는 변수를 머천다이징 eVar 또는 제품 문자열 내의 이벤트에 매핑할 수 있습니다. 이를 설정이라고도 합니다 **제품 구문 상품화**.
+
+1. 태그 속성으로 돌아가기
+
+1. 규칙 열기 `ecommerce - library loaded - set product details variables - 20`
+
+1. 를 엽니다. **[!UICONTROL 변수 설정]** 작업
+
+1. 열려면 선택하십시오. `_experience > analytics > customDimensions > eVars > eVar1`
+
+1. 설정 **[!UICONTROL 값]** 끝 `%product.productInfo.title%`
+
+1. 선택 **[!UICONTROL 변경 내용 유지]**
+
+   ![제품 SKU XDM 개체 변수](assets/set-up-analytics-product-merchandising.png)
+
+1. 선택 **[!UICONTROL 저장]** 규칙을 저장하려면
+
+위에서 보듯이 기본적으로 모든 Analytics 변수는 `Adobe Analytics ExperienceEvent Template` 필드 그룹입니다.
+
+>[!NOTE]
+>
+> 다음 사항에 주목합니다. `_experience` 아래에 있는 오브젝트 `productListItems` > `Item 1`. 이 아래에서 변수 설정 [!UICONTROL 오브젝트] 제품 구문 eVar 또는 이벤트를 설정합니다.
+
+
+### 다른 보고서 세트로 데이터 보내기
+
+방문자가 특정 페이지에 있을 때 전송할 Adobe Analytics 보고서 세트 데이터를 변경할 수 있습니다. 이를 위해서는 데이터 스트림과 규칙 모두에서 구성해야 합니다.
+
+#### 데이터 스트림 보고서 세트 재정의 구성
+
+데이터 스트림에서 Adobe Analytics 보고서 세트 재정의 설정을 구성하려면 다음 작업을 수행하십시오.
+
+1. 데이터 스트림 열기
 1. 편집 **[!UICONTROL Adobe Analytics]** 를 열어 구성 ![기타](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 메뉴를 선택한 다음 선택 **[!UICONTROL 편집]**
 
    ![데이터 스트림 덮어쓰기](assets/datastream-edit-analytics.png)
@@ -154,177 +209,12 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
    ![데이터 스트림 덮어쓰기](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
 
-이 단원의 후반부에 [데이터 스트림 재정의를 사용하여 페이지 보기를 다른 보고서 세트로 전송하는 규칙을 만듭니다.](setup-analytics.md###send-a-page-view-to-a-different-report-suite-with-datastream-override).
 
-## 추가 전자 상거래 데이터 요소 만들기
+#### 데이터 스트림 재정의로 다른 보고서 세트에 페이지 보기 보내기
 
-그런 다음 Luma 데이터 레이어에서 추가 데이터를 캡처하여 Platform Edge Network로 전송합니다. 이 단원에서는 일반적인 Adobe Analytics 요구 사항에 중점을 두고 있지만, 캡처된 모든 데이터는 데이터 스트림 구성에 따라 다른 대상으로 쉽게 전송할 수 있습니다. 예를 들어 Adobe Experience Platform 단원을 완료한 경우 이 단원에서 캡처한 추가 데이터도 플랫폼으로 전송됩니다.
+다른 보고서 세트에 추가 페이지 보기 호출을 보내는 규칙을 만들어 보겠습니다. 데이터 스트림 재정의 기능을 사용하여 다음을 사용하여 페이지에 대한 보고서 세트를 변경합니다. **[!UICONTROL 이벤트 보내기]** 작업.
 
-데이터 요소 만들기 단원 동안 [생성된 JavaScript 데이터 요소](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 캡처된 컨텐츠 및 id 세부 정보. 이제 전자 상거래 데이터를 캡처하기 위해 추가 데이터 요소를 만듭니다. 이유: [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 에서는 장바구니의 제품 세부 사항 페이지 및 제품에 대해 서로 다른 데이터 계층 구조를 사용합니다. 각 시나리오에 대해 별도의 데이터 요소를 만들어야 합니다. 사용자 지정 코드 데이터 요소를 사용하여 Luma 데이터 레이어에서 필요한 항목을 가져옵니다. 이는 자체 사이트에서 구현할 때 필요하거나 필요하지 않을 수 있습니다. 이 경우 각 제품의 특정 세부 정보를 파악하려면 장바구니 항목 배열을 반복해야 합니다. 아래에 제공된 코드 조각을 사용하십시오.
-
-1. 자습서에 사용하는 태그 속성을 엽니다
-
-1. 다음으로 이동 **[!UICONTROL 데이터 요소]**
-
-1. 선택 **[!UICONTROL 데이터 요소 추가]**
-
-1. 이름 지정 **`product.productInfo.sku`**
-
-1. 사용 **[!UICONTROL 사용자 지정 코드]** **[!UICONTROL 데이터 요소 유형]**
-
-1. 다음에 대한 확인란 남기기 **[!UICONTROL 소문자 강제 적용 값]** 및 **[!UICONTROL 텍스트 정리]** 선택되지 않음
-
-1. 나가기 `None` (으)로 **[!UICONTROL 저장 기간]** 이 값은 모든 페이지에서 다르므로 설정
-
-1. 선택 **[!UICONTROL 편집기 열기]**
-
-   ![사용자 지정 코드 데이터 요소](assets/analytics-create-custom-data-element.png)
-
-1. 다음 코드를 복사하여 붙여 넣습니다.
-
-
-   ```javascript
-   var cart = digitalData.product;
-   var cartItem;
-   cart.forEach(function(item){
-   cartItem = item.productInfo.sku;
-   });
-   return cartItem;
-   ```
-
-1. 선택 **[!UICONTROL 저장]** 사용자 지정 코드를 저장하려면
-
-1. 선택 **[!UICONTROL 저장]** 데이터 요소를 저장하려면
-
-이러한 추가 데이터 요소를 만들려면 동일한 단계를 따르십시오.
-
-* **`product.productInfo.title`**
-
-  ```javascript
-  var cart = digitalData.product;
-  var cartItem;
-  cart.forEach(function(item){
-  cartItem = item.productInfo.title;
-  });
-  return cartItem;
-  ```
-
-<!--* **`product.productInfo.name`**
-
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.name;
-    });
-    return cartItem;
-    ```-->
-
-<!--* **`cart.productInfo`**
-
-    ```javascript
-    var cart = digitalData.cart.cartEntries; 
-    var cartItem = [];
-    cart.forEach(function(item, index, array){
-    var qty;
-    if(window.location.pathname.includes("thank-you.html")){
-    qty = parseInt(item.qty);
-    }else{
-    qty = "";
-    }
-    var price = parseInt(item.price);
-    cartItem.push({
-    "SKU": item.sku,
-    "quantity": qty,
-    "priceTotal": price
-    });
-    });
-    return cartItem; 
-    ```-->
-
-* **`cart.productInfo`**
-
-  ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  cartItem.push({
-  "SKU": item.sku
-  });
-  });
-  return cartItem; 
-  ```
-
-* **`cart.productInfo.purchase`**
-
-  ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  var qty = parseInt(item.qty);
-  var price = parseInt(item.price);
-  cartItem.push({
-  "SKU": item.sku,
-  "quantity": qty,
-  "priceTotal": price
-  });
-  });
-  return cartItem; 
-  ```
-
-  >[!TIP]
-  >
-  > 이 코드 조각에는 제품 머천다이징 eVars 단원 동안 사용되는 사용자 지정 eVar1 설정이 포함되어 있습니다
-
-이러한 데이터 요소를 추가하고 의 이전 요소를 만든 후 [데이터 요소 만들기](create-data-elements.md) 단원, 다음 데이터 요소가 있어야 합니다.
-
-| 데이터 요소 |
------------------------------|
-| `cart.orderId` |
-| `cart.productInfo` |
-| `cart.productInfo.purchase` |
-| `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` |
-| `page.pageInfo.pageName` |
-| `page.pageInfo.server` |
-| `product.productInfo.sku` |
-| `product.productInfo.title` |
-| `user.profile.attributes.loggedIn` |
-| `user.profile.attributes.username` |
-| `xdm.variable.content` |
-
-<!-- 
->[!IMPORTANT]
->
->In this tutorial, you will create a different XDM object for each event. That means you must remap variables that would be considered to be "globally" available on every hit, such as page name and identityMap. However, you may [Merge Objects](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html#merged-objects) or use [Mapping Tables](https://exchange.adobe.com/experiencecloud.details.103136.mapping-table.html) to manage your XDM objects more efficiently in a real-life situation. For this lesson, the global variables are considered as:
->
->* **[!UICONTROL identityMap]** to capture the authenticated ID as per the [Create Identity Map Data Element](create-data-elements.md#create-identity-map-data-element) exercise in the [Create Data Elements](create-data-elements.md) lesson.
->* **[!UICONTROL web]** object to capture content as per the [content XDM object](create-data-elements.md#map-content-data-elements-to-XDM-Schema-individually) exercise in the [Create Data Elements](create-data-elements.md) lesson on every data element above. 
--->
-
-## 추가 규칙 만들기
-
-다음에서 [태그 규칙 만들기](create-tag-rule.md) 단원, 다음을 설정함: `all pages global content variables - library loaded - AA (order 1)` 규칙 [을(를) 사용하여 기본 XDM 개체를 만들었습니다. **[!UICONTROL 변수 업데이트]** **[!UICONTROL 작업 유형]**](create-tag-rule.md#create-tag-rule). 다음 연습에서는 해당 XDM 개체를 보강하여 특정 페이지와 관련된 추가 데이터를 캡처합니다.
-
-### 페이지 보기 수 증가
-
-이제 Adobe Analytics으로 데이터를 보내므로 추가 XDM 필드를 매핑하여 페이지 보기를 나타내는 것이 좋습니다. Analytics에서 비콘을 페이지 보기로 처리하는 데에는 기술적으로 필요하지 않지만, 다른 다운스트림 애플리케이션에 대한 페이지 보기를 표시하는 표준 방법을 사용하는 것이 유용합니다.
-
-1. 를 엽니다. `all pages global content variables - library loaded - AA (order 1)` 규칙
-1. 를 엽니다. **[!UICONTROL 변수 업데이트]** 작업
-1. 아래로 스크롤한 다음 을(를) 선택하여 까지 열기 `web.webPageDetails`
-1. 을(를) 선택하여 열기 **[!UICONTROL pageViews]** 오브젝트
-1. 설정 **[!UICONTROL 값]** 끝 `1`
-1. 선택 **[!UICONTROL 변경 내용 유지]**
-
-   ![페이지 조회수 XDM 개체](assets/set-up-analytics-pageviews.png)
-
-
-### 데이터 스트림 재정의로 다른 보고서 세트에 페이지 보기 보내기
-
-다른 보고서 세트에 추가 페이지 보기 호출을 전송하는 규칙을 만듭니다. 데이터 스트림 재정의 기능을 사용하여 다음을 사용하여 페이지에 대한 보고서 세트를 변경합니다. **[!UICONTROL 이벤트 보내기]** 작업.
-
-1. 새 규칙을 만들어 이름을 지정합니다. `homepage report suite override - library loaded - AA (order 51)`
+1. 새 규칙을 만들어 이름을 지정합니다. `homepage - library loaded - AA report suite override - 51`
 
 1. 아래에서 더하기 기호를 선택합니다. **[!UICONTROL 이벤트]** 새 트리거를 추가하려면
 
@@ -332,9 +222,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨]**
 
-1. 이름 지정 `Core - library loaded - order 51`
-
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `51`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - library loaded - AA (order 50)` 를 사용하여 기본 XDM을 설정하는 경우 **[!UICONTROL 변수 업데이트]** 작업 유형.
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `51`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages - library loaded - send event - 50` 를 사용하여 기본 XDM을 설정하는 경우 **[!UICONTROL 변수 업데이트]** 작업 유형.
 
    ![Analytics 보고서 세트 재정의](assets/set-up-analytics-rs-override.png)
 
@@ -379,274 +267,12 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 1. 아래 **[!UICONTROL 보고서 세트]**&#x200B;을(를) 통해 재정의하는 데 사용할 보고서 사이트를 선택합니다. 이 경우, `tmd-websdk-course-stg`.
 
-
-   >[!TIP]
-   >
-   >여기에 표시되는 보고서 세트 목록은 다음을 통해 결정됩니다. [데이터 스트림 보고서 세트 재정의 구성](configure-datastream.md###configure-a-datastream-report-suite-override) 단계. 보고서 세트 추가는 다중 세트 태깅과 같습니다.
-
 1. 선택 **[!UICONTROL 변경 내용 유지]**
 
 1. 및 **[!UICONTROL 저장]** 내 규칙
 
    ![Analytics 데이터스트림 재정의](assets/analytics-tags-report-suite-override.png)
 
-### Update 변수를 사용하여 XDM 개체 강화
-
-사용 **[!UICONTROL 변수 업데이트]** 작업 유형 추가 규칙을 만들어 &quot;전역 콘텐츠 XDM&quot;을(를) 로 보내기 전에 보강할 수 있습니다. [!UICONTROL 플랫폼 에지 네트워크]. 새 규칙의 순서를 다음 앞에 지정하여 이를 수행합니다. `all pages send event - library loaded - AA (order 50)` 이벤트를 보내는 이벤트 [!UICONTROL 플랫폼 에지 네트워크].
-
->[!TIP]
->
->규칙 순서는 이벤트가 트리거될 때 먼저 실행되는 규칙을 결정합니다. 두 규칙의 이벤트 유형이 동일한 경우 숫자가 가장 낮은 규칙이 먼저 실행됩니다.
-> 
->![규칙 순서](assets/set-up-analytics-sequencing.png)
-
-## 제품 문자열 설정
-
-제품 문자열에 매핑하기 전에 XDM 스키마 내에 Adobe Analytics과 특별한 관계가 있는 전자 상거래 데이터를 캡처하는 데 사용되는 두 개의 기본 개체가 있음을 이해하는 것이 중요합니다.
-
-1. 다음 `commerce` 객체는 다음과 같은 Analytics 이벤트를 설정합니다. `prodView`, `scView`, 및 `purchase`
-1. 다음 `productListItems` 객체는 다음과 같은 Analytics 차원을 설정합니다. `productID`.
-
-다음을 참조하십시오 [상거래 및 제품 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) 을 참조하십시오.
-
-
-Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시작합니다.
-
-1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 규칙]** 다음을 선택합니다. **[!UICONTROL 규칙 추가]**
-1. 이름 지정  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
-1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
-1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
-1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨]**
-1. 이름 지정 `Core - library loaded - order 20`
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages global content variables - library loaded - AA (order 1)` 전역 콘텐츠 변수를 설정하는 데 사용됩니다. `all pages send event - library loaded - AA (order 50)` xdm 이벤트를 전송합니다.
-
-   ![Analytics XDM 규칙](assets/set-up-analytics-pdp.png)
-
-1. 아래 **[!UICONTROL 조건]**&#x200B;을(를) 선택합니다 **[!UICONTROL 추가]**
-1. 나가기 **[!UICONTROL 논리 유형]** 다음으로: **[!UICONTROL 보통]**
-1. 나가기 **[!UICONTROL 확장]** 다음으로: **[!UICONTROL 코어]**
-1. 선택 **[!UICONTROL 조건 유형]** 다음으로: **[!UICONTROL 쿼리 문자열이 없는 경로]**
-1. 오른쪽에서 **[!UICONTROL 정규 표현식]** 전환
-1. 아래 **[!UICONTROL 경로가 다음과 같음]** set `/products/`. Luma 데모 사이트의 경우 규칙이 제품 페이지에서만 트리거되도록 합니다
-1. 선택 **[!UICONTROL 변경 내용 유지]**
-
-   ![Analytics XDM 규칙](assets/set-up-analytics-product-condition.png)
-
-1. 아래 **[!UICONTROL 작업]** 선택 **[!UICONTROL 추가]**
-1. 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** 확장
-1. 선택 **[!UICONTROL 작업 유형]** 다음으로: **[!UICONTROL 변수 업데이트]**
-1. 아래로 스크롤하여 `commerce` 을(를) 개체하고 을(를) 선택하여 엽니다.
-1. 를 엽니다. **[!UICONTROL 제품 보기]** 오브젝트 및 세트 **[!UICONTROL 값]** 끝 `1`
-
-   ![제품 보기 설정](assets/set-up-analytics-prodView.png)
-
-   >[!TIP]
-   >
-   >XDM에서 commerce.productViews.value=1 을 설정하면 `prodView` analytics의 이벤트
-
-또한 다음을 이해할 수 있습니다. **[!UICONTROL 개별 속성 제공]** 개별 XDM 필드 또는 **[!UICONTROL 전체 스토리지 제공]** XDM 개체에 연결합니다.
-
-![페이지 조회수 XDM 개체](assets/set-up-analytics-xdm-population-strategy.png)
-
-### XDM 개체에 개별 속성 매핑
-
-Luma의 데이터 레이어 구조 때문에 개별 변수에 매핑하여 Luma 데모 사이트의 제품 세부 사항 페이지에서 데이터를 캡처할 수 있습니다.
-
-1. 아래로 스크롤하여 선택 `productListItems` 배열
-1. 선택 **[!UICONTROL 개별 항목 제공]**
-1. 선택 **[!UICONTROL 항목 추가]**
-
-   ![제품 보기 이벤트 설정 중](assets/set-up-analytics-xdm-individual.png)
-
-   >[!CAUTION]
-   >
-   >다음 **`productListItems`** 은(는) `array` 데이터가 요소의 컬렉션으로 들어올 것을 예상하도록 데이터 유형입니다. Luma 데모 사이트의 데이터 레이어 구조와 Luma 사이트에서 한 번에 하나의 제품만 볼 수 있으므로 항목을 개별적으로 추가합니다. 자체 웹 사이트에서 를 구현할 때 데이터 레이어 구조에 따라 전체 어레이를 제공할 수 있습니다.
-
-1. 열려면 선택하십시오. **[!UICONTROL 항목 1]**
-1. **`productListItems.item1.SKU`**&#x200B;를 `%product.productInfo.sku%`에 매핑
-
-   ![제품 SKU XDM 개체 변수](assets/set-up-analytics-sku.png)
-
-1. 찾기 `eventType` 및 설정 `commerce.productViews`
-
-1. 아직 변경 내용 유지 선택 안 함
-
-### 제품 문자열에서 머천다이징 eVar 설정
-
-를 사용하여 `Adobe Analytics ExperienceEvent Template` 필드 그룹 XDM 스키마를 정의하려면 변수를 머천다이징 eVar 또는 제품 문자열 내의 이벤트에 매핑할 수 있습니다. 이를 설정이라고도 합니다 **제품 구문 상품화**. 다음 사항에 주목합니다. `_experience` 아래에 있는 오브젝트 `productListItems` > `Item 1`. 이 아래에서 변수 설정 [!UICONTROL 오브젝트] 제품 구문 eVar 또는 이벤트를 설정합니다.
-
-1. 열려면 선택하십시오. `_experience > analytics > customDimensions > eVars > eVar1`
-
-1. 설정 **[!UICONTROL 값]** 끝 `%product.productInfo.title%`
-
-1. 선택 **[!UICONTROL 변경 내용 유지]**
-
-   ![제품 SKU XDM 개체 변수](assets/set-up-analytics-product-merchandising.png)
-
-1. 선택 **[!UICONTROL 저장]** 규칙을 저장하려면
-
-<!--
-1. The **[!UICONTROL Type]** field has a drop-down list of values to choose from. Select `[!UICONTROL commerce.productViews]`
-
-    [!TIP]
-    >
-    >The value selected here has no effect on how data is mapped to Analytics, however it is recommended to thoughtfully apply this variable, as it is used in Adobe Experience Platform's segment builder interface. The value selected is available to use in the `[!UICONTROL c.a.x.eventtype]` context data variable downstream.
-
-1. Under **[!UICONTROL XDM Data]**, select the `[!UICONTROL xdm.commerce.prodView]` XDM object data element
-1. Select **[!UICONTROL Keep Changes]**
-
-    ![Analytics XDM rules](assets/analytics-rule-commerce-productViews.png)
-
-1. Your rule should look similar to the below. Select **[!UICONTROL Save]**
-
-    ![Analytics XDM rules](assets/analytics-rule-product-view.png) -->
-
-
-### XDM 개체에 전체 어레이 매핑
-
-앞에서 설명한 대로 Luma 데모 사이트는 장바구니에 있는 제품에 대해 다른 데이터 레이어 구조를 사용합니다. 사용자 지정 코드 데이터 요소 `cart.productInfo` 다음을 통해 이전 루프를 만들었습니다. `digitalData.cart.cartEntries` 데이터 레이어 개체를 필요한 XDM 개체 스키마로 변환합니다. 새 형식 **은(는) 정확히 일치해야 합니다.** 에 의해 정의된 스키마 `productListItems` XDM 스키마 오브젝트.
-
-이를 설명하기 위해서는 아래 Luma 사이트 데이터 레이어(왼쪽)와 번역된 데이터 요소(오른쪽)의 비교를 참조하십시오.
-
-![XDM 개체 배열 형식](assets/data-element-xdm-array.png)
-
-데이터 요소를 `productListItems` 구조(힌트, 일치해야 함).
-
->[!IMPORTANT]
->
->숫자 변수가 데이터 레이어의 문자열 값과 함께 변환되는 방식을 확인합니다. `price` 및 `qty` 데이터 요소의 숫자로 형식이 변경되었습니다. 이러한 형식 요구 사항은 플랫폼의 데이터 무결성에 중요하며 다음 기간 동안 결정됩니다. [스키마 구성](configure-schemas.md) 단계. 이 예에서는 **[!UICONTROL 수량]** 를 사용합니다. **[!UICONTROL 정수]** 데이터 유형.
-> ![XDM 스키마 데이터 유형](assets/set-up-analytics-quantity-integer.png)
-
-이제 전체 어레이에 XDM 개체 매핑으로 돌아갑니다. 를 생성하는 것과 동일한 단계를 반복합니다. `ecommerce - pdp library loaded - AA (order 20)` 규칙:
-
-1. 이름 지정  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
-1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
-1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
-1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨]**
-1. 이름 지정 `Core - library loaded - order 20`
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`
-1. 선택 **[!UICONTROL 변경 내용 유지]**
-
-   ![Analytics XDM 규칙](assets/set-up-analytics-cart-sequence.png)
-
-1. 아래 **[!UICONTROL 조건]**&#x200B;을(를) 선택합니다 **[!UICONTROL 추가]**
-1. 나가기 **[!UICONTROL 논리 유형]** 다음으로: **[!UICONTROL 보통]**
-1. 나가기 **[!UICONTROL 확장]** 다음으로: **[!UICONTROL 코어]**
-1. 선택 **[!UICONTROL 조건 유형]** 다음으로: **[!UICONTROL 쿼리 문자열이 없는 경로]**
-1. 오른쪽이요 **금지** 활성화 **[!UICONTROL 정규 표현식]** 전환
-1. 아래 **[!UICONTROL 경로가 다음과 같음]** set `/content/luma/us/en/user/cart.html`. Luma 데모 사이트의 경우 규칙이 장바구니 페이지에서 트리거만 하는지 확인합니다
-1. 선택 **[!UICONTROL 변경 내용 유지]**
-
-   ![Analytics XDM 규칙](assets/set-up-analytics-cart-condition.png)
-
-1. 아래 **[!UICONTROL 작업]** 선택 **[!UICONTROL 추가]**
-1. 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** 확장
-1. 선택 **[!UICONTROL 작업 유형]** 다음으로: **[!UICONTROL 변수 업데이트]**
-1. 아래로 스크롤하여 `commerce` 을(를) 개체하고 을(를) 선택하여 엽니다.
-1. 를 엽니다. **[!UICONTROL 제품 목록 보기 수]** 오브젝트 및 세트 **[!UICONTROL 값]** 끝 `1`
-
-   ![제품 보기 설정](assets/set-up-analytics-cart-view.png)
-
-   >[!TIP]
-   >
-   >XDM에서 commerce.productListViews.value=1 을 설정하면 `scView` analytics의 이벤트
-
-<!--1. Create an **[!UICONTROL XDM object]** **[!UICONTROL Data Element Type]** named **`xdm.commerce.cartView`**
-1. Select the same Platform sandbox and XDM schema you are using for this tutorial
-1. Open the **[!UICONTROL commerce]** object
-1. Open the **[!UICONTROL productListViews]** object and set `value` to `1`
-
-    >[!TIP]
-    >
-    >This step is equivalent to setting `scView` event in Analytics -->
-
-1. 아래로 스크롤하여 선택 **[!UICONTROL productListItem]** 배열
-
-1. 선택 **[!UICONTROL 전체 스토리지 제공]**
-
-1. 다음에 매핑 **`cart.productInfo`** 데이터 요소
-
-1. 선택 `eventType` 및 을 (으)로 설정 `commerce.productListViews`
-
-1. 선택 **[!UICONTROL 변경 내용 유지]**
-
-1. 선택 **[!UICONTROL 저장]** 규칙을 저장하려면
-
-아래 차이점을 사용하여 동일한 패턴에 따라 체크아웃 및 구매를 위한 다른 두 규칙을 만듭니다.
-
-**규칙 이름**: `ecommerce - checkout library loaded - AA (order 20)`
-
-* **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout.html
-* `eventType`을 `commerce.checkouts`로 설정합니다.
-* 설정 **XDM 상거래 이벤트**: commerce.checkout.value 종료 `1`
-
-  >[!TIP]
-  >
-  >이는 설정에 해당합니다. `scCheckout` analytics의 이벤트
-
-**규칙 이름**: `ecommerce - purchase library loaded - AA (order 20)`
-
-* **[!UICONTROL 조건]**: /content/luma/us/en/user/checkout/order/thank-you.html
-* `eventType`을 `commerce.purchases`로 설정합니다.
-* 설정 **XDM 상거래 이벤트**: commerce.purchases.value 종료 `1`
-
-  >[!TIP]
-  >
-  >이는 설정에 해당합니다. `purchase` analytics의 이벤트
-
-필요한 모든 항목을 캡처하는 추가 단계가 있습니다 `purchase` 이벤트 변수:
-
-1. 열기 **[!UICONTROL commerce]** 오브젝트
-1. 를 엽니다. **[!UICONTROL 주문]** 오브젝트
-1. 맵 **[!UICONTROL purchaseID]** (으)로 `cart.orderId` 데이터 요소
-1. 설정 **[!UICONTROL currencyCode]** 하드코딩된 값에 `USD`
-
-   ![Analytics용 purchaseID 설정](assets/set-up-analytics-purchase.png)
-
-   >[!TIP]
-   >
-   >이는 설정에 해당합니다. `s.purchaseID` 및 `s.currencyCode` analytics의 변수
-
-
-1. 아래로 스크롤하여 선택 **[!UICONTROL productListItem]** 배열
-1. 선택 **[!UICONTROL 전체 스토리지 제공]**
-1. 다음에 매핑 **`cart.productInfo.purchase`** 데이터 요소
-1. 선택 **[!UICONTROL 저장]**
-
-완료되면 다음 규칙이 생성됩니다.
-
-![Analytics XDM 규칙](assets/set-up-analytics-rules.png)
-
-<!--
-## Create additional rules for Platform Web SDK
-
-With the **[!UICONTROL Update variabl]**e and **[!UICONTROL Send Event]** Action Types of Platform Web SDK, its possible to sequence the **[!UICONTROL Send Event]** action to trigger after all **[!UICONTROL Update variable]** action types run. This is called Rule Stacking, and you use it to customize the baseline XDM created depending on the type of page you are on.  
-
-In this exercise, you create individual rules per e-commerce event and use conditions so the rules fire on the right pages. 
-
-Repeat the same for all other e-commerce events using the following parameters:
-
-**Rule name**: cart view - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]**: /content/luma/us/en/user/cart.html
-* **Type value under Web SDK - Send Action**: commerce.productListViews
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.cartView%`
-
-**Rule name**: checkout - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]** /content/luma/us/en/user/checkout.html
-* **Type for Web SDK - Send Action**: commerce.checkouts
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.checkout%`
-
-**Rule name**: purchase - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]** /content/luma/us/en/user/checkout/order/thank-you.html
-* **Type for Web SDK - Send Action**: commerce.purchases
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.purchase%`
--->
 
 
 ## 개발 환경 구축
@@ -780,47 +406,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
    ![Analytics 구매](assets/analytics-debugger-purchase.png)
 
-## 처리 규칙 및 실시간 보고서
 
-Edge Trace를 사용하여 Analytics 비콘의 유효성을 검사했으므로 이제 실시간 보고서를 사용하여 Analytics에서 데이터가 처리되는지 확인할 수도 있습니다. 실시간 보고서를 확인하기 전에 Analytics에 대한 처리 규칙을 구성해야 합니다 `props` 필요한 경우.
-
-### 사용자 지정 Analytics 매핑에 대한 처리 규칙
-
-이 연습에서는 실시간 보고서에서 볼 수 있도록 하나의 XDM 변수를 prop에 매핑합니다. 에 대해 수행해야 하는 모든 사용자 지정 매핑에 대해 다음과 동일한 단계를 수행합니다 `eVar`, `prop`, `event`또는 처리 규칙을 통해 액세스할 수 있는 변수입니다.
-
-1. Analytics UI에서 [!UICONTROL 관리자] > [!UICONTROL 관리 도구] > [!UICONTROL 보고서 세트]
-1. 자습서에 사용할 개발/테스트 보고서 세트를 선택합니다. > [!UICONTROL 설정 편집] > [!UICONTROL 일반] > [!UICONTROL 처리 규칙]
-
-   ![Analytics 구매](assets/analytics-process-rules.png)
-
-1. 규칙 만들기 **[!UICONTROL 값 덮어쓰기]** `[!UICONTROL Product SKU (prop1)]` 끝 `a.x.productlistitems.0.sku`. 규칙을 만드는 이유를 메모에 추가하고 규칙 제목에 이름을 지정해야 합니다. 선택 **[!UICONTROL 저장]**
-
-   ![Analytics 구매](assets/analytics-set-processing-rule.png)
-
-   >[!IMPORTANT]
-   >
-   >처리 규칙에 처음 매핑할 때 UI는 XDM 개체의 컨텍스트 데이터 변수를 표시하지 않습니다. 이 문제를 해결하려면 를 저장하고 다시 편집하십시오. 이제 모든 XDM 변수가 표시됩니다.
-
-1. 다음으로 이동 [!UICONTROL 설정 편집] >  [!UICONTROL 실시간]. 콘텐츠 페이지 조회수, 제품 보기 및 구매를 확인할 수 있도록 아래 표시된 매개 변수로 세 가지를 모두 구성합니다
-
-   ![Analytics 구매](assets/analytics-debugger-real-time.png)
-
-1. 유효성 검사 단계를 반복하면 실시간 보고서가 그에 따라 데이터를 채웁니다.
-
-   **페이지 보기 수**
-   ![실시간 컨텐츠](assets/analytics-real-time-content.png)
-
-   **제품 보기**
-   ![실시간 제품 보기](assets/analytics-real-time-prodView.png)
-
-   **구매**
-   ![실시간 구매](assets/analytics-real-time-purchase.png)
-
-1. Workspace UI에서 표를 만들어 구입한 제품의 전체 전자 상거래 흐름을 확인합니다
-
-   ![전체 전자 상거래 흐름](assets/analytics-workspace-ecommerce.png)
-
-XDM 필드를 Analytics 변수에 매핑하는 방법에 대한 자세한 내용은 비디오를 참조하십시오. [Web SDK 변수를 Adobe Analytics에 매핑](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-use-cases/internal-site-search/map-web-sdk-variables-into-adobe-analytics.html).
 
 ## Adobe Experience Platform Assurance를 사용하여 Adobe Analytics 유효성 검사
 

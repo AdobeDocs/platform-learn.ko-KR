@@ -2,9 +2,9 @@
 title: Web SDK 튜토리얼을 통해 Adobe Experience Cloud 구현
 description: Adobe Experience Platform Web SDK를 사용하여 Experience Cloud 애플리케이션을 구현하는 방법에 대해 알아봅니다.
 recommendations: catalog, noDisplay
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: b46666013f39a5a71323810ee69876d9e32e02e3
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '698'
 ht-degree: 4%
 
 ---
@@ -40,7 +40,7 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
 모든 Experience Cloud 고객은 Platform Web SDK를 사용할 수 있습니다. Web SDK를 사용하기 위해 Real-time Customer Data Platform 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션에 라이센스를 부여할 필요는 없습니다.
 
-이 단원들에서는 사용자에게 Adobe 계정과 단원을 완료하는 데 필요한 권한이 있다고 가정합니다. 그렇지 않은 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청해야 합니다.
+이 단원들에서는 사용자에게 Adobe 계정과 단원을 완료하는 데 필요한 권한이 있다고 가정합니다. 그렇지 않은 경우 회사의 Experience Cloud 관리자에게 연락하여 액세스 권한을 받아야 합니다.
 
 * 대상 **데이터 수집**, 다음을 보유해야 합니다.
    * **[!UICONTROL 플랫폼]**—다음에 대한 권한 **[!UICONTROL 웹]** 그리고 라이센스가 부여되면 **[!UICONTROL Edge]**
@@ -63,7 +63,7 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
      Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko).
 
-* 선택 사항용 **Adobe Analytics** 단원, 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ko-KR)
+* 선택 사항용 **Adobe Analytics** 단원, 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
 
 * 선택 사항용 **Adobe Target** 단원, 다음을 수행해야 합니다. [편집자 또는 승인자](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 액세스 권한.
 
