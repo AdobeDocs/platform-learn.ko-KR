@@ -2,9 +2,9 @@
 title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3024'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,12 @@ ht-degree: 0%
 
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
-* Adobe Analytics에 대한 XDM 스키마 구성
-* Analytics에 대한 자동 매핑 변수와 수동 매핑 XDM 변수의 차이점 이해
 * Adobe Analytics을 활성화하기 위한 데이터 스트림 구성
-* 데이터스트림을 재정의하여 데이터를 다른 Adobe Analytics 보고서 세트로 전송합니다
-* 개별 또는 전체 배열 데이터 요소를 XDM 개체에 매핑
-* 변수 규칙 업데이트 작업 유형을 사용하여 여러 규칙을 하나의 XDM 이벤트로 스택
-* XDM 개체를 사용하여 Adobe Analytics에서 페이지 보기 캡처
-* Adobe Analytics 제품 문자열의 XDM 개체를 사용하여 전자 상거래 데이터 캡처
+* Analytics에 대한 자동 매핑 변수와 수동 매핑 XDM 변수의 차이점 이해
+* Adobe Analytics 관련 변수에 대한 XDM 스키마 구성
 * XDM을 사용하여 제품 구문 머천다이징 eVar 설정
-* Experience Platform 디버거를 사용하여 Adobe Analytics 변수가 XDM 개체로 설정되어 있는지 확인합니다.
+* 데이터스트림을 재정의하여 데이터를 다른 Adobe Analytics 보고서 세트로 전송합니다
+* Experience Platform 디버거를 사용하여 Adobe Analytics 변수 유효성 검사
 * Adobe Analytics 처리 규칙을 사용하여 사용자 지정 변수 설정
 * 데이터의 유효성 검사가 Adobe Experience Platform Assurance를 사용하여 Adobe Analytics에 의해 캡처됩니다.
 * 실시간 보고서를 사용하는 Adobe Analytics에서 데이터의 유효성 검사

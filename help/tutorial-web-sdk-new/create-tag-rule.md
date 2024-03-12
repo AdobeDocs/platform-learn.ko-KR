@@ -2,9 +2,9 @@
 title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2025'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 1%
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
 * 태그 내 규칙 관리에 명명 규칙 사용
-* 태그 규칙에서 변수 업데이트 및 이벤트 보내기 작업 유형을 사용하여 XDM 이벤트 보내기
+* 변수 업데이트 및 이벤트 보내기 작업을 사용하여 XDM 필드로 이벤트 보내기
+* 여러 규칙에 대해 여러 XDM 필드 세트 스택
+* 개별 또는 전체 배열 데이터 요소를 XDM 개체에 매핑
 * 개발 라이브러리에 태그 규칙 게시
 
 
