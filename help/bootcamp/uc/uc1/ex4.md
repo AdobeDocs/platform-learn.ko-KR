@@ -1,21 +1,21 @@
 ---
-title: Bootcamp - Real-time CDP - 세그먼트 구축 및 조치 - 세그먼트를 Adobe Target으로 전송
-description: Bootcamp - Real-time CDP - 세그먼트 구축 및 조치 - 세그먼트를 Adobe Target으로 전송
+title: Bootcamp - Real-time CDP - 대상자 구축 및 조치 - 대상자를 Adobe Target으로 보내기
+description: Bootcamp - Real-time CDP - 대상자 구축 및 조치 - 대상자를 Adobe Target으로 보내기
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
-feature: Segments, Integrations
+feature: Audiences, Integrations
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 9d12b3e3ad2238cf79aca3d9723e7e60d72e765c
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '867'
 ht-degree: 1%
 
 ---
 
-# 1.4 조치 취하기: 세그먼트를 Adobe Target에 보내기
+# 1.4 조치 취하기: 대상자를 Adobe Target으로 보내기
 
 다음으로 이동 [Adobe Experience Platform](https://experience.adobe.com/platform). 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
@@ -25,11 +25,11 @@ ht-degree: 1%
 
 ![데이터 수집](./images/sb1.png)
 
-## 1.4.1 Adobe Target 대상에 대한 세그먼트 활성화
+## 1.4.1 Adobe Target 대상에 대상 활성화
 
 Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Adobe Target 통합을 설정하려면 **대상**, 대상 **카탈로그**.
 
-클릭 **개인화** 다음에서 **카테고리** 메뉴 아래의 제품에서 사용할 수 있습니다. 그러면 다음을 볼 수 있습니다. **Adobe Target** 대상 카드. 클릭 **세그먼트 활성화**.
+클릭 **개인화** 다음에서 **카테고리** 메뉴 아래의 제품에서 사용할 수 있습니다. 그러면 다음을 볼 수 있습니다. **Adobe Target** 대상 카드. 클릭 **대상자 활성화**.
 
 ![위치](./images/atdest1.png)
 
@@ -37,7 +37,7 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 ![위치](./images/atdest3.png)
 
-사용 가능한 세그먼트 목록에서 만든 세그먼트를 선택합니다 [1.3 세그먼트 만들기](./ex3.md), 이름이 지정됨 `yourLastName - Interest in Real-Time CDP`. 그런 다음 을 클릭합니다. **다음**.
+사용 가능한 대상 목록에서 만든 대상을 선택합니다 [1.3 대상 만들기](./ex3.md), 이름이 지정됨 `yourLastName - Interest in Real-Time CDP`. 그런 다음 을 클릭합니다. **다음**.
 
 ![위치](./images/atdest8.png)
 
@@ -49,17 +49,17 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 ![위치](./images/atdest10.png)
 
-이제 세그먼트가 Adobe Target을 향해 활성화됩니다.
+이제 대상자가 Adobe Target을 향해 활성화됩니다.
 
 ![위치](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->Real-Time CDP에서 Adobe Target 대상을 방금 만든 경우 대상이 활성 상태가 되는 데 최대 1시간이 걸릴 수 있습니다. 백엔드 구성 설정으로 인한 일회성 대기 시간입니다. 초기 1시간 대기 시간 및 백엔드 구성이 완료되면 Adobe Target 대상으로 전송되는 새로 추가된 Edge 세그먼트를 실시간으로 타겟팅할 수 있습니다.
+>Real-Time CDP에서 Adobe Target 대상을 방금 만든 경우 대상이 활성 상태가 되는 데 최대 1시간이 걸릴 수 있습니다. 백엔드 구성 설정으로 인한 일회성 대기 시간입니다. 초기 1시간 대기 시간 및 백엔드 구성이 완료되면 Adobe Target 대상으로 전송된 새로 추가된 Edge Audiences를 실시간으로 타겟팅할 수 있습니다.
 
 ## 1.4.2 Adobe Target 양식 기반 활동 구성
 
-이제 Real-Time CDP 세그먼트가 Adobe Target으로 전송되도록 구성되었으므로 Adobe Target에서 경험 타깃팅 활동을 구성할 수 있습니다. 이 연습에서는 시각적 경험 작성기 기반 활동을 구성합니다.
+이제 Real-Time CDP 대상자가 Adobe Target으로 전송되도록 구성되었으므로 Adobe Target에서 경험 타깃팅 활동을 구성할 수 있습니다. 이 연습에서는 시각적 경험 작성기 기반 활동을 구성합니다.
 
 로 이동하여 Adobe Experience Cloud 홈페이지로 이동합니다. [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). 클릭 **Target** 열려고.
 
@@ -98,11 +98,11 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 ![RTCDP](./images/atform3.png)
 
-이제 사용 가능한 대상 목록이 표시되며, 이전에 만들어 Adobe Target에 보낸 Adobe Experience Platform 세그먼트는 이제 이 목록의 일부입니다. 이전에 Adobe Experience Platform에서 만든 세그먼트를 선택합니다. 클릭 **대상자 할당**.
+이제 사용 가능한 대상 목록이 표시되며, 이전에 만들어 Adobe Target으로 보낸 Adobe Experience Platform 대상은 이제 이 목록의 일부입니다. 이전에 Adobe Experience Platform에서 만든 대상자를 선택합니다. 클릭 **대상자 할당**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-이제 Adobe Experience Platform 세그먼트는 이 경험 타깃팅 활동의 일부입니다.
+이제 Adobe Experience Platform 대상자는 이 경험 타깃팅 활동의 일부입니다.
 
 ![RTCDP](./images/atform4.png)
 
@@ -170,7 +170,7 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 이제 활동이 라이브 상태이며 부트캠프 웹 사이트에서 테스트할 수 있습니다.
 
-이제 데모 웹 사이트로 돌아가 의 제품 페이지를 방문하십시오. **Real-Time CDP**&#x200B;만든 세그먼트를 바로 사용할 수 있으며, 그러면 홈 페이지에 실시간으로 Adobe Target 활동이 표시되는 것을 볼 수 있습니다.
+이제 데모 웹 사이트로 돌아가 의 제품 페이지를 방문하십시오. **Real-Time CDP**, 만든 대상자에 대한 자격이 즉시 제공되며, Adobe Target 활동이 실시간으로 홈 페이지에 표시됩니다.
 
 >[!IMPORTANT]
 >
@@ -182,7 +182,7 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 ![RTCDP](./images/atform12a.png)
 
-다음 단계: [1.5 조치 취하기: 세그먼트를 Facebook에 보내기](./ex5.md)
+다음 단계: [1.5 조치 취하기: 대상자를 Facebook으로 보내기](./ex5.md)
 
 [사용자 흐름 1로 돌아가기](./uc1.md)
 

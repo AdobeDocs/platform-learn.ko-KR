@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 0474808b42925bf95529e10a42a0563f0ecc43b8
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 2%
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## 스토리
 
-실시간 고객 프로필에는 기존 세그먼트 멤버십은 물론 이벤트 데이터와 함께 모든 프로필 데이터가 표시됩니다. 표시된 데이터는 Adobe 애플리케이션 및 외부 솔루션에서 어디에서나 가져올 수 있습니다. 이것은 기록의 진정한 경험 시스템인 Adobe Experience Platform에서 가장 강력한 보기입니다.
+실시간 고객 프로필에는 모든 프로필 데이터가 기존 대상 멤버십은 물론 이벤트 데이터와 함께 표시됩니다. 표시된 데이터는 Adobe 애플리케이션 및 외부 솔루션에서 어디에서나 가져올 수 있습니다. 이것은 기록의 진정한 경험 시스템인 Adobe Experience Platform에서 가장 강력한 보기입니다.
 
 ## 1.2.1 Adobe Experience Platform에서 고객 프로필 보기 사용
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 계속하기 전에 **샌드박스**. 선택할 샌드박스 이름이 로 지정됩니다. ``Bootcamp``. 텍스트를 클릭하여 이 작업을 수행할 수 있습니다 **[!UICONTROL 프로덕션 프로덕션]** 화면 상단의 파란색 선. 적절한 을(를) 선택한 후 [!UICONTROL 샌드박스], 화면 변경 사항이 표시되며 이제 전용 모드로 전환됩니다. [!UICONTROL 샌드박스].
 
-![데이터 수집](./images/sb1.png)
+
 
 왼쪽 메뉴에서 **프로필** 및 종료 **찾아보기**.
 
@@ -40,11 +40,12 @@ ht-degree: 2%
 
 ![고객 프로필](./images/identities.png)
 
+
 현재 프로필 뷰어 패널에서 이 ID를 볼 수 있습니다.
 
 | 네임스페이스 | 신원 |
 |:-------------:| :---------------:|
-| ECID(Experience Cloud ID) | 19428085896177382402834560825640259081 |
+| Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
 
 Adobe Experience Platform을 사용하면 모든 ID가 동일하게 중요합니다. 이전에는 ECID가 Adobe 컨텍스트에서 가장 중요한 ID였으며 다른 모든 ID는 계층 구조로 ECID에 연결되어 있었습니다. Adobe Experience Platform에서는 더 이상 해당되지 않으며 모든 ID를 기본 식별자로 간주할 수 있습니다.
 
@@ -62,13 +63,13 @@ Adobe Experience Platform을 사용하면 모든 ID가 동일하게 중요합니
 
 ![고객 프로필](./images/profileee.png)
 
-마지막으로 메뉴 옵션으로 이동합니다. **세그먼트 멤버십**. 이제 이 프로필에 적합한 모든 세그먼트가 표시됩니다.
+마지막으로 메뉴 옵션으로 이동합니다. **대상자 멤버십**. 이제 이 프로필에 적합한 모든 대상을 볼 수 있습니다.
 
 ![고객 프로필](./images/profileseg.png)
 
-이제 익명의 또는 아는 고객을 위해 고객 경험을 개인화할 수 있는 새 세그먼트를 만들어 보겠습니다.
+이제 익명의 또는 아는 고객을 위해 고객 경험을 개인화할 수 있는 새 대상을 만들어 보겠습니다.
 
-다음 단계: [1.3 세그먼트 만들기 - UI](./ex3.md)
+다음 단계: [1.3 대상 만들기 - UI](./ex3.md)
 
 [사용자 흐름 1로 돌아가기](./uc1.md)
 
