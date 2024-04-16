@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
+source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '874'
 ht-degree: 16%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 16%
    + [IAB 투명성 및 동의 프레임워크 2.0과 통합](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 데이터 위생 {#data-hygiene}
    + [데이터 세트 삭제](/help/platform/data-hygiene/delete-datasets.md)
+   + [익명 프로필 및 이벤트 만료](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + 데이터 수집 {#data-ingestion}
    + [개요](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [일괄 처리 수집 개요](/help/platform/data-ingestion/batch-ingestion-overview.md)
