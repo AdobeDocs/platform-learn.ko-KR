@@ -2,9 +2,10 @@
 title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: e08d222c-a15f-4462-b033-99937d741d5e
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '3024'
+source-wordcount: '2803'
 ht-degree: 0%
 
 ---
@@ -22,14 +23,10 @@ ht-degree: 0%
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
 * Adobe Analytics을 활성화하기 위한 데이터 스트림 구성
-* Analytics에 대한 자동 매핑 변수와 수동 매핑 XDM 변수의 차이점 이해
-* Adobe Analytics 관련 변수에 대한 XDM 스키마 구성
-* XDM을 사용하여 제품 구문 머천다이징 eVar 설정
-* 데이터스트림을 재정의하여 데이터를 다른 Adobe Analytics 보고서 세트로 전송합니다
-* Experience Platform 디버거를 사용하여 Adobe Analytics 변수 유효성 검사
-* Adobe Analytics 처리 규칙을 사용하여 사용자 지정 변수 설정
-* 데이터의 유효성 검사가 Adobe Experience Platform Assurance를 사용하여 Adobe Analytics에 의해 캡처됩니다.
-* 실시간 보고서를 사용하는 Adobe Analytics에서 데이터의 유효성 검사
+* Analytics 변수에 자동 매핑될 표준 XDM 필드 확인
+* Adobe Analytics ExperienceEvent 템플릿 필드 그룹 또는 처리 규칙을 사용하여 사용자 지정 Analytics 변수 설정
+* 데이터 스트림을 재정의하여 데이터를 다른 보고서 세트에 보냅니다.
+* Debugger 및 Assurance를 사용하여 Adobe Analytics 변수 확인
 
 ## 전제 조건
 
@@ -43,7 +40,7 @@ ht-degree: 0%
 
 ## 데이터 스트림 구성
 
-Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 전송합니다. 그런 다음 데이터 스트림은 데이터가 전달되는 Adobe Analytics 보고서 세트가 있는 Platform Edge Network에 알려줍니다.
+Platform Web SDK는 웹 사이트에서 Platform Edge Network으로 데이터를 전송합니다. 그런 다음 데이터 스트림은 데이터가 전달되는 Adobe Analytics 보고서 세트에 대한 플랫폼 Edge Network을 알려줍니다.
 
 1. 다음으로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
@@ -125,7 +122,7 @@ Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체.
 매핑의 최신 목록을 확인하려면 다음을 참조하십시오. [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html).
 
 
-### Analytics 처리 규칙을 사용한 매핑
+### 처리 규칙을 사용하여 Analytics 변수에 매핑
 
 XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 데이터 변수로 Adobe Analytics에서 사용할 수 있습니다 `a.x.`. 예, `a.x.web.webinteraction.region`
 
@@ -145,7 +142,7 @@ XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 
    >
    >처리 규칙에 처음 매핑할 때 UI는 XDM 개체의 컨텍스트 데이터 변수를 표시하지 않습니다. 이 문제를 해결하려면 를 저장하고 다시 편집하십시오. 이제 모든 XDM 변수가 표시됩니다.
 
-### XDM 스키마의 Analytics 변수에 매핑
+### Adobe Analytics 필드 그룹을 사용하여 Analytics 변수에 매핑
 
 처리 규칙에 대한 대체 방법은 를 사용하여 XDM 스키마의 Analytics 변수에 매핑하는 것입니다. `Adobe Analytics ExperienceEvent Template` 필드 그룹입니다. 이 방법은 많은 사용자가 처리 규칙을 구성하는 것보다 간단하다고 생각하기 때문에 인기를 얻었지만 XDM 페이로드 크기를 늘리면 Real-Time CDP과 같은 다른 애플리케이션에서 프로필 크기가 늘어날 수 있습니다.
 
@@ -184,11 +181,11 @@ XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 
 > 다음 사항에 주목합니다. `_experience` 아래에 있는 오브젝트 `productListItems` > `Item 1`. 이 아래에서 변수 설정 [!UICONTROL 오브젝트] 제품 구문 eVar 또는 이벤트를 설정합니다.
 
 
-### 다른 보고서 세트로 데이터 보내기
+## 다른 보고서 세트로 데이터 보내기
 
 방문자가 특정 페이지에 있을 때 전송할 Adobe Analytics 보고서 세트 데이터를 변경할 수 있습니다. 이를 위해서는 데이터 스트림과 규칙 모두에서 구성해야 합니다.
 
-#### 데이터 스트림 보고서 세트 재정의 구성
+### 보고서 세트 재정의를 위한 데이터스트림 구성
 
 데이터 스트림에서 Adobe Analytics 보고서 세트 재정의 설정을 구성하려면 다음 작업을 수행하십시오.
 
@@ -201,12 +198,12 @@ XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 
 
 1. 재정의할 보고서 세트를 선택합니다. 이 경우, `Web SDK Course Dev` 및 `Web SDK Course Stg`
 
-1. 저장 선택
+1. 선택 **[!UICONTROL 저장]**
 
    ![데이터 스트림 덮어쓰기](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
 
 
-#### 데이터 스트림 재정의로 다른 보고서 세트에 페이지 보기 보내기
+### 보고서 세트 재정의에 대한 규칙 구성
 
 다른 보고서 세트에 추가 페이지 보기 호출을 보내는 규칙을 만들어 보겠습니다. 데이터 스트림 재정의 기능을 사용하여 다음을 사용하여 페이지에 대한 보고서 세트를 변경합니다. **[!UICONTROL 이벤트 보내기]** 작업.
 
@@ -270,26 +267,22 @@ XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 
    ![Analytics 데이터스트림 재정의](assets/analytics-tags-report-suite-override.png)
 
 
-
 ## 개발 환경 구축
 
 에 새 데이터 요소 및 규칙 추가 `Luma Web SDK Tutorial` 태그 라이브러리를 만들고 개발 환경을 다시 빌드합니다.
 
 축하합니다! 다음 단계는 Experience Platform Web SDK를 통해 Adobe Analytics 구현의 유효성을 검사하는 것입니다.
 
-## Platform Web SDK용 Adobe Analytics 유효성 검사
+## 디버거를 사용하여 Adobe Analytics 유효성 검사
 
-다음에서 [디버거](validate-with-debugger.md) 단원, Platform Debugger 및 브라우저 개발자 콘솔을 사용하여 클라이언트측 XDM 요청을 검사하는 방법에 대해 알아보았습니다. 이는 을 디버깅하는 방법과 유사합니다. `AppMeasurement.js` Analytics 구현. 또한 Adobe 애플리케이션으로 전송된 Platform Edge Network 서버측 요청의 유효성 검사와 Assurance를 사용하여 완전히 처리된 페이로드를 확인하는 방법에 대해 알아보았습니다.
+Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용하여 ECID, 페이지 보기, 제품 문자열 및 전자 상거래 이벤트를 캡처하고 있는지 확인하는 방법을 알아봅니다.
+
+다음에서 [디버거](validate-with-debugger.md) 단원, Platform Debugger 및 브라우저 개발자 콘솔을 사용하여 클라이언트측 XDM 요청을 검사하는 방법에 대해 알아보았습니다. 이는 을 디버깅하는 방법과 유사합니다. `AppMeasurement.js` Analytics 구현. 또한 Adobe 애플리케이션으로 전송된 Platform Edge Network 서버측 요청의 유효성 검사와 Assurance를 사용하여 완전히 처리된 페이로드를 확인하는 방법에 대해 배웠습니다.
 
 Analytics가 Experience Platform Web SDK를 통해 데이터를 제대로 캡처하고 있는지 확인하려면 다음 두 단계를 더 수행해야 합니다.
 
-1. Experience Platform 디버거의 Edge Trace 기능을 사용하여 Platform Edge Network의 XDM 개체에서 데이터가 처리되는 방식을 확인합니다
-1. 처리 규칙 및 실시간 보고서를 사용하여 Analytics에서 데이터가 처리되는 방식의 유효성 검사
+1. Experience Platform 디버거의 Edge Trace 기능을 사용하여 Platform Edge Network의 XDM 개체에서 데이터가 처리되는 방식 확인
 1. Adobe Experience Platform Assurance를 사용하여 Analytics에서 데이터가 완전히 처리되는 방식의 유효성 검사
-
-### Edge 추적 사용
-
-Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용하여 ECID, 페이지 보기, 제품 문자열 및 전자 상거래 이벤트를 캡처하고 있는지 확인하는 방법을 알아봅니다.
 
 ### Experience Cloud ID 유효성 검사
 
@@ -325,7 +318,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
    >
    >로그인했으므로 잠시 시간을 내어 인증된 ID의 유효성을 검사하십시오 `112ca06ed53d3db37e4cea49cc45b71e` 사용자용 **`test@adobe.com`** 에도 캡처됩니다. `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
 
-### 보고서 세트 재정의
+### 보고서 세트 재정의 유효성 검사
 
 위에서 의 데이터 스트림 재정의를 구성했습니다. [Luma 홈페이지](https://luma.enablementadobe.com/content/luma/us/en.html).  이 구성의 유효성을 검사하려면
 
@@ -337,7 +330,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
    ![Analytics 보고서 세트 재정의 호출 유효성 검사](assets/aep-debugger-analytics-report-suite-override.png)
 
-### 콘텐츠 페이지 보기 수
+### 콘텐츠 페이지 보기 수 유효성 검사
 
 다음과 같은 제품 페이지로 이동합니다. [Didi Sport Watch 제품 페이지](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  Analytics에서 컨텐츠 페이지 보기를 캡처하는지 확인합니다.
 
@@ -346,9 +339,9 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
    ![Analytics 제품 문자열](assets/analytics-debugger-edge-page-view.png)
 
-### 제품 문자열 및 전자 상거래 이벤트
+### 제품 문자열 및 전자 상거래 이벤트 유효성 검사
 
-이미 제품 페이지를 사용하고 있으므로 이 연습에서는 동일한 Edge Trace를 사용하여 제품 데이터가 Analytics에 캡처되는지 확인합니다. 제품 문자열 및 전자 상거래 이벤트는 모두 XDM 변수를 Analytics에 자동으로 매핑합니다. 를 로 매핑하기만 하면 됩니다. `productListItem` XDM 변수 [Adobe Analytics에 대한 XDM 스키마 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), Platform Edge Network는 데이터를 적절한 analytics 변수에 매핑합니다.
+이미 제품 페이지를 사용하고 있으므로 이 연습에서는 동일한 Edge Trace를 사용하여 제품 데이터가 Analytics에 캡처되는지 확인합니다. 제품 문자열 및 전자 상거래 이벤트는 모두 XDM 변수를 Analytics에 자동으로 매핑합니다. 를 로 매핑하기만 하면 됩니다. `productListItem` XDM 변수 [Adobe Analytics에 대한 XDM 스키마 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), Platform Edge Network은 데이터를 적절한 analytics 변수에 매핑합니다.
 
 **먼저 다음을 확인합니다. `Product String` 은(는) 설정되어 있습니다.**
 
@@ -359,7 +352,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
    ![Analytics 제품 문자열](assets/analytics-debugger-prodstring.png)
 
-   Edge Trace 처리 `commerce` 이벤트가 와 약간 다름 `productList` 차원. 제품 이름이 매핑된 것과 같은 방식으로 매핑된 컨텍스트 데이터 변수가 표시되지 않습니다 `[!UICONTROL c.a.x.productlistitem.[0].name]` 위. 대신 Edge Trace 는 Analytics에서 최종 이벤트 자동 매핑을 보여 줍니다 `event` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. Platform Edge Network는 적절한 XDM에 매핑하는 한 그에 따라 매핑합니다 `commerce` 변수 기간 [Adobe Analytics에 대한 스키마 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); 이 경우 `commerce.productViews.value=1`.
+   Edge Trace 처리 `commerce` 이벤트가 와 약간 다름 `productList` 차원. 제품 이름이 매핑된 것과 같은 방식으로 매핑된 컨텍스트 데이터 변수가 표시되지 않습니다 `[!UICONTROL c.a.x.productlistitem.[0].name]` 위. 대신 Edge Trace 는 Analytics에서 최종 이벤트 자동 매핑을 보여 줍니다 `event` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 플랫폼 Edge Network은 적절한 XDM에 매핑되는 한 그에 따라 매핑됩니다 `commerce` 변수 기간 [Adobe Analytics에 대한 스키마 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); 이 경우 `commerce.productViews.value=1`.
 
 1. Experience Platform 디버거 창으로 돌아가서 `[!UICONTROL events]` 변수가 있는 경우 이 변수가 `[!UICONTROL prodView]`
 
@@ -404,37 +397,19 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
 
 
-## Adobe Experience Platform Assurance를 사용하여 Adobe Analytics 유효성 검사
+## Assurance를 사용하여 Adobe Analytics 유효성 검사
 
-Adobe Experience Platform Assurance는 웹 사이트 및 모바일 애플리케이션을 통해 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 Adobe Experience Cloud의 제품입니다.
+Adobe Experience Platform Assurance를 사용하면 웹 사이트 및 모바일 애플리케이션에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인할 수 있습니다.
 
-위에서 Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용하여 ECID, 페이지 보기, 제품 문자열 및 전자 상거래 이벤트를 캡처하고 있는지 확인했습니다.  또한 처리 규칙 및 실시간 보고서를 사용한 prop1 매핑의 유효성을 검사했습니다.  그런 다음 Adobe Experience Platform Assurance를 사용하여 동일한 이벤트의 유효성을 검사합니다.
+이전 연습에서는 Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용하여 ECID, 페이지 보기, 제품 문자열 및 전자 상거래 이벤트를 캡처하고 있음을 확인했습니다.  그런 다음 Edge Trace의 동일한 데이터에 액세스하는 대체 인터페이스인 Adobe Experience Platform Assurance를 사용하여 이러한 동일한 이벤트를 확인합니다.
 
->[!NOTE]
->
->Adobe Experience Platform Assurance를 사용하여 Adobe Analytics 데이터의 유효성을 검사하려면 다음을 수행해야 합니다 [Adobe Experience Platform Assurance에 대한 사용자 액세스 활성화](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html)
-
-### Adobe Experience Platform 보증 액세스
-
-보증에 액세스할 수 있는 방법에는 여러 가지가 있습니다.
-
-1. Adobe Experience Platform 인터페이스를 통해
-1. Adobe Experience Platform 데이터 수집 인터페이스를 통해
-1. Adobe Experience Platform Debugger 내 로그를 통해(권장)
-
-Adobe Experience Platform을 통해 Assurance에 액세스하려면 아래로 스크롤하여 을 선택합니다. **[!UICONTROL 보증]** 의 왼쪽 레일 탐색 **[!UICONTROL 데이터 수집]**.  다음 항목 선택 **[!UICONTROL &quot;Web SDK 튜토리얼 3&quot;]** 세션 을 클릭하여 이전 섹션에서 생성된 이벤트에 액세스합니다.
-![Adobe Experience Platform을 통한 보증](assets/assurance-open-aep.png)
-
-Adobe Experience Platform 데이터 수집을 통해 보증에 액세스하려면 다음을 선택합니다 **[!UICONTROL 보증]** 의 왼쪽 레일 탐색 **[!UICONTROL 데이터 수집]**.  다음 항목 선택 **[!UICONTROL &quot;Web SDK 튜토리얼 3&quot;]** 세션 을 클릭하여 이전 섹션에서 생성된 이벤트에 액세스합니다.\
-![Adobe Experience Platform 데이터 수집을 통한 보증](assets/assurance-open-data-collection.png)
-
-Adobe Experience Platform Debugger을 통해 보증에 액세스하려면 왼쪽 탐색에서 Experience Platform 디버거 로 이동한 후 **[!UICONTROL 로그]**&#x200B;을(를) 선택한 다음 **[!UICONTROL Edge]** 탭을 클릭하고 다음을 선택합니다 **[!UICONTROL 연결]**.  Edge Network에 대한 연결이 설정되면 외부 링크 아이콘을 선택합니다. 현재 웹 세션은 디버거에서 시작해야 하므로 디버거를 통해 Assurance에 액세스하는 것이 좋습니다.
+에서 배웠듯이 [보증](validate-with-assurance.md) 단원, 보증 세션을 시작하는 몇 가지 방법이 있습니다. 마지막 연습에서 시작한 Edge Trace 세션으로 Adobe Experience Platform Debugger이 이미 열려 있으므로 디버거를 통해 Assurance에 액세스하는 것이 좋습니다.
 ![Adobe Experience Platform 데이터 수집을 통한 보증](assets/assurance-open-aep-debugger.png)
 
 다음 범위 내 **[!UICONTROL &quot;Web SDK 튜토리얼 3&quot;]** 보증 세션 입력 **[!UICONTROL &quot;hitdebugger&quot;]** 를 이벤트 검색 창으로 가져와서 Adobe 분석 후 처리된 데이터로 결과를 필터링합니다.
 ![보증 Adobe 분석 후 처리된 데이터](assets/assurance-hitdebugger.png)
 
-### Assurance를 사용한 Experience Cloud ID 유효성 검사
+### Experience Cloud ID 유효성 검사
 
 Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘 공급업체는 다음과 같아야 합니다. **[!UICONTROL com.adobe.analytics.hitdebugger]**
 ![Assurance를 통한 Adobe Analytics 유효성 검사](assets/assurance-hitdebugger-payload.png)
@@ -442,13 +417,13 @@ Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선�
 그런 다음 아래로 스크롤하여 **[!UICONTROL mcvisId]** ecid가 올바르게 캡처되었는지 확인하려면
 ![Assurance를 사용한 Experience Cloud ID 유효성 검사](assets/assurance-hitdebugger-mcvisId.png)
 
-### Assurance를 사용하여 콘텐츠 페이지 보기 유효성 검사
+### 콘텐츠 페이지 보기 수 유효성 검사
 
 동일한 비콘을 사용하여 컨텐츠 페이지 보기가 올바른 Adobe Analytics 변수에 매핑되었는지 확인합니다.
 아래로 스크롤하여 **[!UICONTROL pageName]** 을(를) 확인하려면 `Page Name` 이(가) 올바르게 캡처됨
 ![Assurance를 사용한 페이지 이름 유효성 검사](assets/assurance-hitdebugger-content-pagename.png)
 
-### Assurance를 통한 제품 문자열 및 전자 상거래 이벤트 유효성 검사
+### 제품 문자열 및 전자 상거래 이벤트 유효성 검사
 
 위의 Experience Platform 디버거로 확인할 때 사용된 것과 동일한 유효성 검사 사용 사례에 따라 동일한 비콘을 사용하여 의 유효성을 계속 검사하십시오. `Ecommerce Events` 및 `Product String`.
 

@@ -2,9 +2,10 @@
 title: Experience Platform 보증을 사용하여 웹 SDK 구현 유효성 검사
 description: Adobe Experience Platform Assurance를 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Assurance
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -19,7 +20,7 @@ Adobe Experience Platform Assurance는 데이터를 수집하거나 경험을 �
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
 * 보증 세션 시작
-* Platform Edge Network에 송수신되는 요청 보기
+* Platform Edge Network과 주고받은 요청 보기
 
 ## 전제 조건
 
@@ -70,7 +71,7 @@ Debugger 단원에서 이 작업을 수행하는 방법 검토:
 
 ## 웹 SDK 구현의 현재 상태 유효성 검사
 
-이 구현 단계에서 볼 수 있는 정보는 제한됩니다. 볼 수 있는 한 가지 값은 Platform Edge Network에서 생성된 Experience Cloud ID(ECID)입니다.
+이 구현 단계에서 볼 수 있는 정보는 제한됩니다. 볼 수 있는 한 가지 값은 플랫폼 Edge Network에서 생성된 Experience Cloud ID(ECID)입니다.
 
 1. Adobe 응답 핸들이라는 이벤트가 있는 행을 선택합니다.
 1. 메뉴가 오른쪽에 표시됩니다. 다음 항목 선택 `+` 다음 옆에 서명 `[!UICONTROL ACPExtensionEvent]`
