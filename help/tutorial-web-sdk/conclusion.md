@@ -3,7 +3,7 @@ title: 결론 및 다음 단계
 description: 자습서를 완료한 후 수행할 작업
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
+>2024년 4월 23일 화요일에 이 자습서에 대한 주요 변경 사항을 게시하겠습니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 축하합니다! &quot;웹 SDK로 Adobe Experience Cloud 구현&quot; 자습서를 완료했습니다!
 
@@ -24,14 +24,14 @@ ht-degree: 3%
 * 표준 및 사용자 지정 필드 그룹을 사용하여 스키마를 만들었습니다.
 * 데이터 스트림을 구성했습니다.
 * 태그 속성을 빌드했습니다.
-* 데이터 레이어에서 필드를 캡처하여 XDM으로 변환한 다음 Platform Edge Network로 보냈습니다.
+* 데이터 레이어에서 필드를 캡처하여 XDM으로 변환한 다음 Platform Edge Network으로 보냈습니다.
 * 동의 및 인증된 ID가 캡처되었습니다.
 * 다음 Experience Cloud 애플리케이션에 Web SDK 구현을 연결했습니다.
    * Adobe Experience Platform
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* Platform Edge Network에서 웹 후크로 데이터를 전송하기 위해 이벤트 전달을 사용했습니다.
+* 이벤트 전달을 사용하여 플랫폼 Edge Network에서 웹 후크로 데이터를 전송합니다.
 * Adobe Experience Platform Debugger을 사용하여 구현의 유효성을 검사했습니다.
 
 여정의 다음 단계(자체 웹 사이트에서 Adobe Experience Cloud 구현)를 시작할 준비가 되었습니다.

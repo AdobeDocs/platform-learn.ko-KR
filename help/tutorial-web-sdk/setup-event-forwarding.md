@@ -3,7 +3,7 @@ title: 이벤트 전달 속성 설정
 description: Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 2%
@@ -15,13 +15,13 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
+>2024년 4월 23일 화요일에 이 자습서에 대한 주요 변경 사항을 게시하겠습니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다.
 
-이벤트 전달은 데이터 수집에서 사용할 수 있는 새로운 유형의 속성입니다. 이벤트 전달을 사용하면 기존의 클라이언트측 브라우저 대신 Adobe Experience Platform Edge Network에서 직접 타사, Adobe 이외의 공급업체에 데이터를 보낼 수 있습니다. 에서 이벤트 전달의 장점에 대해 자세히 알아보십시오. [이벤트 전달 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+이벤트 전달은 데이터 수집에서 사용할 수 있는 새로운 유형의 속성입니다. 이벤트 전달을 사용하면 기존의 클라이언트측 Edge Network 대신 Adobe Experience Platform 브라우저에서 직접 서드파티 비 Adobe 공급업체에 데이터를 전송할 수 있습니다. 에서 이벤트 전달의 장점에 대해 자세히 알아보십시오. [이벤트 전달 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
 
-Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다음 세 가지 옵션 중 하나 이상을 사용하여 Adobe Experience Platform Edge Network로 데이터를 보내야 합니다.
+Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다음 세 가지 옵션 중 하나 이상을 사용하여 Adobe Experience Platform Edge Network으로 데이터를 보내야 합니다.
 
 * [Adobe Experience Platform 웹 SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
@@ -31,7 +31,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 >[!NOTE]
 >Platform 웹 SDK 및 Platform Mobile SDK는 태그를 통해 배포할 필요가 없지만 태그를 사용하여 이러한 SDK를 배포하는 것이 좋습니다.
 
-이 자습서의 이전 단원을 완료한 후에는 웹 SDK를 사용하여 Platform Edge Network에 데이터를 전송해야 합니다. 데이터가 Platform Edge Network에 있으면 Adobe 전달을 활성화하고 이벤트 전달 속성을 사용하여 데이터를 이벤트가 아닌 솔루션으로 보낼 수 있습니다.
+이 자습서의 이전 단원을 완료한 후에는 웹 SDK를 사용하여 Platform Edge Network에 데이터를 전송해야 합니다. 데이터가 플랫폼 Edge Network에 있으면 이벤트 전달을 활성화하고 이벤트 전달 속성을 사용하여 Adobe이 아닌 솔루션으로 데이터를 전송할 수 있습니다.
 
 ## 학습 목표
 
@@ -52,7 +52,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 * 이벤트 전달에 대한 사용자 권한. (위치 [Admin Console](https://adminconsole.adobe.com/), Adobe Experience Platform Launch 제품에서 다음에 대한 권한 항목[!UICONTROL 플랫폼] > [!UICONTROL Edge] 및 모두 [!UICONTROL 속성 권한]). 권한이 부여되면 다음이 표시됩니다. [!UICONTROL 이벤트 전달] 데이터 수집 인터페이스의 왼쪽 탐색에서 다음을 수행합니다.
   ![이벤트 전달 속성](assets/event-forwarding-menu.png)
 
-* Edge Network로 데이터를 전송하도록 구성된 Adobe Experience Platform 웹 또는 Mobile SDK입니다. 이 자습서의 다음 단원을 완료해야 합니다.
+* Adobe Experience Platform 웹 또는 Mobile SDK가 데이터를 Edge Network으로 보내도록 구성되었습니다. 이 자습서의 다음 단원을 완료해야 합니다.
 
    * 초기 구성
 
@@ -113,7 +113,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 게시 플로우를 통해 변경 사항을 승격할 준비가 되면 스테이징 및 프로덕션 데이터스트림에 대해 이 단계를 반복합니다.
 
-## Platform Edge Network에서 Adobe이 아닌 솔루션으로 데이터 전달
+## 플랫폼 Edge Network에서 Adobe이 아닌 솔루션으로 데이터 전달
 
 이 연습에서는 이벤트 전달 데이터 요소를 설정하고, 이벤트 전달 규칙을 구성하고, 이라는 세 번째 부분 도구를 사용하여 유효성을 검사하는 방법을 알아봅니다 [Webhook.site](https://webhook.site/).
 
@@ -123,7 +123,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 >[!IMPORTANT]
 >
->계속 진행하려면 이미 데이터 요소를 만들어 XDM 개체에 매핑하고, 구성된 태그 규칙과 라이브러리 내에서 이러한 변경 사항을 태그 환경에 빌드했어야 합니다. 없는 경우 다음을 참조하십시오. **태그 구성** 의 단계 [전제 조건](setup-event-forwarding.md#prerequisites) 섹션. 이러한 단계에서는 데이터가 Platform Edge Network로 전송되고, 여기에서 Adobe 전달 속성을 구성하여 데이터를 비 이벤트 솔루션으로 전달할 수 있습니다.
+>계속 진행하려면 이미 데이터 요소를 만들어 XDM 개체에 매핑하고, 구성된 태그 규칙과 라이브러리 내에서 이러한 변경 사항을 태그 환경에 빌드했어야 합니다. 없는 경우 다음을 참조하십시오. **태그 구성** 의 단계 [전제 조건](setup-event-forwarding.md#prerequisites) 섹션. 이러한 단계에서는 데이터가 Platform Edge Network으로 전송되고, 여기에서 Adobe 전달 속성을 구성하여 데이터를 비이벤트 솔루션으로 전달할 수 있습니다.
 
 
 ### 이벤트 전달 데이터 요소 만들기
@@ -212,7 +212,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 * **[!UICONTROL 이벤트] 및 [!UICONTROL 조건]**:
 
    * **태그**: 모든 규칙은 규칙에 지정해야 하는 이벤트(예: )에 의해 트리거됩니다. `Library Loaded - Page Top`. 조건은 선택 사항입니다.
-   * **이벤트 전달**: Platform Edge Network로 전송된 모든 이벤트가 데이터를 전달하는 트리거라고 가정합니다. 따라서 [!UICONTROL 이벤트] 이벤트 전달 규칙에서 선택해야 합니다. 이벤트 전달 규칙을 트리거하는 이벤트를 관리하려면 조건을 구성해야 합니다.
+   * **이벤트 전달**: 플랫폼 Edge Network으로 전송된 모든 이벤트가 데이터를 전달하기 위한 트리거라고 가정합니다. 따라서 [!UICONTROL 이벤트] 이벤트 전달 규칙에서 선택해야 합니다. 이벤트 전달 규칙을 트리거하는 이벤트를 관리하려면 조건을 구성해야 합니다.
 
 * **데이터 요소 토큰화**:
 
@@ -301,7 +301,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 1. 페이지 다시 로드
 
-1. Platform Edge Network에서 WebHook으로 전송되는 서버측 요청을 확인할 수 있는 추가 요청이 표시됩니다
+1. Platform Edge Network이 WebHook으로 전송하는 서버측 요청을 확인할 수 있는 추가 요청이 표시됩니다
 
 1. 포커스 유효성 검사 요청은 Edge 네트워크에서 전송하는 완전히 구성된 URL을 표시하는 요청입니다
 

@@ -3,7 +3,7 @@ title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '3473'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->2024년 3월 15일 금요일에 이 자습서에 대한 주요 변경 사항을 게시하려고 합니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
+>2024년 4월 23일 화요일에 이 자습서에 대한 주요 변경 사항을 게시하겠습니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 다음을 사용하여 Adobe Analytics을 설정하는 방법 알아보기 [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), 태그 규칙을 만들어 데이터를 Adobe Analytics으로 전송하고, Analytics가 데이터를 예상대로 캡처하는지 확인합니다.
 
@@ -94,7 +94,7 @@ Adobe Analytics에 자동 매핑된 XDM 변수를 이해하려면 다음을 참�
 
 ## 데이터 스트림 구성
 
-Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 전송합니다. 그런 다음 데이터 스트림은 Platform Edge Network에 해당 데이터를 전달할 위치를 알려줍니다(이 경우 Adobe Analytics 보고서 세트 중 어느 것인지).
+Platform Web SDK는 웹 사이트에서 Platform Edge Network으로 데이터를 전송합니다. 그런 다음 데이터 스트림은 Platform Edge Network에 해당 데이터를 전달할 위치를 알려줍니다(이 경우 Adobe Analytics 보고서 세트 중 어느 것인지).
 
 1. 다음으로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
@@ -121,7 +121,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 ## 추가 데이터 요소 만들기
 
-그런 다음 Luma 데이터 레이어에서 추가 데이터를 캡처하여 Platform Edge Network로 전송합니다. 이 단원에서는 일반적인 Adobe Analytics 요구 사항에 중점을 두고 있지만, 캡처된 모든 데이터는 데이터 스트림 구성에 따라 다른 대상으로 쉽게 전송할 수 있습니다. 예를 들어 Adobe Experience Platform 단원을 완료한 경우 이 단원에서 캡처한 추가 데이터도 플랫폼으로 전송됩니다.
+그런 다음 Luma 데이터 레이어에서 추가 데이터를 캡처하여 Platform Edge Network으로 전송합니다. 이 단원에서는 일반적인 Adobe Analytics 요구 사항에 중점을 두고 있지만, 캡처된 모든 데이터는 데이터 스트림 구성에 따라 다른 대상으로 쉽게 전송할 수 있습니다. 예를 들어 Adobe Experience Platform 단원을 완료한 경우 이 단원에서 캡처한 추가 데이터도 플랫폼으로 전송됩니다.
 
 ### 전자 상거래 데이터 요소 만들기
 
@@ -233,7 +233,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 1. 다음 `commerce` 객체는 다음과 같은 Analytics 이벤트를 설정합니다. `prodView`, `scView`, 및 `purchase`
 1. 다음 `productListItems` 객체는 다음과 같은 Analytics 차원을 설정합니다. `productID`.
 
-다음을 참조하십시오 [상거래 및 제품 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) 을 참조하십시오.
+다음을 참조하십시오 [Commerce 및 제품 데이터 수집](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) 을 참조하십시오.
 
 또한 다음을 이해할 수 있습니다. **[!UICONTROL 개별 속성 제공]** 개별 XDM 필드 또는 **[!UICONTROL 전체 스토리지 제공]** XDM 개체에 연결합니다.
 
@@ -439,7 +439,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network로 데이터를 �
 
 다음에서 [디버거](validate-with-debugger.md) 단원, Platform Debugger 및 브라우저 개발자 콘솔을 사용하여 클라이언트측 XDM 개체 비콘을 검사하는 방법에 대해 알아보았습니다. 이는 을 디버깅하는 방법과 유사합니다. `AppMeasurement.js` Analytics 구현. Analytics가 Platform Web SDK를 통해 데이터를 제대로 캡처하고 있는지 확인하려면 다음 두 단계를 더 수행해야 합니다.
 
-1. Experience Platform 디버거의 Edge Trace 기능을 사용하여 Platform Edge Network의 XDM 개체에서 데이터가 처리되는 방식을 확인합니다
+1. Experience Platform 디버거의 Edge Trace 기능을 사용하여 Platform Edge Network의 XDM 개체에서 데이터가 처리되는 방식 확인
 1. 처리 규칙 및 실시간 보고서를 사용하여 Analytics에서 데이터가 처리되는 방식을 확인합니다.
 
 ### Edge 추적 사용
@@ -496,7 +496,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
 ### 제품 문자열 및 전자 상거래 이벤트
 
-이미 제품 페이지를 사용하고 있으므로 이 연습에서는 동일한 Edge Trace를 사용하여 제품 데이터가 Analytics에 캡처되는지 확인합니다. 제품 문자열 및 전자 상거래 이벤트는 모두 XDM 변수를 Analytics에 자동으로 매핑합니다. 를 로 매핑하기만 하면 됩니다. `productListItem` XDM 변수 [Adobe Analytics에 대한 XDM 스키마 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), Platform Edge Network는 데이터를 적절한 analytics 변수에 매핑합니다.
+이미 제품 페이지를 사용하고 있으므로 이 연습에서는 동일한 Edge Trace를 사용하여 제품 데이터가 Analytics에 캡처되는지 확인합니다. 제품 문자열 및 전자 상거래 이벤트는 모두 XDM 변수를 Analytics에 자동으로 매핑합니다. 를 로 매핑하기만 하면 됩니다. `productListItem` XDM 변수 [Adobe Analytics에 대한 XDM 스키마 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), Platform Edge Network은 데이터를 적절한 analytics 변수에 매핑합니다.
 
 1. 먼저 다음을 확인합니다. `Product String` 은(는) 설정되어 있습니다.
 1. 다음을 찾습니다. `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. 변수는 매핑한 데이터 요소 값을 캡처합니다. `productListItems.item1.sku` 이 단원의 앞 부분
@@ -505,7 +505,7 @@ Adobe Analytics이 Experience Platform 디버거의 Edge Trace 기능을 사용�
 
    ![Analytics 제품 문자열](assets/analytics-debugger-prodstring.png)
 
-Edge Trace 처리 `commerce` 이벤트가 와 약간 다름 `productList` 차원. 제품 이름이 매핑된 것과 같은 방식으로 매핑된 컨텍스트 데이터 변수가 표시되지 않습니다 `[!UICONTROL c.a.x.productlistitem.[0].name]` 위. 대신 Edge Trace 는 Analytics에서 최종 이벤트 자동 매핑을 보여 줍니다 `event` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. Platform Edge Network는 적절한 XDM에 매핑하는 한 그에 따라 매핑합니다 `commerce` 변수 기간 [Adobe Analytics에 대한 스키마 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); 이 경우 `commerce.productViews.value=1`.
+Edge Trace 처리 `commerce` 이벤트가 와 약간 다름 `productList` 차원. 제품 이름이 매핑된 것과 같은 방식으로 매핑된 컨텍스트 데이터 변수가 표시되지 않습니다 `[!UICONTROL c.a.x.productlistitem.[0].name]` 위. 대신 Edge Trace 는 Analytics에서 최종 이벤트 자동 매핑을 보여 줍니다 `event` 변수를 채우는 방법에 따라 페이지를 순서대로 표시합니다. 플랫폼 Edge Network은 적절한 XDM에 매핑되는 한 그에 따라 매핑됩니다 `commerce` 변수 기간 [Adobe Analytics에 대한 스키마 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics); 이 경우 `commerce.productViews.value=1`.
 
 1. Experience Platform 디버거 창으로 돌아가서 `[!UICONTROL event]` 변수가 있는 경우 이 변수가 `[!UICONTROL prodView]`
 
