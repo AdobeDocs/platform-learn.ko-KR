@@ -2,7 +2,8 @@
 title: 웹 데이터에 대한 XDM 스키마 만들기
 description: 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Schemas
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+exl-id: 159f914a-43d4-4808-b6af-01136386e25c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 XDM(Experience Data Model) 스키마는 Adobe Experience Platform에서 데이터를 수집하기 위한 기본 구성 요소, 원칙 및 우수 사례입니다.
 
-Platform Web SDK는 스키마를 사용하여 웹 이벤트 데이터를 표준화하고 Platform Edge Network로 보낸 다음 최종적으로 데이터를 데이터스트림에 구성된 Experience Cloud 애플리케이션으로 전달합니다. 이 단계는 고객 경험 데이터를 Experience Platform에 수집하는 데 필요한 표준 데이터 모델을 정의하고 이러한 표준을 기반으로 구축된 다운스트림 서비스 및 애플리케이션을 활성화하므로 매우 중요합니다.
+Platform Web SDK는 스키마를 사용하여 웹 이벤트 데이터를 표준화하고 Platform Edge Network으로 보낸 다음 최종적으로 데이터를 데이터스트림에 구성된 Experience Cloud 애플리케이션으로 전달합니다. 이 단계는 고객 경험 데이터를 Experience Platform에 수집하는 데 필요한 표준 데이터 모델을 정의하고 이러한 표준을 기반으로 구축된 다운스트림 서비스 및 애플리케이션을 활성화하므로 매우 중요합니다.
 
 ## 데이터를 모델링하는 이유는 무엇입니까?
 
@@ -122,7 +123,7 @@ XDM 스키마는 Experience Platform의 데이터를 설명하는 표준 방법�
 1. 상자를 선택합니다.
 1. 선택 **[!UICONTROL 필드 그룹 추가]**
 
-   ![필드 그룹 추가](assets/schema-add-field-group.jpg)
+   ![필드 그룹 추가](assets/schema-add-field-group.png)
 
 두 필드 그룹 모두에서 웹의 데이터 수집에 필요한 가장 일반적으로 사용되는 키-값 쌍에 액세스할 수 있습니다. 다음 [!UICONTROL 표시 이름] 각 필드의 은 플랫폼 기반 애플리케이션의 세그먼트 빌더 인터페이스에서 마케터에게 표시되며, 필요에 따라 표준 필드의 표시 이름을 변경할 수 있습니다. 원하지 않는 필드를 제거할 수도 있습니다. 필드 그룹 이름을 클릭하면 인터페이스에 속한 키-값 쌍 그룹화가 강조 표시됩니다. 아래 예제에서 어떤 그룹이 속해 있는지 알 수 있습니다 **[!UICONTROL 고객 경험 이벤트]**.
 

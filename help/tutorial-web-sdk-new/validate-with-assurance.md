@@ -3,9 +3,9 @@ title: Experience Platform 보증을 사용하여 웹 SDK 구현 유효성 검�
 description: Adobe Experience Platform Assurance를 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -61,13 +61,16 @@ Debugger 단원에서 이 작업을 수행하는 방법 검토:
 1. 를 엽니다. [데이터 수집 인터페이스](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. 왼쪽 탐색에서 Assurance 선택
 1. 세션 생성 선택
+   ![보증 세션 만들기](assets/assurance-create-session.png)
 1. 시작 선택
 1. 세션에 이름을 지정하십시오(예: ). `Luma Web SDK validation`
 1. 다음으로: **[!UICONTROL 기본 URL]** 입력 `https://luma.enablementadobe.com/`
+   ![보증 세션 이름 지정](assets/assurance-name-session.png)
 1. 다음 화면에서 다음을 선택합니다. **[!UICONTROL 링크 복사]**
 1. 아이콘을 선택하여 클립보드에 링크를 복사합니다.
 1. 브라우저에 URL을 붙여 넣으면 특수 URL 매개 변수와 함께 Luma 웹 사이트가 열립니다 `adb_validation_sessionid` 세션을 시작합니다.
 1. Assurance 인터페이스에 세션에 성공적으로 연결되었음을 나타내는 메시지가 표시되고 Assurance 인터페이스에 캡처된 이벤트가 표시됩니다.
+   ![보증 세션이 연결되었습니다.](assets/assurance-success.png)
 
 ## 웹 SDK 구현의 현재 상태 유효성 검사
 

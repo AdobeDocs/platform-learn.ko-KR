@@ -1,8 +1,9 @@
 ---
 title: 태그 규칙 만들기
-description: 태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: 태그 규칙을 사용하여 XDM 오브젝트와 함께 이벤트를 Platform Edge Network에 보내는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -11,7 +12,7 @@ ht-degree: 1%
 
 # 태그 규칙 만들기
 
-태그 규칙을 사용하여 XDM 개체와 함께 Platform Edge Network에 이벤트를 전송하는 방법에 대해 알아봅니다. 태그 규칙은 태그 속성에 작업을 수행하도록 지시하는 이벤트, 조건 및 작업의 조합입니다. Platform Web SDK를 사용하는 경우, 규칙은 올바른 XDM 필드가 있는 Platform Edge Network로 이벤트를 전송하는 데 사용됩니다.
+태그 규칙을 사용하여 XDM 오브젝트로 이벤트를 Platform Edge Network에 보내는 방법에 대해 알아봅니다. 태그 규칙은 태그 속성에 작업을 수행하도록 지시하는 이벤트, 조건 및 작업의 조합입니다. Platform Web SDK를 사용하는 경우, 규칙은 올바른 XDM 필드가 있는 Platform Edge Network에 이벤트를 전송하는 데 사용됩니다.
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ ht-degree: 1%
 태그에서 규칙은 다양한 조건에서 작업(호출 실행)을 실행하는 데 사용됩니다. Platform Web SDK 태그 확장에는 이 단원에서 사용할 두 가지 작업이 포함되어 있습니다.
 
 * **[!UICONTROL 변수 업데이트]** 데이터 요소를 XDM 필드에 매핑
-* **[!UICONTROL 이벤트 보내기]** Experience Platform 에지 네트워크에 XDM 개체 전송
+* **[!UICONTROL 이벤트 보내기]** Experience Platform Edge Network에 XDM 개체 보내기
 
 이 단원의 나머지 부분에서
 
@@ -68,7 +69,7 @@ ht-degree: 1%
 
 1. &quot;전역 구성&quot;을 재정의하는 추가 규칙을 생성하거나 추가 XDM 필드를 기여합니다(사용). [!UICONTROL 변수 업데이트] 다시 말하지만, 특정 조건에서만 관련이 있는 것은 아닙니다(예: 제품 페이지에 제품 세부 사항 추가).
 
-1. 을(를) 사용하여 다른 규칙 만들기 **[!UICONTROL 이벤트 보내기]** 전체 XDM 개체를 Adobe Experience Platform Edge Network로 보내는 작업.
+1. 을(를) 사용하여 다른 규칙 만들기 **[!UICONTROL 이벤트 보내기]** 전체 XDM 개체를 Adobe Experience Platform Edge Network으로 보내는 작업
 
 이러한 모든 규칙의 순서는 를 사용하여 올바르게 지정됩니다.[!UICONTROL 주문]&quot; 옵션입니다.
 
@@ -105,7 +106,7 @@ ht-degree: 1%
    > 주문 번호가 낮을수록 더 빨리 실행됩니다. 따라서 &quot;글로벌 구성&quot;에 낮은 주문 번호를 제공합니다.
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 기본 규칙 화면으로 돌아가기
-   ![Library Loaded 트리거 선택](assets/create-tag-rule-trigger-bottom.png)
+   ![Library Loaded 트리거 선택](assets/create-tag-rule-trigger-loaded.png)
 
 1. 다음에서 **[!UICONTROL 작업]** 섹션, 선택 **[!UICONTROL 추가]**
 
@@ -167,7 +168,7 @@ ht-degree: 1%
 
 #### 제품 페이지 필드
 
-이제 **[!UICONTROL 변수 업데이트]** 또한 순차적 규칙은에 보내기 전에 XDM 개체를 보강하는 것입니다. [!UICONTROL 플랫폼 에지 네트워크].
+이제 **[!UICONTROL 변수 업데이트]** 또한 순차적 규칙은에 보내기 전에 XDM 개체를 보강하는 것입니다. [!UICONTROL 플랫폼 Edge Network].
 
 >[!TIP]
 >
@@ -339,7 +340,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 ### 이벤트 규칙 보내기
 
-변수를 설정했으므로 를 사용하여 전체 XDM 개체를 Platform Edge Network로 전송하는 규칙을 만들 수 있습니다. **[!UICONTROL 이벤트 보내기]** 작업.
+변수를 설정했으므로 이제 를 사용하여 전체 XDM 개체를 Platform Edge Network에 전송하는 규칙을 만들 수 있습니다. **[!UICONTROL 이벤트 보내기]** 작업.
 
 1. 오른쪽에서 을 선택합니다. **[!UICONTROL 규칙 추가]** 다른 규칙을 만들려면
 
@@ -352,7 +353,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 1. 선택 **[!UICONTROL 고급]** 드롭다운 및 enter `50` 위치: **[!UICONTROL 주문]**. 이렇게 하면 로 트리거하도록 설정한 첫 번째 규칙 이후에 두 번째 규칙이 트리거됩니다. `1`.
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 기본 규칙 화면으로 돌아가기
-   ![Library Loaded 트리거 선택](assets/create-tag-rule-trigger-bottom-send.png)
+   ![Library Loaded 트리거 선택](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 다음에서 **[!UICONTROL 작업]** 섹션, 선택 **[!UICONTROL 추가]**
 

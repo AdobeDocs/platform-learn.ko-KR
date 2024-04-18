@@ -2,7 +2,8 @@
 title: ID 만들기
 description: XDM에서 ID를 만들고 ID 맵 데이터 요소를 사용하여 사용자 ID를 캡처하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%
@@ -47,7 +48,7 @@ Experience Platform 웹 SDK를 사용하여 ID를 캡처하는 방법을 알아�
 
 자세한 내용 [ECID는 Platform Web SDK를 사용하여 추적됩니다](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
-ECID는 자사 쿠키와 Platform Edge Network의 조합을 사용하여 설정됩니다. 기본적으로 자사 쿠키는 웹 SDK에 의해 설정됩니다. 쿠키 수명에 대한 브라우저 제한 사항을 고려하기 위해 대신 고유한 자사 쿠키를 설정하고 관리하도록 선택할 수 있습니다. 이를 자사 디바이스 ID(FPID)라고 합니다.
+ECID는 자사 쿠키와 플랫폼 Edge Network의 조합을 사용하여 설정됩니다. 기본적으로 자사 쿠키는 웹 SDK에 의해 클라이언트측에서 설정됩니다. 쿠키 수명에 대한 브라우저 제한 사항을 고려하려면 대신 고유한 자사 쿠키 서버측을 설정하도록 선택할 수 있습니다. 이를 자사 디바이스 ID(FPID)라고 합니다.
 
 >[!IMPORTANT]
 >
@@ -57,7 +58,7 @@ ECID는 자사 쿠키와 Platform Edge Network의 조합을 사용하여 설정�
 
 FPID는 자사 쿠키입니다. _고유한 웹 서버를 사용하여 을 설정합니다._ 그런 다음 웹 SDK에서 설정한 자사 쿠키를 사용하는 대신 를 사용하여 ECID를 생성하는 Adobe. 브라우저 지원은 다를 수 있지만 자사 쿠키는 DNS CNAME 또는 JavaScript 코드로 설정하는 경우와는 대조적으로, DNS A 레코드(IPv4의 경우) 또는 AAAA 레코드(IPv6의 경우)를 활용하는 서버에서 설정하는 경우 내구성이 더 뛰어난 경향이 있습니다.
 
-FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수집될 때 Adobe으로 보낼 수 있습니다. 수집된 FPID는 Platform Edge Network에서 ECID를 생성하는 시드로 사용되며 Adobe Experience Cloud 애플리케이션에서 계속 기본 식별자입니다.
+FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수집될 때 Adobe으로 보낼 수 있습니다. 수집된 FPID는 Platform Edge Network에서 ECID를 생성하는 시드로 사용되며, 이 ECID는 Adobe Experience Cloud 애플리케이션에서 계속 기본 식별자입니다.
 
 이 자습서에서는 FPID를 사용하지 않지만 자체 웹 SDK 구현에서는 FPID를 사용하는 것이 좋습니다. 자세한 내용 [Platform Web SDK의 자사 디바이스 ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ko-KR)
 

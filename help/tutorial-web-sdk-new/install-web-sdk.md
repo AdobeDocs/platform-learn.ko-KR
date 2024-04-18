@@ -2,7 +2,8 @@
 title: Adobe Experience Platform 웹 SDK 태그 확장 설치 및 구성
 description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -53,7 +54,7 @@ Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대
 1. 검색 대상 `Adobe Experience Platform Web SDK`
 1. 선택 **[!UICONTROL 설치]**
 
-   ![Web SDK 확장 설치](assets/extension-platform-web-sdk.jpg)
+   ![Web SDK 확장 설치](assets/extension-platform-web-sdk.png)
 
 
 ## Platform Web SDK를 데이터 스트림에 연결
