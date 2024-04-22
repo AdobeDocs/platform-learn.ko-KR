@@ -1,20 +1,21 @@
 ---
-title: Platform Web SDK를 사용하여 웹 채널 설정
-description: Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+title: Platform Web SDK를 사용하여 Journey Optimizer 웹 채널 설정
+description: Platform Web SDK를 사용하여 Journey Optimizer 웹 채널을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
 
 
-# Platform Web SDK를 사용하여 웹 채널 설정
+# Journey Optimizer 웹 채널 설정
 
-Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알아봅니다. 이 안내서에서는 기본 웹 채널 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 자세히 설명합니다.
+Platform Web SDK를 사용하여 Journey Optimizer 웹 채널을 구현하는 방법에 대해 알아봅니다. 이 안내서에서는 기본 웹 채널 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 자세히 설명합니다.
 
 이 안내서를 따르면 Journey Optimizer 사용자는 Journey Optimizer 웹 디자이너를 사용하여 고급 온라인 개인화에 웹 채널을 효과적으로 적용할 수 있습니다.
 
@@ -48,7 +49,7 @@ Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알
 * 콘텐츠 실험 기능을 사용하는 경우 웹 데이터 세트도 보고 구성에 포함되어야 합니다.
 * 현재, 웹 속성에서 웹 채널 캠페인을 작성하고 게재하기 위해 두 가지 유형의 구현이 지원됩니다.
    * 클라이언트측 전용: 웹 사이트를 수정하려면 Adobe Experience Platform Web SDK를 구현해야 합니다.
-   * 하이브리드 모드: Platform Edge Network Server API를 활용하여 서버측에 개인화 요청을 할 수 있습니다. 그런 다음 API의 응답이 클라이언트측에서 수정 사항을 렌더링하기 위해 Adobe Experience Platform Web SDK에 제공됩니다. 자세한 내용은 Adobe Experience Platform Edge Network Server API 설명서를 참조하십시오. 하이브리드 모드에 대한 추가 세부 정보 및 구현 샘플은 이 블로그 게시물에서 찾을 수 있습니다.
+   * 하이브리드 모드: Platform Personalization Server API를 활용하여 Edge Network 서버측을 요청할 수 있습니다. 그런 다음 API의 응답이 클라이언트측에서 수정 사항을 렌더링하기 위해 Adobe Experience Platform Web SDK에 제공됩니다. 자세한 내용은 Adobe Experience Platform Edge Network 서버 API 설명서를 참조하십시오. 하이브리드 모드에 대한 추가 세부 정보 및 구현 샘플은 이 블로그 게시물에서 찾을 수 있습니다.
 
 >[!NOTE]
 >
@@ -124,9 +125,16 @@ Platform Web SDK를 사용하여 웹 채널을 구현하는 방법에 대해 알
 >
 >이 자습서는 구현자를 대상으로 하므로 이 단원에는 Journey Optimizer의 실질적인 인터페이스 작업이 포함되어 있습니다. 이러한 인터페이스 작업은 일반적으로 마케터가 처리하지만, 결과적으로 웹 채널 캠페인 생성에 대한 책임이 없더라도 구현자가 프로세스에 대한 통찰력을 얻는 것이 유용할 수 있습니다.
 
+### 충성도 스키마 만들기 및 샘플 데이터 수집
+
+Web SDK 데이터를 Adobe Experience Platform에 수집하면 수집한 다른 모든 데이터로 보강할 수 있습니다. 사용자가 Luma 사이트에서 인증을 받으면 인증된 ID가 Luma의 CRM 시스템의 ID를 나타내는 Platform으로 전송됩니다. ID 그래프는 Experience Platform 및 와 함께 ID를 포함하는 기타 모든 프로필 사용 데이터 세트에서 구성됩니다. `lumaCrmId` 네임스페이스를 함께 결합하여 실시간 고객 프로필을 만들 수 있습니다. Journey Optimizer 웹 캠페인에서 실시간 고객 프로필을 사용하는 방법을 보여 줄 수 있도록 몇 가지 샘플 충성도 데이터를 사용하여 Adobe Experience Platform에서 다른 데이터 세트를 신속하게 만들 것입니다. 이미 유사한 연습을 했기 때문에 지침은 간단합니다.
+
+
+
+
 ### 충성도 보상 캠페인 만들기
 
-먼저 Adobe Journey Optimizer에서 충성도 보상 웹 채널 캠페인을 만들어 보겠습니다.
+샘플 충성도 데이터를 수집했으므로 이제 Adobe Journey Optimizer에서 충성도 보상 웹 채널 캠페인을 만들 수 있습니다.
 
 샘플 캠페인을 만들려면:
 
@@ -297,7 +305,7 @@ Luma 사이트에서 디버거를 사용하여 프로덕션의 웹 채널 경험
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 그런 다음 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 Adobe Experience Platform Edge Network로 전송된 요청의 유효성을 검사할 수 있습니다.
+1. 그런 다음 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 Adobe Experience Platform Edge Network에 전송된 요청의 유효성을 검사할 수 있습니다.
    <!--
     ![ADD SCREENSHOT](#)
     -->

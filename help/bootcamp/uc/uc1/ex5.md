@@ -1,20 +1,20 @@
 ---
-title: Bootcamp - Real-time CDP - 대상 구축 및 작업 - 대상을 DV360으로 보내기
-description: Bootcamp - Real-time CDP - 대상 구축 및 작업 - 대상을 DV360으로 전송
+title: Bootcamp - Real-time CDP - 세그먼트 작성 및 조치 수행 - 세그먼트를 DV360으로 전송
+description: Bootcamp - Real-time CDP - 세그먼트 작성 및 조치 수행 - 세그먼트를 DV360으로 전송
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 feature: Destinations
 exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
-source-git-commit: 9d12b3e3ad2238cf79aca3d9723e7e60d72e765c
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 3%
 
 ---
 
-# 1.5 조치 취하기: 대상자를 Facebook으로 보내기
+# 1.5 조치 취하기: 세그먼트를 Facebook에 보내기
 
 다음으로 이동 [Adobe Experience Platform](https://experience.adobe.com/platform). 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 ![데이터 수집](./images/sb1.png)
 
-왼쪽 메뉴에서 **대상**&#x200B;로 이동한 다음 로 이동합니다. **카탈로그**. 그러면 다음을 볼 수 있습니다. **대상 카탈로그**. 위치 **대상**, 클릭 **대상자 활성화** 다음에 있음 **Facebook 사용자 지정 대상** 카드.
+왼쪽 메뉴에서 **대상**&#x200B;로 이동한 다음 로 이동합니다. **카탈로그**. 그러면 다음을 볼 수 있습니다. **대상 카탈로그**. 위치 **대상**, 클릭 **세그먼트 활성화** 다음에 있음 **Facebook 사용자 지정 대상** 카드.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
@@ -32,7 +32,7 @@ ht-degree: 3%
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-사용 가능한 대상 목록에서 이전 연습에서 만든 대상을 선택합니다. **다음**&#x200B;을 클릭합니다.
+사용 가능한 세그먼트 목록에서 이전 연습에서 만든 세그먼트를 선택합니다. **다음**&#x200B;을 클릭합니다.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
@@ -40,7 +40,7 @@ ht-degree: 3%
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-다음에서 **대상자 일정** 페이지에서 **대상의 출처** 및 설정 **고객으로부터 직접**. **다음**&#x200B;을 클릭합니다.
+다음에서 **세그먼트 일정** 페이지에서 **대상의 출처** 및 설정 **고객으로부터 직접**. **다음**&#x200B;을 클릭합니다.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
@@ -48,9 +48,9 @@ ht-degree: 3%
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-이제 대상자가 Facebook 사용자 지정 대상자에 연결됩니다. 고객이 이 대상에 적격일 때마다 Facebook 측의 사용자 정의 대상에 해당 고객을 포함하라는 신호가 Facebook 서버측으로 전송됩니다.
+이제 세그먼트가 Facebook 사용자 지정 대상자에 연결됩니다. 고객이 이 세그먼트에 대한 자격이 될 때마다, Facebook 측의 사용자 지정 대상에 해당 고객을 포함하라는 신호가 Facebook 서버측으로 전송됩니다.
 
-facebook의 Adobe Experience Platform 대상은 사용자 지정 대상 아래에 있습니다.
+facebook의 Adobe Experience Platform에서 사용자 지정 대상 아래에 세그먼트를 찾습니다.
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 

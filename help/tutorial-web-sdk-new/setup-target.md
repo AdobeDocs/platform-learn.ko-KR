@@ -2,9 +2,9 @@
 title: Platform Web SDK를 사용하여 Adobe Target 설정
 description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '4264'
+source-wordcount: '4308'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,8 @@ Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 �
 
 * 비동기 태그 포함 코드와 함께 Target을 사용할 때 깜박임을 방지하기 위해 Platform Web SDK 사전 숨김 코드 조각을 추가하는 방법을 이해합니다
 * Target 기능을 사용하도록 데이터 스트림 구성
-* 페이지가 로드될 때 시각적 개인화 결정 렌더링(이전에는 &quot;글로벌 mbox&quot;라고 함)
+* 시각적 경험 작성기 활동 렌더링
+* 렌더링 양식 작성기 활동
 * Target에 XDM 데이터 전달 및 Target 매개 변수에 대한 매핑 이해
 * 프로필 및 엔티티 매개 변수와 같은 사용자 지정 데이터를 Target에 전달
 * Platform Web SDK를 사용하여 Target 구현의 유효성 검사
@@ -188,20 +189,22 @@ Luma 사이트를 사용하는 이 튜토리얼의 목적상 ID 기호 를 사�
 * **개인화 결정**: 서버에서 결정하는 작업을 적용해야 합니다. 이러한 결정은 대상 기준 및 Target 활동 우선 순위를 기반으로 할 수 있습니다.
 * **제안**: Platform Web SDK 응답에서 전달되는 서버의 의사 결정 결과입니다. 예를 들어 배너 이미지를 교체하는 것이 좋습니다.
 
-### 페이지 로드 규칙 업데이트
+### 업데이트 [!UICONTROL 이벤트 보내기] 작업
 
-Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시각적 개인화 결정은 Platform Web SDK에 의해 전달됩니다. 그러나 _자동으로 렌더링되지 않습니다._. 자동 렌더링을 활성화하려면 전역 페이지 로드 규칙을 수정해야 합니다.
+Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시각적 개인화 결정은 Platform Web SDK에 의해 전달됩니다. 그러나 _자동으로 렌더링되지 않습니다._. 다음을 업데이트해야 합니다. [!UICONTROL 이벤트 보내기] 자동 렌더링을 활성화하는 작업입니다.
 
 1. 다음에서 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스에서 이 자습서에 사용할 태그 속성을 엽니다.
-1. 를 엽니다. `all pages - library load - AA & AT` 규칙
+1. 를 엽니다. `all pages - library loaded - send event - 50` 규칙
 1. 다음 항목 선택 `Adobe Experience Platform Web SDK - Send event` 작업
 1. 사용 **[!UICONTROL 시각적 개인화 결정 렌더링]** 확인란 포함
 
    ![시각적 개인화 결정 렌더링 사용](assets/target-rule-enable-visual-decisions.png)
 
-1. **[!UICONTROL 데이터 스트림 구성 재정의**] 다음 **[!UICONTROL 대상 속성 토큰]** 정적 값으로 또는 데이터 요소로 재정의할 수 있습니다. 에 정의된 속성 토큰만 [**고급 속성 토큰 무시**](#advanced-pto) 의 섹션 **데이터 스트림 구성** 가 결과를 반환합니다.
-
-   ![속성 토큰 재정의](assets/target-property-token-ovrrides.png)
+<!--
+1. In the **[!UICONTROL Datastream configuration overrides**] the **[!UICONTROL Target Property Token]** can be overridden either as a static value or with a data element. Only property tokens defined in the [**Advanced Property Token Overrides**](#advanced-pto) section in **Datastream Configuration** will return results.
+   
+   ![Override the Property Token](assets/target-property-token-ovrrides.png)
+   -->
 
 1. 변경 사항을 저장한 다음 라이브러리에 빌드
 
@@ -222,7 +225,7 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 >
 >Google Chrome을 브라우저로 사용하는 경우 [VEC(시각적 경험 작성기) Helper 확장 프로그램](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) 를 사용하면 VEC에서 편집할 사이트를 제대로 로드할 수 있습니다.
 
-1. Target으로 이동
+1. Adobe Target 인터페이스로 이동합니다
 1. 활동 URL에 대한 Luma 홈 페이지를 사용하여 경험 타깃팅 (XT) 활동을 만듭니다
 
    ![새 XT 활동 만들기](assets/target-xt-create-activity.png)
@@ -267,7 +270,7 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 
    ![Adobe Experience Platform 디버거의 네트워크 호출](assets/target-debugger-network.png)
 
-1. 아래에 키가 있습니다. `query` > `personalization` 및  `decisionScopes` 의 값이 `__view__`. 이 범위는 Target의 &quot;글로벌 mbox&quot;에 해당합니다. 이 Platform Web SDK 호출은 Target에 의사 결정을 요청했습니다.
+1. 아래에 키가 있습니다. `query` > `personalization` 및  `decisionScopes` 의 값이 `__view__`. 이 범위는 `target-global-mbox`. 이 Platform Web SDK 호출은 Target에 의사 결정을 요청했습니다.
 
    ![`__view__` decisionScope 요청](assets/target-debugger-view-scope.png)
 
@@ -278,13 +281,13 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 
 ## 사용자 지정 결정 범위 설정 및 렌더링
 
-사용자 지정 결정 범위(이전의 &quot;mbox&quot;)는 Target 양식 기반 경험 작성기를 사용하여 구조화된 방식으로 HTML 또는 JSON 콘텐츠를 전달하는 데 사용할 수 있습니다. 이러한 사용자 지정 범위 중 하나에 전달된 콘텐츠는 Platform Web SDK에 의해 자동으로 렌더링되지 않습니다.
+사용자 지정 결정 범위(이전의 &quot;mbox&quot;)는 Target 양식 기반 경험 작성기를 사용하여 구조화된 방식으로 HTML 또는 JSON 콘텐츠를 전달하는 데 사용할 수 있습니다. 이러한 사용자 지정 범위 중 하나에 전달된 콘텐츠는 Platform Web SDK에 의해 자동으로 렌더링되지 않습니다. Tags의 작업을 사용하여 렌더링할 수 있습니다.
 
-### 페이지 로드 규칙에 범위 추가
+### 에 범위 추가 [!UICONTROL 이벤트 작업 보내기]
 
 페이지 로드 규칙을 수정하여 사용자 지정 결정 범위를 추가합니다.
 
-1. 를 엽니다. `all pages - library load - AA & AT` 규칙
+1. 를 엽니다. `all pages - library loaded - send event - 50` 규칙
 1. 다음 항목 선택 `Adobe Experience Platform Web SDK - Send Event` 작업
 1. 사용할 범위를 하나 이상 추가합니다. 이 예에서는 를 사용합니다. `homepage-hero`.
 
@@ -383,9 +386,17 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 
    ![타겟 활동 노출](assets/target-debugger-activity-impression.png)
 
-## Target에 추가 데이터 전달
+## Target에 매개 변수 보내기
 
 이 섹션에서는 Target별 데이터를 전달하고 XDM 데이터가 Target 매개 변수에 매핑되는 방식을 자세히 살펴봅니다.
+
+### 페이지(mbox) 매개 변수 및 XDM
+
+모든 XDM 필드는 다음과 같이 Target에 자동으로 전달됩니다. [페이지 매개 변수](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) 또는 mbox 매개 변수
+
+이러한 XDM 필드 중 일부는 Target 백엔드의 특수 오브젝트에 매핑됩니다. 예를 들어, `web.webPageDetails.URL` 는 URL 기반 타깃팅 조건을 빌드하는 데 또는 로서 자동으로 사용할 수 있습니다. `page.url` 개체(프로필 스크립트 작성 시)
+
+### 특수 매개 변수 및 데이터 개체
 
 XDM 오브젝트에서 매핑되지 않은 Target에 유용할 수 있는 일부 데이터 포인트가 있습니다. 이러한 특수 Target 매개 변수는 다음과 같습니다.
 
@@ -394,9 +405,9 @@ XDM 오브젝트에서 매핑되지 않은 Target에 유용할 수 있는 일부
 * [Recommendations 예약 매개 변수](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * 다음에 대한 범주 값: [카테고리 친화성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### 특수 Target 매개 변수에 대한 데이터 요소 만들기
+이러한 매개 변수는 `data` 개체 `xdm` 개체. 또한 페이지(또는 mbox) 매개 변수도 `data` 개체.
 
-먼저,에서 만들어진 데이터 요소를 사용합니다. [데이터 요소 만들기](create-data-elements.md) 를 구성하는 단원 `data` 비 XDM 데이터를 전달하는 데 사용되는 개체:
+데이터 개체를 채우려면 다음 데이터 요소를 만들고 [데이터 요소 만들기](create-data-elements.md) 단원:
 
 * **`data.content`** 다음 사용자 지정 코드 사용:
 
@@ -414,45 +425,54 @@ XDM 오브젝트에서 매핑되지 않은 Target에 유용할 수 있는 일부
   return data;
   ```
 
+
+
 ### 페이지 로드 규칙 업데이트
 
 XDM 개체 외부의 Target에 대한 추가 데이터를 전달하려면 적용 가능한 규칙을 업데이트해야 합니다. 이 예제에서는 새로운 내용을 포함하기만 하면 됩니다 **data.content** 일반 페이지 로드 규칙 및 제품 페이지 보기 규칙에 대한 데이터 요소입니다.
 
-1. 를 엽니다. `all pages - library load - AA & AT` 규칙
+1. 를 엽니다. `all pages - library loaded - send event - 50` 규칙
 1. 다음 항목 선택 `Adobe Experience Platform Web SDK - Send event` 작업
 1. 추가 `data.content` 데이터 필드에 대한 데이터 요소
 
    ![규칙에 대상 데이터 추가](assets/target-rule-data.png)
 
 1. 변경 사항을 저장하고 라이브러리에 빌드
-1. 에 대해 1~4단계를 반복합니다. **제품 보기 - 라이브러리 로드 - AA** 규칙
+1. 에 대해 1~4단계를 반복합니다. **ecommerce - 라이브러리가 로드됨 - 제품 세부 사항 변수 설정 - 20** 규칙
 
 >[!NOTE]
 >
 >위의 예에서는 `data` 일부 페이지 유형에서 완전히 채워지지 않은 개체입니다. 태그는 이 상황을 적절하게 처리하며 정의되지 않은 값이 있는 키는 생략합니다. 예를 들어, `entity.id` 및 `entity.name` 는 제품 세부 사항을 제외한 어떤 페이지에서도 전달되지 않습니다.
 
 
-## 개인화 결정 및 Analytics 수집 이벤트 분할
+## 개인화 및 Analytics 요청 분할
 
-Luma 사이트의 데이터 레이어는 태그 포함 코드 앞에 완전히 정의됩니다. 이를 통해 단일 호출을 사용하여 개인화된 콘텐츠(예: Adobe Target에서)를 가져오고 분석 데이터(예: Adobe Analytics으로)를 전송할 수 있습니다. 많은 웹 사이트에서 데이터 레이어는 개인화 애플리케이션과 함께 사용하기에 적절할 만큼 충분히 일찍 또는 빠르게 로드될 수 없습니다. 이러한 상황에서는 두 가지를 만들 수 있습니다 `sendEvent` 는 단일 페이지 로드를 호출하고 첫 번째 는 개인화에 사용하고 두 번째 는 analytics에 사용합니다. 이러한 방식으로 이벤트 규칙을 분류하면 Target Decisioning 이벤트를 가능한 한 빨리 실행할 수 있습니다. Analytics 이벤트는 데이터 레이어 개체가 채워질 때까지 대기할 수 있습니다. 이는 Adobe Target에서 를 실행하는 웹 전 SDK 구현과 유사합니다. `target-global-mbox` 페이지 맨 위에서 Adobe Analytics이 `s.t()` 페이지 하단에서 호출
+Luma 사이트의 데이터 레이어는 태그 포함 코드 앞에 완전히 정의됩니다. 이를 통해 단일 호출을 사용하여 개인화된 콘텐츠(예: Adobe Target에서)를 가져오고 분석 데이터(예: Adobe Analytics으로)를 전송할 수 있습니다.
 
+그러나 많은 웹 사이트에서 데이터 레이어는 두 애플리케이션에 대한 단일 호출을 사용할 수 있을 만큼 충분히 일찍 또는 빠르게 로드될 수 없습니다. 이러한 경우 두 가지를 사용할 수 있습니다 [!UICONTROL 이벤트 보내기] 단일 페이지 로드 시 작업이며 개인화에 첫 번째 및 analytics에 두 번째 를 사용합니다. 이러한 방식으로 이벤트를 분류하면 Analytics 이벤트를 보내기 전에 데이터 레이어가 완전히 로드되기를 기다리는 동안 개인화 이벤트를 가능한 한 빨리 실행할 수 있습니다. 이는 Adobe Target에서 를 실행하는 많은 사전 웹 SDK 구현과 유사합니다. `target-global-mbox` 페이지 맨 위에서 Adobe Analytics이 `s.t()` 페이지 하단에서 호출
 
-1. 라는 규칙 만들기 `all pages - page top - request decisions`
-1. 규칙에 이벤트를 추가합니다. 사용 **코어** 확장 및 **[!UICONTROL 라이브러리가 로드됨 (페이지 상단)]** 이벤트 유형
-1. 규칙에 작업을 추가합니다. 사용 **Adobe Experience Platform 웹 SDK** 확장 및 **이벤트 보내기** 작업 유형
+Personalization-on-top 요청을 만들려면:
+
+1. 를 엽니다. `all pages - library loaded - send event - 50` 규칙
+1. 를 엽니다. **이벤트 보내기** 작업
 1. 선택 **[!UICONTROL 안내식 이벤트 사용]** 다음을 선택합니다. **[!UICONTROL 개인화 요청]**
 1. 이렇게 하면 **유형** 다음으로: **[!UICONTROL 의사 결정 제안 가져오기]**
 
    ![send_decision_request_alone](assets/target-decision-request.png)
 
-1. 을(를) 생성할 때 `Adobe Analytics Send Event rule` 사용 **안내식 이벤트 스타일** 섹션 선택 **[!UICONTROL 페이지 하단 이벤트 - 분석 수집]** 라디오 단추
+Analytics-on-bottom 요청을 만들려면:
+
+1. (이)라는 새 규칙 만들기 `all pages - page bottom - send event - 50`
+1. 규칙에 이벤트를 추가합니다. 사용 **코어** 확장 및 **[!UICONTROL 페이지 하단]** 이벤트 유형
+1. 규칙에 작업을 추가합니다. 사용 **Adobe Experience Platform 웹 SDK** 확장 및 **이벤트 보내기** 작업 유형
+1. 선택 **[!UICONTROL 안내식 이벤트 사용]** 다음을 선택합니다. **[!UICONTROL 분석 수집]**
 1. 이렇게 하면 **[!UICONTROL 보류 중인 표시 알림 포함]** decisioning 요청에서 대기 중인 디스플레이 알림이 전송되도록 확인란을 선택했습니다.
 
 ![send_decision_request_alone](assets/target-aa-request-guided.png)
 
 >[!TIP]
 >
->에 대한 Decisioning 제안을 가져오는 이벤트에 다음에 Adobe Analytics 이벤트가 없는 경우 **안내식 이벤트 스타일** **[!UICONTROL 안내되지 않음 - 모든 필드 표시]**. 모든 옵션을 수동으로 선택해야 하지만 로 이동하면 옵션의 잠금이 해제됩니다. **[!UICONTROL 디스플레이 알림 자동 보내기]** 가져오기 요청과 함께 사용됩니다.
+>에 대한 Decisioning 제안을 가져오는 이벤트에 다음에 Adobe Analytics 이벤트가 없는 경우 **안내식 이벤트 스타일** **[!UICONTROL 안내되지 않음 - 모든 필드 표시]**. 모든 옵션을 수동으로 선택해야 하지만 다음 옵션을 잠금 해제합니다. **[!UICONTROL 디스플레이 알림 자동 보내기]** 가져오기 요청과 함께 사용됩니다.
 
 
 ### 디버거를 사용하여 유효성 검사

@@ -3,7 +3,7 @@ title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 오브젝트와 함께 이벤트를 Platform Edge Network에 보내는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
 exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: 0220f5dbe8e34e92cf584380629ecc29a549dabd
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -344,7 +344,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 1. 오른쪽에서 을 선택합니다. **[!UICONTROL 규칙 추가]** 다른 규칙을 만들려면
 
-1. 규칙 이름을 지정합니다 `all pages - library loaded - set send event - 50`
+1. 규칙 이름을 지정합니다 `all pages - library loaded - send event - 50`
 
 1. 다음에서 **[!UICONTROL 이벤트]** 섹션, 선택 **[!UICONTROL 추가]**
 
