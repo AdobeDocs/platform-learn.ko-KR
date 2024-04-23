@@ -2,9 +2,10 @@
 title: Platform Web SDK를 사용하여 Adobe Target 설정
 description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 �
 
 ## 학습 목표
 
-이 단원을 마치면 다음을 수행할 수 있습니다.
+이 단원을 마치면 Target의 웹 SDK 구현으로 다음을 수행할 수 있습니다.
 
-* 비동기 태그 포함 코드와 함께 Target을 사용할 때 깜박임을 방지하기 위해 Platform Web SDK 사전 숨김 코드 조각을 추가하는 방법을 이해합니다
+* 깜박임을 방지하기 위해 사전 숨김 코드 조각 추가
 * Target 기능을 사용하도록 데이터 스트림 구성
 * 시각적 경험 작성기 활동 렌더링
 * 렌더링 양식 작성기 활동
 * Target에 XDM 데이터 전달 및 Target 매개 변수에 대한 매핑 이해
 * 프로필 및 엔티티 매개 변수와 같은 사용자 지정 데이터를 Target에 전달
-* Platform Web SDK를 사용하여 Target 구현의 유효성 검사
-* Adobe Analytics 요청과 별도로 Target 제안 요청을 보내고 해당 표시 이벤트를 나중에 해결합니다.
+* Target 구현의 유효성 검사
+* 분석 요청과 개인화 요청 구분
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 �
    * [양식 기반 경험 작성기 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [경험 타깃팅 활동 만들기](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## 깜박임 완화 추가
+## 깜박임 처리 추가
 
 시작하기 전에 태그 라이브러리를 로드하는 방법에 따라 추가적인 플리커 처리 솔루션이 필요한지 여부를 결정합니다.
 
@@ -59,7 +60,7 @@ Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 �
 
 ### 비동기 구현
 
-태그 라이브러리가 비동기적으로 로드되면 Target이 콘텐츠 교환을 수행하기 전에 페이지에서 렌더링을 완료할 수 있습니다. 이 동작으로 인해 Target에서 지정한 개인화된 콘텐츠로 대체되기 전에 기본 콘텐츠가 잠깐 나타나는 &quot;깜박임&quot;이라고 하는 것이 나타날 수 있습니다. Adobe 이러한 깜박임을 방지하려면 비동기 태그 포함 코드 바로 앞에 특수 사전 숨김 코드 조각을 추가하는 것이 좋습니다.
+태그 라이브러리가 비동기식으로 로드되면 Target이 기본 콘텐츠를 개인화된 콘텐츠로 대체하기 전에 페이지에서 렌더링을 완료할 수 있습니다. 이 동작으로 인해 Target에서 지정한 개인화된 콘텐츠로 대체되기 전에 기본 콘텐츠가 잠깐 나타나는 &quot;깜박임&quot;이라고 하는 것이 나타날 수 있습니다. Adobe 이러한 깜박임을 방지하려면 비동기 태그 포함 코드 바로 앞에 특수 사전 숨김 코드 조각을 추가하는 것이 좋습니다.
 
 이 코드 조각은 이미 Luma 사이트에 있지만 이 코드의 기능을 이해하기 위해 자세히 살펴보겠습니다.
 
@@ -181,7 +182,7 @@ Luma 사이트를 사용하는 이 튜토리얼의 목적상 ID 기호 를 사�
 
 ## 시각적 개인화 결정 렌더링
 
-먼저 Target 및 태그 인터페이스에 사용되는 용어를 이해해야 합니다.
+시각적 개인화 결정은 Adobe Target의 시각적 경험 작성기에서 만들어진 경험을 의미합니다. 먼저 Target 및 태그 인터페이스에 사용되는 용어를 이해해야 합니다.
 
 * **활동**: 하나 이상의 대상을 타겟으로 하는 경험 세트입니다. 예를 들어, 간단한 A/B 테스트는 두 개의 경험이 있는 활동일 수 있습니다.
 * **경험**: 하나 이상의 위치 또는 결정 범위에 타겟팅된 작업 세트입니다.
