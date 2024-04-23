@@ -3,7 +3,7 @@ title: Adobe Experience Platform 웹 SDK 태그 확장 설치 및 구성
 description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK
 exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: e0046b8c233e8831f4f354b32d059ffe33880f36
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # Adobe Experience Platform 웹 SDK 태그 확장 설치
 
-Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. Web SDK를 구현하는 가장 쉬운 방법은 Adobe의 태그 관리자인 태그(이전의 Launch)를 사용하는 것입니다. Platform 웹 SDK 태그 확장은 _태그 확장만 해당_ 데이터를 (으)로 전송하는 데 필요 _모든 Adobe Experience Cloud 애플리케이션_, 포함 [분석](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform 및 [Journey Optimizer](journey-optimizer/setup-web-channel.md)!
+Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. Web SDK를 구현하는 가장 쉬운 방법은 Adobe의 태그 관리자인 태그(이전의 Launch)를 사용하는 것입니다. Platform 웹 SDK 태그 확장은 _태그 확장만 해당_ 데이터를 (으)로 전송하는 데 필요 _모든 Adobe Experience Cloud 애플리케이션_, 포함 [분석](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform 및 [Journey Optimizer](setup-web-channel.md)!
 
 ## 학습 목표
 
