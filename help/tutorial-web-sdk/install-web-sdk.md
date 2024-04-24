@@ -3,7 +3,7 @@ title: Adobe Experience Platform 웹 SDK 태그 확장 설치 및 구성
 description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -81,7 +81,7 @@ Platform Web SDK를 설치하고 데이터 스트림에 연결했으므로 만�
 >
 >에서 CNAME을 구성하지 않았지만 [!UICONTROL Edge 도메인] 이 단원에서 설정하는 경우, Adobe은 자체 웹 사이트에서 Platform Web SDK를 구현할 때 CNAME을 사용하는 것을 권장합니다. CNAME 구현은 비록 쿠키 수명 측면에서는 어떠한 이점도 제공하지 않지만, 몇 가지 다른 이점이 있습니다. 이러한 이점에는 광고 차단기와 보편적으로 사용되지 않는 브라우저가 추적기로 분류된 도메인으로 데이터가 전송되는 것을 방지한다는 것도 포함됩니다. 이러한 경우 CNAME을 사용하면 이들 도구를 사용하는 사용자의 데이터 수집이 중단되는 것을 방지할 수 있습니다.
 
-확장의 각 섹션에 대한 자세한 내용은 [Adobe Experience Platform 웹 SDK 확장 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=ko-KR)
+확장의 각 섹션에 대한 자세한 내용은 [Adobe Experience Platform 웹 SDK 확장 구성](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
 
 
 

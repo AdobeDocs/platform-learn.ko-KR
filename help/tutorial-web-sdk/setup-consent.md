@@ -3,7 +3,7 @@ title: Platform Web SDK를 사용하여 동의 설정
 description: Experience Platform 웹 SDK 태그 확장의 개인 정보 설정을 구성하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 0%
@@ -215,10 +215,10 @@ Luma 데모 사이트로 이동하여 유효성을 확인하고, 쿠키를 거�
 ![동의 게시물 방문자 선택](assets/consent-post-user-optin.png)
 
 
-Web SDK의 동의에 대한 자세한 내용은 [고객 동의 환경 설정 지원](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
+Web SDK의 동의에 대한 자세한 내용은 [고객 동의 환경 설정 지원](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-에 대한 자세한 내용은 [!UICONTROL 동의 설정] 작업, 참조 [동의 설정](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+에 대한 자세한 내용은 [!UICONTROL 동의 설정] 작업, 참조 [동의 설정](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
 
 [다음: ](setup-event-forwarding.md)
 

@@ -2,7 +2,7 @@
 title: Web SDK를 사용하여 Adobe Experience Platform에 데이터 스트리밍
 description: Web SDK를 사용하여 웹 데이터를 Adobe Experience Platform에 스트리밍하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용
 
 ## 데이터 세트 만들기
 
-Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. A [데이터 세트](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 는 스키마(열) 및 필드(행)를 포함하는 데이터 수집을 위한 저장 및 관리 구문입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
+Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. A [데이터 세트](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) 는 스키마(열) 및 필드(행)를 포함하는 데이터 수집을 위한 저장 및 관리 구문입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
 
 Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습니다.
 
@@ -140,7 +140,7 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 
 >[!INFO]
 >
->Adobe Experience Platform의 쿼리 서비스는 레이크의 데이터를 확인하는 데 더 강력한 방법이지만 이 자습서에서는 다루지 않습니다. 자세한 내용은 [데이터 탐색](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=ko-KR) ( 플랫폼 자습서 섹션)
+>Adobe Experience Platform의 쿼리 서비스는 레이크의 데이터를 확인하는 데 더 강력한 방법이지만 이 자습서에서는 다루지 않습니다. 자세한 내용은 [데이터 탐색](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) ( 플랫폼 자습서 섹션)
 
 
 ## 실시간 고객 프로필에 대한 데이터 세트 및 스키마 활성화

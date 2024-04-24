@@ -3,10 +3,10 @@ title: 결론 및 다음 단계
 description: 자습서를 완료한 후 수행할 작업
 recommendations: display,noCatalog
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '390'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -34,11 +34,11 @@ ht-degree: 3%
 그리고 항상 배울 게 더 있어! 다음은 구현을 기반으로 구축할 다른 콘텐츠의 몇 가지 제안입니다.
 
 
-* **Journey Optimizer에서 여정 트리거**. Luma 웹 사이트에서 구현한 이벤트를 사용하여 여정을 트리거할 수 있습니다. 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html).
-* **연결 Customer Journey Analytics**. 을(를) 생성한 경우 [플랫폼 데이터 세트](setup-experience-platform.md), 데이터 세트를 Customer Journey Analytics에 연결할 수 있습니다. 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
-* **플랫폼에서 세그먼트 작성**. 다음을 활성화한 경우 [실시간 고객 프로필에 대한 스키마 및 데이터 세트](setup-experience-platform.md), 웹 이벤트를 기반으로 세그먼트를 작성하고 다른 소스의 데이터와 결합한 다음 이러한 세그먼트를 Real-time Customer Data Platform의 대상으로 보낼 수 있습니다. 세그먼트 빌더에 대해 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
-* **Platform Mobile SDK 구현**. 이제 SDK를 마스터했으므로 다른 SDK를 학습하세요! Adobe Experience Platform Mobile SDK는 모바일 앱에서 Experience Cloud 및 서드파티 서비스를 제공하는 데 사용됩니다. 비슷한 것이 있습니다 [모바일 SDK용 실습 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR). 둘 다 완료하고 장치 간 프로필 병합을 확인합니다!
-* **Experience Platform에 대해 자세히 알아보기**. 다른 소스에서 데이터를 수집하여 웹 SDK 데이터와 결합하는 방법에 대해 자세히 알아보십시오. [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
+* **Journey Optimizer에서 여정 트리거**. Luma 웹 사이트에서 구현한 이벤트를 사용하여 여정을 트리거할 수 있습니다. 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey).
+* **연결 Customer Journey Analytics**. 을(를) 생성한 경우 [플랫폼 데이터 세트](setup-experience-platform.md), 데이터 세트를 Customer Journey Analytics에 연결할 수 있습니다. 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform)
+* **플랫폼에서 세그먼트 작성**. 다음을 활성화한 경우 [실시간 고객 프로필에 대한 스키마 및 데이터 세트](setup-experience-platform.md), 웹 이벤트를 기반으로 세그먼트를 작성하고 다른 소스의 데이터와 결합한 다음 이러한 세그먼트를 Real-time Customer Data Platform의 대상으로 보낼 수 있습니다. 세그먼트 빌더에 대해 자세히 알아보기 [비디오 튜토리얼](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/segments/create-segments).
+* **Platform Mobile SDK 구현**. 이제 SDK를 마스터했으므로 다른 SDK를 학습하세요! Adobe Experience Platform Mobile SDK는 모바일 앱에서 Experience Cloud 및 서드파티 서비스를 제공하는 데 사용됩니다. 비슷한 것이 있습니다 [모바일 SDK용 실습 튜토리얼](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview). 둘 다 완료하고 장치 간 프로필 병합을 확인합니다!
+* **Experience Platform에 대해 자세히 알아보기**. 다른 소스에서 데이터를 수집하여 웹 SDK 데이터와 결합하는 방법에 대해 자세히 알아보십시오. [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
 
 
 >[!NOTE]

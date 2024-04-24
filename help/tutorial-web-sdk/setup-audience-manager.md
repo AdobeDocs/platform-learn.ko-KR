@@ -3,7 +3,7 @@ title: Platform Web SDK를 사용하여 Audience Manager 설정
 description: Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=ko-KR) 는 사이트 방문자에 대한 상업적인 연관성 있는 정보를 수집하고, 마케팅 가능한 세그먼트를 생성하고, 타기팅된 광고 및 콘텐츠를 적절한 고객에게 제공하는 데 필요한 모든 것을 제공하는 Adobe Experience Cloud 솔루션입니다.
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) 는 사이트 방문자에 대한 상업적인 연관성 있는 정보를 수집하고, 마케팅 가능한 세그먼트를 생성하고, 타기팅된 광고 및 콘텐츠를 적절한 고객에게 제공하는 데 필요한 모든 것을 제공하는 Adobe Experience Cloud 솔루션입니다.
 
 ![Web SDK 및 Adobe Audience Manager 다이어그램](assets/dc-websdk-aam.png)
 
@@ -31,11 +31,11 @@ Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 �
 이 단원을 완료하려면 먼저 다음 작업을 수행해야 합니다.
 
 * 이 자습서의 초기 구성 및 태그 구성 섹션에서 이전 단원을 완료합니다.
-* Adobe Audience Manager에 대한 액세스 권한과 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 적절한 권한이 있습니다. 자세한 내용은 을(를) 검토하십시오. [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Adobe Audience Manager에 대한 액세스 권한과 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 적절한 권한이 있습니다. 자세한 내용은 을(를) 검토하십시오. [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## 데이터 스트림 구성
 
-Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구현과 다릅니다 [SSF(서버 측 전달)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=ko-KR). 서버측 전달은 Adobe Analytics 요청 데이터를 Audience Manager에 전달합니다. Platform 웹 SDK 구현은 Platform Edge Network으로 전송된 XDM 데이터를 Audience Manager에 전달합니다. Audience Manager은 데이터 스트림에서 활성화됩니다.
+Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구현과 다릅니다 [SSF(서버 측 전달)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). 서버측 전달은 Adobe Analytics 요청 데이터를 Audience Manager에 전달합니다. Platform 웹 SDK 구현은 Platform Edge Network으로 전송된 XDM 데이터를 Audience Manager에 전달합니다. Audience Manager은 데이터 스트림에서 활성화됩니다.
 
 1. 다음으로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
@@ -52,7 +52,7 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 
 ## 데이터 소스 만들기
 
-다음으로, 다음을 생성합니다. [데이터 소스](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=en): Audience Manager 내에서 데이터를 구성하는 기본 도구입니다.
+다음으로, 다음을 생성합니다. [데이터 소스](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings): Audience Manager 내에서 데이터를 구성하는 기본 도구입니다.
 
 1. 로 이동 [Audience Manager](https://experience.adobe.com/#/audience-manager/) 인터페이스
 1. 선택 **[!UICONTROL 대상 데이터]** 위쪽 탐색에서
@@ -72,7 +72,7 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 
 ## 트레이트 만들기
 
-데이터 소스가 저장되면 [트레이트](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=ko-KR). 트레이트는 Audience Manager에 있는 하나 이상의 신호가 결합된 것입니다. 홈 페이지 방문자에 대한 트레이트를 만듭니다.
+데이터 소스가 저장되면 [트레이트](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). 트레이트는 Audience Manager에 있는 하나 이상의 신호가 결합된 것입니다. 홈 페이지 방문자에 대한 트레이트를 만듭니다.
 
 >[!NOTE]
 >

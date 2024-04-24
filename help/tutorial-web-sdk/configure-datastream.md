@@ -3,7 +3,7 @@ title: 데이터스트림 구성
 description: 데이터 스트림을 활성화하고 Experience Cloud 솔루션을 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 데이터 스트림을 활성화하고 Experience Cloud 애플리케이션을 구성하는 방법에 대해 알아봅니다.
 
-데이터스트림은 Adobe Experience Platform Edge Network에게 Platform Web SDK에서 수집한 데이터를 보낼 위치를 알려줍니다. 데이터스트림 구성에서 Experience Cloud 애플리케이션, Experience Platform 계정 및 이벤트 전달을 활성화합니다. 다음을 참조하십시오. [데이터 스트림 구성의 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko-KR) 를 참조하십시오.
+데이터스트림은 Adobe Experience Platform Edge Network에게 Platform Web SDK에서 수집한 데이터를 보낼 위치를 알려줍니다. 데이터스트림 구성에서 Experience Cloud 애플리케이션, Experience Platform 계정 및 이벤트 전달을 활성화합니다. 다음을 참조하십시오. [데이터 스트림 구성의 기본 사항](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) 를 참조하십시오.
 
 
 ![웹 SDK, 데이터스트림 및 Edge Network 다이어그램](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ ht-degree: 3%
 
 다음에서 [Adobe Analytics 설정](setup-analytics.md) 단원 Platform Web SDK 이벤트 보내기 작업을 사용하여 페이지에 대한 보고서 세트를 재정의합니다.
 
-다음을 참조하십시오. [데이터 스트림 구성 무시 설명서](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 데이터스트림 구성을 재정의하는 방법에 대한 자세한 지침을 확인하십시오.
+다음을 참조하십시오. [데이터 스트림 구성 무시 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) 데이터스트림 구성을 재정의하는 방법에 대한 자세한 지침을 확인하십시오.
 
 이제 태그 속성에 Platform Web SDK 확장을 설치할 준비가 되었습니다!
 

@@ -2,7 +2,7 @@
 title: 자습서에 대한 권한 구성
 description: Web SDK Experience Platform에 대한 액세스 권한을 요청하고 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서를 완료하는 데 필요한 권한을 구성하는 방법에 대해 알아봅니다.
 feature: Web SDK,Tags,Access Control
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 3%
@@ -15,7 +15,7 @@ Experience Platform Web SDK에 대한 액세스를 요청하고 이 자습서를
 
 ## 데이터 수집
 
-* 다음에 대한 권한 있음: **[!UICONTROL 개발]**, **[!UICONTROL 편집]**, **[!UICONTROL 승인]**, **[!UICONTROL 게시]**, **[!UICONTROL 확장 관리]**, **[!UICONTROL 환경 관리]**, 및 **[!UICONTROL 속성 관리]**. 태그 권한에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 다음에 대한 권한 있음: **[!UICONTROL 개발]**, **[!UICONTROL 편집]**, **[!UICONTROL 승인]**, **[!UICONTROL 게시]**, **[!UICONTROL 확장 관리]**, **[!UICONTROL 환경 관리]**, 및 **[!UICONTROL 속성 관리]**. 태그 권한에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 * 선택적 이벤트 전달 단원을 완료할 경우 Edge Forwarding 및 권한 항목이 포함된 제품 라이센스가 있어야 합니다 **[!UICONTROL 플랫폼]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -31,11 +31,11 @@ Real-Time CDP과 같은 플랫폼 기반 애플리케이션의 고객이 아닌 
    * 아래의 모든 권한 항목 **[!UICONTROL 데이터 관리]**, 및 **[!UICONTROL 프로필 관리]**:
 
 
-Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko).
+Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 ## Adobe Analytics
 
-선택적 Adobe Analytics 단원의 경우 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ko-KR)
+선택적 Adobe Analytics 단원의 경우 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 ## Adobe Target
 
@@ -43,7 +43,7 @@ Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://expe
 
 ## Adobe Audience Manager
 
-* 선택적 Audience Manager 단원의 경우 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 액세스 권한이 있어야 합니다. 자세한 내용은 다음 자습서를 참조하십시오. [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* 선택적 Audience Manager 단원의 경우 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 액세스 권한이 있어야 합니다. 자세한 내용은 다음 자습서를 참조하십시오. [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 이제 초기 구성 단계를 시작할 준비가 되었습니다.
 

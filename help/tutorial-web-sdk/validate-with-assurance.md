@@ -3,7 +3,7 @@ title: Experience Platform 보증을 사용하여 웹 SDK 구현 유효성 검�
 description: Adobe Experience Platform Assurance를 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # Experience Platform 보증을 사용하여 웹 SDK 구현 유효성 검사
 
-Adobe Experience Platform Assurance는 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 Adobe Experience Cloud의 제품입니다. 자세한 내용 [Adobe 보증](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+Adobe Experience Platform Assurance는 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 Adobe Experience Cloud의 제품입니다. 자세한 내용 [Adobe 보증](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## 학습 목표

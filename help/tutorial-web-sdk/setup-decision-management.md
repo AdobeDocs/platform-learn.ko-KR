@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2511'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Platform Web SDK를 사용하여 의사 결정 관리를 구현하는 방법에 
 
 ## 의사 결정 관리 액세스 권한 부여
 
-[의사 결정 관리] 기능에 대한 액세스 권한을 부여하려면 **제품 프로필** 및 을(를) 통해 해당 권한을 사용자에게 할당합니다. [Journey Optimizer 사용자 및 권한 관리에 대한 자세한 내용은 이 섹션 을 참조하세요.](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+[의사 결정 관리] 기능에 대한 액세스 권한을 부여하려면 **제품 프로필** 및 을(를) 통해 해당 권한을 사용자에게 할당합니다. [Journey Optimizer 사용자 및 권한 관리에 대한 자세한 내용은 이 섹션 을 참조하세요.](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## 데이터 스트림 구성
 
@@ -340,7 +340,7 @@ Luma 충성도 보상 사용 사례에 대한 결정을 만들어 보겠습니�
 
 ### 충성도 오퍼 테스트
 
-1. 시뮬레이션에 사용할 테스트 프로필을 선택합니다. 클릭 **프로필 관리**. [오퍼 테스트를 위한 새 테스트 프로필을 만들거나 지정하려면 이 안내서를 따르십시오](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. 시뮬레이션에 사용할 테스트 프로필을 선택합니다. 클릭 **프로필 관리**. [오퍼 테스트를 위한 새 테스트 프로필을 만들거나 지정하려면 이 안내서를 따르십시오](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -372,7 +372,7 @@ Luma 충성도 보상 사용 사례에 대한 결정을 만들어 보겠습니�
 
 Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 논리의 유효성을 검사할 수 있습니다. 충성도 보상 사용 사례가 실행되고 있는 경우 모든 것이 올바르게 구성되도록 하는 것이 좋습니다.
 
-[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아봅니다](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 디버거를 사용하여 유효성 검사를 시작하려면 다음을 수행하십시오.
 

@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2885'
 ht-degree: 0%
@@ -249,7 +249,7 @@ Web SDK 데이터를 Adobe Experience Platform에 수집하면 Platform에 수�
 
 1. 또한 다음을 선택할 수 있습니다. **[!UICONTROL 균등 분배]**. 처리 분할이 항상 균일하게 분할되도록 하려면 이 옵션을 선택합니다.
 
-[Adobe Journey Optimizer 웹 채널의 콘텐츠 실험에 대해 자세히 알아보기](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[Adobe Journey Optimizer 웹 채널의 콘텐츠 실험에 대해 자세히 알아보기](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
 
 ### Visual Helper를 사용하여 콘텐츠 편집
 
@@ -350,7 +350,7 @@ Chrome과 Firefox 모두에서 사용할 수 있는 Adobe Experience Platform De
 
 Luma 사이트에서 디버거를 사용하여 프로덕션의 웹 채널 경험을 확인할 수 있습니다. 이는 충성도 보상 사용 사례가 작동하고 실행 중인 경우 모든 것이 올바르게 구성되도록 하는 모범 사례입니다.
 
-[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아봅니다](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아봅니다](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 디버거를 사용하여 유효성 검사를 시작하려면 다음을 수행하십시오.
 

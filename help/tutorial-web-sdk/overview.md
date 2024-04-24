@@ -3,7 +3,7 @@ title: Web SDK 튜토리얼을 통해 Adobe Experience Cloud 구현
 description: Adobe Experience Platform Web SDK를 사용하여 Experience Cloud 애플리케이션을 구현하는 방법에 대해 알아봅니다.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 Adobe Experience Platform Web SDK를 사용하여 Experience Cloud 애플리케이션을 구현하는 방법에 대해 알아봅니다.
 
-Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience Platform Edge Network을 통해 Adobe 애플리케이션 및 서드파티 서비스와 모두 상호 작용할 수 있도록 하는 클라이언트측 JavaScript 라이브러리입니다. 다음을 참조하십시오 [Adobe Experience Platform 웹 SDK 개요](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ko-KR) 를 참조하십시오.
+Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience Platform Edge Network을 통해 Adobe 애플리케이션 및 서드파티 서비스와 모두 상호 작용할 수 있도록 하는 클라이언트측 JavaScript 라이브러리입니다. 다음을 참조하십시오 [Adobe Experience Platform 웹 SDK 개요](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) 를 참조하십시오.
 
 ![Experience Platform 웹 SDK 아키텍처](assets/dc-websdk.png)
 
@@ -48,7 +48,7 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
    * **[!UICONTROL 속성 권한]**—권한 대상 **[!UICONTROL 승인]**, **[!UICONTROL 개발]**, **[!UICONTROL 속성 편집]**, **[!UICONTROL 환경 관리]**, **[!UICONTROL 확장 관리]**, 및 **[!UICONTROL 게시]**,
    * **[!UICONTROL 회사 권한]**—권한 대상 **[!UICONTROL 속성 관리]**
 
-     태그 권한에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+     태그 권한에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * 대상 **Experience Platform**, 다음을 보유해야 합니다.
 
@@ -62,13 +62,13 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
      Real-Time CDP과 같은 플랫폼 기반 애플리케이션의 고객이 아니더라도 모든 Experience Cloud 고객이 필요한 기능을 사용할 수 있어야 합니다.
 
-     Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko).
+     Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-* 선택 사항용 **Adobe Analytics** 단원, 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=ko-KR)
+* 선택 사항용 **Adobe Analytics** 단원, 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 * 선택 사항용 **Adobe Target** 단원, 다음을 수행해야 합니다. [편집자 또는 승인자](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 액세스 권한.
 
-* 선택 사항용 **Audience Manager** 단원, 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 액세스 권한이 있어야 합니다. 자세한 내용은 다음 자습서를 참조하십시오. [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* 선택 사항용 **Audience Manager** 단원, 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 액세스 권한이 있어야 합니다. 자세한 내용은 다음 자습서를 참조하십시오. [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]
