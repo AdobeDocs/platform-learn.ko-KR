@@ -3,23 +3,21 @@ title: 이벤트 전달 속성 설정
 description: Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 2%
 
 ---
 
 # 이벤트 전달 속성 설정
 
-
->[!CAUTION]
->
->2024년 4월 23일 화요일에 이 자습서에 대한 주요 변경 사항을 게시하겠습니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
-
 Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다.
 
 이벤트 전달은 데이터 수집에서 사용할 수 있는 새로운 유형의 속성입니다. 이벤트 전달을 사용하면 기존의 클라이언트측 Edge Network 대신 Adobe Experience Platform 브라우저에서 직접 서드파티 비 Adobe 공급업체에 데이터를 전송할 수 있습니다. 에서 이벤트 전달의 장점에 대해 자세히 알아보십시오. [이벤트 전달 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![웹 SDK 및 이벤트 전달 다이어그램](assets/dc-websdk-eventforwarding.png)
 
 Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다음 세 가지 옵션 중 하나 이상을 사용하여 Adobe Experience Platform Edge Network으로 데이터를 보내야 합니다.
 
@@ -56,7 +54,6 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
    * 초기 구성
 
-      * [권한 구성](configure-permissions.md)
       * [XDM 스키마 구성](configure-schemas.md)
       * [ID 네임스페이스 구성](configure-identities.md)
       * [데이터스트림 구성](configure-datastream.md)
@@ -65,6 +62,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
       * [웹 SDK 확장 기능 설치](install-web-sdk.md)
       * [데이터 요소 만들기](create-data-elements.md)
+      * [ID 만들기](create-identities.md)
       * [태그 규칙 만들기](create-tag-rule.md)
       * [Adobe Experience Platform Debugger로 유효성 검사](validate-with-debugger.md)
 
@@ -91,9 +89,9 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 1. 다음으로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
-1. 이전에 만든 항목 선택 `Luma Web SDK` 데이터스트림
+1. 이전에 만든 항목 선택 `Luma Web SDK: Development Environment` 데이터스트림
 
-   ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk.png)
+   ![Luma 웹 SDK 데이터스트림 선택](assets/datastream-luma-web-sdk-development.png)
 
 1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/event-forwarding-datastream-addService.png)
@@ -326,4 +324,4 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

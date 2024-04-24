@@ -2,20 +2,14 @@
 title: 자습서에 대한 권한 구성
 description: Web SDK Experience Platform에 대한 액세스 권한을 요청하고 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서를 완료하는 데 필요한 권한을 구성하는 방법에 대해 알아봅니다.
 feature: Web SDK,Tags,Access Control
-exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
 
 # 자습서에 대한 권한 구성
-
-
->[!CAUTION]
->
->2024년 4월 23일 화요일에 이 자습서에 대한 주요 변경 사항을 게시하겠습니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
 
 Experience Platform Web SDK에 대한 액세스를 요청하고 이 자습서를 완료하는 데 필요한 권한을 구성하는 방법에 대해 알아봅니다. 데이터 수집 인터페이스의 태그를 사용하여 Platform Web SDK를 구현하려면에 적절한 사용자 권한이 구성되어 있어야 합니다 [Admin Console](https://adminconsole.adobe.com).
 
@@ -29,9 +23,9 @@ Experience Platform Web SDK에 대한 액세스를 요청하고 이 자습서를
 Real-Time CDP과 같은 플랫폼 기반 애플리케이션의 고객이 아닌 경우에도 모든 Experience Cloud 고객이 이러한 기능을 사용할 수 있어야 합니다.
 
 * 액세스 권한: **기본 프로덕션**, **&quot;Prod&quot;** 샌드박스.
-* 액세스 대상: **[!UICONTROL 스키마 관리]** 및 **[!UICONTROL 스키마 보기]** 아래에 **[!UICONTROL 데이터 모델링]**
-* 액세스 대상: **[!UICONTROL ID 네임스페이스 관리]** 및 **[!UICONTROL ID 네임스페이스 보기]** 아래에 **[!UICONTROL Identity Management]**
-* 액세스 대상: **[!UICONTROL 데이터 스트림 관리]** 및 **[!UICONTROL 데이터스트림 보기]** 아래에 **[!UICONTROL 데이터 수집]**
+* 액세스 대상: **[!UICONTROL 스키마 관리]** 및 **[!UICONTROL 스키마 보기]** 아래에 **[!UICONTROL 데이터 모델링]**.
+* 액세스 대상: **[!UICONTROL ID 네임스페이스 관리]** 및 **[!UICONTROL ID 네임스페이스 보기]** 아래에 **[!UICONTROL Identity Management]**.
+* 액세스 대상: **[!UICONTROL 데이터 스트림 관리]** 및 **[!UICONTROL 데이터스트림 보기]** 아래에 **[!UICONTROL 데이터 수집]**.
 * 플랫폼 기반 애플리케이션의 고객이고 다음을 완료할 경우 [Experience Platform 설정](setup-experience-platform.md) 단원:
    * 액세스 권한: **개발** 샌드박스.
    * 아래의 모든 권한 항목 **[!UICONTROL 데이터 관리]**, 및 **[!UICONTROL 프로필 관리]**:
@@ -57,4 +51,4 @@ Platform 액세스 제어에 대한 자세한 내용은 [설명서](https://expe
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

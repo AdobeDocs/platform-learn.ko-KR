@@ -3,25 +3,20 @@ title: Platform Web SDK를 사용하여 동의 설정
 description: Experience Platform 웹 SDK 태그 확장의 개인 정보 설정을 구성하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
 
 # Platform Web SDK를 사용하여 동의 설정
 
-
->[!CAUTION]
->
->2024년 4월 23일 화요일에 이 자습서에 대한 주요 변경 사항을 게시하겠습니다. 이 시점 이후에는 많은 연습이 변경되며 모든 단원을 완료하려면 튜토리얼을 처음부터 다시 시작해야 할 수 있습니다.
-
 Experience Platform 웹 SDK 태그 확장의 개인 정보 설정을 구성하는 방법을 알아봅니다. CMP(동의 관리 플랫폼)의 배너와 방문자의 상호 작용에 따라 동의를 설정합니다.
 
 >[!NOTE]
 > 
->이 자습서에서는 데모용으로 [클라로](https://heyklaro.com/){target="_blank"} CMP로서 Klaro 또는 웹 사이트에 사용하는 CMP를 따르십시오.
+>이 자습서에서는 데모용으로 [클라로](https://heyklaro.com/) CMP로서 Klaro 또는 웹 사이트에 사용하는 CMP를 따르십시오.
 
 
 ## 학습 목표
@@ -229,4 +224,4 @@ Web SDK의 동의에 대한 자세한 내용은 [고객 동의 환경 설정 지
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
