@@ -3,9 +3,9 @@ title: Adobe Experience Platform 웹 SDK 태그 확장 설치 및 구성
 description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '589'
 ht-degree: 12%
 
 ---
@@ -28,9 +28,7 @@ Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대
 
 * [데이터스트림 구성](configure-datastream.md)
 
-## Experience Platform 웹 SDK 확장 설치
-
-### 속성 추가
+### 태그 속성 추가
 
 먼저 태그 속성이 있어야 합니다. 속성은 웹 페이지에서 세부 정보를 수집하여 여러 위치로 보내는 데 필요한 모든 JavaScript, 규칙 및 기타 기능을 위한 컨테이너입니다.
 
@@ -57,7 +55,7 @@ Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대
    ![Web SDK 확장 설치](assets/extension-platform-web-sdk.png)
 
 
-## Platform Web SDK를 데이터 스트림에 연결
+## 데이터 스트림에 확장을 연결합니다.
 
 대부분의 기본 설정을 그대로 두고 필요에 따라 나중에 업데이트합니다. 이제 해야 하는 유일한 작업은 확장을 데이터 스트림에 연결하는 것입니다.
 
@@ -71,19 +69,17 @@ Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대
 
    ![데이터 스트림 선택](assets/extension-luma-web-sdk-datastream-extension.png)
 
-Platform Web SDK를 설치하고 데이터 스트림에 연결했으므로 만든 스키마를 사용하여 데이터 요소를 XDM 개체에 매핑할 준비가 되었습니다.
-
->[!NOTE]
->
->이 자습서에서는 하나의 데이터스트림만 구성하고 모든 태그 환경(개발, 스테이지 및 프로덕션)과 연결합니다. 자체 웹 사이트에서 Platform Web SDK를 구현할 때에는 각 환경에 대해 별도의 데이터 스트림을 구성하고 이를 태그 환경에 매핑해야 합니다.
+확장의 각 섹션에 대한 자세한 내용은 [Adobe Experience Platform 웹 SDK 확장 구성](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
 >에서 CNAME을 구성하지 않았지만 [!UICONTROL Edge 도메인] 이 단원에서 설정하는 경우, Adobe은 자체 웹 사이트에서 Platform Web SDK를 구현할 때 CNAME을 사용하는 것을 권장합니다. CNAME 구현은 비록 쿠키 수명 측면에서는 어떠한 이점도 제공하지 않지만, 몇 가지 다른 이점이 있습니다. 이러한 이점에는 광고 차단기와 보편적으로 사용되지 않는 브라우저가 추적기로 분류된 도메인으로 데이터가 전송되는 것을 방지한다는 것도 포함됩니다. 이러한 경우 CNAME을 사용하면 이들 도구를 사용하는 사용자의 데이터 수집이 중단되는 것을 방지할 수 있습니다.
 
-확장의 각 섹션에 대한 자세한 내용은 [Adobe Experience Platform 웹 SDK 확장 구성](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
+>[!NOTE]
+>
+>이 자습서에서는 하나의 데이터스트림만 구성하고 모든 태그 환경(개발, 스테이지 및 프로덕션)과 연결합니다. 자체 웹 사이트에서 Platform Web SDK를 구현하는 경우 각 환경에 대해 별도의 데이터 스트림을 구성하고 이를 확장 구성에 적절하게 매핑해야 합니다.
 
-
+이제 Platform Web SDK를 설치하고 데이터 스트림에 연결했으므로 데이터 수집을 시작할 준비가 되었습니다.
 
 [다음: ](create-data-elements.md)
 

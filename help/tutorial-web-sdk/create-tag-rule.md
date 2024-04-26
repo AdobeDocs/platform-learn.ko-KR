@@ -3,21 +3,16 @@ title: 태그 규칙 만들기
 description: 태그 규칙을 사용하여 XDM 오브젝트와 함께 이벤트를 Platform Edge Network에 보내는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '1957'
 ht-degree: 1%
 
 ---
 
 # 태그 규칙 만들기
 
-태그 규칙을 사용하여 XDM 오브젝트로 이벤트를 Platform Edge Network에 보내는 방법에 대해 알아봅니다. 태그 규칙은 태그 속성에 작업을 수행하도록 지시하는 이벤트, 조건 및 작업의 조합입니다. Platform Web SDK를 사용하는 경우, 규칙은 올바른 XDM 필드가 있는 Platform Edge Network에 이벤트를 전송하는 데 사용됩니다.
-
->[!NOTE]
->
-> 데모 목적으로 이 단원의 연습은 이전 단원을 기반으로 하여 의 사용자에게서 이벤트를 보냅니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+태그 규칙을 사용하여 XDM 오브젝트로 이벤트를 Platform Edge Network에 보내는 방법에 대해 알아봅니다. 태그 규칙은 태그 속성에 작업을 수행하도록 지시하는 이벤트, 조건 및 작업의 조합입니다. Platform Web SDK를 사용하면 규칙을 사용하여 적합한 데이터로 이벤트를 Platform Edge Network에 전송합니다.
 
 ## 학습 목표
 
@@ -45,29 +40,28 @@ ht-degree: 1%
 
 태그의 규칙을 더 잘 관리하려면 표준 명명 규칙을 따르는 것이 좋습니다. 이 자습서에서는 5가지 부분으로 구성된 명명 규칙을 사용합니다.
 
-* [**위치**] - [**이벤트**] - [**목적**] - [**도구**] - [**주문**]
+* [**위치**] - [**이벤트**] - [**목적**] - [**주문**]
 
 다음의 경우
 
 1. **위치** 는 규칙이 실행되는 사이트의 페이지입니다
 1. **이벤트** 는 규칙의 트리거입니다.
 1. **목적** 는 규칙에서 수행하는 기본 작업입니다
-1. **도구** 는 해당 규칙의 작업 단계에서 사용되는 특정 애플리케이션으로, 웹 SDK에서는 드물게 사용됩니다
-1. **시퀀스** 은 다른 규칙과 관련하여 규칙이 실행되는 순서입니다
+1. **주문** 은 다른 규칙과 관련하여 규칙이 실행되는 순서입니다
 <!-- minor update -->
 
 ## 태그 규칙 만들기
 
 태그에서 규칙은 다양한 조건에서 작업(호출 실행)을 실행하는 데 사용됩니다. Platform Web SDK 태그 확장에는 이 단원에서 사용할 두 가지 작업이 포함되어 있습니다.
 
-* **[!UICONTROL 변수 업데이트]** 데이터 요소를 XDM 필드에 매핑
+* **[!UICONTROL 변수 업데이트]** xdm 개체의 속성에 데이터 요소 매핑
 * **[!UICONTROL 이벤트 보내기]** Experience Platform Edge Network에 XDM 개체 보내기
 
 이 단원의 나머지 부분에서
 
-1. XDM 필드의 &quot;전역 구성&quot;을 정의하는 규칙 만들기(사용) [!UICONTROL 변수 업데이트] 를 사용하여 웹 사이트의 모든 페이지(예: 페이지 이름)에 전송하려는 경우 **[!UICONTROL 변수 업데이트]** 작업.
+1. 를 사용하여 규칙 만들기 **[!UICONTROL 변수 업데이트]** xdm 필드의 &quot;전역 구성&quot;을 정의하는 작업입니다.
 
-1. &quot;전역 구성&quot;을 재정의하는 추가 규칙을 생성하거나 추가 XDM 필드를 기여합니다(사용). [!UICONTROL 변수 업데이트] 다시 말하지만, 특정 조건에서만 관련이 있는 것은 아닙니다(예: 제품 페이지에 제품 세부 사항 추가).
+1. 을(를) 사용하여 추가 규칙 만들기 **[!UICONTROL 변수 업데이트]** 특정 조건에서 &quot;전역 구성&quot;을 무시하고 추가 XDM 필드를 제공하는 작업(예: 제품 페이지에 제품 세부 사항 추가).
 
 1. 을(를) 사용하여 다른 규칙 만들기 **[!UICONTROL 이벤트 보내기]** 전체 XDM 개체를 Adobe Experience Platform Edge Network으로 보내는 작업
 
@@ -77,9 +71,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### 변수 규칙 업데이트
-
-#### 전역 구성
+### 전역 구성 필드
 
 글로벌 XDM 필드에 대한 태그 규칙을 만들려면 다음을 수행하십시오.
 
@@ -118,11 +110,7 @@ ht-degree: 1%
 
    ![변수 스키마 업데이트](assets/create-rule-update-variable.png)
 
-이제 내 매핑 [!UICONTROL 데이터 요소] (으)로 [!UICONTROL 스키마] xdm 개체에서 사용됩니다.
-
->[!NOTE]
-> 
-> 개별 속성 또는 전체 객체에 매핑할 수 있습니다. 이 예제에서는 개별 속성에 매핑합니다.
+이제 내 매핑 [!UICONTROL 데이터 요소] (으)로 [!UICONTROL 스키마] xdm 개체에서 사용됩니다. 개별 속성 또는 전체 객체에 매핑할 수 있습니다. 이 예제에서는 개별 속성에 매핑합니다.
 
 1. eventType 필드를 찾아 선택합니다.
 
@@ -160,13 +148,13 @@ ht-degree: 1%
 
    >[!TIP]
    >
-   > While nothing `eventType` 을 로 설정 `web.webpagedetails.pageViews` nor `web.webPageDetials.pageViews.value` Adobe Analytics에서 비콘을 페이지 보기로 처리하는 데 필요한 경우, 다른 다운스트림 애플리케이션에 대한 페이지 보기를 표시하는 표준 방법을 사용하는 것이 유용합니다.
+   > While nothing `eventType` 을 로 설정 `web.webpagedetails.pageViews` nor `web.webPageDetails.pageViews.value` Adobe Analytics에서 비콘을 페이지 보기로 처리하는 데 필요한 경우, 다른 다운스트림 애플리케이션에 대한 페이지 보기를 표시하는 표준 방법을 사용하는 것이 유용합니다.
 
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 그런 다음 **[!UICONTROL 저장]** 다음 화면의 규칙 을 클릭하여 규칙 만들기를 완료합니다
 
 
-#### 제품 페이지 필드
+### 제품 페이지 필드
 
 이제 **[!UICONTROL 변수 업데이트]** 또한 순차적 규칙은에 보내기 전에 XDM 개체를 보강하는 것입니다. [!UICONTROL 플랫폼 Edge Network].
 
@@ -235,7 +223,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 1. 선택 **[!UICONTROL 저장]** 규칙을 저장하려면
 
 
-#### 장바구니 필드
+### 장바구니 필드
 
 배열이 XDM 스키마의 형식과 일치하는 경우 전체 배열을 XDM 개체에 매핑할 수 있습니다. 사용자 지정 코드 데이터 요소 `cart.productInfo` 다음을 통해 이전 루프를 만들었습니다. `digitalData.cart.cartEntries` luma의 데이터 레이어 개체를 필요한 형식의 `productListItems` XDM 스키마 오브젝트.
 

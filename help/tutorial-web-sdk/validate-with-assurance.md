@@ -3,16 +3,16 @@ title: Experience Platform 보증을 사용하여 웹 SDK 구현 유효성 검�
 description: Adobe Experience Platform Assurance를 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 2%
 
 ---
 
 # Experience Platform 보증을 사용하여 웹 SDK 구현 유효성 검사
 
-Adobe Experience Platform Assurance는 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 Adobe Experience Cloud의 제품입니다. 자세한 내용 [Adobe 보증](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance는 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 기능입니다. 자세한 내용 [Adobe 보증](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## 학습 목표
@@ -51,10 +51,11 @@ Debugger 단원에서 이 작업을 수행하는 방법 검토:
 1. 다음 항목 선택 **[!UICONTROL Edge]** 탭을 클릭하고 다음을 선택합니다 **[!UICONTROL 연결]**
 
    ![연결 에지 추적](assets/analytics-debugger-edgeTrace.png)
-1. Edge Trace 가 활성화된 경우 맨 위에 발신 링크 아이콘이 표시됩니다. Assurance를 열려면 아이콘을 선택합니다. 브라우저에서 새 탭이 열립니다.
+1. Edge Trace 가 활성화된 경우 맨 위에 발신 링크 아이콘이 표시됩니다. Assurance를 열려면 아이콘을 선택합니다.
 
    ![보증 세션 시작](assets/validate-debugger-start-assurnance.png)
 
+1. Assurance 인터페이스가 있는 새 브라우저 탭이 열립니다.
 
 ### Assurance 인터페이스에서 Assurance 세션 시작
 
@@ -88,7 +89,7 @@ Debugger 단원에서 이 작업을 수행하는 방법 검토:
 
 향후 단원에서는 Assurance를 사용하여 데이터 스트림에서 활성화된 Adobe 애플리케이션에 도달하기 위해 완전히 처리된 페이로드를 확인합니다.
 
-이제 페이지에서 실행되는 XDM 개체와 데이터 수집의 유효성을 검사하는 방법에 대한 지식이 있으면 Platform Web SDK를 사용하여 개별 Adobe 애플리케이션을 설정할 수 있습니다.
+이제 페이지에서 실행되는 XDM 개체와 데이터 수집의 유효성을 검사하는 방법에 대한 지식이 있으면 Platform Web SDK를 사용하여 Experience Platform 및 개별 Adobe 애플리케이션을 설정할 수 있습니다.
 
 [다음: ](setup-experience-platform.md)
 

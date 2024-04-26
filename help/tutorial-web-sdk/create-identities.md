@@ -3,9 +3,9 @@ title: ID 만들기
 description: XDM에서 ID를 만들고 ID 맵 데이터 요소를 사용하여 사용자 ID를 캡처하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '890'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수�
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-이러한 데이터 요소가 준비되면 태그에 규칙을 만들어 XDM 개체를 통해 Platform Edge Network에 데이터를 전송할 준비가 되었습니다.
+이러한 데이터 요소가 준비되면 태그에 규칙을 만들어 Platform Edge Network에 데이터를 전송할 준비가 되었습니다.
 
 [다음: ](create-tag-rule.md)
 
