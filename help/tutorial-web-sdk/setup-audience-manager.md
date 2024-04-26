@@ -2,17 +2,18 @@
 title: Platform Web SDK를 사용하여 Audience Manager 설정
 description: Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Audience Manager
+jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
 
 # Platform Web SDK를 사용하여 Audience Manager 설정
 
-Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다.
+Adobe Experience Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다.
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) 는 사이트 방문자에 대한 상업적인 연관성 있는 정보를 수집하고, 마케팅 가능한 세그먼트를 생성하고, 타기팅된 광고 및 콘텐츠를 적절한 고객에게 제공하는 데 필요한 모든 것을 제공하는 Adobe Experience Cloud 솔루션입니다.
 
@@ -35,7 +36,7 @@ Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 �
 
 ## 데이터 스트림 구성
 
-Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구현과 다릅니다 [SSF(서버 측 전달)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). 서버측 전달은 Adobe Analytics 요청 데이터를 Audience Manager에 전달합니다. Platform 웹 SDK 구현은 Platform Edge Network으로 전송된 XDM 데이터를 Audience Manager에 전달합니다. Audience Manager은 데이터 스트림에서 활성화됩니다.
+Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구현과 다릅니다 [SSF(서버 측 전달)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). 서버측 전달은 Adobe Analytics 요청 데이터를 Audience Manager에 전달합니다. Platform 웹 SDK 구현은 Platform Edge Network으로 전송된 XDM 데이터를 Audience Manager에 전달합니다. Audience Manager은 데이터 스트림에서 활성화됩니다.
 
 1. 다음으로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
@@ -96,15 +97,15 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 
 ## 세그먼트 만들기
 
-다음 단계는 를 만드는 것입니다. **세그먼트**&#x200B;을 누르고 새로 정의된 트레이트를 이 세그먼트에 지정합니다.
+다음 단계는 를 만드는 것입니다. **세그먼트** 새로 정의한 트레이트를 이 세그먼트에 지정합니다.
 
 1. 선택 **[!UICONTROL 대상 데이터]** 위쪽 탐색에서 를 선택하고 **[!UICONTROL 세그먼트]**
 1. 선택 **[!UICONTROL 새로 추가]** 을 클릭하여 세그먼트 빌더를 엽니다.
 1. 세그먼트에 다음과 같은 친숙한 이름과 설명을 지정합니다. `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL 폴더 선택]** 오른쪽 창에 세그먼트가 저장됩니다. 다음 방법으로 폴더를 만들 수 있습니다. **+ 아이콘 선택** 기존 상위 폴더 옆에 있습니다. 이 새 폴더의 이름을 지정할 수 있습니다. `Platform Web SDK tutorial`.
+1. **[!UICONTROL 폴더 선택]** 오른쪽 창에 세그먼트가 저장되는 위치입니다. 다음 방법으로 폴더를 만들 수 있습니다. **+ 아이콘 선택** 기존 상위 폴더 옆에 있습니다. 이 새 폴더의 이름을 지정할 수 있습니다. `Platform Web SDK tutorial`.
 1. 통합 코드를 추가합니다. 이 경우 임의의 숫자 집합입니다.
 1. 다음에서 **[!UICONTROL 데이터 소스]** 섹션, 선택 **[!UICONTROL Audience Manager]** 이전에 만든 데이터 소스
-1. 확장 **[!UICONTROL 트레이트]** 생성한 트레이트를 섹션으로 검색하고
+1. 확장 **[!UICONTROL 트레이트]** 섹션을 만들고 생성한 트레이트를 검색합니다
 1. 선택 **[!UICONTROL 트레이트 추가]**.
 1. 선택 **[!UICONTROL 저장]** 페이지 하단
 
@@ -184,4 +185,4 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 를 사용하는 구
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

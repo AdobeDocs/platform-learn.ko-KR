@@ -3,7 +3,7 @@ title: Web SDK 튜토리얼을 통해 Adobe Experience Cloud 구현
 description: Adobe Experience Platform Web SDK를 사용하여 Experience Cloud 애플리케이션을 구현하는 방법에 대해 알아봅니다.
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
 이 튜토리얼에서는 샘플 소매 웹 사이트인 Luma에서 Platform Web SDK를 구현하는 과정을 안내합니다. 다음 [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 에는 사실적인 구현을 구축할 수 있는 풍부한 데이터 레이어와 기능이 있습니다. 이 자습서에서는 다음 작업을 수행합니다.
 
-* Luma 웹 사이트에 대한 Platform Web SDK 구현을 사용하여 자신의 계정에 고유한 태그 속성을 만듭니다.
+* Luma 웹 사이트에 대한 Platform Web SDK 구현을 사용하여 자체 계정에서 고유한 태그 속성을 만듭니다.
 * 데이터스트림, 스키마 및 ID 네임스페이스 등 웹 SDK 구현을 위한 모든 데이터 수집 기능을 구성합니다.
 * 다음 Adobe Experience Cloud 애플리케이션을 추가합니다.
    * **[Adobe Experience Platform](setup-experience-platform.md)** (및 Adobe Real-time Customer Data Platform, Adobe Journey Optimizer, Adobe Customer Journey Analytics 등 플랫폼을 기반으로 구축된 애플리케이션)
@@ -66,7 +66,7 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
 * 선택 사항용 **Adobe Analytics** 단원, 다음을 수행해야 합니다. [보고서 세트 설정, 처리 규칙 및 Analysis Workspace에 대한 관리자 액세스](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* 선택 사항용 **Adobe Target** 단원, 다음을 수행해야 합니다. [편집자 또는 승인자](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 액세스 권한.
+* 선택 사항용 **Adobe Target** 단원, 다음을 수행해야 합니다. [편집자 또는 승인자](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) 액세스 권한.
 
 * 선택 사항용 **Audience Manager** 단원, 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 액세스 권한이 있어야 합니다. 자세한 내용은 다음 자습서를 참조하십시오. [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
@@ -77,7 +77,7 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
 ## 업데이트
 
-* 2024년 4월 24일: 변수 설정/업데이트 변수 추가, 개인화 및 분석 요청 분할 등 주요 업데이트, Journey Optimizer 감소
+* 2024년 4월 24일: 변수 설정/업데이트 변수 추가, 개인화 및 분석 요청 분할 등 주요 업데이트, Journey Optimizer 단원
 
 ## Luma 웹 사이트 로드
 
@@ -91,4 +91,4 @@ Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

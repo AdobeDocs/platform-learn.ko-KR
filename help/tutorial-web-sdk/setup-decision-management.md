@@ -1,22 +1,23 @@
 ---
-title: Platform Web SDK를 사용하여 의사 결정 관리 설정
+title: Platform Web SDK를 사용하여 Journey Optimizer 의사 결정 관리 설정
 description: Platform Web SDK를 사용하여 의사 결정 관리를 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
 
 # Platform Web SDK를 사용하여 의사 결정 관리 설정
 
-Platform Web SDK를 사용하여 의사 결정 관리를 구현하는 방법에 대해 알아봅니다. 이 안내서에서는 기본 의사 결정 관리 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 자세히 설명합니다.
+Platform Web SDK를 사용하여 Adobe Journey Optimizer의 의사 결정 관리 기능을 구현하는 방법에 대해 알아봅니다. 이 안내서에서는 기본 의사 결정 관리 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 자세히 설명합니다.
 
-이 자습서를 따르면 Journey Optimizer 사용자는 offer decisioning 기능을 효과적으로 적용할 수 있게 되어 고객 상호 작용의 개인화와 관련성을 높일 수 있습니다.
+이 자습서를 통해 Journey Optimizer 사용자는 의사 결정 관리 기능을 사용할 수 있으므로 고객 상호 작용의 개인화와 관련성을 높일 수 있습니다.
 
 
 ![Web SDK 및 Adobe Analytics 다이어그램](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ Platform Web SDK를 사용하여 의사 결정 관리를 구현하는 방법에 
 
 ## 제한 사항
 
-다음 제한 사항에 유의하십시오.
-
-* 이벤트 기반 오퍼는 현재 Adobe Journey Optimizer에서 지원되지 않습니다. 이벤트를 기반으로 의사 결정 규칙을 만드는 경우 오퍼에 적용할 수 없습니다.
+이벤트 기반 오퍼는 현재 Adobe Journey Optimizer에서 지원되지 않습니다. 이벤트를 기반으로 의사 결정 규칙을 만드는 경우 오퍼에 적용할 수 없습니다.
 
 ## 의사 결정 관리 액세스 권한 부여
 
@@ -140,7 +139,7 @@ Offer decisioning은 다음에서 활성화되어야 합니다. **데이터스�
 
 이 단원에서는 샘플 충성도 보상 사용 사례를 구현하여 Web SDK를 사용한 의사 결정 관리에 대해 이해합니다.
 
-이 사용 사례를 통해 Journey Optimizer이 중앙 집중식 오퍼 라이브러리 및 오퍼 의사 결정 엔진을 활용하여 고객에게 최상의 오퍼를 제공하는 데 어떻게 도움이 되는지 더 잘 이해할 수 있습니다.
+이 사용 사례를 통해 Journey Optimizer이 중앙 집중식 오퍼 라이브러리 및 의사 결정 관리 의사 결정 엔진을 활용하여 고객에게 최상의 오퍼를 제공하는 데 어떻게 도움이 되는지 더 잘 이해할 수 있습니다.
 
 >[!NOTE]
 >
@@ -311,7 +310,7 @@ Luma 충성도 보상 사용 사례에 대한 결정을 만들어 보겠습니�
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 다음으로 추가해야 합니다. **평가 기준** 결정 범위. 클릭 **추가** 이전에 만든 &#39;*충성도 보상*&#39; **컬렉션** 고려해야 할 모든 충성도 오퍼가 포함되어 있습니다.
+1. 다음으로 추가해야 합니다. **평가 기준** 결정 범위. 클릭 **추가** 이전에 만든 &#39;*충성도 보상*&#39; **collection으로, 고려해야 할 모든 충성도 오퍼가 포함되어 있습니다.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ Luma 충성도 보상 사용 사례에 대한 결정을 만들어 보겠습니�
 
 ## 시뮬레이션
 
-가장 좋은 방법은 Luma 충성도 의사 결정 논리의 유효성을 검사하여 올바른 오퍼가 올바른 충성도 대상에게 전달되도록 하는 것입니다. 다음을 사용하여 이 작업을 수행할 수 있습니다. **테스트 프로필**. 새 오퍼 버전을 프로덕션에 푸시하기 전에 테스트 프로필을 통해 오퍼에 대한 변경 사항을 테스트하는 것도 좋습니다.
+가장 좋은 방법으로서, Luma 충성도 의사 결정 논리의 유효성을 검사하여 올바른 오퍼가 올바른 충성도 대상에게 전달되도록 해야 합니다. 다음을 사용하여 이 유효성 검사를 수행할 수 있습니다. **테스트 프로필**. 새 오퍼 버전을 프로덕션에 푸시하기 전에 테스트 프로필을 통해 오퍼에 대한 변경 사항을 테스트하는 것도 좋습니다.
 
 테스트를 시작하려면 다음을 선택합니다 **시뮬레이션** 의 탭 **오퍼** 메뉴 아래의 제품에서 사용할 수 있습니다.
 
@@ -370,7 +369,7 @@ Luma 충성도 보상 사용 사례에 대한 결정을 만들어 보겠습니�
 
 다음 **Adobe Experience Platform Debugger** chrome과 Firefox 모두에서 사용할 수 있는 확장 기능은 웹 페이지를 분석하여 Adobe Experience Cloud 솔루션 구현에서 문제를 식별합니다.
 
-Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 논리의 유효성을 검사할 수 있습니다. 충성도 보상 사용 사례가 실행되고 있는 경우 모든 것이 올바르게 구성되도록 하는 것이 좋습니다.
+Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 논리의 유효성을 검사할 수 있습니다. 이러한 유효성 검사는 충성도 보상 사용 사례가 실행되고 나면 모든 것이 올바르게 구성되도록 하는 것이 좋습니다.
 
 [여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아봅니다](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -4,20 +4,21 @@ description: Platform Web SDK를 사용하여 Journey Optimizer 웹 채널을 �
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
 
 
-# Journey Optimizer 웹 채널 설정
+# Web SDK를 사용하여 Journey Optimizer 웹 채널 설정
 
-Journey Optimizer 구현 방법 알아보기 [웹 채널](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Platform Web SDK를 사용합니다. 이 단원에서는 기본 웹 채널 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 설명합니다.
+Adobe Journey Optimizer 구현 방법 알아보기 [웹 채널](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) Adobe Experience Platform Web SDK를 사용합니다. 이 단원에서는 기본 웹 채널 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 설명합니다.
 
-이 단원을 따르면 Journey Optimizer 사용자는 Journey Optimizer 웹 디자이너를 사용하여 고급 온라인 개인화에 웹 채널을 효과적으로 적용할 수 있습니다.
+이 단원을 따르면 Journey Optimizer 사용자는 Journey Optimizer 웹 디자이너를 사용하여 고급 온라인 개인화에 웹 채널을 사용할 수 있습니다.
 
 ![Web SDK 및 Adobe Analytics 다이어그램](assets/dc-websdk-ajo.png)
 
@@ -51,7 +52,7 @@ Journey Optimizer 구현 방법 알아보기 [웹 채널](https://experienceleag
   > 1. 웹 사이트는 iframe 내에 포함됩니다.
   > 1. 고객의 QA 또는 스테이지 사이트는 외부에서 액세스할 수 없습니다(내부 사이트임).
 
-* 웹 경험을 만들고 Adobe Experience Manager Assets Essentials 라이브러리의 콘텐츠를 포함할 때에는 다음을 수행해야 합니다. [이 콘텐츠를 게시하기 위한 하위 도메인 구성](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* 웹 경험을 만들고 Adobe Experience Manager Assets Essentials 라이브러리의 콘텐츠를 포함할 때에는 다음을 수행해야 합니다. [이 콘텐츠를 게시하기 위한 하위 도메인 구성](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * 콘텐츠 실험 기능을 사용하는 경우 웹 데이터 세트도 보고 구성에 포함되어야 합니다.
 * 현재, 웹 속성에서 웹 채널 캠페인을 작성하고 게재하기 위해 두 가지 유형의 구현이 지원됩니다.
    * 클라이언트측 전용: 웹 사이트를 수정하려면 Adobe Experience Platform Web SDK를 구현해야 합니다.
@@ -245,7 +246,7 @@ Web SDK 데이터를 Adobe Experience Platform에 수집하면 Platform에 수�
 
 1. 웹 채널을 사용하여 실험을 설정하고 **[!UICONTROL 인바운드 클릭수]**, **[!UICONTROL 고유 인바운드 클릭수]**, **[!UICONTROL 페이지 보기 수]**, 또는 **[!UICONTROL 고유 페이지 조회수]** 지표, **[!UICONTROL 클릭 동작]** 드롭다운을 사용하면 특정 페이지의 클릭 수 및 보기를 정확하게 추적하고 모니터링할 수 있습니다.
 
-1. 선택적으로 다음을 지정할 수 있습니다. **[!UICONTROL 유지]** 그것은 두 가지 치료 중 어느 것도 받지 않습니다. 지금은 선택하지 않은 상태로 둡니다.
+1. 필요한 경우 **[!UICONTROL 유지]** 그것은 두 가지 치료 중 어느 것도 받지 않습니다. 지금은 선택하지 않은 상태로 둡니다.
 
 1. 또한 다음을 선택할 수 있습니다. **[!UICONTROL 균등 분배]**. 처리 분할이 항상 균일하게 분할되도록 하려면 이 옵션을 선택합니다.
 
@@ -259,7 +260,7 @@ Web SDK 데이터를 Adobe Experience Platform에 수집하면 Platform에 수�
 
    ![콘텐츠 편집](assets/web-channel-edit-content.png)
 
-1. 이제 클릭 **[!UICONTROL 웹 페이지 편집]** 작성을 시작합니다.
+1. 지금 클릭 **[!UICONTROL 웹 페이지 편집]** 작성을 시작합니다.
 
    ![웹 페이지 편집](assets/web-channel-edit-web-page.png)
 
@@ -387,4 +388,4 @@ Luma 사이트에서 디버거를 사용하여 프로덕션의 웹 채널 경험
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

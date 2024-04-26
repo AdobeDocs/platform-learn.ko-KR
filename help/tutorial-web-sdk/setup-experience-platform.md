@@ -1,10 +1,11 @@
 ---
-title: Web SDK를 사용하여 Adobe Experience Platform에 데이터 스트리밍
+title: Platform Web SDK를 사용하여 Adobe Experience Platform에 데이터 스트리밍
 description: Web SDK를 사용하여 웹 데이터를 Adobe Experience Platform에 스트리밍하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1592'
 ht-degree: 4%
 
 ---
@@ -38,7 +39,7 @@ Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용
 
 ## 데이터 세트 만들기
 
-Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. A [데이터 세트](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) 는 스키마(열) 및 필드(행)를 포함하는 데이터 수집을 위한 저장 및 관리 구문입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
+Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. A [데이터 세트](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) 는 데이터 수집을 위한 저장 및 관리 구문으로, 일반적으로 스키마(열) 및 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
 
 Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습니다.
 
@@ -83,7 +84,7 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 
    ![데이터 스트림 구성](assets/experience-platform-datastream-config.png)
 
-에 대한 트래픽을 생성할 때 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 태그 속성에 매핑되면 데이터가 Experience Platform의 데이터 세트를 채웁니다!
+에 대한 트래픽을 생성할 때 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 태그 속성에 매핑되면 데이터가 Experience Platform에서 데이터 세트를 채웁니다!
 
 ## 데이터 세트 유효성 검사
 
@@ -114,7 +115,7 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 1. 팝업 내에서 &quot;identityMap&quot;을 검색합니다. 여기에는 authenticatedState, id 및 primary의 세 가지 키가 있는 lumaCrmId가 표시됩니다
    ![Debugger의 웹 SDK](assets/experience-platform-debugger-dev-idMap.png)
 
-이제 데이터가 `Luma Web Event Data` 데이터 세트 및 &#39;데이터 세트 미리보기&#39; 유효성 검사 준비 완료.
+이제에서 데이터를 채워야 합니다 `Luma Web Event Data` 데이터 세트 및 &#39;데이터 세트 미리보기&#39; 유효성 검사 준비 완료.
 
 ### 데이터 세트 미리 보기
 
@@ -237,4 +238,4 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,17 +2,18 @@
 title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
+jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2810'
 ht-degree: 0%
 
 ---
 
-# Platform Web SDK를 사용하여 Adobe Analytics 설정
+# Adobe Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
 
-다음을 사용하여 Adobe Analytics을 설정하는 방법 알아보기 [Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), 태그 규칙을 만들어 데이터를 Adobe Analytics으로 전송하고, Analytics가 데이터를 예상대로 캡처하는지 확인합니다.
+다음을 사용하여 Adobe Analytics을 설정하는 방법 알아보기 [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), 태그 규칙을 만들어 데이터를 Adobe Analytics으로 전송하고, Analytics가 데이터를 예상대로 캡처하는지 확인합니다.
 
 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) 은 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
 
@@ -23,7 +24,7 @@ ht-degree: 0%
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
 * Adobe Analytics을 활성화하기 위한 데이터 스트림 구성
-* Analytics 변수에 자동 매핑될 표준 XDM 필드 확인
+* Analytics 변수에 자동 매핑되는 표준 XDM 필드 식별
 * Adobe Analytics ExperienceEvent 템플릿 필드 그룹 또는 처리 규칙을 사용하여 사용자 지정 Analytics 변수 설정
 * 데이터 스트림을 재정의하여 데이터를 다른 보고서 세트에 보냅니다.
 * Debugger 및 Assurance를 사용하여 Adobe Analytics 변수 확인
@@ -34,13 +35,13 @@ ht-degree: 0%
 
 * Adobe Analytics에 대해 잘 알고 있고 액세스할 수 있습니다.
 
-* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [하나를 만드십시오.](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
+* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [하나를 만드십시오.](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * 이 자습서의 초기 구성 및 태그 구성 섹션에서 이전 단원을 완료합니다.
 
 ## 데이터 스트림 구성
 
-Platform Web SDK는 웹 사이트에서 Platform Edge Network으로 데이터를 전송합니다. 그런 다음 데이터 스트림은 데이터가 전달되는 Adobe Analytics 보고서 세트에 대한 플랫폼 Edge Network을 알려줍니다.
+Platform Web SDK는 웹 사이트에서 Platform Edge Network으로 데이터를 전송합니다. 그런 다음 데이터 스트림은 데이터를 전송해야 하는 Adobe Analytics 보고서 세트에 대한 플랫폼 Edge Network을 알려줍니다.
 
 1. 다음으로 이동 [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
 1. 왼쪽 탐색에서 을 선택합니다. **[!UICONTROL 데이터스트림]**
@@ -51,7 +52,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network으로 데이터를
 1. 선택 **[!UICONTROL 서비스 추가]**
    ![데이터 스트림에 서비스 추가](assets/datastream-analytics-addService.png)
 1. 선택 **[!UICONTROL Adobe Analytics]** (으)로 **[!UICONTROL 서비스]**
-1. 다음을 입력합니다.  **[!UICONTROL 보고서 세트 ID]** 개발 보고서 세트 의
+1. 다음을 입력합니다. **[!UICONTROL 보고서 세트 ID]** 개발 보고서 세트 의
 1. 선택 **[!UICONTROL 저장]**
 
    ![데이터스트림 저장 분석](assets/datastream-add-analytics.png)
@@ -62,7 +63,7 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network으로 데이터를
 
 >[!WARNING]
 >
->이 자습서에서는 개발 환경에 대해서만 Adobe Analytics 보고서 세트를 구성합니다. 자체 웹 사이트에 대한 데이터스트림을 생성할 때 스테이징 및 프로덕션 환경에 대한 추가 데이터스트림 및 보고서 세트를 생성합니다.
+>이 자습서에서는 개발 환경에 대해서만 Adobe Analytics 보고서 세트를 구성합니다. 자체 웹 사이트에 대한 데이터스트림을 생성할 때 스테이징 및 프로덕션 환경에 대한 추가 데이터스트림 및 보고서 세트를 생성해야 합니다.
 
 ## XDM 스키마 및 Analytics 변수
 
@@ -117,7 +118,7 @@ The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, 
 Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체.
 >2022년 8월 18일 기준 `productListItems[].SKU` 는 s.products 변수의 제품 이름에 매핑하는 데 우선 순위를 둡니다.
 >값이 로 설정된 경우 `productListItems[].name` 는 다음과 같은 경우에만 제품 이름에 매핑됩니다. `productListItems[].SKU` 존재하지 않습니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
->빈 문자열 또는 null을 로 설정하지 마십시오.  `productListItems[].SKU`. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
+>빈 문자열 또는 null을 로 설정하지 마십시오. `productListItems[].SKU`. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
 
 매핑의 최신 목록을 확인하려면 다음을 참조하십시오. [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
@@ -243,7 +244,7 @@ XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 
 
 1. 다음으로: **[!UICONTROL 유형]**, 선택 `web.webpagedetails.pageViews`
 
-1. 다음으로: **[!UICONTROL XDM 데이터]**&#x200B;를 선택하고 `xdm.variable.content` 다음 작업에서 을(를) 만들었습니다. [데이터 요소 만들기](create-data-elements.md) 단원
+1. 다음으로: **[!UICONTROL XDM 데이터]**&#x200B;를 선택하고 `xdm.variable.content` 에서 만든 데이터 요소 [데이터 요소 만들기](create-data-elements.md) 단원
 
    ![Analytics 데이터스트림 재정의](assets/set-up-analytics-datastream-override-1.png)
 
@@ -406,7 +407,7 @@ Adobe Experience Platform Assurance를 사용하면 웹 사이트 및 모바일 
 에서 배웠듯이 [보증](validate-with-assurance.md) 단원, 보증 세션을 시작하는 몇 가지 방법이 있습니다. 마지막 연습에서 시작한 Edge Trace 세션으로 Adobe Experience Platform Debugger이 이미 열려 있으므로 디버거를 통해 Assurance에 액세스하는 것이 좋습니다.
 ![Adobe Experience Platform 데이터 수집을 통한 보증](assets/assurance-open-aep-debugger.png)
 
-다음 범위 내 **[!UICONTROL &quot;Web SDK 튜토리얼 3&quot;]** 보증 세션 입력 **[!UICONTROL &quot;hitdebugger&quot;]** 를 이벤트 검색 창으로 가져와서 Adobe 분석 후 처리된 데이터로 결과를 필터링합니다.
+다음 범위 내 **[!UICONTROL &quot;Web SDK 튜토리얼 3&quot;]** 보증 세션 입력 **[!UICONTROL &quot;hitdebugger&quot;]** 이벤트 검색 창 을 클릭하여 결과를 Adobe Analytics 후처리된 데이터로 필터링합니다.
 ![보증 Adobe 분석 후 처리된 데이터](assets/assurance-hitdebugger.png)
 
 ### Experience Cloud ID 유효성 검사
@@ -452,4 +453,4 @@ Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

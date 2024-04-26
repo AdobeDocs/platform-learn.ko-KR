@@ -1,18 +1,19 @@
 ---
-title: 이벤트 전달 속성 설정
+title: Platform Web SDK 데이터를 사용하여 이벤트 전달 설정
 description: Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1873'
 ht-degree: 2%
 
 ---
 
-# 이벤트 전달 속성 설정
+# Platform Web SDK 데이터를 사용하여 이벤트 전달 설정
 
-Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다.
+Adobe Experience Platform 웹 SDK 데이터와 함께 이벤트 전달을 사용하는 방법에 대해 알아봅니다.
 
 이벤트 전달은 데이터 수집에서 사용할 수 있는 새로운 유형의 속성입니다. 이벤트 전달을 사용하면 기존의 클라이언트측 Edge Network 대신 Adobe Experience Platform 브라우저에서 직접 서드파티 비 Adobe 공급업체에 데이터를 전송할 수 있습니다. 에서 이벤트 전달의 장점에 대해 자세히 알아보십시오. [이벤트 전달 개요](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을
 Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다음 세 가지 옵션 중 하나 이상을 사용하여 Adobe Experience Platform Edge Network으로 데이터를 보내야 합니다.
 
 * [Adobe Experience Platform 웹 SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -45,8 +46,8 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 ## 전제 조건
 
-* 이벤트 전달이 포함된 소프트웨어 라이센스. 이벤트 전달은 데이터 수집의 유료 기능입니다. 자세한 내용은 Adobe 계정 팀에 문의하십시오.
-* Experience Cloud 조직에서 이벤트 전달이 활성화되었습니다.
+* 이벤트 전달이 포함된 소프트웨어 라이센스입니다. 이벤트 전달은 데이터 수집의 유료 기능입니다. 자세한 내용은 Adobe 계정 팀에 문의하십시오.
+* Experience Cloud 조직에서 이벤트 전달이 활성화됩니다.
 * 이벤트 전달에 대한 사용자 권한. (위치 [Admin Console](https://adminconsole.adobe.com/), Adobe Experience Platform Launch 제품에서 다음에 대한 권한 항목[!UICONTROL 플랫폼] > [!UICONTROL Edge] 및 모두 [!UICONTROL 속성 권한]). 권한이 부여되면 다음이 표시됩니다. [!UICONTROL 이벤트 전달] 데이터 수집 인터페이스의 왼쪽 탐색에서 다음을 수행합니다.
   ![이벤트 전달 속성](assets/event-forwarding-menu.png)
 
@@ -76,14 +77,14 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 1. **[!UICONTROL 새 속성]**을 선택합니다.
    ![이벤트 전달 속성](assets/event-forwarding-new.png)
 
-1. 속성 이름을 지정합니다. 이 경우 `Server-Side - Web SDK Course`
+1. 속성 이름을 지정합니다. 이 경우, `Server-Side - Web SDK Course`
 
 1. **[!UICONTROL 저장]**을 선택합니다.
    ![이벤트 전달 속성 저장](assets/event-forwarding-save.png)
 
 ## 데이터 스트림 구성
 
-이벤트 전달에서 Edge 네트워크로 전송하는 데이터를 사용하려면 새로 만든 이벤트 전달 속성을 Adobe 솔루션으로 데이터를 전송하는 데 사용되는 데이터 스트림과 연결해야 합니다.
+이벤트 전달에서 플랫폼 Edge Network으로 전송하는 데이터를 사용하려면 새로 만든 이벤트 전달 속성을 Adobe 솔루션으로 데이터를 전송하는 데 사용되는 동일한 데이터 스트림에 연결해야 합니다.
 
 데이터 스트림에서 Target을 구성하려면 다음 작업을 수행하십시오.
 
@@ -220,7 +221,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 * **규칙 작업 순서**:
 
-   * 이벤트 전달 규칙의 작업 섹션은 항상 순차적으로 실행됩니다. 규칙을 저장할 때 작업 순서가 올바른지 확인합니다. 이 실행 시퀀스는 태그를 사용할 때처럼 비동기식으로 실행할 수 없습니다.
+   * 이벤트 전달 규칙의 작업 섹션은 항상 순차적으로 실행됩니다. 규칙을 저장할 때 작업 순서가 올바른지 확인하십시오. 이 실행 시퀀스는 태그를 사용할 때처럼 비동기식으로 실행할 수 없습니다.
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -231,7 +232,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 1. 다음으로 이동 [Webhook.site](https://webhook.site)
 
-1. 찾기 **고유 URL**, 이벤트 전달 규칙에서 URL 요청으로 사용됩니다.
+1. 찾기 **고유 URL**&#x200B;를 이벤트 전달 규칙의 URL 요청으로 사용합니다.
 
 1. 선택 **[!UICONTROL 클립보드에 복사]**
 
@@ -324,4 +325,4 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,18 +1,19 @@
 ---
-title: 데이터 요소 만들기
+title: Platform Web SDK용 데이터 요소 만들기
 description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
 
 # 데이터 요소 만들기
 
-의 컨텐츠, 상거래 및 ID 데이터에 대한 태그에서 데이터 요소를 만드는 방법을 알아봅니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html). 그런 다음 XDM 스키마의 필드를 Platform 웹 SDK 확장 변수 데이터 요소 유형으로 채웁니다.
+의 컨텐츠, 상거래 및 ID 데이터에 대한 태그에서 데이터 요소를 만드는 방법을 알아봅니다. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html). 그런 다음 XDM 스키마의 필드를 Adobe Experience Platform 웹 SDK 확장 변수 데이터 요소 유형으로 채웁니다.
 
 ## 학습 목표
 
@@ -99,7 +100,7 @@ window.adobeDataLayer.push({
 장점
 
 * 데이터 레이어 변수를 XDM으로 다시 매핑하는 추가 단계를 제거합니다.
-* 개발 팀이 태그 지정 디지털 동작을 담당하는 경우 배포하는 것이 더 빠를 수 있습니다.
+* 개발 팀이 태그 지정 디지털 동작을 담당하는 경우 배포하는 것이 더 빠를 수 있습니다
 
 단점
 
@@ -138,7 +139,7 @@ window.adobeDataLayer.push({
 
 * 개별 변수를 XDM에 매핑할 수 있어 유연함
 * 다음에 대한 기능: [새 값 계산](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) 또는 [데이터 유형 변환](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) xdm으로 이동하기 전에 데이터 레이어에서
-* 활용 [매핑 UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 포인트 앤 클릭 UI를 사용하여 소스 데이터의 필드를 XDM에 매핑하려면
+* 활용 [매핑 UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) 포인트 앤 클릭 UI를 사용하여 소스 데이터의 필드를 XDM에 매핑하려면
 
 #### 단점
 
@@ -298,4 +299,4 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://luma.enablementad
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
