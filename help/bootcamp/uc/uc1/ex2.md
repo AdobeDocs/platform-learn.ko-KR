@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 1%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -39,12 +39,6 @@ ht-degree: 1%
 웹 사이트의 프로필 뷰어 패널에서 ID 개요를 찾을 수 있습니다. 모든 ID는 네임스페이스에 연결됩니다.
 
 ![고객 프로필](./images/identities.png)
-
-현재 프로필 뷰어 패널에서 이 ID를 볼 수 있습니다.
-
-| 네임스페이스 | 신원 |
-|:-------------:| :---------------:|
-| Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
 
 Adobe Experience Platform을 사용하면 모든 ID가 동일하게 중요합니다. 이전에는 ECID가 Adobe 컨텍스트에서 가장 중요한 ID였으며 다른 모든 ID는 계층 구조로 ECID에 연결되어 있었습니다. Adobe Experience Platform에서는 더 이상 해당되지 않으며 모든 ID를 기본 식별자로 간주할 수 있습니다.
 

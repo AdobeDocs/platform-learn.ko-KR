@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 4%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 4%
 
 ![ACOP](./images/journeyempty.png)
 
-이전 연습에서는 새 를 만들었습니다 **이벤트**. 이렇게 이름을 지으셨군요 `yourLastNameAccountCreationEvent` 및 대체됨 `yourLastName` 성을 입력합니다. 이는 이벤트 생성의 결과였습니다.
+이전 연습에서는 새 를 만들었습니다 **이벤트**. 이름을 이렇게 지으셨어요 `yourLastNameAccountCreationEvent` 및 대체됨 `yourLastName` 성을 입력합니다. 이는 이벤트 생성의 결과였습니다.
 
 ![ACOP](./images/eventdone.png)
 
@@ -160,7 +160,7 @@ ht-degree: 4%
 
 ## 2.3.3 여정 게시
 
-여정 이름을 계속 지정해야 합니다. 다음을 클릭하면 됩니다. **속성** 아이콘 을 클릭하여 표시할 수 있습니다.
+여정 이름을 계속 지정해야 합니다. 다음을 클릭하면 됩니다. **연필** 아이콘 을 클릭하여 표시할 수 있습니다.
 
 ![ACOP](./images/journeyname.png)
 

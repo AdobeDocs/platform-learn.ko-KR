@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 32a084a3-4c04-4367-947e-f7151fdad73b
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 ## 고객 여정 흐름
 
-다음으로 이동 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 클릭 **모두 허용**.
+다음으로 이동 [https://bootcamp.aepdemo.net](https://publish9122.adobedemo.com/content/aep-bootcamp-experience/language-masters/en.html). 클릭 **모두 허용**.
 
 ![DSN](./images/web8.png)
 

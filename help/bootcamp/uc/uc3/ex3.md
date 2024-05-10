@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 2%
 
 이제 모든 작업 매개 변수에 대한 값을 설정해야 합니다. 이 표를 따라 필요한 위치에 대한 값을 이해합니다.
 
-| 매개변수 | 값 |
+| 매개변수 | value |
 |:-------------:| :---------------:|
 | 게재 | `'image'` |
 | ECID | `@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
@@ -181,7 +181,7 @@ ht-degree: 2%
 
 ![ACOP](./images/jomsg21.png)
 
-여정 이름을 계속 지정해야 합니다. 다음을 클릭하면 됩니다. **속성** 아이콘 을 클릭하여 표시할 수 있습니다.
+여정 이름을 계속 지정해야 합니다. 다음을 클릭하면 됩니다. **연필** 아이콘 을 클릭하여 표시할 수 있습니다.
 
 ![ACOP](./images/journeyname.png)
 
