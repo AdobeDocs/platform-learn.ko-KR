@@ -1,7 +1,7 @@
 ---
 user-guide-title: 데이터 수집 튜토리얼
 breadcrumb-title: 데이터 수집 튜토리얼
-user-guide-description: Experience Platform의 데이터 수집의 강력한 사용자에게 유용한 방법 비디오 및 튜토리얼입니다.
+user-guide-description: Experience Platform에서의 데이터 수집과 관련하여 사용자에게 유용한 사용 방법 비디오 및 튜토리얼입니다.
 solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
@@ -60,7 +60,7 @@ ht-degree: 26%
    + [클라이언트측 태그 이동](event-forwarding/consider-moving-tags.md)
    + [Google Ads 고급 전환 설정](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Mailchimp용 Adobe 확장](event-forwarding/adobe-extension-for-mailchimp.md)
-+ 데이터스트림 및 에지 네트워크{#edge-network}
++ 데이터스트림 및 Edge Network{#edge-network}
    + [데이터스트림 구성](edge/configure-datastreams.md)
    + [데이터 준비](edge/data-prep.md)
    + [중요 데이터 관리](edge/manage-sensitive-data-in-datastreams.md)
