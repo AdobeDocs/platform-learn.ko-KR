@@ -5,9 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-feature: Profiles, Segments, Integrations, Destinations
+feature: Profiles, Audiences, Integrations, Destinations
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 2%
@@ -38,16 +38,16 @@ ht-degree: 2%
 
 이 연습에서는 Adobe Experience Platform에 로그인하고 UI에서 자신의 실시간 고객 프로필을 봅니다.
 
-[1.3 세그먼트 만들기 - UI](./ex3.md)
+[1.3 대상 만들기 - UI](./ex3.md)
 
-이 연습에서는 Adobe Experience Platform의 세그먼트 빌더를 사용하여 세그먼트를 만듭니다.
+이 연습에서는 Adobe Experience Platform의 대상 빌더를 사용하여 대상을 만듭니다.
 
-[1.4 조치 취하기: 세그먼트를 Adobe Target에 보내기](./ex4.md)
+[1.4 조치 취하기: 대상자를 Adobe Target으로 보내기](./ex4.md)
 
-연습 1.1에서 작성한 세그먼트를 사용하여 Adobe Target에서 경험 타깃팅 활동을 구성합니다.
+연습 1.1에서 빌드한 대상을 사용하여 Adobe Target에서 경험 타깃팅 활동을 구성합니다.
 
-[1.5 조치 취하기: 세그먼트를 Facebook에 보내기](./ex5.md)
+[1.5 조치 취하기: 대상자를 Facebook으로 보내기](./ex5.md)
 
-연습 1.1에서 작성한 세그먼트를 대상 Facebook에 연결합니다.
+연습 1.1에서 빌드한 대상을 대상 Facebook에 연결합니다.
 
 [모든 모듈로 돌아가기](../../overview.md)
