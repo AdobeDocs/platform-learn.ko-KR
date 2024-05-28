@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 16%
+source-wordcount: '876'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 + [플랫폼 Tutorials](/help/platform/overview.md)
 + 플랫폼 소개 {#intro-to-platform}
-   + [Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [Experience Platform에서 제공하는 고객 경험](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [배경: Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform 개요](/help/platform/intro-to-platform/overview.md)
    + [주요 기능](/help/platform/intro-to-platform/key-capabilities.md)
@@ -78,7 +78,6 @@ ht-degree: 16%
    + [동의 시행](/help/platform/governance/enforce-consent.md)
    + [IAB 투명성 및 동의 프레임워크 2.0과 통합](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 데이터 위생 {#data-hygiene}
-   + [데이터 세트 삭제](/help/platform/data-hygiene/delete-datasets.md)
    + [익명 프로필 및 이벤트 만료](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + 데이터 수집 {#data-ingestion}
    + [개요](/help/platform/data-ingestion/understanding-data-ingestion.md)
@@ -96,6 +95,8 @@ ht-degree: 16%
    + [소스 커넥터를 사용하여 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ko-KR)
    + [Web SDK 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [모바일 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ 데이터 수명 주기 {#data-lifecycle}
+   + [데이터 세트 만료](/help/platform/data-lifecycle/expire-datasets.md)
 + 데이터 과학 작업 영역 {#data-science-workspace}
    + [개요](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [아키텍처](data-science-workspace/architecture-overview.md)
@@ -164,7 +165,7 @@ ht-degree: 16%
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
    + [계산된 속성 만들기](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
    + [업데이트를 사용하여 특정 속성 업데이트](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
-+ 개인정보 보호 및 보안 {#privacy}
++ 개인 정보 보호 및 보안 {#privacy}
    + [Privacy Service 소개](/help/platform/privacy/introduction-to-privacy-services.md)
    + [개인 정보 보호 요청의 ID 데이터](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [개인 정보 JavaScript 라이브러리](/help/platform/privacy/using-privacy-javascript-library.md)
