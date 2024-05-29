@@ -8,10 +8,10 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: e0289aeaf2d987e4690c08b1695a3356442b15f6
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 5%
+source-wordcount: '2611'
+ht-degree: 2%
 
 ---
 
@@ -70,22 +70,31 @@ Key terms:
 이 연습에서는 Luma의 충성도 데이터에 대한 스키마를 만듭니다.
 
 1. Platform 사용자 인터페이스로 이동하여 샌드박스가 선택되었는지 확인합니다.
-1. 다음으로 이동 **[!UICONTROL 스키마]** 왼쪽 탐색
-1. 오른쪽 위의 **[!UICONTROL 스키마 만들기]** 버튼을 선택합니다
-1. 드롭다운 메뉴에서 을(를) 선택합니다 **[!UICONTROL XDM 개별 프로필]**, 개별 고객의 특성(점수, 상태 등)을 모델링할 예정이므로
+1. 다음으로 이동 **[!UICONTROL 스키마]** 왼쪽 탐색.
+1. 다음 항목 선택 **[!UICONTROL 스키마 만들기]** 오른쪽 상단의 버튼.
    ![OOTB 필드 그룹이 있는 스키마](assets/schemas-loyaltyCreateSchema.png)
+
+1. 스키마 생성 워크플로우에서 **[!UICONTROL 개인 프로필]** 에서는 개별 고객의 특성(포인트, 상태 등)을 모델링하므로 를 스키마의 기본 클래스로 사용합니다.
+1. 선택 **[!UICONTROL 다음]**.
+   ![기본 클래스 선택](assets/schemas-loyaltySelectBaseClass.png)
+
+1. 입력 `Luma Loyalty Schema` 다음에서 **[!UICONTROL 스키마 표시 이름]** 텍스트 필드. 아래 캔버스에서 선택한 클래스에서 제공하는 기본 스키마 구조를 검토하고 확인할 수도 있습니다.
+1. 선택 **[!UICONTROL 완료]** 을 클릭하여 스키마를 만듭니다.
+   ![충성도 스키마 만들기 완료](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 표준 필드 그룹 추가
 
-다음으로 스키마에 필드 그룹을 추가하라는 메시지가 표시됩니다. 그룹을 사용하여 스키마에 모든 필드를 추가해야 합니다. Adobe에서 제공하는 다양한 업계 표준 필드 그룹 세트에서 선택하거나 직접 생성할 수 있습니다. Experience Platform에서 고유한 데이터를 모델링하기 시작할 때 Adobe에서 제공하는 업계 표준 필드 그룹에 익숙해지는 것이 좋습니다. 가능하면 고객 AI, Attribution AI 및 Adobe Analytics과 같은 다운스트림 서비스를 지원하기 위해 이를 사용하는 것이 좋습니다.
+스키마가 만들어지면 스키마에 필드를 추가할 수 있는 스키마 편집기로 리디렉션됩니다. 스키마에 개별 필드를 직접 추가하거나 필드 그룹을 사용할 수 있습니다. 모든 개별 필드는 여전히 클래스 또는 필드 그룹과 연결되어 있다는 점에 유의해야 합니다. Adobe에서 제공하는 다양한 업계 표준 필드 그룹 세트에서 선택하거나 직접 생성할 수 있습니다. Experience Platform에서 고유한 데이터를 모델링하기 시작할 때 Adobe에서 제공하는 업계 표준 필드 그룹에 익숙해지는 것이 좋습니다. 가능하면 고객 AI, Attribution AI 및 Adobe Analytics과 같은 다운스트림 서비스를 지원하기 위해 이를 사용하는 것이 좋습니다.
 
 자체 데이터로 작업할 때 큰 단계는 플랫폼에서 캡처해야 하는 자체 데이터와 모델링 방법을 결정하는 것입니다. 이 큰 주제는 강좌에서 더 깊이 있게 논의된다 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). 이 자습서에서는 미리 결정된 몇 가지 스키마의 구현을 안내해 드리겠습니다.
 
 필드 그룹을 추가하려면:
 
+1. 선택 **[!UICONTROL 추가]** 다음 아래에 **[!UICONTROL 필드 그룹]** 제목.
+   ![새 필드 그룹 추가](assets/schemas-loyalty-addFieldGroup.png)
 1. 다음에서 **[!UICONTROL 필드 그룹 추가]** 모달에서 다음 필드 그룹을 선택합니다.
    1. **[!UICONTROL 인구 통계 세부 정보]** 이름 및 생년월일과 같은 기본 고객 데이터
-   1. 이메일 주소와 전화번호 등 기본 연락처 정보를 위한 **[!UICONTROL 개인 연락처 세부 정보]**
+   1. **[!UICONTROL 개인 연락처 세부 정보]** 이메일 주소 및 전화번호 등 기본 연락처 세부 정보
 1. 행의 오른쪽에 있는 아이콘을 선택하여 필드 그룹에 기여한 필드를 미리 볼 수 있습니다.
    ![표준 필드 그룹 선택](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
@@ -97,12 +106,8 @@ Key terms:
 
 이제 스키마의 현재 상태를 탐색하는 데 약간의 시간이 소요됩니다. 필드 그룹에는 사용자, 연락처 세부 정보 및 고객 충성도 프로그램 상태와 관련된 표준 필드가 추가되었습니다. 이러한 두 필드 그룹은 회사 데이터에 대한 스키마를 만들 때 유용할 수 있습니다. 특정 필드 그룹 행을 선택하거나 필드 그룹 이름 옆에 있는 상자를 선택하여 시각화가 변경되는 방식을 확인합니다.
 
-스키마를 저장하려면:
-
-1. 스키마의 최상위 노드를 선택합니다.
-1. 입력 `Luma Loyalty Schema` (으)로 **[!UICONTROL 표시 이름]**.
-1. **[!UICONTROL 저장]**을 선택합니다.
-   ![스키마 이름 지정 및 저장](assets/schemas-loyalty-nameAndSave.png)
+스키마를 저장하려면 를 선택합니다. **[!UICONTROL 저장]**.
+![스키마 저장](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
@@ -114,26 +119,29 @@ Key terms:
 
 반면 충성도 필드 그룹에는 `loyaltyID` 필드, Luma는 스키마 간의 일관성을 보장하기 위해 단일 그룹에서 모든 시스템 식별자를 관리하려고 합니다.
 
-스키마 워크플로우에서 필드 그룹을 만들어야 합니다. 필드 그룹을 만들려면 다음 작업을 수행하십시오.
+스키마 워크플로우에서 필드 그룹을 만들어야 합니다. 스키마에 새 사용자 정의 필드를 추가하고 이러한 방식으로 사용자 정의 필드 그룹을 만들거나 먼저 사용자 정의 필드 그룹을 만든 다음 필드를 추가할 수 있습니다. 이 자습서에서는 사용자 지정 필드 그룹을 만드는 것부터 시작합니다.
+
+필드 그룹을 만들려면 다음 작업을 수행하십시오.
 
 1. 선택 **[!UICONTROL 추가]** 다음 아래에 **[!UICONTROL 스키마 필드 그룹]** 제목
    ![새 필드 그룹 추가](assets/schemas-loyalty-addFieldGroup.png)
-1. **[!UICONTROL 새 필드 그룹 만들기]**&#x200B;를 선택합니다
+1. 선택 **[!UICONTROL 새 필드 그룹 만들기]**
 1. 사용 `Luma Identity profile field group` (으)로 **[!UICONTROL 표시 이름]**
 1. 사용 `system identifiers for XDM Individual Profile class` (으)로 **[!UICONTROL 설명]**
-1. **[!UICONTROL 필드 그룹 추가]**를 선택합니다
+1. 선택 **[!UICONTROL 필드 그룹 추가]**
    ![새 필드 그룹 추가](assets/schemas-loyalty-nameFieldGroup.png)
 
 비어 있는 새 필드 그룹이 스키마에 추가됩니다. 다음 **[!UICONTROL +]** 단추를 사용하여 계층 구조의 모든 위치에 새 필드를 추가할 수 있습니다. 여기서는 루트 수준에 필드를 추가하겠습니다.
 
-1. 스키마 이름 옆의 **[!UICONTROL +]** 버튼을 선택합니다. 이렇게 하면 테넌트 ID 네임스페이스 아래에 새 필드가 추가되어 사용자 정의 필드와 표준 필드 간의 충돌을 관리할 수 있습니다.
+1. 선택 **[!UICONTROL +]** 스키마 이름 옆에 있습니다. 이렇게 하면 테넌트 ID 네임스페이스 아래에 새 필드가 추가되어 사용자 정의 필드와 표준 필드 간의 충돌을 관리할 수 있습니다.
 1. 다음에서 **[!UICONTROL 필드 속성]** 사이드바 새 필드 세부 사항 추가:
    1. **[!UICONTROL 필드 이름]**: `systemIdentifier`
    1. **[!UICONTROL 표시 이름]**: `System Identifier`
    1. **[!UICONTROL 유형]**: **[!UICONTROL 오브젝트]**
-   1. **[!UICONTROL 적용]**&#x200B;을 선택합니다
-
-   ![새 필드 그룹 추가](assets/schemas-loyalty-addSystemIdentifier.png)
+   1. 다음에서 **[!UICONTROL 필드 그룹]** 드롭다운 선택 **Luma Identity 프로필 필드 그룹** that we have created.
+      ![새 필드 그룹 추가](assets/schemas-loyalty-addSystemIdentifier.png)
+   1. 선택 **[!UICONTROL 적용]**
+      ![새 필드 속성 적용](assets/schemas-loyalty-applySystemIdentifier.png)
 
 이제 아래에 두 개의 필드를 추가합니다. `systemIdentifier` 개체:
 
@@ -172,7 +180,7 @@ Key terms:
 >
 > API 연습을 건너뛰려면 사용자 인터페이스 메소드를 사용하여 다음 스키마를 생성할 수 있습니다.
 >
-> 1. 사용 [!UICONTROL XDM 개별 프로필] 클래스
+> 1. 사용 [!UICONTROL 개인 프로필] 클래스
 > 1. 이름 지정 `Luma CRM Schema`
 > 1. 인구 통계학적 세부 정보, 개인 연락처 세부 정보 및 Luma Identity 프로필 필드 그룹인 필드 그룹을 사용합니다.
 
@@ -181,7 +189,7 @@ Key terms:
 1. 열기 [!DNL Postman]
 1. 액세스 토큰이 없는 경우 요청을 엽니다 **[!DNL OAuth: Request Access Token]** 및 선택 **보내기** 새 액세스 토큰을 요청합니다.
 1. 환경 변수를 열고 값 변경 **CONTAINER_ID** 출처: `global` 끝 `tenant`. 다음을 사용해야 합니다. `tenant` 스키마 만들기와 같이 플랫폼에서 고유한 사용자 지정 요소와 상호 작용하려는 경우
-1. **저장**을 선택합니다
+1. 선택 **저장**
    ![CONTAINER_ID를 테넌트로 변경](assets/schemas-crm-changeContainerId.png)
 1. 요청 열기 **[!DNL Schema Registry API > Schemas > Create a new custom schema.]**
 1. 를 엽니다. **본문** 탭을 클릭하고 다음 코드를 붙여넣은 다음 를 선택합니다. **보내기** API를 호출합니다. 이 호출은 를 사용하여 새 스키마를 만듭니다 `XDM Individual Profile` 기본 클래스:
@@ -280,21 +288,21 @@ API 응답과 인터페이스를 모두 확인하여 스키마에 필드 그룹�
 
 ## 오프라인 구매 이벤트 스키마 만들기
 
-이제 를 기반으로 스키마를 만들어 보겠습니다. **[!UICONTROL XDM ExperienceEvent]** luma의 오프라인 구매 데이터에 대한 클래스입니다. 이제 스키마 편집기 사용자 인터페이스에 익숙해졌으므로 지침에 따라 스크린 샷 수를 줄이겠습니다.
+이제 를 기반으로 스키마를 만들어 보겠습니다. **[!UICONTROL 경험 이벤트]** luma의 오프라인 구매 데이터에 대한 클래스입니다. 이제 스키마 편집기 사용자 인터페이스에 익숙해졌으므로 지침에 따라 스크린 샷 수를 줄이겠습니다.
 
-1. 를 사용하여 스키마 만들기 **[!UICONTROL XDM ExperienceEvent]** 클래스
-1. 표준 필드 그룹 추가 **[!UICONTROL 상거래 세부 정보]** 일반 주문 세부 사항을 캡처합니다. 몇 분 동안 내부의 물체를 탐색합니다.
-1. `Luma Identity profile field group`을 검색합니다. 사용할 수 없습니다! 필드 그룹은 클래스에 연결되어 있으므로 이 스키마에 다른 클래스를 사용하고 있으므로 사용할 수 없습니다. ID 필드가 포함된 XDM ExperienceEvent 클래스에 대한 새 필드 그룹을 추가해야 합니다. 데이터 유형을 사용하면 이러한 작업이 매우 쉬워집니다.
+1. 를 사용하여 스키마 만들기 **[!UICONTROL 경험 이벤트]** 클래스.
+1. 스키마 이름 지정 `Luma Offline Purchase Events Schema`.
+1. 표준 필드 그룹 추가 **[!UICONTROL Commerce 세부 정보]** 일반 주문 세부 사항을 캡처합니다. 몇 분 동안 내부의 물체를 탐색합니다.
+1. 검색 대상 `Luma Identity profile field group`. 사용할 수 없습니다! 필드 그룹은 클래스에 연결되어 있으므로 이 스키마에 다른 클래스를 사용하고 있으므로 사용할 수 없습니다. ID 필드가 포함된 XDM ExperienceEvent 클래스에 대한 새 필드 그룹을 추가해야 합니다. 데이터 유형을 사용하면 이러한 작업이 매우 쉬워집니다.
 1. 다음 항목 선택 **[!UICONTROL 새 필드 그룹 만들기]** 라디오 단추
 1. 다음을 입력합니다. **[!UICONTROL 표시 이름]** 다음으로: `Luma Identity ExperienceEvent field group` 및 선택 **[!UICONTROL 필드 그룹 추가]** 단추
-1. 다음을 확인합니다. **[!UICONTROL +]** 단추가에 표시됨 **[!UICONTROL 구조]** 새 필드를 추가할 수 있도록 섹션
-1. 위치 **[!UICONTROL 구조]** 섹션, 선택 **[!UICONTROL +]** 스키마의 최상위 수준
-1. 다음으로: **[!UICONTROL 필드 이름]**, 입력 `systemIdentifier`
-1. 다음으로: **[!UICONTROL 표시 이름]**, 입력 `System Identifier`
-1. 다음으로: **[!UICONTROL 유형]**, 선택 **시스템 식별자** 은 이전에 만든 사용자 지정 데이터 유형입니다
-1. 다음 항목 선택 **[!UICONTROL 적용]** 단추
-1. 스키마 이름 지정 `Luma Offline Purchase Events Schema`
-1. **[!UICONTROL 저장]** 버튼을 선택합니다
+1. 스키마 이름 옆의 **[!UICONTROL +]** 버튼을 선택합니다.
+1. 다음으로: **[!UICONTROL 필드 이름]**, 입력 `systemIdentifier`.
+1. 다음으로: **[!UICONTROL 표시 이름]**, 입력 `System Identifier`.
+1. 다음으로: **[!UICONTROL 유형]**, 선택 **시스템 식별자** 는 이전에 만든 사용자 지정 데이터 유형입니다.
+1. 다음으로: **[!UICONTROL 필드 그룹]** 선택 **Luma Identity ExperienceEvent 필드 그룹**.
+1. 다음 항목 선택 **[!UICONTROL 적용]** 단추를 클릭합니다.
+1. 다음 항목 선택 **[!UICONTROL 저장]** 단추를 클릭합니다.
 
 데이터 유형이 모든 필드를 추가하는 방법에 주목하십시오!
 
@@ -310,19 +318,19 @@ API 응답과 인터페이스를 모두 확인하여 스키마에 필드 그룹�
 
 | 속성 | 값 |
 |---------------|-----------------|
-| 클래스 | XDM ExperienceEvent |
-| 필드 그룹 | AEP 웹 SDK ExperienceEvent Mixin |
-| 필드 그룹 | 고객 경험 이벤트 |
+| 클래스 | 경험 이벤트 |
 | 스키마 이름 | Luma 웹 이벤트 스키마 |
+| 필드 그룹 | AEP 웹 SDK ExperienceEvent |
+| 필드 그룹 | 고객 경험 이벤트 |
 
-다음 항목 선택 **[!UICONTROL 고객 경험 이벤트]** 필드 그룹입니다. 이 필드 그룹에는 또한 있던 commerce 및 productListItems 개체가 포함되어 있습니다. [!UICONTROL 상거래 세부 정보]. 실제로 [!UICONTROL 고객 경험 이벤트] 는 별도로 사용할 수도 있는 여러 다른 표준 필드 그룹의 조합입니다. [!UICONTROL AEP 웹 SDK ExperienceEvent Mixin] 필드 그룹에는 의 동일한 필드 그룹 일부를 포함하여 다른 필드 그룹도 포함됩니다. [!UICONTROL 고객 경험 이벤트]. 다행히도, 그들은 완벽하게 혼합됩니다.
+다음 항목 선택 **[!UICONTROL 고객 경험 이벤트]** 필드 그룹입니다. 이 필드 그룹에는 또한 있던 commerce 및 productListItems 개체가 포함되어 있습니다. [!UICONTROL Commerce 세부 정보]. 실제로 [!UICONTROL 고객 경험 이벤트] 는 별도로 사용할 수도 있는 여러 다른 표준 필드 그룹의 조합입니다. [!UICONTROL AEP 웹 SDK ExperienceEvent] 필드 그룹에는 의 동일한 필드 그룹 일부를 포함하여 다른 필드 그룹도 포함됩니다. [!UICONTROL 고객 경험 이벤트]. 다행히도, 그들은 완벽하게 혼합됩니다.
 
 을(를) 추가하지 않았습니다. `Luma Identity ExperienceEvent field group` 이 스키마에 매핑됩니다. 웹 SDK에는 ID를 수집하는 방법이 다르기 때문입니다. 을(를) 선택하는 경우 **[!UICONTROL XDM ExperienceEvent]** 클래스 위치: **[!UICONTROL 컴포지션]** 스키마 편집기의 섹션에서 기본적으로 추가하는 필드 중 하나는 입니다. **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] 는 다양한 Adobe 애플리케이션에서 플랫폼에 연결하는 데 사용됩니다. 스트리밍 수집 단원에서 identityMap을 통해 ID가 플랫폼으로 전송되는 방법을 확인할 수 있습니다.
 
 
 ## 제품 카탈로그 스키마 만들기
 
-를 사용하여  [!UICONTROL 상거래 세부 정보] 및 [!UICONTROL 고객 경험 이벤트] 필드 그룹, Luma는 표준 productListItems 데이터 유형을 통해 제품 관련 이벤트의 일부 세부 사항을 보고합니다. 하지만 Platform으로 전송할 추가 제품 세부 사항 필드도 있습니다. Luma는 POS 및 전자 상거래 시스템에서 이러한 모든 필드를 캡처하는 대신 제품 카탈로그 시스템에서 직접 이러한 필드를 수집하는 것을 선호합니다. &quot;스키마 관계&quot;를 사용하면 분류 또는 조회를 위해 두 스키마 간의 관계를 정의할 수 있습니다. Luma는 관계를 사용하여 제품 세부 사항을 분류합니다. 지금 프로세스를 시작하여 다음 단원이 끝날 때 완료하겠습니다.
+를 사용하여  [!UICONTROL Commerce 세부 정보] 및 [!UICONTROL 고객 경험 이벤트] 필드 그룹, Luma는 표준 productListItems 데이터 유형을 통해 제품 관련 이벤트의 일부 세부 사항을 보고합니다. 하지만 Platform으로 전송할 추가 제품 세부 사항 필드도 있습니다. Luma는 POS 및 전자 상거래 시스템에서 이러한 모든 필드를 캡처하는 대신 제품 카탈로그 시스템에서 직접 이러한 필드를 수집하는 것을 선호합니다. &quot;스키마 관계&quot;를 사용하면 분류 또는 조회를 위해 두 스키마 간의 관계를 정의할 수 있습니다. Luma는 관계를 사용하여 제품 세부 사항을 분류합니다. 지금 프로세스를 시작하여 다음 단원이 끝날 때 완료하겠습니다.
 
 >[!NOTE]
 >
@@ -330,13 +338,17 @@ API 응답과 인터페이스를 모두 확인하여 스키마에 필드 그룹�
 
 먼저 사용자 지정 클래스를 사용하여 Luma의 제품 카탈로그에 대한 스키마를 만들어야 합니다.
 
-1. 다음 항목 선택 **[!UICONTROL 스키마 만들기]** 버튼을 클릭하고 다음을 선택합니다. **[!UICONTROL 찾아보기]** 드롭다운의 옵션
+1. 다음 항목 선택 **[!UICONTROL 스키마 만들기]** 단추를 클릭합니다.
+1. 스키마 생성 워크플로우에서 **[!UICONTROL 기타]** 옵션을 선택합니다.
    ![새 스키마 만들기](assets/schemas-newSchema-browseClasses.png)
-1. 다음 항목 선택 **[!UICONTROL 새 클래스 만들기]** 라디오 단추
+1. 다음 항목 선택 **[!UICONTROL 클래스 만들기]** 단추
 1. 이름 지정 `Luma Product Catalog Class`
 1. 나가기 **[!UICONTROL 비헤이비어]** 다음으로: **[!UICONTROL 기록]**
-1. 다음 항목 선택 **[!UICONTROL 클래스 할당]** 단추
+1. 다음 항목 선택 **[!UICONTROL 만들기]** 단추를 클릭합니다.
    ![새 클래스 만들기](assets/schemas-productClass.png)
+1. 다음 **Luma 제품 카탈로그 클래스** 생성한 항목이 아래의 클래스 테이블에 나타납니다. 클래스를 선택한 다음 을(를) 선택합니다. **[!UICONTROL 다음]**.
+   ![새 클래스 추가됨](assets/schemas-productClassSelected.png)
+1. 스키마 이름 지정 `Luma Product Catalog Schema`.
 1. 새로 만들기 [!UICONTROL 필드 그룹] 호출됨 `Luma Product Catalog field group` 다음 필드가 포함된 경우:
    1. productName: 제품 이름: 문자열
    1. productCategory: 제품 범주: 문자열
@@ -344,7 +356,6 @@ API 응답과 인터페이스를 모두 확인하여 스키마에 필드 그룹�
    1. productSku: 제품 SKU: 문자열 | 필수
    1. productSize: 제품 크기: 문자열
    1. productPrice: 제품 가격: Double
-1. 스키마 이름 지정 `Luma Product Catalog Schema` (클래스 이름은 업데이트하지 말고 올바른 필드를 업데이트해야 합니다.)
 1. **[!UICONTROL 저장]** 스키마
 
 새 스키마는 다음과 같아야 합니다. 이(가) `productSku` 필드는 다음에 나열됩니다. [!UICONTROL 필수 필드] 섹션:

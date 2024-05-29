@@ -8,10 +8,10 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
+source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
 workflow-type: tm+mt
-source-wordcount: '777'
-ht-degree: 1%
+source-wordcount: '771'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ _데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platf
 
 Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되도록 설계된 기술 플랫폼입니다. 비즈니스 사용 사례는 기술 설계 및 구현 방법을 주도해야 합니다. 이 튜토리얼은 Luma라는 가상의 소매 브랜드에 중점을 둡니다. Luma는 여러 국가에서 오프라인 매장을 운영하고 있으며 웹 사이트 및 모바일 앱을 통해 온라인으로 참여할 수 있습니다. Adobe Experience Platform에 투자하여 충성도, CRM, 웹 및 오프라인 구매 데이터를 실시간 고객 프로필에 결합하고 이러한 프로필을 활성화하여 마케팅을 한 차원 더 발전시키고 있습니다. Luma의 비즈니스 목표는 귀사의 목표와 일치하거나 일치하지 않을 수 있지만, 이 자습서의 실습 단계를 귀사의 비즈니스 목표와 연결할 수 있어야 합니다.
 
-## 사전 요구 사항
+## 전제 조건
 
 * 다음을 완료했습니다. [Adobe Experience Platform 교육 과정 소개](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) Experience League에 있으며 플랫폼 기능에 익숙합니다
 * Adobe Experience Platform(또는 Real-Time CDP 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션) 및 데이터 수집(이전 Launch)으로 프로비저닝된 계정에 액세스할 수 있습니다.
@@ -60,7 +60,7 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 
 문제가 발생하면 먼저 지침을 다시 읽은 다음 ![문제 기록](https://experienceleague.adobe.com/assets/img/feedback.svg) 연락하려면 각 페이지의 사이드바에 연결하십시오.
 
-## 기술 정보
+## 기술 참고 사항
 
 ### 샌드박스 환경
 
