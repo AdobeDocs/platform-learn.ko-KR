@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
+source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 15%
+source-wordcount: '890'
+ht-degree: 14%
 
 ---
 
@@ -78,7 +78,10 @@ ht-degree: 15%
    + [동의 시행](/help/platform/governance/enforce-consent.md)
    + [IAB 투명성 및 동의 프레임워크 2.0과 통합](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 데이터 위생 {#data-hygiene}
-   + [익명 프로필 및 이벤트 만료](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [익명 프로필 및 이벤트 만료(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [데이터 위생을 위한 데이터 준비](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [데이터 세트 만료](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [프로필 속성 업데이트](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 데이터 수집 {#data-ingestion}
    + [개요](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [일괄 처리 수집 개요](/help/platform/data-ingestion/batch-ingestion-overview.md)
