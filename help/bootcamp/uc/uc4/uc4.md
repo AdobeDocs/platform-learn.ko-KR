@@ -9,16 +9,16 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 1%
 
 ---
 
 # 4. 고객 여정 분석
 
-이 사용자 플로우에서는 Customer Journey Analytics 애플리케이션 서비스를 직접 사용해 보십시오.
+이 사용자 플로우에서는 Customer Journey Analytics 애플리케이션을 사용하는 실습형 경험을 하게 됩니다.
 
 Customer Journey Analytics은 크로스 채널 데이터(온라인 및 오프라인)를 결합 및 분석하기 위한 비즈니스 인텔리전스 및 데이터 과학 팀에 툴킷을 제공합니다. Customer Journey Analytics 내의 기능은 복잡한 다중 채널 고객 여정에게 맥락과 명확성을 제공합니다. 제공된 컨텍스트는 고객 전환 프로세스에서 문제점을 제거하고 가장 중요한 순간에 긍정적인 경험을 제공하는 방법에 대한 실행 가능한 통찰력을 생성합니다.
 
@@ -36,11 +36,11 @@ Customer Journey Analytics에 대한 추가 정보를 찾을 수 있음 [여기]
 - 데이터 연결 및 데이터 보기의 개념 이해
 - Adobe Experience Platform 데이터 세트와 함께 Analysis Workspace 사용
 
-## 사전 요구 사항
+## 전제 조건
 
 - Analysis Workspace에 익숙해지는 것이 선호되지만 필수는 아닙니다
 - Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Customer Journey Analytics 애플리케이션 서비스에 대한 액세스
+- Customer Journey Analytics 애플리케이션에 대한 액세스
 
 >[!IMPORTANT]
 >

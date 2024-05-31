@@ -1,23 +1,27 @@
 ---
 title: ID 네임스페이스 구성
-description: Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 12%
 
 ---
 
 # ID 네임스페이스 구성
 
-Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구성하는 방법에 대해 알아봅니다.
+Adobe Experience Platform Web SDK와 함께 사용할 ID 네임스페이스를 구성하는 방법을 알아봅니다.
 
 다음 [Adobe Experience Cloud ID 서비스](https://experienceleague.adobe.com/en/docs/id-service/using/home) 는 SDK 기반 Adobe 애플리케이션에서 공통 방문자 ID(ECID)를 설정하여 애플리케이션 간의 대상 공유와 같은 Experience Cloud 기능을 지원합니다. 또한 고유한 고객 ID를 서비스로 보내어 장치 간 타깃팅 및 CRM(고객 관계 관리) 시스템과 같은 다른 시스템과의 통합을 가능하게 할 수 있습니다.
 
 다음 [Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (예, 두 개 있습니다!) 는 ECID 및 고객 ID를 사용하여 ID 그래프를 생성하므로 속성 및 동작을 실시간 고객 프로필에 병합할 수 있습니다.
+
+>[!NOTE]
+>
+>사용자 정의 ID 네임스페이스는 _필요하지 않음_ Web SDK를 사용하여 Adobe Analytics, Adobe Target 또는 Adobe Audience Manager을 구현하려면 `data` 개체 대신 `xdm` 나중에 볼 수 있듯이 개체입니다.) Journey Optimizer, Real-time Customer Data Platform, Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션에는 ID 네임스페이스가 필요합니다. 자체 구현에서 ID 네임스페이스를 사용하지 않기로 결정할 수 있지만 이 자습서의 일부로 사용해야 합니다.
 
 >[!NOTE]
 >
@@ -75,7 +79,7 @@ Adobe Experience Platform Web SDK에서 사용할 ID 네임스페이스를 구�
    |---------------|-----------|
    | 표시 이름 | Luma CRM ID |
    | ID 심볼 | lumaCrmId |
-   | 유형 | 개별 교차 장치 ID |
+   | 유형 | 개별 크로스 디바이스 ID |
 
 
    ![네임스페이스 만들기](assets/identities-create-namespace.png)

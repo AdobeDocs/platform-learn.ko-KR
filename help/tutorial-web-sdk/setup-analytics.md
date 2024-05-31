@@ -1,13 +1,13 @@
 ---
 title: Experience Platform Web SDK를 사용하여 Adobe Analytics 설정
-description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설정하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2810'
-ht-degree: 0%
+source-wordcount: '2735'
+ht-degree: 1%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 다음을 사용하여 Adobe Analytics을 설정하는 방법 알아보기 [Adobe Experience Platform 웹 SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), 태그 규칙을 만들어 데이터를 Adobe Analytics으로 전송하고, Analytics가 데이터를 예상대로 캡처하는지 확인합니다.
 
-[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) 은 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
+[Adobe Analytics](https://experienceleague.adobe.com/ko/docs/analytics) 은 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
 
 ![Web SDK에서 Adobe Analytics 다이어그램으로](assets/dc-websdk-aa.png)
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 * Adobe Analytics을 활성화하기 위한 데이터 스트림 구성
 * Analytics 변수에 자동 매핑되는 표준 XDM 필드 식별
-* Adobe Analytics ExperienceEvent 템플릿 필드 그룹 또는 처리 규칙을 사용하여 사용자 지정 Analytics 변수 설정
+* 데이터 개체에서 Analytics 변수 설정
 * 데이터 스트림을 재정의하여 데이터를 다른 보고서 세트에 보냅니다.
 * Debugger 및 Assurance를 사용하여 Adobe Analytics 변수 확인
 
@@ -65,38 +65,24 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network으로 데이터를
 >
 >이 자습서에서는 개발 환경에 대해서만 Adobe Analytics 보고서 세트를 구성합니다. 자체 웹 사이트에 대한 데이터스트림을 생성할 때 스테이징 및 프로덕션 환경에 대한 추가 데이터스트림 및 보고서 세트를 생성해야 합니다.
 
-## XDM 스키마 및 Analytics 변수
+## Analytics 변수 설정
 
-축하합니다! 에서 Adobe Analytics과 호환되는 스키마를 이미 구성했습니다. [스키마 구성](configure-schemas.md) 레슨!
+웹 SDK 구현에서 Analytics 변수를 설정하는 방법에는 여러 가지가 있습니다.
 
-하지만 여러분은 궁금하실 겁니다. 어떻게 모든 소품, evar, 이벤트를 설정할까요?
+1. Analytics 변수에 대한 XDM 필드 자동 매핑 (자동).
+1. 에서 필드 설정 `data` 개체(권장).
+1. Analytics 처리 규칙에서 XDM 필드를 Analytics 변수에 매핑합니다(더 이상 권장되지 않음).
+1. XDM 스키마에서 Analytics 변수에 직접 매핑합니다(더 이상 권장되지 않음).
 
-다음과 같은 몇 가지 접근 방식을 사용하여 동시에 사용할 수 있습니다.
-
-1. 표준 XDM 필드를 설정하면 일부 필드가 Analytics 변수에 자동으로 매핑됩니다.
-1. Analytics 처리 규칙에서 추가 XDM 필드를 Analytics 변수에 매핑합니다.
-1. XDM 스키마에서 Analytics 변수에 직접 매핑합니다.
-
-<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
-
-1. Automatically mapped variables using reserved XDM fields
-1. Manually mapped variables using Analytics Processing Rules
-
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). Any variable that is not auto-mapped must be manually mapped. 
-
- 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
-
-
- 1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
- 
-The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, because it skips the mapping step in the Adobe Analytics Processing Rules interface. The steps in this lesson use the **Analytics-specific XDM** approach.
--->
+2024년 5월부터 Platform Web SDK를 사용하여 Adobe Analytics을 구현하기 위해 더 이상 XDM 스키마를 만들 필요가 없습니다. 다음 `data` 객체(및 `data.variable` 이 자습서에서 만든 데이터 요소를 사용하여 모든 사용자 지정 Analytics 변수를 설정할 수 있습니다. 데이터 개체에서 이러한 변수를 설정하면 기존 Analytics 고객에게 익숙하고, 처리 규칙 인터페이스를 사용하는 것보다 효율적이며, 불필요한 데이터가 실시간 고객 프로필에 공간을 차지하는 것을 방지합니다(Real-time Customer Data Platform 또는 Journey Optimizer이 있는 경우 중요).
 
 ### 자동으로 매핑된 필드
 
-많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다.
+많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다. 매핑의 최신 목록을 확인하려면 다음을 참조하십시오. [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-에서 생성된 스키마 [스키마 구성](configure-schemas.md) 단원에는 이 표에 설명된 대로 Analytics 변수에 자동으로 매핑된 몇 가지 기능이 포함되어 있습니다.
+이 문제는 다음과 같은 경우에 발생합니다. _사용자 지정 스키마를 정의하지 않은 경우에도_. Experience Platform 웹 SDK는 일부 데이터를 자동으로 수집하여 XDM 필드로 플랫폼 Edge Network에 보냅니다. 예를 들어 Web SDK는 현재 페이지 URL을 읽고 다음과 같이 보냅니다. `web.webPageDetails.URL`. 이 필드는 Adobe Analytics으로 전달되며 Adobe Analytics의 페이지 URL 보고서를 자동으로 채웁니다.
+
+Analytics 및 플랫폼 기반 애플리케이션용 Web SDK를 구현할 때, 의 이 자습서에 나온 대로 사용자 지정 XDM 스키마를 만듭니다. [스키마 구성](configure-schemas.md) 레슨. 이 표에 설명된 대로 Analytics 변수에 자동 매핑을 구현한 XDM 필드 중 일부는 다음과 같습니다.
 
 | XDM을 Analytics에 자동 매핑된 변수로 | Adobe Analytics 변수 |
 |-------|---------|
@@ -116,71 +102,90 @@ The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, 
 | `productListItems[].priceTotal` | s.product=;;;product price;; |
 
 Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체.
+
 >2022년 8월 18일 기준 `productListItems[].SKU` 는 s.products 변수의 제품 이름에 매핑하는 데 우선 순위를 둡니다.
 >값이 로 설정된 경우 `productListItems[].name` 는 다음과 같은 경우에만 제품 이름에 매핑됩니다. `productListItems[].SKU` 존재하지 않습니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
 >빈 문자열 또는 null을 로 설정하지 마십시오. `productListItems[].SKU`. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
 
-매핑의 최신 목록을 확인하려면 다음을 참조하십시오. [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
+### 데이터 개체에서 변수 설정
+
+에서 변수 설정 `data` object는 웹 SDK를 사용하여 Analytics 변수를 설정하는 데 권장되는 방법입니다. 데이터 객체에서 변수를 설정하면 자동으로 매핑된 변수를 덮어쓸 수도 있습니다.
+
+우선, `data` 대상? 모든 Web SDK 이벤트에서 사용자 지정 데이터가 있는 `data` 오브젝트 및 `xdm` 개체. 둘 다 플랫폼 Edge Network으로 전송되지만 `xdm` 개체가 Experience Platform 데이터 세트로 전송됩니다. 의 속성 `data` 개체는 에지에서 다음에 매핑될 수 있습니다. `xdm` 데이터 수집을 위한 데이터 준비 기능을 사용하는 필드이지만 그렇지 않으면 Experience Platform으로 전송되지 않습니다. 따라서 기본적으로 Experience Platform 기반으로 구축되지 않은 Analytics와 같은 애플리케이션에 데이터를 전송하는 것이 이상적입니다.
+
+다음은 일반 웹 SDK 호출의 두 개체입니다.
+
+![데이터 및 xdm 개체](assets/analytics-data-object-intro.png)
+
+Adobe Analytics은 의 모든 속성을 찾도록 구성되어 있습니다. `data.__adobe.analytics` 를 반환하고 Analytics 변수에 사용합니다.
+
+자, 이제 해봅시다.
+
+다음을 사용합니다. `data.variable` 데이터 요소 t
 
 
-### 처리 규칙을 사용하여 Analytics 변수에 매핑
-
-XDM 스키마의 모든 필드는 다음 접두사를 사용하는 컨텍스트 데이터 변수로 Adobe Analytics에서 사용할 수 있습니다 `a.x.`. 예, `a.x.web.webinteraction.region`
-
-이 연습에서는 하나의 XDM 변수를 prop에 매핑합니다. 에 대해 수행해야 하는 모든 사용자 지정 매핑에 대해 다음과 동일한 단계를 수행합니다 `eVar`, `prop`, `event`또는 처리 규칙을 통해 액세스할 수 있는 변수입니다.
-
-1. Analytics 인터페이스로 이동
-1. 다음으로 이동 [!UICONTROL 관리자] > [!UICONTROL 관리 도구] > [!UICONTROL 보고서 세트]
-1. 자습서에 사용할 개발/테스트 보고서 세트를 선택합니다. > [!UICONTROL 설정 편집] > [!UICONTROL 일반] > [!UICONTROL 처리 규칙]
-
-   ![Analytics 구매](assets/analytics-process-rules.png)
-
-1. 규칙 만들기 **[!UICONTROL 값 덮어쓰기]** `[!UICONTROL Product SKU (prop1)]` 끝 `a.x.productlistitems.0.sku`. 규칙을 만드는 이유에 대한 메모를 추가하고 규칙 제목에 이름을 지정해야 합니다. 선택 **[!UICONTROL 저장]**
-
-   ![Analytics 구매](assets/analytics-set-processing-rule.png)
-
-   >[!IMPORTANT]
-   >
-   >처리 규칙에 처음 매핑할 때 UI는 XDM 개체의 컨텍스트 데이터 변수를 표시하지 않습니다. 이 문제를 해결하려면 를 저장하고 다시 편집하십시오. 이제 모든 XDM 변수가 표시됩니다.
-
-### Adobe Analytics 필드 그룹을 사용하여 Analytics 변수에 매핑
-
-처리 규칙에 대한 대체 방법은 를 사용하여 XDM 스키마의 Analytics 변수에 매핑하는 것입니다. `Adobe Analytics ExperienceEvent Template` 필드 그룹입니다. 이 방법은 많은 사용자가 처리 규칙을 구성하는 것보다 간단하다고 생각하기 때문에 인기를 얻었지만 XDM 페이로드 크기를 늘리면 Real-Time CDP과 같은 다른 애플리케이션에서 프로필 크기가 늘어날 수 있습니다.
-
-을(를) 추가하려면 `Adobe Analytics ExperienceEvent Template` 스키마에 대한 필드 그룹:
-
-1. 를 엽니다. [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스
-1. 선택 **[!UICONTROL 스키마]** 왼쪽 탐색에서
-1. 자습서에서 사용 중인 샌드박스에 있는지 확인합니다
-1. 을(를) 엽니다 `Luma Web Event Data` 스키마
-1. 다음에서 **[!UICONTROL 필드 그룹]** 섹션, 선택 **[!UICONTROL 추가]**
-1. 다음 찾기 `Adobe Analytics ExperienceEvent Template` 필드 그룹 및 스키마에 추가
+<!--
 
 
-이제 제품 문자열에서 머천다이징 eVar을 설정합니다. 포함 `Adobe Analytics ExperienceEvent Template` 필드 그룹에서는 변수를 머천다이징 eVar 또는 제품 문자열 내의 이벤트에 매핑할 수 있습니다. 이를 설정이라고도 합니다 **제품 구문 상품화**.
+### Map to Analytics variables with processing rules
 
-1. 태그 속성으로 돌아가기
+All fields in the XDM schema become available to Adobe Analytics as Context Data Variables with the following prefix `a.x.`. For example, `a.x.web.webinteraction.region`
 
-1. 규칙 열기 `ecommerce - library loaded - set product details variables - 20`
+In this exercise, you map one XDM variable to a prop. Follow these same steps for any custom mapping that you must do for any `eVar`, `prop`, `event`, or variable accessible via Processing Rules.
 
-1. 를 엽니다. **[!UICONTROL 변수 설정]** 작업
+1. Go to the Analytics interface
+1. Go to [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites ]
+1. Select the dev/test report suite that you are using for the tutorial > [!UICONTROL Edit Settings] > [!UICONTROL General] > [!UICONTROL Processing Rules]
 
-1. 열려면 선택하십시오. `_experience > analytics > customDimensions > eVars > eVar1`
+    ![Analytics Purchase](assets/analytics-process-rules.png)   
 
-1. 설정 **[!UICONTROL 값]** 끝 `%product.productInfo.title%`
+1. Create a rule to **[!UICONTROL Overwrite value of]** `[!UICONTROL Product SKU (prop1)]` to `a.x.productlistitems.0.sku`. Remember to add a note about why you are creating the rule and name your rule title. Select **[!UICONTROL Save]**
 
-1. 선택 **[!UICONTROL 변경 내용 유지]**
+    ![Analytics Purchase](assets/analytics-set-processing-rule.png)   
 
-   ![제품 SKU XDM 개체 변수](assets/set-up-analytics-product-merchandising.png)
+    >[!IMPORTANT]
+    >
+    >The first time you map to a processing rule, the UI does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
-1. 선택 **[!UICONTROL 저장]** 규칙을 저장하려면
+### Map to Analytics variables using the Adobe Analytics field group
 
-위에서 보듯이 기본적으로 모든 Analytics 변수는 `Adobe Analytics ExperienceEvent Template` 필드 그룹입니다.
+An alternative to processing rules is to map to Analytics variables in the XDM schema using the `Adobe Analytics ExperienceEvent Template` field group. This approach has gained popularity because many users find it simpler than configuring processing rules, however, by increasing the size of the XDM payload it could in turn increase the profile size in other applications like Real-Time CDP.
+
+To add the `Adobe Analytics ExperienceEvent Template` field group to your schema:
+
+1. Open the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
+1. Select **[!UICONTROL Schemas]** from the left navigation
+1. Make sure you are in the sandbox you are using from the tutorial
+1. Open your `Luma Web Event Data` schema
+1. In the **[!UICONTROL Field Groups]** section, select **[!UICONTROL Add]**
+1. Find the `Adobe Analytics ExperienceEvent Template` field group and add it to your schema
+
+
+Now, set a merchandising eVar in the product string. With the `Adobe Analytics ExperienceEvent Template` field group, you are able to map variables to merchandising eVars or events within the product string. This is also known as setting **Product Syntax Merchandising**. 
+
+1. Go back to your tag property
+
+1. Open the rule `ecommerce - library loaded - set product details variables - 20`
+
+1. Open the **[!UICONTROL Set Variable]** action
+
+1. Select to open `_experience > analytics > customDimensions > eVars > eVar1`
+
+1. Set the **[!UICONTROL Value]** to `%product.productInfo.title%`
+
+1. Select **[!UICONTROL Keep Changes]**
+
+    ![Product SKU XDM object Variable](assets/set-up-analytics-product-merchandising.png)
+
+1. Select **[!UICONTROL Save]** to save the rule
+
+As you just saw, basically all of the Analytics variables can be set in the `Adobe Analytics ExperienceEvent Template` field group.
 
 >[!NOTE]
 >
-> 다음 사항에 주목합니다. `_experience` 아래에 있는 오브젝트 `productListItems` > `Item 1`. 이 아래에서 변수 설정 [!UICONTROL 오브젝트] 제품 구문 eVar 또는 이벤트를 설정합니다.
+> Notice the `_experience` object under `productListItems` > `Item 1`. Setting any variable under this [!UICONTROL object] sets Product Syntax eVars or Events.
 
+-->
 
 ## 다른 보고서 세트로 데이터 보내기
 

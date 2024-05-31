@@ -1,23 +1,27 @@
 ---
 title: 웹 데이터에 대한 XDM 스키마 만들기
-description: 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 3%
 
 ---
 
 # 웹 데이터에 대한 XDM 스키마 만들기
 
-Adobe Experience Platform 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
+Adobe Experience Platform 데이터 컬렉션 인터페이스에서 웹 데이터에 대한 XDM 스키마를 만드는 방법을 알아봅니다.
 
 XDM(Experience Data Model) 스키마는 Adobe Experience Platform에서 데이터를 수집하기 위한 기본 구성 요소, 원칙 및 우수 사례입니다.
 
 Platform Web SDK는 스키마를 사용하여 웹 이벤트 데이터를 표준화하고 Platform Edge Network으로 보낸 다음 최종적으로 데이터를 데이터스트림에 구성된 Experience Cloud 애플리케이션으로 전달합니다. 이 단계는 고객 경험 데이터를 Experience Platform에 수집하는 데 필요한 표준 데이터 모델을 정의하고 이러한 표준을 기반으로 구축된 다운스트림 서비스 및 애플리케이션을 활성화하므로 매우 중요합니다.
+
+>[!NOTE]
+>
+>XDM 스키마는 _필요하지 않음_ Web SDK를 사용하여 Adobe Analytics, Adobe Target 또는 Adobe Audience Manager을 구현하려면 `data` 개체 대신 `xdm` 나중에 볼 수 있듯이 개체입니다.) Journey Optimizer, Real-time Customer Data Platform, Customer Journey Analytics과 같은 플랫폼 기반 애플리케이션의 가장 성능 좋은 구현에 XDM 스키마가 필요합니다. 자체 구현에서 XDM 스키마를 사용하지 않기로 결정할 수도 있지만 이 자습서의 일부로 사용해야 합니다.
 
 ## 데이터를 모델링하는 이유는 무엇입니까?
 
@@ -111,8 +115,7 @@ XDM 스키마는 Experience Platform의 데이터를 설명하는 표준 방법�
 > 
 >이 연습에서는 웹 데이터 수집에 권장되는 사전 정의된 필드 그룹을 추가합니다. _**[!UICONTROL AEP 웹 SDK ExperienceEvent]**_ 및 _**[!UICONTROL 고객 경험 이벤트]**_.
 >
->
-> 를 구현하는 경우에만 **Adobe Analytics** (Web SDK를 사용하고 데이터를에 전송하지 않음) **Experience Platform**, 사용 [!UICONTROL Adobe Analytics ExperienceEvent 템플릿] XDM 스키마를 정의하는 필드 그룹입니다. 다음에서 사용됩니다. [Analytics 설정](setup-analytics.md) 레슨.
+
 
 1. 다음에서 **[!UICONTROL 필드 그룹]** 섹션, 선택 **[!UICONTROL 추가]**
 

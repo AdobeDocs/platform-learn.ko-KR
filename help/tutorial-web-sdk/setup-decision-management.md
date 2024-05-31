@@ -1,15 +1,15 @@
 ---
 title: Platform Web SDK를 사용하여 Journey Optimizer 의사 결정 관리 설정
-description: Platform Web SDK를 사용하여 의사 결정 관리를 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: Platform Web SDK를 사용하여 의사 결정 관리를 구현하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '2515'
-ht-degree: 0%
+source-wordcount: '2513'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ Platform Web SDK를 사용하여 Adobe Journey Optimizer의 의사 결정 관리
 
 이 섹션의 학습 내용을 완료하려면 먼저 다음을 수행해야 합니다.
 
-* 조직에서 Adobe Journey Optimizer Ultimate(Journey Optimizer 및 Offer decisioning) 또는 Adobe Experience Platform과 Offer decisioning 애플리케이션 서비스 추가 기능에 액세스할 수 있는지 확인합니다.
+* 조직에서 Adobe Journey Optimizer Ultimate(Journey Optimizer 및 Offer decisioning) 또는 Adobe Experience Platform과 Offer decisioning 추가 기능에 액세스할 수 있는지 확인합니다.
 
 * Platform Web SDK의 초기 구성에 대한 모든 단원을 완료합니다.
 

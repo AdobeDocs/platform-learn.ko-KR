@@ -1,14 +1,14 @@
 ---
 title: Platform Web SDK를 사용하여 Journey Optimizer 웹 채널 설정
-description: Platform Web SDK를 사용하여 Journey Optimizer 웹 채널을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: Platform Web SDK를 사용하여 Journey Optimizer 웹 채널을 구현하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
@@ -132,55 +132,6 @@ Adobe Journey Optimizer 구현 방법 알아보기 [웹 채널](https://experien
 이 사용 사례를 통해 Journey Optimizer 캠페인 및 웹 디자이너를 활용하여 Journey Optimizer이 고객에게 최상의 인바운드 경험을 제공하는 데 어떻게 도움이 되는지 더 잘 이해할 수 있습니다.
 
 이 자습서는 구현자를 대상으로 하므로 이 단원에는 Journey Optimizer의 실질적인 인터페이스 작업이 포함되어 있습니다. 이러한 인터페이스 작업은 일반적으로 마케터가 처리하지만, 구현자가 일반적으로 웹 채널 캠페인 생성을 담당하지 않더라도 프로세스에 대한 통찰력을 얻는 것이 유용할 수 있습니다.
-
-### 충성도 스키마 만들기 및 샘플 데이터 수집
-
-Web SDK 데이터를 Adobe Experience Platform에 수집하면 Platform에 수집한 다른 데이터 소스에서 보강할 수 있습니다. 예를 들어 사용자가 Luma 사이트에 로그인하면 ID 그래프가 Experience Platform에서 생성되고 다른 모든 프로필 활성화 데이터 세트는 잠재적으로 함께 결합되어 실시간 고객 프로필을 구축할 수 있습니다. 이를 실제로 보려면 Journey Optimizer 웹 캠페인에서 실시간 고객 프로필을 사용할 수 있도록 몇 가지 샘플 충성도 데이터를 사용하여 Adobe Experience Platform에서 다른 데이터 세트를 신속하게 만듭니다. 이미 유사한 연습을 했기 때문에 지침은 간단합니다.
-
-충성도 스키마를 만듭니다.
-
-1. 새 스키마 만들기
-1. 선택 **[!UICONTROL 개인 프로필]** (으)로 [!UICONTROL 기본 클래스]
-1. 스키마 이름 지정 `Luma Loyalty Schema`
-1. 추가 [!UICONTROL 고객 충성도 세부 정보] 필드 그룹
-1. 추가 [!UICONTROL 인구 통계 세부 정보] 필드 그룹
-1. 다음 항목 선택 `Person ID` 필드 및 다음으로 표시 [!UICONTROL 신원] 및 [!UICONTROL 기본 ID] 사용 `Luma CRM Id` [!UICONTROL ID 네임스페이스].
-1. 에 대한 스키마 활성화 [!UICONTROL 프로필]
-
-   ![충성도 스키마](assets/web-channel-loyalty-schema.png)
-
-데이터 세트를 만들고 샘플 데이터를 수집하려면 다음을 수행하십시오.
-
-1. 에서 새 데이터 세트 만들기 `Luma Loyalty Schema`
-1. 데이터 세트 이름 지정 `Luma Loyalty Dataset`
-1. 다음에 대한 데이터 세트 활성화 [!UICONTROL 프로필]
-1. 샘플 파일 다운로드 [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. 파일을 데이터 세트로 드래그 앤 드롭
-1. 데이터가 성공적으로 수집되었는지 확인
-
-   ![충성도 스키마](assets/web-channel-loyalty-dataset.png)
-
-### 대상자 만들기
-
-대상자는 공통 트레이트를 중심으로 프로필을 함께 그룹화합니다. 웹 캠페인에서 사용할 수 있는 빠른 대상을 만듭니다.
-
-1. Experience Platform 인터페이스에서 **[!UICONTROL 대상]** 왼쪽 탐색
-1. 선택 **[!UICONTROL 대상자 만들기]**
-1. 선택 **[!UICONTROL 규칙 작성]**
-1. 선택 **[!UICONTROL 만들기]**
-
-   ![대상자 만들기](assets/web-campaign-create-audience.png)
-
-1. 선택 **[!UICONTROL 속성]**
-1. 다음 찾기 **[!UICONTROL 충성도]** > **[!UICONTROL 계층]** 필드를 지정하고 로 끌어서 놓습니다. **[!UICONTROL 속성]** 섹션
-1. 대상을 사용자로 정의 `tier` 은(는) `gold`
-1. 대상자의 이름을 지정합니다. `Luma Loyalty Rewards – Gold Status`
-1. 선택 **[!UICONTROL Edge]** (으)로 **[!UICONTROL 평가 방법]**
-1. 선택 **[!UICONTROL 저장]**
-
-   ![대상자 정의](assets/web-campaign-define-audience.png)
-
-이는 매우 간단한 대상자이므로 Edge 평가 방법을 사용할 수 있습니다. Edge 대상은 Edge에서 평가되므로, Web SDK에서 Platform Edge Network에 대해 수행한 동일한 요청에서 대상 정의를 평가하고 사용자가 자격이 있는지 즉시 확인할 수 있습니다.
 
 ### 충성도 보상 캠페인 만들기
 

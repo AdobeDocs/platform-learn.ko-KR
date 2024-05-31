@@ -1,13 +1,13 @@
 ---
 title: Platform Web SDK용 데이터 요소 만들기
-description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 1%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
@@ -256,29 +256,41 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://luma.enablementad
 >
 >다음 [!UICONTROL JavaScript 변수] 데이터 요소 유형은 배열 참조를 대괄호 대신 점으로 처리하므로 사용자 이름 데이터 요소를 로 참조합니다. `digitalData.user[0].profile[0].attributes.username` **작동하지 않음**.
 
-## 변수 데이터 요소 만들기
+## XDM 및 데이터 개체에 대한 변수 데이터 요소 만들기
 
-데이터 요소를 만든 후 다음을 사용하여 XDM에 매핑합니다. **[!UICONTROL 변수]** xdm 개체에 사용되는 스키마를 정의하는 데이터 요소입니다. 이 개체는 다음 작업 중에 만든 XDM 스키마를 준수해야 합니다. [스키마 구성](configure-schemas.md) 레슨.
+방금 만든 데이터 요소는 XDM 개체(플랫폼 애플리케이션용)와 데이터 개체(Analytics, Target 및 Audience Manager)를 작성하는 데 사용됩니다. 이러한 개체에는 라는 고유한 특수 데이터 요소가 있습니다. **[!UICONTROL 변수]** 데이터 요소는 매우 쉽게 만들 수 있습니다.
 
-변수 데이터 요소를 만들려면 다음 작업을 수행하십시오.
+XDM에 대한 변수 데이터 요소를 만들려면 XDM을 만든 스키마에 연결합니다. [스키마 구성](configure-schemas.md) 단원:
 
 1. 선택 **[!UICONTROL 데이터 요소 추가]**
 1. 데이터 요소에 이름 지정 `xdm.variable.content`. 태그 속성을 더 잘 구성하려면 XDM과 관련된 데이터 요소를 &quot;xdm&quot; 접두사로 사용하는 것이 좋습니다
 1. 다음 항목 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** (으)로 **[!UICONTROL 확장]**
 1. 다음 항목 선택 **[!UICONTROL 변수]** (으)로 **[!UICONTROL 데이터 요소 유형]**
+1. 선택 **[!UICONTROL XDM]** (으)로 **[!UICONTROL 속성]**
 1. 적절한 Experience Platform 선택 **[!UICONTROL 샌드박스]**
 1. 적절한 항목 선택 **[!UICONTROL 스키마]**, 이 경우 `Luma Web Event Data`
 1. 선택 **[!UICONTROL 저장]**
 
-   ![변수 데이터 요소](assets/analytics-tags-data-element-xdm-variable.png)
+   ![XDM용 변수 데이터 요소](assets/analytics-tags-data-element-xdm-variable.png)
+
+그런 다음 데이터 개체에 대한 변수 데이터 요소를 만듭니다.
+
+1. 선택 **[!UICONTROL 데이터 요소 추가]**
+1. 데이터 요소에 이름 지정 `data.variable`. 태그 속성을 더 잘 구성하려면 데이터 객체에 관련된 데이터 요소 접두사로 &quot;data&quot;를 사용하는 것이 좋습니다
+1. 다음 항목 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** (으)로 **[!UICONTROL 확장]**
+1. 다음 항목 선택 **[!UICONTROL 변수]** (으)로 **[!UICONTROL 데이터 요소 유형]**
+1. 선택 **[!UICONTROL 데이터]** (으)로 **[!UICONTROL 속성]**
+1. 선택 **[!UICONTROL 저장]**
+
+   ![데이터 개체에 대한 변수 데이터 요소](assets/data-element-data-variable.png.png)
 
 
 이러한 단계를 마치면 다음 데이터 요소를 만들어야 합니다.
 
 | 코어 확장 데이터 요소 | Platform 웹 SDK 확장 데이터 요소 |
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `xdm.variable.content` |
 | `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |

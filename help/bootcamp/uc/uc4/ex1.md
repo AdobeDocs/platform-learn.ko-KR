@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 solution: Customer Journey Analytics
 exl-id: 587be8bc-8ebe-4f30-99d8-ba88ce40caf7
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '875'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 목표
 
-- CJA 애플리케이션 서비스 이해
+- CJA 애플리케이션 이해
 - CJA 포지셔닝 방법 알아보기
 - 데이터 연결에서 통찰력에 이르기까지 CJA 워크플로 이해
 
@@ -50,7 +50,7 @@ CJA의 목표는 마케팅 및 비즈니스 팀을 이러한 담당자를 위한
 - 속성을 수행할 수 없고 고객 여정 분석을 수행할 수 없습니다.
 - BI 애플리케이션은 사전에 질문을 알아야 합니다.
 - 대화형 쿼리는 데이터베이스의 구조에 의해 제한됩니다
-- SQL 스킬이 필요합니다.
+- SQL 기술이 필요합니다.
 - BI 애플리케이션은 어떤 일이 발생한 이유를 묻는 기능을 제공하지 않습니다.
 - BI 애플리케이션은 고객 접점에 직접 연결되어 있지 않습니다.
 
