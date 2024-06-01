@@ -4,9 +4,9 @@ description: XDM에서 ID를 만들고 ID 맵 데이터 요소를 사용하여 �
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '876'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수�
 
 ## 인증된 Id
 
-위에서 언급했듯이 Platform Web SDK를 사용할 때 디지털 속성에 대한 모든 방문자에게 Adobe에 의해 ECID가 지정됩니다. 인증되지 않은 디지털 동작을 추적하기 위한 기본 ID입니다.
+위에서 언급했듯이 Platform Web SDK를 사용할 때 디지털 속성에 대한 모든 방문자에게 Adobe에 의해 ECID가 지정됩니다. ECID는 인증되지 않은 디지털 동작을 추적하기 위한 기본 ID입니다.
 
 또한 인증된 사용자 ID를 전송하여 Platform에서 [ID 그래프](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) 및 Target에서 다음을 설정할 수 있습니다. [타사 Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). 인증된 ID를 설정하는 작업은 [!UICONTROL ID 맵] 데이터 요소 유형입니다.
 

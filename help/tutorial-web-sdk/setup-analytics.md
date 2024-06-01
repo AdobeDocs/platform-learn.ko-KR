@@ -4,9 +4,9 @@ description: Experience Platform Web SDK를 사용하여 Adobe Analytics을 설�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -74,15 +74,15 @@ Platform Web SDK는 웹 사이트에서 Platform Edge Network으로 데이터를
 1. Analytics 처리 규칙에서 XDM 필드를 Analytics 변수에 매핑합니다(더 이상 권장되지 않음).
 1. XDM 스키마에서 Analytics 변수에 직접 매핑합니다(더 이상 권장되지 않음).
 
-2024년 5월부터 Platform Web SDK를 사용하여 Adobe Analytics을 구현하기 위해 더 이상 XDM 스키마를 만들 필요가 없습니다. 다음 `data` 객체(및 `data.variable` 이 자습서에서 만든 데이터 요소를 사용하여 모든 사용자 지정 Analytics 변수를 설정할 수 있습니다. 데이터 개체에서 이러한 변수를 설정하면 기존 Analytics 고객에게 익숙하고, 처리 규칙 인터페이스를 사용하는 것보다 효율적이며, 불필요한 데이터가 실시간 고객 프로필에 공간을 차지하는 것을 방지합니다(Real-time Customer Data Platform 또는 Journey Optimizer이 있는 경우 중요).
+2024년 5월부터 Platform Web SDK를 사용하여 Adobe Analytics을 구현하기 위해 더 이상 XDM 스키마를 만들 필요가 없습니다. 다음 `data` 객체(및 `data.variable` 에서 만든 데이터 요소 [데이터 요소 만들기](create-data-elements.md) 단원)을 사용하여 모든 사용자 지정 Analytics 변수를 설정할 수 있습니다. 데이터 개체에서 이러한 변수를 설정하면 기존 Analytics 고객에게 익숙하고, 처리 규칙 인터페이스를 사용하는 것보다 효율적이며, 불필요한 데이터가 실시간 고객 프로필에 공간을 차지하는 것을 방지합니다(Real-time Customer Data Platform 또는 Journey Optimizer이 있는 경우 중요).
 
 ### 자동으로 매핑된 필드
 
 많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다. 매핑의 최신 목록을 확인하려면 다음을 참조하십시오. [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-이 문제는 다음과 같은 경우에 발생합니다. _사용자 지정 스키마를 정의하지 않은 경우에도_. Experience Platform 웹 SDK는 일부 데이터를 자동으로 수집하여 XDM 필드로 플랫폼 Edge Network에 보냅니다. 예를 들어 Web SDK는 현재 페이지 URL을 읽고 다음과 같이 보냅니다. `web.webPageDetails.URL`. 이 필드는 Adobe Analytics으로 전달되며 Adobe Analytics의 페이지 URL 보고서를 자동으로 채웁니다.
+이 문제는 다음과 같은 경우에 발생합니다. _사용자 지정 스키마를 정의하지 않은 경우에도_. Experience Platform 웹 SDK는 일부 데이터를 자동으로 수집하여 XDM 필드로 플랫폼 Edge Network에 보냅니다. 예를 들어 Web SDK는 현재 페이지 URL을 읽고 XDM 필드로 전송합니다 `web.webPageDetails.URL`. 이 필드는 Adobe Analytics으로 전달되며 Adobe Analytics의 페이지 URL 보고서가 자동으로 채워집니다.
 
-Analytics 및 플랫폼 기반 애플리케이션용 Web SDK를 구현할 때, 의 이 자습서에 나온 대로 사용자 지정 XDM 스키마를 만듭니다. [스키마 구성](configure-schemas.md) 레슨. 이 표에 설명된 대로 Analytics 변수에 자동 매핑을 구현한 XDM 필드 중 일부는 다음과 같습니다.
+이 자습서에서 XDM 스키마로 Adobe Analytics용 Web SDK를 구현하는 경우, 이 표에 설명된 대로 Analytics 변수에 자동 매핑되도록 사용자 지정 구현한 XDM 필드 중 일부가 있습니다.
 
 | XDM을 Analytics에 자동 매핑된 변수로 | Adobe Analytics 변수 |
 |-------|---------|
@@ -103,15 +103,18 @@ Analytics 및 플랫폼 기반 애플리케이션용 Web SDK를 구현할 때, �
 
 Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체.
 
+>[!NOTE]
+>
 >2022년 8월 18일 기준 `productListItems[].SKU` 는 s.products 변수의 제품 이름에 매핑하는 데 우선 순위를 둡니다.
 >값이 로 설정된 경우 `productListItems[].name` 는 다음과 같은 경우에만 제품 이름에 매핑됩니다. `productListItems[].SKU` 존재하지 않습니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
 >빈 문자열 또는 null을 로 설정하지 마십시오. `productListItems[].SKU`. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
 
+
 ### 데이터 개체에서 변수 설정
 
-에서 변수 설정 `data` object는 웹 SDK를 사용하여 Analytics 변수를 설정하는 데 권장되는 방법입니다. 데이터 객체에서 변수를 설정하면 자동으로 매핑된 변수를 덮어쓸 수도 있습니다.
+하지만 evar, prop, 이벤트는 어떻습니까? 에서 변수 설정 `data` object는 웹 SDK를 사용하여 이러한 Analytics 변수를 설정하는 데 권장되는 방법입니다. 데이터 객체에서 변수를 설정하면 자동으로 매핑된 변수를 덮어쓸 수도 있습니다.
 
-우선, `data` 대상? 모든 Web SDK 이벤트에서 사용자 지정 데이터가 있는 `data` 오브젝트 및 `xdm` 개체. 둘 다 플랫폼 Edge Network으로 전송되지만 `xdm` 개체가 Experience Platform 데이터 세트로 전송됩니다. 의 속성 `data` 개체는 에지에서 다음에 매핑될 수 있습니다. `xdm` 데이터 수집을 위한 데이터 준비 기능을 사용하는 필드이지만 그렇지 않으면 Experience Platform으로 전송되지 않습니다. 따라서 기본적으로 Experience Platform 기반으로 구축되지 않은 Analytics와 같은 애플리케이션에 데이터를 전송하는 것이 이상적입니다.
+우선, `data` 대상? 모든 Web SDK 이벤트에서 사용자 지정 데이터가 있는 `xdm` 오브젝트 및 `data` 개체. 둘 다 플랫폼 Edge Network으로 전송되지만 `xdm` 개체가 Experience Platform 데이터 세트로 전송됩니다. 의 속성 `data` 개체는 에지에서 다음에 매핑될 수 있습니다. `xdm` 데이터 수집을 위한 데이터 준비 기능을 사용하는 필드이지만 그렇지 않으면 Experience Platform으로 전송되지 않습니다. 따라서 기본적으로 Experience Platform 기반으로 구축되지 않은 Analytics와 같은 애플리케이션에 데이터를 전송하는 것이 이상적입니다.
 
 다음은 일반 웹 SDK 호출의 두 개체입니다.
 
@@ -119,9 +122,28 @@ Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체.
 
 Adobe Analytics은 의 모든 속성을 찾도록 구성되어 있습니다. `data.__adobe.analytics` 를 반환하고 Analytics 변수에 사용합니다.
 
-자, 이제 해봅시다.
+이제 이것이 어떻게 작동하는지 알아보겠습니다. 설정 `eVar1` 및 `prop1` 페이지 이름을 사용하여 XDM 매핑 값을 덮어쓰는 방법 보기
 
-다음을 사용합니다. `data.variable` 데이터 요소 t
+1. 태그 규칙 열기 `all pages - library loaded - set global variables - 1`
+1. 새 항목 추가 **[!UICONTROL 작업]**
+1. 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** 확장
+1. 선택 **[!UICONTROL 작업 유형]** 다음으로: **[!UICONTROL 변수 업데이트]**
+1. 선택 `data.variable` (으)로 **[!UICONTROL 데이터 요소]**
+1. 다음 항목 선택 **[!UICONTROL analytics]** 오브젝트
+1. 설정 `eVar1` (으)로 `page.pageInfo.pageName` 데이터 요소
+1. 설정 `prop1` 값을 복사하려면 `eVar1`
+1. XDM 매핑 값 덮어쓰기를 테스트하려면에서 **[!UICONTROL 추가 속성]** 섹션에서 페이지 이름을 정적 값으로 설정합니다. `test`
+1. 규칙 저장
+
+
+이제 전송 이벤트 규칙에 데이터 개체를 포함해야 합니다.
+
+1. 태그 규칙 열기 `all pages - library loaded - send event - 50`
+1. 를 엽니다. **[!UICONTROL 이벤트 보내기]** 작업
+1. 선택 `data.variable` (으)로 **[!UICONTROL 데이터]**
+1. 선택 **[!UICONTROL 변경 내용 유지]**
+1. 선택 **[!UICONTROL 저장]**
+
 
 
 <!--
@@ -200,7 +222,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    ![데이터 스트림 덮어쓰기](assets/datastream-edit-analytics.png)
 
-1. 다음 항목 선택 **[!UICONTROL 고급 옵션]** 열다 **[!UICONTROL 보고서 세트 무시]**
+1. 선택 **[!UICONTROL 고급 옵션]** 열다 **[!UICONTROL 보고서 세트 무시]**
 
 1. 재정의할 보고서 세트를 선택합니다. 이 경우, `Web SDK Course Dev` 및 `Web SDK Course Stg`
 
@@ -219,9 +241,10 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
 
-1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨]**
+1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨 (페이지 상단)]**
 
 1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `51`. 이렇게 하면 규칙 다음에 실행됩니다 `all pages - library loaded - send event - 50` 를 사용하여 기본 XDM을 설정하는 경우 **[!UICONTROL 변수 업데이트]** 작업 유형.
+1. 선택 **[!UICONTROL 변경 내용 유지]**
 
    ![Analytics 보고서 세트 재정의](assets/set-up-analytics-rs-override.png)
 
@@ -247,9 +270,9 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 다음으로: **[!UICONTROL 작업 유형]**, 선택 **[!UICONTROL 이벤트 보내기]**
 
-1. 다음으로: **[!UICONTROL 유형]**, 선택 `web.webpagedetails.pageViews`
-
 1. 다음으로: **[!UICONTROL XDM 데이터]**&#x200B;를 선택하고 `xdm.variable.content` 에서 만든 데이터 요소 [데이터 요소 만들기](create-data-elements.md) 단원
+
+1. 다음으로: **[!UICONTROL 데이터]**&#x200B;를 선택하고 `data.variable` 에서 만든 데이터 요소 [데이터 요소 만들기](create-data-elements.md) 단원
 
    ![Analytics 데이터스트림 재정의](assets/set-up-analytics-datastream-override-1.png)
 
@@ -261,7 +284,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
    >
    >    이 탭은 재정의가 발생하는 태그 환경을 결정합니다. 이 연습에서는 개발 환경만 지정하지만 프로덕션에 이 환경을 배포할 때에는 **[!UICONTROL 프로덕션]** 환경.
 
-
+1. 다음 항목 선택 **[!UICONTROL 샌드박스]** 자습서에 을 사용하고 있습니다.
 1. 다음 항목 선택 **[!UICONTROL 데이터스트림]**, 이 경우 `Luma Web SDK: Development Environment`
 
 1. 아래 **[!UICONTROL 보고서 세트]**&#x200B;을(를) 통해 재정의하는 데 사용할 보고서 사이트를 선택합니다. 이 경우, `tmd-websdk-course-stg`.
@@ -275,7 +298,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 ## 개발 환경 구축
 
-에 새 데이터 요소 및 규칙 추가 `Luma Web SDK Tutorial` 태그 라이브러리를 만들고 개발 환경을 다시 빌드합니다.
+업데이트된 규칙을 `Luma Web SDK Tutorial` 태그 라이브러리를 만들고 개발 환경을 다시 빌드합니다.
 
 축하합니다! 다음 단계는 Experience Platform Web SDK를 통해 Adobe Analytics 구현의 유효성을 검사하는 것입니다.
 

@@ -1,13 +1,13 @@
 ---
 title: Adobe Experience Platform 웹 SDK 태그 확장 설치 및 구성
-description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '607'
+ht-degree: 11%
 
 ---
 
@@ -61,6 +61,7 @@ Adobe Experience Platform Web SDK 태그 확장 기능을 설치하고 구성하
 대부분의 기본 설정을 그대로 두고 필요에 따라 나중에 업데이트합니다. 이제 해야 하는 유일한 작업은 확장을 데이터 스트림에 연결하는 것입니다.
 
 1. 아래 **[!UICONTROL 데이터스트림]**&#x200B;를 선택하고 **[!UICONTROL 목록에서 선택]** 입력 방법
+1. 스키마, ID 네임스페이스 및 데이터스트림을 생성한 샌드박스를 선택합니다
 1. 이전에 생성한 데이터 스트림을 선택합니다. `Luma Web SDK`
 1. 선택 **[!UICONTROL 저장]**
 

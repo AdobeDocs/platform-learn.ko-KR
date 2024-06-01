@@ -1,13 +1,13 @@
 ---
 title: Experience Platform 보증을 사용하여 웹 SDK 구현 유효성 검사
-description: Adobe Experience Platform Assurance를 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: Adobe Experience Platform Assurance를 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 2%
+source-wordcount: '606'
+ht-degree: 7%
 
 ---
 
@@ -78,8 +78,8 @@ Debugger 단원에서 이 작업을 수행하는 방법 검토:
 
 이 구현 단계에서 볼 수 있는 정보는 제한됩니다. 볼 수 있는 한 가지 값은 플랫폼 Edge Network에서 생성된 Experience Cloud ID(ECID)입니다.
 
-1. Adobe 응답 핸들이라는 이벤트가 있는 행을 선택합니다.
-1. 메뉴가 오른쪽에 표시됩니다. 다음 항목 선택 `+` 다음 옆에 서명 `[!UICONTROL ACPExtensionEvent]`
+1. 라는 이벤트가 있는 행 선택 `Alloy Response Handle`.
+1. 메뉴가 오른쪽에 표시됩니다. 다음 항목 선택 `+` 다음 옆에 서명 `[!UICONTROL ACPExtensionEventData]`
 1. 을 선택하여 드릴다운 `[!UICONTROL payload > 0 > payload > 0 > namespace]`. 마지막 항목 아래에 표시된 ID `0` 다음에 해당 `ECID`. 아래에 표시되는 값으로 알 수 있습니다. `namespace` 일치 `ECID`
 
    ![보증 유효성 확인 ECID](assets/validate-assurance-ecid.png)

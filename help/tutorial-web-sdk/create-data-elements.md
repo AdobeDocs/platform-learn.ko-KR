@@ -4,9 +4,9 @@ description: XDM 개체를 만들고 데이터 요소를 태그에 매핑하는 
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1337'
 ht-degree: 2%
 
 ---
@@ -100,14 +100,14 @@ window.adobeDataLayer.push({
 장점
 
 * 데이터 레이어 변수를 XDM으로 다시 매핑하는 추가 단계를 제거합니다.
-* 개발 팀이 태그 지정 디지털 동작을 담당하는 경우 배포하는 것이 더 빠를 수 있습니다
+* 웹 개발 팀도 태그 지정 디지털 동작을 소유하는 경우 배포하는 것이 더 빠를 수 있습니다
 
 단점
 
 * XDM으로 이동되는 데이터를 업데이트하기 위해 개발 팀 및 개발 주기에 전적으로 의존
 * XDM이 데이터 레이어에서 정확한 페이로드를 수신하므로 유연성이 제한됨
 * 빠른 배포를 위해 스크래핑, 지속성, 기능과 같은 내장 태그 기능을 사용할 수 없음
-* 타사 픽셀에 데이터 레이어를 사용할 수 없습니다.
+* 서드파티 픽셀에는 데이터 레이어를 사용하기 어렵습니다(하지만 이러한 픽셀을 로 이동할 수 있음). [이벤트 전달](setup-event-forwarding.md)!
 * 데이터 레이어와 XDM 간에 데이터를 변환할 수 없음
 
 ### 태그의 데이터 레이어 매핑
@@ -267,7 +267,7 @@ XDM에 대한 변수 데이터 요소를 만들려면 XDM을 만든 스키마에
 1. 다음 항목 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** (으)로 **[!UICONTROL 확장]**
 1. 다음 항목 선택 **[!UICONTROL 변수]** (으)로 **[!UICONTROL 데이터 요소 유형]**
 1. 선택 **[!UICONTROL XDM]** (으)로 **[!UICONTROL 속성]**
-1. 적절한 Experience Platform 선택 **[!UICONTROL 샌드박스]**
+1. 다음 항목 선택 **[!UICONTROL 샌드박스]** 스키마를 생성한 위치
 1. 적절한 항목 선택 **[!UICONTROL 스키마]**, 이 경우 `Luma Web Event Data`
 1. 선택 **[!UICONTROL 저장]**
 
@@ -280,6 +280,7 @@ XDM에 대한 변수 데이터 요소를 만들려면 XDM을 만든 스키마에
 1. 다음 항목 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** (으)로 **[!UICONTROL 확장]**
 1. 다음 항목 선택 **[!UICONTROL 변수]** (으)로 **[!UICONTROL 데이터 요소 유형]**
 1. 선택 **[!UICONTROL 데이터]** (으)로 **[!UICONTROL 속성]**
+1. 이 자습서의 일부로 구현할 Experience Cloud 솔루션을 선택하십시오.
 1. 선택 **[!UICONTROL 저장]**
 
    ![데이터 개체에 대한 변수 데이터 요소](assets/data-element-data-variable.png.png)

@@ -1,19 +1,19 @@
 ---
 title: Platform Web SDK용 데이터 스트림 구성
-description: 데이터 스트림을 활성화하고 Experience Cloud 솔루션을 구성하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: 데이터 스트림을 활성화하고 Experience Cloud 솔루션을 구성하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 3%
+source-wordcount: '536'
+ht-degree: 7%
 
 ---
 
 # 데이터스트림 구성
 
-Adobe Experience Platform Web SDK용 데이터스트림을 구성하는 방법에 대해 알아봅니다.
+Adobe Experience Platform Web SDK의 데이터스트림을 구성하는 방법을 알아봅니다.
 
 [데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) Adobe Experience Platform Edge Network에게 Platform Web SDK에서 수집한 데이터를 보낼 위치를 알려 줍니다. 데이터스트림 구성에서 Experience Cloud 애플리케이션, Experience Platform 계정 및 이벤트 전달을 활성화합니다.
 
@@ -55,9 +55,9 @@ Adobe Experience Platform Web SDK용 데이터스트림을 구성하는 방법�
 
    >[!NOTE]
    >
-   >를 사용하는 경우에만 스키마를 선택하면 됩니다. [데이터 수집을 위한 데이터 준비](/help/data-collection/edge/data-prep.md) 기능.
+   >스키마를 선택할 필요는 없습니다. 스키마 선택은 를 사용하는 경우에만 필요합니다. [데이터 수집을 위한 데이터 준비](/help/data-collection/edge/data-prep.md) 기능.
 
-다음 화면에서는 데이터 스트림에 Adobe 응용 프로그램과 같은 서비스를 추가할 수 있지만 자습서의 이 시점에서는 서비스를 추가하지 않습니다. 나중에 단원에서 그렇게 할 것입니다 [Experience Platform 설정](setup-experience-platform.md), [Analytics 설정](setup-analytics.md), [Audience Manager 설정](setup-audience-manager.md), [Target 설정](setup-target.md), 또는 [이벤트 전달](setup-event-forwarding.md).
+다음 화면에서는 데이터 스트림에 Adobe 응용 프로그램과 같은 서비스를 추가할 수 있지만 이 시점에서는 서비스를 추가하지 않습니다. 나중에 단원에서 그렇게 할 것입니다 [Experience Platform 설정](setup-experience-platform.md), [Analytics 설정](setup-analytics.md), [Audience Manager 설정](setup-audience-manager.md), [Target 설정](setup-target.md), 또는 [이벤트 전달](setup-event-forwarding.md).
 
 >[!NOTE]
 >

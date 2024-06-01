@@ -1,19 +1,19 @@
 ---
 title: Experience Platform 디버거를 사용하여 Web SDK 구현 확인
-description: Adobe Experience Platform Debugger을 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: Adobe Experience Platform Debugger을 사용하여 Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
 # Experience Platform 디버거를 사용하여 Web SDK 구현 확인
 
-Adobe Experience Platform Debugger을 사용하여 Adobe Experience Platform 웹 SDK 구현의 유효성을 검사하는 방법을 알아봅니다.
+Adobe Experience Platform Debugger를 사용하여 Adobe Experience Platform Web SDK 구현의 유효성을 검사하는 방법을 알아봅니다.
 
 Experience Platform 디버거 는 Chrome 및 Firefox 브라우저에서 사용할 수 있는 확장 프로그램으로, 웹 페이지에 구현된 Adobe 기술을 확인하는 데 도움이 됩니다. 원하는 브라우저용 버전을 다운로드합니다.
 
@@ -75,7 +75,7 @@ Experience Platform 디버거에는 기존 태그 라이브러리를 다른 태�
 
    ![태그 속성이 대체됨](assets/validate-switch-success.png)
 
-자습서를 계속 진행하면 이 기술을 사용하여 Luma 사이트를 고유한 태그 속성에 매핑하여 Platform Web SDK 구현의 유효성을 검사합니다. 프로덕션 웹 사이트에서 태그 사용을 시작할 때 이와 동일한 기술을 사용하여 태그의 개발 환경에서 변경 사항을 확인하면서 변경 사항의 유효성을 검사할 수 있습니다.
+자습서를 계속 진행하면 이 기술을 사용하여 Luma 사이트를 고유한 태그 속성에 매핑하여 Platform Web SDK 구현의 유효성을 검사합니다. 자체 웹 사이트에서 태그를 사용할 때 이와 동일한 기술을 사용하여 프로덕션 웹 사이트에서 개발 태그 라이브러리의 유효성을 검사할 수 있습니다.
 
 ## Experience Platform 디버거를 사용하여 클라이언트측 네트워크 요청 확인
 
@@ -131,7 +131,7 @@ ID 맵 세부 정보의 유효성을 검사할 수도 있습니다.
 
    ![네트워크 탭](assets/validate-dev-console.png)
 
-1. 로 이동 **응답** 를 탭하고 ECID 값이 응답에 어떻게 포함되는지 확인합니다. 다음 연습에서 프로필 정보의 유효성을 검사하는 데 사용할 이 값을 복사하십시오
+1. 로 이동 **응답** 를 탭하고 ECID 값이 응답에 어떻게 포함되는지 확인합니다.
 
    ![네트워크 탭](assets/validate-dev-console-ecid.png)
 

@@ -1,13 +1,13 @@
 ---
 title: Platform Web SDK에 대한 태그 규칙 만들기
-description: 태그 규칙을 사용하여 XDM 오브젝트와 함께 이벤트를 Platform Edge Network에 보내는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: 태그 규칙을 사용하여 XDM 오브젝트와 함께 이벤트를 Platform Edge Network에 보내는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 1%
+source-wordcount: '1983'
+ht-degree: 2%
 
 ---
 
@@ -163,7 +163,6 @@ ht-degree: 1%
 >
 >규칙 순서는 이벤트가 트리거될 때 먼저 실행되는 규칙을 결정합니다. 두 규칙의 이벤트 유형이 동일한 경우 숫자가 가장 낮은 규칙이 먼저 실행됩니다.
 > 
->![규칙 순서](assets/set-up-analytics-sequencing.png)
 
 Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시작합니다.
 
@@ -172,7 +171,8 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 1. 다음 항목 선택 ![+ 기호](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 새 트리거를 추가할 이벤트
 1. 아래 **[!UICONTROL 확장]**, 선택 **[!UICONTROL 코어]**
 1. 아래 **[!UICONTROL 이벤트 유형]**, 선택 **[!UICONTROL 라이브러리가 로드됨 (페이지 상단)]**
-1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이 주문 값은 다음 이후에 규칙이 실행되도록 합니다. `all pages - library loaded - set global variables - 1` 전역 구성을 설정합니다.
+1. 열려면 선택하십시오. **[!UICONTROL 고급 옵션]**, 입력 `20`. 이 순서 값은 규칙 실행을 보장합니다 _이후_ 다음 `all pages - library loaded - set global variables - 1` 전역 구성을 설정합니다.
+1. 선택 **[!UICONTROL 변경 내용 유지]**
 
    ![Analytics XDM 규칙](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 1. 아래 **[!UICONTROL 작업]** 선택 **[!UICONTROL 추가]**
 1. 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** 확장
 1. 선택 **[!UICONTROL 작업 유형]** 다음으로: **[!UICONTROL 변수 업데이트]**
+1. 선택 `xdm.variable.content` (으)로 **[!UICONTROL 데이터 요소]**
 1. 아래로 스크롤하여 `commerce` 오브젝트
 1. 를 엽니다. **[!UICONTROL 제품 보기]** 오브젝트 및 세트 **[!UICONTROL 값]** 끝 `1`
 
@@ -202,7 +203,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
    >[!NOTE]
    >
-   >이 규칙의 순서가 높으므로 `eventType` &quot;전역 구성&quot; 규칙으로 설정합니다. `eventType` 은(는) 하나의 값만 포함할 수 있으며 가장 높은 값 이벤트로 설정하는 것이 좋습니다.
+   >이 규칙의 순서가 높으므로 `eventType` &quot;전역 구성&quot; 규칙으로 설정합니다. `eventType` 은 하나의 값만 포함할 수 있으며 가장 중요한 이벤트로 설정하는 것이 좋습니다.
 
 1. 아래로 스크롤하여 선택 `productListItems` 배열
 1. 선택 **[!UICONTROL 개별 항목 제공]**
@@ -215,7 +216,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
    >다음 **`productListItems`** 은(는) `array` 데이터가 요소의 컬렉션으로 들어올 것을 예상하도록 데이터 유형입니다. Luma 데모 사이트의 데이터 레이어 구조와 Luma 사이트에서 한 번에 하나의 제품만 볼 수 있으므로 항목을 개별적으로 추가합니다. 자체 웹 사이트에서 를 구현할 때 데이터 레이어 구조에 따라 전체 어레이를 제공할 수 있습니다.
 
 1. 열려면 선택하십시오. **[!UICONTROL 항목 1]**
-1. **`productListItems.item1.SKU`**&#x200B;를 `%product.productInfo.sku%`에 매핑
+1. 맵 **`productListItems.item1.SKU`** 끝 `%product.productInfo.sku%`
 
    ![제품 SKU XDM 개체 변수](assets/set-up-analytics-sku.png)
 
@@ -264,6 +265,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 1. 아래 **[!UICONTROL 작업]** 선택 **[!UICONTROL 추가]**
 1. 선택 **[!UICONTROL Adobe Experience Platform 웹 SDK]** 확장
 1. 선택 **[!UICONTROL 작업 유형]** 다음으로: **[!UICONTROL 변수 업데이트]**
+1. 선택 `xdm.variable.content` (으)로 **[!UICONTROL 데이터 요소]**
 1. 아래로 스크롤하여 `commerce` 을(를) 개체하고 을(를) 선택하여 엽니다.
 1. 를 엽니다. **[!UICONTROL 제품 목록 보기 수]** 오브젝트 및 세트 **[!UICONTROL 값]** 끝 `1`
 
@@ -320,6 +322,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 1. 아래로 스크롤하여 선택 **[!UICONTROL productListItem]** 배열
 1. 선택 **[!UICONTROL 전체 스토리지 제공]**
 1. 다음에 매핑 **`cart.productInfo.purchase`** 데이터 요소
+1. 선택 **[!UICONTROL 변경 내용 유지]**
 1. 선택 **[!UICONTROL 저장]**
 
 완료되면 다음 규칙이 생성됩니다.
@@ -339,7 +342,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 1. 사용 **[!UICONTROL 코어 확장]** 및 선택 `Library Loaded (Page Top)` (으)로 **[!UICONTROL 이벤트 유형]**
 
-1. 선택 **[!UICONTROL 고급]** 드롭다운 및 enter `50` 위치: **[!UICONTROL 주문]**. 이렇게 하면 로 트리거하도록 설정한 첫 번째 규칙 이후에 두 번째 규칙이 트리거됩니다. `1`.
+1. 선택 **[!UICONTROL 고급]** 드롭다운 및 enter `50` 위치: **[!UICONTROL 주문]**. 이렇게 하면 이 규칙은 사용자가 구성한 다른 모든 규칙(이 있었음) 이후에 실행됩니다 `1` 또는 `20` (으)로 [!UICONTROL 주문]).
 
 1. 선택 **[!UICONTROL 변경 내용 유지]** 기본 규칙 화면으로 돌아가기
    ![Library Loaded 트리거 선택](assets/create-tag-rule-trigger-loaded-send.png)
