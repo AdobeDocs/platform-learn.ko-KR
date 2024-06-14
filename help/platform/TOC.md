@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
+source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '899'
 ht-degree: 14%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 14%
 + [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md)
 + [Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
 + 관리 {#admin}
+   + [AI Assistant 사용](/help/platform/admin/ai-assistant.md)
    + [경고 사용](/help/platform/admin/use-alerts.md)
    + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
    + [샌드박스 간 개체 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
