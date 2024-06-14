@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 14%
 
 ---
@@ -80,6 +80,7 @@ ht-degree: 14%
 + 데이터 위생 {#data-hygiene}
    + [익명 프로필 및 이벤트 만료(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [데이터 위생을 위한 데이터 준비](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [데이터 세트 및 배치 삭제](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [데이터 세트 만료](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [프로필 속성 업데이트](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 데이터 수집 {#data-ingestion}
@@ -167,6 +168,7 @@ ht-degree: 14%
    + [병합 정책 만들기](/help/platform/profiles/create-merge-policies.md)
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
    + [계산된 속성 만들기](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [프로필 삭제](/help/platform/profiles/delete-profiles.md)
    + [업데이트를 사용하여 특정 속성 업데이트](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 개인 정보 보호 및 보안 {#privacy}
    + [Privacy Service 소개](/help/platform/privacy/introduction-to-privacy-services.md)
