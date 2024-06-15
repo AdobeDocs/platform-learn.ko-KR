@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
+source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '912'
 ht-degree: 14%
 
 ---
@@ -79,15 +79,17 @@ ht-degree: 14%
    + [동의 시행](/help/platform/governance/enforce-consent.md)
    + [IAB 투명성 및 동의 프레임워크 2.0과 통합](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 데이터 위생 {#data-hygiene}
-   + [익명 프로필 및 이벤트 만료(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [데이터 위생을 위한 데이터 준비](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [데이터 세트 및 배치 삭제](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [데이터 세트 만료](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [익명 프로필 및 이벤트 만료(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [프로필 삭제](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [프로필 속성 업데이트](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 데이터 수집 {#data-ingestion}
    + [개요](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [일괄 처리 수집 개요](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [데이터 세트 만들기 및 채우기](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
+   + [데이터 세트 및 배치 삭제](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [소스 개요](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
@@ -169,6 +171,7 @@ ht-degree: 14%
    + [병합 정책 만들기](/help/platform/profiles/create-merge-policies.md)
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
    + [계산된 속성 만들기](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [익명 프로필 만료(TTL)](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [프로필 삭제](/help/platform/profiles/delete-profiles.md)
    + [업데이트를 사용하여 특정 속성 업데이트](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 개인 정보 보호 및 보안 {#privacy}
