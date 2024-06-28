@@ -1,19 +1,19 @@
 ---
 title: Platform Web SDK를 사용하여 Adobe Target 설정
-description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서의 일부입니다.
+description: Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
+source-git-commit: e7bb1a7856d04c30da63cc013c2d5a5fea3d718e
 workflow-type: tm+mt
-source-wordcount: '4305'
-ht-degree: 0%
+source-wordcount: '4363'
+ht-degree: 1%
 
 ---
 
 # Platform Web SDK를 사용하여 Adobe Target 설정
 
-Adobe Experience Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 경험을 전달하는 방법과 추가 매개 변수를 Target에 전달하는 방법을 알아봅니다.
+Adobe Experience Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법을 알아봅니다. 경험을 제공하는 방법과 추가 매개변수를 Target에 전달하는 방법을 알아봅니다.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) 은 사용자의 웹 및 모바일 사이트, 앱 및 기타 디지털 채널의 매출을 극대화하도록 고객의 경험을 조정하고 개인화하는 데 필요한 모든 기능을 제공하는 Adobe Experience Cloud 애플리케이션입니다.
 
@@ -43,7 +43,7 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Target을 구현하는 �
 
 * 데이터 요소 및 규칙 설정을 포함하여 Platform Web SDK의 초기 구성에 대한 모든 단원을 완료합니다.
 * 다음 항목이 있는지 확인합니다. [편집자 또는 승인자 역할](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) Adobe Target.
-* 설치 [시각적 경험 작성기 Helper 확장 프로그램](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) Google Chrome 브라우저를 사용하는 경우
+* 설치 [시각적 경험 작성기 Helper 확장 프로그램](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) Google Chrome 브라우저를 사용하는 경우.
 * Target에서 활동을 설정하는 방법을 이해할 수 있습니다. 새로 고침이 필요한 경우 다음 튜토리얼 및 안내서가 이 단원에 유용합니다.
    * [VEC(시각적 경험 작성기) Helper 확장 프로그램 사용](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
    * [Visual Experience Composer 사용](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
@@ -188,7 +188,7 @@ Luma 사이트를 사용하는 이 튜토리얼의 목적상 ID 기호 를 사�
 * **활동**: 하나 이상의 대상을 타겟으로 하는 경험 세트입니다. 예를 들어, 간단한 A/B 테스트는 두 개의 경험이 있는 활동일 수 있습니다.
 * **경험**: 하나 이상의 위치 또는 결정 범위에 타겟팅된 작업 세트입니다.
 * **결정 범위**: Target 경험이 제공되는 위치입니다. 이전 버전의 Target 사용에 익숙한 경우 결정 범위는 &quot;mbox&quot;와 동일합니다.
-* **개인화 결정**: 서버에서 결정하는 작업을 적용해야 합니다. 이러한 결정은 대상 기준 및 Target 활동 우선 순위를 기반으로 할 수 있습니다.
+* **Personalization 결정**: 서버에서 결정하는 작업을 적용해야 합니다. 이러한 결정은 대상 기준 및 Target 활동 우선 순위를 기반으로 할 수 있습니다.
 * **제안**: Platform Web SDK 응답에서 전달되는 서버의 의사 결정 결과입니다. 예를 들어 배너 이미지를 교체하는 것이 좋습니다.
 
 ### 업데이트 [!UICONTROL 이벤트 보내기] 작업
@@ -267,7 +267,7 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 1. 로 이동 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html) 디버거를 사용하여 [사이트의 태그 속성을 자신의 개발 속성으로 전환합니다.](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. 페이지 다시 로드
 1. 다음 항목 선택 **[!UICONTROL 네트워크]** 디버거의 도구
-1. 필터링 기준 **[!UICONTROL Adobe Experience Platform 웹 SDK]**
+1. 필터링 기준 **[!UICONTROL Experience Platform Web SDK]**
 1. 첫 번째 호출에 대한 이벤트 행의 값을 선택합니다.
 
    ![Adobe Experience Platform 디버거의 네트워크 호출](assets/target-debugger-network.png)
@@ -321,11 +321,57 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 1. 의 경우 **[!UICONTROL 범위]** 필드 입력 `homepage-hero`
 1. 의 경우 **[!UICONTROL 선택기]** 필드 입력 `div.heroimage`
 1. 대상 **[!UICONTROL 작업 유형]** 선택 **[!UICONTROL HTML 설정]**
+1. 선택 **[!UICONTROL 변경 내용 유지]**
 
    ![홈페이지 주인공 작업 렌더링](assets/target-action-render-hero.png)
 
+   활동을 렌더링하는 것 외에도 양식 기반 활동이 렌더링되었음을 나타내기 위해 Target을 추가로 호출해야 합니다.
+
+1. 규칙에 다른 작업을 추가합니다. 사용 **코어** 확장 및 **[!UICONTROL 사용자 지정 코드]** 작업 유형:
+1. 다음 JavaScript 코드를 붙여넣습니다.
+
+   ```javascript
+   var propositions = event.propositions;
+   var heroProposition;
+   if (propositions) {
+      // Find the hero proposition, if it exists.
+      for (var i = 0; i < propositions.length; i++) {
+         var proposition = propositions[i];
+         if (proposition.scope === "homepage-hero") {
+            heroProposition = proposition;
+            break;
+         }xw
+      }
+   }
+   // Send a "display" event
+   if (heroProposition !== undefined){
+      alloy("sendEvent", {
+         xdm: {
+            eventType: "display",
+            _experience: {
+               decisioning: {
+                  propositions: [{
+                     id: heroProposition.id,
+                     scope: heroProposition.scope,
+                     scopeDetails: heroProposition.scopeDetails
+                  }]
+               }
+            }
+         }
+      });
+   }
+   ```
+
+   ![홈페이지 주인공 작업 렌더링](assets/target-action-fire-display.png)
+
+1. 선택 **[!UICONTROL 변경 내용 유지]**
+
 1. 변경 사항을 저장하고 라이브러리에 빌드
 1. Luma 홈 페이지를 몇 번 로드하십시오. 충분히 새 페이지를 만들 수 있습니다. `homepage-hero` target 인터페이스의 의사 결정 범위 등록입니다.
+
+
+
+
 
 ### 양식 기반 경험 작성기로 Target 활동 설정
 
@@ -381,10 +427,10 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 
 1. 아래에 키가 있습니다. `query` > `personalization` 및  `decisionScopes` 의 값이 `__view__` 이전과 비슷하지만 지금은 `homepage-hero` 범위가 포함되었습니다. 이 Platform Web SDK 호출은 VEC 및 특정 `homepage-hero` 위치.
 
-   ![`__view__` decisionScope 요청](assets/target-debugger-view-scope.png)
+   ![`__view__` decisionScope 요청](assets/target-debugger-view-custom-scope.png)
 
 1. 오버레이를 닫고 두 번째 네트워크 호출에 대한 이벤트 세부 정보를 선택합니다. 이 호출은 Target이 활동을 반환한 경우에만 표시됩니다.
-1. Target에서 반환된 활동 및 경험에 대한 세부 사항이 있습니다. 이 Platform Web SDK 호출은 Target 활동이 사용자에게 렌더링되었다는 알림을 보내고 노출을 증가시킵니다.
+1. Target에서 반환된 활동 및 경험에 대한 세부 사항이 있습니다. 이 Platform Web SDK 호출은 Target 활동이 사용자에게 렌더링되었다는 알림을 보내고 노출을 증가시킵니다. 이전에 추가한 사용자 지정 코드 작업 동작에 의해 시작되었습니다.
 
    ![타겟 활동 노출](assets/target-debugger-activity-impression.png)
 
@@ -397,6 +443,8 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 모든 XDM 필드는 다음과 같이 Target에 자동으로 전달됩니다. [페이지 매개 변수](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) 또는 mbox 매개 변수
 
 이러한 XDM 필드 중 일부는 Target 백엔드의 특수 오브젝트에 매핑됩니다. 예를 들어, `web.webPageDetails.URL` 는 URL 기반 타깃팅 조건을 빌드하는 데 또는 로서 자동으로 사용할 수 있습니다. `page.url` 개체(프로필 스크립트 작성 시)
+
+데이터 개체를 사용하여 페이지 매개 변수를 추가할 수도 있습니다.
 
 ### 특수 매개 변수 및 데이터 개체
 
@@ -440,14 +488,13 @@ XDM 개체 외부의 Target에 대한 추가 데이터를 전달하려면 적용
    ![규칙에 대상 데이터 추가](assets/target-rule-data.png)
 
 1. 변경 사항을 저장하고 라이브러리에 빌드
-1. 에 대해 1~4단계를 반복합니다. **ecommerce - 라이브러리가 로드됨 - 제품 세부 사항 변수 설정 - 20** 규칙
 
 >[!NOTE]
 >
 >위의 예에서는 `data` 일부 페이지 유형에서 완전히 채워지지 않은 개체입니다. 태그는 이 상황을 적절하게 처리하며 정의되지 않은 값이 있는 키는 생략합니다. 예를 들어, `entity.id` 및 `entity.name` 는 제품 세부 사항을 제외한 어떤 페이지에서도 전달되지 않습니다.
 
 
-## 개인화 및 Analytics 요청 분할
+## Personalization 및 Analytics 요청 분할
 
 Luma 사이트의 데이터 레이어는 태그 포함 코드 앞에 완전히 정의됩니다. 이를 통해 단일 호출을 사용하여 개인화된 콘텐츠(예: Adobe Target에서)를 가져오고 분석 데이터(예: Adobe Analytics으로)를 전송할 수 있습니다.
 
@@ -505,7 +552,7 @@ Analytics-on-bottom 요청을 만들려면:
 다음으로 로그인 상태 프로필 속성이 전달되었는지 확인합니다.
 
 1. 다음을 선택합니다. **[!UICONTROL 방문자 프로필]** 속성 유형
-2. `loggedIn`을 검색합니다. 드롭다운 메뉴에서 속성을 사용할 수 있는 경우 속성이 Target에 올바르게 전달되었습니다. 새 속성을 Target UI에서 사용할 수 있게 되는 데 몇 분이 걸릴 수 있습니다.
+2. 검색 대상 `loggedIn`. 드롭다운 메뉴에서 속성을 사용할 수 있는 경우 속성이 Target에 올바르게 전달되었습니다. 새 속성을 Target UI에서 사용할 수 있게 되는 데 몇 분이 걸릴 수 있습니다.
 
    ![Target 프로필에서 유효성 검사](assets/validate-in-target-profile.png)
 
@@ -517,7 +564,7 @@ Target Premium이 있는 경우 엔티티 데이터가 올바르게 전달되었
 
    ![Target 카탈로그 검색에서 유효성 검사](assets/validate-in-target-catalogsearch.png)
 
-### Assurance를 통해 유효성 검사
+### Assurance를 사용한 유효성 검사
 
 또한 Assurance를 사용하여 적절한 위치에서 Target 의사 결정 요청이 올바른 데이터를 가져오고 서버측 변환이 올바르게 발생하는지 확인할 수 있습니다. Target 의사 결정 및 Adobe Analytics 호출이 별도로 전송된 경우에도 캠페인 및 경험 정보가 Adobe Analytics 호출에 포함되어 있는지 확인할 수 있습니다.
 
