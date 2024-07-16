@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 3%
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 + [개요](/help/bootcamp-pt/overview.md)
 + [선행 작업](/help/bootcamp-pt/prework.md)
-+ 1 - 아퀴시상 {#uc1}
++ 1 - Aquisição {#uc1}
    + [개요](/help/bootcamp-pt/uc/uc1/uc1.md)
    + [1.1 Do desconheido ao conheido em nosso site](/help/bootcamp-pt/uc/uc1/ex1.md)
    + [1.2 Visualize seu próprio perfil de cliente em tempo real - UI](/help/bootcamp-pt/uc/uc1/ex2.md)
@@ -32,9 +32,9 @@ ht-degree: 3%
    + [2.1 Visite o site e crie sua conta](/help/bootcamp-pt/uc/uc2/ex1.md)
    + [2.2 크리 세우 에벤토](/help/bootcamp-pt/uc/uc2/ex2.md)
    + [2.3 Crie sua jornada e mensagem de email](/help/bootcamp-pt/uc/uc2/ex3.md)
-   + [2.4 테스테 수아 조르나다](/help/bootcamp-pt/uc/uc2/ex4.md)
-   + [2.5 Instale e use o aplicativo móvel](/help/bootcamp-pt/uc/uc2/ex5.md)
-   + [2.6 Personalização no call center](/help/bootcamp-pt/uc/uc2/ex6.md)
+   + [2.4 테스트 결과 jornada](/help/bootcamp-pt/uc/uc2/ex4.md)
+   + [2.5 aplicativo móvel에 대한 인스턴스 사용](/help/bootcamp-pt/uc/uc2/ex5.md)
+   + [2.6 Personalização 콜 센터 없음](/help/bootcamp-pt/uc/uc2/ex6.md)
 + 3 - Consolidando o físico e o digital {#uc3}
    + [개요](/help/bootcamp-pt/uc/uc3/uc3.md)
    + [3.1 Use o aplicativo móvel e acione um beacon](/help/bootcamp-pt/uc/uc3/ex1.md)

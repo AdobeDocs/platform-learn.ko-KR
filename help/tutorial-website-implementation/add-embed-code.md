@@ -4,8 +4,8 @@ description: 태그 속성의 포함 코드를 가져와 웹 사이트에서 구
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 45%
+source-wordcount: '1037'
+ht-degree: 43%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 45%
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 platform launch(클라이언트측)이 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
+> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -28,13 +28,13 @@ ht-degree: 45%
 * 태그 속성에 대한 포함 코드 가져오기
 * 개발, 스테이징 및 프로덕션 환경의 차이점 이해
 * html 문서에 태그 포함 코드 추가
-* 의 다른 코드와 관련이 있는 태그 포함 코드의 최적 위치 설명 `<head>` HTML 문서의
+* html 문서의 `<head>`에서 다른 코드와 관련이 있는 태그 포함 코드의 최적 위치 설명
 
 ## 포함 코드 복사
 
-포함 코드는 `<script>` 태그로 빌드하는 논리를 로드 및 실행하기 위해 웹 사이트에서 지정하는 태그입니다. 라이브러리를 비동기식으로 로드하는 경우 브라우저에서 페이지를 계속 로드하고 태그 라이브러리를 검색하여 병렬로 실행합니다. 이 경우 `<head>`에 지정하는 포함 코드가 한 개만 있습니다. (태그가 동기적으로 배포될 때 두 개의 포함 코드가 있습니다. 하나에는 `<head>` 그리고 당신이 앞에 놓았던 다른 것 `</body>`).
+포함 코드는 태그에서 빌드하는 논리를 로드 및 실행하기 위해 웹 페이지에서 지정하는 `<script>` 태그입니다. 라이브러리를 비동기식으로 로드하는 경우 브라우저에서 페이지를 계속 로드하고 태그 라이브러리를 검색하여 병렬로 실행합니다. 이 경우 `<head>`에 지정하는 포함 코드가 한 개만 있습니다. 태그가 동기적으로 배포되면 두 개의 포함 코드가 있습니다. 하나는 `<head>`에 지정하고 다른 하나는 `</body>` 앞에 지정합니다.
 
-속성 개요 화면에서 **[!UICONTROL 환경]** 을 클릭하여 환경 페이지로 이동합니다. 개발, 스테이징 및 프로덕션 환경은 사용자를 위해 사전에 만들어졌습니다.
+속성 개요 화면에서 왼쪽 탐색의 **[!UICONTROL 환경]**&#x200B;을 클릭하여 환경 페이지로 이동합니다. 개발, 스테이징 및 프로덕션 환경은 사용자를 위해 사전에 만들어졌습니다.
 
 ![위쪽 탐색에서 Environments 클릭](images/launch-environments.png)
 
@@ -52,13 +52,13 @@ ht-degree: 45%
 
 1. 복사 아이콘 ![Copy 아이콘](images/launch-copyIcon.png)을 클릭하여 포함 코드를 클립보드에 복사합니다.
 
-1. **[!UICONTROL Close]**&#x200B;를 클릭하여 모달을 닫습니다.
+1. **[!UICONTROL 닫기]**&#x200B;를 클릭하여 모달을 닫습니다.
 
    ![Install 아이콘](images/launch-copyInstallCode.png)
 
 ## 샘플 HTML 페이지의 `<head>`에서 포함 코드 구현
 
-포함 코드는 속성을 공유할 모든 HTML 페이지의 `<head>` 요소에 구현해야 합니다. 다음을 제어하는 템플릿 파일이 한 개 또는 여러 개 있을 수 있습니다. `<head>` 를 사이트 전체에 걸쳐 배치하므로 태그를 추가하는 프로세스를 간단하게 만들 수 있습니다.
+포함 코드는 속성을 공유할 모든 HTML 페이지의 `<head>` 요소에 구현해야 합니다. 사이트에서 전체적으로 `<head>`을(를) 제어하는 템플릿 파일이 한 개 또는 여러 개 있을 수 있으므로 태그를 추가하는 프로세스를 간단하게 만들 수 있습니다.
 
 샘플 html 페이지 코드를 복사하여 코드 편집기에 붙여 넣습니다. [Brackets](https://brackets.io/)는 무료 오픈 소스 편집기입니다. 하나 필요하다면 다운로드하십시오.
 
@@ -130,17 +130,17 @@ ht-degree: 45%
 
 * **데이터 레이어**:
 
-   * We *강력하게* analytics, Target 및 기타 마케팅 솔루션에서 변수를 채우는 데 필요한 모든 특성이 들어 있는 데이터 계층을 사이트에 만들 것을 권장합니다. 이 샘플 페이지에는 매우 간단한 데이터 계층만 들어 있지만, 실제 데이터 계층에는 페이지, 방문자, 장바구니 세부 사항 등에 대한 여러 가지 자세한 내용이 들어 있을 수 있습니다. 데이터 계층에 대한 자세한 내용은 [Customer Experience 디지털 데이터 계층 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)을 참조하십시오.
+   * Analytics, Target 및 기타 마케팅 솔루션에서 변수를 채우는 데 필요한 모든 특성이 들어 있는 데이터 계층을 사이트에 만들 것을 *강력하게*&#x200B;권장합니다. 이 샘플 페이지에는 매우 간단한 데이터 계층만 들어 있지만, 실제 데이터 계층에는 페이지, 방문자, 장바구니 세부 사항 등에 대한 여러 가지 자세한 내용이 들어 있을 수 있습니다. 데이터 계층에 대한 자세한 내용은 [Customer Experience 디지털 데이터 계층 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)을 참조하십시오.
 
    * Experience Cloud 솔루션으로 수행할 수 있는 작업을 극대화하려면 태그 포함 코드 앞에 데이터 레이어를 정의하십시오.
 
-* **JavaScript 도우미 라이브러리**: JQuery와 같은 라이브러리를에 이미 구현한 경우 `<head>` 태그 및 Target에서 해당 구문을 활용하기 위해 페이지의 를 태그 앞에 로드합니다
+* **JavaScript 도우미 라이브러리**: JQuery와 같은 라이브러리를 페이지의 `<head>`에서 이미 구현한 경우에는 태그 및 Target에서 해당 구문을 활용하기 위해 태그 앞에 로드하십시오
 
 * **HTML5 doctype**: HTML5 doctype은 Target에 필요합니다.
 
 * **preconnect and dns-prefetch**: preconnect 및 dns-prefetch를 사용하여 페이지 로드 시간을 개선합니다. 참고 항목: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **비동기 Target 구현을 위해 코드 조각 사전 숨김**: Target 단원에서 이에 대해 자세히 알아보겠지만, Target이 비동기 태그 포함 코드를 통해 배포되면 컨텐츠 깜박임을 관리하기 위해 태그 포함 코드 앞에 페이지에 사전 숨김 코드 조각을 하드코딩해야 합니다
+* **비동기 Target 구현을 위한 사전 숨김 코드 조각**: Target 단원에서 이에 대해 자세히 알아보겠지만, Target이 비동기 태그 포함 코드를 통해 배포되면 태그 포함 코드 앞에 페이지에 사전 숨김 코드 조각을 하드코딩하여 콘텐츠 깜박임을 관리해야 합니다
 
 다음은 이러한 모범 사례의 상태를 제안된 순서로 보여주는 요약 내용입니다. 계정별 세부 사항에 대한 자리 표시자가 일부 있습니다.
 

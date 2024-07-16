@@ -6,14 +6,14 @@ mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 33%
+source-wordcount: '154'
+ht-degree: 7%
 
 ---
 
 # Adobe Experience Platform 자습서
 
-Adobe Experience Platform은 고객 경험을 주도하는 완벽한 솔루션을 구축하고 관리하기 위해 시장에서 가장 강력하고 유연하며 개방적인 시스템입니다. Experience Platform을 사용하면 조직 내 모든 시스템의 고객 데이터와 컨텐츠를 중앙 집중화 및 표준화하고 데이터 과학 및 시스템 학습을 적용하여 풍부한 개인별 경험을 더 잘 설계하고 전달할 수 있습니다. 이 비디오와 자습서를 통해 Experience Platform의 다양한 구성 요소를 학습할 수 있습니다.
+Adobe Experience Platform은 고객 경험을 주도하는 완벽한 솔루션을 구축하고 관리하기 위해 시장에서 가장 강력하고 유연하며 개방적인 시스템입니다. Experience Platform을 통해 조직은 모든 시스템의 고객 데이터와 콘텐츠를 중앙 집중화 및 표준화하고 데이터 과학 및 시스템 학습을 적용하여 풍부한 개인별 경험을 더 잘 설계하고 전달할 수 있습니다. 이 비디오와 자습서를 통해 Experience Platform의 다양한 구성 요소를 학습할 수 있습니다.
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -38,7 +38,7 @@ Adobe Experience Platform은 고객 경험을 주도하는 완벽한 솔루션�
     </a>
     </div>
     <p>
-    <em>플랫폼을 사용하여 고객 경험을 향상시키는 방법 보기</em>
+    <em>플랫폼을 사용하여 고객 환경을 향상시키는 방법 확인</em>
     <p>
   </td>
   <td>
@@ -51,7 +51,7 @@ Adobe Experience Platform은 고객 경험을 주도하는 완벽한 솔루션�
     </a>
     </div>
     <p>
-    <em>시작하기 위한 실습</em>
+    <em>시작하는 실습</em>
     <p>
   </td>
   <td>

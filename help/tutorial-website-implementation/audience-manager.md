@@ -1,12 +1,12 @@
 ---
 title: Adobe Audience Manager 추가
-description: 서버측 전달 및 태그를 사용하여 웹 사이트에서 Adobe Audience Manager을 구현하는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
+description: 서버측 전달 및 태그를 사용하여 웹 사이트에 Adobe Audience Manager을 구현하는 방법에 대해 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 83%
+source-wordcount: '1749'
+ht-degree: 72%
 
 ---
 
@@ -18,12 +18,11 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch은 데이터 수집 기술 세트로 Adobe Experience Platform에 통합되고 있습니다. 인터페이스에서 이 컨텐츠를 사용하는 동안 알고 있어야 하는 몇 가지 용어 변경 사항이 롤아웃되었습니다.
+>Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 platform launch(클라이언트측)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * 이제 platform launch 서버 측 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 이제 Edge 구성이 제공됩니다. **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
+> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -37,7 +36,7 @@ ht-degree: 83%
 
 이 단원을 완료하려면
 
-1. ...의 수업을 다 마치다 [태그 구성](create-a-property.md), [Adobe Analytics 추가](analytics.md), 및 [ID 서비스 추가](id-service.md).
+1. [태그 구성](create-a-property.md), [Adobe Analytics 추가](analytics.md) 및 [ID 서비스 추가](id-service.md)의 학습 내용을 완료해야 합니다.
 
 1. 이 자습서에서 사용하는 보고서 세트에 대해 서버측 전달을 활성화할 수 있도록 Adobe Analytics에 대한 관리자 액세스 권한이 필요합니다. 또는 아래 지침에 따라 조직의 기존 관리자에게 이를 수행하도록 요청할 수 있습니다.
 
@@ -74,11 +73,11 @@ Adobe Analytics에서 Adobe Audience Manager로 데이터를 전달하려면 Ado
 
    ![Adobe Analytics에 로그인](images/aam-logIntoAnalytics.png)
 
-1. Analytics의 위쪽 탐색에서 **[!UICONTROL Admin > Report Suites]**&#x200B;를 선택하고 목록에서 Audience Manager에 전달할 보고서 세트를 선택(다중 선택)합니다.
+1. Analytics의 위쪽 탐색에서 **[!UICONTROL 관리자 > 보고서 세트]**&#x200B;를 선택하고 목록에서 Audience Manager에 전달할 보고서 세트를 선택(다중 선택)합니다.
 
    ![Admin Console 클릭](images/aam-analyticsAdminConsoleReportSuites.png)
 
-1. 보고서 세트 화면에서 보고서 세트를 선택한 채 **[!UICONTROL Edit Settings > General > Server-Side Forwarding]**&#x200B;을 선택합니다.
+1. 보고서 세트 화면에서 보고서 세트를 선택한 상태로 **[!UICONTROL 설정 편집 > 일반 > 서버측 전달]**&#x200B;을 선택합니다.
 
    ![SSF 메뉴 선택](images/aam-selectSSFmenu.png)
 
@@ -86,7 +85,7 @@ Adobe Analytics에서 Adobe Audience Manager로 데이터를 전달하려면 Ado
    >
    >위에 설명된 대로, 이 메뉴 항목을 보려면 관리자 권한이 있어야 합니다.
 
-1. 서버측 전달 페이지에서 정보를 읽고 보고서 세트에 대한 **[!UICONTROL Enable Server-Side Forwarding]** 확인란을 선택합니다.
+1. 서버측 전달 페이지에서 정보를 읽고 보고서 세트에 대해 **[!UICONTROL 서버측 전달 활성화]** 확인란을 선택합니다.
 
 1. **[!UICONTROL Save]**&#x200B;를 클릭합니다
 
@@ -102,25 +101,25 @@ Adobe Analytics에서 Adobe Audience Manager로 데이터를 전달하려면 Ado
 
 ### 태그에서 서버측 전달 활성화
 
-SSF 활성화를 위한 두 단계 중 두 번째 단계입니다. Analytics Admin Console에서 이미 스위치를 전환했고, 이제 코드를 추가해야 합니다. 이 작업은 적절한 상자를 선택하기만 하면 태그가 자동으로 수행합니다.
+SSF 활성화를 위한 두 단계 중 두 번째 단계입니다. Analytics Admin Console에서 이미 스위치를 전환했고, 이제 코드를 추가해야 합니다. 이 작업은 적절한 상자를 선택하기만 하면 태그가 수행됩니다.
 
 >[!NOTE]
 >
->Analytics 데이터의 서버측 전달을 AAM에 구현하기 위해 태그에서 Analytics 확장을 실제로 편집/구성하겠습니다. **not** AAM 확장. AAM 확장은 Adobe Analytics가 없는 사용자용으로서, 클라이언트측 DIL 구현에만 사용됩니다. 따라서 Analytics 확장을 표시하여 설정할 때에는 다음 절차가 적절합니다.
+>Analytics 데이터의 서버측 전달을 AAM에 구현하기 위해 Analytics 확장을 태그에서 실제로 편집/구성하겠습니다. AAM 확장의 **not**. AAM 확장은 Adobe Analytics가 없는 사용자용으로서, 클라이언트측 DIL 구현에만 사용됩니다. 따라서 Analytics 확장을 표시하여 설정할 때에는 다음 절차가 적절합니다.
 
 #### 태그에서 SSF를 활성화하려면
 
-1. **[!UICONTROL Extensions > Installed]**&#x200B;로 이동하고 클릭하여 Analytics 확장을 구성합니다.
+1. **[!UICONTROL Extensions > Installed]**(으)로 이동하고 클릭하여 Analytics 확장을 구성합니다.
 
    ![Analytics 확장 구성](images/aam-configAnalyticsExtension.png)
 
 1. `Adobe Audience Manager` 섹션을 확장합니다.
 
-1. **[!UICONTROL Automatically share Analytics Data with Audience Manager]** 상자를 선택합니다. 이렇게 하면 Audience Manager &quot;모듈&quot;(코드)이 Analytics `AppMeasurement.js` 구현에 추가됩니다.
+1. **[!UICONTROL Audience Manager과 Analytics 데이터를 자동으로 공유]**&#x200B;하려면 이 확인란을 선택하세요. 이렇게 하면 Audience Manager &quot;모듈&quot;(코드)이 Analytics `AppMeasurement.js` 구현에 추가됩니다.
 
 1. Audience Manager 하위 도메인을 추가합니다(&quot;파트너 이름&quot; &quot;파트너 ID&quot; 또는 &quot;파트너 하위 도메인&quot;이라고도 함). 다음 지침에 따라 [Audience Manager 하위 도메인을 획득](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)하십시오.
 
-1. **[!UICONTROL Save to Library and Build]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 클릭합니다.
 
    ![SSF 구성](images/aam-configLaunchSSF.png)
 
@@ -132,7 +131,8 @@ SSF 활성화를 위한 두 단계 중 두 번째 단계입니다. Analytics Adm
 
 #### 코드가 올바로 로드되는지 확인
 
-전달을 처리하기 위해 태그가 설치하는 코드, 특히 페이지에 대한 AAM의 응답을 Audience Manager &quot;모듈&quot;이라고 합니다. Experience Cloud Debugger를 사용하여 코드가 로드되었는지 확인할 수 있습니다.
+전달을 처리하기 위해 태그가 설치하는 코드, 특히 AAM에서 페이지에 대한 응답을 Audience Manager 라고 합니다
+&quot;모듈.&quot; Experience Cloud Debugger를 사용하여 코드가 로드되었는지 확인할 수 있습니다.
 
 1. Luma 사이트를 엽니다.
 1. 브라우저에서 디버거 아이콘을 클릭하여 Experience Cloud Debugger를 엽니다.
@@ -152,7 +152,7 @@ SSF 활성화를 위한 두 단계 중 두 번째 단계입니다. Analytics Adm
 
 >[!WARNING]
 >
->디버거의 Audience Manager 섹션은 &quot;DIL&quot;(데이터 통합 라이브러리)을 참조하며, 일반적으로 여기에서 구현한 서버측 접근 방식이 아니라 클라이언트측 구현을 참조합니다. 사실은 AAM &quot;모듈&quot;(이 SSF 접근 방식에서 사용됨)이 클라이언트측 DIL 라이브러리와 동일한 코드를 많이 사용하며, 따라서 이 디버거가 현재 이와 같이 보고하고 있는 것입니다. 이 자습서의 단계를 따랐고 이 유효성 검사 섹션에 있는 나머지 항목이 올바른 경우 서버측 전달이 작동하는 것으로 확신할 수 있습니다.
+>디버거의 Audience Manager 섹션은 &quot;DIL&quot;인 &quot;Data Integration Library&quot;을 참조하며, 일반적으로 여기에서 구현한 서버측 접근 방식이 아니라 클라이언트측 구현을 참조합니다. 사실은 AAM &quot;모듈&quot;(이 SSF 접근 방식에서 사용됨)이 클라이언트측 DIL 라이브러리와 동일한 코드를 많이 사용하며, 따라서 이 디버거가 현재 이와 같이 보고하고 있는 것입니다. 이 자습서의 단계를 따랐고 이 유효성 검사 섹션에 있는 나머지 항목이 올바른 경우 서버측 전달이 작동하는 것으로 확신할 수 있습니다.
 
 #### Analytics 요청 및 응답 확인
 
@@ -174,7 +174,7 @@ SSF 활성화를 위한 두 단계 중 두 번째 단계입니다. Analytics Adm
 
 >[!WARNING]
 >
->거짓 &quot;성공&quot;에 주의하십시오. - 응답이 있고 모든 것이 작동하는 것처럼 보이는 경우 이 &quot;stuff&quot; 개체가 있는지 **확인하십시오**. 없는 경우 &quot;status&quot;:&quot;SUCCESS&quot;라는 메시지가 응답에 표시될 수 있습니다. 이상하게 들리겠지만, 이것은 실제로는 제대로 작동하지 **않는다**&#x200B;는 증거입니다. 이 경우 이 두 번째 단계(태그의 코드)를 완료했지만 Analytics Admin Console(이 섹션의 첫 번째 단계)에서 전달이 아직 완료되지 않았음을 의미합니다. 이 경우 Analytics Admin Console에서 SSF를 활성화했는지 확인해야 합니다. 활성화했지만 아직 4시간이 되지 않았다면 기다려 주십시오.
+>거짓 &quot;성공&quot;에 주의하십시오. - 응답이 있고 모든 것이 작동하는 것처럼 보이는 경우 **해당 &quot;stuff&quot; 개체가 있는지 확인**&#x200B;하십시오. 없는 경우 &quot;status&quot;:&quot;SUCCESS&quot;라는 메시지가 응답에 표시될 수 있습니다. 이상하게 들리겠지만, 이것은 실제로는 제대로 작동하지 **않는다**&#x200B;는 증거입니다. 이 경우 이 두 번째 단계(태그의 코드)를 완료했지만 Analytics Admin Console(이 섹션의 첫 번째 단계)에서 전달이 아직 완료되지 않았음을 의미합니다. 이 경우 Analytics Admin Console에서 SSF를 활성화했는지 확인해야 합니다. 활성화했지만 아직 4시간이 되지 않았다면 기다려 주십시오.
 
 ![AA 응답 - 거짓 성공](images/aam-responseFalseSuccess.png)
 

@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 exl-id: 63933d9e-b774-483f-b547-188c77440595
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '941'
+source-wordcount: '942'
 ht-degree: 0%
 
 ---
@@ -69,17 +69,17 @@ Antes de iniciar os próximos exercícios, é essential compreender quais etapas
 
 Antes de iniciar as etapas acima, não se equeça da etapa 0, que é compreender os dados que estão disponíveis na Adobe Experience Platform.
 
-**쓰레기가 들어오면, 쓰레기가 나와요.** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são configurados. Compreender os dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexão de dados, mas também na hora de construir visualizações e fazer análiss.
+**가비지 입력, 가비지 출력.** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são configurados. Compreender os dados que estão na Adobe Experience Platform facilitará as coisas, não só na parte de conexão de dados, mas também na hora de construir visualizações e fazer análiss.
 
 ## 4.1.5 Etapa 0: Compreender esquemas e dataset da Adobe Experience Platform
 
-Adobe Experience Platform에 대한 URL 로그인: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Adobe Experience Platform에 대한 Faça 로그인에 URL이 필요합니다. [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 Depois de fazer 로그인, você irá acesssar a página inicial da Adobe Experience Platform.
 
 ![데이터 수집](../uc1/images/home.png)
 
-Antes de continar, você precisa selecionar um **샌드박스**. 샌드박스 a ser selectionado é ``Bootcamp``. 보테 포데 파제 이소 클리칸도 노 이콘 **[!UICONTROL Prod]** 칸토 수페리어 디레이토 다 텔라. Depois de seleionar o sandbox adopriado, você verá a tela mudando e agora você está em seu sandbox dedicado.
+Antes de continar, você precisa selectionar um **sandbox**. 사용자 selectionado é ``Bootcamp``을(를) 샌드박스로 설정하지 마십시오. Você pode fazer siso clicando no ícone **[!UICONTROL Prod]** no canto superior direito da tela. Depois de seleionar o sandbox adopriado, você verá a tela mudando e agora você está em seu sandbox dedicado.
 
 ![데이터 수집](../uc1/images/sb1.png)
 
@@ -95,19 +95,19 @@ Certifique-se de ter verificado ao menos:
 
 - 식별자: CRMID, 전화번호, ECID, 이메일. Quais identities são os identificadores primários, quais são os identificadores secundários?
 
-Você pode encontrar os identificadores abrindo um schema e observando o objeto `_experienceplatform.identification.core`. 스키마 확인 [데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)](https://experience.adobe.com/platform/schema).
+`_experienceplatform.identification.core` objeto에서 observando에 대한 abrindo um schema를 식별합니다. 스키마 [데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)](https://experience.adobe.com/platform/schema)를 확인합니다.
 
 ![데모](./images/identity.png)
 
-- Objeto de comércio dentro do schema 살펴보기 [데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)](https://experience.adobe.com/platform/schema).
+- 개체 탐색 o objeto de comércio dentro do schema [데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)](https://experience.adobe.com/platform/schema).
 
 ![데모](./images/commerce.png)
 
-- 할 일 시각화 [데이터 세트](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
+- todos os [데이터 세트](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created)를 시각화 os dados
 
 Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics.
 
-프록시마 에타파: [4.2 데이터 세트 연결 da Adobe Experience Platform Customer Journey Analytics 없음](./ex2.md)
+Próxima etapa: [4.2 Customer Journey Analytics 없이 데이터 세트 da Adobe Experience Platform 연결](./ex2.md)
 
 [레토르나르 파라 플루소 데 우수아리오 4](./uc4.md)
 

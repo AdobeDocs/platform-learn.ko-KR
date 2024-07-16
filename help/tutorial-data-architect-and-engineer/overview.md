@@ -19,16 +19,16 @@ ht-degree: 0%
 
 <!--5min-->
 
-_데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기_ 는 Experience Platform과 실습하기 위한 완벽한 시작점입니다.
+_데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기_&#x200B;는 Experience Platform을 직접 체험할 수 있는 완벽한 시작점입니다.
 
 
 <!--How do we address ETL-->
 
 ## 학습 목표
 
-성공적인 Experience Platform 배포를 위해서는 데이터 설계자와 데이터 엔지니어가 긴밀히 협력해야 합니다. 이 실습형 튜토리얼은 다음에서 실행하는 주요 작업을 설명합니다. _두 역할_ 따라서 비즈니스를 위한 플랫폼 구현을 시작하는 방법을 이해할 수 있습니다. Experience Platform의 주요 용어, 기능, 인터페이스 및 API를 소개하는 연습을 안내합니다. Real-time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 Adobe Experience Cloud 애플리케이션의 고객도 이 콘텐츠를 유용하게 사용할 수 있습니다. 플랫폼 서비스는 이들 애플리케이션의 중요한 기반이기 때문입니다.
+성공적인 Experience Platform 배포를 위해서는 데이터 설계자와 데이터 엔지니어가 긴밀히 협력해야 합니다. 이 실습형 튜토리얼에서는 _두 역할_&#x200B;이 실행하는 주요 작업을 알려주므로 비즈니스를 위한 플랫폼 구현을 시작하는 방법에 대해 알아봅니다. Experience Platform의 주요 용어, 기능, 인터페이스 및 API를 소개하는 연습을 안내합니다. Real-time Customer Data Platform, Customer Journey Analytics 및 Journey Optimizer과 같은 Adobe Experience Cloud 애플리케이션의 고객도 이 콘텐츠를 유용하게 사용할 수 있습니다. 플랫폼 서비스는 이들 애플리케이션의 중요한 기반이기 때문입니다.
 
-![이 자습서에서 다룬 플랫폼 서비스(ID, 프로필, 세분화, 수집, 쿼리 및 거버넌스)를 강조 표시하는 Adobe Experience Cloud marketeture](assets/marketecture.png)
+![이 자습서에서 다루는 플랫폼 서비스(ID, 프로필, 세분화, 수집, 쿼리 및 거버넌스)를 강조 표시하는 Adobe Experience Cloud marketeture](assets/marketecture.png)
 
 주제는 다음과 같습니다.
 
@@ -48,9 +48,9 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 
 ## 전제 조건
 
-* 다음을 완료했습니다. [Adobe Experience Platform 교육 과정 소개](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) Experience League에 있으며 플랫폼 기능에 익숙합니다
+* Experience League에서 [Adobe Experience Platform 소개 강의](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1)를 완료했으며 플랫폼 기능에 익숙합니다
 * Adobe Experience Platform(또는 Real-Time CDP 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션) 및 데이터 수집(이전 Launch)으로 프로비저닝된 계정에 액세스할 수 있습니다.
-* 해당 계정의 시스템 관리자이거나 계정 관리자가 있을 수 있습니다. [사용자 권한 구성](configure-permissions.md) 당신을 위해.
+* 해당 계정의 시스템 관리자이거나 [사용자 권한을 구성](configure-permissions.md)할 수 있습니다.
 
 ## 이 자습서 사용
 
@@ -58,7 +58,7 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 
 이 자습서 중에 다양한 플랫폼 요소를 만들 때 최대한 권장하는 이름을 사용하십시오. 그러나 조직에서 이 자습서를 동시에 수강하는 사람이 여러 명인 경우 사용자 지정할 수 있는 높은 수준의 요소 이름이 몇 개 있습니다. 예를 들어, &quot;Luma 튜토리얼 플랫폼&quot; 대신 Platform 샌드박스의 이름을 &quot;Luma 튜토리얼 플랫폼 - Ignatius J Reilly&quot;로 지정할 수 있습니다.
 
-문제가 발생하면 먼저 지침을 다시 읽은 다음 ![문제 기록](https://experienceleague.adobe.com/assets/img/feedback.svg) 연락하려면 각 페이지의 사이드바에 연결하십시오.
+문제가 발생하면 먼저 지침을 다시 읽은 다음 각 페이지의 사이드바에 있는 ![문제 기록](https://experienceleague.adobe.com/assets/img/feedback.svg) 링크를 사용하여 내게 연락하십시오.
 
 ## 기술 참고 사항
 
@@ -68,7 +68,7 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 
 ### API
 
-플랫폼은 API를 기반으로 구축됩니다. 인터페이스 워크플로우는 모든 주요 플랫폼 워크플로에 대해 존재하며 주로 사용되지만, 자습서에는 몇 가지 API 중심 연습이 포함되어 있습니다. Adobe Developer 콘솔의 기본 프로젝트 설정을 안내하고 다음을 제공합니다. [!DNL Postman] platform API를 시작하는 환경 및 컬렉션. 자습서를 완료한 후 Platform API를 숙지하고 자체 배포에서 사용하는 것이 유용할 수 있습니다.
+플랫폼은 API를 기반으로 구축됩니다. 인터페이스 워크플로우는 모든 주요 플랫폼 워크플로에 대해 존재하며 주로 사용되지만, 자습서에는 몇 가지 API 중심 연습이 포함되어 있습니다. Adobe Developer Console의 기본 프로젝트 설정을 안내하고 Platform API를 시작할 수 있는 [!DNL Postman] 환경 및 컬렉션을 제공합니다. 자습서를 완료한 후 Platform API를 숙지하고 자체 배포에서 사용하는 것이 유용할 수 있습니다.
 
 ### 타사 기술
 
@@ -79,4 +79,4 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 * 2023년 6월: 새 권한 워크플로를 포함하고 OAuth 서버 간 API 자격 증명을 사용하도록 업데이트되었습니다
 
 
-이제 첫 번째 단원으로 넘어갑시다.[권한 구성](configure-permissions.md).
+이제 첫 번째 단원([권한 구성](configure-permissions.md))으로 넘어가겠습니다.

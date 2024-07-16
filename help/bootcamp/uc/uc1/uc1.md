@@ -21,7 +21,7 @@ ht-degree: 2%
 ## 전제 조건
 
 - Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform 데이터 수집 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platform 데이터 수집에 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 데모 웹 사이트 액세스
 
 >[!IMPORTANT]

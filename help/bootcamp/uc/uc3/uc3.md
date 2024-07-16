@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 46861546-6483-4997-98b7-1d3addef65dd
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 5%
+source-wordcount: '204'
+ht-degree: 2%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 5%
 
 ## 학습 목표
 
-## 사전 요구 사항
+## 전제 조건
 
-- Adobe Experience Platform에 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform 데이터 수집 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platform 데이터 수집에 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 데모 웹 사이트 액세스
 
 >[!IMPORTANT]

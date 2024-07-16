@@ -11,7 +11,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 61%
+ht-degree: 51%
 
 ---
 
@@ -30,5 +30,5 @@ ht-degree: 61%
    + [Adobe Analytics 추가](analytics.md)
    + [Adobe Audience Manager 추가](audience-manager.md)
    + [Experience Cloud 통합](integrations.md)
-+ 속성 게시{#publish}
-   + [속성 게시](publish.md)
++ Publish 내 속성{#publish}
+   + [속성 Publish](publish.md)

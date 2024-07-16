@@ -11,8 +11,8 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 1%
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -38,11 +38,11 @@ Se você nunca usou o Analysis Workspace antes, recommendamos este vídeo:
 
 ### 크리세 프로제토
 
-Agora é hora de criar seu primeiro project do CJA. Vá para a aba de projetos dentro do CJA. 클리크 **새로 만들기**.
+Agora é hora de criar seu primeiro project do CJA. Vá para a aba de projetos dentro do CJA. **새로 만들기**&#x200B;를 클릭합니다.
 
 ![데모](./images/prmenu.png)
 
-Em seguida, você verá a tela abaixo. 선택 항목 **빈 프로젝트** 엔탕 클리크 **만들기**.
+Em seguida, você verá a tela abaixo. **빈 프로젝트** 엔터티 그룹 **만들기**&#x200B;를 선택합니다.
 
 ![데모](./images/prmenu1.png)
 
@@ -50,7 +50,7 @@ Você verá um projeto vazio.
 
 ![데모](./images/premptyprojects.png)
 
-Primeiro , certificate-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste 예제, a Visualização de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
+Primeiro , certificate-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste 예제, Visualização de dados a ser selecionada é `vangeluwe - Omnichannel Data View`.
 
 ![데모](./images/prdv.png)
 
@@ -71,7 +71,7 @@ Use esta modelo de nomenclatura:
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Em seguida, clique em **저장**.
+Em seguida, **저장**&#x200B;을 클릭합니다.
 
 ![데모](./images/prsave2.png)
 
@@ -83,23 +83,23 @@ Como orimo, criaremos uma Taxa de conversão calcullada usando a métrica/evento
 
 ## 상트베르상 분류군
 
-Vamos começar a abrir o construtor de métricas calculladas. 클리크 **+** 파라 크리아 수아 프리메이라 Métrica calcullada no Analysis Workspace.
+Vamos começar a abrir o construtor de métricas calculladas. 클릭 em **+** para criar sua primeira Métrica calcullada no Analysis Workspace.
 
 ![데모](./images/pradd.png)
 
-O **계산된 지표 빌더에서 계산된 지표를 작성합니다** 이라 아파레커:
+O **계산된 지표 빌더** iraaperecer:
 
 ![데모](./images/prbuilder.png)
 
-엔컨트 **구매** no menu do lado esquerdo. Em **지표** 클리크 **모두 표시**
+**구매**&#x200B;금지 메뉴 없음{lado esquerdo}. Em **지표** 클릭 em **모두 표시**
 
 ![데모](./images/calcbuildercr1.png)
 
-Agora arraste e solte a métrica **구매** 나 디피니상 다 메트리카 캘커라다.
+Agora arraste는 métrica를 판매합니다. **구매** na definição da métrica calcullada.
 
 ![데모](./images/calcbuildercr2.png)
 
-노르말멘테, 탁사 데 콘베르상 지니피카 **전환 / 세션**. Então, vamos fazer o mesmo cálculo na tela de definição de métrica calcullada. 메르트리카 앙트레 **세션** e arraste e solte-a no criador de definição, no evento **구매**.
+Normalmente, taxa de conversão significa **전환/세션**. Então, vamos fazer o mesmo cálculo na tela de definição de métrica calcullada. métrica **세션** e arraste e solte-a no criador de definição, no evento **구매**&#x200B;를 시작합니다.
 
 ![데모](./images/calcbuildercr3.png)
 
@@ -113,7 +113,7 @@ que o operador de divisão é selecionado automticamente를 관찰하십시오.
 
 마지막으로 계산된 지표의 이름 및 설명을 변경합니다.
 
-| Title | 설명 |
+| 제목 | 설명 |
 | ----------------- |-------------| 
 | 전환율 | 전환율 |
 
@@ -121,7 +121,7 @@ Por fim, altere o nome e a descrição da métrica calcullada:
 
 ![데모](./images/calcbuildercr6.png)
 
-나우세에스케사 지 **살바르** 메트리카 캘커다.
+Não se equeça de **Salvar** a Métrica 계산
 
 ![데모](./images/pr9.png)
 
@@ -129,7 +129,7 @@ Por fim, altere o nome e a descrição da métrica calcullada:
 
 ### 필터: Dimensões calculladas
 
-Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise , também é interesante criar algumas **계산된 Dimension**. 중요하고, 에센시알멘테 **세그먼트** Adobe Analytics 없음. Customer Journey Analytics 없음, segmentos são chamados de **필터**.
+Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interesante criar algumas **계산된 Dimension**. Adobe Analytics에서 Isso의 의미, Essencialmente, **세그먼트**. Customer Journey Analytics이 없습니다. segmentos são chamados de **필터**&#x200B;를 참조하세요.
 
 ![데모](./images/prfilters.png)
 
@@ -155,7 +155,7 @@ Essas Dimensões de tempo de calcullado ajudarão analistas e usuários de negó
 
 Agora você concluiu o exercício de preparação de dados usando Analysis Workspace do CJA.
 
-프록시마 에타파: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
+Próxima etapa: [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
 [레토르나르 파라 플루소 데 우수아리오 4](./uc4.md)
 

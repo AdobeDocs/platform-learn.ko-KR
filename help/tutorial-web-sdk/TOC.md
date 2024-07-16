@@ -10,7 +10,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 4ed0c204613e283bbd9f51f4225215068284ac69
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 24%
+ht-degree: 25%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 24%
    + [ID 만들기](create-identities.md)
    + [태그 규칙 만들기](create-tag-rule.md)
    + [디버거를 사용하여 유효성 검사](validate-with-debugger.md)
-   + [Assurance를 통해 유효성 검사](validate-with-assurance.md)
+   + [Assurance를 사용한 유효성 검사](validate-with-assurance.md)
 
 + 응용 프로그램 설정 {#applications-setup}
    + [Experience Platform 설정](setup-experience-platform.md)

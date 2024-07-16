@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '92'
-ht-degree: 3%
+source-wordcount: '97'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 + [4단계의 콘텐츠 공급망](/help/csc-bootcamp/csc-in-4-phases.md)
 + [Creative Brief](/help/csc-bootcamp/creative-brief.md)
 + 1단계 - 계획 및 준비 {#planning}
-   + [계획](/help/csc-bootcamp/phases/planning/planning.md)
+   + [계획 수립](/help/csc-bootcamp/phases/planning/planning.md)
    + [기타 사전 작업](/help/csc-bootcamp/phases/planning/prework.md)
 + 2단계 - 프로덕션 {#production}
    + [제품 홈페이지 배너 만들기](/help/csc-bootcamp/phases/production/banner.md)
@@ -33,7 +33,7 @@ ht-degree: 3%
    + [모바일 앱 확인](/help/csc-bootcamp/phases/delivery/app.md)
    + [AEM에서 페이지 만들기](/help/csc-bootcamp/phases/delivery/page-in-aem.md)
    + [캠페인 실행/실행 취소](/help/csc-bootcamp/phases/delivery/go-nogo.md)
-+ 4단계 - 통찰력 {#insights}
++ 4단계 - 인사이트 {#insights}
    + [개요](/help/csc-bootcamp/phases/insights/overview.md)
    + [프로젝트 관리자용 인사이트](/help/csc-bootcamp/phases/insights/project-manager.md)
    + [마케팅 관리자용 인사이트](/help/csc-bootcamp/phases/insights/marketing-manager.md)

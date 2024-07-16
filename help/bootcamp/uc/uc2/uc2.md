@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 31f2bbcc-3fd5-4448-a9aa-b79a82e13809
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 5%
+source-wordcount: '215'
+ht-degree: 2%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 5%
 
 ## 학습 목표
 
-## 사전 요구 사항
+## 전제 조건
 
-- Adobe Experience Platform에 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform 데이터 수집 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platform 데이터 수집에 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 데모 웹 사이트 액세스
 
 >[!IMPORTANT]
@@ -52,7 +52,7 @@ ht-degree: 5%
 
 이 연습에서는 모바일 앱을 설치합니다.
 
-[2.6 콜 센터의 개인화](./ex6.md)
+[2.6 콜 센터의 Personalization](./ex6.md)
 
 이 연습에서는 Adobe Experience Platform의 인텔리전스를 기반으로 콜 센터 경험을 최적화하는 방법을 알아봅니다.
 

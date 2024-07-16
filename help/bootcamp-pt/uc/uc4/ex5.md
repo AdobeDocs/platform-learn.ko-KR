@@ -11,8 +11,8 @@ feature: Visualizations
 exl-id: eb5eac54-22d8-428b-acac-16570f75085e
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 1%
+source-wordcount: '1569'
+ht-degree: 0%
 
 ---
 
@@ -28,13 +28,13 @@ ht-degree: 1%
 
 Neste exercício, você usará o Analysis Workspace no CJA para analisar visualizações de produdutos, funis de produdutos, rotatividade 등
 
-Vamos usar o projeto que você criou em  [4.4 Preparação de dados no Analysis Workspace](./ex4.md), 엔탕 아체세 [https://analytics.adobe.com](https://analytics.adobe.com).
+Vamos usar o projeto que você criou em [4.4 Preparação de dados no Analysis Workspace](./ex4.md), então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![데모](./images/prohome.png)
 
-아브라 세우 프로젝트 `yourLastName - Omnichannel Analysis`.
+Abra seu 프로젝트 `yourLastName - Omnichannel Analysis`.
 
-Com seu project aberto e Visualização de dados `yourLastName - Omnichannel Analysis` seleionado, você está pronto para começar a construir suas primeiras visualizações.
+Com seu projeto aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selectionado, você está pronto para começar a construir suas primeiras visualizações.
 
 ![데모](./images/prodataView1.png)
 
@@ -44,14 +44,14 @@ Em primeiro lugar, precisamos seleionar as datas certas para analisar os dados. 
 
 >[!IMPORTANT]
 >
->Selecione um intervalo de datas como **이번 주** ou **이번 달**. Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022.
+>**이번 주** **이번 달**&#x200B;에 um intervalo de datas como를 선택하십시오. Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022.
 
 ![데모](./images/pro1.png)
-No menu do lado esquerdo (área de componentes), encontre as métricas calculladas **제품 보기**. Selecione-as e arraste e solte na tela, no canto superior direito da tabela de forma livre.
+메뉴는 lado esquerdo(area de componentes)가 아니며, métricas calculladas **제품 보기**&#x200B;로 입력됩니다. Selecione-as e arraste e solte na tela, no canto superior direito da tabela de forma livre.
 
 ![데모](./images/pro2.png)
 
-Automticamente a dimension **일** 세라 adicionada para criar sua primeira tabela. Agora você pode ver sua pergunta respondida imediatamente.
+Automticamente a dimension **Day** será adicionada para criar sua primeira tabela. Agora você pode ver sua pergunta respondida imediatamente.
 
 ![데모](./images/pro3.png)
 
@@ -59,7 +59,7 @@ Em seguida, clique com o botão direito do mouse no resumo da métrica.
 
 ![데모](./images/pro4.png)
 
-클리크 **시각화** e selectione **라인** 코모 시각화
+**시각화**&#x200B;를 클릭하여 **라인** 코모 시각화 대상을 선택합니다.
 
 ![데모](./images/pro5.png)
 
@@ -71,11 +71,11 @@ Você pode alterar o escopo de tempo para o dia clicando em **설정** na visual
 
 ![데모](./images/pro7.png)
 
-클리크 노 폰토 아오 라도 데 **라인** e **데이터 소스 관리**.
+**데이터 Source 관리**&#x200B;에서 no ponto ao lado de **Line**&#x200B;을(를) 클릭합니다.
 
 ![데모](./images/pro7a.png)
 
-Em seguida, clique em **선택 사항 잠금** e selectione **선택한 항목** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizações de produdutos.
+Em seguida, clique em **선택 잠금** e selectione **선택한 항목** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizações de produdutos.
 
 ![데모](./images/pro7b.png)
 
@@ -94,17 +94,17 @@ Vamos começar a encontrar os 5 제품 mais visos. No menu do lado esquerdo, enc
 
 ![데모](./images/pro8.png)
 
-아고라 아라스테 **제품 이름** 차원 파라 대체 **일**:
+Agora 배열 전자 메일 **제품 이름** 파라 대체 차원 **일**:
 
 Este será o resultado.
 
 ![데모](./images/pro10a.png)
 
-Em seguida, tente dividir um dos produdutos por Nome da marca. 페스퀴즈 **brandName** e arraste para baixo do primeiro nome do produto.
+Em seguida, tente dividir um dos produdutos por Nome da marca. Pesquise **brandName** e arraste para baixo do primeiro nome do product.
 
 ![데모](./images/pro13.png)
 
-Em seguida, faça um detalhamento usando o Agente de usuário. 페스퀴즈 **사용자 에이전트** e arraste-o para baixo do nome da marca.
+Em seguida, faça um detalhamento usando o Agente de usuário. **사용자 에이전트**&#x200B;을(를) 사용합니다.
 
 ![데모](./images/pro15.png)
 
@@ -112,13 +112,13 @@ Em seguida, será exibida a tela abaixo :
 
 ![데모](./images/pro15a.png)
 
-Por fim, você pode adicionar mais visualizações. No lado esquerdo, em visualizações, pesquise `Donut`. 페그 `Donut`, arraste e solte na tela sob a visualização **라인** 
+Por fim, você pode adicionar mais visualizações. Lado esquerdo, em visualizações, pesquise `Donut`이(가) 없습니다. 페그 `Donut`, arraste e solte na tela sob a visualização **Line** 
 
 ![데모](./images/pro18.png)
 
-그런 다음 표에서 처음 5개를 선택합니다 **사용자 에이전트**  아래에 수행한 분류의 행 **Google 픽셀 XL 32GB 블랙 스마트폰** > **Citi 신호**. 5개 행을 선택할 때 **CTRL** 단추(Windows) 또는 **명령** 버튼(Mac).
+그런 다음 표에서 **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**&#x200B;에서 수행한 분류에서 처음 5개의 **사용자 에이전트** 행을 선택합니다. 5개 행을 선택하는 동안 **CTRL** 단추(Windows의 경우) 또는 **Command** 단추(Mac의 경우)를 누릅니다.
 
-Em seguida, na Tabela, selectione as primeiras 5 linhas de **사용자 에이전트** 도 데탈하멘토 케 피제모스 em **Google 픽셀 XL 32GB 블랙 스마트폰** > **Citi 신호**. Ao seleionar as 5 linhas, segure o botão **CTRL** (Windows 없음) ou o botão **명령** (Mac 없음).
+Em seguida, na Tabela, selectione as primeiras 5 linhas de **사용자 에이전트** do detalhamento que fizemos em **Google 픽셀 XL 32GB 블랙 스마트폰** > **시티 신호**. Ao selectionar as 5 linhas, segure o botão **CTRL**(Windows 없음) ou o botão **Command**(Mac 없음).
 
 ![데모](./images/pro20.png)
 
@@ -126,11 +126,11 @@ Você verá o gráfico de donut alterado:
 
 ![데모](./images/pro21.png)
 
-Você pode até adaptar o design para ser mais legível, tornando o gráfico de **라인** 오 그라피코 데 **도넛** um pouco menor para que sejam exibidos lado a lado:
+Você pode até adaptar o design para mais legível, tornando o gráfico de **Line** e o gráfico de **도넛** um pouco menor para que sejam exibidos lado a lado:
 
 ![데모](./images/pro22.png)
 
-클리크 노 폰토 아오 라도 데 *도넛** 파라 **데이터 소스 관리**. Em seguida, clique em **선택 사항 잠금** para bloquear essa visualização para que ela sempre exiba uma linha do tempo de Visualizações de product.
+No ponto ao lado de *Donut** para **데이터 Source 관리**&#x200B;를 클릭합니다. Em seguida, clique em **Lock Selection** para bloquear essa visualização para que ela sempre exiba uma linha do tempo de Visualizações de product.
 
 ![데모](./images/pro22b.png)
 
@@ -141,13 +141,13 @@ Saiba mais sobre visualizações usando o Analysis Workspace em:
 
 ## Funil de interação do produto, da visualização à compra
 
-Existem muitas formats de resolver esta questão. Uma delas é usar o Tipo de Interação de Produto e usá-lo em uma tabela de formato livre. 우트라포르마에우사르 **폴아웃 시각화**. Vamos usar o ultimo, pois queremos visualizar e analisar ao mesmo tempo.
+Existem muitas formats de resolver esta questão. Uma delas é usar o Tipo de Interação de Produto e usá-lo em uma tabela de formato livre. Outra forma é uma **폴아웃 시각화**. Vamos usar o ultimo, pois queremos visualizar e analisar ao mesmo tempo.
 
 페니엘 진부한 아쿠아:
 
 ![데모](./images/pro23.png)
 
-아고라 아디시오네 움 노보 페넬 엠 브랑코 클리칸도 엠 **+ 빈 패널 추가**.
+Agora adicione um novo painel em branco clicando em **+ 빈 패널 추가**.
 
 ![데모](./images/pro24.png)
 
@@ -163,7 +163,7 @@ Em seguida, você verá:
 
 ![데모](./images/prodatefa.png)
 
-차원 입력 **이벤트 유형** lado esquerdo가 없는 nos 구성 요소:
+**이벤트 유형** 차원을 제어하십시오. 구성 요소가 lado esquerdo에 없습니다.
 
 ![데모](./images/pro26.png)
 
@@ -175,17 +175,17 @@ Você verá todos os Tipos de eventos disponíveis.
 
 ![데모](./images/pro28.png)
 
-항목 중 하나 선택 **commerce.productViews** e arraste e solte-o no campo **터치포인트 추가** 덴트로 다 **폴아웃 시각화**.
+**commerce.productViews** 항목을 선택하십시오. e-solte-o campo **터치포인트 추가** dentro da **폴아웃 시각화**.
 
 ![데모](./images/pro29.png)
 
-파사오메즈모 com **commerce.productListAdds** 및 **commerce.purchase** 솔테오노캄포 **터치포인트 추가** 덴트로 다  **폴아웃 시각화**. Sua visualização agora deve ser semelhante ao seguinte:
+Faça o mesmo com **commerce.productListAdds** 및 **commerce.purchases** e solte-os no campo **터치포인트 추가** dentro da **폴아웃 시각화**. Sua visualização agora deve ser semelhante ao seguinte:
 
 ![데모](./images/props1.png)
 
 Você pode fazer muitas coisas aqui. Alguns 예시 : comparar cada passo por dispositivo 비교 por fidelidade. No entanto, se quisermos analisar coisas interesantes como porque os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta do CJA: clicar com o botão direito.
 
-Clique com o botão direito do mouse no touchpoint **commerce.productListAdds**. Em seguida, clique em **이 터치포인트에서 폴아웃 분류**.
+터치포인트 **commerce.productListAdds**&#x200B;에 마우스를 가져다 대세요. Em seguida, 이 터치포인트에서 **분류 폴아웃**&#x200B;을 클릭합니다.
 
 ![데모](./images/pro32.png)
 
@@ -193,7 +193,7 @@ Uma nova tabela de formato livre será criada para analisar o que as pesoas fize
 
 ![데모](./images/pro33.png)
 
-알테레 오 **이벤트 유형** 작성자: **페이지 이름**, na nova tabela de formato livre, para ver em quais páginas eles estão indo, em vez da Página de confirmmação de compra.
+**페이지 이름**&#x200B;에 의한 **이벤트 유형**, nova tabela de formato livre, para ver em quais páginas eles estão indo, em vez da Página de confirmmação de compra.
 
 ![데모](./images/pro34.png)
 
@@ -205,11 +205,11 @@ Novamente, há muitas formats de realizar essa análise. Vamos usar a análise d
 
 ![데모](./images/pro0.png)
 
-아고라 아디시오네 움 노보 페넬 엠 브랑코 클리칸도 엠 **+ 빈 패널 추가**.
+Agora adicione um novo painel em branco clicando em **+ 빈 패널 추가**.
 
 ![데모](./images/pro0a.png)
 
-클리크 나 비주얼리자상 **플로우**.
+Clique na visualização **흐름**.
 
 ![데모](./images/pro35.png)
 
@@ -221,7 +221,7 @@ Em seguida, será exibido:
 
 ![데모](./images/pro0b.png)
 
-차원 입력 **페이지 이름** lado esquerdo가 없는 nos 구성 요소:
+**페이지 이름** 차원을 제어하십시오. 구성 요소가 lado esquerdo에 없습니다.
 
 ![데모](./images/pro36.png)
 
@@ -229,8 +229,8 @@ Clique na seta para abrir a dimensão:
 
 ![데모](./images/pro37.png)
 
-파기나스 비스타로서 보테 엔콘트라라 토다스. 나메 다 파기나의 조언자: **서비스 취소**.
-Arraste e solte **서비스 취소** na Visualização de fluxo no campo do meio:
+파기나스 비스타로서 보테 엔콘트라라 토다스. Nome da página를 시작합니다. **서비스 취소**.
+Arraste e solte **서비스 취소** na Visualização de fluxo no campo do media:
 
 ![데모](./images/pro38.png)
 
@@ -238,17 +238,17 @@ Em seguida, será exibido:
 
 ![데모](./images/pro40.png)
 
-Vamos agora analisar se os clientes que visitaram a página C **서비스 취소** no site também ligaram para o call center e qual foi o resultado.
+Vamos agora analisar se os clientes que visitaram a página C **서비스 취소** no site também ligaram para o call center e qual foi o resultado.
 
-Nas dimension, retorne e encontre Tipo de interação de chamada. Arraste e solte **호출 상호 작용 유형** para substitutiir a primeira interação à direita em **플로우 시각화**.
+Nas dimension, retorne e encontre Tipo de interação de chamada. Arraste e solte **통화 상호 작용 유형** para 대체는 primeira interação à direita em **흐름 시각화**.
 
 ![데모](./images/pro43.png)
 
-Agora você visualiza o ticket de suporte dos clientes que ligaram para a central de atendimento depois de visitar a página **서비스 취소**.
+Agora você visualiza o ticket de suporte dos clientes que ligaram para a central de atendimento depois de visitar a página **Cancel Service**.
 
 ![데모](./images/pro44.png)
 
-Em seguida, nas dimension, procuure **콜감**. Arraste e solte para substitiir a primeira interação à direita na visualização de fluxo.
+Em seguida, nas 차원, procuure **Call Feeling**. Arraste e solte para substitiir a primeira interação à direita na visualização de fluxo.
 
 ![데모](./images/pro46.png)
 
@@ -260,7 +260,7 @@ Como pode ver, executamos uma análise omnichannel usando a visualização de fl
 
 ## Qual é o desempenho dos clientes com um contato de 콜 센터 Positivo em relação aos principais KPIs?
 
-Primeiramente , vamos segmentar os dados para obter apenas usuários com chamadas **양수**. CJA는 없습니다. Segmentos são chamados de Filtros. Accesse para filtros na área de componentes (no lado esquerdo) e clique em **+**.
+Primeiramente, vamos segmentar os dados para obter apenas usuários com chamadas **positive**. CJA는 없습니다. Segmentos são chamados de Filtros. Accesse para filtros na área de components (no lado esquerdo) e clique em **+**.
 
 ![데모](./images/pro58.png)
 
@@ -272,19 +272,19 @@ Dentro do Constructor de filtro, dê um nome ao filtro
 
 ![데모](./images/pro47.png)
 
-Nos 구성 요소 (덴트로 도 콘스트루터 드 필트로), 엔드류 **콜감** e arraste e solte na Definição do constructor de filtro.
+Nos components (dentro do Constructor de filtro), encontre **Call Feeling** e arraste e solte na Definição do constructor de filtro.
 
 ![데모](./images/pro48.png)
 
-아고라 셀레치오네 **양수** 코모 발로르 파라 오 필트로
+Agora selectione **positive** como valor para o or filtro.
 
 ![데모](./images/pro49.png)
 
-알테레 오 에스코포 파라 오 니벨 **개인**.
+**사람**&#x200B;에 대한 추가 인원입니다.
 
 ![데모](./images/pro50.png)
 
-파라 finalizar, 바스타 클리카 em **저장**.
+Para finalizar, bsta clicar em **저장**.
 
 ![데모](./images/pro51.png)
 
@@ -292,7 +292,7 @@ Nos 구성 요소 (덴트로 도 콘스트루터 드 필트로), 엔드류 **�
 
 ![데모](./images/pro0c.png)
 
-아고라 아디시오네 움 노보 페넬 엠 브랑코 클리칸도 엠 **+ 빈 패널 추가**.
+Agora adicione um novo painel em branco clicando em **+ 빈 패널 추가**.
 
 ![데모](./images/pro24c.png)
 
@@ -300,7 +300,7 @@ Nos 구성 요소 (덴트로 도 콘스트루터 드 필트로), 엔드류 **�
 
 ![데모](./images/pro24d.png)
 
-클리크 **자유 형식 테이블**.
+**자유 형식 테이블**&#x200B;을 클릭합니다.
 
 ![데모](./images/pro52.png)
 
@@ -308,11 +308,11 @@ Agora arraste e solte o filtro que você acabou de criar.
 
 ![데모](./images/pro53.png)
 
-호라 데 아디치오나 알구마스 메트리카스 Comece com **제품 보기**. Arraste e solte na tabela de forma livre. 보테 탐베 포데 익스클루어 아 메트리카 **이벤트**.
+호라 데 아디치오나 알구마스 메트리카스 Copece com **제품 보기** Arraste e solte na tabela de forma livre. 메트리카 **이벤트**&#x200B;에서 제외된 Vocée também pode입니다.
 
 ![데모](./images/pro54.png)
 
-파사오메즈모 com **사람**, **장바구니에 추가** e **구매**. Você vai acabar com uma tabela como a seguinte.
+Mesmo com **사용자**, **장바구니에 추가** e **구매**&#x200B;의 Faça 또는 Mesmo com. Você vai acabar com uma tabela como a seguinte.
 
 ![데모](./images/pro55.png)
 
@@ -322,7 +322,7 @@ Graças à primeira análise de fluxo, uma nova pergunta surgiu. Então decidimo
 
 O Analysis Workspace limitações típicas de um relatório do Analytics로 todas를 제거합니다. Ele fornece uma tela robusta e flexível para criar project de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes (dimensões, métricas, segmentos e granularidades de tempo) para um projeto. Você pode criar de forma de forma instantânea filtros e analises, gráficos de coorte, alertas, segmentos, análises de fluxo e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-프록시마 에타파: [4.6 인사이트 a ação](./ex6.md)
+Próxima etapa: [4.6 De insights a ação](./ex6.md)
 
 [레토르나르 파라 플루소 데 우수아리오 4](./uc4.md)
 

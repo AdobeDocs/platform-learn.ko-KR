@@ -16,10 +16,10 @@ ht-degree: 1%
 
 # 샌드박스 간에 스키마 복사
 
-이 비디오는 스키마 API 내보내기/가져오기를 사용하여 Adobe Experience Platform의 한 샌드박스에서 다른 샌드박스로 스키마를 복사하는 방법을 보여 줍니다. 개발 샌드박스에서 스키마를 빌드하고 테스트한 다음 프로덕션에 해당 스키마를 복사합니다. 자세한 내용은 다음을 참조하십시오. [스키마 설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko-KR).
+이 비디오는 스키마 API 내보내기/가져오기를 사용하여 Adobe Experience Platform의 한 샌드박스에서 다른 샌드박스로 스키마를 복사하는 방법을 보여 줍니다. 개발 샌드박스에서 스키마를 빌드하고 테스트한 다음 프로덕션에 해당 스키마를 복사합니다. 자세한 내용은 [스키마 설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko-KR)를 참조하세요.
 
 >[!TIP]
 >
->샌드박스 간에 스키마와 다른 개체를 이동하는 훨씬 쉬운 인터페이스 중심 프로세스가 2023년 말에 도입되었으며, 이를 대신 사용하는 것이 좋습니다. 다음을 참조하십시오. [샌드박스 간 개체 복사](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html).
+>샌드박스 간에 스키마와 다른 개체를 이동하는 훨씬 쉬운 인터페이스 중심 프로세스가 2023년 말에 도입되었으며, 이를 대신 사용하는 것이 좋습니다. [샌드박스 간 개체 복사](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=ko-KR)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)

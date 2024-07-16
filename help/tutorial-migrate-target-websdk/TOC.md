@@ -1,6 +1,6 @@
 ---
-user-guide-title: at.js 2.x에서 Web SDK로 Target 마이그레이션
-breadcrumb-title: at.js 2.x에서 Web SDK로 Target 마이그레이션
+user-guide-title: Target을 at.js 2.x에서 Web SDK로 마이그레이션
+breadcrumb-title: Target을 at.js 2.x에서 Web SDK로 마이그레이션
 user-guide-description: at.js에서 Web SDK 구현으로 성공적으로 마이그레이션하는 방법에 대해 설명하는 Target 고객을 위한 실습 튜토리얼입니다.
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# at.js 2.x에서 Platform Web SDK로 Target 마이그레이션 {#migrate-target-to-websdk}
+# Target을 at.js 2.x에서 Platform Web SDK로 마이그레이션 {#migrate-target-to-websdk}
 
 + [튜토리얼 소개](introduction.md)
 
@@ -46,4 +46,4 @@ ht-degree: 5%
 
 + [구현의 유효성 검사](validate.md)
 
-+ [디버그 Target](debugging.md)
++ [Target 디버그](debugging.md)

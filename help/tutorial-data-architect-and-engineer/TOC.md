@@ -8,8 +8,8 @@ doc-type: multipage
 recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 46%
+source-wordcount: '104'
+ht-degree: 40%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 46%
 + [데이터 설계자 및 엔지니어 자습서](overview.md)
 + [1. 권한 구성](configure-permissions.md)
 + [2. 샌드박스 만들기](create-a-sandbox.md)
-+ [3. 개발자 콘솔 및 Postman 설정](set-up-developer-console-and-postman.md)
++ [3. Developer Console 및 Postman 설정](set-up-developer-console-and-postman.md)
 + [4. 스키마의 모델 데이터](model-data-in-schemas.md)
 + [5. ID 매핑](map-identities.md)
 + [6. 데이터 세트 만들기](create-datasets.md)

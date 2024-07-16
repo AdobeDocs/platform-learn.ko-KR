@@ -11,80 +11,80 @@ feature: Events
 exl-id: 2133b560-09d8-419d-bb99-05d0f3df52cc
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '471'
 ht-degree: 0%
 
 ---
 
 # 3.2 크리 세우 에벤토
 
-Adobe Journey Optimizer 로그인 [Adobe Experience Cloud]. 클리크 **Journey Optimizer**.
+Adobe Journey Optimizer에 대한 Faça 로그인으로 [Adobe Experience Cloud]을(를) 수행할 수 있습니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
-![ACOP](./images/acophome.png)
+![AOP](./images/acophome.png)
 
-Você será redirectionado para **홈** Journey Optimizer 없음. Primeiro , verifique se você está usando o sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternator de um sandbox para outtro, 클릭 em **Prod** 샌드박스 na lista를 선택합니다. Neste 모형아, nome do sandbox é **부트캠프**. Você estará na visualização da **홈** do seu 샌드박스 `Bootcamp`.
+Journey Optimizer에서 **Home** Você será redirectionado para. Primeiro , verifique se você está usando o sandbox correto. 샌드박스 que deve ser usado é `Bootcamp`을(를) 하겠습니다. Para alternator de um sandbox para outtro를 클릭하고, em **Prod**&#x200B;를 선택하여 샌드박스 NA lista를 선택합니다. 샌드박스 é **Bootcamp**&#x200B;를 수행하지 마십시오. **Home** 샌드박스 `Bootcamp`를 실행합니다.
 
-![ACOP](./images/acoptriglp.png)
+![AOP](./images/acoptriglp.png)
 
-메뉴 없음 à esquerda, 역할 para baixo e clique em **구성**. Em seguida, 클리크 노 보탕 **관리** em Eventos.
+메뉴 없음 à esquerda, 역할 para baixo e clique em **구성**. Em seguida, clique no botão **관리** em 이벤트.
 
-![ACOP](./images/acopmenu.png)
+![AOP](./images/acopmenu.png)
 
-Você verá uma visão geral de todos os eventos disponíveis. 클리크 **이벤트 만들기** para começar a criar seu próprio evento.
+Você verá uma visão geral de todos os eventos disponíveis. **이벤트 만들기** para começar a criar seu próprio evento를 클릭합니다.
 
-![ACOP](./images/emptyevent.png)
+![AOP](./images/emptyevent.png)
 
 우마 노바 자넬라 데 에벤토 바지아 이라파레체입니다.
 
-Em primeiro lugar , dê um nome ao seu evento como , por moremo : `yourLastNameBeaconEntryEvent` e adicione uma descrição como, por orimo: `Beacon Entry Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por modeo: `yourLastNameBeaconEntryEvent` e adicione uma descrição como, por modeo: `Beacon Entry Event`.
 
-![ACOP](./images/eventdescription.png)
+![AOP](./images/eventdescription.png)
 
-Em seguida, certifique-se de que **유형** 에스타 디피도 코모 **단일** e, para seleção de **이벤트 ID 유형**, 선택 항목 **시스템 생성됨**.
+Em seguida, certifique-se de que **Type** está definido como **Unitary** e, para seleção de **Event ID Type**, selectione **System Generated**.
 
-![ACOP](./images/eventidtype.png)
+![AOP](./images/eventidtype.png)
 
-에타파 세귄테 é a seleção do schema. Um schema foi preparado para este exercício. 스키마 사용 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
+에타파 세귄테 é a seleção do schema. Um schema foi preparado para este exercício. 스키마 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`을(를) 사용합니다.
 
-![ACOP](./images/eventschema.png)
+![AOP](./images/eventschema.png)
 
-Depois de seleionar o Schema, você verá vários campos sendo seleionados na seção **필드**. Agora você deve passar o mouse sobre a seção **필드** e três ícones 팝업 serão exibidos. 클리케 노 이콘 데 **편집**.
+Depois de seleionar o Schema, você verá vários campos sendo seleionados na seção **Fields**. Agora você deve passar o mouse sobre a seção **필드** e três ícones pop-up serão exibidos. **편집**&#x200B;을 클릭합니다.
 
-![ACOP](./images/eventpayload.png)
+![AOP](./images/eventpayload.png)
 
-Você verá uma janela 팝업 드 **필드**, onde você deve selectionar alguns dos campos que precisamos para personalizar a jornada. Escoleheremos outtros atributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform
+Você verá uma janela 팝업 de **필드**, onde você deve selectionar alguns dos campos que precisamos para personalizar a jornada. Escoleheremos outtros atributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform
 
-![ACOP](./images/eventfields.png)
+![AOP](./images/eventfields.png)
 
-역할 para baixo até ver o objeto `Place context` e marque a caixa de seleção. Com isso, todo o contexto da localização do cliente será disponibilizado para jornada. 클리크 **확인** alterações를 뜻하는 para salvar.
+역할 para baixo até ver o objeto `Place context` e marque a caixa de seleção. Com isso, todo o contexto da localização do cliente será disponibilizado para jornada. **확인** para salvar suas alterações를 클릭합니다.
 
-![ACOP](./images/eventpayloadbr.png)
+![AOP](./images/eventpayloadbr.png)
 
-Em seguida, você deverá ver a tela abaixo. 클리크 **저장** mais uma vez para salvar suas alterações.
+Em seguida, você deverá ver a tela abaixo. Clique em **저장** mais uma vez para salvar suas alterações.
 
-![ACOP](./images/eventsave.png)
+![AOP](./images/eventsave.png)
 
 Seu evento agora esta configurado e salvo.
 
-![ACOP](./images/eventdone.png)
+![AOP](./images/eventdone.png)
 
-Clique no seu evento novamente para abrir a tela **이벤트 편집** 우마 베즈 파세오마우스소브레 **필드** para ver os 3 ícones. 클리케 노 이콘 **보기**.
+Clique no seu evento novamente para abrir a tela **이벤트 편집** mais uma vez. os 3 ícones에서 마우스 조각 **필드** para를 통과합니다. **보기**&#x200B;를 클릭합니다.
 
-![ACOP](./images/viewevent.png)
+![AOP](./images/viewevent.png)
 
 Agora você verá um orimo do payload esperado.
 Seu evento tem um eventID de orquestração único, que você pode encontrar rolando para baixo nessa carga útil até visualiza `_experience.campaign.orchestration.eventID`.
 
-![ACOP](./images/payloadeventID.png)
+![AOP](./images/payloadeventID.png)
 
 O eventID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que você construirá em um dos próximos exerccios. Lembre-se deste eventID, você pode precisar dele posterionte.
 `"eventID": "e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5"`
 
-클리크 **확인** e, em seguida, clique em **칸셀라**.
+**확인**&#x200B;을 클릭하세요. **취소**&#x200B;를 클릭하세요.
 
 보테노우 에스티시우
 
-프록시마 에타파: [3.3 크리 수아 조르나다에 노티파상 푸시](./ex3.md)
+Próxima etapa: [3.3 Crie sua jornada e notificação push](./ex3.md)
 
 [레토르나르 파라 플루소 데 우수아리오 3](./uc3.md)
 

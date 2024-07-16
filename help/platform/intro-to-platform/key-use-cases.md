@@ -1,6 +1,6 @@
 ---
 title: 주요 사용 사례
-description: Experience Platform&mdash의 5가지 주요 사용 사례인 지능형 재참여, 캠페인 손실 방지, 고객 전환 최적화, 상황별 인식 및 일회성 가치 대 라이프타임 값에 대한 개요를 살펴보십시오.
+description: Experience Platform&메시지;지능형 재참여, 캠페인 손실 방지, 고객 전환 최적화, 컨텍스트 인식 및 일회성 가치에서 라이프타임 가치로의 전환에 대한 5가지 주요 사용 사례에 대한 개요를 살펴보십시오.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z

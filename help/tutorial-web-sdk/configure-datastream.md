@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Adobe Experience Platform Web SDK의 데이터스트림을 구성하는 방법을 알아봅니다.
 
-[데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) Adobe Experience Platform Edge Network에게 Platform Web SDK에서 수집한 데이터를 보낼 위치를 알려 줍니다. 데이터스트림 구성에서 Experience Cloud 애플리케이션, Experience Platform 계정 및 이벤트 전달을 활성화합니다.
+[데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)은(는) Platform Web SDK에서 수집한 데이터를 보낼 위치를 Adobe Experience Platform Edge Network에게 알려 줍니다. 데이터스트림 구성에서 Experience Cloud 애플리케이션, Experience Platform 계정 및 이벤트 전달을 활성화합니다.
 
 ![웹 SDK, 데이터스트림 및 Edge Network 다이어그램](assets/dc-websdk-datastreams.png)
 
@@ -37,27 +37,27 @@ Adobe Experience Platform Web SDK의 데이터스트림을 구성하는 방법�
 
 이제 데이터 스트림을 만들어 Platform Edge Network에게 Web SDK에서 수집한 데이터를 보낼 위치를 알려줄 수 있습니다.
 
-**데이터 스트림을 생성하려면 다음을 수행합니다.**
+**데이터 스트림을 만들려면:**
 
-1. 를 엽니다. [데이터 수집 인터페이스](https://launch.adobe.com/){target="_blank"}
+1. [데이터 수집 인터페이스](https://launch.adobe.com/){target="_blank"} 열기
 1. 올바른 샌드박스에 있는지 확인하십시오
 
    >[!NOTE]
    >
-   >Real-Time CDP 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션의 고객인 경우 이 자습서에서는 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않으면 **[!UICONTROL Prod]** 샌드박스.
+   >Real-Time CDP 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션의 고객인 경우 이 자습서에서는 개발 샌드박스를 사용하는 것이 좋습니다. 그렇지 않은 경우 **[!UICONTROL Prod]** 샌드박스를 사용하십시오.
 
-1. 다음으로 이동 **[!UICONTROL 데이터스트림]** 왼쪽 탐색
-1. 선택 **[!UICONTROL 새 데이터스트림]**
-1. 입력 `Luma Web SDK: Development Environment` (으)로 **[!UICONTROL 이름]**. 이 이름은 나중에 태그 속성에서 Web SDK 확장을 구성할 때 참조됩니다.
-1. 선택 **[!UICONTROL 저장]**
+1. 왼쪽 탐색 영역에서 **[!UICONTROL 데이터스트림]**(으)로 이동
+1. **[!UICONTROL 새 데이터 스트림]** 선택
+1. `Luma Web SDK: Development Environment`을(를) **[!UICONTROL 이름]**(으)로 입력하십시오. 이 이름은 나중에 태그 속성에서 Web SDK 확장을 구성할 때 참조됩니다.
+1. **[!UICONTROL 저장]** 선택
 
    ![데이터 스트림 만들기](assets/datastream-create-new-datastream.png)
 
    >[!NOTE]
    >
-   >스키마를 선택할 필요는 없습니다. 스키마 선택은 를 사용하는 경우에만 필요합니다. [데이터 수집을 위한 데이터 준비](/help/data-collection/edge/data-prep.md) 기능.
+   >스키마를 선택할 필요는 없습니다. 스키마 선택은 [데이터 수집을 위한 데이터 준비](/help/data-collection/edge/data-prep.md) 기능을 사용하는 경우에만 필요합니다.
 
-다음 화면에서는 데이터 스트림에 Adobe 응용 프로그램과 같은 서비스를 추가할 수 있지만 이 시점에서는 서비스를 추가하지 않습니다. 나중에 단원에서 그렇게 할 것입니다 [Experience Platform 설정](setup-experience-platform.md), [Analytics 설정](setup-analytics.md), [Audience Manager 설정](setup-audience-manager.md), [Target 설정](setup-target.md), 또는 [이벤트 전달](setup-event-forwarding.md).
+다음 화면에서는 데이터 스트림에 Adobe 응용 프로그램과 같은 서비스를 추가할 수 있지만 이 시점에서는 서비스를 추가하지 않습니다. 나중에 [Experience Platform 설정](setup-experience-platform.md), [Analytics 설정](setup-analytics.md), [Audience Manager 설정](setup-audience-manager.md), [Target 설정](setup-target.md) 또는 [이벤트 전달](setup-event-forwarding.md) 단원에서 수행합니다.
 
 >[!NOTE]
 >
@@ -65,14 +65,14 @@ Adobe Experience Platform Web SDK의 데이터스트림을 구성하는 방법�
 
 ## 데이터 스트림 재정의
 
-[데이터 스트림 재정의](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) 을 사용하면 데이터 스트림에 대한 추가 구성을 정의한 다음 특정 조건에서 기본 구성을 재정의할 수 있습니다.
+[데이터 스트림 재정의](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides)를 사용하면 데이터 스트림에 대한 추가 구성을 정의한 다음 특정 조건에서 기본 구성을 재정의할 수 있습니다.
 
 데이터 스트림 구성 재정의는 2단계 프로세스입니다.
 
 1. 먼저 데이터 스트림 서비스 구성에서 데이터 스트림 재정의를 정의합니다. 예를 들어 재정의로 사용할 대체 Analytics 보고서 세트, Target 작업 공간 또는 Platform 데이터 세트를 정의할 수 있습니다.
 1. 그런 다음 웹 SDK 이벤트 보내기 작업을 사용하거나 웹 SDK Edge Network 확장의 구성을 통해 이벤트에 재정의를 보냅니다.
 
-다음에서 [Adobe Analytics 설정](setup-analytics.md) 단원, Platform Web SDK 이벤트 보내기 작업을 사용하여 페이지에 대한 보고서 세트를 재정의합니다.
+[Adobe Analytics 설정](setup-analytics.md) 단원에서 Platform Web SDK 이벤트 보내기 작업을 사용하여 페이지에 대한 보고서 세트를 재정의합니다.
 
 이제 태그 속성에 Platform Web SDK 확장을 설치할 준비가 되었습니다!
 
@@ -80,4 +80,4 @@ Adobe Experience Platform Web SDK의 데이터스트림을 구성하는 방법�
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나, 일반적인 피드백을 공유하거나, 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오. [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.

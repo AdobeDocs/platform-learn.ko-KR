@@ -1,6 +1,6 @@
 ---
 title: 파트너 지원 방문자 인식을 사용하여 알 수 없는 방문자에 대한 온사이트 경험 개인화
-description: 에서 타사 속성을 수집하는 방법을 알아봅니다. [!DNL Adobe Experience Platform Web SDK] 파트너 지원 방문자 인식을 사용하여 알 수 없는 방문자에 대한 온사이트 경험을 개인화할 수 있습니다.
+description: ' [!DNL Adobe Experience Platform Web SDK] 에서 타사 특성을 수집하고 파트너 지원 방문자 인식을 사용하여 알 수 없는 방문자에 대한 온사이트 경험을 개인화하는 방법에 대해 알아봅니다.'
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 파트너 지원 방문자 인식을 사용하여 알 수 없는 방문자에 대한 온사이트 경험 개인화
 
-에서 타사 속성을 수집하는 방법을 알아봅니다. [!DNL Adobe Experience Platform Web SDK] 파트너 지원 방문자 인식을 사용하여 알 수 없는 방문자에 대한 온사이트 경험을 개인화할 수 있습니다. 자세한 내용은 다음을 참조하십시오. [파트너 지원 방문자 인식을 사용하여 온사이트 경험 개인화](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) 설명서를 참조하십시오.
+[!DNL Adobe Experience Platform Web SDK]에서 타사 특성을 수집하고 파트너 지원 방문자 인식을 사용하여 알 수 없는 방문자에 대한 온사이트 경험을 개인화하는 방법에 대해 알아봅니다. 자세한 내용은 [파트너 지원 방문자 인식을 사용하여 온사이트 경험 개인화](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) 설명서를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)

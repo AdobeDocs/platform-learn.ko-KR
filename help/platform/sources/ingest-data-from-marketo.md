@@ -13,14 +13,14 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 18%
 
 ---
 
 # Marketo Engage에서 데이터 수집
 
-두 개의 워크플로우를 사용하여 소스 커넥터를 사용하여 Marketo Engage의 데이터를 Real-time Customer Data Platform, B2B 에디션 및 Adobe Experience Platform으로 손쉽게 수집하는 방법에 대해 알아봅니다.
+두 가지 워크플로를 사용하는 소스 커넥터를 사용하여 Marketo Engage의 데이터를 Real-Time Customer Data Platform, B2B Edition 및 Adobe Experience Platform으로 간편하게 수집하는 방법에 대해 알아봅니다.
 
 ## 템플릿 워크플로
 
@@ -35,5 +35,5 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 자세한 내용은 다음 설명서를 참조하십시오.
-* [Marketo Engage 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [UI의 템플릿을 사용하여 소스 데이터 흐름 만들기](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Marketo Engage 원본 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [UI에서 템플릿을 사용하여 소스 데이터 흐름을 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

@@ -10,8 +10,8 @@ thumbnail: 32665.jpg
 exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 42%
+source-wordcount: '70'
+ht-degree: 45%
 
 ---
 
@@ -21,6 +21,6 @@ ht-degree: 42%
 
 >[!TIP]
 >
->고객 AI는 CEE(고객 경험 이벤트) 스키마에 맞게 데이터를 ETL할 필요 없이 Adobe Analytics 및 Adobe Audience Manager 데이터 세트를 모두 지원합니다. 자세한 내용은 [Intelligent Services 데이터 준비 안내서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
+>고객 AI는 CEE(고객 경험 이벤트) 스키마에 맞게 데이터를 ETL할 필요 없이 Adobe Analytics 및 Adobe Audience Manager 데이터 세트를 모두 지원합니다. 자세한 내용은 [Intelligent Services 데이터 준비 안내서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on)

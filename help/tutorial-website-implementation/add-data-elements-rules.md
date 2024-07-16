@@ -1,11 +1,11 @@
 ---
 title: 데이터 요소, 규칙 및 라이브러리 추가
-description: 태그에서 데이터 요소, 규칙 및 라이브러리를 만드는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
+description: 태그에서 데이터 요소, 규칙 및 라이브러리를 만드는 방법을 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 66%
+source-wordcount: '1441'
+ht-degree: 52%
 
 ---
 
@@ -13,16 +13,15 @@ ht-degree: 66%
 
 이 단원에서는 첫 번째 데이터 요소, 규칙 및 라이브러리를 만듭니다.
 
-데이터 요소 및 규칙은 태그의 기본 구성 요소입니다. 데이터 요소는 마케팅 및 광고 솔루션에 전송할 특성을 저장하는 반면, 규칙은 올바른 조건에서 해당 솔루션에 대한 요청을 실행합니다.  라이브러리는 모든 작업을 수행하기 위해 페이지에 로드되는 JavaScript 파일입니다. 이 단원에서는 세 가지 방법을 모두 사용하여 샘플 페이지에서 작업이 수행되게 합니다.
+데이터 요소 및 규칙 은 태그의 기본 구성 요소입니다. 데이터 요소는 마케팅 및 광고 솔루션에 전송할 특성을 저장하는 반면, 규칙은 올바른 조건에서 해당 솔루션에 대한 요청을 실행합니다.  라이브러리는 모든 작업을 수행하기 위해 페이지에 로드되는 JavaScript 파일입니다. 이 단원에서는 세 가지 방법을 모두 사용하여 샘플 페이지에서 작업이 수행되게 합니다.
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch은 데이터 수집 기술 세트로 Adobe Experience Platform에 통합되고 있습니다. 인터페이스에서 이 컨텐츠를 사용하는 동안 알고 있어야 하는 몇 가지 용어 변경 사항이 롤아웃되었습니다.
+>Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 platform launch(클라이언트측)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * 이제 platform launch 서버 측 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 이제 Edge 구성이 제공됩니다. **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
+> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -37,15 +36,15 @@ ht-degree: 66%
 
 ## 페이지 이름에 대한 데이터 요소 만들기
 
-데이터 요소는 태그의 데이터 레이어 버전입니다. 고유한 데이터 계층 개체, 쿠키, 로컬 저장소 개체, 쿼리 문자열 매개 변수, 페이지 요소, 메타 태그 등의 값을 저장할 수 있습니다. 이 연습에서는 나중에 Target 및 Analytics 구현에서 사용할 페이지 이름에 대한 데이터 요소를 만듭니다.
+데이터 요소는 데이터 계층의 태그 버전입니다. 고유한 데이터 계층 개체, 쿠키, 로컬 저장소 개체, 쿼리 문자열 매개 변수, 페이지 요소, 메타 태그 등의 값을 저장할 수 있습니다. 이 연습에서는 나중에 Target 및 Analytics 구현에서 사용할 페이지 이름에 대한 데이터 요소를 만듭니다.
 
 **데이터 요소를 만들려면**
 
-1. 왼쪽 탐색에서 **[!UICONTROL 데이터 요소]**
+1. 왼쪽 탐색에서 **[!UICONTROL 데이터 요소]**&#x200B;를 클릭합니다
 
 1. 이 속성에서 데이터 요소를 아직 만들지 않았기 때문에 이 주제에 대한 추가 정보가 포함된 간단한 비디오가 표시됩니다. 원하는 경우 이 비디오를 시청할 수 있습니다.
 
-1. **[!UICONTROL Create New Data Element]** 단추를 클릭합니다.
+1. **[!UICONTROL 새 데이터 요소 만들기]** 단추를 클릭합니다.
 
    ![Create New Data Element 단추 클릭](images/launch-newDataElement.png)
 
@@ -53,17 +52,17 @@ ht-degree: 66%
 
 1. [!UICONTROL JavaScript 변수] 데이터 요소 유형을 사용하여 샘플 페이지의 데이터 계층에 있는 값을 가리킵니다. `digitalData.page.pageInfo.pageName`
 
-1. **[!UICONTROL Force lowercase value]** 및 **[!UICONTROL Clean text]** 상자를 체크하여 케이스를 표준화하고 외부 공백을 제거합니다
+1. **[!UICONTROL 소문자 값 강제 적용]** 및 **[!UICONTROL 클린 텍스트]** 상자를 체크하여 케이스를 표준화하고 외부 공백을 제거합니다
 
-1. 이 값은 일반적으로 모든 페이지에서 달라지므로 **[!UICONTROL 없음]**&#x200B;을 **[!UICONTROL 저장 유지 시간]** 설정으로 둡니다.
+1. 이 값은 일반적으로 모든 페이지에서 달라지므로 **[!UICONTROL 없음]**&#x200B;을(를) **[!UICONTROL 저장 유지 시간]** 설정으로 둡니다.
 
-1. **[!UICONTROL Save]** 단추를 클릭하여 데이터 요소를 저장합니다.
+1. 데이터 요소를 저장하려면 **[!UICONTROL 저장]** 단추를 클릭하십시오.
 
    ![페이지 이름 데이터 요소 만들기](images/launch-dataElement.png)
 
 >[!NOTE]
 >
->데이터 요소 기능은 _확장을 사용하여 확장할 수 있습니다_. 예를 들면 ContextHub 확장을 사용하면 확장 기능을 사용하여 데이터 요소를 추가할 수 있습니다.
+>데이터 요소 기능 _은(는) 확장을 사용하여 확장_&#x200B;할 수 있습니다. 예를 들면 ContextHub 확장을 사용하면 확장 기능을 사용하여 데이터 요소를 추가할 수 있습니다.
 
 ## 규칙 만들기
 
@@ -73,33 +72,33 @@ ht-degree: 66%
 
 **규칙을 만들려면**
 
-1. 왼쪽 탐색에서 **[!UICONTROL 규칙]**
+1. 왼쪽 탐색에서 **[!UICONTROL 규칙]**&#x200B;을 클릭합니다
 
 1. 이 속성에서 규칙을 아직 만들지 않았기 때문에 주제에 대한 추가 정보가 포함된 간단한 비디오가 표시됩니다. 원하는 경우 이 비디오를 시청할 수 있습니다.
 
-1. **[!UICONTROL Create New Rule]** 단추를 클릭합니다.
+1. **[!UICONTROL 새 규칙 만들기]** 단추를 클릭합니다.
 
    ![Create New Rule 단추 클릭](images/launch-newRule.png)
 
-1. 규칙 이름을 `All Pages - Library Loaded`로 지정합니다. 이러한 명명 규칙은 규칙이 실행되는 위치와 시점을 나타내므로 태그 속성이 발달함에 따라 더 쉽게 식별하고 다시 사용할 수 있습니다.
+1. 규칙 이름을 `All Pages - Library Loaded`로 지정합니다. 이 명명 규칙은 규칙이 실행되는 위치와 시기를 나타내므로 태그 속성이 발달함에 따라 보다 쉽게 식별하고 다시 사용할 수 있습니다.
 
-1. 이벤트 아래에서 **[!UICONTROL Add]**&#x200B;를 클릭합니다. 이벤트는 규칙을 언제 실행해야 하는지, 규칙이 언제 페이지 로드, 클릭, 사용자 지정 JavaScript 이벤트 등 많은 항목에 해당할 수 있는지 태그에 알려줍니다.
+1. 이벤트 아래에서 **[!UICONTROL 추가]**&#x200B;를 클릭합니다. 이벤트는 규칙을 언제 실행해야 하는지, 규칙이 언제 페이지 로드, 클릭, 사용자 지정 JavaScript 이벤트 등 많은 항목에 해당할 수 있는지에 태그에 알려줍니다.
 
    ![규칙에 이름 지정 및 이벤트 추가](images/launch-addEventToRule.png)
 
-   1. 이벤트 유형으로 **[!UICONTROL 로드된 라이브러리(페이지 상단)]**&#x200B;를 선택합니다. 이벤트 유형을 선택하면 태그가 선택 항목을 사용하여 이벤트의 이름을 미리 채웁니다. 또한 이벤트의 기본 순서는 50입니다. 순서 지정은 동일한 이벤트에서 트리거되는 여러 규칙이 있을 때 작업 시퀀스를 정확하게 제어할 수 있는 태그의 강력한 기능입니다. 이 기능은 이 자습서에서 나중에 사용하게 됩니다.
+   1. 이벤트 유형으로 **[!UICONTROL 로드된 라이브러리(페이지 상단)]**&#x200B;를 선택합니다. 이벤트 유형을 선택하면 태그가 선택 항목을 사용하여 이벤트의 이름을 미리 채웁니다. 또한 이벤트의 기본 순서는 50입니다. 순서 지정은 동일한 이벤트에서 트리거되는 규칙이 여러 개 있을 때 작업 시퀀스를 정확하게 제어할 수 있는 태그의 강력한 기능입니다. 이 기능은 이 자습서에서 나중에 사용하게 됩니다.
 
-   1. **[!UICONTROL Keep Changes]** 단추를 클릭합니다.
+   1. **[!UICONTROL 변경 내용 유지]** 단추를 클릭합니다.
 
    ![이벤트 선택](images/launch-ruleSelectEvent.png)
 
-1. 이 규칙은 모든 페이지에서 실행되어야 하므로 **[!UICONTROL Conditions]**&#x200B;를 비워둡니다. 조건 모달을 열면 URL, 데이터 요소 값, 날짜 범위 등 다양한 옵션을 기준으로 하여 조건에서 제한과 예외를 모두 추가할 수 있음을 알 수 있습니다.
+1. 이 규칙은 모든 페이지에서 실행되어야 하므로 **[!UICONTROL 조건]**&#x200B;을 비워 둡니다. 조건 모달을 열면 URL, 데이터 요소 값, 날짜 범위 등 다양한 옵션을 기준으로 하여 조건에서 제한과 예외를 모두 추가할 수 있음을 알 수 있습니다.
 
-1. Actions 아래에서 **[!UICONTROL Add]**&#x200B;를 클릭합니다.
+1. 작업에서 **[!UICONTROL 추가]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL Action Type > Custom Code]**&#x200B;를 선택합니다. 이 시점의 유일한 옵션입니다. 튜토리얼의 후반부에 확장을 추가하면 더 많은 옵션을 사용할 수 있게 됩니다.
+1. **[!UICONTROL 작업 유형 > 사용자 지정 코드]**&#x200B;을(를) 선택합니다. 이 시점의 유일한 옵션입니다. 튜토리얼의 후반부에 확장을 추가하면 더 많은 옵션을 사용할 수 있게 됩니다.
 
-1. **[!UICONTROL &lt;/> Open Editor]**&#x200B;를 선택하여 코드 편집기를 엽니다.
+1. **[!UICONTROL &lt;/> 편집기 열기]**&#x200B;를 선택하여 코드 편집기를 엽니다.
 
    ![작업 선택](images/launch-selectAction.png)
 
@@ -113,12 +112,12 @@ ht-degree: 66%
 
    ![사용자 지정 코드 입력](images/launch-customCodeAction.png)
 
-1. 작업 구성 화면에서 **[!UICONTROL Keep Changes]**&#x200B;를 클릭합니다.
+1. 작업 구성 화면에서 **[!UICONTROL 변경 내용 유지]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL Save]**&#x200B;를 클릭하여 규칙을 저장합니다.
+1. 규칙을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
 규칙 페이지에 새 규칙이 표시됩니다.
-![규칙이 페이지에 나타납니다.](images/launch-savedRule.png)
+![페이지에 규칙이 표시됨](images/launch-savedRule.png)
 
 ## 라이브러리에 변경 사항 저장
 
@@ -128,23 +127,23 @@ ht-degree: 66%
 
 **라이브러리를 추가하고 만들려면**
 
-1. 왼쪽 탐색에서 **[!UICONTROL 게시 흐름]**
+1. 왼쪽 탐색에서 **[!UICONTROL 게시 플로우]**&#x200B;를 클릭합니다.
 
-1. **[!UICONTROL Add New Library]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 새 라이브러리 추가]** 클릭
 
    ![새 라이브러리 추가](images/launch-addNewLibrary.png)
 
-1. 라이브러리에 이름을 지정합니다(예: ). `Initial Setup`
+1. 라이브러리 이름을 지정합니다(예: `Initial Setup`).
 
-1. **[!UICONTROL Environment > Development]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 환경 > 개발]** 선택
 
-1. **[!UICONTROL Add All Changed Resources]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL 변경된 모든 리소스 추가]** 클릭
 
    ![변경된 모든 리소스 추가](images/launch-addAllChangedResources.png)
 
-1. 를 클릭한 후 **[!UICONTROL 변경된 모든 리소스 추가]** 태그는 방금 변경한 내용을 요약합니다.
+1. **[!UICONTROL 변경된 모든 리소스 추가]** 태그를 클릭하면 방금 변경한 내용이 요약됩니다.
 
-1. **[!UICONTROL Save &amp; Build for Development]**&#x200B;를 클릭합니다
+1. **[!UICONTROL 개발을 위한 저장 및 빌드]**&#x200B;를 클릭합니다.
 
    ![개발을 위한 저장 및 구축](images/launch-saveAndBuild.png)
 
@@ -156,7 +155,7 @@ ht-degree: 66%
 
 이제 규칙이 예상대로 작동하는지 확인합니다.
 
-샘플 페이지를 다시 로드합니다. 개발자 도구 -> 네트워크 탭을 보면 이제 태그 라이브러리에 대한 200 응답이 표시됩니다!
+샘플 페이지를 다시 로드합니다. Developer Tools -> Network 탭을 보면 이제 태그 라이브러리에 대한 200개의 응답이 표시됩니다.
 
 ![라이브러리가 200 응답과 함께 로드됨](images/samplepage-200.png)
 
@@ -168,17 +167,17 @@ ht-degree: 66%
 
 ## 작업 라이브러리 기능 사용
 
-태그에서 많은 사항을 변경한 경우 게시 탭으로 와서 변경 사항을 추가하고, 결과를 확인할 때마다 라이브러리를 빌드해야 하는 번거로움이 없습니다.  이제 &quot;초기 설정&quot; 라이브러리를 만들었으므로 &quot;작업 라이브러리&quot;라는 기능을 사용하여 변경 사항을 신속하게 저장하고 라이브러리를 한 단계로 다시 빌드할 수 있습니다.
+태그를 많이 변경할 때는 게시 탭으로 와서 변경 사항을 추가하고, 결과를 확인할 때마다 라이브러리를 빌드해야 하는 번거로움이 없습니다.  이제 &quot;초기 설정&quot; 라이브러리를 만들었으므로 &quot;작업 라이브러리&quot;라는 기능을 사용하여 변경 사항을 신속하게 저장하고 라이브러리를 한 단계로 다시 빌드할 수 있습니다.
 
-All Pages - Library Loaded 규칙을 약간 변경합니다. 왼쪽 탐색에서 **[!UICONTROL 규칙]** 그런 다음 `All Pages - Library Loaded` 규칙을 열어
+All Pages - Library Loaded 규칙을 약간 변경합니다. 왼쪽 탐색에서 **[!UICONTROL 규칙]**&#x200B;을 클릭한 다음 `All Pages - Library Loaded` 규칙을 클릭하여 엽니다.
 
 ![규칙 다시 열기](images/launch-reopenRule.png)
 
-`Edit Rule` 페이지에서 ***[!UICONTROL Working Library]*** 드롭다운을 클릭하고 `Initial Setup` 라이브러리를 선택합니다.
+`Edit Rule` 페이지에서 ***[!UICONTROL 작업 라이브러리]*** 드롭다운을 클릭하고 `Initial Setup` 라이브러리를 선택합니다.
 
 ![초기 설정을 Working Library로 선택](images/launch-setWorkingLibrary.png)
 
-라이브러리를 선택하면 이제 **[!UICONTROL Save]** 단추의 기본값이 **[!UICONTROL Save to Library]**&#x200B;로 설정됩니다. 태그를 변경할 때 이 옵션을 사용하여 작업 라이브러리에 직접 변경 사항을 자동으로 추가 및/또는 다시 빌드할 수 있습니다.
+라이브러리를 선택하면 이제 **[!UICONTROL 저장]** 단추의 기본값이 **[!UICONTROL 라이브러리에 저장]**&#x200B;으로 설정됩니다. 태그를 변경할 때 이 옵션을 사용하여 작업 라이브러리에 직접 변경 사항을 자동으로 추가하거나 다시 빌드할 수 있습니다.
 
 테스트해 보십시오. 사용자 지정 코드 작업을 열고 &quot;The page name is&quot; 텍스트 뒤에 콜론을 추가하여 전체 코드 블록이 다음과 같이 표시되는지 확인합니다.
 
@@ -186,7 +185,7 @@ All Pages - Library Loaded 규칙을 약간 변경합니다. 왼쪽 탐색에서
 console.log('The page name is: '+_satellite.getVar('Page Name'));
 ```
 
-코드를 저장하고 작업의 변경 내용을 유지한 다음, 이제 **[!UICONTROL Save to Library and Build]** 단추를 클릭합니다.
+코드를 저장하고 작업의 변경 내용을 유지한 다음 이제 **[!UICONTROL 라이브러리 및 빌드에 저장]** 단추를 클릭합니다.
 
 ![이제 저장 및 빌드 옵션이 있음](images/launch-workingLibrary-saveAndBuild.png)
 
@@ -196,4 +195,4 @@ console.log('The page name is: '+_satellite.getVar('Page Name'));
 
 이 방법이 훨씬 더 빨리 작업할 수 있으므로 이 자습서의 나머지 부분에서 이 접근 방식을 사용하겠습니다.
 
-[다음 &quot;Experience Cloud 디버거를 사용하여 환경 전환&quot; >](switch-environments.md)
+[다음 &quot;Experience Cloud Debugger으로 환경 전환&quot; >](switch-environments.md)

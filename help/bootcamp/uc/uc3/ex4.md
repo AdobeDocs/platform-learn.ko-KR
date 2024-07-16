@@ -11,8 +11,8 @@ feature: Events
 exl-id: 45c77177-9ea9-4c3d-a40e-c04a747938eb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 여정을 테스트하려면 연습 3.2에서 만든 이벤트의 이벤트 ID를 사용해야 합니다. 이 ID는 다음과 같습니다.
 
-![ACOP](./images/payloadeventID.png)
+![AOP](./images/payloadeventID.png)
 
 여정 ID는 이벤트를 트리거하기 위해 Adobe Experience Platform에 전송해야 하는 ID입니다. 이 예제에서 eventID는 다음과 같습니다.
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ![DSN](./images/appsett.png)
 
-필드에 eventID 붙여넣기 **비콘 EventID** 및 클릭 **저장**.
+**Beacon EventID** 필드에 eventID를 붙여 넣고 **저장**&#x200B;을 클릭합니다.
 
 ![DSN](./images/beacon1.png)
 
@@ -39,11 +39,11 @@ ht-degree: 1%
 
 ![DSN](./images/screen1.png)
 
-다음으로 홈 페이지로 돌아갑니다. 다음을 클릭합니다. **beacon** 아이콘.
+다음으로 홈 페이지로 돌아갑니다. **beacon** 아이콘을 클릭합니다.
 
 ![DSN](./images/app23.png)
 
-그러면 이걸 보게 될 거야. 먼저 을(를) 선택합니다 **부트캠프 화면 비콘** 을(를) 클릭하고 **항목** 단추를 클릭합니다. 이렇게 하면 비콘 항목을 시뮬레이션할 수 있습니다.
+그러면 이걸 보게 될 거야. 먼저 **Bootcamp 화면 비콘**&#x200B;을 선택한 다음 **시작** 단추를 클릭합니다. 이렇게 하면 비콘 항목을 시뮬레이션할 수 있습니다.
 
 ![DSN](./images/app21.png)
 

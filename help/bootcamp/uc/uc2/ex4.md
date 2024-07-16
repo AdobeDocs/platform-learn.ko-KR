@@ -11,7 +11,7 @@ feature: Journeys
 exl-id: e4464502-60c8-4fba-a429-169b7a4516c8
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 2%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 2%
 
 ## 고객 여정 흐름
 
-새롭고 깔끔한 시크릿 브라우저 창을 열고 다음으로 이동 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 클릭 **모두 허용**. 이전 사용자 흐름의 탐색 동작을 기반으로 웹 사이트의 홈페이지에서 개인화가 발생하는 것을 볼 수 있습니다.
+새롭고 깔끔한 시크릿 브라우저 창을 열고 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)(으)로 이동합니다. **모두 허용**&#x200B;을 클릭합니다. 이전 사용자 흐름의 탐색 동작을 기반으로 웹 사이트의 홈페이지에서 개인화가 발생하는 것을 볼 수 있습니다.
 
 ![DSN](./images/web8a.png)
 
-다음을 클릭합니다. **프로필** 아이콘 을 클릭하여 표시할 수 있습니다.
+화면 오른쪽 상단의 **프로필** 아이콘을 클릭합니다.
 
 ![데모](./images/web8b.png)
 
-클릭 **계정 만들기**.
+**계정 만들기**&#x200B;를 클릭합니다.
 
 ![데모](./images/pv5.png)
 
@@ -38,11 +38,11 @@ ht-degree: 2%
 
 아래로 스크롤합니다. 이제 연습 2.2에서 만든 사용자 지정 이벤트의 eventID를 입력해야 합니다. 여기에서 찾을 수 있습니다.
 
-![ACOP](./images/payloadeventID.png)
+![AOP](./images/payloadeventID.png)
 
-여정 ID는 빌드한 이벤트를 트리거하기 위해 Adobe Experience Platform으로 전송해야 하는 ID입니다. 이 예제의 eventID는 다음과 같습니다. `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+여정 ID는 빌드한 이벤트를 트리거하기 위해 Adobe Experience Platform으로 전송해야 하는 ID입니다. 이 예제의 eventID는 `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`입니다.
 
-필드에 eventID 입력 **계정 생성 이벤트 ID** 및 클릭 **등록**.
+**계정 만들기 이벤트 ID** 필드에 eventID를 입력하고 **등록**&#x200B;을 클릭합니다.
 
 ![데모](./images/pv8a.png)
 

@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: 14bfbebe-6df3-4a0e-875c-b4c0d016f8da
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '535'
 ht-degree: 0%
 
 ---
@@ -18,35 +18,35 @@ ht-degree: 0%
 
 ## 아플리카티보 모벨
 
-Antes de instalar o aplicativo, é necessário habilitar o **라스트리멘토** seu dispositivo iOS 없음. 파라 이소, 접근성 **콘포라수에스** > **프리바시다데세구란사** > **라스트리멘토** 이 베리피크 아 옵상 **Permitir que os aplicativos solicitem o rastreamento**.
+Antes de instalar o aplicativo, é necessário habilitar o **Rastreamento** no seu dispositivo iOS. Para isso, accesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifque a opção **Permitir que os aplicativos solictem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Accesse a App Store da Apple e pesquise `aepmobile-bootcamp`. 클리크 **설치 관리자** ou **다운로드**.
+App Store da Apple e pesquise `aepmobile-bootcamp`에 액세스하십시오. **다운로드**&#x200B;에서 em **설치**&#x200B;를 클릭합니다.
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estimver instalado, clique em **아브리르**.
+Depois que o aplicativo estimver instalado, 클릭 em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-클리크 **확인**.
+**확인**&#x200B;을 클릭합니다.
 
 ![DSN](./../uc3/images/app9.png)
 
-클리크 **Permitir**.
+**사용 기간**&#x200B;을 클릭합니다.
 
 ![DSN](./../uc3/images/app3.png)
 
-클릭 **동의함**.
+**동의함**&#x200B;을 클릭하세요.
 
 ![DSN](./../uc3/images/app7.png)
 
-클리크 **Permitr enquanto usa o aplicativo**.
+**Permiter enquanto usa o aplicativo**&#x200B;를 클릭합니다.
 
 ![DSN](./../uc3/images/app8.png)
 
-클리크 **Permitir**.
+**사용 기간**&#x200B;을 클릭합니다.
 
 ![DSN](./../uc3/images/app5.png)
 
@@ -56,7 +56,7 @@ Agora você está no aplicativo, na página inicial, pronto(a) para verificar to
 
 ## 플루소 다 조르나다 두 클리엔테
 
-Primeiramente, é necessário fazer 로그인. 클리크 **로그인**.
+Primeiramente, é necessário fazer 로그인. **로그인**&#x200B;을 클릭합니다.
 
 ![DSN](./images/app13.png)
 
@@ -76,27 +76,27 @@ Returne para a página inicial do aplicativo e os recursos adicionais irão apar
 
 ![DSN](./images/app17.png)
 
-Primeiro, 접근성 **제품**. Clique em qualquer 제품, neste 모형: **테이크아웃 커피**.
+Primeiro, **제품**&#x200B;에 액세스 Qualquer 제품, neste 예제 클릭: **테이크아웃**.
 
 ![DSN](./images/app19.png)
 
-Você verá a página do produto **테이크아웃 커피** aplicativo가 없습니다.
+Você verá a página do produto **Coffee to go** no aplicativo.
 
 ![DSN](./images/app20.png)
 
 Agora você irá simular um evento de sinalização (beacon) em uma loja offline. O objetivo da simulação é personalizar a experiencia do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informatções relevantes para o cliente ao entrar na loja.
 
-Antes de continuar, abra esta página da Web em seu computador : [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
 Em seguida, a tela abaixo será exibida :
 
 ![DSN](./images/screen1.png)
 
-Em seguida, retorne para a página incial. 클리케 노 이콘 두 **beacon**.
+Em seguida, retorne para a página incial. **beacon** 작업을 수행하지 않습니다.
 
 ![DSN](./images/app23.png)
 
-아포스 에사 에타파, 오 세구인테 세라 엑시비도. 프리메이로, 셀렉시오네 **부트캠프 화면 비콘** 이클리크 노 보탕 데 **엔트라다**. Isso permitirá que você simule uma intrada de sinalização com beacon.
+아포스 에사 에타파, 오 세구인테 세라 엑시비도. Primeiro, **Bootcamp 화면 비콘**&#x200B;을(를) 선택하십시오. **** Isso permitirá que você simule uma intrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
@@ -104,15 +104,15 @@ Agora는 tela da loja를 확인합니다. Você verá o ultimo 제품 visualizad
 
 ![DSN](./images/screen2.png)
 
-Em seguida, 레토른 파라 **제품**. Clique em qualquer 제품, neste 모형: **비치 블랭킷 탄**.
+Em seguida, 레트론 para **제품**. Clique em qualquer 제품, neste 예제: **해변 담요 탄**.
 
 ![DSN](./images/app22.png)
 
-Em seguida, retorne para a página incial. 클리케 노 이콘 두 **beacon**.
+Em seguida, retorne para a página incial. **beacon** 작업을 수행하지 않습니다.
 
 ![DSN](./images/app23.png)
 
-Em seguida, selectione **부트캠프 화면 비콘** 이클리크 노 보탕 데 **엔트라다** 노바멘테 Isso permitirá que você simule uma entrada de sinalização(비콘).
+Em seguida, selectione **Bootcamp Screen Beacon** e clique no botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização(비콘).
 
 ![DSN](./images/app21.png)
 
@@ -126,7 +126,7 @@ Agora, vamos verificar também o seu Visualizador de Perfil no site. Você verá
 
 Nos próximos exercícios, você irá configurar e testar sua própria jornada de entrada do beacon.
 
-프록시마 에타파: [3.2 크리 세우 에벤토](./ex2.md)
+Próxima etapa: [3.2 Crie seu evento](./ex2.md)
 
 [레토르나르 파라 플루소 데 우수아리오 3](./uc3.md)
 

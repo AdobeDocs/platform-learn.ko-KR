@@ -11,8 +11,8 @@ feature: Connections
 exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 3%
+source-wordcount: '677'
+ht-degree: 1%
 
 ---
 
@@ -27,9 +27,9 @@ ht-degree: 3%
 
 ## 4.2.1 연결
 
-다음으로 이동 [analytics.adobe.com](https://analytics.adobe.com) Customer Journey Analytics 액세스.
+Customer Journey Analytics에 액세스하려면 [analytics.adobe.com](https://analytics.adobe.com)(으)로 이동하십시오.
 
-Customer Journey Analytics-홈페이지에서 **연결**.
+Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다.
 
 ![데모](./images/cja2.png)
 
@@ -39,31 +39,31 @@ Customer Journey Analytics-홈페이지에서 **연결**.
 
 ![데모](./images/cja4.png)
 
-그러면 다음을 볼 수 있습니다. **연결 만들기** UI.
+그러면 **연결 만들기** UI가 표시됩니다.
 
 ![데모](./images/cja5.png)
 
 이제 연결에 이름을 지정할 수 있습니다.
 
-이 명명 규칙을 사용하십시오. `yourLastName – Omnichannel Data Connection`.
+명명 규칙 `yourLastName – Omnichannel Data Connection`을(를) 사용하십시오.
 
 예: `vangeluw - Omnichannel Data Connection`
 
-사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 샌드박스를 선택합니다. `Bootcamp`. 이 예에서 사용할 샌드박스는 다음과 같습니다. **부트캠프**. 또한 다음을 설정해야 합니다. **일일 평균 이벤트 수** 끝 **백만 미만**.
+사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 샌드박스를 선택합니다. 샌드박스는 `Bootcamp`이어야 합니다. 이 예제에서 사용할 샌드박스는 **Bootcamp**&#x200B;입니다. 또한 **일일 평균 이벤트 수**&#x200B;를 **백만 개 미만**&#x200B;으로 설정해야 합니다.
 
 ![데모](./images/cjasb.png)
 
-샌드박스를 선택한 후 이 연결에 데이터 세트를 추가할 수 있습니다. 클릭 **데이터 세트 추가**.
+샌드박스를 선택한 후 이 연결에 데이터 세트를 추가할 수 있습니다. **데이터 세트 추가**&#x200B;를 클릭합니다.
 
 ![데모](./images/cjasb1.png)
 
 ## 4.2.2 Adobe Experience Platform 데이터 세트 선택
 
-데이터 세트 검색 `Demo System - Event Dataset for Website (Global v1.1)`. 클릭 **+** 을 클릭하여 데이터 세트를 이 연결에 추가합니다.
+데이터 집합 `Demo System - Event Dataset for Website (Global v1.1)`을(를) 검색합니다. 이 연결에 데이터 집합을 추가하려면 **+**&#x200B;을(를) 클릭하십시오.
 
 ![데모](./images/cja7.png)
 
-이제 확인란을 검색하여 선택하십시오. `Demo System - Profile Dataset for Loyalty (Global v1.1)` 및 `Demo System - Event Dataset for Call Center (Global v1.1)`.
+이제 `Demo System - Profile Dataset for Loyalty (Global v1.1)` 및 `Demo System - Event Dataset for Call Center (Global v1.1)`의 확인란을 검색하여 선택하십시오.
 
 그럼 이걸로 드셔보세요 **다음**&#x200B;을 클릭합니다.
 
@@ -73,11 +73,11 @@ Customer Journey Analytics-홈페이지에서 **연결**.
 
 ### 개인 ID
 
-이제 이러한 데이터 세트에 결합하는 것이 목표입니다. 선택한 모든 데이터 세트에 대해 라는 필드가 표시됩니다. **개인 ID**. 각 데이터 세트에는 고유한 개인 ID 필드가 있습니다.
+이제 이러한 데이터 세트에 결합하는 것이 목표입니다. 선택한 모든 데이터 세트에 대해 **개인 ID**&#x200B;라는 필드가 표시됩니다. 각 데이터 세트에는 고유한 개인 ID 필드가 있습니다.
 
 ![데모](./images/cja11.png)
 
-보시는 것처럼 대부분 개인 ID가 자동으로 선택됩니다. Adobe Experience Platform의 모든 스키마에서 기본 식별자가 선택되기 때문입니다. 예를 들어 다음 스키마는 `Demo System - Event Schema for Call Center (Global v1.1)`: 기본 ID가 로 설정되었음을 확인할 수 있습니다. `phoneNumber`.
+보시는 것처럼 대부분 개인 ID가 자동으로 선택됩니다. Adobe Experience Platform의 모든 스키마에서 기본 식별자가 선택되기 때문입니다. 예를 들어 `Demo System - Event Schema for Call Center (Global v1.1)`에 대한 스키마가 있는데, 여기에서 기본 식별자가 `phoneNumber`(으)로 설정되어 있음을 확인할 수 있습니다.
 
 ![데모](./images/cja13.png)
 
@@ -87,13 +87,13 @@ Customer Journey Analytics-홈페이지에서 **연결**.
 
 위에서 언급했듯이 각 데이터 세트에 대해 서로 다른 개인 ID를 설정할 수 있습니다. 이를 통해 여러 출처의 다양한 데이터 세트를 CJA에 함께 가져올 수 있습니다. 컨텍스트와 어떤 일이 왜 일어났는지 이해하는 데 매우 흥미롭고 도움이 될 수 있는 NPS 또는 설문 조사 데이터를 가져온다고 상상해 보십시오.
 
-개인 ID 필드의 값이 일치하는 경우 개인 ID 필드의 이름은 중요하지 않습니다. 예를 들어 개인 ID가 `email` 하나의 데이터 세트 및 `emailAddress` 다른 차원으로 `dnb-bootcamp@adobe.com` 는 두 데이터 세트의 개인 ID 필드에 대한 동일한 값이며 CJA가 데이터를 결합할 수 있습니다.
+개인 ID 필드의 값이 일치하는 경우 개인 ID 필드의 이름은 중요하지 않습니다. 예를 들어 개인 ID가 한 데이터 세트의 `email`이고 다른 데이터 세트의 `emailAddress`이고 `dnb-bootcamp@adobe.com`이(가) 두 데이터 세트의 개인 ID 필드에 대해 동일한 값인 경우 CJA가 데이터를 연결할 수 있습니다.
 
-현재 익명 동작을 알려짐 과 같은 몇 가지 다른 제한 사항이 있습니다. 다음 FAQ를 검토하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ko-KR).
+현재 익명 동작을 알려짐 과 같은 몇 가지 다른 제한 사항이 있습니다. 여기에서 FAQ를 검토하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### 개인 ID를 사용하여 데이터 결합
 
-개인 ID를 사용하여 데이터 세트를 결합하는 개념을 이해했으므로 다음을 선택하겠습니다 `email` 를 각 데이터 세트의 개인 ID로 사용하십시오.
+개인 ID를 사용하여 데이터 세트를 결합하는 개념을 이해했으므로 각 데이터 세트의 개인 ID로 `email`을(를) 선택해 보겠습니다.
 
 ![데모](./images/cja15.png)
 
@@ -101,7 +101,7 @@ Customer Journey Analytics-홈페이지에서 **연결**.
 
 ![데모](./images/cja12a.png)
 
-이제 다음을 선택하여 필드 개인 ID를 채웁니다. `email` 드롭다운 목록에서 다음을 수행합니다.
+이제 드롭다운 목록에서 `email`을(를) 선택하는 필드 개인 ID를 채웁니다.
 
 ![데모](./images/cja17.png)
 
@@ -118,12 +118,12 @@ Customer Journey Analytics-홈페이지에서 **연결**.
 - 새 데이터 모두 가져오기
 - 기존 데이터 모두 채우기
 
-클릭 **데이터 세트 추가**.
+**데이터 세트 추가**&#x200B;를 클릭합니다.
 
 ![데모](./images/cja16.png)
 
-클릭 **저장** 다음 연습으로 이동하십시오.
-을(를) 만든 후 **연결** cja에서 데이터를 사용할 수 있으려면 몇 시간이 걸릴 수 있습니다.
+**저장**을 클릭하고 다음 연습으로 이동하세요.
+**연결**&#x200B;을 만든 후 CJA에서 데이터를 사용하려면 몇 시간이 걸릴 수 있습니다.
 
 ![데모](./images/cja20.png)
 

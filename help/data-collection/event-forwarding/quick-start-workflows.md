@@ -6,10 +6,11 @@ level: Intermediate
 doc-type: Technical Video
 last-substantial-update: 2023-09-21T00:00:00Z
 jira: KT-13957
-source-git-commit: fd9ef1bfeea139dbb83d00f6ad4538524a7d00bc
+exl-id: ac4fd395-f44f-4c4a-b3a2-7a951e305dd5
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 12%
+source-wordcount: '88'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +22,6 @@ ht-degree: 12%
 1. 워크플로우를 사용하여 참조 객체를 생성합니다. 
 1. 참조 객체를 기존 구현에 복사합니다.
 
-메타 전환 API 빠른 시작 워크플로우에 대한 자세한 내용은 다음을 참조하십시오. [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=en#quick-start).
+메타 전환 API 빠른 시작 워크플로우에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=en#quick-start)를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on)
-
-
-

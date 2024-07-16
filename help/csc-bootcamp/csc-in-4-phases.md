@@ -5,24 +5,24 @@ doc-type: multipage-overview
 exl-id: 7745e3ae-6e13-4cc2-9017-8bfb9d4ae1b4
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1588'
 ht-degree: 0%
 
 ---
 
 # 4단계의 콘텐츠 공급망
 
-세계는 이제 디지털이 먼저다. 기업체들이 어쩔 수 없이 타협을 해야 했던 것이 현실이며, 그것이 빠른 시일 내에 사라지지는 않는다. 이 디지털 세상의 일부로, 우리는 [엄청난 양의 콘텐츠 급증](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html) 더 많은 사람들이 소셜 미디어를 탐색하고, 디지털 공간에서 시간을 보내고, 원격으로 일하는 것에 의해 추진됩니다.
+세계는 이제 디지털이 먼저다. 기업체들이 어쩔 수 없이 타협을 해야 했던 것이 현실이며, 그것이 빠른 시일 내에 사라지지는 않는다. 이 디지털 세상의 일부로, 소셜 미디어를 탐색하고 디지털 공간에서 시간을 보내고 원격으로 작업하는 더 많은 사람들이 [엄청난 콘텐츠 급증](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html)에 직면하고 있습니다.
 
 즉, 컨텐츠를 제공할 수 있는 채널, 시장 및 형식이 다양하고 동적이고 최적화되어야 하는 필요성이 커졌다는 것입니다.
 
-![마케터의 85%는 컨텐츠를 보다 신속하게 만들고 전달해야 한다는 압박을 받고 있다고 합니다.](./images/pressure-to-create-content.png)
+![85%의 마케터가 콘텐츠를 더 빨리 만들고 전달해야 하는 압박을 받고 있다고 답했습니다.](./images/pressure-to-create-content.png)
 
-_소스:_ [_Deloitte 디지털_](https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/consultancy/deloitte-uk-future-of-experience-time-to-market.pdf)
+_Source:_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/consultancy/deloitte-uk-future-of-experience-time-to-market.pdf)
 
-좋은 소식은, 콘텐츠에 대한 수요를 따라가기가 어려울 만큼, 보다 빠르고 쉽게 콘텐츠를 계획하고, 생산하고, 제공할 수 있는 방법이 있다는 것입니다. It&#39;s called전화 한 a  **콘텐츠 공급망**. 또한 원활한 프로세스, 강력한 전략, 탄탄한 실행 방식을 통해 운영 환경을 구축하면 전체 컨텐츠 수명주기를 간소화할 수 있습니다.
+좋은 소식은, 콘텐츠에 대한 수요를 따라가기가 어려울 만큼, 보다 빠르고 쉽게 콘텐츠를 계획하고, 생산하고, 제공할 수 있는 방법이 있다는 것입니다. **콘텐츠 공급망**&#x200B;이라고 합니다. 또한 원활한 프로세스, 강력한 전략, 탄탄한 실행 방식을 통해 운영 환경을 구축하면 전체 컨텐츠 수명주기를 간소화할 수 있습니다.
 
-## 원활한 콘텐츠 공급망을 구축하려면 협업이 필수적입니다.
+## Collaboration은 원활한 콘텐츠 공급망의 핵심 요소입니다
 
 콘텐츠 공급망은 사람, 도구 및 워크스트림을 한데 모아 콘텐츠를 효과적으로 계획, 생성, 관리 및 제공하는 프로세스입니다. 고객이 점점 더 빠른 속도로 더 많은 더 나은 경험을 요구하고 있으므로, 나중에 콘텐츠를 바로 지금 얻어야 합니다. 이렇게 하면 사일로를 분류하고 워크플로우를 통합하여 모든 팀에 대한 압력을 줄일 수 있습니다. 또한 기술 투자를 통해 더 많은 가치를 얻을 수 있으므로 효율성과 가치를 높일 수 있습니다.
 
@@ -32,17 +32,17 @@ _소스:_ [_Deloitte 디지털_](https://www2.deloitte.com/content/dam/Deloitte/
 
 ### 콘텐츠 공급망을 손상시키는 것은 무엇입니까?
 
-- [**70%**](https://business.adobe.com/resources/reports/future-creative-experiences.html) 여러 역할에 걸쳐 서로 다른 시스템에서 수동 작업을 관리하는 데 많은 시간이 소요됩니다.
-- [**21%**](https://business.adobe.com/resources/reports/future-creative-experiences.html) 의 광고 팀은 효과적인 경험을 구축하기 위한 과제로 컨텐츠 프로세스 전반에 걸쳐 병목 현상을 파악했습니다.
-- [**31%**](https://www.fotoware.com/blog/dam-industry-trends-by-fotoware) 다수의 크리에이티브와 마케터들은 그들의 가장 큰 도전이 여러 이해 관계자들과 자산을 공유할 수 없는 것이라고 말한다.
+- [**70%**](https://business.adobe.com/resources/reports/future-creative-experiences.html)의 시간이 비핵심 작업에 소요되어 역할 간 서로 다른 시스템에서 수동 작업을 관리합니다.
+- 크리에이티브 중 [**21%**](https://business.adobe.com/resources/reports/future-creative-experiences.html)이(가) 콘텐츠 프로세스 전체에서 병목 현상을 식별하여 효과적인 경험을 만들 수 있었습니다.
+- 크리에이티브 및 마케터의 [**31%**](https://www.fotoware.com/blog/dam-industry-trends-by-fotoware)은(는) 여러 이해 당사자와 자산을 공유할 수 없는 것이 가장 큰 문제라고 말합니다.
 
 끊어진 콘텐츠 공급망의 일반적인 원인을 더 잘 살펴보기 위해 세 가지 높은 수준의 단계를 각각 살펴보는 것이 도움이 됩니다.
 
-1. 다음에서  **계획 수립**  단계, 획일적인 프로젝트 프로세스나 자원을 추적할 수 있는 중앙 집중식의 결여는 여러 수정, 과도한 비용, 비용 지연, 작업 균형 유지 능력 저하로 이어집니다. 또한 팀원 간의 연결이 끊기면 주기가 낭비되고 우선 순위 변경이 느려집니다.
-2. 다음 기간 동안  **production** , 사일로된 시스템 및 연결 해제된 워크플로우는 라이브 공동 작업, 자산 파악 능력, 지연 및 소진을 제한합니다. 또한 광고 팀은 작업과 자산을 수동으로 추적하고 반복 작업을 수동으로 수행해야 하므로 비용이 더 많이 들고 오류가 더 많이 발생합니다.
-3. 다음 시간  **게재** 즉, 중앙 집중식 자산 관리 시스템은 물론 제한된 컨텐츠 확장 자동화도 제공하지 않으므로 여러 채널에서 일관되고 개인화된 경험을 제공할 수 있는 팀의 능력이 감소합니다. 여기에 파편화된 전달 도구와 데이터는 자산 성과의 정확한 측정을 제한한다.
+1. **계획** 단계에서 리소스를 추적하는 균일한 프로젝트 프로세스나 중심적인 방법이 부족하면 여러 개의 수정, 과도한 비용, 비용 지연 및 작업 균형 조정 불능으로 이어집니다. 또한 팀원 간의 연결이 끊기면 주기가 낭비되고 우선 순위 변경이 느려집니다.
+2. **프로덕션** 중에 사일로된 시스템 및 연결이 끊어진 워크플로는 라이브 공동 작업, 자산 찾기, 지연 및 소진을 제한합니다. 또한 광고 팀은 작업과 자산을 수동으로 추적하고 반복 작업을 수동으로 수행해야 하므로 비용이 더 많이 들고 오류가 더 많이 발생합니다.
+3. **게재**&#x200B;가 필요한 시점에 중앙 자산 관리 시스템을 갖추지 않고 제한된 자동화 방식으로 콘텐츠를 확장하면 채널 전반에서 일관되고 개인화된 경험을 시작할 수 있는 팀의 능력이 감소합니다. 여기에 파편화된 전달 도구와 데이터는 자산 성과의 정확한 측정을 제한한다.
 
-![망가진 공급망에서 파편화된 시스템들은 혼란을 일으킨다.](./images/fragmented-supply-chain.png)
+![끊어진 공급망에서 단편화된 시스템이 혼돈을 일으킵니다.](./images/fragmented-supply-chain.png)
 
 ## 콘텐츠 공급망을 전환할 때입니다.
 
@@ -52,7 +52,7 @@ _소스:_ [_Deloitte 디지털_](https://www2.deloitte.com/content/dam/Deloitte/
 
 이상적으로 마케팅 팀은 다양한 분야의 사람들과 협업하고 프로젝트를 데이터 중심의 계획된 성과에 연결할 수 있는 작업 관리 솔루션을 사용해야 합니다. 또한 마케팅 팀이 작업의 우선 순위를 전략적으로 결정하고 이러한 우선 순위를 크리에이티브 팀에 알릴 수 있도록 권한을 부여해야 합니다. 여기에서 크리에이티브 개요, 콘텐츠 버전 및 피드백은 각 프로젝트 내에서 함께 연결되어야 하므로 팀이 찾고 있는 내용을 찾기 위해 이전 이메일을 검색할 필요가 없습니다.
 
-크리에이티브 팀은 다음으로 설정해야 합니다. [뛰어난 디지털 자산 관리](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[시스템](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) 이는 귀사의 크리에이티브 및 작업 관리 툴과 통합됩니다. 이렇게 하면 관련 에셋을 쉽게 찾고, 사용하고, 업데이트하거나, 용도를 변경할 수 있습니다. 이러한 모든 작업을 통해 시장 출시 속도를 높이고 내부 운영 및 프로세스를 단순화할 수 있습니다.
+크리에이티브 팀은 크리에이티브 및 작업 관리 도구와 통합된 [우수한 디지털 에셋 관리](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[시스템](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)(으)로 설정해야 합니다. 이렇게 하면 관련 에셋을 쉽게 찾고, 사용하고, 업데이트하거나, 용도를 변경할 수 있습니다. 이러한 모든 작업을 통해 시장 출시 속도를 높이고 내부 운영 및 프로세스를 단순화할 수 있습니다.
 
 ### 원활한 워크플로우를 통해 생산 효율성 향상
 
@@ -70,27 +70,27 @@ _소스:_ [_Deloitte 디지털_](https://www2.deloitte.com/content/dam/Deloitte/
 
 ## Adobe에서 업계 최고의 콘텐츠 공급망을 구축하고 있습니다
 
-우리의 고유 [Adobe Experience Cloud 비즈니스](https://business.adobe.com/) 는 캠페인을 구체화하고 여러 세그먼트를 지원하기 위해 이전에 설명된 단계를 수행하는 데 중점을 둡니다. Dell의 비전은 캠페인 프레임워크 및 메시지에 부합하는 매력적인 콘텐츠를 전 세계에 제공하는 것이었습니다.
+당사의 [Adobe Experience Cloud 비즈니스](https://business.adobe.com/)는 이전에 설명한 단계에 따라 캠페인을 발전시키고 여러 세그먼트를 지원하는 데 중점을 두고 있습니다. Dell의 비전은 캠페인 프레임워크 및 메시지에 부합하는 매력적인 콘텐츠를 전 세계에 제공하는 것이었습니다.
 
-전체 컨텐츠 작성 프로세스의 핵심은 [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) 및 [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). 이와 동일한 세 가지 높은 수준의 단계로 프로세스에 어떻게 접근했는지 살펴보겠습니다.
+전체 콘텐츠 만들기 프로세스의 핵심은 [Adobe Workfront](https://business.adobe.com/products/workfront/main.html)과(와) [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html)의 쌍입니다. 이와 동일한 세 가지 높은 수준의 단계로 프로세스에 어떻게 접근했는지 살펴보겠습니다.
 
-다음으로 시작  **계획 수립** 을 참조하십시오. 회사 전반에서 수백 개의 콘텐츠 요청을 받은 다음 분기별 우선 순위에 따라 우선 순위를 매깁니다. 그런 다음 Workfront의 콘텐츠 제안 대시보드를 사용하여 이해 당사자와 의견을 조율하고 마케팅, 크리에이티브, 웹 및 영업 팀 간의 승인을 신속하게 얻을 수 있는 투명성을 제공합니다. 이를 통해 당사는 해당 분기에 대해 약속하고 있는 작업에 대한 기록을 생성하고 크리에이티브 팀과 웹 팀이 리소스 조달 계획을 수립할 수 있도록 전체 요청 볼륨을 파악할 수 있도록 합니다. 또한 관리자는 팀의 워크로드를 쉽게 모니터링할 수 있습니다.
+**계획**&#x200B;부터 시작하여 비즈니스 전반에 걸쳐 수백 개의 콘텐츠 요청을 받은 다음 분기별 우선 순위에 따라 우선 순위를 지정합니다. 그런 다음 Workfront의 콘텐츠 제안 대시보드를 사용하여 이해 당사자와 의견을 조율하고 마케팅, 크리에이티브, 웹 및 영업 팀 간의 승인을 신속하게 얻을 수 있는 투명성을 제공합니다. 이를 통해 당사는 해당 분기에 대해 약속하고 있는 작업에 대한 기록을 생성하고 크리에이티브 팀과 웹 팀이 리소스 조달 계획을 수립할 수 있도록 전체 요청 볼륨을 파악할 수 있도록 합니다. 또한 관리자는 팀의 워크로드를 쉽게 모니터링할 수 있습니다.
 
-로 이동하면  **production** , 승인된 요청은 creative brief, 웹 랜딩 위치, 프로모션 요구 사항 등과 같은 크리에이티브 팀에 보다 자세한 내용을 제공하는 프로젝트로 전환됩니다. 그런 다음 Workfront의 콘텐츠 전략가는 관련자 및 크리에이티브와 협력하여 콘텐츠를 검토하고 기한을 준수합니다. Workfront에서는 이러한 모든 작업을 수행하므로 중복 단계, 불필요한 이메일 및 여러 양식 채우기를 제거했으며 에셋 유형별로 프로덕션 주기를 추적하기 시작하고 있습니다. 이를 통해 프로젝트 데이터를 심층적으로 살펴봄으로써 인력 자원의 균형을 맞추고 필요할 때 우선 순위를 변경할 수 있습니다.
+**프로덕션**(으)로 전환하면서 승인된 요청은 Creative Brief, 웹 랜딩 위치, 프로모션 요구 사항 등과 같이 크리에이티브 팀에 더 자세한 정보를 제공하는 프로젝트로 전환됩니다. 그런 다음 Workfront의 콘텐츠 전략가는 관련자 및 크리에이티브와 협력하여 콘텐츠를 검토하고 기한을 준수합니다. Workfront에서는 이러한 모든 작업을 수행하므로 중복 단계, 불필요한 이메일 및 여러 양식 채우기를 제거했으며 에셋 유형별로 프로덕션 주기를 추적하기 시작하고 있습니다. 이를 통해 프로젝트 데이터를 심층적으로 살펴봄으로써 인력 자원의 균형을 맞추고 필요할 때 우선 순위를 변경할 수 있습니다.
 
-콘텐츠가 다음에 대해 준비되면  **게재** , 우리 [오퍼, 에셋 및 홍보 콘텐츠 게시](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) Experience Manager Assets으로. 특히, 회사 내 모든 마케팅 허브로 이동하여 회사 내 누구나 필요할 때 필요한 정확한 콘텐츠를 신속하게 찾을 수 있습니다.
+콘텐츠가 **게재** 준비가 되면 Experience Manager Assets에 [오퍼, 에셋 및 홍보 콘텐츠를 게시](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html)합니다. 특히, 회사 내 모든 마케팅 허브로 이동하여 회사 내 누구나 필요할 때 필요한 정확한 콘텐츠를 신속하게 찾을 수 있습니다.
 
 우리는 작동 중인 콘텐츠 공급망을 구축함으로써 몇 가지 주요 성과를 보았습니다. 특히 단일 작업 관리 시스템으로 마이그레이션하여 중복 데이터 항목을 절반으로 줄였습니다. 또한 항상 개선의 여지가 있지만, 고객의 기대에 한 발 앞서가는 데 도움이 되는 프로세스로 나아가고 있다는 것을 알고 있습니다.
 
 >[!NOTE]
 >
-> 이 문서는 원래 [_Adobe Experience Cloud 블로그_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time).
+> 이 문서는 원래 [_Adobe Experience Cloud 블로그_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time)에 게시되었습니다.
 
 ## 네 번째 단계: Insights
 
 콘텐츠 공급망은 모든 문제를 해결하는 마법같은 솔루션이 아닙니다. 보다 효율적이고 고객에게 제공하려는 모든 경험을 관리할 수 있는 작업 방법입니다. 너는 기어가야 하고, 걷다가 결국 뛰어갈 수 있어.
 
-![크롤링 워크 런](./images/crawl-walk-run.png)
+![크롤링 실행](./images/crawl-walk-run.png)
 
 그리고 마지막으로 가동되고 나면 엔드 투 엔드 콘텐츠 공급망에서 얻을 수 있는 추가적인 이점이 있습니다. 바로 인사이트입니다. 사실, 잠시 후 당신은 시간, 예산, ...에 어떤 조치가 영향을 미치는 방법을 탐구 시작할 수 있습니다. 우리는 또한 부트캠프의 끝에서 이것을 다룰 것입니다.
 

@@ -4,11 +4,11 @@ description: 이 부트캠프에서 다루는 주제를 더 잘 이해하는 데
 jira: KT-5342
 doc-type: tutorial
 activity: develop
-exl-id: 8dda3ba5-ad68-41b7-b247-aedb217256a4
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+exl-id: 6a37ce5c-5daa-45dd-a968-eae9c3a63ad3
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '443'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 4%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 5%
 
 ## 슬라이드 데크
 
-이 설명서는 이 부트캠프의 개념과 콘텐츠 공급망에 익숙해지는 데 도움이 될 수 있습니다. 하지만 우리가 보여주고 싶었지만 더 이상 포함시키지 못한 것들이 항상 있습니다. 다음 위치에서 이 정보를 찾을 수 있습니다. [뒤따르는 슬라이드 데크](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) 및 [가능한 데모 아트](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen).
+이 설명서는 이 부트캠프의 개념과 콘텐츠 공급망에 익숙해지는 데 도움이 될 수 있습니다. 하지만 우리가 보여주고 싶었지만 더 이상 포함시키지 못한 것들이 항상 있습니다. 이 정보는 [다음 슬라이드 데크](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) 및 [가능한 데모 기술](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen)에서 찾을 수 있습니다.
 
 ## 아도비케를 만나다
 
 Adobike는 브뤼셀에 본사를 둔 회사로 이미 시장에서 입지가 확고하다. 그들 옆에는 50.000명의 라이더 커뮤니티가 있습니다. 그들은 최근에 새로운 혁신적인 전자 자전거를 개발했으며, 그 과정에서 회사는 관련 프로세스와 기술뿐만 아니라 마케팅 팀의 설정도 변화시키고 있습니다.
 
-![아도바이크](./images/adobike-logo.png)
+![Adobike](./images/adobike-logo.png)
 
 새로운 자전거가 출시되면서 그들은 작업 효율성 문제로 어려움을 겪고 있다. 단일 솔루션에서 초기 요청부터 최종 게재에 이르기까지 전체 작업 수명 주기를 완벽하게 표시하는 것은 매우 중요합니다. 높은 수준의 오케스트레이션에서 작동하므로 팀 간 협업이 가능해야 합니다.
 
@@ -35,7 +35,7 @@ Adobike는 브뤼셀에 본사를 둔 회사로 이미 시장에서 입지가 �
 
 ### 콘텐츠 공급망
 
-- [확장 가능한 콘텐츠 공급망 구축](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
+- [확장할 수 있는 콘텐츠 공급망 구축](https://business.adobe.com/resources/webinars/building-a-content-supply-chain-that-scales.html)
 
 ### Adobe Experience Manager
 

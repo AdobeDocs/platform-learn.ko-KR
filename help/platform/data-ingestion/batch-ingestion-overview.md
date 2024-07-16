@@ -9,13 +9,13 @@ thumbnail: 330995.jpg
 exl-id: 300acb73-2099-438d-97b3-48d2af5afdb0
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '68'
-ht-degree: 14%
+source-wordcount: '63'
+ht-degree: 1%
 
 ---
 
 # 일괄 데이터 수집 개요
 
-이 비디오는 Adobe Experience Platform의 배치 데이터 수집에 대한 개요를 제공하며 API를 사용하여 배치 데이터를 수집하는 방법을 보여 줍니다. 자세한 내용은 다음을 참조하십시오. [데이터 수집 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ko).
+이 비디오는 Adobe Experience Platform의 배치 데이터 수집에 대한 개요를 제공하며 API를 사용하여 배치 데이터를 수집하는 방법을 보여 줍니다. 자세한 내용은 [데이터 수집 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on)

@@ -9,7 +9,7 @@ role: Developer, Data Engineer
 source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 26%
+ht-degree: 23%
 
 ---
 
@@ -27,14 +27,14 @@ ht-degree: 26%
    + [규칙 작성](tags/build-rules.md)
    + [스택 규칙](tags/stack-rules.md)
    + [라이브러리 빌드 및 게시](tags/build-and-publish-a-library.md)
-   + [Web SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target="_blank"}
+   + [웹 SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target="_blank"}
    + [솔루션 SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [모바일 앱에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR){target="_blank"}
 + 웹 SDK{#web-sdk}
    + [개요](web-sdk/overview.md)
    + [데모](web-sdk/demo.md)
    + [구현 자습서(태그 포함)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR){target="_blank"}
-   + [Target 마이그레이션 자습서](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
+   + [대상 마이그레이션 자습서](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + 동의{#consent}
       + [개요](web-sdk/consent/overview.md)
       + [Adobe 표준을 사용하여 동의 값 설정](web-sdk/consent/set-consent-adobe.md)
@@ -52,7 +52,7 @@ ht-degree: 26%
 + 이벤트 전달{#event-forwarding}
    + [개요](event-forwarding/overview.md)
    + [속성 만들기](event-forwarding/create-a-property.md)
-   + [데이터스트림 설정](event-forwarding/set-up-a-datastream.md)
+   + [데이터 스트림 설정](event-forwarding/set-up-a-datastream.md)
    + [확장 추가](event-forwarding/add-an-extension.md)
    + [규칙 만들기](event-forwarding/create-a-rule.md)
    + [빠른 시작 워크플로우](event-forwarding/quick-start-workflows.md)

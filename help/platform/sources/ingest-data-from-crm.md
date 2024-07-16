@@ -1,5 +1,5 @@
 ---
-title: CRM 소스 커넥터를 사용하여 데이터 수집
+title: CRM Source 커넥터를 사용하여 데이터 수집
 description: CRM 소스의 데이터를 Adobe Experience Platform의 실시간 고객 프로필 및 데이터 레이크로 손쉽게 일괄 수집하는 방법을 알아봅니다.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
@@ -10,14 +10,14 @@ last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
 
 # CRM 소스 커넥터를 사용하여 데이터 수집
 
-CRM 소스의 데이터를 Adobe Experience Platform의 실시간 고객 프로필 및 데이터 레이크로 손쉽게 일괄 수집하는 방법을 알아봅니다. 자세한 제품 설명서는 [고객 관계 관리(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) 소스 커넥터 개요 페이지.
+CRM 소스의 데이터를 Adobe Experience Platform의 실시간 고객 프로필 및 데이터 레이크로 손쉽게 일괄 수집하는 방법을 알아봅니다. 자세한 제품 설명서는 Source Connectors 개요 페이지의 [CRM(고객 관계 관리)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion)을 참조하십시오.
 
 ## 표준 워크플로우
 
@@ -32,6 +32,6 @@ CRM 소스의 데이터를 Adobe Experience Platform의 실시간 고객 프로�
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on)
 
 자세한 내용은 다음 설명서를 참조하십시오.
-* [Salesforce 연결 설명서 만들기](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
-* [UI의 템플릿을 사용하여 소스 데이터 흐름 만들기](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
+* [Salesforce에서 연결 설명서를 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
+* [UI에서 템플릿을 사용하여 소스 데이터 흐름을 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
 

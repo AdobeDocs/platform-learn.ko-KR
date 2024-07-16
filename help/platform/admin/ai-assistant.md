@@ -17,10 +17,10 @@ ht-degree: 4%
 
 # AI 어시스턴트
 
-Real-time Customer Data Platform, Journey Optimizer 및 Customer Journey Analytics과 같은 Adobe Experience Platform 기반 애플리케이션에서 AI Assistant를 사용하여 수행할 수 있는 작업에 대해 알아봅니다. 자세한 내용은 다음을 참조하십시오. [AI Assistant 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home).
+Real-time Customer Data Platform, Journey Optimizer 및 Customer Journey Analytics과 같은 Adobe Experience Platform 기반 애플리케이션에서 AI Assistant를 사용하여 수행할 수 있는 작업에 대해 알아봅니다. 자세한 내용은 [AI Assistant 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on)
 
 >[!IMPORTANT]
 >
-> 이 기능을 사용하려면 사용자의 AI Asstant 권한 항목을 활성화해야 합니다. 다음을 참조하십시오. [AI Assistant 액세스 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access) 을 참조하십시오.
+> 이 기능을 사용하려면 사용자의 AI Asstant 권한 항목을 활성화해야 합니다. 자세한 내용은 [AI Assistant 액세스 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access)를 참조하십시오.

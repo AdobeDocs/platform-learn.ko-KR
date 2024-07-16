@@ -26,7 +26,7 @@ Customer Journey Analytics은 크로스 채널 데이터(온라인 및 오프라
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-Customer Journey Analytics에 대한 추가 정보를 찾을 수 있음 [여기](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Customer Journey Analytics에 대한 자세한 정보는 [여기](https://spark.adobe.com/page/t62eiRu9l6iWJ/)를 참조하세요.
 
 ## 학습 목표
 

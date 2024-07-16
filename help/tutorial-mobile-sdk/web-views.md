@@ -27,15 +27,15 @@ ht-degree: 0%
 
 ## 잠재적 추적 문제
 
-앱의 기본 부분과 앱 내의 WebView에서 데이터를 전송하는 경우 각각은 고유한 Experience Cloud ID(ECID)를 생성하므로 히트가 끊기고 방문/방문자 데이터가 부풀려집니다. ECID에 대한 자세한 내용은 [ECID 개요](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+앱의 기본 부분과 앱 내의 WebView에서 데이터를 전송하는 경우 각각은 고유한 Experience Cloud ID(ECID)를 생성하므로 히트가 끊기고 방문/방문자 데이터가 부풀려집니다. ECID에 대한 자세한 내용은 [ECID 개요](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en)를 참조하십시오.
 
 이러한 바람직하지 않은 상황을 해결하려면 사용자의 ECID를 앱의 기본 부분에서 앱에서 사용할 WebView로 전달하는 것이 중요합니다.
 
-WebView 내에서 사용된 AEP Edge Identity 확장은 새 ID에 대한 Adobe 요청을 전송하는 대신 현재 ECID를 수집하여 URL에 추가합니다. 그런 다음 구현은 이 ECID를 사용하여 URL을 요청합니다.
+WebView 내에서 사용된 AEP Edge Identity 확장은 새 ID에 대한 Adobe 요청을 보내는 대신 현재 ECID를 수집하여 URL에 추가합니다. 그런 다음 구현은 이 ECID를 사용하여 URL을 요청합니다.
 
 ## 구현
 
-다음으로 이동 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**&#x200B;을 클릭하고 `func loadUrl()` 의 함수 `final class SwiftUIWebViewModel: ObservableObject` 클래스. 웹 보기를 처리하기 위해 다음 호출을 추가합니다.
+**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**(으)로 이동하여 `final class SwiftUIWebViewModel: ObservableObject` 클래스에서 `func loadUrl()` 함수를 찾습니다. 웹 보기를 처리하기 위해 다음 호출을 추가합니다.
 
 ```swift
 // Handle web view
@@ -58,24 +58,24 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 }
 ```
 
-다음 [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API는 URL에 대해 ECID 등과 같은 모든 관련 정보를 포함하도록 변수를 설정합니다. 이 예에서는 로컬 파일을 사용하고 있지만 원격 페이지에도 동일한 개념이 적용됩니다.
+[`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API는 URL에 대해 ECID 등과 같은 모든 관련 정보를 포함하도록 변수를 설정합니다. 이 예에서는 로컬 파일을 사용하고 있지만 원격 페이지에도 동일한 개념이 적용됩니다.
 
-다음에 대해 자세히 알아볼 수 있습니다. `Identity.getUrlVariables` 의 API [Edge Network 확장 API 참조 안내서를 위한 ID](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
+[Edge Network 확장 API 참조 안내서](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables)에서 `Identity.getUrlVariables` API에 대해 자세히 알아볼 수 있습니다.
 
 ## 유효성 검사
 
 코드를 실행하려면:
 
-1. 리뷰 [설치 지침](assurance.md#connecting-to-a-session) 시뮬레이터 또는 장치를 Assurance에 연결하는 섹션입니다.
-1. 로 이동 **[!UICONTROL 설정]** 앱에서
-1. 탭 **[!DNL View...]** 단추 표시 **[!DNL Terms of Use]**.
+1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
+1. 앱의 **[!UICONTROL 설정]**(으)로 이동
+1. **[!DNL View...]** 단추를 탭하여 **[!DNL Terms of Use]**&#x200B;을(를) 표시합니다.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
-1. Assurance UI에서 **[!UICONTROL Edge ID 응답 URL 변수]** 다음에서 이벤트 발생 **[!UICONTROL com.adobe.grifcon.mobile]** 공급업체.
-1. 이벤트를 선택하고 **[!UICONTROL urlvariable]** 의 필드 **[!UICONTROL ACPExtensionEventData]** 다음 매개 변수가 URL에 있는지 확인하는 개체입니다. `adobe_mc`, `mcmid`, 및 `mcorgid`.
+1. Assurance UI에서 **[!UICONTROL com.adobe.grifcon.mobile]** 공급업체에서 **[!UICONTROL Edge ID 응답 URL 변수]** 이벤트를 찾습니다.
+1. 이벤트를 선택하고 **[!UICONTROL ACPExtensionEventData]** 개체에서 **[!UICONTROL urlvariable]** 필드를 검토하여 다음 매개 변수가 URL에 있는지 확인합니다. `adobe_mc`, `mcmid` 및 `mcorgid`.
 
-   ![webview 유효성 검사](assets/webview-validation.png)
+   ![웹 보기 유효성 검사](assets/webview-validation.png)
 
    샘플 `urvariables` 필드는 아래에서 볼 수 있습니다.
 
@@ -95,13 +95,13 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 >[!NOTE]
 >
->이러한 URL 매개 변수를 통한 방문자 결합은 Platform Web SDK(버전 2.11.0 이상)에서 그리고 을 사용할 때 지원됩니다 `VisitorAPI.js`.
+>이러한 URL 매개 변수를 통한 방문자 결합은 Platform Web SDK(버전 2.11.0 이상) 및 `VisitorAPI.js` 사용 시 지원됩니다.
 
 
 >[!SUCCESS]
 >
 >이제 Adobe Experience Platform Mobile SDK에서 이미 발급한 ECID와 동일한 ECID를 사용하여 웹 보기에서 URL을 기반으로 콘텐츠를 표시하도록 앱을 설정했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하려는 경우 또는 향후 콘텐츠에 대한 제안이 있는 경우 이에 대해 공유하십시오 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
-다음: **[신원](identity.md)**
+다음: **[ID](identity.md)**

@@ -10,8 +10,8 @@ hide: true
 doc-type: multipage
 source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 3%
+source-wordcount: '172'
+ht-degree: 2%
 
 ---
 
@@ -34,8 +34,8 @@ ht-degree: 3%
    + [2.3 여정 및 이메일 메시지 만들기](/help/bootcamp/uc/uc2/ex3.md)
    + [2.4 여정 테스트](/help/bootcamp/uc/uc2/ex4.md)
    + [2.5 모바일 앱 설치 및 사용](/help/bootcamp/uc/uc2/ex5.md)
-   + [2.6 콜 센터의 개인화](/help/bootcamp/uc/uc2/ex6.md)
-+ 3 - 물리적 및 디지털 혼합 {#uc3}
+   + 콜 센터의 [2.6 Personalization](/help/bootcamp/uc/uc2/ex6.md)
++ 3 - 실제 및 디지털 혼합 {#uc3}
    + [개요](/help/bootcamp/uc/uc3/uc3.md)
    + [3.1 모바일 앱 사용 및 비콘 항목 트리거](/help/bootcamp/uc/uc3/ex1.md)
    + [3.2 이벤트 만들기](/help/bootcamp/uc/uc3/ex2.md)

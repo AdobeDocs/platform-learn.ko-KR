@@ -11,8 +11,8 @@ feature: Data Views
 exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '1655'
-ht-degree: 2%
+source-wordcount: '1667'
+ht-degree: 3%
 
 ---
 
@@ -36,11 +36,11 @@ Será neceário, no mynimo, uma Visualização de Dados por conexão. No entanto
 - 사용 os mesmos nomes para KPIs e metricas para o Google Analytics e para o Customer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma.
 - Visualização de Dados filtrada para mostrar, por orimo, dados para apenas um mercado, ou uma marca, ou apenas para Dispositivos móveis.
 
-나텔라 데 **연결** 마르케 아 카이사 드 셀레상 다 코넥상 케 보슈 아카보 드 크리아르. 클리크  **데이터 보기 만들기**.
+Na tela de **연결** marque a caixa de seleção da conexão que você acabou de criar. **데이터 보기 만들기**&#x200B;를 클릭합니다.
 
 ![데모](./images/exta.png)
 
-Você será redirectionado para o fluxo de trabalho **데이터 보기 만들기** 워크플로입니다.
+Você será redirectionado para o fluxo de trabalho **데이터 보기 만들기** 워크플로우입니다.
 
 ![데모](./images/0-v2.png)
 
@@ -50,13 +50,13 @@ Agora você pode configurar as definições básicas para sua Visualização de 
 
 ![데모](./images/0-v2.png)
 
-A **연결** 케 보테 크리우 노 exercício 전각 já está selectionada. 수아 코넥상 세 차마 `yourLastName – Omnichannel Data Connection`.
+**연결** que você criou no exercício anterior já está seleionada. Sua conexão se chama `yourLastName – Omnichannel Data Connection`.
 
 ![데모](./images/ext5.png)
 
-Em seguida, dê um nome à sua 시각화 Ação de Dados seguindo este 모델 de nomenclatura: `yourLastName – Omnichannel Data View`.
+Em seguida, dê um nome à sua Visualização de Dados seguindo este 모델 de nomenclatura: `yourLastName – Omnichannel Data View`.
 
-Insira o mesmo valor para a 설명: `yourLastName – Omnichannel Data View`.
+Insira 또는 mesmo 발로 para a 설명: `yourLastName – Omnichannel Data View`.
 
 | 이름 | 설명 |
 | ----------------- |-------------| 
@@ -64,7 +64,7 @@ Insira o mesmo valor para a 설명: `yourLastName – Omnichannel Data View`.
 
 ![데모](./images/1-v2.png)
 
-파라 **시간대**, 후소 호라리오 선택 **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, 암스테르담 GMT+01:00**. Este um cenário realmente interest, pois algumas empresas operam em differents países e geografias. Alocar o fuso horário certo para cada país evitará erros típicos de dados, como, por orimo, acreditar que a maioria das pesoas combra camisetas às 4h no Peru.
+파라 **시간대**, 후소 호라리오 **베를림, 에스토콜모, 로마, 베르나, 브루셀라, 비에나, 암스테르담 GMT+01:00** 선택 Este um cenário realmente interest, pois algumas empresas operam em differents países e geografias. Alocar o fuso horário certo para cada país evitará erros típicos de dados, como, por orimo, acreditar que a maioria das pesoas combra camisetas às 4h no Peru.
 
 ![데모](./images/ext7.png)
 
@@ -74,7 +74,7 @@ Agora você deve ter as seguintes configuraões definidas:
 
 ![데모](./images/1-v2.png)
 
-클리크 **저장 및 계속**.
+**저장 후 계속**&#x200B;을 클릭합니다.
 
 ![데모](./images/12-v2.png)
 
@@ -90,39 +90,39 @@ Neste exercício, você irá configurar os components necessários para analisar
 
 >[!IMPORTANT]
 >
->Se você não encontrar uma métrica ou dimensão esecífica, verifique se o campo `Contains data` foi removido de sua visualização de dados. 카소 콘트라리오, 에세 캄포
+>Se você não encontrar uma métrica ou dimensions são esecífica, verifique se o campo `Contains data` foi removido de sua visualização de dados. 카소 콘트라리오, 에세 캄포
 >
 >![데모](./images/2-v2a.png)
 
-Agora você precisa e soltar os components necessários para a análise nos **구성 요소 추가됨**. Para isso, você deve selecionar os components no menu à esquerda e arrastá-los e soltá-los na tela no meio.
+Agora você precisa-e soltar os 구성 요소는 필요한 para a análise nos **추가된 구성 요소**&#x200B;입니다. Para isso, você deve selecionar os components no menu à esquerda e arrastá-los e soltá-los na tela no meio.
 
-Vamos começar com o primeiro 구성 요소 : **이름(web.webPageDetails.name)**. Pesquise esse componente arraste-o e solte-o na tela.
+Primeiro 구성 요소의 Vamos começar com: **이름(web.webPageDetails.name)**. Pesquise esse componente arraste-o e solte-o na tela.
 
 ![데모](./images/3-v2.png)
 
-Esse componente é o nome da página, como você pode derivar da leitura do campo do schema `(web.webPageDetails.name)`.
+Ese componente o nome da página, como você pode derivar da leitura do campo do schema `(web.webPageDetails.name)`.
 
-엔탄토 없음, usar **이름** como o nome não é a melhor conventção de nomenclatura para um usuário corporativo compreender rapidamente essa dimensão.
+No entanto, usar **이름** como o nome não é a melhor convenção de nomenclatura para um usuário corporativo comprender rapidamente essa dimensão.
 
-파모스 무다르 오놈 파라 **페이지 이름**. Clique no componente o renomeie na area **구성 요소 설정**.
+Vamos mudar o nome para **페이지 이름**. 구성 요소 없음을 클릭합니다. **구성 요소 설정**.
 
 ![데모](./images/3-0-v2.png)
 
-As Configurações de persistência 상 **지속성 설정**. Os conceitos de eVars e prop não existem no CJA, mas as configurações de Persistência possibilitam um comportamento semelhante.
+As Configurações de persistência são **지속성 설정**. Os conceitos de eVars e prop não existem no CJA, mas as configurações de Persistência possibilitam um comportamento semelhante.
 
 ![데모](./images/3-0-v21.png)
 
-Se voche não alterar essas configurações, o CJA irá intertar a dimensão como um **Prop** (nível de ocorência). Além disso, podemos alterar a Persistência para tornar a dimensão uma **eVar** (페르시스터 오발루 아오 롱고 다 조르나다).
+Se você não alterar essas configurações, o CJA irá interratar a dimensional são como um **Prop** (nível de ocorência). Além disso, podemos alterar a Persistência para tornar a dimensão uma **eVar** (persistir o valor ao longo da jornada).
 
-Se você não estiver familiarizado com eVars e Props, [라이아 마이스 소브레 이소 나 다큐멘타상](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)..
+Se você não estiver familiarizado com eVars e Props, [leia mais sobre isso na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
 
-Vamos deixar o Nome da Página como Prop. 데사 포르마, 보추 네오 프리사이사 알테라 네후마 **지속성 설정**.
+Vamos deixar o Nome da Página como Prop. Dessa forma, você não precisa alterar nenhuma **지속성 설정**.
 
 | 검색할 구성 요소 이름 | 새 이름 | 지속성 설정 |
 | ----------------- |-------------| --------------------| 
 | 이름(web.webPageDetails.name) | 페이지 이름 |          |
 
-Em seguida, escloha a dimensão **전화번호** 솔테나텔라 오노보놈 데브 세르 **전화 번호**.
+Em seguida, escalha a dimensional **phoneNumber** e solte-a na tela. 새 이름 개발자 사용자 **전화 번호**&#x200B;이(가) 없습니다.
 
 ![데모](./images/3-1-v2.png)
 
@@ -132,19 +132,19 @@ Para alterar a Persistência, 역할 para baixo no menu à direita e abra a aba 
 
 ![데모](./images/5-v2.png)
 
-Marque a caixa de seleção para modificar as configurações de persistência. 선택 항목 **가장 최근** eo 에스코포 **개인(보고 기간)**, pois nos preocupamos apenas com o ultimo número de celular da pesoa. Se o cliente não preencher o celular em visitas futuras, você ainda verá esse valor preenchido.
+Marque a caixa de seleção para modificar as configurações de persistência. **가장 최근** e o escopo **개인(보고 기간)**, pois nos preocupamos apenas com o último número de celular da pesoa. Se o cliente não preencher o celular em visitas futuras, você ainda verá esse valor preenchido.
 
 ![데모](./images/6-v2.png)
 
 | 검색할 구성 요소 이름 | 새 이름 | 지속성 설정 |
 | ----------------- |-------------| --------------------| 
-| 전화번호 | 전화 번호 | 가장 최근, 개인(보고 기간) |
+| 전화번호 | 전화번호 | 가장 최근, 개인(보고 기간) |
 
-O próximo componente `web.webPageDetails.pageViews.value`.
+O próximo 구성 요소 é `web.webPageDetails.pageViews.value`.
 
-메뉴 없음, 에스케르다, 페스키즈 `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela.
+메뉴 없음(`web.webPageDetails.pageViews.value`), 세부 정보. Arraste e solte essa métrica na tela.
 
-Altere o nome para **페이지 보기 수** 다음 아래에 **구성 요소 설정**.
+**구성 요소 설정**&#x200B;에서 para **페이지 보기 수**&#x200B;를 변경할 수 없습니다.
 
 | 검색할 구성 요소 이름 | 새 이름 | 속성 설정 |
 | ----------------- |-------------| --------------------| 
@@ -169,7 +169,7 @@ Em seguida, você terá que configurar várias Dimensões Métricas, conforme in
 | ecid | ECID | 가장 최근, 개인(보고 기간) |
 | 이메일 | 이메일 ID | 가장 최근, 개인(보고 기간) |
 | 결제 유형 | 결제 유형 |          |
-| 제품 추가 메서드 | 제품 추가 메서드 | 가장 최근, 세션 |
+| 제품 추가 방법 | 제품 추가 방법 | 가장 최근, 세션 |
 | 이벤트 유형 | 이벤트 유형 |         |
 | 이름(productListItems.name) | 제품 이름 |         |
 | SKU | SKU(세션) | 가장 최근, 세션 |
@@ -182,13 +182,13 @@ Em seguida, você terá que configurar várias Dimensões Métricas, conforme in
 | 검색할 구성 요소 이름 | 새 이름 | 속성 설정 |
 | ----------------- |-------------| --------------------| 
 | 수량 | 수량 |          |
-| commerce.order.priceTotal | 매출  |         |
+| commerce.order.priceTotal | 매출 |         |
 
 Sua configuração deve ser semelhante ao seguinte:
 
 ![데모](./images/11-v2.png)
 
-Não se equeça de Salvar sua Visualização de Dados. 엔탕 클리케 **저장**.
+Não se equeça de Salvar sua Visualização de Dados. Então clique em **저장**.
 
 ![데모](./images/12-v2s.png)
 
@@ -196,15 +196,15 @@ Não se equeça de Salvar sua Visualização de Dados. 엔탕 클리케 **저장
 
 Embora tenhamos organizado todos os components na Visualização de dados, você ainda deve adaptar alguns deles para que os usuários de negócios estejam prontos para iniciar suas análises.
 
-Se você se lembra, não trouxemos especificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para Visualização de dados. No entanto, temos uma dimensão chamada: **이벤트 유형**. Então, vamos derivar deses tipos de interação criando 3 métricas calculladas.
+Se você se lembra, não trouxemos especificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para Visualização de dados. Entato가 없습니다. temos uma 차원 chamada: **이벤트 유형**. Então, vamos derivar deses tipos de interação criando 3 métricas calculladas.
 
-Vamos começar com a primeira Métrica : **제품 보기**.
+Vamos começar com a primeira Métrica: **제품 보기**.
 
-No lado esquerdo, pequise **이벤트 유형** 차원을 선택합니다. Em seguida, arraste-o e solte-o na tela **포함된 구성 요소**.
+Lado esquerdo가 없습니다. **이벤트 유형**&#x200B;에서 차원을 선택합니다. Em seguida, arraste-o e solte-o na tela **포함된 구성 요소**.
 
 ![데모](./images/calcmetr1.png)
 
-Clique para selecionar a nova métrica **이벤트 유형**.
+Clique para selectionar a nova métrica **이벤트 유형**.
 
 ![데모](./images/calcmetr2.png)
 
@@ -216,25 +216,25 @@ Agora altere o nome e a descrição do componente para os seguintes valores:
 
 ![데모](./images/calcmetr3.png)
 
-아고라 바모스 콘타 아페나스 **제품 보기**. Para fazer isso, 역할 para baixo em **구성 요소 설정** 아테 베르 발로레스 데 **포함/제외 값**. 하빌리타르 아 옵상 **포함/제외 값 설정**.
+Agora vamos conttar apenas eventos de **제품 보기**. Para fazer isso, 역할 para baixo em **구성 요소 설정** até ver Valores de **제외 값 포함**. Certifique-se de habilitar a opção **포함/제외 값 설정**.
 
 ![데모](./images/calcmetr4.png)
 
-코모 케레모스 콘타 아페나스 **제품 보기**, 특히 **commerce.productViews** 크리테리오스
+Como queremos contar apenas **제품 보기**, 특히 **commerce.productViews** nos critérios.
 
 ![데모](./images/calcmetr5.png)
 
 아고라 아 수아 메트리카 캘쿨라다 에스타 프로타!
 
-Em seguida, repita o mesmo processo para os eventos **장바구니에 추가** e **구매**.
+Em seguida, repita o mesmo processo para os eventos **장바구니에 추가** e **구매**.
 
 ### 장바구니에 추가
 
-Primeiro, arraste a mesma dimensional **이벤트 유형**.
+Primeiro, arraste에 mesma 차원 **이벤트 유형**&#x200B;이(가) 있습니다.
 
 ![데모](./images/calcmetr1.png)
 
-Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. 클리크 **그대로 추가**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. **계속 추가**&#x200B;를 클릭합니다.
 
 ![데모](./images/calcmetr6.png)
 
@@ -250,17 +250,17 @@ Agora, siga o mesmo processo que fizemos para a métrica Visualizações de prod
 
 ### 구매
 
-Primeiro, arraste a mesma dimensional **이벤트 유형** 코모 fizemos para as duas métricas anteriores.
+Primeiro, arraste e solte a mesma dimensional **Event Type** como fizemos para as as duas métricas anteriores.
 
 ![데모](./images/calcmetr1.png)
 
-Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. 클리크 **그대로 추가**:
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. **계속 추가**&#x200B;를 클릭합니다.
 
 ![데모](./images/calcmetr7.png)
 
 Agora, siga o mesmo processo que fizemos para as métricas 제품 보기 e 장바구니에 추가:
 - Primeiro altere o nome e a descrição.
-- Por fim, adicione **commerce.purchase** como critérios para contabilizar apenas as Compras
+- Por fim, adicione **commerce.purchases** como critérios para contabilizar apenas as compras
 
 | 이름 | 설명 | 기준 |
 | ----------------- |-------------| -------------|
@@ -268,7 +268,7 @@ Agora, siga o mesmo processo que fizemos para as métricas 제품 보기 e 장�
 
 ![데모](./images/calcmetr7a.png)
 
-Sua configuração final deve ser semelhante ao seguinte. 클리크 **저장 및 계속**.
+Sua configuração final deve ser semelhante ao seguinte. **저장 후 계속**&#x200B;을 클릭합니다.
 
 ![데모](./images/calcmetr8.png)
 
@@ -278,7 +278,7 @@ Você deve ser redirectionado para tela:
 
 ![데모](./images/8-v2.png)
 
-Nesta aba, você pode modificar algumas configurações importantes para alterar a forma como os dados são processados. Vamos começar definindo o **세션 시간 초과** 코모 30분 Graças ao registro de data e hora de cada evento de experiência, você pode estender o conceito de uma sessão em todos os canais. Por formo, o que acontece se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sesão personalizados, você tem muita flexibilidade para decisdir o que é uma sessão e como essão irá mesclar os dados.
+Nesta aba, você pode modificar algumas configurações importantes para alterar a forma como os dados são processados. Vamos começar 정의 o **세션 시간 초과** como 30분. Graças ao registro de data e hora de cada evento de experiência, você pode estender o conceito de uma sessão em todos os canais. Por formo, o que acontece se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sesão personalizados, você tem muita flexibilidade para decisdir o que é uma sessão e como essão irá mesclar os dados.
 
 ![데모](./images/ext8.png)
 
@@ -286,7 +286,7 @@ Nesta aba você modificar outtras coisas como filtrar os dados usando um segment
 
 ![데모](./images/10-v2.png)
 
-Quando 터미널, 절벽 **저장 및 마침**.
+Quando 터미널에서 **저장하고 완료**&#x200B;를 클릭하세요.
 
 ![데모](./images/13-v2.png)
 
@@ -296,7 +296,7 @@ Quando 터미널, 절벽 **저장 및 마침**.
 
 Agora você pode continuar com a parte de visualização e análise!
 
-프록시마 에타파: [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
+Próxima etapa: [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
 
 [레토르나르 파라 플루소 데 우수아리오 4](./uc4.md)
 

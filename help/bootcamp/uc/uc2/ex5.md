@@ -9,7 +9,7 @@ feature: Mobile SDK
 exl-id: c1f007b4-e28a-412c-9352-e38579a2fc71
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '264'
 ht-degree: 1%
 
 ---
@@ -19,15 +19,15 @@ ht-degree: 1%
 
 ## 모바일 앱 설치
 
-앱을 설치하기 전에 를 활성화해야 합니다 **추적** iOS 디바이스에서. 이렇게 하려면 다음으로 이동합니다. **설정** > **개인 정보 및 보안** > **추적** 및 옵션을 확인합니다. **앱에서 추적 요청 허용**.
+앱을 설치하기 전에 iOS 장치에서 **추적**&#x200B;을 사용하도록 설정해야 합니다. 이렇게 하려면 **설정** > **개인 정보 및 보안** > **추적**&#x200B;으로 이동하여 **앱에서 추적을 요청하도록 허용** 옵션을 확인하십시오.
 
 ![DSN](./../uc3/images/app4.png)
 
-Apple App Store으로 이동하여 `aepmobile-bootcamp`. 클릭 **설치** 또는 **다운로드**.
+Apple App Store으로 이동하여 `aepmobile-bootcamp`을(를) 검색합니다. **설치** 또는 **다운로드**&#x200B;를 클릭합니다.
 
 ![DSN](./../uc3/images/app1.png)
 
-앱이 설치되면 **열기**.
+앱이 설치되면 **열기**&#x200B;를 클릭합니다.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -35,19 +35,19 @@ Apple App Store으로 이동하여 `aepmobile-bootcamp`. 클릭 **설치** 또�
 
 ![DSN](./../uc3/images/app9.png)
 
-클릭 **허용**.
+**허용**&#x200B;을 클릭합니다.
 
 ![DSN](./../uc3/images/app3.png)
 
-클릭 **동의함**.
+**동의함**&#x200B;을 클릭하세요.
 
 ![DSN](./../uc3/images/app7.png)
 
-클릭 **앱을 사용하는 동안 허용**.
+**앱을 사용하는 동안 허용**&#x200B;을 클릭합니다.
 
 ![DSN](./../uc3/images/app8.png)
 
-클릭 **허용**.
+**허용**&#x200B;을 클릭합니다.
 
 ![DSN](./../uc3/images/app5.png)
 
@@ -65,7 +65,7 @@ Apple App Store으로 이동하여 `aepmobile-bootcamp`. 클릭 **설치** 또�
 
 ![데모](./../uc3/images/pv1.png)
 
-여기에 웹 사이트에서 사용한 이메일 주소를 입력하고 클릭 **로그인**.
+웹 사이트에서 사용한 전자 메일 주소를 여기에 입력하고 **로그인**&#x200B;을 클릭합니다.
 
 ![DSN](./../uc3/images/app14.png)
 
@@ -77,17 +77,17 @@ Apple App Store으로 이동하여 `aepmobile-bootcamp`. 클릭 **설치** 또�
 
 ![DSN](./../uc3/images/app17.png)
 
-다음으로 이동 **제품**. 이 예에서 원하는 제품을 클릭합니다. **테이크아웃 커피**.
+**제품**(으)로 이동합니다. 제품을 클릭합니다(이 예제에서는 **테이크아웃 커피하기**).
 
 ![DSN](./images/app19.png)
 
-다음을 볼 수 있습니다. **테이크아웃 커피** 앱의 제품 페이지. 클릭 **구매**.
+앱에서 **테이크아웃 커피** 제품 페이지가 표시됩니다. **구매**&#x200B;를 클릭합니다.
 
 ![DSN](./images/app20.png)
 
 이제 이 연습을 완료하고 다음 연습을 수행할 준비가 되었습니다.
 
-다음 단계: [2.6 콜 센터의 개인화](./ex6.md)
+다음 단계: 콜 센터의 [2.6 Personalization](./ex6.md)
 
 [사용자 흐름 2로 돌아가기](./uc2.md)
 

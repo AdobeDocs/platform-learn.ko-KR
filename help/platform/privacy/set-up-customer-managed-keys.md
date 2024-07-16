@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # CMK(고객 관리 키) 설정
 
-자체 암호화 키를 사용하여 활용도가 낮은 데이터 암호화를 관리합니다. 자세한 내용은 다음을 참조하십시오. [고객 관리 키 설명서](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
+자체 암호화 키를 사용하여 활용도가 낮은 데이터 암호화를 관리합니다. 자세한 내용은 [고객 관리 키 설명서](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
 

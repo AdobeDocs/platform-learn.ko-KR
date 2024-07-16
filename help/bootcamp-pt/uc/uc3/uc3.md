@@ -1,6 +1,6 @@
 ---
-title: 부트캠프 - 물리적 및 디지털 혼합 - 브라질
-description: 부트캠프 - 물리적 및 디지털 혼합 - 브라질
+title: Bootcamp - 물리적 및 디지털 혼합 - 브라질
+description: Bootcamp - 물리적 및 디지털 혼합 - 브라질
 jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -11,8 +11,8 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 145ffaea-c630-4ec3-a12d-69661ce26f49
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 1%
+source-wordcount: '202'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 프레-리퀴지토스
 
-- Acesso à Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 아세소아오 지 드 데몬스트라상
 
@@ -40,7 +40,7 @@ Neste exercício, você irá aprender commo configure um evento.
 
 Neste exercício, você irá aprender commo configure um evento.
 
-[3.3 크리 수아 조르나다에 노티파상 푸시](./ex3.md)
+[3.3 크리 수아 조르나다에 노티피카상 푸시](./ex3.md)
 
 Neste exercício, você irá aprender como configurar uma jornada e uma notificação push e vinclual seu evento e mensagem para jornada.
 

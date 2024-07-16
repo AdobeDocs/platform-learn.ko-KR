@@ -6,7 +6,7 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 32%
+ht-degree: 30%
 
 ---
 
@@ -33,11 +33,11 @@ ht-degree: 32%
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR" target="_blank">
-    <strong>Web SDK를 사용하여 Experience Cloud 구현</strong>
+    <strong>Web SDK로 Experience Cloud 구현</strong>
     </a>
     </div>
     <p>
-    <em>태그를 사용하여 Platform Web SDK 구현</em>
+    <em>태그를 사용하여 Platform Web SDK를 구현합니다</em>
     <p>
   </td>
   <td>
@@ -50,7 +50,7 @@ ht-degree: 32%
     </a>
     </div>
     <p>
-    <em>태그를 사용하여 Platform Mobile SDK 구현</em>
+    <em>태그를 사용하여 Platform Mobile SDK를 구현합니다</em>
     <p>
   </td>
   <td>
@@ -59,7 +59,7 @@ ht-degree: 32%
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong>Adobe Target을 웹 SDK로 마이그레이션</strong>
+    <strong>Web SDK로 Adobe Target 마이그레이션</strong>
     </a>
     </div>
     <p>

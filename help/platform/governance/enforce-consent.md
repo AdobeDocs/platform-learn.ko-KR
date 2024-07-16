@@ -9,14 +9,14 @@ thumbnail: 345677.jpeg
 exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 0%
+source-wordcount: '47'
+ht-degree: 2%
 
 ---
 
 # 동의 시행
 
-고객의 동의 환경 설정을 적용하는 정책을 만드는 방법을 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html).
+고객의 동의 환경 설정을 적용하는 정책을 만드는 방법을 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on)
 

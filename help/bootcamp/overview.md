@@ -24,7 +24,7 @@ ht-degree: 1%
 
 ### 1일
 
-9:30: 출입 가능
+9:30: 시작
 
 10:00: 킥오프/인트로 및 부트캠프 챌린지
 
@@ -36,19 +36,19 @@ ht-degree: 1%
 
 13:00: 점심
 
-14:00: 사용자 흐름 1 - &quot;고객 확보&quot; 연습 및 실습 심층 분석
+14:00: 사용자 흐름 1 - &quot;획득&quot; 연습 및 실습 심층 분석
 
 15:30: 나누기
 
 16:00: Userflow 2 등록 및 온보딩
 
-17:30: 골프클리닉 &amp; 보렐
+17:30: 골프 클리닉 &amp; 보렐
 
-19:30: 저녁식사
+19:30: 만찬
 
 ### 2일
 
-08:30: 아침 식사 세션: 사용자 여정 기반 게재, 팀 구조, 게재 백로그 소개
+08:30: 아침 식사 세션: 사용자 여정 기반 배달, 팀 구조, 배달 백로그 소개
 
 09.45: 사전 시나리오를 통한 AEP 데이터 흐름 이해
 
@@ -72,8 +72,8 @@ ht-degree: 1%
 ## 전제 조건
 
 - Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform 데이터 수집 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 의 부트캠프 웹 사이트에 대한 액세스 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Adobe Experience Platform 데이터 수집에 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)에서 부트캠프 웹 사이트에 액세스
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 실습 위주의 연습을 시작하기 전에 이 자습서 뒤의 아키텍처를 살펴보십시오. 이 부트캠프는 Adobe Experience Platform의 다양한 기능과 특징을 살펴보며 다양한 소스 및 대상에 대한 여러 통합에 대해서도 논의할 예정입니다. 이 자습서에 포함된 아키텍처와 Adobe Experience Platform이 엔터프라이즈 생태계에 미치는 전반적인 위치를 올바르게 이해하려면 먼저 아키텍처 비디오 및 다이어그램을 검토하십시오.
 
-다음으로 이동 [아키텍처](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+[아키텍처](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en)(으)로 이동합니다.
 
 ## 비디오
 
@@ -93,11 +93,11 @@ Experience Makers Bootcamp의 주요 목적은 조직이 규모에 맞는 개인
 
 부트캠프의 요소와 Adobe Experience Platform과 Adobe 이외의 애플리케이션 간의 강력한 통합을 보여 주는 다른 여러 비디오가 만들어졌습니다. 아래 링크를 클릭하여 해당 비디오에 대한 개요를 확인하십시오.
 
-다음으로 이동 [비디오](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+[비디오](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en)(으)로 이동합니다.
 
 ## YouTube
 
-흥미로운 추가 비디오를 찾을 수 있습니다 [YouTube 채널에서](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+YouTube 채널](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)에서 [개의 추가 관심 있는 비디오를 찾을 수 있습니다.
 
 ## 사용자 흐름
 
@@ -109,7 +109,7 @@ Experience Makers Bootcamp의 주요 목적은 조직이 규모에 맞는 개인
 
 이 사용자 플로우에서는 Real-Time CDP 및 Adobe Journey Optimizer을 사용하여 등록 및 온보딩 사용 사례를 구현하는 데 필요한 모든 요소를 이해합니다.
 
-[3. 물리적 환경과 디지털 환경 혼합](./uc/uc3/uc3.md)
+[3. 실제 및 디지털 혼합](./uc/uc3/uc3.md)
 
 이 사용자 플로우에서는 Real-Time CDP 및 Adobe Journey Optimizer을 사용하여 온라인 및 오프라인 채널 전반에서 일관된 방식으로 고객 경험을 개인화합니다.
 

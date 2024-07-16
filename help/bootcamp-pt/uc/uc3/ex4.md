@@ -11,7 +11,7 @@ feature: Events
 exl-id: 04e2877f-8672-4584-8204-4489a7025c63
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '186'
 ht-degree: 0%
 
 ---
@@ -20,30 +20,30 @@ ht-degree: 0%
 
 Para testar sua jornada , você deve usar o eventID criado no exercício 3.2 , que deve ser semelhante ao seguinte.
 
-![ACOP](./images/payloadeventID.png)
+![AOP](./images/payloadeventID.png)
 
 O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada. Neste 예제, o eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Abra o aplicativo móvel e vá para página inicial. 클리케 노 이콘 데 **컨피규어상**.
+Abra o aplicativo móvel e vá para página inicial. Clique no ícone de **Configuração**.
 
 ![DSN](./images/appsett.png)
 
-Cole seu eventID no campo **비콘 EventID** e clique em **저장**.
+Cole seu eventID no campo **Beacon EventID** e clique em **저장**.
 
 ![DSN](./images/beacon1.png)
 
-Antes de continuar, abra esta página da Web em seu computador : [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
 Em seguida, será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-Retorne para a página incial. 레토른 파라 클리케 노 이콘 두 **beacon**.
+Retorne para a página incial. 레토른 파라 **beacon** 작업을 수행하지 않습니다.
 
 ![DSN](./images/app23.png)
 
-프리메이로, 셀렉시오네 **부트캠프 화면 비콘** 이클리크 노 보탕 데 **엔트라다** 단추를 클릭합니다. Isso permitirá que você simule uma는 do beacon에 따릅니다.
+Primeiro, **Bootcamp 화면 Beacon** e clique no botão de **entrada** 단추를 선택하십시오. Isso permitirá que você simule uma는 do beacon에 따릅니다.
 
 ![DSN](./images/app21.png)
 

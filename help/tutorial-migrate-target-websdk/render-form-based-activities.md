@@ -1,30 +1,31 @@
 ---
-title: at.js 2.x에서 웹 SDK로 Target 마이그레이션
-description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법을 알아봅니다. 항목에는 라이브러리 개요, 구현 차이점 및 기타 주목할 만한 설명서가 포함됩니다.
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: Target을 at.js 2.x에서 Web SDK로 마이그레이션
+description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법에 대해 알아봅니다. 주제에는 라이브러리 개요, 구현 차이점 및 기타 주목할 만한 설명선이 포함됩니다.
+exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 2%
+source-wordcount: '400'
+ht-degree: 1%
 
 ---
 
-# 양식 기반 작성기를 사용하는 Target 활동을 렌더링합니다.
+# 양식 기반 작성기를 사용하는 Target 활동 렌더링
 
-일부 Target 구현에서는 지역 mbox(이제 &quot;범위&quot;라고도 함)를 사용하여 양식 기반 경험 작성기를 사용하는 활동에서 콘텐츠를 전달할 수 있습니다. at.js Target 구현에서 mbox를 사용하는 경우 다음을 수행해야 합니다.
+일부 Target 구현에서는 지역 mbox(이제 &quot;범위&quot;라고 함)를 사용하여 양식 기반 경험 작성기를 사용하는 활동의 콘텐츠를 전달할 수 있습니다. at.js Target 구현에서 mbox를 사용하는 경우 다음을 수행해야 합니다.
 
-* 를 사용하는 at.js 구현에서 참조를 업데이트합니다 `getOffer()` 또는 `getOffers()` 해당 Platform Web SDK 메서드를 사용합니다.
-* 코드를 추가하여 `propositionDisplay` 노출 수가 카운트되도록 이벤트를 발생시킵니다.
+* `getOffer()` 또는 `getOffers()`을(를) 사용하는 at.js 구현의 모든 참조를 동일한 Platform Web SDK 메서드로 업데이트합니다.
+* 노출이 계산되도록 `propositionDisplay` 이벤트를 트리거하는 코드를 추가하십시오.
 
-## 주문형 콘텐츠 요청 및 적용
+## 요청 시 콘텐츠 요청 및 적용
 
-Target의 양식 기반 작성기를 사용하여 작성되고 지역 mbox에 전달된 활동은 Platform Web SDK에서 자동으로 렌더링할 수 없습니다. at.js와 마찬가지로 특정 Target 위치에 전달된 오퍼를 요청 시 렌더링해야 합니다.
+Target의 양식 기반 작성기를 사용하여 만들어 지역 mbox에 전달된 활동은 Platform Web SDK에서 자동으로 렌더링할 수 없습니다. at.js와 유사하게, 특정 Target 위치에 전달된 오퍼는 요청 시 렌더링해야 합니다.
 
 
-+++at.js 사용 예제 `getOffer()` 및 `applyOffer()`:
++++at.js `getOffer()` 및 `applyOffer()` 사용 예:
 
-1. 실행 `getOffer()` 위치에 대한 오퍼를 요청하다
-1. 실행 `applyOffer()` 오퍼를 지정된 선택기에 렌더링하려면
-1. 활동 노출은 `getOffer()` 요청
+1. 위치에 대한 오퍼를 요청하려면 `getOffer()`을(를) 실행하십시오.
+1. `applyOffer()`을(를) 실행하여 오퍼를 지정된 선택기에 렌더링합니다.
+1. `getOffer()` 요청 시 활동 노출 수가 자동으로 증가합니다.
 
 ```JavaScript
 // Retrieve an offer for the homepage-hero location
@@ -48,11 +49,11 @@ adobe.target.getOffer({
 
 +++
 
-+++ `applyPropositions` 명령:
++++`applyPropositions` 명령을 사용하는 Platform Web SDK에 해당합니다.
 
-1. 실행 `sendEvent` 하나 이상의 위치(범위)에 대한 오퍼(proposition)를 요청하는 명령
-1. 실행 `applyPropositions` 각 범위에 대해 페이지에 컨텐츠를 적용하는 방법에 대한 지침을 제공하는 메타데이터 개체를 사용하는 명령
-1. 실행 `sendEvent` eventType이 있는 명령 `decisioning.propositionDisplay` 인상을 추적하다
+1. `sendEvent` 명령을 실행하여 하나 이상의 위치(범위)에 대한 오퍼(제안)를 요청합니다.
+1. 각 범위의 페이지에 콘텐츠를 적용하는 방법에 대한 지침을 제공하는 메타데이터 개체로 `applyPropositions` 명령을 실행하십시오.
+1. `decisioning.propositionDisplay`의 eventType으로 `sendEvent` 명령을 실행하여 노출을 추적합니다.
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)
@@ -91,21 +92,21 @@ alloy("sendEvent", {
 
 +++
 
-Platform Web SDK는 `applyPropositions` 명령을 사용하여 명령 `actionType` 지정된 날짜:
+Platform Web SDK는 지정된 `actionType`과(와) 함께 `applyPropositions` 명령을 사용하여 양식 기반 활동을 페이지에 적용하기 위한 보다 강력한 컨트롤을 제공합니다.
 
-| `actionType` | 설명 | at.js `applyOffer()` | Platform 웹 SDK `applyPropositions` |
+| `actionType` | 설명 | at.js `applyOffer()` | Platform Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
-| `setHtml` | 컨테이너의 컨텐츠를 지운 다음 오퍼를 컨테이너에 추가합니다 | 예(항상 사용됨) | 예 |
-| `replaceHtml` | 컨테이너를 제거하고 오퍼로 바꿉니다 | 아니요 | 예 |
-| `appendHtml` | 지정된 선택기 뒤에 오퍼를 추가합니다 | 아니요 | 예 |
+| `setHtml` | 컨테이너의 콘텐츠를 지운 다음 오퍼를 컨테이너에 추가합니다 | 예(항상 사용됨) | 예 |
+| `replaceHtml` | 컨테이너를 제거하고 오퍼로 바꿉니다. | 아니요 | 예 |
+| `appendHtml` | 지정된 선택기 뒤에 오퍼를 추가합니다. | 아니요 | 예 |
 
-자세한 내용은 [전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) 추가 렌더링 옵션 및 예를 위해 Platform Web SDK를 사용하여 컨텐츠를 렌더링하는 방법에 대한 정보입니다.
+추가 렌더링 옵션 및 예제는 Platform Web SDK를 사용한 콘텐츠 렌더링에 대한 [전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)를 참조하십시오.
 
 ## 구현 예
 
-아래 예제 페이지는 이전 섹션에 요약된 구현을 기반으로 구축되며, `sendEvent` 명령.
+아래 예제 페이지는 이전 섹션에 설명된 구현에 따라 작성되며, `sendEvent` 명령에 추가 범위만 추가합니다.
 
-+++여러 범위가 있는 Platform Web SDK 예
+여러 범위가 있는 +++Platform Web SDK 예
 
 ```HTML
 <!doctype html>
@@ -196,8 +197,8 @@ Platform Web SDK는 `applyPropositions` 명령을 사용하여 명령 `actionTyp
 </html>
 ```
 
-다음으로, 다음 방법을 배웁니다. [platform Web SDK를 사용하여 Target 매개 변수 전달](send-parameters.md).
+다음으로 Platform Web SDK를 사용하여 [Target 매개 변수를 전달](send-parameters.md)하는 방법에 대해 알아봅니다.
 
 >[!NOTE]
 >
->Adobe는 at.js에서 웹 SDK로 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생했거나 이 안내서에 중요한 정보가 누락된 것 같은 경우에는 로그인한 후 알려 주십시오 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.

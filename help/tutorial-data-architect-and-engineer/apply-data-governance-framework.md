@@ -10,8 +10,8 @@ thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 2%
+source-wordcount: '621'
+ht-degree: 1%
 
 ---
 
@@ -47,24 +47,24 @@ Luma는 충성도 프로그램의 구성원에게 충성도 데이터를 서드�
 
 데이터 거버넌스 프로세스의 첫 번째 단계는 데이터에 거버넌스 레이블을 적용하는 것입니다. 그 전에 사용 가능한 레이블을 간단히 살펴보겠습니다.
 
-1. Platform 사용자 인터페이스에서 를 선택합니다. **[!UICONTROL 정책]** 왼쪽 탐색
-1. 로 이동 **[!UICONTROL 레이블]** 탭하여 계정의 모든 레이블을 볼 수 있습니다.
+1. 플랫폼 사용자 인터페이스의 왼쪽 탐색에서 **[!UICONTROL 정책]**&#x200B;을 선택합니다.
+1. 계정의 모든 레이블을 보려면 **[!UICONTROL 레이블]** 탭으로 이동하십시오.
 
-기본 제공 레이블이 많으며 를 통해 고유한 레이블을 만들 수 있습니다. [!UICONTROL 레이블 만들기] 단추를 클릭합니다. 세 가지 주요 유형이 있습니다. [!UICONTROL 계약 레이블], [!UICONTROL ID 레이블], 및 [!UICONTROL 중요 레이블] 일반적인 이유에 해당하는 데이터가 제한될 수 있습니다. 각 레이블에는 [!UICONTROL 알기 쉬운 이름] 약간이요 [!UICONTROL 이름] 이것은 단지 유형과 숫자의 약어일 뿐입니다. 예를 들어 [!DNL C1] 레이블은 &quot;서드파티 내보내기 없음&quot;에 대한 것으로, 이는 당사의 충성도 정책에 필요한 것입니다.
+기본 제공 레이블이 많으며 [!UICONTROL 레이블 만들기] 단추를 통해 직접 만들 수도 있습니다. 세 가지 기본 유형이 있습니다. [!UICONTROL 계약 레이블], [!UICONTROL ID 레이블] 및 [!UICONTROL 중요 레이블]. 이러한 레이블은 일반적인 이유 데이터에 해당되며 제한될 수 있습니다. 각 레이블에는 [!UICONTROL 친숙한 이름]과(와) 형식 및 숫자의 약자인 짧은 [!UICONTROL 이름]이(가) 있습니다. 예를 들어 [!DNL C1] 레이블은 &quot;타사 내보내기 없음&quot;에 대한 레이블이며, 충성도 정책에 필요한 레이블입니다.
 
 ![데이터 거버넌스 레이블](assets/governance-policies.png)
 
 이제 사용을 제한할 데이터에 레이블을 지정할 때입니다.
 
-1. Platform 사용자 인터페이스에서 를 선택합니다. **[!UICONTROL 데이터 세트]** 왼쪽 탐색
-1. 를 엽니다. `Luma Loyalty Dataset`
-1. 로 이동 **[!UICONTROL 데이터 거버넌스]** 탭
+1. Platform 사용자 인터페이스의 왼쪽 탐색에서 **[!UICONTROL 데이터 세트]**&#x200B;를 선택합니다
+1. `Luma Loyalty Dataset` 열기
+1. **[!UICONTROL 데이터 거버넌스]** 탭으로 이동
 1. 개별 필드에 레이블을 적용하거나 전체 데이터 세트에 적용할 수 있습니다. 전체 데이터 세트에 레이블을 적용합니다. 연필 아이콘을 클릭합니다. 아이콘이 보이지 않는다면 브라우저를 더 넓게 하거나 중간 패널을 오른쪽으로 스크롤해 보십시오.
    ![데이터 거버넌스](assets/governance-dataset.png)
-1. 모달에서 **[!UICONTROL 약정 레이블]** 섹션 및 확인 **[!UICONTROL C2]** 레이블
-1. 다음 항목 선택 **[!UICONTROL 변경 내용 저장]** 단추
+1. 모달에서 **[!UICONTROL 계약 레이블]** 섹션을 확장하고 **[!UICONTROL C2]** 레이블을 확인합니다
+1. **[!UICONTROL 변경 내용 저장]** 단추 선택
    ![데이터 거버넌스](assets/governance-applyLabel.png)
-1. 메인으로 돌아가기 [!UICONTROL 데이터 거버넌스] 화면, 포함 **[!UICONTROL 상속된 레이블 표시]** 켜면 데이터 세트의 모든 필드에 레이블이 적용된 방법을 볼 수 있습니다.
+1. 기본 [!UICONTROL 데이터 거버넌스] 화면으로 돌아가서 **[!UICONTROL 상속된 레이블 표시]** 토글을 사용하면 데이터 집합의 모든 필드에 레이블이 적용된 방식을 확인할 수 있습니다.
    ![데이터 거버넌스](assets/governance-labelsAdded.png)
 
 
@@ -75,12 +75,12 @@ Luma는 충성도 프로그램의 구성원에게 충성도 데이터를 서드�
 
 이제 데이터에 레이블이 지정되었으므로 정책을 만들 수 있습니다.
 
-1. Platform 사용자 인터페이스에서 를 선택합니다. **[!UICONTROL 정책]** 왼쪽 탐색
-1. 찾아보기 탭에는 C2 레이블을 마케팅 작업과 연결하는 &quot;타사 내보내기 제한&quot;이라는 기본 정책이 이미 있습니다 [!UICONTROL 서드파티로 내보내기]우리가 필요한 게 바로 그거예요!
-1. 정책을 선택한 다음 를 통해 활성화합니다. **[!UICONTROL 정책 상태]** 전환
+1. 플랫폼 사용자 인터페이스의 왼쪽 탐색에서 **[!UICONTROL 정책]**&#x200B;을 선택합니다.
+1. 찾아보기 탭에 C2 레이블을 마케팅 작업 [!UICONTROL 서드파티로 내보내기]와(과) 연결하는 &quot;서드파티 내보내기 제한&quot;이라는 기본 정책이 이미 있습니다. 정확히 필요한 것입니다!
+1. 정책을 선택한 다음 **[!UICONTROL 정책 상태]** 전환을 통해 활성화하십시오.
    ![데이터 거버넌스](assets/governance-enablePolicy.png)
 
-다음을 선택하여 고유한 정책을 만들 수 있습니다. **[!UICONTROL 정책 만들기]** 단추를 클릭합니다. 여러 레이블과 마케팅 작업 제한을 결합할 수 있는 마법사가 열립니다.
+**[!UICONTROL 정책 만들기]** 단추를 선택하여 나만의 정책을 만들 수 있습니다. 여러 레이블과 마케팅 작업 제한을 결합할 수 있는 마법사가 열립니다.
 
 ## 거버넌스 정책 시행
 
@@ -92,7 +92,7 @@ Luma는 충성도 프로그램의 구성원에게 충성도 데이터를 서드�
 ## 추가 리소스
 
 * [데이터 거버넌스 설명서](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ko)
-* [데이터 세트 서비스 API 참조](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
+* [데이터 집합 서비스 API 참조](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
 * [거버넌스 정책 서비스 API 참조](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 
-이제 다음으로 이동하겠습니다. [쿼리 서비스](run-queries.md).
+이제 [쿼리 서비스](run-queries.md)(으)로 이동하겠습니다.
