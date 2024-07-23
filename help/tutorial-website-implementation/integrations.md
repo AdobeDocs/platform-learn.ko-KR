@@ -2,10 +2,10 @@
 title: 태그와 Experience Cloud 통합 구현
 description: Adobe Experience Cloud 구현에서 대상, A4T 및 사용자 특성 통합의 유효성을 검사하는 방법을 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 86%
+source-wordcount: '1199'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,12 @@ ht-degree: 86%
 >
 >이러한 통합을 완전히 사용하는 데 필요하고 이 자습서의 범위를 벗어난 많은 사용자 권한 요구 사항, 계정 구성 및 프로비저닝 단계가 있습니다. 현재 Experience Cloud 구현에서 이러한 통합을 이미 사용하고 있지 않다면 다음 사항을 고려해야 합니다.
 >
->* [코어 서비스 통합](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=ko-KR)의 전체 요구 사항 검토
->* [Analytics for Target 통합](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)을 위한 전체 요구 사항 검토
->* Experience Cloud 조직의 관리자로 하여금 [이러한 통합의 프로비저닝을 요청](https://www.adobe.com/go/audiences)하게 함
+>* [코어 서비스 통합](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)의 전체 요구 사항 검토
+>* [Analytics for Target 통합](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)을 위한 전체 요구 사항 검토
 
 ## 대상자
 
-[대상](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)은 사람 핵심 서비스의 일부이며 솔루션 간에 대상을 공유할 수 있도록 해줍니다. 예를 들어 Audience Manager에서 대상을 만들고 이 대상을 사용하여 Target으로 개인화된 컨텐츠를 전달할 수 있습니다.
+[대상](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)은 사람 핵심 서비스의 일부이며 솔루션 간에 대상을 공유할 수 있도록 해줍니다. 예를 들어 Audience Manager에서 대상을 만들고 이 대상을 사용하여 Target으로 개인화된 컨텐츠를 전달할 수 있습니다.
 
 A4T 구현(이미 수행함)을 위한 주요 요구 사항은 다음과 같습니다.
 

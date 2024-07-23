@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 9cb56b739efde38d8e85358f45ee6a35a0394e27
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 0%
@@ -201,7 +201,7 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
 
 1. 또한 선택적으로 **[!UICONTROL 균등하게 분배]**&#x200B;하도록 선택하십시오. 처리 분할이 항상 균일하게 분할되도록 하려면 이 옵션을 선택합니다.
 
-[Adobe Journey Optimizer 웹 채널의 콘텐츠 실험에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
+[Adobe Journey Optimizer 웹 채널의 콘텐츠 실험에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
 
 ### Visual Helper를 사용하여 콘텐츠 편집
 
