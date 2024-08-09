@@ -2,7 +2,7 @@
 title: 라이브러리 바꾸기 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법에 대해 알아봅니다. 주제에는 라이브러리 개요, 구현 차이점 및 기타 주목할 만한 설명선이 포함됩니다.
 exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 07c3c5b3f45eeb02e94a25dbd164b7397cb7869d
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 1%
@@ -193,7 +193,7 @@ at.js와 마찬가지로, Platform Web SDK 라이브러리가 비동기적으로
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("mboxEdit") !== -1, "body { opacity: 0 !important }", 3000);
 </script>
 ```
 
