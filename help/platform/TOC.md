@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
+source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '931'
 ht-degree: 16%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 16%
    + [Audience Portal 및 구성 소개](audiences/introduction-to-audience-portal-and-composition.md)
    + [대상자 업로드](audiences/upload-audiences.md)
    + [페더레이션 대상 구성 개요](audiences/overview-of-federated-audience-composition.md)
+   + [Federated Audience 컴포지션 연결 및 구성](audiences/connect-and-configure-federated-audience-composition.md)
+   + [페더레이션 대상 컴포지션 만들기](audiences/create-a-federated-audience-composition.md)
    + [대상 규칙 빌더 개요](audiences/audience-rule-builder-overview.md)
    + [대상자 만들기](audiences/create-audiences.md)
    + [시간 제한 사용](audiences/time-constraints.md)
