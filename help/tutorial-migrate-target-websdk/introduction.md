@@ -1,11 +1,11 @@
 ---
-title: 소개 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법에 대해 알아봅니다. 주제에는 JavaScript 라이브러리 로드, 매개 변수 전송, 렌더링 활동 및 기타 주목할 만한 콜아웃이 포함됩니다.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: eebe598e55228d038dfc2adb97df0f8ff03748ac
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '556'
 ht-degree: 4%
 
 ---
