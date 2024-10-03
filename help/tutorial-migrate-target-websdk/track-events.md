@@ -1,8 +1,8 @@
 ---
-title: 이벤트 추적 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 이벤트 추적 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Experience Platform Web SDK를 사용하여 Adobe Target 전환 이벤트를 추적하는 방법에 대해 알아봅니다.
 exl-id: 5da772bc-de05-4ea9-afbd-3ef58bc7f025
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%

@@ -1,8 +1,8 @@
 ---
-title: 계획 수립 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: Planning - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: at.js 2.x에서 Adobe Experience Platform Web SDK로 Adobe Target 구현을 계획하는 방법에 대해 알아봅니다.
 exl-id: 0e8f9cde-f361-4f69-886d-aad3074cd9b2
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

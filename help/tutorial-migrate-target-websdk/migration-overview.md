@@ -1,8 +1,8 @@
 ---
-title: 마이그레이션 개요 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 마이그레이션 개요 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: at.js와 Platform Web SDK 간의 주요 차이점과 마이그레이션 작업을 계획하는 방법에 대해 알아봅니다.
 exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%

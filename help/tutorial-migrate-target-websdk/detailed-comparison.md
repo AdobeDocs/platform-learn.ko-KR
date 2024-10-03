@@ -1,8 +1,8 @@
 ---
-title: Web SDK에 대한 at.js 2.x 비교 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: at.js 2.x와 Web SDK 비교 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 at.js 2.x와 Platform Web SDK의 차이점에 대해 알아봅니다.
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '2007'
 ht-degree: 1%

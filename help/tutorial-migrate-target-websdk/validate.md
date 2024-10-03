@@ -1,8 +1,8 @@
 ---
-title: Web SDK를 사용하여 Target 구현의 유효성 검사 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: Web SDK를 사용하여 Target 구현의 유효성 검사 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Adobe Experience Platform Web SDK를 사용하여 활동의 유효성을 검사하고 Adobe Target 구현을 디버깅하는 방법에 대해 알아봅니다.
 exl-id: 09b4ebeb-fae9-470d-8ea9-f6e3c7d7da5e
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%

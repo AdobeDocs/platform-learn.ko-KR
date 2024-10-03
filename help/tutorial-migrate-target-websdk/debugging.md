@@ -1,8 +1,8 @@
 ---
-title: 디버그 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 디버그 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Adobe Experience Platform Web SDK를 사용하여 Adobe Target 구현을 디버깅하는 방법에 대해 알아봅니다. 주제에는 디버깅 옵션, 브라우저 확장, at.js와 Platform Web SDK의 차이점 등이 있습니다.
 exl-id: 20699551-a708-469a-8980-67586db82787
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 2%

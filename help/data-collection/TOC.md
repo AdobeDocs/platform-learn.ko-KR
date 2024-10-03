@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
+source-git-commit: 38696ad5f8e151d1b7a42055d844fb98e8dccb86
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 23%
+source-wordcount: '191'
+ht-degree: 24%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 23%
    + [개요](server-api/overview.md)
    + [API 기본 사항](server-api/introduction.md)
 + 이벤트 전달{#event-forwarding}
+   + [웨비나](event-forwarding/webinar.md)
    + [개요](event-forwarding/overview.md)
    + [속성 만들기](event-forwarding/create-a-property.md)
    + [데이터 스트림 설정](event-forwarding/set-up-a-datastream.md)

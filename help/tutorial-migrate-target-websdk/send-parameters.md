@@ -1,8 +1,8 @@
 ---
-title: 매개 변수 보내기 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 매개 변수 보내기 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 보내는 방법을 알아봅니다.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1539'
 ht-degree: 0%

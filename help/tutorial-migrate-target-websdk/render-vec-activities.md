@@ -1,8 +1,8 @@
 ---
-title: VEC 활동 렌더링 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: VEC 활동 렌더링 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Adobe Target의 Web SDK 구현을 통해 시각적 경험 작성기 활동을 검색하고 적용하는 방법에 대해 알아봅니다.
 exl-id: bbbbfada-e236-44de-a7bf-5c63ff840db4
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%

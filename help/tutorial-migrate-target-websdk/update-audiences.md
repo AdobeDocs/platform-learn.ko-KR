@@ -1,8 +1,8 @@
 ---
-title: 대상자 및 프로필 스크립트 업데이트 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 대상자 및 프로필 스크립트 업데이트 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Experience Platform Web SDK와의 호환성을 위해 Adobe Target 대상 및 프로필 스크립트를 업데이트하는 방법을 알아봅니다.
 exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

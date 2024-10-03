@@ -1,8 +1,8 @@
 ---
-title: 도메인 간 지원 활성화 | Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 도메인 간 지원 활성화 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Experience Platform Web SDK를 사용하여 도메인 간 및 모바일 앱용 Adobe Target을 웹 브라우저 시나리오에 맞게 구성하는 방법에 대해 알아봅니다.
 exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%
