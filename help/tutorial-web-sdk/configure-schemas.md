@@ -4,7 +4,7 @@ description: 데이터 수집 인터페이스에서 웹 데이터에 대한 XDM 
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Adobe [경험 데이터 모델](https://business.adobe.com/products/experience-p
 >
 > 데모 목적으로 이 단원의 연습에서는 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)에서 본 콘텐츠 및 고객이 구매한 제품을 캡처하는 예제 스키마를 빌드합니다. 이러한 단계를 사용하여 고유한 목적에 맞는 다른 스키마를 생성할 수 있지만 먼저 예제 스키마를 생성할 때 스키마 편집기의 기능을 학습하는 것이 좋습니다.
 
-XDM 스키마에 대해 자세히 알아보려면 강의([XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm))를 수강하거나 [XDM 시스템 개요](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home))를 참조하십시오.
+XDM 스키마에 대해 자세히 알아보려면 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)을 보거나 [XDM 시스템 개요](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)를 참조하십시오.
 
 ## 학습 목표
 

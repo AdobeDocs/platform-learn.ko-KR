@@ -4,7 +4,7 @@ description: 모바일 앱 이벤트에 대한 XDM 스키마를 만드는 방법
 feature: Mobile SDK,Schemas
 jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1414'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 데이터를 Platform에 수집하려면 먼저 데이터의 구조를 설명하고 각 필드 내에 포함할 수 있는 데이터 유형에 제약 조건을 제공하는 스키마를 구성해야 합니다. 스키마는 기본 클래스와 0개 이상의 스키마 필드 그룹으로 구성됩니다.
 
-디자인 원리 및 모범 사례를 포함한 스키마 구성 모델에 대한 자세한 내용은 [스키마 구성의 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) 또는 강의 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)을 참조하십시오.
+디자인 원칙 및 모범 사례를 포함한 스키마 구성 모델에 대한 자세한 내용은 [스키마 구성의 기본 사항](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) 또는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)을 참조하십시오.
 
 >[!TIP]
 >

@@ -8,7 +8,7 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: efef0389cedfec7dfa19d876df96c58b7463ee12
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 0%
@@ -48,7 +48,7 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 
 ## 전제 조건
 
-* Experience League에서 [Adobe Experience Platform 소개 강의](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1)를 완료했으며 플랫폼 기능에 익숙합니다
+* Experience League에서 [Adobe Experience Platform 재생 목록 소개](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction)를 시청했으며 플랫폼 기능에 익숙합니다
 * Adobe Experience Platform(또는 Real-Time CDP 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션) 및 데이터 수집(이전 Launch)으로 프로비저닝된 계정에 액세스할 수 있습니다.
 * 해당 계정의 시스템 관리자이거나 [사용자 권한을 구성](configure-permissions.md)할 수 있습니다.
 
