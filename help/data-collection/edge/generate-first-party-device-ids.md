@@ -6,10 +6,10 @@ level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: fd60f7ad338c81f5b32e7951d5a00b49c5aa1756
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 1%
+source-wordcount: '704'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Cloud 애플리케이션은 전통적으로 다음을 포함한
 1. 도메인 이름의 CNAME 구성을 사용하여 Adobe 서버에서 설정한 자사 쿠키
 1. JavaScript에서 설정한 자사 쿠키
 
-최근 브라우저 변경 사항은 이러한 유형의 쿠키의 기간을 제한합니다. 자사 쿠키는 DNS CNAME이 아닌 DNS A/AAAA 레코드를 사용하여 고객 소유 서버를 사용할 때 가장 효과적입니다. 자사 디바이스 ID(FPID) 기능을 사용하면 Adobe Experience Platform Web SDK를 구현하는 고객이 DNS A/AAAA 레코드를 사용하는 서버의 쿠키에 디바이스 ID를 사용할 수 있습니다. 그런 다음 이러한 ID를 Adobe으로 전송하여 ECID(Experience Cloud ID)를 생성하는 시드로 사용할 수 있습니다. ECID는 Adobe Experience Cloud 애플리케이션에서 기본 식별자로 유지됩니다.
+최근 브라우저 변경 사항은 이러한 유형의 쿠키의 기간을 제한합니다. 자사 쿠키는 DNS CNAME이 아닌 DNS A/AAAA 레코드를 사용하여 고객 소유 서버를 사용할 때 가장 효과적입니다. [자사 장치 ID(FPID) 기능](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids)을 통해 Adobe Experience Platform Web SDK를 구현하는 고객은 DNS A/AAAA 레코드를 사용하는 서버의 쿠키에 장치 ID를 사용할 수 있습니다. 그런 다음 이러한 ID를 Adobe으로 전송하여 ECID(Experience Cloud ID)를 생성하는 시드로 사용할 수 있습니다. ECID는 Adobe Experience Cloud 애플리케이션에서 기본 식별자로 유지됩니다.
 
 다음은 기능이 작동하는 방식에 대한 빠른 예입니다.
 
@@ -30,7 +30,9 @@ Adobe Experience Cloud 애플리케이션은 전통적으로 다음을 포함한
 1. 최종 사용자의 브라우저는 고객의 웹 서버 또는 CDN에서 웹 페이지를 요청합니다.
 1. 고객은 웹 서버 또는 CDN에서 장치 ID(FPID)를 생성합니다(웹 서버는 도메인 이름의 DNS A/AAAA-record에 연결되어야 함).
 1. 고객은 최종 사용자의 브라우저에 FPID를 저장하도록 자사 쿠키를 설정합니다.
-1. 고객의 Adobe Experience Platform Web SDK 구현은 ID 맵의 FPID를 포함하여 Platform Edge Network에 요청을 수행합니다.
+1. 고객의 Adobe Experience Platform 웹 SDK 구현은 Platform Edge Network에 다음 중 하나를 요청합니다.
+   1. ID 맵에 FPID를 포함합니다.
+   1. 웹 SDK 요청에 대해 CNAME을 구성하고 해당 FPID 쿠키의 이름으로 데이터 스트림을 구성합니다.
 1. Experience Platform Edge Network은 FPID를 수신하고 이를 사용하여 ECID(Experience Cloud ID)를 생성합니다.
 1. Platform Web SDK 응답은 ECID를 최종 사용자의 브라우저로 다시 전송합니다.
 1. `idMigrationEnabled=true`인 경우 Platform Web SDK는 JavaScript을 사용하여 ECID를 최종 사용자의 브라우저에 `AMCV_` 쿠키로 저장합니다.
