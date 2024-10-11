@@ -1,6 +1,6 @@
 ---
 title: Real-time Customer Data Platform 사용자 인터페이스 및 워크플로
-description: Real-Time Customer Data Platform(CDP) 사용자 인터페이스를 탐색하는 방법을 살펴보고 여러 기능이 통합되어 디지털 고객 여정 전반에 걸쳐 실시간 활성화를 제공하는 방법에 대해 알아보십시오.
+description: Real-Time Customer Data Platform(CDP) 사용자 인터페이스를 탐색하는 방법을 살펴보고 여러 기능이 통합되어 디지털 고객 여정 전반에 걸쳐 실시간 활성화를 제공하는 방법에 대해 알아봅니다.
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
