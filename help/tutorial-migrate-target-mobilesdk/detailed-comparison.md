@@ -1,41 +1,41 @@
 ---
 title: Target 확장과 Decisioning 확장 비교
-description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 at.js 2.x와 Platform Web SDK의 차이점에 대해 알아봅니다.
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 Target 확장과 Decisioning 확장 간의 차이점에 대해 알아봅니다.
+source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 # Target 확장과 Decisioning 확장 비교
 
-독립형 Adobe Target at.js 라이브러리는 Platform Web SDK와 크게 다릅니다. 다음 표는 마이그레이션 프로세스 중에 초점을 두어야 할 구현 영역을 평가하는 데 도움이 되는 참조입니다.
+Adobe Journey Optimizer - Decisioning 확장 프로그램은 모바일 앱용 Adobe Target 확장 프로그램과 다릅니다. 다음 표는 마이그레이션 프로세스 중에 초점을 두어야 할 구현 영역을 평가하는 데 도움이 되는 참조입니다.
 
-아래 정보를 검토하고 현재 기술 at.js 구현을 평가한 후 다음을 이해할 수 있어야 합니다.
+아래 정보를 검토하고 현재 기술 Target 확장 구현을 평가한 후 다음을 이해할 수 있어야 합니다.
 
-- Platform Web SDK에서 지원하는 Target 기능
-- Platform Web SDK에 해당하는 at.js 함수가 있는 함수
-- Target 설정을 Platform Web SDK에 적용하는 방법
-- at.js와 Platform Web SDK의 데이터 흐름이 서로 다른 방식
+- Adobe Journey Optimizer - Decisioning에서 지원하는 Target 기능
+- 어떤 Adobe Target 확장 기능에 Adobe Journey Optimizer - Decisioning 기능이 포함됩니까?
+- Target 설정이 Adobe Journey Optimizer에 적용되는 방법 - Decisioning
+- Adobe Target 확장과 Adobe Journey Optimizer - Decisioning 확장의 데이터 흐름이 어떻게 다른지
 
 Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래 항목은 이 자습서 전체에서 자세히 다룹니다.
 
 ## 기능 비교
 
-| | Target 확장 | Decisioning 확장 프로그램(Edge을 통한 Target) | AJO 코드 기반 경험(Messaging SDK) |
+| | Target 확장 | Decisioning 확장 프로그램(Edge을 통한 Target) |
 |---|---|---|---|
-| 프리페치 모드 | 지원됨 | 지원됨 | 지원됨 |
-| 실행 모드 | 지원됨 | 지원되지 않음 | 지원되지 않음 |
-| 사용자 지정 매개 변수 | 지원됨 | mbox당 매개 변수는 지원되지 않습니다. | 지원되지 않음 |
-| 시작 대상자 | 지원됨 | 지원됨 | 캠페인 대상자 및 실험 보류 설정을 통해 지원 |
-| 모바일 라이프사이클 지표를 사용한 대상자 세분화 | 지원됨 | 데이터 수집 규칙을 통해 지원 | 경험 타깃팅은 현재 지원되지 않습니다. |
-| thirdPartyId (mbox3rdPartyId) | ID 맵과 데이터 스트림의 네임스페이스 구성을 통해 지원됩니다 | 지원되지 않음 |
-| 알림(표시, 클릭) | 지원됨 | 지원됨 | 지원됨 |
-| 응답 토큰 | 지원됨 | 지원됨 | 콘텐츠 외부에서 Campaign 특정 메타데이터를 반환하는 것과 동등한 항목 없음 |
-| 다이내믹 오퍼 | 지원됨 | 지원됨 | 콘텐츠의 프로필 및 의사 결정 항목 관련 토큰 렌더링이 지원됩니다. |
-| Analytics for Target (A4T) | 클라이언트측 전용 | 클라이언트측 및 서버측 | 지원되지 않음 |
-| 모바일 미리 보기(QA 모드) | 지원됨 | 제한된 지원 | 진행 중 |
+| 프리페치 모드 | 지원됨 | 지원됨 |
+| 실행 모드 | 지원됨 | 지원되지 않음 |
+| 사용자 지정 매개 변수 | 지원됨 | mbox당 매개 변수는 지원되지 않습니다. |
+| 시작 대상자 | 지원됨 | 지원됨 |
+| 모바일 라이프사이클 지표를 사용한 대상자 세분화 | 지원됨 | 데이터 수집 규칙을 통해 지원 |
+| thirdPartyId (mbox3rdPartyId) | ID 맵과 데이터 스트림의 네임스페이스 구성을 통해 지원됩니다 |
+| 알림(표시, 클릭) | 지원됨 | 지원됨 |
+| 응답 토큰 | 지원됨 | 지원됨 |
+| 다이내믹 오퍼 | 지원됨 | 지원됨 |
+| Analytics for Target (A4T) | 클라이언트측 전용 | 클라이언트측 및 서버측 |
+| 모바일 미리 보기(QA 모드) | 지원됨 | 제한된 지원 |
 
 
 
@@ -66,7 +66,7 @@ Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래
 
 ## 시스템 다이어그램 비교
 
-다음 다이어그램은 at.js를 사용하는 Target 구현과 Platform Web SDK를 사용하는 구현 간의 데이터 흐름 차이를 이해하는 데 도움이 됩니다.
+다음 다이어그램은 Adobe Journey Optimizer - Decisioning 확장을 사용하는 Target 구현과 Adobe Target 확장을 사용하는 구현 간의 데이터 흐름 차이를 이해하는 데 도움이 됩니다.
 
 ### Target 확장 시스템 다이어그램
 
