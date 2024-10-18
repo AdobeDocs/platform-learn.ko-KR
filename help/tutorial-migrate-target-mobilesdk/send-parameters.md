@@ -1,14 +1,14 @@
 ---
-title: 매개 변수 보내기 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 매개 변수 보내기 - Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile 확장 프로그램으로 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 보내는 방법을 알아봅니다.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-# Platform Web SDK를 사용하여 Target에 매개 변수 보내기
+# Adobe Journey Optimizer - Decisioning Mobile 확장을 사용하여 Target에 매개 변수 보내기
 
 사이트 아키텍처, 비즈니스 요구 사항 및 사용된 기능으로 인해 웹 사이트마다 타겟 구현이 다릅니다. 대부분의 Target 구현에는 컨텍스트 정보, 대상 및 콘텐츠 권장 사항에 대한 다양한 매개 변수 전달이 포함됩니다.
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 구매 매개 변수
 
-구매 매개 변수는 성공적인 주문 후에 주문 확인 페이지에서 전달되며 Target 전환 및 최적화 목표에 사용됩니다. Optimize 확장을 사용하는 Platform Mobile SDK 구현에서는 이러한 매개 변수와 가 `commerce` 필드 그룹의 일부로 전달된 XDM 데이터에서 자동으로 매핑됩니다.
+구매 매개 변수는 성공적인 주문 후에 주문 확인 페이지에서 전달되며 Target 전환 및 최적화 목표에 사용됩니다. Decisioning 확장을 사용하는 Platform Mobile SDK 구현에서는 이러한 매개 변수와 가 `commerce` 필드 그룹의 일부로 전달된 XDM 데이터에서 자동으로 매핑됩니다.
 
 
 `commerce` 필드 그룹에 `purchases.value`이(가) `1`(으)로 설정되어 있으면 구매 정보가 Target에 전달됩니다. 주문 ID와 주문 합계는 `order` 개체에서 자동으로 매핑됩니다. `productListItems` 배열이 있으면 `SKU` 값이 `productPurchasedId`에 사용됩니다.
@@ -69,4 +69,4 @@ Target을 사용하면 단일 고객 ID를 사용하여 장치 및 시스템 간
 
 >[!NOTE]
 >
->Target 확장에서 최적화 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.

@@ -1,9 +1,9 @@
 ---
-title: 초기 설정 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 초기 설정 - Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile 확장 기능으로 마이그레이션
 description: 플랫폼 웹 SDK 구현에 필요한 중요한 기본 요소에 대해 알아보고 설정합니다
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '243'
 ht-degree: 0%
 
 ---
@@ -28,4 +28,4 @@ at.js에서 Platform Web SDK로 마이그레이션하려면 Platform Web SDK의 
 
 >[!NOTE]
 >
->Target 확장에서 최적화 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.

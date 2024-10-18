@@ -1,16 +1,16 @@
 ---
-title: Web SDK를 사용하여 Target 구현의 유효성 검사 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
-description: Adobe Experience Platform Web SDK를 사용하여 활동의 유효성을 검사하고 Adobe Target 구현을 디버깅하는 방법에 대해 알아봅니다.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: Adobe Journey Optimizer - Decisioning Mobile 확장 기능을 통한 Target 구현 확인
+description: Adobe Journey Optimizer - Decisioning Mobile 확장을 사용하여 활동을 확인하고 Adobe Target 구현을 디버깅하는 방법을 알아봅니다.
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
 
 ---
 
-# Platform Web SDK 구현의 유효성 검사
+# Adobe Journey Optimizer - Decisioning Mobile 확장 구현의 유효성 검사
 
-Target 확장에서 최적화 확장으로 Target 구현을 마이그레이션한 후 프로덕션 앱에 변경 사항을 게시하기 전에 모든 것이 제대로 작동하는지 확인하는 것이 중요합니다. Adobe은 이 페이지에서 자세히 다루는 다음 사항을 권장합니다.
+Target 확장에서 Decisioning 확장으로 Target 구현을 마이그레이션한 후 프로덕션 앱에 변경 사항을 게시하기 전에 모든 것이 제대로 작동하는지 확인하는 것이 중요합니다. Adobe은 이 페이지에서 자세히 다루는 다음 사항을 권장합니다.
 
 * 기술 유효성 검사를 수행하여 기본 구현 및 Platform Mobile SDK 요청 및 응답이 정확한지 확인합니다
 * Target 활동이 제대로 전달되고 렌더링되는지 확인합니다.
@@ -54,10 +54,10 @@ Target 확장에서 최적화 확장으로 Target 구현을 마이그레이션�
 |---|---|
 | | |
 
-위의 유효성 검사 단계를 수행한 후에는 최적화 확장이 포함된 Platform Mobile SDK 구현이 프로덕션으로 이동할 준비가 되었다고 확신할 수 있습니다.
+위의 유효성 검사 단계를 수행한 후에는 Decisioning 확장이 포함된 Platform Mobile SDK 구현이 프로덕션으로 이동할 준비가 되었다고 확신할 수 있습니다.
 
 다음으로 [Platform Web SDK를 사용하여 Target 구현 문제를 해결하는 방법](debugging.md)을 알아봅니다.
 
 >[!NOTE]
 >
->Target 확장에서 최적화 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.

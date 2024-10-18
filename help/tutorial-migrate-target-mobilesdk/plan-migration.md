@@ -1,16 +1,16 @@
 ---
-title: Planning - 모바일 앱의 Target을 Target 확장에서 Optimize 확장으로 마이그레이션
+title: 계획 - Adobe Target에서 Adobe Journey Optimizer으로 마이그레이션 - Decisioning Mobile 확장
 description: at.js 2.x에서 Adobe Experience Platform Web SDK로 Adobe Target 구현을 계획하는 방법에 대해 알아봅니다.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
-# Optimize 확장으로의 Target 마이그레이션 계획
+# Decisioning 확장으로의 Target 마이그레이션 계획
 
-Target 확장에서 모바일 앱의 최적화 확장으로 Target을 업그레이드하기 전에 현재 구현을 평가해야 합니다.
+Target 확장을 모바일 앱에서 Decisioning 확장으로 업그레이드하기 전에 현재 구현을 평가해야 합니다.
 
 ## 현재 Target 확장 구현 평가
 
@@ -50,8 +50,8 @@ As you migrate, you should plan on following your company's process for testing 
 -->
 
 
-그런 다음 Target 확장과 Optimize 확장에 대한 자세한 [비교](detailed-comparison.md)를 검토하여 기술적 차이점을 더 잘 이해하고 추가 포커스가 필요한 영역을 식별하십시오.
+그런 다음 Target 확장과 Decisioning 확장의 자세한 [비교](detailed-comparison.md)를 검토하여 기술적 차이점을 더 잘 이해하고 추가 포커스가 필요한 영역을 식별합니다.
 
 >[!NOTE]
 >
->Target 확장에서 최적화 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.

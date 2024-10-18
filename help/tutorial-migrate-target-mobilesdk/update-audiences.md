@@ -1,14 +1,14 @@
 ---
-title: 대상자 및 프로필 스크립트 업데이트 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
+title: 대상자 및 프로필 스크립트 업데이트 - Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile 확장으로 마이그레이션
 description: Experience Platform Web SDK와의 호환성을 위해 Adobe Target 대상 및 프로필 스크립트를 업데이트하는 방법을 알아봅니다.
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
-# Platform Web SDK 호환성을 위한 Target 대상자 및 프로필 스크립트 업데이트
+# Adobe Journey Optimizer - Decisioning Mobile Extension 호환성에 대한 Target 대상 및 프로필 스크립트 업데이트
 
 
 ## 대상자 조정
@@ -26,4 +26,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Target 확장에서 최적화 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.

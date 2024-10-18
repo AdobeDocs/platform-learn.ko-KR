@@ -1,5 +1,5 @@
 ---
-user-guide-title: Mobile SDK의 Target 구현을 Target 확장에서 최적화 확장으로 마이그레이션
+user-guide-title: Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile Extension으로 마이그레이션
 user-guide-description: Target 확장에서 Optimie 확장으로 모바일 SDK 구현을 성공적으로 마이그레이션하는 방법에 대해 설명하는 Target 고객을 위한 실습 튜토리얼입니다
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -10,15 +10,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: 4488bcc52d7c9a88d106777af968c131cdb4dac1
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '90'
 ht-degree: 5%
 
 ---
 
 
-# Mobile SDK의 Target 구현을 Target 확장에서 최적화 확장으로 마이그레이션 {#migrate-target-to-mobile-sdk-optimize}
+# Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile Extension으로 마이그레이션{#migrate-target-to-mobile-sdk-decisioning}
 
 + [튜토리얼 소개](overview.md)
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 + [마이그레이션 계획](plan-migration.md)
 
-+ [Target 확장을 최적화 확장과 비교](detailed-comparison.md)
++ [Target 확장을 Decisioning 확장과 비교](detailed-comparison.md)
 
 + [초기 설정 수행](initial-setup.md)
 
