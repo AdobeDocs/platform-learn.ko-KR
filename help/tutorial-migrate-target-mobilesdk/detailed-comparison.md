@@ -1,10 +1,10 @@
 ---
 title: Target 확장과 Decisioning 확장 비교
 description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 Target 확장과 Decisioning 확장 간의 차이점에 대해 알아봅니다.
-source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
+source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 0%
+source-wordcount: '469'
+ht-degree: 1%
 
 ---
 
@@ -23,8 +23,8 @@ Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래
 
 ## 기능 비교
 
-| | Target 확장 | Decisioning 확장 프로그램(Edge을 통한 Target) |
-|---|---|---|---|
+| 기능 | Target 확장 | Decisioning 확장 프로그램(Edge을 통한 Target) |
+|---|---|---|
 | 프리페치 모드 | 지원됨 | 지원됨 |
 | 실행 모드 | 지원됨 | 지원되지 않음 |
 | 사용자 지정 매개 변수 | 지원됨 | mbox당 매개 변수는 지원되지 않습니다. |
