@@ -1,9 +1,9 @@
 ---
 title: Target 확장과 Decisioning 확장 비교
 description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 Target 확장과 Decisioning 확장 간의 차이점에 대해 알아봅니다.
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래
 | 사용자 지정 매개 변수 | 지원됨 | mbox당 매개 변수는 지원되지 않습니다. |
 | 시작 대상자 | 지원됨 | 지원됨 |
 | 모바일 라이프사이클 지표를 사용한 대상자 세분화 | 지원됨 | 데이터 수집 규칙을 통해 지원 |
-| thirdPartyId (mbox3rdPartyId) | ID 맵과 데이터 스트림의 네임스페이스 구성을 통해 지원됩니다 |
+| thirdPartyId (mbox3rdPartyId) | 지원됨 | ID 맵과 데이터 스트림의 네임스페이스 구성을 통해 지원됩니다 |
 | 알림(표시, 클릭) | 지원됨 | 지원됨 |
 | 응답 토큰 | 지원됨 | 지원됨 |
 | 다이내믹 오퍼 | 지원됨 | 지원됨 |

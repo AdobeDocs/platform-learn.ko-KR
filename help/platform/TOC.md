@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 16%
+source-wordcount: '934'
+ht-degree: 17%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 16%
 + [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md)
 + [Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
 + 관리 {#admin}
-   + [AI Assistant 사용](/help/platform/admin/ai-assistant.md)
    + [경고 사용](/help/platform/admin/use-alerts.md)
    + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
    + [샌드박스 간 개체 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 16%
    + [개발자 추가](/help/platform/admin/add-developers.md)
    + [제품 관리자 추가](/help/platform/admin/add-product-administrators.md)
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
++ AI 어시스턴트 {#ai-assistant}
+   + [개요](/help/platform/ai-assistant/overview.md)
+   + [대상자 정리](/help/platform/ai-assistant/find-unused-audiences.md)
 + 대상 및 세분화 {#audiences}
    + [Audience Portal 및 구성 소개](audiences/introduction-to-audience-portal-and-composition.md)
    + [대상자 업로드](audiences/upload-audiences.md)
@@ -77,7 +79,7 @@ ht-degree: 16%
 + 데이터 거버넌스 {#data-governance}
    + [개요](/help/platform/governance/understanding-data-governance.md)
    + [엔드 투 엔드 데모](/help/platform/governance/introduction-to-data-governance.md)
-   + [레이블을 사용하여 데이터 분류](/help/platform/governance/classify-data-using-labels.md)
+   + [레이블을 사용한 데이터 분류](/help/platform/governance/classify-data-using-labels.md)
    + [데이터 사용 정책 만들기](/help/platform/governance/create-data-usage-policies.md)
    + [데이터 사용 정책 시행](/help/platform/governance/enforce-data-usage-policies.md)
    + [동의 시행](/help/platform/governance/enforce-consent.md)
