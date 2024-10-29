@@ -1,6 +1,7 @@
 ---
 title: AI 어시스턴트
 description: Real-Time Customer Data Platform, Journey Optimizer, Customer Journey Analytics와 같은 Adobe Experience Platform 기반 애플리케이션에서 AI 어시스턴트로 무엇을 할 수 있는지 알아보십시오.
+feature: AI Assistant
 role: Admin, Architect, Data Architect, Data Engineer, Developer, Leader, User
 level: Beginner
 doc-type: Feature Video
@@ -8,7 +9,7 @@ duration: 143
 last-substantial-update: 2024-06-14T00:00:00Z
 jira: KT-15749
 exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: 1b1c87224a913ea39fe73a3c6ecf59a8b29cd8d2
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 31%
