@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '939'
 ht-degree: 17%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 17%
    + [개요](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [엔드 투 엔드 데모](/help/platform/rtcdp/demo.md)
    + [워크플로](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [B2B 에디션 개요](/help/platform/rtcdp/b2b-overview.md)
+   + [B2B edition 개요](/help/platform/rtcdp/b2b-overview.md)
    + [Marketo Engage을 사용하여 캠페인 오케스트레이션](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [시작: 데이터 설계자 및 데이터 엔지니어](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md)
@@ -39,7 +39,8 @@ ht-degree: 17%
 + 관리 {#admin}
    + [경고 사용](/help/platform/admin/use-alerts.md)
    + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
-   + [샌드박스 간 개체 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [샌드박스 간 패키지 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [IMS 조직 간 패키지 공유](/help/platform/admin/share-packages-across-orgs.md)
    + [사용자 추가](/help/platform/admin/add-users.md)
    + [데이터 수집에 사용자 추가](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [개발자 추가](/help/platform/admin/add-developers.md)
