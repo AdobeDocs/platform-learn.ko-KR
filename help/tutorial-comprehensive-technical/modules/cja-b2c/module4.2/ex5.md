@@ -3,7 +3,7 @@ title: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서
 description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석 - Customer Journey Analytics을 사용하여 Google Analytics 데이터 분석
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 2%
@@ -40,7 +40,7 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 ![데모](./images/5.png)
 
-먼저 사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 샌드박스를 선택합니다. 샌드박스는 `--aepSandboxId--`이어야 합니다. 이 예제에서 사용할 샌드박스는 **AEP 지원 FY21**&#x200B;입니다.
+먼저 사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 샌드박스를 선택합니다. 샌드박스는 `--aepSandboxName--`이어야 합니다. 이 예제에서 사용할 샌드박스는 **AEP 지원 FY21**&#x200B;입니다.
 
 ![데모](./images/cjasb.png)
 

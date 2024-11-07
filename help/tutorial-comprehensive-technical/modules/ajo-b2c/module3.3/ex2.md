@@ -3,7 +3,7 @@ title: Offer decisioning - 오퍼 및 의사 결정 ID 구성
 description: Offer decisioning - 오퍼 및 의사 결정 ID 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 2%
@@ -18,10 +18,10 @@ ht-degree: 2%
 
 | 이름 | 날짜 범위 | 이메일에 대한 이미지 링크 | 웹용 이미지 링크 | 텍스트 | 우선 순위 | 적격성 | 언어 |
 |-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-| `--demoProfileLdap-- - Nadia Elements Shell` | 오늘 - 1개월 후 | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | 모두 - 여성 고객 | 영어(미국) |
-| `--demoProfileLdap-- - Radiant Tee` | 오늘 - 1개월 후 | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | 모두 - 여성 고객 | 영어(미국) |
-| `--demoProfileLdap-- - Zeppelin Yoga Pant` | 오늘 - 1개월 후 | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | 모두 - 남성 고객 | 영어(미국) |
-| `--demoProfileLdap-- - Proteus Fitness Jackshirt` | 오늘 - 1개월 후 | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | 모두 - 남성 고객 | 영어(미국) |
+| `--aepUserLdap-- - Nadia Elements Shell` | 오늘 - 1개월 후 | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | 모두 - 여성 고객 | 영어(미국) |
+| `--aepUserLdap-- - Radiant Tee` | 오늘 - 1개월 후 | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | 모두 - 여성 고객 | 영어(미국) |
+| `--aepUserLdap-- - Zeppelin Yoga Pant` | 오늘 - 1개월 후 | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | 모두 - 남성 고객 | 영어(미국) |
+| `--aepUserLdap-- - Proteus Fitness Jackshirt` | 오늘 - 1개월 후 | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | 모두 - 남성 고객 | 영어(미국) |
 
 {style="table-layout:auto"}
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -45,7 +45,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/offers3.png)
 
-이 경우 오퍼 `--demoProfileLdap-- - Nadia Elements Shell`을(를) 구성해야 합니다. 위 표의 정보를 사용하여 필드를 작성하십시오. 이 예제에서 Personalized Offer의 이름은 **vangeluw - Nadia Elements Shell**&#x200B;입니다. 또한 **시작 날짜 및 시간**&#x200B;을 어제로 설정하고 **종료 날짜 및 시간**&#x200B;을 지금부터 한 달 후의 날짜로 설정하십시오.
+이 경우 오퍼 `--aepUserLdap-- - Nadia Elements Shell`을(를) 구성해야 합니다. 위 표의 정보를 사용하여 필드를 작성하십시오. 이 예제에서 Personalized Offer의 이름은 **vangeluw - Nadia Elements Shell**&#x200B;입니다. 또한 **시작 날짜 및 시간**&#x200B;을 어제로 설정하고 **종료 날짜 및 시간**&#x200B;을 지금부터 한 달 후의 날짜로 설정하십시오.
 
 이 작업을 완료하면 이 작업을 수행해야 합니다. **다음**&#x200B;을 클릭합니다.
 
@@ -182,7 +182,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/foffers3.png)
 
-대체 오퍼 이름 `--demoProfileLdap-- - Luma Fallback Offer`을(를) 입력하십시오. **다음**&#x200B;을 클릭합니다.
+대체 오퍼 이름 `--aepUserLdap-- - Luma Fallback Offer`을(를) 입력하십시오. **다음**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/foffers4.png)
 
@@ -281,7 +281,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 그러면 이 팝업이 표시됩니다. 다음과 같이 컬렉션을 구성합니다. **다음**&#x200B;을 클릭합니다.
 
-- 컬렉션 이름: `--demoProfileLdap-- - Luma Collection` 사용
+- 컬렉션 이름: `--aepUserLdap-- - Luma Collection` 사용
 - **정적 컬렉션 만들기**&#x200B;를 선택합니다.
 
 ![결정 규칙](./images/createcollectionpopup1.png)
@@ -308,7 +308,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 다음과 같이 필드를 채웁니다. **다음**&#x200B;을 클릭합니다.
 
-- 이름: `--demoProfileLdap-- - Luma Decision`
+- 이름: `--aepUserLdap-- - Luma Decision`
 - 시작 날짜 및 시간: 어제
 - 종료 날짜 및 시간: 오늘 + 1개월
 
@@ -322,7 +322,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/activity3.png)
 
-컬렉션 `--demoProfileLdap-- - Luma Collection`을(를) 선택하고 **추가**&#x200B;를 클릭합니다.
+컬렉션 `--aepUserLdap-- - Luma Collection`을(를) 선택하고 **추가**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/activity4text.png)
 
@@ -330,15 +330,15 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/activity5text.png)
 
-**웹 - 이미지** 배치를 선택하고 평가 기준에 따라 컬렉션 `--demoProfileLdap-- - Luma Collection`을(를) 추가하십시오. 그런 다음 **+** 단추를 다시 클릭하여 새 결정 범위를 추가합니다.
+**웹 - 이미지** 배치를 선택하고 평가 기준에 따라 컬렉션 `--aepUserLdap-- - Luma Collection`을(를) 추가하십시오. 그런 다음 **+** 단추를 다시 클릭하여 새 결정 범위를 추가합니다.
 
 ![결정 규칙](./images/activity6text.png)
 
-**전자 메일 - 이미지** 배치를 선택하고 평가 기준에 따라 컬렉션 `--demoProfileLdap-- - Luma Collection`을(를) 추가하십시오. 그런 다음 **다음**&#x200B;을 클릭합니다.
+**전자 메일 - 이미지** 배치를 선택하고 평가 기준에 따라 컬렉션 `--aepUserLdap-- - Luma Collection`을(를) 추가하십시오. 그런 다음 **다음**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/activity4.png)
 
-이제 **대체 오퍼**&#x200B;을(를) 선택해야 합니다. 대체 오퍼의 이름은 `--demoProfileLdap-- - Luma Fallback Offer`입니다. **다음**&#x200B;을 클릭합니다.
+이제 **대체 오퍼**&#x200B;을(를) 선택해야 합니다. 대체 오퍼의 이름은 `--aepUserLdap-- - Luma Fallback Offer`입니다. **다음**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/activity10.png)
 

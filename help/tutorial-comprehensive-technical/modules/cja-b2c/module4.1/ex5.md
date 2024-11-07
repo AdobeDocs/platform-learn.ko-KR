@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Customer Journey Analytics을 사용한 시�
 description: Customer Journey Analytics - Customer Journey Analytics을 사용한 시각화
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 0%
@@ -28,9 +28,9 @@ Analysis Workspace의 [11.4 데이터 준비에서 만든 프로젝트를 사용
 
 ![데모](./images/prohome.png)
 
-프로젝트 `--demoProfileLdap-- - Omnichannel Analysis`을(를) 엽니다.
+프로젝트 `--aepUserLdap-- - Omnichannel Analysis`을(를) 엽니다.
 
-프로젝트를 열고 데이터 보기 `--demoProfileLdap-- - Omnichannel Analysis`을(를) 선택하면 첫 번째 시각화 빌드를 시작할 수 있습니다.
+프로젝트를 열고 데이터 보기 `--aepUserLdap-- - Omnichannel Analysis`을(를) 선택하면 첫 번째 시각화 빌드를 시작할 수 있습니다.
 
 ![데모](./images/prodataView1.png)
 

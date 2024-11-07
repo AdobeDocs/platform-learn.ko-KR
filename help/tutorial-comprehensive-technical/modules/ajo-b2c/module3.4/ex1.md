@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - 트리거 기반 여정 구성 - 주문 확인
 description: 이 섹션에서는 트리거 기반 여정 - 주문 확인을 구성합니다.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/oc32.png)
 
-먼저 이벤트에 다음과 같은 이름(`--demoProfileLdap--PurchaseEvent`)을 지정하고 다음과 같은 설명을 추가하십시오. `Purchase Event`
+먼저 이벤트에 다음과 같은 이름(`--aepUserLdap--PurchaseEvent`)을 지정하고 다음과 같은 설명을 추가하십시오. `Purchase Event`
 
 ![Journey Optimizer](./images/oc34.png)
 
@@ -100,11 +100,11 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/oc43.png)
 
-그러면 이걸 보게 될 거야. 여정 이름을 지정합니다. `--demoProfileLdap-- - Order Confirmation journey` 사용. **확인**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. 여정 이름을 지정합니다. `--aepUserLdap-- - Order Confirmation journey` 사용. **확인**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/oc45.png)
 
-먼저 이벤트를 여정 시작점으로 추가해야 합니다. `--demoProfileLdap--PurchaseEvent` 이벤트를 검색하여 캔버스에 끌어서 놓습니다. **확인**&#x200B;을 클릭합니다.
+먼저 이벤트를 여정 시작점으로 추가해야 합니다. `--aepUserLdap--PurchaseEvent` 이벤트를 검색하여 캔버스에 끌어서 놓습니다. **확인**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -266,7 +266,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc62.png)
 
-자세히 드릴하려면 `--demoProfileLdap--PurchaseEvent` 옆에 있는 화살표를 클릭하십시오.
+자세히 드릴하려면 `--aepUserLdap--PurchaseEvent` 옆에 있는 화살표를 클릭하십시오.
 
 ![Journey Optimizer](./images/oc63.png)
 
@@ -314,7 +314,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc722.png)
 
-자세히 드릴하려면 `--demoProfileLdap--PurchaseEvent` 옆에 있는 화살표를 클릭하십시오.
+자세히 드릴하려면 `--aepUserLdap--PurchaseEvent` 옆에 있는 화살표를 클릭하십시오.
 
 ![Journey Optimizer](./images/oc73.png)
 
@@ -379,7 +379,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![속성 페이지](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--demoProfileLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
+모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
 
 ![검색 상자](./../../../modules/datacollection/module1.1/images/property6.png)
 

@@ -3,7 +3,7 @@ title: 구성 ID 업데이트 및 여정 테스트
 description: 구성 ID 업데이트 및 여정 테스트
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![속성 페이지](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--demoProfileLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
+모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
 
 ![검색 상자](./../../../modules/datacollection/module1.1/images/property6.png)
 

@@ -3,7 +3,7 @@ title: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - 작�
 description: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - 작업
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -71,17 +71,17 @@ Visual Studio 코드의 **터미널**&#x200B;에서는 다음과 유사한 내�
 
 ## 2.4.6.3 장비 세그먼트에 대한 관심 부문에 적합
 
-**장비** 페이지로 한 번 이동한 다음 **다시 로드하거나 새로 고치지 않음**&#x200B;합니다. 이 작업은 `--demoProfileLdap-- - Interest in Equipment` 세그먼트에 대한 자격을 부여해야 합니다.
+**장비** 페이지로 한 번 이동한 다음 **다시 로드하거나 새로 고치지 않음**&#x200B;합니다. 이 작업은 `--aepUserLdap-- - Interest in Equipment` 세그먼트에 대한 자격을 부여해야 합니다.
 
 ![6-04-luma-telco-nav-sports.png](./images/luma1.png)
 
-확인하려면 프로필 뷰어 패널을 엽니다. 이제 `--demoProfileLdap-- - Interest in Equipment`의 멤버여야 합니다. 세그먼트 멤버십이 프로필 뷰어 패널에서 아직 업데이트되지 않은 경우 다시 로드 단추를 클릭합니다.
+확인하려면 프로필 뷰어 패널을 엽니다. 이제 `--aepUserLdap-- - Interest in Equipment`의 멤버여야 합니다. 세그먼트 멤버십이 프로필 뷰어 패널에서 아직 업데이트되지 않은 경우 다시 로드 단추를 클릭합니다.
 
 ![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
 
-Visual Studio 코드로 다시 전환하고 **TERMINAL** 탭을 보면 특정 **ECID**&#x200B;에 대한 세그먼트 목록이 표시됩니다. 이 활성화 페이로드는 `--demoProfileLdap-- - Interest in Equipment` 세그먼트에 대한 자격이 되는 즉시 이벤트 허브에 전달됩니다.
+Visual Studio 코드로 다시 전환하고 **TERMINAL** 탭을 보면 특정 **ECID**&#x200B;에 대한 세그먼트 목록이 표시됩니다. 이 활성화 페이로드는 `--aepUserLdap-- - Interest in Equipment` 세그먼트에 대한 자격이 되는 즉시 이벤트 허브에 전달됩니다.
 
-세그먼트 페이로드를 자세히 살펴보면 `--demoProfileLdap-- - Interest in Equipment`이(가) **실현됨** 상태입니다.
+세그먼트 페이로드를 자세히 살펴보면 `--aepUserLdap-- - Interest in Equipment`이(가) **실현됨** 상태입니다.
 
 세그먼트 상태가 **실현됨**&#x200B;이면 프로필이 세그먼트에 방금 들어왔다는 것을 의미합니다. **existing** 상태는 프로필이 계속 세그먼트에 있음을 의미합니다.
 

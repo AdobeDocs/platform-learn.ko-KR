@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - iOS용 푸시 알림 설정 및 사용
 description: iOS용 푸시 알림 설정 및 사용
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Adobe Journey Optimizer에서 푸시 알림을 사용하기 위해 확인하고 
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -48,7 +48,7 @@ Adobe Journey Optimizer은 데이터 세트를 사용하여 모바일 장치의 
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다.
 
-왼쪽 메뉴에서 **[!UICONTROL 데이터스트림]**(으)로 이동하여 [연습 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 만든 데이터스트림(`--demoProfileLdap-- - Demo System Datastream (Mobile)`)을 검색합니다. 클릭하여 엽니다.
+왼쪽 메뉴에서 **[!UICONTROL 데이터스트림]**(으)로 이동하여 [연습 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 만든 데이터스트림(`--aepUserLdap-- - Demo System Datastream (Mobile)`)을 검색합니다. 클릭하여 엽니다.
 
 ![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1a.png)
 
@@ -169,7 +169,7 @@ AEP Assurance 세션을 시작하려면 [https://experience.adobe.com/#/@experie
 
 값을 입력합니다.
 
-- 세션 이름: `--demoProfileLdap-- - push debugging`을(를) 사용하고 ldap를 ldap로 바꾸기
+- 세션 이름: `--aepUserLdap-- - push debugging`을(를) 사용하고 ldap를 ldap로 바꾸기
 - 기본 URL: **dxdemo://default** 사용
 
 **다음**&#x200B;을 클릭합니다.
@@ -232,7 +232,7 @@ AEP Assurance 세션을 시작하려면 [https://experience.adobe.com/#/@experie
 
 ![AOP](./images/emptyevent.png)
 
-먼저 이벤트에 다음과 같은 이름(`--demoProfileLdap--StoreEntryEvent`)을 지정하고 설명을 `Store Entry Event`(으)로 설정하십시오.
+먼저 이벤트에 다음과 같은 이름(`--aepUserLdap--StoreEntryEvent`)을 지정하고 설명을 `Store Entry Event`(으)로 설정하십시오.
 
 ![AOP](./images/eventname.png)
 
@@ -283,11 +283,11 @@ AEP Assurance 세션을 시작하려면 [https://experience.adobe.com/#/@experie
 
 ![DSN](./images/sjourney1.png)
 
-그러면 이걸 보게 될 거야. 여정 이름을 지정합니다. `--demoProfileLdap-- - Store Entry journey` 사용. **확인**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. 여정 이름을 지정합니다. `--aepUserLdap-- - Store Entry journey` 사용. **확인**&#x200B;을 클릭합니다.
 
 ![DSN](./images/sjourney3.png)
 
-먼저 이벤트를 여정 시작점으로 추가해야 합니다. `--demoProfileLdap--StoreEntryEvent` 이벤트를 검색하여 캔버스에 끌어서 놓습니다. **확인**&#x200B;을 클릭합니다.
+먼저 이벤트를 여정 시작점으로 추가해야 합니다. `--aepUserLdap--StoreEntryEvent` 이벤트를 검색하여 캔버스에 끌어서 놓습니다. **확인**&#x200B;을 클릭합니다.
 
 ![DSN](./images/sjourney4.png)
 

@@ -3,7 +3,7 @@ title: Offer decisioning - 데모 웹 사이트를 사용하여 의사 결정 �
 description: 데모 웹 사이트를 사용하여 의사 결정 테스트
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 1%
@@ -66,11 +66,11 @@ Adobe Target에서 데모 웹 사이트 프로젝트를 로드하려면 먼저 A
 
 ![RTCDP](./images/vec3.png)
 
-그러면 이 팝업이 표시됩니다. 샌드박스 `--aepSandboxId--`을(를) 선택한 다음 **웹 - 이미지** 배치를 선택하십시오.
+그러면 이 팝업이 표시됩니다. 샌드박스 `--aepSandboxName--`을(를) 선택한 다음 **웹 - 이미지** 배치를 선택하십시오.
 
 ![RTCDP](./images/vec4.png)
 
-그런 다음 `--demoProfileLdap-- - Luma Decision` 결정을 선택합니다. **저장**&#x200B;을 클릭합니다.
+그런 다음 `--aepUserLdap-- - Luma Decision` 결정을 선택합니다. **저장**&#x200B;을 클릭합니다.
 
 ![RTCDP](./images/vec5.png)
 
@@ -82,7 +82,7 @@ Adobe Target에서 데모 웹 사이트 프로젝트를 로드하려면 먼저 A
 
 ![RTCDP](./images/vec7.png)
 
-오퍼 이름을 입력하십시오. `--demoProfileLdap-- - XT with Offers (VEC)` 이름을 사용하십시오. **다음**&#x200B;을 클릭합니다.
+오퍼 이름을 입력하십시오. `--aepUserLdap-- - XT with Offers (VEC)` 이름을 사용하십시오. **다음**&#x200B;을 클릭합니다.
 
 ![RTCDP](./images/vec8.png)
 

@@ -3,7 +3,7 @@ title: 기초 - 실시간 고객 프로필 - 나만의 실시간 고객 프로�
 description: 기초 - 실시간 고객 프로필 - 나만의 실시간 고객 프로필 시각화 - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 1%
@@ -141,10 +141,10 @@ X-ray 패널에서 ID와 네임스페이스의 4가지 다른 조합을 볼 수 
 
 ![새 통합 Adobe I/O](./images/api14.png)
 
-통합에 사용할 이름과 설명을 입력합니다. 명명 규칙으로 `AEP API --demoProfileLdap--`을(를) 사용합니다. ldap를 ldap로 바꿉니다.
+통합에 사용할 이름과 설명을 입력합니다. 명명 규칙으로 `AEP API --aepUserLdap--`을(를) 사용합니다. ldap를 ldap로 바꿉니다.
 예를 들어 ldap가 vangeluw인 경우 통합의 이름과 설명은 AEP API vangeluw가 됩니다.
 
-`AEP API --demoProfileLdap--`을(를) **프로젝트 제목**(으)로 입력하십시오. **저장**&#x200B;을 클릭합니다.
+`AEP API --aepUserLdap--`을(를) **프로젝트 제목**(으)로 입력하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![새 통합 Adobe I/O](./images/api15.png)
 
@@ -307,11 +307,11 @@ Postman에서 컬렉션 **_Adobe Experience Platform 지원**&#x200B;을 찾습�
 
 | 키 | 값 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxId--`이어야 합니다.
+>사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
 
 **보내기**&#x200B;를 클릭하여 플랫폼으로 요청을 보냅니다.
 
@@ -478,11 +478,11 @@ Postman으로 돌아가서 콜센터라고 가정하고 **전화**&#x200B;의 �
 
 | 키 | 값 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxId--`이어야 합니다.
+>사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
 
 파란색 **보내기** 단추를 클릭하고 응답을 확인합니다.
 
@@ -512,11 +512,11 @@ Postman으로 돌아가서 콜센터라고 가정하고 **전화**&#x200B;의 �
 
 | 키 | 값 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxId--`이어야 합니다.
+>사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
 
 파란색 **보내기** 단추를 클릭하고 응답을 확인합니다.
 
@@ -570,11 +570,11 @@ Postman에서 컬렉션 **_Adobe Experience Platform 지원**&#x200B;을 찾습�
 
 | 키 | 값 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxId--`이어야 합니다.
+>사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
 
 **보내기**&#x200B;를 클릭하여 플랫폼으로 요청을 보냅니다.
 

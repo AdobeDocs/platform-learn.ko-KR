@@ -4,9 +4,9 @@ description: 기초 - 실시간 고객 프로필
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ ht-degree: 0%
 - [https://public.aepdemo.net](https://public.aepdemo.net)에 액세스
 - **이 에셋 다운로드**:
    - [Postman 컬렉션](./../../../assets/postman/postman_profile.zip)
-
->[!IMPORTANT]
->
->이 튜토리얼은 특정 워크숍 형식을 용이하게 하기 위해 만들어졌습니다. 액세스 권한이 없을 수 있는 특정 시스템 및 계정을 사용합니다. 접속하지 않더라도 이 매우 상세한 내용을 통해 읽으면 여전히 많은 것을 배울 수 있다고 생각한다. 워크샵 참가자로서 액세스 자격 증명이 필요한 경우 Adobe 담당자에게 연락하여 필요한 정보를 제공받으십시오.
 
 >[!NOTE]
 >

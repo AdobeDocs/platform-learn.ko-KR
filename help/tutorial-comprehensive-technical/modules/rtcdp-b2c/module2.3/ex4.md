@@ -3,7 +3,7 @@ title: Real-Time CDP - 세그먼트 작성 및 작업 수행 - 세그먼트를 S
 description: Real-Time CDP - 세그먼트 작성 및 작업 수행 - 세그먼트를 S3 대상으로 전송
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 2%
@@ -38,7 +38,7 @@ FTP 또는 SFTP를 이러한 각 이메일 마케팅 대상에 대한 전용 대
 
 **버킷 만들기** 화면에서 두 가지를 구성해야 합니다.
 
-- 이름: `aepmodulertcdp--demoProfileLdap--` 이름을 사용합니다. 예를들어, 이 연습에서는 버킷 이름이 **aepdulertcdpvangeluw**&#x200B;입니다.
+- 이름: `aepmodulertcdp--aepUserLdap--` 이름을 사용합니다. 예를들어, 이 연습에서는 버킷 이름이 **aepdulertcdpvangeluw**&#x200B;입니다.
 - 지역: **EU(프랑크푸르트) eu-central-1** 지역 사용
 
 ![ETL](./images/bucketname.png)
@@ -69,7 +69,7 @@ AWS 리소스에 대한 액세스는 Amazon Identity and Access Management(IAM)�
 
 그런 다음 사용자를 구성합니다.
 
-- 사용자 이름: `s3_--demoProfileLdap--_rtcdp`을(를) 이름으로 사용하므로 이 예제에서는 이름이 `s3_vangeluw_rtcdp`입니다.
+- 사용자 이름: `s3_--aepUserLdap--_rtcdp`을(를) 이름으로 사용하므로 이 예제에서는 이름이 `s3_vangeluw_rtcdp`입니다.
 - AWS 액세스 유형: **액세스 키 - 프로그래밍 방식 액세스**&#x200B;를 선택합니다.
 
 **다음: 사용 권한**&#x200B;을 클릭합니다.
@@ -121,7 +121,7 @@ Click **Close**.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxId--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -157,9 +157,9 @@ Adobe Experience Platform이 S3 버킷에 연결할 수 있도록 이름과 폴�
 
 | 액세스 키 ID | 비밀 액세스 키 |
 |:-----------------------:| :-----------------------:|
-| 이름 | `AWS - S3 - --demoProfileLdap--` |
-| 설명 | `AWS - S3 - --demoProfileLdap--` |
-| 버킷 이름 | `aepmodulertcdp--demoProfileLdap--` |
+| 이름 | `AWS - S3 - --aepUserLdap--` |
+| 설명 | `AWS - S3 - --aepUserLdap--` |
+| 버킷 이름 | `aepmodulertcdp--aepUserLdap--` |
 | 폴더 경로 | / |
 
 **다음**&#x200B;을 클릭합니다.

@@ -3,7 +3,7 @@ title: Offer decisioning - 이메일에서 의사 결정 사용
 description: 이메일에서 의사 결정 사용
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 이 연습에서는 의사 결정을 사용하여 이메일 및 SMS 게재를 개인화합니다.
 
-**여정**(으)로 이동합니다. 연습 7.2에서 만든 여정(`--demoProfileLdap-- - Account Creation Journey`)를 찾습니다. 여정을 클릭하여 엽니다.
+**여정**(으)로 이동합니다. 연습 7.2에서 만든 여정(`--aepUserLdap-- - Account Creation Journey`)를 찾습니다. 여정을 클릭하여 엽니다.
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-이메일에 포함할 배치 유형을 선택합니다. **배치** 드롭다운 메뉴에서 **전자 메일 - 이미지**&#x200B;를 선택한 다음 결정 `--demoProfileLdap-- - Luma Decision`을(를) 선택합니다. **추가를 클릭합니다**.
+이메일에 포함할 배치 유형을 선택합니다. **배치** 드롭다운 메뉴에서 **전자 메일 - 이미지**&#x200B;를 선택한 다음 결정 `--aepUserLdap-- - Luma Decision`을(를) 선택합니다. **추가를 클릭합니다**.
 
 ![Journey Optimizer](./images/emailoffer8.png)
 

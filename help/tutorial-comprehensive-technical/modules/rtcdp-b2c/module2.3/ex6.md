@@ -3,7 +3,7 @@ title: Real-Time CDP - 외부 대상
 description: Real-Time CDP - 외부 대상
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experien
 
 ![외부 대상 메타데이터 스키마 4](images/extAudMDXDM4.png)
 
-그런 다음 스키마 이름 **제목 없는 스키마**&#x200B;를 선택합니다. 이름을 `--demoProfileLdap-- - External Audiences Metadata`(으)로 변경합니다.
+그런 다음 스키마 이름 **제목 없는 스키마**&#x200B;를 선택합니다. 이름을 `--aepUserLdap-- - External Audiences Metadata`(으)로 변경합니다.
 
 ![외부 대상 메타데이터 스키마 5](images/extAudMDXDM5.png)
 
@@ -81,11 +81,11 @@ Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experien
 
 ## 2.3.6.1.3 외부 대상 메타데이터 데이터 세트 만들기
 
-**스키마**&#x200B;에서 **찾아보기**(으)로 이동합니다. 이전 단계에서 만든 `--demoProfileLdap-- - External Audiences Metadata` 스키마를 검색하고 클릭합니다. **스키마에서 데이터 집합 만들기**&#x200B;를 클릭합니다.
+**스키마**&#x200B;에서 **찾아보기**(으)로 이동합니다. 이전 단계에서 만든 `--aepUserLdap-- - External Audiences Metadata` 스키마를 검색하고 클릭합니다. **스키마에서 데이터 집합 만들기**&#x200B;를 클릭합니다.
 
 ![외부 대상 메타데이터 DS 1](images/extAudMDDS1.png)
 
-필드 **이름**&#x200B;에 `--demoProfileLdap-- - External Audience Metadata`을(를) 입력하십시오. **데이터 집합 만들기**&#x200B;를 클릭합니다.
+필드 **이름**&#x200B;에 `--aepUserLdap-- - External Audience Metadata`을(를) 입력하십시오. **데이터 집합 만들기**&#x200B;를 클릭합니다.
 
 ![외부 대상 메타데이터 DS 2](images/extAudMDDS2.png)
 
@@ -104,7 +104,7 @@ Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experien
 다음 정보를 입력합니다.
 
 - **계정 유형**: **새 계정 선택**
-- **계정 이름**: `--demoProfileLdap-- - External Audience Metadata` 입력
+- **계정 이름**: `--aepUserLdap-- - External Audience Metadata` 입력
 - **XDM 호환 확인란** 선택
 
 **소스에 연결**&#x200B;을 클릭합니다.
@@ -115,7 +115,7 @@ Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experien
 
 ![외부 대상 메타데이터 http 2](images/extAudMDhttp2a.png)
 
-**기존 데이터 세트**&#x200B;을(를) 선택하고 드롭다운 메뉴에서 데이터 세트 `--demoProfileLdap-- - External Audience Metadata`을(를) 검색하여 선택합니다.
+**기존 데이터 세트**&#x200B;을(를) 선택하고 드롭다운 메뉴에서 데이터 세트 `--aepUserLdap-- - External Audience Metadata`을(를) 검색하여 선택합니다.
 
 **데이터 흐름 세부 정보**&#x200B;를 확인한 다음 **다음**&#x200B;을 클릭합니다.
 
@@ -149,15 +149,15 @@ Source 커넥터 개요 탭에서 **..**&#x200B;을(를) 클릭한 다음 **스�
 
 ```
 "xdmEntity": {
-    "_id": "--demoProfileLdap---extaudience-01",
-    "description": "--demoProfileLdap---extaudience-01 description",
+    "_id": "--aepUserLdap---extaudience-01",
+    "description": "--aepUserLdap---extaudience-01 description",
     "segmentIdentity": {
-      "_id": "--demoProfileLdap---extaudience-01",
+      "_id": "--aepUserLdap---extaudience-01",
       "namespace": {
         "code": "externalaudiences"
       }
     },
-    "segmentName": "--demoProfileLdap---extaudience-01 name",
+    "segmentName": "--aepUserLdap---extaudience-01 name",
     "segmentStatus": "ACTIVE",
     "version": "1.0"
   }
@@ -185,7 +185,7 @@ HTTP API Source 커넥터 화면을 새로 고칩니다. 그러면 데이터가 
 
 처리가 완료되면 쿼리 서비스를 사용하여 데이터 세트의 데이터 가용성을 확인할 수 있습니다.
 
-오른쪽 메뉴에서 **데이터 세트**(으)로 이동하여 이전에 만든 `--demoProfileLdap-- - External Audience Metadata` 데이터 세트를 선택합니다.
+오른쪽 메뉴에서 **데이터 세트**(으)로 이동하여 이전에 만든 `--aepUserLdap-- - External Audience Metadata` 데이터 세트를 선택합니다.
 
 ![외부 대상 메타데이터 문자열 3](images/extAudMDstr3.png)
 
@@ -196,7 +196,7 @@ HTTP API Source 커넥터 화면을 새로 고칩니다. 그러면 데이터가 
 다음 코드를 입력한 다음 **SHIFT + ENTER**&#x200B;를 누르십시오.
 
 ```
-select * from --demoProfileLdap--_external_audience_metadata
+select * from --aepUserLdap--_external_audience_metadata
 ```
 
 쿼리 결과에는 수집한 외부 대상의 메타데이터가 표시됩니다.
@@ -229,7 +229,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ![외부 대상 프로필 스키마 4](images/extAudPrXDM4.png)
 
-그런 다음 스키마 이름 **제목 없는 스키마**&#x200B;를 선택합니다. 표시 이름 필드에 `--demoProfileLdap-- - External Audiences Membership`을(를) 입력합니다.
+그런 다음 스키마 이름 **제목 없는 스키마**&#x200B;를 선택합니다. 표시 이름 필드에 `--aepUserLdap-- - External Audiences Membership`을(를) 입력합니다.
 
 ![외부 대상 프로필 스키마 5](images/extAudPrXDM5a.png)
 
@@ -239,11 +239,11 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ## 2.3.6.2.2 외부 대상 멤버십 데이터 세트 만들기
 
-**스키마**&#x200B;에서 **찾아보기**(으)로 이동합니다. 이전 단계에서 만든 `--demoProfileLdap-- - External Audiences Membership` 스키마를 검색하고 클릭합니다. **스키마에서 데이터 집합 만들기**&#x200B;를 클릭합니다.
+**스키마**&#x200B;에서 **찾아보기**(으)로 이동합니다. 이전 단계에서 만든 `--aepUserLdap-- - External Audiences Membership` 스키마를 검색하고 클릭합니다. **스키마에서 데이터 집합 만들기**&#x200B;를 클릭합니다.
 
 ![외부 대상 메타데이터 DS 1](images/extAudPrDS1.png)
 
-필드 **이름**&#x200B;에 `--demoProfileLdap-- - External Audiences Membership`을(를) 입력하십시오. **데이터 집합 만들기**&#x200B;를 클릭합니다.
+필드 **이름**&#x200B;에 `--aepUserLdap-- - External Audiences Membership`을(를) 입력하십시오. **데이터 집합 만들기**&#x200B;를 클릭합니다.
 
 ![외부 대상 메타데이터 DS 2](images/extAudPrDS2.png)
 
@@ -263,7 +263,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 다음 정보를 입력합니다.
 
 - **계정 유형**: **새 계정 선택**
-- **계정 이름**: `--demoProfileLdap-- - External Audience Membership` 입력
+- **계정 이름**: `--aepUserLdap-- - External Audience Membership` 입력
 - **XDM 호환 확인란** 선택
 
 **소스에 연결**&#x200B;을 클릭합니다.
@@ -274,7 +274,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ![외부 대상 메타데이터 http 2](images/extAudPrhttp2a.png)
 
-**기존 데이터 세트**&#x200B;을(를) 선택하고 드롭다운 메뉴에서 데이터 세트 `--demoProfileLdap-- - External Audiences Membership`을(를) 검색하여 선택합니다.
+**기존 데이터 세트**&#x200B;을(를) 선택하고 드롭다운 메뉴에서 데이터 세트 `--aepUserLdap-- - External Audiences Membership`을(를) 검색하여 선택합니다.
 
 **데이터 흐름 세부 정보**&#x200B;를 확인한 다음 **다음**&#x200B;을 클릭합니다.
 
@@ -308,18 +308,18 @@ Source 커넥터 개요 탭에서 **..**&#x200B;을(를) 클릭한 다음 **스�
 
 ```
   "xdmEntity": {
-    "_id": "--demoProfileLdap---profile-test-01",
+    "_id": "--aepUserLdap---profile-test-01",
     "_experienceplatform": {
       "identification": {
         "core": {
-          "crmId": "--demoProfileLdap---profile-test-01"
+          "crmId": "--aepUserLdap---profile-test-01"
         }
       }
     },
-    "personID": "--demoProfileLdap---profile-test-01",
+    "personID": "--aepUserLdap---profile-test-01",
     "segmentMembership": {
       "externalaudiences": {
-        "--demoProfileLdap---extaudience-01": {
+        "--aepUserLdap---extaudience-01": {
           "status": "realized",
           "lastQualificationTime": "2022-03-05T00:00:00Z"
         }
@@ -350,7 +350,7 @@ HTTP API Source 커넥터 화면을 새로 고칩니다. 여기서 몇 분 정�
 
 처리가 완료되면 쿼리 서비스를 사용하여 데이터 세트의 데이터 가용성을 확인할 수 있습니다.
 
-오른쪽 메뉴에서 **데이터 세트**(으)로 이동하여 이전에 만든 `--demoProfileLdap-- - External Audiences Membership ` 데이터 세트를 선택합니다.
+오른쪽 메뉴에서 **데이터 세트**(으)로 이동하여 이전에 만든 `--aepUserLdap-- - External Audiences Membership ` 데이터 세트를 선택합니다.
 
 ![외부 대상 메타데이터 문자열 3](images/extAudPrstr3.png)
 
@@ -361,7 +361,7 @@ HTTP API Source 커넥터 화면을 새로 고칩니다. 여기서 몇 분 정�
 다음 코드를 입력한 다음 **SHIFT + ENTER**&#x200B;를 누르십시오.
 
 ```
-select * from --demoProfileLdap--_external_audiences_membership
+select * from --aepUserLdap--_external_audiences_membership
 ```
 
 쿼리 결과에는 수집한 외부 대상의 메타데이터가 표시됩니다.
@@ -382,11 +382,11 @@ Adobe Experience Platform에서 조치를 취하는 것은 세그먼트를 만�
 
 ![외부 대상 SegBuilder 1](images/extAudSegUI2a.png)
 
-이전에 만든 외부 대상(`--demoProfileLdap---extaudience-01`)을 선택하십시오. 대상을 캔버스로 드래그하여 놓습니다.
+이전에 만든 외부 대상(`--aepUserLdap---extaudience-01`)을 선택하십시오. 대상을 캔버스로 드래그하여 놓습니다.
 
 ![외부 대상 SegBuilder 1](images/extAudSegUI2b.png)
 
-세그먼트 이름을 지정하십시오. `--demoProfileLdap-- - extaudience-01`을(를) 사용하십시오. **저장 후 닫기**&#x200B;를 클릭합니다.
+세그먼트 이름을 지정하십시오. `--aepUserLdap-- - extaudience-01`을(를) 사용하십시오. **저장 후 닫기**&#x200B;를 클릭합니다.
 
 ![외부 대상 SegBuilder 1](images/extAudSegUI1.png)
 
@@ -398,7 +398,7 @@ Adobe Experience Platform에서 조치를 취하는 것은 세그먼트를 만�
 
 ## 2.3.6.4 고객 프로필 시각화
 
-이제 고객 프로필에서 세그먼트 자격을 시각화할 수도 있습니다. **프로필**(으)로 이동하여 ID 네임스페이스 **데모 시스템 - CRMID**&#x200B;을(를) 사용하고 연습 6.6.2.4의 일부로 사용한 ID `--demoProfileLdap---profile-test-01`을(를) 제공하고 **보기**&#x200B;를 클릭합니다. **프로필 ID**&#x200B;를 클릭하여 프로필을 엽니다.
+이제 고객 프로필에서 세그먼트 자격을 시각화할 수도 있습니다. **프로필**(으)로 이동하여 ID 네임스페이스 **데모 시스템 - CRMID**&#x200B;을(를) 사용하고 연습 6.6.2.4의 일부로 사용한 ID `--aepUserLdap---profile-test-01`을(를) 제공하고 **보기**&#x200B;를 클릭합니다. **프로필 ID**&#x200B;를 클릭하여 프로필을 엽니다.
 
 ![외부 대상 SegBuilder 1](images/extAudProfileUI1.png)
 

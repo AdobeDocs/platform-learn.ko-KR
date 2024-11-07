@@ -3,7 +3,7 @@ title: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - Azure
 description: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - Azure 기능 정의
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Visual Code Studio로 돌아갑니다. Azure 구독 이름이 표시됩니다(�
 
 ![3-08-vsc-function-template.png](./images/vsc5.png)
 
-함수의 이름을 입력하고 `--demoProfileLdap---aep-event-hub-trigger` 형식을 사용한 후 Enter 키를 누르십시오.
+함수의 이름을 입력하고 `--aepUserLdap---aep-event-hub-trigger` 형식을 사용한 후 Enter 키를 누르십시오.
 
 ![3-09-vsc-function-name.png](./images/vsc6.png)
 
@@ -180,7 +180,7 @@ module.exports = async function (context, eventHubMessages) {
 
 ![3-17-vsc-run-project.png](./images/vsc15.png)
 
-저장소 계정 목록에서 [13.1.4 Azure 저장소 계정 설정](./ex1.md)의 일부로 만든 계정을 선택합니다. 저장소 계정 이름은 `--demoProfileLdap--aepstorage`입니다(예: **mmewisaepstorage**).
+저장소 계정 목록에서 [13.1.4 Azure 저장소 계정 설정](./ex1.md)의 일부로 만든 계정을 선택합니다. 저장소 계정 이름은 `--aepUserLdap--aepstorage`입니다(예: **mmewisaepstorage**).
 
 ![3-22-vsc-select-storage-account.png](./images/vsc16.png)
 

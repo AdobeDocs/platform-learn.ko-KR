@@ -3,7 +3,7 @@ title: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서
 description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석 - Google Cloud Platform 계정 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Google Cloud Platform 계정을 가져오려면 Google 계정이 필요합니다
 
 | 컨벤션 | 예 |
 | ----------------- |-------------| 
-| `--demoProfileLdap---googlecloud` | delaigle-googlecloud |
+| `--aepUserLdap---googlecloud` | delaigle-googlecloud |
 
 ![데모](./images/ex1/3.png)
 
@@ -113,7 +113,7 @@ Google Cloud Platform 계정을 가져오려면 Google 계정이 필요합니다
 
 | 자격 증명 | 이름 지정 | 예 |
 | ----------------- |-------------| -------------|
-| 프로젝트 이름 | `--demoProfileLdap---googlecloud` | 반겔루-구글클라우드 |
+| 프로젝트 이름 | `--aepUserLdap---googlecloud` | 반겔루-구글클라우드 |
 | 프로젝트 ID | random | composed-task-306413 |
 
 상단 메뉴 모음에서 **프로젝트 이름**&#x200B;을 클릭하여 프로젝트 이름과 프로젝트 ID를 찾을 수 있습니다.

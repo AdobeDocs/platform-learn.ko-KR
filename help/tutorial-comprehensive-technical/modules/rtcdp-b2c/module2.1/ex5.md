@@ -3,7 +3,7 @@ title: 기초 - 실시간 고객 프로필 - 세그먼트 만들기 - API
 description: 기초 - 실시간 고객 프로필 - 세그먼트 만들기 - API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 3%
@@ -77,11 +77,11 @@ PQL [여기](https://experienceleague.adobe.com/docs/experience-platform/segment
 
 | 키 | 값 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxId--`이어야 합니다.
+>사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
 
 이제 파란색 **보내기** 단추를 클릭하여 세그먼트를 만들고 그 결과를 봅니다.
 
@@ -111,11 +111,11 @@ Postman 컬렉션에서 이름이 **2단계 - POST 세그먼트 작업**&#x200B;
 
 | 키 | 값 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxId--`이어야 합니다.
+>사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
 
 파란색 **보내기** 단추를 클릭합니다.
 
@@ -142,11 +142,11 @@ Postman 컬렉션에서 이름이 **3단계 - GET 세그먼트 작업 상태**&#
 
 | 키 | 값 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxId--`이어야 합니다.
+>사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
 
 파란색 **보내기** 단추를 클릭합니다.
 

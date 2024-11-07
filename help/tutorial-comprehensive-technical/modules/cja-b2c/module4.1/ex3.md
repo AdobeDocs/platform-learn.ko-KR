@@ -3,7 +3,7 @@ title: Customer Journey Analytics - 데이터 보기 만들기
 description: Customer Journey Analytics - 데이터 보기 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 3%
@@ -45,17 +45,17 @@ ht-degree: 3%
 
 ![데모](./images/0-v2.png)
 
-이전 연습에서 만든 **연결**&#x200B;이 이미 선택되었습니다. 연결 이름이 `--demoProfileLdap-- – Omnichannel Data Connection`입니다.
+이전 연습에서 만든 **연결**&#x200B;이 이미 선택되었습니다. 연결 이름이 `--aepUserLdap-- – Omnichannel Data Connection`입니다.
 
 ![데모](./images/ext5.png)
 
-그런 다음 데이터 보기에 이름 지정 규칙 `--demoProfileLdap-- – Omnichannel Data View`을(를) 지정합니다.
+그런 다음 데이터 보기에 이름 지정 규칙 `--aepUserLdap-- – Omnichannel Data View`을(를) 지정합니다.
 
-설명에 동일한 값을 입력하십시오. `--demoProfileLdap-- – Omnichannel Data View`.
+설명에 동일한 값을 입력하십시오. `--aepUserLdap-- – Omnichannel Data View`.
 
 | 이름 | 설명 |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- – Omnichannel Data View` | `--demoProfileLdap-- – Omnichannel Data View` |
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
 
 ![데모](./images/1-v2.png)
 

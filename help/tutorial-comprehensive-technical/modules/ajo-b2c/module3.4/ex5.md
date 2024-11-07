@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - 비즈니스 이벤트
 description: 이 섹션에서는 "재입고 품목" 사용 사례를 수행하기 위해 비즈니스 이벤트 기능을 사용하는 방법에 대해 설명합니다
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 이벤트 생성 양식에 다음 값을 입력합니다.
 
-- **이름**: `--demoProfileLdap--ItemBackInStock`. 예: **vangeluwItemBackInStock**
+- **이름**: `--aepUserLdap--ItemBackInStock`. 예: **vangeluwItemBackInStock**
 - **설명**: 이 이벤트는 제품이 재입고될 때 트리거됩니다.
 - **유형**: 드롭다운에서 **비즈니스**&#x200B;를 선택합니다.
 
@@ -66,7 +66,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/23.8-7.png)
 
-**eventName** 필드에 다음 값을 입력하십시오. `--demoProfileLdap--ItemBackInStock`. 예: vangeluwItemBackInStock.
+**eventName** 필드에 다음 값을 입력하십시오. `--aepUserLdap--ItemBackInStock`. 예: vangeluwItemBackInStock.
 **확인**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/23.8-8.png)
@@ -87,14 +87,14 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 오른쪽에는 여정 이름과 설명을 지정해야 하는 양식이 표시됩니다. 다음 값을 입력합니다.
 
-- **이름**: `--demoProfileLdap-- - Item back in stock journey`. 예: vangeluw - Item back in stock 여정
+- **이름**: `--aepUserLdap-- - Item back in stock journey`. 예: vangeluw - Item back in stock 여정
 - **설명**: 이 여정은 관심 있는 방문자에게 항목이 재입고되면 SMS를 보냅니다.
 
 **확인**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/bej11.png)
 
-왼쪽 메뉴에서 **이벤트**&#x200B;에서 ldap를 검색합니다. 이전에 만든 비즈니스 이벤트 `--demoProfileLdap--ItemBackInStock`이(가) 있습니다. 여정의 시작점이 되므로 이 이벤트를 캔버스로 드래그하여 놓습니다.
+왼쪽 메뉴에서 **이벤트**&#x200B;에서 ldap를 검색합니다. 이전에 만든 비즈니스 이벤트 `--aepUserLdap--ItemBackInStock`이(가) 있습니다. 여정의 시작점이 되므로 이 이벤트를 캔버스로 드래그하여 놓습니다.
 
 ![Journey Optimizer](./images/bej12.png)
 
@@ -105,7 +105,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/bej13.png)
 
-**세그먼트 선택** 팝업에서 ldap를 검색하고 [모듈 2.3 - Real-time CDP - 세그먼트 작성 및 작업](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)에서 만든 세그먼트를 선택합니다. `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. 예: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. **저장**&#x200B;을 클릭합니다.
+**세그먼트 선택** 팝업에서 ldap를 검색하고 [모듈 2.3 - Real-time CDP - 세그먼트 작성 및 작업](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)에서 만든 세그먼트를 선택합니다. `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. 예: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/bej14.png)
 
@@ -200,14 +200,14 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 }
 ```
 
-...이 줄에서는 여정을 트리거하기 위해 비즈니스 이벤트에 지정한 조건을 나타내는 `--demoProfileLdap--ItemBackInStock`이(가) 표시되어야 하는 대로 eventName 필드를 확인해야 합니다.
+...이 줄에서는 여정을 트리거하기 위해 비즈니스 이벤트에 지정한 조건을 나타내는 `--aepUserLdap--ItemBackInStock`이(가) 표시되어야 하는 대로 eventName 필드를 확인해야 합니다.
 
 ```json
 "xdmEntity": {
   "_experienceplatform": {
     "joBusinessEvents": {
       "eventDescription": "Product Proteus Fitness Jackshirt is back in stock",
-      "eventName": "--demoProfileLdap--ItemBackInStock",
+      "eventName": "--aepUserLdap--ItemBackInStock",
       "stockEventId": "1"
     }
   },

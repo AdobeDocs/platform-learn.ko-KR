@@ -3,7 +3,7 @@ title: 지능형 서비스 - 고객 AI 데이터 준비(수집)
 description: 고객 AI - 데이터 준비(수집)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 1%
@@ -75,7 +75,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 스키마의 이름으로 다음을 사용합니다.
 
-- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+- `--aepUserLdap-- - Demo System - Customer Experience Event`
 
 예를 들어 ldap **vangeluw**&#x200B;의 경우 스키마 이름이어야 합니다.
 
@@ -111,7 +111,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 집합](./images/createds1.png)
 
-데이터 집합 이름으로 `--demoProfileLdap-- - Demo System - Customer Experience Event Dataset`을(를) 사용합니다. **마침을 클릭합니다**.
+데이터 집합 이름으로 `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`을(를) 사용합니다. **마침을 클릭합니다**.
 
 ![데이터 집합](./images/createds2.png)
 

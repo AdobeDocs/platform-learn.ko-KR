@@ -3,7 +3,7 @@ title: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -23,8 +23,8 @@ ht-degree: 0%
 |:-------------:| :---------------:|
 | AEP IMS 조직 ID | `--aepImsOrgId--` |
 | AEP 테넌트 ID | `--aepTenantId--` |
-| DCS 입구 ID | `--dcsInletId--` |
-| 데모 프로필 LDAP | `--demoProfileLdap--` |
+| AEP 샌드박스 이름 | `--aepSandboxName--` |
+| 학습자 프로필 LDAP | `--aepUserLdap--` |
 
 예를 들어 아래 스크린샷에는 `--aepTenantId--`에 대한 참조가 표시됩니다.
 

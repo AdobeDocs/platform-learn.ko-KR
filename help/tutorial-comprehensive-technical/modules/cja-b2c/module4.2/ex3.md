@@ -3,7 +3,7 @@ title: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서
 description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석 - GCP 및 BigQuery를 Adobe Experience Platform에 연결
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -90,7 +90,7 @@ Adobe Experience Platform에서 BigQuery Source 커넥터를 구성하려면 다
 
 | 이름 지정 | 예 |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery 커넥터 |
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery 커넥터 |
 
 ![데모](./images/ex2/6-3.png)
 
@@ -305,7 +305,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxId--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -325,8 +325,8 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 | BigQuery 커넥터 자격 증명 | 값 | 예 |
 | ----------------- |-------------| -------------| 
-| 계정 이름 | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery 연결 |
-| 설명 | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery 연결 |
+| 계정 이름 | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery 연결 |
+| 설명 | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery 연결 |
 
 Which어느 should give you like this:
 

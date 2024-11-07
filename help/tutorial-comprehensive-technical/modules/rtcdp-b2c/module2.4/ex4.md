@@ -3,7 +3,7 @@ title: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - 세�
 description: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - 세그먼트 활성화
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 2.4.4.1 Azure 이벤트 허브 대상에 세그먼트 추가
 
-이 연습에서는 `--demoProfileLdap-- - Interest in Equipment` 세그먼트를 `--demoProfileLdap---aep-enablement` Azure Event Hub 대상에 추가합니다.
+이 연습에서는 `--aepUserLdap-- - Interest in Equipment` 세그먼트를 `--aepUserLdap---aep-enablement` Azure Event Hub 대상에 추가합니다.
 
 URL [https://experience.adobe.com/platform](https://experience.adobe.com/platform)로 이동하여 Adobe Experience Platform에 로그인합니다.
 
@@ -22,7 +22,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxId--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -30,7 +30,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![5-01-select-destination.png](./images/5-01-select-destination.png)
 
-그러면 이걸 보게 될 거야. ldap를 사용하여 세그먼트를 검색하고 세그먼트 목록에서 `--demoProfileLdap-- - Interest in Equipment`을(를) 선택합니다.
+그러면 이걸 보게 될 거야. ldap를 사용하여 세그먼트를 검색하고 세그먼트 목록에서 `--aepUserLdap-- - Interest in Equipment`을(를) 선택합니다.
 
 **다음**&#x200B;을 클릭합니다.
 

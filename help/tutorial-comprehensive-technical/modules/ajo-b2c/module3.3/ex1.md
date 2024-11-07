@@ -4,7 +4,7 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -40,7 +40,7 @@ offer decisioning을 사용하여 작업하려면 다음 개념을 이해해야 
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -106,7 +106,7 @@ Adobe Experience Platform 인스턴스에 배치가 표시되지 않으면 아�
 
 이제 실시간 고객 프로필에 대한 결합 스키마의 일부인 모든 필드에 액세스할 수 있으며 모든 규칙을 작성할 수 있습니다.
 
-또한 **대상** > ``--aepTenantIdSchema--``(으)로 이동하여 Adobe Experience Platform에서 이미 정의된 세그먼트를 간단히 재사용할 수 있다는 것도 흥미롭습니다.
+또한 **대상** > ``--aepTenantId--``(으)로 이동하여 Adobe Experience Platform에서 이미 정의된 세그먼트를 간단히 재사용할 수 있다는 것도 흥미롭습니다.
 
 ![결정 규칙](./images/decisionruleaud.png)
 

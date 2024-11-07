@@ -3,7 +3,7 @@ title: 데이터 수집 및 이벤트 전달 - AWS 에코시스템을 위한 이
 description: AWS 에코시스템을 위한 이벤트 전달
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2422'
 ht-degree: 2%
@@ -55,7 +55,7 @@ Amazon Kinesis Data Streams는 데이터 스트림 수집 및 저장에 중점�
 
 **버킷 만들기** 화면에서 두 가지를 구성해야 합니다.
 
-- 이름: `eventforwarding---demoProfileLdap--` 이름을 사용합니다. 예를들어, 이 연습에서는 버킷 이름이 **aepdulertcdpvangeluw**&#x200B;입니다.
+- 이름: `eventforwarding---aepUserLdap--` 이름을 사용합니다. 예를들어, 이 연습에서는 버킷 이름이 **aepdulertcdpvangeluw**&#x200B;입니다.
 - 지역: **EU(프랑크푸르트) eu-central-1** 지역 사용
 
 ![ETL](./images/bucketname.png)
@@ -78,7 +78,7 @@ Amazon Kinesis Data Streams는 데이터 스트림 수집 및 저장에 중점�
 
 ![ETL](./images/kinesis2.png)
 
-**데이터 스트림 이름**&#x200B;에 대해 `--demoProfileLdap---datastream`을(를) 사용합니다.
+**데이터 스트림 이름**&#x200B;에 대해 `--aepUserLdap---datastream`을(를) 사용합니다.
 
 ![ETL](./images/kinesis3.png)
 
@@ -246,7 +246,7 @@ Amazon API Gateway는 REST, HTTP 및 WebSocket API를 규모에 관계없이 만
 - 프로토콜 선택: **REST** 선택
 - 새 API 만들기: **새 API 선택**
 - 설정:
-   - API 이름: `--demoProfileLdap---eventforwarding` 사용
+   - API 이름: `--aepUserLdap---eventforwarding` 사용
    - 끝점 유형: **지역** 선택
 
 **API 만들기**&#x200B;를 클릭합니다.
@@ -341,7 +341,7 @@ Amazon API Gateway는 REST, HTTP 및 WebSocket API를 규모에 관계없이 만
     "dynamicPartitioningKey": "v2"
   },
   "PartitionKey": "1",
-  "StreamName": "--demoProfileLdap---datastream"
+  "StreamName": "--aepUserLdap---datastream"
 }
 ```
 
@@ -370,14 +370,14 @@ curl --location --request POST 'https://vv1i5vwg2k.execute-api.us-west-2.amazona
 --header 'Content-Type: application/json' \
 --data-raw '{
     "Data": {
-        "userid": "--demoProfileLdap--@adobe.com",
-        "firstName":"--demoProfileLdap--",
+        "userid": "--aepUserLdap--@adobe.com",
+        "firstName":"--aepUserLdap--",
         "offerName":"10% off on outdoor gears",
         "offerCode": "10OFF-SPRING",
         "dynamicPartitioningKey": "campaign"
     },
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }'
 ```
 
@@ -470,7 +470,7 @@ return JSON.stringify(newObj);
 {
     "Data":{{awsDataObject}},
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }
 ```
 

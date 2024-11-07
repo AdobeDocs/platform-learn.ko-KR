@@ -3,7 +3,7 @@ title: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - Adobe
 description: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - Adobe Experience Platform에서 이벤트 허브 RTCDP 대상 설정
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Azure 포털에서 **모든 리소스** 선택:
 
 ### 이벤트 허브
 
-리소스 유형이 **이벤트 허브 네임스페이스**&#x200B;인 리소스를 찾으십시오. 이전 연습에서 사용된 명명 규칙을 따랐으면 이벤트 허브 네임스페이스는 `--demoProfileLdap---aep-enablement`이(가) 됩니다. 기록해 두십시오. 다음 연습에서 필요할 것입니다.
+리소스 유형이 **이벤트 허브 네임스페이스**&#x200B;인 리소스를 찾으십시오. 이전 연습에서 사용된 명명 규칙을 따랐으면 이벤트 허브 네임스페이스는 `--aepUserLdap---aep-enablement`이(가) 됩니다. 기록해 두십시오. 다음 연습에서 필요할 것입니다.
 
 ![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
 
@@ -41,7 +41,7 @@ Azure 포털에서 **모든 리소스** 선택:
 
 ![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
 
-**이벤트 허브**&#x200B;를 선택하여 이벤트 허브 네임스페이스에 정의된 이벤트 허브 목록을 가져옵니다. 이전 연습에서 사용한 이름 지정 규칙을 따랐으면 `--demoProfileLdap---aep-enablement-event-hub`(이)라는 이벤트 허브를 찾을 수 있습니다. 기록해 두십시오. 다음 연습에서 필요할 것입니다.
+**이벤트 허브**&#x200B;를 선택하여 이벤트 허브 네임스페이스에 정의된 이벤트 허브 목록을 가져옵니다. 이전 연습에서 사용한 이름 지정 규칙을 따랐으면 `--aepUserLdap---aep-enablement-event-hub`(이)라는 이벤트 허브를 찾을 수 있습니다. 기록해 두십시오. 다음 연습에서 필요할 것입니다.
 
 ![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
 
@@ -69,8 +69,8 @@ SAS 키 값을 가져오려면 **RootManageSharedAccessKey**&#x200B;을(를) 클
 |---|---|---|
 | sasKeyName | SAS 키 이름 | RootManageSharedAccessKey |
 | sasKey | SAS 키 값 | srREx9ShJG1Rv7f/... |
-| 네임스페이스 | 이벤트 허브 네임스페이스 | `--demoProfileLdap---aep-enablement` |
-| 이벤트 허브 이름 | 이벤트 허브 | `--demoProfileLdap---aep-enablement-event-hub` |
+| 네임스페이스 | 이벤트 허브 네임스페이스 | `--aepUserLdap---aep-enablement` |
+| 이벤트 허브 이름 | 이벤트 허브 | `--aepUserLdap---aep-enablement-event-hub` |
 
 ## 2.4.2.2 Adobe Experience Platform에서 Azure Event Hub 대상 만들기
 
@@ -80,7 +80,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxId--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -100,7 +100,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![2-09-destination-values.png](./images/2-09-destination-valuesa.png)
 
-이제 `--demoProfileLdap---aep-enablement` 형식으로 이름과 설명을 입력해야 합니다. **eventHubName**&#x200B;을(를) 입력하고(이전 연습 참조, `--demoProfileLdap---aep-enablement-event-hub` 모양) **다음**&#x200B;을(를) 클릭합니다.
+이제 `--aepUserLdap---aep-enablement` 형식으로 이름과 설명을 입력해야 합니다. **eventHubName**&#x200B;을(를) 입력하고(이전 연습 참조, `--aepUserLdap---aep-enablement-event-hub` 모양) **다음**&#x200B;을(를) 클릭합니다.
 
 ![2-10-create-destination.png](./images/2-10-create-destination.png)
 

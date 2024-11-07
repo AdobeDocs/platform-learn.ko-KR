@@ -3,7 +3,7 @@ title: 기초 - 데이터 수집 - 데이터 세트 구성
 description: 기초 - 데이터 수집 - 데이터 세트 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 7%
@@ -53,7 +53,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 ![데이터 수집](./images/datasetfromschema.png)
 
-다음 화면에서는 1, `--demoProfileLdap-- - Demo System - Profile Schema for Website`에서 만든 스키마를 선택해야 합니다.
+다음 화면에서는 1, `--aepUserLdap-- - Demo System - Profile Schema for Website`에서 만든 스키마를 선택해야 합니다.
 
 ![데이터 수집](./images/schemaselection.png)
 
@@ -65,7 +65,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 데이터 세트의 이름으로 다음을 사용하십시오.
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
+`--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
 예를 들어 ldap **[!UICONTROL vangeluw]**&#x200B;의 경우 스키마 이름이어야 합니다.
 
@@ -101,7 +101,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 ![데이터 수집](./images/datasetfromschema.png)
 
-다음 화면에서는 2.2, `--demoProfileLdap-- - Demo System - Event Schema for Website`에서 만든 스키마를 선택해야 합니다.
+다음 화면에서는 2.2, `--aepUserLdap-- - Demo System - Event Schema for Website`에서 만든 스키마를 선택해야 합니다.
 
 ![데이터 수집](./images/schemaselectionee.png)
 
@@ -113,7 +113,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 데이터 세트의 이름으로 다음을 사용합니다.
 
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+`--aepUserLdap-- - Demo System - Event Dataset for Website`
 
 예를 들어 ldap **[!UICONTROL vangeluw]**&#x200B;의 경우 스키마 이름이어야 합니다.
 
@@ -137,7 +137,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 이제 데이터 세트가 Adobe Experience Platform의 실시간 고객 프로필에 포함되도록 활성화해야 합니다.
 
-데이터 세트 `--demoProfileLdap--` - 데모 시스템 - 웹 사이트용 프로필 데이터 세트를 클릭하여 엽니다.
+데이터 세트 `--aepUserLdap--` - 데모 시스템 - 웹 사이트용 프로필 데이터 세트를 클릭하여 엽니다.
 
 화면 오른쪽에서 [!UICONTROL 프로필] 전환 아이콘을 찾습니다.
 
@@ -153,7 +153,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 이제 데이터 세트가 [!UICONTROL 프로필]에 대해 활성화됩니다.
 
-데이터 세트 개요로 돌아가 웹 사이트용 데이터 세트 `--demoProfileLdap-- - Demo System - Event Dataset`을(를) 클릭하여 엽니다.
+데이터 세트 개요로 돌아가 웹 사이트용 데이터 세트 `--aepUserLdap-- - Demo System - Event Dataset`을(를) 클릭하여 엽니다.
 
 화면 오른쪽에서 [!UICONTROL 프로필] 전환 아이콘을 찾습니다.
 

@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - 이메일 메시지에 개인화 적용
 description: 이 연습에서는 이메일 콘텐츠 내에서 세그먼트 개인화를 사용하는 방법을 설명합니다
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 계속하려면 *
 
 이 연습에서는 세그먼트 멤버십을 기반으로 개인화된 텍스트로 뉴스레터 이메일 메시지를 개선합니다.
 
-**여정**(으)로 이동합니다. 이전 연습에서 만든 뉴스레터 여정을 찾습니다. `--demoProfileLdap-- - Newsletter` 검색 여정을 클릭하여 엽니다.
+**여정**(으)로 이동합니다. 이전 연습에서 만든 뉴스레터 여정을 찾습니다. `--aepUserLdap-- - Newsletter` 검색 여정을 클릭하여 엽니다.
 
 ![Journey Optimizer](./images/sbp1.png)
 

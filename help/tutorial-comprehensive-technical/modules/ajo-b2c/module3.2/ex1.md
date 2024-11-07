@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 이벤트 �
 description: Adobe Journey Optimizer - 외부 날씨 API, SMS 동작 등
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ![AOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -32,7 +32,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![AOP](./images/emptyevent1.png)
 
-이벤트의 이름으로 `--demoProfileLdap--GeofenceEntry`을(를) 사용합니다. 이 예제에서 이벤트 이름은 `vangeluwGeofenceEntry`입니다.
+이벤트의 이름으로 `--aepUserLdap--GeofenceEntry`을(를) 사용합니다. 이 예제에서 이벤트 이름은 `vangeluwGeofenceEntry`입니다.
 
 설명을 `Geofence Entry Event`(으)로 설정합니다.
 

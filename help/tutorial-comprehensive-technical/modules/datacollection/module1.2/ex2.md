@@ -3,7 +3,7 @@ title: 기초 - 데이터 수집 - 스키마 구성 및 식별자 설정
 description: 기초 - 데이터 수집 - 스키마 구성 및 식별자 설정
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3645'
 ht-degree: 5%
@@ -114,7 +114,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 이제 새 [!UICONTROL 필드 그룹]에 **[!UICONTROL 표시 이름]** 및 **[!UICONTROL 설명]**&#x200B;을 제공해야 합니다.
 
 스키마의 이름으로 다음을 사용합니다.
-`--demoProfileLdap-- - Profile Identification Field Group`
+`--aepUserLdap-- - Profile Identification Field Group`
 
 예를 들어 ldap **[!UICONTROL vangeluw]**&#x200B;의 경우 스키마 이름이어야 합니다.
 
@@ -287,7 +287,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 스키마의 이름으로 다음을 사용합니다.
 
-`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 **[!UICONTROL ldap]**&#x200B;을(를) 특정 ldap로 바꿉니다. 예를 들어 ldap **[!UICONTROL vangeluw]**&#x200B;의 경우 스키마 이름이어야 합니다.
 
@@ -419,7 +419,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 필드 그룹의 이름으로 다음을 사용합니다.
 
-`--demoProfileLdap-- - ExperienceEvent Identification Field Group`
+`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
 예를 들어 ldap **[!UICONTROL vangeluw]**&#x200B;의 경우 스키마 이름이어야 합니다.
 
@@ -528,7 +528,7 @@ ECID 필드는 유형 **[!UICONTROL 문자열]**(으)로 정의되며 이 필드
 ![데이터 수집](./images/schemaname1ee.png)
 
 스키마의 이름으로 다음을 사용합니다.
-`--demoProfileLdap-- - Demo System - Event Schema for Website`
+`--aepUserLdap-- - Demo System - Event Schema for Website`
 
 예를 들어 ldap **[!UICONTROL vangeluw]**&#x200B;의 경우 스키마 이름이어야 합니다.
 

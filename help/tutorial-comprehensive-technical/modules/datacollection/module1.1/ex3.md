@@ -3,7 +3,7 @@ title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 �
 description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform 데이터 수집 소개
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 9%
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 ![속성 페이지](./images/launch1.png)
 
-모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--demoProfileLdap--`을(를) 검색하여 찾으십시오.
+모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오.
 
 ![검색 상자](./images/property6.png)
 
@@ -44,7 +44,7 @@ Adobe Experience Platform 웹 SDK를 시작합니다! [연습 0.2](./../../../mo
 
 ![확장 홈](./images/property9edgedomain.png)
 
-이제 **[!UICONTROL 데이터스트림]** 제목 아래에서 **[!UICONTROL 목록에서 선택]** 라디오 단추가 선택되어 있는지 확인하고 **[!UICONTROL 데이터스트림]** 상자의 목록에서 이름이 `--demoProfileLdap-- - Demo System Datastream`인 데이터스트림을 선택하십시오.
+이제 **[!UICONTROL 데이터스트림]** 제목 아래에서 **[!UICONTROL 목록에서 선택]** 라디오 단추가 선택되어 있는지 확인하고 **[!UICONTROL 데이터스트림]** 상자의 목록에서 이름이 `--aepUserLdap-- - Demo System Datastream`인 데이터스트림을 선택하십시오.
 
 ![확장 홈](./images/property9edge.png)
 

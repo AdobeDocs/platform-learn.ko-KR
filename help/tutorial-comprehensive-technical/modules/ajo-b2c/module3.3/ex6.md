@@ -3,7 +3,7 @@ title: Offer decisioning - API를 사용하여 의사 결정 테스트
 description: API를 사용하여 의사 결정 테스트
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Postman을 엽니다. **[!UICONTROL 가져오기]**&#x200B;를 클릭합니다.
 
 - 속성: `_instance.parentName==aepenablementfy22`
 
-이 매개 변수에서 **[!UICONTROL aepenablementfy22]**&#x200B;은 Adobe Experience Platform에서 사용되는 샌드박스 이름입니다. 사용해야 하는 샌드박스는 `--aepSandboxId--`입니다. **[!UICONTROL aepenablementfy22]** 텍스트를 `--aepSandboxId--`(으)로 바꿉니다.
+이 매개 변수에서 **[!UICONTROL aepenablementfy22]**&#x200B;은 Adobe Experience Platform에서 사용되는 샌드박스 이름입니다. 사용해야 하는 샌드박스는 `--aepSandboxName--`입니다. **[!UICONTROL aepenablementfy22]** 텍스트를 `--aepSandboxName--`(으)로 바꿉니다.
 
 샌드박스 이름을 바꾼 후 **[!UICONTROL 보내기]**&#x200B;를 클릭합니다.
 

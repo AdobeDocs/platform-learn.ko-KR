@@ -3,7 +3,7 @@ title: Offer decisioning - 의사 결정 테스트
 description: Offer decisioning - 의사 결정 테스트
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 ## 3.3.3.1 데이터스트림 업데이트
 
-[연습 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 고유한 **[!UICONTROL 데이터스트림]**&#x200B;을 만들었습니다. 그런 다음 `--demoProfileLdap-- - Demo System Datastream` 이름을 사용했습니다.
+[연습 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 고유한 **[!UICONTROL 데이터스트림]**&#x200B;을 만들었습니다. 그런 다음 `--aepUserLdap-- - Demo System Datastream` 이름을 사용했습니다.
 
 이 연습에서는 **[!DNL Offer Decisioning]**&#x200B;에서 작동하도록 해당 **[!UICONTROL 데이터 스트림]**&#x200B;을 구성해야 합니다.
 
 이렇게 하려면 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동하십시오. 그러면 이걸 보게 될 거야. **[!UICONTROL 데이터스트림]** 또는 **[!UICONTROL 데이터스트림(Beta)]**&#x200B;을 클릭합니다.
 
-화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxId--`이어야 합니다.
+화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxName--`이어야 합니다.
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1b.png)
 
-이름이 `--demoProfileLdap-- - Demo System Datastream`인 **[!UICONTROL 데이터스트림]**&#x200B;을 검색합니다. **[!UICONTROL 데이터 스트림]**&#x200B;을 클릭하여 엽니다.
+이름이 `--aepUserLdap-- - Demo System Datastream`인 **[!UICONTROL 데이터스트림]**&#x200B;을 검색합니다. **[!UICONTROL 데이터 스트림]**&#x200B;을 클릭하여 엽니다.
 
 ![WebSDK](./images/websdk1.png)
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 3.3.3.2 개인화된 오퍼를 요청하도록 Adobe Experience Platform 데이터 수집 클라이언트 속성 구성
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동한 다음 **[!UICONTROL 클라이언트]**(으)로 이동합니다. 이름이 `--demoProfileLdap-- - Demo System (DD/MM/YYYY)`인 데이터 수집 속성을 검색합니다. 웹용 데이터 수집 클라이언트 속성을 엽니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동한 다음 **[!UICONTROL 클라이언트]**(으)로 이동합니다. 이름이 `--aepUserLdap-- - Demo System (DD/MM/YYYY)`인 데이터 수집 속성을 검색합니다. 웹용 데이터 수집 클라이언트 속성을 엽니다.
 
 ![WebSDK](./images/launch1.png)
 
@@ -79,7 +79,7 @@ Edge 및 Adobe Experience Platform으로 전송된 모든 요청에 대해 하�
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -91,15 +91,15 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ### 3.3.3.2.2 [!UICONTROL 결정 ID] 검색
 
-[!UICONTROL 결정 ID]은(는) 사용할 개인화된 오퍼와 대체 오퍼의 조합을 식별합니다. 이전 연습에서는 자신의 [!UICONTROL 결정]을 만들고 이름을 `--demoProfileLdap-- - Luma Decision`로 지정했습니다.
+[!UICONTROL 결정 ID]은(는) 사용할 개인화된 오퍼와 대체 오퍼의 조합을 식별합니다. 이전 연습에서는 자신의 [!UICONTROL 결정]을 만들고 이름을 `--aepUserLdap-- - Luma Decision`로 지정했습니다.
 
-`--demoProfileLdap-- - Luma Decision`의 [!UICONTROL 결정 ID]을(를) 찾으려면 [https://platform.adobe.com](https://platform.adobe.com)(으)로 이동하세요.
+`--aepUserLdap-- - Luma Decision`의 [!UICONTROL 결정 ID]을(를) 찾으려면 [https://platform.adobe.com](https://platform.adobe.com)(으)로 이동하세요.
 
-그런 다음 [!UICONTROL 오퍼](으)로 이동한 다음 [!UICONTROL 결정](으)로 이동합니다. [!UICONTROL 결정](이름: `--demoProfileLdap-- - Luma Decision`)을 클릭하여 선택합니다.
+그런 다음 [!UICONTROL 오퍼](으)로 이동한 다음 [!UICONTROL 결정](으)로 이동합니다. [!UICONTROL 결정](이름: `--aepUserLdap-- - Luma Decision`)을 클릭하여 선택합니다.
 
 ![WebSDK](./images/launch7.png)
 
-위의 이미지에서 볼 수 있듯이 이 예제에서는 [!UICONTROL 결정 ID]이(가) `xcore:offer-activity:14c052382e1b6505`입니다. 결정 `--demoProfileLdap-- - Luma Decision`에 대한 [!UICONTROL 결정 ID]을(를) 다음 연습에서 필요할 때 적어 두십시오.
+위의 이미지에서 볼 수 있듯이 이 예제에서는 [!UICONTROL 결정 ID]이(가) `xcore:offer-activity:14c052382e1b6505`입니다. 결정 `--aepUserLdap-- - Luma Decision`에 대한 [!UICONTROL 결정 ID]을(를) 다음 연습에서 필요할 때 적어 두십시오.
 
 **[!UICONTROL 결정 범위]**&#x200B;를 만드는 데 필요한 두 요소를 검색했으므로 결정 범위 인코딩이 포함된 다음 단계를 계속할 수 있습니다.
 
@@ -120,11 +120,11 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
   ![WebSDK](./images/launch8.png)
 
-- Adobe Experience Platform에서 BASE64 인코딩 문자열을 검색합니다. [!UICONTROL 결정](으)로 이동한 다음 클릭하여 [!UICONTROL 결정](이름: `--demoProfileLdap-- - Luma Decision`)을 엽니다.
+- Adobe Experience Platform에서 BASE64 인코딩 문자열을 검색합니다. [!UICONTROL 결정](으)로 이동한 다음 클릭하여 [!UICONTROL 결정](이름: `--aepUserLdap-- - Luma Decision`)을 엽니다.
 
   ![WebSDK](./images/launch9.png)
 
-  `--demoProfileLdap-- - Luma Decision`을(를) 열면 이 메시지가 표시됩니다. [!UICONTROL 웹 - 이미지] 배치를 찾은 다음 **[!UICONTROL 복사]** 단추를 클릭합니다. **[!UICONTROL 인코딩된 결정 범위]**&#x200B;를 클릭합니다. **[!UICONTROL 결정 범위]**&#x200B;가 이제 클립보드에 복사되었습니다.
+  `--aepUserLdap-- - Luma Decision`을(를) 열면 이 메시지가 표시됩니다. [!UICONTROL 웹 - 이미지] 배치를 찾은 다음 **[!UICONTROL 복사]** 단추를 클릭합니다. **[!UICONTROL 인코딩된 결정 범위]**&#x200B;를 클릭합니다. **[!UICONTROL 결정 범위]**&#x200B;가 이제 클립보드에 복사되었습니다.
 
   ![WebSDK](./images/launch10.png)
 
@@ -152,7 +152,7 @@ Adobe Experience Platform 데이터 수집에서 **[!UICONTROL 게시 흐름]**(
 
 ## 3.3.3.3 개인화된 오퍼를 받고 적용하도록 Adobe Experience Platform 데이터 수집 클라이언트 속성 구성
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), **[!UICONTROL 속성]**(으)로 이동합니다. 이름이 `--demoProfileLdap-- - Demo System (DD/MM/YYYY)`인 데이터 수집 속성을 검색합니다. 웹용 데이터 수집 속성을 엽니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), **[!UICONTROL 속성]**(으)로 이동합니다. 이름이 `--aepUserLdap-- - Demo System (DD/MM/YYYY)`인 데이터 수집 속성을 검색합니다. 웹용 데이터 수집 속성을 엽니다.
 
 ![WebSDK](./images/launch1.png)
 

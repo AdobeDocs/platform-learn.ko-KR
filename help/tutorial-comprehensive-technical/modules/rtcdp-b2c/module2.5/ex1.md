@@ -3,7 +3,7 @@ title: Adobe Experience Platform 데이터 수집 및 실시간 이벤트 전달
 description: Adobe Experience Platform 데이터 수집 이벤트 전달 속성 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -34,7 +34,7 @@ Adobe Experience Platform 데이터 수집 이벤트 전달 속성을 구성하�
 
 ![Adobe Experience Platform 데이터 수집 SSF](./images/launchhome.png)
 
-이제 Adobe Experience Platform 데이터 수집 이벤트 전달 속성의 이름을 입력해야 합니다. 명명 규칙으로 `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`을(를) 사용합니다. 예를 들어, 이 예제에서 이름은 **vangeluw - Demo System(22/02/2022)(Edge)**&#x200B;입니다. **저장**&#x200B;을 클릭합니다.
+이제 Adobe Experience Platform 데이터 수집 이벤트 전달 속성의 이름을 입력해야 합니다. 명명 규칙으로 `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`을(를) 사용합니다. 예를 들어, 이 예제에서 이름은 **vangeluw - Demo System(22/02/2022)(Edge)**&#x200B;입니다. **저장**&#x200B;을 클릭합니다.
 
 ![Adobe Experience Platform 데이터 수집 SSF](./images/ssf1.png)
 

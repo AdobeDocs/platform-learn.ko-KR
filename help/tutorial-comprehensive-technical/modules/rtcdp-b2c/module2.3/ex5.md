@@ -3,7 +3,7 @@ title: Real-Time CDP - 세그먼트 작성 및 작업 수행 - 세그먼트를 A
 description: Real-Time CDP - 세그먼트 작성 및 작업 수행 - 세그먼트를 Adobe Target에 전송
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 2%
@@ -16,23 +16,23 @@ ht-degree: 2%
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxId--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 ## 2.3.5.1 데이터 스트림 확인
 
-Real-Time CDP의 Adobe Target 대상은 데이터를 Adobe 에지 네트워크로 수집하는 데 사용되는 데이터 스트림에 연결됩니다. Adobe Target 대상을 설정하려면 먼저 데이터 스트림이 Adobe Target에 대해 이미 활성화되어 있는지 확인해야 합니다. 데이터 스트림이 [연습 0.2 데이터 스트림 만들기](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 구성되었으며 이름이 `--demoProfileLdap-- - Demo System Datastream`입니다.
+Real-Time CDP의 Adobe Target 대상은 데이터를 Adobe 에지 네트워크로 수집하는 데 사용되는 데이터 스트림에 연결됩니다. Adobe Target 대상을 설정하려면 먼저 데이터 스트림이 Adobe Target에 대해 이미 활성화되어 있는지 확인해야 합니다. 데이터 스트림이 [연습 0.2 데이터 스트림 만들기](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 구성되었으며 이름이 `--aepUserLdap-- - Demo System Datastream`입니다.
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동한 다음 **데이터스트림** 또는 **데이터스트림(Beta)**&#x200B;을 클릭합니다.
 
 ![데이터 수집](./images/atdestds1.png)
 
-화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxId--`이어야 합니다.
+화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxName--`이어야 합니다.
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1b.png)
 
-데이터스트림에서 이름이 `--demoProfileLdap-- - Demo System Datastream`인 데이터스트림을 검색합니다. 데이터 스트림을 클릭하여 엽니다.
+데이터스트림에서 이름이 `--aepUserLdap-- - Demo System Datastream`인 데이터스트림을 검색합니다. 데이터 스트림을 클릭하여 엽니다.
 
 ![데이터 수집](./images/atdestds3.png)
 
@@ -76,8 +76,8 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 **새 대상 구성** 화면에서 다음 두 가지를 구성해야 합니다.
 
-- 이름: **vangeluw - Adobe Target(웹)**&#x200B;과(와) 같은 이름 `--demoProfileLdap-- - Adobe Target (Web)`을(를) 사용합니다.
-- 데이터 스트림 ID: [연습 0.2 데이터 스트림 만들기](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 구성한 데이터 스트림을 선택해야 합니다. 데이터 스트림의 이름은 `--demoProfileLdap-- - Demo System Datastream`이어야 합니다.
+- 이름: **vangeluw - Adobe Target(웹)**&#x200B;과(와) 같은 이름 `--aepUserLdap-- - Adobe Target (Web)`을(를) 사용합니다.
+- 데이터 스트림 ID: [연습 0.2 데이터 스트림 만들기](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 구성한 데이터 스트림을 선택해야 합니다. 데이터 스트림의 이름은 `--aepUserLdap-- - Demo System Datastream`이어야 합니다.
 
 **다음**&#x200B;을 클릭합니다.
 
@@ -91,7 +91,7 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 ![시간](./images/atdest7.png)
 
-사용 가능한 세그먼트 목록에서 [연습 6.1 세그먼트 만들기](./ex1.md)에서 만든 세그먼트를 선택합니다. 이름은 `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`입니다. 그런 다음 **다음**&#x200B;을 클릭합니다.
+사용 가능한 세그먼트 목록에서 [연습 6.1 세그먼트 만들기](./ex1.md)에서 만든 세그먼트를 선택합니다. 이름은 `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`입니다. 그런 다음 **다음**&#x200B;을 클릭합니다.
 
 ![시간](./images/atdest8.png)
 
@@ -177,7 +177,7 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 이름은 다음을 사용하십시오.
 
-- `--demoProfileLdap-- - RTCDP - XT (Form)`
+- `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![RTCDP](./images/atform8.png)
 

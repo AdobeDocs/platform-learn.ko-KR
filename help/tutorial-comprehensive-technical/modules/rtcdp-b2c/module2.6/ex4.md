@@ -3,7 +3,7 @@ title: Kafka Connect 및 Adobe Experience Platform 싱크 커넥터 설치 및 �
 description: Kafka Connect 및 Adobe Experience Platform 싱크 커넥터 설치 및 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -231,7 +231,7 @@ GET 그런 다음 Kafka 컬렉션에서 세 번째 요청인 **Kafka Connect 커
 
 그러면 이걸 보게 될 거야. 다음 2개의 필드를 수동으로 업데이트해야 합니다.
 
-- **_id**: `--demoProfileLdap--1234`과(와) 같은 임의의 id로 설정하십시오.
+- **_id**: `--aepUserLdap--1234`과(와) 같은 임의의 id로 설정하십시오.
 - **타임스탬프**: 현재 날짜 및 시간으로 타임스탬프를 업데이트합니다.
 - **전화 번호**: 데모 웹 사이트에서 방금 만든 계정의 전화 번호를 입력합니다. 프로필 뷰어 패널의 **ID**&#x200B;에서 찾을 수 있습니다.
 

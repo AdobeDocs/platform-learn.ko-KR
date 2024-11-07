@@ -3,7 +3,7 @@ title: 지능형 서비스 - Customer AI 새 인스턴스 만들기(구성)
 description: Customer AI - 새 인스턴스 만들기(구성)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Adobe Experience Platform의 왼쪽 메뉴에서 **서비스**&#x200B;를 클릭
 
 고객 AI 인스턴스에 대한 필수 세부 정보를 입력합니다.
 
-- 이름: `--demoProfileLdap-- Product Purchase Propensity` 사용
+- 이름: `--aepUserLdap-- Product Purchase Propensity` 사용
 - 설명: 사용: **고객이 제품을 구매할 가능성 예측**
 - 성향 유형: **전환** 선택
 

@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Customer Journey Analytics에서 Adobe Exper
 description: Customer Journey Analytics - Customer Journey Analytics에서 Adobe Experience Platform 데이터 세트 연결
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 이제 연결에 이름을 지정할 수 있습니다.
 
-명명 규칙 `--demoProfileLdap-- – Omnichannel Data Connection`을(를) 사용하십시오.
+명명 규칙 `--aepUserLdap-- – Omnichannel Data Connection`을(를) 사용하십시오.
 
 예: `vangeluw - Omnichannel Data Connection`
 

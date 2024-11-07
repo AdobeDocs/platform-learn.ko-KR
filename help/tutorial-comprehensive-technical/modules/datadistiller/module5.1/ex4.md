@@ -3,7 +3,7 @@ title: 쿼리 서비스 - Power BI/타블로
 description: 쿼리 서비스 - Power BI/타블로
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -62,7 +62,7 @@ Adobe Experience Platform UI로 이동 - [https://experience.adobe.com/platform]
 
 ![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-`--demoProfileLdap-- Callcenter Interaction Analysis`을(를) 데이터 집합의 이름과 설명으로 입력하고 **쿼리 실행** 단추를 누릅니다.
+`--aepUserLdap-- Callcenter Interaction Analysis`을(를) 데이터 집합의 이름과 설명으로 입력하고 **쿼리 실행** 단추를 누릅니다.
 
 ![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 

@@ -3,7 +3,7 @@ title: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서
 description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석 - BigQuery에서 첫 번째 쿼리를 만듭니다.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Google Analytics 데이터가 BigQuery에 있으면 차원, 지표 및 기타 �
 
 | 이름 지정 | 예 |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
 
 ![데모](./images/ex3/6.png)
 
@@ -254,19 +254,19 @@ GROUP BY
 
 | 이름 지정 | 예 |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
 
 이제 테이블 이름을 입력해야 합니다. 이 명명 규칙을 사용하십시오.
 
 | 이름 지정 | 예 |
 | ----------------- |------------- | 
-| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 ![데모](./images/ex3/16.png)
 
 **저장**&#x200B;을 클릭합니다.
 
-생성한 테이블에서 데이터가 준비되기까지 시간이 걸릴 수 있습니다. 몇 분 후에 브라우저를 새로 고칩니다. 그러면 데이터 세트 내에서 BigQuery 프로젝트 내의 **탐색기** 아래에 `--demoProfileLdap--_GAdataTableBigquery` 테이블이 표시됩니다.
+생성한 테이블에서 데이터가 준비되기까지 시간이 걸릴 수 있습니다. 몇 분 후에 브라우저를 새로 고칩니다. 그러면 데이터 세트 내에서 BigQuery 프로젝트 내의 **탐색기** 아래에 `--aepUserLdap--_GAdataTableBigquery` 테이블이 표시됩니다.
 
 ![데모](./images/ex3/19.png)
 

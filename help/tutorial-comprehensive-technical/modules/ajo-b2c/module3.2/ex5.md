@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 오케스�
 description: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 오케스트레이션된 고객 여정 트리거
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ![속성 페이지](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--demoProfileLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
+모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
 
 ![검색 상자](./../../../modules/datacollection/module1.1/images/property6.png)
 

@@ -3,7 +3,7 @@ title: 시작하기 - 데이터 스트림 만들기
 description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1a.png)
 
-화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxId--`이어야 합니다.
+화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxName--`이어야 합니다.
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1b.png)
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1.png)
 
-**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--demoProfileLdap-- - Demo System Datastream`을(를) 입력하십시오. 이벤트 스키마의 경우 **데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)**&#x200B;를 선택합니다. **저장**&#x200B;을 클릭합니다.
+**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - Demo System Datastream`을(를) 입력하십시오. 이벤트 스키마의 경우 **데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)**&#x200B;를 선택합니다. **저장**&#x200B;을 클릭합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig2.png)
 
@@ -72,7 +72,7 @@ Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합�
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig13.png)
 
-**데이터 스트림**&#x200B;을(를) 선택했는지 확인하십시오. 팁: `--demoProfileLdap--`을(를) 입력하여 드롭다운에서 결과를 쉽게 필터링할 수 있습니다.
+**데이터 스트림**&#x200B;을(를) 선택했는지 확인하십시오. 팁: `--aepUserLdap--`을(를) 입력하여 드롭다운에서 결과를 쉽게 필터링할 수 있습니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig14.png)
 
@@ -102,7 +102,7 @@ Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합�
 
 ![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1a.png)
 
-화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxId--`이어야 합니다.
+화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxName--`이어야 합니다.
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1b.png)
 
@@ -110,7 +110,7 @@ Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합�
 
 ![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1.png)
 
-**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--demoProfileLdap-- - Demo System Datastream (Mobile)`을(를) 입력하십시오. 이벤트 스키마의 경우 **데모 시스템 - 모바일 앱용 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
+**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - Demo System Datastream (Mobile)`을(를) 입력하십시오. 이벤트 스키마의 경우 **데모 시스템 - 모바일 앱용 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
 
 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -144,7 +144,7 @@ Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합�
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12m.png)
 
-그러면 이걸 보게 될 거야. 이제 방금 구성한 올바른 샌드박스 및 데이터 스트림을 선택해야 합니다. 사용할 샌드박스는 `--aepSandboxId--`이고 데이터 스트림은 `--demoProfileLdap-- - Demo System Datastream (Mobile)`입니다.
+그러면 이걸 보게 될 거야. 이제 방금 구성한 올바른 샌드박스 및 데이터 스트림을 선택해야 합니다. 사용할 샌드박스는 `--aepSandboxName--`이고 데이터 스트림은 `--aepUserLdap-- - Demo System Datastream (Mobile)`입니다.
 
 **Edge Network 도메인**&#x200B;의 경우 기본 도메인인 **edge.adobedc.net**&#x200B;을(를) 사용하십시오.
 

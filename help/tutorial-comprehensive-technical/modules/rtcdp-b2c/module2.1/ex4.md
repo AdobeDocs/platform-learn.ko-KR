@@ -3,7 +3,7 @@ title: 기초 - 실시간 고객 프로필 - 세그먼트 만들기 - UI
 description: 기초 - 실시간 고객 프로필 - 세그먼트 만들기 - UI
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxId--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -108,7 +108,7 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 
 명명 규칙으로 다음을 사용합니다.
 
-- `--demoProfileLdap-- - Male customers with interest in Montana Wind Jacket`
+- `--aepUserLdap-- - Male customers with interest in Montana Wind Jacket`
 
 ![세그먼테이션](./images/segmentname.png)
 

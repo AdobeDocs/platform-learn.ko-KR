@@ -3,7 +3,7 @@ title: Real-Time CDP - 대상 SDK
 description: Real-Time CDP - 대상 SDK
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2386'
 ht-degree: 2%
@@ -122,10 +122,10 @@ ht-degree: 2%
 
 ![새 통합 Adobe I/O](../module2.1/images/api14.png)
 
-통합에 사용할 이름과 설명을 입력합니다. 명명 규칙으로 `AEP API --demoProfileLdap--`을(를) 사용합니다. ldap를 ldap로 바꿉니다.
+통합에 사용할 이름과 설명을 입력합니다. 명명 규칙으로 `AEP API --aepUserLdap--`을(를) 사용합니다. ldap를 ldap로 바꿉니다.
 예를 들어 ldap가 vangeluw인 경우 통합의 이름과 설명은 AEP API vangeluw가 됩니다.
 
-`AEP API --demoProfileLdap--`을(를) **프로젝트 제목**(으)로 입력하십시오. **저장**&#x200B;을 클릭합니다.
+`AEP API --aepUserLdap--`을(를) **프로젝트 제목**(으)로 입력하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![새 통합 Adobe I/O](../module2.1/images/api15.png)
 
@@ -285,11 +285,11 @@ Adobe I/O에서 특정 값(매우 긴 access_token)과 만료 창이 있는 **�
 
 Adobe Experience Platform에서 고유한 대상을 만드는 첫 번째 단계는 서버 및 템플릿 구성을 만드는 것입니다.
 
-이렇게 하려면 **대상 작성 API**, **대상 서버 및 템플릿**(으)로 이동한 다음 클릭하여 요청 **POST - 대상 서버 구성 만들기**&#x200B;를 엽니다. 그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxId--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하십시오.
+이렇게 하려면 **대상 작성 API**, **대상 서버 및 템플릿**(으)로 이동한 다음 클릭하여 요청 **POST - 대상 서버 구성 만들기**&#x200B;를 엽니다. 그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxName--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하십시오.
 
 ![데이터 수집](./images/sdkpm1.png)
 
-`--aepSandboxId--`(으)로 바꾸기
+`--aepSandboxName--`(으)로 바꾸기
 
 ![데이터 수집](./images/sdkpm2.png)
 
@@ -335,11 +335,11 @@ Adobe Experience Platform에서 고유한 대상을 만드는 첫 번째 단계�
 
 ## 2.3.7.5 대상 구성 만들기
 
-Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동한 다음 클릭하여 **POST - 대상 구성 만들기** 요청을 엽니다. 그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxId--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하십시오.
+Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동한 다음 클릭하여 **POST - 대상 구성 만들기** 요청을 엽니다. 그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxName--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하십시오.
 
 ![데이터 수집](./images/sdkpm7.png)
 
-`--aepSandboxId--`(으)로 바꾸기
+`--aepSandboxName--`(으)로 바꾸기
 
 ![데이터 수집](./images/sdkpm8.png)
 
@@ -351,7 +351,7 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ```json
 {
-    "name": "--demoProfileLdap-- - Webhook",
+    "name": "--aepUserLdap-- - Webhook",
     "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
     "status": "TEST",
     "customerAuthenticationConfigurations": [
@@ -428,7 +428,7 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxId--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -446,7 +446,7 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![데이터 수집](./images/destsdk3.png)
 
-그러면 이걸 보게 될 거야. 대상의 이름으로 `--demoProfileLdap-- - Webhook`을(를) 사용합니다. 이 예제 **EU**&#x200B;에서 선택한 끝점을 선택하십시오. **다음**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. 대상의 이름으로 `--aepUserLdap-- - Webhook`을(를) 사용합니다. 이 예제 **EU**&#x200B;에서 선택한 끝점을 선택하십시오. **다음**&#x200B;을 클릭합니다.
 
 ![데이터 수집](./images/destsdk4.png)
 
@@ -454,7 +454,7 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![데이터 수집](./images/destsdk5.png)
 
-이전에 만든 세그먼트(이름: `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`)를 선택하십시오. **다음**&#x200B;을 클릭합니다.
+이전에 만든 세그먼트(이름: `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`)를 선택하십시오. **다음**&#x200B;을 클릭합니다.
 
 ![데이터 수집](./images/destsdk6.png)
 

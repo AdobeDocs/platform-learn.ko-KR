@@ -3,7 +3,7 @@ title: 고객 AI - 점수 대시보드 및 세분화(예측 및 조치 수행)
 description: 고객 AI - 점수 대시보드 및 세분화(예측 및 조치 수행)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Customer AI 대시보드를 사용하면 한 번의 클릭으로 세그먼트를
 
 ![세그먼트 규칙](./images/caicreatesegment.png)
 
-`--demoProfileLdap-- - Customer AI High Propensity` 명명 규칙에 따라 세그먼트에 이름을 지정하십시오. **저장**&#x200B;을 클릭합니다.
+`--aepUserLdap-- - Customer AI High Propensity` 명명 규칙에 따라 세그먼트에 이름을 지정하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![세그먼트 규칙](./images/caicreatesegment1.png)
 

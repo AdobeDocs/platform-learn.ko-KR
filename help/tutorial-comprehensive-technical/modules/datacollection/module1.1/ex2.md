@@ -3,7 +3,7 @@ title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 �
 description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 기능(Edge Network, 데이터스트림 및 서버측 데이터 수집) 설정
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1.png)
 
-이름이 `--demoProfileLdap-- - Demo System Datastream`인 데이터 스트림을 검색합니다.
+이름이 `--aepUserLdap-- - Demo System Datastream`인 데이터 스트림을 검색합니다.
 
 ![데이터 스트림 이름 지정 및 저장](./images/edgeconfig2.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 이 데이터스트림의 경우...
 
-- 수집된 모든 데이터는 Adobe Experience Platform의 `--aepSandboxId--` 샌드박스에 저장됩니다.
+- 수집된 모든 데이터는 Adobe Experience Platform의 `--aepSandboxName--` 샌드박스에 저장됩니다.
 - 모든 경험 이벤트 데이터는 기본적으로 데이터 집합 **데모 시스템 - 웹 사이트에 대한 이벤트 데이터 집합(전역 v1.1)**&#x200B;에 수집됩니다.
 - 모든 프로필 데이터는 기본적으로 데이터 세트 **데모 시스템 - 웹 사이트에 대한 프로필 데이터 세트(전역 v1.1)**&#x200B;에 수집됩니다(기본적으로 Web SDK를 사용한 프로필 데이터 수집은 현재 Web SDK에서 지원되지 않으며 이후 단계에서 사용할 수 있게 됨).
 - 이 데이터 스트림에 **Offer decisioning** 응용 프로그램 서비스를 사용하려면 Offer decisioning 확인란을 선택해야 합니다. ([모듈 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md)의 일부가 됩니다.)

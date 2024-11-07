@@ -3,7 +3,7 @@ title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 �
 description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Target 구현
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Web SDK에서 수집한 데이터를 Adobe Target으로 전송하고 모든 고�
 
 [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/)(으)로 이동한 다음 **데이터스트림**(으)로 이동합니다.
 
-화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxId--`이어야 합니다. 이름이 `--demoProfileLdap-- - Demo System Datastream`인 특정 데이터 스트림을 엽니다.
+화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxName--`이어야 합니다. 이름이 `--aepUserLdap-- - Demo System Datastream`인 특정 데이터 스트림을 엽니다.
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1b.png)
 

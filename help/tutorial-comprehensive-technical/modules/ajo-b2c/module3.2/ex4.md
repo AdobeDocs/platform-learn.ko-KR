@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer - Adobe Journey Optimizer 내에서 SMS 채
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2300'
 ht-degree: 3%
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -40,7 +40,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 여정 이름을 지정해야 합니다.
 
-여정 이름으로 `--demoProfileLdap-- - Geofence Entry Journey`을(를) 사용합니다. 이 예제에서 여정 이름은 `vangeluw - Geofence Entry Journey`입니다. 지금은 다른 값을 설정할 수 없습니다. **확인**&#x200B;을 클릭합니다.
+여정 이름으로 `--aepUserLdap-- - Geofence Entry Journey`을(를) 사용합니다. 이 예제에서 여정 이름은 `vangeluw - Geofence Entry Journey`입니다. 지금은 다른 값을 설정할 수 없습니다. **확인**&#x200B;을 클릭합니다.
 
 ![데모](./images/joname.png)
 
@@ -76,7 +76,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 아래 코드를 선택하여 **고급 편집기**&#x200B;에 붙여 넣으십시오.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 10`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 10`
 
 그러면 이걸 보게 될 거야.
 
@@ -93,7 +93,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![데모](./images/jo12.png)
 
-`--demoProfileLdap--GeofenceEntry.placeContext.geo.city`(으)로 이동하여 필드를 찾을 수 있습니다.
+`--aepUserLdap--GeofenceEntry.placeContext.geo.city`(으)로 이동하여 필드를 찾을 수 있습니다.
 
 해당 필드를 클릭하면 `q` 매개 변수의 동적 값으로 추가됩니다. 이 필드는 예를 들어 모바일 앱에서 구현한 지리적 위치 서비스로 채워집니다. 이 예제에서는 데모 웹 사이트의 Admin Console을 사용하여 시뮬레이션합니다. **확인**&#x200B;을 클릭합니다.
 
@@ -119,7 +119,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 아래 코드를 선택하여 **고급 편집기**&#x200B;에 붙여 넣으십시오.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 10 and #{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 10 and #{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 25`
 
 그러면 이걸 보게 될 거야.
 
@@ -136,7 +136,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![데모](./images/jo12.png)
 
-`--demoProfileLdap--GeofenceEntry.placeContext.geo.city`(으)로 이동하여 필드를 찾을 수 있습니다. 해당 필드를 클릭하면 매개 변수 **q**&#x200B;에 대한 동적 값으로 추가됩니다. 이 필드는 예를 들어 모바일 앱에서 구현한 지리적 위치 서비스로 채워집니다. 이 예제에서는 데모 웹 사이트의 Admin Console을 사용하여 시뮬레이션합니다. **확인**&#x200B;을 클릭합니다.
+`--aepUserLdap--GeofenceEntry.placeContext.geo.city`(으)로 이동하여 필드를 찾을 수 있습니다. 해당 필드를 클릭하면 매개 변수 **q**&#x200B;에 대한 동적 값으로 추가됩니다. 이 필드는 예를 들어 모바일 앱에서 구현한 지리적 위치 서비스로 채워집니다. 이 예제에서는 데모 웹 사이트의 Admin Console을 사용하여 시뮬레이션합니다. **확인**&#x200B;을 클릭합니다.
 
 ![데모](./images/jo13.png)
 
@@ -163,7 +163,7 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 아래 코드를 선택하여 **고급 편집기**&#x200B;에 붙여 넣으십시오.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 25`
 
 그러면 이걸 보게 될 거야.
 
@@ -180,7 +180,7 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![데모](./images/jo12.png)
 
-```--demoProfileLdap--GeofenceEntry.placeContext.geo.city```(으)로 이동하여 필드를 찾을 수 있습니다. 해당 필드를 클릭하면 매개 변수 **q**&#x200B;에 대한 동적 값으로 추가됩니다. 이 필드는 예를 들어 모바일 앱에서 구현한 지리적 위치 서비스로 채워집니다. 이 예제에서는 데모 웹 사이트의 Admin Console을 사용하여 시뮬레이션합니다. **확인**&#x200B;을 클릭합니다.
+```--aepUserLdap--GeofenceEntry.placeContext.geo.city```(으)로 이동하여 필드를 찾을 수 있습니다. 해당 필드를 클릭하면 매개 변수 **q**&#x200B;에 대한 동적 값으로 추가됩니다. 이 필드는 예를 들어 모바일 앱에서 구현한 지리적 위치 서비스로 채워집니다. 이 예제에서는 데모 웹 사이트의 Admin Console을 사용하여 시뮬레이션합니다. **확인**&#x200B;을 클릭합니다.
 
 ![데모](./images/jo13.png)
 
@@ -254,7 +254,7 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![Journey Optimizer](./images/sms4b.png)
 
-왼쪽 메뉴에서 **작업**(으)로 돌아가서 `--demoProfileLdap--TextSlack` 작업을 선택한 다음 **메시지** 작업 뒤에 끌어다 놓습니다.
+왼쪽 메뉴에서 **작업**(으)로 돌아가서 `--aepUserLdap--TextSlack` 작업을 선택한 다음 **메시지** 작업 뒤에 끌어다 놓습니다.
 
 ![데모](./images/joa18.png)
 
@@ -342,7 +342,7 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![데모](./images/jop17.png)
 
-왼쪽 메뉴에서 **작업**(으)로 돌아가서 `--demoProfileLdap--TextSlack` 작업을 선택한 다음 **메시지** 작업 뒤에 끌어다 놓습니다.
+왼쪽 메뉴에서 **작업**(으)로 돌아가서 `--aepUserLdap--TextSlack` 작업을 선택한 다음 **메시지** 작업 뒤에 끌어다 놓습니다.
 
 ![데모](./images/jop18.png)
 
@@ -430,7 +430,7 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![데모](./images/jod17.png)
 
-왼쪽 메뉴에서 **작업**(으)로 돌아가서 `--demoProfileLdap--TextSlack` 작업을 선택한 다음 **메시지** 작업 뒤에 끌어다 놓습니다.
+왼쪽 메뉴에서 **작업**(으)로 돌아가서 `--aepUserLdap--TextSlack` 작업을 선택한 다음 **메시지** 작업 뒤에 끌어다 놓습니다.
 
 ![데모](./images/jod18.png)
 

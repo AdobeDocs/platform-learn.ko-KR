@@ -3,7 +3,7 @@ title: 데이터 수집 및 실시간 서버측 전달 - Google 클라우드 기
 description: Google 클라우드 기능 만들기 및 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 다음과 같이 선택하십시오.
 
-- **함수 이름**: `--demoProfileLdap---event-forwarding`
+- **함수 이름**: `--aepUserLdap---event-forwarding`
 - **지역**: 지역을 선택하십시오.
 - **트리거 유형**: **HTTP** 선택
 - **인증**: **인증되지 않은 호출 허용** 선택

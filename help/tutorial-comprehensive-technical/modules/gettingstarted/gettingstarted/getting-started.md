@@ -3,10 +3,10 @@ title: 시작 - 요약
 description: 시작 - 요약
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
 
@@ -26,11 +26,6 @@ ht-degree: 1%
 - Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Adobe Experience Platform Launch 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 다음 데모 시스템에 액세스: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
-
->[!IMPORTANT]
->
->이 튜토리얼은 특정 워크숍 형식을 용이하게 하기 위해 만들어졌습니다. 액세스 권한이 없을 수 있는 특정 시스템 및 계정을 사용합니다. 접속하지 않더라도 이 매우 상세한 내용을 통해 읽으면 여전히 많은 것을 배울 수 있다고 생각한다. 워크샵 참가자로서 액세스 자격 증명이 필요한 경우 Adobe 담당자에게 연락하여 필요한 정보를 제공받으십시오.
-
 
 ## 연습
 

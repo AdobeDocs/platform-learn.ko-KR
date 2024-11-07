@@ -3,7 +3,7 @@ title: Foundation - Adobe Experience Platform 데이터 수집 및 Web SDK 확�
 description: Foundation - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform의 XDM 스키마 요구 사항
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Web SDK 및 alloy.js가 Adobe Experience Platform에 데이터를 수집할 수 
 
 ![AEP 디버거](./images/exp1.png)
 
-로그인 후 화면 상단의 파란색 선에 있는 텍스트 **프로덕션**&#x200B;을(를) 클릭하여 적절한 샌드박스를 선택합니다. 샌드박스 `--aepSandboxId--`을(를) 선택하십시오.
+로그인 후 화면 상단의 파란색 선에 있는 텍스트 **프로덕션**&#x200B;을(를) 클릭하여 적절한 샌드박스를 선택합니다. 샌드박스 `--aepSandboxName--`을(를) 선택하십시오.
 
 샌드박스를 선택하면 화면이 변경되고 이제 샌드박스에 있습니다.
 

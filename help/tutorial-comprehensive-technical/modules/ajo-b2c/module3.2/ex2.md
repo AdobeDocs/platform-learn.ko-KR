@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 외부 데�
 description: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 외부 데이터 소스 정의
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 3%
@@ -18,7 +18,7 @@ ht-degree: 3%
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxId--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxId--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -73,7 +73,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![데모](./images/emptyds.png)
 
-데이터 원본의 이름으로 `--demoProfileLdap--WeatherApi`을(를) 사용합니다. 이 예제에서 데이터 원본 이름은 `vangeluwWeatherApi `입니다.
+데이터 원본의 이름으로 `--aepUserLdap--WeatherApi`을(를) 사용합니다. 이 예제에서 데이터 원본 이름은 `vangeluwWeatherApi `입니다.
 
 설명을 `Access to the Open Weather Map`(으)로 설정합니다.
 
@@ -106,7 +106,7 @@ Weather API 설명서에 따라 매개 변수 `q=City`을(를) 보내야 합니�
 
 >[!IMPORTANT]
 >
->필드 그룹 이름은 고유해야 합니다. 이 명명 규칙을 사용하십시오. `--demoProfileLdap--WeatherByCity`. 이 경우 이름은 `vangeluwWeatherByCity`이어야 합니다.
+>필드 그룹 이름은 고유해야 합니다. 이 명명 규칙을 사용하십시오. `--aepUserLdap--WeatherByCity`. 이 경우 이름은 `vangeluwWeatherByCity`이어야 합니다.
 
 ![데모](./images/fg1.png)
 
