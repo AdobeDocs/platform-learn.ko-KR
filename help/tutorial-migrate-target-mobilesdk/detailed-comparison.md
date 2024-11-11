@@ -1,9 +1,10 @@
 ---
 title: Target 확장과 Decisioning 확장 비교
 description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 Target 확장과 Decisioning 확장 간의 차이점에 대해 알아봅니다.
-source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
+exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
+source-git-commit: 05b0146256c6f8644e42f851498a0f49ff44bf68
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '829'
 ht-degree: 1%
 
 ---
@@ -27,15 +28,22 @@ Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래
 |---|---|---|
 | 프리페치 모드 | 지원됨 | 지원됨 |
 | 실행 모드 | 지원됨 | 지원되지 않음 |
-| 사용자 지정 매개 변수 | 지원됨 | mbox당 매개 변수는 지원되지 않습니다. |
-| 시작 대상자 | 지원됨 | 지원됨 |
-| 모바일 라이프사이클 지표를 사용한 대상자 세분화 | 지원됨 | 데이터 수집 규칙을 통해 지원 |
+| 사용자 지정 매개 변수 | 지원됨 | 지원됨* |
+| 프로필 매개 변수 | 지원됨 | 지원됨* |
+| 엔티티 매개 변수 | 지원됨 | 지원됨* |
+| 타깃 대상자 | 지원됨 | 지원됨 |
+| Real-Time CDP 대상 | ??? | 지원됨 |
+| Real-Time CDP 속성 | ??? | 지원됨 |
+| 라이프사이클 지표 | 지원됨 | 데이터 수집 규칙을 통해 지원 |
 | thirdPartyId (mbox3rdPartyId) | 지원됨 | ID 맵과 데이터 스트림의 네임스페이스 구성을 통해 지원됩니다 |
 | 알림(표시, 클릭) | 지원됨 | 지원됨 |
 | 응답 토큰 | 지원됨 | 지원됨 |
-| 다이내믹 오퍼 | 지원됨 | 지원됨 |
 | Analytics for Target (A4T) | 클라이언트측 전용 | 클라이언트측 및 서버측 |
-| 모바일 미리 보기(QA 모드) | 지원됨 | 제한된 지원 |
+| 모바일 미리 보기(QA 모드) | 지원됨 | Assurance에 대한 제한된 지원 |
+
+>[!IMPORTANT]
+>
+> \* 요청에 전송된 매개 변수는 요청의 모든 범위에 적용됩니다. 서로 다른 범위에 대해 서로 다른 매개 변수를 설정해야 하는 경우 추가 요청을 수행해야 합니다.
 
 
 
@@ -51,9 +59,24 @@ Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래
 
 많은 Target 확장 기능에는 아래 표에 요약된 의사 결정 확장을 사용하는 동일한 접근 방식이 있습니다. [함수](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/)에 대한 자세한 내용은 Adobe Target 개발자 안내서를 참조하십시오.
 
-| Target 확장 | Decisioning 확장 |
-| --- | --- | 
-| |  |
+| Target 확장 | Decisioning 확장 | 참고 |
+| --- | --- | --- | 
+| `prefetchContent` | `updatePropositions` |  |
+| `retrieveLocationContent` | `getPropositions` | `getPropositions` API를 사용할 때 SDK에서 캐시되지 않은 범위를 가져오기 위한 원격 호출이 수행되지 않습니다. |
+| `displayedLocations` | 오퍼 -> `displayed()` | 또한 `generateDisplayInteractionXdm` Offer 메서드를 사용하여 항목 표시용 XDM을 생성할 수 있습니다. 그런 다음 Edge 네트워크 SDK의 sendEvent API를 사용하여 추가 XDM, 자유 형식 데이터를 첨부하고 경험 이벤트를 원격으로 전송할 수 있습니다. |
+| `clickedLocation` | 오퍼 -> `tapped()` | 또한 `generateTapInteractionXdm` 오퍼 메서드를 사용하여 항목 탭용 XDM을 생성할 수 있습니다. 그런 다음 Edge 네트워크 SDK의 sendEvent API를 사용하여 추가 XDM, 자유 형식 데이터를 첨부하고 경험 이벤트를 원격으로 전송할 수 있습니다. |
+| `clearPrefetchCache` | `clearCachedPropositions` |  |
+| `resetExperience` |  | SDK용 Edge Network 확장에 대해 ID의 `removeIdentity` API를 사용하여 방문자 식별자를 Edge 네트워크로 보내는 것을 중지합니다. 자세한 내용은 [removeIdentity API 설명서](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity)를 참조하세요. <br><br>참고: Mobile Core의 `resetIdentities` API는 ECID(Experience Cloud ID)를 포함하여 SDK에 저장된 모든 ID를 지웁니다. 드물게 사용해야 합니다! |
+| `getSessionId` |  | `state:store` 응답 핸들은 세션 관련 정보를 전달합니다. Edge 네트워크 확장은 만료되지 않은 상태 저장소 항목을 후속 요청에 연결하여 관리하는 데 도움이 됩니다. |
+| `setSessionId` |  | `state:store` 응답 핸들은 세션 관련 정보를 전달합니다. Edge 네트워크 확장은 만료되지 않은 상태 저장소 항목을 후속 요청에 연결하여 관리하는 데 도움이 됩니다. |
+| `getThirdPartyId` | 해당 사항 없음 | Edge Network 확장에 대한 ID의 updateIdentities API를 사용하여 타사 ID 값을 제공합니다. 그런 다음 데이터 스트림에서 타사 ID 네임스페이스를 구성합니다. 자세한 내용은 [Target 타사 ID 모바일 설명서](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)를 참조하십시오. |
+| `setThirdPartyId` | 해당 사항 없음 | Edge Network 확장에 대한 ID의 updateIdentities API를 사용하여 타사 ID 값을 제공합니다. 그런 다음 데이터 스트림에서 타사 ID 네임스페이스를 구성합니다. 자세한 내용은 [Target 타사 ID 모바일 설명서](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)를 참조하십시오. |
+| `getTntId` |  | `locationHint:result` 응답 핸들은 Target 위치 힌트 정보를 전달합니다. Target Edge가 Experience Edge과 함께 위치한다고 가정합니다. <br> <br>Edge 네트워크 확장은 EdgeNetwork 위치 힌트를 사용하여 요청을 보낼 Edge 네트워크 클러스터를 결정합니다. SDK(하이브리드 앱)에서 Edge 네트워크 위치 힌트를 공유하려면 Edge Network 확장에서 `getLocationHint` 및 `setLocationHint` API를 사용합니다. 자세한 내용은 [`getLocationHint` API 설명서](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)를 참조하십시오. |
+| `setTntId` |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
 
 ## Target 확장 설정 및 이에 상응하는 Decisioning 확장 기능
 
