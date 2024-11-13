@@ -5,7 +5,7 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 3%
@@ -20,11 +20,11 @@ ht-degree: 3%
 + 0 {#gettingstarted} 시작
    + 0.1 {#gettingstarted} 시작하기
       + [개요](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.0.1 Experience League 설명서용 Chrome 확장 설치](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.0.2 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정하려면 옆에 있는 데모 시스템 을 사용하십시오](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.0.3 데이터 스트림 만들기](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.0.4 웹 사이트 사용](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.0.5 모바일 앱 사용](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [0.1.1 Experience League 설명서용 Chrome 확장 설치](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [0.1.2 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정하려면 옆에 있는 데모 시스템 을 사용하십시오](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [0.1.3 데이터 스트림 만들기](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [0.1.4 웹 사이트 사용](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [0.1.5 모바일 앱 사용](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1개 데이터 수집 {#datacollection}
    + 1.1 Adobe Experience Platform 데이터 수집 및 Web SDK 확장 기능 {#module11}

@@ -3,18 +3,17 @@ title: 시작 - 요약
 description: 시작 - 요약
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
+source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 2%
+source-wordcount: '257'
+ht-degree: 1%
 
 ---
 
-# 0. 시작하기
+# 0.1 시작
 
-**작성자: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-**이 모듈**&#x200B;에서 데이터를 수집하고 데모 환경에 액세스할 수 있도록 모든 것을 설정합니다.
+이 모듈에서는 데이터를 수집하고, 데모 환경에 액세스하고, 이 자습서에서 동적 변수를 개인화할 수 있도록 모든 것을 설정합니다.
 
 ## 학습 목표
 
@@ -24,28 +23,28 @@ ht-degree: 2%
 ## 전제 조건
 
 - Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Adobe Experience Platform Launch 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platform 태그에 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 다음 데모 시스템에 액세스: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
 
 ## 연습
 
-[0.1 Experience League 설명서용 Chrome 확장 설치](./ex1.md)
+[0.1.1 Experience League 설명서용 Chrome 확장 설치](./ex1.md)
 
 이 연습에서는 자습서 콘텐츠를 개인화하는 데 사용할 수 있도록 Chrome 확장을 설치하고 구성합니다.
 
-[0.2 Adobe Experience Platform 데이터 수집 클라이언트 속성 설정 옆에 있는 데모 시스템 사용](./ex2.md)
+[0.1.2 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정하려면 옆에 있는 데모 시스템 을 사용하십시오](./ex2.md)
 
 이 연습에서는 웹 및 모바일에 대한 Launch 속성을 설정하려면 다음 데모 시스템을 사용합니다.
 
-[0.3 데이터 스트림 만들기](./ex3.md)
+[0.1.3 데이터 스트림 만들기](./ex3.md)
 
 이 연습에서는 웹 및 모바일에 대한 Launch 속성을 설정하려면 다음 데모 시스템을 사용합니다.
 
-[0.4 웹 사이트 사용](./ex4.md)
+[0.1.4 웹 사이트 사용](./ex4.md)
 
 이 연습에서는 데모 및 활성화를 위해 사용할 수 있도록 웹 사이트를 설정합니다.
 
-[0.5 모바일 앱 사용](./ex5.md)
+[0.1.5 모바일 앱 사용](./ex5.md)
 
 이 연습에서는 데모 및 활성화에 사용할 수 있도록 모바일 애플리케이션을 설정합니다.
 
