@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
+source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 17%
+source-wordcount: '942'
+ht-degree: 16%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 17%
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
 + AI 어시스턴트 {#ai-assistant}
    + [개요](/help/platform/ai-assistant/overview.md)
+   + [액세스 설정](/help/platform/ai-assistant/access.md)
    + [대상자 정리](/help/platform/ai-assistant/find-unused-audiences.md)
 + 대상 및 세분화 {#audiences}
    + [Audience Portal 및 구성 소개](audiences/introduction-to-audience-portal-and-composition.md)
