@@ -3,16 +3,17 @@ title: 시작하기 - 모바일 앱 사용
 description: 시작하기 - 모바일 앱 사용
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# 0.5 모바일 앱 사용
+# 모바일 앱 사용
 
-## 0.5.1 앱 다운로드
+## 앱 다운로드
 
 컴퓨터의 [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app)(으)로 이동합니다. 그러면 이걸 보게 될 거야.
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->iOS 장치에 앱을 처음 설치한 후 앱을 열려고 하면 다음과 같은 오류 메시지가 표시될 수 있습니다. **신뢰할 수 없는 Enterprise 개발자**. 이 문제를 해결하려면 **설정 > 일반 > 장치 관리 > Adobe Systems Inc.**(으)로 이동하여 **Adobe Systems Inc.**&#x200B;을(를) 클릭해야 합니다.
+>iOS 장치에 앱을 처음 설치한 후 앱을 열려고 하면 다음과 같은 오류 메시지가 표시될 수 있습니다. **신뢰할 수 없는 Enterprise 개발자**. 이 문제를 해결하려면 **설정 > 일반 > VPN 및 장치 관리 > Adobe Systems Inc.**(으)로 이동하여 **Adobe Systems Inc.**&#x200B;을(를) 클릭해야 합니다.
 
 앱이 설치되면 디바이스의 홈 화면에서 찾을 수 있습니다. 아이콘을 클릭하여 앱을 엽니다.
 
@@ -48,21 +49,25 @@ ht-degree: 0%
 
 ![DSN](./images/mobileappn6.png)
 
-0.1 운동 후, 당신은 이 결과를 얻었습니다. 자동으로 만든 **Mobile Retail 프로젝트**&#x200B;를 열려면 클릭하세요.
+이전 연습 이후에, 당신은 이 결과를 얻었습니다. 자동으로 만든 **Mobile Edge Telco 프로젝트**&#x200B;를 열려면 클릭하세요.
 
 ![DSN](./images/dsn5b.png)
 
-실수로 브라우저 창을 닫은 경우 또는 향후 데모 또는 지원 세션을 위해 [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 모바일 앱 프로젝트를 클릭하여 엽니다.
+실수로 브라우저 창을 닫은 경우 또는 향후 데모 또는 지원 세션을 위해 [https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 모바일 앱 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web8a.png)
 
-그러면 이걸 보게 될 거야. **통합**&#x200B;을 클릭합니다.
+**통합** 페이지에서 이전 연습에서 만든 데이터 수집 속성을 선택해야 합니다. 이렇게 하려면 **환경 선택**&#x200B;을 클릭하세요.
 
 ![DSN](./images/web8aa.png)
 
-연습 0.1에서 만든 모바일 데이터 수집 속성을 선택해야 합니다. 그런 다음 **실행**&#x200B;을 클릭합니다.
+이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`)에서 **선택**&#x200B;을 클릭합니다. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web8b.png)
+
+그러면 이걸 보게 될 거야. 그런 다음 **실행**&#x200B;을 클릭합니다.
+
+![DSN](./images/web8bb.png)
 
 그러면 QR 코드가 포함된 이 팝업이 표시됩니다. 모바일 앱 내에서 이 QR 코드를 스캔합니다.
 
@@ -76,8 +81,8 @@ ht-degree: 0%
 
 ![DSN](./images/mobileappn8.png)
 
-이제 모듈 0을 완료했습니다.
+이제 시작 모듈을 완료하고 다음 연습을 시작할 준비가 되었습니다.
 
-[모듈 0으로 돌아가기](./getting-started.md)
+[시작하기 로 돌아가기](./getting-started.md)
 
 [모든 모듈로 돌아가기](./../../../overview.md)

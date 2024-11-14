@@ -4,14 +4,14 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1 Experience League 설명서용 Chrome 확장 설치
+# Experience League 설명서용 Chrome 확장 설치
 
 ## Chrome 확장 기본 정보
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1 Chrome 확장 설치
+## Chrome 확장 설치
 
 해당 Chrome 확장을 설치하려면 Chrome 브라우저를 열고 [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi)(으)로 이동합니다. 그러면 이걸 보게 될 거야.
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2 Chrome 확장 구성
+## Chrome 확장 구성
 
 [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
 
@@ -133,7 +133,7 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3 튜토리얼 컨텐츠 확인
+## 튜토리얼 콘텐츠 확인
 
 테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)(으)로 이동하세요.
 
@@ -141,10 +141,10 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 이제 환경 변수 `aepTenantId`이(가) 실제 AEP 테넌트 ID로 바뀐 아래와 유사한 보기가 있어야 합니다. 이 경우에는 **_experienceplatform**&#x200B;입니다.
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-다음 단계: [0.2 다음 데모 시스템을 사용하여 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정합니다](./ex2.md)
+다음 단계: [다음 데모 시스템을 사용하여 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정합니다](./ex2.md)
 
-[모듈 0으로 돌아가기](./getting-started.md)
+[시작하기 로 돌아가기](./getting-started.md)
 
 [모든 모듈로 돌아가기](./../../../overview.md)

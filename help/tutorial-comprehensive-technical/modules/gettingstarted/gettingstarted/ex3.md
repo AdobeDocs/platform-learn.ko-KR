@@ -3,26 +3,31 @@ title: 시작하기 - 데이터 스트림 만들기
 description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
 
-# 0.3 데이터 스트림 만들기
+# 데이터 스트림 만들기
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다. 이전 연습이 끝나면 이제 두 개의 데이터 수집 속성이 있습니다. 하나는 웹용, 다른 하나는 모바일용 입니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다.
 
 ![DSN](./images/launchprop.png)
 
-이러한 속성을 사용할 준비가 거의 되었지만 이러한 속성을 사용하여 데이터 수집을 시작하려면 먼저 데이터 스트림을 설정해야 합니다. 데이터 스트림의 개념과 연습 1.2에서 데이터 스트림이 의미하는 바에 대한 자세한 정보를 얻을 수 있습니다.
+왼쪽 메뉴에서 **[!UICONTROL 태그]**&#x200B;를 클릭합니다. 이전 연습이 끝나면 이제 두 개의 데이터 수집 속성이 있습니다. 하나는 웹용, 다른 하나는 모바일용 입니다.
+
+![DSN](./images/launchprop1.png)
+
+이러한 속성을 사용할 준비가 거의 되었지만 이러한 속성을 사용하여 데이터 수집을 시작하려면 먼저 데이터 스트림을 설정해야 합니다. 데이터 스트림의 개념과 데이터 수집 모듈의 이후 연습에서 의미하는 바에 대한 자세한 정보를 얻을 수 있습니다.
 
 지금은 다음 단계를 따르십시오.
 
-## 0.3.1 웹용 데이터스트림 만들기
+## 웹용 데이터 스트림 만들기
 
-**[!UICONTROL 데이터스트림]** 또는 **[!UICONTROL 데이터스트림(Beta)]**&#x200B;을 클릭합니다.
+**[!UICONTROL 데이터스트림]**&#x200B;을 클릭합니다.
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1a.png)
 
@@ -34,7 +39,7 @@ ht-degree: 1%
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1.png)
 
-**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - Demo System Datastream`을(를) 입력하십시오. 이벤트 스키마의 경우 **데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)**&#x200B;를 선택합니다. **저장**&#x200B;을 클릭합니다.
+**[!UICONTROL Name]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - Demo System Datastream`을(를) 입력하십시오. **매핑 스키마**&#x200B;에 대해 **데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig2.png)
 
@@ -64,21 +69,21 @@ ht-degree: 1%
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig11.png)
 
-Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합니다.
+먼저 Adobe Experience Platform 웹 SDK 확장을 클릭한 다음 **구성**&#x200B;을 클릭합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12.png)
 
-그러면 이걸 보게 될 거야. **데이터스트림**&#x200B;의 경우 현재 1로 설정된 더미 값이 표시됩니다. 이제 **목록에서 선택** 라디오 단추를 클릭해야 합니다. 드롭다운 목록에서 이전에 생성한 데이터 스트림을 선택합니다.
+그러면 이걸 보게 될 거야. **데이터스트림** 메뉴에서 컴퓨터를 사용하고 올바른 샌드박스를 선택했는지 확인하십시오. 이 샌드박스는 `--aepSandboxName--`이어야 합니다.
+
+![Edge 구성 이름 지정 및 저장](./images/edgeconfig12a.png)
+
+**데이터스트림** 드롭다운을 열고 이전에 만든 데이터스트림을 선택합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig13.png)
 
-**데이터 스트림**&#x200B;을(를) 선택했는지 확인하십시오. 팁: `--aepUserLdap--`을(를) 입력하여 드롭다운에서 결과를 쉽게 필터링할 수 있습니다.
+세 가지 다른 환경에서 **데이터스트림**&#x200B;을(를) 선택했는지 확인하십시오. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig14.png)
-
-**데이터 수집**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **클릭 데이터 수집 사용**&#x200B;에 대한 확인란이 활성화되어 있지 않은지 확인하십시오. 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
-
-![Edge 구성 이름 지정 및 저장](./images/edgeconfig14a.png)
 
 **게시 흐름**(으)로 이동합니다.
 
@@ -92,13 +97,15 @@ Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합�
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig17.png)
 
-변경 사항이 이제 게시되고 있으며 몇 분 후에 준비됩니다.
+변경 사항이 게시되고 있으며 몇 분 후에 준비됩니다. 그 후에는 **기본** 옆에 녹색 점이 표시됩니다.
 
-## 0.3.2 모바일용 데이터스트림 만들기
+![Edge 구성 이름 지정 및 저장](./images/edgeconfig17a.png)
+
+## 모바일용 데이터스트림 만들기
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다.
 
-**[!UICONTROL 데이터스트림]** 또는 **[!UICONTROL 데이터스트림(Beta)]**&#x200B;을 클릭합니다.
+**[!UICONTROL 데이터스트림]**&#x200B;을 클릭합니다.
 
 ![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1a.png)
 
@@ -110,7 +117,7 @@ Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합�
 
 ![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1.png)
 
-**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - Demo System Datastream (Mobile)`을(를) 입력하십시오. 이벤트 스키마의 경우 **데모 시스템 - 모바일 앱용 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
+**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - Demo System Datastream (Mobile)`을(를) 입력하십시오. **매핑 스키마**&#x200B;에 대해 **데모 시스템 - 모바일 앱용 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
 
 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 
@@ -140,13 +147,13 @@ Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합�
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig11m.png)
 
-**Adobe Experience Platform Edge Network** 확장에서 **구성**&#x200B;을 클릭합니다.
+**Adobe Experience Platform Edge Network** 확장을 클릭한 다음 **구성**&#x200B;을 클릭합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12m.png)
 
 그러면 이걸 보게 될 거야. 이제 방금 구성한 올바른 샌드박스 및 데이터 스트림을 선택해야 합니다. 사용할 샌드박스는 `--aepSandboxName--`이고 데이터 스트림은 `--aepUserLdap-- - Demo System Datastream (Mobile)`입니다.
 
-**Edge Network 도메인**&#x200B;의 경우 기본 도메인인 **edge.adobedc.net**&#x200B;을(를) 사용하십시오.
+**Edge Network 도메인**&#x200B;의 경우 기본 도메인을 사용하십시오.
 
 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
 
@@ -164,10 +171,12 @@ Adobe Experience Platform 웹 SDK 확장에서 **구성**&#x200B;을 클릭합�
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig17m.png)
 
-변경 사항이 이제 게시되고 있으며 몇 분 후에 준비됩니다.
+변경 사항이 게시되고 있으며 몇 분 후에 준비됩니다. 그 후에는 **기본** 옆에 녹색 점이 표시됩니다.
 
-다음 단계: [0.4 웹 사이트 사용](./ex4.md)
+![Edge 구성 이름 지정 및 저장](./images/edgeconfig17ma.png)
 
-[모듈 0으로 돌아가기](./getting-started.md)
+다음 단계: [웹 사이트 사용](./ex4.md)
+
+[시작하기 로 돌아가기](./getting-started.md)
 
 [모든 모듈로 돌아가기](./../../../overview.md)
