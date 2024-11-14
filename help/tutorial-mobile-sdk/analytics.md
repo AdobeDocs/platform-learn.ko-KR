@@ -4,9 +4,9 @@ description: 모바일 앱에서 Adobe Analytics에 대한 데이터를 수집�
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
+source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ s.events = "scAdd:321435"
 
 ## Assurance를 사용한 유효성 검사
 
-[보증](assurance.md)을 사용하여 경험 이벤트를 보내고 있으며 XDM 데이터가 올바르고 Analytics 매핑이 예상대로 발생하고 있는지 확인할 수 있습니다.
+[Assurance](assurance.md)을(를) 사용하여 경험 이벤트를 보내고 있으며 XDM 데이터가 올바르고 Analytics 매핑이 예상대로 발생하고 있는지 확인할 수 있습니다.
 
 1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
 
@@ -306,6 +306,17 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >[!TIP]
 >
 >이전 모바일 앱 구현과 달리 페이지/화면 보기와 다른 이벤트 사이에는 차이가 없습니다. 대신 처리 규칙에서 **[!UICONTROL 페이지 이름]** 차원을 설정하여 **[!UICONTROL 페이지 보기]** 지표를 증가시킬 수 있습니다. 자습서에서 사용자 지정 `screenName` 필드를 수집하므로 처리 규칙에서 화면 이름을 **[!UICONTROL 페이지 이름]**&#x200B;에 매핑하는 것이 좋습니다.
+
+## Analytics 모바일 확장에서 마이그레이션
+
+[Adobe Analytics 모바일 확장](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application)을 사용하여 모바일 애플리케이션을 개발한 경우 [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) 및 [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API 호출을 사용했을 가능성이 높습니다.
+
+권장 Edge Network을 사용하도록 마이그레이션하기로 결정하는 경우 다음과 같은 옵션이 있습니다.
+
+* [Edge Network 데이터 추적](events.md) 방법에 대한 단원에서 설명한 대로 [이벤트 확장](configure-tags.md#extension-configuration)을 구현하고 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) API를 사용합니다. 이 자습서에서는 이 구현에 중점을 둡니다.
+* [Edge Bridge 확장](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)을 구현하고 [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) 및 [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API 호출을 계속 사용합니다. 자세한 내용 및 별도의 자습서는 [Edge Bridge 확장 구현](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)을 참조하십시오.
+
+
 
 
 >[!SUCCESS]
