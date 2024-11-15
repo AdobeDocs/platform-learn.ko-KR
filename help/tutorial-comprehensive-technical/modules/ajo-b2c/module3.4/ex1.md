@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - 트리거 기반 여정 구성 - 주문 확인
 description: 이 섹션에서는 트리거 기반 여정 - 주문 확인을 구성합니다.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -404,10 +405,6 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** 페이지에서 **실행**&#x200B;을 클릭합니다.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 

@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer
 description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '261'
 ht-degree: 3%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->[0.1 - Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오.
+>[Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오
 
 ## 연습
 

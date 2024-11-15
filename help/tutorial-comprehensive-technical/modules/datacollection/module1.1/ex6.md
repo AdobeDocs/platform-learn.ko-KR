@@ -3,10 +3,11 @@ title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 �
 description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Target 구현
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ Web SDK에서 수집한 데이터를 Adobe Target으로 전송하고 모든 고�
 
 ![AEP 디버거](./images/aa2.png)
 
-그러면 이걸 보게 될 거야. **Adobe Target** 서비스를 선택한 후 선택적으로 추가 정보를 제공할 수 있습니다. 지금은 저장할 필요가 없으므로 **취소**&#x200B;를 클릭하세요.
+그러면 이걸 보게 될 거야. **Adobe Target** 서비스를 선택한 후 선택적으로 추가 정보를 제공할 수 있습니다. **저장**&#x200B;을 클릭합니다.
 
 ![AEP 디버거](./images/at1.png)
 

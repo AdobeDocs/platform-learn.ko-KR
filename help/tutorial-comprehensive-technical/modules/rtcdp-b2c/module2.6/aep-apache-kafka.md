@@ -3,9 +3,10 @@ title: Apache Kafka에서 Adobe Experience Platform으로 데이터 스트리밍
 description: 이 모듈에서는 Kafka Connect용 Adobe Experience Platform 싱크 커넥터를 사용하여 Apache Kafka 클러스터를 설정하고 주제, 제작자 및 소비자를 정의하고 Adobe Experience Platform으로 데이터를 스트리밍하는 방법에 대해 알아봅니다.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 1%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[0.1 - Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오.
+>[Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오
 
 ## 연습
 

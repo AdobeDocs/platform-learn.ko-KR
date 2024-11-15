@@ -3,9 +3,10 @@ title: 쿼리 서비스
 description: 쿼리 서비스
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[0.1 - Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오.
+>[Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오
 
 ## 연습
 

@@ -3,9 +3,10 @@ title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 �
 description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform 데이터 수집 소개
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1273'
 ht-degree: 9%
 
 ---
@@ -26,31 +27,30 @@ ht-degree: 9%
 
 ![속성 페이지](./images/launch1.png)
 
-모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오.
+**시작하기**&#x200B;에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오.
+**Web** 속성을 열려면 클릭하세요.
 
 ![검색 상자](./images/property6.png)
 
-**Web** 속성을 엽니다.
 
-그러면 속성 개요 페이지가 표시됩니다. 왼쪽 레일에서 **[!UICONTROL 확장]**&#x200B;을 클릭합니다. Adobe Experience Platform 웹 SDK 확장 아래의 **[!UICONTROL 구성]** 단추를 클릭합니다.
+
+그러면 속성 개요 페이지가 표시됩니다. 왼쪽 레일에서 **[!UICONTROL 확장]**&#x200B;을 클릭한 다음 **Adobe Experience Platform Web SDK**&#x200B;를 클릭한 다음 **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
 
 ![속성 개요 페이지](./images/property7.png)
 
-Adobe Experience Platform 웹 SDK를 시작합니다! [연습 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 만든 데이터 스트림과 고급 구성으로 확장을 구성할 수 있습니다. 이 연습에서는 두 가지 설정만 구성합니다.
+Adobe Experience Platform 웹 SDK를 시작합니다! [시작](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 만든 데이터 스트림과 고급 구성으로 확장을 구성할 수 있습니다.
 
-기본 Edge 도메인은 항상 **edge.adobedc.net**&#x200B;입니다. Adobe Experience Cloud 또는 Adobe Experience Platform 환경에서 CNAME 구성을 구현한 경우 **[!UICONTROL Edge 도메인]**&#x200B;을 업데이트해야 합니다. Adobe Experience Platform 인스턴스가 이 Edge 도메인을 사용 중입니다. `--webSdkEdgeDomain--`.
+기본 Edge 도메인은 항상 **edge.adobedc.net**&#x200B;입니다. Adobe Experience Cloud 또는 Adobe Experience Platform 환경에서 CNAME 구성을 구현한 경우 **[!UICONTROL Edge 도메인]**&#x200B;을 업데이트해야 합니다.
 
-인스턴스의 Edge 도메인이 기본 도메인과 다른 경우 Edge 도메인을 업데이트하십시오. Edge 도메인을 사용하면 자사 추적 서버를 구성한 다음 백엔드에서 CNAME 구성을 사용하여 데이터를 Adobe에 수집할 수 있습니다.
+인스턴스의 Edge 도메인이 기본 도메인과 다른 경우 여기에서 Edge 도메인을 업데이트하십시오. 확실하지 않은 경우 기본 도메인을 사용합니다. Edge 도메인을 사용하면 자사 추적 서버를 구성한 다음 백엔드에서 CNAME 구성을 사용하여 데이터를 Adobe에 수집할 수 있습니다.
 
 ![확장 홈](./images/property9edgedomain.png)
 
-이제 **[!UICONTROL 데이터스트림]** 제목 아래에서 **[!UICONTROL 목록에서 선택]** 라디오 단추가 선택되어 있는지 확인하고 **[!UICONTROL 데이터스트림]** 상자의 목록에서 이름이 `--aepUserLdap-- - Demo System Datastream`인 데이터스트림을 선택하십시오.
-
-![확장 홈](./images/property9edge.png)
+**[!UICONTROL 데이터스트림]**&#x200B;에서 이미 **시작하기** 섹션에서 데이터스트림을 선택했습니다. 각 환경에 대해 **[!UICONTROL 데이터 스트림]** 상자의 목록에서 이 데이터 스트림 `--aepUserLdap-- - Demo System Datastream`을(를) 선택했습니다.
 
 확장 보기로 돌아가려면 **[!UICONTROL 저장]**&#x200B;을 클릭하세요.
 
-![Adobe Experience Platform 웹 SDK 홈 페이지](./images/save.png)
+![확장 홈](./images/property9edge.png)
 
 ## 1.1.3.2 데이터 요소
 
@@ -104,11 +104,13 @@ Adobe Experience Platform 데이터 수집은 규칙 기반 시스템입니다. 
 
 ![미디어 - 문서 페이지 규칙 검색](./images/rule1.png)
 
-이 규칙을 구성하는 개별 요소를 살펴보자. 모든 규칙에 대해 지정된 **[!UICONTROL Event]**&#x200B;이 발생하면 **[!UICONTROL Conditions]**&#x200B;이 평가되고 필요한 경우 지정된 **[!UICONTROL Actions]**&#x200B;이(가) 수행됩니다.
+이 규칙을 구성하는 개별 요소를 살펴보자.
+
+모든 규칙: 지정된 **[!UICONTROL Event]**&#x200B;이 발생하면 **[!UICONTROL Conditions]**&#x200B;이 평가되고 필요한 경우 지정된 **[!UICONTROL Actions]**&#x200B;이(가) 수행됩니다.
 
 ![미디어 - 문서 페이지 규칙](./images/rule2.png)
 
-**사용자 지정 이벤트 - 제품 보기** 이벤트를 클릭합니다. 이 뷰는 로드됩니다.
+이벤트 **코어 - 사용자 지정 이벤트**&#x200B;를 클릭합니다. 이 뷰는 로드됩니다.
 
 **이벤트 유형** 드롭다운을 클릭합니다.
 
@@ -118,9 +120,11 @@ Adobe Experience Platform 데이터 수집은 규칙 기반 시스템입니다. 
 
 규칙으로 돌아가려면 **[!UICONTROL 취소]**&#x200B;를 클릭하십시오.
 
-**AEP로 &quot;제품 보기&quot; 이벤트 보내기** 작업을 클릭합니다.
+**제품 보기 경험 이벤트 보내기** 작업을 클릭합니다.
 
-여기에서 Adobe Experience Platform Web SDK에서 Adobe Edge으로 전송하는 데이터를 볼 수 있습니다. 특히 웹 SDK의 **alloy** **[!UICONTROL 인스턴스]**&#x200B;를 사용합니다. 다른 **[!UICONTROL 인스턴스]**&#x200B;을(를) 설정하면 다른 데이터 스트림을 사용할 수 있습니다. 이벤트 **[!UICONTROL Type]**&#x200B;을(를) **commerce.productViews**(으)로 지정했으며 보내는 XDM 데이터는 이전에 변경한 **XDM - 제품 보기** 데이터 요소입니다.
+![이벤트 보내기 작업](./images/rule5a.png)
+
+여기에서 Adobe Experience Platform 웹 SDK에서 Edge로 전송하는 데이터를 볼 수 있습니다. 특히 웹 SDK의 **alloy** **[!UICONTROL 인스턴스]**&#x200B;를 사용합니다. 이벤트 **[!UICONTROL Type]**&#x200B;이(가) **Commerce 제품(장바구니) 보기**(으)로 설정되어 있으며, 보내는 XDM 데이터는 이전에 변경한 **XDM - 제품 보기** 데이터 요소입니다.
 
 ![이벤트 보내기 작업](./images/rule5.png)
 
@@ -136,17 +140,14 @@ Adobe Experience Platform 데이터 수집은 규칙 기반 시스템입니다. 
 
 ![라이브러리 액세스](./images/publish1.png)
 
-**변경된 모든 리소스 추가** 단추를 클릭합니다.
+**변경된 모든 리소스 추가** 단추를 클릭합니다. 다음,
+**개발을 위한 저장 및 빌드** 단추를 클릭합니다.
 
 ![라이브러리 액세스](./images/publish1a.png)
 
-아래로 스크롤하여 대부분의 리소스가 **수정 버전 1(최신)**(으)로 유지되지만, 변경된 두 가지(예: **데이터 요소: ruleArticlePages** 및 **확장: Adobe Experience Platform Web SDK**)가 **최신**(으)로 표시됩니다.
-
-**개발을 위한 저장 및 빌드** 단추를 클릭합니다.
+라이브러리를 빌드하는 데 몇 분 정도 걸릴 수 있으며 완료되면 라이브러리 이름 왼쪽에 녹색 점이 표시됩니다.
 
 ![컨텐츠 라이브러리](./images/publish2.png)
-
-라이브러리를 빌드하는 데 몇 분 정도 걸릴 수 있으며 완료되면 라이브러리 이름 왼쪽에 녹색 점이 표시됩니다.
 
 게시 플로우 화면에서 볼 수 있듯이 Adobe Experience Platform 데이터 수집에는 이 자습서의 범위를 벗어나는 게시 프로세스가 많습니다. 개발 환경에서 단일 라이브러리를 사용할 예정입니다.
 

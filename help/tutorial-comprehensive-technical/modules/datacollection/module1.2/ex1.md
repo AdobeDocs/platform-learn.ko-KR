@@ -3,9 +3,10 @@ title: 기초 - 데이터 수집 - 알 수 없음에서 웹 사이트에 알려�
 description: 기초 - 데이터 수집 - 알 수 없음에서 웹 사이트에 알려짐
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -29,10 +30,6 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** 페이지에서 **실행**&#x200B;을 클릭합니다.
-
-![DSN](../module1.1/images/web2.png)
 
 그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 

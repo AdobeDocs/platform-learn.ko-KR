@@ -3,9 +3,10 @@ title: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서
 description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석
 kt: 5342
 doc-type: tutorial
-source-git-commit: f19f6b4a44a34af3c9545eb7f8735ef6ccf5d6c7
+exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Adobe Experience Platform의 Source 커넥터를 사용하면 데이터를 Adobe
 
 >[!NOTE]
 >
->[0.1 - Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오.
+>[Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오
 
 ## 연습
 

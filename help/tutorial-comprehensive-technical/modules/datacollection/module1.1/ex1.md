@@ -3,9 +3,10 @@ title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 �
 description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform 데이터 수집 설명
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '504'
 ht-degree: 2%
 
 ---
@@ -42,7 +43,12 @@ Adobe Experience Platform 데이터 수집은 여러 사용 사례에 브랜드�
 - **[!UICONTROL 태그]**&#x200B;에서는 모든 클라이언트측 속성에 대한 개요를 제공합니다
 - **[!UICONTROL 앱 표면]**&#x200B;은(는) 푸시 알림(Project Sierra와 함께 사용/사용)을 사용하도록 설정하는 모든 앱 구성에 대한 개요를 제공합니다.
 - **[!UICONTROL 데이터스트림]**&#x200B;은(는) [다음 연습](./ex2.md)에서 탐색됩니다.
-- **[!UICONTROL 이벤트 전달]**&#x200B;은(는) [모듈 14 - Real-Time CDP 연결: 이벤트 전달](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)에서 탐색된 모든 서버측 속성에 대한 개요를 제공합니다.
+- **[!UICONTROL 이벤트 전달]**&#x200B;은(는) [모듈 2.5 - Real-Time CDP 연결: 이벤트 전달](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)에서 탐색된 모든 서버측 속성에 대한 개요를 제공합니다.
+- **[!UICONTROL 모니터링]**&#x200B;은(는) 이벤트 전달을 통해 들어오는 이벤트 트래픽과 나가는 이벤트 트래픽에 대한 개요를 제공합니다
+- **[!UICONTROL Assurance]**&#x200B;은(는) Adobe Debugger을 사용하여 구현을 디버깅하기 위한 액세스 권한을 제공합니다.
+- **[!UICONTROL 위치]**&#x200B;에서는 모바일 애플리케이션에서 위치 기반 개인화에 액세스할 수 있는 POI를 관리할 수 있는 액세스 권한을 제공합니다
+- **[!UICONTROL 스키마]**&#x200B;에서 Adobe Experience Platform의 스키마 편집기에 액세스할 수 있습니다.
+- **[!UICONTROL ID]**&#x200B;에서 Adobe Experience Platform의 ID 그래프 설정에 액세스할 수 있습니다.
 
 ## 추가 정보
 

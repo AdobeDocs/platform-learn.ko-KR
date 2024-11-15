@@ -3,9 +3,10 @@ title: Foundation - Adobe Experience Platform 데이터 수집 및 Web SDK 확�
 description: Foundation - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform의 XDM 스키마 요구 사항
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Web SDK 및 alloy.js가 Adobe Experience Platform에 데이터를 수집할 수 
 
 ![AEP 디버거](./images/exp3.png)
 
-해당 스키마에서 필드 그룹 **AEP Web SDK ExperienceEvent Mixin**&#x200B;이(가) 추가되었습니다. 이 필드 그룹은 스키마에 최소 필수 필드를 모두 추가합니다. Web SDK에서 사용할 Adobe Experience Platform의 모든 경험 이벤트 스키마에서는 항상 해당 필드 그룹이 스키마의 일부가 되어야 합니다.
+해당 스키마에서는 필드 그룹 **AEP Web SDK ExperienceEvent** 필드 그룹이 추가되었습니다. 이 필드 그룹은 스키마에 최소 필수 필드를 모두 추가합니다. Web SDK에서 사용할 Adobe Experience Platform의 모든 경험 이벤트 스키마에서는 항상 해당 필드 그룹이 스키마의 일부가 되어야 합니다.
 
 ![AEP 디버거](./images/exp4.png)
 

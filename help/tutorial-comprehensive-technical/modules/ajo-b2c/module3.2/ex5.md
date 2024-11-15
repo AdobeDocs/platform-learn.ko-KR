@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 오케스�
 description: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 오케스트레이션된 고객 여정 트리거
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -73,10 +74,6 @@ ht-degree: 1%
 [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** 페이지에서 **실행**&#x200B;을 클릭합니다.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 

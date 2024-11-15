@@ -3,9 +3,10 @@ title: 구성 ID 업데이트 및 여정 테스트
 description: 구성 ID 업데이트 및 여정 테스트
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '611'
 ht-degree: 0%
 
 ---
@@ -73,10 +74,6 @@ eventID를 붙여넣은 후 화면은 다음과 같아야 합니다. **저장** 
 [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** 페이지에서 **실행**&#x200B;을 클릭합니다.
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 

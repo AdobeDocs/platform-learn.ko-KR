@@ -3,16 +3,15 @@ title: 1.1 Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정
 description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1 Foundation - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정
-
-**작성자: [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 기본 모듈에서는 Adobe의 데이터 수집 비전을 소개하고 Adobe Experience Platform 데이터 수집, Adobe Experience Platform SDK 및 Adobe Experience Platform Edge Network을 통해 웹 사이트 및 모바일 애플리케이션에서 Adobe Experience Platform 및 기타 애플리케이션으로 데이터를 가져오는 방법에 대해 설명합니다. 이 모듈에서는 Adobe Experience Platform 기술 튜토리얼의 범위를 벗어나는 데 영향을 미치는 몇 가지 개념과 기술을 소개합니다. 이 연습에서 Experience Edge과 그 기능에 대해 자세히 설명하고 추가 정보 및 튜토리얼을 볼 수 있는 위치를 알려 주는 나머지 포괄적인 튜토리얼에 있어 중요한 부분이 무엇인지 명확해야 합니다.
 
@@ -35,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[0.1 - Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오.
+>[Experience League 설명서용 Chrome 확장 설치](../../gettingstarted/gettingstarted/ex1.md)에서 참조한 대로 Chrome 확장 기능을 설치, 구성 및 사용하는 것을 잊지 마십시오
 
 ## 연습
 
