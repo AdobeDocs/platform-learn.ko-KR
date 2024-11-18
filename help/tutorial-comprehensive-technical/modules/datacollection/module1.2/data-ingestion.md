@@ -3,16 +3,15 @@ title: 기초 - 데이터 수집
 description: 기초 - 데이터 수집
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 976d801a-3dcb-4cd9-8b9f-b1c964fe7c25
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
 
 # 1.2 Foundation - 데이터 수집
-
-**작성자: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 모듈에서는 데이터 수집에 대한 모든 것을 학습하는 것이 목표입니다. 스트리밍 및 일괄 처리에서의 데이터 수집에 대해 알아봅니다. Launch를 사용하여 스트리밍 데이터 수집을 구현하므로 실습형 랩 웹 사이트의 고객 행동이 실시간으로 Adobe Experience Platform으로 스트리밍됩니다. Adobe Experience Platform Workflow를 사용하여 CSV 파일을 가져오고 XDM 스키마에 매핑한 다음 Adobe Experience Platform에 수집하는 일괄 데이터 수집에 대해 알아봅니다.
 

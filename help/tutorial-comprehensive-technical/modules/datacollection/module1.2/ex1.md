@@ -4,14 +4,14 @@ description: 기초 - 데이터 수집 - 알 수 없음에서 웹 사이트에 �
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
 
-# 1.2.1 - 알 수 없음에서 웹 사이트에 알려짐
+# 1.2.1 알 수 없음에서 웹 사이트에 알려짐
 
 ## 컨텍스트
 
@@ -27,7 +27,7 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 ### 고객 여정 흐름
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을(를) 클릭합니다.
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
 
@@ -41,12 +41,9 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 이전 단계에서 복사한 데모 웹 사이트의 URL을 붙여 넣습니다. 그런 다음 Adobe ID을 사용하여 로그인하라는 메시지가 표시됩니다.
 
-
 계정 유형을 선택하고 로그인 프로세스를 완료합니다.
 
-
 그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 데모에 대해 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
-
 
 화면 왼쪽 상단 모서리에 있는 Adobe 로고 아이콘을 클릭하여 프로필 뷰어를 엽니다.
 
@@ -58,43 +55,45 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 또한 고객의 행동을 기반으로 하여 수집한 모든 경험 이벤트를 볼 수 있습니다. 현재 목록이 비어 있지만 곧 변경될 예정입니다.
 
-![데모](../module1.2/images/pv3.png)
+![데모](./images/pv3.png)
 
-**Men** 제품 범주로 이동합니다. 그런 다음 **몬타나 윈드 재킷** 제품을 클릭합니다.
+**휴대폰 및 장치** 제품 범주로 이동합니다. **iPhone 15 Pro** 제품을 클릭합니다.
 
-![데모](../module1.2/images/pv4.png)
+![데모](./images/pv4.png)
 
-그러면 제품 세부 사항 페이지가 표시됩니다. 모듈 1에서 검토한 Web SDK 구현을 사용하여 **제품 보기** 유형의 경험 이벤트가 Adobe Experience Platform으로 전송되었습니다.
+그러면 제품 세부 사항 페이지가 표시됩니다. 이제 이전 모듈에서 검토한 Web SDK 구현을 사용하여 **제품 보기** 유형의 경험 이벤트가 Adobe Experience Platform으로 전송되었습니다.
 
-![데모](../module1.2/images/pv5.png)
+![데모](./images/pv5.png)
 
 [Probile 뷰어] 패널을 열고 **경험 이벤트**&#x200B;를 확인합니다.
 
-![데모](../module1.2/images/pv6.png)
+![데모](./images/pv6.png)
 
-**여성** 범주 페이지로 돌아가서 다른 제품을 클릭합니다. 다른 경험 이벤트가 Adobe Experience Platform으로 전송되었습니다.
+**휴대폰 및 장치** 범주 페이지로 돌아가서 다른 제품을 클릭합니다. 다른 경험 이벤트가 Adobe Experience Platform으로 전송되었습니다.
 
-![데모](../module1.2/images/pv7.png)
+프로필 뷰어 패널을 엽니다. 이제 **제품 보기** 유형의 경험 이벤트 2개가 표시됩니다. 적절한 동의를 통해 비헤이비어가 익명화되면 모든 클릭을 추적하고 Adobe Experience Platform에 저장할 수 있습니다. 익명 고객이 알려지면 모든 익명 동작을 알 수 있는 프로필에 자동으로 병합할 수 있습니다.
 
-프로필 뷰어 패널을 엽니다. 이제 **제품 보기** 유형의 경험 이벤트 2개가 표시됩니다. 비헤이비어는 익명이지만 클릭할 때마다 추적하고 이를 Adobe Experience Platform에 저장할 수 있습니다. 익명 고객이 알려지면 모든 익명 동작을 알 수 있는 프로필에 자동으로 병합할 수 있습니다.
+![데모](./images/pv7.png)
 
-![데모](../module1.2/images/pv8.png)
+등록/로그인 페이지로 이동하려면 **로그인**&#x200B;을 클릭합니다.
 
-등록/로그인 페이지로 이동합니다. **계정 만들기**&#x200B;를 클릭합니다.
+![데모](./images/pv8.png)
 
-![데모](../module1.2/images/pv9.png)
+**계정 만들기**&#x200B;를 클릭합니다.
+
+![데모](./images/pv9.png)
 
 자세한 내용을 입력하고 **등록**&#x200B;을 클릭하면 이전 페이지로 리디렉션됩니다.
 
-![데모](../module1.2/images/pv10.png)
+![데모](./images/pv10.png)
 
 프로필 뷰어 패널을 열고 실시간 고객 프로필로 이동합니다. 프로필 뷰어 패널에 새로 추가된 이메일 및 전화 식별자와 같은 모든 개인 데이터가 표시됩니다.
 
-![데모](../module1.2/images/pv11.png)
+![데모](./images/pv11.png)
 
 프로필 뷰어 패널에서 경험 이벤트 로 이동합니다. 프로필 뷰어 패널에 이전에 본 2개의 제품이 표시됩니다. 이제 두 이벤트 모두 &#39;알려진&#39; 프로필에도 연결됩니다.
 
-![데모](../module1.2/images/pv12.png)
+![데모](./images/pv12.png)
 
 이제 Adobe Experience Platform에 데이터를 수집했으며 해당 데이터를 ECID 및 이메일 주소와 같은 식별자에 연결했습니다. 이 작업의 목표는 곧 수행하려는 작업의 비즈니스 컨텍스트를 이해하는 것입니다. 다음 연습에서는 이러한 모든 데이터 수집을 가능하게 하는 데 필요한 모든 것을 구성하기 시작합니다.
 

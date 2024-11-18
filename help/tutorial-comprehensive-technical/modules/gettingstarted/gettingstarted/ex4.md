@@ -4,9 +4,9 @@ description: 시작하기 - 웹 사이트 사용
 kt: 5342
 doc-type: tutorial
 exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >아래 화면이 더 이상 열리지 않으면 대신 옵션 2로 이동합니다.
 
-0.1 운동 후, 당신은 이 결과를 얻었습니다. 자동으로 만든 **웹 통신 프로젝트**&#x200B;을(를) 열려면 클릭하세요.
+이전 연습 이후에, 당신은 이 결과를 얻었습니다. 자동으로 만든 **웹 통신 프로젝트**&#x200B;을(를) 열려면 클릭하세요.
 
 ![DSN](./images/dsn5a.png)
 
