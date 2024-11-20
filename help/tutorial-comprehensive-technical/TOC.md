@@ -5,9 +5,9 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '919'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 4%
       + [2.1.1 웹 사이트 방문](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex1.md)
       + [2.1.2 자신의 실시간 고객 프로필 시각화 - UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
       + [2.1.3 자신의 실시간 고객 프로필 시각화 - API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex3.md)
-      + [2.1.4 세그먼트 만들기 - UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
+      + [2.1.4 대상 만들기 - UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
       + [2.1.5 콜 센터에서 실시간 고객 프로필 확인](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
    + 2.2 Intelligent Services {#module22}
@@ -67,23 +67,23 @@ ht-degree: 4%
       + [2.2.2 Customer AI: 새 인스턴스 만들기(구성)](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex2.md)
       + [2.2.3 Customer AI: 채점 대시보드 및 세분화(예측 및 조치 수행)](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex3.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/summary.md)
-   + 2.3 Real-Time CDP: 세그먼트를 작성하고 조치를 취하십시오! {#module23}
+   + 2.3 Real-Time CDP: 대상자를 빌드하고 조치를 취하십시오! {#module23}
       + [개요](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
-      + [2.3.1 세그먼트 작성 및 스트리밍 세분화 활성화](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex1.md)
+      + [2.3.1 대상 구축](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex1.md)
       + [2.3.2 대상을 사용하여 DV360 대상을 구성하는 방법 검토](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex2.md)
-      + [2.3.3 조치 취하기: 세그먼트를 DV360으로 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
-      + [2.3.4 조치 취하기: 세그먼트를 S3 대상으로 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
-      + [2.3.5 조치 취하기: 세그먼트를 Adobe Target에 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
+      + [2.3.3 조치 취하기: 대상자를 DV360으로 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
+      + [2.3.4 조치 취하기: 대상자를 S3-destination으로 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
+      + [2.3.5 조치 취하기: 대상자를 Adobe Target으로 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
       + [2.3.6 외부 대상](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
       + [2.3.7 대상 SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
-   + 2.4 Real-Time CDP: Microsoft Azure 이벤트 허브 {#module24}에 대한 세그먼트 활성화
+   + 2.4 Real-Time CDP: Microsoft Azure Event Hub {#module24} Audience Activation
       + [개요](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
       + [2.4.0 환경 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex0.md)
       + [2.4.1 Microsoft Azure EventHub 환경 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
       + [2.4.2 Adobe Experience Platform에서 Azure Event Hub 대상 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
-      + [2.4.3 스트리밍 세그먼트 만들기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
-      + [2.4.4 세그먼트 활성화](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
+      + [2.4.3 대상 만들기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
+      + [2.4.4 대상 활성화](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
       + [2.4.5 Microsoft Azure 프로젝트 만들기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
       + [2.4.6 전체 시나리오](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/summary.md)

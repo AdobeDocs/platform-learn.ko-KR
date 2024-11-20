@@ -3,9 +3,10 @@ title: 쿼리 서비스 - 시작
 description: 쿼리 서비스 - 시작
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--module7sandbox--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 

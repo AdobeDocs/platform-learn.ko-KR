@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집 - 데이터 세트 구성
 kt: 5342
 doc-type: tutorial
 exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '552'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./images/home.png)
 
-계속하려면 **[!UICONTROL 샌드박스]**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--module2sandbox--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **[!UICONTROL 샌드박스]**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./images/sb1.png)
 

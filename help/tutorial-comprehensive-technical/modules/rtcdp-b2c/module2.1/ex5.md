@@ -4,10 +4,10 @@ description: 콜 센터에서 실시간 고객 프로필을 확인할 수 있습
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 2%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
@@ -50,11 +50,9 @@ CX 앱 프로젝트에서 **통합**(으)로 이동합니다. **환경 선택**&
 | 이메일 ID | woutervangeluwe+18112024-01@gmail.com |
 | 모바일 번호 ID | +32473622044+18112024-01 |
 
-고객이 콜센터에 전화하면 전화번호를 활용해 고객을 식별할 수 있다. 따라서 이 연습에서는 CX 앱에서 고객 프로필을 검색하기 위해 전화번호를 사용합니다.
-
 ![데모](./images/19.png)
 
-이제 콜센터에 이상적으로 표시되는 정보를 볼 수 있으므로 콜센터 직원이 고객과 이야기할 때 즉시 사용할 수 있는 모든 관련 정보를 얻을 수 있습니다.
+이제 콜센터에 이상적으로 표시되는 정보를 볼 수 있으므로 콜센터 상담원은 고객에게 상담할 때 모든 관련 정보를 즉시 사용할 수 있습니다.
 
 ![데모](./images/20.png)
 

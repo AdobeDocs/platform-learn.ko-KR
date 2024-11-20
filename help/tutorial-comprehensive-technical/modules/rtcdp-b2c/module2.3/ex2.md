@@ -1,11 +1,12 @@
 ---
-title: Real-Time CDP - 세그먼트 작성 및 작업 수행 - Google DV360과 같은 Advertising 대상 구성
-description: Real-Time CDP - 세그먼트 작성 및 작업 수행 - Google DV360과 같은 Advertising 대상 구성
+title: Real-Time CDP - 대상 구축 및 작업 - Google DV360과 같은 Advertising 대상 구성
+description: Real-Time CDP - 대상 구축 및 작업 - Google DV360과 같은 Advertising 대상 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fdc590d5-b986-422c-97ef-b5a439644439
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->아래 콘텐츠는 FYI용입니다. **NOT**&#x200B;은(는) DV360의 새 대상을 구성해야 합니다. 대상이 이미 생성되었으며 다음 연습에서 사용할 수 있습니다.
+>아래 콘텐츠는 부분적으로 FYI용입니다. 이러한 대상이 인스턴스에 이미 있으면 **NOT**&#x200B;에서 DV360에 대한 새 대상을 구성해야 합니다. 이 경우 이미 대상이 생성되었으며 다음 연습에서 사용할 수 있습니다.
 
 [Adobe Experience Platform](https://experience.adobe.com/platform)(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -61,9 +62,9 @@ ht-degree: 1%
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 그러면 사용 가능한 대상 목록이 표시됩니다.
-다음 연습에서는 이전 연습에서 빌드한 세그먼트를 Google DV360 대상에 연결합니다.
+다음 연습에서는 이전 연습에서 빌드한 대상을 Google DV360 대상에 연결합니다.
 
-다음 단계: [2.3.3 조치 취하기: 세그먼트를 DV360으로 보내기](./ex3.md)
+다음 단계: [2.3.3 조치 취하기: 대상자를 DV360으로 보내기](./ex3.md)
 
 [모듈 2.3으로 돌아가기](./real-time-cdp-build-a-segment-take-action.md)
 

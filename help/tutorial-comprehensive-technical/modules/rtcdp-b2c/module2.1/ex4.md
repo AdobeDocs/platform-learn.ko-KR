@@ -1,19 +1,19 @@
 ---
-title: 기초 - 실시간 고객 프로필 - 세그먼트 만들기 - UI
-description: 기초 - 실시간 고객 프로필 - 세그먼트 만들기 - UI
+title: 기초 - 실시간 고객 프로필 - 대상 만들기 - UI
+description: 기초 - 실시간 고객 프로필 - 대상 만들기 - UI
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4 세그먼트 만들기 - UI
+# 2.1.4 대상 만들기 - UI
 
-이 연습에서는 Adobe Experience Platform의 세그먼트 빌더를 사용하여 세그먼트를 만듭니다.
+이 연습에서는 Adobe Experience Platform의 대상 빌더를 사용하여 대상을 만듭니다.
 
 [Adobe Experience Platform](https://experience.adobe.com/platform)(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-왼쪽에 있는 메뉴에서 **대상**(으)로 이동합니다. 이 페이지에서는 기존의 모든 세그먼트에 대한 개요를 볼 수 있습니다. 새 세그먼트 만들기를 시작하려면 **+ 대상 만들기** 단추를 클릭하십시오.
+왼쪽에 있는 메뉴에서 **대상**(으)로 이동합니다. 이 페이지에서는 모든 기존 대상에 대한 개요를 볼 수 있습니다. 새 대상을 만들려면 **+ 대상 만들기** 단추를 클릭하십시오.
 
 ![세그먼테이션](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![세그먼테이션](./images/menusegbr.png)
 
-새 세그먼트 빌더에 들어가면 **특성** 메뉴 옵션과 **XDM 개별 프로필** 참조가 바로 표시됩니다.
+새 대상 빌더에 로그인하면 **특성** 메뉴 옵션과 **XDM 개별 프로필** 참조가 즉시 표시됩니다.
 
 ![세그먼테이션](./images/segmentationui.png)
 

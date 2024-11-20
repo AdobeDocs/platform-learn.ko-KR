@@ -4,7 +4,7 @@ description: 데이터 엔지니어, 데이터 분석가, 데이터 설계자, �
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 2%
@@ -84,7 +84,7 @@ ht-degree: 2%
 - **설명:** 이 기본 모듈에서는 웹 사이트의 데이터를 플랫폼으로 수집합니다.
 - **시간 투자:** 120분
 
-[1.3 연합 대상 구성](./modules/datacollection/module1.3/fac.md)
+[1.3 페더레이션 대상 구성](./modules/datacollection/module1.3/fac.md)
 
 - **대상:** 데이터 분석가, 데이터 엔지니어, 데이터 설계자
 - Adobe Experience Platform에 대한 **필수 구성 요소:** 액세스

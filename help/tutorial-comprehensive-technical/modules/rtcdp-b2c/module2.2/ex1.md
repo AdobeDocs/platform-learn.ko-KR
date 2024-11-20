@@ -3,9 +3,10 @@ title: 지능형 서비스 - 고객 AI 데이터 준비(수집)
 description: 고객 AI - 데이터 준비(수집)
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 인텔리전트 서비스가 마케팅 이벤트 데이터에서 통찰력을 발견하려면 데이터를 의미론적으로 보강하고 표준 구조로 유지 관리해야 합니다. Intelligent Services는 이를 위해 Adobe의 XDM(Experience Data Model) 스키마를 사용합니다.
 특히 Intelligent Services에서 사용하는 모든 데이터 세트는 **소비자 경험 이벤트** XDM 스키마를 준수해야 합니다.
 
-## 2.2.1.1 스키마 생성
+## 스키마 만들기
 
 이 연습에서는 **고객 AI** 지능형 서비스에 필요한 **고객 경험 이벤트 mixin**&#x200B;을(를) 포함하는 스키마를 만듭니다.
 
@@ -25,37 +26,40 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](../../datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--module10sandbox--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](../../datacollection/module1.2/images/sb1.png)
 
 왼쪽 메뉴에서 **스키마**&#x200B;를 클릭하고 **찾아보기**(으)로 이동합니다. **스키마 만들기**&#x200B;를 클릭합니다.
 
-![새 스키마 만들기](./images/create-schema-button.png)
+![새 스키마 만들기](./images/createschemabutton.png)
 
-팝업에서 **XDM ExperienceEvent**&#x200B;을 선택합니다.
+팝업에서 **수동**&#x200B;을 선택하고 **선택**&#x200B;을 클릭합니다.
+
+![새 스키마 만들기](./images/schmanual.png)
+
+**경험 이벤트**&#x200B;를 선택하고 **다음**&#x200B;을 클릭합니다.
 
 ![새 스키마 만들기](./images/xdmee.png)
 
-그러면 이걸 보게 될 거야.
+이제 스키마의 이름을 제공해야 합니다. 스키마 이름으로 `--aepUserLdap-- - Demo System - Customer Experience Event`을(를) 사용하고 **마침**&#x200B;을(를) 클릭합니다.
+
+![새 스키마 만들기](./images/schname.png)
+
+그러면 이걸 보게 될 거야. 필드 그룹 아래의 **+ 추가**&#x200B;를 클릭합니다.
 
 ![새 스키마 만들기](./images/xdmee1.png)
 
-이 스키마에 추가할 다음 **Mixins**&#x200B;을(를) 검색하여 선택하십시오.
+이 스키마에 추가할 다음 **필드 그룹**&#x200B;을(를) 검색하고 선택하십시오.
 
 - 고객 경험 이벤트
-
-  ![새 CEE 스키마](./images/cee.png)
-
 - 최종 사용자 ID 세부 정보
-
-  ![새 CEE 스키마](./images/identitymap.png)
 
 **필드 그룹 추가**&#x200B;를 클릭합니다.
 
-![ID 키 정의](./images/addmixin.png)
+![새 CEE 스키마](./images/cee.png)
 
-그러면 이걸 보게 될 거야. Mixin **최종 사용자 ID 세부 정보**&#x200B;를 선택하십시오.
+그러면 이걸 보게 될 거야. 필드 그룹 **최종 사용자 ID 세부 정보**&#x200B;를 클릭합니다.
 
 ![새 스키마 만들기](./images/eui1.png)
 
@@ -63,7 +67,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![새 스키마 만들기](./images/eui2.png)
 
-오른쪽 메뉴에서 필드 **endUserID를 선택합니다._experience.emailid.id**, 아래로 스크롤하여 **ID**&#x200B;에 대한 확인란을 선택하고 **기본 ID**&#x200B;에 대한 확인란을 선택한 다음 **이메일**&#x200B;의 **ID 네임스페이스**&#x200B;를 선택합니다.
+오른쪽 메뉴에서 필드 **endUserID를 선택합니다._experience.emailid.id**, 아래로 스크롤하여 **ID**&#x200B;에 대한 확인란을 선택하고 **기본 ID**&#x200B;에 대한 확인란을 선택한 다음 **이메일**&#x200B;의 **ID 네임스페이스**&#x200B;를 선택합니다. **적용**&#x200B;을 클릭합니다.
 
 ![새 스키마 만들기](./images/eui3.png)
 
@@ -71,21 +75,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![새 스키마 만들기](./images/eui4.png)
 
-이제 스키마의 이름을 지정하십시오.
-
-스키마의 이름으로 다음을 사용합니다.
-
-- `--aepUserLdap-- - Demo System - Customer Experience Event`
-
-예를 들어 ldap **vangeluw**&#x200B;의 경우 스키마 이름이어야 합니다.
-
-- **vangeluw - 데모 시스템 - 고객 경험 이벤트**
-
-그럼 이런 걸 드시겠네요. 새 **Mixins**&#x200B;을(를) 추가하려면 **+ 추가** 단추를 클릭하십시오.
-
-![새 스키마 만들기](./images/xdmee2.png)
-
-스키마 이름을 선택합니다. 이제 **프로필** 토글을 클릭하여 **프로필**&#x200B;에 대한 스키마를 사용하도록 설정해야 합니다.
+그럼 이걸로 드셔보세요 그런 다음 스키마 이름을 선택합니다. 이제 **프로필** 토글을 클릭하여 **프로필**&#x200B;에 대한 스키마를 사용하도록 설정해야 합니다.
 
 ![새 스키마 만들기](./images/xdmee3.png)
 
@@ -97,7 +87,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![새 스키마 만들기](./images/xdmee5.png)
 
-## 2.2.1.2 데이터 세트 만들기
+## 데이터 세트 만들기
 
 왼쪽 메뉴에서 **데이터 세트**&#x200B;를 클릭하고 **찾아보기**(으)로 이동합니다. **데이터 집합 만들기**&#x200B;를 클릭합니다.
 
@@ -129,7 +119,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 이제 고객 경험 이벤트 데이터 수집을 시작하고 고객 AI 서비스를 사용할 준비가 되었습니다.
 
-## 2.2.1.3 경험 이벤트 테스트 데이터 다운로드
+## 경험 이벤트 테스트 데이터 다운로드
 
 **스키마** 및 **데이터 집합**&#x200B;이 구성되면 이제 경험 이벤트 데이터를 수집할 준비가 되었습니다. Customer AI는 **2분기 이상**&#x200B;에 데이터를 필요로 하므로 외부에서 준비한 데이터를 수집해야 합니다.
 
@@ -145,7 +135,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 집합](./images/ingest.png)
 
-## 2.2.1.4 경험 이벤트 테스트 데이터 수집
+## 경험 이벤트 테스트 데이터 수집
 
 Adobe Experience Platform에서 **데이터 세트**(으)로 이동하여 **[!UICONTROL ldap - 데모 시스템 - 고객 경험 이벤트 데이터 세트]**(으)로 지정된 데이터 세트를 엽니다.
 

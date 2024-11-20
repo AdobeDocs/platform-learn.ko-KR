@@ -3,9 +3,10 @@ title: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - Adobe
 description: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - Adobe Experience Platform에서 이벤트 허브 RTCDP 대상 설정
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 0c2e94ec-00e8-4f47-add7-ca3a08151225
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -80,7 +81,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 

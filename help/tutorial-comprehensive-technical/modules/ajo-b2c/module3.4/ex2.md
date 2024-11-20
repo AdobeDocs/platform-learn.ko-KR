@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - 일괄 처리 기반 여정 구성
 description: 이 섹션에서는 뉴스레터를 전송할 일괄 이메일 여정을 구성합니다
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ## 3.4.2.1 뉴스레터 여정 만들기
 
-이제 일괄 처리 기반 여정을 만듭니다. 들어오는 경험 이벤트 또는 세그먼트 시작 또는 종료에 의존하여 1개의 특정 고객에 대한 여정을 트리거하는 이전 연습의 여정 기반 이벤트와 달리 배치 기반 여정은 뉴스레터, 일회성 프로모션 또는 일반 정보와 같은 고유 콘텐츠나 생일 캠페인 및 미리 알림과 같은 정기적으로 전송되는 유사한 콘텐츠로 전체 세그먼트를 한 번 타겟팅합니다.
+이제 일괄 처리 기반 여정을 만듭니다. 들어오는 경험 이벤트 또는 대상 항목 또는 종료에 의존하여 1개의 특정 고객에 대한 여정을 트리거하는 이전 연습의 여정 기반 이벤트와는 달리, 일괄 기반 여정은 뉴스레터, 일회성 프로모션 또는 일반 정보와 같은 고유한 콘텐츠나 생일 캠페인 및 미리 알림과 같은 정기적으로 전송되는 유사한 콘텐츠로 전체 대상을 한 번 타겟팅합니다.
 
 메뉴에서 **여정**(으)로 이동하여 **여정 만들기**&#x200B;를 클릭합니다.
 
@@ -37,11 +38,11 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/batchj2.png)
 
-**오케스트레이션**&#x200B;에서 **세그먼트 읽기**&#x200B;를 캔버스로 끌어서 놓습니다. 즉, 게시되면 여정은 전체 세그먼트 대상을 검색하는 것으로 시작되고, 이렇게 되면 여정 및 메시지의 타겟 대상이 됩니다. **세그먼트 선택**&#x200B;을 클릭합니다.
+**오케스트레이션**&#x200B;에서 **대상자 읽기**&#x200B;를 캔버스로 끌어서 놓습니다. 즉, 게시되면 여정은 전체 대상 검색을 통해 시작되고, 이렇게 되면 여정 및 메시지의 타겟 대상이 됩니다. **대상자 선택**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/batchj3.png)
 
-**세그먼트 선택** 팝업에서 ldap를 검색하고 [모듈 2.3 - Real-time CDP - 세그먼트 작성 및 작업](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)에서 만든 세그먼트를 선택합니다. `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. 예: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. **저장**&#x200B;을 클릭합니다.
+**대상 선택** 팝업에서 ldap를 검색하고 [모듈 2.3 - Real-time CDP - 대상을 빌드하고 작업](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)을 수행하여 `--aepUserLdap-- - Interest in Galaxy S24`을(를) 만듭니다. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/batchj5.png)
 

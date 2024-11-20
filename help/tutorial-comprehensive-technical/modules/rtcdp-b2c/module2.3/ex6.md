@@ -3,27 +3,28 @@ title: Real-Time CDP - 외부 대상
 description: Real-Time CDP - 외부 대상
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # 2.3.6 외부 대상
 
-대부분의 경우 귀사는 Adobe Experience Platform에서 고객 프로필을 보강하기 위해 다른 애플리케이션의 기존 세그먼트를 사용할 수 있습니다.
+대부분의 경우 귀사는 Adobe Experience Platform에서 고객 프로필을 보강하기 위해 다른 애플리케이션의 기존 대상자를 사용할 수 있습니다.
 이러한 외부 대상은 데이터 과학 모델을 기반으로 하거나 외부 데이터 플랫폼을 사용하여 정의되었을 수 있습니다.
 
-Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experience Platform에서 해당 세그먼트 정의를 자세히 재정의할 필요 없이 외부 대상을 수집하고 활성화하는데 집중할 수 있습니다.
+Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experience Platform에서 해당 대상 정의를 자세히 재정의할 필요 없이 외부 대상의 수집 및 활성화에 집중할 수 있습니다.
 
 전반적인 프로세스는 다음 세 가지 주요 단계로 나뉩니다.
 
 - 외부 대상 메타데이터 가져오기: 이 단계는 대상 이름과 같은 외부 대상 메타데이터를 Adobe Experience Platform으로 수집하기 위한 것입니다.
-- 외부 대상 멤버십을 고객 프로필에 할당합니다. 이 단계는 외부 세그먼트 멤버십 속성으로 고객 프로필을 보강하기 위한 것입니다.
-- Adobe Experience Platform에서 세그먼트 만들기: 이 단계는 외부 대상 멤버십을 기반으로 실행 가능한 세그먼트를 만들기 위한 것입니다.
+- 고객 프로필에 외부 대상 멤버십 할당: 이 단계는 외부 대상 멤버십 속성으로 고객 프로필을 보강하기 위한 것입니다.
+- Adobe Experience Platform에서 대상 만들기: 이 단계는 외부 대상 멤버십을 기반으로 실행 가능한 대상을 만들기 위한 것입니다.
 
-## 2.3.6.1 메타데이터
+## 메타데이터
 
 [Adobe Experience Platform](https://experience.adobe.com/platform)(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
@@ -31,13 +32,13 @@ Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experien
 
 >[!IMPORTANT]
 >
->이 연습에 사용할 샌드박스는 ``--module2sandbox--``입니다.
+>이 연습에 사용할 샌드박스는 ``--aepSandboxName--``입니다.
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--module2sandbox--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./images/sb1.png)
 
-세그먼트 데이터는 프로필이 세그먼트의 일부가 되는 조건을 정의하지만, 세그먼트 메타데이터는 세그먼트의 이름, 설명 및 상태와 같은 세그먼트에 대한 정보입니다. 외부 대상 메타데이터가 Adobe Experience Platform에 저장되므로 ID 네임스페이스를 사용하여 Adobe Experience Platform에서 메타데이터를 수집해야 합니다.
+대상 데이터는 프로필이 대상의 일부가 되는 조건을 정의하지만 대상 메타데이터는 대상 이름, 설명 및 상태와 같은 대상에 대한 정보입니다. 외부 대상 메타데이터가 Adobe Experience Platform에 저장되므로 ID 네임스페이스를 사용하여 Adobe Experience Platform에서 메타데이터를 수집해야 합니다.
 
 ## 2.3.6.1.1 외부 대상을 위한 Id 네임스페이스
 
@@ -47,19 +48,19 @@ Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experien
 참고 사항:
 
 - ID 기호 **externalaudiences**&#x200B;은(는) 외부 대상 ID를 참조하기 위해 다음 단계에서 사용됩니다.
-- 이 ID 네임스페이스는 고객 프로필이 아닌 세그먼트를 식별하기 위한 것이 아니므로 **비사용자 식별자** 유형이 사용됩니다.
+- 이 ID 네임스페이스는 고객 프로필이 아닌 대상을 식별하기 위한 것이 아니므로 **비사용자 식별자** 유형이 사용됩니다.
 
 ![외부 대상 ID](images/extAudIdNS.png)
 
 ## 2.3.6.1.2 외부 대상 메타데이터 스키마 만들기
 
-외부 대상 메타데이터는 **세그먼트 정의 스키마**&#x200B;를 기반으로 합니다. 자세한 내용은 [XDM Github 저장소](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md)를 참조하십시오.
+외부 대상 메타데이터는 **대상 정의 스키마**&#x200B;를 기반으로 합니다. 자세한 내용은 [XDM Github 저장소](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md)를 참조하십시오.
 
 왼쪽 메뉴에서 스키마로 이동합니다. **+ 스키마 만들기**&#x200B;를 클릭한 다음 **찾아보기**&#x200B;를 클릭합니다.
 
 ![외부 대상 메타데이터 스키마 1](images/extAudMDXDM1.png)
 
-클래스를 할당하려면 **세그먼트 정의**&#x200B;를 검색하세요. **세그먼트 정의** 클래스를 선택하고 **클래스 할당**&#x200B;을 클릭합니다.
+클래스를 할당하려면 **대상 정의**&#x200B;를 검색하세요. **대상 정의** 클래스를 선택하고 **클래스 할당**&#x200B;을 클릭합니다.
 
 ![외부 대상 메타데이터 스키마 2](images/extAudMDXDM2.png)
 
@@ -203,13 +204,13 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![외부 대상 메타데이터 문자열 5](images/extAudMDstr5.png)
 
-## 2.3.6.2 세그먼트 멤버십
+## 대상자 멤버십
 
-이제 외부 대상 메타데이터를 사용할 수 있으므로 특정 고객 프로필에 대한 세그먼트 멤버십을 수집할 수 있습니다.
+이제 외부 대상 메타데이터를 사용할 수 있으므로 특정 고객 프로필의 대상 멤버십을 수집할 수 있습니다.
 
-이제 세그먼트 멤버십 스키마에 대해 보강된 프로필 데이터 세트를 준비해야 합니다. 자세한 내용은 [XDM Github 저장소](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md)를 참조하십시오.
+이제 대상 멤버십 스키마에 대해 보강된 프로필 데이터 세트를 준비해야 합니다. 자세한 내용은 [XDM Github 저장소](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md)를 참조하십시오.
 
-## 2.3.6.2.1 외부 대상 멤버십 스키마 만들기
+### 외부 대상 멤버십 스키마 만들기
 
 오른쪽 메뉴에서 **스키마**(으)로 이동합니다. **스키마 만들기**&#x200B;를 클릭한 다음 **XDM 개인 프로필**&#x200B;을 클릭합니다.
 
@@ -237,7 +238,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![외부 대상 프로필 스키마 5](images/extAudPrXDM5.png)
 
-## 2.3.6.2.2 외부 대상 멤버십 데이터 세트 만들기
+### 외부 대상 멤버십 데이터 세트 만들기
 
 **스키마**&#x200B;에서 **찾아보기**(으)로 이동합니다. 이전 단계에서 만든 `--aepUserLdap-- - External Audiences Membership` 스키마를 검색하고 클릭합니다. **스키마에서 데이터 집합 만들기**&#x200B;를 클릭합니다.
 
@@ -251,7 +252,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![외부 대상 메타데이터 DS 3](images/extAudPrDS3.png)
 
-## 2.3.6.2.3 HTTP API Source 연결 만들기
+### HTTP API Source 연결 만들기
 
 
 다음으로, 메타데이터를 데이터 세트에 수집하는 데 사용할 HTTP API Source 커넥터를 구성해야 합니다.
@@ -294,7 +295,7 @@ XDM 호환 페이로드를 HTTP API Source 커넥터로 수집하므로 마법�
 
 ![외부 대상 메타데이터 http 4](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4 외부 대상 멤버십 데이터 수집
+### 외부 대상 멤버십 데이터 수집
 
 Source 커넥터 개요 탭에서 **..**&#x200B;을(를) 클릭한 다음 **스키마 페이로드 복사**&#x200B;를 클릭합니다.
 
@@ -346,7 +347,7 @@ HTTP API Source 커넥터 화면을 새로 고칩니다. 여기서 몇 분 정�
 
 ![외부 대상 메타데이터 문자열 2](images/extAudPrstr2.png)
 
-## 2.3.6.2.5 외부 대상 멤버십 수집 유효성 검사
+### 외부 대상 멤버십 수집 유효성 검사
 
 처리가 완료되면 쿼리 서비스를 사용하여 데이터 세트의 데이터 가용성을 확인할 수 있습니다.
 
@@ -368,7 +369,7 @@ select * from --aepUserLdap--_external_audiences_membership
 
 ![외부 대상 메타데이터 문자열 5](images/extAudPrstr5.png)
 
-## 2.3.6.3 세그먼트 만들기
+## 세그먼트 생성
 
 이제 외부 대상에 대해 조치를 취할 준비가 되었습니다.
 Adobe Experience Platform에서 조치를 취하는 것은 세그먼트를 만들고, 각 대상을 채우고, 이러한 대상을 대상에 공유하는 것을 통해 수행됩니다.
@@ -396,7 +397,7 @@ Adobe Experience Platform에서 조치를 취하는 것은 세그먼트를 만�
 
 이제 세그먼트가 준비되었으며, 활성화 대상으로 전송할 수 있습니다.
 
-## 2.3.6.4 고객 프로필 시각화
+## 고객 프로필 시각화
 
 이제 고객 프로필에서 세그먼트 자격을 시각화할 수도 있습니다. **프로필**(으)로 이동하여 ID 네임스페이스 **데모 시스템 - CRMID**&#x200B;을(를) 사용하고 연습 6.6.2.4의 일부로 사용한 ID `--aepUserLdap---profile-test-01`을(를) 제공하고 **보기**&#x200B;를 클릭합니다. **프로필 ID**&#x200B;를 클릭하여 프로필을 엽니다.
 

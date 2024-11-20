@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집 - 스키마 구성 및 식별자 설정
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3127'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](./images/sb1.png)
 
@@ -301,7 +301,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 ![데이터 수집](./images/home.png)
 
-계속하려면 **[!UICONTROL 샌드박스]**&#x200B;를 선택해야 합니다. 선택할 [!UICONTROL 샌드박스] 이름이 ``--module2sandbox--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **[!UICONTROL 샌드박스]**&#x200B;를 선택해야 합니다. 선택할 [!UICONTROL 샌드박스] 이름이 ``--aepSandboxName--``입니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](./images/sb1.png)
 

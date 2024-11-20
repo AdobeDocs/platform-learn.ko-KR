@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - 이메일 메시지에 개인화 적용
 description: 이 연습에서는 이메일 콘텐츠 내에서 세그먼트 개인화를 사용하는 방법을 설명합니다
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepTenantId--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepTenantId--``입니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 

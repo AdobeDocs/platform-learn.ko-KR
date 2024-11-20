@@ -4,7 +4,8 @@ description: Offer decisioning - Offer decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -92,9 +93,9 @@ Adobe Experience Platform 인스턴스에 배치가 표시되지 않으면 아�
 
 ## 3.3.1.4 결정 규칙
 
-규칙(자격 규칙이라고도 함)은 **Segment**&#x200B;과 동일합니다. 사실 규칙은 세그먼트 자체에서만 차이가 있습니다. 규칙을 오퍼와 함께 사용하여 Adobe Experience Platform에서 프로필에 최상의 오퍼를 제공할 수 있습니다.
+규칙(자격 규칙이라고도 함)은 **대상자**&#x200B;와 동일합니다. 실제로 규칙은 오퍼 와 함께 규칙을 사용하여 Adobe Experience Platform에서 프로필에 최상의 오퍼를 제공할 수 있는 유일한 차이점을 가진 대상 자체입니다.
 
-이전 지원 모듈을 기반으로 세그먼트를 정의하는 방법을 이미 알고 있으므로, 세그먼트 환경을 빠르게 다시 살펴보겠습니다.
+이전 지원 모듈을 기반으로 대상을 정의하는 방법을 이미 알고 있으므로 세그멘테이션 환경을 신속하게 다시 살펴보겠습니다.
 
 **규칙**(으)로 이동합니다. **+ 규칙 만들기**&#x200B;를 클릭합니다.
 
@@ -106,7 +107,7 @@ Adobe Experience Platform 인스턴스에 배치가 표시되지 않으면 아�
 
 이제 실시간 고객 프로필에 대한 결합 스키마의 일부인 모든 필드에 액세스할 수 있으며 모든 규칙을 작성할 수 있습니다.
 
-또한 **대상** > ``--aepTenantId--``(으)로 이동하여 Adobe Experience Platform에서 이미 정의된 세그먼트를 간단히 재사용할 수 있다는 것도 흥미롭습니다.
+또한 **대상** > ``--aepTenantId--``(으)로 이동하여 Adobe Experience Platform에서 이미 정의된 대상을 간단히 재사용할 수 있다는 것도 흥미롭습니다.
 
 ![결정 규칙](./images/decisionruleaud.png)
 

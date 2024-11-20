@@ -4,9 +4,9 @@ description: Real-Time CDP - 대상 SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1098'
 ht-degree: 5%
 
 ---
@@ -23,11 +23,13 @@ ht-degree: 5%
 
 ## 엔드포인트 및 형식 정의
 
-이 연습에서는 세그먼트가 자격을 가질 때 자격 이벤트가 해당 끝점으로 스트리밍될 수 있도록 를 구성하는 끝점이 필요합니다. 이 연습에서는 [https://webhook.site/](https://webhook.site/)을(를) 사용하여 샘플 끝점을 사용합니다. [https://webhook.site/](https://webhook.site/)(으)로 이동하십시오. 여기서 이와 유사한 내용을 볼 수 있습니다. URL을 복사하려면 **클립보드에 복사**&#x200B;를 클릭하십시오. 다음 연습에서는 이 URL을 지정해야 합니다. 이 예제의 URL은 `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a`입니다.
+이 연습에서는 대상이 자격을 얻을 때 자격 이벤트가 해당 끝점으로 스트리밍될 수 있도록 를 구성하는 끝점이 필요합니다. 이 연습에서는 [https://pipedream.com/requestbin](https://pipedream.com/requestbin)을(를) 사용하여 샘플 끝점을 사용합니다. [https://pipedream.com/requestbin](https://pipedream.com/requestbin)(으)로 이동하여 계정을 만든 다음 작업 영역을 만듭니다. 작업 영역이 생성되면 이와 유사한 항목이 표시됩니다.
+
+URL을 복사하려면 **복사**&#x200B;를 클릭하세요. 다음 연습에서는 이 URL을 지정해야 합니다. 이 예제의 URL은 `https://eodts05snjmjz67.m.pipedream.net`입니다.
 
 ![데이터 수집](./images/webhook1.png)
 
-형식에서는 고객 식별자와 같은 메타데이터와 함께 세그먼트 자격 또는 부적격 여부를 스트리밍하는 표준 템플릿을 사용합니다. 특정 끝점의 기대에 맞게 템플릿을 사용자 정의할 수 있지만, 이 연습에서는 표준 템플릿을 재사용하여 이 템플릿과 같은 페이로드가 끝점으로 스트리밍됩니다.
+형식에서는 고객 식별자와 같은 메타데이터와 함께 대상 자격 또는 부적격 여부를 스트리밍하는 표준 템플릿을 사용합니다. 특정 끝점의 기대에 맞게 템플릿을 사용자 정의할 수 있지만, 이 연습에서는 표준 템플릿을 재사용하여 이 템플릿과 같은 페이로드가 끝점으로 스트리밍됩니다.
 
 ```json
 {
@@ -52,9 +54,15 @@ ht-degree: 5%
 
 ## 서버 및 템플릿 구성 만들기
 
-Adobe Experience Platform에서 고유한 대상을 만드는 첫 번째 단계는 서버 및 템플릿 구성을 만드는 것입니다.
+Adobe Experience Platform에서 고유한 대상을 만드는 첫 번째 단계는 Postman을 사용하여 서버 및 템플릿 구성을 만드는 것입니다.
 
-이렇게 하려면 **대상 작성 API**, **대상 서버 및 템플릿**(으)로 이동한 다음 클릭하여 요청 **POST - 대상 서버 구성 만들기**&#x200B;를 엽니다. 그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxName--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하십시오.
+이렇게 하려면 Postman 응용 프로그램을 열고 **대상 작성 API**, **대상 서버 및 템플릿**(으)로 이동한 다음 클릭하여 요청 **POST - 대상 서버 구성 만들기**&#x200B;를 엽니다.
+
+>[!NOTE]
+>
+>해당 Postman 컬렉션이 없는 경우 모듈 2.1의 [연습 3](../module2.1/ex3.md)(으)로 돌아가 지침을 따라 제공된 Postman 컬렉션으로 Postman을 설정하십시오.
+
+그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxName--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하십시오.
 
 ![데이터 수집](./images/sdkpm1.png)
 
@@ -89,7 +97,7 @@ Adobe Experience Platform에서 고유한 대상을 만드는 첫 번째 단계�
 }
 ```
 
-위의 코드를 붙여넣은 후 필드 **urlBasedDestination.url.value**&#x200B;을(를) 수동으로 업데이트해야 하며, 이전 단계에서 만든 웹후크의 url(이 예제의 경우 `https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a`)로 설정해야 합니다.
+위의 코드를 붙여넣은 후 필드 **urlBasedDestination.url.value**&#x200B;을(를) 수동으로 업데이트해야 하며, 이전 단계에서 만든 웹후크의 url(이 예제의 경우 `https://eodts05snjmjz67.m.pipedream.net`)로 설정해야 합니다.
 
 ![데이터 수집](./images/sdkpm4.png)
 
@@ -97,20 +105,20 @@ Adobe Experience Platform에서 고유한 대상을 만드는 첫 번째 단계�
 
 ![데이터 수집](./images/sdkpm5.png)
 
+>[!NOTE]
+>
+>Adobe I/O에게 요청을 보내기 전에 유효한 `access_token`이(가) 있어야 합니다. 올바른 `access_token`을(를) 가져오려면 **POST IO - OAuth** 컬렉션에서 **Adobe - 액세스 토큰 가져오기** 요청을 실행하십시오.
+
 **보내기**&#x200B;를 클릭하면 서버 템플릿이 만들어지고 응답의 일부로 **instanceId**(이)라는 필드가 표시됩니다. 다음 단계에서 필요하므로 적어 두십시오. 이 예제에서 **instanceId**은
-`eb0f436f-dcf5-4993-a82d-0fcc09a6b36c`.
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`.
 
 ![데이터 수집](./images/sdkpm6.png)
 
 ## 대상 구성 만들기
 
-Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동한 다음 클릭하여 **POST - 대상 구성 만들기** 요청을 엽니다. 그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxName--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하십시오.
+Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동한 다음 클릭하여 **POST - 대상 구성 만들기** 요청을 엽니다. 그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxName--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하고 `--aepSandboxName--`(으)로 바꿉니다.
 
 ![데이터 수집](./images/sdkpm7.png)
-
-`--aepSandboxName--`(으)로 바꾸기
-
-![데이터 수집](./images/sdkpm8.png)
 
 그런 다음 **본문**(으)로 이동합니다. 자리 표시자 **{{body}}**&#x200B;을(를) 선택하십시오.
 
@@ -183,7 +191,7 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![데이터 수집](./images/sdkpm11.png)
 
-위의 코드를 붙여넣은 후 **destinationDelivery 필드를 수동으로 업데이트해야 합니다. destinationServerId**&#x200B;을(를) 사용하려면 이전 단계에서 만든 대상 서버 템플릿의 **instanceId**(이 예제에서는 `eb0f436f-dcf5-4993-a82d-0fcc09a6b36c`)로 설정해야 합니다. 그런 다음 **보내기**&#x200B;를 클릭합니다.
+위의 코드를 붙여넣은 후 **destinationDelivery 필드를 수동으로 업데이트해야 합니다. destinationServerId**&#x200B;을(를) 사용하려면 이전 단계에서 만든 대상 서버 템플릿의 **instanceId**(이 예제에서는 `52482c90-8a1e-42fc-b729-7f0252e5cebd`)로 설정해야 합니다. 그런 다음 **보내기**&#x200B;를 클릭합니다.
 
 ![데이터 수집](./images/sdkpm10.png)
 
@@ -197,7 +205,7 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -205,13 +213,13 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![데이터 수집](./images/destsdk1.png)
 
-## 세그먼트를 대상에 연결
+## 대상을 대상에 연결
 
-**대상** > **카탈로그**&#x200B;에서 대상에 대한 **설정**&#x200B;을 클릭하여 새 대상에 세그먼트를 추가하세요.
+**대상** > **카탈로그**&#x200B;에서 대상에 대한 **설정**&#x200B;을 클릭하여 새 대상에 대상을 추가합니다.
 
 ![데이터 수집](./images/destsdk2.png)
 
-**1234**&#x200B;과(와) 같은 더미 전달자 토큰을 입력하십시오. **대상에 연결**&#x200B;을 클릭합니다.
+**전달자 토큰**&#x200B;에 대한 임의의 값을 입력하십시오(예: **1234**). **대상에 연결**&#x200B;을 클릭합니다.
 
 ![데이터 수집](./images/destsdk3.png)
 
@@ -223,7 +231,7 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![데이터 수집](./images/destsdk5.png)
 
-이전에 만든 세그먼트(이름: `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`)를 선택하십시오. **다음**&#x200B;을 클릭합니다.
+이전에 만든 대상(`--aepUserLdap-- - Interest in Galaxy S24`)을 선택하십시오. **다음**&#x200B;을 클릭합니다.
 
 ![데이터 수집](./images/destsdk6.png)
 
@@ -235,23 +243,15 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![데이터 수집](./images/destsdk8.png)
 
-이제 대상이 활성 상태가 되면 새 세그먼트 자격이 사용자 지정 Webhook으로 스트리밍됩니다.
+이제 대상이 라이브되며, 새로운 대상 자격이 이제 사용자 지정 웹후크로 스트리밍됩니다.
 
 ![데이터 수집](./images/destsdk9.png)
 
-## 세그먼트 활성화 테스트
+## 대상자 활성화 테스트
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-이제 아래 흐름을 따라 웹 사이트에 액세스할 수 있습니다. **통합**&#x200B;을 클릭합니다.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-**통합** 페이지에서 연습 0.1에서 만든 데이터 수집 속성을 선택해야 합니다.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 
@@ -269,23 +269,24 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 데모에 대해 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
+그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 연습에서는 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-**Luma** 홈페이지에서 **Men**(으)로 이동하여 제품 **PROTEUS FITNESS JACKSHIRT**&#x200B;을(를) 클릭하십시오.
+이 예에서는 특정 제품을 보는 특정 고객에게 응답하려고 합니다.
+**Citi Signal** 홈페이지에서 **전화 및 장치**(으)로 이동한 다음 제품 **Galaxy S24**&#x200B;을(를) 클릭합니다.
 
-![데이터 수집](./images/homenadia.png)
+![데이터 수집](./images/homegalaxy.png)
 
-이제 **PROTEUS FITNESS JACKSHIRT**&#x200B;의 제품 페이지를 방문했습니다. 이는 이 연습에서 이전에 만든 세그먼트를 사용할 수 있음을 의미합니다.
+이제 Galaxy S24의 제품 페이지가 조회되었으므로, 대상자는 다음 분 이내에 프로필을 확인할 수 있습니다.
 
-![데이터 수집](./images/homenadiapp.png)
+![데이터 수집](./images/homegalaxy1.png)
 
-프로필 뷰어를 열고 **세그먼트**(으)로 이동하면 세그먼트 자격이 표시됩니다.
+프로필 뷰어를 열고 **대상**(으)로 이동하면 대상 자격이 표시됩니다.
 
-![데이터 수집](./images/homenadiapppb.png)
+![데이터 수집](./images/homegalaxydsdk.png)
 
-이제 [https://webhook.site/](https://webhook.site/)에서 열려 있는 웹후크로 돌아가십시오. 여기에서 Adobe Experience Platform에서 시작되고 세그먼트 자격 이벤트가 포함된 새로운 수신 요청이 표시됩니다.
+이제 [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net)에서 열려 있는 웹후크로 돌아가십시오. 여기에서 Adobe Experience Platform에서 시작되고 대상 자격 이벤트가 포함된 새 수신 요청이 표시됩니다.
 
 ![데이터 수집](./images/destsdk10.png)
 

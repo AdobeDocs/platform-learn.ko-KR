@@ -4,7 +4,7 @@ description: 기초 - 실시간 고객 프로필 - 알 수 없음에서 웹 사�
 kt: 5342
 doc-type: tutorial
 exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 데모에 대해 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
+그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 연습에서는 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 

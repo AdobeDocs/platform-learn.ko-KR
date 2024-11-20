@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - 비즈니스 이벤트
 description: 이 섹션에서는 "재입고 품목" 사용 사례를 수행하기 위해 비즈니스 이벤트 기능을 사용하는 방법에 대해 설명합니다
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 1%
 
 ---
@@ -98,14 +99,14 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/bej12.png)
 
-**세그먼트 읽기** 활동이 캔버스에 자동으로 추가되었습니다. 비즈니스 이벤트는 여정이 특정 여정을 읽도록 하는 트리거만 보내고 특정 세그먼트에 대한 프로필 목록을 검색하기 때문입니다.
+알 수 있듯이 **대상자 읽기** 활동이 캔버스에 자동으로 추가되었습니다. 비즈니스 이벤트는 여정이 특정 대상을 읽을 수 있도록 트리거만 보내고, 이렇게 하면 해당 여정에 대한 프로필 목록이 검색되기 때문입니다.
 
-**세그먼트 읽기** 활동을 클릭합니다.
-**세그먼트 읽기** 구성에서는 방금 발생한 비즈니스 이벤트를 알릴 세그먼트를 선택해야 합니다. **세그먼트 선택** 필드를 클릭합니다.
+**대상자 읽기** 활동을 클릭합니다.
+**대상자 읽기** 구성에서는 방금 발생한 비즈니스 이벤트를 알릴 대상자를 선택해야 합니다. **대상자 선택** 필드를 클릭합니다.
 
 ![Journey Optimizer](./images/bej13.png)
 
-**세그먼트 선택** 팝업에서 ldap를 검색하고 [모듈 2.3 - Real-time CDP - 세그먼트 작성 및 작업](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)에서 만든 세그먼트를 선택합니다. `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. 예: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. **저장**&#x200B;을 클릭합니다.
+**대상 선택** 팝업에서 ldap를 검색하고 [모듈 2.3 - Real-time CDP - 대상을 빌드하고 작업](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)을 수행하여 `--aepUserLdap-- - Interest in Galaxy S24`을(를) 만듭니다. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/bej14.png)
 

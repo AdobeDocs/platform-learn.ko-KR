@@ -4,9 +4,9 @@ description: 기초 - 실시간 고객 프로필 - 나만의 실시간 고객 �
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2287'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 컨텍스트
 
-실시간 고객 프로필에는 기존 세그먼트 멤버십은 물론 이벤트 데이터와 함께 모든 프로필 데이터가 표시됩니다. 표시된 데이터는 Adobe 애플리케이션 및 외부 솔루션에서 어디에서나 가져올 수 있습니다. 이것은 기록의 경험 시스템인 Adobe Experience Platform에서 가장 강력한 보기입니다.
+실시간 고객 프로필에는 모든 프로필 데이터가 기존 대상 멤버십은 물론 이벤트 데이터와 함께 표시됩니다. 표시된 데이터는 Adobe 애플리케이션 및 외부 솔루션에서 어디에서나 가져올 수 있습니다. 이것은 기록의 경험 시스템인 Adobe Experience Platform에서 가장 강력한 보기입니다.
 
 실시간 고객 프로필은 모든 Adobe 애플리케이션뿐만 아니라 콜 센터나 매장 내 클라이언트 앱과 같은 외부 솔루션에서도 사용할 수 있습니다. 이렇게 하는 방법은 이러한 외부 솔루션을 Adobe Experience Platform의 API에 연결하는 것입니다.
 
@@ -58,9 +58,6 @@ X-ray 패널에서 ID와 네임스페이스의 4가지 다른 조합을 볼 수 
 
 ![새 통합 Adobe I/O](./images/api1.png)
 
-**Adobe Experience Platform** 아이콘을 클릭합니다.
-/images/api2.png)
-
 **Experience Platform API**&#x200B;를 선택하고 **다음**&#x200B;을(를) 클릭합니다.
 
 ![새 통합 Adobe I/O](./images/api3.png)
@@ -75,7 +72,7 @@ X-ray 패널에서 ID와 네임스페이스의 4가지 다른 조합을 볼 수 
 
 >[!NOTE]
 >
-> 제품 프로필 이름은 인스턴스 사양인 만큼 Adobe Experience Platform 인스턴스에서 달라집니다. Adobe Admin Console 및 AEP 권한 UI에 설정된 적절한 액세스 권한이 있는 제품 프로필을 하나 이상 선택해야 합니다.
+> 제품 프로필 이름은 인스턴스별로 다르므로 Adobe Experience Platform 인스턴스에서 달라집니다. Adobe Admin Console 및 AEP 권한 UI에 설정된 적절한 액세스 권한이 있는 제품 프로필을 하나 이상 선택해야 합니다.
 
 **구성된 API 저장**&#x200B;을 클릭합니다.
 
@@ -119,7 +116,7 @@ X-ray 패널에서 ID와 네임스페이스의 4가지 다른 조합을 볼 수 
 
 >[!NOTE]
 >
-> 제품 프로필 이름은 인스턴스 사양인 만큼 Adobe Experience Platform 인스턴스에서 달라집니다. Adobe Admin Console 및 AEP 권한 UI에 설정된 적절한 액세스 권한이 있는 제품 프로필을 하나 이상 선택해야 합니다.
+> 제품 프로필 이름은 인스턴스별로 다르므로 Adobe Experience Platform 인스턴스에서 달라집니다. Adobe Admin Console 및 AEP 권한 UI에 설정된 적절한 액세스 권한이 있는 제품 프로필을 하나 이상 선택해야 합니다.
 
 ![사용 권한](./images/perm1.png)
 
@@ -150,7 +147,7 @@ Postman에는 환경과 컬렉션의 두 가지 개념이 있습니다.
 - 환경에는 거의 일관되지 않은 모든 환경 변수가 포함되어 있습니다. 환경에서는 개인 키 및 기타 같은 보안 자격 증명과 함께 플랫폼 환경의 IMSOrg와 같은 것을 찾을 수 있습니다. 환경 파일은 이전 연습에서 Adobe I/O 설정 중에 다운로드한 파일로, 이름은 **`oauth_server_to_server.postman_environment.json`**&#x200B;입니다.
 
 - 컬렉션에는 사용할 수 있는 여러 API 요청이 포함되어 있습니다. 2개의 컬렉션을 사용합니다.
-   - Adobe I/0 인증을 위한 1개 컬렉션
+   - Adobe I/O 인증을 위한 1개 컬렉션
    - 이 단원의 연습에 대한 컬렉션 1개
    - 대상 작성용 Real-Time CDP 모듈의 연습에 대한 컬렉션 1개
 
@@ -632,7 +629,7 @@ Platform에서 즉시 응답을 받아 다음과 같은 정보를 표시해야 �
 
 Adobe Experience Platform의 실시간 프로필에서 ExperienceEvent 데이터를 요청하기 위해 ECID를 사용할 필요는 없으며, 네임스페이스의 ID를 사용하여 이 데이터를 요청할 수 있습니다.
 
-다음 단계: [2.1.4 세그먼트 만들기 - UI](./ex4.md)
+다음 단계: [2.1.4 대상 만들기 - UI](./ex4.md)
 
 [모듈 2.1로 돌아가기](./real-time-customer-profile.md)
 

@@ -4,7 +4,7 @@ description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ satastream은 웹 SDK에서 데이터를 수집한 후 Adobe Edge 서버에 데�
 - 모든 경험 이벤트 데이터는 기본적으로 데이터 집합 **데모 시스템 - 웹 사이트에 대한 이벤트 데이터 집합(전역 v1.1)**&#x200B;에 수집됩니다.
 - 모든 프로필 데이터는 기본적으로 데이터 세트 **데모 시스템 - 웹 사이트에 대한 프로필 데이터 세트(전역 v1.1)**&#x200B;에 수집됩니다(기본적으로 Web SDK를 사용한 프로필 데이터 수집은 현재 Web SDK에서 아직 지원되지 않음)
 - 이 데이터 스트림에 **Offer decisioning** 응용 프로그램 서비스를 사용하려면 Offer decisioning 확인란을 선택해야 합니다. ([모듈 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md)의 일부가 됩니다.)
-- **Edge 세그멘테이션**&#x200B;이(가) 기본적으로 활성화되어 있습니다. 즉, 들어오는 트래픽이 수집되면 자격을 부여하는 세그먼트가 에지에서 평가됩니다
+- **Edge 세그멘테이션**&#x200B;은(는) 기본적으로 활성화되어 있습니다. 즉, 들어오는 트래픽이 수집되면 자격을 갖춘 대상이 에지에서 평가됩니다
 - **Personalization 대상**&#x200B;을 사용하려면 Personalization 대상 확인란을 선택해야 합니다.
 - 
    - 이 데이터 스트림에서 **Adobe Journey Optimizer**&#x200B;의 기능을 사용하려면 Adobe Journey Optimizer 확인란을 선택해야 합니다.

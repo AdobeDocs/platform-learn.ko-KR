@@ -3,10 +3,11 @@ title: Adobe Experience Platform에서 HTTP API 끝점 구성
 description: Adobe Experience Platform에서 HTTP API 끝점 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 6%
+source-wordcount: '303'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +21,7 @@ HTTP API Source 커넥터를 만들려면 [https://experience.adobe.com/platform
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 화면 상단의 파란색 선에 있는 텍스트 **[!UICONTROL 프로덕션]**&#x200B;을(를) 클릭하면 됩니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
