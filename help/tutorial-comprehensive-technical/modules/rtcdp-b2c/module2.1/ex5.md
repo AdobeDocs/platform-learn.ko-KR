@@ -1,170 +1,64 @@
 ---
-title: 기초 - 실시간 고객 프로필 - 세그먼트 만들기 - API
-description: 기초 - 실시간 고객 프로필 - 세그먼트 만들기 - API
+title: 콜 센터에서 실시간 고객 프로필을 확인할 수 있습니다
+description: 콜 센터에서 실시간 고객 프로필을 확인할 수 있습니다
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 3%
+source-wordcount: '352'
+ht-degree: 2%
 
 ---
 
-# 2.1.5 세그먼트 만들기 - API
+# 2.1.5 콜 센터에서 실시간 고객 프로필 확인
 
-이 연습에서는 Postman의 API를 사용하여 Adobe Experience Platform과 Adobe I/O을 사용하여 세그먼트를 만들고 해당 세그먼트의 결과를 데이터 세트로 저장합니다.
+이 연습에서는 고객 여정을 살펴보고 실제 고객처럼 행동하도록 하는 것이 목표입니다.
 
-## 스토리
+이 웹 사이트에서는 Adobe Experience Platform을 구현했습니다. 모든 작업은 경험 이벤트로 간주되며 실시간으로 Adobe Experience Platform으로 전송되어 실시간 고객 프로필에 수화를 공급합니다.
 
-실시간 고객 프로필에는 이벤트 데이터 및 기존 세그먼트 멤버십과 함께 모든 프로필 데이터가 표시됩니다. 표시되는 데이터는 Adobe 애플리케이션 및 외부 솔루션에서 어디에서나 가져올 수 있습니다. 이것은 기록의 경험 시스템인 Adobe Experience Platform에서 가장 강력한 보기입니다.
+이전 연습에서는 사이트를 탐색하는 익명 고객으로 시작하여 몇 단계를 거쳐 알려진 고객이 되었습니다.
 
-## 2.1.5.1 - Platform API를 통해 세그먼트 만들기
+결국 동일한 고객이 전화를 받고 콜센터에 문의할 때, 다른 채널의 정보를 즉시 사용할 수 있도록 하여 콜센터 경험이 연관성 있고 개인화될 수 있도록 하는 것이 중요합니다.
 
-Postman으로 이동합니다.
+## CX 앱 사용
 
-다음 컬렉션을 찾습니다. **_Adobe Experience Platform 지원**. 이 컬렉션에는 **2 폴더가 표시됩니다. 세그먼테이션**. 이 연습에서는 이러한 요청을 사용합니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. CX 앱 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을(를) 클릭하여 엽니다.
 
-![세그먼테이션](./images/pmdtl.png)
+![데모](./images/cxapp3.png)
 
-다음은 API를 통해 세그먼트를 만드는 데 필요한 모든 단계를 수행하는 것입니다. 간단한 세그먼트 &quot;**ldap** - 모든 여성 고객&quot;을 만듭니다.
+CX 앱 프로젝트에서 **통합**(으)로 이동합니다. **환경 선택**&#x200B;을 클릭합니다.
 
-### 1단계 - 세그먼트 정의 만들기
+![데모](./images/cxapp3a.png)
 
-이름이 **1단계 - 프로필: 세그먼트 정의 만들기**&#x200B;인 요청을 클릭합니다.
+시작에서 만든 Adobe Experience Platform 데이터 수집 속성을 선택합니다. 이름에 **(cx-app)**&#x200B;이(가) 있는 속성을 선택해야 합니다.
 
-![세그먼테이션](./images/s1_call.png)
+![데모](./images/cxapp4.png)
 
-이 요청의 **본문** 섹션으로 이동하십시오.
+그러면 이걸 보게 될 거야. **실행**&#x200B;을 클릭합니다.
 
-![세그먼테이션](./images/s1_body.png)
+![데모](./images/cxapp4a.png)
 
-이 요청의 **본문**&#x200B;에 다음이 표시됩니다.
+그런 다음 ID와 네임스페이스에 따라 하나를 선택하고 **검색 아이콘**&#x200B;을 클릭합니다.
 
-![세그먼테이션](./images/s1_bodydtl.png)
+![고객 프로필](./images/identities.png)
 
-이 요청에 사용되는 언어는 Profile Query Language 또는 **PQL**&#x200B;입니다.
+| 신원 | 네임스페이스 |
+|:-------------:| :---------------:|
+| Experience Cloud ID (ECID) | 79943948563923140522865572770524243489 |
+| Experience Cloud ID (ECID) | 70559351147248820114888181867542007989 |
+| 이메일 ID | woutervangeluwe+18112024-01@gmail.com |
+| 모바일 번호 ID | +32473622044+18112024-01 |
 
-PQL [여기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=en)에서 추가 정보 및 설명서를 찾을 수 있습니다.
+고객이 콜센터에 전화하면 전화번호를 활용해 고객을 식별할 수 있다. 따라서 이 연습에서는 CX 앱에서 고객 프로필을 검색하기 위해 전화번호를 사용합니다.
 
+![데모](./images/19.png)
 
-주의: **ldap**&#x200B;을(를) 특정 **ldap**(으)로 바꾸어 아래 요청에서 변수 **name**&#x200B;을(를) 업데이트하십시오.
+이제 콜센터에 이상적으로 표시되는 정보를 볼 수 있으므로 콜센터 직원이 고객과 이야기할 때 즉시 사용할 수 있는 모든 관련 정보를 얻을 수 있습니다.
 
-```json
-{
-    "name" : "ldap - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "ldap",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
+![데모](./images/20.png)
 
-특정 **ldap**&#x200B;를 추가한 후에는 본문이 다음과 유사해야 합니다.
-
-```json
-{
-    "name" : "vangeluw - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "vangeluw",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
-
-요청의 **헤더** 필드도 확인해야 합니다. **머리글**(으)로 이동합니다. 그러면 다음과 같은 결과가 표시됩니다.
-
-![Postman](./images/s1_h.png)
-
-| 키 | 값 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
-
-이제 파란색 **보내기** 단추를 클릭하여 세그먼트를 만들고 그 결과를 봅니다.
-
-![세그먼테이션](./images/s1_bodydtl_results.png)
-
-이 단계 후에는 Platform UI에서 세그먼트 정의를 볼 수 있습니다. 이를 확인하려면 Adobe Experience Platform에 로그인하고 **세그먼트**(으)로 이동하세요.
-
-![세그먼테이션](./images/s1_segmentdef.png)
-
-### 2단계 - 세그먼트 POST 작업 만들기
-
-이전 연습에서는 _스트리밍_ 세그먼트를 만들었습니다. 스트리밍 세그먼트는 지속적으로 자격을 실시간으로 평가합니다. _일괄 처리_ 세그먼트를 만드는 중입니다. 일괄 처리 세그먼트는 자격 측면에서 세그먼트가 표시될 수 있는 모습을 미리 볼 수 있지만 _세그먼트가 실제로 실행되었음을 의미하지는 않습니다_. 현재 _아무도 이 세그먼트에 적합하지 않습니다_. 사람들이 자격을 갖추게 하려면 배치 세그먼트를 실행해야 합니다. 바로 여기에서 수행할 작업입니다.
-
-이제 세그먼트 작업 POST을 살펴보겠습니다.
-
-Postman으로 이동합니다.
-
-![세그먼테이션](./images/pmdtl.png)
-
-Postman 컬렉션에서 이름이 **2단계 - POST 세그먼트 작업**&#x200B;인 요청을 클릭하여 엽니다.
-
-![세그먼테이션](./images/s2_call.png)
-
-요청의 **헤더** 필드도 확인해야 합니다. **머리글**(으)로 이동합니다. 그러면 다음과 같은 결과가 표시됩니다.
-
-![Postman](./images/s2headers.png)
-
-| 키 | 값 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
-
-파란색 **보내기** 단추를 클릭합니다.
-
-다음과 유사한 결과가 표시되어야 합니다.
-
-![세그먼테이션](./images/s2_call_response.png)
-
-이 세그먼트 작업은 현재 실행 중이므로 시간이 걸릴 수 있습니다. 3단계에서 이 작업의 상태를 확인할 수 있습니다.
-
-
-### 3단계 - GET 세그먼트 작업 상태
-
-Postman으로 이동합니다.
-
-![세그먼테이션](./images/pmdtl.png)
-
-Postman 컬렉션에서 이름이 **3단계 - GET 세그먼트 작업 상태**&#x200B;인 요청을 클릭합니다.
-
-![세그먼테이션](./images/s3_call.png)
-
-요청의 **헤더** 필드도 확인해야 합니다. **머리글**(으)로 이동합니다. 그러면 다음과 같은 결과가 표시됩니다.
-
-![Postman](./images/s3headers.png)
-
-| 키 | 값 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->사용 중인 Adobe Experience Platform 샌드박스의 이름을 지정해야 합니다. x-sandbox-name은 `--aepSandboxName--`이어야 합니다.
-
-파란색 **보내기** 단추를 클릭합니다.
-
-다음과 유사한 결과가 표시되어야 합니다.
-
-![세그먼테이션](./images/s3_status.png)
-
-이 예에서는 작업의 **상태**&#x200B;가 **QUEUED**(으)로 설정되어 있습니다.
-
-**상태**&#x200B;이(가) **성공**(으)로 설정될 때까지 파란색 **보내기** 단추를 몇 분마다 클릭하여 이 요청을 반복합니다.
-
-![세그먼테이션](./images/s3_status_succeeded.png)
-
-상태가 **SUCCEEDED**&#x200B;이면 세그먼트 작업이 실행되었으며 고객이 이제 세그먼트에 대한 자격을 갖습니다.
-
-축하합니다. 세분화 연습을 완료했습니다. 이제 전사적으로 실시간 고객 프로필을 활성화하는 방법에 대해 살펴보겠습니다.
-
-다음 단계: [2.1.6 콜센터에서 실시간 고객 프로필 확인](./ex6.md)
+다음 단계: [요약 및 이점](./summary.md)
 
 [모듈 2.1로 돌아가기](./real-time-customer-profile.md)
 

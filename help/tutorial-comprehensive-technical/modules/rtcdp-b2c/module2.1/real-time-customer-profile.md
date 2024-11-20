@@ -5,16 +5,14 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # 2.1 Foundation - 실시간 고객 프로필
-
-**작성자: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 모듈에서는 Adobe Experience Platform의 실시간 고객 프로필 및 ID 기능에 대해 자세히 살펴봅니다. 대상을 정의하는 방법, ID 서비스 및 Experience Cloud ID의 역할, 세그먼트 빌더 쿼리를 정의하여 세그먼트를 정의하는 방법에 대해 알아봅니다.
 
@@ -22,7 +20,6 @@ ht-degree: 0%
 
 - Adobe Experience Platform의 UI를 통해 고객의 실시간 고객 프로필을 시각화하는 방법을 알아봅니다
 - Adobe Experience Platform의 세그먼트 빌더를 사용하여 세그먼트를 만드는 방법을 알아봅니다
-- Adobe Experience Platform API를 사용하여 세그먼트를 만들고 세그먼트의 결과를 데이터 세트에 저장하는 방법에 대해 알아봅니다
 - 실시간 동작을 포함한 전체 고객 프로필에 액세스할 수 있는 권한이 오프라인 환경에서 미치는 영향에 대해 알아봅니다
 
 ## 전제 조건
@@ -54,11 +51,7 @@ ht-degree: 0%
 
 이 연습에서는 Adobe Experience Platform의 세그먼트 빌더를 사용하여 세그먼트를 만듭니다.
 
-[2.1.5 세그먼트 만들기 - API](./ex5.md)
-
-이 연습에서는 Postman의 API를 사용하여 Adobe Experience Platform과 Adobe I/O을 사용하여 세그먼트를 만들고 해당 세그먼트의 결과를 데이터 세트로 저장합니다.
-
-[2.1.6 콜 센터에서 실시간 고객 프로필 확인](./ex6.md)
+[2.1.5 콜 센터에서 실시간 고객 프로필 확인](./ex5.md)
 
 이 연습에서는 고객으로부터 전화를 받는 콜센터 직원을 가장하게 됩니다. 이 고객의 경험에 실제로 영향을 미치려면 사용 가능한 모든 정보에 실시간으로 액세스해야 합니다.
 

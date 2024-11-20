@@ -5,9 +5,9 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f79a989f01fa1c005a0c06cea81268118b2467be
+source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,9 @@ ht-degree: 4%
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
    + 1.3 - 페더레이션 대상 구성 {#module13}
       + [개요](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-      + [1.3.1 FAC 소개](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.1 Snowflake 계정 설정](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.2 스키마, 데이터 모델 및 링크 만들기](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
+      + [1.3.3 통합 컴포지션 만들기](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)
 
 + 2 Real-Time CDP B2C {#rtcdpb2c}
@@ -57,8 +59,7 @@ ht-degree: 4%
       + [2.1.2 자신의 실시간 고객 프로필 시각화 - UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
       + [2.1.3 자신의 실시간 고객 프로필 시각화 - API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex3.md)
       + [2.1.4 세그먼트 만들기 - UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
-      + [2.1.5 세그먼트 만들기 - API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
-      + [2.1.6 콜 센터에서 실시간 고객 프로필 확인](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex6.md)
+      + [2.1.5 콜 센터에서 실시간 고객 프로필 확인](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
    + 2.2 Intelligent Services {#module22}
       + [개요](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/intelligent-services.md)

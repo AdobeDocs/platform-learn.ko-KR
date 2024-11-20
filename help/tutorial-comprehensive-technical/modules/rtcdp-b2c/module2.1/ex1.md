@@ -3,9 +3,10 @@ title: 기초 - 실시간 고객 프로필 - 알 수 없음에서 웹 사이트�
 description: 기초 - 실시간 고객 프로필 - 알 수 없음에서 웹 사이트에 알려짐
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -22,13 +23,9 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 ## 고객 여정 흐름
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-**Screens** 페이지에서 **실행**&#x200B;을 클릭합니다.
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 
@@ -62,7 +59,7 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 ![데모](../../datacollection/module1.2/images/pv3.png)
 
-**Men** 제품 범주로 이동합니다. 그런 다음 **몬타나 윈드 재킷** 제품을 클릭합니다.
+**휴대폰 및 장치** 제품 범주로 이동합니다. **iPhone 15 Pro** 제품을 클릭합니다.
 
 ![데모](../../datacollection/module1.2/images/pv4.png)
 
@@ -74,15 +71,15 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 ![데모](../../datacollection/module1.2/images/pv6.png)
 
-**여성** 범주 페이지로 돌아가서 다른 제품을 클릭합니다. 다른 경험 이벤트가 Adobe Experience Platform으로 전송되었습니다.
+**휴대폰 및 장치** 범주 페이지로 돌아가서 다른 제품을 클릭합니다. 다른 경험 이벤트가 Adobe Experience Platform으로 전송되었습니다. 프로필 뷰어 패널을 엽니다. 이제 **제품 보기** 유형의 경험 이벤트 2개가 표시됩니다. 적절한 동의를 통해 비헤이비어가 익명화되면 모든 클릭을 추적하고 Adobe Experience Platform에 저장할 수 있습니다. 익명 고객이 알려지면 모든 익명 동작을 알 수 있는 프로필에 자동으로 병합할 수 있습니다.
 
 ![데모](../../datacollection/module1.2/images/pv7.png)
 
-프로필 뷰어 패널을 엽니다. 이제 **제품 보기** 유형의 경험 이벤트 2개가 표시됩니다. 비헤이비어는 익명이지만 클릭할 때마다 추적하고 이를 Adobe Experience Platform에 저장할 수 있습니다. 익명 고객이 알려지면 모든 익명 동작을 알 수 있는 프로필에 자동으로 병합할 수 있습니다.
+등록/로그인 페이지로 이동합니다. **로그인**&#x200B;을 클릭합니다.
 
 ![데모](../../datacollection/module1.2/images/pv8.png)
 
-등록/로그인 페이지로 이동합니다. **계정 만들기**&#x200B;를 클릭합니다.
+**계정 만들기**&#x200B;를 클릭합니다.
 
 ![데모](../../datacollection/module1.2/images/pv9.png)
 
@@ -104,11 +101,11 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 알려진 고객이 된 후, 모바일 앱 사용을 시작할 때입니다. iPhone에서 모바일 앱을 연 다음 앱에 로그인합니다.
 
-앱을 더 이상 설치하지 않았거나 설치 방법을 기억하지 못하는 경우 여기를 참조하십시오. [0.5 모바일 앱 사용](../../gettingstarted/gettingstarted/ex5.md)
+앱을 더 이상 설치하지 않았거나 설치 방법을 기억하지 못하는 경우 여기를 참조하십시오. [모바일 앱 사용](../../gettingstarted/gettingstarted/ex5.md)
 
-지침에 따라 앱을 설치하면 Luma 브랜드가 로드된 앱의 랜딩 페이지가 표시됩니다. 화면 왼쪽 상단에서 계정 아이콘을 클릭합니다.
+지시에 따라 앱을 설치하면 Citi Signal 브랜드가 로드된 앱의 랜딩 페이지가 표시됩니다. 화면 왼쪽 상단에서 계정 아이콘을 클릭합니다.
 
-![데모](./images/app_hp.png)
+![데모](./images/app_hp1.png)
 
 로그인 화면에서 데스크탑 웹 사이트에서 사용한 이메일 주소로 로그인합니다. **로그인**&#x200B;을 클릭합니다.
 
@@ -120,15 +117,23 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 그러면 제품 세부 사항 페이지가 표시됩니다.
 
-![데모](./images/app_carst.png)
+![데모](./images/app_galaxy.png)
 
 앱의 홈 화면으로 이동하여 화면에서 왼쪽으로 스와이프하여 프로필 뷰어 패널을 표시합니다. 그러면 **경험 이벤트** 섹션에서 방금 본 제품과 이전 웹 사이트 세션의 모든 제품 보기가 표시됩니다.
 
-![데모](./images/app_after_carst.png)
+>[!NOTE]
+>
+>앱과 웹 사이트에서 통합된 보기를 보려면 몇 분 정도 걸릴 수 있습니다.
+
+![데모](./images/app_after_galaxy.png)
 
 이제 데스크탑 컴퓨터로 돌아가서 홈 페이지를 새로 고치면 제품도 표시됩니다.
 
-![데모](./images/lb_x_aftermobile.png)
+>[!NOTE]
+>
+>앱과 웹 사이트에서 통합된 보기를 보려면 몇 분 정도 걸릴 수 있습니다.
+
+![데모](./images/web_x_aftermobile.png)
 
 이제 Adobe Experience Platform에 데이터를 수집했으며 해당 데이터를 ECID 및 이메일 주소와 같은 식별자에 연결했습니다. 이 연습의 목표는 수행하려는 작업의 비즈니스 맥락을 이해하는 것이었습니다. 이제 실시간 교차 장치 고객 프로필을 효과적으로 빌드했습니다. 다음 연습에서는 Adobe Experience Platform에서 프로필을 시각화합니다.
 

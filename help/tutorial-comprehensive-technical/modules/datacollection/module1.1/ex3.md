@@ -4,20 +4,20 @@ description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 9%
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
-# 1.1.3 - Adobe Experience Platform 데이터 수집 소개
+# 1.1.3 Adobe Experience Platform 데이터 수집 소개
 
 ## 컨텍스트
 
 이제 Adobe Experience Platform 데이터 수집의 기본 구성 요소를 자세히 살펴보고 데모 웹 사이트에 설치된 항목을 파악해 보겠습니다. Adobe Experience Platform 웹 SDK 확장을 자세히 살펴보고 데이터 요소와 규칙을 구성하고 라이브러리를 게시하는 방법을 알아봅니다.
 
-## 1.1.3.1 - Adobe Experience Platform 웹 SDK 확장
+## Adobe Experience Platform 웹 SDK 확장
 
 확장은 Adobe Experience Platform 데이터 수집 인터페이스와 라이브러리 기능을 확장하는 패키지화된 코드 세트입니다. Adobe Experience Platform 데이터 수집은 플랫폼이며 확장은 플랫폼에서 실행되는 앱과 같습니다. 자습서에서 사용되는 모든 확장은 Adobe에서 만들고 관리하지만 서드파티는 고유한 확장을 만들어 Adobe Experience Platform 데이터 수집 사용자가 관리해야 하는 사용자 지정 코드의 양을 제한할 수 있습니다.
 
@@ -52,7 +52,7 @@ Adobe Experience Platform 웹 SDK를 시작합니다! [시작](./../../../module
 
 ![확장 홈](./images/property9edge.png)
 
-## 1.1.3.2 데이터 요소
+## 데이터 요소
 
 데이터 요소는 데이터 사전(또는 데이터 맵)의 기본 구성단위입니다. 데이터 요소를 사용하여 마케팅 및 광고 기술 전반에서 데이터를 수집, 구성 및 전달합니다.
 
@@ -88,7 +88,7 @@ Adobe Experience Platform 웹 SDK를 시작합니다! [시작](./../../../module
 
 이 시점에서 Adobe Experience Platform 웹 SDK 확장이 설치되고 XDM 구조에 대한 데이터를 수집하도록 데이터 요소를 업데이트했습니다. 다음으로, 데이터를 올바른 시간에 전송할 규칙을 확인해 보겠습니다.
 
-## 1.1.3.3 규칙
+## 규칙
 
 Adobe Experience Platform 데이터 수집은 규칙 기반 시스템입니다. 사용자 상호 작용과 관련 데이터를 찾습니다. 규칙에 요약된 기준이 충족되면, 규칙이 정의한 확장, 스크립트 또는 클라이언트측 코드를 트리거합니다.
 
@@ -130,7 +130,7 @@ Adobe Experience Platform 데이터 수집은 규칙 기반 시스템입니다. 
 
 이제 규칙을 살펴보았으므로, Adobe Experience Platform 데이터 수집에서 모든 변경 사항을 게시할 수 있습니다.
 
-## 라이브러리의 1.1.3.4 Publish
+## 라이브러리의 Publish
 
 마지막으로, 방금 업데이트한 규칙 및 데이터 요소의 유효성을 검사하려면 속성에 편집된 항목이 들어 있는 라이브러리를 게시해야 합니다. Adobe Experience Platform 데이터 수집의 **[!UICONTROL 게시]** 섹션에서 수행해야 하는 몇 가지 빠른 단계가 있습니다.
 

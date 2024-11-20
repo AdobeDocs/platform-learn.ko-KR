@@ -4,16 +4,16 @@ description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
 
 # 1.1.6 Adobe Target 구현
 
-## 1.1.6.1 Adobe Target을 사용하도록 데이터 스트림 업데이트
+## Adobe Target을 사용하도록 데이터 스트림 업데이트
 
 Web SDK에서 수집한 데이터를 Adobe Target으로 전송하고 모든 고객을 위해 개인화된 경험으로 Adobe Target에서 응답을 받으려면 다음 단계를 따르십시오.
 

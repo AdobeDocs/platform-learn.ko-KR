@@ -3,9 +3,10 @@ title: 기초 - 실시간 고객 프로필 - 요약
 description: 기초 - 실시간 고객 프로필 - 요약
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,6 @@ ht-degree: 0%
 - 실시간 고객 프로필은 식별자를 기반으로 여러 데이터 세트 간에 프로필 조각을 동적으로 병합할 수 있는 유연하고 실시간 ID 그래프를 기반으로 합니다.
 - 프로필 조각이 ID 그래프를 통해 병합되면 사용 가능한 모든 식별자를 사용하여 고객의 프로필을 검색할 수 있습니다
 - 이제 세그먼테이션은 XDM을 세그먼트 뒤의 언어로 사용하여 수행되므로 세그먼트를 쉽게 재사용할 수 있고 이해할 수 있습니다
-- 이제 API를 통해 세그먼트를 만들 수도 있으므로 프로그래밍 방식으로 외부에서 세그먼트를 정의한 다음 API를 통해 세그먼트 정의를 삽입할 수 있습니다.
 
 ## 이 항목 확인
 

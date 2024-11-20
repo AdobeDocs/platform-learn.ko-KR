@@ -4,16 +4,16 @@ description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 클라이언트측 웹 데이터 수집
 
-## 1.1.4.1 요청의 데이터 유효성 검사
+## 요청의 데이터 유효성 검사
 
 ### Adobe Experience Platform Debugger 설치
 
@@ -40,7 +40,7 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 [https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 
