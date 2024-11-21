@@ -3,9 +3,10 @@ title: Adobe Experience Platform 데이터 수집 및 실시간 서버 측 전�
 description: 데이터 스트림을 업데이트하여 Adobe Experience Platform 데이터 수집 서버 속성에 데이터를 사용할 수 있도록 합니다.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 1%
 
 ## 2.5.2.1 데이터스트림 업데이트
 
-[연습 0.2](./../../gettingstarted/gettingstarted/ex2.md)에서 고유한 **[!UICONTROL 데이터스트림]**&#x200B;을 만들었습니다. 그런 다음 `--aepUserLdap-- - Demo System Datastream` 이름을 사용했습니다.
+[시작하기](./../../gettingstarted/gettingstarted/ex2.md)에서 고유한 **[!UICONTROL 데이터스트림]**&#x200B;을(를) 만들었습니다. 그런 다음 `--aepUserLdap-- - Demo System Datastream` 이름을 사용했습니다.
 
-이 연습에서는 **[!DNL Data Collection Server property]**&#x200B;에서 작동하도록 해당 **[!UICONTROL 데이터 스트림]**&#x200B;을 구성해야 합니다.
+이 연습에서는 **데이터 수집 서버 속성**&#x200B;에서 작동하도록 **[!UICONTROL 데이터 스트림]**&#x200B;을 구성해야 합니다.
 
 이렇게 하려면 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동하십시오. 그러면 이걸 보게 될 거야. 왼쪽 메뉴에서 **[!UICONTROL 데이터스트림]**&#x200B;을 클릭합니다.
 

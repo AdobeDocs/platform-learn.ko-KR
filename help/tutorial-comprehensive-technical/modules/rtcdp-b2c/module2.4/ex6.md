@@ -4,9 +4,9 @@ description: Microsoft Azure Event Hub Audience Activation - Azure 기능 정의
 kt: 5342
 doc-type: tutorial
 exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Visual Code Studio로 돌아갑니다. Azure 구독 이름이 표시됩니다(�
 
 ![3-05-vsc-create-project.png](./images/vsc2.png)
 
-프로젝트를 저장할 로컬 폴더를 선택하고 **선택**&#x200B;을 클릭합니다.
+원하는 로컬 폴더를 선택하거나 만들어 프로젝트를 저장하고 **선택**&#x200B;을 클릭합니다.
 
 ![3-06-vsc-select-folder.png](./images/vsc3.png)
 
@@ -104,66 +104,73 @@ Visual Code Studio로 돌아갑니다. Azure 구독 이름이 표시됩니다(�
 
 ![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
 
-프로젝트를 만든 후 **index.js**&#x200B;을(를) 클릭하여 편집기에서 파일을 엽니다.
+프로젝트를 만든 후 편집기에서 `--aepUserLdap---aep-event-hub-trigger.js` 파일을 엽니다.
 
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 
-Adobe Experience Platform이 이벤트 허브에 전송하는 페이로드에는 대상 ID가 포함됩니다.
+Adobe Experience Platform이 이벤트 허브에 전송하는 페이로드는 다음과 같습니다.
 
 ```json
-[{
-"segmentMembership": {
-"ups": {
-"ca114007-4122-4ef6-a730-4d98e56dce45": {
-"lastQualificationTime": "2020-08-31T10:59:43Z",
-"status": "realized"
-},
-"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
-},
-"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
 }
-}
-},
-"identityMap": {
-"ecid": [{
-"id": "08130494355355215032117568021714632048"
-}]
-}
-}]
 ```
 
-Visual Studio Code의 index.js 코드를 아래 코드로 바꿉니다. 이 코드는 Real-Time CDP가 이벤트 허브 대상에 대상 자격을 전송할 때마다 실행됩니다. 이 예제에서 코드는 수신된 페이로드를 표시하고 개선하는 것입니다. 하지만 실시간으로 대상자 자격을 처리하는 모든 기능을 상상할 수 있습니다.
+Visual Studio 코드의 `--aepUserLdap---aep-event-hub-trigger.js`에 있는 코드를 아래 코드로 업데이트합니다. 이 코드는 Real-Time CDP가 이벤트 허브 대상에 대상 자격을 전송할 때마다 실행됩니다. 이 예제에서 코드는 수신 페이로드를 표시하는 것이지만 대상 자격을 실시간으로 처리하고 데이터 파이프라인 에코시스템을 더 세부적으로 사용하는 추가 기능을 상상할 수 있습니다.
+
+`--aepUserLdap---aep-event-hub-trigger.js` 파일의 11행에 현재 다음이 표시됩니다.
 
 ```javascript
-// Marc Meewis - Solution Consultant Adobe - 2020
-// Adobe Experience Platform Enablement - Module 2.4
-
-// Main function
-// -------------
-// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
-// Eventhub destination
-// This function enriched the received audience payload with the name of the audience. 
-// You can replace this function with any logic that is require to process and deliver
-// Adobe Experience Platform audiences in real-time to any application or platform that 
-// would need to act upon an AEP audience qualification.
-// 
-
-module.exports = async function (context, eventHubMessages) {
-
-    return new Promise (function (resolve, reject) {
-
-        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
-
-        resolve();
-
-    });    
-
-};
+context.log('Event hub message:', message);
 ```
+
+`--aepUserLdap---aep-event-hub-trigger.js`의 11행을 다음과 같이 변경합니다.
+
+```javascript
+context.log('Event hub message:', JSON.stringify(message));
+```
+
+그러면 총 페이로드는 다음과 같아야 합니다.
+
+```javascript
+const { app } = require('@azure/functions');
+
+app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
+    connection: '--aepUserLdap--aepenablement_RootManageSharedAccessKey_EVENTHUB',
+    eventHubName: '--aepUserLdap---aep-enablement-event-hub',
+    cardinality: 'many',
+    handler: (messages, context) => {
+        if (Array.isArray(messages)) {
+            context.log(`Event hub function processed ${messages.length} messages`);
+            for (const message of messages) {
+                context.log('Event hub message:', message);
+            }
+        } else {
+            context.log('Event hub function processed message:', messages);
+        }
+    }
+});
+```
+
 
 결과는 다음과 같아야 합니다.
 
@@ -175,7 +182,13 @@ module.exports = async function (context, eventHubMessages) {
 
 ![3-17-vsc-run-project.png](./images/vsc14.png)
 
-디버그 모드에서 프로젝트를 처음 실행할 때 Azure 저장소 계정을 첨부하고 **저장소 계정 선택**&#x200B;을 클릭한 다음 이전에 만든 저장소 계정(`--aepUserLdap--aepstorage`)을 선택합니다.
+디버그 모드에서 프로젝트를 처음 실행할 때 Azure 저장소 계정을 첨부해야 합니다. **저장소 계정 선택**&#x200B;을 클릭하세요.
+
+![3-17-vsc-run-project.png](./images/vsc14a.png)
+
+그런 다음 이전에 만든 `--aepUserLdap--aepstorage` 저장소 계정을 선택합니다.
+
+![3-17-vsc-run-project.png](./images/vsc14b.png)
 
 이제 프로젝트가 실행 중이고 이벤트 허브에서 이벤트 목록을 작성하고 있습니다. 다음 연습에서는 CitiSignal 데모 웹 사이트에서 사용자에게 적합한 동작을 보여 줍니다. 그 결과 Event Hub 트리거 기능 터미널에서 대상 자격 페이로드를 받게 됩니다.
 

@@ -4,7 +4,7 @@ description: Microsoft Azure Event Hub Audience Activation - 대상 활성화
 kt: 5342
 doc-type: tutorial
 exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## Azure 이벤트 허브 대상에 대상 추가
 
-이 연습에서는 대상 `--aepUserLdap-- - Interest in Equipment`을(를) `--aepUserLdap---aep-enablement` Azure Event Hub 대상에 추가합니다.
+이 연습에서는 대상 `--aepUserLdap-- - Interest in Plans`을(를) `--aepUserLdap---aep-enablement` Azure Event Hub 대상에 추가합니다.
 
 URL [https://experience.adobe.com/platform](https://experience.adobe.com/platform)로 이동하여 Adobe Experience Platform에 로그인합니다.
 

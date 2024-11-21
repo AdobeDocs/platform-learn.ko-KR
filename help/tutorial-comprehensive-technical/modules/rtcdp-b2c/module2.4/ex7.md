@@ -3,7 +3,8 @@ title: Microsoft Azure Event Hub Audience Activation - 작업
 description: Microsoft Azure Event Hub Audience Activation - 작업
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ For detailed output, run func with --verbose flag.
 
 Visual Studio 코드로 다시 전환하고 **TERMINAL** 탭을 보면 특정 **ECID**&#x200B;에 대한 대상 목록이 표시됩니다. 이 활성화 페이로드는 `--aepUserLdap-- - Interest in Plans` 대상에 대한 자격이 주어지면 바로 이벤트 허브에 전달됩니다.
 
+![6-06-vsc-activation-improved.png](./images/cs3.png)
+
 대상 페이로드를 자세히 살펴보면 `--aepUserLdap-- - Interest in Plans`이(가) **실현됨** 상태입니다.
 
-대상자 상태가 **실현됨**&#x200B;이면 프로필이 대상자의 일부이고, **종료됨** 상태는 프로필이 대상자에서 제거되었음을 의미합니다.
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-activation-improved.png](./images/cs3.png)
+대상자 상태가 **실현됨**&#x200B;이면 프로필이 대상자의 일부이고, **종료됨** 상태는 프로필이 대상자에서 제거되었음을 의미합니다.
 
 다음 단계: [요약 및 이점](./summary.md)
 

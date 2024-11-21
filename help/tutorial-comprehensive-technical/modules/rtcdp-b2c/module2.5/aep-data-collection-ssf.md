@@ -4,16 +4,14 @@ description: 이 모듈에서는 이전에 구성한 데이터 세트, 스키마
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Real-Time CDP 연결: 이벤트 전달
-
-**작성자: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Dellande](https://www.linkedin.com/in/clement-delalande/)**
 
 이 모듈에서는 이전에 구성한 데이터 세트, 스키마 및 Adobe Experience Platform 데이터 수집 클라이언트 속성을 사용하여 데이터를 수집한 다음 해당 데이터 서버측을 선택한 엔드포인트에 전달합니다.
 
@@ -23,10 +21,6 @@ ht-degree: 0%
 - Adobe Experience Platform 데이터 수집에서 Adobe Cloud Connector 확장 설치 및 사용
 - Google 함수 엔드포인트를 만들고 데이터를 해당 엔드포인트로 스트리밍
 - AWS 엔드포인트를 만들고 데이터를 해당 엔드포인트에 스트리밍
-
-이 비디오를 통해 가치, 고객 여정 및 구성 프로세스에 대해 알아보십시오.
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## 학습 목표
 

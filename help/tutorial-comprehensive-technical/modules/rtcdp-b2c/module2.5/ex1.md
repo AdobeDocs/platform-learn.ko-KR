@@ -3,36 +3,37 @@ title: Adobe Experience Platform 데이터 수집 및 실시간 이벤트 전달
 description: Adobe Experience Platform 데이터 수집 이벤트 전달 속성 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 9c64e57d-c91c-4d4c-923f-91a02edeb2ac
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '737'
 ht-degree: 1%
 
 ---
 
 # 2.5.1 Adobe Experience Platform 데이터 수집 이벤트 전달 속성 만들기
 
->[!NOTE]
->
->Adobe Experience Platform Edge 모바일 확장 기능은 현재 BETA에 있습니다. 이 확장 기능은 초대를 통해서만 사용할 수 있습니다. 자세한 내용을 살펴보고 이 자습서에 대한 자료에 액세스하려면 Adobe 고객 성공 관리자에게 문의하십시오.
+## Adobe Experience Platform 데이터 수집 이벤트 전달 속성이란 무엇입니까?
 
-## 2.5.1.1 Adobe Experience Platform 데이터 수집 이벤트 전달 속성이란 무엇입니까?
-
-일반적으로 Adobe Experience Platform 데이터 수집을 사용하여 데이터를 수집하면 **Client Side**&#x200B;에서 수집됩니다. **클라이언트 쪽**&#x200B;은(는) 웹 사이트 또는 모바일 응용 프로그램과 같은 환경입니다. 모듈 0 및 모듈 1에서는 Adobe Experience Platform 데이터 수집 클라이언트 속성의 구성에 대해 자세히 논의했으며, 고객이 웹 사이트 및 모바일 애플리케이션과 상호 작용할 때 해당 위치에서 데이터를 수집할 수 있도록 Adobe Experience Platform 데이터 수집 클라이언트 속성을 웹 사이트 및 모바일 애플리케이션에 구현했습니다.
+일반적으로 Adobe Experience Platform 데이터 수집을 사용하여 데이터를 수집하면 **클라이언트측**&#x200B;에서 수집됩니다. **클라이언트측**&#x200B;은(는) 웹 사이트 또는 모바일 응용 프로그램과 같은 환경입니다. 시작 및 데이터 수집에서는 Adobe Experience Platform 데이터 수집 클라이언트 속성의 구성에 대해 자세히 논의했으며, 고객이 웹 사이트 및 모바일 애플리케이션과 상호 작용할 때 해당 위치에서 데이터를 수집할 수 있도록 Adobe Experience Platform 데이터 수집 클라이언트 속성을 웹 사이트 및 모바일 애플리케이션에 구현했습니다.
 
 Adobe Experience Platform 데이터 수집 클라이언트 속성에 의해 상호 작용 데이터가 수집되면 웹 사이트 또는 모바일 앱에서 Adobe의 Edge에 요청을 전송합니다. Edge은 Adobe의 데이터 수집 환경이며 Adobe 에코시스템에 대한 클릭스트림 데이터의 진입점입니다. 그런 다음 Edge에서 수집된 데이터는 Adobe Experience Platform, Adobe Analytics, Adobe Audience Manager 또는 Adobe Target과 같은 애플리케이션으로 전송됩니다.
 
 이제 Adobe Experience Platform 데이터 수집 이벤트 전달 속성을 추가하여 Edge에서 들어오는 데이터를 수신하는 Adobe Experience Platform 데이터 수집 속성을 구성할 수 있습니다. Edge에서 실행 중인 Adobe Experience Platform 데이터 수집 이벤트 전달 속성에 수신 데이터가 표시되면 해당 데이터를 사용하여 다른 곳으로 전달하는 기능이 있습니다. 이제 다른 곳에서 Adobe이 아닌 외부 웹후크를 사용할 수도 있으므로 해당 데이터를 원하는 데이터 레이크, 의사 결정 애플리케이션 또는 웹후크를 열 수 있는 기능이 있는 다른 애플리케이션으로 보낼 수 있습니다.
 
-Adobe Experience Platform 데이터 수집 이벤트 전달 속성을 구성하면 이전과 마찬가지로 Adobe Experience Platform 데이터 수집 클라이언트 속성을 사용하여 데이터 요소와 규칙을 구성할 수 있으므로 클라이언트 속성에는 익숙해집니다. 그러나 사용 사례에 따라 데이터에 액세스하고 사용하는 방법이 약간 달라집니다.
+Adobe Experience Platform 데이터 수집 이벤트 전달 속성을 구성하면 클라이언트측 속성에 익숙해지며 Adobe Experience Platform 데이터 수집 클라이언트 속성을 사용하여 과거와 마찬가지로 데이터 요소 및 규칙을 구성할 수 있습니다. 그러나 사용 사례에 따라 데이터에 액세스하고 사용하는 방법이 약간 달라집니다.
 
 먼저 Adobe Experience Platform 데이터 수집 이벤트 전달 속성을 생성해 보겠습니다.
 
-## 2.5.1.2 Adobe Experience Platform 데이터 수집 이벤트 전달 속성 만들기
+## Adobe Experience Platform 데이터 수집 이벤트 전달 속성 만들기
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다. 왼쪽 메뉴에서 **이벤트 전달**&#x200B;을 클릭합니다. 그러면 사용 가능한 모든 Adobe Experience Platform 데이터 수집 이벤트 전달 속성에 대한 개요가 표시됩니다. **새 속성** 단추를 클릭합니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다. 왼쪽 메뉴에서 **이벤트 전달**&#x200B;을 클릭합니다. 그러면 사용 가능한 모든 Adobe Experience Platform 데이터 수집 이벤트 전달 속성에 대한 개요가 표시됩니다. **속성 만들기** 단추를 클릭합니다.
 
 ![Adobe Experience Platform 데이터 수집 SSF](./images/launchhome.png)
+
+또는 다른 이벤트 전달 속성이 이미 만들어진 경우 UI가 약간 다르게 표시됩니다. 이 경우 **새 속성**&#x200B;을 클릭하세요.
+
+![Adobe Experience Platform 데이터 수집 SSF](./images/launchhomea.png)
 
 이제 Adobe Experience Platform 데이터 수집 이벤트 전달 속성의 이름을 입력해야 합니다. 명명 규칙으로 `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`을(를) 사용합니다. 예를 들어, 이 예제에서 이름은 **vangeluw - Demo System(22/02/2022)(Edge)**&#x200B;입니다. **저장**&#x200B;을 클릭합니다.
 
@@ -42,13 +43,13 @@ Adobe Experience Platform 데이터 수집 이벤트 전달 속성을 구성하�
 
 ![Adobe Experience Platform 데이터 수집 SSF](./images/ssf2.png)
 
-## 2.5.1.2 Adobe Cloud 커넥터 확장 구성
+## Adobe 클라우드 커넥터 확장 구성
 
 왼쪽 메뉴에서 **확장**(으)로 이동합니다. **Core** 확장이 이미 구성되어 있습니다.
 
 ![Adobe Experience Platform 데이터 수집 SSF](./images/ssf3.png)
 
-**카탈로그**(으)로 이동합니다. **Adobe 클라우드 커넥터** 확장이 표시됩니다. **설치**&#x200B;를 클릭하여 설치합니다.
+**카탈로그**(으)로 이동합니다. **Adobe 클라우드 커넥터** 확장 및 기타 많은 확장이 표시됩니다. **설치**&#x200B;를 클릭하여 설치합니다.
 
 ![Adobe Experience Platform 데이터 수집 SSF](./images/ssf4.png)
 
@@ -71,10 +72,6 @@ Adobe Experience Platform 데이터 수집 이벤트 전달 속성을 구성하�
 ![Adobe Experience Platform 데이터 수집 SSF](./images/ssf8.png)
 
 그런 다음 라이브러리가 구축되며, 이는 1~2분 정도 소요될 수 있습니다.
-
-![Adobe Experience Platform 데이터 수집 SSF](./images/ssf9.png)
-
-마지막으로 라이브러리가 빌드되고 준비됩니다.
 
 ![Adobe Experience Platform 데이터 수집 SSF](./images/ssf10.png)
 
