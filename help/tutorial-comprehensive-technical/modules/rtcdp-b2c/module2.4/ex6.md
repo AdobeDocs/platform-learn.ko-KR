@@ -1,111 +1,193 @@
 ---
-title: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - 작업
-description: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - 작업
+title: Microsoft Azure Event Hub Audience Activation - Azure 기능 정의
+description: Microsoft Azure Event Hub Audience Activation - Azure 기능 정의
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
-# 2.4.6 전체 시나리오
+# 2.4.6 Microsoft Azure 프로젝트 만들기
 
-## 2.4.6.1 Azure 이벤트 허브 트리거 시작
+## Azure 이벤트 허브 기능 익히기
 
-세그먼트 자격 조건 시 Adobe Experience Platform Real-time CDP에서 Azure Event Hub로 보내는 페이로드를 표시하려면 간단한 Azure Event Hub 트리거 기능을 시작해야 합니다. 이 함수는 Visual Studio 코드의 콘솔에 페이로드를 &quot;덤프&quot;합니다. 그러나 이 함수는 전용 API 및 프로토콜을 사용하여 모든 종류의 환경과 상호 작용할 수 있도록 어떤 방식으로든 확장할 수 있습니다.
+Azure 함수를 사용하면 응용 프로그램 인프라에 대한 걱정 없이 작은 코드 조각(**함수**)을 실행할 수 있습니다. Azure 기능을 사용하면 클라우드 인프라에서 규모에 맞게 애플리케이션을 실행하는 데 필요한 모든 최신 서버를 제공합니다.
 
-### Visual Studio 코드를 시작하고 프로젝트를 시작합니다.
+특정 유형의 이벤트에 의해 함수가 **트리거됨**&#x200B;됩니다. 지원되는 트리거에는 데이터 변경 사항에 응답, 메시지(예: 이벤트 허브)에 응답, 일정에 따라 실행 또는 HTTP 요청의 결과가 포함됩니다.
 
-Visual Studio 코드 프로젝트가 열려 있고 실행 중인지 확인합니다.
+Azure Functions는 인프라를 명시적으로 프로비전하거나 관리하지 않고도 이벤트 트리거 코드를 실행할 수 있는 서버를 사용하지 않는 계산 서비스입니다.
 
-Visual Studio 코드에서 Azure 함수를 시작/중지/다시 시작하려면 다음 연습을 참조하십시오.
+Azure 이벤트 허브는 서버를 사용하지 않는 아키텍처를 위해 Azure 기능과 통합됩니다.
 
-- [연습 13.5.4 - Azure 프로젝트 시작](./ex5.md)
-- [연습 13.5.5 - Azure 프로젝트 중지](./ex5.md)
+## Visual Studio Code 및 Azure에 로그온 열기
 
-Visual Studio 코드의 **터미널**&#x200B;에서는 다음과 유사한 내용을 언급해야 합니다.
+Visual Studio 코드를 사용하면 다음 작업을 쉽게 수행할 수 있습니다.
 
-```code
-[2022-02-23T05:03:41.429Z] Worker process started and initialized.
-[2022-02-23T05:03:41.484Z] Debugger attached.
-[2022-02-23T05:03:46.401Z] Host lock lease acquired by instance ID '000000000000000000000000D90C881B'.
+- azure 기능을 정의하고 이벤트 허브에 바인딩합니다.
+- 로컬에서 테스트
+- azure에 배포
+- 원격 로그 기능 실행
+
+### Visual Studio 코드 열기
+
+### Azure에 로그온
+
+이전 연습에서 등록하는 데 사용한 Azure 계정으로 로그온하면 Visual Studio 코드를 사용하여 모든 이벤트 허브 리소스를 찾아서 바인딩할 수 있습니다.
+
+Visual Studio 코드를 열고 **Azure** 아이콘을 클릭합니다.
+
+다음으로 **Azure에 로그인**&#x200B;을 선택합니다.
+
+![3-01-vsc-open.png](./images/301vscopen.png)
+
+로그인하려면 브라우저로 리디렉션됩니다. 등록하는 데 사용한 Azure 계정을 선택해야 합니다.
+
+브라우저에 다음 화면이 표시되면 Visual Code Studio로 로그인됩니다.
+
+![3-03-vsc-login-ok.png](./images/303vscloginok.png)
+
+Visual Code Studio로 돌아갑니다. Azure 구독 이름이 표시됩니다(예: **Azure 구독 1**).
+
+![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
+## Azure 프로젝트 만들기
+
+**함수 프로젝트 만들기...**&#x200B;를 클릭합니다.
+
+![3-05-vsc-create-project.png](./images/vsc2.png)
+
+프로젝트를 저장할 로컬 폴더를 선택하고 **선택**&#x200B;을 클릭합니다.
+
+![3-06-vsc-select-folder.png](./images/vsc3.png)
+
+이제 프로젝트 만들기 마법사로 들어갑니다. 프로젝트의 언어로 **Javascript**&#x200B;를 클릭합니다.
+
+![3-07-vsc-select-language.png](./images/vsc4.png)
+
+**모델 v4**&#x200B;을(를) 선택하십시오.
+
+![3-07-vsc-select-language.png](./images/vsc4a.png)
+
+**Azure Event Hub 트리거**&#x200B;를 프로젝트의 첫 번째 함수 템플릿으로 선택합니다.
+
+![3-08-vsc-function-template.png](./images/vsc5.png)
+
+함수의 이름을 입력하고 `--aepUserLdap---aep-event-hub-trigger` 형식을 사용한 후 Enter 키를 누르십시오.
+
+![3-09-vsc-function-name.png](./images/vsc6.png)
+
+**새 로컬 앱 설정 만들기** 선택:
+
+![3-10-vsc-function-local-app-setting.png](./images/vsc7.png)
+
+이전에 만든 `--aepUserLdap---aep-enablement` 이벤트 허브 네임스페이스를 클릭하여 선택합니다.
+
+![3-11-vsc-function-select-namespace.png](./images/vsc8.png)
+
+그런 다음 앞에서 만든 이벤트 허브(`--aepUserLdap---aep-enablement-event-hub`)를 클릭하여 선택합니다.
+
+![3-12-vsc-function-select-eventhub.png](./images/vsc9.png)
+
+**RootManageSharedAccessKey**&#x200B;을(를) 이벤트 허브 정책으로 선택하려면 클릭하세요.
+
+![3-13-vsc-function-select-eventhub-policy.png](./images/vsc10.png)
+
+프로젝트를 여는 방법에 대해 **작업 영역에 추가**&#x200B;를 선택하십시오.
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12.png)
+
+그런 다음 이와 같은 메시지를 받을 수 있습니다. 이 경우 **예, 작성자를 신뢰함**&#x200B;을 클릭하세요.
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
+
+프로젝트를 만든 후 **index.js**&#x200B;을(를) 클릭하여 편집기에서 파일을 엽니다.
+
+![3-16-vsc-open-index-js.png](./images/vsc13.png)
+
+Adobe Experience Platform이 이벤트 허브에 전송하는 페이로드에는 대상 ID가 포함됩니다.
+
+```json
+[{
+"segmentMembership": {
+"ups": {
+"ca114007-4122-4ef6-a730-4d98e56dce45": {
+"lastQualificationTime": "2020-08-31T10:59:43Z",
+"status": "realized"
+},
+"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+},
+"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+}
+}
+},
+"identityMap": {
+"ecid": [{
+"id": "08130494355355215032117568021714632048"
+}]
+}
+}]
 ```
 
-![6-01-vsc-ready.png](./images/vsc31.png)
+Visual Studio Code의 index.js 코드를 아래 코드로 바꿉니다. 이 코드는 Real-Time CDP가 이벤트 허브 대상에 대상 자격을 전송할 때마다 실행됩니다. 이 예제에서 코드는 수신된 페이로드를 표시하고 개선하는 것입니다. 하지만 실시간으로 대상자 자격을 처리하는 모든 기능을 상상할 수 있습니다.
 
-## 2.4.6.2 Luma 웹 사이트 로드
+```javascript
+// Marc Meewis - Solution Consultant Adobe - 2020
+// Adobe Experience Platform Enablement - Module 2.4
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
+// Main function
+// -------------
+// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
+// Eventhub destination
+// This function enriched the received audience payload with the name of the audience. 
+// You can replace this function with any logic that is require to process and deliver
+// Adobe Experience Platform audiences in real-time to any application or platform that 
+// would need to act upon an AEP audience qualification.
+// 
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+module.exports = async function (context, eventHubMessages) {
 
-이제 아래 흐름을 따라 웹 사이트에 액세스할 수 있습니다. **통합**&#x200B;을 클릭합니다.
+    return new Promise (function (resolve, reject) {
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
+        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
 
-**통합** 페이지에서 연습 0.1에서 만든 데이터 수집 속성을 선택해야 합니다.
+        resolve();
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+    });    
 
-그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
+};
+```
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+결과는 다음과 같아야 합니다.
 
-새 시크릿 브라우저 창을 엽니다.
+![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+## Azure 프로젝트 실행
 
-이전 단계에서 복사한 데모 웹 사이트의 URL을 붙여 넣습니다. 그런 다음 Adobe ID을 사용하여 로그인하라는 메시지가 표시됩니다.
+이제 프로젝트를 실행할 차례입니다. 이 단계에서는 Azure에 프로젝트를 배포하지 않습니다. 디버그 모드에서 로컬로 실행합니다. 실행 아이콘을 선택하고 녹색 화살표를 클릭합니다.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![3-17-vsc-run-project.png](./images/vsc14.png)
 
-계정 유형을 선택하고 로그인 프로세스를 완료합니다.
+디버그 모드에서 프로젝트를 처음 실행할 때 Azure 저장소 계정을 첨부하고 **저장소 계정 선택**&#x200B;을 클릭한 다음 이전에 만든 저장소 계정(`--aepUserLdap--aepstorage`)을 선택합니다.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+이제 프로젝트가 실행 중이고 이벤트 허브에서 이벤트 목록을 작성하고 있습니다. 다음 연습에서는 CitiSignal 데모 웹 사이트에서 사용자에게 적합한 동작을 보여 줍니다. 그 결과 Event Hub 트리거 기능 터미널에서 대상 자격 페이로드를 받게 됩니다.
 
-그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 데모에 대해 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
+![3-24-vsc-application-stop.png](./images/vsc18.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+## Azure 프로젝트 중지
 
-## 2.4.6.3 장비 세그먼트에 대한 관심 부문에 적합
+프로젝트를 중지하려면 VSC의 LENU **CALL STACK**(으)로 이동하여 실행 중인 프로젝트의 화살표를 클릭한 다음 **중지**&#x200B;를 클릭합니다.
 
-**장비** 페이지로 한 번 이동한 다음 **다시 로드하거나 새로 고치지 않음**&#x200B;합니다. 이 작업은 `--aepUserLdap-- - Interest in Equipment` 세그먼트에 대한 자격을 부여해야 합니다.
+![3-24-vsc-application-stop.png](./images/vsc17.png)
 
-![6-04-luma-telco-nav-sports.png](./images/luma1.png)
-
-확인하려면 프로필 뷰어 패널을 엽니다. 이제 `--aepUserLdap-- - Interest in Equipment`의 멤버여야 합니다. 세그먼트 멤버십이 프로필 뷰어 패널에서 아직 업데이트되지 않은 경우 다시 로드 단추를 클릭합니다.
-
-![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
-
-Visual Studio 코드로 다시 전환하고 **TERMINAL** 탭을 보면 특정 **ECID**&#x200B;에 대한 세그먼트 목록이 표시됩니다. 이 활성화 페이로드는 `--aepUserLdap-- - Interest in Equipment` 세그먼트에 대한 자격이 되는 즉시 이벤트 허브에 전달됩니다.
-
-세그먼트 페이로드를 자세히 살펴보면 `--aepUserLdap-- - Interest in Equipment`이(가) **실현됨** 상태입니다.
-
-세그먼트 상태가 **실현됨**&#x200B;이면 프로필이 세그먼트에 방금 들어왔다는 것을 의미합니다. **existing** 상태는 프로필이 계속 세그먼트에 있음을 의미합니다.
-
-![6-06-vsc-activation-improved.png](./images/luma3.png)
-
-## 2.4.6.4 두 번째로 장비 페이지 방문
-
-**장비** 페이지를 하드 새로 고치십시오.
-
-![6-07-back-to-sports.png](./images/luma1.png)
-
-이제 Visual Studio 코드로 다시 전환하여 **TERMINAL** 탭을 확인합니다. 아직 세그먼트가 있지만 현재 **existing** 상태입니다. 즉, 프로필은 계속 세그먼트에 있습니다.
-
-![6-08-vsc-activation-existing.png](./images/luma4.png)
-
-## 2.4.6.5 세 번째로 스포츠 페이지 방문
-
-**스포츠** 페이지를 세 번째로 다시 방문하는 경우 세그먼트 관점에서 상태가 변경되지 않으므로 활성화가 수행되지 않습니다.
-
-세그먼트 활성화는 세그먼트의 상태가 변경되는 경우에만 발생합니다.
-
-![6-09-segment-state-change.png](./images/6-09-segment-state-change.png)
-
-다음 단계: [요약 및 이점](./summary.md)
+다음 단계: [2.4.7 전체 시나리오](./ex7.md)
 
 [모듈 2.4로 돌아가기](./segment-activation-microsoft-azure-eventhub.md)
 

@@ -5,7 +5,7 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 4%
@@ -79,13 +79,13 @@ ht-degree: 4%
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
    + 2.4 Real-Time CDP: Microsoft Azure Event Hub {#module24} Audience Activation
       + [개요](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
-      + [2.4.0 환경 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex0.md)
-      + [2.4.1 Microsoft Azure EventHub 환경 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
-      + [2.4.2 Adobe Experience Platform에서 Azure Event Hub 대상 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
-      + [2.4.3 대상 만들기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
-      + [2.4.4 대상 활성화](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
-      + [2.4.5 Microsoft Azure 프로젝트 만들기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
-      + [2.4.6 전체 시나리오](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
+      + [2.4.1 환경 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
+      + [2.4.2 Microsoft Azure EventHub 환경 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
+      + [2.4.3 Adobe Experience Platform에서 Azure Event Hub 대상 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
+      + [2.4.4 대상자 만들기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
+      + [2.4.5 대상자 활성화](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
+      + [2.4.6 Microsoft Azure 프로젝트 만들기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
+      + [2.4.7 전체 시나리오](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex7.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/summary.md)
    + 2.5 Real-Time CDP 연결: 이벤트 전달{#module25}
       + [개요](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)

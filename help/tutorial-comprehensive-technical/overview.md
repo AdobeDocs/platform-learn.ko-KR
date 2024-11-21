@@ -4,9 +4,9 @@ description: 데이터 엔지니어, 데이터 분석가, 데이터 설계자, �
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1511'
 ht-degree: 2%
 
 ---
@@ -42,22 +42,22 @@ ht-degree: 2%
 - Adobe Experience Platform 데이터 수집을 사용하여 실시간으로 Adobe Experience Platform에 데이터 스트리밍
 - 워크플로우를 사용하거나 추출, 변환, 로드(ETL) 애플리케이션을 사용하여 데이터를 Adobe Experience Platform에 일괄 처리 수집
 - Adobe Experience Platform에서 실시간 고객 프로필 시각화 및 사용
-- 세그먼트 만들기
+- 대상자 만들기
 - 여러 Adobe Experience Platform API 사용
 - SQL을 사용하여 Adobe Experience Platform에서 데이터 쿼리
 - 트리거 기반의 실시간 여정 구성 및 실행
-- Real-Time CDP를 사용하여 다양한 대상에 대한 세그먼트를 활성화하여 조치를 취할 수 있습니다
+- Real-Time CDP를 사용하여 대상을 다양한 대상으로 활성화함으로써 조치를 취할 수 있습니다
 - Customer Journey Analytics을 사용하여 Google BigQuery를 비롯한 다양한 소스의 옴니채널 고객 데이터에 대해 보고합니다
 
 ## 전제 조건
 
 - Adobe Experience Platform 액세스: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Adobe Experience Platform 데이터 수집에 액세스: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 데모 시스템 액세스: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- 데모 시스템 액세스: [https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## 비디오
 
-기술 아카데미 이벤트, 부트캠프 등에서 흥미로운 동영상을 [Experience Makers 커뮤니티 YouTube 채널](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)에서 많이 볼 수 있습니다.
+기술 아카데미 웨비나, 부트캠프 등에서 흥미로운 동영상을 [Experience Makers 커뮤니티 YouTube 채널](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)에서 많이 볼 수 있습니다.
 
 ## 콘텐츠
 
@@ -109,19 +109,19 @@ ht-degree: 2%
 - **설명:** 이 모듈에서는 Adobe Experience Platform Intelligent Services를 설정, 구성 및 사용하는 방법을 배웁니다.
 - **시간 투자:** 60분
 
-[2.3 Real-Time CDP - 세그먼트 작성 및 작업 수행](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
+[2.3 Real-Time CDP - 대상 구축 및 조치](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
 
 - **대상:** 데이터 설계자, 오케스트레이션 엔지니어, 마케터
 - **사전 요구 사항:** Adobe Experience Platform, Real-Time CDP, Adobe Audience Manager, Adobe Target, AWS S3에 액세스
-- **설명:** 이 모듈에서는 세그먼트를 구성하고 스트리밍 세분화에 사용하도록 설정하고 Google DV360, Google AdWords, Adobe Audience Manager, Adobe Target 및 Salesforce Marketing Cloud과 같은 S3 대상 등 여러 대상에 대해 이 세그먼트를 활성화합니다.
+- **설명:** 이 모듈에서는 대상을 구성하고 Google DV360, Adobe Target 및 AWS S3 등 여러 대상에 대상을 활성화합니다.
 - **시간 투자:** 90분
 
-[2.4 Real-Time CDP: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP: Microsoft Azure Event Hub Audience Activation](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
 
 - **대상:** 데이터 엔지니어, 데이터 설계자, 데이터 분석가
 - **사전 요구 사항:** Adobe Experience Platform, Real-time CDP 및 Microsoft Azure에 대한 액세스 권한
-- **설명:** 이 모듈에서는 Microsoft Azure EventHub 대상을 Adobe Experience Platform Real-time CDP의 실시간 대상으로 설정합니다. 또한 Adobe Experience Platform이 세그먼트 페이로드를 Azure EventHub 대상에 전달할 때마다 실시간으로 트리거되는 Azure 기능을 설정하고 배포합니다. 트리거할 Azure 기능은 Adobe Experience Platform Real-time CDP의 활성화 기능의 메커니즘을 보여 줍니다.
-또한 이 모듈의 일부로 Real-Time CDP를 트리거하여 실제로 페이로드를 지정된 대상에 전달하는 방법에 대해 이해할 수 있습니다. 또한 세그먼트 자격 상태와 활성화와 어떤 관련이 있는지에 대해서도 설명합니다.
+- **설명:** 이 모듈에서는 Microsoft Azure EventHub 대상을 Adobe Experience Platform Real-time CDP의 실시간 대상으로 설정합니다. 또한 Adobe Experience Platform이 대상 페이로드를 Azure EventHub 대상에 전달할 때마다 실시간으로 트리거되는 Azure 기능을 설정하고 배포합니다. 트리거할 Azure 기능은 Adobe Experience Platform Real-time CDP의 활성화 기능의 메커니즘을 보여 줍니다.
+또한 이 모듈의 일부로 Real-Time CDP를 트리거하여 실제로 페이로드를 지정된 대상에 전달하는 방법에 대해 이해할 수 있습니다. 또한 대상 자격 상태와 작동 방식에 대해서도 설명합니다.
 - **시간 투자:** 90분
 
 [2.5 Real-Time CDP 연결: 이벤트 전달](./modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)

@@ -1,131 +1,132 @@
 ---
-title: Microsoft Azure Event Hub에 대한 세그먼트 활성화 - Azure에서 이벤트 허브 설정
-description: Microsoft Azure Event Hub에 대한 세그먼트 활성화 - Azure에서 이벤트 허브 설정
+title: Microsoft Azure Event Hub에 대한 세그먼트 활성화 - Microsoft Azure 환경 구성
+description: Microsoft Azure Event Hub에 대한 세그먼트 활성화 - Microsoft Azure 환경 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 772b4d2b-144a-4f29-a855-8fd3493a85d2
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
-# 2.4.1 Microsoft Azure EventHub 환경 구성
+# 2.4.1 환경 구성
 
-Azure Event Hubs는 초당 수백만 개의 이벤트를 수집하여 여러 애플리케이션으로 스트리밍할 수 있는 확장성이 뛰어난 게시 구독 서비스입니다. 이를 통해 연결된 장치 및 애플리케이션에서 생성된 방대한 양의 데이터를 처리하고 분석할 수 있습니다.
+## Azure 구독 만들기
 
-## 2.4.1.1 Azure 이벤트 허브란 무엇입니까?
+>[!NOTE]
+>
+>이미 Azure 구독이 있는 경우 이 단계를 건너뛸 수 있습니다. 그런 경우에는 다음 연습을 진행하십시오.
 
-Azure Event Hubs는 빅 데이터 스트리밍 플랫폼 및 이벤트 수집 서비스입니다. 초당 수백만 개의 이벤트를 수신하고 처리할 수 있습니다. 이벤트 허브로 전송된 데이터는 모든 실시간 분석 공급자나 일괄 처리/저장소 어댑터를 사용하여 변환하거나 저장할 수 있습니다.
+[https://portal.azure.com](https://portal.azure.com)(으)로 이동하여 Azure 계정으로 로그인하세요. 전자 메일 주소가 없는 경우 개인 전자 메일 주소를 사용하여 Azure 계정을 만드세요.
 
-Event Hubs는 솔루션 아키텍처에서 이벤트 수집기라고도 하는 이벤트 파이프라인의 **앞문**&#x200B;을(를) 나타냅니다. 이벤트 수집기는 이벤트 게시자(예: Adobe Experience Platform RTCDP)와 이벤트 소비자 사이에 개재되어 이벤트 스트림의 생성과 해당 이벤트의 소비를 분리하는 구성 요소 또는 서비스입니다. 이벤트 허브는 시간 유지 버퍼가 있는 통합 스트리밍 플랫폼을 제공하여 이벤트 소비자로부터 이벤트 생산자를 분리합니다.
+![02-azure-portal-email.png](./images/02azureportalemail.png)
 
-## 2.4.1.2 이벤트 허브 네임스페이스 만들기
+로그인에 성공하면 다음 화면이 표시됩니다.
 
-[https://portal.azure.com/#home](https://portal.azure.com/#home)(으)로 이동하여 **리소스 만들기**&#x200B;를 선택합니다.
+![03-azure-logged-in.png](./images/03azureloggedin.png)
 
-![1-01-open-azure-portal.png](./images/1-01-open-azure-portal.png)
+왼쪽 메뉴를 클릭하고 **모든 리소스**&#x200B;를 선택합니다. 아직 구독하지 않은 경우 Azure 구독 화면이 표시됩니다. 이 경우 **Azure 무료 평가판으로 시작**&#x200B;을 선택하세요.
 
-리소스 화면에서 검색 창에 **Event**&#x200B;을(를) 입력하고 드롭다운에서 **Event Hubs**&#x200B;을(를) 선택합니다.
+![04-azure-start-subscribe.png](./images/04azurestartsubscribe.png)
 
-![1-02-search-event-hubs.png](./images/1-02-search-event-hubs.png)
+Azure 구독 양식을 작성하고 활성화할 휴대폰과 신용 카드를 제공하십시오(30일 동안 프리 티어가 제공되며 업그레이드하지 않으면 요금이 부과되지 않음).
 
-**만들기**&#x200B;를 클릭합니다.
+구독 프로세스가 완료되면 다음 작업을 수행할 수 있습니다.
 
-![1-03-event-hub-create.png](./images/1-03-event-hub-create.png)
+![06-azure-subscription-ok.png](./images/06azuresubscriptionok.png)
 
-Azure에서 리소스를 처음 만드는 경우 새 **리소스 그룹**&#x200B;을 만들어야 합니다. 이미 리소스 그룹이 있는 경우 리소스 그룹을 선택하거나 새로 만들 수 있습니다.
+## Visual Code Studio 설치
 
-**새로 만들기**&#x200B;를 선택하고 그룹 이름을 `--aepUserLdap---aep-enablement`로 지정합니다.
+Microsoft Visual Code Studio를 사용하여 Azure 프로젝트를 관리합니다. [이 링크](https://code.visualstudio.com/download)를 통해 다운로드할 수 있습니다. 동일한 웹 사이트에서 특정 OS에 대한 설치 지침을 따르십시오.
 
-![1-04-create-resource-group.png](./images/1-04-create-resource-group.png)
+## Visual Code Extensions 설치
 
-표시된 대로 필드 테스트를 완료합니다.
+[https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)에서 Visual Studio 코드용 Azure 함수를 설치하십시오. 설치 단추를 클릭합니다.
 
-- 네임스페이스 : 네임스페이스를 정의하고 고유해야 하며 다음 패턴 `--aepUserLdap---aep-enablement`을(를) 사용합니다.
-- 위치: **서유럽**&#x200B;은(는) 암스테르담의 Azure 데이터 센터를 참조합니다.
-- 가격 책정 계층: **기본**
-- 처리량 단위: **1**
+![07-azure-code-extension-install.png](./images/07azurecodeextensioninstall.png)
 
-![1-05-create-namespace.png](./images/1-05-create-namespace.png)
+[https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)에서 Azure 계정을 설치하고 Visual Studio 코드에 로그인하세요. 설치 단추를 클릭합니다.
 
-**검토 + 만들기**&#x200B;를 클릭합니다.
+![08-azure-account-extension-install.png](./images/08azureaccountextensioninstall.png)
 
-![1-06-namespace-review-create.png](./images/1-06-namespace-review-create.png)
+## node.js 설치
 
-**만들기**&#x200B;를 클릭합니다.
+>[!NOTE]
+>
+>node.js가 이미 설치되어 있는 경우 이 단계를 건너뛸 수 있습니다. 그런 경우에는 다음 연습을 진행하십시오.
 
-![1-07-namespace-create.png](./images/1-07-namespace-create.png)
+### macOS
 
-리소스 그룹을 배포하는 데 1~2분 정도 걸릴 수 있습니다. 성공하면 다음 화면이 표시됩니다.
+먼저 [Homebrew](https://brew.sh/)을(를) 설치했는지 확인하십시오. [여기](https://brew.sh/)의 지침을 따르십시오.
 
-![1-08-namespace-deploy.png](./images/1-08-namespace-deploy.png)
+![노드](./images/brew.png)
 
-## 2.4.1.3 Azure에서 이벤트 허브 설정
+Homebrew를 설치한 후 다음 명령을 실행합니다.
 
-[https://portal.azure.com/#home](https://portal.azure.com/#home)(으)로 이동하여 **모든 리소스**&#x200B;를 선택합니다.
+```javascript
+brew install node
+```
 
-![1-09-all-resources.png](./images/1-09-all-resources.png)
+### Windows
 
-리소스 목록에서 `--aepUserLdap---aep-enablement` 네임스페이스를 선택합니다.
+[nodejs.org](https://nodejs.org/en/) 웹 사이트에서 직접 [Windows Installer](https://nodejs.org/en/#home-downloadhead)을(를) 다운로드합니다.
 
-![1-10-list-resources.png](./images/1-10-list-resources.png)
+## node.js 버전 확인
 
-`--aepUserLdap---aep-enablement` 세부 정보 화면에서 **이벤트 허브**&#x200B;를 선택합니다.
+이 모듈의 경우 node.js 버전 18이 설치되어 있어야 합니다. 다른 버전의 node.js는 이 연습에 문제를 일으킬 수 있습니다.
 
-![1-11-eventhub-namespace.png](./images/1-11-eventhub-namespace.png)
+계속하기 전에 이제 node.js 버전을 확인하십시오.
 
-**+ 이벤트 허브**&#x200B;를 클릭합니다.
+이 명령을 실행하여 node.js 버전을 확인합니다.
 
-![1-12-add-event-hub.png](./images/1-12-add-event-hub.png)
+```javascript
+node -v
+```
 
-`--aepUserLdap---aep-enablement-event-hub`을(를) 이름으로 사용하고 **만들기**&#x200B;를 클릭합니다.
+버전이 18보다 낮거나 높은 경우 업그레이드하거나 다운그레이드해야 합니다.
 
-![1-13-create-event-hub.png](./images/1-13-create-event-hub.png)
+### macOS에서 node.js 버전 업그레이드/다운그레이드
 
-이벤트 허브 네임스페이스에서 **이벤트 허브**&#x200B;를 클릭합니다. 이제 **이벤트 허브**&#x200B;가 표시됩니다. 그런 경우라면 다음 연습으로 넘어갈 수 있습니다.
+패키지 **n**&#x200B;이(가) 설치되어 있는지 확인하십시오.
 
-![1-14-event-hub-list.png](./images/1-14-event-hub-list.png)
+패키지 **n**&#x200B;을(를) 설치하려면 다음 명령을 실행하십시오.
 
-## 2.4.1.4 Azure 스토리지 계정 설정
+```javascript
+sudo npm install -g n
+```
 
-이후 연습에서 Azure 이벤트 허브 함수를 디버깅하려면 Visual Studio 코드 프로젝트 설정의 일부로 Azure 저장소 계정을 제공해야 합니다. 이제 Azure 스토리지 계정을 만듭니다.
+버전이 버전 12 이하인 경우 이 명령을 실행하여 업그레이드하거나 다운그레이드합니다.
 
-[https://portal.azure.com/#home](https://portal.azure.com/#home)(으)로 이동하여 **리소스 만들기**&#x200B;를 선택합니다.
+```javascript
+sudo n 18
+```
 
-![1-15-event-hub-storage.png](./images/1-15-event-hub-storage.png)
+### Windows에서 node.js 버전 업그레이드/다운그레이드
 
-검색에 **저장소**&#x200B;를 입력하고 목록에서 **저장소 계정**&#x200B;을 선택합니다.
+Windows > Campaign 컨트롤 패널 > 프로그램 추가 또는 제거에서 node.js를 제거합니다.
 
-![1-16-event-hub-search-storage.png](./images/1-16-event-hub-search-storage.png)
+[nodejs.org](https://nodejs.org/en/) 웹 사이트에서 필요한 버전을 설치하는 중입니다.
 
-**만들기**&#x200B;를 선택합니다.
+## NPM 패키지 설치: 요청
 
-![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
+node.js 설정의 일부로 패키지 **요청**&#x200B;을(를) 설치해야 합니다.
 
-**리소스 그룹**(이 연습 시작 시 생성됨)을(를) 지정하고 `--aepUserLdap--aepstorage`을(를) 저장소 계정 이름으로 사용하고 **LRS(로컬 중복 저장소)**&#x200B;을(를) 선택한 다음 **검토 + 만들기**&#x200B;를 클릭합니다.
+패키지 **요청**&#x200B;을(를) 설치하려면 다음 명령을 실행하십시오.
 
-![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
+```javascript
+npm install request
+```
 
-**만들기**&#x200B;를 클릭합니다.
+## Azure 기능 핵심 도구 설치:
 
-![1-19-event-hub-submit-storage.png](./images/1-19-event-hub-submit-storage.png)
+```
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+```
 
-저장소 계정을 만드는 데 2초 정도 소요됩니다.
-
-![1-20-event-hub-deploy-storage.png](./images/1-20-event-hub-deploy-storage.png)
-
-완료되면 화면에 **리소스로 이동** 단추가 표시됩니다.
-
-**Microsoft Azure**&#x200B;를 클릭합니다.
-
-![1-21-event-hub-deploy-ready-storage.png](./images/1-21-event-hub-deploy-ready-storage.png)
-
-이제 저장소 계정이 **최근 리소스**&#x200B;에 표시됩니다.
-
-![1-22-event-hub-deploy-resources-list.png](./images/1-22-event-hub-deploy-resources-list.png)
-
-다음 단계: [2.4.2 Adobe Experience Platform에서 Azure Event Hub 대상 구성](./ex2.md)
+다음 단계: [2.4.2 Microsoft Azure EventHub 환경 구성](./ex2.md)
 
 [모듈 2.4로 돌아가기](./segment-activation-microsoft-azure-eventhub.md)
 
