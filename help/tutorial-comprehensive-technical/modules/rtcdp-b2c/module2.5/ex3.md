@@ -4,7 +4,7 @@ description: 사용자 지정 Webhook 만들기 및 구성
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ URL을 복사하려면 **복사**&#x200B;를 클릭하세요. 다음 연습에�
 
 ![Adobe Experience Platform 데이터 수집 설정](./images/hook2.png)
 
-이전 단계 중 하나에서 사용한 사용자 지정 Webhook [https://webhook.site/](https://webhook.site/)(으)로 보기를 전환합니다. 이제 왼쪽 메뉴에 표시되는 네트워크 요청과 함께 이와 유사한 보기가 있어야 합니다. 위에 표시된 네트워크 요청에서 필터링한 **xdm** 페이로드가 표시됩니다.
+이전 단계 중 하나에서 사용한 사용자 지정 Webhook [https://pipedream.com/requestbin](https://pipedream.com/requestbin)(으)로 보기를 전환합니다. 이제 왼쪽 메뉴에 표시되는 네트워크 요청과 함께 이와 유사한 보기가 있어야 합니다. 위에 표시된 네트워크 요청에서 필터링한 **xdm** 페이로드가 표시됩니다.
 
 ![Adobe Experience Platform 데이터 수집 설정](./images/hook3.png)
 
@@ -161,9 +161,9 @@ URL을 복사하려면 **복사**&#x200B;를 클릭하세요. 다음 연습에�
 
 ![Adobe Experience Platform 데이터 수집 설정](./images/hook5.png)
 
-이제 외부 사용자 지정 웹후크에 대한 웹 SDK/XDM 페이로드의 서버측 이벤트 전달을 구성했습니다. 다음 연습에서는 유사한 접근 방식을 구성하고, 동일한 데이터를 Google 및 AWS 환경에 보냅니다.
+이제 외부 사용자 지정 웹후크에 대한 웹 SDK/XDM 페이로드의 서버측 이벤트 전달을 구성했습니다. 다음 연습에서는 유사한 접근 방식을 구성하고, 동일한 데이터를 Google Cloud Platform 및 AWS에 보냅니다.
 
-다음 단계: [2.5.4 Google Cloud 함수 만들기 및 구성](./ex4.md)
+다음 단계: [2.5.4 이벤트를 GCP Pub/Sub로 전달](./ex4.md)
 
 [모듈 2.5로 돌아가기](./aep-data-collection-ssf.md)
 

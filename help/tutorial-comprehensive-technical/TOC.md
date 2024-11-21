@@ -5,7 +5,7 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
+source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 4%
@@ -92,8 +92,8 @@ ht-degree: 4%
       + [2.5.1 Adobe Experience Platform 데이터 수집 이벤트 전달 속성 만들기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex1.md)
       + [2.5.2 데이터 스트림을 업데이트하여 Adobe Experience Platform 데이터 수집 서버 속성에 데이터를 사용할 수 있도록 합니다](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex2.md)
       + [2.5.3 사용자 지정 Webhook 만들기 및 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex3.md)
-      + [2.5.4 Google Cloud 기능 만들기 및 구성](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
-      + [2.5.5 AWS 에코시스템을 위한 전달 이벤트](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
+      + [2.5.4 GCP Pub/Sub로 이벤트 전달](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
+      + [2.5.5 AWS Kinesis 및 AWS S3에 이벤트 전달](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/summary.md)
    + 2.6 Apache Kafka에서 Real-Time CDP {#module26}(으)로 데이터 스트리밍
       + [개요](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)

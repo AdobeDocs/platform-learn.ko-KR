@@ -4,9 +4,9 @@ description: 이 모듈에서는 이전에 구성한 데이터 세트, 스키마
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 이 연습에서는 사용자 지정 웹후크를 만들고 구성하고 Web SDK에서 수집한 데이터를 해당 사용자 지정 웹후크로 전달하기 시작합니다.
 
-[2.5.4 Google Cloud 기능 만들기 및 구성](./ex4.md)
+[2.5.4 GCP Pub/Sub로 이벤트 전달](./ex4.md)
 
 이 연습에서는 Google Cloud 함수를 만들고 구성하며, Web SDK에서 수집한 데이터를 Google으로 전달하기 시작합니다.
 
-[2.5.5 AWS 에코시스템을 위한 전달 이벤트](./ex5.md)
+[2.5.5 AWS Kinesis 및 AWS S3에 이벤트 전달](./ex5.md)
 
-이 연습에서는 AWS API Gateway, AWS Kinesis, AWS Firehose 및 AWS S3를 사용하여 AWS 환경을 구성한 후 웹 SDK에서 수집한 이벤트 데이터를 전달하기 시작합니다.
+이 연습에서는 AWS IAM, AWS Kinesis, AWS Firehose 및 AWS S3를 사용하여 AWS 환경을 구성한 후 웹 SDK에서 수집한 이벤트 데이터를 전달하기 시작합니다.
 
 [요약 및 이점](./summary.md)
 
