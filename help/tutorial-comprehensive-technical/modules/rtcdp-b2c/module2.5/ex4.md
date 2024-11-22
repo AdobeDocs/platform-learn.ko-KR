@@ -4,10 +4,10 @@ description: Google 클라우드 기능 만들기 및 구성
 kt: 5342
 doc-type: tutorial
 exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: c0537545e4a5d1f1ca21a13d934eb965a4f3aa66
 workflow-type: tm+mt
-source-wordcount: '1184'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -230,3 +230,4 @@ Google 계정을 선택하려면 를 클릭합니다.
 [모듈 2.5로 돌아가기](./aep-data-collection-ssf.md)
 
 [모든 모듈로 돌아가기](./../../../overview.md)
+
