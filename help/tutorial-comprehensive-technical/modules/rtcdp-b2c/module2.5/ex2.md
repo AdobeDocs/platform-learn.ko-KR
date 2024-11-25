@@ -4,16 +4,16 @@ description: 데이터 스트림을 업데이트하여 Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 1%
 
 ---
 
 # 2.5.2 데이터 스트림을 업데이트하여 Adobe Experience Platform 데이터 수집 서버 속성에 데이터를 사용할 수 있도록 합니다
 
-## 2.5.2.1 데이터스트림 업데이트
+## 데이터 스트림 업데이트
 
 [시작하기](./../../gettingstarted/gettingstarted/ex2.md)에서 고유한 **[!UICONTROL 데이터스트림]**&#x200B;을(를) 만들었습니다. 그런 다음 `--aepUserLdap-- - Demo System Datastream` 이름을 사용했습니다.
 

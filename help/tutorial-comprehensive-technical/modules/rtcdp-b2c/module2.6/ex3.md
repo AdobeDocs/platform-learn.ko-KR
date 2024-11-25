@@ -4,10 +4,10 @@ description: Adobe Experience Platform에서 HTTP API 끝점 구성
 kt: 5342
 doc-type: tutorial
 exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 7%
+source-wordcount: '296'
+ht-degree: 6%
 
 ---
 
@@ -25,7 +25,7 @@ HTTP API Source 커넥터를 만들려면 [https://experience.adobe.com/platform
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-왼쪽 메뉴에서 **소스**(으)로 이동한 다음 **HTTP API**&#x200B;가 표시될 때까지 **소스 카탈로그**&#x200B;에서 아래로 스크롤합니다. **데이터 추가**&#x200B;를 클릭합니다.
+왼쪽 메뉴에서 **소스**(으)로 이동한 다음 **HTTP API**&#x200B;가 표시될 때까지 **소스 카탈로그**&#x200B;에서 아래로 스크롤합니다. **설치**&#x200B;를 클릭합니다.
 
 ![데이터 수집](./images/kaep1.png)
 
@@ -39,15 +39,9 @@ HTTP API Source 커넥터를 만들려면 [https://experience.adobe.com/platform
 
 **기존 데이터 세트**&#x200B;를 선택하고 드롭다운 메뉴를 엽니다. 데이터 집합 **데모 시스템 - 콜 센터(전역 v1.1)에 대한 이벤트 데이터 집합**&#x200B;을(를) 검색하여 선택하십시오.
 
+**다음**&#x200B;을 클릭합니다.
+
 ![데이터 수집](./images/kaep4.png)
-
-**다음**&#x200B;을 클릭합니다.
-
-![데이터 수집](./images/kaep6.png)
-
-**다음**&#x200B;을 클릭합니다.
-
-![데이터 수집](./images/kaep7.png)
 
 **마침을 클릭합니다**.
 
@@ -55,11 +49,11 @@ HTTP API Source 커넥터를 만들려면 [https://experience.adobe.com/platform
 
 그러면 방금 만든 HTTP API Source 커넥터에 대한 개요가 표시됩니다.
 
-![데이터 수집](./images/kaep9.png)
-
 다음 연습에서 필요하므로 아래 URL과 같은 **스트리밍 끝점** URL을 복사해야 합니다.
 
-`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
+`https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
+
+![데이터 수집](./images/kaep9.png)
 
 이 연습을 완료했습니다.
 

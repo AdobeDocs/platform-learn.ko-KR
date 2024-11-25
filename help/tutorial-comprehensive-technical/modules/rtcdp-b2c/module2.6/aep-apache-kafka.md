@@ -4,16 +4,14 @@ description: 이 모듈에서는 Kafka Connect용 Adobe Experience Platform 싱�
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 # 2.6 Apache Kafka에서 Adobe Experience Platform으로 데이터 스트리밍
-
-**작성자: [Vivek Tiwari](https://www.linkedin.com/in/vivek-tiwari-25092656/), [Nipun Nair](https://www.linkedin.com/in/nipunnair/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 모듈에서는 Kafka Connect를 통해 Adobe Experience Platform 싱크 커넥터를 사용하여 Apache Kafka 클러스터를 설정하고 주제, 제작자 및 소비자를 정의하고 Adobe Experience Platform으로 데이터를 스트리밍하는 방법에 대해 알아봅니다.
 
@@ -27,7 +25,7 @@ ht-degree: 1%
 
 ## 전제 조건
 
-- Java JDK11 이상을 컴퓨터에 설치해야 합니다. [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)에서 해당 JDK를 다운로드할 수 있습니다.
+- Java JDK23 이상을 컴퓨터에 설치해야 합니다. [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)에서 해당 JDK를 다운로드할 수 있습니다.
 - Adobe Experience Platform 액세스
 
 >[!NOTE]

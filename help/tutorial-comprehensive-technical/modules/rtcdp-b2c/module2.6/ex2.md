@@ -6,24 +6,20 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: be5a7dec47a83a14d74024015a15a9c24d04cd95
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
 # 2.6.2 Kafka 클러스터 설치 및 구성
 
-## 2.6.2.1 Apache Kafka 다운로드
+## Apache Kafka 다운로드
 
-[https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)(으)로 이동하여 최신 버전을 다운로드합니다. 최신 바이너리 릴리스를 선택하세요(이 경우 **Scala 2.13**).
+[https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)(으)로 이동하여 최신 버전을 다운로드합니다. 최신 바이너리 릴리스(이 경우 **3.9.0**)를 선택하십시오. 다운로드가 시작됩니다.
 
 ![Kafka](./images/kafka1.png)
-
-그러면 미러 사이트로 이동합니다. Kafka를 다운로드하려면 제안된 링크를 클릭하십시오.
-
-![Kafka](./images/kafka2.png)
 
 바탕 화면 **Kafka_AEP**&#x200B;에 폴더를 만들고 다운로드한 파일을 해당 디렉터리에 배치합니다.
 
@@ -35,7 +31,7 @@ ht-degree: 0%
 
 터미널 창에서 다음 명령을 실행하여 다운로드한 파일의 압축을 풉니다.
 
-`tar -xvf kafka_2.13-3.1.0.tgz`
+`tar -xvf kafka_2.13-3.9.0.tgz`
 
 >[!NOTE]
 >
@@ -57,7 +53,7 @@ ht-degree: 0%
 
 터미널 창으로 돌아갑니다. 다음 명령을 입력합니다.
 
-`cd kafka_2.13-3.1.0`
+`cd kafka_2.13-3.9.0`
 
 >[!NOTE]
 >
@@ -69,15 +65,15 @@ ht-degree: 0%
 
 ![Kafka](./images/kafka10a.png)
 
-그러면 이 응답이 표시됩니다. 이는 Kafka가 제대로 설치되어 있고 Java가 제대로 작동하고 있음을 의미합니다. (미리 알림: 이 기능을 사용하려면 Java 8 JDK 또는 Java 11 JDK가 설치되어 있어야 합니다! `java -version` 명령을 사용하여 설치한 Java 버전을 확인할 수 있습니다.)
+그러면 이 응답이 표시됩니다. 이는 Kafka가 제대로 설치되어 있고 Java가 제대로 작동하고 있음을 의미합니다. (미리 알림: 작동하려면 Java 23 JDK가 설치되어 있어야 합니다!. `java -version` 명령을 사용하여 설치한 Java 버전을 확인할 수 있습니다.)
 
 ![Kafka](./images/kafka10.png)
 
-## 2.6.2.2 시작 Kafka
+## 시작 Kafka
 
 Kafka를 시작하려면 Kafka Zookeeper 및 Kafka를 이 순서대로 시작해야 합니다.
 
-**kafka_2.13-3.1.0** 폴더를 마우스 오른쪽 단추로 클릭하고 **폴더에서 새 터미널**&#x200B;을 클릭하여 **터미널** 창을 엽니다.
+**kafka_2.13-3.9.0** 폴더를 마우스 오른쪽 단추로 클릭하고 **폴더에서 새 터미널**&#x200B;을 클릭하여 **터미널** 창을 엽니다.
 
 ![Kafka](./images/kafka11.png)
 
@@ -93,7 +89,7 @@ Kafka를 시작하려면 Kafka Zookeeper 및 Kafka를 이 순서대로 시작해
 
 이러한 연습을 진행하는 동안 이 창을 열어 두십시오!
 
-**kafka_2.13-3.1.0** 폴더를 마우스 오른쪽 단추로 클릭하고 **폴더에 새 터미널**&#x200B;을 클릭하여 다른 새 **터미널** 창을 엽니다.
+**kafka_2.13-3.9.0** 폴더를 마우스 오른쪽 단추로 클릭하고 **폴더에 새 터미널**&#x200B;을 클릭하여 다른 새 **터미널** 창을 엽니다.
 
 ![Kafka](./images/kafka11.png)
 
@@ -109,9 +105,9 @@ Kafka를 시작하려면 Kafka Zookeeper 및 Kafka를 이 순서대로 시작해
 
 이러한 연습을 진행하는 동안 이 창을 열어 두십시오!
 
-## 2.6.2.3 Kafka 주제 만들기
+## Kafka 주제 만들기
 
-**kafka_2.13-3.1.0** 폴더를 마우스 오른쪽 단추로 클릭하고 **폴더에서 새 터미널**&#x200B;을 클릭하여 **터미널** 창을 엽니다.
+**kafka_2.13-3.9.0** 폴더를 마우스 오른쪽 단추로 클릭하고 **폴더에서 새 터미널**&#x200B;을 클릭하여 **터미널** 창을 엽니다.
 
 ![Kafka](./images/kafka11.png)
 
@@ -119,9 +115,7 @@ Kafka를 시작하려면 Kafka Zookeeper 및 Kafka를 이 순서대로 시작해
 
 `bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16a.png)
-
-그러면 유사한 확인이 표시됩니다.
+그러면 확인이 표시됩니다.
 
 ![Kafka](./images/kafka17a.png)
 
@@ -129,13 +123,11 @@ Kafka를 시작하려면 Kafka Zookeeper 및 Kafka를 이 순서대로 시작해
 
 `bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16.png)
-
 그러면 유사한 확인이 표시됩니다.
 
 ![Kafka](./images/kafka17.png)
 
-## 2.6.2.4 이벤트 생성
+## 이벤트 생성
 
 첫 번째 Kafka 주제를 만든 터미널 창으로 돌아가 다음 명령을 입력합니다.
 
@@ -163,7 +155,7 @@ Kafka를 시작하려면 Kafka Zookeeper 및 Kafka를 이 순서대로 시작해
 
 ![Kafka](./images/kafka22.png)
 
-## 2.6.2.4 이벤트 사용
+## 이벤트 사용
 
 이벤트를 생성하는 데 사용한 터미널 창에 다음 명령을 입력합니다.
 

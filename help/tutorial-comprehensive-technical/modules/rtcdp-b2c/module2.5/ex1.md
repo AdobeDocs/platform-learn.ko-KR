@@ -4,9 +4,9 @@ description: Adobe Experience Platform 데이터 수집 이벤트 전달 속성 
 kt: 5342
 doc-type: tutorial
 exl-id: 9c64e57d-c91c-4d4c-923f-91a02edeb2ac
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '736'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Adobe Experience Platform 데이터 수집 이벤트 전달 속성을 구성하�
 
 ![Adobe Experience Platform 데이터 수집 SSF](./images/ssf5.png)
 
-## 2.5.1.3 Adobe Experience Platform 데이터 수집 이벤트 전달 속성 배포
+## Adobe Experience Platform 데이터 수집 이벤트 전달 속성 배포
 
 왼쪽 메뉴에서 **게시 흐름**(으)로 이동합니다. **라이브러리 추가**&#x200B;를 클릭합니다.
 
