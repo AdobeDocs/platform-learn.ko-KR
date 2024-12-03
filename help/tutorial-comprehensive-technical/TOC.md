@@ -5,9 +5,9 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
+source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '913'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 # Adobe Experience Platform을 위한 포괄적인 기술 튜토리얼 {#tutorial-comprehensive-technical}
 
 + [튜토리얼 개요](/help/tutorial-comprehensive-technical/overview.md)
++ [완료](/help/tutorial-comprehensive-technical/completion.md)
 
 + 시작하기 {#gettingstarted}
    + 시작하기 {#gettingstarted}
@@ -27,7 +28,7 @@ ht-degree: 4%
       + [모바일 앱 사용](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1개 데이터 수집 {#datacollection}
-   + 1.1 Adobe Experience Platform 데이터 수집 및 Web SDK 확장 기능 {#module11}
+   + 1.1 Adobe Experience Platform 데이터 수집 및 웹 SDK {#module11}
       + [개요](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1 Adobe Experience Platform 데이터 수집 이해](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [1.1.2 Edge Network, 데이터스트림 및 서버측 데이터 수집](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -37,7 +38,7 @@ ht-degree: 4%
       + [1.1.6 Adobe Target 구현](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex6.md)
       + [Adobe Experience Platform의 1.1.7 XDM 스키마 요구 사항](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex7.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/summary.md)
-   + 1.2 - 데이터 수집 {#module12}
+   + 1.2 데이터 수집 {#module12}
       + [개요](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/data-ingestion.md)
       + [1.2.1 웹 사이트 탐색](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex1.md)
       + [1.2.2 스키마 및 식별자 설정](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex2.md)
@@ -45,7 +46,7 @@ ht-degree: 4%
       + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex4.md)
       + [1.2.5 데이터 랜딩 영역](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex5.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
-   + 1.3 - 페더레이션 대상 구성 {#module13}
+   + 1.3 Federated Audience 구성 {#module13}
       + [개요](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
       + [1.3.1 Snowflake 계정 설정](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2 스키마, 데이터 모델 및 링크 만들기](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
@@ -137,7 +138,7 @@ ht-degree: 4%
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c}
-   + 4.1 Customer Journey Analytics: Adobe Experience Platform {#module41} 위에 Analysis Workspace을 사용하여 대시보드 빌드
+   + 4.1 Customer Journey Analytics: Analysis Workspace {#module41}을(를) 사용하여 대시보드 빌드
       + [개요](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
       + [4.1.1 Customer Journey Analytics 101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
       + [4.1.2 Customer Journey Analytics에서 Adobe Experience Platform 데이터 세트 연결](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
@@ -157,16 +158,16 @@ ht-degree: 4%
 + 5 데이터 Distiller {#datadistiller}
    + 5.1 쿼리 서비스 {#module51}
       + [개요](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/query-service.md)
-      + [5.1.0 사전 요구 사항](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex0.md)
-      + [5.1.1 시작](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
-      + [5.1.2 쿼리 서비스 사용](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
-      + [5.1.3 쿼리, 쿼리, 쿼리... 및 이탈 분석](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
-      + [5.1.4 쿼리에서 데이터 세트 생성](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
-      + [5.1.5 쿼리 서비스 및 Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
-      + [5.1.6 쿼리 서비스 및 타블로](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
-      + [5.1.7 쿼리 서비스 API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.1 사전 요구 사항](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
+      + [5.1.2 시작](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
+      + [5.1.3 쿼리 서비스 사용](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
+      + [5.1.4 쿼리, 쿼리, 쿼리... 및 이탈 분석](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
+      + [5.1.5 쿼리에서 데이터 세트 생성](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
+      + [5.1.6 쿼리 서비스 및 Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
+      + [5.1.7 쿼리 서비스 및 타블로](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.8 쿼리 서비스 API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex8.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)
 
-
++ [설정](/help/tutorial-comprehensive-technical/setup.md)
 
 

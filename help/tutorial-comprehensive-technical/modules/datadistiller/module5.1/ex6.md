@@ -1,62 +1,77 @@
 ---
-title: 쿼리 서비스 - Tableau를 사용하여 데이터 세트 살펴보기
-description: 쿼리 서비스 - Tableau를 사용하여 데이터 세트 살펴보기
+title: 쿼리 서비스 - Power BI으로 데이터 세트 살펴보기
+description: 쿼리 서비스 - Power BI으로 데이터 세트 살펴보기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c27abd0e-e563-4702-a243-1aec84ce6116
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
-# 5.1.6 쿼리 서비스 및 타블로
+# 5.1.6 쿼리 서비스 및 Power BI
 
-타블로를 엽니다.
+Microsoft Power BI 데스크톱을 엽니다.
 
-![start-tableau.png](./images/start-tableau.png)
+![start-power-bi.png](./images/start-power-bi.png)
 
-**서버에 연결**&#x200B;에서 **PostgreSQL**&#x200B;을(를) 선택합니다.
+**데이터 가져오기**&#x200B;를 클릭합니다.
 
-![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
+![power-bi-get-data.png](./images/power-bi-get-data.png)
+
+**postgres**(1)을(를) 검색하고 목록에서 **Postgres**(2)을(를) 선택한 다음 **연결**(3)을(를) 선택합니다.
+
+![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
 
 Adobe Experience Platform, **쿼리** 및 **자격 증명**(으)로 이동합니다.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
-Adobe Experience Platform의 **자격 증명** 페이지에서 **호스트**&#x200B;를 복사하여 **서버** 필드에 붙여 넣고, **데이터베이스**&#x200B;를 복사하여 Tableau의 **데이터베이스** 필드에 붙여 넣고, **포트**&#x200B;를 복사하여 Tableau의 **포트**&#x200B;필드에 붙여 넣고, **사용자 이름** 및 **암호**&#x200B;에 대해서도 동일하게 수행합니다. **로그인**&#x200B;을 클릭합니다.
+Adobe Experience Platform의 **자격 증명** 페이지에서 **호스트**&#x200B;를 복사하여 **서버** 필드에 붙여 넣고, **데이터베이스**&#x200B;를 복사하여 PowerBI의 **데이터베이스** 필드에 붙여 넣은 다음 확인(2)을 클릭합니다.
 
-로그인:
+>[!IMPORTANT]
+>
+>쿼리 서비스가 현재 5432의 기본 PostgreSQL 포트를 사용하지 않으므로 서버 값의 끝에 **:80** 포트를 포함해야 합니다.
 
-![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
+![power-bi-connect-server.png](./images/power-bi-connect-server.png)
 
-검색(1)을 클릭하고 검색 필드에 **ldap**&#x200B;을(를) 입력한 다음, 결과 집합에서 테이블을 식별하고 (3) **테이블을 여기로 드래그하십시오**. 완료되면 **시트 1**(3)을 클릭합니다.
+다음 대화 상자에서 사용자 이름과 암호를 Adobe Experience Platform 쿼리의 **자격 증명**&#x200B;에 있는 사용자 이름과 암호로 채웁니다.
 
-![tableau-drag-table.png](./images/tableau-drag-table.png)
+![query-service-credentials.png](./images/query-service-credentials.png)
 
-지도에서 데이터를 시각화하려면 경도와 위도를 차원으로 변환해야 합니다. **측정 단위**&#x200B;에서 **위도**(1)를 선택하고 필드의 드롭다운을 연 다음 **Dimension으로 전환**(2)을 선택합니다. **경도** 측정값에 대해서도 동일한 작업을 수행합니다.
+네비게이터 대화 상자에서 검색 필드(1)에 **LDAP**&#x200B;을 입력하여 CTAS 데이터 세트를 찾고 각 (2) 옆의 확인란을 선택합니다. 그런 다음 로드(3)를 클릭합니다.
 
-![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
+![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
 
-**경도** 측정값을 **열**, **위도** 측정값을 **행**(으)로 드래그합니다. 자동으로 **벨기에**&#x200B;의 지도가 표시되며, 데이터 집합의 도시를 나타내는 작은 점이 표시됩니다.
+**보고서** 탭(1)을 선택했는지 확인하십시오.
 
-![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
+![power-bi-report-tab.png](./images/power-bi-report-tab.png)
 
-**측정값 이름**(1)을 선택하고 드롭다운을 연 다음 **시트에 추가**(2)를 선택합니다.
+맵 (1)을 선택하고 보고 캔버스에 추가한 후 맵 (2)를 확대합니다.
 
-![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
+![power-bi-select-map.png](./images/power-bi-select-map.png)
 
-이제 다양한 크기의 점이 있는 지도가 제공됩니다. 크기는 해당 도시에 대한 콜센터 상호 작용 수를 나타냅니다. 점의 크기를 변경하려면 오른쪽 패널로 이동하여 **측정값**&#x200B;을 엽니다(드롭다운 아이콘 사용). 드롭다운 목록에서 **크기 편집**&#x200B;을 선택합니다. 다양한 크기로 놀아보세요.
+다음으로 측정값 및 차원을 정의해야 합니다. 이렇게 하려면 **필드** 섹션에서 아래 표시된 대로 해당 자리 표시자(**시각화** 아래에 있음)로 필드를 끌어옵니다.
 
-![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
+![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
 
-**통화 주제**&#x200B;별 데이터를 더 표시하려면 **통화 주제** 차원을 **페이지**(으)로 끌어서 놓습니다. 화면 오른쪽의 **통화 주제**(2)를 사용하여 다른 **통화 주제**&#x200B;를 탐색합니다.
+측정으로 **customerId**&#x200B;의 개수를 사용합니다. **필드** 섹션의 **crmid** 필드를 **크기** 자리 표시자로 드래그합니다.
 
-![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
+![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
+
+마지막으로, **callTopic** 분석을 수행하려면 **callTopic** 필드를 **페이지 수준 필터** 자리 표시자로 드래그해 보겠습니다(**시각화** 섹션에서 스크롤해야 할 수 있음).
+
+![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
+
+조사할 **callTopics** 선택/선택 취소:
+
+![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
 
 이제 이 연습을 완료했습니다.
 
-다음 단계: [5.1.7 쿼리 서비스 API](./ex7.md)
+다음 단계: [5.1.8 쿼리 서비스 API](./ex8.md)
 
 [모듈 5.1로 돌아가기](./query-service.md)
 

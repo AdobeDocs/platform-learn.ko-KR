@@ -4,9 +4,9 @@ description: 고객 AI - 데이터 준비(수집)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -53,33 +53,20 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 이 스키마에 추가할 다음 **필드 그룹**&#x200B;을(를) 검색하고 선택하십시오.
 
 - 고객 경험 이벤트
-- 최종 사용자 ID 세부 정보
+
+![새 CEE 스키마](./images/cee1.png)
+
+- IdentityMap
 
 **필드 그룹 추가**&#x200B;를 클릭합니다.
 
-![새 CEE 스키마](./images/cee.png)
+![새 CEE 스키마](./images/cee2.png)
 
-그러면 이걸 보게 될 거야. 필드 그룹 **최종 사용자 ID 세부 정보**&#x200B;를 클릭합니다.
-
-![새 스키마 만들기](./images/eui1.png)
-
-**endUserID 필드로 이동합니다._experience.emailid.id**.
-
-![새 스키마 만들기](./images/eui2.png)
-
-오른쪽 메뉴에서 필드 **endUserID를 선택합니다._experience.emailid.id**, 아래로 스크롤하여 **ID**&#x200B;에 대한 확인란을 선택하고 **기본 ID**&#x200B;에 대한 확인란을 선택한 다음 **이메일**&#x200B;의 **ID 네임스페이스**&#x200B;를 선택합니다. **적용**&#x200B;을 클릭합니다.
-
-![새 스키마 만들기](./images/eui3.png)
-
-**endUserID 필드로 이동합니다._experience.mcid.id**. **ID**&#x200B;에 대한 확인란을 선택하고 **ECID**&#x200B;의 **ID 네임스페이스**&#x200B;를 선택합니다. **적용**&#x200B;을 클릭합니다.
-
-![새 스키마 만들기](./images/eui4.png)
-
-그럼 이걸로 드셔보세요 그런 다음 스키마 이름을 선택합니다. 이제 **프로필** 토글을 클릭하여 **프로필**&#x200B;에 대한 스키마를 사용하도록 설정해야 합니다.
+그러면 이걸 보게 될 거야. 그런 다음 스키마 이름을 선택합니다. 이제 **프로필** 토글을 클릭하여 **프로필**&#x200B;에 대한 스키마를 사용하도록 설정해야 합니다.
 
 ![새 스키마 만들기](./images/xdmee3.png)
 
-그러면 이걸 보게 될 거야. **사용**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. **이 스키마의 데이터에 대한 확인란을 선택하면 identityMap 필드에 기본 ID가 포함됩니다.** 질문에 답합니다. **사용**&#x200B;을 클릭합니다.
 
 ![새 스키마 만들기](./images/xdmee4.png)
 
@@ -121,19 +108,19 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ## 경험 이벤트 테스트 데이터 다운로드
 
-**스키마** 및 **데이터 집합**&#x200B;이 구성되면 이제 경험 이벤트 데이터를 수집할 준비가 되었습니다. Customer AI는 **2분기 이상**&#x200B;에 데이터를 필요로 하므로 외부에서 준비한 데이터를 수집해야 합니다.
+**스키마** 및 **데이터 집합**&#x200B;이 구성되면 이제 경험 이벤트 데이터를 수집할 준비가 되었습니다. Customer AI는 특정 데이터 요구 사항이 있으므로 외부에서 준비한 데이터를 수집해야 합니다.
 
-경험 이벤트를 위해 준비된 데이터는 [소비자 경험 이벤트 XDM Mixin](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md)의 요구 사항 및 스키마를 준수해야 합니다.
+이 연습에서 경험 이벤트를 위해 준비된 데이터는 [소비자 경험 이벤트 XDM 필드 그룹](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md)의 요구 사항 및 스키마를 준수해야 합니다.
 
-[https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data) 위치에서 샘플 데이터가 포함된 파일을 다운로드하십시오. **다운로드** 단추를 클릭합니다.
+다음 위치에서 데모 데이터가 포함된 zip 파일을 다운로드하십시오. [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
-![데이터 집합](./images/dsn1.png)
-
-또는 위의 링크에 액세스할 수 없는 경우 [https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip) 위치에서도 파일을 다운로드할 수 있습니다.
-
-이제 **retail-v1-dec2020-xl.json.zip** 파일을 다운로드했습니다. 컴퓨터의 바탕 화면에 파일을 놓고 압축을 해제하면 **retail-v1.json**(이)라는 파일이 표시됩니다. 다음 연습에서는 이 파일이 필요합니다.
+이제 **CUSTOM-CAI-EVENTS-WEB.zip** 파일을 다운로드했습니다. 컴퓨터의 바탕 화면에 파일을 놓고 압축을 해제하면 **CUSTOM-CAI-EVENTS-WEB**(이)라는 폴더가 표시됩니다.
 
 ![데이터 집합](./images/ingest.png)
+
+해당 폴더에는 여러 개의 시퀀스 JSON 파일이 있으며, 이 파일은 다음 연습에서 모두 수집해야 합니다.
+
+![데이터 집합](./images/ingest1a.png)
 
 ## 경험 이벤트 테스트 데이터 수집
 
@@ -145,9 +132,11 @@ Adobe Experience Platform에서 **데이터 세트**(으)로 이동하여 **[!UI
 
 ![데이터 집합](./images/ingest2.png)
 
-팝업에서 **retail-v1.json** 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
+팝업에서 **WEBSITE-EE-5.json**&#x200B;까지 **WEBSITE-EE-1.json** 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
 
 ![데이터 집합](./images/ingest3.png)
+
+**WEBSITE-EE-6.json** 및 **WEBSITE-EE-7.json** 파일에 대해 이 수집 프로세스를 반복합니다.
 
 데이터가 가져오기되고 **로드 중** 상태에서 새 일괄 처리가 만들어집니다. 파일이 업로드될 때까지 이 페이지에서 나가지 마십시오.
 
@@ -159,11 +148,9 @@ Adobe Experience Platform에서 **데이터 세트**(으)로 이동하여 **[!UI
 
 데이터를 수집하고 처리하는 데 10~20분이 걸릴 수 있습니다.
 
-데이터 수집이 성공하면 일괄 처리 상태가 **성공**(으)로 변경됩니다.
+데이터 수집이 성공하면 다양한 업로드의 일괄 처리 상태가 **성공**(으)로 변경됩니다.
 
 ![데이터 집합](./images/ingest7.png)
-
-![데이터 집합](./images/ingest8.png)
 
 다음 단계: [2.2.2 Customer AI - 새 인스턴스 만들기(구성)](./ex2.md)
 

@@ -4,16 +4,14 @@ description: 쿼리 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
 
 # 5.1 쿼리 서비스
-
-**작성자: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 모듈에서는 Adobe Experience Platform 쿼리 서비스의 실습형 미리 보기를 제공합니다. 쿼리 서비스를 사용하면 모든 Adobe Experience Cloud 애플리케이션 데이터에 대해 옴니채널 쿼리를 수행하여 Adobe Campaign, Analytics, Audience Manager, Target 및 Advertising Cloud의 데이터와 Adobe Experience Platform에 로드/삽입된 기타 고객 데이터를 연결 및 분석할 수 있습니다.
 
@@ -45,35 +43,35 @@ ht-degree: 1%
 
 ## 연습
 
-[5.1.0 사전 요구 사항](./ex0.md)
+[5.1.1 사전 요구 사항](./ex1.md)
 
 이 지원 연습에서 쿼리를 실행하려면 PSQL을 설치해야 합니다. 운영 체제에 따라 Microsoft Power BI 또는 Tableau를 설치해야 합니다. Windows 사용자는 Power BI 또는 타블로 중에서 선택할 수 있습니다. Mac 사용자는 Tableau를 설치해야 합니다.
 
-[5.1.1 시작](./ex1.md)
+[5.1.2 시작](./ex2.md)
 
 이 연습에서는 Adobe Experience Platform 쿼리 서비스 사용자 인터페이스를 살펴보고 데이터 세트에 대해 알아보고 쿼리를 찾은 다음 마지막으로 PSQL에서 연결을 설정합니다.
 
-[5.1.2 쿼리 서비스 사용](./ex2.md)
+[5.1.3 쿼리 서비스 사용](./ex3.md)
 
 이 연습에서는 기본 쿼리 서비스 구문에 대해 알아보고 쿼리에서 XDM 스키마의 속성을 식별할 수 있습니다.
 
-[5.1.3 쿼리, 쿼리, 쿼리... 및 이탈 분석](./ex3.md)
+[5.1.4 쿼리, 쿼리, 쿼리... 및 이탈 분석](./ex4.md)
 
 이 연습에서는 쿼리를 수행하게 되며 일부 이탈 분석을 수행하는 동안 Adobe 정의 함수에 대해 알아봅니다. 이 과정이 끝나면 Microsoft Power BI에서 사용할 데이터 세트를 준비하는 쿼리를 작성합니다.
 
-[5.1.4 쿼리에서 데이터 세트 생성](./ex4.md)
+[5.1.5 쿼리에서 데이터 세트 생성](./ex5.md)
 
 이 연습에서는 이전에 실행한 쿼리에서 데이터 세트를 생성하고 다음 연습에서 이 데이터 세트를 사용합니다.
 
-[5.1.5 쿼리 서비스 및 Power BI](./ex5.md)
+[5.1.6 쿼리 서비스 및 Power BI](./ex6.md)
 
 이 연습에서는 Power BI을 Adobe Experience Platform 및 쿼리 서비스에 연결하여 콜센터 상호 작용 분석을 수행합니다.
 
-[5.1.6 쿼리 서비스 및 타블로](./ex6.md)
+[5.1.7 쿼리 서비스 및 타블로](./ex7.md)
 
 이 연습에서는 Tableau를 Adobe Experience Platform 및 쿼리 서비스에 연결하여 콜센터 상호 작용 분석을 수행합니다.
 
-[5.1.7 쿼리 서비스 API](./ex7.md)
+[5.1.8 쿼리 서비스 API](./ex8.md)
 
 이 연습에서는 쿼리 템플릿 및 쿼리 일정을 관리하기 위해 쿼리 서비스 API를 사용합니다.
 
