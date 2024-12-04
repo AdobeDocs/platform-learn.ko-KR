@@ -4,9 +4,9 @@ description: Query Service - 사전 요구 사항
 kt: 5342
 doc-type: tutorial
 exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 Adobe Experience Platform 설명서에 설명된 지침에 따라 psql 클라이언트를 설치합니다.
 [PSQL 설치 안내서](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
+
+PSQL을 설치한 후에는 터미널 창에서 아래 명령을 실행하여 **PATH**&#x200B;을(를) 업데이트해야 할 수 있습니다.
+
+macOS의 경우(아래 명령의 XX를 설치한 PSQL의 버전 번호로 바꾸기):
+
+`export PATH=/Library/PostgreSQL/XX/bin:$PATH`
 
 ## Power BI 설치
 

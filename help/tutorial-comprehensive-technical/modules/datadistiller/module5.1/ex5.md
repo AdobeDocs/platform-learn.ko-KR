@@ -4,9 +4,9 @@ description: 쿼리 서비스 - Power BI/타블로
 kt: 5342
 doc-type: tutorial
 exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 Microsoft Power BI Desktop/Tableau를 쿼리 서비스에 직접 연결
 Microsoft Power BI Desktop/Tableau Desktop에서 보고서 만들기
 
-## 단원 컨텍스트
+## 컨텍스트
 
 데이터를 쿼리하는 명령줄 인터페이스는 흥미롭지만 잘 나타나지 않습니다. 이 단원에서는 Microsoft Power BI 데스크탑/타블로를 쿼리 서비스에서 직접 사용하여 관련자를 위한 시각적 보고서를 만드는 방법에 대한 권장 워크플로를 안내합니다.
 
@@ -41,11 +41,11 @@ select /* enter your name */
        c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
        l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
        l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
-       l.--aepTenantId--.identification.core.loyaltyId as crmid
+       l.--aepTenantId--.identification.core.crmId as crmid
 from   demo_system_event_dataset_for_website_global_v1_1 e
       ,demo_system_event_dataset_for_call_center_global_v1_1 c
-      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+      ,demo_system_profile_dataset_for_crm_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
@@ -57,23 +57,23 @@ Adobe Experience Platform UI로 이동 - [https://experience.adobe.com/platform]
 
 **쿼리**&#x200B;를 선택하고 **로그**(으)로 이동한 다음 검색 필드에 ldap를 입력합니다.
 
-![search-query-for-ctas.png](./images/search-query-for-ctas.png)
+![search-query-for-ctas.png](./images/searchqueryforctas.png)
 
-쿼리를 선택하고 **출력 데이터 세트**&#x200B;를 클릭합니다.
+쿼리를 선택하고 **CTAS로 실행**&#x200B;을 클릭합니다.
 
-![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
+![search-query-for-ctas.png](./images/searchqueryforctasa.png)
 
-`--aepUserLdap-- Callcenter Interaction Analysis`을(를) 데이터 집합의 이름과 설명으로 입력하고 **쿼리 실행** 단추를 누릅니다.
+`--aepUserLdap-- Callcenter Interaction Analysis`을(를) 데이터 세트의 이름과 설명으로 입력하고 **CTAS로 실행**&#x200B;을(를) 클릭합니다.
 
-![create-ctas-dataset.png](./images/create-ctas-dataset.png)
+![create-ctas-dataset.png](./images/createctasdataset.png)
 
 그 결과 상태가 **제출됨**&#x200B;인 새 쿼리가 표시됩니다.
 
-![ctas-query-submitted.png](./images/ctas-query-submitted.png)
+![ctas-query-submitted.png](./images/ctasquerysubmitted.png)
 
 완료되면 **만들어진 데이터 집합**&#x200B;에 대한 새 항목이 표시됩니다(페이지를 새로 고쳐야 할 수 있음).
 
-![ctas-dataset-created.png](./images/ctas-dataset-created.png)
+![ctas-dataset-created.png](./images/ctasdatasetcreated.png)
 
 데이터 세트가 만들어지는 즉시(5~10분 정도 소요될 수 있음) 연습을 계속할 수 있습니다.
 
