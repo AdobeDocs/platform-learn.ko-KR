@@ -2,9 +2,9 @@
 title: 매개 변수 보내기 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 보내는 방법을 알아봅니다.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
+source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -306,7 +306,7 @@ targetPageParams = function() {
 
 `commerce` 필드 그룹에 `purchases.value`이(가) `1`(으)로 설정되어 있으면 구매 정보가 Target에 전달됩니다. 주문 ID와 주문 합계는 `order` 개체에서 자동으로 매핑됩니다. `productListItems` 배열이 있으면 `SKU` 값이 `productPurchasedId`에 사용됩니다.
 
-`sendEvent` 명령을 사용하는 Platform Web SDK 예:
+`sendEvent`을(를) 사용하는 Platform Web SDK 예:
 
 >[!BEGINTABS]
 
@@ -328,14 +328,24 @@ alloy("sendEvent", {
       "SKU": "SKU-00002"
     }, {
       "SKU": "SKU-00003"
-    }]
+    }],
+      "_experience": {
+          "decisioning": {
+              "propositions": [{
+                  "scope": "<your_mbox>"
+              }],
+              "propositionEventType": {
+                  "display": 1
+              }
+          }
+      }
   }
 });
 ```
 
 >[!TAB 태그]
 
-태그에서 먼저 [!UICONTROL XDM 개체] 데이터 요소를 사용하여 XDM 필드에 매핑합니다.
+태그에서 먼저 [!UICONTROL XDM 개체] 데이터 요소를 사용하여 필수 XDM 필드(JavaScript 예제 참조) 및 선택적 사용자 지정 범위에 매핑합니다.
 
 ![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-purchase.png){zoomable="yes"}
 
@@ -345,6 +355,13 @@ alloy("sendEvent", {
 
 >[!ENDTABS]
 
+>[!IMPORTANT]
+>
+> 호출을 사용하여 Target 지표를 늘리려면 `_experience.decisioning.propositionEventType`을(를) `display: 1`(으)로 설정해야 합니다.
+
+>[!NOTE]
+>
+> 대상 지표 정의(예: `orderConfirmPage`)에서 사용자 지정 위치/mbox 이름을 사용하려면 위의 예제와 같이 `_experience.decisioning.propositions` 배열을 사용자 지정 범위로 채웁니다.
 
 >[!NOTE]
 >
@@ -384,7 +401,8 @@ alloy("sendEvent", {
     "identityMap": {
       "GLOBAL_CUSTOMER_ID": [{
         "id": "TT8675309",
-        "authenticatedState": "authenticated"
+        "authenticatedState": "authenticated",
+        "primary": true
       }]
     }
   }
@@ -407,6 +425,12 @@ alloy("sendEvent", {
 ![데이터 스트림에서 Target 타사 ID 네임스페이스 설정](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+> Adobe은 인증된 id와 같은 개인을 나타내는 네임스페이스를 기본 id로 보낼 것을 권장합니다.
+
+
 
 ## Platform Web SDK 예
 
@@ -458,7 +482,8 @@ Platform Web SDK를 사용하여 다양한 Target 매개 변수가 매핑되는 
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "web": {
@@ -534,7 +559,8 @@ Platform Web SDK를 사용하여 다양한 Target 매개 변수가 매핑되는 
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "commerce": {
@@ -550,7 +576,17 @@ Platform Web SDK를 사용하여 다양한 Target 매개 변수가 매핑되는 
           "SKU": "SKU-00002"
         }, {
           "SKU": "SKU-00003"
-        }]
+        }],
+        "_experience": {
+            "decisioning": {
+                "propositions": [{
+                    "scope": "<your_mbox>"
+                }],
+                "propositionEventType": {
+                    "display": 1
+                }
+            }
+        }
       }
     });
   </script>
