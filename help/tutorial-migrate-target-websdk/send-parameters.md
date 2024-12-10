@@ -2,9 +2,9 @@
 title: 매개 변수 보내기 - Target을 at.js 2.x에서 Web SDK로 마이그레이션
 description: Experience Platform Web SDK를 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 보내는 방법을 알아봅니다.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
+source-git-commit: 0697c6d13272182432e11fdb9d84a752d39527b6
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -372,7 +372,7 @@ alloy("sendEvent", {
 
 Target을 사용하면 단일 고객 ID를 사용하여 장치 및 시스템 간에 프로필을 동기화할 수 있습니다. at.js를 사용하면 Target 요청에서 `mbox3rdPartyId`(으)로 설정하거나 Experience Cloud ID 서비스로 전송된 첫 번째 고객 ID로 설정할 수 있습니다. at.js와 달리 Platform Web SDK 구현을 사용하면 여러 개가 있는 경우 `mbox3rdPartyId`(으)로 사용할 고객 ID를 지정할 수 있습니다. 예를 들어, 비즈니스에 글로벌 고객 ID가 있고 여러 비즈니스 라인에 대해 별도의 고객 ID가 있는 경우 Target에서 사용해야 하는 ID를 구성할 수 있습니다.
 
-Target 교차 장치 및 고객 속성 사용 사례에 대한 ID 동기화를 설정하는 몇 가지 단계가 있습니다.
+교차 장치 및 고객 속성 사용 사례에 대한 ID 동기화를 설정하는 몇 가지 단계가 있습니다.
 
 1. 데이터 수집 또는 플랫폼의 **[!UICONTROL ID]** 화면에서 고객 ID에 대한 **[!UICONTROL ID 네임스페이스]**&#x200B;를 만듭니다.
 1. 고객 특성의 **[!UICONTROL alias]**&#x200B;이(가) 네임스페이스의 **[!UICONTROL ID 기호]**&#x200B;와(과) 일치하는지 확인하십시오
