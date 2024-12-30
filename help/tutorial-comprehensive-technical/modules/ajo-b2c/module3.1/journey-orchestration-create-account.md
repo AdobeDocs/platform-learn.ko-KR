@@ -4,18 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '268'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer: 오케스트레이션
 
-**작성자: [Rob In Der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-이 모듈에서는 Adobe Journey Optimizer을 사용하는 단계를 안내합니다. Adobe Journey Optimizer에 액세스하여 플랫폼으로 전송된 경험 이벤트의 트리거를 기반으로 시작하는 이벤트 및 여정을 구성할 수 있습니다.
+이 모듈에서는 Adobe Journey Optimizer을 사용하는 단계를 안내합니다. AEP로 전송된 경험 이벤트의 트리거를 기반으로 시작하는 이벤트 및 여정을 구성합니다.
 
 ## 학습 목표
 
@@ -37,11 +35,15 @@ ht-degree: 3%
 
 이 연습에서는 이벤트를 구성하는 방법에 대해 알아봅니다.
 
-[3.1.2 여정 및 이메일 메시지 만들기](./ex2.md)
+[3.1.2 메시지에 사용할 조각 만들기](./ex2.md)
+
+이 연습에서는 이메일 메시지를 만들 때 사용할 재사용 가능한 조각을 구성하는 방법을 알아봅니다.
+
+[3.1.3 여정 및 이메일 메시지 만들기](./ex3.md)
 
 이 연습에서는 이메일 메시지를 구성하는 방법을 알아봅니다.
 
-[3.1.3 데이터 수집 속성 업데이트 및 여정 테스트](./ex3.md)
+[3.1.3 데이터 수집 속성 업데이트 및 여정 테스트](./ex4.md)
 
 이 작업은 이벤트를 트리거하고 올바른 페이로드를 제공하는 Launch의 구성을 안내하며, 마지막으로 전자 메일을 보낼 수 있습니다.
 
