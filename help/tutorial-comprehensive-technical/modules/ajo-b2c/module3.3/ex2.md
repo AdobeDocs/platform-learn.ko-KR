@@ -3,7 +3,8 @@ title: Offer decisioning - 오퍼 및 의사 결정 ID 구성
 description: Offer decisioning - 오퍼 및 의사 결정 ID 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 2%
@@ -27,11 +28,11 @@ ht-degree: 2%
 
 [Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 왼쪽 메뉴에서 **오퍼**&#x200B;를 클릭한 다음 **오퍼**(으)로 이동합니다. **+ 오퍼 만들기**&#x200B;를 클릭합니다.
 
@@ -356,7 +357,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 이제 결정을 성공적으로 구성했습니다. 이제 의사 결정이 라이브되며, 이를 사용하여 실시간으로 고객에게 최적화되고 개인화된 오퍼를 제공할 수 있습니다.
 
-다음 단계: [3.3.3 Offer decisioning에 대한 데이터 수집 클라이언트 속성 및 Web SDK 설정 준비](./ex3.md)
+다음 단계: [3.3.3 Offer decisioning에 대한 데이터 수집 클라이언트 속성 및 웹 SDK 설정 준비](./ex3.md)
 
 [모듈 3.3으로 돌아가기](./offer-decisioning.md)
 

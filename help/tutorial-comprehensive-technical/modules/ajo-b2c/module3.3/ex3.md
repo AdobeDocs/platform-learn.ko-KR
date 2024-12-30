@@ -3,9 +3,10 @@ title: Offer decisioning - 의사 결정 테스트
 description: Offer decisioning - 의사 결정 테스트
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
@@ -77,11 +78,11 @@ Edge 및 Adobe Experience Platform으로 전송된 모든 요청에 대해 하�
 
 [!UICONTROL 웹 - 이미지]에 대한 [!UICONTROL 배치 ID]를 찾으려면 [Adobe Experience Cloud](https://experience.adobe.com)(으)로 이동하여 Adobe Journey Optimizer으로 이동하십시오. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 그런 다음 [!UICONTROL 구성 요소](으)로 이동한 다음 [!UICONTROL 배치](으)로 이동합니다. 자세한 내용을 보려면 [!UICONTROL 웹 - 이미지] 배치를 클릭하십시오.
 
@@ -128,7 +129,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
   ![WebSDK](./images/launch10.png)
 
-그런 다음 Launch로 돌아가서 **[!UICONTROL AEP Web SDK - 이벤트 보내기]** 작업으로 이동하십시오.
+그런 다음 Launch로 돌아가서 **[!UICONTROL AEP 웹 SDK - 이벤트 보내기]** 작업으로 이동합니다.
 
 ![WebSDK](./images/launch4.png)
 
@@ -136,7 +137,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![WebSDK](./images/launch11.png)
 
-**[!UICONTROL 변경 내용 유지]**&#x200B;를 클릭하여 **[!UICONTROL AEP Web SDK - 이벤트 보내기]** 작업에 변경 내용을 저장합니다.
+**[!UICONTROL 변경 내용 유지]**&#x200B;를 클릭하여 **[!UICONTROL AEP 웹 SDK - 이벤트 보내기]** 작업에 변경 내용을 저장합니다.
 
 ![WebSDK](./images/keepchanges.png)
 
@@ -225,7 +226,7 @@ Adobe Experience Platform 데이터 수집에서 **[!UICONTROL 게시 흐름]**(
 
 ![WebSDK](./images/decrec9.png)
 
-이 변경 사항으로 인해 Adobe Experience Platform 데이터 수집의 이 규칙은 이제 웹 SDK 응답의 일부인 Offer decisioning의 응답을 수신하며 응답을 받으면 홈 페이지에 오퍼 이미지가 표시됩니다.
+이 변경 사항으로 인해 Adobe Experience Platform 데이터 수집의 이 규칙은 이제 웹 SDK 응답의 일부인 Offer decisioning의 응답을 수신하게 되며, 응답을 받게 되면, 홈 페이지에 오퍼 이미지가 표시됩니다.
 
 데모 웹 사이트를 보면 이 이미지가 현재 대체됩니다.
 

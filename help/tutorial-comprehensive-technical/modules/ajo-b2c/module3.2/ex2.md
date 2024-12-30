@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 외부 데�
 description: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 외부 데이터 소스 정의
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aeafa053-16f1-4fd3-944e-91401daeeced
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 3%
+source-wordcount: '568'
+ht-degree: 4%
 
 ---
 
@@ -16,11 +17,11 @@ ht-degree: 3%
 
 [Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 왼쪽 메뉴에서 아래로 스크롤하여 **구성**&#x200B;을 클릭합니다. 그런 다음 **데이터 원본**&#x200B;에서 **관리** 단추를 클릭합니다.
 
@@ -45,13 +46,9 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![WeatherMap](./images/owm1.png)
 
-자세한 내용을 작성하십시오.
+자세한 내용을 작성하십시오. **계정 만들기**&#x200B;를 클릭합니다.
 
 ![WeatherMap](./images/owm2.png)
-
-**계정 만들기**&#x200B;를 클릭합니다.
-
-![WeatherMap](./images/owm3.png)
 
 그러면 계정 페이지로 리디렉션됩니다.
 
@@ -65,7 +62,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 **현재 날씨** [여기](https://openweathermap.org/current)에 대한 **API 설명서**&#x200B;를 찾을 수 있습니다.
 
-당사의 사용 사례에서는 고객이 거주하는 도시를 기반으로 개방형 날씨 지도와의 연결을 구현합니다.
+이 사용 사례의 경우 **도시 이름별 기본 제공 API 요청**&#x200B;을 사용하여 고객이 거주하는 도시를 기반으로 개방형 날씨 지도와의 연결을 구현합니다.
 
 ![WeatherMap](./images/owm6.png)
 
@@ -73,7 +70,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![데모](./images/emptyds.png)
 
-데이터 원본의 이름으로 `--aepUserLdap--WeatherApi`을(를) 사용합니다. 이 예제에서 데이터 원본 이름은 `vangeluwWeatherApi `입니다.
+데이터 원본의 이름으로 `--aepUserLdap--WeatherApi`을(를) 사용합니다.
 
 설명을 `Access to the Open Weather Map`(으)로 설정합니다.
 
@@ -106,58 +103,68 @@ Weather API 설명서에 따라 매개 변수 `q=City`을(를) 보내야 합니�
 
 >[!IMPORTANT]
 >
->필드 그룹 이름은 고유해야 합니다. 이 명명 규칙을 사용하십시오. `--aepUserLdap--WeatherByCity`. 이 경우 이름은 `vangeluwWeatherByCity`이어야 합니다.
+>필드 그룹 이름은 고유해야 합니다. 이 명명 규칙을 사용하십시오. `--aepUserLdap--WeatherByCity`
 
 ![데모](./images/fg1.png)
 
 응답 페이로드의 경우 Weather API에서 전송할 응답의 예를 붙여넣어야 합니다.
 
-API 설명서 페이지 [여기](https://openweathermap.org/current)에서 예상 API JSON 응답을 찾을 수 있습니다.
+API 설명서 페이지 [여기](https://openweathermap.org/current)의 **JSON** 제목 아래에서 예상 API JSON 응답을 찾을 수 있습니다.
 
 ![데모](./images/owmapi1.png)
 
 또는 여기에서 JSON 응답을 복사할 수 있습니다.
 
 ```json
-{"coord": { "lon": 139,"lat": 35},
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 281.52,
-    "feels_like": 278.99,
-    "temp_min": 280.15,
-    "temp_max": 283.71,
-    "pressure": 1016,
-    "humidity": 93
-  },
-  "wind": {
-    "speed": 0.47,
-    "deg": 107.538
-  },
-  "clouds": {
-    "all": 2
-  },
-  "dt": 1560350192,
-  "sys": {
-    "type": 3,
-    "id": 2019346,
-    "message": 0.0065,
-    "country": "JP",
-    "sunrise": 1560281377,
-    "sunset": 1560333478
-  },
-  "timezone": 32400,
-  "id": 1851632,
-  "name": "Shuzenji",
-  "cod": 200
-}
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}    
 ```
 
 위의 JSON 응답을 클립보드에 복사한 다음 사용자 지정 데이터 소스 구성 화면으로 이동합니다.

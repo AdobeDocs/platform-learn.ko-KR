@@ -4,7 +4,7 @@ description: 이 연습에서는 이메일 콘텐츠 내에서 세그먼트 개�
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [Adobe Experience Cloud](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Adobe Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepTenantId--``입니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.3.1 세그먼트 기반 개인화
 

@@ -6,16 +6,14 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 7f3d6dcb-845d-4ff1-97c3-8e93b8d2c624
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 07153124eb3cd4c07bbabb6f7b137f525fa1a27f
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # 3.2 Adobe Journey Optimizer: 외부 데이터 소스 및 사용자 지정 작업
-
-**작성자: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 모듈에서는 Adobe Journey Optimizer을 사용하여 온라인과 오프라인 모두에서 고객 행동을 청취하고 지능적이고 상황에 맞는 실시간 방식으로 대응합니다. 이미 모듈 6에서 Adobe Journey Optimizer을 처음 사용해 본 경험이 있습니다. 이 연습에서는 외부 데이터 소스를 여정의 일부로 사용하는 고급 사용 사례에 대해 알아봅니다.
 

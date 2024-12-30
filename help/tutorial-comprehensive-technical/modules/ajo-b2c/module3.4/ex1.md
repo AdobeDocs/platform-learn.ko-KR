@@ -4,9 +4,9 @@ description: 이 섹션에서는 트리거 기반 여정 - 주문 확인을 구�
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 [Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
-![AOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![AOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.1.1 이벤트 만들기
 
@@ -33,23 +33,14 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 그러면 빈 이벤트 구성이 표시됩니다.
 
-![Journey Optimizer](./images/oc32.png)
-
 먼저 이벤트에 다음과 같은 이름(`--aepUserLdap--PurchaseEvent`)을 지정하고 다음과 같은 설명을 추가하십시오. `Purchase Event`
 
-![Journey Optimizer](./images/oc34.png)
-
-다음은 **이벤트 유형** 선택입니다. **단일**&#x200B;을(를) 선택합니다.
-
-![Journey Optimizer](./images/eventidtype1.png)
-
-다음은 **이벤트 ID 유형** 선택 항목입니다. **시스템 생성** 선택
+**Type**&#x200B;에 대해 **Unitary**를 선택합니다.
+**이벤트 ID 유형**&#x200B;에 대해 **시스템 생성**&#x200B;을 선택하십시오.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
 다음은 스키마 선택 사항입니다. 이 연습을 위해 스키마가 준비되었습니다. 스키마 `Demo System - Event Schema for Website (Global v1.1) v.1`을(를) 사용하십시오.
-
-![Journey Optimizer](./images/oc35.png)
 
 스키마를 선택하면 **페이로드** 섹션에서 여러 필드를 선택할 수 있습니다. 이 이벤트에 필드를 추가하려면 **편집/연필** 아이콘을 클릭하십시오.
 
@@ -63,21 +54,19 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/oc38.png)
 
-그런 다음 아래로 스크롤하여 `productListItems`행의 확인란을 선택합니다.
-
-![Journey Optimizer](./images/oc39.png)
-
 그런 다음 아래로 스크롤하여 `commerce`행의 확인란을 선택합니다.
 
 ![Journey Optimizer](./images/oc391.png)
 
-**확인**&#x200B;을 클릭합니다.
+그런 다음 아래로 스크롤하여 `productListItems`행의 확인란을 선택합니다. **확인**&#x200B;을 클릭합니다.
+
+![Journey Optimizer](./images/oc39.png)
 
 그러면 이벤트에 추가 필드가 추가된 것을 볼 수 있습니다. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/oc40.png)
 
-그러면 새 이벤트가 공유되고 이제 사용 가능한 이벤트 목록에 이벤트가 표시됩니다.
+그러면 새 이벤트가 저장되고 이제 사용 가능한 이벤트 목록에 이벤트가 표시됩니다.
 
 이벤트를 다시 클릭하여 **이벤트 편집** 화면을 다시 엽니다.
 **페이로드** 필드 위로 마우스를 다시 가져가면 3개의 아이콘이 다시 표시됩니다. **페이로드 보기** 아이콘을 클릭합니다.
@@ -89,7 +78,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 ![Journey Optimizer](./images/oc42.png)
 
 이벤트 ID는 다음 단계에서 빌드할 여정을 트리거하기 위해 Adobe Journey Optimizer에 전송해야 하는 ID입니다. 다음 단계 중 하나에서 필요하므로 이 eventID를 적어 두십시오.
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
 
 **확인**, **취소**&#x200B;를 차례로 클릭합니다.
 
@@ -101,11 +90,11 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/oc43.png)
 
-그러면 이걸 보게 될 거야. 여정 이름을 지정합니다. `--aepUserLdap-- - Order Confirmation journey` 사용. **확인**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. 여정 이름을 지정합니다. `--aepUserLdap-- - Order Confirmation journey` 사용. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/oc45.png)
 
-먼저 이벤트를 여정 시작점으로 추가해야 합니다. `--aepUserLdap--PurchaseEvent` 이벤트를 검색하여 캔버스에 끌어서 놓습니다. **확인**&#x200B;을 클릭합니다.
+먼저 이벤트를 여정 시작점으로 추가해야 합니다. `--aepUserLdap--PurchaseEvent` 이벤트를 검색하여 캔버스에 끌어서 놓습니다. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -125,7 +114,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![AOP](./images/journeyactions3.png)
 
-텍스트 영역에서 **주문을 받았습니다.**
+텍스트 영역에서 **주문해 주셔서 감사합니다.** 쓰기를 시작하고 **Personalization** 아이콘을 클릭합니다.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -133,7 +122,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/oc6.png)
 
-그럼 다시 여기로 오십시오. 전자 메일 콘텐츠를 만들려면 **전자 메일 Designer**&#x200B;을(를) 클릭합니다.
+그럼 다시 여기로 오십시오. 전자 메일 콘텐츠를 만들려면 **전자 메일 본문 편집**&#x200B;을 클릭하세요.
 
 ![Journey Optimizer](./images/oc7.png)
 
@@ -147,35 +136,27 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/oc9.png)
 
-**콘텐츠 구성 요소**(으)로 이동합니다.
+왼쪽 메뉴에서 **조각**(으)로 이동합니다. 연습 3.2.2에서 이전에 만든 헤더를 캔버스의 첫 번째 구성 요소로 드래그합니다. 연습 3.2.2에서 이전에 만든 바닥글을 캔버스의 마지막 구성 요소로 드래그합니다.
+
+![Journey Optimizer](./images/fragm1.png)
+
+왼쪽 메뉴에서 **+** 아이콘을 클릭합니다. 캔버스에 콘텐츠를 추가하려면 **콘텐츠**(으)로 이동하십시오.
 
 ![Journey Optimizer](./images/oc10.png)
 
-첫 번째 행에 **이미지** 구성 요소를 끌어서 놓습니다. **찾아보기**&#x200B;를 클릭합니다.
-
-![Journey Optimizer](./images/oc11.png)
-
-**enablement-assets** 폴더로 이동하여 **luma-logo.png** 파일을 선택하고 **선택**&#x200B;을 클릭합니다.
-
-![Journey Optimizer](./images/oc12.png)
-
-이제 다시 돌아왔군 이미지를 클릭하여 선택한 다음 **크기** 슬라이더를 사용하여 로고 이미지를 조금 작게 만듭니다.
-
-![Journey Optimizer](./images/oc13.png)
-
-**콘텐츠 구성 요소**(으)로 이동하여 **이미지** 구성 요소를 두 번째 행에 끌어다 놓습니다. **이미지 구성 요소**&#x200B;를 선택하되 찾아보기를 클릭하지 마십시오.
+**내용**(으)로 이동하여 **이미지** 구성 요소를 두 번째 행에 끌어다 놓습니다. **찾아보기**&#x200B;를 클릭합니다.
 
 ![Journey Optimizer](./images/oc15.png)
 
-**Source** 필드에 이 이미지 URL을 붙여 넣습니다. `https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/29043bedcde632a9cbe8a02a164189c9_preparing.png`. 이 이미지는 Adobe 외부에서 호스팅됩니다.
+**citi-signal-images** 폴더를 열고 **citigsignal-preparing.png** 이미지를 클릭하여 선택하고 **선택**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/oc14.png)
 
-범위를 다른 필드로 변경하면 이미지가 렌더링되고 다음과 같은 메시지가 표시됩니다.
+**스타일**&#x200B;에서 너비를 **40%**(으)로 변경합니다.
 
-![Journey Optimizer](./images/oc16.png)
+![Journey Optimizer](./images/oc14a.png)
 
-그런 다음 **콘텐츠 구성 요소**(으)로 이동하여 세 번째 행에 **텍스트** 구성 요소를 끌어다 놓습니다.
+그런 다음 **내용**(으)로 이동하여 세 번째 행에 **텍스트** 구성 요소를 끌어다 놓습니다.
 
 ![Journey Optimizer](./images/oc17.png)
 
@@ -207,7 +188,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc21.png)
 
-그런 다음 **콘텐츠 구성 요소**(으)로 이동하여 네 번째 행에 **텍스트** 구성 요소를 끌어다 놓습니다.
+그런 다음 **내용**(으)로 이동하여 네 번째 행에 **텍스트** 구성 요소를 끌어다 놓습니다.
 
 ![Journey Optimizer](./images/oc22.png)
 
@@ -219,7 +200,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc23.png)
 
-그런 다음 **콘텐츠 구성 요소**(으)로 이동하여 다섯 번째 행에 **HTML** 구성 요소를 끌어다 놓습니다. HTML 구성 요소를 클릭한 다음 **소스 코드 표시**&#x200B;를 클릭합니다.
+그런 다음 **컨텐츠**(으)로 이동하여 다섯 번째 행에 **HTML** 구성 요소를 끌어다 놓습니다. HTML 구성 요소를 클릭한 다음 **소스 코드 표시**&#x200B;를 클릭합니다.
 
 ![Journey Optimizer](./images/oc24.png)
 
@@ -235,7 +216,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc26.png)
 
-**콘텐츠 구성 요소**(으)로 이동하여 여섯 번째 행에 **HTML** 구성 요소를 끌어다 놓습니다. HTML 구성 요소를 클릭한 다음 **소스 코드 표시**&#x200B;를 클릭합니다.
+**컨텐츠**(으)로 이동하여 여섯 번째 행에 **HTML** 구성 요소를 끌어다 놓습니다. HTML 구성 요소를 클릭한 다음 **소스 코드 표시**&#x200B;를 클릭합니다.
 
 ![Journey Optimizer](./images/oc57.png)
 
@@ -257,11 +238,9 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 왼쪽 메뉴에서 **컨텍스트 특성**&#x200B;을 클릭합니다. 이 컨텍스트는 여정에서 메시지로 전달됩니다.
 
-![Journey Optimizer](./images/oc601.png)
-
 그러면 이걸 보게 될 거야. 더 자세히 드릴하려면 **Journey Orchestration** 옆에 있는 화살표를 클릭하십시오.
 
-![Journey Optimizer](./images/oc61.png)
+![Journey Optimizer](./images/oc601.png)
 
 자세히 드릴하려면 **이벤트** 옆에 있는 화살표를 클릭하십시오.
 
@@ -287,7 +266,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc67.png)
 
-그런 다음 **콘텐츠 구성 요소**(으)로 이동하여 7번째 행에 **HTML** 구성 요소를 끌어다 놓습니다. HTML 구성 요소를 클릭한 다음 **소스 코드 표시**&#x200B;를 클릭합니다.
+그런 다음 **내용**(으)로 이동하여 7번째 행에 **HTML** 구성 요소를 끌어다 놓습니다. HTML 구성 요소를 클릭한 다음 **소스 코드 표시**&#x200B;를 클릭합니다.
 
 ![Journey Optimizer](./images/oc68.png)
 
@@ -303,10 +282,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc71.png)
 
-왼쪽 메뉴에서 **컨텍스트 특성**&#x200B;을 클릭합니다.
-
-![Journey Optimizer](./images/oc711.png)
-
+왼쪽 메뉴에서 **컨텍스트 특성**을 클릭합니다.
 더 자세히 드릴하려면 **Journey Orchestration** 옆에 있는 화살표를 클릭하십시오.
 
 ![Journey Optimizer](./images/oc72.png)
@@ -336,13 +312,10 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 ![Journey Optimizer](./images/oc76.png)
 
 **가격 합계** 옆에 있는 **+** 아이콘을 다시 클릭하여 캔버스에 추가합니다.
-
-![Journey Optimizer](./images/oc77.png)
-
 **Order** 개체 내에서 **Currency** 필드를 캔버스에 추가할 수도 있습니다.
 완료되면 **저장**&#x200B;을 클릭하여 변경 내용을 저장합니다.
 
-![Journey Optimizer](./images/oc771.png)
+![Journey Optimizer](./images/oc77.png)
 
 그러면 이메일 Designer으로 돌아갑니다. **저장**&#x200B;을 다시 클릭합니다.
 
@@ -356,7 +329,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc79a.png)
 
-전자 메일 작업을 닫으려면 **확인**&#x200B;을 클릭하세요.
+전자 메일 작업을 닫으려면 **저장**&#x200B;을 클릭하세요.
 
 ![Journey Optimizer](./images/oc79b.png)
 
@@ -380,7 +353,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![속성 페이지](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-모듈 0에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
+**시작하기**&#x200B;에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
 
 ![검색 상자](./../../../modules/datacollection/module1.1/images/property6.png)
 
@@ -388,11 +361,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc91.png)
 
-그러면 이걸 보게 될 거야. **_experience.campaign.orchestration.eventID** 필드로 이동하여 여기에서 eventID를 입력하십시오. 여기에서 채울 eventID는 연습 10.1.2의 일부로 만든 eventID입니다. **저장** 또는 **라이브러리에 저장**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. **_experience.campaign.orchestration.eventID** 필드로 이동하여 여기에서 eventID를 입력하십시오. 여기에서 작성할 eventID는 연습 3.4.1.1의 일부로 만든 eventID입니다. **저장** 또는 **라이브러리에 저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/oc92.png)
 
-클라이언트 속성에 변경 사항을 저장한 다음 개발 라이브러리를 업데이트하여 변경 사항을 게시합니다.
+속성에 변경 사항을 저장한 다음 개발 라이브러리를 업데이트하여 변경 사항을 게시합니다.
 
 ![Journey Optimizer](./images/oc93.png)
 
@@ -402,33 +375,29 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 데모 웹 사이트에서 제품을 구입하여 업데이트된 여정을 테스트해 보겠습니다.
 
-[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트를 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 새 시크릿 브라우저 창을 엽니다.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 이전 단계에서 복사한 데모 웹 사이트의 URL을 붙여 넣습니다. 그런 다음 Adobe ID을 사용하여 로그인하라는 메시지가 표시됩니다.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 계정 유형을 선택하고 로그인 프로세스를 완료합니다.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 데모에 대해 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
+그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 연습에서는 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-화면 왼쪽 상단 모서리에 있는 Adobe 로고 아이콘을 클릭하여 프로필 뷰어를 엽니다.
-
-![데모](./../../../modules/datacollection/module1.2/images/pv1.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 프로필 뷰어 패널과 현재 알 수 없는 이 고객의 기본 식별자로 **Experience Cloud ID**&#x200B;를 사용하는 실시간 고객 프로필을 살펴보십시오.
 
@@ -442,13 +411,25 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![데모](./../../../modules/datacollection/module1.2/images/pv10.png)
 
-장바구니에 제품을 추가하고 **장바구니** 페이지로 이동합니다. **체크아웃 진행**&#x200B;을 클릭합니다.
+장바구니에 제품 추가
+
+![Journey Optimizer](./images/cart1a.png)
+
+**장바구니** 페이지로 이동합니다. **체크아웃**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/cart1.png)
 
-그런 다음 체크아웃 페이지에서 필드를 확인하고 **체크아웃**&#x200B;을 클릭합니다.
+그런 다음 필드를 확인하고 필요한 경우 완료합니다. **진행**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/cart2.png)
+
+**순서 확인**&#x200B;을 클릭합니다.
+
+![Journey Optimizer](./images/cart2a.png)
+
+이제 주문이 완료되었습니다.
+
+![Journey Optimizer](./images/cart2b.png)
 
 그러면 몇 초 이내에 주문 확인 이메일을 받게 됩니다.
 

@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 이벤트 �
 description: Adobe Journey Optimizer - 외부 날씨 API, SMS 동작 등
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: d4e37338-bde2-41b9-948c-11d9216b8cf3
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 ![AOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -29,18 +30,13 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 ![AOP](./images/emptyevent.png)
 
 그러면 비어 있는 새 이벤트 창이 나타납니다.
-
-![AOP](./images/emptyevent1.png)
-
-이벤트의 이름으로 `--aepUserLdap--GeofenceEntry`을(를) 사용합니다. 이 예제에서 이벤트 이름은 `vangeluwGeofenceEntry`입니다.
+이벤트의 이름으로 `--aepUserLdap--GeofenceEntry`을(를) 사용합니다.
 
 설명을 `Geofence Entry Event`(으)로 설정합니다.
 
+**Type**&#x200B;이(가) **Unitary**(으)로 설정되어 있는지 확인하고, **이벤트 ID 유형** 선택에 대해 **시스템 생성**&#x200B;을 선택하십시오
+
 ![데모](./images/evname.png)
-
-그런 다음 **Type**&#x200B;이(가) **Unitary**(으)로 설정되어 있는지 확인하고 **이벤트 ID 유형** 선택에 대해 **시스템 생성**&#x200B;을(를) 선택하십시오
-
-![AOP](./images/eventidtype.png)
 
 그런 다음 스키마를 선택해야 합니다. 여기에 표시되는 모든 스키마는 Adobe Experience Platform 스키마입니다.
 
@@ -92,13 +88,9 @@ ECID 및 오케스트레이션 eventID와 같은 필드는 필수이며 미리 �
 ![데모](./images/popupok.png)
 
 Adobe Journey Optimizer에는 고객을 식별하기 위한 식별자도 필요합니다. Adobe Journey Optimizer은 Adobe Experience Platform에 연결되어 있으므로 여정의 기본 식별자는 자동으로 스키마의 식별자로 사용됩니다.
-또한 기본 식별자는 Adobe Experience Platform의 전체 ID 그래프를 자동으로 고려하며, 사용 가능한 모든 ID, 장치 및 채널의 모든 동작을 동일한 프로필에 연결하여 Adobe Journey Optimizer이 상황에 맞고 관련성이 있으며 일관성이 있도록 합니다.
+또한 기본 식별자는 Adobe Experience Platform의 전체 ID 그래프를 자동으로 고려하며, 사용 가능한 모든 ID, 장치 및 채널의 모든 동작을 동일한 프로필에 연결하여 Adobe Journey Optimizer이 상황에 맞고 관련성이 있으며 일관성이 있도록 합니다. **저장**&#x200B;을 클릭합니다.
 
 ![데모](./images/eventidentifier.png)
-
-사용자 지정 이벤트를 저장하려면 **저장**&#x200B;을 클릭하세요.
-
-![데모](./images/save.png)
 
 그러면 이벤트가 사용 가능한 이벤트 목록의 일부가 됩니다.
 
@@ -109,23 +101,19 @@ Adobe Journey Optimizer에는 고객을 식별하기 위한 식별자도 필요�
 이벤트 목록에서 이벤트를 클릭하여 다시 엽니다.
 이벤트에서 **필드** 옆에 있는 **페이로드 보기** 아이콘을 클릭합니다.
 
-![데모](./images/eventlist1.png)
-
-**페이로드 보기** 아이콘을 클릭하면 이 이벤트에 대한 샘플 XDM 페이로드가 열립니다.
-
 ![데모](./images/fieldseyepayload.png)
 
-`eventID`줄이 표시될 때까지 **페이로드**&#x200B;에서 아래로 스크롤합니다.
+**페이로드 보기** 아이콘을 클릭하면 이 이벤트에 대한 샘플 XDM 페이로드가 열립니다. `eventID`줄이 표시될 때까지 **페이로드**&#x200B;에서 아래로 스크롤합니다.
 
 ![데모](./images/fieldseyepayloadev.png)
 
 구성을 테스트하기 위해 마지막에 필요한 `eventID`을(를) 적어 두십시오.
 
-이 예제에서 `eventID`은(는) `fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934`입니다.
+이 예제에서 `eventID`은(는) `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`입니다.
 
 이제 만들고 있는 여정을 트리거할 이벤트를 정의했습니다. 여정이 트리거되면 City와 같은 지오펜스 필드 및 선택했을 수 있는 다른 모든 필드(예: 국가, 위도 및 경도)를 여정이 사용할 수 있게 됩니다.
 
-사용 사례 설명에서 설명한 대로 날씨에 따라 달라지는 상황에 맞는 프로모션을 제공해야 합니다. 날씨 정보를 얻기 위해서는 해당 지역의 날씨 정보를 제공하는 외부 데이터 소스를 정의해야 합니다. **OpenWeather** 서비스를 사용하여 2의 일부로 해당 정보를 제공합니다.
+사용 사례 설명에서 설명한 대로 날씨에 따라 달라지는 상황에 맞는 프로모션을 제공해야 합니다. 날씨 정보를 얻기 위해서는 해당 지역의 날씨 정보를 제공하는 외부 데이터 소스를 정의해야 합니다. **OpenWeather API** 서비스를 사용하여 해당 정보를 제공합니다.
 
 다음 단계: [3.2.2 외부 데이터 원본 정의](./ex2.md)
 
