@@ -5,9 +5,9 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c8f9d5258d530ef12905113dd2aea4e179d0cca9
+source-git-commit: b753a930bd2d81a14a97ef59c9ffc42991f0f3f6
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 4%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 4%
 
 + [튜토리얼 개요](/help/tutorial-comprehensive-technical/overview.md)
 + [완료](/help/tutorial-comprehensive-technical/completion.md)
++ [컨텐츠 상태](/help/tutorial-comprehensive-technical/status.md)
 
 + 시작하기 {#gettingstarted}
    + 시작하기 {#gettingstarted}

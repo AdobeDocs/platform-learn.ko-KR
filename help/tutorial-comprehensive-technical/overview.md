@@ -2,9 +2,10 @@
 title: 개요
 description: 데이터 엔지니어, 데이터 분석가, 데이터 설계자, 데이터 과학자, 오케스트레이션 엔지니어 및 마케터가 Adobe Experience Platform 및 모든 애플리케이션 서비스의 비즈니스 가치를 완전히 이해할 수 있는 시작점입니다.
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 2%
 이 자습서의 연습을 완료하면 다음 작업을 수행할 수 있습니다.
 
 - 스키마, 필드 그룹, 데이터 세트 및 ID 구성
-- Adobe Experience Platform 데이터 수집 속성 구성 및 Adobe Experience Platform 데이터 수집에서 새 Web SDK 확장 설정
+- Adobe Experience Platform 데이터 수집 속성 구성 및 Adobe Experience Platform 데이터 수집에서 새 웹 SDK 확장 설정
 - Adobe Experience Platform 데이터 수집을 사용하여 실시간으로 Adobe Experience Platform에 데이터 스트리밍
 - 워크플로우를 사용하거나 추출, 변환, 로드(ETL) 애플리케이션을 사용하여 데이터를 Adobe Experience Platform에 일괄 처리 수집
 - Adobe Experience Platform에서 실시간 고객 프로필 시각화 및 사용
@@ -66,6 +67,8 @@ ht-degree: 2%
 아래 자습서를 사용하여 완료하는 모든 모듈에 대해 [여기](./completion.md)에 표시된 대로 완료 증명을 제출해야 합니다.
 
 ## 콘텐츠
+
+아래 콘텐츠의 상태를 확인하려면 [상태 페이지](./status.md)(으)로 이동하세요.
 
 [0. 시작하기](./modules/gettingstarted/gettingstarted/getting-started.md)
 

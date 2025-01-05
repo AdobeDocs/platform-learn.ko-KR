@@ -4,9 +4,9 @@ description: Offer decisioning - 오퍼 및 의사 결정 ID 구성
 kt: 5342
 doc-type: tutorial
 exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1425'
 ht-degree: 2%
 
 ---
@@ -17,12 +17,12 @@ ht-degree: 2%
 
 이 연습에서는 4개의 **개인화된 오퍼**&#x200B;를 만듭니다. 이러한 오퍼를 생성할 때 고려해야 할 세부 사항은 다음과 같습니다.
 
-| 이름 | 날짜 범위 | 이메일에 대한 이미지 링크 | 웹용 이미지 링크 | 텍스트 | 우선 순위 | 적격성 | 언어 |
-|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-| `--aepUserLdap-- - Nadia Elements Shell` | 오늘 - 1개월 후 | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | 모두 - 여성 고객 | 영어(미국) |
-| `--aepUserLdap-- - Radiant Tee` | 오늘 - 1개월 후 | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | 모두 - 여성 고객 | 영어(미국) |
-| `--aepUserLdap-- - Zeppelin Yoga Pant` | 오늘 - 1개월 후 | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | 모두 - 남성 고객 | 영어(미국) |
-| `--aepUserLdap-- - Proteus Fitness Jackshirt` | 오늘 - 1개월 후 | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | 모두 - 남성 고객 | 영어(미국) |
+| 이름 | 날짜 범위 | 이메일에 대한 이미지 링크 | 웹용 이미지 링크 | 텍스트 | 우선 순위 | 적격성 | 언어 | 캡핑 빈도 | 이미지 이름 |
+|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|:-------:|:-------:|
+| `--aepUserLdap-- - AirPods Max` | 오늘 - 1개월 후 | https://bit.ly/4a9RJ5d | Assets 라이브러리에서 선택 | `{{ profile.person.name.firstName }}, 10% discount on AirPods Max` | 25 | 모두 - 여성 고객 | 영어(미국) | 3 | Apple AirPods Max- Female.jpg |
+| `--aepUserLdap-- - Galaxy S24` | 오늘 - 1개월 후 | https://bit.ly/3W8yuDv | Assets 라이브러리에서 선택 | `{{ profile.person.name.firstName }}, 5% discount on Galaxy S24` | 15 | 모두 - 여성 고객 | 영어(미국) | 3 | Galaxy S24 - Female.jpg |
+| `--aepUserLdap-- - Apple Watch` | 오늘 - 1개월 후 | https://bit.ly/4fGwfxX | https://bit.ly/4fGwfxX | `{{ profile.person.name.firstName }}, 10% discount on Apple Watch` | 25 | 모두 - 남성 고객 | 영어(미국) | 3 | Apple 시계 - Male.jpg |
+| `--aepUserLdap-- - Galaxy Watch 7` | 오늘 - 1개월 후 | https://bit.ly/4gTrkeo | Assets 라이브러리에서 선택 | `{{ profile.person.name.firstName }}, 5% discount on Galaxy Watch 7` | 15 | 모두 - 남성 고객 | 영어(미국) | 3 | Galaxy Watch7 - Male.jpg |
 
 {style="table-layout:auto"}
 
@@ -30,7 +30,7 @@ ht-degree: 2%
 
 ![AOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 한 샌드박스에서 다른 샌드박스로 변경하려면 **프로덕션 프로덕션(VA7)**&#x200B;을 클릭하고 목록에서 샌드박스를 선택합니다. 이 예제에서는 샌드박스 이름을 **AEP 지원 FY22**&#x200B;로 지정합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
 
 ![AOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -46,11 +46,39 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/offers3.png)
 
-이 경우 오퍼 `--aepUserLdap-- - Nadia Elements Shell`을(를) 구성해야 합니다. 위 표의 정보를 사용하여 필드를 작성하십시오. 이 예제에서 Personalized Offer의 이름은 **vangeluw - Nadia Elements Shell**&#x200B;입니다. 또한 **시작 날짜 및 시간**&#x200B;을 어제로 설정하고 **종료 날짜 및 시간**&#x200B;을 지금부터 한 달 후의 날짜로 설정하십시오.
+이 경우 오퍼 `--aepUserLdap-- - AirPods Max`을(를) 구성해야 합니다. 위 표의 정보를 사용하여 필드를 작성하십시오. 이 예제에서 Personalized Offer의 이름은 **vangeluw - AirPods Max**&#x200B;입니다. 또한 **시작 날짜 및 시간**&#x200B;을 오늘로 설정하고 **종료 날짜 및 시간**&#x200B;을 지금부터 한 달 후의 날짜로 설정하십시오.
 
 이 작업을 완료하면 이 작업을 수행해야 합니다. **다음**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/offers4.png)
+
+그러면 다음과 같은 결과가 표시됩니다.
+
+![결정 규칙](./images/constraints.png)
+
+**정의된 결정 규칙별**&#x200B;을 선택하고 **+** 아이콘을 클릭하여 **모두 - 여성 고객** 규칙을 추가합니다.
+
+위 표에 표시된 대로 **우선 순위**&#x200B;를 채우십시오. 그런 다음 **+ 한도 만들기**&#x200B;를 클릭하여 이 오퍼를 고객에게 표시할 수 있는 횟수를 정의합니다.
+
+![결정 규칙](./images/constraints1.png)
+
+캡핑에 대해 다음을 선택합니다.
+
+- **최대 가용량 이벤트 선택**: **결정 이벤트**
+- **최대 가용량 유형**: **프로필당(각 프로필의 최대 가용량 적용)**
+- **이벤트 수 제한**: **3**
+- **최대 가용량 다시 설정**: **일별**
+- **간격**: **1일**
+
+이렇게 하면 이 오퍼가 고객당 하루에 3번 이상 표시되지 않습니다.
+
+**만들기**&#x200B;를 클릭합니다.
+
+![결정 규칙](./images/constraints2.png)
+
+그럼 다시 여기로 오십시오. **다음**&#x200B;을 클릭합니다.
+
+![결정 규칙](./images/constraints3.png)
 
 이제 **표시**&#x200B;를 만들어야 합니다. 표현은 **Placement**&#x200B;와(과) 실제 자산의 조합입니다.
 
@@ -67,42 +95,30 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/addcontent2.png)
 
-그러면 Assets 라이브러리의 팝업이 표시되고 **enablement-assets** 폴더로 이동하여 이미지 파일 **nadia-web.png**&#x200B;을(를) 선택하십시오. 그런 다음 **선택**&#x200B;을 클릭합니다.
+그런 다음 Assets 라이브러리의 팝업이 표시되고 **enablement-assets** 폴더로 이동하여 이미지 파일 **Apple AirPods Max - Female.jpg**&#x200B;을(를) 선택합니다. 그런 다음 **선택**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/addcontent3.png)
 
-그러면 다음과 같은 결과가 표시됩니다.
+그러면 이걸 보게 될 거야. **+ 표시 추가**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/addcontentrep20.png)
-
-**+ 표시 추가**&#x200B;를 클릭합니다.
-
-![결정 규칙](./images/addrep.png)
 
 **표시 2**&#x200B;에 대해 다음을 선택하세요.
 
 - 채널: 이메일
 - 배치: 이메일 - 이미지
 - 컨텐츠: URL
-- 공개 위치: 위 표의 **전자 메일에 대한 이미지 링크** 열에서 URL을 복사합니다.
+- 공개 위치: **자산 라이브러리**&#x200B;를 선택하십시오. **찾아보기** 클릭
 
 ![결정 규칙](./images/addcontentrep21.png)
 
-또는 콘텐츠에 대해 **자산 라이브러리**&#x200B;를 선택한 다음 **찾아보기**&#x200B;를 클릭할 수 있습니다.
-
-![결정 규칙](./images/addcontent2b.png)
-
-그러면 Assets 라이브러리의 팝업이 표시되고 **enablement-assets** 폴더로 이동하여 이미지 파일 **nadia-email.png**&#x200B;을(를) 선택하십시오. 그런 다음 **선택**&#x200B;을 클릭합니다.
+그런 다음 Assets 라이브러리의 팝업이 표시되고 **enablement-assets** 폴더로 이동하여 이미지 파일 **Apple AirPods Max - Female.jpg**&#x200B;을(를) 선택합니다. 그런 다음 **선택**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/addcontent3b.png)
 
-그러면 다음과 같은 결과가 표시됩니다.
+그러면 이걸 보게 될 거야. **+ 표시 추가**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/addcontentrep20b.png)
-
-**+ 표시 추가**&#x200B;를 클릭합니다.
-
-![결정 규칙](./images/addrep.png)
 
 **표시 3**&#x200B;에 대해 다음을 선택하세요.
 
@@ -111,7 +127,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 그런 다음 컨텐츠를 추가해야 합니다. 이 경우 작업 호출로 사용할 텍스트를 추가하는 것을 의미합니다.
 
-**콘텐츠 추가**&#x200B;를 클릭합니다.
+**사용자 지정**&#x200B;을 선택하고 **콘텐츠 추가**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/addcontentrep31.png)
 
@@ -119,9 +135,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/addcontent3text.png)
 
-**사용자 지정 텍스트**&#x200B;를 선택하고 다음 필드를 채웁니다.
-
-위의 표에서 **텍스트** 필드를 보고 여기에 해당 텍스트를 입력하십시오(이 경우 `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell`).
+위의 표에서 **텍스트** 필드를 보고 여기에 해당 텍스트를 입력하십시오(이 경우 `{{ profile.person.name.firstName }}, 10% discount on AirPods Max`).
 
 프로필 속성을 선택하여 오퍼 텍스트에 동적 필드로 포함할 수도 있습니다. 이 예제에서는 필드 `{{ profile.person.name.firstName }}`을(를) 통해 이 오퍼를 받을 고객의 이름이 오퍼 텍스트에 포함되도록 합니다.
 
@@ -133,23 +147,11 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/addcontentrep3textdone.png)
 
-그러면 다음과 같은 결과가 표시됩니다.
-
-![결정 규칙](./images/constraints.png)
-
-**정의된 결정 규칙별**&#x200B;을 선택하고 **+** 아이콘을 클릭하여 **모두 - 여성 고객** 규칙을 추가합니다.
-
-![결정 규칙](./images/constraints1.png)
-
-그러면 이걸 보게 될 거야. 위 표에 표시된 대로 **우선 순위**&#x200B;를 채우십시오. **다음**&#x200B;을 클릭합니다.
-
-![결정 규칙](./images/constraints2.png)
-
-그러면 새 **개인화된 오퍼**&#x200B;에 대한 개요가 표시됩니다.
+그러면 새 **개인화된 오퍼**&#x200B;에 대한 개요가 표시됩니다. **마침을 클릭합니다**.
 
 ![결정 규칙](./images/offeroverview.png)
 
-마지막으로 **저장 및 승인**&#x200B;을 클릭합니다.
+**저장 및 승인**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/saveapprove.png)
 
@@ -157,7 +159,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/offeroverview1.png)
 
-이제 위의 단계를 반복하여 Radiant Tee, Zeppelin Yoga Pant 및 Proteus Fitness Jackshirt 제품에 대한 세 가지 다른 맞춤형 오퍼를 만들어야 합니다.
+이제 위의 단계를 반복하여 위 표에 나와 있는 제품에 대한 세 가지 다른 개인화된 오퍼를 만들어야 합니다.
 
 완료되면 **개인화된 오퍼**&#x200B;에 대한 **오퍼 개요** 화면에 모든 오퍼가 표시됩니다.
 
@@ -167,11 +169,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 4개의 개인화된 오퍼를 만든 후에는 이제 **대체 오퍼**&#x200B;를 구성해야 합니다.
 
-**오퍼** 보기에 있는지 확인하세요.
-
-![최종 오퍼](./images/finaloffers.png)
-
-**+ 오퍼 만들기**&#x200B;를 클릭합니다.
+**오퍼** 보기에 있는지 확인하세요. **+ 오퍼 만들기**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/createoffer.png)
 
@@ -179,11 +177,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/foffers2.png)
 
-그러면 다음과 같은 결과가 표시됩니다.
-
-![결정 규칙](./images/foffers3.png)
-
-대체 오퍼 이름 `--aepUserLdap-- - Luma Fallback Offer`을(를) 입력하십시오. **다음**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. 대체 오퍼 이름 `--aepUserLdap-- - CitiSignal Fallback Offer`을(를) 입력하십시오. **다음**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/foffers4.png)
 
@@ -191,68 +185,51 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 **표시 1**&#x200B;에 대해 다음을 선택하세요.
 
-- 채널: 웹
-- 배치: 웹 - 이미지
-- 컨텐츠: URL
-- 공개 위치: `https://bit.ly/3nBOt9h`
+- **채널**: **웹**
+- **배치**: **웹 - 이미지**
+- **컨텐츠**: **자산 라이브러리**
+
+이미지를 선택하려면 **찾아보기**&#x200B;를 클릭하세요.
 
 ![결정 규칙](./images/addcontent1fb.png)
 
-또는 콘텐츠에 대해 **자산 라이브러리**&#x200B;를 선택한 다음 **찾아보기**&#x200B;를 클릭할 수 있습니다.
-
-![결정 규칙](./images/addcontent2fb.png)
-
-그러면 Assets 라이브러리의 팝업이 표시되고 **enablement-assets** 폴더로 이동하여 이미지 파일 **spriteyogatstraps-web.png**&#x200B;을(를) 선택하십시오. 그런 다음 **선택**&#x200B;을 클릭합니다.
+그러면 Assets 라이브러리의 팝업이 표시되고 **citi-signal-images** 폴더로 이동하여 이미지 파일 **App-Banner-Ad.jpg**&#x200B;을(를) 선택합니다. 그런 다음 **선택**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/addcontent3fb.png)
 
-그러면 다음과 같은 결과가 표시됩니다.
+그러면 이걸 보게 될 거야. **+ 표시 추가**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/addcontentrep20fb.png)
 
 **표시 2**&#x200B;에 대해 다음을 선택하세요.
 
-- 채널: 이메일
-- 배치: 이메일 - 이미지
-- 컨텐츠: URL
-- 공개 위치: `https://bit.ly/3nF4qvE`
+- **채널**: **전자 메일**
+- **배치**: **전자 메일 - 이미지**
+- **컨텐츠**: **자산 라이브러리**
+
+이미지를 선택하려면 **찾아보기**&#x200B;를 클릭하세요.
 
 ![결정 규칙](./images/addcontentrep21fb.png)
 
-또는 콘텐츠에 대해 **자산 라이브러리**&#x200B;를 선택한 다음 **찾아보기**&#x200B;를 클릭할 수 있습니다.
-
-![결정 규칙](./images/addcontent2bfb.png)
-
-그러면 Assets 라이브러리의 팝업이 표시되고 **enablement-assets** 폴더로 이동하여 이미지 파일 **spriteyogatstraps-email.png**&#x200B;을(를) 선택하십시오. 그런 다음 **선택**&#x200B;을 클릭합니다.
+그러면 Assets 라이브러리의 팝업이 표시되고 **citi-signal-images** 폴더로 이동하여 이미지 파일 **App-Banner-Ad.jpg**&#x200B;을(를) 선택합니다. 그런 다음 **선택**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/addcontent3bfb.png)
 
-그러면 다음과 같은 결과가 표시됩니다.
+그러면 이걸 보게 될 거야. **+ 표시 추가**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/addcontentrep20bfb.png)
 
-**+ 표시 추가**&#x200B;를 클릭합니다.
-
-![결정 규칙](./images/addrep.png)
-
 **표시 3**&#x200B;에 대해 다음을 선택하세요.
 
-- 채널: 비디지털
-- 배치: 비디지털 - 텍스트
-
-그런 다음 컨텐츠를 추가해야 합니다. 이 경우 이미지 링크를 추가합니다.
+- **채널**: **디지털이 아님**
+- **배치**: **디지털이 아님 - 텍스트**
+- **콘텐츠**: **사용자 지정**
 
 **콘텐츠 추가**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/addcontentrep21text.png)
 
-그러면 이 팝업이 표시됩니다.
-
-![결정 규칙](./images/addcontent2text.png)
-
-**사용자 지정 텍스트**&#x200B;를 선택하고 다음 필드를 채웁니다.
-
-`{{ profile.person.name.firstName }}, discover our Sprite Yoga Straps!` 텍스트를 입력하고 **저장**&#x200B;을 클릭합니다.
+그러면 이 팝업이 표시됩니다. `{{ profile.person.name.firstName }}, download the CitiSignal app now!` 텍스트를 입력하고 **저장**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/faddcontent3text.png)
 
@@ -282,8 +259,10 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 그러면 이 팝업이 표시됩니다. 다음과 같이 컬렉션을 구성합니다. **다음**&#x200B;을 클릭합니다.
 
-- 컬렉션 이름: `--aepUserLdap-- - Luma Collection` 사용
+- 컬렉션 이름: `--aepUserLdap-- - CitiSignal Collection` 사용
 - **정적 컬렉션 만들기**&#x200B;를 선택합니다.
+
+**다음**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/createcollectionpopup1.png)
 
@@ -299,18 +278,14 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 의사 결정에는 배치, 개인화된 오퍼 컬렉션 및 대체 오퍼가 결합되어 궁극적으로 Offer decisioning 엔진이 우선순위, 자격 제한 및 총/사용자 한도 등의 개인화된 각 오퍼 특성을 기반으로 특정 프로필에 대한 최상의 오퍼를 찾는 데 사용됩니다.
 
-**결정**&#x200B;을 구성하려면 **결정**(으)로 이동하십시오. **+ 활동 만들기**&#x200B;를 클릭합니다.
+**결정**&#x200B;을 구성하려면 **결정**(으)로 이동하십시오. **+ 결정 만들기**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/activitydd.png)
 
-그러면 다음과 같은 결과가 표시됩니다.
+그러면 이걸 보게 될 거야. 다음과 같이 필드를 채웁니다. **다음**&#x200B;을 클릭합니다.
 
-![결정 규칙](./images/activity1.png)
-
-다음과 같이 필드를 채웁니다. **다음**&#x200B;을 클릭합니다.
-
-- 이름: `--aepUserLdap-- - Luma Decision`
-- 시작 날짜 및 시간: 어제
+- 이름: `--aepUserLdap-- - CitiSignal Decision`
+- 시작 날짜 및 시간: 오늘
 - 종료 날짜 및 시간: 오늘 + 1개월
 
 ![결정 규칙](./images/activity2.png)
@@ -323,23 +298,23 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![결정 규칙](./images/activity3.png)
 
-컬렉션 `--aepUserLdap-- - Luma Collection`을(를) 선택하고 **추가**&#x200B;를 클릭합니다.
+컬렉션 `--aepUserLdap-- - CitiSignal Collection`을(를) 선택하고 **추가**&#x200B;를 클릭합니다.
 
 ![결정 규칙](./images/activity4text.png)
 
-그러면 이걸 보게 될 거야. 새 결정 범위를 추가하려면 **-** 단추를 클릭하십시오.
+그러면 이걸 보게 될 거야. 새 결정 범위를 추가하려면 **+** 단추를 클릭하십시오.
 
 ![결정 규칙](./images/activity5text.png)
 
-**웹 - 이미지** 배치를 선택하고 평가 기준에 따라 컬렉션 `--aepUserLdap-- - Luma Collection`을(를) 추가하십시오. 그런 다음 **+** 단추를 다시 클릭하여 새 결정 범위를 추가합니다.
+**웹 - 이미지** 배치를 선택하고 평가 기준에 따라 컬렉션 `--aepUserLdap-- - CitiSignal Collection`을(를) 추가하십시오. 그런 다음 **+** 단추를 다시 클릭하여 새 결정 범위를 추가합니다.
 
 ![결정 규칙](./images/activity6text.png)
 
-**전자 메일 - 이미지** 배치를 선택하고 평가 기준에 따라 컬렉션 `--aepUserLdap-- - Luma Collection`을(를) 추가하십시오. 그런 다음 **다음**&#x200B;을 클릭합니다.
+**전자 메일 - 이미지** 배치를 선택하고 평가 기준에 따라 컬렉션 `--aepUserLdap-- - CitiSignal Collection`을(를) 추가하십시오. 그런 다음 **다음**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/activity4.png)
 
-이제 **대체 오퍼**&#x200B;을(를) 선택해야 합니다. 대체 오퍼의 이름은 `--aepUserLdap-- - Luma Fallback Offer`입니다. **다음**&#x200B;을 클릭합니다.
+이제 **대체 오퍼**&#x200B;을(를) 선택해야 합니다. 대체 오퍼의 이름은 `--aepUserLdap-- - CitiSignal Fallback Offer`입니다. **다음**&#x200B;을 클릭합니다.
 
 ![결정 규칙](./images/activity10.png)
 

@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![배치](./images/homedec.png)
 
-**구성 요소**&#x200B;를 클릭합니다. 이제 배치, 태그, 규칙 및 순위 등이 포함된 오퍼 메뉴가 표시됩니다.
+**구성 요소**&#x200B;를 클릭합니다. 이제 배치, 컬렉션 한정자, 규칙 및 순위와 같은 항목을 볼 수 있습니다.
 
 ![배치](./images/components.png)
 
@@ -61,7 +61,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 **배치** 탭에서 오퍼에 대한 배치를 정의할 수 있습니다. 의사 결정을 정의할 때 배치는 결과 오퍼가 표시되는 위치(채널 유형)와 모양 또는 양식(콘텐츠 유형)을 정의합니다.
 
-Adobe Experience Platform 인스턴스에 배치가 표시되지 않으면 아래 및 스크린샷과 같이 만드십시오.
+환경에 배치가 표시되지 않으면 아래 및 스크린샷과 같이 생성하십시오.
 
 | 이름 | 채널 유형 | 콘텐츠 유형 |
 | ---------------------- | ------------ | ------------ |
@@ -101,19 +101,17 @@ Adobe Experience Platform 인스턴스에 배치가 표시되지 않으면 아�
 
 ![결정 규칙](./images/rules.png)
 
-그러면 Adobe Experience Platform의 세그멘테이션 환경이 표시됩니다.
+그러면 Adobe Experience Platform의 대상 만들기 인터페이스를 볼 수 있습니다.
 
 ![결정 규칙](./images/createrule1.png)
 
 이제 실시간 고객 프로필에 대한 결합 스키마의 일부인 모든 필드에 액세스할 수 있으며 모든 규칙을 작성할 수 있습니다.
 
-또한 **대상** > ``--aepTenantId--``(으)로 이동하여 Adobe Experience Platform에서 이미 정의된 대상을 간단히 재사용할 수 있다는 것도 흥미롭습니다.
-
-![결정 규칙](./images/decisionruleaud.png)
+**대상** > ``--aepTenantId--``(으)로 이동하여 Adobe Experience Platform에서 이미 정의된 대상을 간단히 재사용할 수도 있습니다.
 
 그러면 다음과 같은 결과가 표시됩니다.
 
-![결정 규칙](./images/decisionruleaud1.png)
+![결정 규칙](./images/decisionruleaud.png)
 
 원하는 경우 이제 나만의 규칙을 구성할 수 있습니다. 이 연습에서는 두 가지 규칙이 필요합니다.
 

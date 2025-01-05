@@ -6,26 +6,20 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '344'
 ht-degree: 2%
 
 ---
 
 # 3.3Offer decisioning
 
-**작성자: [Rob In Der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 이 모듈에서는 Adobe Journey Optimizer의 Offer decisioning 기능에 대해 실습해 봅니다.
 
 Adobe Journey Optimizer은 개인화된 오퍼를 만들고 Adobe Journey Optimizer에 연결된 모든 대상에 오케스트레이션된 방식으로 제공하는 기능을 제공합니다.
 
 offer decisioning을 사용하면 사용 가능한 선택 항목 세트에서 최상의 옵션을 결정할 수 있습니다. 이러한 옵션은 오퍼, 제품 권장 사항, 웹 경험에 대한 콘텐츠 구성 요소, 대화 스크립트 및 수행할 작업일 수 있습니다.
-
-가치 및 고객 여정을 이해하려면 이 비디오를 시청하십시오.
-
->[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
 
 ## 학습 목표
 
@@ -50,7 +44,7 @@ offer decisioning을 사용하면 사용 가능한 선택 항목 세트에서 �
 
 이 연습에서는 개인화된 오퍼와 나만의 결정을 구성하고 해당 결정을 게시합니다.
 
-[3.3.3 Offer decisioning을 위해 데이터 수집 클라이언트 속성 및 Web SDK 설정 준비](./ex3.md)
+[3.3.3 Offer decisioning을 위해 데이터 수집 클라이언트 속성 및 웹 SDK 설정 준비](./ex3.md)
 
 이 연습에서는 데모 웹 사이트를 사용하여 결정을 테스트합니다.
 
