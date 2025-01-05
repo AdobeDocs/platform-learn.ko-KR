@@ -4,16 +4,14 @@ description: 이 모듈에서는 기업이 고객에게 연관성 있고 상황�
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '285'
 ht-degree: 2%
 
 ---
 
 # 3.4 Adobe Journey Optimizer
-
-**작성자: [Maxime Foutrel](https://www.linkedin.com/in/maximefoutrel/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 모듈에서는 기업이 고객에게 연관성 있고 상황에 맞는 개인화된 경험을 디자인하고 제공하는 데 도움이 되는 Adobe Journey Optimizer에 대해 알아야 할 모든 사항을 알아봅니다.
 
@@ -28,7 +26,7 @@ ht-degree: 2%
 
 - Adobe Journey Optimizer 액세스
 - **이 에셋 다운로드**:
-   - [에셋](./../../../assets/ajo/ajo_assets.zip)
+   - [에셋](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
@@ -40,21 +38,17 @@ ht-degree: 2%
 
 이 연습에서는 이전 연습에서 만든 전자 메일 메시지를 밖으로 보내도록 트리거 기반 여정을 구성합니다.
 
-[3.4.2 일괄 처리 기반 뉴스레터 여정 구성](./ex2.md)
+[3.4.2 캠페인 구성](./ex2.md)
 
-이 연습에서는 이전 연습에서 만든 이메일 메시지를 밖으로 보내도록 배치 기반 여정을 구성합니다.
+이 연습에서는 기존 이메일 캠페인을 구성합니다.
 
-[3.4.3 이메일 메시지에 개인화 적용](./ex3.md)
+[3.4.3 이메일 메시지에 세그먼트 기반 개인화 적용](./ex3.md)
 
 이 연습에서는 세그먼트 멤버십을 사용하여 전자 메일 내에 표시할 콘텐츠를 정의합니다.
 
 [3.4.4 푸시 알림 설정 및 사용](./ex4.md)
 
 이 연습에서는 iOS 디바이스에 모바일 애플리케이션을 설치하고 푸시 알림을 구성하여 디바이스에 전달합니다.
-
-[3.4.5 비즈니스 이벤트 여정 만들기](./ex5.md)
-
-이 연습에서는 이전에 해당 제품에 관심을 보였지만 제품이 품절되어 구매할 수 없었던 고객에게 SMS를 통해 재고 보충 메시지를 전달하는 비즈니스 이벤트를 정의합니다.
 
 [요약 및 이점](./summary.md)
 

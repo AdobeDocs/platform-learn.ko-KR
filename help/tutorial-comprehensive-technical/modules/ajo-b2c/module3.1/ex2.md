@@ -4,7 +4,7 @@ description: Journey Optimizer - 조각 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 81810b3a-7eca-436f-a5dc-48c46cb33980
-source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.1.2.1 바닥글 조각 만들기
+## 3.1.2.2 바닥글 조각 만들기
 
 **조각 만들기**&#x200B;를 클릭합니다.
 
