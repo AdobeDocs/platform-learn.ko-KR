@@ -4,10 +4,10 @@ description: 이 모듈에서는 기업이 고객에게 연관성 있고 상황�
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 
 - Adobe Journey Optimizer 액세스
 - **이 에셋 다운로드**:
-   - [에셋](./../../../assets/ajo/CitiSignal-images.zip)
+   - [CitiSignal 이미지](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >

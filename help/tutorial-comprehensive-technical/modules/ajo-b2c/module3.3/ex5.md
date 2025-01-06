@@ -3,9 +3,10 @@ title: Offer decisioning - 이메일에서 의사 결정 사용
 description: 이메일에서 의사 결정 사용
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7eddb239-2666-485a-b81a-1f7e6f3aeed2
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,11 +15,11 @@ ht-degree: 0%
 
 이 연습에서는 의사 결정을 사용하여 이메일 및 SMS 게재를 개인화합니다.
 
-**여정**(으)로 이동합니다. 연습 7.2에서 만든 여정(`--aepUserLdap-- - Account Creation Journey`)를 찾습니다. 여정을 클릭하여 엽니다.
+**여정**(으)로 이동합니다. 연습 3.1.3에서 만든 여정(`--aepUserLdap-- - Registration Journey`)를 찾습니다. 여정을 클릭하여 엽니다.
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
-그러면 이걸 보게 될 거야. **새 버전 만들기**&#x200B;를 클릭합니다.
+그러면 이걸 보게 될 거야. **클릭...**&#x200B;을(를) 더 추가한 다음 **새 버전 만들기**&#x200B;를 클릭합니다.
 
 ![Journey Optimizer](./images/journey1.png)
 
@@ -30,51 +31,35 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/journey3.png)
 
-그러면 메시지 대시보드가 표시됩니다. **전자 메일 Designer**&#x200B;을 클릭합니다.
+그러면 메시지 대시보드가 표시됩니다. **전자 메일 본문 편집**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/emailoffer2.png)
-
-그러면 이걸 보게 될 거야.
-
-![Journey Optimizer](./images/emailoffer5.png)
 
 그러면 이걸 보게 될 거야. 새 **1:1 열** 구조 구성 요소를 캔버스로 드래그합니다.
 
 ![Journey Optimizer](./images/emailoffer6.png)
 
-메뉴에서 **콘텐츠 구성 요소**(으)로 이동합니다. **오퍼 결정** 구성 요소를 선택하고 이 구성 요소를 표시된 대로 전자 메일의 콘텐츠 오퍼 자리 표시자로 끌어서 놓습니다. **추가**&#x200B;를 클릭합니다.
+메뉴에서 **내용**(으)로 이동합니다. **오퍼 결정** 구성 요소를 선택하고 이 구성 요소를 표시된 대로 전자 메일의 콘텐츠 오퍼 자리 표시자로 끌어서 놓습니다. **추가**&#x200B;를 클릭합니다.
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-이메일에 포함할 배치 유형을 선택합니다. **배치** 드롭다운 메뉴에서 **전자 메일 - 이미지**&#x200B;를 선택한 다음 결정 `--aepUserLdap-- - Luma Decision`을(를) 선택합니다. **추가를 클릭합니다**.
+이메일에 포함할 배치 유형을 선택합니다. **배치** 드롭다운 메뉴에서 **전자 메일 - 이미지**&#x200B;를 선택한 다음 결정 `--aepUserLdap-- - CitiSignal Decision`을(를) 선택합니다. **추가를 클릭합니다**.
 
 ![Journey Optimizer](./images/emailoffer8.png)
 
-이제 모든 개인화된 오퍼와 대체 오퍼가 이메일 디자이너 내에서 시각화되는 것을 볼 수 있습니다. 실제 고객 프로필로 전자 메일 메시지를 미리 보려면 **콘텐츠 시뮬레이션**&#x200B;을 클릭하세요.
+이제 모든 개인화된 오퍼와 대체 오퍼를 순환할 수 있으며 이러한 모든 오퍼는 이메일 디자이너 내에서 시각화됩니다. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/emailoffer9.png)
-
-미리보기에 사용할 프로필을 식별하여 시작합니다. **전자 메일** 네임스페이스를 선택하고 데모 웹 사이트에서 만든 고객 프로필의 전자 메일 주소를 입력하십시오. **미리 보기**&#x200B;를 클릭합니다.
-
-![Journey Optimizer](./images/emailoffer10.png)
-
-전자 메일이 표시되고 오퍼가 올바르게 표시되면 **닫기** 단추를 클릭합니다.
-
-![Journey Optimizer](./images/emailoffer11.png)
-
-마지막으로 **저장**&#x200B;을 클릭합니다.
-
-![Journey Optimizer](./images/emailoffer12.png)
 
 이제 화살표를 클릭하여 이전 화면으로 돌아갑니다.
 
 ![Journey Optimizer](./images/emailoffer13.png)
 
-그러면 이걸 보게 될 거야. 왼쪽 상단 모서리의 화살표를 클릭하여 여정으로 돌아갑니다.
+왼쪽 상단 모서리의 화살표를 클릭하여 여정으로 돌아갑니다.
 
 ![Journey Optimizer](./images/emailoffer14.png)
 
-**전자 메일** 작업을 닫으려면 **확인**&#x200B;을 클릭하세요.
+**전자 메일** 작업을 닫으려면 **저장**&#x200B;을 클릭하세요.
 
 ![Journey Optimizer](./images/emailoffer14a.png)
 

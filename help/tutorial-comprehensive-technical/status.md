@@ -2,10 +2,11 @@
 title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
-source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
+exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 9%
+source-wordcount: '220'
+ht-degree: 10%
 
 ---
 
@@ -27,7 +28,7 @@ ht-degree: 9%
 | [2.6 Apache Kafka에서 Real-Time CDP으로 데이터 스트리밍](./modules/rtcdp-b2c/module2.6/aep-apache-kafka.md) | 25/11/2024 | 예 | - |
 | [3.1 Adobe Journey Optimizer: 오케스트레이션](./modules/ajo-b2c/module3.1/journey-orchestration-create-account.md) | 30/12/2024 | 예 | - |
 | [3.2 Adobe Journey Optimizer: 외부 데이터 원본 및 사용자 지정 작업](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | 예 | - |
-| [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 2025년 5월 01일 | 아직 없음 | 콘텐츠가 업데이트 보류 중 |
+| [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 2025/06/01 | 예 | - |
 | [3.4 Adobe Journey Optimizer: 이벤트 기반 여정](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 2025년 5월 01일 | 예 | - |
 | [4.1 Customer Journey Analytics: Adobe Experience Platform의 맨 위에 Analysis Workspace을 사용하여 대시보드를 만듭니다](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | - | 아니요 | 콘텐츠가 업데이트 보류 중 |
 | [4.2 Customer Journey Analytics: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터를 수집하고 분석합니다](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | - | 아니요 | 콘텐츠가 업데이트 보류 중 |
