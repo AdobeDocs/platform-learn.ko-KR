@@ -4,9 +4,9 @@ description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 2%
 
 ---
@@ -119,69 +119,44 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 ![데모](./images/22.png)
 
+**저장**&#x200B;을 클릭합니다.
+
+![데모](./images/22a.png)
+
 이제 데이터 보기에 구성 요소를 추가할 수 있습니다. 알 수 있듯이 일부 지표와 차원이 자동으로 추가됩니다.
 
 ![데모](./images/24.png)
 
-데이터 보기에 다음 구성 요소를 추가합니다.
+데이터 보기에 아래 구성 요소를 추가합니다. 또한 필드 이름을 친숙한 이름으로 업데이트해야 합니다. 이렇게 하려면 지표 또는 차원을 선택하고 오른쪽 메뉴에서 **구성 요소 이름** 필드를 업데이트합니다.
 
-| 구성 요소 이름 | 구성 요소 유형 | 구성 요소 경로 |
-| -----------------|-----------------|-----------------|
-| 수준 | 차원 | _experienceplatform.loyaltyDetails.level |
-| 포인트 | 지표 | _experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | 지표 | commerce.checkouts.value |
-| commerce.productListRemovals.value | 지표 | commerce.productListRemovals.value |
-| commerce.productListAdds | 지표 | commerce.productListAdds |
-| commerce.productViews.value | 지표 | commerce.productViews.value |
-| commerce.purchases.value | 지표 | commerce.purchases.value |
-| web.webPageDetails.pageViews | 지표 | web.webPageDetails.pageViews |
-| 거래 ID | 차원 | commerce.order.payments.transactionID |
-| channel.mediaType | 차원 | channel.mediaType |
-| channel.typeAtSource | 차원 | channel.typeAtSource |
-| 추적 코드 | 차원 | marketing.trackingCode |
-| gaid | 차원 | _experienceplatform.identification.core.gaid |
-| web.webPageDetails.name | 차원 | web.webPageDetails.name |
-| 이벤트 유형 | 차원 | eventType |
-| 공급업체 | 차원 | environment.browserDetails.vendor |
-| 식별자 | 차원 | _ID |
-| 타임스탬프 | 차원 | 타임스탬프 |
-| 유형 | 차원 | device.type |
-| 고객 충성도 ID | 차원 | _experienceplatform.identification.core.loyaltyId |
-
-그러면 다음 항목이 제공됩니다.
-
-![데모](./images/25.png)
-
-다음으로, 분석을 작성할 때 위의 지표 및 차원 중 일부를 쉽게 사용할 수 있도록 친숙한 이름을 변경해야 합니다. 이렇게 하려면 지표 또는 차원을 선택하고 아래 이미지에 표시된 대로 **이름** 필드를 업데이트하십시오.
-
-![데모](./images/25a.png)
-
-| 구성 요소 원래 이름 | 표시 이름 |
-| -----------------|-----------------|
-| 수준 | 충성도 수준 |
-| 포인트 | 충성도 포인트 |
-| commerce.checkouts.value | 체크아웃 |
-| commerce.productListRemovals.value | 장바구니 제거 |
-| commerce.productListAdds | 장바구니 추가 |
-| commerce.productViews.value | 제품 보기 |
-| commerce.purchases.value | 구매 |
-| web.webPageDetails.pageViews | 페이지 보기 횟수 |
-| channel.mediaType | 트래픽 Medium |
-| channel.typeAtSource | 트래픽 소스 |
-| 추적 코드 | 마케팅 채널 |
-| gaid | GOOGLE ANALYTICS ID |
-| 이름 | 페이지 제목 |
-| 공급업체 | 브라우저 |
-| 유형 | 장치 유형 |
-| 고객 충성도 ID | 고객 충성도 ID |
+| 구성 요소 유형 | 구성 요소 원래 이름 | 표시 이름 | 구성 요소 경로 |
+| -----------------| -----------------|-----------------|-----------------|
+| 지표 | commerce.checkouts.value | 체크아웃 | `commerce.checkouts.value` |
+| 지표 | commerce.productListRemovals.value | 장바구니 제거 | `commerce.productListRemovals.value` |
+| 지표 | commerce.productListAdds | 장바구니 추가 | `commerce.productListAdds` |
+| 지표 | commerce.productViews.value | 제품 보기 | `commerce.productViews.value` |
+| 지표 | commerce.purchases.value | 구매 | `commerce.purchases.value` |
+| 지표 | web.webPageDetails.pageViews | 페이지 보기 횟수 | `web.webPageDetails.pageViews` |
+| 지표 | 포인트 | 충성도 포인트 | `_experienceplatform.loyaltyDetails.points` |
+| 차원 | 수준 | 충성도 수준 | `_experienceplatform.loyaltyDetails.level` |
+| 차원 | channel.mediaType | 트래픽 Medium | `channel.mediaType` |
+| 차원 | channel.typeAtSource | 트래픽 소스 | `channel.typeAtSource` |
+| 차원 | 추적 코드 | 마케팅 채널 | `marketing.trackingCode` |
+| 차원 | gaid | GOOGLE ANALYTICS ID | `_experienceplatform.identification.core.gaid` |
+| 차원 | web.webPageDetails.name | 페이지 제목 | `web.webPageDetails.name` |
+| 차원 | 공급업체 | 브라우저 | `environment.browserDetails.vendor` |
+| 차원 | 유형 | 장치 유형 | `device.type` |
+| 차원 | 고객 충성도 ID | 고객 충성도 ID | `_experienceplatform.identification.core.loyaltyId` |
+| 차원 | commerce.order.payments.transactionID | 거래 ID | `commerce.order.payments.transactionID` |
+| 차원 | eventType | 이벤트 유형 | `eventType` |
+| 차원 | 타임스탬프 | 타임스탬프 | `timestamp` |
+| 차원 | `_id` | 식별자 | `_id` |
 
 그러면 다음과 같은 것이 제공됩니다.
 
 ![데모](./images/25b.png)
 
-다음으로 **속성 설정**&#x200B;을 변경하여 이러한 구성 요소 중 일부에 대한 개인 및 세션 컨텍스트를 일부 변경해야 합니다.
-
-![데모](./images/25c.png)
+다음으로 **속성 또는 지속성 설정**&#x200B;을 변경하여 이러한 구성 요소 중 일부에 대한 개인 및 세션 컨텍스트를 일부 변경해야 합니다.
 
 아래 구성 요소에 대한 **속성 설정**&#x200B;을 변경하십시오.
 
@@ -193,37 +168,30 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 | 트래픽 Medium |
 | 장치 유형 |
 | GOOGLE ANALYTICS ID |
-| 고객 충성도 ID |
-| 충성도 수준 |
-| 충성도 포인트 |
 
-이렇게 하려면 구성 요소를 선택하고 **사용자 지정 속성 모델 사용**&#x200B;을 클릭한 다음 **모델**&#x200B;을(를) **마지막 터치**(으)로 설정하고 **만료**&#x200B;을(를) **개인(보고 기간)**(으)로 설정합니다. 위에서 언급한 모든 구성 요소에 대해 이 작업을 반복합니다.
+이렇게 하려면 구성 요소를 선택하고 **사용자 지정 속성 모델 사용**&#x200B;을 클릭한 다음 **모델**&#x200B;을(를) **가장 최근**(으)로 설정하고 **만료**&#x200B;을(를) **개인 보고 기간**(으)로 설정합니다. 위에서 언급한 모든 구성 요소에 대해 이 작업을 반복합니다.
 
 ![데모](./images/27a.png)
 
-위에 언급된 모든 구성 요소에 대해 속성 설정을 변경한 후에는 다음 보기가 있어야 합니다.
+위에 언급된 모든 구성 요소에 대해 속성 설정을 변경한 후에는 이 보기가 있어야 합니다. **저장 후 계속**&#x200B;을 클릭합니다.
 
 ![데모](./images/27.png)
 
-이제 데이터 보기가 구성되었습니다. **저장**&#x200B;을 클릭합니다.
+**설정** 화면에서 변경할 필요가 없습니다. **저장 후 마침**&#x200B;을 클릭합니다.
 
-![데모](./images/30.png)
+![데모](./images/27b.png)
 
 이제 Adobe Analytics Analysis Workspace 내에서 Google Analytics 데이터를 분석할 준비가 되었습니다. 다음 연습으로 넘어갑시다.
 
 ## 4.2.5.3 프로젝트 만들기
 
-Customer Journey Analytics에서 **프로젝트**(으)로 이동합니다.
+Customer Journey Analytics에서 **Workspace**(으)로 이동합니다. **프로젝트 만들기** 클릭
 
 ![데모](./images/pro1.png)
 
-그러면 다음과 같은 결과가 표시됩니다.
+**빈 Workspace 프로젝트**&#x200B;를 선택하고 **만들기**&#x200B;를 클릭합니다.
 
 ![데모](./images/pro2.png)
-
-**새 프로젝트 만들기**&#x200B;를 클릭하여 프로젝트를 만듭니다.
-
-![데모](./images/pro3.png)
 
 이제 빈 프로젝트가 있습니다.
 
@@ -236,27 +204,21 @@ Customer Journey Analytics에서 **프로젝트**(으)로 이동합니다.
 | Windows | Control + S |
 | Mac | Command+S |
 
-이 팝업이 표시됩니다.
-
-![데모](./images/prsave.png)
-
-이 명명 규칙을 사용하십시오.
+이 팝업이 표시됩니다. 이 명명 규칙을 사용하십시오.
 
 | 이름 | 설명 |
 | ----------------- |-------------| 
-| ldap - GA + 충성도 Workspace | ldap - GA + 충성도 Workspace |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-**프로젝트 저장**&#x200B;을 클릭합니다.
+그런 다음 **저장**&#x200B;을 클릭합니다.
 
-![데모](./images/prsave2.png)
+![데모](./images/prsave.png)
 
-그런 다음 화면 오른쪽 상단에서 올바른 데이터 보기를 선택해야 합니다. 명명 규칙 `ldap - GA + Loyalty Data View`을(를) 사용하여 이전 연습에서 만든 데이터 보기입니다. 이 예제에서 선택할 데이터 보기는 `ldap - GA + Loyalty Data View`입니다.
+그런 다음 화면 오른쪽 상단에서 올바른 데이터 보기를 선택해야 합니다. 명명 규칙 `--aepUserLdap-- - GA + Loyalty Data View`을(를) 사용하여 이전 연습에서 만든 데이터 보기입니다.
 
 ![데모](./images/prdvlist.png)
 
-![데모](./images/prdv.png)
-
-### 12.5.3.1 자유 형식 테이블
+### 4.2.5.3.1 자유 형식 테이블
 
 자유 형식 테이블은 Excel에서 피벗 테이블로 거의 작동합니다. 왼쪽 막대에서 항목을 선택하고 자유 형식으로 끌어서 놓으면 테이블 보고서가 표시됩니다.
 
@@ -270,17 +232,13 @@ SQL, BigQuery를 사용하고 Google Analytics UI 또는 Google Data Studio에�
 
 CJA의 Analysis Workspace을 통해 이 질문과 그 이상의 답변에 답변해 보겠습니다.
 
-먼저 패널 오른쪽에서 올바른 날짜 범위(**마지막 53주**)를 선택합니다.
+먼저 패널 오른쪽에서 올바른 날짜 범위(**오늘**)를 선택합니다. **적용**&#x200B;을 클릭합니다.
 
 ![데모](./images/pro11.png)
 
-그런 다음 **적용**&#x200B;을 클릭하여 날짜 범위를 적용합니다. 다음 연습에서는 이 단계를 기억하십시오.
-
-![데모](./images/apply.png)
-
 >[!NOTE]
 >
->**데이터 연결** 및 **데이터 보기**&#x200B;을(를) 방금 만든 경우 두 시간 정도 기다려야 할 수 있습니다. CJA는 엄청난 양의 데이터 레코드가 있는 경우 내역 데이터를 채우는 데 시간이 필요합니다.
+>**데이터 연결** 및 **데이터 보기**&#x200B;을(를) 방금 만든 경우 두 시간 정도 기다려야 할 수 있습니다. CJA는 대량의 데이터 레코드가 있을 때 내역 데이터를 채우는 데 시간이 필요합니다.
 
 마케팅 채널을 분석하기 위해 일부 차원과 지표를 드래그 앤 드롭해 보겠습니다. 먼저 **마케팅 채널** 차원을 사용하여 **자유 형식 테이블**&#x200B;의 캔버스로 끌어서 놓습니다. (지표 메뉴에 지표가 바로 표시되지 않는 경우 **모두 표시**&#x200B;를 클릭하십시오.)
 
@@ -296,9 +254,13 @@ CJA의 Analysis Workspace을 통해 이 질문과 그 이상의 답변에 답변
 
 ![데모](./images/procalc1.png)
 
-계산된 지표의 이름으로 **전환율**&#x200B;을(를) 사용합니다. 그런 다음 지표 **구매** 및 **세션**&#x200B;을 캔버스로 드래그합니다. **Format**&#x200B;을(를) **Percent**(으)로 설정하고 **소수점 이하 자리 수**&#x200B;을(를) **2**(으)로 설정합니다. 마지막으로 **저장**&#x200B;을 클릭합니다.
+계산된 지표의 이름으로 **전환율**&#x200B;을 사용하고 **외부 ID**&#x200B;에 **전환율**&#x200B;을 사용하십시오. 그런 다음 지표 **구매** 및 **세션**&#x200B;을 캔버스로 드래그합니다. **Format**&#x200B;을(를) **Percent**(으)로 설정하고 **소수점 이하 자리 수**&#x200B;을(를) **2**(으)로 설정합니다. 마지막으로 **저장**&#x200B;을 클릭합니다.
 
 ![데모](./images/procalc2.png)
+
+**저장**&#x200B;을 클릭합니다.
+
+![데모](./images/procalc2a.png)
 
 그런 다음 **자유 형식 테이블**&#x200B;에서 이러한 모든 지표를 사용하려면 해당 지표를 하나씩 **자유 형식 테이블**(으)로 끌어다 놓습니다. 아래 예를 참조하십시오.
 

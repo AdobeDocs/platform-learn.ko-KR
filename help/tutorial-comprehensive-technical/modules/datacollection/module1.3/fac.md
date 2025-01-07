@@ -4,16 +4,14 @@ description: 데이터 수집 - 페더레이션 대상 구성
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 1.3 페더레이션 대상 구성
-
-**작성자: [Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 모듈의 목표는 Federated Audience Composition을 사용하여 대상자를 만드는 방법에 대해 모두 학습하는 것입니다.
 
@@ -38,7 +36,7 @@ Federated Audience Composition은 Real-Time CDP 및 Journey Optimizer 고객에�
 
 ## 연습
 
-[1.3.1 Snowflake 계정 설정](./ex1.md)
+[1.3.1 Snowflake 환경 설정](./ex1.md)
 
 이 연습에서는 Snowflake 체험판 계정을 설정하고 Adobe Experience Platform에 연결합니다
 
