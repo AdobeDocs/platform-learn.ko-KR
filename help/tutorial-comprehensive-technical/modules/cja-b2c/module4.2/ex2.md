@@ -3,9 +3,10 @@ title: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서
 description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석 - BigQuery에서 첫 번째 쿼리를 만듭니다.
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c3c06447-3096-4f55-993b-4d41bc15c4d2
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -28,44 +29,42 @@ Google Analytics 데이터가 BigQuery에 있으면 차원, 지표 및 기타 �
 
 [BigQuery 콘솔](https://console.cloud.google.com/bigquery)로 이동합니다.
 
-![데모](./images/ex3/1.png)
+![데모](./images/ex31.png)
 
 **탐색기**&#x200B;에서 프로젝트 ID를 볼 수 있습니다. 프로젝트 ID를 클릭합니다(**bigquery-public-data** 데이터 세트를 클릭하지 마십시오).
 
-![데모](./images/ex3/2.png)
+![데모](./images/ex32.png)
 
 아직 데이터 세트가 없는 것을 볼 수 있으므로 지금 데이터 세트를 만들어 보겠습니다.
-**데이터 집합 만들기**&#x200B;를 클릭합니다.
+3개의 **..**&#x200B;을 클릭한 다음 **데이터 집합 만들기**&#x200B;를 클릭합니다.
 
-![데모](./images/ex3/4.png)
+![데모](./images/ex34.png)
 
 화면 오른쪽에는 **데이터 집합 만들기** 메뉴가 표시됩니다.
 
-![데모](./images/ex3/5.png)
+![데모](./images/ex35.png)
 
 **데이터 집합 ID**&#x200B;에 대해 아래 명명 규칙을 사용하십시오. 다른 필드의 경우 기본 설정을 그대로 두십시오.
 
 | 이름 지정 | 예 |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
-![데모](./images/ex3/6.png)
+**데이터 집합 만들기**&#x200B;를 클릭합니다.
 
-그런 다음 **데이터 집합 만들기**&#x200B;를 클릭합니다.
-
-![데모](./images/ex3/7.png)
+![데모](./images/ex36.png)
 
 그런 다음 데이터 세트를 만든 상태로 BigQuery 콘솔로 돌아갑니다.
 
-![데모](./images/ex3/8.png)
+![데모](./images/ex38.png)
 
 ## 4.2.2.2 첫 번째 SQL BigQuery 만들기
 
-그런 다음 BigQuery에서 첫 번째 쿼리를 만듭니다. 이 쿼리의 목표는 Google Analytics 샘플 데이터를 가져와서 Adobe Experience Platform에서 수집할 수 있도록 변환하는 것입니다. **EDITOR** 탭으로 이동합니다.
+그런 다음 BigQuery에서 첫 번째 쿼리를 만듭니다. 이 쿼리의 목표는 Google Analytics 샘플 데이터를 가져와서 Adobe Experience Platform에서 수집할 수 있도록 변환하는 것입니다. **제목 없는 쿼리** 탭으로 이동합니다.
 
-![데모](./images/ex3/9.png)
+![데모](./images/ex39.png)
 
-다음 SQL 쿼리를 복사하여 해당 쿼리 편집기에 붙여넣으십시오. 쿼리를 읽고 Google Analytics BigQuery 구문을 이해할 수 있습니다.
+다음 SQL 쿼리를 복사하여 해당 쿼리 편집기에 붙여넣습니다. 쿼리를 읽고 Google Analytics BigQuery 구문을 이해할 수 있습니다.
 
 
 ```sql
@@ -232,29 +231,29 @@ GROUP BY
 
 준비가 되면 **실행**&#x200B;을 클릭하여 쿼리를 실행합니다.
 
-![데모](./images/ex3/10.png)
+![데모](./images/ex310.png)
 
 쿼리를 실행하는 데 몇 분 정도 걸릴 수 있습니다.
 
 쿼리 실행이 완료되면 **쿼리 결과**&#x200B;에 아래 출력이 표시됩니다.
 
-![데모](./images/ex3/12.png)
+![데모](./images/ex312.png)
 
 ## 4.2.2.3 BigQuery SQL 쿼리 결과를 저장합니다.
 
 다음 단계는 **결과 저장** 단추를 클릭하여 쿼리의 출력을 저장하는 것입니다.
 
-![데모](./images/ex3/13.png)
+![데모](./images/ex313.png)
 
 출력의 위치로 **BigQuery 테이블**&#x200B;을 선택합니다.
 
-![데모](./images/ex3/14.png)
+![데모](./images/ex314.png)
 
 그러면 **프로젝트 이름** 및 **데이터 세트 이름**&#x200B;이 미리 채워진 새 팝업이 표시됩니다. 데이터 세트 이름은 이 명명 규칙을 사용하여 이 연습을 시작할 때 만든 데이터 세트여야 합니다.
 
 | 이름 지정 | 예 |
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 이제 테이블 이름을 입력해야 합니다. 이 명명 규칙을 사용하십시오.
 
@@ -262,13 +261,13 @@ GROUP BY
 | ----------------- |------------- | 
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
-![데모](./images/ex3/16.png)
-
 **저장**&#x200B;을 클릭합니다.
+
+![데모](./images/ex316.png)
 
 생성한 테이블에서 데이터가 준비되기까지 시간이 걸릴 수 있습니다. 몇 분 후에 브라우저를 새로 고칩니다. 그러면 데이터 세트 내에서 BigQuery 프로젝트 내의 **탐색기** 아래에 `--aepUserLdap--_GAdataTableBigquery` 테이블이 표시됩니다.
 
-![데모](./images/ex3/19.png)
+![데모](./images/ex319.png)
 
 이제 이 테이블을 Adobe Experience Platform에 연결하는 다음 연습을 계속할 수 있습니다.
 

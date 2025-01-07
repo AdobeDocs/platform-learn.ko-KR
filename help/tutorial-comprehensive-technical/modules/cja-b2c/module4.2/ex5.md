@@ -3,9 +3,10 @@ title: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서
 description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석 - Customer Journey Analytics을 사용하여 Google Analytics 데이터 분석
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3184'
 ht-degree: 2%
 
 ---
@@ -26,11 +27,7 @@ Customer Journey Analytics에 액세스하려면 [analytics.adobe.com](https://a
 
 Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다.
 
-![데모](./images/conn1.png)
-
 여기에서 CJA와 Platform 간에 이루어진 다양한 연결을 모두 볼 수 있습니다. 이러한 연결은 Adobe Analytics의 보고서 세트와 동일한 목표를 가집니다. 그러나 데이터 수집은 완전히 다릅니다. 모든 데이터는 Adobe Experience Platform 데이터 세트에서 가져옵니다.
-
-![데모](./images/2.png)
 
 **새 연결 만들기**&#x200B;를 클릭합니다.
 
@@ -40,71 +37,45 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 ![데모](./images/5.png)
 
-먼저 사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 샌드박스를 선택합니다. 샌드박스는 `--aepSandboxName--`이어야 합니다. 이 예제에서 사용할 샌드박스는 **AEP 지원 FY21**&#x200B;입니다.
+이름은 `--aepUserLdap-- - GA + Loyalty Data Connection`을(를) 사용합니다.
 
-![데모](./images/cjasb.png)
+사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 샌드박스를 선택합니다. 샌드박스는 `--aepSandboxName--`이어야 합니다. 이 예제에서 사용할 샌드박스는 **기술 내부자**&#x200B;입니다.
 
-샌드박스를 선택하면 사용 가능한 데이터 세트가 업데이트됩니다.
+**일일 평균 이벤트 수**&#x200B;를 **백만 개 미만**&#x200B;으로 설정하십시오.
 
-![데모](./images/cjasb1.png)
-
-왼쪽 메뉴에서 사용 가능한 모든 Adobe Experience Platform 데이터 세트를 볼 수 있습니다. 데이터 집합 `Demo System - Event Dataset for BigQuery (Global v1.1)`을(를) 검색합니다. 이 연결에 데이터 집합을 추가하려면 **+**&#x200B;을(를) 클릭하십시오.
+이제 데이터 세트 메뉴에서 데이터 세트를 추가할 수 있습니다. **데이터 세트 추가**&#x200B;를 클릭합니다.
 
 ![데모](./images/6.png)
 
-추가한 후 연결 내에 데이터 세트가 표시됩니다.
+추가할 데이터 세트는 다음과 같습니다.
+- `Demo System - Profile Dataset for CRM (Global v1.1)`
+- `Demo System - Event Dataset for BigQuery (Global v1.1)`
 
-이제 **개인 ID**&#x200B;를 선택해야 합니다. **loyaltyId**&#x200B;이(가) 개인 ID로 선택되었는지 확인하십시오.
+두 데이터 세트를 모두 검색하고 해당 확인란을 선택한 다음 **다음**&#x200B;을 클릭합니다.
+
+![데모](./images/d1.png)
+
+그러면 다음과 같은 결과가 표시됩니다.
 
 ![데모](./images/8.png)
 
-이제 다른 Adobe Experience Platform 데이터 세트를 사용하여 Google Analytics 웹 사이트 상호 작용 데이터를 보강합니다.
+데이터 집합 `Demo System - Event Dataset for BigQuery (Global v1.1)`의 경우 **개인 ID**&#x200B;을(를) **loyaltyId**(으)로 변경하고 **데이터 원본 유형**&#x200B;을(를) **웹 데이터**(으)로 설정하십시오. **새 데이터 모두 가져오기**&#x200B;와 **기존 데이터 모두 채우기**&#x200B;에 대해 두 옵션을 모두 사용하도록 설정하십시오.
 
-데이터 집합 `Demo System - Profile Dataset for Loyalty (Global v1.1)` 데이터 집합을 검색하고 이 연결에 추가하십시오.
+![데모](./images/d2.png)
 
-![데모](./images/10.png)
+데이터 집합 `Demo System - Event Dataset for BigQuery (Global v1.1)`의 경우 **개인 ID**&#x200B;이(가) **crmId**(으)로 설정되어 있는지 확인하고 **데이터 원본 유형**&#x200B;을(를) **웹 데이터**(으)로 설정하십시오. **새 데이터 모두 가져오기**&#x200B;와 **기존 데이터 모두 채우기**&#x200B;에 대해 두 옵션을 모두 사용하도록 설정하십시오. **데이터 세트 추가**&#x200B;를 클릭합니다.
 
-그러면 다음과 같은 결과가 표시됩니다.
+![데모](./images/d3.png)
 
-![데모](./images/10a.png)
+그럼 넌 여기 있을 거야 **저장**&#x200B;을 클릭합니다.
 
-두 데이터 세트를 병합하려면 같은 유형의 ID가 포함된 **개인 ID**&#x200B;를 선택해야 합니다. 데이터 집합 `Demo System - Profile Dataset for Loyalty (Global v1.1)`은(는) `Demo System - Event Dataset for BigQuery (Global v1.1)`과(와) 동일한 유형의 ID를 포함하는 **loyaltyId**&#x200B;을(를) 개인 ID로 사용하며, **loyaltyId**&#x200B;도 개인 ID로 사용합니다.
-
-![데모](./images/12.png)
-
-**다음**&#x200B;을 클릭합니다.
-
-![데모](./images/14.png)
-
-그러면 다음과 같은 결과가 표시됩니다.
-
-![데모](./images/15.png)
-
-여기에서 연결의 이름을 지정해야 합니다.
-
-명명 규칙 `ldap - GA + Loyalty Data Connection`을(를) 사용하십시오.
-
-예: `vangeluw - GA + Loyalty Data Connection`
-
-완료하기 전에 **또한 활성화하십시오. 오늘부터 이 연결에 있는 모든 데이터 세트에 대한 새 데이터를 모두 자동으로 가져옵니다.**(아래 이미지).
-
-![데모](./images/16.png)
-
-이렇게 하면 60분마다 Adobe Experience Platform에서 CJA로의 데이터 흐름이 시작되지만, 대량의 데이터를 사용하면 최대 24시간이 소요될 수 있습니다.
-
-기록 데이터도 다시 채워야 하므로 **기존 데이터 모두 가져오기**&#x200B;에 대한 확인란을 선택하고 **평균 일별 이벤트 수**&#x200B;에서 **100만 미만**&#x200B;을(를) 선택하십시오.
-
-![데모](./images/17.png)
+![데모](./images/d4.png)
 
 **연결**&#x200B;을 만든 후 CJA에서 데이터를 사용하려면 몇 시간이 걸릴 수 있습니다.
 
-**저장**&#x200B;을 클릭하고 다음 연습으로 이동하세요.
-
-![데모](./images/cjasave.png)
-
 그러면 사용 가능한 연결 목록에 연결이 표시됩니다.
 
-![데모](./images/18.png)
+![데모](./images/d5.png)
 
 ## 4.2.5.2 데이터 보기 만들기
 
@@ -120,13 +91,9 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 - 디지털 분석 팀이 1개 언어만 구사할 수 있도록 Customer Journey Analytics에 대해 KPI와 Google Analytics 지표에 대해 동일한 이름을 사용합니다.
 - 예를 들어, 한 개의 시장만, 한 개의 브랜드 또는 모바일 장치에 대한 데이터만 표시하도록 필터링된 데이터 보기.
 
-**연결** 화면에서 방금 만든 연결 앞의 확인란을 선택합니다.
+**연결** 화면에서 방금 만든 연결 앞의 확인란을 선택합니다. **데이터 보기 만들기**&#x200B;를 클릭합니다.
 
 ![데모](./images/exta.png)
-
-이제 **데이터 보기 만들기**&#x200B;를 클릭하세요.
-
-![데모](./images/extb.png)
 
 **데이터 보기 만들기** 워크플로우로 리디렉션됩니다.
 
@@ -134,26 +101,23 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 이제 데이터 보기에 대한 기본 정의를 구성할 수 있습니다. 시간대, 세션 시간 초과 또는 데이터 보기 필터링(Adobe Analytics의 가상 보고서 세트와 유사한 세분화 부분)과 같은 항목.
 
-이전 연습에서 만든 **연결**&#x200B;이 이미 선택되었습니다. 연결 이름이 `ldap - GA + Loyalty Data Connection`입니다.
+이전 연습에서 만든 **연결**&#x200B;이 이미 선택되었습니다. 연결 이름이 `--aepUserLdap-- - GA + Loyalty Data Connection`입니다.
 
-![데모](./images/ext5.png)
+그런 다음 이 명명 규칙에 따라 데이터 보기에 이름을 지정하십시오. `--aepUserLdap-- - GA + Loyalty Data View`.
 
-그런 다음 이 명명 규칙에 따라 데이터 보기에 이름을 지정하십시오. `ldap - GA + Loyalty Data View`.
-
-설명에 동일한 값을 입력하십시오. `ldap - GA + Loyalty Data View`.
+설명에 동일한 값을 입력하십시오. `--aepUserLdap-- - GA + Loyalty Data View`.
 
 분석이나 시각화를 수행하기 전에 모든 필드, 차원 및 지표와 그 속성 설정이 있는 데이터 보기를 만들어야 합니다.
 
-| 필드 | 명명 규칙 | 예 |
-| ----------------- |-------------|-------------|  
-| 이름 연결 | ldap - GA + 충성도 데이터 보기 | vangeluw - GA + 충성도 데이터 보기 |
-| 설명 | ldap - GA + 충성도 데이터 보기 | vangeluw - GA + 충성도 데이터 보기 |
-
-![데모](./images/22.png)
+| 필드 | 명명 규칙 |
+| ----------------- |-------------|  
+| 이름 연결 | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA + 충성도 데이터 보기 |
+| 설명 | `--aepUserLdap-- - GA + Loyalty Data View` |
+| 외부 ID | `--aepUserLdap--GA` |
 
 **저장 후 계속**&#x200B;을 클릭합니다.
 
-![데모](./images/23.png)
+![데모](./images/22.png)
 
 이제 데이터 보기에 구성 요소를 추가할 수 있습니다. 알 수 있듯이 일부 지표와 차원이 자동으로 추가됩니다.
 

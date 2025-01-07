@@ -4,16 +4,14 @@ description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # 4.2 BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석
-
-**작성자: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 이 모듈에서는 고유한 Google Cloud Platform 인스턴스를 설정하고 Google Cloud Platform에서 샘플 데이터를 로드한 다음 BigQuery Source 커넥터를 사용하여 해당 데이터를 Google Cloud Platform에서 Adobe Experience Platform으로 수집합니다. 마지막으로 Customer Journey Analytics을 사용하여 해당 데이터를 시각화합니다.
 
@@ -43,9 +41,9 @@ Adobe Experience Platform의 Source 커넥터를 사용하면 데이터를 Adobe
 
 ## 연습
 
-[4.2.1 Google Cloud Platform 계정 만들기](./ex1.md)
+[4.2.1 Google Cloud Platform 사용 시작](./ex1.md)
 
-Google Cloud Platform 계정을 만듭니다.
+Google Cloud Platform 환경 사용을 시작합니다.
 
 [4.2.2 BigQuery에서 첫 번째 쿼리 만들기](./ex2.md)
 

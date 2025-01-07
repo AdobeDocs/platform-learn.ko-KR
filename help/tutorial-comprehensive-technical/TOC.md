@@ -5,9 +5,9 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b753a930bd2d81a14a97ef59c9ffc42991f0f3f6
+source-git-commit: ac55aa9e588655c5d68abf62bff62e748c13aaa1
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -149,7 +149,7 @@ ht-degree: 4%
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/summary.md)
    + 4.2 Customer Journey Analytics: BigQuery Source 커넥터 {#module42}을(를) 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석
       + [개요](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
-      + [4.2.1 Google Cloud Platform 계정 만들기](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
+      + [4.2.1 Google Cloud Platform 사용 시작](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
       + [4.2.2 BigQuery에서 첫 번째 쿼리 만들기](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex2.md)
       + [4.2.3 GCP 및 BigQuery를 Adobe Experience Platform에 연결](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex3.md)
       + [4.2.4 BigQuery에서 Adobe Experience Platform으로 데이터 로드](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex4.md)

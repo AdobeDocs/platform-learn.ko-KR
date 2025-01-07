@@ -4,27 +4,18 @@ description: Customer Journey Analytics - Adobe Experience Platform 위에 Analy
 kt: 5342
 doc-type: tutorial
 exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 # 4.1 Customer Journey Analytics - Adobe Experience Platform 맨 위에서 Analysis Workspace을 사용하여 대시보드 빌드
 
-**작성자: [빅터 드 라 이글레시아](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 이 모듈에서는 Customer Journey Analytics 애플리케이션 서비스에 대한 실습 경험을 제공합니다.
 
 Customer Journey Analytics은 크로스 채널 데이터(온라인 및 오프라인)를 결합 및 분석하기 위한 비즈니스 인텔리전스 및 데이터 과학 팀에 툴킷을 제공합니다. Customer Journey Analytics 내의 기능은 복잡한 다중 채널 고객 여정에게 맥락과 명확성을 제공합니다. 제공된 컨텍스트는 고객 전환 프로세스에서 문제점을 제거하고 가장 중요한 순간에 긍정적인 경험을 제공하는 방법에 대한 실행 가능한 통찰력을 생성합니다.
-
-
-이 비디오를 통해 가치, 고객 여정 및 구성 프로세스를 파악하십시오.
-
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
-
-Customer Journey Analytics에 대한 자세한 정보는 [여기](https://spark.adobe.com/page/t62eiRu9l6iWJ/)를 참조하세요.
 
 ## 학습 목표
 

@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Analysis Workspace의 데이터 준비
 description: Customer Journey Analytics - Analysis Workspace의 데이터 준비
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -32,12 +33,12 @@ Analysis Workspace을 사용하지 않았다면 이 비디오를 시청하는 �
 
 ### 프로젝트 만들기
 
-이제 첫 번째 CJA 프로젝트를 만들 차례입니다. CJA 내의 프로젝트 탭으로 이동합니다.
-**새로 만들기**&#x200B;를 클릭합니다.
+이제 첫 번째 CJA 작업 영역을 만들 차례입니다. CJA 내의 **Workspace** 탭으로 이동합니다.
+**프로젝트 만들기**&#x200B;를 클릭합니다.
 
 ![데모](./images/prmenu.png)
 
-그러면 이걸 보게 될 거야. **빈 프로젝트**&#x200B;를 선택한 다음 **만들기**&#x200B;를 클릭합니다.
+그러면 이걸 보게 될 거야. **빈 Workspace 프로젝트**&#x200B;를 선택한 다음 **만들기**&#x200B;를 클릭합니다.
 
 ![데모](./images/prmenu1.png)
 
@@ -45,7 +46,7 @@ Analysis Workspace을 사용하지 않았다면 이 비디오를 시청하는 �
 
 ![데모](./images/premptyprojects.png)
 
-먼저 화면 오른쪽 상단에서 올바른 데이터 보기 를 선택하십시오. 이 예제에서 선택할 데이터 보기는 `vangeluwe - Omnichannel Data View`입니다.
+먼저 화면 오른쪽 상단에서 올바른 데이터 보기 를 선택하십시오. 선택할 데이터 보기는 `--aepUserLdap-- - Omnichannel Data View`입니다.
 
 ![데모](./images/prdv.png)
 
@@ -108,17 +109,17 @@ Analysis Workspace을 사용하지 않았다면 이 비디오를 시청하는 �
 
 마지막으로 계산된 지표의 이름 및 설명을 변경합니다.
 
-| 제목 | 설명 |
-| ----------------- |-------------| 
-| 전환율 | 전환율 |
+| 제목 | 설명 | 외부 ID |
+| ----------------- |-------------| -------------| 
+| 전환율 | 전환율 | 전환율 |
 
-화면에 다음과 같은 항목이 표시됩니다.
+그러면 이 음식을 드실 수 있습니다. **저장**&#x200B;을 클릭합니다.
 
 ![데모](./images/calcbuildercr6.png)
 
-계산된 지표를 **저장**&#x200B;하는 것을 잊지 마십시오.
+**저장**&#x200B;을 다시 클릭합니다.
 
-![데모](./images/pr9.png)
+![데모](./images/calcbuildercr6a.png)
 
 ## 4.1.4.3 계산된 Dimension: 필터(세그먼테이션) 및 날짜 범위
 

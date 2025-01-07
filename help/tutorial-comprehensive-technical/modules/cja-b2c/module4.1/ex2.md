@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Customer Journey Analytics에서 Adobe Exper
 description: Customer Journey Analytics - Customer Journey Analytics에서 Adobe Experience Platform 데이터 세트 연결
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 96e7a5b2-9833-430a-8eab-27651a113675
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -41,23 +42,21 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 명명 규칙 `--aepUserLdap-- – Omnichannel Data Connection`을(를) 사용하십시오.
 
-예: `vangeluw - Omnichannel Data Connection`
-
-사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 샌드박스를 선택합니다. 샌드박스는 `Bootcamp`이어야 합니다. 이 예제에서 사용할 샌드박스는 **Bootcamp**&#x200B;입니다. 또한 **일일 평균 이벤트 수**&#x200B;를 **백만 개 미만**&#x200B;으로 설정해야 합니다.
+사용할 올바른 샌드박스를 선택해야 합니다. 샌드박스 메뉴에서 샌드박스를 선택합니다. 샌드박스는 `--aepSandboxName--`이어야 합니다. 이 예제에서 샌드박스는 **기술 내부자**&#x200B;입니다. **일일 평균 이벤트 수**&#x200B;를 **백만 개 미만**&#x200B;으로 설정해야 합니다.
 
 ![데모](./images/cjasb.png)
 
-샌드박스를 선택하면 사용 가능한 데이터 세트가 업데이트됩니다.
+샌드박스를 선택한 후 데이터 세트를 추가할 수 있습니다. **데이터 세트 추가**&#x200B;를 클릭합니다.
 
 ![데모](./images/cjasb1.png)
 
 ## 4.1.2.2 Adobe Experience Platform 데이터 세트 선택
 
-데이터 집합 `Demo System - Event Dataset for Website (Global v1.1)`을(를) 검색합니다. 이 연결에 데이터 집합을 추가하려면 **+**&#x200B;을(를) 클릭하십시오.
+데이터 집합 `Demo System - Event Dataset for Website (Global v1.1)`을(를) 검색합니다. 이 데이터 세트에 대한 상자를 활성화하여 이 연결에 추가하십시오.
 
 ![데모](./images/cja7.png)
 
-이제 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 및 `Demo System - Event Dataset for Call Center (Global v1.1)`의 확인란을 검색하여 선택하십시오.
+같은 화면에서 `Demo System - Event Dataset for Call Center (Global v1.1)`에 대한 확인란을 검색하여 선택하십시오.
 
 그럼 이걸로 드셔보세요 **다음**&#x200B;을 클릭합니다.
 
@@ -71,7 +70,7 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 ![데모](./images/cja11.png)
 
-보시는 것처럼 대부분 개인 ID가 자동으로 선택됩니다. Adobe Experience Platform의 모든 스키마에서 기본 식별자가 선택되기 때문입니다. 예를 들어 `Demo System - Event Schema for Call Center (Global v1.1)`에 대한 스키마가 있는데, 여기에서 기본 식별자가 `phoneNumber`(으)로 설정되어 있음을 확인할 수 있습니다.
+보시는 것처럼 대부분 개인 ID가 자동으로 선택됩니다. Adobe Experience Platform의 모든 스키마에서 기본 ID가 선택되기 때문입니다. 예를 들어 `Demo System - Event Schema for Website (Global v1.1)`에 대한 스키마가 있는데, 여기에서 기본 ID가 `ecid`(으)로 설정되어 있음을 확인할 수 있습니다.
 
 ![데모](./images/cja13.png)
 
@@ -83,7 +82,7 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 개인 ID 필드의 값이 일치하는 경우 개인 ID 필드의 이름은 중요하지 않습니다. 개인 ID로 정의된 한 데이터 세트에 `email`이(가) 있고 다른 데이터 세트에 `emailAddress`이(가) 있다고 가정해 보겠습니다. `delaigle@adobe.com`이(가) 두 데이터 세트의 개인 ID 필드에 대해 동일한 값이면 CJA가 데이터를 결합할 수 있습니다.
 
-현재 익명 동작을 알려짐 과 같은 몇 가지 다른 제한 사항이 있습니다. 여기에서 FAQ를 검토하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+ID 결합과 관련된 뉘앙스를 이해하려면 여기에서 CJA FAQ를 검토하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### 개인 ID를 사용하여 데이터 결합
 
@@ -91,32 +90,38 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 ![데모](./images/cja15.png)
 
-각 데이터 세트로 이동하여 개인 ID를 업데이트합니다.
+각 데이터 세트로 이동하여 개인 ID를 업데이트합니다. 이제 드롭다운 목록에서 `email`을(를) 선택하는 필드 개인 ID를 채웁니다.
 
 ![데모](./images/cja12a.png)
 
-이제 드롭다운 목록에서 `email`을(를) 선택하는 필드 개인 ID를 채웁니다.
-
-![데모](./images/cja17.png)
-
-세 개의 데이터 세트를 결합했으면 계속 진행할 준비가 되었습니다.
+두 데이터 세트를 결합하면 계속할 준비가 된 것입니다.
 
 | 데이터 세트 | 개인 ID |
 | ----------------- |-------------| 
 | 데모 시스템 - 웹 사이트에 대한 이벤트 데이터 세트(전역 v1.1) | 이메일 |
-| 데모 시스템 - Voice Assistant용 이벤트 데이터 세트(글로벌 v1.1) | 이메일 |
 | 데모 시스템 - 콜 센터용 이벤트 데이터 세트(글로벌 v1.1) | 이메일 |
 
-또한 모든 데이터 세트에 대해 다음 옵션이 활성화되어 있는지 확인해야 합니다.
+또한 두 데이터 세트 모두에 대해 다음 옵션이 활성화되어 있는지 확인해야 합니다.
 
 - 새 데이터 모두 가져오기
 - 기존 데이터 모두 채우기
+
+(두 번째 데이터 세트에 대해 이러한 옵션을 모두 활성화해야 합니다.)
+
+또한 각 데이터 집합에 대해 **데이터 원본 형식**&#x200B;을(를) 선택해야 합니다.
+
+데이터 집합 **데모 시스템 - 웹 사이트에 대한 이벤트 데이터 집합(전역 v1.1)**&#x200B;에 대한 설정입니다.
+
+![데모](./images/cja16a.png)
+
+데이터 집합 **데모 시스템 - 웹 사이트에 대한 이벤트 데이터 집합(전역 v1.1)**&#x200B;에 대한 설정입니다.
 
 **데이터 세트 추가**&#x200B;를 클릭합니다.
 
 ![데모](./images/cja16.png)
 
-**저장**을 클릭하고 다음 연습으로 이동하세요.
+**저장**&#x200B;을 클릭하고 다음 연습으로 이동하세요.
+
 **연결**&#x200B;을 만든 후 CJA에서 데이터를 사용하려면 몇 시간이 걸릴 수 있습니다.
 
 ![데모](./images/cja20.png)
