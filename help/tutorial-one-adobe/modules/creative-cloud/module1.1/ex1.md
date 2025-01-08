@@ -4,9 +4,9 @@ description: Firefly 서비스 시작
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Adobe I/O에서 특정 값(매우 긴 access_token)과 만료 창이 있는 **�
 
 다음 연습을 계속하기 전에 언제든지 API 요청을 재생하십시오.
 
-다음 단계: [1.1.2 사양이 있는 이미지 요청](./ex2.md)
+다음 단계: [1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](./ex2.md)
 
 [모듈 1.1로 돌아가기](./firefly-services.md)
 

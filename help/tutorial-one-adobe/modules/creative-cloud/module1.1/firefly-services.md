@@ -3,10 +3,11 @@ title: 1.1 Adobe Firefly 서비스
 description: Adobe Firefly 서비스
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 3%
+source-wordcount: '139'
+ht-degree: 2%
 
 ---
 
@@ -23,6 +24,10 @@ ht-degree: 3%
 ## 연습
 
 [1.1.1 Firefly 서비스 시작하기](./ex1.md)
+
+이 연습에서는 Firefly 서비스 를 살펴보고 그 기능에 대해 알아봅니다.
+
+[1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](./ex2.md)
 
 이 연습에서는 Firefly 서비스 를 살펴보고 그 기능에 대해 알아봅니다.
 
