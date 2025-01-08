@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: a1f7cea15f65ceb5c2447f2a73b504da6ab7e416
+source-git-commit: 76723130c0b817110f348a3136246d808bc7b0a9
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '94'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 5%
    + 1.1 Adobe Firefly 서비스 {#module11}
       + [개요](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Firefly 서비스 시작하기](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
+      + [1.1.2 사양이 포함된 이미지 요청](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
 
 + 2개의 콘텐츠 공급망 {#csc}
