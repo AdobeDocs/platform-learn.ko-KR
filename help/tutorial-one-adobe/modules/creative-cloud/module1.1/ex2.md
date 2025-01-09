@@ -4,10 +4,10 @@ description: Firefly 서비스 시작
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 0%
+source-wordcount: '1114'
+ht-degree: 1%
 
 ---
 
@@ -119,13 +119,13 @@ Microsoft Azure Storage Explorer 앱으로 다시 전환합니다. 구독을 선
 
 ![Azure 저장소](./images/az18.png)
 
-## 1.1.2.4 수동 파일 업로드 및 스타일 참조로 그라디언트 파일 사용
+## 1.1.2.4 수동 파일 업로드 및 이미지 파일을 스타일 참조로 사용
 
-이제 원하는 그라디언트 파일을 컨테이너에 업로드해야 합니다. 원하는 그라데이션 파일을 사용하거나 컴퓨터에서 [이 파일](./images/gradient.jpg)을 다운로드하여 사용할 수 있습니다.
+이제 선택한 이미지 파일을 컨테이너에 업로드해야 합니다. 원하는 이미지 파일을 사용하거나 [이 파일](./images/gradient.jpg)을(를) 컴퓨터에 다운로드하여 사용할 수 있습니다.
 
 ![Azure 저장소](./images/gradient.jpg)
 
-그라데이션 파일을 Azure Storage Explorer의 컨테이너에 놓습니다.
+이미지 파일을 Azure Storage Explorer의 컨테이너에 놓습니다.
 
 업로드되면 컨테이너에 표시됩니다.
 
@@ -147,7 +147,7 @@ Postman으로 돌아갑니다. **POST - Firefly - T2I(styleref) V3** 요청을 �
 
 ![Azure 저장소](./images/az23.png)
 
-자리 표시자 URL을 Azure Storage Explorer에서 복사한 그라디언트 파일의 사전 서명된 URL로 바꿉니다. 그럼 이걸로 드셔보세요 **보내기**&#x200B;를 클릭합니다.
+자리 표시자 URL을 Azure Storage Explorer에서 복사한 이미지 파일의 사전 서명된 URL로 바꿉니다. 그럼 이걸로 드셔보세요 **보내기**&#x200B;를 클릭합니다.
 
 ![Azure 저장소](./images/az24.png)
 
@@ -155,7 +155,7 @@ Postman으로 돌아갑니다. **POST - Firefly - T2I(styleref) V3** 요청을 �
 
 ![Azure 저장소](./images/az25.png)
 
-그런 다음 `horses in a field`이(가) 있는 다른 이미지가 표시되지만, 이번에는 스타일 참조로 제공한 그라디언트 파일과 스타일이 유사합니다.
+그러면 `horses in a field`이(가) 있는 다른 이미지가 표시되지만, 이번에는 스타일 참조로 제공한 이미지 파일과 스타일이 유사합니다.
 
 ![Azure 저장소](./images/az26.png)
 
@@ -195,7 +195,7 @@ Azure 저장소 계정으로 프로그래밍 방식의 파일 업로드를 사�
 
 ![Azure 저장소](./images/az31.png)
 
-이제 로컬 컴퓨터에서 파일을 선택해야 합니다. 선택한 새 이미지 파일을 사용하거나 [여기](./images/gradient2-p.jpg)에서 찾을 수 있는 다른 그라데이션 파일을 사용할 수 있습니다.
+이제 로컬 컴퓨터에서 파일을 선택해야 합니다. 선택한 새 이미지 파일을 사용하거나 [여기](./images/gradient2-p.jpg)에서 찾을 수 있는 다른 이미지 파일을 사용할 수 있습니다.
 
 ![그라데이션 파일](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ URL은 현재 다음과 비슷하지만 변경해야 합니다.
 
 그런 다음 새 헤더를 수동으로 추가해야 하는 **헤더**(으)로 이동합니다. 사용:
 
-x-ms-blob-type BlockBlob
+| 키 | 값 |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![Azure 저장소](./images/az35.png)
 
@@ -238,6 +241,27 @@ x-ms-blob-type BlockBlob
 그런 다음 Azure Storage Explorer로 돌아가서 폴더의 콘텐츠를 새로 고치면 새로 업로드된 파일이 여기에서 나타납니다.
 
 ![Azure 저장소](./images/az38.png)
+
+## 1.1.2.5 프로그래밍 파일 사용
+
+Azure 저장소 계정에서 파일을 프로그래밍 방식으로 읽으려면 파일을 읽을 수 있는 권한이 있는 새 **SAS(공유 액세스 서명)** 토큰을 만들어야 합니다. 기술적으로 이전 연습에서 만든 SAS 토큰을 사용할 수 있지만 **읽기** 권한만 있는 별도의 토큰을 사용하는 것이 가장 좋습니다.
+
+이렇게 하려면 Azure Storage Explorer로 돌아갑니다. 컨테이너를 마우스 오른쪽 단추로 클릭한 다음 **공유 액세스 서명 받기**&#x200B;를 클릭합니다.
+
+![Azure 저장소](./images/az27.png)
+
+**권한**&#x200B;에서 다음 권한이 필요합니다.
+
+- **읽기**
+- **추가**
+- **만들기**
+- **쓰기**
+- **목록**
+
+**만들기**&#x200B;를 클릭합니다.
+
+![Azure 저장소](./images/az28.png)
+
 
 다음 단계: [1.1.3 ...](./ex3.md)
 
