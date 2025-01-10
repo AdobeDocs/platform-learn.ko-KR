@@ -3,10 +3,11 @@ title: 2.1 Adobe Experience Manager Cloud Service
 description: Adobe Experience Manager Cloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
+source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 3%
+source-wordcount: '151'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +25,11 @@ ht-degree: 3%
 
 [2.1.1 Cloud Manager 프로그램 만들기](./ex1.md)
 
-이 연습에서는 ...
+이 연습에서는 사이트, Assets 및 Edge Delivery Services 제품을 만드는 Cloud Manager 프로그램을 만듭니다.
+
+[2.1.2 AEM CS 환경 설정](./ex2.md)
+
+이 연습에서는 AEM CS 환경을 설정하고 CitiSignal 웹 사이트에 액세스합니다.
 
 [요약 및 이점](./summary.md)
 

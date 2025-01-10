@@ -4,10 +4,10 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d658ebcecea1cb98f6c7176a9238fcb740fb03e3
+source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
 workflow-type: tm+mt
-source-wordcount: '122'
-ht-degree: 8%
+source-wordcount: '129'
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,8 @@ ht-degree: 8%
 + 2개의 콘텐츠 공급망 {#csc}
    + 2.1 Adobe Experience Manager Cloud Service {#module21}
       + [개요](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
-      + [2.1.1 AEM CS 시작하기](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
+      + [2.1.1 Cloud Manager 프로그램 만들기](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
+      + [2.1.2 AEM CS 환경 설정](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [개요](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
