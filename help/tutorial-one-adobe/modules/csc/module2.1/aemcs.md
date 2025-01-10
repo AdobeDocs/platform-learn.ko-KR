@@ -4,9 +4,9 @@ description: Adobe Experience Manager Cloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: ce8e9f193765f362b3ea1396626d56b453e1d5ec
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 2%
 [2.1.2 AEM CS 환경 설정](./ex2.md)
 
 이 연습에서는 AEM CS 환경을 설정하고 CitiSignal 웹 사이트에 액세스합니다.
+
+[2.1.3 사용자 지정 블록 개발](./ex3.md)
+
+이 연습에서는 웹 사이트에 대한 사용자 지정 블록 구성 요소를 개발합니다.
 
 [요약 및 이점](./summary.md)
 

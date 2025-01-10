@@ -3,9 +3,9 @@ title: Cloud Manager 프로그램 만들기
 description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -307,9 +307,38 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcssetup45.png)
 
-이제 `main--citisignal--woutervangeluwe.aem.live/us/en`(으)로 이동하여 웹 사이트로 이동할 수도 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en` 및/또는 `main--citisignal--XXX.aem.live/us/en`(으)로 이동하여 웹 사이트에 액세스할 수 있습니다.
 
+이 예에서 전체 URL은 다음과 같이 됩니다.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
 
+에셋을 먼저 게시해야 하므로 모든 에셋이 올바르게 표시되기까지 시간이 걸릴 수 있습니다.
+
+그러면 다음과 같은 결과가 표시됩니다.
+
+![AEMCS](./images/aemcssetup46.png)
+
+몇 분 후에 자산이 모두 제대로 로드됩니다.
+
+![AEMCS](./images/aemcssetup47.png)
+
+## 2.1.2.7 페이지 성능 테스트
+
+[https://pagespeed.web.dev/](https://pagespeed.web.dev/)(으)로 이동합니다. URL을 입력하고 **분석**&#x200B;을 클릭합니다.
+
+![AEMCS](./images/aemcssetup48.png)
+
+그러면 모바일과 데스크탑 시각화 모두에서 웹 사이트가 높은 점수를 받는 것을 볼 수 있습니다.
+
+**모바일**:
+
+![AEMCS](./images/aemcssetup49.png)
+
+**데스크톱**:
+
+![AEMCS](./images/aemcssetup50.png)
+
+다음 단계: [2.1.3 사용자 지정 블록 구성](./ex3.md)
 
 [모듈 2.1로 돌아가기](./aemcs.md)
 
