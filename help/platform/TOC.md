@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f64623255c045396799d0d627f199ce59c794d70
+source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '957'
 ht-degree: 17%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 17%
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
 + AI 어시스턴트 {#ai-assistant}
    + [개요](/help/platform/ai-assistant/overview.md)
-   + [액세스 설정](/help/platform/ai-assistant/access.md)
+   + [액세스 권한 얻기](/help/platform/ai-assistant/access.md)
    + [새 제품과 함께 온보드](/help/platform/ai-assistant/onboard.md)
    + [제품에 대해 알아보기](/help/platform/ai-assistant/product-knowledge.md)
    + [응답 유효성 검사](/help/platform/ai-assistant/validate-responses.md)
