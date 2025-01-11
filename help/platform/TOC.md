@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '958'
 ht-degree: 17%
 
 ---
@@ -49,8 +49,13 @@ ht-degree: 17%
 + AI 어시스턴트 {#ai-assistant}
    + [개요](/help/platform/ai-assistant/overview.md)
    + [액세스 설정](/help/platform/ai-assistant/access.md)
-   + [대상자 정리](/help/platform/ai-assistant/find-unused-audiences.md)
    + [새 제품과 함께 온보드](/help/platform/ai-assistant/onboard.md)
+   + [제품에 대해 알아보기](/help/platform/ai-assistant/product-knowledge.md)
+   + [응답 유효성 검사](/help/platform/ai-assistant/validate-responses.md)
+   + [검색 패널](/help/platform/ai-assistant/discoverability-panel.md)
+   + [사용하지 않는 대상 찾기](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [영향 분석](/help/platform/ai-assistant/impact-analysis.md)
+   + [보안 개요](/help/platform/ai-assistant/security-overview.md)
 + 대상 및 세분화 {#audiences}
    + [Audience Portal 및 구성 소개](audiences/introduction-to-audience-portal-and-composition.md)
    + [대상자 업로드](audiences/upload-audiences.md)
@@ -110,7 +115,7 @@ ht-degree: 17%
    + [HTTP API로 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
    + [소스 커넥터를 사용하여 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ko-KR)
    + [웹 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [모바일 SDK 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+   + [모바일 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + 데이터 수명 주기 {#data-lifecycle}
    + [데이터 세트 만료](/help/platform/data-lifecycle/expire-datasets.md)
 + 데이터 과학 Workspace {#data-science-workspace}

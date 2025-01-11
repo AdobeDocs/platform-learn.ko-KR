@@ -1,5 +1,5 @@
 ---
-title: AI Assistant - 액세스 권한 얻기
+title: AI Assistant 액세스
 description: Adobe Experience Platform 내에서 AI Assistant에 대한 액세스 및 권한을 설정하는 방법을 알아봅니다.
 feature: AI Assistant, Access Control
 role: Admin, User
@@ -8,15 +8,15 @@ doc-type: Feature Video
 duration: 124
 last-substantial-update: 2024-11-12T00:00:00Z
 jira: KT-16459
-source-git-commit: 515b786aebb5e475118a43fcf26af3109b908dad
+exl-id: 67793272-278c-4ac5-9427-96b3dd378e37
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '49'
+source-wordcount: '51'
 ht-degree: 0%
 
 ---
 
-
-# AI Assistant - 액세스 권한 얻기
+# AI Assistant 액세스
 
 Adobe Experience Platform 내에서 AI Assistant에 대한 액세스 및 권한을 설정하는 방법을 알아봅니다. 자세한 내용은 [Experience Platform에서 AI Assistant 액세스](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access)를 참조하십시오.
 
