@@ -4,9 +4,9 @@ description: Firefly 서비스 시작
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,9 @@ URL은 현재 다음과 비슷하지만 변경해야 합니다.
 
 ## 1.1.2.5 프로그래밍 파일 사용
 
-Azure 저장소 계정에서 파일을 프로그래밍 방식으로 읽으려면 파일을 읽을 수 있는 권한이 있는 새 **SAS(공유 액세스 서명)** 토큰을 만들어야 합니다. 기술적으로 이전 연습에서 만든 SAS 토큰을 사용할 수 있지만 **읽기** 권한만 있는 별도의 토큰을 사용하는 것이 가장 좋습니다.
+장기적으로 Azure 저장소 계정에서 파일을 프로그래밍 방식으로 읽으려면 파일을 읽을 수 있는 권한이 있는 새 **SAS(공유 액세스 서명)** 토큰을 만들어야 합니다. 기술적으로 이전 연습에서 만든 SAS 토큰을 사용할 수 있지만 가장 좋은 방법은 **읽기** 권한만 있는 별도의 토큰과 **쓰기** 권한만 있는 별도의 토큰을 사용하는 것입니다.
+
+### 장기 읽기 SAS 토큰
 
 이렇게 하려면 Azure Storage Explorer로 돌아갑니다. 컨테이너를 마우스 오른쪽 단추로 클릭한 다음 **공유 액세스 서명 받기**&#x200B;를 클릭합니다.
 
@@ -253,17 +255,113 @@ Azure 저장소 계정에서 파일을 프로그래밍 방식으로 읽으려면
 **권한**&#x200B;에서 다음 권한이 필요합니다.
 
 - **읽기**
-- **추가**
-- **만들기**
-- **쓰기**
 - **목록**
+
+**만료 시간**&#x200B;을(를) 지금부터 1년으로 설정합니다.
 
 **만들기**&#x200B;를 클릭합니다.
 
-![Azure 저장소](./images/az28.png)
+![Azure 저장소](./images/az100.png)
 
+그러면 읽기 권한이 있는 장기 SAS 토큰을 받게 됩니다. URL을 복사하여 컴퓨터의 파일에 기록합니다.
 
-다음 단계: [1.1.3 ...](./ex3.md)
+![Azure 저장소](./images/az101.png)
+
+URL은 다음과 같이 표시됩니다.
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+위의 URL에서 두 가지 값을 파생할 수 있습니다.
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### 장기 쓰기 SAS 토큰
+
+이렇게 하려면 Azure Storage Explorer로 돌아갑니다. 컨테이너를 마우스 오른쪽 단추로 클릭한 다음 **공유 액세스 서명 받기**&#x200B;를 클릭합니다.
+
+![Azure 저장소](./images/az27.png)
+
+**권한**&#x200B;에서 다음 권한이 필요합니다.
+
+- **추가**
+- **만들기**
+- **쓰기**
+
+**만료 시간**&#x200B;을(를) 지금부터 1년으로 설정합니다.
+
+**만들기**&#x200B;를 클릭합니다.
+
+![Azure 저장소](./images/az102.png)
+
+그러면 읽기 권한이 있는 장기 SAS 토큰을 받게 됩니다. URL을 복사하여 컴퓨터의 파일에 기록합니다.
+
+![Azure 저장소](./images/az103.png)
+
+URL은 다음과 같이 표시됩니다.
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+위의 URL에서 다시 두 개의 값을 파생할 수 있습니다.
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Postman의 변수
+
+위의 섹션에서 볼 수 있듯이 읽기 및 쓰기 토큰 모두에 몇 가지 일반적인 변수가 있습니다.
+
+이제 위의 SAS 토큰의 다양한 요소를 저장할 변수를 Postman에 만들어야 합니다.
+두 URL에 동일한 몇 가지 값이 있습니다.
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+향후 API 상호 작용의 경우, 주요 변경 사항은 에셋 이름이며, 위의 변수는 그대로 유지됩니다. 이 경우 매번 수동으로 지정할 필요가 없도록 Postman에서 변수를 만드는 것이 적절합니다.
+
+이렇게 하려면 Postman을 엽니다. **환경** 아이콘을 클릭하고 **모든 변수** 메뉴를 열고 **환경**&#x200B;을 클릭합니다.
+
+![Azure 저장소](./images/az104.png)
+
+그럼 이걸 보게나 표시되는 표에 이 4개의 변수를 만들고 **초기 값** 및 **현재 값** 열에 대해 특정 개인 값을 입력하십시오.
+
+- `AZURE_STORAGE_URL`: 내 url
+- `AZURE_STORAGE_CONTAINER`: 컨테이너 이름
+- `AZURE_STORAGE_SAS_READ`: SAS 읽기 토큰
+- `AZURE_STORAGE_SAS_WRITE`: SAS 쓰기 토큰
+
+**저장**&#x200B;을 클릭합니다.
+
+![Azure 저장소](./images/az105.png)
+
+이전 연습 중 하나에서 **Firefly - T2I(styleref) V3** 요청의 **본문**&#x200B;은(는) 다음과 같이 표시되었습니다.
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![Azure 저장소](./images/az24.png)
+
+이제 URL을 다음과 같이 변경할 수 있습니다.
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+변경 내용을 테스트하려면 **보내기**&#x200B;를 클릭하세요.
+
+![Azure 저장소](./images/az106.png)
+
+변수가 올바른 방식으로 구성된 경우 이미지 URL이 반환됩니다.
+
+![Azure 저장소](./images/az107.png)
+
+이미지 URL을 열어 이미지를 확인합니다.
+
+![Azure 저장소](./images/az108.png)
+
+다음 단계: [1.1.3 Adobe Firefly 및 Adobe Photoshop](./ex3.md)
 
 [모듈 1.1로 돌아가기](./firefly-services.md)
 

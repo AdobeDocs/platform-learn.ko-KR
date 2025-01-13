@@ -4,9 +4,9 @@ description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '223'
 ht-degree: 4%
 
 ---
@@ -31,11 +31,13 @@ ht-degree: 4%
 
 ![AEMCS](./images/aemcs3.png)
 
-환경을 만드는 데 약간의 시간이 소요됩니다.
+환경을 만드는 데 10~20분 정도의 시간이 소요됩니다.
 
 ![AEMCS](./images/aemcs4.png)
 
-환경이 만들어지고 사용할 준비가 되면 이메일 확인을 받게 됩니다.
+기다리는 동안 이미 연습 [2.1.2](./ex2.md)(으)로 시작할 수 있습니다.
+
+환경이 만들어지고 사용할 준비가 되면 이메일 확인을 받게 되며 그 후 다시 여기로 돌아올 수 있습니다.
 
 ![AEMCS](./images/aemcs5.png)
 
@@ -61,7 +63,7 @@ ht-degree: 4%
 
 파이프라인 실행이 완료되면 다음 연습을 계속할 수 있습니다.
 
-다음 단계: [2.1.2 AEM CS 환경 설정](./ex2.md)
+다음 단계: [2.1.2 문서 기반 웹 사이트 만들기](./ex2.md)
 
 [모듈 2.1로 돌아가기](./aemcs.md)
 

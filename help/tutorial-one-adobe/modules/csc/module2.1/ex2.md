@@ -3,16 +3,67 @@ title: Cloud Manager 프로그램 만들기
 description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
+exl-id: db366111-3873-4504-95f1-b240836c833f
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---
 
-# 2.1.2 AEM CS 환경 설정
+# 2.1.2 문서 기반 웹 사이트 만들기
 
-## 2.1.2.1 GitHub 저장소 설정
+Cloud Manager 프로그램이 만들어지기를 기다리는 동안 문서 기반의 첫 웹 사이트를 설정할 시간이 충분합니다. 아래 연습은 [aem.live 개발자 자습서](https://www.aem.live/developer/tutorial)를 기반으로 합니다. 시작하려면 아래 단계를 따르십시오.
+
+## 2.1.2.1 Google 드라이브 설정
+
+[https://drive.google.com](https://drive.google.com)(으)로 이동합니다. **+ 새로 만들기**&#x200B;를 클릭한 다음 **새 폴더**&#x200B;를 클릭합니다.
+
+![AEMCS](./images/googledrive1.png)
+
+폴더 이름을 `aemdocb-test`(으)로 지정합니다. **만들기**&#x200B;를 클릭합니다.
+
+![AEMCS](./images/googledrive2.png)
+
+[aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) 파일을 다운로드하여 컴퓨터에서 추출하십시오.
+
+![AEMCS](./images/googledrive3.png)
+
+해당 폴더에 3개의 파일이 표시됩니다. 이러한 파일을 새 Google 드라이브 폴더에 복사합니다.
+
+![AEMCS](./images/googledrive4.png)
+
+이제 이러한 파일을 기본 Google 파일로 변환해야 합니다. 이렇게 하려면 각 파일을 연 다음 **파일** > **Google Docs으로 저장**&#x200B;으로 이동합니다.
+
+![AEMCS](./images/googledrive5.png)
+
+3개의 모든 파일에 대해 이 작업을 수행해야 하며, 그 후에 Google 드라이브 폴더에 6개의 파일이 표시됩니다.
+
+![AEMCS](./images/googledrive6.png)
+
+그러면 이 항목이 폴더에 저장됩니다.
+
+![AEMCS](./images/googledrive7.png)
+
+문서 기반 작성 데모가 작동하려면 이제 Google 드라이브 폴더를 전자 메일 주소 **helix@adobe.com**&#x200B;과(와) 공유해야 합니다. 폴더 이름을 클릭하고 **공유**&#x200B;를 클릭한 다음 **공유**&#x200B;를 다시 클릭합니다.
+
+![AEMCS](./images/googledrive8.png)
+
+전자 메일 주소 **helix@adobe.com**&#x200B;을(를) 입력하고 **보내기**&#x200B;를 클릭합니다.
+
+![AEMCS](./images/googledrive9.png)
+
+그런 다음 다음 연습에서 필요할 때 Google 드라이브 폴더의 URL을 복사하여 적어 두십시오. 폴더 이름을 클릭하고 **공유**&#x200B;를 클릭한 다음 **링크 복사**&#x200B;를 클릭합니다.
+
+![AEMCS](./images/googledrive10.png)
+
+`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5?usp=drive_link`
+
+URL이 다음과 같이 표시되도록 쿼리 문자열 매개 변수 `?usp=drive_link`을(를) 제거해야 합니다.
+
+`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5`
+
+## 2.1.2.2 GitHub 저장소 설정
 
 [https://github.com](https://github.com)(으)로 이동합니다. **로그인**&#x200B;을 클릭합니다.
 
@@ -26,17 +77,17 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup3.png)
 
-[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one)(으)로 이동합니다. 그러면 이걸 보게 될 거야. **이 템플릿 사용**&#x200B;을 클릭한 다음 **새 저장소 만들기**&#x200B;를 클릭합니다.
+[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate)(으)로 이동합니다. 그러면 이걸 보게 될 거야. **이 템플릿 사용**&#x200B;을 클릭한 다음 **새 저장소 만들기**&#x200B;를 클릭합니다.
 
-![AEMCS](./images/aemcssetup4.png)
+![AEMCS](./images/aemdocbcssetup4.png)
 
-**저장소 이름**&#x200B;을(를) 사용하려면 `citisignal`을(를) 사용하십시오. 가시성을 **개인**(으)로 설정합니다. **저장소 만들기**&#x200B;를 클릭합니다.
+**저장소 이름**&#x200B;에 대해 `aemdocb-test`을(를) 사용합니다. 가시성을 **개인**(으)로 설정합니다. **저장소 만들기**&#x200B;를 클릭합니다.
 
-![AEMCS](./images/aemcssetup5.png)
+![AEMCS](./images/aemdocbcssetup5.png)
 
 몇 초 후에 저장소가 생성됩니다.
 
-![AEMCS](./images/aemcssetup6.png)
+![AEMCS](./images/aemdocbcssetup6.png)
 
 그런 다음 [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync)(으)로 이동합니다. **구성**&#x200B;을 클릭합니다.
 
@@ -48,297 +99,113 @@ GitHub 계정을 클릭합니다.
 
 **저장소만 선택**&#x200B;을 클릭한 다음 방금 만든 저장소를 추가합니다. **설치**&#x200B;를 클릭합니다.
 
-![AEMCS](./images/aemcssetup9.png)
+![AEMCS](./images/aemdocbcssetup9.png)
 
 그러면 이 확인을 받게 됩니다.
 
 ![AEMCS](./images/aemcssetup10.png)
 
-## 2.1.2.2 파일 fstab.yaml 업데이트
+## 2.1.2.3 파일 fstab.yaml 업데이트
 
 GitHub 리포지토리에서 을(를) 클릭하여 `fstab.yaml` 파일을 엽니다.
 
-![AEMCS](./images/aemcssetup11.png)
+![AEMCS](./images/aemdocbcssetup11.png)
 
 **편집** 아이콘을 클릭합니다.
 
-![AEMCS](./images/aemcssetup12.png)
+![AEMCS](./images/aemdocbcssetup12.png)
 
-이제 4행의 필드 **url**&#x200B;에 대한 값을 업데이트해야 합니다.
+이제 2행의 필드 **url**&#x200B;에 대한 값을 업데이트해야 합니다.
 
-![AEMCS](./images/aemcssetup13.png)
+![AEMCS](./images/aemdocbcssetup13.png)
 
 GitHub 저장소의 설정과 함께 특정 AEM CS 환경의 URL로 현재 값을 바꾸어야 합니다.
 
-URL `https://author-p131639-e1282833.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/citisignal-one/main`의 현재 값입니다.
+URL `https://drive.google.com/drive/u/0/folders/1MGzOt7ubUh3gu7zhZIPb7R7dyRzG371j`의 현재 값입니다.
 
-URL의 세 가지 부분을 업데이트해야 합니다
+해당 값을 Google 드라이브 폴더 `https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5`에서 복사한 URL로 바꿉니다. **변경 내용 커밋...**&#x200B;을 클릭합니다.
 
-`https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
-
-XXX는 AEM CS Author 환경의 URL로 대체되어야 합니다.
-
-YYY는 GitHub 사용 계정으로 대체해야 합니다.
-
-ZZZ는 이전 연습에서 사용한 GitHub 저장소의 이름으로 대체해야 합니다.
-
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동하여 AEM CS 작성자 환경의 URL을 찾을 수 있습니다. **프로그램**&#x200B;을 클릭하여 엽니다.
-
-![AEMCS](./images/aemcs6.png)
-
-그런 다음 **환경** 탭에서 세 점 **..**&#x200B;을(를) 클릭하고 **세부 정보 보기**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcs9.png)
-
-그러면 **작성자** 환경의 URL을 포함한 환경 세부 정보가 표시됩니다. URL을 복사합니다.
-
-![AEMCS](./images/aemcs10.png)
-
-XXX = `author-p148073-e1511503.adobeaemcloud.com`
-
-GitHub 사용자 계정 이름의 경우 브라우저의 URL에서 쉽게 찾을 수 있습니다. 이 예제에서 사용자 계정 이름은 `woutervangeluwe`입니다.
-
-YYY = `woutervangeluwe`
-
-![AEMCS](./images/aemcs11.png)
-
-GitHub 저장소 이름의 경우 GitHub에서 연 브라우저 창에서도 찾을 수 있습니다. 이 경우 저장소 이름은 `citisignal`입니다.
-
-ZZZ = `citisignal`
-
-![AEMCS](./images/aemcs12.png)
-
-이 3개의 값을 결합하면 `fstab.yaml` 파일에 구성해야 하는 새 URL이 만들어집니다.
-
-`https://author-p148073-e1511503.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal/main`
-
-**변경 내용 커밋...**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcs13.png)
+![AEMCS](./images/aemdocbcssetup14.png)
 
 **변경 내용 커밋**&#x200B;을 클릭합니다.
 
-![AEMCS](./images/aemcs14.png)
+![AEMCS](./images/aemdocbcssetup15.png)
 
-`fstab.yaml` 파일이 업데이트되었습니다.
+## 2.1.2.4 AEM Sidekick 확장 설치
 
-## 2.1.2.3 CitiSignal 에셋 업로드
+[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)(으)로 이동합니다. **Chrome에 추가**&#x200B;를 클릭합니다.
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
+![AEMCS](./images/aemdocbcssetup16.png)
 
-![AEMCS](./images/aemcs6.png)
+**AEM Sidekick** 확장을 고정합니다.
 
-그런 다음 작성자 환경의 URL을 클릭합니다.
+![AEMCS](./images/aemdocbcssetup17.png)
 
-![AEMCS](./images/aemcssetup18.png)
+## 2.1.2.5 문서 기반 웹 사이트 미리보기 및 Publish
 
-**Adobe으로 로그인**&#x200B;을 클릭합니다.
+Google 드라이브 폴더로 돌아갑니다. 작업 표시줄에서 **AEM Sidekick** 확장을 클릭합니다. 그러면 폴더에 AEM Sidekick 막대 팝업이 표시됩니다.
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/aemdocbcssetup18.png)
 
-그러면 작성자 환경이 표시됩니다.
+Google 드라이브 폴더에서 3개의 파일을 선택합니다. **미리 보기**&#x200B;를 클릭합니다.
 
-![AEMCS](./images/aemcssetup20.png)
+![AEMCS](./images/aemdocbcssetup19.png)
 
-URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
+**미리 보기**&#x200B;를 다시 클릭합니다.
 
-이제 AEM의 **CRX 패키지 관리자** 환경에 액세스해야 합니다. 이렇게 하려면 URL에서 `ui#/aem/aem/start.html?appId=aemshell`을(를) 제거하고 `crx/packmgr`(으)로 바꾸십시오. 즉, URL은 다음과 같이 표시됩니다.
-`https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`.
-패키지 관리자 환경을 로드하려면 **Enter**&#x200B;를 누르십시오.
+![AEMCS](./images/aemdocbcssetup20.png)
 
-![AEMCS](./images/aemcssetup22.png)
+클릭하여 녹색 대화 상자 팝업을 닫습니다.
 
-**패키지 업로드**&#x200B;를 클릭합니다.
+![AEMCS](./images/aemdocbcssetup21.png)
 
-![AEMCS](./images/aemcssetup21.png)
+Google 드라이브 폴더에서 3개의 파일을 다시 선택합니다. 이제 **Publish**&#x200B;를 클릭하세요.
 
-업로드할 패키지를 찾으려면 **찾아보기**&#x200B;를 클릭하세요.
-
-업로드할 패키지는 **citsignal-assets.zip**&#x200B;이며 [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip)에서 다운로드할 수 있습니다.
-
-![AEMCS](./images/aemcssetup23.png)
-
-패키지를 선택하고 **열기**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcssetup24.png)
-
-**확인**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup25.png)
-
-그러면 패키지가 업로드됩니다.
-
-![AEMCS](./images/aemcssetup26.png)
-
-그런 다음 방금 업로드한 패키지에서 **설치**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcssetup27.png)
-
-**설치**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcssetup28.png)
-
-몇 분 후에 패키지가 설치됩니다.
-
-![AEMCS](./images/aemcssetup29.png)
-
-이제 이 창을 닫을 수 있습니다.
-
-
-## 2.1.2.4 Publish CitiSignal 자산
-
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
-
-![AEMCS](./images/aemcs6.png)
-
-그런 다음 작성자 환경의 URL을 클릭합니다.
-
-![AEMCS](./images/aemcssetup18.png)
-
-**Adobe으로 로그인**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup19.png)
-
-그러면 작성자 환경이 표시됩니다. **사이트**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcsassets1.png)
-
-**파일**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcsassets2.png)
-
-**CitiSignal** 폴더를 클릭하여 선택한 다음 **게시 관리**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcsassets3.png)
-
-**다음**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcsassets4.png)
+![AEMCS](./images/aemdocbcssetup22.png)
 
 **Publish**&#x200B;을(를) 클릭합니다.
 
-![AEMCS](./images/aemcsassets5.png)
+![AEMCS](./images/aemdocbcssetup23.png)
 
-이제 자산이 게시되었습니다.
+녹색 대화 상자를 다시 닫으려면 를 클릭합니다. 이제 **인덱스** 파일을 선택하고 **URL 복사**&#x200B;를 클릭한 다음 **실시간 URL 복사**&#x200B;를 클릭합니다.
 
-## 2.1.2.5 CitiSignal 웹 사이트 만들기
+![AEMCS](./images/aemdocbcssetup24.png)
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
+복사된 URL은 다음과 같이 표시됩니다. `https://main--aemdocb-test--woutervangeluwe.aem.live/`.
 
-![AEMCS](./images/aemcs6.png)
+위의 URL에서:
 
-그런 다음 작성자 환경의 URL을 클릭합니다.
+- **main**&#x200B;은(는) GitHub 저장소의 분기를 참조합니다.
+- **aemdocb-test**&#x200B;이(가) GitHub 저장소 이름을 참조합니다.
+- **wutervangeluwe**&#x200B;이(가) GitHub 사용자 계정 이름을 참조합니다.
+- **.live**&#x200B;이(가) AEM 인스턴스의 라이브 환경을 참조합니다.
+- **.live**&#x200B;을(를) **.page**(으)로 바꾸어 AEM 인스턴스의 미리 보기 환경을 열 수 있습니다.
 
-![AEMCS](./images/aemcssetup18.png)
+새 브라우저 창을 열고 URL로 이동합니다.
 
-**Adobe으로 로그인**&#x200B;을 클릭합니다.
+![AEMCS](./images/aemdocbcssetup25.png)
 
-![AEMCS](./images/aemcssetup19.png)
+## 2.1.2.6 변경 및 게시
 
-그러면 작성자 환경이 표시됩니다. **사이트**&#x200B;를 클릭합니다.
+Google 드라이브로 돌아가서 Google에서 **index** filer를 엽니다.
 
-![AEMCS](./images/aemcssetup30.png)
+![AEMCS](./images/aemdocbcssetup27.png)
 
-**만들기**&#x200B;를 클릭한 다음 **템플릿의 사이트**&#x200B;를 클릭합니다.
+**테스트** 텍스트를 선택한 다른 텍스트로 바꾸십시오. **미리 보기**&#x200B;를 클릭합니다.
 
-![AEMCS](./images/aemcssetup31.png)
+![AEMCS](./images/aemdocbcssetup28.png)
 
-**가져오기**&#x200B;를 클릭합니다.
+그러면 웹 사이트의 미리보기 버전이 열립니다. 변경 내용을 검토하고 **Publish**&#x200B;을(를) 클릭합니다.
 
-![AEMCS](./images/aemcssetup32.png)
+![AEMCS](./images/aemdocbcssetup29.png)
 
-이제 사이트에 대해 사전 구성된 템플릿을 가져와야 합니다. [여기](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip)에서 템플릿을 다운로드할 수 있습니다. 파일을 바탕 화면에 저장합니다.
+그러면 웹 사이트의 라이브 버전이 표시됩니다.
 
-그런 다음 `citisignal-edge-delivery-services-template-0.0.4.zip` 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
+![AEMCS](./images/aemdocbcssetup30.png)
 
-![AEMCS](./images/aemcssetup33.png)
+위의 연습은 문서 기반 작성을 직접 시작하고 체험할 수 있는 좋은 방법이었습니다. 이제 CitiSignal을 데모 브랜드로 사용하여 나만의 데모 웹 사이트를 설정하는 다음 연습을 계속할 수 있습니다.
 
-그러면 이걸 보게 될 거야. 업로드한 템플릿을 클릭하여 선택한 다음 **다음**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup34.png)
-
-이제 세부 사항을 작성해야 합니다.
-
-- 사이트 제목: **CitiSignal** 사용
-- 사이트 이름: **citsignal-one** 사용
-- GitHub URL: 이전에 사용 중이던 GitHub 저장소의 URL을 복사합니다.
-
-![AEMCS](./images/aemcssetup35.png)
-
-그럼 이걸로 드셔보세요 **만들기**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcssetup36.png)
-
-이제 사이트를 만드는 중입니다. 몇 분 정도 걸릴 수 있습니다. **확인**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup37.png)
-
-몇 분 후에 화면을 새로 고치면 새로 만든 CitiSignal 웹 사이트가 표시됩니다.
-
-![AEMCS](./images/aemcssetup38.png)
-
-## 2.1.2.6 Publish CitiSignal 웹 사이트
-
-**CitiSignal** 앞의 확인란을 클릭합니다. 그런 다음 **게시 관리**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcssetup39.png)
-
-**다음**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup40.png)
-
-**하위 설정 포함**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup41.png)
-
-**하위 항목 포함** 확인란을 클릭하여 선택한 다음 다른 확인란을 클릭하여 선택을 취소합니다. **확인**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup42.png)
-
-**Publish**&#x200B;을(를) 클릭합니다.
-
-![AEMCS](./images/aemcssetup43.png)
-
-그러면 다시 여기로 보내집니다. **CitiSignal** > **us** > **en**(으)로 이동합니다. **인덱스** 앞의 확인란을 클릭한 다음 **편집**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup44.png)
-
-그러면 웹 사이트가 **유니버설 편집기**&#x200B;에서 열립니다.
-
-![AEMCS](./images/aemcssetup45.png)
-
-이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en` 및/또는 `main--citisignal--XXX.aem.live/us/en`(으)로 이동하여 웹 사이트에 액세스할 수 있습니다.
-
-이 예에서 전체 URL은 다음과 같이 됩니다.
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
-
-에셋을 먼저 게시해야 하므로 모든 에셋이 올바르게 표시되기까지 시간이 걸릴 수 있습니다.
-
-그러면 다음과 같은 결과가 표시됩니다.
-
-![AEMCS](./images/aemcssetup46.png)
-
-몇 분 후에 자산이 모두 제대로 로드됩니다.
-
-![AEMCS](./images/aemcssetup47.png)
-
-## 2.1.2.7 페이지 성능 테스트
-
-[https://pagespeed.web.dev/](https://pagespeed.web.dev/)(으)로 이동합니다. URL을 입력하고 **분석**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup48.png)
-
-그러면 모바일과 데스크탑 시각화 모두에서 웹 사이트가 높은 점수를 받는 것을 볼 수 있습니다.
-
-**모바일**:
-
-![AEMCS](./images/aemcssetup49.png)
-
-**데스크톱**:
-
-![AEMCS](./images/aemcssetup50.png)
-
-다음 단계: [2.1.3 사용자 지정 블록 구성](./ex3.md)
+다음 단계: [2.1.3 AEM CS 환경 설정](./ex3.md)
 
 [모듈 2.1로 돌아가기](./aemcs.md)
 
