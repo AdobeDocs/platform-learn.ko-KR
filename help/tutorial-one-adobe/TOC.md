@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '180'
 ht-degree: 6%
 
 ---
@@ -25,6 +25,12 @@ ht-degree: 6%
       + [1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe Firefly 및 Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
+   + 1.2 Adobe Firefly 서비스 자동화 {#module21}
+      + [개요](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
+      + [1.2.1 Firefly 서비스 시작하기](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
+      + [1.2.2 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
+      + [1.2.3 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
+      + [요약 및 이점](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2개의 콘텐츠 공급망 {#csc}
    + 2.1 Adobe Experience Manager Cloud Service {#module21}
@@ -41,8 +47,10 @@ ht-degree: 6%
       + [요약 및 이점](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
 + 3 통합 고객 경험 {#uce}
-   + 3.1 Adobe Real-Time CDP {#module31}
-      + [개요](/help/tutorial-one-adobe/modules/uce/module3.1/rtcdp.md)
-      + [3.1.1 이벤트 만들기](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+   + 3.1 Federated Audience 구성 {#module31}
+      + [개요](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
+      + [3.1.1 Snowflake 환경 설정](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+      + [3.1.2 스키마, 데이터 모델 및 링크 만들기](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
+      + [3.1.3 통합 컴포지션 만들기](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
 
