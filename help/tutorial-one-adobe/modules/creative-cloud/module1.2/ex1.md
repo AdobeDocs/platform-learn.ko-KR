@@ -3,9 +3,10 @@ title: Firefly 서비스 시작
 description: Firefly 서비스 시작
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
+source-git-commit: a0c16a47372d322a7931578adca30a246b537183
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '703'
 ht-degree: 2%
 
 ---
@@ -191,7 +192,7 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion38.png)
 
-*한 번 실행**을 다시 클릭합니다.
+**한 번 실행**&#x200B;을 다시 클릭합니다.
 
 ![WF Fusion](./images/wffusion39.png)
 
@@ -227,7 +228,7 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion47.png)
 
-다음 단계: [1.2.2 Workfront Fusion을 사용하여 이미지에 Firefly 텍스트 사용](./ex2.md)
+다음 단계: [1.2.2 Workfront Fusion 내에서 Adobe API 사용](./ex2.md)
 
 [모듈 1.2로 돌아가기](./automation.md)
 
