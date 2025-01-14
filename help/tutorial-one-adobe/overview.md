@@ -2,9 +2,10 @@
 title: 개요 - 포괄적인 기술 튜토리얼 - 하나의 Adobe
 description: 포괄적인 기술 자습서 - 단일 Adobe
 doc-type: multipage-overview
-source-git-commit: b1bb17bfe451c67903424bd8da6716d0ad1c2cd3
+exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '302'
 ht-degree: 4%
 
 ---
@@ -62,8 +63,12 @@ ht-degree: 4%
 
 이 기본 모듈에서는 Adobe Experience Manager Cloud Service 프로그램, 사이트 및 Assets 저장소를 설정합니다.
 
+[2.2 Adobe Workfront](./modules/csc/module2.2/workfront.md)
+
+이 기본 모듈에서는 Adobe Experience Manager Cloud Service 프로그램, 사이트 및 Assets 저장소를 설정합니다.
+
 ### 3. 통합 고객 경험
 
-[3.1 Adobe Real-Time CDP](./modules/uce/module3.1/rtcdp.md)
+[3.1 페더레이션 대상 구성](./modules/uce/module3.1/fac.md)
 
 이 기본 모듈에서는 Adobe Experience Platform 데이터 수집 및 새로운 웹 SDK 확장에 대해 알아봅니다.

@@ -4,7 +4,7 @@ description: Firefly 서비스 시작
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 1%
@@ -242,7 +242,7 @@ URL은 현재 다음과 비슷하지만 변경해야 합니다.
 
 ![Azure 저장소](./images/az38.png)
 
-## 1.1.2.5 프로그래밍 파일 사용
+## 1.1.2.6 프로그램 파일 사용
 
 장기적으로 Azure 저장소 계정에서 파일을 프로그래밍 방식으로 읽으려면 파일을 읽을 수 있는 권한이 있는 새 **SAS(공유 액세스 서명)** 토큰을 만들어야 합니다. 기술적으로 이전 연습에서 만든 SAS 토큰을 사용할 수 있지만 가장 좋은 방법은 **읽기** 권한만 있는 별도의 토큰과 **쓰기** 권한만 있는 별도의 토큰을 사용하는 것입니다.
 
@@ -359,7 +359,7 @@ URL은 다음과 같이 표시됩니다.
 
 이미지 URL을 열어 이미지를 확인합니다.
 
-![Azure 저장소](./images/az108.png)
+![Azure 저장소](./images/az108.jpg)
 
 다음 단계: [1.1.3 Adobe Firefly 및 Adobe Photoshop](./ex3.md)
 
