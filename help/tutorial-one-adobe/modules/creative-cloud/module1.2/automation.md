@@ -4,9 +4,9 @@ description: Adobe Firefly 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '175'
 ht-degree: 2%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 2%
 
 [1.2.2 Workfront Fusion 내에서 Adobe API 사용](./ex2.md)
 
-이 연습에서는 Workfront Fusion 내에서 Firefly 서비스 API 및 Photoshop API를 구성하고 사용합니다.
+이 연습에서는 Workfront Fusion 내에서 Firefly 서비스 API 및 Photoshop API를 구성하고 사용하면서 Workfront Fusion의 기능을 살펴봅니다.
 
-[1.2.3 ...](./ex3.md)
+[1.2.3 Workfront Fusion을 사용한 프로세스 자동화](./ex3.md)
 
-이 연습에서는 ... .
+이 연습에서는 이미지 생성 프로세스를 자동화하기 위해 여정을 계속 세분화합니다.
 
 [요약 및 이점](./summary.md)
 
