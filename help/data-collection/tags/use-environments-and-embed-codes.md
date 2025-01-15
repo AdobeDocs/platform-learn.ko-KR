@@ -7,7 +7,7 @@ duration: 678
 last-substantial-update: 2024-01-29T00:00:00Z
 exl-id: 95399c9a-72f6-4b20-905c-0627f106ccfb
 jira: KT-3527
-source-git-commit: a72fd41c9673d06585dc787ffe8086e5c9ba23a0
+source-git-commit: eb3d3fce216b7665e53a125d0141bef53e742799
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 34%
@@ -16,6 +16,7 @@ ht-degree: 34%
 
 # 태그 환경 및 포함 코드 사용
 
-개발, 스테이징 및 프로덕션 환경과 포함 코드를 사용하여 태그 속성을 개발하고 확인하는 방법을 알아봅니다. 자세한 내용은 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko-KR) 설명서를 참조하십시오.
+개발, 스테이징 및 프로덕션 환경과 포함 코드를 사용하여 태그 속성을 개발하고 확인하는 방법을 알아봅니다. 자세한 내용은 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko) 설명서를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)
+
