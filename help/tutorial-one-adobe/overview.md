@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - 하나의 Adobe
 description: 포괄적인 기술 자습서 - 단일 Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 4%
 - Google Cloud 플랫폼
 - Microsoft Azure
 - Postman
+- Snowflake
 - ...
 
 이 자습서의 연습을 완료하면 다음 작업을 수행할 수 있습니다.
@@ -55,7 +56,11 @@ ht-degree: 4%
 
 [1.1 Adobe Firefly 서비스](./modules/creative-cloud/module1.1/firefly-services.md)
 
-이 기본 모듈에서는 다음에 대한 Adobe Firefly을 사용합니다.
+이 모듈에서는 Adobe Firefly 서비스 API, Photoshop API 및 Microsoft Azure Storage Services를 사용하여 이미지를 생성하고 프로그래밍 방식으로 저장합니다.
+
+[1.2 Workfront Fusion을 사용한 Creative Workflow 자동화](./modules/creative-cloud/module1.2/automation.md)
+
+이 기본 모듈에서는 Adobe Workfront Fusion을 사용하여 콘텐츠 제작 워크플로를 자동화하고 확장하게 됩니다.
 
 ### 2. 콘텐츠 공급망
 

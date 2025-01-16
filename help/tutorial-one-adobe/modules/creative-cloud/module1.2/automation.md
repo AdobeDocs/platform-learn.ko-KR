@@ -1,17 +1,17 @@
 ---
-title: 1.1 Adobe Firefly 서비스
-description: Adobe Firefly 서비스
+title: Workfront Fusion을 사용한 Creative Workflow Automation
+description: Workfront Fusion을 사용한 Creative Workflow Automation
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '182'
 ht-degree: 2%
 
 ---
 
-# 1.2 Adobe Firefly 서비스 자동화
+# 1.2 Workfront Fusion을 사용한 Creative Workflow 자동화
 
 ## 학습 목표
 
