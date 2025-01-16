@@ -1,12 +1,12 @@
 ---
-title: Firefly 서비스 시작
-description: Firefly 서비스 시작
+title: Workfront Fusion을 사용한 프로세스 자동화
+description: Workfront Fusion을 사용한 프로세스 자동화
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,9 @@ Postman으로 이동한 다음 **보내기**&#x200B;를 다시 클릭합니다.
 
 ![WF Fusion](./images/wffusion232.png)
 
-계속하기 전에 Postman 요청의 이름을 `POST - Send Request to Workfront Fusion Webhook`(으)로 변경하십시오.
+마지막으로 Postman 요청 이름을 `POST - Send Request to Workfront Fusion Webhook`(으)로 변경합니다.
 
 ![WF Fusion](./images/wffusion233.png)
-
 
 다음 단계: [요약 및 이점](./summary.md)
 

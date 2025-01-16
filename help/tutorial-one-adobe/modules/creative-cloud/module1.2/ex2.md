@@ -1,12 +1,12 @@
 ---
-title: Firefly 서비스 시작
-description: Firefly 서비스 시작
+title: Workfront Fusion 내에서 Adobe API 사용
+description: Workfront Fusion 내에서 Adobe API 사용
 kt: 5342
 doc-type: tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1761'
 ht-degree: 2%
 
 ---

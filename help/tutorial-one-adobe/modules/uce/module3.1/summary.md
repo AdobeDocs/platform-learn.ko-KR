@@ -4,7 +4,7 @@ description: Foundation - FAC - 요약
 kt: 5342
 doc-type: tutorial
 exl-id: 9681cceb-1d8b-48d0-b751-af98778b6acb
-source-git-commit: 29f1c26d370859fd2200610ed74a1ea744be08a8
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 1%
@@ -22,6 +22,6 @@ Adobe Experience Platform에서 Federated Audience Composition의 데이터 수�
 
 ## 이 항목 확인
 
-[모듈 1.3으로 돌아가기](./fac.md)
+[모듈 3.1로 돌아가기](./fac.md)
 
 [모든 모듈로 돌아가기](../../../overview.md)

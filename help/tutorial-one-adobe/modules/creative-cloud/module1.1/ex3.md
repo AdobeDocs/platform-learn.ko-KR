@@ -1,17 +1,17 @@
 ---
-title: Firefly 서비스 시작
-description: Firefly 서비스 시작
+title: Photoshop API 작업
+description: Photoshop API 작업
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
 
-# 1.1.3 Adobe Firefly 및 Adobe Photoshop
+# 1.1.3 Photoshop API 작업
 
 ## 1.1.3.1 Adobe I/O 통합 업데이트
 
@@ -73,6 +73,8 @@ Postman으로 이동합니다. Photoshop에 API 요청을 전송하기 전에 Ad
 
 ![Azure 저장소](./images/ps9.png)
 
+### 1.1.3.2.1 Photoshop API - Hello World
+
 다음으로 모든 권한 및 액세스가 올바르게 설정되었는지 테스트하기 위해 Photoshop API에 대해 알아보겠습니다. **Photoshop** 컬렉션에서 이름이 **Photoshop Hello(테스트 인증)인 요청을 엽니다.** 질문에 답합니다. **보내기**&#x200B;를 클릭합니다.
 
 ![Azure 저장소](./images/ps10.png)
@@ -82,6 +84,8 @@ Postman으로 이동합니다. Photoshop에 API 요청을 전송하기 전에 Ad
 ![Azure 저장소](./images/ps11.png)
 
 그런 다음 PSD 파일 **citisignal-fiber.psd**&#x200B;과(와) 프로그래밍 방식으로 상호 작용하려면 저장소 계정에 업로드해야 합니다. Azure 저장소 탐색기를 사용하여 컨테이너에 끌어다 놓아 수동으로 수행할 수 있지만, 이번에는 API를 통해 수행해야 합니다.
+
+### 1.1.3.2.2 Azure에 PSD 업로드
 
 Postman에서 **Azure 저장소 계정에 PSD 업로드** 요청을 엽니다. 이전 연습에서는 이제 사용할 Postman에서 이러한 환경 변수를 구성했습니다.
 
@@ -109,6 +113,8 @@ Postman에서 **Azure 저장소 계정에 PSD 업로드** 요청을 엽니다. �
 Azure Storage Explorer를 사용하여 보면 폴더를 새로 고친 후 파일이 표시됩니다.
 
 ![Azure 저장소](./images/ps16.png)
+
+### 1.1.3.2.3 Photoshop API - 매니페스트 가져오기
 
 그런 다음 PSD 파일의 매니페스트 파일을 가져와야 합니다. Postman에서 요청 **Photoshop - PSD 매니페스트 가져오기**&#x200B;를 엽니다. **본문**(으)로 이동합니다.
 
@@ -155,6 +161,8 @@ Azure Storage Explorer를 사용하여 보면 폴더를 새로 고친 후 파일
 예를 들어 `2048x2048-cta` 텍스트를 검색합니다. 그럼 이걸 보셔야죠
 
 ![Azure 저장소](./images/ps21.png)
+
+### 1.1.3.2.4 Photoshop API - 텍스트 변경
 
 다음으로, 이제 API를 사용하여 클릭 유도 문안 텍스트를 변경해야 합니다. Postman에서 **Photoshop - 텍스트 변경** 요청을 열고 **본문**(으)로 이동합니다.
 
