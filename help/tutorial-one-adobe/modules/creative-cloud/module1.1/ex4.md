@@ -3,7 +3,7 @@ title: Photoshop API 작업
 description: Photoshop API 작업
 kt: 5342
 doc-type: tutorial
-source-git-commit: b7ee794e9611afc7bee35a0f471ec50caad10f85
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # 1.1.4 Firefly 사용자 지정 모델
 
-[https://firefly.adobe.com](https://firefly.adobe.com)(으)로 이동합니다. **사용자 지정 모델**(으)로 이동합니다.
+[https://firefly.adobe.com](https://firefly.adobe.com){target="_blank"}(으)로 이동합니다. **사용자 지정 모델**(으)로 이동합니다.
 
 ![Firefly](./images/ffcm1.png)
 
@@ -54,8 +54,8 @@ Firefly 사용자 지정 모델을 사용하는 조건에 **동의**&#x200B;합�
 
 이제 이 연습을 완료했습니다.
 
-다음 단계: [요약 및 이점](./summary.md)
+다음 단계: [요약 및 이점](./summary.md){target="_blank"}
 
-[모듈 1.1로 돌아가기](./firefly-services.md)
+[모듈 1.1로 돌아가기](./firefly-services.md){target="_blank"}
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}

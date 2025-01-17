@@ -4,7 +4,7 @@ description: Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly �
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >기존 Azure 구독이 있는 경우 이 단계를 건너뛸 수 있습니다. 그런 경우에는 다음 연습을 진행하십시오.
 
-[https://portal.azure.com](https://portal.azure.com)(으)로 이동하여 Azure 계정으로 로그인하세요. 전자 메일 주소가 없는 경우 개인 전자 메일 주소를 사용하여 Azure 계정을 만드세요.
+[https://portal.azure.com](https://portal.azure.com){target="_blank"}(으)로 이동하여 Azure 계정으로 로그인하세요. 전자 메일 주소가 없는 경우 개인 전자 메일 주소를 사용하여 Azure 계정을 만드세요.
 
 ![Azure 저장소](./images/02azureportalemail.png)
 
@@ -83,7 +83,7 @@ Azure 구독 양식을 작성하고 활성화할 휴대폰과 신용 카드를 �
 
 ## 1.1.2.3 Azure Storage Explorer 설치
 
-Microsoft Azure Storage Explorer를 사용하여 파일을 관리합니다. [이 링크](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4)를 통해 다운로드할 수 있습니다. 특정 OS에 맞는 버전을 선택하고 다운로드하여 설치합니다.
+Microsoft Azure Storage Explorer를 사용하여 파일을 관리합니다. [이 링크](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}를 통해 다운로드할 수 있습니다. 특정 OS에 맞는 버전을 선택하고 다운로드하여 설치합니다.
 
 ![Azure 저장소](./images/az10.png)
 
@@ -125,7 +125,7 @@ Microsoft Azure Storage Explorer 앱으로 다시 전환합니다. 구독을 선
 
 ## 1.1.2.4 수동 파일 업로드 및 이미지 파일을 스타일 참조로 사용
 
-이제 선택한 이미지 파일을 컨테이너에 업로드해야 합니다. 원하는 이미지 파일을 사용하거나 [이 파일](./images/gradient.jpg)을(를) 컴퓨터에 다운로드하여 사용할 수 있습니다.
+이제 선택한 이미지 파일을 컨테이너에 업로드해야 합니다. 원하는 이미지 파일을 사용하거나 [이 파일](./images/gradient.jpg){target="_blank"}을(를) 컴퓨터에 다운로드하여 사용할 수 있습니다.
 
 ![Azure 저장소](./images/gradient.jpg)
 
@@ -199,7 +199,7 @@ Azure 저장소 계정으로 프로그래밍 방식의 파일 업로드를 사�
 
 ![Azure 저장소](./images/az31.png)
 
-이제 로컬 컴퓨터에서 파일을 선택해야 합니다. 선택한 새 이미지 파일을 사용하거나 [여기](./images/gradient2-p.jpg)에서 찾을 수 있는 다른 이미지 파일을 사용할 수 있습니다.
+이제 로컬 컴퓨터에서 파일을 선택해야 합니다. 선택한 새 이미지 파일을 사용하거나 [여기](./images/gradient2-p.jpg){target="_blank"}에서 찾을 수 있는 다른 이미지 파일을 사용할 수 있습니다.
 
 ![그라데이션 파일](./images/gradient2-p.jpg)
 
@@ -365,8 +365,8 @@ URL은 다음과 같이 표시됩니다.
 
 ![Azure 저장소](./images/az108.jpg)
 
-다음 단계: [1.1.3 Adobe Firefly 및 Adobe Photoshop](./ex3.md)
+다음 단계: [1.1.3 Adobe Firefly 및 Adobe Photoshop](./ex3.md){target="_blank"}
 
-[모듈 1.1로 돌아가기](./firefly-services.md)
+[모듈 1.1로 돌아가기](./firefly-services.md){target="_blank"}
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}

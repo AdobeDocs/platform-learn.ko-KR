@@ -4,7 +4,7 @@ description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.2 문서 기반 웹 사이트 만들기
 
-Cloud Manager 프로그램이 만들어지기를 기다리는 동안 문서 기반의 첫 웹 사이트를 설정할 시간이 충분합니다. 아래 연습은 [aem.live 개발자 자습서](https://www.aem.live/developer/tutorial)를 기반으로 합니다. 시작하려면 아래 단계를 따르십시오.
+Cloud Manager 프로그램이 만들어지기를 기다리는 동안 문서 기반의 첫 웹 사이트를 설정할 시간이 충분합니다. 아래 연습은 [aem.live 개발자 자습서](https://www.aem.live/developer/tutorial){target="_blank"}를 기반으로 합니다. 시작하려면 아래 단계를 따르십시오.
 
 ## 2.1.2.1 Google 드라이브 설정
 
-[https://drive.google.com](https://drive.google.com)(으)로 이동합니다. **+ 새로 만들기**&#x200B;를 클릭한 다음 **새 폴더**&#x200B;를 클릭합니다.
+[https://drive.google.com](https://drive.google.com){target="_blank"}(으)로 이동합니다. **+ 새로 만들기**&#x200B;를 클릭한 다음 **새 폴더**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/googledrive1.png)
 
@@ -25,7 +25,7 @@ Cloud Manager 프로그램이 만들어지기를 기다리는 동안 문서 기�
 
 ![AEMCS](./images/googledrive2.png)
 
-[aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) 파일을 다운로드하여 컴퓨터에서 추출하십시오.
+[aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip){target="_blank"} 파일을 다운로드하여 컴퓨터에서 추출하십시오.
 
 ![AEMCS](./images/googledrive3.png)
 
@@ -65,7 +65,7 @@ URL이 다음과 같이 표시되도록 쿼리 문자열 매개 변수 `?usp=dri
 
 ## 2.1.2.2 GitHub 저장소 설정
 
-[https://github.com](https://github.com)(으)로 이동합니다. **로그인**&#x200B;을 클릭합니다.
+[https://github.com](https://github.com){target="_blank"}(으)로 이동합니다. **로그인**&#x200B;을 클릭합니다.
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -77,7 +77,7 @@ URL이 다음과 같이 표시되도록 쿼리 문자열 매개 변수 `?usp=dri
 
 ![AEMCS](./images/aemcssetup3.png)
 
-[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate)(으)로 이동합니다. 그러면 이걸 보게 될 거야. **이 템플릿 사용**&#x200B;을 클릭한 다음 **새 저장소 만들기**&#x200B;를 클릭합니다.
+[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate){target="_blank"}(으)로 이동합니다. 그러면 이걸 보게 될 거야. **이 템플릿 사용**&#x200B;을 클릭한 다음 **새 저장소 만들기**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemdocbcssetup4.png)
 
@@ -89,7 +89,7 @@ URL이 다음과 같이 표시되도록 쿼리 문자열 매개 변수 `?usp=dri
 
 ![AEMCS](./images/aemdocbcssetup6.png)
 
-그런 다음 [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync)(으)로 이동합니다. **구성**&#x200B;을 클릭합니다.
+그런 다음 [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}(으)로 이동합니다. **구성**&#x200B;을 클릭합니다.
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -133,7 +133,7 @@ URL `https://drive.google.com/drive/u/0/folders/1MGzOt7ubUh3gu7zhZIPb7R7dyRzG371
 
 ## 2.1.2.4 AEM Sidekick 확장 설치
 
-[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)(으)로 이동합니다. **Chrome에 추가**&#x200B;를 클릭합니다.
+[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"}(으)로 이동합니다. **Chrome에 추가**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemdocbcssetup16.png)
 
@@ -205,8 +205,8 @@ Google 드라이브로 돌아가서 Google에서 **index** filer를 엽니다.
 
 위의 연습은 문서 기반 작성을 직접 시작하고 체험할 수 있는 좋은 방법이었습니다. 이제 CitiSignal을 데모 브랜드로 사용하여 나만의 데모 웹 사이트를 설정하는 다음 연습을 계속할 수 있습니다.
 
-다음 단계: [2.1.3 AEM CS 환경 설정](./ex3.md)
+다음 단계: [2.1.3 AEM CS 환경 설정](./ex3.md){target="_blank"}
 
-[모듈 2.1로 돌아가기](./aemcs.md)
+[모듈 2.1로 돌아가기](./aemcs.md){target="_blank"}
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}

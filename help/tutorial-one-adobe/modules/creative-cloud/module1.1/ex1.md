@@ -4,7 +4,7 @@ description: Firefly 서비스 시작
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 이 연습에서는 Firefly 서비스 API에 대해 쿼리하기 위해 Adobe I/O을 상당히 집중적으로 사용합니다. Adobe I/O을 설정하려면 아래 단계를 따르십시오.
 
-[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)(으)로 이동
+[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}(으)로 이동
 
 ![새 통합 Adobe I/O](./images/iohome.png)
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ## Adobe I/O에 대한 Postman 인증
 
-[https://www.postman.com/downloads/](https://www.postman.com/downloads/)(으)로 이동합니다.
+[https://www.postman.com/downloads/](https://www.postman.com/downloads/){target="_blank"}(으)로 이동합니다.
 
 OS용 Postman의 관련 버전을 다운로드하여 설치합니다.
 
@@ -178,8 +178,8 @@ Adobe I/O에서 특정 값(매우 긴 access_token)과 만료 창이 있는 **�
 
 다음 연습을 계속하기 전에 언제든지 API 요청을 재생하십시오.
 
-다음 단계: [1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](./ex2.md)
+다음 단계: [1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](./ex2.md){target="_blank"}
 
-[모듈 1.1로 돌아가기](./firefly-services.md)
+[모듈 1.1로 돌아가기](./firefly-services.md){target="_blank"}
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}

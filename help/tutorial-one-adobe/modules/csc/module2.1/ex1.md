@@ -4,7 +4,7 @@ description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 2.1.1 Cloud Manager 프로그램 만들기
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동합니다. 선택해야 하는 조직은 `--aepImsOrgName--`입니다. 그러면 이런 것을 보게 될 겁니다. **프로그램 추가**&#x200B;를 클릭합니다.
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. 선택해야 하는 조직은 `--aepImsOrgName--`입니다. 그러면 이런 것을 보게 될 겁니다. **프로그램 추가**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcs1.png)
 
@@ -35,13 +35,13 @@ ht-degree: 4%
 
 ![AEMCS](./images/aemcs4.png)
 
-기다리는 동안 이미 연습 [2.1.2](./ex2.md)(으)로 시작할 수 있습니다.
+기다리는 동안 이미 연습 [2.1.2](./ex2.md){target="_blank"}(으)로 시작할 수 있습니다.
 
 환경이 만들어지고 사용할 준비가 되면 이메일 확인을 받게 되며 그 후 다시 여기로 돌아올 수 있습니다.
 
 ![AEMCS](./images/aemcs5.png)
 
-전자 메일 확인을 받으면 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 돌아갑니다. 그러면 프로그램의 상태가 **준비**(으)로 변경되었습니다. 프로그램을 클릭하여 엽니다.
+전자 메일 확인을 받으면 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 돌아갑니다. 그러면 프로그램의 상태가 **준비**(으)로 변경되었습니다. 프로그램을 클릭하여 엽니다.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -63,8 +63,8 @@ ht-degree: 4%
 
 파이프라인 실행이 완료되면 다음 연습을 계속할 수 있습니다.
 
-다음 단계: [2.1.2 문서 기반 웹 사이트 만들기](./ex2.md)
+다음 단계: [2.1.2 문서 기반 웹 사이트 만들기](./ex2.md){target="_blank"}
 
-[모듈 2.1로 돌아가기](./aemcs.md)
+[모듈 2.1로 돌아가기](./aemcs.md){target="_blank"}
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}

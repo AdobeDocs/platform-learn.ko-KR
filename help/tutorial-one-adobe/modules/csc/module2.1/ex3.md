@@ -4,7 +4,7 @@ description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 2.1.3.1 GitHub 저장소 설정
 
-[https://github.com](https://github.com)(으)로 이동합니다. **로그인**&#x200B;을 클릭합니다.
+[https://github.com](https://github.com){target="_blank"}(으)로 이동합니다. **로그인**&#x200B;을 클릭합니다.
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup3.png)
 
-[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one)(으)로 이동합니다. 그러면 이걸 보게 될 거야. **이 템플릿 사용**&#x200B;을 클릭한 다음 **새 저장소 만들기**&#x200B;를 클릭합니다.
+[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one){target="_blank"}(으)로 이동합니다. 그러면 이걸 보게 될 거야. **이 템플릿 사용**&#x200B;을 클릭한 다음 **새 저장소 만들기**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcssetup4.png)
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup6.png)
 
-그런 다음 [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync)(으)로 이동합니다. **구성**&#x200B;을 클릭합니다.
+그런 다음 [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}(으)로 이동합니다. **구성**&#x200B;을 클릭합니다.
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -83,7 +83,7 @@ YYY는 GitHub 사용자 계정으로 대체해야 합니다.
 
 ZZZ는 이전 연습에서 사용한 GitHub 저장소의 이름으로 대체해야 합니다.
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동하여 AEM CS 작성자 환경의 URL을 찾을 수 있습니다. **프로그램**&#x200B;을 클릭하여 엽니다.
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}로 이동하여 AEM CS 작성자 환경의 URL을 찾을 수 있습니다. **프로그램**&#x200B;을 클릭하여 엽니다.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -125,7 +125,7 @@ ZZZ = `citisignal`
 
 ## 2.1.3.3 CitiSignal 에셋 업로드
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -155,7 +155,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 업로드할 패키지를 찾으려면 **찾아보기**&#x200B;를 클릭하세요.
 
-업로드할 패키지는 **citsignal-assets.zip**&#x200B;이며 [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip)에서 다운로드할 수 있습니다.
+업로드할 패키지는 **citsignal-assets.zip**&#x200B;이며 [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}에서 다운로드할 수 있습니다.
 
 ![AEMCS](./images/aemcssetup23.png)
 
@@ -188,7 +188,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ## 2.1.3.4 Publish CitiSignal 자산
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -224,7 +224,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ## 2.1.3.5 CitiSignal 웹 사이트 만들기
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -248,7 +248,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcssetup32.png)
 
-이제 사이트에 대해 사전 구성된 템플릿을 가져와야 합니다. [여기](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip)에서 템플릿을 다운로드할 수 있습니다. 파일을 바탕 화면에 저장합니다.
+이제 사이트에 대해 사전 구성된 템플릿을 가져와야 합니다. [여기](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip){target="_blank"}에서 템플릿을 다운로드할 수 있습니다. 파일을 바탕 화면에 저장합니다.
 
 그런 다음 `citisignal-edge-delivery-services-template-0.0.4.zip` 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
 
@@ -325,7 +325,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ## 2.1.3.7 페이지 성능 테스트
 
-[https://pagespeed.web.dev/](https://pagespeed.web.dev/)(으)로 이동합니다. URL을 입력하고 **분석**&#x200B;을 클릭합니다.
+[https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}(으)로 이동합니다. URL을 입력하고 **분석**&#x200B;을 클릭합니다.
 
 ![AEMCS](./images/aemcssetup48.png)
 
@@ -339,8 +339,8 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcssetup50.png)
 
-다음 단계: [2.1.4 사용자 지정 블록 구성](./ex4.md)
+다음 단계: [2.1.4 사용자 지정 블록 구성](./ex4.md){target="_blank"}
 
-[모듈 2.1로 돌아가기](./aemcs.md)
+[모듈 2.1로 돌아가기](./aemcs.md){target="_blank"}
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}

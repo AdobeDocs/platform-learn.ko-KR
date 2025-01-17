@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer 번역 서비스
 description: Adobe Journey Optimizer 번역 서비스
 kt: 5342
 doc-type: tutorial
-source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
+exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
+source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 3%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
@@ -32,6 +33,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe Experience Platform과 애플리케이션에 대해 알아야 할 모든 것을 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.
+>![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.
 
 [모든 모듈로 돌아가기](../../../overview.md)

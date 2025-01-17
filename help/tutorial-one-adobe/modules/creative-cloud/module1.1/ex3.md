@@ -4,7 +4,7 @@ description: Photoshop API 작업
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 1.1.3.1 Adobe I/O 통합 업데이트
 
-[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)(으)로 이동합니다.
+[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}(으)로 이동합니다.
 
 ![새 통합 Adobe I/O](./images/iohome.png)
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ## 1.1.3.2 프로그래밍 방식으로 PSD 파일과 상호 작용합니다
 
-파일을 다운로드합니다. 데스크톱으로 [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd)(으)로 이동합니다.
+파일을 다운로드합니다. 데스크톱으로 [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}(으)로 이동합니다.
 
 Photoshop에서 **citisignal-fiber.psd** 파일을 엽니다. 그럼 이걸 드셔보세요
 
@@ -229,8 +229,8 @@ Azure Storage Explorer를 사용하여 보면 폴더를 새로 고친 후 파일
 
 이제 이 연습을 완료했습니다.
 
-다음 단계: [1.1.4 Firefly 사용자 지정 모델](./ex4.md)
+다음 단계: [1.1.4 Firefly 사용자 지정 모델](./ex4.md){target="_blank"}
 
-[모듈 1.1로 돌아가기](./firefly-services.md)
+[모듈 1.1로 돌아가기](./firefly-services.md){target="_blank"}
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}
