@@ -2,10 +2,11 @@
 title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
-source-git-commit: 24153b07074c053e0623a4167507d4a6aa37f212
+exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 12%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
 
@@ -25,5 +26,11 @@ ht-degree: 12%
 | [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/uce/module3.3/offer-decisioning.md) | 14/11/2024 | 예 | - |
 
 {style="table-layout:auto"}
+
+>[!NOTE]
+>
+>![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
+>
+>질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.
 
 [모든 모듈로 돌아가기](./overview.md)

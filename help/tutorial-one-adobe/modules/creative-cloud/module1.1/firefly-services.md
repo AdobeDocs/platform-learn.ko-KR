@@ -4,7 +4,7 @@ description: Adobe Firefly 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 18fee60ed4c92af84b6866e1b2cce6eb496b912e
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
@@ -45,7 +45,8 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.
 
 [모든 모듈로 돌아가기](../../../overview.md){target="_blank"}

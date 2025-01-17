@@ -3,7 +3,7 @@ title: 개요 - 포괄적인 기술 튜토리얼 - 하나의 Adobe
 description: 포괄적인 기술 자습서 - 단일 Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 6fabd01d69e01255bc45c811fa37701728e032fa
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -12,7 +12,7 @@ ht-degree: 4%
 
 # 포괄적인 기술 자습서 - 단일 Adobe
 
-![기술 내부자](./assets/images/techinsiders.png){width="50px" align="center"}
+![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 개요
 
@@ -96,5 +96,6 @@ Adobe Workfront을 사용한 [2.2 워크플로 관리](./modules/csc/module2.2/w
 
 >[!NOTE]
 >
->![기술 내부자](./assets/images/techinsiders.png){width="50px" align="center"}
+>![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
+>
 >질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.
