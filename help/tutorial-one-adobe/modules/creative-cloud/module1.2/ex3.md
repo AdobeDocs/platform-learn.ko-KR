@@ -4,9 +4,9 @@ description: Workfront Fusion을 사용한 프로세스 자동화
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ CSV 파일과 같은 입력 파일을 읽을 수 있지만, 지금은 텍스트 
 
 ![WF Fusion](./images/wffusion209.png)
 
-Azure 저장소 계정에서 파일을 쓰는 데 사용되는 파일 이름도 업데이트해야 합니다. 파일 이름이 정적인 경우 모든 새 반복이 이전 파일을 덮어쓰게 되므로 사용자 정의된 파일을 잃게 됩니다. 현재 정적 파일 이름은 **sevoi-psd-changed-text.psd**&#x200B;이며 지금 업데이트해야 합니다. 단어 `text` 뒤에 커서를 놓습니다.
+Azure 저장소 계정에서 파일을 쓰는 데 사용되는 파일 이름도 업데이트해야 합니다. 파일 이름이 정적인 경우 모든 새 반복이 이전 파일을 덮어쓰게 되므로 사용자 정의된 파일을 잃게 됩니다. 현재 정적 파일 이름은 **citisignal-fiber-changed-text.psd**&#x200B;이며 지금 업데이트해야 합니다. 단어 `text` 뒤에 커서를 놓습니다.
 
 ![WF Fusion](./images/wffusion210.png)
 
@@ -77,11 +77,11 @@ Azure 저장소 계정에서 파일을 쓰는 데 사용되는 파일 이름도 
 
 ![WF Fusion](./images/wffusion213.png)
 
-각 파일을 다운로드하여 엽니다. 그러면 버튼에 여러 가지 글자가 적혀 있는 것을 볼 수 있을 거예요 `sevoi-psd-changed-text-1.psd` 파일입니다.
+각 파일을 다운로드하여 엽니다. 그러면 버튼에 여러 가지 글자가 적혀 있는 것을 볼 수 있을 거예요 `citisignal-fiber-changed-text-1.psd` 파일입니다.
 
 ![WF Fusion](./images/wffusion214.png)
 
-`sevoi-psd-changed-text-2.psd` 파일입니다.
+`citisignal-fiber-changed-text-2.psd` 파일입니다.
 
 ![WF Fusion](./images/wffusion215.png)
 
@@ -162,9 +162,31 @@ Postman으로 이동한 다음 **보내기**&#x200B;를 다시 클릭합니다.
 
 ![WF Fusion](./images/wffusion232.png)
 
-마지막으로 Postman 요청 이름을 `POST - Send Request to Workfront Fusion Webhook`(으)로 변경합니다.
+Postman 요청 이름을 `POST - Send Request to Workfront Fusion Webhook`(으)로 변경합니다.
 
 ![WF Fusion](./images/wffusion233.png)
+
+이제 **psdTemplate** 변수를 사용해야 합니다. 이제 **Photoshop 변경 텍스트** 노드에서 입력 파일의 위치를 하드코딩하는 대신 Postman 요청에서 들어오는 변수를 사용합니다.
+
+**Photoshop 텍스트 변경** 노드를 열고 **콘텐츠 요청**(으)로 이동합니다. **입력**&#x200B;에서 하드 코딩된 파일 이름 **citisignal-fiber.psd**&#x200B;을(를) 선택하고 삭제합니다.
+
+![WF Fusion](./images/wffusion234.png)
+
+**psdTemplate** 변수를 선택하십시오. **확인**&#x200B;을 클릭한 다음 시나리오를 저장합니다.
+
+![WF Fusion](./images/wffusion235.png)
+
+시나리오를 켜려면 **켜짐**&#x200B;을 클릭하세요. 이제 시나리오가 중단되지 않고 실행됩니다.
+
+![WF Fusion](./images/wffusion236.png)
+
+Postman으로 돌아갑니다. **psdTemplate** 변수에 대한 값으로 파일 이름 `citisignal-fiber.psd`을(를) 입력하고 **보내기**&#x200B;를 다시 클릭하여 시나리오를 다시 실행하십시오.
+
+![WF Fusion](./images/wffusion237.png)
+
+이제 PSD 템플릿을 외부 시스템에서 제공하는 변수로 지정하여 재사용 가능한 시나리오를 만들었습니다.
+
+이제 이 연습을 완료했습니다.
 
 다음 단계: [요약 및 이점](./summary.md)
 
