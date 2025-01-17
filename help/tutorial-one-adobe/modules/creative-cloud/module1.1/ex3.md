@@ -4,9 +4,9 @@ description: Photoshop API 작업
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ Azure Storage Explorer를 사용하여 보면 폴더를 새로 고친 후 파일
 
 이제 이 연습을 완료했습니다.
 
-다음 단계: [요약 및 이점](./summary.md)
+다음 단계: [1.1.4 Firefly 사용자 지정 모델](./ex4.md)
 
 [모듈 1.1로 돌아가기](./firefly-services.md)
 
