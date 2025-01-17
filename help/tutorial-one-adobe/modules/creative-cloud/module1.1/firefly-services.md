@@ -4,9 +4,9 @@ description: Adobe Firefly 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '172'
 ht-degree: 2%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 2%
 이 연습에서는 Firefly 서비스 를 살펴보고 그 기능에 대해 알아봅니다.
 
 [1.1.3 Adobe Firefly 및 Adobe Photoshop](./ex3.md)
+
+이 연습에서는 Adobe Photoshop과 함께 Firefly 서비스를 사용합니다.
+
+[1.1.4 Firefly 사용자 지정 모델](./ex4.md)
 
 이 연습에서는 Adobe Photoshop과 함께 Firefly 서비스를 사용합니다.
 
