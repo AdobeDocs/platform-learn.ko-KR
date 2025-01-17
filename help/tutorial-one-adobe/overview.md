@@ -3,7 +3,7 @@ title: 개요 - 포괄적인 기술 튜토리얼 - 하나의 Adobe
 description: 포괄적인 기술 자습서 - 단일 Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -94,8 +94,8 @@ Adobe Workfront을 사용한 [2.2 워크플로 관리](./modules/csc/module2.2/w
 
 이 모듈에서는 개인화된 오퍼와 자신의 의사 결정을 구성하는 실습적인 방법으로 offer decisioning 서비스와 함께 Adobe Journey Optimizer을 사용합니다.
 
+![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.

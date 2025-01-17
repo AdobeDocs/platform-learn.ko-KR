@@ -6,7 +6,7 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: d52ec3c8-8628-4a52-9107-471342118a53
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 2%
@@ -64,9 +64,9 @@ offer decisioning을 사용하면 사용 가능한 선택 항목 세트에서 �
 
 이 단원의 요약 및 이점 개요
 
+![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.
 
