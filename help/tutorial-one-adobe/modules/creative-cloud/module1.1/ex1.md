@@ -4,9 +4,9 @@ description: Firefly 서비스 시작
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -130,13 +130,15 @@ Postman으로 돌아갑니다. **가져오기**&#x200B;를 클릭합니다.
 
 요청을 실행하기 전에 올바른 환경을 선택했는지 확인하십시오. 오른쪽 상단의 환경 드롭다운 목록을 확인하여 현재 선택한 환경을 확인할 수 있습니다.
 
+![Postman](./images/envselemea1.png)
+
 선택한 환경의 이름은 이 `--aepUserLdap-- Firefly Services OAuth Credential`과(와) 유사해야 합니다.
 
 ![Postman](./images/envselemea.png)
 
 이제 Postman 환경 및 컬렉션이 구성되고 작동합니다. 이제 Postman에서 Adobe I/O으로 인증할 수 있습니다.
 
-**Adobe IO - OAuth** 컬렉션에서 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 요청을 선택합니다. **매개 변수**&#x200B;에서 2개의 변수 `API_KEY` 및 `CLIENT_SECRET`을(를) 참조하고 있습니다. 이 변수는 선택한 환경 `--aepUserLdap-- Firefly Services OAuth Credential`에서 가져온 것입니다.
+**Adobe IO - OAuth** 컬렉션에서 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 요청을 선택합니다. **Params** 아래에서 2개의 변수 `API_KEY` 및 `CLIENT_SECRET`이(가) 참조되고 있습니다. 이 변수는 선택한 환경 `--aepUserLdap-- Firefly Services OAuth Credential`에서 가져온 것입니다.
 
 **보내기**&#x200B;를 클릭합니다.
 
