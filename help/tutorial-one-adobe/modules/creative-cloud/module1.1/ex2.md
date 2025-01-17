@@ -4,9 +4,9 @@ description: Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly �
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -108,6 +108,10 @@ Microsoft Azure 계정을 선택하고 인증 프로세스를 완료합니다.
 ![Azure 저장소](./images/az15.png)
 
 Microsoft Azure Storage Explorer 앱으로 다시 전환합니다. 구독을 선택하고 **탐색기 열기**&#x200B;를 클릭합니다.
+
+>[!NOTE]
+>
+>계정이 표시되지 않으면 전자 메일 주소 옆에 있는 **톱니바퀴** 아이콘을 클릭하고 **필터링 해제**&#x200B;를 선택하십시오.
 
 ![Azure 저장소](./images/az16.png)
 
