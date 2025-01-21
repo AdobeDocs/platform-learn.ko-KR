@@ -4,13 +4,13 @@ description: 추가 페이지 기반 규칙을 웹 SDK 확장으로 마이그레
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # 추가 페이지 규칙 마이그레이션
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 잠시 백업에서 Adobe Analytics 태그 확장(&quot;AppMeasurement&quot; 구현이라고도 하며, JavaScript 파일의 이름이므로)을 사용하여 Analytics 구현에 대해 알아보겠습니다.
 
-구현 방법을 정확히 알고 있지는 않지만, Experience Platform 태그(이전의 &quot;Launch&quot;)를 사용하는 많은 구현에서 페이지 또는 URL의 항목을 기반으로 조건부으로만 실행되는 규칙이 여러 개 있습니다. 예를 들면 다음과 같습니다.
+구현 방법을 정확히 알고 있지는 않지만, Experience Platform 태그를 사용하는 많은 구현에서 페이지 또는 URL의 내용에 따라 조건부으로만 실행되는 규칙이 여러 개 있습니다. 예를 들면 다음과 같습니다.
 
 * 검색 결과 규칙, 내부 검색이 수행되고 검색 결과 페이지가 표시되는 경우에만 실행됨
 * 캠페인 랜딩 페이지 규칙, URL에 추적 코드가 있을 때만 실행됩니다.
@@ -68,6 +68,3 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >기본 페이지 로드 규칙과 마찬가지로 마이그레이션의 유효성을 검사할 때 데이터를 비교할 수 있도록 Analytics 확장의 **변수 설정** 작업을 규칙에 남겼습니다. 나중에 다시 와서 최종 정리를 수행할 때 Analytics 확장의 작업을 제거하는 것을 잊지 마십시오.
-
-
-

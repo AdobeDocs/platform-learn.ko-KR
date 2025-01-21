@@ -1,17 +1,18 @@
 ---
-title: Adobe Analytics 태그 확장에서 웹 SDK 태그 확장으로 마이그레이션
+title: 태그를 사용하여 Adobe Analytics을 Web SDK으로 마이그레이션
 description: Web SDK으로 마이그레이션하는 동안 수행할 단계와 그 과정에서 내려져야 할 결정에 대해 알아봅니다.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
-source-git-commit: d360ed9f8c0378625c6b885d71d892362d3a6d69
+exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
 
-# Adobe Analytics 태그 확장에서 웹 SDK 태그 확장으로 마이그레이션
+# 태그를 사용하여 Adobe Analytics을 Web SDK으로 마이그레이션
 
 Experience Platform 태그(이전의 Launch)의 Analytics 확장 기능을 사용하여 Adobe Analytics 구현을 Tags의 Web SDK 확장 기능을 사용하여 웹 SDK으로 마이그레이션하는 단계에 대해 알아봅니다. Tags의 Adobe Analytics 확장을 사용하면 &quot;AppMeasurement.js&quot; 코드가 백그라운드에서 사용됩니다. 따라서 이 자습서는 AppMeasurement을 Web SDK으로 마이그레이션하는 자습서로 생각할 수 있지만, 이 자습서는 Tags에 완전히 포함되어 있으며 JavaScript 구현으로 이동하거나 JavaScript 구현에서 이동하는 것은 포함하지 않습니다(Tags UI 내에서 사용되는 코드 제외). JavaScript 구현의 마이그레이션에 대해서는 [설명서](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)를 참조하세요.
 
@@ -69,4 +70,3 @@ Analytics 구현을 마이그레이션하는 단계로 들어가기 전에 Analy
 
 
 ### DOUG를 위한 참고 사항 - 튜토리얼 테스트 후, 클라이언트가 튜토리얼 및 Web SDK으로의 마이그레이션에 대해 질문할 수 있는 커뮤니티 게시물에 링크를 추가합니다.
-

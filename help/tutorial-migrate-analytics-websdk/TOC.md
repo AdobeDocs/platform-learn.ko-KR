@@ -1,7 +1,7 @@
 ---
-user-guide-title: Adobe Analytics 태그 확장에서 웹 SDK 태그 확장으로 마이그레이션
-breadcrumb-title: Adobe Analytics 태그 확장에서 웹 SDK 태그 확장으로 마이그레이션
-user-guide-description: Adobe Analytics 태그 확장에서 웹 SDK 태그 확장으로 성공적으로 마이그레이션하는 방법에 대해 설명하는 Analytics 고객을 위한 실습 튜토리얼입니다
+user-guide-title: 태그를 사용하여 Adobe Analytics에서 Web SDK으로
+breadcrumb-title: 태그를 사용하여 Adobe Analytics에서 Web SDK으로
+user-guide-description: Adobe Experience Platform 태그를 사용하여 Adobe Analytics을 Web SDK으로 성공적으로 마이그레이션하는 방법에 대해 설명하는 Analytics 고객을 위한 실습 튜토리얼입니다
 solution: Analytics,Data Collection,Experience Platform
 feature-set: Analytics,Experience Platform
 feature: Web SDK
@@ -11,15 +11,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
 index: false
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '116'
 ht-degree: 1%
 
 ---
 
 
-# Adobe Analytics 태그 확장에서 웹 SDK 태그 확장으로 마이그레이션 {#migrate-analytics-to-websdk}
+# 태그를 사용하여 Adobe Analytics을 Web SDK으로 마이그레이션 {#migrate-analytics-to-websdk}
 
 + [마이그레이션 개요](migration-to-websdk-overview.md)
 

@@ -4,13 +4,13 @@ description: 이 연습에서는 Adobe Experience Cloud Tags의 기본 페이지
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
-
 
 # 기본 페이지 로드 규칙 마이그레이션
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 개요
 
-우리 조금만 더 힘을 내자. 하나 이상의 기본 변수를 설정한 다음 Adobe Analytics에 대한 비콘 또는 히트를 실행하는 모든 페이지에서 실행되는 태그 (이전의 &quot;Launch&quot;)에 규칙이 있을 수 있습니다. 이 규칙은 현재 Adobe Analytics 확장에서 &quot;작업&quot;을 사용하여 이러한 작업을 수행하고 있습니다. 구현을 Web SDK으로 마이그레이션할 때 Analytics 확장에 대한 참조(예: 작업)를 제거하고 웹 SDK에 속하는 작업으로 바꿀 수 있어야 합니다. 아래 단계에서는 위의 내용을 가정합니다. 즉, 변수를 설정하고 추적 비콘에서 Analytics로 전송하는 기본 페이지 로드 규칙이 있습니다.
+우리 조금만 더 힘을 내자. 태그에는 하나 이상의 기본 변수를 설정한 다음 Adobe Analytics에 대한 비콘 또는 히트를 실행하는 모든 페이지에서 실행되는 규칙이 있을 수 있습니다. 이 규칙은 현재 Adobe Analytics 확장에서 &quot;작업&quot;을 사용하여 이러한 작업을 수행하고 있습니다. 구현을 Web SDK으로 마이그레이션할 때 Analytics 확장에 대한 참조(예: 작업)를 제거하고 웹 SDK에 속하는 작업으로 바꿀 수 있어야 합니다. 아래 단계에서는 위의 내용을 가정합니다. 즉, 변수를 설정하고 추적 비콘에서 Analytics로 전송하는 기본 페이지 로드 규칙이 있습니다.
 
 ## 변수 설정 작업 마이그레이션
 
