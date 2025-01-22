@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 10982e1d5fa61d2f13ec7686f251a4c7cf6a3565
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -68,5 +68,6 @@ Analytics 구현을 마이그레이션하는 단계로 들어가기 전에 Analy
 1. 모든 변경 사항을 적용한 다음 라이브러리를 스테이징에 푸시한 다음 프로덕션에 푸시합니다.
 1. 모든 것이 완료되면 다시 테스트하십시오. 이전 Analytics 코드에 대한 참조를 제거하여 변경했으며 모든 것이 계속 제대로 작동하는지 확인해야 하므로 이 작업이 필요합니다.
 
-
-### DOUG를 위한 참고 사항 - 튜토리얼 테스트 후, 클라이언트가 튜토리얼 및 Web SDK으로의 마이그레이션에 대해 질문할 수 있는 커뮤니티 게시물에 링크를 추가합니다.
+>[!NOTE]
+>
+>Web SDK으로 Analytics를 마이그레이션하는 데 도움이 되도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}에 게시하여 알려 주십시오.
