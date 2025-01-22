@@ -4,7 +4,7 @@ description: 기초 - FAC - 스키마, 데이터 모델 및 링크 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 2%
@@ -130,6 +130,8 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 그러면 이걸 보게 될 거야. **저장**&#x200B;을 클릭합니다.
 
+### `CK_USERS` - `CK_PERSONS`
+
 이제 스키마 간의 링크 정의를 시작할 수 있습니다. 링크 정의를 시작하려면 **링크 만들기**&#x200B;를 클릭하세요.
 
 ![FAC](./images/fdb16.png)
@@ -140,6 +142,9 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
 ![FAC](./images/fdb17.png)
@@ -147,6 +152,8 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 이제 테이블 `CK_HOUSEHOLDS`과(와) `CK_PERSONS` 사이의 연결을 정의하겠습니다.
 
 ![FAC](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
@@ -156,6 +163,9 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
 ![FAC](./images/fdb22.png)
@@ -163,6 +173,8 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 이제 테이블 `CK_USERS`과(와) `CK_HOUSEHOLDS` 사이의 연결을 정의하겠습니다.
 
 ![FAC](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 

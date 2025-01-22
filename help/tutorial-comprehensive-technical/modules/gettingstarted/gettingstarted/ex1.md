@@ -4,7 +4,7 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -136,7 +136,7 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ## 튜토리얼 콘텐츠 확인
 
-테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)(으)로 이동하세요.
+테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4)(으)로 이동하세요.
 
 이제 chrome 확장에서 활성화된 환경을 기반으로 모든 **환경 변수**&#x200B;가 실제 값으로 대체되었습니다.
 
