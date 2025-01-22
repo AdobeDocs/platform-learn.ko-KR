@@ -4,9 +4,9 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ ht-degree: 0%
 
 이러한 값의 예는 아래에서 찾을 수 있습니다. 현재 이러한 값을 사용할 수 없지만 Chrome 확장을 설치하고 활성화하면 이러한 변수가 복사하여 다시 사용할 수 있는 일반 텍스트로 변경됩니다.
 
-| 이름 | 키 |
-|:-------------:| :---------------:|
-| AEP IMS 조직 ID | `--aepImsOrgId--` |
-| AEP 테넌트 ID | `--aepTenantId--` |
-| AEP 샌드박스 이름 | `--aepSandboxName--` |
-| 학습자 프로필 LDAP | `--aepUserLdap--` |
+| 이름 | 키 | 예 |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS 조직 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS 조직 이름 | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP 테넌트 ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP 샌드박스 이름 | `--aepSandboxName--` | `tech-insiders` |
+| 학습자 프로필 LDAP | `--aepUserLdap--` | `vangeluw` |
 
 예를 들어 아래 스크린샷에는 `aepTenantId`에 대한 참조가 표시됩니다.
 

@@ -3,10 +3,10 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 9%
+source-wordcount: '228'
+ht-degree: 10%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 9%
 | [0. 시작하기](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024 | 예 | - |
 | [1.1 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 설정](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 18/11/2024 | 예 | - |
 | [1.2 기초 - 데이터 수집](./modules/datacollection/module1.2/data-ingestion.md) | 18/11/2024 | 예 | - |
-| [1.3 페더레이션 대상 구성](./modules/datacollection/module1.3/fac.md) | 2025/07/01 | 예, 95% | 샘플 데이터 파일이 보류 중이며, 콘텐츠가 95% 완료되고 테스트되었습니다. |
+| [1.3 페더레이션 대상 구성](./modules/datacollection/module1.3/fac.md) | 2025/07/01 | 예 | - |
 | [2.1 Foundation - 실시간 고객 프로필](./modules/rtcdp-b2c/module2.1/real-time-customer-profile.md) | 19/11/2024 | 예 | - |
 | [2.2 지능형 서비스](./modules/rtcdp-b2c/module2.2/intelligent-services.md) | 2024/03/12 | 예 | - |
 | [2.3 Real-Time CDP - 대상자를 빌드하고 작업을 수행합니다](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) | 20/11/2024 | 예 | - |

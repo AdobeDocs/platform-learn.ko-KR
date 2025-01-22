@@ -4,9 +4,9 @@ description: Foundation - FAC - 통합 컴포지션 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 293bf825-d0d6-48cf-9cbf-69f622597678
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: d0469a38e2bef6031f796ed0946caba52c424e8c
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -140,6 +140,8 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 이제 쿼리를 Snowflake으로 푸시하고 소스 데이터를 쿼리합니다. 결과는 AEP로 다시 푸시되지만 소스 데이터는 Snowflake 상태로 유지됩니다.
 
 이제 대상이 채워지고 AEP 생태계 내에서 대상을 타깃팅할 수 있습니다.
+
+![FAC](./images/fedcomp22.png)
 
 다음 단계: [요약 및 이점](./summary.md)
 

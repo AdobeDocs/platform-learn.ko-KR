@@ -3,9 +3,10 @@ title: 시작하기 - 데이터 스트림 만들기
 description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 ![DSN](./images/launchprop.png)
 
-왼쪽 메뉴에서 **[!UICONTROL 태그]**&#x200B;를 클릭합니다. 이전 연습이 끝나면 이제 두 개의 데이터 수집 속성이 있습니다. 하나는 웹용, 다른 하나는 모바일용 입니다.
+왼쪽 메뉴에서 **[!UICONTROL 태그]**&#x200B;를 클릭합니다. 이전 연습이 끝나면 이제 3개의 데이터 수집 속성이 있습니다. 하나는 웹용, 하나는 모바일용 및 하나는 CX 앱용 입니다.
 
 ![DSN](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ ht-degree: 1%
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1.png)
 
-**[!UICONTROL Name]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - Demo System Datastream`을(를) 입력하십시오. **매핑 스키마**&#x200B;에 대해 **데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
+**[!UICONTROL Name]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - One Adobe Datastream`을(를) 입력하십시오. **매핑 스키마**&#x200B;에 대해 **데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ ht-degree: 1%
 
 왼쪽 메뉴에서 **[!UICONTROL 태그]**&#x200B;를 클릭합니다.
 
-검색 결과를 필터링하여 두 개의 데이터 수집 속성을 확인합니다. **Web**&#x200B;의 속성을 클릭하여 엽니다.
+검색 결과를 필터링하여 데이터 수집 속성을 확인합니다. **Web**&#x200B;의 속성을 클릭하여 엽니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig10a.png)
 
@@ -70,7 +71,7 @@ ht-degree: 1%
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12.png)
 
-그러면 이걸 보게 될 거야. **데이터스트림** 메뉴에서 컴퓨터를 사용하고 올바른 샌드박스를 선택했는지 확인하십시오. 이 샌드박스는 `--aepSandboxName--`이어야 합니다.
+그러면 이걸 보게 될 거야. **데이터스트림** 메뉴를 보고 올바른 샌드박스가 선택되어 있는지 확인하십시오. 이 샌드박스는 `--aepSandboxName--`이어야 합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12a.png)
 
@@ -114,7 +115,7 @@ ht-degree: 1%
 
 ![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1.png)
 
-**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - Demo System Datastream (Mobile)`을(를) 입력하십시오. **매핑 스키마**&#x200B;에 대해 **데모 시스템 - 모바일 앱용 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
+**[!UICONTROL 친숙한 이름]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - One Adobe Datastream (Mobile)`을(를) 입력하십시오. **매핑 스키마**&#x200B;에 대해 **데모 시스템 - 모바일 앱용 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
 
 **[!UICONTROL 저장]**&#x200B;을 클릭합니다.
 

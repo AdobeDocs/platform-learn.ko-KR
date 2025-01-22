@@ -3,9 +3,10 @@ title: 시작하기 - 웹 사이트 사용
 description: 시작하기 - 웹 사이트 사용
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ ht-degree: 0%
 
 ![DSN](./images/web2.png)
 
-이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`)에서 **선택**&#x200B;을 클릭합니다.
+이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`)에서 **선택**&#x200B;을 클릭합니다. **저장**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web2a.png)
 

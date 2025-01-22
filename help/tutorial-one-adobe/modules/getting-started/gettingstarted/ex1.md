@@ -3,9 +3,10 @@ title: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,15 @@ ht-degree: 0%
 
 이러한 값의 예는 아래에서 찾을 수 있습니다. 현재 이러한 값을 사용할 수 없지만 Chrome 확장을 설치하고 활성화하면 이러한 변수가 복사하여 다시 사용할 수 있는 일반 텍스트로 변경됩니다.
 
-| 이름 | 키 |
-|:-------------:| :---------------:|
-| AEP IMS 조직 ID | `--aepImsOrgId--` |
-| AEP 테넌트 ID | `--aepTenantId--` |
-| AEP 샌드박스 이름 | `--aepSandboxName--` |
-| 학습자 프로필 LDAP | `--aepUserLdap--` |
+| 이름 | 키 | 예 |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS 조직 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS 조직 이름 | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP 테넌트 ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP 샌드박스 이름 | `--aepSandboxName--` | `one-adobe` |
+| 학습자 프로필 LDAP | `--aepUserLdap--` | `vangeluw` |
 
-예를 들어 아래 스크린샷에는 `aepTenantId`에 대한 참조가 표시됩니다.
+예를 들어 아래 스크린샷에는 `aepSandboxName`에 대한 참조가 표시됩니다.
 
 ![DSN](./images/mod7before.png)
 
@@ -108,7 +110,7 @@ URL에서 샌드박스 이름을 가져오기 전에 이 자습서에 사용해�
 
 ![DSN](./images/aepsandboxsw.png)
 
-이 예에서 AEP 샌드박스 이름은 **tech-insiders**&#x200B;입니다.
+이 예에서 AEP 샌드박스 이름은 **one-adobe**&#x200B;입니다.
 
 ![DSN](./images/aepsname.png)
 
@@ -118,11 +120,10 @@ URL에서 샌드박스 이름을 가져오기 전에 이 자습서에 사용해�
 
 LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사용되며 사용 중인 인스턴스와 샌드박스를 사용하고 있는 다른 사용자와 충돌하지 않습니다.
 
-당신의 값은 이것과 비슷하게 보일 것입니다.
+값은 다음과 유사해야 합니다.
 마지막으로 **새로 만들기**&#x200B;를 클릭합니다.
 
 ![DSN](./images/c8a.png)
-
 
 이제 확장 프로그램의 왼쪽 메뉴에 환경의 이니셜과 함께 새 아이콘이 표시됩니다. 클릭합니다. 그러면 **환경 변수**&#x200B;와(과) 특정 Adobe Experience Platform 인스턴스 값 간의 매핑이 표시됩니다. **구성 활성화**&#x200B;를 클릭합니다.
 
@@ -134,11 +135,11 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ## 튜토리얼 콘텐츠 확인
 
-테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)(으)로 이동하세요.
+테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2)(으)로 이동하세요.
 
-이제 chrome 확장에서 활성화된 환경을 기반으로 모든 **환경 변수**&#x200B;가 실제 값으로 대체되었습니다.
+이제 이 페이지의 모든 **환경 변수**&#x200B;가 chrome 확장에서 활성화된 환경을 기반으로 실제 값으로 대체되었습니다.
 
-이제 환경 변수 `aepTenantId`이(가) 실제 AEP 테넌트 ID로 바뀐 아래와 유사한 보기가 있어야 합니다. 이 경우에는 **_experienceplatform**&#x200B;입니다.
+이제 아래와 유사한 보기가 제공됩니다. 환경 변수 `aepSandboxName`이(가) 실제 AEP 샌드박스 이름으로 대체되었습니다. 이 경우에는 **one-adobe**&#x200B;입니다.
 
 ![DSN](./images/mod7.png)
 

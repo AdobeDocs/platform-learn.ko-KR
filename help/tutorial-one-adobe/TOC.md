@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '311'
 ht-degree: 4%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 4%
       + [1.1.1 Firefly 서비스 시작하기](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3 Adobe Firefly 및 Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
-      + [1.1.4 Firefly 사용자 지정 모델](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
+      + [1.1.3 Firefly 사용자 지정 모델 API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Creative Workflow Automation with Workfront Fusion {#module21}
       + [개요](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)

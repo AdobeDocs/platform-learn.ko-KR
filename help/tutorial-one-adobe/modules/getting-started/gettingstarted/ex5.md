@@ -3,7 +3,8 @@ title: 시작하기 - 모바일 앱 사용
 description: 시작하기 - 모바일 앱 사용
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -60,7 +61,7 @@ ht-degree: 0%
 
 ![DSN](./images/web8aa.png)
 
-이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`)에서 **선택**&#x200B;을 클릭합니다. 그런 다음 **저장**&#x200B;을 클릭합니다.
+이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap - One Adobe (DD/MM/YYYY) (mobile)`)에서 **선택**&#x200B;을 클릭합니다. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web8b.png)
 

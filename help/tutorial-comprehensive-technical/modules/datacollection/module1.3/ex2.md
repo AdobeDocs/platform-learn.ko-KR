@@ -4,9 +4,9 @@ description: 기초 - FAC - 스키마, 데이터 모델 및 링크 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb20.png)
 
-이제 테이블 `CK_MONTHLY_DATA_USAGE`과(와) `CK_USERS` 사이의 연결을 정의하겠습니다.
+이제 테이블 `CK_USERS`과(와) `CK_MONTHLY_DATA_USAGE` 사이의 연결을 정의하겠습니다.
 
 ![FAC](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb23.png)
 
-그럼 다시 여기로 오십시오. **저장**을 클릭합니다.
+그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
+
 ![FAC](./images/fdb24.png)
+
+이제 테이블 `CK_USERS`과(와) `CK_MOBILE_DATA_USAGE` 사이의 연결을 정의하겠습니다.
+
+![FAC](./images/fdb25.png)
+
+그럼 이걸 보셔야죠 **저장**&#x200B;을 클릭합니다.
+
+![FAC](./images/fdb26.png)
 
 이제 AEP에서의 설정이 완료되었습니다. 이제 연합 대상 구성에서 연합 데이터를 사용할 수 있습니다.
 
