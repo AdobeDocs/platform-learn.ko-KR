@@ -5,7 +5,7 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 10982e1d5fa61d2f13ec7686f251a4c7cf6a3565
+source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -71,3 +71,4 @@ Analytics 구현을 마이그레이션하는 단계로 들어가기 전에 Analy
 >[!NOTE]
 >
 >Web SDK으로 Analytics를 마이그레이션하는 데 도움이 되도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}에 게시하여 알려 주십시오.
+
