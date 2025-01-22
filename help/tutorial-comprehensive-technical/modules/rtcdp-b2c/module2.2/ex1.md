@@ -4,9 +4,9 @@ description: 고객 AI - 데이터 준비(수집)
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 집합](./images/createdatasetfromschema.png)
 
-다음 화면에서는 이전 연습에서 만든 데이터 세트(**[!UICONTROL ldap - 데모 시스템 - 고객 경험 이벤트]**)를 선택합니다. **다음**&#x200B;을 클릭합니다.
+다음 화면에서는 이전 연습에서 만든 데이터 세트(`--aepUserLdap-- - Demo System - Customer Experience Event`)를 선택합니다. **다음**&#x200B;을 클릭합니다.
 
 ![데이터 집합](./images/createds1.png)
 

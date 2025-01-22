@@ -4,7 +4,7 @@ description: Customer AI - 새 인스턴스 만들기(구성)
 kt: 5342
 doc-type: tutorial
 exl-id: 067f3fa2-5c1e-4861-b26a-4315cad73a85
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Adobe Experience Platform의 왼쪽 메뉴에서 **서비스**&#x200B;를 클릭
 
 ![페이지 설정](./images/setuppage1.png)
 
-그러면 이걸 보게 될 거야. 이름이 `--demoProfileLdap - Demo System - Customer Experience Event Dataset`인 이전 연습에서 만든 데이터 집합을 선택하십시오. **추가를 클릭합니다**.
+그러면 이걸 보게 될 거야. 이름이 `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`인 이전 연습에서 만든 데이터 집합을 선택하십시오. **추가를 클릭합니다**.
 
 ![페이지 설정](./images/custai2.png)
 

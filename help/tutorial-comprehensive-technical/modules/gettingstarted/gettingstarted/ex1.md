@@ -4,9 +4,9 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ IMS 조직 ID는 Adobe Experience Cloud 인스턴스의 고유 식별자이며, 
 
 IMS 조직 ID를 찾는 작업은 여러 가지 방법으로 수행할 수 있습니다. 잘 모르겠으면 인스턴스의 시스템 관리자 중 한 명에게 문의하여 ID를 찾습니다.
 
-[Admin Console](https://https://adminconsole.adobe.com/)(으)로 이동하여 URL의 일부로 찾을 수 있습니다.
+[Admin Console](https://adminconsole.adobe.com/)(으)로 이동하여 URL의 일부로 찾을 수 있습니다.
 
 ![DSN](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ AEP 메뉴의 **데이터 관리 > 쿼리**&#x200B;로 이동하여 **사용자 
 
 ![DSN](./images/aeptenantid.png)
 
-Chrome 확장에 입력하는 경우 밑줄이 접두사로 추가되었는지 확인해야 하므로 이 예에서 **experienceplatform**&#x200B;은(는) **_experienceplatform**&#x200B;이 됩니다.
+Chrome 확장에 입력하는 경우 밑줄이 접두사로 추가되었는지 확인해야 하므로 이 예에서 **experienceplatform**&#x200B;은(는) **_experienceplatform**&#x200B;이 됩니다. 또한 URL에서 복사할 때 **@** 기호를 제거해야 합니다.
 
 **AEP 샌드박스 이름**
 

@@ -4,9 +4,9 @@ description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![DSN](./images/launchprop.png)
 
-왼쪽 메뉴에서 **[!UICONTROL 태그]**&#x200B;를 클릭합니다. 이전 연습이 끝나면 이제 두 개의 데이터 수집 속성이 있습니다. 하나는 웹용, 다른 하나는 모바일용 입니다.
+왼쪽 메뉴에서 **[!UICONTROL 태그]**&#x200B;를 클릭합니다. 이전 연습이 끝나면 이제 3개의 데이터 수집 속성이 있습니다. 하나는 웹용, 하나는 모바일용 및 하나는 CX 앱용 입니다.
 
 ![DSN](./images/launchprop1.png)
 
@@ -57,11 +57,11 @@ ht-degree: 1%
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig5.png)
 
-이제 다 됐습니다. [모듈 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)에서 Web SDK와 모든 기능을 구성하는 방법에 대해 자세히 알아봅니다.
+이제 다 됐습니다. [모듈 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)에서 웹 SDK에 대해 자세히 알아보고 모든 기능을 구성하는 방법에 대해 알아봅니다.
 
 왼쪽 메뉴에서 **[!UICONTROL 태그]**&#x200B;를 클릭합니다.
 
-검색 결과를 필터링하여 두 개의 데이터 수집 속성을 확인합니다. **Web**&#x200B;의 속성을 클릭하여 엽니다.
+검색 결과를 필터링하여 데이터 수집 속성을 확인합니다. **Web**&#x200B;의 속성을 클릭하여 엽니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig10a.png)
 
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig11.png)
 
-먼저 Adobe Experience Platform 웹 SDK 확장을 클릭한 다음 **구성**&#x200B;을 클릭합니다.
+먼저 Adobe Experience Platform Web SDK 확장을 클릭한 다음 **구성**&#x200B;을 클릭합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12.png)
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 이제 모바일용 Adobe Experience Platform 데이터 수집 클라이언트 속성에서 데이터 스트림을 사용할 준비가 되었습니다.
 
-**태그**(으)로 이동하여 검색 결과를 필터링하여 두 개의 데이터 수집 속성을 확인하세요. **Mobile**&#x200B;의 속성을 클릭하여 엽니다.
+**태그**(으)로 이동하여 검색 결과를 필터링하여 데이터 수집 속성을 확인하세요. **Mobile**&#x200B;의 속성을 클릭하여 엽니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig10am.png)
 
