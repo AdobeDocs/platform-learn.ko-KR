@@ -4,9 +4,9 @@ description: 시작 - 요약
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,8 @@ ht-degree: 2%
 [모바일 앱 사용](./ex5.md)
 
 이 연습에서는 데모 및 활성화에 사용할 수 있도록 모바일 애플리케이션을 설정합니다.
+
+![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

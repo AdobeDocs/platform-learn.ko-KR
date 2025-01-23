@@ -4,9 +4,9 @@ description: 인텔리전트 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 3%
 [2.2.3 Customer AI - 채점 대시보드 및 세그멘테이션(예측 및 작업 수행)](./ex3.md)
 
 모델이 교육 및 채점을 완료한 후 점수가 다시 플랫폼에 기록됩니다. 세그먼트 정의, 사용자 지정 대시보드 작성 등과 같이 예측에 사용할 작업을 결정할 수 있습니다.
+
+![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

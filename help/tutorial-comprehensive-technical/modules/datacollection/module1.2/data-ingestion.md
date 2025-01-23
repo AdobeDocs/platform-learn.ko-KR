@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집
 kt: 5342
 doc-type: tutorial
 exl-id: 976d801a-3dcb-4cd9-8b9f-b1c964fe7c25
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -59,6 +59,8 @@ Azure Blob 저장소를 사용하여 데이터 랜딩 영역 Source 커넥터를
 [요약 및 이점](./summary.md)
 
 이 단원의 요약 및 이점 개요
+
+![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

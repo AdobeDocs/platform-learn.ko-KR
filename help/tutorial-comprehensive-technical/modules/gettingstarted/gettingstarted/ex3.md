@@ -4,7 +4,7 @@ description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 1%
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12.png)
 
-그러면 이걸 보게 될 거야. **데이터스트림** 메뉴에서 컴퓨터를 사용하고 올바른 샌드박스를 선택했는지 확인하십시오. 이 샌드박스는 `--aepSandboxName--`이어야 합니다.
+그러면 이걸 보게 될 거야. **데이터스트림** 메뉴를 보고 올바른 샌드박스가 선택되어 있는지 확인하십시오. 이 샌드박스는 `--aepSandboxName--`이어야 합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12a.png)
 

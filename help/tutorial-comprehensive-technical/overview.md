@@ -3,14 +3,16 @@ title: 개요
 description: 데이터 엔지니어, 데이터 분석가, 데이터 설계자, 데이터 과학자, 오케스트레이션 엔지니어 및 마케터가 Adobe Experience Platform 및 모든 애플리케이션 서비스의 비즈니스 가치를 완전히 이해할 수 있는 시작점입니다.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Adobe Experience Platform을 위한 포괄적인 기술 튜토리얼
+
+![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 개요
 
@@ -182,3 +184,9 @@ ht-degree: 2%
 이 모듈에서는 Adobe Experience Platform 쿼리 서비스를 사용하는 방법을 알아봅니다.
 
 **시간 투자:** 90분
+
+![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.

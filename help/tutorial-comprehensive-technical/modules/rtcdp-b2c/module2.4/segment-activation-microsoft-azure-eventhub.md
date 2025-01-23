@@ -4,9 +4,9 @@ description: Microsoft Azure Event Hub Audience Activation
 kt: 5342
 doc-type: tutorial
 exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -71,6 +71,8 @@ Microsoft Azure Event Hubs는 단순하고 신뢰할 수 있으며 확장 가능
 [요약 및 이점](./summary.md)
 
 이 단원의 요약 및 이점 개요
+
+![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

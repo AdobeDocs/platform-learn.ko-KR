@@ -4,9 +4,9 @@ description: 데이터 수집 - 페더레이션 대상 구성
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ Federated Audience Composition은 Real-Time CDP 및 Journey Optimizer 고객에�
 [요약 및 이점](./summary.md)
 
 이 단원의 요약 및 이점 개요
+
+![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

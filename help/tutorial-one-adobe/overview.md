@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - 하나의 Adobe
 description: 포괄적인 기술 자습서 - 단일 Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '481'
 ht-degree: 4%
 
 ---
@@ -49,6 +49,10 @@ ht-degree: 4%
 - Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
 - Adobe Experience Platform 데이터 수집: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - 데모 시스템 액세스: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+
+## 선행 작업
+
+[여기](./prework.md){target="_blank"}에서 컴퓨터에 설치해야 하는 필수 응용 프로그램을 확인하십시오.
 
 ## 콘텐츠
 

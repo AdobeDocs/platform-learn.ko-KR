@@ -4,9 +4,9 @@ description: 이 모듈에서는 이전에 구성한 데이터 세트, 스키마
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,13 @@ ht-degree: 0%
 
 [2.5.5 AWS Kinesis 및 AWS S3에 이벤트 전달](./ex5.md)
 
-이 연습에서는 AWS IAM, AWS Kinesis, AWS Firehose 및 AWS S3를 사용하여 AWS 환경을 구성한 후 웹 SDK에서 수집한 이벤트 데이터를 전달하기 시작합니다.
+이 연습에서는 AWS IAM, AWS Kinesis, AWS Firehose 및 AWS S3를 사용하여 AWS 환경을 구성한 후 웹 SDK에서 수집하는 이벤트 데이터를 전달하기 시작합니다.
 
 [요약 및 이점](./summary.md)
 
 이 단원의 요약 및 이점 개요
+
+![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

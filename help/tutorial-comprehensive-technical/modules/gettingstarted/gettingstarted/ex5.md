@@ -4,9 +4,9 @@ description: 시작하기 - 모바일 앱 사용
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,12 @@ ht-degree: 0%
 
 ![DSN](./images/mobileapp.png)
 
-스마트폰의 **카메라** 앱을 사용하여 장치의 OS용 모바일 앱을 설치하십시오. 이 기능을 사용하려면 Adobe Experience Platform Mobile SDK를 사용하는 **버전 2.x**&#x200B;을 설치해야 합니다.
+스마트폰의 **카메라** 앱을 사용하여 장치의 OS용 모바일 앱을 설치하십시오. 이 기능을 사용하려면 Adobe Experience Platform Mobile SDK을 사용하는 **버전 2.x**&#x200B;을 설치해야 합니다.
 
 >[!NOTE]
 >
->iOS 장치에 앱을 처음 설치한 후 앱을 열려고 하면 다음과 같은 오류 메시지가 표시될 수 있습니다. **신뢰할 수 없는 Enterprise 개발자**. 이 문제를 해결하려면 **설정 > 일반 > VPN 및 장치 관리 > Adobe Systems Inc.**(으)로 이동하여 **Adobe Systems Inc.**&#x200B;을(를) 클릭해야 합니다.
+>iOS 장치에 앱을 처음 설치한 후 앱을 열려고 하면 다음과 같은 오류 메시지가 표시될 수 있습니다. **신뢰할 수 없는 Enterprise 개발자**. 이 문제를 해결하려면 **설정 > 일반 > VPN 및 장치 관리 > Adobe Systems Inc.**(으)로 이동하여 **Adobe Systems Inc.**을(를) 클릭해야 합니다.
+>개발자를 신뢰하는 프로세스를 완료하려면 iOS 장치를 다시 시작해야 할 수 있습니다.
 
 앱이 설치되면 디바이스의 홈 화면에서 찾을 수 있습니다. 아이콘을 클릭하여 앱을 엽니다.
 
