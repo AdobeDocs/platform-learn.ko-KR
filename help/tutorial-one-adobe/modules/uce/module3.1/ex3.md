@@ -3,9 +3,10 @@ title: 데이터 수집 - FAC - 통합 구성 만들기
 description: Foundation - FAC - 통합 컴포지션 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: dc044a26-f16a-491e-a795-4cd16f211256
+source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -139,6 +140,8 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 이제 쿼리를 Snowflake으로 푸시하고 소스 데이터를 쿼리합니다. 결과는 AEP로 다시 푸시되지만 소스 데이터는 Snowflake 상태로 유지됩니다.
 
 이제 대상이 채워지고 AEP 생태계 내에서 대상을 타깃팅할 수 있습니다.
+
+![FAC](./images/fedcomp22.png)
 
 다음 단계: [요약 및 이점](./summary.md)
 

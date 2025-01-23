@@ -3,16 +3,17 @@ title: 데이터 수집 - FAC - 스키마, 데이터 모델 및 링크 만들기
 description: 기초 - FAC - 스키마, 데이터 모델 및 링크 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
 
 # 3.1.2 스키마, 데이터 모델 및 링크 만들기
 
-이제 AEP에서 통합 데이터베이스를 구성할 수 있습니다.
+이제 Adobe Experience Platform에서 통합 데이터베이스를 구성할 수 있습니다.
 
 URL [https://experience.adobe.com/platform](https://experience.adobe.com/platform)로 이동하여 Adobe Experience Platform에 로그인합니다.
 
@@ -129,6 +130,8 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 그러면 이걸 보게 될 거야. **저장**&#x200B;을 클릭합니다.
 
+### `CK_USERS` - `CK_PERSONS`
+
 이제 스키마 간의 링크 정의를 시작할 수 있습니다. 링크 정의를 시작하려면 **링크 만들기**&#x200B;를 클릭하세요.
 
 ![FAC](./images/fdb16.png)
@@ -139,6 +142,9 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
 ![FAC](./images/fdb17.png)
@@ -147,13 +153,18 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb19.png)
 
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
 ![FAC](./images/fdb20.png)
 
-이제 테이블 `CK_MONTHLY_DATA_USAGE`과(와) `CK_USERS` 사이의 연결을 정의하겠습니다.
+이제 테이블 `CK_USERS`과(와) `CK_MONTHLY_DATA_USAGE` 사이의 연결을 정의하겠습니다.
 
 ![FAC](./images/fdb21.png)
+
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
@@ -163,8 +174,19 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb23.png)
 
-그럼 다시 여기로 오십시오. **저장**을 클릭합니다.
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+
+그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
+
 ![FAC](./images/fdb24.png)
+
+이제 테이블 `CK_USERS`과(와) `CK_MOBILE_DATA_USAGE` 사이의 연결을 정의하겠습니다.
+
+![FAC](./images/fdb25.png)
+
+그럼 이걸 보셔야죠 **저장**&#x200B;을 클릭합니다.
+
+![FAC](./images/fdb26.png)
 
 이제 AEP에서의 설정이 완료되었습니다. 이제 연합 대상 구성에서 연합 데이터를 사용할 수 있습니다.
 

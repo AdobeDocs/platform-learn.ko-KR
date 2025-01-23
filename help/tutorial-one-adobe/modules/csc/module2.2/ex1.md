@@ -4,9 +4,9 @@ description: Workfront 시작하기
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: ec79d3fcfe971faee584a221eb55ddcb015a1e50
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -54,9 +54,93 @@ ht-degree: 1%
 
 ![WF](./images/wfb6.png)
 
-이제 Workfront과 AEM Assets CS 간의 통합이 구성되었습니다.
+이제 Workfront에서 AEM Assets CS로의 통합이 구성되었습니다.
 
 ![WF](./images/wfb7.png)
+
+## 2.2.1.2 AEM Assets과 메타데이터 통합 구성
+
+다음으로, AEM Assets에 있는 에셋의 메타데이터 필드를 AEM과 공유하도록 Workfront을 구성해야 합니다.
+
+이렇게 하려면 [https://experience.adobe.com/](https://experience.adobe.com/)(으)로 이동하십시오. **Experience Manager Assets**&#x200B;을(를) 클릭합니다.
+
+![WF](./images/wfbaem1.png)
+
+`--aepUserLdap-- - Citi Signal dev`(이)라는 이름을 지정해야 하는 AEM Assets 환경을 선택하려면 클릭하십시오.
+
+![WF](./images/wfbaem2.png)
+
+그럼 이걸 보셔야죠 왼쪽 메뉴에서 **Assets**(으)로 이동하여 **폴더 만들기**&#x200B;를 클릭합니다.
+
+![WF](./images/wfbaem3.png)
+
+폴더 이름을 `--aepUserLdap-- - Workfront Assets`로 지정하고 **만들기**&#x200B;를 클릭합니다.
+
+![WF](./images/wfbaem4.png)
+
+그런 다음 왼쪽 메뉴에서 **메타데이터 Forms**(으)로 이동한 다음 **만들기**&#x200B;를 클릭합니다.
+
+![WF](./images/wfbaem5.png)
+
+이름 `--aepUserLdap-- - Metadata Form`을(를) 사용하고 **만들기**&#x200B;를 클릭합니다.
+
+![WF](./images/wfbaem6.png)
+
+3개의 새 **한 줄 텍스트** 필드를 양식에 추가하고 첫 번째 필드를 선택합니다. 그런 다음 **메타데이터 속성** 필드 옆에 있는 **스키마** 아이콘을 클릭합니다.
+
+![WF](./images/wfbaem7.png)
+
+검색 필드에 `wm:project`을(를) 입력한 다음 **프로젝트 설명** 필드를 선택합니다. **선택**&#x200B;을 클릭합니다.
+
+![WF](./images/wfbaem8.png)
+
+필드의 레이블을 **프로젝트 설명**(으)로 변경합니다.
+
+![WF](./images/wfbaem9.png)
+
+그런 다음 두 번째 **한 줄 텍스트** 필드를 선택하고 **메타데이터 속성** 필드 옆에 있는 **스키마** 아이콘을 다시 클릭합니다.
+
+![WF](./images/wfbaem10b.png)
+
+그러면 이 팝업이 다시 표시됩니다. 검색 필드에 `wm:project`을(를) 입력한 다음 **프로젝트 ID** 필드를 선택합니다. **선택**&#x200B;을 클릭합니다.
+
+![WF](./images/wfbaem10.png)
+
+필드의 레이블을 **프로젝트 ID**(으)로 변경합니다.
+
+![WF](./images/wfbaem10a.png)
+
+세 번째 **한 줄 텍스트** 필드를 선택하고 **메타데이터 속성** 필드 옆에 있는 **스키마** 아이콘을 다시 클릭합니다.
+
+![WF](./images/wfbaem11a.png)
+
+그러면 이 팝업이 다시 표시됩니다. 검색 필드에 `wm:project`을(를) 입력한 다음 **프로젝트 이름** 필드를 선택합니다. **선택**&#x200B;을 클릭합니다.
+
+![WF](./images/wfbaem11.png)
+
+필드의 레이블을 **프로젝트 이름**(으)로 변경합니다. **저장**&#x200B;을 클릭합니다.
+
+![WF](./images/wfbaem12.png)
+
+양식의 **Tab 이름**&#x200B;을(를) `--aepUserLdap-- - Workfront Metadata`(으)로 변경합니다. **저장** 및 **닫기**&#x200B;를 클릭합니다.
+
+![WF](./images/wfbaem13.png)
+
+**메타데이터 양식**&#x200B;이(가) 구성되었습니다.
+
+![WF](./images/wfbaem14.png)
+
+그런 다음 이전에 만든 폴더에 메타데이터 양식을 할당해야 합니다. 메타데이터 양식에 대한 확인란을 선택하고 **폴더에 할당**&#x200B;을 클릭합니다.
+
+![WF](./images/wfbaem15.png)
+
+폴더 이름을 `--aepUserLdap-- - Workfront Assets`(으)로 지정합니다. **할당**&#x200B;을 클릭합니다.
+
+![WF](./images/wfbaem16.png)
+
+이제 메타데이터 양식이 폴더에 할당되었습니다.
+
+![WF](./images/wfbaem17.png)
 
 ## 2.2.1.2 AEM Sites 통합 구성
 
@@ -155,6 +239,8 @@ Workfront UI로 돌아가서 9개 점 **햄버거** 아이콘을 클릭합니다
 그러면 2개의 사용자 정의 양식을 사용할 수 있습니다.
 
 ![WF](./images/wfb20.png)
+
+다음 단계: [2.2.2 Workfront 증명](./ex2.md){target="_blank"}
 
 [모듈 2.2로 돌아가기](./workfront.md){target="_blank"}
 
