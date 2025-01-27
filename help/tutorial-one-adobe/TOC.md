@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 55a7e6fccb0c2a91f12a3a65226097ca701e655f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 
 + [튜토리얼 개요](/help/tutorial-one-adobe/overview.md)
 + [컨텐츠 상태](/help/tutorial-one-adobe/status.md)
-+ [선행 작업](/help/tutorial-one-adobe/prework.md)
 
 + 시작하기 {#gettingstarted}
    + 시작하기 {#gettingstarted}
@@ -26,6 +25,8 @@ ht-degree: 4%
       + [데이터 스트림 만들기](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [웹 사이트 사용](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [모바일 앱 사용](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+   + [선행 작업](/help/tutorial-one-adobe/prework.md)
+   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1 Adobe Firefly 서비스 {#module11}

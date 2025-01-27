@@ -4,9 +4,9 @@ description: 사용자 지정 블록 개발
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,21 @@ Github Desktop이 설치되면 이전 연습에서 만든 GitHub 저장소로 �
 
 ![차단](./images/block3.png)
 
-로컬
+이제 로컬 폴더가 만들어집니다.
+
+![차단](./images/block4.png)
+
+Visual Studio 코드를 엽니다. **파일** > **폴더 열기**(으)로 이동합니다.
+
+![차단](./images/block5.png)
+
+
+
+![차단](./images/block6.png)
+
+
+
+![차단](./images/block7.png)
 
 
 [모듈 2.1로 돌아가기](./aemcs.md){target="_blank"}
