@@ -4,9 +4,9 @@ description: Adobe Experience Manager Cloud Service 및 Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -35,9 +35,13 @@ ht-degree: 2%
 
 이 연습에서는 AEM CS 환경을 설정하고 CitiSignal 웹 사이트에 액세스합니다.
 
-[2.1.4 사용자 지정 블록 개발](./ex4.md){target="_blank"}
+[2.1.4 기본 사용자 지정 블록](./ex4.md){target="_blank"}
 
-이 연습에서는 웹 사이트에 대한 사용자 지정 블록 구성 요소를 개발합니다.
+이 연습에서는 웹 사이트에 대한 기본 사용자 지정 블록을 개발합니다.
+
+[2.1.5 고급 사용자 지정 블록](./ex5.md){target="_blank"}
+
+이 연습에서는 웹 사이트에 대한 고급 사용자 지정 블록을 개발합니다.
 
 [요약 및 이점](./summary.md){target="_blank"}
 
