@@ -1,28 +1,24 @@
 ---
-title: Firefly 서비스 - 요약
-description: Firefly 서비스 - 요약
-kt: 5342
-doc-type: tutorial
+title: Firefly 서비스의 요약 및 이점
+description: Firefly 서비스는 워크플로를 자동화하는 포괄적인 생성 AI 및 크리에이티브 API 세트입니다
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 8bcc022d-3f2d-4a3a-9ca4-f17395293276
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
 workflow-type: tm+mt
-source-wordcount: '43'
+source-wordcount: '83'
 ht-degree: 2%
 
 ---
 
-# 요약 및 이점
+# Firefly 서비스의 요약 및 이점
 
-Adobe 애플리케이션에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다!
+Firefly 서비스는 워크플로를 자동화하는 포괄적인 생성 AI 및 크리에이티브 API 세트입니다. 이러한 기능을 모든 프로덕션 또는 경험 워크플로에 포함시킴으로써, 조직은 콘텐츠 생성, 편집 및 조립을 확장하고, 품질과 제어를 유지하면서 콘텐츠 제작을 자동화할 수 있습니다.
 
-## 이점
+## 다음 단계
 
-Firefly 서비스 사용의 이점을 강조하겠습니다.
+[Adobe Firefly 서비스](./firefly-services.md){target="_blank"}(으)로 돌아가기
 
-
-## 이 항목 확인
-
-
-[모듈 1로 돌아가기](./firefly-services.md){target="_blank"}
-
-[모든 모듈로 돌아가기](../../../overview.md){target="_blank"}
+[모든 모듈](../../../overview.md){target="_blank"}(으)로 돌아가기
