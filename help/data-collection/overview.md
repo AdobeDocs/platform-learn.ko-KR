@@ -3,10 +3,10 @@ title: 데이터 수집 튜토리얼
 description: 데이터 수집의 강력한 사용자에게 유용한 방법 비디오 및 튜토리얼
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 30%
+source-wordcount: '234'
+ht-degree: 25%
 
 ---
 
@@ -23,7 +23,50 @@ ht-degree: 30%
 
 <div id="staff-picks-section">
 
-## 직원 추천
+## 마이그레이션 안내서
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Adobe Target을 Web SDK으로 마이그레이션</strong>
+    </a>
+    </div>
+    <p>
+    <em>at.js를 웹 SDK으로 바꾸기</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <img alt="Web SDK를 사용하여 Adobe Experience Cloud 구현" src="assets/thumb_analyticsWebSdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <strong>태그의 Adobe Analytics을 Web SDK으로 마이그레이션</strong>
+    </a>
+    </div>
+    <p>
+    <em>태그를 사용하여 Web SDK으로 AppMeasurement.js 바꾸기</em>
+    <p>
+  </td>
+  <td>
+      <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_aamWebSdk.png" />
+    </a>
+    <div>
+      <strong>Web SDK으로 Adobe Audience Manager 마이그레이션</strong>
+    </div>
+    <p>
+    <em><a href="https://experienceleague.adobe.com/ko/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js 바꾸기</a> 또는 <a href="https://experienceleague.adobe.com/ko/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">서버측 전달 업데이트</a></em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## 구현 안내서
 
 <table>
 <tr>
@@ -33,11 +76,11 @@ ht-degree: 30%
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR" target="_blank">
-    <strong>Web SDK로 Experience Cloud 구현</strong>
+    <strong>Web SDK으로 Experience Cloud 구현</strong>
     </a>
     </div>
     <p>
-    <em>태그를 사용하여 Platform Web SDK를 구현합니다</em>
+    <em>태그를 사용하여 Platform Web SDK 구현</em>
     <p>
   </td>
   <td>
@@ -50,20 +93,20 @@ ht-degree: 30%
     </a>
     </div>
     <p>
-    <em>태그를 사용하여 Platform Mobile SDK를 구현합니다</em>
+    <em>태그를 사용하여 Platform Mobile SDK 구현</em>
     <p>
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-      <img alt="Target을 웹 SDK로 마이그레이션" src="assets/thumb_targetWebSdk.jpg" />
+      <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_legacy.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong>Web SDK로 Adobe Target 마이그레이션</strong>
+    <strong>태그를 사용하여 레거시 라이브러리 구현</strong>
     </a>
     </div>
     <p>
-    <em>at.js에서 Web SDK로 마이그레이션</em>
+    <em>태그를 사용하여 기존 Analytics, Target 및 Audience Manager 라이브러리를 구현합니다</em>
     <p>
   </td>
 </tr>

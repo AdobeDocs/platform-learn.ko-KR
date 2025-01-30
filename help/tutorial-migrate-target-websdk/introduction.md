@@ -1,20 +1,34 @@
 ---
-title: Target을 at.js 2.x에서 Web SDK로 마이그레이션
-description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK로 마이그레이션하는 방법에 대해 알아봅니다. 주제에는 JavaScript 라이브러리 로드, 매개 변수 전송, 렌더링 활동 및 기타 주목할 만한 콜아웃이 포함됩니다.
+title: Target을 at.js 2.x에서 Web SDK으로 마이그레이션
+description: Adobe Target 구현을 at.js 2.x에서 Adobe Experience Platform Web SDK으로 마이그레이션하는 방법에 대해 알아봅니다. 주제에는 JavaScript 라이브러리 로드, 매개 변수 전송, 렌더링 활동 및 기타 주목할 만한 콜아웃이 포함됩니다.
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '611'
 ht-degree: 4%
 
 ---
 
-# Target을 at.js 2.x에서 Platform Web SDK로 마이그레이션
+# Target을 at.js 2.x에서 Platform Web SDK으로 마이그레이션
 
-이 안내서는 숙련된 Adobe Target 구현자가 at.js 구현을 Adobe Experience Platform Web SDK로 마이그레이션하는 방법에 대해 학습하기 위한 것입니다.
+이 안내서는 숙련된 Adobe Target 구현자가 at.js 구현을 Adobe Experience Platform Web SDK으로 마이그레이션하는 방법을 배울 수 있는 것입니다.
 
-Adobe Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Experience Platform Edge Network을 통해 Experience Cloud 서비스와 상호 작용할 수 있도록 하는 클라이언트측 JavaScript 라이브러리입니다. 이 새 라이브러리는 별도의 Adobe 애플리케이션 라이브러리의 기능을 새로운 Adobe Experience Platform 기능을 최대한 활용할 수 있는 하나의 간단한 패키지에 결합합니다.
+Adobe Experience Platform Web SDK은 Adobe Experience Cloud 고객이 Adobe Experience Platform Edge Network을 통해 Experience Cloud 서비스와 상호 작용할 수 있도록 하는 클라이언트측 JavaScript 라이브러리입니다. 이 새 라이브러리는 별도의 Adobe 애플리케이션 라이브러리의 기능을 새로운 Adobe Experience Platform 기능을 최대한 활용할 수 있는 하나의 간단한 패키지에 결합합니다.
+
+
+>[!NOTE]
+>
+>다음과 유사한 마이그레이션 튜토리얼을 사용할 수 있습니다.
+>
+> * [Adobe Analytics](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/ko/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Platform Web SDK은 여러 Adobe 애플리케이션을 지원하므로 주어진 페이지의 모든 Adobe 라이브러리를 동시에 마이그레이션해야 합니다. 예를 들어 단일 페이지 _에서 Web SDK for Target과 Analytics용 AppMeasurement의 혼합 구현은 지원되지 않습니다_. 하지만 페이지 A의 웹 SDK과 페이지 B의 AppMeasurement이 있는 at.js 등의 서로 다른 페이지에 대한 혼합 구현이 지원됩니다.
+
+
 
 ## 주요 이점
 
@@ -26,15 +40,15 @@ Adobe Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 * 적은 설치 공간으로 페이지 속도 지표 개선
 * 개발자를 위한 추가적인 구현 유연성
 
-마이그레이션 시 Target 고객에게 가장 큰 이점은 Real-time Customer Data Platform과의 통합입니다. Real-Time CDP은 Experience Platform에 수집된 전체 데이터 범위와 실시간 고객 프로필 기능을 기반으로 엄청난 대상 구축 기능을 제공합니다. 내장된 데이터 거버넌스 프레임워크는 해당 데이터의 책임 있는 사용을 자동화합니다. 고객 AI를 사용하면 머신 러닝 모델을 쉽게 사용하여 결과를 Adobe Target에 다시 공유할 수 있는 성향 및 이탈 모델을 구성할 수 있습니다. 또한 선택적 의료 및 Privacy &amp; Security Shield 추가 기능의 고객은 동의 적용 기능을 사용하여 개별 고객의 동의 환경 설정을 쉽게 적용할 수 있습니다. Platform Web SDK는 웹 채널에서 이러한 Real-Time CDP 기능을 사용하기 위한 요구 사항입니다.
+마이그레이션 시 Target 고객에게 가장 큰 이점은 Real-time Customer Data Platform과의 통합입니다. Real-Time CDP은 Experience Platform에 수집된 전체 데이터 범위와 실시간 고객 프로필 기능을 기반으로 엄청난 대상 구축 기능을 제공합니다. 내장된 데이터 거버넌스 프레임워크는 해당 데이터의 책임 있는 사용을 자동화합니다. 고객 AI를 사용하면 머신 러닝 모델을 쉽게 사용하여 결과를 Adobe Target에 다시 공유할 수 있는 성향 및 이탈 모델을 구성할 수 있습니다. 또한 선택적 의료 및 Privacy &amp; Security Shield 추가 기능의 고객은 동의 적용 기능을 사용하여 개별 고객의 동의 환경 설정을 쉽게 적용할 수 있습니다. Platform Web SDK은 웹 채널에서 이러한 Real-Time CDP 기능을 사용하기 위한 요구 사항입니다.
 
 ## 학습 목표
 
 이 자습서를 마치면 다음을 수행할 수 있습니다.
 
-* at.js와 Platform Web SDK의 Target 구현 차이점 이해
+* at.js와 Platform Web SDK 간의 Target 구현 차이점 이해
 * Target 기능에 대한 초기 구성 설정
-* at.js 라이브러리를 Platform Web SDK로 업그레이드
+* at.js 라이브러리를 Platform Web SDK으로 업그레이드
 * 양식 기반 및 시각적 경험 작성기 활동 렌더링
 * Target에 매개 변수 전달
 * 전환 이벤트 추적
@@ -59,4 +73,4 @@ Adobe Experience Platform Web SDK는 Adobe Experience Cloud 고객이 Adobe Expe
 
 >[!NOTE]
 >
->at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 웹 SDK으로 Target을 성공적으로 이전할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.

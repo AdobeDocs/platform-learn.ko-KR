@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # 태그를 사용하여 Adobe Analytics을 Web SDK으로 마이그레이션
 
 Experience Platform 태그(이전의 Launch)의 Analytics 확장 기능을 사용하여 Adobe Analytics 구현을 Tags의 Web SDK 확장 기능을 사용하여 웹 SDK으로 마이그레이션하는 단계에 대해 알아봅니다. Tags의 Adobe Analytics 확장을 사용하면 &quot;AppMeasurement.js&quot; 코드가 백그라운드에서 사용됩니다. 따라서 이 자습서는 AppMeasurement을 Web SDK으로 마이그레이션하는 자습서로 생각할 수 있지만, 이 자습서는 Tags에 완전히 포함되어 있으며 JavaScript 구현으로 이동하거나 JavaScript 구현에서 이동하는 것은 포함하지 않습니다(Tags UI 내에서 사용되는 코드 제외). JavaScript 구현의 마이그레이션에 대해서는 [설명서](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)를 참조하세요.
+
+>[!NOTE]
+>
+>다음과 유사한 마이그레이션 튜토리얼을 사용할 수 있습니다.
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/ko/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Platform Web SDK은 여러 Adobe 애플리케이션을 지원하므로 주어진 페이지의 모든 Adobe 라이브러리를 동시에 마이그레이션해야 합니다. 예를 들어 단일 페이지 _에서 Web SDK for Target과 Analytics용 AppMeasurement의 혼합 구현은 지원되지 않습니다_. 하지만 페이지 A의 웹 SDK과 페이지 B의 AppMeasurement이 있는 at.js 등의 서로 다른 페이지에 대한 혼합 구현이 지원됩니다.
 
 ## 이 자습서에서 얻을 수 있는 이점
 
