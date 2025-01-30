@@ -1,19 +1,19 @@
 ---
-title: Foundation - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform의 XDM 스키마 요구 사항
-description: Foundation - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform의 XDM 스키마 요구 사항
+title: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - Adobe Experience Platform의 XDM 스키마 요구 사항
+description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - Adobe Experience Platform의 XDM 스키마 요구 사항
 kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Platform의 1.1.7 XDM 스키마 요구 사항
 
-Web SDK 및 alloy.js가 Adobe Experience Platform에 데이터를 수집할 수 있도록 하려면 Adobe Experience Platform에서 특정 XDM Mixin이 XDM 스키마의 일부가 되어야 합니다.
+웹 SDK에서 Adobe Experience Platform으로 데이터를 수집할 수 있도록 하려면 Adobe Experience Platform에서 특정 XDM mixin이 XDM 스키마의 일부가 되어야 합니다.
 
 [https://experience.adobe.com/platform](https://experience.adobe.com/platform)(으)로 이동하여 로그인합니다.
 
@@ -29,7 +29,7 @@ Web SDK 및 alloy.js가 Adobe Experience Platform에 데이터를 수집할 수 
 
 ![AEP 디버거](./images/exp3.png)
 
-해당 스키마에서는 필드 그룹 **AEP Web SDK ExperienceEvent** 필드 그룹이 추가되었습니다. 이 필드 그룹은 스키마에 최소 필수 필드를 모두 추가합니다. Web SDK에서 사용할 Adobe Experience Platform의 모든 경험 이벤트 스키마에서는 항상 해당 필드 그룹이 스키마의 일부가 되어야 합니다.
+해당 스키마에서 필드 그룹 **AEP 웹 SDK ExperienceEvent** 필드 그룹이 추가되었습니다. 이 필드 그룹은 스키마에 최소 필수 필드를 모두 추가합니다. Web SDK에서 사용할 Adobe Experience Platform의 모든 경험 이벤트 스키마에서는 항상 해당 필드 그룹이 스키마의 일부가 되어야 합니다.
 
 ![AEP 디버거](./images/exp4.png)
 

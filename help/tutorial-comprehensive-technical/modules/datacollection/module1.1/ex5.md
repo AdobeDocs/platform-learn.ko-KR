@@ -1,10 +1,10 @@
 ---
-title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Analytics 및 Adobe Audience Manager 구현
-description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Analytics 및 Adobe Audience Manager 구현
+title: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - Adobe Analytics 및 Adobe Audience Manager 구현
+description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - Adobe Analytics 및 Adobe Audience Manager 구현
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ## Analytics의 변수 매핑
 
-Adobe Experience Platform [!DNL Web SDK]은(는) 특정 값을 자동으로 매핑하므로 가능한 한 빨리 웹 SDK를 통해 Analytics를 새로 구현할 수 있습니다. 자동으로 매핑된 변수는 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)에 나열됩니다.
+Adobe Experience Platform [!DNL Web SDK]은(는) 특정 값을 자동으로 매핑하므로 웹 SDK을 통해 가능한 한 빨리 Analytics를 새로 구현할 수 있습니다. 자동으로 매핑된 변수는 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)에 나열됩니다.
 
 Adobe Analytics에 자동으로 매핑되지 않는 XDM 데이터의 경우 [컨텍스트 데이터](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ko-KR)를 사용하여 [스키마](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ko-KR)를 일치시킬 수 있습니다. 그런 다음 [처리 규칙](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)을 사용하여 Analytics에 매핑하여 Analytics 변수를 채울 수 있습니다. 컨텍스트 데이터 및 처리 규칙 은 과거에 Analytics에서 작업한 사용자에게 익숙한 개념이지만 새로운 개념인 경우 지금은 세부 정보에 대해 걱정하지 마십시오.
 
-또한 기본 작업 세트 및 제품 목록을 사용하여 AEP 웹 SDK로 데이터를 전송하거나 검색할 수 있습니다. 이렇게 하려면 [제품](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)을 참조하세요.
+또한 기본 작업 세트 및 제품 목록을 사용하여 AEP 웹 SDK으로 데이터를 전송하거나 검색할 수 있습니다. 이렇게 하려면 [제품](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)을 참조하세요.
 
 ### 컨텍스트 데이터
 
@@ -62,7 +62,7 @@ Analytics에서 사용하기 위해 XDM 데이터는 점 표기법을 사용하�
 
 ## Adobe Analytics으로 데이터를 전송하기 위한 데이터스트림 검토
 
-Web SDK에서 수집한 데이터를 Adobe Analytics 및 Adobe Audience Manager으로 전송하려면 다음 단계를 따르십시오.
+웹 SDK에서 수집한 데이터를 Adobe Analytics 및 Adobe Audience Manager으로 전송하려면 다음 단계를 따르십시오.
 
 [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/)(으)로 이동한 다음 **데이터스트림**(으)로 이동합니다.
 
@@ -70,7 +70,7 @@ Web SDK에서 수집한 데이터를 Adobe Analytics 및 Adobe Audience Manager�
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1b.png)
 
-그러면 이걸 보게 될 거야. Adobe Analytics을 사용하려면 **+서비스 추가**&#x200B;를 클릭하세요.
+그러면 이걸 보게 될 거야. Adobe Analytics을 사용하려면 **서비스 추가**&#x200B;를 클릭하세요.
 
 ![AEP 디버거](./images/aa2.png)
 
@@ -80,7 +80,7 @@ Web SDK에서 수집한 데이터를 Adobe Analytics 및 Adobe Audience Manager�
 
 ## Adobe Audience Manager으로 데이터를 전송하기 위한 데이터스트림 검토
 
-그러면 이걸 보게 될 거야. Adobe Audience Manager을 사용하려면 **+서비스 추가**&#x200B;를 클릭하세요.
+그러면 이걸 보게 될 거야. Adobe Audience Manager을 사용하려면 **서비스 추가**&#x200B;를 클릭하세요.
 
 ![AEP 디버거](./images/aa2.png)
 

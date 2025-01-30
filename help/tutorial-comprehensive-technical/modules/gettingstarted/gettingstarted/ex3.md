@@ -4,9 +4,9 @@ description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 지금은 다음 단계를 따르십시오.
 
-## 웹용 데이터 스트림 만들기
+## 웹 데이터 수집을 위한 데이터스트림 만들기
 
 **[!UICONTROL 데이터스트림]**&#x200B;을 클릭합니다.
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig17a.png)
 
-## 모바일용 데이터스트림 만들기
+## 모바일 데이터 수집을 위한 데이터스트림 만들기
 
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다.
 

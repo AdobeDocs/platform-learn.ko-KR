@@ -1,10 +1,10 @@
 ---
-title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform 데이터 수집 설명
-description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform 데이터 수집 설명
+title: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - Adobe Experience Platform 데이터 수집 설명
+description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - Adobe Experience Platform 데이터 수집 설명
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -20,16 +20,16 @@ Adobe Experience Platform 데이터 수집은 여러 사용 사례에 브랜드�
 - Adobe Experience Platform은 물론 Adobe Experience Cloud 애플리케이션도 구현합니다.
 - 관리할 고유한 **속성**&#x200B;을(를) 각 사용자에게 제공하여 조직의 여러 부분에 대한 다양한 요구 사항을 관리하십시오.
 - 테스트 및 라이프사이클 관리를 허용합니다.
-- 사용자 지정 Javascript 및 타사 태그를 삽입하며, 모두 한 곳에서 관리됩니다.
+- 사용자 지정 JavaScript 및 타사 태그를 삽입하며, 모두 한 곳에서 관리됩니다.
 
 ## UI 살펴보기
 
 [Adobe Experience Platform 데이터 수집](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다.
 
-**태그**&#x200B;로 이동합니다. 이제 **[!UICONTROL 속성]** 보기가 표시됩니다. 여기에 나열된 속성은 튜토리얼 관리를 위한 것입니다. 다음 속성은 다음을 나타냅니다.
+**태그**&#x200B;로 이동합니다. 이제 **[!UICONTROL 속성]** 보기가 표시됩니다. 여기에 나열된 속성은 튜토리얼 관리를 위한 것입니다. 이러한 속성은 다음을 나타냅니다.
 
 - 앱 및 웹 속성
-- 다양한 웹 사이트가 다양한 방식으로 고객에게 제공됩니다. 예를 들어 Luma Retail에는 하나의 속성이 있고 Luma Travel에는 다른 속성이 있습니다
+- 다양한 웹 사이트가 다양한 방식으로 고객에게 제공됩니다. 예를 들어 Luma Retail에는 하나의 속성이 있고 Luma Travel에는 다른 속성이 있습니다.
 - 기존 및 현재 웹 사이트
 - 서로 다른 여러 웹 사이트에 공통되는 특정 Adobe Analytics 디자인
 - 외부 사이트와 함께 내부 인트라넷 페이지

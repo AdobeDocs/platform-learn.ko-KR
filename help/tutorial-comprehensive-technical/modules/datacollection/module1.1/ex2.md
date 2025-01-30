@@ -1,12 +1,12 @@
 ---
-title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 기능(Edge Network, 데이터스트림 및 서버측 데이터 수집) 설정
-description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 기능(Edge Network, 데이터스트림 및 서버측 데이터 수집) 설정
+title: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 기능(Edge Network, 데이터스트림 및 서버측 데이터 수집) 설정
+description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 기능(Edge Network, 데이터스트림 및 서버측 데이터 수집) 설정
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,19 @@ ht-degree: 0%
 
 ## 컨텍스트
 
-이 연습에서는 **데이터 스트림**&#x200B;을 만듭니다. **데이터스트림**&#x200B;은(는) Web SDK에서 데이터를 수집한 후 Adobe Edge 서버에 데이터를 보낼 위치를 알려줍니다. 예를 들어 데이터를 Adobe Experience Platform으로 전송하시겠습니까? Adobe Analytics? Adobe Audience Manager? Adobe Target?
+이 연습에서는 **데이터 스트림**&#x200B;을 만듭니다. **데이터스트림**&#x200B;은(는) Web SDK에서 데이터를 수집한 후 데이터를 보낼 위치를 Adobe Edge 네트워크 서버에 알려줍니다. 예를 들어 데이터를 Adobe Experience Platform으로 전송하시겠습니까? Adobe Analytics? Adobe Audience Manager? Adobe Target?
 
-데이터 스트림은 항상 Adobe Experience Platform 데이터 수집 사용자 인터페이스에서 관리되며, Web SDK를 사용하는 Adobe Experience Platform 데이터 수집에 중요합니다. Adobe이 아닌 태그 관리 솔루션으로 Web SDK를 구현하는 경우에도 Adobe Experience Platform 데이터 수집 사용자 인터페이스에서 데이터 스트림을 만들어야 합니다.
+데이터 스트림은 항상 Experience Platform 데이터 수집 Experience Platform 인터페이스에서 관리되며 [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)을(를) 사용하여 데이터 수집을 관리하는 데 중요합니다. Adobe이 아닌 태그 관리 솔루션으로 Web SDK을 구현하는 경우에도 데이터 스트림을 생성해야 합니다.
 
-다음 연습에서는 브라우저에서 웹 SDK를 구현합니다. 그런 다음 수집 중인 데이터의 모습을 보다 명확하게 파악할 수 있습니다. 지금은 데이터 스트림을 통해 데이터를 전달할 위치를 알려줍니다.
+다음 연습에서는 브라우저에서 웹 SDK을 구현합니다. 그런 다음 수집 중인 데이터의 모습을 보다 명확하게 파악할 수 있습니다. 지금은 데이터 스트림을 통해 데이터를 전달할 위치를 알려줍니다.
 
 ## 데이터 스트림 만들기
 
-[시작하기](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 이미 데이터 스트림을 만들었지만 데이터 스트림의 배경과 이유에 대해서는 설명하지 않았습니다.
+[시작하기](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 이미 데이터 스트림을 만들었지만 만든 배경과 이유에 대해서는 설명하지 않았습니다.
 
-satastream은 웹 SDK에서 데이터를 수집한 후 Adobe Edge 서버에 데이터를 보낼 위치를 알려줍니다. 예를 들어 데이터를 Adobe Experience Platform으로 전송하시겠습니까? Adobe Analytics? Adobe Audience Manager? Adobe Target? 데이터 스트림은 Adobe Experience Platform 데이터 수집 사용자 인터페이스에서 관리되며, Adobe Experience Platform 데이터 수집을 통해 Web SDK를 구현하는지 여부에 관계없이 Web SDK를 사용한 데이터 수집에 중요합니다.
+[데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)은(는) Web SDK에서 데이터를 수집한 후 데이터를 보낼 위치를 Edge Network 서버에 알려줍니다. 데이터 스트림을 통해 데이터를 보낼 수 있는 위치에 대한 자세한 내용은 [데이터 스트림에 서비스 추가](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services)에 대한 설명서를 참조하십시오.
+
+데이터 스트림은 Experience Platform 데이터 수집 사용자 인터페이스에서 관리되며, Adobe Experience Platform 데이터 수집을 통한 Web SDK 구현 여부와 관계없이 Web SDK을 통한 데이터 수집에 중요합니다.
 
 **[!UICONTROL 데이터스트림]**&#x200B;을 검토해 보겠습니다.
 
@@ -57,12 +59,11 @@ satastream은 웹 SDK에서 데이터를 수집한 후 Adobe Edge 서버에 데�
 
 - 수집된 모든 데이터는 Adobe Experience Platform의 `--aepSandboxName--` 샌드박스에 저장됩니다.
 - 모든 경험 이벤트 데이터는 기본적으로 데이터 집합 **데모 시스템 - 웹 사이트에 대한 이벤트 데이터 집합(전역 v1.1)**&#x200B;에 수집됩니다.
-- 모든 프로필 데이터는 기본적으로 데이터 세트 **데모 시스템 - 웹 사이트에 대한 프로필 데이터 세트(전역 v1.1)**&#x200B;에 수집됩니다(기본적으로 Web SDK를 사용한 프로필 데이터 수집은 현재 Web SDK에서 아직 지원되지 않음)
+- 모든 프로필 데이터는 기본적으로 데이터 세트 **데모 시스템 - 웹 사이트에 대한 프로필 데이터 세트(전역 v1.1)**&#x200B;에 수집됩니다(기본적으로 Web SDK에서 프로필 데이터 수집은 현재 Web SDK에서 아직 지원되지 않음).
 - 이 데이터 스트림에 **Offer decisioning** 응용 프로그램 서비스를 사용하려면 Offer decisioning 확인란을 선택해야 합니다. ([모듈 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md)의 일부가 됩니다.)
 - **Edge 세그멘테이션**&#x200B;은(는) 기본적으로 활성화되어 있습니다. 즉, 들어오는 트래픽이 수집되면 자격을 갖춘 대상이 에지에서 평가됩니다
-- **Personalization 대상**&#x200B;을 사용하려면 Personalization 대상 확인란을 선택해야 합니다.
-- 
-   - 이 데이터 스트림에서 **Adobe Journey Optimizer**&#x200B;의 기능을 사용하려면 Adobe Journey Optimizer 확인란을 선택해야 합니다.
+- [개인화 대상](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview)을 사용하려면 **Personalization 대상** 확인란을 선택하세요.
+- 이 데이터 스트림에서 **Adobe Journey Optimizer**&#x200B;의 기능을 사용하려면 **Adobe Journey Optimizer** 확인란을 선택해야 합니다.
 
 
 지금은 데이터 스트림에 다른 구성이 필요하지 않습니다.

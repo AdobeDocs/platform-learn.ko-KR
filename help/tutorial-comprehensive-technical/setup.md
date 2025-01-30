@@ -1,16 +1,17 @@
 ---
 title: 설정
-description: AEP 인스턴스 설정
+description: Adobe Experience Platform 인스턴스 설정
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1048'
 ht-degree: 3%
 
 ---
 
-# 설정
+# Adobe Experience Platform 인스턴스 설정
 
 >[!IMPORTANT]
 >
@@ -31,7 +32,7 @@ ht-degree: 3%
 
 ## 샌드박스 만들기
 
-자체 AEP 인스턴스에서 자습서를 수행하려면 먼저 새 개발 샌드박스를 설정하는 것이 좋습니다. 새 샌드박스를 만들려면 [https://experience.adobe.com/platform](https://experience.adobe.com/platform)(으)로 이동하고 샌드박스로 이동한 다음 **찾아보기**(으)로 이동합니다. **샌드박스 만들기**&#x200B;를 클릭합니다.
+자체 Adobe Experience Platform 인스턴스에서 자습서를 수행하려면 먼저 새 개발 샌드박스를 설정하는 것이 좋습니다. 새 샌드박스를 만들려면 [https://experience.adobe.com/platform](https://experience.adobe.com/platform)(으)로 이동하고 샌드박스로 이동한 다음 **찾아보기**(으)로 이동합니다. **샌드박스 만들기**&#x200B;를 클릭합니다.
 
 ![샌드박스 만들기](./assets/images/sandbox1.png)
 
@@ -39,7 +40,7 @@ ht-degree: 3%
 
 - 형식: **개발**
 - 이름: **aep-tutorial**
-- 제목: **AEP 자습서**
+- 제목: **Adobe Experience Platform 자습서**
 
 **만들기**&#x200B;를 클릭합니다.
 
@@ -57,7 +58,7 @@ ht-degree: 3%
 
 ![샌드박스 만들기](./assets/images/perm1.png)
 
-역할에 **AEP 튜토리얼**&#x200B;과(와) 같은 이름을 지정하고 **확인**&#x200B;을 클릭합니다.
+역할에 **Adobe Experience Platform 자습서**&#x200B;와 같은 이름을 지정하고 **확인**&#x200B;을 클릭합니다.
 
 ![샌드박스 만들기](./assets/images/perm2.png)
 
@@ -77,14 +78,14 @@ ht-degree: 3%
 
 ![샌드박스 만들기](./assets/images/perm6.png)
 
-## 설정 Adobe I/O
+## Adobe I/O 설정
 
 다음으로 이동
 [https://developer.adobe.com/console/integrations](https://developer.adobe.com/console/integrations). 올바른 인스턴스에 있는지 확인합니다. **새 프로젝트 만들기**&#x200B;를 클릭합니다.
 
 ![샌드박스 만들기](./assets/images/io1.png)
 
-**+ 프로젝트에 추가**&#x200B;를 클릭한 다음 **API**&#x200B;를 클릭합니다.
+**프로젝트에 추가**&#x200B;를 클릭한 다음 **API**&#x200B;를 클릭합니다.
 
 ![샌드박스 만들기](./assets/images/io2.png)
 
@@ -100,7 +101,7 @@ ht-degree: 3%
 
 ![샌드박스 만들기](./assets/images/io5.png)
 
-**+ 프로젝트에 추가**&#x200B;를 클릭한 다음 **API**&#x200B;를 다시 클릭합니다.
+**프로젝트에 추가**&#x200B;를 클릭한 다음 **API**&#x200B;를 다시 클릭합니다.
 
 ![샌드박스 만들기](./assets/images/io6.png)
 
@@ -124,7 +125,7 @@ ht-degree: 3%
 
 ![샌드박스 만들기](./assets/images/io11.png)
 
-**DSN AEP 자습서**&#x200B;와 같은 새 **프로젝트 제목**&#x200B;을 입력하십시오. **저장**&#x200B;을 클릭합니다.
+**DSN Adobe Experience Platform 자습서**&#x200B;와 같은 새 **프로젝트 제목**&#x200B;을 입력하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![샌드박스 만들기](./assets/images/io12.png)
 
@@ -237,7 +238,7 @@ ht-degree: 3%
 
 ![샌드박스 만들기](./assets/images/dsnorg15.png)
 
-모든 것이 성공적으로 완료되면 AEP 인스턴스가 성공적으로 구성되고 학습자가 튜토리얼을 수강할 수 있게 준비됩니다.
+모든 것이 성공적으로 완료되면 Adobe Experience Platform 인스턴스가 성공적으로 구성되고 학습자가 튜토리얼을 수강할 수 있게 준비됩니다.
 
 >[!NOTE]
 >

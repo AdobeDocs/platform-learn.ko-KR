@@ -4,16 +4,16 @@ description: 시작하기 - Launch 속성 설정 옆에 있는 데모 시스템 
 kt: 5342
 doc-type: tutorial
 exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
 # Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정하려면 옆에 있는 데모 시스템을 사용하십시오.
 
-이 자습서에서 학습을 시각화하고 안전한 환경에서 구성을 테스트할 수 있도록 하기 위해 이 자습서에서는 Adobe의 데모 시스템 다음 도구를 사용합니다. 이 자습서를 최대한 활용하려면 다음 데모 시스템과 통합되도록 AEP 인스턴스를 구성해야 합니다.
+이 자습서에서 학습을 시각화하고 안전한 환경에서 구성을 테스트할 수 있도록 하기 위해 이 자습서에서는 Adobe의 데모 시스템 다음 도구를 사용합니다. 이 자습서를 최대한 활용하려면 다음 데모 시스템과 통합되도록 Adobe Experience Platform 인스턴스를 구성해야 합니다.
 
 다음 데모 시스템에 액세스한 후 아래 단계를 진행하십시오.
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsnsetup.png)
 
-**환경** 드롭다운에서 AEP 인스턴스 및 샌드박스를 선택합니다.
+**환경** 드롭다운에서 Adobe Experience Platform 인스턴스 및 샌드박스를 선택합니다.
 
 ![DSN](./images/dsnh1.png)
 

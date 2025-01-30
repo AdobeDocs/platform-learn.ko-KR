@@ -4,9 +4,9 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ ht-degree: 0%
 
 이러한 필드에 어떤 값을 입력해야 하는지 확실하지 않은 경우 아래 지침을 따르십시오.
 
-**AEP IMS 조직 이름**
+**Adobe Experience Platform IMS 조직 이름**
 
 [https://platform.adobe.com/](https://platform.adobe.com/)에서 Adobe Experience Platform 인스턴스에 로그인하면 화면 오른쪽 상단에 인스턴스 이름이 표시됩니다.
 
 ![DSN](./images/aepname.png)
 
-**AEP IMS 조직 ID**
+**Adobe Experience Platform IMS 조직 ID**
 
 IMS 조직 ID는 Adobe Experience Cloud 인스턴스의 고유 식별자이며, 이 자습서 전체에서 여러 위치에서 참조됩니다.
 
@@ -88,29 +88,29 @@ IMS 조직 ID를 찾는 작업은 여러 가지 방법으로 수행할 수 있�
 
 ![DSN](./images/aepid1.png)
 
-AEP 메뉴의 **데이터 관리 > 쿼리**&#x200B;로 이동하여 **사용자 이름**&#x200B;에서 찾을 수 있습니다.
+또한 Adobe Experience Platform 메뉴의 **데이터 관리 > 쿼리**(으)로 이동하여 **사용자 이름**&#x200B;에서 찾을 수 있습니다.
 
 ![DSN](./images/aepid2.png)
 
 **@AdobeOrg** 부분을 복사하여 ID와 함께 붙여넣으십시오.
 
-**AEP 테넌트 ID**
+**Adobe Experience Platform 테넌트 ID**
 
-테넌트 ID는 조직의 AEP 인스턴스에 대한 고유 식별자입니다. [https://platform.adobe.com/](https://platform.adobe.com/)에서 Adobe Experience Platform 인스턴스에 로그인하면 URL에서 테넌트 ID를 찾을 수 있습니다.
+테넌트 ID는 조직의 Adobe Experience Platform 인스턴스에 대한 고유 식별자입니다. [https://platform.adobe.com/](https://platform.adobe.com/)에서 Adobe Experience Platform 인스턴스에 로그인하면 URL에서 테넌트 ID를 찾을 수 있습니다.
 
 ![DSN](./images/aeptenantid.png)
 
 Chrome 확장에 입력하는 경우 밑줄이 접두사로 추가되었는지 확인해야 하므로 이 예에서 **experienceplatform**&#x200B;은(는) **_experienceplatform**&#x200B;이 됩니다. 또한 URL에서 복사할 때 **@** 기호를 제거해야 합니다.
 
-**AEP 샌드박스 이름**
+**Adobe Experience Platform 샌드박스 이름**
 
-샌드박스 이름은 AEP 인스턴스에서 사용할 환경의 이름입니다. [https://platform.adobe.com/](https://platform.adobe.com/)에서 Adobe Experience Platform 인스턴스에 로그인하면 URL에서 테넌트 ID를 찾을 수 있습니다.
+샌드박스 이름은 Adobe Experience Platform 인스턴스에서 사용할 환경의 이름입니다. [https://platform.adobe.com/](https://platform.adobe.com/)에서 Adobe Experience Platform 인스턴스에 로그인하면 URL에서 테넌트 ID를 찾을 수 있습니다.
 
 URL에서 샌드박스 이름을 가져오기 전에 이 자습서에 사용해야 하는 샌드박스에 있는지 확인해야 합니다. 화면 오른쪽 상단에 있는 샌드박스 전환기 메뉴를 클릭하여 오른쪽 샌드박스로 전환할 수 있습니다.
 
 ![DSN](./images/aepsandboxsw.png)
 
-이 예에서 AEP 샌드박스 이름은 **tech-insiders**&#x200B;입니다.
+이 예에서 Adobe Experience Platform 샌드박스 이름은 **tech-insiders**&#x200B;입니다.
 
 ![DSN](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 이제 chrome 확장에서 활성화된 환경을 기반으로 모든 **환경 변수**&#x200B;가 실제 값으로 대체되었습니다.
 
-이제 환경 변수 `aepTenantId`이(가) 실제 AEP 테넌트 ID로 바뀐 아래와 유사한 보기가 있어야 합니다. 이 경우에는 **_experienceplatform**&#x200B;입니다.
+이제 아래와 유사한 보기가 있어야 합니다. 환경 변수 `aepTenantId`이(가) 실제 Adobe Experience Platform 테넌트 ID로 대체되었습니다. 이 경우에는 **_experienceplatform**&#x200B;입니다.
 
 ![DSN](./images/mod7.png)
 

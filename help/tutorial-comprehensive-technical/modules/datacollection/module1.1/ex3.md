@@ -1,12 +1,12 @@
 ---
-title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform 데이터 수집 소개
-description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 설정 - Adobe Experience Platform 데이터 수집 소개
+title: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - Adobe Experience Platform 데이터 수집 소개
+description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - Adobe Experience Platform 데이터 수집 소개
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 10%
 
 이제 Adobe Experience Platform 데이터 수집의 기본 구성 요소를 자세히 살펴보고 데모 웹 사이트에 설치된 항목을 파악해 보겠습니다. Adobe Experience Platform 웹 SDK 확장을 자세히 살펴보고 데이터 요소와 규칙을 구성하고 라이브러리를 게시하는 방법을 알아봅니다.
 
-## Adobe Experience Platform 웹 SDK 확장
+## Adobe Experience Platform 웹 SDK 태그 확장
 
-확장은 Adobe Experience Platform 데이터 수집 인터페이스와 라이브러리 기능을 확장하는 패키지화된 코드 세트입니다. Adobe Experience Platform 데이터 수집은 플랫폼이며 확장은 플랫폼에서 실행되는 앱과 같습니다. 자습서에서 사용되는 모든 확장은 Adobe에서 만들고 관리하지만 서드파티는 고유한 확장을 만들어 Adobe Experience Platform 데이터 수집 사용자가 관리해야 하는 사용자 지정 코드의 양을 제한할 수 있습니다.
+태그 확장은 Adobe Experience Platform 데이터 수집 인터페이스와 라이브러리 기능을 확장하는 패키지화된 코드 세트입니다. Adobe Experience Platform 데이터 수집은 플랫폼이고 태그 확장은 플랫폼에서 실행되는 앱과 같습니다. 자습서에서 사용되는 모든 확장은 Adobe에서 만들고 관리하지만 서드파티는 고유한 확장을 만들어 Adobe Experience Platform 데이터 수집 사용자가 관리해야 하는 사용자 지정 코드의 양을 제한할 수 있습니다.
 
 [Adobe Experience Platform 데이터 수집](https://experience.adobe.com/launch/)(으)로 이동하여 **태그**&#x200B;를 선택합니다.
 
@@ -34,11 +34,11 @@ ht-degree: 10%
 
 
 
-그러면 속성 개요 페이지가 표시됩니다. 왼쪽 레일에서 **[!UICONTROL 확장]**&#x200B;을 클릭한 다음 **Adobe Experience Platform Web SDK**&#x200B;를 클릭한 다음 **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
+그러면 속성 개요 페이지가 표시됩니다. 왼쪽 레일에서 **[!UICONTROL 확장]**&#x200B;을 클릭한 다음 **Adobe Experience Platform Web SDK**&#x200B;을 클릭하고 **[!UICONTROL 구성]**&#x200B;을 클릭합니다.
 
 ![속성 개요 페이지](./images/property7.png)
 
-Adobe Experience Platform 웹 SDK를 시작합니다! [시작](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 만든 데이터 스트림과 고급 구성으로 확장을 구성할 수 있습니다.
+Adobe Experience Platform 웹 SDK 시작! [시작](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 만든 데이터 스트림과 고급 구성으로 확장을 구성할 수 있습니다.
 
 기본 Edge 도메인은 항상 **edge.adobedc.net**&#x200B;입니다. Adobe Experience Cloud 또는 Adobe Experience Platform 환경에서 CNAME 구성을 구현한 경우 **[!UICONTROL Edge 도메인]**&#x200B;을 업데이트해야 합니다.
 
@@ -58,7 +58,7 @@ Adobe Experience Platform 웹 SDK를 시작합니다! [시작](./../../../module
 
 단일 데이터 요소는 쿼리 문자열, URL, 쿠키 값, JavaScript 변수 등에 값을 매핑할 수 있는 변수입니다. Adobe Experience Platform 데이터 수집 전체에서 해당 변수 이름으로 이 값을 참조할 수 있습니다. 이 데이터 요소 컬렉션은 규칙(이벤트, 조건 및 작업)을 작성하는 데 사용할 수 있는 정의된 데이터 사전이 됩니다. 이 데이터 사전은 속성에 추가한 확장에 사용하기 위해 모든 Adobe Experience Platform 데이터 수집에서 공유됩니다.
 
-이제 기존 데이터 요소를 Web SDK에 친숙한 형식으로 편집하려고 합니다.
+이제 기존 데이터 요소를 웹 SDK에 친숙한 형식으로 편집하려고 합니다.
 
 왼쪽 레일에서 데이터 요소 를 클릭하여 데이터 요소 페이지로 이동합니다.
 
@@ -72,7 +72,7 @@ Adobe Experience Platform 웹 SDK를 시작합니다! [시작](./../../../module
 
 ![ruleArticlePages 검색](./images/dataelement2.png)
 
-이 화면에서는 편집할 XDM 개체를 보여 줍니다. XDM(Experience Data Model)은 이 기술 자습서 전체에서 훨씬 더 자세히 살펴볼 개념이지만 지금은 Adobe Experience Platform 웹 SDK에 필요한 형식으로 이해하는 것으로 충분합니다. 데모 웹 사이트의 문서 페이지에 수집된 데이터에 추가 정보를 추가합니다.
+이 화면에서는 편집할 XDM 개체를 보여 줍니다. XDM(Experience Data Model)은 이 기술 자습서 전체에서 훨씬 더 자세히 살펴볼 개념이지만 지금은 Adobe Experience Platform 웹 SDK에 필요한 형식으로 이해하기에 충분합니다. 데모 웹 사이트의 문서 페이지에 수집된 데이터에 추가 정보를 추가합니다.
 
 트리의 맨 아래에 있는 **web** 옆에 있는 더하기 단추를 클릭합니다.
 
@@ -86,7 +86,7 @@ Adobe Experience Platform 웹 SDK를 시작합니다! [시작](./../../../module
 
 ![저장](./images/dataelement4.png)
 
-이 시점에서 Adobe Experience Platform 웹 SDK 확장이 설치되고 XDM 구조에 대한 데이터를 수집하도록 데이터 요소를 업데이트했습니다. 다음으로, 데이터를 올바른 시간에 전송할 규칙을 확인해 보겠습니다.
+이 시점에서 Adobe Experience Platform 웹 SDK 확장 프로그램이 설치되고 XDM 구조에 대한 데이터를 수집하도록 데이터 요소를 업데이트했습니다. 다음으로, 데이터를 올바른 시간에 전송할 규칙을 확인해 보겠습니다.
 
 ## 규칙
 
@@ -124,7 +124,7 @@ Adobe Experience Platform 데이터 수집은 규칙 기반 시스템입니다. 
 
 ![이벤트 보내기 작업](./images/rule5a.png)
 
-여기에서 Adobe Experience Platform 웹 SDK에서 Edge로 전송하는 데이터를 볼 수 있습니다. 특히 웹 SDK의 **alloy** **[!UICONTROL 인스턴스]**&#x200B;를 사용합니다. 이벤트 **[!UICONTROL Type]**&#x200B;이(가) **Commerce 제품(장바구니) 보기**(으)로 설정되어 있으며, 보내는 XDM 데이터는 이전에 변경한 **XDM - 제품 보기** 데이터 요소입니다.
+여기에서 Adobe Experience Platform Web SDK에서 Edge로 전송하는 데이터를 볼 수 있습니다. 특히 웹 SDK의 **alloy** **[!UICONTROL 인스턴스]**&#x200B;를 사용합니다. 이벤트 **[!UICONTROL Type]**&#x200B;이(가) **Commerce 제품(장바구니) 보기**(으)로 설정되어 있으며, 보내는 XDM 데이터는 이전에 변경한 **XDM - 제품 보기** 데이터 요소입니다.
 
 ![이벤트 보내기 작업](./images/rule5.png)
 
