@@ -4,7 +4,7 @@ description: 기초 - 데이터 수집 - 오프라인 소스에서 데이터 수
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- 샘플 웹 사이트 상호 작용이 포함된 샘플 데이터 파일 global-context-websiteinteractions.csv를 다운로드하고 **azcopy**&#x200B;의 압축을 푼 폴더에 저장합니다.
+- 샘플 웹 사이트 상호 작용이 포함된 샘플 데이터 파일 [global-context-websiteinteractions.csv](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv)을(를) 다운로드하여 **azcopy**&#x200B;의 압축을 푼 폴더에 저장합니다.
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 

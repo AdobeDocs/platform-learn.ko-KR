@@ -3,9 +3,10 @@ title: AEM CS - 고급 사용자 지정 블록
 description: AEM CS - 고급 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ export default function decorate(block) {
 
 이제 프로젝트에서 GitHub 저장소로 다시 커밋해야 하는 몇 가지 변경 사항을 만들었습니다. 이렇게 하려면 **GitHub Desktop**&#x200B;을 엽니다.
 
-그러면 **변경 내용**&#x200B;에서 편집한 3개의 파일이 표시됩니다. 변경 사항을 검토합니다.
+그러면 **변경 내용**&#x200B;에서 방금 편집한 2개의 파일이 표시됩니다. 변경 사항을 검토합니다.
 
 PR 이름 `js css`을(를) 입력하십시오. **주 데이터베이스에 커밋**&#x200B;을 클릭합니다.
 
@@ -344,7 +345,7 @@ async function getOffer(ECID) {
 
 ![차단](./images/blockadv20.png)
 
-다음 단계: [요약 및 이점](./summary.md){target="_blank"}
+다음 단계: [2.1.6 AEM Edge Delivery Services MarTech 플러그인](./ex6.md){target="_blank"}
 
 [모듈 2.1로 돌아가기](./aemcs.md){target="_blank"}
 

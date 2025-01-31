@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집 - 알 수 없음에서 웹 사이트에 �
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -61,11 +61,15 @@ Adobe Experience Platform은 이 여정에서 큰 역할을 합니다. 플랫폼
 
 ![데모](./images/pv4.png)
 
-그러면 제품 세부 사항 페이지가 표시됩니다. 이제 이전 모듈에서 검토한 Web SDK 구현을 사용하여 **제품 보기** 유형의 경험 이벤트가 Adobe Experience Platform으로 전송되었습니다.
+그러면 제품 세부 사항 페이지가 표시됩니다. 이제 이전 단원에서 검토한 Web SDK 구현을 사용하여 **제품 보기** 유형의 경험 이벤트가 Adobe Experience Platform으로 전송되었습니다.
 
 ![데모](./images/pv5.png)
 
-[Probile 뷰어] 패널을 열고 **경험 이벤트**&#x200B;를 확인합니다.
+프로필 뷰어 패널을 열고 **경험 이벤트**&#x200B;를 확인합니다.
+
+>[!NOTE]
+>
+>이벤트가 즉시 표시되지 않으면 페이지를 새로 고치십시오.
 
 ![데모](./images/pv6.png)
 

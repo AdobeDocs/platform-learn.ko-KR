@@ -4,10 +4,10 @@ description: Adobe Experience Manager Cloud Service 및 Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ ht-degree: 2%
 [2.1.5 고급 사용자 지정 블록](./ex5.md){target="_blank"}
 
 이 연습에서는 웹 사이트에 대한 고급 사용자 지정 블록을 개발합니다.
+
+[2.1.6 AEM Edge Delivery Services MarTech 플러그인](./ex6.md){target="_blank"}
+
+이 연습에서는 AEM MarTech 플러그인을 구현합니다. AEM MarTech 플러그인은 AEM 프로젝트에 대한 전체 MarTech 스택을 빠르게 설정하는 데 도움이 됩니다.
 
 [요약 및 이점](./summary.md){target="_blank"}
 

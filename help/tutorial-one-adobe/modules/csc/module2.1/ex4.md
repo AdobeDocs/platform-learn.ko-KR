@@ -4,7 +4,7 @@ description: AEM CS - 기본 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: e075ac0cf4a9132eb78524b50447aa564e82fff6
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 1%
@@ -283,8 +283,6 @@ AEM Sites 개요에서 **CitiSignal** > **조각**(으)로 이동하여 **헤더
 다음은 기본 사용자 지정 블록이지만 이제 웹 사이트에서 렌더링됩니다.
 
 ![AEMCS](./images/nav7.png)
-
-
 
 다음 단계: [2.1.5 고급 사용자 지정 블록](./ex5.md){target="_blank"}
 

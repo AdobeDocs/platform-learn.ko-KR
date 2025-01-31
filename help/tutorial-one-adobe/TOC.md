@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '330'
 ht-degree: 4%
 
 ---
@@ -51,6 +51,7 @@ ht-degree: 4%
       + [2.1.3 AEM CS 환경 설정](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
       + [2.1.4 기본 사용자 지정 블록](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
       + [2.1.5 고급 사용자 지정 블록](/help/tutorial-one-adobe/modules/csc/module2.1/ex5.md)
+      + [2.1.6 AEM Edge Delivery Services MarTech 플러그인](/help/tutorial-one-adobe/modules/csc/module2.1/ex6.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
    + 2.2 Workfront {#module22}
       + [개요](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
