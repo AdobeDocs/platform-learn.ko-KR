@@ -1,413 +1,296 @@
 ---
-title: Real-Time CDP - 외부 대상
-description: Real-Time CDP - 외부 대상
+title: Real-Time CDP - 대상 SDK
+description: Real-Time CDP - 대상 SDK
 kt: 5342
 doc-type: tutorial
-exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 0%
+source-wordcount: '1098'
+ht-degree: 5%
 
 ---
 
-# 2.3.6 외부 대상
+# 2.3.6 대상 SDK
 
-대부분의 경우 귀사는 Adobe Experience Platform에서 고객 프로필을 보강하기 위해 다른 애플리케이션의 기존 대상자를 사용할 수 있습니다.
-이러한 외부 대상은 데이터 과학 모델을 기반으로 하거나 외부 데이터 플랫폼을 사용하여 정의되었을 수 있습니다.
+## Adobe I/O 프로젝트 설정
 
-Adobe Experience Platform의 외부 대상 기능을 사용하면 Adobe Experience Platform에서 해당 대상 정의를 자세히 재정의할 필요 없이 외부 대상의 수집 및 활성화에 집중할 수 있습니다.
+이 연습에서는 Adobe I/O 를 다시 사용하여 Adobe Experience Platform의 API를 쿼리합니다. Adobe I/O 프로젝트를 아직 구성하지 않은 경우 모듈 2.1의 [연습 3](../module2.1/ex3.md)(으)로 돌아가서 지침을 따르십시오.
 
-전반적인 프로세스는 다음 세 가지 주요 단계로 나뉩니다.
+## Adobe I/O에 대한 Postman 인증
 
-- 외부 대상 메타데이터 가져오기: 이 단계는 대상 이름과 같은 외부 대상 메타데이터를 Adobe Experience Platform으로 수집하기 위한 것입니다.
-- 고객 프로필에 외부 대상 멤버십 할당: 이 단계는 외부 대상 멤버십 속성으로 고객 프로필을 보강하기 위한 것입니다.
-- Adobe Experience Platform에서 대상 만들기: 이 단계는 외부 대상 멤버십을 기반으로 실행 가능한 대상을 만들기 위한 것입니다.
+이 연습에서는 Postman을 다시 사용하여 Adobe Experience Platform의 API를 쿼리합니다. 아직 Postman 응용 프로그램을 구성하지 않은 경우 모듈 2.1의 [연습 3](../module2.1/ex3.md)(으)로 돌아가서 지침을 따르십시오.
 
-## 메타데이터
+## 엔드포인트 및 형식 정의
+
+이 연습에서는 대상이 자격을 얻을 때 자격 이벤트가 해당 끝점으로 스트리밍될 수 있도록 를 구성하는 끝점이 필요합니다. 이 연습에서는 [https://pipedream.com/requestbin](https://pipedream.com/requestbin)을(를) 사용하여 샘플 끝점을 사용합니다. [https://pipedream.com/requestbin](https://pipedream.com/requestbin)(으)로 이동하여 계정을 만든 다음 작업 영역을 만듭니다. 작업 영역이 생성되면 이와 유사한 항목이 표시됩니다.
+
+URL을 복사하려면 **복사**&#x200B;를 클릭하세요. 다음 연습에서는 이 URL을 지정해야 합니다. 이 예제의 URL은 `https://eodts05snjmjz67.m.pipedream.net`입니다.
+
+![데이터 수집](./images/webhook1.png)
+
+형식에서는 고객 식별자와 같은 메타데이터와 함께 대상 자격 또는 부적격 여부를 스트리밍하는 표준 템플릿을 사용합니다. 특정 끝점의 기대에 맞게 템플릿을 사용자 정의할 수 있지만, 이 연습에서는 표준 템플릿을 재사용하여 이 템플릿과 같은 페이로드가 끝점으로 스트리밍됩니다.
+
+```json
+{
+  "profiles": [
+    {
+      "identities": [
+        {
+          "type": "ecid",
+          "id": "64626768309422151580190219823409897678"
+        }
+      ],
+      "AdobeExperiencePlatformSegments": {
+        "add": [
+          "f58c723c-f1e5-40dd-8c79-7bb4ab47f041"
+        ],
+        "remove": []
+      }
+    }
+  ]
+}
+```
+
+## 서버 및 템플릿 구성 만들기
+
+Adobe Experience Platform에서 고유한 대상을 만드는 첫 번째 단계는 Postman을 사용하여 서버 및 템플릿 구성을 만드는 것입니다.
+
+이렇게 하려면 Postman 응용 프로그램을 열고 **대상 작성 API**, **대상 서버 및 템플릿**(으)로 이동한 다음 클릭하여 요청 **POST - 대상 서버 구성 만들기**&#x200B;를 엽니다.
+
+>[!NOTE]
+>
+>해당 Postman 컬렉션이 없는 경우 모듈 2.1의 [연습 3](../module2.1/ex3.md)(으)로 돌아가 지침을 따라 제공된 Postman 컬렉션으로 Postman을 설정하십시오.
+
+그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxName--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하십시오.
+
+![데이터 수집](./images/sdkpm1.png)
+
+`--aepSandboxName--`(으)로 바꾸기
+
+![데이터 수집](./images/sdkpm2.png)
+
+그런 다음 **본문**(으)로 이동합니다. 자리 표시자 **{{body}}**&#x200B;을(를) 선택하십시오.
+
+![데이터 수집](./images/sdkpm3.png)
+
+이제 자리 표시자 **{{body}}**&#x200B;을(를) 아래 코드로 바꾸어야 합니다.
+
+```json
+{
+    "name": "Custom HTTP Destination",
+    "destinationServerType": "URL_BASED",
+    "urlBasedDestination": {
+        "url": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "yourURL"
+        }
+    },
+    "httpTemplate": {
+        "httpMethod": "POST",
+        "requestBody": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "{\n    \"profiles\": [\n    {%- for profile in input.profiles %}\n        {\n            \"identities\": [\n            {%- for idMapEntry in profile.identityMap -%}\n            {%- set namespace = idMapEntry.key -%}\n                {%- for identity in idMapEntry.value %}\n                {\n                    \"type\": \"{{ namespace }}\",\n                    \"id\": \"{{ identity.id }}\"\n                }{%- if not loop.last -%},{%- endif -%}\n                {%- endfor -%}{%- if not loop.last -%},{%- endif -%}\n            {% endfor %}\n            ],\n            \"AdobeExperiencePlatformSegments\": {\n                \"add\": [\n                {%- for segment in profile.segmentMembership.ups | added %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ],\n                \"remove\": [\n                {#- Alternative syntax for filtering segments by status: -#}\n                {% for segment in removedSegments(profile.segmentMembership.ups) %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ]\n            }\n        }{%- if not loop.last -%},{%- endif -%}\n    {% endfor %}\n    ]\n}"
+        },
+        "contentType": "application/json"
+    }
+}
+```
+
+위의 코드를 붙여넣은 후 필드 **urlBasedDestination.url.value**&#x200B;을(를) 수동으로 업데이트해야 하며, 이전 단계에서 만든 웹후크의 url(이 예제의 경우 `https://eodts05snjmjz67.m.pipedream.net`)로 설정해야 합니다.
+
+![데이터 수집](./images/sdkpm4.png)
+
+필드 **urlBasedDestination.url.value**&#x200B;을(를) 업데이트하면 다음과 같이 표시됩니다. **보내기**&#x200B;를 클릭합니다.
+
+![데이터 수집](./images/sdkpm5.png)
+
+>[!NOTE]
+>
+>Adobe I/O에게 요청을 보내기 전에 유효한 `access_token`이(가) 있어야 합니다. 올바른 `access_token`을(를) 가져오려면 **POST IO - OAuth** 컬렉션에서 **Adobe - 액세스 토큰 가져오기** 요청을 실행하십시오.
+
+**보내기**&#x200B;를 클릭하면 서버 템플릿이 만들어지고 응답의 일부로 **instanceId**(이)라는 필드가 표시됩니다. 다음 단계에서 필요하므로 적어 두십시오. 이 예제에서 **instanceId**은
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`.
+
+![데이터 수집](./images/sdkpm6.png)
+
+## 대상 구성 만들기
+
+Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동한 다음 클릭하여 **POST - 대상 구성 만들기** 요청을 엽니다. 그러면 이걸 보게 될 거야. **Headers**&#x200B;에서 **x-sandbox-name** 키의 값을 수동으로 업데이트하고 `--aepSandboxName--`(으)로 설정해야 합니다. 값 **{{SANDBOX_NAME}}**&#x200B;을(를) 선택하고 `--aepSandboxName--`(으)로 바꿉니다.
+
+![데이터 수집](./images/sdkpm7.png)
+
+그런 다음 **본문**(으)로 이동합니다. 자리 표시자 **{{body}}**&#x200B;을(를) 선택하십시오.
+
+![데이터 수집](./images/sdkpm9.png)
+
+이제 자리 표시자 **{{body}}**&#x200B;을(를) 아래 코드로 바꾸어야 합니다.
+
+```json
+{
+    "name": "--aepUserLdap-- - Webhook",
+    "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
+    "status": "TEST",
+    "customerAuthenticationConfigurations": [
+        {
+            "authType": "BEARER"
+        }
+    ],
+    "customerDataFields": [
+        {
+            "name": "endpointsInstance",
+            "type": "string",
+            "title": "Select Endpoint",
+            "description": "We could manage several instances across the globe for REST endpoints that our customers are provisioned for. Select your endpoint in the dropdown list.",
+            "isRequired": true,
+            "enum": [
+                "US",
+                "EU",
+                "APAC",
+                "NZ"
+            ]
+        }
+    ],
+    "uiAttributes": {
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "category": "streaming",
+        "connectionType": "Server-to-server",
+        "frequency": "Streaming"
+    },
+    "identityNamespaces": {
+        "ecid": {
+            "acceptsAttributes": true,
+            "acceptsCustomNamespaces": false
+        }
+    },
+    "segmentMappingConfig": {
+        "mapExperiencePlatformSegmentName": true,
+        "mapExperiencePlatformSegmentId": true,
+        "mapUserInput": false
+    },
+    "aggregation": {
+        "aggregationType": "BEST_EFFORT",
+        "bestEffortAggregation": {
+            "maxUsersPerRequest": "1000",
+            "splitUserById": false
+        }
+    },
+    "schemaConfig": {
+        "profileRequired": false,
+        "segmentRequired": true,
+        "identityRequired": true
+    },
+    "destinationDelivery": [
+        {
+            "authenticationRule": "NONE",
+            "destinationServerId": "yourTemplateInstanceID"
+        }
+    ]
+}
+```
+
+![데이터 수집](./images/sdkpm11.png)
+
+위의 코드를 붙여넣은 후 **destinationDelivery 필드를 수동으로 업데이트해야 합니다. destinationServerId**&#x200B;을(를) 사용하려면 이전 단계에서 만든 대상 서버 템플릿의 **instanceId**(이 예제에서는 `52482c90-8a1e-42fc-b729-7f0252e5cebd`)로 설정해야 합니다. 그런 다음 **보내기**&#x200B;를 클릭합니다.
+
+![데이터 수집](./images/sdkpm10.png)
+
+그러면 이 응답이 표시됩니다.
+
+![데이터 수집](./images/sdkpm12.png)
+
+이제 대상이 Adobe Experience Platform에서 생성되었습니다. 가서 확인해 보자.
 
 [Adobe Experience Platform](https://experience.adobe.com/platform)(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/home.png)
 
->[!IMPORTANT]
->
->이 연습에 사용할 샌드박스는 ``--aepSandboxName--``입니다.
-
 계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 [!UICONTROL 샌드박스]를 선택하면 화면이 변경되고 이제 전용 [!UICONTROL 샌드박스]에 있게 됩니다.
 
-![데이터 수집](./images/sb1.png)
+![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-대상 데이터는 프로필이 대상의 일부가 되는 조건을 정의하지만 대상 메타데이터는 대상 이름, 설명 및 상태와 같은 대상에 대한 정보입니다. 외부 대상 메타데이터가 Adobe Experience Platform에 저장되므로 ID 네임스페이스를 사용하여 Adobe Experience Platform에서 메타데이터를 수집해야 합니다.
+왼쪽 메뉴에서 **대상**(으)로 이동하고 **카탈로그**&#x200B;를 클릭한 다음 **스트리밍** 카테고리로 스크롤합니다. 이제 목적지를 사용할 수 있습니다.
 
-## 2.3.6.1.1 외부 대상을 위한 Id 네임스페이스
+![데이터 수집](./images/destsdk1.png)
 
-**외부 대상**에서 사용할 ID 네임스페이스가 이미 만들어졌습니다.
-이미 만들어진 ID를 보려면 **ID**(으)로 이동하여 **외부**&#x200B;를 검색하십시오. &quot;외부 대상&quot; 항목을 클릭합니다.
+## 대상을 대상에 연결
 
-참고 사항:
+**대상** > **카탈로그**&#x200B;에서 대상에 대한 **설정**&#x200B;을 클릭하여 새 대상에 대상을 추가합니다.
 
-- ID 기호 **externalaudiences**&#x200B;은(는) 외부 대상 ID를 참조하기 위해 다음 단계에서 사용됩니다.
-- 이 ID 네임스페이스는 고객 프로필이 아닌 대상을 식별하기 위한 것이 아니므로 **비사용자 식별자** 유형이 사용됩니다.
+![데이터 수집](./images/destsdk2.png)
 
-![외부 대상 ID](images/extAudIdNS.png)
+**전달자 토큰**&#x200B;에 대한 임의의 값을 입력하십시오(예: **1234**). **대상에 연결**&#x200B;을 클릭합니다.
 
-## 2.3.6.1.2 외부 대상 메타데이터 스키마 만들기
+![데이터 수집](./images/destsdk3.png)
 
-외부 대상 메타데이터는 **대상 정의 스키마**&#x200B;를 기반으로 합니다. 자세한 내용은 [XDM Github 저장소](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md)를 참조하십시오.
+그러면 이걸 보게 될 거야. 대상의 이름으로 `--aepUserLdap-- - Webhook`을(를) 사용합니다. 이 예제 **EU**&#x200B;에서 선택한 끝점을 선택하십시오. **다음**&#x200B;을 클릭합니다.
 
-왼쪽 메뉴에서 스키마로 이동합니다. **+ 스키마 만들기**&#x200B;를 클릭한 다음 **찾아보기**&#x200B;를 클릭합니다.
+![데이터 수집](./images/destsdk4.png)
 
-![외부 대상 메타데이터 스키마 1](images/extAudMDXDM1.png)
+선택적으로 데이터 거버넌스 정책을 선택할 수 있습니다. **다음**&#x200B;을 클릭합니다.
 
-클래스를 할당하려면 **대상 정의**&#x200B;를 검색하세요. **대상 정의** 클래스를 선택하고 **클래스 할당**&#x200B;을 클릭합니다.
+![데이터 수집](./images/destsdk5.png)
 
-![외부 대상 메타데이터 스키마 2](images/extAudMDXDM2.png)
+이전에 만든 대상(`--aepUserLdap-- - Interest in Galaxy S24`)을 선택하십시오. **다음**&#x200B;을 클릭합니다.
 
-그러면 이걸 보게 될 거야. **취소**&#x200B;를 클릭합니다.
+![데이터 수집](./images/destsdk6.png)
 
-![외부 대상 메타데이터 스키마 3](images/extAudMDXDM3.png)
+그러면 이걸 보게 될 거야. **SOURCE 필드** `--aepTenantId--.identification.core.ecid`을(를) 필드 `Identity: ecid`에 매핑해야 합니다. **다음**&#x200B;을 클릭합니다.
 
-그러면 이걸 보게 될 거야. 필드 **_id**&#x200B;을(를) 선택하십시오. 오른쪽 메뉴에서 아래로 스크롤하여 **ID** 및 **기본 ID** 확인란을 사용하도록 설정합니다. **외부 대상** ID 네임스페이스를 선택하십시오. **적용**&#x200B;을 클릭합니다.
+![데이터 수집](./images/destsdk7.png)
 
-![외부 대상 메타데이터 스키마 4](images/extAudMDXDM4.png)
+**마침을 클릭합니다**.
 
-그런 다음 스키마 이름 **제목 없는 스키마**&#x200B;를 선택합니다. 이름을 `--aepUserLdap-- - External Audiences Metadata`(으)로 변경합니다.
+![데이터 수집](./images/destsdk8.png)
 
-![외부 대상 메타데이터 스키마 5](images/extAudMDXDM5.png)
+이제 대상이 라이브되며, 새로운 대상 자격이 이제 사용자 지정 웹후크로 스트리밍됩니다.
 
-**프로필** 토글을 활성화하고 확인하십시오. 마지막으로 **저장**&#x200B;을 클릭합니다.
+![데이터 수집](./images/destsdk9.png)
 
-![외부 대상 메타데이터 스키마 5](images/extAudMDXDM6.png)
+## 대상자 활성화 테스트
 
-## 2.3.6.1.3 외부 대상 메타데이터 데이터 세트 만들기
+[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
-**스키마**&#x200B;에서 **찾아보기**(으)로 이동합니다. 이전 단계에서 만든 `--aepUserLdap-- - External Audiences Metadata` 스키마를 검색하고 클릭합니다. **스키마에서 데이터 집합 만들기**&#x200B;를 클릭합니다.
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
-![외부 대상 메타데이터 DS 1](images/extAudMDDS1.png)
+그러면 데모 웹 사이트가 열리는 것을 볼 수 있습니다. URL을 선택하고 클립보드에 복사합니다.
 
-필드 **이름**&#x200B;에 `--aepUserLdap-- - External Audience Metadata`을(를) 입력하십시오. **데이터 집합 만들기**&#x200B;를 클릭합니다.
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
-![외부 대상 메타데이터 DS 2](images/extAudMDDS2.png)
+새 시크릿 브라우저 창을 엽니다.
 
-그러면 이걸 보게 될 거야. **프로필** 전환을 사용하도록 설정하는 것을 잊지 마십시오!
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
-![외부 대상 메타데이터 DS 3](images/extAudMDDS3.png)
+이전 단계에서 복사한 데모 웹 사이트의 URL을 붙여 넣습니다. 그런 다음 Adobe ID을 사용하여 로그인하라는 메시지가 표시됩니다.
 
-## 2.3.6.1.4 HTTP API Source 연결 만들기
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
-다음으로, 메타데이터를 데이터 세트에 수집하는 데 사용할 HTTP API Source 커넥터를 구성해야 합니다.
+계정 유형을 선택하고 로그인 프로세스를 완료합니다.
 
-**소스**(으)로 이동합니다. 검색 필드에 **HTTP**&#x200B;를 입력합니다. **데이터 추가**&#x200B;를 클릭합니다.
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-![외부 대상 메타데이터 http 1](images/extAudMDhttp1.png)
+그러면 웹 사이트가 시크릿 브라우저 창에 로드되는 것을 볼 수 있습니다. 모든 연습에서는 새로운 시크릿 브라우저 창을 사용하여 데모 웹 사이트 URL을 로드해야 합니다.
 
-다음 정보를 입력합니다.
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-- **계정 유형**: **새 계정 선택**
-- **계정 이름**: `--aepUserLdap-- - External Audience Metadata` 입력
-- **XDM 호환 확인란** 선택
+이 예에서는 특정 제품을 보는 특정 고객에게 응답하려고 합니다.
+**Citi Signal** 홈페이지에서 **전화 및 장치**(으)로 이동한 다음 제품 **Galaxy S24**&#x200B;을(를) 클릭합니다.
 
-**소스에 연결**&#x200B;을 클릭합니다.
+![데이터 수집](./images/homegalaxy.png)
 
-![외부 대상 메타데이터 http 2](images/extAudMDhttp2.png)
+이제 Galaxy S24의 제품 페이지가 조회되었으므로, 대상자는 다음 분 이내에 프로필을 확인할 수 있습니다.
 
-그러면 이걸 보게 될 거야. **다음**&#x200B;을 클릭합니다.
+![데이터 수집](./images/homegalaxy1.png)
 
-![외부 대상 메타데이터 http 2](images/extAudMDhttp2a.png)
+프로필 뷰어를 열고 **대상**(으)로 이동하면 대상 자격이 표시됩니다.
 
-**기존 데이터 세트**&#x200B;을(를) 선택하고 드롭다운 메뉴에서 데이터 세트 `--aepUserLdap-- - External Audience Metadata`을(를) 검색하여 선택합니다.
+![데이터 수집](./images/homegalaxydsdk.png)
 
-**데이터 흐름 세부 정보**&#x200B;를 확인한 다음 **다음**&#x200B;을 클릭합니다.
+이제 [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net)에서 열려 있는 웹후크로 돌아가십시오. 여기에서 Adobe Experience Platform에서 시작되고 대상 자격 이벤트가 포함된 새 수신 요청이 표시됩니다.
 
-![외부 대상 메타데이터 http 3](images/extAudMDhttp3.png)
+![데이터 수집](./images/destsdk10.png)
 
-그러면 이걸 보게 될 거야.
-
-XDM 호환 페이로드를 HTTP API Source 커넥터로 수집하므로 마법사의 **매핑** 단계가 비어 있으므로 매핑이 필요하지 않습니다. **다음**&#x200B;을 클릭합니다.
-
-![외부 대상 메타데이터 http 3](images/extAudMDhttp3a.png)
-
-**검토** 단계에서 연결 및 매핑 세부 정보를 선택적으로 검토할 수 있습니다. **마침을 클릭합니다**.
-
-![외부 대상 메타데이터 http 4](images/extAudMDhttp4.png)
-
-그러면 이걸 보게 될 거야.
-
-![외부 대상 메타데이터 http 4](images/extAudMDhttp4a.png)
-
-## 2.3.6.1.5 외부 대상 메타데이터 수집
-
-Source 커넥터 개요 탭에서 **..**&#x200B;을(를) 클릭한 다음 **스키마 페이로드 복사**&#x200B;를 클릭합니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudMDstr1a.png)
-
-컴퓨터에서 텍스트 편집기 응용 프로그램을 열고 방금 복사한 페이로드를 붙여 넣습니다. 이 방법은 다음과 같습니다. 그런 다음 이 페이로드에서 **xdmEntity** 개체를 업데이트해야 합니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudMDstr1b.png)
-
-개체 **xdmEntity**&#x200B;을(를) 아래 코드로 바꿔야 합니다. 아래 코드를 복사하여 텍스트 편집기에서 **xdmEntity** 개체를 대체하여 텍스트 파일에 붙여넣습니다.
-
-```
-"xdmEntity": {
-    "_id": "--aepUserLdap---extaudience-01",
-    "description": "--aepUserLdap---extaudience-01 description",
-    "segmentIdentity": {
-      "_id": "--aepUserLdap---extaudience-01",
-      "namespace": {
-        "code": "externalaudiences"
-      }
-    },
-    "segmentName": "--aepUserLdap---extaudience-01 name",
-    "segmentStatus": "ACTIVE",
-    "version": "1.0"
-  }
-```
-
-그런 다음 이 메시지가 표시됩니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudMDstr1.png)
-
-그런 다음 새 **터미널** 창을 엽니다. 텍스트 편집기에서 모든 텍스트를 복사하여 터미널 창에 붙여넣습니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudMDstr1d.png)
-
-다음으로 **Enter**&#x200B;를 누르십시오.
-
-그러면 터미널 창에 데이터 수집 확인이 표시됩니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudMDstr1e.png)
-
-HTTP API Source 커넥터 화면을 새로 고칩니다. 그러면 데이터가 처리 중인 것을 볼 수 있습니다.
-
-![외부 대상 메타데이터 문자열 2](images/extAudMDstr2.png)
-
-## 2.3.6.1.6 외부 대상 메타데이터 수집 유효성 검사
-
-처리가 완료되면 쿼리 서비스를 사용하여 데이터 세트의 데이터 가용성을 확인할 수 있습니다.
-
-오른쪽 메뉴에서 **데이터 세트**(으)로 이동하여 이전에 만든 `--aepUserLdap-- - External Audience Metadata` 데이터 세트를 선택합니다.
-
-![외부 대상 메타데이터 문자열 3](images/extAudMDstr3.png)
-
-오른쪽 메뉴에서 쿼리로 이동한 다음 **쿼리 만들기**&#x200B;를 클릭합니다.
-
-![외부 대상 메타데이터 문자열 4](images/extAudMDstr4.png)
-
-다음 코드를 입력한 다음 **SHIFT + ENTER**&#x200B;를 누르십시오.
-
-```
-select * from --aepUserLdap--_external_audience_metadata
-```
-
-쿼리 결과에는 수집한 외부 대상의 메타데이터가 표시됩니다.
-
-![외부 대상 메타데이터 문자열 5](images/extAudMDstr5.png)
-
-## 대상자 멤버십
-
-이제 외부 대상 메타데이터를 사용할 수 있으므로 특정 고객 프로필의 대상 멤버십을 수집할 수 있습니다.
-
-이제 대상 멤버십 스키마에 대해 보강된 프로필 데이터 세트를 준비해야 합니다. 자세한 내용은 [XDM Github 저장소](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md)를 참조하십시오.
-
-### 외부 대상 멤버십 스키마 만들기
-
-오른쪽 메뉴에서 **스키마**(으)로 이동합니다. **스키마 만들기**&#x200B;를 클릭한 다음 **XDM 개인 프로필**&#x200B;을 클릭합니다.
-
-![외부 대상 프로필 스키마 1](images/extAudPrXDM1.png)
-
-**필드 그룹 추가** 팝업에서 **프로필 코어**&#x200B;를 검색합니다. **프로필 코어 v2** 필드 그룹을 선택하십시오.
-
-![외부 대상 프로필 스키마 2](images/extAudPrXDM2.png)
-
-그런 다음 **필드 그룹 추가** 팝업에서 **세그먼트 멤버십**&#x200B;을 검색합니다. **세그먼트 멤버십 세부 정보** 필드 그룹을 선택하십시오. **필드 그룹 추가**&#x200B;를 클릭합니다.
-
-![외부 대상 프로필 스키마 3](images/extAudPrXDM3.png)
-
-그러면 이걸 보게 될 거야. `--aepTenantId--.identification.core` 필드로 이동합니다. **crmId** 필드를 클릭합니다. 오른쪽 메뉴에서 아래로 스크롤하여 **ID** 및 **기본 ID** 확인란을 선택합니다. **ID 네임스페이스**&#x200B;에 대해 **데모 시스템 - CRMID**&#x200B;을(를) 선택하십시오.
-
-**적용**&#x200B;을 클릭합니다.
-
-![외부 대상 프로필 스키마 4](images/extAudPrXDM4.png)
-
-그런 다음 스키마 이름 **제목 없는 스키마**&#x200B;를 선택합니다. 표시 이름 필드에 `--aepUserLdap-- - External Audiences Membership`을(를) 입력합니다.
-
-![외부 대상 프로필 스키마 5](images/extAudPrXDM5a.png)
-
-그런 다음 **프로필** 전환을 활성화하고 확인합니다. **저장**&#x200B;을 클릭합니다.
-
-![외부 대상 프로필 스키마 5](images/extAudPrXDM5.png)
-
-### 외부 대상 멤버십 데이터 세트 만들기
-
-**스키마**&#x200B;에서 **찾아보기**(으)로 이동합니다. 이전 단계에서 만든 `--aepUserLdap-- - External Audiences Membership` 스키마를 검색하고 클릭합니다. **스키마에서 데이터 집합 만들기**&#x200B;를 클릭합니다.
-
-![외부 대상 메타데이터 DS 1](images/extAudPrDS1.png)
-
-필드 **이름**&#x200B;에 `--aepUserLdap-- - External Audiences Membership`을(를) 입력하십시오. **데이터 집합 만들기**&#x200B;를 클릭합니다.
-
-![외부 대상 메타데이터 DS 2](images/extAudPrDS2.png)
-
-그러면 이걸 보게 될 거야. **프로필** 전환을 사용하도록 설정하는 것을 잊지 마십시오!
-
-![외부 대상 메타데이터 DS 3](images/extAudPrDS3.png)
-
-### HTTP API Source 연결 만들기
-
-
-다음으로, 메타데이터를 데이터 세트에 수집하는 데 사용할 HTTP API Source 커넥터를 구성해야 합니다.
-
-**소스**(으)로 이동합니다. 검색 필드에 **HTTP**&#x200B;를 입력합니다. **데이터 추가**&#x200B;를 클릭합니다.
-
-![외부 대상 메타데이터 http 1](images/extAudMDhttp1.png)
-
-다음 정보를 입력합니다.
-
-- **계정 유형**: **새 계정 선택**
-- **계정 이름**: `--aepUserLdap-- - External Audience Membership` 입력
-- **XDM 호환 확인란** 선택
-
-**소스에 연결**&#x200B;을 클릭합니다.
-
-![외부 대상 메타데이터 http 2](images/extAudPrhttp2.png)
-
-그러면 이걸 보게 될 거야. **다음**&#x200B;을 클릭합니다.
-
-![외부 대상 메타데이터 http 2](images/extAudPrhttp2a.png)
-
-**기존 데이터 세트**&#x200B;을(를) 선택하고 드롭다운 메뉴에서 데이터 세트 `--aepUserLdap-- - External Audiences Membership`을(를) 검색하여 선택합니다.
-
-**데이터 흐름 세부 정보**&#x200B;를 확인한 다음 **다음**&#x200B;을 클릭합니다.
-
-![외부 대상 메타데이터 http 3](images/extAudPrhttp3.png)
-
-그러면 이걸 보게 될 거야.
-
-XDM 호환 페이로드를 HTTP API Source 커넥터로 수집하므로 마법사의 **매핑** 단계가 비어 있으므로 매핑이 필요하지 않습니다. **다음**&#x200B;을 클릭합니다.
-
-![외부 대상 메타데이터 http 3](images/extAudPrhttp3a.png)
-
-**검토** 단계에서 연결 및 매핑 세부 정보를 선택적으로 검토할 수 있습니다. **마침을 클릭합니다**.
-
-![외부 대상 메타데이터 http 4](images/extAudPrhttp4.png)
-
-그러면 이걸 보게 될 거야.
-
-![외부 대상 메타데이터 http 4](images/extAudPrhttp4a.png)
-
-### 외부 대상 멤버십 데이터 수집
-
-Source 커넥터 개요 탭에서 **..**&#x200B;을(를) 클릭한 다음 **스키마 페이로드 복사**&#x200B;를 클릭합니다.
-
-![외부 대상 메타데이터 문자열 1](./images/extAudPrstr1a.png)
-
-컴퓨터에서 텍스트 편집기 응용 프로그램을 열고 방금 복사한 페이로드를 붙여 넣습니다. 이 방법은 다음과 같습니다. 그런 다음 이 페이로드에서 **xdmEntity** 개체를 업데이트해야 합니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudPrstr1b.png)
-
-개체 **xdmEntity**&#x200B;을(를) 아래 코드로 바꿔야 합니다. 아래 코드를 복사하여 텍스트 편집기에서 **xdmEntity** 개체를 대체하여 텍스트 파일에 붙여넣습니다.
-
-```
-  "xdmEntity": {
-    "_id": "--aepUserLdap---profile-test-01",
-    "_experienceplatform": {
-      "identification": {
-        "core": {
-          "crmId": "--aepUserLdap---profile-test-01"
-        }
-      }
-    },
-    "personID": "--aepUserLdap---profile-test-01",
-    "segmentMembership": {
-      "externalaudiences": {
-        "--aepUserLdap---extaudience-01": {
-          "status": "realized",
-          "lastQualificationTime": "2022-03-05T00:00:00Z"
-        }
-      }
-    }
-  }
-```
-
-그런 다음 이 메시지가 표시됩니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudPrstr1.png)
-
-그런 다음 새 **터미널** 창을 엽니다. 텍스트 편집기에서 모든 텍스트를 복사하여 터미널 창에 붙여넣습니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudPrstr1d.png)
-
-다음으로 **Enter**&#x200B;를 누르십시오.
-
-그러면 터미널 창에 데이터 수집 확인이 표시됩니다.
-
-![외부 대상 메타데이터 문자열 1](images/extAudPrstr1e.png)
-
-HTTP API Source 커넥터 화면을 새로 고칩니다. 여기서 몇 분 정도 지나면 데이터가 처리되는 것을 볼 수 있습니다.
-
-![외부 대상 메타데이터 문자열 2](images/extAudPrstr2.png)
-
-### 외부 대상 멤버십 수집 유효성 검사
-
-처리가 완료되면 쿼리 서비스를 사용하여 데이터 세트의 데이터 가용성을 확인할 수 있습니다.
-
-오른쪽 메뉴에서 **데이터 세트**(으)로 이동하여 이전에 만든 `--aepUserLdap-- - External Audiences Membership ` 데이터 세트를 선택합니다.
-
-![외부 대상 메타데이터 문자열 3](images/extAudPrstr3.png)
-
-오른쪽 메뉴에서 쿼리로 이동한 다음 **쿼리 만들기**&#x200B;를 클릭합니다.
-
-![외부 대상 메타데이터 문자열 4](images/extAudPrstr4.png)
-
-다음 코드를 입력한 다음 **SHIFT + ENTER**&#x200B;를 누르십시오.
-
-```
-select * from --aepUserLdap--_external_audiences_membership
-```
-
-쿼리 결과에는 수집한 외부 대상의 메타데이터가 표시됩니다.
-
-![외부 대상 메타데이터 문자열 5](images/extAudPrstr5.png)
-
-## 세그먼트 생성
-
-이제 외부 대상에 대해 조치를 취할 준비가 되었습니다.
-Adobe Experience Platform에서 조치를 취하는 것은 세그먼트를 만들고, 각 대상을 채우고, 이러한 대상을 대상에 공유하는 것을 통해 수행됩니다.
-이제 방금 만든 외부 대상을 사용하여 세그먼트를 만듭니다.
-
-왼쪽 메뉴에서 **세그먼트**(으)로 이동한 다음 **세그먼트 만들기**&#x200B;를 클릭합니다.
-
-![외부 대상 SegBuilder 1](images/extAudSegUI2.png)
-
-**대상**(으)로 이동합니다. 그러면 이걸 보게 될 거야. **외부 대상**&#x200B;을 클릭합니다.
-
-![외부 대상 SegBuilder 1](images/extAudSegUI2a.png)
-
-이전에 만든 외부 대상(`--aepUserLdap---extaudience-01`)을 선택하십시오. 대상을 캔버스로 드래그하여 놓습니다.
-
-![외부 대상 SegBuilder 1](images/extAudSegUI2b.png)
-
-세그먼트 이름을 지정하십시오. `--aepUserLdap-- - extaudience-01`을(를) 사용하십시오. **저장 후 닫기**&#x200B;를 클릭합니다.
-
-![외부 대상 SegBuilder 1](images/extAudSegUI1.png)
-
-그러면 이걸 보게 될 거야. 또한 세그먼트 멤버십을 수집한 프로필이 **샘플 프로필** 목록에 표시됩니다.
-
-![외부 대상 SegBuilder 1](images/extAudSegUI3.png)
-
-이제 세그먼트가 준비되었으며, 활성화 대상으로 전송할 수 있습니다.
-
-## 고객 프로필 시각화
-
-이제 고객 프로필에서 세그먼트 자격을 시각화할 수도 있습니다. **프로필**(으)로 이동하여 ID 네임스페이스 **데모 시스템 - CRMID**&#x200B;을(를) 사용하고 연습 6.6.2.4의 일부로 사용한 ID `--aepUserLdap---profile-test-01`을(를) 제공하고 **보기**&#x200B;를 클릭합니다. **프로필 ID**&#x200B;를 클릭하여 프로필을 엽니다.
-
-![외부 대상 SegBuilder 1](images/extAudProfileUI1.png)
-
-외부 대상이 표시되는 **세그먼트 멤버십**(으)로 이동합니다.
-
-![외부 대상 SegBuilder 1](images/extAudProfileUI2.png)
-
-다음 단계: [2.3.7 대상 SDK](./ex7.md)
+다음 단계: [요약 및 이점](./summary.md)
 
 [모듈 2.3으로 돌아가기](./real-time-cdp-build-a-segment-take-action.md)
 

@@ -5,9 +5,9 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7532eed1074062451d6ac171629742dbdc9c3fdc
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '912'
 ht-degree: 4%
 
 ---
@@ -76,8 +76,7 @@ ht-degree: 4%
       + [2.3.3 조치 취하기: 대상자를 DV360으로 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
       + [2.3.4 조치 취하기: 대상자를 S3-destination으로 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
       + [2.3.5 조치 취하기: 대상자를 Adobe Target으로 보내기](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
-      + [2.3.6 외부 대상](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
-      + [2.3.7 대상 SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
+      + [2.3.6 대상 SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
    + 2.4 Real-Time CDP: Microsoft Azure Event Hub {#module24} Audience Activation
       + [개요](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)

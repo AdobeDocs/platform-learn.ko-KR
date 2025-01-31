@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,7 @@ Real-Time CDP UI를 사용하여 광고 대상을 구성하는 방법을 알아�
 
 만든 대상을 사용하여 Adobe Target에서 경험 타깃팅 활동을 구성합니다.
 
-[2.3.6 외부 대상](./ex6.md)
-
-외부 소스 시스템의 대상을 Adobe Experience Platform으로 가져옵니다.
-
-[2.3.7 대상 SDK](./ex7.md)
+[2.3.6 대상 SDK](./ex6.md)
 
 대상 SDK을 사용하여 고유한 대상을 구성합니다.
 

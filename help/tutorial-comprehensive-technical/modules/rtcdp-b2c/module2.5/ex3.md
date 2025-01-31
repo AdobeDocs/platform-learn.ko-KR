@@ -4,7 +4,7 @@ description: 사용자 지정 Webhook 만들기 및 구성
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: ca4c53ba88bc6a256fc540091413f5efb05945ee
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 사용자 지정 Webhook 만들기
 
-[https://pipedream.com/requestbin](https://pipedream.com/requestbin)(으)로 이동합니다. [Exercise 2.3.7 대상 SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md)에서 이 응용 프로그램을 이미 사용했습니다.
+[https://pipedream.com/requestbin](https://pipedream.com/requestbin)(으)로 이동합니다. [연습 2.3.6 대상 SDK](./../../../modules/rtcdp-b2c/module2.3/ex6.md)에서 이 응용 프로그램을 이미 사용했습니다.
 
 해당 서비스를 아직 사용하지 않은 경우 계정을 만든 다음 작업 영역을 만듭니다. 작업 영역이 생성되면 이와 유사한 항목이 표시됩니다.
 
@@ -56,7 +56,7 @@ URL을 복사하려면 **복사**&#x200B;를 클릭하세요. 다음 연습에�
 >
 >위의 경로에서 **arc**&#x200B;을(를) 참조합니다. **arc**&#x200B;은(는) Adobe 리소스 컨텍스트를 의미하며 **arc**&#x200B;은(는) 항상 서버측 컨텍스트에서 사용 가능한 가장 높은 사용 가능한 개체를 의미합니다. Adobe Experience Platform 데이터 수집 서버 함수를 사용하여 해당 **arc** 개체에 보강 및 변환을 추가할 수 있습니다.
 >
->위의 경로에서 **event**&#x200B;을(를) 참조합니다. **event**&#x200B;은(는) 고유한 이벤트를 의미하며 Adobe Experience Platform 데이터 수집 서버는 항상 모든 이벤트를 개별적으로 평가합니다. 경우에 따라 Web SDK Client Side에서 보낸 페이로드에 **events**&#x200B;에 대한 참조가 표시될 수 있지만, Adobe Experience Platform 데이터 수집 서버에서는 모든 이벤트가 개별적으로 평가됩니다.
+>위의 경로에서 **event**&#x200B;을(를) 참조합니다. **event**&#x200B;은(는) 고유한 이벤트를 의미하며 Adobe Experience Platform 데이터 수집 서버는 항상 모든 이벤트를 개별적으로 평가합니다. 경우에 따라 Web SDK Client Side에서 보낸 페이로드에 **events**&#x200B;에 대한 참조가 표시될 수 있지만 Adobe Experience Platform 데이터 수집 서버에서는 모든 이벤트가 개별적으로 평가됩니다.
 
 ## Adobe Experience Platform 데이터 수집 서버 속성 업데이트: 규칙 만들기
 
