@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
+source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 17%
+source-wordcount: '873'
+ht-degree: 18%
 
 ---
 
@@ -118,22 +118,6 @@ ht-degree: 17%
    + [모바일 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + 데이터 수명 주기 {#data-lifecycle}
    + [데이터 세트 만료](/help/platform/data-lifecycle/expire-datasets.md)
-+ 데이터 과학 Workspace {#data-science-workspace}
-   + [개요](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-   + [아키텍처](data-science-workspace/architecture-overview.md)
-   + [강의 스키마 및 데이터 세트 만들기](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [JupyterLab 노트북에 데이터 로드](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [JupyterLab 노트북에서 데이터 쿼리 및 검색](data-science-workspace/dsw-query-service.md)
-   + [탐색적 데이터 분석](data-science-workspace/eda.md)
-   + [레서피, 모델 및 서비스 개요](data-science-workspace/recipes-models-services-overview.md)
-   + [레시피 빌더 템플릿을 사용하여 모델 구축](data-science-workspace/recipe-builder-template.md)
-   + [모델 성능 분석](data-science-workspace/analyze-model-performance.md)
-   + [교육된 모델(UI) 만들기 및 게시](data-science-workspace/create-model-ui.md)
-   + [서비스에 대한 자동화된 교육 및 채점 예약](data-science-workspace/schedule-training-scoring.md)
-   + [머신 러닝 통찰력을 통해 실시간 고객 프로필 강화](data-science-workspace/dsw-profile-segmentation.md)
-   + [레시피에 소스 파일 패키징](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [패키지된 레시피(UI) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [패키지된 레시피(API) 가져오기](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 대상 {#destinations}
    + [대상 개요](/help/platform/destinations/understanding-destinations.md)
    + [대상에 연결하는 중](/help/platform/destinations/connecting-to-destinations.md)
