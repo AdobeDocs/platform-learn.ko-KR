@@ -3,10 +3,10 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 10%
+source-wordcount: '256'
+ht-degree: 8%
 
 ---
 
@@ -35,5 +35,11 @@ ht-degree: 10%
 | [5.1 쿼리 서비스](./modules/datadistiller/module5.1/query-service.md) | 2024년 4월 12일 | 예 | - |
 
 {style="table-layout:auto"}
+
+![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.
 
 [모든 모듈로 돌아가기](./overview.md)
