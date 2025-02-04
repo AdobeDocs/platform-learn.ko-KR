@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
+source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 18%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 18%
    + [응답 유효성 검사](/help/platform/ai-assistant/validate-responses.md)
    + [검색 패널](/help/platform/ai-assistant/discoverability-panel.md)
    + [사용하지 않는 대상 찾기](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [운영 인사이트](/help/platform/ai-assistant/operational-insights.md)
    + [영향 분석](/help/platform/ai-assistant/impact-analysis.md)
    + [보안 개요](/help/platform/ai-assistant/security-overview.md)
 + 대상 및 세분화 {#audiences}
@@ -141,6 +142,8 @@ ht-degree: 18%
    + [ID 및 ID 그래프 개요](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [ID 데이터 레이블 지정, 처리 및 확인](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [ID 그래프 보기](/help/platform/identities/view-identity-graphs.md)
+   + ID 그래프 연결 규칙 {#graph-linking-rules}
+      + [그래프 시뮬레이션](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
    + [개요](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Attribution AI 개요](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
