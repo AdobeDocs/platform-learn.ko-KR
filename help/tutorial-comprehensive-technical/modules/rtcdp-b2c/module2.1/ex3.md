@@ -4,9 +4,9 @@ description: 기초 - 실시간 고객 프로필 - 나만의 실시간 고객 �
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2299'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 X-ray 패널에서 ID와 네임스페이스의 4가지 다른 조합을 볼 수 있습니다.
 
-| 신원 | 네임스페이스 |
+| ID | 네임스페이스 |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 79943948563923140522865572770524243489 |
 | Experience Cloud ID (ECID) | 70559351147248820114888181867542007989 |
@@ -132,7 +132,11 @@ X-ray 패널에서 ID와 네임스페이스의 4가지 다른 조합을 볼 수 
 
 ![사용 권한](./images/perm4.png)
 
-## Adobe I/O에 대한 Postman 인증
+## Adobe I/O 인증
+
+>[!IMPORTANT]
+>
+>Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
 
 [https://www.postman.com/downloads/](https://www.postman.com/downloads/)(으)로 이동합니다.
 

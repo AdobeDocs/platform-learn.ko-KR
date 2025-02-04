@@ -2,9 +2,10 @@
 title: PostBuster - Adobe 직원
 description: PostBuster - Adobe 직원
 doc-type: multipage-overview
-source-git-commit: 7b559bc183dbabdb0100681b675cd3c3b8123ba6
+exl-id: a798e9d7-bb99-4390-885f-5fbd2ef4cee9
+source-git-commit: 9c1b30dc0fcca6b4324ec7c8158699fa273cdc90
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,15 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >아래 지침은 Adobe 직원만을 대상으로 합니다.
+
+>[!IMPORTANT]
+>
+>아래 지침에 따라 이러한 연습에서 사용할 모든 필수 API 컬렉션을 이미 사용할 수 있습니다.
+>
+>- [2.1.3 실시간 고객 프로필 시각화 - API](./modules/rtcdp-b2c/module2.1/ex3.md)
+>- [2.3.6 대상 SDK](./modules/rtcdp-b2c/module2.3/ex6.md)
+>- [3.3.6 API를 사용하여 의사 결정 테스트](./modules/ajo-b2c/module3.3/ex6.md)
+>- [5.1.8 쿼리 서비스 API](./modules/datadistiller/module5.1/ex8.md)
 
 ## PostBuster 설치
 
@@ -39,7 +49,7 @@ OS에 맞는 버전을 다운로드하십시오.
 
 ![PostBuster](./assets/images/pb4.png)
 
-**postbuster.json** 파일을 선택하십시오. **열기를 클릭합니다**.
+**aep_tutorial.json** 파일을 선택하십시오. **열기를 클릭합니다**.
 
 ![PostBuster](./assets/images/pb5.png)
 
@@ -77,6 +87,9 @@ OS에 맞는 버전을 다운로드하십시오.
 	"SCOPES": [
 		"openid",
 		"AdobeID",
+		"read_organizations",
+		"additional_info.projectedProductContext",
+		"session",
 		"ff_apis",
 		"firefly_api"
 	],
@@ -85,10 +98,8 @@ OS에 맞는 버전을 다운로드하십시오.
 	"IMS_ORG": "",
 	"access_token": "",
 	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"QS_QUERY_ID": "",
+	"SANDBOX_NAME": ""
 }
 ```
 
@@ -96,7 +107,7 @@ OS에 맞는 버전을 다운로드하십시오.
 
 ![PostBuster](./assets/images/pb12.png)
 
-**Firefly 서비스** 모듈을 통과하면 환경은 다음과 같이 표시됩니다. 지금은 이 작업을 수행할 필요가 없습니다. 이 문제는 나중에 해결될 예정입니다.
+Adobe IO 프로젝트를 만든 후 환경은 다음과 같아야 합니다. 지금은 이 작업을 수행할 필요가 없습니다. 이 문제는 나중에 해결될 예정입니다.
 
 ![PostBuster](./assets/images/pb13.png)
 

@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 Real-time CDP - 세그먼트 구축 및 조치
+# 2.3 Real-time CDP - 대상 구축 및 조치
 
-이 모듈에서는 스트리밍 세그먼트를 구성하고 여러 대상에 대한 세그먼트를 활성화합니다.
+이 모듈에서는 스트리밍 세그먼트를 구성하고 대상을 여러 대상에 활성화합니다.
 
 ## 학습 목표
 
-- 세그먼트를 작성하고 스트리밍에 사용할 수 있도록 설정하는 방법에 대해 알아봅니다.
+- 대상자를 빌드하고 스트리밍에 사용할 수 있도록 하는 방법에 대해 알아봅니다.
 - Adobe Experience Platform UI를 사용하여 광고 대상을 구성하는 방법을 알아봅니다.
-- 세그먼트를 대상에 연결하고 활성화하는 방법에 대해 알아봅니다.
-- 양방향 세그먼트 공유 덕분에 Adobe Audience Manager에서 Adobe Experience Platform 세그먼트를 사용하는 방법과 Adobe Experience Platform에서 Adobe Audience Manager 세그먼트를 사용하는 방법을 알아봅니다.
+- 대상을 대상에 연결하고 활성화하는 방법을 알아봅니다.
 
 ## 전제 조건
 

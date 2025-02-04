@@ -4,10 +4,10 @@ description: Real-Time CDP - 대상 SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 5%
+source-wordcount: '1123'
+ht-degree: 4%
 
 ---
 
@@ -17,9 +17,17 @@ ht-degree: 5%
 
 이 연습에서는 Adobe I/O 를 다시 사용하여 Adobe Experience Platform의 API를 쿼리합니다. Adobe I/O 프로젝트를 아직 구성하지 않은 경우 모듈 2.1의 [연습 3](../module2.1/ex3.md)(으)로 돌아가서 지침을 따르십시오.
 
-## Adobe I/O에 대한 Postman 인증
+>[!IMPORTANT]
+>
+>Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
+
+## Adobe I/O 인증
 
 이 연습에서는 Postman을 다시 사용하여 Adobe Experience Platform의 API를 쿼리합니다. 아직 Postman 응용 프로그램을 구성하지 않은 경우 모듈 2.1의 [연습 3](../module2.1/ex3.md)(으)로 돌아가서 지침을 따르십시오.
+
+>[!IMPORTANT]
+>
+>Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
 
 ## 엔드포인트 및 형식 정의
 

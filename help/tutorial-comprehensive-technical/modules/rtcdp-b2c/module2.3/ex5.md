@@ -4,7 +4,7 @@ description: Real-Time CDP - 대상 구축 및 조치 - 대상을 Adobe Target�
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 데이터 스트림 확인
 
-Real-Time CDP의 Adobe Target 대상은 데이터를 Adobe 에지 네트워크로 수집하는 데 사용되는 데이터 스트림에 연결됩니다. Adobe Target 대상을 설정하려면 먼저 데이터 스트림이 Adobe Target에 대해 이미 활성화되어 있는지 확인해야 합니다. 데이터 스트림이 [연습 0.2 데이터 스트림 만들기](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 구성되었으며 이름이 `--aepUserLdap-- - Demo System Datastream`입니다.
+Real-Time CDP의 Adobe Target 대상은 데이터를 Adobe Edge 네트워크로 수집하는 데 사용되는 데이터 스트림에 연결됩니다. Adobe Target 대상을 설정하려면 먼저 데이터 스트림이 Adobe Target에 대해 이미 활성화되어 있는지 확인해야 합니다. 데이터 스트림이 [연습 0.2 데이터 스트림 만들기](./../../../modules/gettingstarted/gettingstarted/ex2.md)에서 구성되었으며 이름이 `--aepUserLdap-- - Demo System Datastream`입니다.
 
 왼쪽 메뉴에서 아래로 스크롤하여 **데이터스트림**&#x200B;을 클릭합니다. 데이터스트림에서 이름이 `--aepUserLdap-- - Demo System Datastream`인 데이터스트림을 검색합니다. 데이터 스트림을 클릭하여 엽니다.
 
@@ -159,11 +159,16 @@ document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main
 
 **추가** 단추를 클릭하기 전에 `... > h1").innerHTML="Hi there ";`이(가) 표시된 줄로 이동하여 `there` 단어 뒤에 커서를 대괄호 안에 넣으십시오.
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 그런 다음 **추가** 단추를 클릭합니다. 그러면 토큰이 추가되고 다음과 같이 코드가 업데이트됩니다.
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 **다음**&#x200B;을 클릭합니다.
 

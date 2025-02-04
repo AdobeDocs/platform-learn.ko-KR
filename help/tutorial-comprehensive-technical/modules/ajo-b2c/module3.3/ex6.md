@@ -4,9 +4,9 @@ description: API를 사용하여 의사 결정 테스트
 kt: 5342
 doc-type: tutorial
 exl-id: 75515a3e-5df8-42ed-95dc-daae60ee9c72
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 3.3.6 API를 사용하여 의사 결정 테스트
 
 ## 3.3.6.1 Postman을 사용하여 Offer decisioning API 작업
+
+>[!IMPORTANT]
+>
+>Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
 
 데스크톱에 [Offer decisioning에 대한 이 Postman 컬렉션](./../../../assets/postman/postman_offer-decisioning.zip)을 다운로드하고 압축을 풉니다. 그러면 다음 항목이 제공됩니다.
 
