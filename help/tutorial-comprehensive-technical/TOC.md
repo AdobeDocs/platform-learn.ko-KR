@@ -5,9 +5,9 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c85cd82a8d66b456a36d4915c1067f5c195139d1
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '913'
 ht-degree: 4%
 
 ---
@@ -27,6 +27,7 @@ ht-degree: 4%
       + [데이터 스트림 만들기](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
       + [웹 사이트 사용](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
       + [모바일 앱 사용](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+   + [PostBuster](/help/tutorial-comprehensive-technical/postbuster.md)
 
 + 1개 데이터 수집 {#datacollection}
    + 1.1 Adobe Experience Platform 데이터 수집 및 웹 SDK {#module11}

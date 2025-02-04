@@ -3,7 +3,8 @@ title: Workfront 증명
 description: Workfront 증명
 kt: 5342
 doc-type: tutorial
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+exl-id: 1b5ca13b-2a32-44a1-a3ae-342bccc6baeb
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -202,7 +203,7 @@ Workfront 홈페이지에서 **내 프로젝트** 탭의 **새로 만들기**&#x
 
 ## 2.2.2.5 AEM Assets에서 파일 보기
 
-이름이 `--aepUserLdap - Workfront Assets`인 AEM Assets의 폴더로 이동합니다.
+이름이 `--aepUserLdap-- - Workfront Assets`인 AEM Assets의 폴더로 이동합니다.
 
 ![WF](./images/wfppaem1.png)
 

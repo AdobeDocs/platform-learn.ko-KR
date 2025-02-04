@@ -1,10 +1,10 @@
 ---
-title: Cloud Manager 프로그램 만들기
-description: Cloud Manager 프로그램 만들기
+title: AEM CS 환경 설정
+description: AEM CS 환경 설정
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%

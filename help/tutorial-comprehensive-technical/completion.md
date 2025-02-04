@@ -3,7 +3,7 @@ title: 완료
 description: 완료는 어떻게 측정됩니까?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **시작하기** 모듈에 대한 예상 완료 증명은 사용자가 만든 웹용 데모 시스템 프로젝트의 ID입니다.
 
-웹 형식에 대한 데모 시스템 프로젝트의 ID는 다음과 같습니다. `--demoProfileLdap-- - QIMU`.
+웹 형식에 대한 데모 시스템 프로젝트의 ID는 다음과 같습니다. `--aepUserLdap-- - QIMU`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## 2.1 실시간 고객 프로필
 
-**실시간 고객 프로필** 모듈에 대해 예상되는 완료 증명은 UI `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`을(를) 통해 만든 대상의 **대상 ID**&#x200B;입니다.
+**실시간 고객 프로필** 모듈에 대해 예상되는 완료 증명은 UI `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`을(를) 통해 만든 대상의 **대상 ID**&#x200B;입니다.
 
 대상 ID는 다음과 같습니다. **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ## 2.2 지능형 서비스
 
-**Intelligent Services** 모듈에 대한 예상 완료 증명은 UI `--demoProfileLdap-- - Customer AI High Propensity`을(를) 통해 만든 대상의 **대상 ID**&#x200B;입니다.
+**Intelligent Services** 모듈에 대한 예상 완료 증명은 UI `--aepUserLdap-- - Customer AI High Propensity`을(를) 통해 만든 대상의 **대상 ID**&#x200B;입니다.
 
 대상 ID는 다음과 같습니다. **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 ## 2.6 Apache Kafka에서 Real-Time CDP으로 데이터 스트리밍
 
-**Apache Kafka에서 Real-Time CDP으로 데이터 스트리밍**&#x200B;에 대해 예상되는 완료 증명은 소스 커넥터 `--demoProfileLdap-- - Kafka`의 ID입니다.
+**Apache Kafka에서 Real-Time CDP으로 데이터 스트리밍**&#x200B;에 대해 예상되는 완료 증명은 소스 커넥터 `--aepUserLdap-- - Kafka`의 ID입니다.
 
 ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 여기에서 찾을 수 있습니다.
 
@@ -132,7 +132,7 @@ ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 
 
 ## 4.1 Customer Journey Analytics: Analysis Workspace을 사용하여 대시보드 빌드
 
-**Customer Journey Analytics 모듈: Analysis Workspace을 사용하여 대시보드를 빌드**&#x200B;하는 데 필요한 완료 증명은 프로젝트 `--demoProfileLdap-- - Omnichannel Analysis`의 ID입니다.
+**Customer Journey Analytics 모듈: Analysis Workspace을 사용하여 대시보드를 빌드**&#x200B;하는 데 필요한 완료 증명은 프로젝트 `--aepUserLdap-- - Omnichannel Analysis`의 ID입니다.
 
 형식은 다음과 같습니다. **677bcb247064db3c7de2a0e4**. 프로젝트를 열면 URL에서 찾을 수 있습니다.
 
@@ -148,7 +148,7 @@ ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 
 
 ## 5.1 쿼리 서비스
 
-**쿼리 서비스** 모듈에 대해 예상되는 완료 증명은 모듈을 완료한 후 받는 `--demoProfileLdap--_callcenter_interaction_analysis` 데이터 세트 ID(데이터 세트)입니다.
+**쿼리 서비스** 모듈에 대해 예상되는 완료 증명은 모듈을 완료한 후 받는 `--aepUserLdap--_callcenter_interaction_analysis` 데이터 세트 ID(데이터 세트)입니다.
 
 ID는 다음과 같습니다. **675033c903fb3b2aefed8a0a**.
 
