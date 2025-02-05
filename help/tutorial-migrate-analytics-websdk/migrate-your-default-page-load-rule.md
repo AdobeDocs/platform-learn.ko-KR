@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
 exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 2150ead50fee06b434d996183a959ad5f01dd2a8
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,9 @@ ht-degree: 0%
 
 1. 확장 드롭다운에서 **Adobe Experience Platform Web SDK**&#x200B;을(를) 선택합니다.
 1. 작업 유형 드롭다운에서 **변수 업데이트**&#x200B;를 선택합니다.
+1. 오른쪽 패널 상단에 나열된 **데이터 요소**&#x200B;가 새 변수 유형 데이터 요소인지 확인하십시오.
 1. 오른쪽 패널에서 데이터 개체 내의 **Analytics** 개체를 선택합니다
-1. 또한 오른쪽 패널 상단에 나열된 데이터 요소가 새 변수 유형 데이터 요소인지 확인합니다.
-
-   ![변수 작업 업데이트](assets/update-variable-action-analytics.jpg)
-
+   ![변수 작업 업데이트](assets/define-update-variable-action.jpg)
 1. 이제 라디오 단추를 **JSON 또는 데이터 요소 제공**(으)로 변경하고 변수 설정에서 이전 단계에서 복사한 코드를 이 코드 창에 붙여 넣습니다. 이 자습서에서는 예제에 불과합니다. 고유한 변수를 복사하여 붙여넣습니다.
 
    ![새 웹 SDK 코드 붙여넣기](assets/new-websdk-code-paste.jpg)
