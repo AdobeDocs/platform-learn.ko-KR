@@ -3,10 +3,10 @@ title: Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile Extension
 description: 모바일 앱 구현을 Adobe Target에서 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션하는 방법을 알아봅니다
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 6e442413c178e76183f88454d97d3896f8efa8bc
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '376'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +18,7 @@ Adobe Experience Platform Mobile SDK은 모바일 애플리케이션에서 전�
 
 ## 주요 이점
 
-Decisioning 확장의 이점 중 일부는 다음과 같습니다.
+Target 확장과 비교하여 Adobe Journey Optimizer Decisioning 확장의 이점 중 일부는 다음과 같습니다.
 
 * [Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=ko-KR)에서 더 빠른 대상자 공유
 * [Offer decisioning 배달](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)을(를) 지원하기 위해 Target과 Journey Optimizer 통합
@@ -26,21 +26,6 @@ Decisioning 확장의 이점 중 일부는 다음과 같습니다.
 * 개발자를 위한 추가적인 구현 유연성
 
 마이그레이션 시 Target 고객에게 가장 큰 이점은 Real-time Customer Data Platform과의 통합입니다. Real-Time CDP은 Experience Platform에 수집된 전체 데이터 범위와 실시간 고객 프로필 기능을 기반으로 엄청난 대상 구축 기능을 제공합니다. 내장된 데이터 거버넌스 프레임워크는 해당 데이터의 책임 있는 사용을 자동화합니다. 고객 AI를 사용하면 머신 러닝 모델을 쉽게 사용하여 결과를 Adobe Target에 다시 공유할 수 있는 성향 및 이탈 모델을 구성할 수 있습니다. 또한 선택적 의료 및 Privacy &amp; Security Shield 추가 기능의 고객은 동의 적용 기능을 사용하여 개별 고객의 동의 환경 설정을 쉽게 적용할 수 있습니다. Platform Mobile SDK 및 Decisioning 확장은 모바일 채널에서 이러한 Real-Time CDP 기능을 사용하기 위한 요구 사항입니다.
-
-## 학습 목표
-
-이 자습서를 마치면 다음을 수행할 수 있습니다.
-
-* 글머리 기호
-* 글머리 기호 2
-
-
-## 전제 조건
-
-이 자습서를 완료하려면 먼저 다음 작업을 수행해야 합니다.
-
-* 글머리 기호
-* 글머리 기호 2
 
 
 >[!NOTE]

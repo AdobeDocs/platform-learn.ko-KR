@@ -10,10 +10,10 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 5%
+source-wordcount: '88'
+ht-degree: 3%
 
 ---
 
@@ -21,8 +21,6 @@ ht-degree: 5%
 # Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile Extension으로 마이그레이션{#migrate-target-to-mobile-sdk-decisioning}
 
 + [튜토리얼 소개](overview.md)
-
-+ [마이그레이션 개요](migration-overview.md)
 
 + [마이그레이션 계획](plan-migration.md)
 
