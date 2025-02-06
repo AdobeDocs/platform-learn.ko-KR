@@ -1,12 +1,12 @@
 ---
 title: Adobe Experience Platform Mobile SDK 설치
-description: 모바일 앱에서 Adobe Experience Platform Mobile SDK을 구현하는 방법을 알아봅니다.
+description: 모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법에 대해 알아봅니다.
 jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
 source-git-commit: 3dd9c68203d0021e87caaa82bd962b3f9160a397
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 0%
 >
 >id="platform_mobile_sdk_tutorial_install"
 >title="Adobe Experience Platform Mobile SDK 설치"
->abstract="모바일 앱에서 Adobe Experience Platform Mobile SDK을 구현하는 방법을 알아봅니다."
+>abstract="모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법에 대해 알아봅니다."
 
-모바일 앱에서 Adobe Experience Platform Mobile SDK을 구현하는 방법을 알아봅니다.
+모바일 앱에서 Adobe Experience Platform Mobile SDK를 구현하는 방법에 대해 알아봅니다.
 
 ## 전제 조건
 
