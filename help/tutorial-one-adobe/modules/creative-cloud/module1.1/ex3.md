@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
 
-# Photoshop API 작업
+# 1.1.3 Photoshop API 작업
 
 Photoshop API 및 Firefly 서비스로 작업하는 방법을 알아봅니다.
 
-## Adobe I/O 통합 업데이트
+## 1.1.3.1 Adobe I/O 통합 업데이트
 
 1. [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}(으)로 이동합니다.
 
@@ -51,7 +51,11 @@ Photoshop API 및 Firefly 서비스로 작업하는 방법을 알아봅니다.
 
 ![Azure 저장소](./images/ps6.png)
 
-## 프로그래밍 방식으로 PSD 파일과 상호 작용
+## 1.1.3.2 프로그래밍 방식으로 PSD 파일과 상호 작용합니다
+
+>[!IMPORTANT]
+>
+>Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
 
 1. 데스크톱에 [citsignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}를 다운로드합니다.
 

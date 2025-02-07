@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer 번역 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: b68e8578f2bd535662522e752d4cbd2947a9677d
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 4%
+source-wordcount: '134'
+ht-degree: 2%
 
 ---
 
@@ -20,12 +20,17 @@ ht-degree: 4%
 ## 전제 조건
 
 - Adobe Journey Optimizer 액세스
+- Microsoft Azure 번역기에 액세스
 
 ## 연습
 
-[3.2.1 ...](./ex1.md)
+[3.2.1 번역 제공자](./ex1.md)
 
-이 연습에서는 ...
+이 연습에서는 Microsoft Translator를 사용하여 번역 공급업체를 구성하고 Adobe Journey Optimizer에서 이를 설정합니다.
+
+[3.2.2 번역 프로젝트](./ex2.md)
+
+이 연습에서는 Microsoft Translator를 사용하여 번역 공급업체를 구성하고 Adobe Journey Optimizer에서 이를 설정합니다.
 
 [요약 및 이점](./summary.md)
 

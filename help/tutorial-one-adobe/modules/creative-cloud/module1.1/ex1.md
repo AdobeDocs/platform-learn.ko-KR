@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
-# Firefly 서비스 시작
+# 1.1.1 Firefly 서비스 시작하기
 
 Postman 및 Adobe I/O을 사용하여 Adobe Firefly 서비스 API를 쿼리하는 방법에 대해 알아봅니다.
 
-## Adobe I/O 프로젝트 구성
+## 1.1.1.2 Adobe I/O 프로젝트 구성
 
 이 연습에서는 Firefly 서비스 API에 대해 쿼리하는 데 Adobe I/O을 사용합니다. Adobe I/O을 설정하려면 다음 단계를 따르십시오.
 
@@ -53,7 +53,7 @@ Postman 및 Adobe I/O을 사용하여 Adobe Firefly 서비스 API를 쿼리하�
 
 ![새 통합 Adobe I/O](./images/api11.png)
 
-## Postman 환경 다운로드
+## 1.1.1.3 Postman 환경 다운로드
 
 1. **Postman용 다운로드**&#x200B;를 선택한 다음 **OAuth 서버 간**&#x200B;을(를) 선택하여 Postman 환경을 다운로드합니다.
 
@@ -75,7 +75,11 @@ Postman 및 Adobe I/O을 사용하여 Adobe Firefly 서비스 API를 쿼리하�
 
 ![새 통합 Adobe I/O](./images/api16.png)
 
-## Adobe I/O에 대한 Postman 인증
+## Adobe I/O에 대한 1.1.1.4 Postman 인증
+
+>[!IMPORTANT]
+>
+>Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
 
 1. [Postman 다운로드](https://www.postman.com/downloads/){target="_blank"}에서 OS용 Postman의 관련 버전을 다운로드하여 설치하십시오.
 
@@ -123,7 +127,7 @@ Postman에는 환경과 컬렉션의 두 가지 개념이 있습니다.
 
 아니요. API를 통해 Firefly 서비스와 상호 작용할 수 있도록 Postman에 필요한 모든 기능을 갖추고 있습니다.
 
-## 액세스 토큰 요청
+## 1.1.1.5 액세스 토큰 요청
 
 그런 다음 올바르게 인증되었는지 확인하려면 액세스 토큰을 요청해야 합니다.
 
@@ -158,7 +162,7 @@ Postman에는 환경과 컬렉션의 두 가지 개념이 있습니다.
 
 **전달자 토큰** Adobe I/O에 특정 값(매우 긴 access_token)과 만료 창이 있으며, 이제 24시간 동안 유효합니다. 즉, 24시간 후 Postman을 사용하여 Adobe I/O을 인증하려면 이 요청을 다시 실행하여 새 토큰을 생성해야 합니다.
 
-## Firefly 서비스 API, 텍스트 2 이미지
+## 1.1.1.6 Firefly 서비스 API, 텍스트 2 이미지
 
 이제 Firefly 서비스 API에 첫 번째 요청을 보낼 준비가 되었습니다.
 

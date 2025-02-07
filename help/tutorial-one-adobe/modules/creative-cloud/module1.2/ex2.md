@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
 
-# Workfront Fusion에서 Adobe API 사용
+# 1.2.2 Workfront Fusion에서 Adobe API 사용
 
 Workfront Fusion에서 Adobe API를 사용하는 방법에 대해 알아봅니다.
 
-## Workfront Fusion에서 Firefly 텍스트를 사용하여 API 이미지 만들기
+## 1.2.2.1 Workfront Fusion에서 Firefly 텍스트를 사용하여 API 이미지 만들기
 
 1. 두 번째 **여러 변수 설정** 노드 위로 마우스를 가져간 후 **+**&#x200B;을(를) 선택하여 다른 모듈을 추가합니다.
 
@@ -115,7 +115,7 @@ Workfront Fusion에서 Adobe API를 사용하는 방법에 대해 알아봅니�
 
 ![WF Fusion](./images/wffusion61.png)
 
-## Workfront Fusion에서 Photoshop API 사용
+## 1.2.2.2 Workfront Fusion에서 Photoshop API 사용
 
 1. **전달자 토큰 설정**&#x200B;과(와) **Firefly T2I** 노드 중에서 **렌치**&#x200B;을(를) 선택하십시오. **라우터 추가**&#x200B;를 선택하십시오.
 

@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
 
-# Workfront Fusion 시작하기
+# 1.2.1 Workfront Fusion 시작하기
 
 Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly 서비스 API를 쿼리하는 방법에 대해 알아봅니다.
 
-## 새 시나리오 만들기
+## 1.2.1.1 새 시나리오 만들기
 
 1. [https://experience.adobe.com/](https://experience.adobe.com/)(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
 
@@ -59,7 +59,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly 서비스 API를 �
 
    ![WF Fusion](./images/wffusion8.png)
 
-## Adobe I/O 인증 구성
+## 1.2.1.2 Adobe I/O 인증 구성
 
 이제 Adobe I/O에 대해 인증하는 데 필요한 변수를 구성해야 합니다. 이전 연습에서는 Adobe I/O 프로젝트를 만들었습니다. 이제 Workfront Fusion에서 해당 Adobe I/O 프로젝트의 변수를 정의해야 합니다.
 

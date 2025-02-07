@@ -1,18 +1,20 @@
 ---
-title: 완료
+title: 완료 - Adobe Experience Platform을 위한 포괄적인 기술 튜토리얼
 description: 완료는 어떻게 측정됩니까?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # 완료는 어떻게 측정됩니까?
 
-[https://certification.adobe.com](https://certification.adobe.com)(으)로 이동하여 강의 **XXX**(으)로 이동합니다.
+[https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258)(으)로 이동합니다.
+
+![3](./assets/images/certcourse.png)
 
 모듈을 완료하려면 완료 증명을 제공해야 합니다.
 

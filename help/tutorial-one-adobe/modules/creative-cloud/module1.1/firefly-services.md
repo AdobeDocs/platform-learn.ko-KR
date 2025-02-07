@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '158'
 ht-degree: 2%
 
 ---
 
-# Adobe Firefly 서비스 개요
+# 1.1 Adobe Firefly 서비스 개요
 
 Adobe Firefly 서비스를 사용할 수 있는 다양한 방법을 알아봅니다.
 
@@ -23,19 +23,19 @@ Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)에 액세
 
 ## 연습
 
-[Firefly 서비스 시작](./ex1.md){target="_blank"}
+[1.1.1 Firefly 서비스 시작](./ex1.md){target="_blank"}
 
 이 연습에서는 Firefly 서비스 를 살펴보고 그 기능에 대해 알아봅니다.
 
-[Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](./ex2.md){target="_blank"}
+[1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](./ex2.md){target="_blank"}
 
 이 연습에서는 Firefly 서비스 를 살펴보고 그 기능에 대해 알아봅니다.
 
-[Adobe Firefly 및 Adobe Photoshop API](./ex3.md){target="_blank"}
+[1.1.3 Photoshop API 작업](./ex3.md){target="_blank"}
 
 이 연습에서는 Adobe Photoshop과 함께 Firefly 서비스를 사용하는 방법을 알아봅니다.
 
-[Firefly 사용자 지정 모델 API](./ex4.md){target="_blank"}
+[1.1.4 Firefly 사용자 지정 모델 API](./ex4.md){target="_blank"}
 
 이 연습에서는 Firefly 고객 모델 API를 사용하는 방법을 알아봅니다.
 

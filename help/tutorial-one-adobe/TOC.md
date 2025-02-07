@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '340'
 ht-degree: 4%
 
 ---
@@ -29,12 +29,12 @@ ht-degree: 4%
    + [선행 작업](/help/tutorial-one-adobe/prework.md)
    + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
-+ 1 Adobe Creative Cloud {#creativecloud}
-   + 1.1 Adobe Firefly 서비스 {#module11}
++ 1개 만들기 및 프로덕션 {#production}
+   + 1.1 Adobe Firefly 서비스 개요 {#module11}
       + [개요](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1 Firefly 서비스 시작하기](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-      + [1.1.3 Adobe Firefly 및 Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.3 Photoshop API 작업](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [1.1.4 Firefly 사용자 지정 모델 API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2 Creative Workflow Automation with Workfront Fusion {#module21}
@@ -61,7 +61,7 @@ ht-degree: 4%
       + [2.2.5 Workfront + Photoshop 통합](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
-+ 3 통합 고객 경험 {#uce}
++ 3 배달 및 활성화 {#activation}
    + 3.1 Federated Audience 구성 {#module31}
       + [개요](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
       + [3.1.1 Snowflake 환경 설정](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
@@ -70,7 +70,9 @@ ht-degree: 4%
       + [요약 및 이점](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer: 번역 서비스 {#module32}
       + [개요](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
-      + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.1 번역 제공자](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.2 캠페인 만들기](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
+      + [3.2.3 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
    + 3.3 Adobe Journey Optimizer: Offer decisioning {#module33}
       + [개요](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)

@@ -1,11 +1,11 @@
 ---
-title: 개요
+title: 개요 - AEP 및 앱에 대한 포괄적인 기술 튜토리얼
 description: 데이터 엔지니어, 데이터 분석가, 데이터 설계자, 데이터 과학자, 오케스트레이션 엔지니어 및 마케터가 Adobe Experience Platform 및 모든 애플리케이션 서비스의 비즈니스 가치를 완전히 이해할 수 있는 시작점입니다.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ## 완료 및 인증
 
-이 튜토리얼은 Adobe 인증 교육 과정의 일부입니다. [https://certification.adobe.com](https://certification.adobe.com)(으)로 이동하여 이 자습서와 함께 과정에 등록할 수 있습니다.
+이 튜토리얼은 Adobe 인증 교육 과정의 일부입니다. [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258)(으)로 이동하여 이 자습서와 함께 과정에 등록할 수 있습니다.
 
 아래 자습서를 사용하여 완료하는 모든 모듈에 대해 [여기](./completion.md)에 표시된 대로 완료 증명을 제출해야 합니다.
 

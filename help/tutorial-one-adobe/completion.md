@@ -1,10 +1,11 @@
 ---
-title: 완료
+title: 완료 - 단일 Adobe 자습서
 description: 완료는 어떻게 측정됩니까?
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 **시작하기** 모듈에 대한 예상 완료 증명은 사용자가 만든 웹용 데모 시스템 프로젝트의 ID입니다.
 
-웹 형식에 대한 데모 시스템 프로젝트의 ID는 다음과 같습니다. `--demoProfileLdap-- - 8ERG`.
+웹 형식에 대한 데모 시스템 프로젝트의 ID는 다음과 같습니다. `--aepUserLdap-- - 8ERG`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -35,7 +36,7 @@ URL은 다음과 같습니다. `https://ldap.blob.core.windows.net/folder/citisi
 
 ## 1.2 Workfront Fusion을 사용한 Creative Workflow 자동화
 
-**Webhook를 사용하여 시나리오 활성화** 단계를 거친 후 **Creative Workflow Automation with Workfront Fusion** 모듈의 예상 완료 증명은 연습 1.2.3에서 만든 웹후크의 **URL**&#x200B;입니다.
+**Webhook를 사용하여 시나리오 활성화** 단계를 거친 후 **Workfront Fusion을 통한 Creative Workflow Automation** 모듈의 예상 완료 증명은 연습 1.2.3에서 만든 Webhook의 **URL**&#x200B;입니다.
 
 URL은 다음과 같습니다. `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
@@ -79,7 +80,7 @@ URL은 다음과 같습니다. `https://author-p148121-e1511399.adobeaemcloud.co
 
 **Adobe Journey Optimizer: Offer decisioning** 모듈에 대한 예상 완료 증명은 사용자가 만든 **결정**&#x200B;의 ID입니다.
 
-**결정 ID**&#x200B;을 찾을 수 있습니다. 이 ID는 **dps:offer-activity:1a08ba4b529b2fb2**&#x200B;와(과) 유사합니다.
+이 **`dps:offer-activity:1a08ba4b529b2fb2`**&#x200B;과(와) 유사한 **결정 ID**&#x200B;은(는) 여기에서 찾을 수 있습니다.
 
 ![14](./assets/images/offers.png)
 
