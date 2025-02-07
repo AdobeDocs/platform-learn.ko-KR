@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '80'
 ht-degree: 3%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 3%
 
 + [튜토리얼 소개](overview.md)
 
-+ [마이그레이션 계획](plan-migration.md)
-
-+ [Target 확장을 Decisioning 확장과 비교](detailed-comparison.md)
++ [확장 비교](detailed-comparison.md)
 
 + [초기 설정 수행](initial-setup.md)
 
