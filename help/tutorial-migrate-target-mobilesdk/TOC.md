@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 3%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 3%
 
 + [초기 설정 수행](initial-setup.md)
 
-+ [라이브러리 바꾸기 및 미리 숨기기 방법](replace-library.md)
++ [SDK 바꾸기](replace-library.md)
 
 + [렌더링 활동](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [전환 이벤트 추적](track-events.md)
 
-+ [도메인 간 지원 활성화](cross-domain.md)
++ [WebView 지원 활성화](cross-domain.md)
 
 + [대상자 및 프로필 스크립트 업데이트](update-audiences.md)
 

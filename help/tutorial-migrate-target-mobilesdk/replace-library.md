@@ -2,26 +2,36 @@
 title: SDK 교체 - Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile 확장 기능으로 마이그레이션
 description: Adobe Target에서 SDK - Decisioning Mobile 확장 기능으로 마이그레이션할 때 Adobe Journey Optimizer을 교체하는 방법을 알아봅니다.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
-# Target 확장을 Decisioning 확장으로 바꾸기
+# Target SDK을 Optimize SDK으로 바꾸기
 
-온페이지 Adobe Target 구현을 대체하여 at.js에서 Platform Web SDK으로 마이그레이션하는 방법에 대해 알아봅니다. 기본 대체 는 다음 단계로 구성됩니다.
+모바일 구현에서 Adobe Target SDK를 Optimize SDK로 바꾸는 방법을 알아봅니다. 기본 대체 는 다음 단계로 구성됩니다.
 
+* Podfile 또는 `build.gradle` 파일의 종속성 업데이트
+* 가져오기 업데이트
+* 애플리케이션 코드 업데이트
 
-## 모바일 애플리케이션에서 Decisioning 확장 통합(SDK 최적화)
+>[!INFO]
+>
+>Adobe Experience Platform Mobile SDK 생태계 내에서 확장은 다른 이름을 가질 수 있는 애플리케이션에 가져온 SDK에 의해 구현됩니다.
+>
+> * **Target SDK**&#x200B;이(가) **Adobe Target 확장**&#x200B;을 구현함
+> * **SDK 최적화**&#x200B;에서 **Adobe Journey Optimizer - Decisioning 확장 기능**&#x200B;을 구현합니다.
+
+## 종속성 업데이트
 
 
 >[!BEGINTABS]
 
->[!TAB Decisioning 확장에 대한 앱 종속성-Android]
+>[!TAB SDK-Android 최적화를 위한 앱 종속성]
 
-`build.gradle`개의 종속성
+마이그레이션 후 종속성 `build.gradle`개
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -36,9 +46,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Decisioning 확장에 대한 앱 종속성-iOS]
+>[!TAB SDK-iOS 최적화를 위한 앱 종속성]
 
-`Podfile`개의 종속성
+마이그레이션 후 종속성 `Podfile`개
 
 ```Swift
 use_frameworks!
@@ -51,9 +61,9 @@ pod 'AEPLifecycle', '~>5.0'
 pod 'AEPUserProfile', '~> 5.0'
 ```
 
->[!TAB Target 확장-Android에 대한 앱 종속성]
+>[!TAB Target SDK-Android에 대한 앱 종속성]
 
-`build.gradle`개의 종속성
+마이그레이션 전 종속성 `build.gradle`개
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -66,9 +76,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB Target 확장-iOS에 대한 앱 종속성]
+>[!TAB Target SDK-iOS에 대한 앱 종속성]
 
-`Podfile`개의 종속성
+마이그레이션 전 종속성 `Podfile`개
 
 ```Swift
 use_frameworks!
@@ -84,13 +94,13 @@ pod 'AEPUserProfile', '~> 5.0'
 >[!ENDTABS]
 
 
-## 콘텐츠 사전 숨김 접근 방식 업데이트
+## 가져오기 및 코드 업데이트
 
 >[!BEGINTABS]
 
->[!TAB Decisioning extension-Android]
+>[!TAB SDK-Android 최적화]
 
-Java 초기화 코드
+마이그레이션 후 Java 초기화 코드
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -140,9 +150,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Decisioning extension-iOS]
+>[!TAB SDK-iOS 최적화]
 
-Swift 초기화 코드
+마이그레이션 후 Swift 초기화 코드
 
 ```Swift
 import AEPCore
@@ -182,9 +192,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
->[!TAB Target 확장-Android]
+>[!TAB SDK-Android]
 
-Java 초기화 코드
+마이그레이션 전 Java 초기화 코드
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -230,9 +240,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Target 확장-iOS]
+>[!TAB SDK-iOS]
 
-Swift 초기화 코드
+마이그레이션 전 Swift 초기화 코드
 
 ```Swift
 import AEPCore
