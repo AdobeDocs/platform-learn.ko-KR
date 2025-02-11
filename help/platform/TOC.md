@@ -5,7 +5,7 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 18%
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 # Adobe Experience Platform 자습서 {#tutorials}
 
-+ [플랫폼 Tutorials](/help/platform/overview.md)
++ [Platform 튜토리얼](/help/platform/overview.md)
 + {#intro-to-platform} 플랫폼 소개
    + [Experience Platform에서 제공하는 고객 경험](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [배경: Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
@@ -121,7 +121,7 @@ ht-degree: 18%
    + [데이터 세트 만료](/help/platform/data-lifecycle/expire-datasets.md)
 + 대상 {#destinations}
    + [대상 개요](/help/platform/destinations/understanding-destinations.md)
-   + [대상에 연결하는 중](/help/platform/destinations/connecting-to-destinations.md)
+   + [대상에 연결](/help/platform/destinations/connecting-to-destinations.md)
    + [대상 만들기 및 데이터 활성화](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [대상에 대한 프로필 및 세그먼트 활성화](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [데이터 세트 내보내기 대상 구성](/help/platform/destinations/configure-dataset-export-destination.md)
@@ -137,7 +137,7 @@ ht-degree: 18%
       + [세그먼트 및 프로필 속성 활성화](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [Target에서 Real-Time CDP 세그먼트 사용](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [Target에서 Real-Time CDP 프로필 속성 사용](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [Adobe 이외의 애플리케이션에 대한 데이터 활성화 웨비나](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [비 Adobe 애플리케이션 웨비나에 데이터 활성화](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + ID {#identities}
    + [ID 및 ID 그래프 개요](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [ID 데이터 레이블 지정, 처리 및 확인](/help/platform/identities/label-ingest-and-verify-identity-data.md)
