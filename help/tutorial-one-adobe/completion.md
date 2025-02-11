@@ -3,9 +3,9 @@ title: 완료 - 단일 Adobe 자습서
 description: 완료는 어떻게 측정됩니까?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
+source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 0%
 
 웹 형식에 대한 데모 시스템 프로젝트의 ID는 다음과 같습니다. `--aepUserLdap-- - 8ERG`.
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
+
 
 ## 1.1 Adobe Firefly 서비스
 
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 URL은 다음과 같습니다. `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`.
 
-![3](./assets/images/ps24.png)
+![3](./assets/images/ps24.png){zoomable="yes"}
 
 ## 1.2 Workfront Fusion을 사용한 Creative Workflow 자동화
 
@@ -40,7 +41,7 @@ URL은 다음과 같습니다. `https://ldap.blob.core.windows.net/folder/citisi
 
 URL은 다음과 같습니다. `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
-![3](./assets/images/wff.png)
+![3](./assets/images/wff.png){zoomable="yes"}
 
 ## 2.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services
 
@@ -48,7 +49,7 @@ URL은 다음과 같습니다. `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqh
 
 URL은 다음과 같습니다. `https://main--citisignal--xxx.aem.page/us/en`.
 
-![3](./assets/images/aemcsweb.png)
+![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Adobe Workfront을 사용한 워크플로우 관리
 
@@ -56,13 +57,13 @@ Adobe Workfront을 통한 **워크플로 관리** 모듈의 예상 완료 증명
 
 URL을 가져오려면 AEM Assets에서 업로드한 이미지에서 **링크 공유**&#x200B;를 클릭합니다.
 
-![12](./assets/images/wflink1.png)
+![12](./assets/images/wflink1.png){zoomable="yes"}
 
 **복사** 아이콘을 클릭하여 URL을 복사합니다.
 
 URL은 다음과 같습니다. `https://author-p148121-e1511399.adobeaemcloud.com/linkshare.html?sh=d63ec826_df79_4c73_a05c_2c2115baef78.dw7JBu2VxkNZvXE2oq9J6KwFRrt5VAffkuqC0nZIjHE`.
 
-![12](./assets/images/wflink2.png)
+![12](./assets/images/wflink2.png){zoomable="yes"}
 
 ## 3.1 페더레이션 대상 구성
 
@@ -70,11 +71,15 @@ URL은 다음과 같습니다. `https://author-p148121-e1511399.adobeaemcloud.co
 
 페더레이션 데이터 모델의 ID는 다음과 같습니다. **DMO5110**. 아래 이미지에 표시된 URL에서 가져올 수 있습니다.
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer: 번역 서비스
 
-**Adobe Journey Optimizer: 번역 서비스** 모듈에 대한 예상 완료 증명은 입니다.
+모듈 **Adobe Journey Optimizer: 번역 서비스**&#x200B;의 예상 완료 증명은 CitiSignal 파이버 캠페인의 **캠페인 버전 ID**&#x200B;입니다.
+
+페더레이션 데이터 모델의 Campaign 버전 ID는 다음과 같습니다. **b11c998b-a345-4f8e-afb1-6285547eb693** 아래 이미지에 표시된 대로 Campaign 개요 화면에서 복사할 수 있습니다.
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer: Offer decisioning
 
@@ -82,7 +87,7 @@ URL은 다음과 같습니다. `https://author-p148121-e1511399.adobeaemcloud.co
 
 이 **`dps:offer-activity:1a08ba4b529b2fb2`**&#x200B;과(와) 유사한 **결정 ID**&#x200B;은(는) 여기에서 찾을 수 있습니다.
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 >[!NOTE]
 >

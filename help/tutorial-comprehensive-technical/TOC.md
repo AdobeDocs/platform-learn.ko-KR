@@ -5,9 +5,9 @@ user-guide-description: 서드파티 시스템과의 연결을 비롯하여 Adob
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c85cd82a8d66b456a36d4915c1067f5c195139d1
+source-git-commit: cc53577700ed66a8f3f47142e0148af34c4d9135
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '939'
 ht-degree: 4%
 
 ---
@@ -137,6 +137,12 @@ ht-degree: 4%
       + [3.4.3 이메일 메시지에 세그먼트 기반 개인화 적용](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
       + [3.4.4 푸시 알림 설정 및 사용](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
       + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
+   + 3.5 Adobe Journey Optimizer: 번역 서비스 {#module35}
+      + [개요](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+      + [3.5.1 번역 제공자](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex1.md)
+      + [3.5.2 캠페인 만들기](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex2.md)
+      + [3.5.3 이메일에 언어 추가](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex3.md)
+      + [요약 및 이점](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c}
    + 4.1 Customer Journey Analytics: Analysis Workspace {#module41}을(를) 사용하여 대시보드 빌드

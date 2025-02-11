@@ -3,15 +3,15 @@ title: AJO 번역 서비스로 캠페인 만들기
 description: AJO 번역 서비스로 캠페인 만들기
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
 
-# 3.2.2 캠페인 만들기
+# 3.5.2 캠페인 만들기
 
 [https://experience.adobe.com/](https://experience.adobe.com/)(으)로 이동합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
@@ -21,7 +21,11 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![AOP](./images/ajolp2.png)
 
-## 3.2.2.1 헤더 조각 만들기
+>[!NOTE]
+>
+>연습 [연습 3.1.2.1](./../module3.1/ex2.md) 및 [연습 3.1.2.2](./../module3.1/ex2.md)의 일부로 머리글 및 바닥글 조각을 이미 만든 경우 연습 3.5.2.3 파이버 캠페인 만들기 로 앞으로 이동하십시오. 머리글 및 바닥글 조각을 다시 만들지 마십시오.
+
+## 3.5.2.1 헤더 조각 만들기
 
 왼쪽 메뉴에서 **조각**&#x200B;을 클릭합니다. 조각은 Journey Optimizer 내의 재사용 가능한 구성 요소로서 중복을 방지하고, 이메일 메시지의 머리글이나 바닥글 변경과 같이 모든 메시지에 영향을 미치는 향후 변경 사항을 용이하게 합니다.
 
@@ -76,7 +80,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2 바닥글 조각 만들기
+## 3.5.2.2 바닥글 조각 만들기
 
 **조각 만들기**&#x200B;를 클릭합니다.
 
@@ -230,7 +234,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3 파이버 캠페인 만들기
+## 3.5.2.3 파이버 캠페인 만들기
 
 이제 캠페인을 만듭니다. 들어오는 경험 이벤트 또는 대상 항목 또는 종료에 의존하여 1개의 특정 고객에 대한 여정을 트리거하는 이전 연습의 이벤트 기반 여정과 달리, 캠페인은 뉴스레터, 일회성 프로모션 또는 일반 정보와 같은 고유한 콘텐츠나 생일 캠페인 및 미리 알림과 같이 정기적으로 전송되는 유사한 콘텐츠로 전체 대상을 한 번 타겟팅합니다.
 
@@ -262,7 +266,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-**대상**&#x200B;에 대해 이전 단계에서 만든 대상 `--aepUserLdap-- - CitiSignal Eligible for Fiber`을(를) 선택하십시오. **저장**&#x200B;을 클릭합니다.
+**대상**&#x200B;에 대해 [1.3.3에서 만든 대상을 선택합니다. `--aepUserLdap-- - CitiSignal Eligible for Fiber`(으)로 이름이 지정된 통합 컴포지션 만들기](./../../datacollection/module1.3/ex3.md)입니다. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Stay connected.
 
 ## 다음 단계
 
-[3.2.3 메일로 이동](./ex3.md)
+[3.5.3 메일로 이동](./ex3.md)
 
-[모듈 3.2](./ajotranslationsvcs.md){target="_blank"}(으)로 돌아가기
+[모듈 3.5](./ajotranslationsvcs.md){target="_blank"}(으)로 돌아가기
 
 [모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기

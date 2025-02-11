@@ -10,9 +10,9 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: deac800691c130033e1d4c5c7424a3a87fc40830
+source-git-commit: 6311417699d49cb2a9bbb67e221b9054a8b37605
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '99'
 ht-degree: 2%
 
 ---
@@ -41,6 +41,8 @@ ht-degree: 2%
 + [추가 페이지 규칙 마이그레이션](migrate-additional-page-rules.md)
 
 + [사용자 지정 링크 규칙 마이그레이션](migrate-custom-link-rules.md)
+
++ [전역 변수 마이그레이션](migrate-global-variables.md)
 
 + [Analytics 확장 삭제](delete-analytics-extension-items.md)
 

@@ -3,9 +3,9 @@ title: 개요 - AEP 및 앱에 대한 포괄적인 기술 튜토리얼
 description: 데이터 엔지니어, 데이터 분석가, 데이터 설계자, 데이터 과학자, 오케스트레이션 엔지니어 및 마케터가 Adobe Experience Platform 및 모든 애플리케이션 서비스의 비즈니스 가치를 완전히 이해할 수 있는 시작점입니다.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1291'
 ht-degree: 2%
 
 ---
@@ -162,6 +162,12 @@ ht-degree: 2%
 이 모듈에서는 기업이 고객에게 연관성 있고 상황에 맞는 개인화된 경험을 디자인하고 제공하는 데 도움이 되는 Journey Optimizer에 대해 알아야 할 모든 사항을 알아봅니다.
 
 **시간 투자:** 120분
+
+[3.5 Adobe Journey Optimizer: 번역 서비스](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+
+이 모듈에서는 Adobe Journey Optimizer 내에서 번역 서비스를 설정하고 사용하여 고객에게 메시지를 현지화하는 방법에 대해 알아봅니다.
+
+**시간 투자:** 60분
 
 ### 4. Adobe Customer Journey Analytics
 

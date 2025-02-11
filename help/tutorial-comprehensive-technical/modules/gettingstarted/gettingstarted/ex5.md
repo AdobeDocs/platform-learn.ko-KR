@@ -4,7 +4,7 @@ description: 시작하기 - 모바일 앱 사용
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ![DSN](./images/web8aa.png)
 
-이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`)에서 **선택**&#x200B;을 클릭합니다. 그런 다음 **저장**&#x200B;을 클릭합니다.
+이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap-- - Demo System (DD/MM/YYYY) (mobile)`)에서 **선택**&#x200B;을 클릭합니다. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web8b.png)
 

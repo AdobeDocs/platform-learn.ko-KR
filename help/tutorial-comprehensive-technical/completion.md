@@ -3,9 +3,9 @@ title: 완료 - Adobe Experience Platform을 위한 포괄적인 기술 튜토�
 description: 완료는 어떻게 측정됩니까?
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,15 @@ ht-degree: 0%
 
 [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258)(으)로 이동합니다.
 
-![3](./assets/images/certcourse.png)
+![3](./assets/images/certcourse.png){zoomable="yes"}
 
-모듈을 완료하려면 완료 증명을 제공해야 합니다.
+완료를 제출할 모듈 옆에 있는 **시작**&#x200B;을 클릭합니다.
+
+![3](./assets/images/certcourse2.png){zoomable="yes"}
+
+모듈을 완료하려면 완료 증명을 제공하고 각 모듈에 대해 제출해야 합니다.
+
+![3](./assets/images/certcourse3.png){zoomable="yes"}
 
 아래는 모든 모듈에 대해 예상되는 완료 증명입니다.
 
@@ -26,7 +32,7 @@ ht-degree: 0%
 
 웹 형식에 대한 데모 시스템 프로젝트의 ID는 다음과 같습니다. `--aepUserLdap-- - QIMU`.
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 ## 1.1 Adobe Experience Platform 데이터 수집 및 Web SDK 확장
 
@@ -34,7 +40,7 @@ ht-degree: 0%
 
 웹 형식에 대한 데이터 수집 속성의 환경 ID는 다음과 같습니다. `EN5211f7792b4442f8a45deb68f8902d3a`.
 
-![3](./assets/images/module1dtl.png)
+![3](./assets/images/module1dtl.png){zoomable="yes"}
 
 ## 1.2 데이터 수집
 
@@ -42,7 +48,7 @@ ht-degree: 0%
 
 데이터 흐름 ID는 다음과 같습니다. **374c2c6d-f39a-4b0b-b568-40c41e6c4e8e**.
 
-![3](./assets/images/completemodule2seg.png)
+![3](./assets/images/completemodule2seg.png){zoomable="yes"}
 
 ## 1.3 페더레이션 대상 구성
 
@@ -50,7 +56,7 @@ ht-degree: 0%
 
 페더레이션 데이터 모델의 ID는 다음과 같습니다. **DMO5110**. 아래 이미지에 표시된 URL에서 가져올 수 있습니다.
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 2.1 실시간 고객 프로필
 
@@ -58,7 +64,7 @@ ht-degree: 0%
 
 대상 ID는 다음과 같습니다. **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
-![3](./assets/images/completemodule3seg.png)
+![3](./assets/images/completemodule3seg.png){zoomable="yes"}
 
 ## 2.2 지능형 서비스
 
@@ -66,7 +72,7 @@ ht-degree: 0%
 
 대상 ID는 다음과 같습니다. **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
-![12](./assets/images/completemodule10.png)
+![12](./assets/images/completemodule10.png){zoomable="yes"}
 
 ## 2.3 Real-Time CDP: 대상자를 빌드하고 조치를 취하십시오!
 
@@ -74,7 +80,7 @@ ht-degree: 0%
 
 웹후크 대상의 ID는 다음과 같습니다. **b5b4b959-3166-40e2-8279-8223d00c3987** 아래 이미지에 표시된 URL에서 가져올 수 있습니다.
 
-![12](./assets/images/vec4.png)
+![12](./assets/images/vec4.png){zoomable="yes"}
 
 ## 2.4 Real-Time CDP: Microsoft Azure Event Hub Audience Activation
 
@@ -82,7 +88,7 @@ ht-degree: 0%
 
 아래 표시된 대로 URL에서 이 **43cf85bc-3d01-49fd-80c9-a2913db45e3c**&#x200B;와(과) 유사한 **Microsoft Azure 이벤트 허브 대상 ID**&#x200B;를 찾을 수 있습니다.
 
-![14](./assets/images/azuredestid.png)
+![14](./assets/images/azuredestid.png){zoomable="yes"}
 
 ## 2.5 Real-Time CDP 연결: 이벤트 전달
 
@@ -90,7 +96,7 @@ ht-degree: 0%
 
 아래 이미지에 표시된 대로 URL에서 이 **PRa18819171c1241dfb16d74a49993dd5b**&#x200B;과(와) 같은 **이벤트 전달 속성 ID**&#x200B;을(를) 찾을 수 있습니다.
 
-![14](./assets/images/launchssfid.png)
+![14](./assets/images/launchssfid.png){zoomable="yes"}
 
 ## 2.6 Apache Kafka에서 Real-Time CDP으로 데이터 스트리밍
 
@@ -98,7 +104,7 @@ ht-degree: 0%
 
 ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 여기에서 찾을 수 있습니다.
 
-![14](./assets/images/kafkaflowid.png)
+![14](./assets/images/kafkaflowid.png){zoomable="yes"}
 
 ## 3.1 Adobe Journey Optimizer: 오케스트레이션
 
@@ -106,7 +112,7 @@ ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 
 
 여정의 ID는 다음과 같습니다. **594fa01f-1a3b-450c-ba09-b7e3ff377c0f**. 아래 이미지에 표시된 URL에서 가져올 수 있습니다.
 
-![12](./assets/images/ajoo.png)
+![12](./assets/images/ajoo.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer: 외부 데이터 소스 및 사용자 지정 작업
 
@@ -114,7 +120,7 @@ ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 
 
 여정의 ID는 다음과 같습니다. **6962d3bc-4f44-4f9c-b326-83978f245f2a**. 아래 이미지에 표시된 URL에서 가져올 수 있습니다.
 
-![12](./assets/images/jofinal.png)
+![12](./assets/images/jofinal.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer: Offer decisioning
 
@@ -122,7 +128,7 @@ ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 
 
 **결정 ID**&#x200B;을 찾을 수 있습니다. 이 ID는 **dps:offer-activity:1a08ba4b529b2fb2**&#x200B;와(과) 유사합니다.
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 ## 3.4 Adobe Journey Optimizer: 이벤트 기반 여정
 
@@ -130,7 +136,15 @@ ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 
 
 여정의 ID는 다음과 같습니다. **5f5efc7e-49f7-44c1-85df-b23482b38d32**. 아래 이미지에 표시된 URL에서 가져올 수 있습니다.
 
-![14](./assets/images/jojourneyid.png)
+![14](./assets/images/jojourneyid.png){zoomable="yes"}
+
+## 3.5 Adobe Journey Optimizer: 번역 서비스
+
+모듈 **Adobe Journey Optimizer: 번역 서비스**&#x200B;의 예상 완료 증명은 CitiSignal 파이버 캠페인의 **캠페인 버전 ID**&#x200B;입니다.
+
+페더레이션 데이터 모델의 Campaign 버전 ID는 다음과 같습니다. **b11c998b-a345-4f8e-afb1-6285547eb693** 아래 이미지에 표시된 대로 Campaign 개요 화면에서 복사할 수 있습니다.
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 4.1 Customer Journey Analytics: Analysis Workspace을 사용하여 대시보드 빌드
 
@@ -138,7 +152,7 @@ ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 
 
 형식은 다음과 같습니다. **677bcb247064db3c7de2a0e4**. 프로젝트를 열면 URL에서 찾을 수 있습니다.
 
-![12](./assets/images/cjacompletion.png)
+![12](./assets/images/cjacompletion.png){zoomable="yes"}
 
 ## 4.2 Customer Journey Analytics: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석
 
@@ -146,7 +160,7 @@ ID는 이 **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**&#x200B;와(과) 유사하며 
 
 다음 위치에서 이 **b63a810c-a8cc-4c6b-a57e-dcb7e3368cf8**&#x200B;과(와) 유사한 **BigQuery 연결 ID**&#x200B;을(를) 찾을 수 있습니다.
 
-![14](./assets/images/bqid.png)
+![14](./assets/images/bqid.png){zoomable="yes"}
 
 ## 5.1 쿼리 서비스
 
@@ -156,7 +170,7 @@ ID는 다음과 같습니다. **675033c903fb3b2aefed8a0a**.
 
 ![12](./assets/images/completemodule7.png)
 
-![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
+![기술 내부자](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
 
 >[!NOTE]
 >

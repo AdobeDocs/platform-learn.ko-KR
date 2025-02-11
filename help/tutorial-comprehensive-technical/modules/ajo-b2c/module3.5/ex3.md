@@ -1,17 +1,17 @@
 ---
-title: AJO 번역 서비스를 사용하여 이메일에 언어 추가
-description: AJO 번역 서비스를 사용하여 이메일에 언어 추가
+title: AJO 번역 서비스
+description: AJO 번역 서비스
 kt: 5342
 doc-type: tutorial
-exl-id: 806e104a-3df9-4711-bc16-026f53b51118
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: e957856f-d6e5-4b39-ac0a-b9249f47eac4
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
-# 3.2.3 이메일에 언어 추가
+# 3.5.3 이메일에 언어 추가
 
 [https://experience.adobe.com/](https://experience.adobe.com/)(으)로 이동합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
@@ -91,6 +91,6 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 [요약 및 혜택](./summary.md)(으)로 이동
 
-[모듈 3.2](./ajotranslationsvcs.md){target="_blank"}(으)로 돌아가기
+[모듈 3.5](./ajotranslationsvcs.md){target="_blank"}(으)로 돌아가기
 
 [모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기

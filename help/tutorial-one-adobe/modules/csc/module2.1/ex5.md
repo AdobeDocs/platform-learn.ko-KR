@@ -4,7 +4,7 @@ description: AEM CS - 고급 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
 exl-id: fa299668-c902-4775-a540-7555ca461d3e
-source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
+source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 이제 이 블록에서 작업을 계속할 수 있습니다.
 
-![AEMCS](./images/nav7.png)
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
 ## 2.1.5.1 블록 스타일 지정
 
@@ -25,23 +25,23 @@ ht-degree: 0%
 
 Visual Studio Code로 돌아가서 **블록** 폴더를 엽니다. 이제 각 폴더가 특정 블록을 참조하는 여러 폴더를 볼 수 있습니다. **fiberoffer** 블록을 더 고급화하려면 이제 사용자 지정 블록에 대한 폴더를 만들어야 합니다.
 
-![AEMCS](./images/blockadv1.png)
+![AEMCS](./images/blockadv1.png){zoomable="yes"}
 
 **블록** 폴더를 선택한 다음 **새 폴더 만들기** 아이콘을 클릭합니다.
 
-![AEMCS](./images/blockadv2.png)
+![AEMCS](./images/blockadv2.png){zoomable="yes"}
 
 폴더 이름을 `fiberoffer`로 지정하고 **enter**&#x200B;를 누르십시오.
 
-![AEMCS](./images/blockadv3.png)
+![AEMCS](./images/blockadv3.png){zoomable="yes"}
 
 새 **fiberoffer** 폴더를 선택하고 **새 파일 만들기** 아이콘을 클릭합니다.
 
-![AEMCS](./images/blockadv4.png)
+![AEMCS](./images/blockadv4.png){zoomable="yes"}
 
 이제 새 파일이 만들어집니다. 이름 **fiberoffer.js**&#x200B;을(를) 입력하고 Enter 키를 누릅니다.
 
-![AEMCS](./images/blockadv5.png)
+![AEMCS](./images/blockadv5.png){zoomable="yes"}
 
 이제 **fiberoffer.js** 파일에 다음 JavaScript을 추가하여 블록 데코레이션을 구현할 수 있습니다.
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![AEMCS](./images/blockadv6.png)
+![AEMCS](./images/blockadv6.png){zoomable="yes"}
 
 새 **fiberoffer** 폴더를 선택하고 **새 파일 만들기** 아이콘을 다시 클릭합니다.
 
-![AEMCS](./images/blockadv7.png)
+![AEMCS](./images/blockadv7.png){zoomable="yes"}
 
 이제 새 파일이 만들어집니다. **fiberoffer.css** 이름을 입력하고 Enter 키를 누르십시오.
 
-![AEMCS](./images/blockadv8.png)
+![AEMCS](./images/blockadv8.png){zoomable="yes"}
 
 다음 CSS 코드를 복사하여 새로 만든 파일에 붙여넣습니다.
 
@@ -88,7 +88,7 @@ export default function decorate(block) {
 
 변경 내용을 저장합니다.
 
-![AEMCS](./images/blockadv9.png)
+![AEMCS](./images/blockadv9.png){zoomable="yes"}
 
 이제 프로젝트에서 GitHub 저장소로 다시 커밋해야 하는 몇 가지 변경 사항을 만들었습니다. 이렇게 하려면 **GitHub Desktop**&#x200B;을 엽니다.
 
@@ -96,15 +96,15 @@ export default function decorate(block) {
 
 PR 이름 `js css`을(를) 입력하십시오. **주 데이터베이스에 커밋**&#x200B;을 클릭합니다.
 
-![차단](./images/blockadv10.png)
+![차단](./images/blockadv10.png){zoomable="yes"}
 
 그럼 이걸 보셔야죠 **원본 푸시**&#x200B;를 클릭합니다.
 
-![차단](./images/blockadv11.png)
+![차단](./images/blockadv11.png){zoomable="yes"}
 
 브라우저에서 GitHub 계정으로 이동하고 CitiSignal용으로 만든 저장소로 이동합니다. 그런 다음 변경 사항이 수신되었음을 나타내는 이와 같은 메시지가 표시됩니다.
 
-![차단](./images/blockadv12.png)
+![차단](./images/blockadv12.png){zoomable="yes"}
 
 이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en` 및/또는 `main--citisignal--XXX.aem.live/us/en`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
@@ -113,7 +113,7 @@ PR 이름 `js css`을(를) 입력하십시오. **주 데이터베이스에 커�
 
 그러면 페이지에 스타일이 적용된 상태로 이 항목이 표시됩니다.
 
-![차단](./images/blockadv13.png)
+![차단](./images/blockadv13.png){zoomable="yes"}
 
 ## 2.1.5.2 외부 끝점에서 논리 추가 및 데이터 로드
 
@@ -156,11 +156,11 @@ var script1 = document.createElement('script');
 
 지금은 **edgeConfigId** 필드를 변경할 필요가 없습니다. 다음 연습에서는 **MarTech** 플러그인을 사용하여 이 작업을 수행할 수 있습니다.
 
-![차단](./images/blockadv15.png)
+![차단](./images/blockadv15.png){zoomable="yes"}
 
 이제 이 항목을 사용할 수 있습니다.
 
-![차단](./images/blockadv14.png)
+![차단](./images/blockadv14.png){zoomable="yes"}
 
 그런 다음 추가한 이전 코드 아래에 이 블록을 추가합니다.
 
@@ -185,7 +185,7 @@ var ECID = "";
 
 위의 코드에서 볼 수 있듯이 ECID가 검색되면 다른 함수가 호출됩니다. 이 함수를 **getOffer()**&#x200B;이라고 하며 다음에 추가합니다.
 
-![차단](./images/blockadv16.png)
+![차단](./images/blockadv16.png){zoomable="yes"}
 
 그런 다음 아래 코드를 추가합니다.
 
@@ -318,7 +318,7 @@ async function getOffer(ECID) {
 
 이 코드 블록을 이 예제의 42행에 표시된 닫는 대괄호 아래에 붙여 넣는 것이 매우 중요합니다. 방금 붙여 넣은 코드는 이 파일에 있어야 하는 별도의 함수로, 위의 **기본 함수**&#x200B;에 중첩할 수 없습니다.
 
-![차단](./images/blockadv17.png)
+![차단](./images/blockadv17.png){zoomable="yes"}
 
 붙여넣은 코드 블록은 일반적으로 웹 SDK/alloy.js에서 수행하는 요청을 시뮬레이션합니다. 이 예제에서는 **edge.adobedc.net**&#x200B;에 대해 **fetch** 요청을 수행합니다.
 
@@ -330,11 +330,11 @@ async function getOffer(ECID) {
 
 변경 내용을 저장합니다. 그런 다음 **Github Desktop**&#x200B;을 열고 PR에 이름을 지정한 다음 **main에 커밋**&#x200B;을 클릭합니다.
 
-![차단](./images/blockadv18.png)
+![차단](./images/blockadv18.png){zoomable="yes"}
 
 **원본 푸시**&#x200B;를 클릭합니다.
 
-![차단](./images/blockadv19.png)
+![차단](./images/blockadv19.png){zoomable="yes"}
 
 이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en` 및/또는 `main--citisignal--XXX.aem.live/us/en`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
@@ -343,7 +343,7 @@ async function getOffer(ECID) {
 
 그럼 이걸 보셔야죠
 
-![차단](./images/blockadv20.png)
+![차단](./images/blockadv20.png){zoomable="yes"}
 
 다음 단계: [2.1.6 AEM Edge Delivery Services MarTech 플러그인](./ex6.md){target="_blank"}
 

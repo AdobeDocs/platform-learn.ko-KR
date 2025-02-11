@@ -3,10 +3,10 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 8%
+source-wordcount: '264'
+ht-degree: 9%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 8%
 | [3.2 Adobe Journey Optimizer: 외부 데이터 원본 및 사용자 지정 작업](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | 예 | - |
 | [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 2025/06/01 | 예 | - |
 | [3.4 Adobe Journey Optimizer: 이벤트 기반 여정](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 2025년 5월 01일 | 예 | - |
+| [3.5 Adobe Journey Optimizer: 번역 서비스](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md) | 08/02/2025 | 예 | - |
 | [4.1 Customer Journey Analytics: Adobe Experience Platform의 맨 위에 Analysis Workspace을 사용하여 대시보드를 만듭니다](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 2025/06/01 | 예 | - |
 | [4.2 Customer Journey Analytics: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터를 수집하고 분석합니다](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 2025/07/01 | 아니요 | 소스 데이터에 대한 데이터 준비 모델링에 문제가 있습니다. 이 문제를 해결하기 위해 보류 중입니다. |
 | [5.1 쿼리 서비스](./modules/datadistiller/module5.1/query-service.md) | 2024년 4월 12일 | 예 | - |

@@ -1,19 +1,19 @@
 ---
-title: AJO 번역 제공자
-description: AJO 번역 제공자
+title: AJO 번역 서비스 시작하기
+description: AJO 번역 서비스 시작하기
 kt: 5342
 doc-type: tutorial
-exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
-source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
+exl-id: 28c925dd-8a7b-4b9a-a128-ecbfbfbeaf04
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
 
-# 3.2.1 번역 제공자
+# 3.5.1 번역 제공자
 
-## 3.2.1.1 Microsoft Azure Translator 구성
+## 3.5.1.1 Microsoft Azure Translator 구성
 
 [https://portal.azure.com/#home](https://portal.azure.com/#home)(으)로 이동합니다.
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![번역](./images/transl7.png)
 
-## 3.2.1.2 로케일 사전
+## 3.5.1.2 로케일 사전
 
 [https://experience.adobe.com/](https://experience.adobe.com/)(으)로 이동합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 ![번역](./images/locale2.png)
 
-## 3.2.1.3 AJO에서 번역 제공자 구성
+## 3.5.1.3 AJO에서 번역 제공자 구성
 
 [https://experience.adobe.com/](https://experience.adobe.com/)(으)로 이동합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 
 ![번역](./images/transl13.png)
 
-## 3.2.1.4 번역 프로젝트 구성
+## 3.5.1.4 번역 프로젝트 구성
 
 [https://experience.adobe.com/](https://experience.adobe.com/)(으)로 이동합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 ![번역](./images/ajoprovider9.png)
 
-## 3.2.1.5 언어 설정 구성
+## 3.5.1.5 언어 설정 구성
 
 **채널** > **일반 설정** > **언어 설정**(으)로 이동합니다. **언어 설정 만들기**&#x200B;를 클릭합니다.
 
@@ -171,8 +171,8 @@ ht-degree: 1%
 
 ## 다음 단계
 
-[3.2.2 캠페인으로 이동](./ex2.md)
+[3.5.2 캠페인 만들기](./ex2.md)(으)로 이동
 
-[모듈 3.2](./ajotranslationsvcs.md){target="_blank"}(으)로 돌아가기
+[모듈 3.5](./ajotranslationsvcs.md){target="_blank"}(으)로 돌아가기
 
 [모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기

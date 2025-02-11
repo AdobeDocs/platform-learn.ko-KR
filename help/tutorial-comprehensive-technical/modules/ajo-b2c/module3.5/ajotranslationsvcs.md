@@ -3,15 +3,15 @@ title: Adobe Journey Optimizer 번역 서비스
 description: Adobe Journey Optimizer 번역 서비스
 kt: 5342
 doc-type: tutorial
-exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+exl-id: f518e1d9-2f5b-4ab3-b3dd-16f722f7177d
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
 
 ---
 
-# 3.2 Adobe Journey Optimizer 번역 서비스
+# 3.5 Adobe Journey Optimizer: 번역 서비스
 
 ## 학습 목표
 
@@ -24,15 +24,15 @@ ht-degree: 2%
 
 ## 연습
 
-[3.2.1 번역 제공자](./ex1.md)
+[3.5.1 번역 제공자](./ex1.md)
 
 이 연습에서는 Microsoft Translator를 사용하여 번역 공급업체를 구성하고 Adobe Journey Optimizer에서 이를 설정합니다.
 
-[3.2.2 번역 프로젝트](./ex2.md)
+[3.5.2 번역 프로젝트](./ex2.md)
 
 이 연습에서는 Microsoft Translator를 사용하여 번역 공급업체를 구성하고 Adobe Journey Optimizer에서 이를 설정합니다.
 
-[3.2.3 이메일에 언어 추가](./ex3.md)
+[3.5.3 이메일에 언어 추가](./ex3.md)
 
 이 연습에서는 캠페인의 이메일에 언어를 추가합니다.
 

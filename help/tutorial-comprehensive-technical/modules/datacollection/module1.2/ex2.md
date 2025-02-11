@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집 - 스키마 구성 및 식별자 설정
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3117'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 ![데이터 수집](./images/schemastructurem.png)
 
 새 [!UICONTROL 필드 그룹]이(가) 아직 비어 있으므로 이제 해당 [!UICONTROL 필드 그룹]에 필드를 추가해야 합니다.
-[!UICONTROL 필드 그룹] 목록에서 사용자 지정 [!UICONTROL 필드 그룹]을 클릭한 다음 **찾아보기**&#x200B;를 클릭합니다.
+[!UICONTROL 필드 그룹] 목록에서 사용자 지정 [!UICONTROL 필드 그룹]을 클릭합니다.
 
 ![데이터 수집](./images/schemastructurem.png)
 
@@ -176,26 +176,26 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 아래 정보를 사용하여 **[!UICONTROL ID]** 개체 아래에 세 개의 새 필드를 만드십시오.
 
 - ecid:
-   - 필드 이름: **[!UICONTROL ecid]**
-   - 표시 이름: **[!UICONTROL ecid]**
+   - 필드 이름: **`--aepUserLdap--_ecid`**
+   - 표시 이름: **`--aepUserLdap--ecid`**
    - 형식: **[!UICONTROL 문자열]**
    - 필드 그룹: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - 필드 이름: **[!UICONTROL emailId]**
-   - 표시 이름: **[!UICONTROL emailId]**
+   - 필드 이름: **`--aepUserLdap--_emailId`**
+   - 표시 이름: **`--aepUserLdap--_emailId`**
    - 형식: **[!UICONTROL 문자열]**
    - 필드 그룹: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - mobilener
-   - 필드 이름: **[!UICONTROL mobilener]**
-   - 표시 이름: **[!UICONTROL 모바일]**
+   - 필드 이름: **`--aepUserLdap--_mobilenr`**
+   - 표시 이름: **`--aepUserLdap--_mobilenr`**
    - 형식: **[!UICONTROL 문자열]**
    - 필드 그룹: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 각 필드는 초기 필드 구성 후 표시되어야 합니다.
 
-- mobilener
+- `--aepUserLdap--_mobilenr`
 
 ![데이터 수집](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 ![데이터 수집](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![데이터 수집](./images/ecidfield.png)
 
 아래로 스크롤하고 **적용**&#x200B;을 클릭하는 것을 잊지 마십시오.
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![데이터 수집](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 이러한 필드를 **[!UICONTROL ID]** 필드로 정의하려면 다음 단계를 수행하십시오.
 
-- 필드 **[!UICONTROL emailId]**&#x200B;을(를) 선택하십시오.
+- 필드 **`--aepUserLdap--_emailId`**&#x200B;을(를) 선택합니다.
 - 오른쪽의 필드 속성에서 **[!UICONTROL ID]**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **[!UICONTROL ID]**&#x200B;에 대한 확인란을 선택하십시오.
 
 ![데이터 수집](./images/emailidid.png)
@@ -236,15 +236,15 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 ![데이터 수집](./images/emailidprimidns.png)
 
-다음으로 **[!UICONTROL ecid]** 및 **[!UICONTROL mobilener]**&#x200B;의 다른 필드를 표준 식별자로 정의해야 합니다.
+다음으로 **`--aepUserLdap--_ecid`** 및 **`--aepUserLdap--_mobilenr`**&#x200B;에 대한 다른 필드를 표준 식별자로 정의해야 합니다.
 
-필드 **[!UICONTROL ecid]**&#x200B;을(를) 선택하십시오. 오른쪽의 필드 속성에서 **[!UICONTROL ID]**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **[!UICONTROL ID]**에 대한 확인란을 선택하십시오.
+필드 **`--aepUserLdap--_ecid`**&#x200B;을(를) 선택합니다. 오른쪽의 필드 속성에서 **[!UICONTROL ID]**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **[!UICONTROL ID]**에 대한 확인란을 선택하십시오.
 **[!UICONTROL 네임스페이스]** 목록에서 **[!UICONTROL ECID]** 네임스페이스를 선택합니다.
 변경 내용을 저장하려면 **[!UICONTROL 적용]**&#x200B;을 클릭하세요.
 
 ![데이터 수집](./images/ecidid.png)
 
-필드 **[!UICONTROL 모바일]**&#x200B;을(를) 선택하십시오. 오른쪽의 필드 속성에서 **[!UICONTROL ID]**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **[!UICONTROL ID]**에 대한 확인란을 선택하십시오.
+필드 **`--aepUserLdap--_mobilenr`**&#x200B;을(를) 선택합니다. 오른쪽의 필드 속성에서 **[!UICONTROL ID]**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **[!UICONTROL ID]**에 대한 확인란을 선택하십시오.
 **[!UICONTROL 네임스페이스]** 목록에서 **[!UICONTROL Phone]** 네임스페이스를 선택하십시오.
 변경 내용을 저장하려면 **[!UICONTROL 적용]**&#x200B;을 클릭하세요.
 
@@ -415,12 +415,12 @@ ECID 필드는 유형 **[!UICONTROL 문자열]**(으)로 정의되며 이 필드
 
 - ecid:
 
-   - 필드 이름: **[!UICONTROL ecidweb]**
-   - 표시 이름: **[!UICONTROL ecidweb]**
+   - 필드 이름: **`--aepUserLdap--_ecidweb`**
+   - 표시 이름: **`--aepUserLdap--_ecidweb`**
    - 형식: **[!UICONTROL 문자열]**
    - 필드 그룹: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-다음은 초기 필드 구성 후 [!UICONTROL ecid] 필드가 표시되는 방식입니다.
+다음은 초기 필드 구성 후 `--aepUserLdap--_ecidweb` 필드가 표시되는 방식입니다.
 
 ![데이터 수집](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ ECID 필드는 유형 **[!UICONTROL 문자열]**(으)로 정의되며 이 필드
 
 ![데이터 수집](./images/3fieldsee.png)
 
-이러한 필드를 **[!UICONTROL ID]** 필드로 정의하려면 필드 **[!UICONTROL ecid]**을(를) 선택하십시오.
+이러한 필드를 **[!UICONTROL ID]** 필드로 정의하려면 **`--aepUserLdap--_ecidweb`** 필드를 선택하십시오.
 오른쪽의 필드 속성에서 **[!UICONTROL ID]**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **[!UICONTROL ID]**&#x200B;에 대한 확인란을 선택하고 **[!UICONTROL 기본 ID]**에 대한 확인란을 선택합니다.
 **[!UICONTROL 네임스페이스]** 목록에서 **[!UICONTROL ECID]** 네임스페이스를 선택합니다.
 

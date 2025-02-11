@@ -4,9 +4,9 @@ description: 기초 - 실시간 고객 프로필 - 나만의 실시간 고객 �
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2343'
 ht-degree: 1%
 
 ---
@@ -109,6 +109,10 @@ X-ray 패널에서 ID와 네임스페이스의 4가지 다른 조합을 볼 수 
 >이 Adobe I/O 프로젝트가 Adobe Experience Platform의 권한 설정에 액세스할 수 있도록 하는 추가 단계가 있습니다. 프로젝트의 API 자격 증명을 시스템 관리자 액세스 권한이 필요한 Adobe Experience Platform의 권한 UI에 추가해야 합니다. 단계는 아래에 설명되어 있지만 필요한 액세스 권한이 없는 경우 시스템 관리자에게 문의하여 이를 처리해야 할 수 있습니다.
 
 ## API 자격 증명에 대한 AEP 권한
+
+>[!IMPORTANT]
+>
+>시스템 관리자 액세스 권한이 없는 경우 직접 이 단계를 실행할 수 없으며 **권한** UI에 액세스할 수 있는 권한이 없습니다. 이 경우 시스템 관리자에게 문의하거나 조직의 지원 채널에 질문을 게시하십시오.
 
 [Adobe Experience Platform](https://experience.adobe.com/platform)(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
