@@ -2,10 +2,10 @@
 title: 초기 설정 - Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile 확장 기능으로 마이그레이션
 description: Platform Web SDK 구현에 필요한 중요한 기본 요소에 대해 알아보고 설정합니다
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,8 @@ Target SDK에서 SDK 최적화로 마이그레이션하려면 Optimize SDK의 �
 - Edge Network에서 데이터 전달을 사용하려면 [데이터 스트림을 만듭니다](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"}
 - Adobe Target에 데이터를 전달할 수 있도록 [데이터 스트림을 구성](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"}
 - Decisioning 확장에 대한 [태그 속성 구성](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"}
+
+## 확장 구성
 
 >[!BEGINTABS]
 
@@ -50,7 +52,19 @@ Target 확장을 사용할 때 설치된 태그 확장:
 
 >[!ENDTABS]
 
-다음으로 [Target SDK을 바꾸기](replace-library.md)하는 방법을 알아봅니다.
+## 데이터 스트림 구성
+
+Target 확장에 [구성 가능한 설정](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)이 있습니다. 결정 확장에는 [데이터 스트림에 구성된](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup)이(가) 있습니다.
+
+| Target 확장 | Decisioning 확장 | 참고 |
+| --- | --- | --- | 
+| 클라이언트 코드 | 해당 사항 없음 | IMS 조직 세부 사항을 사용하여 에지에서 자동으로 설정 |
+| 환경 ID | 대상 환경 ID | 데이터스트림에 구성됨 |
+| Target Workspace 속성 | 속성 토큰 | 데이터스트림에 구성됨 |
+| 시간 초과 | 구성할 수 없음 | Decisioning 확장의 시간 제한은 10초입니다. |
+| 서버 도메인 | Edge Network 도메인 | Adobe Experience Platform Edge Network 확장 기능 설정 |
+
+다음으로 [Target SDK을 바꾸기](replace-sdk.md)하는 방법을 알아봅니다.
 
 >[!NOTE]
 >
