@@ -4,7 +4,7 @@ description: AEM CS - MarTech 플러그인
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.6 AEM Edge Delivery Services MarTech 플러그인
 
-AEM MarTech 플러그인은 AEM 프로젝트에 대한 전체 MarTech 스택을 빠르게 설정하는 데 도움이 됩니다.
+AEM MarTech 플러그인을 사용하면 AEM 프로젝트에 대한 전체 MarTech 스택을 빠르게 설정할 수 있습니다.
 
 >[!NOTE]
 >
->이 플러그인은 현재 공동 혁신 프로젝트를 통해 AEM 엔지니어링과 협업하여 고객이 사용할 수 있습니다. [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech)에서 자세한 정보를 찾을 수 있습니다.
+>이 플러그인은 현재 공동 혁신 프로젝트를 통해 AEM 엔지니어링과 협력하여 고객이 사용할 수 있습니다. [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech)에서 자세한 정보를 찾을 수 있습니다.
 
 ## 2.1.6.1 저장소에 플러그인 추가
 
@@ -28,7 +28,7 @@ AEM MarTech 플러그인은 AEM 프로젝트에 대한 전체 MarTech 스택을 
 그러면 이걸 보게 될 거야. 다음 명령을 붙여 넣고 **enter**&#x200B;를 누르십시오.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 그럼 이걸 보셔야죠
@@ -171,7 +171,7 @@ const AUDIENCES = {
 
 ![AEMCS](./images/scriptsvar4.png){zoomable="yes"}
 
-필요한 URL을 찾을 수 있지만 HTML `<script></script>` 태그 내에 있습니다. `https`부터 시작되는 부분만 `.min.js`까지 복사해야 합니다.
+필요한 URL을 찾을 수 있지만, URL은 HTML `<script></script>` 태그 내에 있습니다. `https`부터 시작되는 부분만 `.min.js`까지 복사해야 합니다.
 
 ![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
 

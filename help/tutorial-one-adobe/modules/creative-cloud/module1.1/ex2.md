@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
@@ -347,7 +347,7 @@ Azure 저장소 계정으로 프로그래밍 방식의 파일 업로드를 사�
 
    ![Azure 저장소](./images/az105.png){zoomable="yes"}
 
-   이전 연습 중 하나에서 **Firefly - T2I(styleref) V3** 요청의 **본문**&#x200B;은(는) 다음과 같이 표시되었습니다.
+   이전 연습 중 하나에서 **Firefly - T2I(styleref) V3** 요청의 **Body**&#x200B;은(는) 다음과 같습니다.
 
    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
