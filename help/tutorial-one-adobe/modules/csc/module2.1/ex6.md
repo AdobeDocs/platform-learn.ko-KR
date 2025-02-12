@@ -4,7 +4,7 @@ description: AEM CS - MarTech 플러그인
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
+source-git-commit: b15795235d97b95ce2f81cbd747745bdb59e4067
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -28,7 +28,7 @@ AEM MarTech 플러그인을 사용하면 AEM 프로젝트에 대한 전체 MarTe
 그러면 이걸 보게 될 거야. 다음 명령을 붙여 넣고 **enter**&#x200B;를 누르십시오.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe-rnd/aem-martech.git main
 ```
 
 그럼 이걸 보셔야죠
