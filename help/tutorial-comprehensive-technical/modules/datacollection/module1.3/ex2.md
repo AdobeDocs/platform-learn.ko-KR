@@ -4,9 +4,9 @@ description: 기초 - FAC - 스키마, 데이터 모델 및 링크 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
+source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 **암호**: 연습 1.3.1.1에서 이전에 만든 암호
 **데이터베이스**: **CITISIGNAL** 사용
 
-마지막으로, 이걸 가지셔야 합니다. **연결 테스트**&#x200B;를 클릭합니다. 테스트가 성공하면 **함수 배포**&#x200B;를 클릭하여 Snowflake에 워크플로 엔진에 필요한 함수를 만듭니다.
+마지막으로, 이걸 가지셔야 합니다. **연결 테스트**&#x200B;를 클릭합니다. 테스트가 성공하면 **함수 배포**&#x200B;를 클릭하여 Snowflake 측에서 워크플로 엔진에 필요한 함수를 만듭니다.
 
 연결을 성공적으로 테스트하고 기능을 배포하면 구성이 저장됩니다.
 
@@ -73,11 +73,11 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 그러면 이걸 보게 될 거야. 이전에 Snowflake에서 만든 5개의 테이블을 선택합니다.
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 **추가를 클릭합니다**.
 
@@ -98,7 +98,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb8.png)
 
-그러면 이걸 보게 될 거야. 스키마를 클릭하고 정보를 검토할 수 있습니다. 예를들어 **CK_PERSONS**&#x200B;을(를) 클릭합니다.
+그러면 이걸 보게 될 거야. 스키마를 클릭하고 정보를 검토할 수 있습니다. 예를 들어 **—aepUserLdap—_PERSONS**&#x200B;을(를) 클릭합니다.
 
 ![FAC](./images/fdb9.png)
 
@@ -130,57 +130,58 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 그러면 이걸 보게 될 거야. **저장**&#x200B;을 클릭합니다.
 
-### `CK_USERS` - `CK_PERSONS`
+![FAC](./images/fdb16.png)
+
+### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
 
 이제 스키마 간의 링크 정의를 시작할 수 있습니다. 링크 정의를 시작하려면 **링크 만들기**&#x200B;를 클릭하세요.
 
 ![FAC](./images/fdb16.png)
 
-먼저 테이블 `CK_USERS`과(와) `CK_PERSONS` 사이의 연결을 정의하겠습니다.
+먼저 테이블 `--aepUserLdap--_USERS`과(와) `--aepUserLdap--_PERSONS` 사이의 연결을 정의하겠습니다.
 
 **추가를 클릭합니다**.
 
 ![FAC](./images/fdb18.png)
 
-
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
 ![FAC](./images/fdb17.png)
 
-이제 테이블 `CK_HOUSEHOLDS`과(와) `CK_PERSONS` 사이의 연결을 정의하겠습니다.
+이제 테이블 `--aepUserLdap--_HOUSEHOLDS`과(와) `--aepUserLdap--_PERSONS` 사이의 연결을 정의하겠습니다.
 
 ![FAC](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
 ![FAC](./images/fdb20.png)
 
-이제 테이블 `CK_USERS`과(와) `CK_MONTHLY_DATA_USAGE` 사이의 연결을 정의하겠습니다.
+이제 테이블 `--aepUserLdap--_USERS`과(와) `--aepUserLdap--_MONTHLY_DATA_USAGE` 사이의 연결을 정의하겠습니다.
 
 ![FAC](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
 ![FAC](./images/fdb22.png)
 
-이제 테이블 `CK_USERS`과(와) `CK_HOUSEHOLDS` 사이의 연결을 정의하겠습니다.
+이제 테이블 `--aepUserLdap--_USERS`과(와) `--aepUserLdap--_HOUSEHOLDS` 사이의 연결을 정의하겠습니다.
 
 ![FAC](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
 ![FAC](./images/fdb24.png)
 
-이제 테이블 `CK_USERS`과(와) `CK_MOBILE_DATA_USAGE` 사이의 연결을 정의하겠습니다.
+이제 테이블 `--aepUserLdap--_USERS`과(와) `--aepUserLdap--_MOBILE_DATA_USAGE` 사이의 연결을 정의하겠습니다.
 
 ![FAC](./images/fdb25.png)
 

@@ -4,9 +4,9 @@ description: Foundation - FAC - 통합 컴포지션 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: dc044a26-f16a-491e-a795-4cd16f211256
-source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp5.png)
 
-스키마 **CK_POPULATIONS**&#x200B;을(를) 선택하십시오. **확인**&#x200B;을 클릭합니다.
+스키마 **—aepUserLdap—_POPULATIONS**&#x200B;을(를) 선택하십시오. **확인**&#x200B;을 클릭합니다.
 
 ![FAC](./images/fedcomp6.png)
 
@@ -63,7 +63,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp9.png)
 
-그러면 이걸 보게 될 거야. 필드 **Value**&#x200B;을(를) **True**(으)로 설정합니다. 쿼리를 아래로 푸시하여 Snowflake에 적용하고 현재 자격을 갖춘 예상 프로필을 얻으려면 **계산**&#x200B;을(를) 클릭하십시오.
+그러면 이걸 보게 될 거야. 필드 **Value**&#x200B;을(를) **True**(으)로 설정합니다. 쿼리를 Snowflake으로 푸시하고 현재 자격을 갖춘 예상 프로필을 얻으려면 **계산**&#x200B;을 클릭하세요.
 
 ![FAC](./images/fedcomp10.png)
 
@@ -71,7 +71,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp11.png)
 
-추가할 두 번째 조건은 `Is the user an existing CitiSignal Mobile subscriber?`입니다. 이 질문에 답변하는 방법은 다른 테이블인 **CK_PERSONS**&#x200B;에 정의된 가계와 가구의 기본 고객 간의 관계를 사용하는 것입니다. **household2person** 링크를 사용하여 특성 메뉴에서 드릴다운할 수 있습니다.
+추가할 두 번째 조건은 `Is the user an existing CitiSignal Mobile subscriber?`입니다. 이 질문에 답변하는 방법은 다른 테이블 **—aepUserLdap—_PERSONS**&#x200B;에 정의된 가정과 가정의 기본 고객 간의 관계를 사용하는 것입니다. **household2person** 링크를 사용하여 특성 메뉴에서 드릴다운할 수 있습니다.
 
 ![FAC](./images/fedcomp12.png)
 
@@ -137,7 +137,9 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 작성이 완료되었습니다. 실행하려면 **시작**&#x200B;을 클릭하세요.
 
-이제 쿼리를 Snowflake으로 푸시하고 소스 데이터를 쿼리합니다. 결과는 AEP로 다시 푸시되지만 소스 데이터는 Snowflake 상태로 유지됩니다.
+![FAC](./images/fedcomp21a.png)
+
+이제 쿼리를 Snowflake으로 푸시하고 여기에서 소스 데이터를 쿼리합니다. 결과는 AEP로 다시 푸시되지만 소스 데이터는 Snowflake에 유지됩니다.
 
 이제 대상이 채워지고 AEP 생태계 내에서 대상을 타깃팅할 수 있습니다.
 

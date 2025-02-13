@@ -4,7 +4,7 @@ description: Foundation - FAC - Snowflake 계정 설정
 kt: 5342
 doc-type: tutorial
 exl-id: e72cdbfc-5b42-411f-9c63-e886776deabe
-source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 이제 Snowflake에서 표 만들기를 시작할 수 있습니다. 아래에 표를 만들기 위해 실행할 스크립트가 있습니다.
 
-### 테이블 `CK_PERSONS`
+### 테이블 `--aepUserLdap--_PERSONS`
 
 **+ 만들기**&#x200B;를 클릭한 다음 **테이블**&#x200B;을 클릭한 다음 **표준**&#x200B;을 클릭합니다.
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 그러면 이걸 보게 될 거야. 아래 쿼리를 복사하여 Snowflake에 붙여넣습니다. 테이블을 만들기 전에 화면의 왼쪽 상단 모서리에서 **CITISIGNAL** 데이터베이스를 선택해야 합니다.
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_PERSONS (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS (
 	PERSON_ID NUMBER(38,0) NOT NULL,
 	NAME VARCHAR(255),
 	AGE NUMBER(38,0),
@@ -87,7 +87,7 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_PERSONS (
 
 ![FAC](./images/tb3.png)
 
-### 테이블 `CK_HOUSEHOLDS`
+### 테이블 `--aepUserLdap--_HOUSEHOLDS`
 
 **+ 만들기**&#x200B;를 클릭한 다음 **테이블**&#x200B;을 클릭한 다음 **표준**&#x200B;을 클릭합니다.
 
@@ -96,7 +96,7 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_PERSONS (
 그러면 이걸 보게 될 거야. 아래 쿼리를 복사하여 Snowflake에 붙여넣습니다. 테이블을 만들기 전에 화면의 왼쪽 상단 모서리에서 **CITISIGNAL** 데이터베이스를 선택해야 합니다.
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_HOUSEHOLDS (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS (
 	HOUSEHOLD_ID NUMBER(38,0) NOT NULL,
 	ADDRESS VARCHAR(255),
 	CITY VARCHAR(100),
@@ -118,7 +118,7 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_HOUSEHOLDS (
 
 ![FAC](./images/tb5.png)
 
-### 테이블 `CK_USERS`
+### 테이블 `--aepUserLdap--_USERS`
 
 **+ 만들기**&#x200B;를 클릭한 다음 **테이블**&#x200B;을 클릭한 다음 **표준**&#x200B;을 클릭합니다.
 
@@ -127,13 +127,13 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_HOUSEHOLDS (
 그러면 이걸 보게 될 거야. 아래 쿼리를 복사하여 Snowflake에 붙여넣습니다. 테이블을 만들기 전에 화면의 왼쪽 상단 모서리에서 **CITISIGNAL** 데이터베이스를 선택해야 합니다.
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_USERS (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_USERS (
 	USER_ID NUMBER(38,0) NOT NULL,
 	PERSON_ID NUMBER(38,0),
 	HOUSEHOLD_ID NUMBER(38,0),
 	primary key (USER_ID),
-	foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.CK_PERSONS(PERSON_ID),
-	foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.CK_HOUSEHOLDS(HOUSEHOLD_ID)
+	foreign key (PERSON_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_PERSONS(PERSON_ID),
+	foreign key (HOUSEHOLD_ID) references CITISIGNAL.PUBLIC.--aepUserLdap--_HOUSEHOLDS(HOUSEHOLD_ID)
 );
 ```
 
@@ -145,7 +145,7 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_USERS (
 
 ![FAC](./images/tb7.png)
 
-### 테이블 `CK_MONTHLY_DATA_USAGE`
+### 테이블 `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 **+ 만들기**&#x200B;를 클릭한 다음 **테이블**&#x200B;을 클릭한 다음 **표준**&#x200B;을 클릭합니다.
 
@@ -154,7 +154,7 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_USERS (
 그러면 이걸 보게 될 거야. 아래 쿼리를 복사하여 Snowflake에 붙여넣습니다. 테이블을 만들기 전에 화면의 왼쪽 상단 모서리에서 **CITISIGNAL** 데이터베이스를 선택해야 합니다.
 
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_MONTHLY_DATA_USAGE (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MONTHLY_DATA_USAGE (
 	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
 	USER_ID NUMBER(38,0),
 	MONTH DATE,
@@ -171,7 +171,7 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_MONTHLY_DATA_USAGE (
 
 ![FAC](./images/tb9.png)
 
-### 테이블 `CK_MOBILE_DATA_USAGE`
+### 테이블 `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 **+ 만들기**&#x200B;를 클릭한 다음 **테이블**&#x200B;을 클릭한 다음 **표준**&#x200B;을 클릭합니다.
 
@@ -179,8 +179,9 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_MONTHLY_DATA_USAGE (
 
 그러면 이걸 보게 될 거야. 아래 쿼리를 복사하여 Snowflake에 붙여넣습니다. 테이블을 만들기 전에 화면의 왼쪽 상단 모서리에서 **CITISIGNAL** 데이터베이스를 선택해야 합니다.
 
+
 ```sql
-create or replace TABLE CITISIGNAL.PUBLIC.CK_MOBILE_DATA_USAGE (
+create or replace TABLE CITISIGNAL.PUBLIC.--aepUserLdap--_MOBILE_DATA_USAGE (
 	USAGE_ID NUMBER(38,0) NOT NULL autoincrement start 1 increment 1 noorder,
 	USER_ID NUMBER(38,0),
 	DATE DATE,
@@ -204,7 +205,6 @@ create or replace TABLE CITISIGNAL.PUBLIC.CK_MOBILE_DATA_USAGE (
 
 이제 모든 테이블이 만들어집니다.
 
-
 ## 3.1.1.4 샘플 데이터 수집
 
 이제 샘플 데이터를 데이터베이스로 로드할 수 있습니다.
@@ -226,7 +226,7 @@ USE SCHEMA CITISIGNAL.PUBLIC;
  - HELPER FUNCTIONS
    Simplifies SQL queries to fetch random/calculated data.
 */
-CREATE OR REPLACE FUNCTION CK_RANDOM_NAME(NAME_TYPE STRING)
+CREATE OR REPLACE FUNCTION --aepUserLdap--_RANDOM_NAME(NAME_TYPE STRING)
 RETURNS STRING
 LANGUAGE JAVASCRIPT
 AS $$
@@ -245,7 +245,7 @@ AS $$
 $$;
 
 
-CREATE OR REPLACE FUNCTION CK_RANDOM_ADDRESS(LOC_TYPE STRING, CITY STRING)
+CREATE OR REPLACE FUNCTION --aepUserLdap--_RANDOM_ADDRESS(LOC_TYPE STRING, CITY STRING)
 RETURNS STRING
 LANGUAGE JAVASCRIPT
 AS $$
@@ -390,7 +390,7 @@ $$;
    Use the following queries to insert data into tables.
 */
 
-INSERT INTO CK_PERSONS (
+INSERT INTO --aepUserLdap--_PERSONS (
   person_id,
   name,
   age,
@@ -410,8 +410,8 @@ SELECT person_id,
        ismobilesub
   FROM (
     SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM())) AS NUMBER) AS person_id,
-           CK_RANDOM_NAME('first') AS first_name,
-           CK_RANDOM_NAME('last') AS last_name,
+           --aepUserLdap--_RANDOM_NAME('first') AS first_name,
+           --aepUserLdap--_RANDOM_NAME('last') AS last_name,
            UNIFORM(20, 80, RANDOM()) AS age,
            CONCAT(LOWER(first_name),'.',LOWER(last_name),'+',LEFT(MD5(RANDOM()), 5),'@emailsim.io') AS email,
            CONCAT('+',UNIFORM(1, 999, RANDOM()),UNIFORM(100, 999, RANDOM()),UNIFORM(100, 999, RANDOM()),UNIFORM(1000, 9999, RANDOM())) AS phone_number,
@@ -422,10 +422,10 @@ SELECT person_id,
   ) vw;
 
 
--- Relationship with CK_PERSONS as 1:1
+-- Relationship with --aepUserLdap--_PERSONS as 1:1
 -- Assuming data is available for 95% of Profiles.
 -- You may choose to adjust the percentage OR remove `SAMPLE` clause, if you wish to include all Profiles.
-INSERT INTO CK_HOUSEHOLDS (
+INSERT INTO --aepUserLdap--_HOUSEHOLDS (
   household_id,
   address,
   city,
@@ -438,10 +438,10 @@ INSERT INTO CK_HOUSEHOLDS (
 )
 SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM())) AS NUMBER) AS household_id,
        NULL AS address,
-       CK_RANDOM_ADDRESS('city', null) AS city,
-       CK_RANDOM_ADDRESS('state', city) AS state,
-       CK_RANDOM_ADDRESS('postalCode', city) AS postal_code,
-       CK_RANDOM_ADDRESS('country', city) AS country,
+       --aepUserLdap--_RANDOM_ADDRESS('city', null) AS city,
+       --aepUserLdap--_RANDOM_ADDRESS('state', city) AS state,
+       --aepUserLdap--_RANDOM_ADDRESS('postalCode', city) AS postal_code,
+       --aepUserLdap--_RANDOM_ADDRESS('country', city) AS country,
        ARRAY_CONSTRUCT(true, true, false, true, true, true, true, true, true, true)[UNIFORM(0, 9, RANDOM())] AS iseligibleforfiber,
        person_id,
        CASE
@@ -449,15 +449,15 @@ SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),U
            THEN ARRAY_CONSTRUCT(true, true, false, true, true, true, true, true, true, true)[UNIFORM(0, 9, RANDOM())]
          ELSE false
        END AS isfibreenabled
-  FROM ck_persons
+  FROM --aepUserLdap--_persons
 SAMPLE (95);
 
 
--- Relationship with CK_PERSONS as 1:N
+-- Relationship with --aepUserLdap--_PERSONS as 1:N
 -- Upto 4 users
 -- Assuming data is available for 90% of Profiles.
 -- You may choose to adjust the percentage OR remove `SAMPLE` clause, if you wish to include all Profiles.
-INSERT INTO CK_USERS (
+INSERT INTO --aepUserLdap--_USERS (
   user_id,
   person_id,
   household_id
@@ -468,7 +468,7 @@ SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),U
   FROM (
     SELECT a.primary_person_id, a.household_id,
            UNIFORM(1, 4, RANDOM()) AS repeater
-      FROM (SELECT primary_person_id, household_id FROM ck_households SAMPLE (90)) a
+      FROM (SELECT primary_person_id, household_id FROM --aepUserLdap--_households SAMPLE (90)) a
     ) p,
        (SELECT ROW_NUMBER() OVER(PARTITION BY NULL ORDER BY NULL) AS loops
           FROM TABLE(GENERATOR(ROWCOUNT => 4))
@@ -476,10 +476,10 @@ SELECT CAST(CONCAT(UNIFORM(1000, 9999, RANDOM()),UNIFORM(1000, 9999, RANDOM()),U
  WHERE p.repeater >= i.loops;
 
 
--- Assuming relationship with CK_USERS as 1:N
+-- Assuming relationship with --aepUserLdap--_USERS as 1:N
 -- Assuming data is available for 95% of Profiles.
 -- You may choose to adjust the percentage OR remove `SAMPLE` clause, if you wish to include all Profiles.
-INSERT INTO CK_MONTHLY_DATA_USAGE (
+INSERT INTO --aepUserLdap--_MONTHLY_DATA_USAGE (
   user_id,
   month,
   data_usage_gb
@@ -490,14 +490,14 @@ SELECT user_id,
   FROM (
     SELECT a.user_id, a.person_id, a.household_id,
            UNIFORM(1, 50, RANDOM()) AS repeater
-      FROM (SELECT user_id, person_id, household_id FROM ck_users SAMPLE (95)) a
+      FROM (SELECT user_id, person_id, household_id FROM --aepUserLdap--_users SAMPLE (95)) a
     ) p,
        (SELECT ROW_NUMBER() OVER(PARTITION BY NULL ORDER BY NULL) AS loops
           FROM TABLE(GENERATOR(ROWCOUNT => 50))
        ) i
  WHERE p.repeater >= i.loops;
 
-INSERT INTO CK_MOBILE_DATA_USAGE (
+INSERT INTO --aepUserLdap--_MOBILE_DATA_USAGE (
   user_id,
   date,
   time,
@@ -514,16 +514,16 @@ SELECT user_id,
        UNIFORM(1, 5120::NUMBER(10,2), RANDOM()) AS data_usage_mb,
        ARRAY_CONSTRUCT('2G', '3G', '4G', '5G', 'LTE', 'WiFi', '3G', '3G', '4G', '5G', '5G', '5G', '5G')[UNIFORM(0, 12, RANDOM())] AS network_type,
        ARRAY_CONSTRUCT('Mobile', 'Tablet', 'TV', 'Watch', 'Mobile', 'Mobile', 'Mobile')[UNIFORM(0, 6, RANDOM())] AS device_type,
-       CK_RANDOM_ADDRESS('countryCode', h.city) AS country_code
+       --aepUserLdap--_RANDOM_ADDRESS('countryCode', h.city) AS country_code
   FROM (
     SELECT a.user_id, a.person_id, a.household_id,
            UNIFORM(1, 50, RANDOM()) AS repeater
-      FROM (SELECT user_id, person_id, household_id FROM ck_users SAMPLE (95)) a
+      FROM (SELECT user_id, person_id, household_id FROM --aepUserLdap--_users SAMPLE (95)) a
     ) p,
        (SELECT ROW_NUMBER() OVER(PARTITION BY NULL ORDER BY NULL) AS loops
           FROM TABLE(GENERATOR(ROWCOUNT => 50))
        ) i,
-       ck_households h
+       --aepUserLdap--_households h
  WHERE p.repeater >= i.loops
    AND p.household_id = h.household_id;
 ```
