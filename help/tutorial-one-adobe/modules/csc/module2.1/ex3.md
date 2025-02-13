@@ -4,7 +4,7 @@ description: AEM CS 환경 설정
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0a0909b639e34d92266a326c3338d7f17db7ecc6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -83,7 +83,7 @@ YYY는 GitHub 사용자 계정으로 대체해야 합니다.
 
 ZZZ는 이전 연습에서 사용한 GitHub 저장소의 이름으로 대체해야 합니다.
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}로 이동하여 AEM CS 작성자 환경의 URL을 찾을 수 있습니다. **프로그램**&#x200B;을 클릭하여 엽니다.
+[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동하여 AEM CS 작성자 환경의 URL을 찾을 수 있습니다. **프로그램**&#x200B;을 클릭하여 엽니다.
 
 ![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
@@ -186,7 +186,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 이제 이 창을 닫을 수 있습니다.
 
 
-## 2.1.3.4 Publish CitiSignal 자산
+## 2.1.3.4 CitiSignal 자산 게시
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
 
@@ -200,7 +200,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
-그러면 작성자 환경이 표시됩니다. **사이트**&#x200B;를 클릭합니다.
+그러면 작성자 환경이 표시됩니다. **Assets**&#x200B;을(를) 클릭합니다.
 
 ![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
@@ -216,7 +216,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcsassets4.png){zoomable="yes"}
 
-**Publish**&#x200B;을(를) 클릭합니다.
+**게시**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcsassets5.png){zoomable="yes"}
 
@@ -278,7 +278,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 2.1.3.6 Publish CitiSignal 웹 사이트
+## 2.1.3.6 CitiSignal 웹 사이트 게시
 
 **CitiSignal** 앞의 확인란을 클릭합니다. 그런 다음 **게시 관리**&#x200B;를 클릭합니다.
 
@@ -296,7 +296,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcssetup42.png){zoomable="yes"}
 
-**Publish**&#x200B;을(를) 클릭합니다.
+**게시**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcssetup43.png){zoomable="yes"}
 
