@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집 - 오프라인 소스에서 데이터 수
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1562'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,10 @@ ht-degree: 5%
 - country_code
 - 도시
 - 국가
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 이러한 모든 필드는 Platform과 호환되는 데이터를 생성하도록 정의되었습니다.
 
@@ -68,7 +72,9 @@ CSV 파일이 준비되면 AEP에서 수집을 진행할 수 있습니다.
 
 ### 데이터 세트 확인
 
-[Adobe Experience Platform](https://experience.adobe.com/platform)을 열고 **[!UICONTROL 데이터 세트]**(으)로 이동합니다.
+[https://experience.adobe.com/platform](https://experience.adobe.com/platform)(으)로 이동합니다.
+
+![데이터 수집](./images/home.png)
 
 계속하려면 **[!UICONTROL 샌드박스]**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다.
 
@@ -115,8 +121,6 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 기본 ID가 **[!UICONTROL 데모 시스템 - CRMID]**&#x200B;의 [!UICONTROL 네임스페이스]에 연결된 `--aepTenantId--.identification.core.crmId`에 있습니다.
 
 ![데이터 수집](./images/schema_descriptor.png)
-
-
 
 [!UICONTROL 실시간 고객 프로필]에서 사용해야 하는 모든 스키마 및 데이터 세트에는 하나의 [!UICONTROL 기본 식별자]가 있어야 합니다. 이 [!UICONTROL 기본 식별자]은(는) 해당 데이터 집합에서 고객의 브랜드별 식별자 사용자입니다. CRM 데이터 세트의 경우 이메일 주소 또는 CRM ID이고, 콜 센터 데이터 세트의 경우 고객의 모바일 번호일 수 있습니다.
 
@@ -229,6 +233,24 @@ Source 스키마 필드 **id**&#x200B;을(를) 대상 필드 **_id**&#x200B;에 
 Source 스키마 필드 **last_name**&#x200B;을(를) 대상 필드 **person.name.lastName**&#x200B;에 연결해야 합니다.
 
 ![데이터 수집](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+Source 스키마 필드 **last_name**&#x200B;을(를) 대상 필드 **consents.marketing.email.val**&#x200B;에 연결해야 합니다.
+
+![데이터 수집](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+Source 스키마 필드 **last_name**&#x200B;을(를) 대상 필드 **consents.marketing.commercialEmail.val**&#x200B;에 연결해야 합니다.
+
+![데이터 수집](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+Source 스키마 필드 **last_name**&#x200B;을(를) 대상 필드 **consents.marketing.any.val**&#x200B;에 연결해야 합니다.
+
+![데이터 수집](./images/cons3.png)
 
 이제 이 항목을 사용할 수 있습니다. **마침을 클릭합니다**.
 
