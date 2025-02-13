@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # 1.1.3 Photoshop API 작업
 
-Photoshop API 및 Firefly 서비스로 작업하는 방법을 알아봅니다.
+Photoshop API 및 Firefly Services를 사용하여 작업하는 방법을 알아봅니다.
 
 ## 1.1.3.1 Adobe I/O 통합 업데이트
 
 1. [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}(으)로 이동합니다.
 
-![새 통합 Adobe I/O](./images/iohome.png){zoomable="yes"}
+![Adobe I/O 새 통합](./images/iohome.png){zoomable="yes"}
 
 1. **프로젝트**(으)로 이동하여 이전 연습에서 만든 프로젝트(`--aepUserLdap-- Firefly`)를 선택합니다.
 
@@ -41,13 +41,13 @@ Photoshop API 및 Firefly 서비스로 작업하는 방법을 알아봅니다.
 
 그런 다음 이 통합에 사용할 수 있는 권한을 정의하는 제품 프로필을 선택해야 합니다.
 
-1. **기본 Firefly 서비스 구성** 및 **기본 Creative Cloud 자동화 서비스 구성**&#x200B;을 선택하십시오.
+1. **기본 Firefly 서비스 구성** 및 **기본 Creative Cloud 자동화 서비스 구성**&#x200B;을 선택합니다.
 
 1. **구성된 API 저장**&#x200B;을 선택합니다.
 
 ![Azure 저장소](./images/ps5.png){zoomable="yes"}
 
-이제 Adobe I/O 프로젝트가 Photoshop 및 Firefly 서비스 API와 작동하도록 업데이트되었습니다.
+Adobe I/O 프로젝트가 이제 Photoshop 및 Firefly 서비스 API와 작동하도록 업데이트되었습니다.
 
 ![Azure 저장소](./images/ps6.png){zoomable="yes"}
 
@@ -67,7 +67,7 @@ Photoshop API 및 Firefly 서비스로 작업하는 방법을 알아봅니다.
 
 첫 번째 API 요청을 Photoshop API로 전송하겠습니다.
 
-1. Postman에서 Photoshop에 API 요청을 전송하기 전에 Adobe I/O을 인증해야 합니다. 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 이전 요청을 엽니다.
+1. Postman에서 API 요청을 Photoshop으로 전송하기 전에 Adobe I/O을 인증해야 합니다. 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 이전 요청을 엽니다.
 
 1. **Params**(으)로 이동하여 매개 변수 **Scope**&#x200B;이(가) 제대로 설정되어 있는지 확인하십시오. **범위**&#x200B;의 **값**&#x200B;은(는) 다음과 같이 표시되어야 합니다.
 
@@ -104,7 +104,7 @@ Photoshop API 및 Firefly 서비스로 작업하는 방법을 알아봅니다.
 - `AZURE_STORAGE_SAS_READ`
 - `AZURE_STORAGE_SAS_WRITE`
 
-**Azure 저장소 계정에 PSD 업로드** 요청에서 볼 수 있듯이 URL은 이러한 변수를 사용하도록 구성되어 있습니다.
+**PSD을 Azure 저장소 계정에 업로드** 요청에서 볼 수 있듯이 URL은 이러한 변수를 사용하도록 구성되어 있습니다.
 
 ![Azure 저장소](./images/ps12.png){zoomable="yes"}
 
@@ -164,7 +164,7 @@ Azure Storage Explorer를 사용하여 파일을 보는 경우 폴더를 새로 
 
 1. 상태가 **성공**(으)로 변경될 때까지 **Photoshop - PS 상태 가져오기**&#x200B;에서 두 번 더 보내기를 선택하십시오. 몇 분 정도 걸릴 수 있습니다.
 
-응답을 사용할 수 있는 경우 json 파일에 PSD 파일의 모든 레이어에 대한 정보가 포함되어 있는 것을 볼 수 있습니다. 이 정보는 레이어 이름이나 레이어 ID와 같은 것을 식별할 수 있으므로 유용합니다.
+응답을 사용할 수 있으면 json 파일에 PSD 파일의 모든 레이어에 대한 정보가 포함되어 있는 것을 볼 수 있습니다. 이 정보는 레이어 이름이나 레이어 ID와 같은 것을 식별할 수 있으므로 유용합니다.
 
 ![Azure 저장소](./images/ps20.png){zoomable="yes"}
 
