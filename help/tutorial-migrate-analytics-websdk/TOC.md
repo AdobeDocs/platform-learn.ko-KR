@@ -10,40 +10,40 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 6311417699d49cb2a9bbb67e221b9054a8b37605
+source-git-commit: 4fc3d8815c2f0f5bed7bb0d1fe8cfcd9b1599762
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 2%
+source-wordcount: '113'
+ht-degree: 0%
 
 ---
 
 
 # 태그를 사용하여 Adobe Analytics을 Web SDK으로 마이그레이션 {#migrate-analytics-to-websdk}
 
-+ [마이그레이션 개요](migration-to-websdk-overview.md)
++ [1. 마이그레이션 개요](migration-to-websdk-overview.md)
 
-+ [유효성 검사 보고서 세트 만들기](create-a-validation-report-suite.md)
++ [2. 유효성 검사 보고서 세트 만들기](create-a-validation-report-suite.md)
 
-+ [데이터 스트림 만들기](create-and-configure-the-analytics-datastream.md)
++ [3. 데이터 스트림 만들기](create-and-configure-the-analytics-datastream.md)
 
-+ [웹 SDK 확장 추가](add-and-configure-the-web-sdk-extension.md)
++ [4. 웹 SDK 확장 추가](add-and-configure-the-web-sdk-extension.md)
 
-+ [변수 데이터 요소 만들기](create-a-variable-data-element.md)
++ [5. 변수 데이터 요소 만들기](create-a-variable-data-element.md)
 
-+ [기본 페이지 로드 규칙 마이그레이션](migrate-your-default-page-load-rule.md)
++ [6. 기본 페이지 로드 규칙 마이그레이션](migrate-your-default-page-load-rule.md)
 
-+ [사용자 지정 코드 마이그레이션](migrate-custom-code-to-the-web-sdk.md)
++ [7. 사용자 지정 코드 마이그레이션](migrate-custom-code-to-the-web-sdk.md)
 
-+ [개발 라이브러리 빌드](build-the-implementation-changes.md)
++ [8. 개발 라이브러리 빌드](build-the-implementation-changes.md)
 
-+ [디버그 및 유효성 검사](debug-and-validate-your-web-sdk-migration.md)
++ [9. 디버그 및 유효성 검사](debug-and-validate-your-web-sdk-migration.md)
 
-+ [추가 페이지 규칙 마이그레이션](migrate-additional-page-rules.md)
++ [10. 추가 페이지 규칙 마이그레이션](migrate-additional-page-rules.md)
 
-+ [사용자 지정 링크 규칙 마이그레이션](migrate-custom-link-rules.md)
++ [11. 사용자 지정 링크 규칙 마이그레이션](migrate-custom-link-rules.md)
 
-+ [전역 변수 마이그레이션](migrate-global-variables.md)
++ [12. 전역 변수 마이그레이션](migrate-global-variables.md)
 
-+ [Analytics 확장 삭제](delete-analytics-extension-items.md)
++ [13. Analytics 확장 삭제](delete-analytics-extension-items.md)
 
-+ [스테이징 및 프로덕션으로 Publish](publish-the-migration.md)
++ [14. 스테이징 및 프로덕션에 게시](publish-the-migration.md)
