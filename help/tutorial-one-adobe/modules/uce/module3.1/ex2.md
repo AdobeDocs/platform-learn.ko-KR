@@ -4,9 +4,9 @@ description: 기초 - FAC - 스키마, 데이터 모델 및 링크 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '648'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 그러면 이걸 보게 될 거야. **저장**&#x200B;을 클릭합니다.
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
+### 사용자 - 개인
 
 이제 스키마 간의 링크 정의를 시작할 수 있습니다. 링크 정의를 시작하려면 **링크 만들기**&#x200B;를 클릭하세요.
 
@@ -143,7 +143,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 ![FAC](./images/fdb18.png)
 
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### 가구 - 개인
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
@@ -153,7 +153,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### 사용자 - MONTHLY_DATA_USAGE
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
@@ -164,7 +164,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 ![FAC](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### 사용자 - 세대
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 
@@ -174,7 +174,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### 사용자 - MOBILE_DATA_USAGE
 
 그럼 다시 여기로 오십시오. 다른 링크를 만들려면 **링크 만들기**&#x200B;를 클릭하십시오.
 

@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집 - 스키마 구성 및 식별자 설정
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./images/sb1.png)
 
-Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 스키마]**&#x200B;를 클릭합니다. 사용 가능한 [!UICONTROL 스키마] 목록이 표시됩니다.
+Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 스키마]**&#x200B;를 클릭합니다. 사용 가능한 [!UICONTROL 스키마] 목록이 표시됩니다. 새 스키마를 만들어야 합니다. 새 스키마를 만들려면 **[!UICONTROL + 스키마 만들기]**&#x200B;를 클릭합니다.
 
 ![데이터 수집](./images/menuschemas.png)
-
-새 스키마를 만들어야 합니다. 새 스키마를 만들려면 **[!UICONTROL + 스키마 만들기]**&#x200B;를 클릭합니다.
-
-![데이터 수집](./images/createschema.png)
 
 **수동**&#x200B;을 선택하고 **선택**&#x200B;을 클릭합니다.
 
@@ -156,8 +152,8 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 이제 다음 객체 정의를 사용하여 이 새 필드의 정보를 입력해야 합니다.
 
-- 필드 이름: **[!UICONTROL 식별]**
-- 표시 이름: **[!UICONTROL 식별]**
+- 필드 이름: **`--aepUserLdap--_identification`**
+- 표시 이름: **`--aepUserLdap--_identification`**
 - 유형: **[!UICONTROL 개체]**
 - 필드 그룹: **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 ![데이터 수집](./images/sureyps.png)
 
-### 고객은 무엇을 합니까?
+## 이 고객은 어떤 작업을 수행합니까?
 
 **질문에 대한 답변을 캡처하는 중입니다. 이 고객은 어떻게 합니까?조직의**&#x200B;은(는) 예를 들어 제품 페이지의 제품 보기를 통해 수행됩니다.
 
@@ -291,7 +287,7 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 해당 질문에 대한 답변 종류를 지정하려면 [!UICONTROL 필드 그룹]을 정의해야 합니다. [!UICONTROL 필드 그룹]은(는) [!UICONTROL ExperienceEvent] 클래스의 확장이며 매우 구체적인 구성을 가집니다. 예를 들어 고객이 장바구니에 보거나 추가한 제품 종류에 대한 정보는 [!UICONTROL 필드 그룹] **Commerce 세부 정보**&#x200B;에 포함되어 있습니다.
 
-두 번째로, 조직은 이 고객의 행동을 어떻게 식별할 것인지 결정해야 합니다. 웹 사이트에서의 상호 작용에 대해 이야기하고 있으므로 조직에서 고객을 알고 있을 수 있지만 알 수 없는 익명 방문자가 웹 사이트에서 활성화되어 있을 수도 있습니다. 따라서 이메일 주소와 같은 식별자는 사용할 수 없습니다. 이 경우 조직에서 [!UICONTROL ECID(Experience Cloud ID)]을(를) 기본 식별자로 사용하기로 결정할 수 있습니다.
+두 번째로, 조직은 이 고객의 행동을 어떻게 식별할 것인지 결정해야 합니다. 웹 사이트에서의 상호 작용에 대해 이야기하고 있으므로 조직에서 고객을 알고 있을 수 있지만 알 수 없는 익명 방문자가 웹 사이트에서 활성화되어 있을 수도 있습니다. 따라서 이메일 주소와 같은 식별자는 사용할 수 없습니다. 이 경우 조직은 기본 식별자로 [!UICONTROL ECID(Experience Cloud ID)]을(를) 사용하기로 결정할 수 있습니다.
 
 마지막으로 데이터가 캡처된 채널을 구분하는 것이 중요합니다. 이 경우 웹 사이트 상호 작용 및 정의해야 하는 스키마가 상호 작용 데이터가 캡처된 **where**&#x200B;를 반영해야 합니다. 채널은 또한 캡처되는 데이터에 영향을 미치는 데 중요한 역할을 할 것입니다. 따라서 채널, 기본 식별자 및 수집된 데이터 유형의 모든 조합에 대해 스키마를 정의하는 것이 좋습니다.
 
@@ -305,13 +301,9 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 ![데이터 수집](./images/sb1.png)
 
-Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 스키마]**&#x200B;를 클릭하고 **찾아보기**(으)로 이동합니다.
+Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 스키마]**&#x200B;를 클릭하고 **찾아보기**(으)로 이동합니다. 새 스키마를 만들어야 합니다. 새 스키마를 만들려면 **[!UICONTROL + 스키마 만들기]** 단추를 클릭하십시오.
 
 ![데이터 수집](./images/menuschemas.png)
-
-[!UICONTROL 스키마]에 기존의 모든 스키마가 표시됩니다. 새 스키마를 만들어야 합니다. 새 스키마를 만들려면 **[!UICONTROL + 스키마 만들기]** 단추를 클릭하십시오.
-
-![데이터 수집](./images/schemasee.png)
 
 **수동**&#x200B;을 선택하고 **선택**&#x200B;을 클릭합니다.
 
@@ -390,8 +382,8 @@ Adobe Experience Platform의 화면 왼쪽에 있는 메뉴에서 **[!UICONTROL 
 
 새 필드를 정의할 때 사용합니다.
 
-- 필드 이름: **[!UICONTROL 식별]**
-- 표시 이름: **[!UICONTROL 식별]**
+- 필드 이름: **`--aepUserLdap--_identification`**
+- 표시 이름: **`--aepUserLdap--_identification`**
 - 유형: **[!UICONTROL 개체]**
 - 필드 그룹: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
