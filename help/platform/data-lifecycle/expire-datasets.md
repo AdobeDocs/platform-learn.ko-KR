@@ -8,7 +8,7 @@ jira: KT-10697
 thumbnail: 345065.jpeg
 last-substantial-update: 2024-05-29T00:00:00Z
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
-source-git-commit: 252ef67017850c9ac3710d34ffe315463a406828
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Adobe Experience Platform의 데이터 위생 기능을 사용하여 데이터 �
 데이터 세트 삭제를 사용하면 데이터 관리자 및 데이터 엔지니어가 데이터 세트의 만료 날짜를 설정할 수 있습니다. 자세한 내용은 [데이터 위생 설명서](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=ko)를 참조하세요.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
 
 >[!NOTE]
 >

@@ -8,7 +8,7 @@ jira: KT-7924
 thumbnail: 336081.jpg
 last-substantial-update: 2023-12-08T00:00:00Z
 exl-id: f29d8a20-9af9-4f87-949e-bb9393ccf049
-source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 1%
@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # 사용자 추가 및 권한 관리
 
-Real-time Customer Data Platform 및 Journey Optimizer과 같은 Adobe Experience Platform 기반 애플리케이션에서 사용자를 추가하고 권한을 관리하는 방법에 대해 알아봅니다. 사용자는 먼저 Admin Console에 추가된 다음 Platform 또는 Journey Optimizer 인터페이스에서 권한을 부여합니다. 자세한 내용은 [액세스 제어 설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko)를 참조하세요.
+Real-Time Customer Data Platform 및 Journey Optimizer과 같은 Adobe Experience Platform 기반 애플리케이션에서 사용자를 추가하고 권한을 관리하는 방법에 대해 알아봅니다. 사용자는 먼저 Admin Console에 추가된 다음 Platform 또는 Journey Optimizer 인터페이스에서 권한을 부여받습니다. 자세한 내용은 [액세스 제어 설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on&enablevpops)

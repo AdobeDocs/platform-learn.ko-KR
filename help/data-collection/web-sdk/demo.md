@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5206
 thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 61%
@@ -18,9 +18,9 @@ ht-degree: 61%
 
 # Adobe Experience Platform Web SDK 및 Edge 네트워크 데모
 
-Experience Platform, Analytics, Audience Manager 및 Target으로 데이터를 전송하는 Adobe에 대한 단일 호출로 Adobe Experience Platform 웹 SDK 및 Edge Network 활용 사례를 확인하십시오. 자세한 내용은 [Adobe Experience Platform Web SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)를 참조하십시오.
+Experience Platform, Analytics, Audience Manager 및 Target으로 데이터를 전송하는 Adobe에 대한 단일 호출로 Adobe Experience Platform 웹 SDK 및 Edge Network의 활용 사례를 확인하십시오. 자세한 내용은 [Adobe Experience Platform Web SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
 
 >[!NOTE]
 >

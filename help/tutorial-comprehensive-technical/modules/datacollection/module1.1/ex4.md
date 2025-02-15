@@ -1,10 +1,10 @@
 ---
-title: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 기능 설정 - 클라이언트측 웹 데이터 수집
-description: 기초 - Adobe Experience Platform 데이터 수집 및 Web SDK 확장 기능 설정 - 클라이언트측 웹 데이터 수집
+title: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - 클라이언트측 웹 데이터 수집
+description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확장 설정 - 클라이언트측 웹 데이터 수집
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ### Adobe Experience Platform Debugger 설치
 
-Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할 수 있는 확장으로, 웹 페이지에서 구현된 Adobe 기술을 볼 수 있도록 도와줍니다. 기본 브라우저에 대한 버전을 설치합니다.
+Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 수 있는 확장으로, 웹 페이지에서 Adobe 기술이 구현된 것을 볼 수 있도록 도와줍니다. 기본 브라우저에 대한 버전을 설치합니다.
 
 - [Firefox 확장 프로그램](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -25,9 +25,9 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 이전에 디버거를 사용한 적이 없고 이전 Adobe Experience Cloud 디버거와 다른 경우 5분 분량의 개요 비디오를 시청하면 됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
 
-시크릿 모드에서 데모 웹 사이트를 로드할 경우 Experience Platform 디버거도 시크릿 모드에서 사용할 수 있는지 확인해야 합니다. 이렇게 하려면 브라우저에서 **chrome://extensions**(으)로 이동하여 Experience Platform 디버거 확장을 엽니다.
+시크릿 모드에서 데모 웹 사이트를 로드할 경우 Experience Platform Debugger를 시크릿 모드에서도 사용할 수 있는지 확인해야 합니다. 이렇게 하려면 브라우저에서 **chrome://extensions**(으)로 이동하여 Experience Platform Debugger 확장을 엽니다.
 
 다음 2가지 설정이 활성화되어 있는지 확인합니다.
 
@@ -62,9 +62,9 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web7.png)
 
-### Experience Platform 디버거를 사용하여 Edge으로 이동하는 호출을 확인합니다.
+### Experience Platform Debugger를 사용하여 Edge으로 이동하는 호출을 확인합니다
 
-데모 웹 사이트가 열려 있는지 확인하고 Experience Platform 디버거 확장 아이콘 을 클릭합니다.
+데모 웹 사이트가 열려 있는지 확인하고 Experience Platform Debugger 확장 프로그램 아이콘을 클릭합니다.
 
 ![EXP 뉴스 홈페이지](./images/ext2.png)
 
@@ -90,13 +90,13 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 ![AEP 디버거 AEP 웹 SDK 확장](./images/validate4.png)
 
-이제 왼쪽 탐색에서 **[!UICONTROL 웹 SDK Experience Platform]**&#x200B;을 클릭하여 **[!UICONTROL 네트워크 요청]**&#x200B;을 확인합니다.
+이제 왼쪽 탐색에서 **[!UICONTROL Experience Platform Web SDK]**&#x200B;을 클릭하여 **[!UICONTROL 네트워크 요청]**&#x200B;을 확인합니다.
 
 각 요청에 **[!UICONTROL events]** 행이 있습니다.
 
 ![AEP 디버거 AEP 웹 SDK 확장](./images/validate5.png)
 
-**[!UICONTROL 이벤트]** 행을 열려면 클릭하세요. **web.webpagedetails.pageViews** 이벤트와 **Web SDK ExperienceEvent XDM** 형식을 준수하는 기타 기본 제공 변수를 확인하는 방법을 참고하십시오.
+**[!UICONTROL 이벤트]** 행을 열려면 클릭하세요. **web.webpagedetails.pageViews** 이벤트와 **Web SDK ExperienceEvent XDM** 형식을 준수하는 기본 제공 다른 변수를 보는 방법을 참고하십시오.
 
 ![이벤트 값](./images/validate8.png)
 

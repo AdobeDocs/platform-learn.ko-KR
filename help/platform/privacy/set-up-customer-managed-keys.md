@@ -1,6 +1,6 @@
 ---
 title: CMK(고객 관리 키) 설정
-description: 자체 암호화 키를 사용하여 활용도가 낮은 데이터 암호화를 관리합니다.
+description: 자체 암호화 키를 사용하여 사용하지 않는 데이터 암호화를 관리합니다.
 feature: Privacy
 role: Admin, Data Architect, Data Engineer, Developer
 level: Experienced
@@ -8,10 +8,10 @@ jira: KT-11382
 thumbnail: 3410673.jpeg
 last-substantial-update: 2024-06-28T00:00:00Z
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
-source-git-commit: b5b64728f5f2a7c917ddd431115a7cf65b0085f3
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 자체 암호화 키를 사용하여 활용도가 낮은 데이터 암호화를 관리합니다. 자세한 내용은 [고객 관리 키 설명서](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

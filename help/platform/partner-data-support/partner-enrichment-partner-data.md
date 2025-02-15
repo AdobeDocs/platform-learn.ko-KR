@@ -10,7 +10,7 @@ jira: KT-13830
 thumbnail: 3423075.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
 exl-id: 7b6cb89d-b514-48ae-b932-1254abd57d31
-source-git-commit: e5407a227303a28a4bc1b9ca7b46c241cdb360ed
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 [!DNL Real-Time CDP]에서 추가 채널을 통해 도달 범위를 확장하기 위해 자사 프로필에 파트너 특성을 추가하는 방법을 알아봅니다. 자세한 내용은 [파트너가 제공한 특성을 사용하여 자사 프로필 추가](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) 설명서를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)

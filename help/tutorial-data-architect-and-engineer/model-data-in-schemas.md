@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 XDM은 디지털 경험의 성능을 개선하기 위해 설계된 공개적으로 문서화된 사양입니다. 플랫폼 서비스와 통신하는 데 사용할 모든 애플리케이션에 대한 일반적인 구조와 정의를 제공합니다. XDM 표준을 준수함으로써 모든 고객 경험 데이터를 일반적인 표현에 통합하여 보다 빠르고 통합적인 방식으로 통찰력을 제공할 수 있습니다. 고객 작업에서 중요한 통찰력을 얻고, 세그먼트를 통해 고객 대상을 정의하고, 개인화 목적으로 고객 속성을 표현할 수 있습니다.
 
-XDM은 Experience Platform을 기반으로 한 Adobe Experience Cloud이 적절한 사람에게 적절한 채널에서 정확한 순간에 올바른 메시지를 전달할 수 있는 기본 프레임워크입니다. Experience Platform이 빌드되는 방법론인 **XDM 시스템**&#x200B;은(는) 플랫폼 서비스에서 사용할 Experience Data Model 스키마를 운영합니다.
+XDM은 Experience Platform에서 제공하는 Adobe Experience Cloud이 정확한 순간에 정확한 메시지를 적합한 사람에게 전달할 수 있는 기본 프레임워크입니다. Experience Platform이 빌드되는 방법론인 **XDM 시스템**&#x200B;은(는) Platform 서비스에서 사용할 Experience Data Model 스키마를 운영합니다.
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,7 +43,7 @@ Key terms:
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 스키마를 만들어야 하지만 **데이터 엔지니어**&#x200B;는 데이터 설계자가 만든 스키마와 긴밀하게 작업합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 스키마 및 XDM(Experience Data Model)에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
@@ -84,7 +84,7 @@ Key terms:
 
 ### 표준 필드 그룹 추가
 
-스키마가 만들어지면 스키마에 필드를 추가할 수 있는 스키마 편집기로 리디렉션됩니다. 스키마에 개별 필드를 직접 추가하거나 필드 그룹을 사용할 수 있습니다. 모든 개별 필드는 여전히 클래스 또는 필드 그룹과 연결되어 있다는 점에 유의해야 합니다. Adobe에서 제공하는 다양한 업계 표준 필드 그룹 세트에서 선택하거나 직접 생성할 수 있습니다. Experience Platform에서 고유한 데이터를 모델링하기 시작할 때 Adobe에서 제공하는 업계 표준 필드 그룹에 익숙해지는 것이 좋습니다. 가능하면 고객 AI, Attribution AI 및 Adobe Analytics과 같은 다운스트림 서비스를 지원하기 위해 이를 사용하는 것이 좋습니다.
+스키마가 만들어지면 스키마에 필드를 추가할 수 있는 스키마 편집기로 리디렉션됩니다. 스키마에 개별 필드를 직접 추가하거나 필드 그룹을 사용할 수 있습니다. 모든 개별 필드는 여전히 클래스 또는 필드 그룹과 연결되어 있다는 점에 유의해야 합니다. Adobe에서 제공하는 다양한 산업 표준 필드 그룹 세트에서 선택하거나 직접 생성할 수 있습니다. Experience Platform에서 고유한 데이터를 모델링하기 시작할 때 Adobe에서 제공하는 업계 표준 필드 그룹에 익숙해지는 것이 좋습니다. 가능하면 Customer AI, Attribution AI 및 Adobe Analytics과 같은 다운스트림 서비스를 제공할 때 이를 사용하는 것이 좋습니다.
 
 자체 데이터를 사용하여 작업할 때 중요한 단계는 플랫폼에서 캡처해야 하는 자체 데이터와 이를 모델링하는 방법을 결정하는 것입니다. 이 큰 주제는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)에서 자세히 설명합니다. 이 자습서에서는 미리 결정된 몇 가지 스키마의 구현을 안내하겠습니다.
 
@@ -325,12 +325,12 @@ API 응답과 인터페이스를 모두 확인하여 스키마에 필드 그룹�
 |---------------|-----------------|
 | 클래스 | 경험 이벤트 |
 | 스키마 이름 | Luma 웹 이벤트 스키마 |
-| 필드 그룹 | AEP 웹 SDK ExperienceEvent |
+| 필드 그룹 | AEP 웹 SDK 경험 이벤트 |
 | 필드 그룹 | 고객 경험 이벤트 |
 
-**[!UICONTROL 소비자 경험 이벤트]** 필드 그룹을 선택하십시오. 이 필드 그룹에는 [!UICONTROL Commerce 세부 정보]에 있던 commerce 및 productListItems 개체가 포함되어 있습니다. [!UICONTROL 고객 경험 이벤트]는 별도로 사용할 수 있는 여러 다른 표준 필드 그룹의 조합입니다. [!UICONTROL AEP 웹 SDK ExperienceEvent] 필드 그룹에는 [!UICONTROL 고객 경험 이벤트]에 있는 동일한 필드 그룹을 포함하여 다른 필드 그룹도 포함되어 있습니다. 다행히도, 그들은 완벽하게 혼합됩니다.
+**[!UICONTROL 소비자 경험 이벤트]** 필드 그룹을 선택하십시오. 이 필드 그룹에는 [!UICONTROL Commerce 세부 정보]에 있던 commerce 및 productListItems 개체가 포함되어 있습니다. [!UICONTROL 고객 경험 이벤트]는 별도로 사용할 수 있는 여러 다른 표준 필드 그룹의 조합입니다. [!UICONTROL AEP 웹 SDK ExperienceEvent] 필드 그룹에는 [!UICONTROL 소비자 경험 이벤트]에 있는 동일한 필드 그룹을 포함하여 다른 필드 그룹도 포함되어 있습니다. 다행히도, 그들은 완벽하게 혼합됩니다.
 
-이 스키마에 `Luma Identity ExperienceEvent field group`을(를) 추가하지 않았습니다. 웹 SDK에는 ID를 수집하는 방법이 다르기 때문입니다. 스키마 편집기의 **[!UICONTROL 컴포지션]** 섹션에서 **[!UICONTROL XDM ExperienceEvent]** 클래스를 선택하면 기본적으로 추가되는 필드 중 하나가 **[!UICONTROL IdentityMap]**&#x200B;입니다. [!DNL IdentityMap]은(는) 다양한 Adobe 응용 프로그램에서 플랫폼에 연결하는 데 사용됩니다. 스트리밍 수집 단원에서 identityMap을 통해 ID가 플랫폼으로 전송되는 방법을 확인할 수 있습니다.
+이 스키마에 `Luma Identity ExperienceEvent field group`을(를) 추가하지 않았습니다. 웹 SDK은 ID를 수집하는 방식이 다르기 때문입니다. 스키마 편집기의 **[!UICONTROL 컴포지션]** 섹션에서 **[!UICONTROL XDM ExperienceEvent]** 클래스를 선택하면 기본적으로 추가되는 필드 중 하나가 **[!UICONTROL IdentityMap]**&#x200B;입니다. [!DNL IdentityMap]은(는) 다양한 Adobe 애플리케이션에서 플랫폼에 연결하는 데 사용됩니다. 스트리밍 수집 단원에서 identityMap을 통해 ID가 플랫폼으로 전송되는 방법을 확인할 수 있습니다.
 
 
 ## 제품 카탈로그 스키마 만들기
@@ -339,7 +339,7 @@ Luma는 [!UICONTROL Commerce 세부 정보] 및 [!UICONTROL 소비자 경험 이
 
 >[!NOTE]
 >
->기존 Analytics 또는 Target 고객의 경우 스키마 관계가 있는 엔티티를 분류하는 것은 SAINT 분류 또는 Recommendations에 대한 제품 카탈로그 업로드와 유사합니다
+>기존 Analytics 또는 Target 고객의 경우 스키마 관계가 있는 엔티티를 분류하는 것은 SAINT 분류 또는 권장 사항에 대한 제품 카탈로그를 업로드하는 것과 유사합니다
 
 먼저 사용자 지정 클래스를 사용하여 Luma의 제품 카탈로그에 대한 스키마를 만들어야 합니다.
 

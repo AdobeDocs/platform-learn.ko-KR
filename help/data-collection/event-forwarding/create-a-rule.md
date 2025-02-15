@@ -6,7 +6,7 @@ level: Intermediate
 jira: KT-6423
 thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -21,8 +21,8 @@ ht-degree: 0%
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 platform launch(Client Side)가 **[!DNL tags]**&#x200B;입니다.
-> * 이제 platform launch 서버측이 **[!DNL event forwarding]**&#x200B;입니다.
+> * 이제 Platform Launch(Client Side)가 **[!DNL tags]**&#x200B;입니다.
+> * 이제 Platform Launch Server Side가 **[!DNL event forwarding]**&#x200B;입니다.
 > * 이제 Edge 구성이 **[!DNL datastreams]**&#x200B;입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)

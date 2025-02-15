@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: 70b06cca-879a-451b-8126-de2f830f056a
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
@@ -20,17 +20,17 @@ ht-degree: 0%
 
 Neste 사용자 흐름, você terá experiencia pratica com 또는 고객 여정 분석.
 
-O Customer Journey Analytics fornece uma 인터페이스 em que os times de Analytics, Negócios e Tecnologia conseguem unir todos os dados da companhia e analisar a jornada cross-channel (online e offline) do cliente de ponta a ponta. O Customer Journey Analytics é capaz de fornecer contexto e clareza para as jornadas de cliente multicanal compleas. O contexto fornecido gera uma visão acionável em cima das dificuldades no processo de conversão e possibilita experiencyas relevantes e personalizadas nos pontos mais relevantes.
+O Customer Journey Analytics fornece uma interface em que os times de Analytics, Negócios e Tecnologia conseguem unir todos os dados da companhia e analisar a jornada cross-channel (online e offline) do cliente de ponta a ponta. O Customer Journey Analytics é capaz de fornecer contexto e clareza para as jornadas de cliente multicanal compleas. O contexto fornecido gera uma visão acionável em cima das dificuldades no processo de conversão e possibilita experiencyas relevantes e personalizadas nos pontos mais relevantes.
 
 Assista a este vídeo para compreender o valor, a jornada do cliente o processo de configuração :
 
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
 Customer Journey Analytics podem ser entradas [aqui](https://spark.adobe.com/page/t62eiRu9l6iWJ/)의 Mais informatções sobre.
 
 ## Objetivos de aprendizado
 
-- 친숙하게 하기-se com a UI do Customer Journey Analytics
+- Familiarize-se com a UI do Customer Journey Analytics
 - Traga os 데이터 세트 da Adobe Experience Platform para o Customer Journey Analytics
 - Entenda o Person ID e a junção de dados no CJA
 - Entenda os conceitos de uma conexão de dados e uma visualizaão de dados
@@ -44,7 +44,7 @@ Customer Journey Analytics podem ser entradas [aqui](https://spark.adobe.com/pag
 
 >[!IMPORTANT]
 >
->Este 튜토리얼 foi criado para facilitar um formato espicífico de Bootcamp. Sisemas e contas espaceficos aos quais você pode não ter aceso são utilizados neste 튜토리얼 . Mesmo sem aceso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Adobe Se você um participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu representant da para receber as informatoções neesirárias.
+>Este 튜토리얼 foi criado para facilitar um formato espicífico de Bootcamp. Sisemas e contas espaceficos aos quais você pode não ter aceso são utilizados neste 튜토리얼 . Mesmo sem aceso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu represententant da Adobe para receber as informatoções necessárias.
 
 ## 엑세르시오스
 
@@ -52,13 +52,13 @@ Customer Journey Analytics podem ser entradas [aqui](https://spark.adobe.com/pag
 
 Saiba tudo sobre os conceitos do Customer Journey Analytics.
 
-[4.2 데이터 세트 연결 da Adobe Experience Platform Customer Journey Analytics 없음](./ex2.md)
+[4.2 데이터 세트 연결 da Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
 
-Saiba como consumir múltiplos 데이터 세트 da Adobe Experience Platform 노 Customer Journey Analytics.
+Saiba como consumir múltiplos 데이터 세트 da Adobe Experience Platform no Customer Journey Analytics.
 
 [4.3 Crie uma Visualização de Dados](./ex3.md)
 
-Saiba como configurar uma visualizaão de dados Customer Journey Analytics 없음.
+사이바 코모 구성 uma visualização de dados no Customer Journey Analytics.
 
 [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
 

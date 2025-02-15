@@ -9,7 +9,7 @@ thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%
@@ -24,4 +24,4 @@ ht-degree: 18%
 * 소비자 신뢰로 이어지고 소비자 여정 내에서 원활하게 통합되는 동의 기반 전략을 통합하는 방법
 * 효율성과 신뢰성으로 마케터의 역할 내에서 데이터 관리자 책임
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on&enablevpops)

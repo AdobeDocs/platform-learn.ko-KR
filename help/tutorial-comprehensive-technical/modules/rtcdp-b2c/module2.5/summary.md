@@ -3,7 +3,8 @@ title: Adobe Experience Platform 데이터 수집 및 실시간 서버 측 전�
 description: 요약 및 이점
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 7086f844-f21c-45d4-a7d9-3e695233b4b7
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -29,9 +30,9 @@ Adobe Experience Platform 데이터 수집 덕분에 이제 브랜드로서는 �
 ## 이 항목 확인
 
 - 기술 블로그: [Adobe Experience Platform Web SDK 및 Edge Network으로 구현 불만 사항 해결](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
-- 기술 블로그: [Adobe Experience Platform Web SDK 및 Edge Network을 사용하여 웹 사이트 성능 향상](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
+- 기술 블로그: [Adobe Experience Platform Web SDK 및 Edge Network을 통해 웹 사이트 성능 향상](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
 - 설명서: [Adobe Experience Platform 데이터 수집 서버측 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
-- 비디오: [Adobe이 아닌 Tag Management 솔루션을 사용하여 Edge 및 Adobe Experience Platform 데이터 수집 서버 구현](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
+- 비디오: [Adobe 이외의 Tag Management 솔루션을 사용하여 Edge 및 Adobe Experience Platform 데이터 수집 서버 구현](https://video.tv.adobe.com/v/331986?quality=12&learn=on&enablevpops)
 
 [모듈 2.5로 돌아가기](./aep-data-collection-ssf.md)
 

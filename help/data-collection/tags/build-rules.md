@@ -7,7 +7,7 @@ duration: 551
 last-substantial-update: 2024-02-23T00:00:00Z
 jira: KT-3530
 exl-id: 789ce4d8-4c20-4690-9907-57e924a0c586
-source-git-commit: a72fd41c9673d06585dc787ffe8086e5c9ba23a0
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 37%
@@ -18,4 +18,4 @@ ht-degree: 37%
 
 태그에서 명령을 실행할 수 있도록 규칙을 만드는 방법을 알아봅니다. 작업과 조건에 따라 *when*&#x200B;이 작업을 수행하는 반면 작업은 *what*&#x200B;을(를) 결정합니다. 자세한 내용은 [규칙](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) 설명서를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)

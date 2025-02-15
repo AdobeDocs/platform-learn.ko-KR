@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Analysis Workspace의 데이터 준비
 kt: 5342
 doc-type: tutorial
 exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 1%
@@ -25,11 +25,11 @@ Analysis Workspace은 단일 Analytics 보고서의 모든 일반적인 제한 �
 
 Customer Journey Analytics은 플랫폼 데이터 위에 이 솔루션을 제공합니다. 이 4분 개요 비디오를 시청하는 것이 좋습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Analysis Workspace을 사용하지 않았다면 이 비디오를 시청하는 것이 좋습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### 프로젝트 만들기
 
@@ -121,11 +121,11 @@ Analysis Workspace을 사용하지 않았다면 이 비디오를 시청하는 �
 
 ![데모](./images/calcbuildercr6a.png)
 
-## 4.1.4.3 계산된 Dimension: 필터(세그먼테이션) 및 날짜 범위
+## 4.1.4.3 계산된 차원: 필터(세그먼테이션) 및 날짜 범위
 
-### 필터: 계산된 Dimension
+### 필터: 계산된 차원
 
-계산은 지표 전용이 아닙니다. 분석을 시작하기 전에 **계산된 Dimension**&#x200B;을(를) 만드는 것도 좋습니다. 이는 기본적으로 Adobe Analytics의 **세그먼트**&#x200B;를 의미합니다. Customer Journey Analytics에서 이러한 세그먼트를 **필터**&#x200B;이라고 합니다.
+계산은 지표 전용이 아닙니다. 분석을 시작하기 전에 **계산된 차원**&#x200B;을 만드는 것도 좋습니다. 이는 기본적으로 Adobe Analytics의 **세그먼트**&#x200B;를 의미합니다. Customer Journey Analytics에서는 이러한 세그먼트를 **필터**&#x200B;라고 합니다.
 
 ![데모](./images/prfilters.png)
 
@@ -137,11 +137,11 @@ Analysis Workspace을 사용하지 않았다면 이 비디오를 시청하는 �
 
 이러한 필터는 분석 파트 전 또는 중에 만들 수 있습니다(다음 연습에서 수행할 작업).
 
-### 날짜 범위: 계산된 시간 Dimension
+### 날짜 범위: 계산된 시간 차원
 
-시간 Dimension은 다른 유형의 계산된 차원입니다. 일부는 이미 만들어졌지만 데이터 준비 단계에서 사용자 지정 시간 Dimension을 만들 수도 있습니다.
+시간 차원은 다른 유형의 계산된 차원입니다. 일부는 이미 생성되었지만, 데이터 준비 단계에서 사용자 지정 시간 차원을 생성할 수도 있습니다.
 
-이러한 계산된 시간 Dimension은 분석가 및 비즈니스 사용자가 중요한 날짜를 기억하고 보고 시간을 필터링하고 변경하는 데 사용할 수 있도록 돕습니다. 분석을 수행할 때 떠오르는 일반적인 질문과 의심:
+이러한 계산된 시간 차원은 분석가 및 비즈니스 사용자가 중요한 날짜를 기억하고 이를 사용하여 보고 시간을 필터링하고 변경하는 데 도움이 됩니다. 분석을 수행할 때 떠오르는 일반적인 질문과 의심:
 
 - 작년에 블랙 프라이데이가 언제였나요? 21일-29일?
 - 우리가 12월에 그 TV캠페인을 한 게 언제죠?

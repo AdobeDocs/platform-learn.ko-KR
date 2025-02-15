@@ -3,7 +3,7 @@ title: CSC Bootcamp - 기타 사전 작업
 description: CSC Bootcamp - 기타 사전 작업
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobe Commerce은 고객에게 최상의 디지털 경험을 제공하는 데 �
 
 이 비디오는 Adobe Commerce을 잘 알게 해주며 우리가 부트 캠프 동안 사용하기 위해 만든 제품을 보여 줍니다. 실제 시나리오에서는 이전에 선택한 브랜드 자산을 Adobe Commerce에 제품 구성으로 업로드합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 이 작업이 완료되면 Workfront에서 작업 3을 100% 완료로 표시할 수 있습니다.
 

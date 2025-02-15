@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 데이터 세트를 만들어야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 데이터 세트에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## 권한 필요
 

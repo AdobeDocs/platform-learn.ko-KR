@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 6%
@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service를 사용하면 디바이스와 시�
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 ID를 매핑해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 Adobe Experience Platform의 ID에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Adobe Experience Platform Identity Service를 사용하면 디바이스와 시�
 
 ## ID 네임스페이스 만들기
 
-이 연습에서는 Luma의 사용자 지정 ID 필드 `loyaltyId`, `crmId` 및 `productSku`에 대한 ID 네임스페이스를 만듭니다. 동일한 네임스페이스 내에 일치하는 두 값이 있으면 두 개의 데이터 소스가 하나의 아이덴티티 그래프를 구성할 수 있기 때문에 신원 네임스페이스는 실시간 고객 프로필을 작성하는 데 중요한 역할을 합니다.
+이 연습에서는 Luma의 사용자 지정 ID 필드 `loyaltyId`, `crmId` 및 `productSku`에 대한 ID 네임스페이스를 만듭니다. 동일한 네임스페이스 내에 일치하는 두 값이 있으면 두 개의 데이터 소스가 하나의 ID 그래프를 구성할 수 있기 때문에 ID 네임스페이스는 실시간 고객 프로필을 작성하는 데 중요한 역할을 합니다.
 
 
 ### UI에서 네임스페이스 만들기
@@ -146,7 +146,7 @@ ID 네임스페이스 `Luma CRM Id`을(를) 만들어 보겠습니다.
 
 >[!NOTE]
 >
->웹 SDK를 사용하여 수집된 데이터는 스키마에서 ID 필드에 레이블을 지정하는 일반적인 방법에 대한 예외입니다. Web SDK는 ID 맵을 사용하여 구현 측면에 *의 ID에 레이블을 지정합니다*. 따라서 Luma 웹 사이트에서 Web SDK를 구현할 때 `Luma Web Events Schema`의 ID를 결정합니다. 이후 단원에서는 기본 ID로 Experience Cloud 방문자 ID(ECID)를 수집하고 보조 ID로 crmId를 수집합니다.
+>웹 SDK으로 수집된 데이터는 스키마에서 ID 필드에 레이블을 지정하는 일반적인 방법에 대한 예외입니다. Web SDK은 ID 맵을 사용하여 구현 측면에 *의 ID에 레이블을 지정합니다*. 따라서 Luma 웹 사이트에서 Web SDK을 구현할 때 `Luma Web Events Schema`의 ID를 결정합니다. 이후 단원에서는 기본 ID로 Experience Cloud 방문자 ID(ECID)를 수집하고 보조 ID로 crmId를 수집합니다.
 
 기본 ID를 선택하면 `Luma CRM Schema`이(가) 모두 `loyaltyId`을(를) 식별자로 사용하므로 `Luma Offline Purchase Events Schema`에 연결할 수 있는 방법을 알 수 있습니다. 하지만 어떻게 하면 오프라인 구매를 온라인 행동으로 연결시킬 수 있을까요? 제품 카탈로그로 구매한 제품을 어떻게 분류할 수 있습니까? 추가 ID 필드 및 스키마 관계를 사용합니다.
 

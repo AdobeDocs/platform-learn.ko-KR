@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2465'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 데이터 수집에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## 권한 필요
@@ -191,7 +191,7 @@ ht-degree: 0%
 1. **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]** 요청 선택
 1. **매개 변수** 탭에서 **작업**(으)로 `COMPLETE`을(를) 입력하십시오.
 1. **매개 변수** 탭에서 배치 ID를 입력합니다. 데이터 세트 ID 또는 filePath가 있는 경우 걱정하지 마십시오.
-1. POST URL이 `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE`이고 `datasetId` 또는 `filePath`에 대한 불필요한 참조가 없는지 확인하십시오
+1. 게시물의 URL이 `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE`이고 `datasetId` 또는 `filePath`에 대한 불필요한 참조가 없는지 확인하십시오
 1. **보내기**&#x200B;를 선택하면 응답 본문에 &#39;1&#39;이 있는 200 OK 응답을 받게 됩니다.
 
    ![일괄 처리 완료](assets/ingestion-crm-complete.png)
@@ -332,7 +332,7 @@ ht-degree: 0%
 
 ## ETL 도구
 
-Adobe은 여러 ETL 공급업체와 협력하여 Experience Platform에 데이터 수집을 지원합니다. 다양한 서드파티 공급업체로 인해 ETL은 이 자습서에서 다루지 않지만, 다음 리소스 중 일부를 검토할 수 있습니다.
+Adobe은 여러 ETL 공급업체와 협력하여 Experience Platform으로의 데이터 수집을 지원합니다. 다양한 서드파티 공급업체로 인해 ETL은 이 자습서에서 다루지 않지만, 다음 리소스 중 일부를 검토할 수 있습니다.
 
 * [Adobe Experience Platform을 위한 ETL 통합 개발](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Adobe Exchange의 Informatica Adobe Experience Platform 커넥터 페이지](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
@@ -344,4 +344,4 @@ Adobe은 여러 ETL 공급업체와 협력하여 Experience Platform에 데이�
 * [일괄 처리 수집 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [일괄 처리 수집 API 참조](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
-이제 Web SDK를 사용하여 데이터를 [스트리밍](ingest-streaming-data.md)하겠습니다.
+이제 웹 SDK을 사용하여 데이터를 [스트리밍](ingest-streaming-data.md)하겠습니다.

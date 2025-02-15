@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-7892
 thumbnail: 333305.jpg
 exl-id: b7b5111c-4e30-4a69-bde1-d75df03fbf86
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 0%
@@ -22,5 +22,5 @@ ht-degree: 0%
 >
 > Platform 인터페이스에서 &quot;[!UICONTROL 세그먼트]&quot;의 이름이 &quot;[!UICONTROL 대상]&quot;으로 변경되었습니다. **[!UICONTROL 대상 만들기]** > **[!UICONTROL 규칙 빌드]**&#x200B;를 선택하여 이 비디오에 포함된 규칙 빌더를 입력합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/333305/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333305/?learn=on&enablevpops)
 

@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 41%
@@ -20,7 +20,7 @@ ht-degree: 41%
 
 Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScript 라이브러리와 하나의 비콘 유형을 사용하여 Adobe 애플리케이션 및 서드파티 대상으로 데이터를 전송하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -30,7 +30,7 @@ Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScrip
 
 ## 추가 리소스
 
-* [Adobe Experience Platform 웹 SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
-* [Adobe Experience Platform Web SDK 블로그 게시물을 사용하여 고객 워크플로우 단순화](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+* [Adobe Experience Platform Web SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Adobe Experience Platform Web SDK 블로그 게시물을 통해 고객 워크플로 단순화](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
 * [Adobe Experience Platform Experience Edge 블로그 게시물을 통한 클라이언트-서버 통합 간소화](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 * [Adobe Experience Platform 서비스와 Adobe Experience Platform Web SDK 블로그 게시물 통합](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)

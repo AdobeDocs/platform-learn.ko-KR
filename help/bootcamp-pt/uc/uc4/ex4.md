@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 O Analysis Workspace limitações típicas de um único relatório do Analytics로 todas를 제거합니다. Ele fornece uma tela robusta e flexível para criar project de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes (dimensões, métricas, segmentos e granularidades de tempo) para um projeto. Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparação de segmentos, análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-O Customer Journey Analytics traz essa solução além dos dados da plataforma. É altamente recommendável assistir a este vídeo de visão geral de quatro minutos:
+오 Customer Journey Analytics traz essa solução além dos dados da plataforma. É altamente recommendável assistir a este vídeo de visão geral de quatro minutos:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 Se você nunca usou o Analysis Workspace antes, recommendamos este vídeo:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### 크리세 프로제토
 
@@ -129,7 +129,7 @@ Não se equeça de **Salvar** a Métrica 계산
 
 ### 필터: Dimensões calculladas
 
-Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interesante criar algumas **계산된 Dimension**. Adobe Analytics에서 Isso의 의미, Essencialmente, **세그먼트**. Customer Journey Analytics이 없습니다. segmentos são chamados de **필터**&#x200B;를 참조하세요.
+Os cálculos não devem ser apenas para métricas. Antes de iniciar qualquer análise, também é interesante criar algumas **계산된 차원**. Adobe Analytics에서 Isso의 의미, Essencialmente, **세그먼트**. Customer Journey Analytics이 없습니다. segmentos são chamados de **필터**&#x200B;를 참조하세요.
 
 ![데모](./images/prfilters.png)
 

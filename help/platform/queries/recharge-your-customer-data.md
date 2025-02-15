@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 * 활용할 수 있는 Adobe Experience Platform 데이터 준비 기능
 * Adobe Real-Time CDP, Adobe Journey Optimizer 및 Customer Journey Analytics의 ROI 향상
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## SQL 예
 

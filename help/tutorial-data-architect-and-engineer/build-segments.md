@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 세그먼트를 만들고 이 작업으로 동료를 지원해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 세그먼트 만들기에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
 ## 권한 필요

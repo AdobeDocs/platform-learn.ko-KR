@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Adobe Experience Platform을 사용하면 여러 소스에서 데이터를 결�
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 병합 정책을 만들어야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 병합 정책에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 권한 필요
 

@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -33,7 +33,7 @@ ht-degree: 0%
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 실시간 고객 프로필을 활성화해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 실시간 고객 프로필에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## 권한 필요
 

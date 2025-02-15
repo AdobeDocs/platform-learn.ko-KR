@@ -8,7 +8,7 @@ doc-type: Event
 thumbnail: 337665.jpg
 jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 17%
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 적은 데이터에 액세스하여 경험 약속을 이행합니다. 광고주든, 게시자든 아니면 에이전시든, 이 웨비나는 서드파티 쿠키 없이 향후 데이터 공동 작업의 기회를 여는 데 도움이 됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on&enablevpops)
 
 ## 주요 지침:
 

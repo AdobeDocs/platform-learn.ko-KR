@@ -7,7 +7,7 @@ level: Beginner, Intermediate, Experienced
 thumbnail: 336939.jpg
 jira: KT-8866
 exl-id: df81b1f4-4d60-4b07-aa4f-4ddc38ed4b6b
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 우수한 고객 경험을 제공하려면 고객에 대해 알아야 합니다. 고객에 대해 알고 있는 모든 사항을 실시간 고객 프로필에 병합하면 더 많은 고객을 다시 찾을 수 있는 경험을 제공할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/336939/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336939/?learn=on&enablevpops)

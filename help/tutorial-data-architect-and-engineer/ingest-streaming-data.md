@@ -2,13 +2,13 @@
 title: 스트리밍 데이터 수집
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 스트리밍 데이터 수집
-description: 이 단원에서는 Web SDK를 사용하여 데이터를 Experience Platform에 스트리밍합니다.
+description: 이 단원에서는 웹 SDK을 사용하여 Experience Platform에 데이터를 스트리밍합니다.
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 0%
@@ -19,25 +19,25 @@ ht-degree: 0%
 
 <!--1hr-->
 
-이 단원에서는 Adobe Experience Platform Web SDK를 사용하여 데이터를 스트리밍합니다.
+이 단원에서는 Adobe Experience Platform Web SDK을 사용하여 데이터를 스트리밍합니다.
 
 데이터 수집 인터페이스에서 완료해야 하는 두 가지 주요 작업이 있습니다.
 
-* 웹 사이트의 방문자 활동에 대한 데이터를 Adobe Edge 네트워크로 보내려면 Luma 웹 사이트에서 웹 SDK를 구현해야 합니다. 태그를 사용하여 간단한 구현을 수행합니다(이전 Launch)
+* 웹 사이트의 방문자 활동에 대한 데이터를 Adobe Edge 네트워크로 전송하려면 Luma 웹 사이트에서 웹 SDK을 구현해야 합니다. 태그를 사용하여 간단한 구현을 수행합니다(이전 Launch)
 
 * Edge 네트워크에 데이터를 전달할 위치를 알려주는 데이터 스트림을 구성해야 합니다. Platform 샌드박스의 `Luma Web Events` 데이터 세트로 데이터를 보내도록 구성합니다.
 
 **데이터 엔지니어**&#x200B;는 이 자습서 외부에서 스트리밍 데이터를 수집해야 합니다. Adobe Experience Platform의 웹 또는 모바일 SDK를 구현할 때 일반적으로 웹 또는 모바일 개발자는 데이터 레이어 만들기 및 태그 속성 구성에 관여합니다.
 
-연습을 시작하기 전에 다음 두 개의 짧은 비디오를 시청하여 데이터 수집 및 웹 SDK 스트리밍에 대해 자세히 알아보십시오.
+연습을 시작하기 전에 다음 두 개의 짧은 비디오를 통해 스트리밍 데이터 수집 및 웹 SDK에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->이 자습서에서는 웹 SDK를 사용하여 웹 사이트에서 스트리밍하는 데 중점을 두고 있지만 [Mobile SDK Adobe](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) 및 기타 메커니즘을 사용하여 데이터를 스트리밍할 수도 있습니다.
+>이 자습서에서는 웹 SDK을 사용하여 웹 사이트에서 스트리밍하는 데 중점을 두고 있지만 [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect) 및 기타 메커니즘을 사용하여 데이터를 스트리밍할 수도 있습니다.
 
 ## 권한 필요
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ## 데이터 스트림 구성
 
-먼저 데이터 스트림을 구성하겠습니다. 데이터 스트림은 Web SDK 호출에서 데이터를 받은 후 데이터를 보낼 위치를 Adobe Edge 네트워크에 알려줍니다. 예를 들어 데이터를 Experience Platform, Adobe Analytics 또는 Adobe Target으로 전송하시겠습니까? 데이터 스트림은 데이터 수집 사용자 인터페이스(이전 Launch)에서 관리되며, Web SDK를 사용한 데이터 수집에 중요합니다.
+먼저 데이터 스트림을 구성하겠습니다. 데이터 스트림은 Adobe Edge 네트워크에 웹 SDK 호출에서 데이터를 받은 후 보낼 위치를 알려줍니다. 예를 들어 Experience Platform, Adobe Analytics 또는 Adobe Target으로 데이터를 전송하시겠습니까? 데이터 스트림은 데이터 수집 사용자 인터페이스(이전 Launch)에서 관리되며, Web SDK을 사용한 데이터 수집에 중요합니다.
 
 [!UICONTROL 데이터스트림]을 만들려면:
 
@@ -96,12 +96,12 @@ ht-degree: 0%
 
    ![데이터 스트림 이름 지정 및 저장](assets/websdk-edgeConfig-name.png)
 
-다음 화면에서는 데이터를 보낼 위치를 지정합니다. 데이터를 Experience Platform에 보내려면:
+다음 화면에서는 데이터를 보낼 위치를 지정합니다. Experience Platform에 데이터를 보내려면 다음을 수행하십시오.
 
 1. 추가 필드를 표시하려면 **[!UICONTROL Adobe Experience Platform]**&#x200B;을(를) 켜십시오.
 1. **[!UICONTROL 샌드박스]**&#x200B;의 경우 `Luma Tutorial`을(를) 선택하십시오.
 1. **[!UICONTROL 이벤트 데이터 세트]**&#x200B;에 대해 `Luma Web Events Dataset`을(를) 선택합니다.
-1. 다른 Adobe 애플리케이션을 사용하는 경우 언제든지 다른 섹션을 탐색하여 이러한 다른 솔루션의 Edge 구성에 필요한 정보를 확인하십시오. Web SDK는 데이터를 Experience Platform으로 스트리밍할 뿐만 아니라 다른 Adobe 애플리케이션에서 사용하던 모든 이전 JavaScript 라이브러리를 대체하기 위해 개발되었습니다. Edge 구성 을 사용하여 데이터를 전송하려는 각 애플리케이션의 계정 세부 정보를 지정합니다.
+1. 다른 Adobe 애플리케이션을 사용하는 경우 언제든지 다른 섹션을 탐색하여 이러한 다른 솔루션의 Edge 구성에 필요한 정보를 확인하십시오. 웹 SDK은 데이터를 Experience Platform으로 스트리밍할 뿐만 아니라 다른 Adobe 애플리케이션에서 사용하는 모든 이전 JavaScript 라이브러리를 대체하기 위해 개발되었습니다. Edge 구성 을 사용하여 데이터를 전송하려는 각 애플리케이션의 계정 세부 정보를 지정합니다.
 1. **[!UICONTROL 저장]** 선택
    ![데이터 스트림 구성 및 저장](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -149,17 +149,17 @@ Now switch back to your browser tab with the Data Collection interface still ope
 
 ## 웹 SDK 확장 추가
 
-이제 속성이 있으므로 확장을 사용하여 웹 SDK를 추가할 수 있습니다. 확장은 데이터 수집 인터페이스 및 기능을 확장하는 코드 패키지입니다. 확장을 추가하려면:
+이제 속성이 있으므로 확장을 사용하여 웹 SDK을 추가할 수 있습니다. 확장은 데이터 수집 인터페이스 및 기능을 확장하는 코드 패키지입니다. 확장을 추가하려면:
 
 1. 태그 속성 열기
 1. 왼쪽 탐색에서 **[!UICONTROL 확장]**(으)로 이동
 1. **[!UICONTROL 카탈로그]** 탭으로 이동
 1. 태그에 사용할 수 있는 확장 프로그램이 많이 있습니다. 용어 `Web SDK`(으)로 카탈로그 필터링
 1. **[!UICONTROL Adobe Experience Platform Web SDK]** 확장에서 **[!UICONTROL 설치]** 단추를 선택합니다
-   ![Adobe Experience Platform 웹 SDK 확장 설치](assets/websdk-property-addExtension.png)
-1. 웹 SDK 확장에는 몇 가지 구성이 있지만, 이 자습서에 대해 두 가지 구성만 수행할 수 있습니다. **[!UICONTROL Edge 도메인]**&#x200B;을(를) `data.enablementadobe.com`(으)로 업데이트합니다. 이 설정을 사용하면 웹 SDK 구현을 사용하여 자사 쿠키를 설정할 수 있습니다. 이는 권장되는 현상입니다. 이 단원의 뒷부분에서 `enablementadobe.com` 도메인의 웹 사이트를 태그 속성에 매핑합니다. `data.enablementadobe.com`이(가) Adobe 서버로 전달하도록 `enablementadobe.com` 도메인의 CNAME이 이미 구성되었습니다. 웹 사이트에서 Web SDK를 구현하는 경우 데이터 수집을 위해 CNAME을 만들어야 합니다(예: `data.YOUR_DOMAIN.com`)
+   ![Adobe Experience Platform Web SDK 확장 설치](assets/websdk-property-addExtension.png)
+1. 웹 SDK 확장에는 몇 가지 구성이 사용할 수 있지만, 이 자습서에서는 두 가지 구성만 사용할 수 있습니다. **[!UICONTROL Edge 도메인]**&#x200B;을(를) `data.enablementadobe.com`(으)로 업데이트합니다. 이 설정을 사용하면 웹 SDK 구현을 사용하여 자사 쿠키를 설정할 수 있습니다. 이는 권장되는 현상입니다. 이 단원의 뒷부분에서 `enablementadobe.com` 도메인의 웹 사이트를 태그 속성에 매핑합니다. `data.enablementadobe.com`이(가) Adobe 서버로 전달하도록 `enablementadobe.com` 도메인의 CNAME이 이미 구성되었습니다. 웹 사이트에서 웹 SDK을 구현하는 경우 데이터 수집을 위한 CNAME을 만들어야 합니다(예: `data.YOUR_DOMAIN.com`).
 1. **[!UICONTROL 데이터스트림]** 드롭다운에서 `Luma Platform Tutorial` 데이터스트림을 선택합니다.
-1. 다른 구성 옵션을 자유롭게 살펴보십시오(하지만 변경하지 마십시오!). **[!UICONTROL 저장]**을 선택합니다.
+1. 언제든지 다른 구성 옵션을 보고 **[!UICONTROL 저장]**을 선택하세요.
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
@@ -188,7 +188,7 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. 규칙을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택하십시오.\
    ![규칙 저장](assets/websdk-property-saveRule.png)
 
-## 라이브러리의 규칙 Publish
+## 라이브러리에 규칙 게시
 
 그런 다음 규칙이 작동하는지 확인할 수 있도록 개발 환경에 규칙을 게시합니다.
 
@@ -235,7 +235,7 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
    ![라이브러리 추가 선택](assets/websdk-property-pubAddNewLib.png)
 1. **[!UICONTROL Name]**&#x200B;에 대해 `Luma Platform Tutorial`을(를) 입력하십시오.
 1. **[!UICONTROL 환경]**&#x200B;에 대해 `Development`을(를) 선택합니다.
-1. **[!UICONTROL 변경된 모든 리소스 추가]** 단추를 선택합니다. [!UICONTROL Adobe Experience Platform Web SDK] 확장 및 `All Pages - Library Loaded` 규칙 외에 모든 Launch 웹 속성에 필요한 기본 JavaScript을 포함하는 [!UICONTROL Core] 확장 프로그램도 추가됩니다.
+1. **[!UICONTROL 변경된 모든 리소스 추가]** 단추를 선택합니다. [!UICONTROL Adobe Experience Platform Web SDK] 확장 및 `All Pages - Library Loaded` 규칙 외에 모든 Launch 웹 속성에 필요한 기본 JavaScript이 포함된 [!UICONTROL Core] 확장 프로그램도 추가됩니다.
 1. **[!UICONTROL 개발을 위한 저장 및 빌드]** 단추 선택
    ![라이브러리 만들기 및 빌드](assets/websdk-property-buildLibrary.png)
 
@@ -248,14 +248,14 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 
 ### Adobe Experience Platform Debugger 추가
 
-Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할 수 있는 확장으로, 웹 페이지에서 구현된 Adobe 기술을 볼 수 있도록 도와줍니다. 원하는 브라우저용 버전을 다운로드합니다.
+Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 수 있는 확장으로, 웹 페이지에서 Adobe 기술이 구현된 것을 볼 수 있도록 도와줍니다. 원하는 브라우저용 버전을 다운로드합니다.
 
 * [Firefox 확장 프로그램](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 이전에 Debugger를 사용한 적이 없고 이전 Adobe Experience Cloud Debugger와 다른 경우 다음 5분 길이의 개요 비디오를 시청해 보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Luma 웹 사이트를 엽니다.
 
@@ -268,11 +268,11 @@ Experience Platform 디버거는 Chrome 및 Firefox 브라우저에서 사용할
 
 ![Luma 홈 페이지](assets/websdk-luma-homepage.png)
 
-### Experience Platform 디버거를 사용하여 태그 속성에 매핑
+### Experience Platform Debugger를 사용하여 태그 속성에 매핑
 
-Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 바꿀 수 있는 멋진 기능이 있습니다. 이 기능은 유효성 검사에 유용하며, 이 자습서에서는 많은 구현 단계를 건너뛸 수 있습니다.
+Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 바꿀 수 있는 멋진 기능이 있습니다. 이 기능은 유효성 검사에 유용하며, 이 자습서에서는 많은 구현 단계를 건너뛸 수 있습니다.
 
-1. Luma 사이트가 열려 있는지 확인하고 Experience Platform 디버거 확장 아이콘을 선택합니다.
+1. Luma 사이트가 열려 있는지 확인하고 Experience Platform Debugger 확장 프로그램 아이콘을 선택합니다
 1. 디버거가 열리고 이 자습서와 관련이 없는 하드코딩된 구현에 대한 일부 세부 정보가 표시됩니다(디버거를 연 후 Luma 사이트를 다시 로드해야 할 수 있음).
 1. 디버거가 아래 그림과 같이 &quot;**[!UICONTROL Luma]**&quot;에 연결되어 있는지 확인한 다음 &quot;**[!UICONTROL 잠금]**&quot; 아이콘을 선택하여 디버거를 Luma 사이트에 잠급니다.
 1. 인증하려면 오른쪽 상단의 **[!UICONTROL 로그인]** 단추를 선택하십시오.
@@ -291,7 +291,7 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 1. 이제 왼쪽 탐색 영역에서 **[!UICONTROL AEP Web SDK]**(으)로 이동하여 **[!UICONTROL 네트워크 요청]**&#x200B;을 확인합니다.
 1. **[!UICONTROL 이벤트]** 행 열기
 
-   ![Adobe Experience Platform 웹 SDK 요청](assets/websdk-debugger-platformNetwork.png)
+   ![Adobe Experience Platform Web SDK 요청](assets/websdk-debugger-platformNetwork.png)
 1. [!UICONTROL 이벤트 보내기] 작업에 지정한 `web.webpagedetails.pageView` 이벤트 형식과 `AEP Web SDK ExperienceEvent Mixin` 형식을 준수하는 기타 기본 변수를 확인하는 방법을 참고하십시오.
    ![이벤트 세부 사항](assets/websdk-debugger-eventDetails.png)
 1. 이러한 유형의 요청 세부 정보는 브라우저의 웹 개발자 도구 **네트워크** 탭에도 표시됩니다. 페이지를 열고 다시 로드합니다. `interact`(으)로 호출을 필터링하여 호출을 찾아 선택한 다음 **헤더** 탭, **페이로드 요청** 영역에서 찾습니다.
@@ -301,7 +301,7 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 
 
 
-## Experience Platform의 데이터 유효성 검사
+## Experience Platform에서 데이터 유효성 검사
 
 `Luma Web Events Dataset`에 도착하는 데이터 배치를 확인하여 데이터가 플랫폼에 도달하는지 확인할 수 있습니다. (예: 스트리밍 데이터 수집이라고 하지만 이제 여러 개가 일괄적으로 도착한다고 말하고 있습니다.) 프로필로 실시간 스트리밍되므로 실시간 세그멘테이션 및 활성화에 사용할 수 있지만, 15분마다 데이터 레이크로 일괄적으로 전송됩니다.)
 
@@ -389,9 +389,9 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 
 ## 추가 ID 보내기
 
-웹 SDK 구현에서 이제 Experience Cloud ID(ECID)를 기본 식별자로 사용하는 이벤트를 보냅니다. ECID는 웹 SDK에 의해 자동으로 생성되며 디바이스 및 브라우저별로 고유합니다. 단일 고객은 사용 중인 디바이스 및 브라우저에 따라 여러 ECID를 가질 수 있습니다. 그렇다면 어떻게 이 고객에 대한 통합된 뷰를 얻고 고객의 온라인 활동을 CRM, 충성도 및 오프라인 구매 데이터에 연결할 수 있습니까? 세션 중에 추가 ID를 수집하고 ID 결합을 통해 프로필을 결정적으로 연결하여 이를 수행합니다.
+웹 SDK 구현에서 이제 ECID(Experience Cloud ID)를 기본 식별자로 사용하는 이벤트를 보냅니다. ECID는 웹 SDK에 의해 자동으로 생성되며 장치 및 브라우저별로 고유합니다. 단일 고객은 사용 중인 디바이스 및 브라우저에 따라 여러 ECID를 가질 수 있습니다. 그렇다면 어떻게 이 고객에 대한 통합된 뷰를 얻고 고객의 온라인 활동을 CRM, 충성도 및 오프라인 구매 데이터에 연결할 수 있습니까? 세션 중에 추가 ID를 수집하고 ID 결합을 통해 프로필을 결정적으로 연결하여 이를 수행합니다.
 
-기억나는 경우 [ID 매핑](map-identities.md) 단원에서 ECID 및 CRM ID를 웹 데이터의 ID로 사용한다고 언급했습니다. 웹 SDK를 사용하여 CRM ID를 수집해 보겠습니다!
+기억나는 경우 [ID 매핑](map-identities.md) 단원에서 ECID 및 CRM ID를 웹 데이터의 ID로 사용한다고 언급했습니다. 웹 SDK을 사용하여 CRM ID를 수집해 보겠습니다!
 
 ### CRM ID에 대한 데이터 요소 추가
 
@@ -408,13 +408,13 @@ Experience Platform 디버거에는 기존 태그 속성을 다른 속성으로 
 이제 CRM ID 값을 캡처했으므로 [!UICONTROL ID 맵] 데이터 요소라는 특수 데이터 요소 유형과 연결해야 합니다.
 
 1. 이름이 `Identities`인 데이터 요소 추가
-1. **[!UICONTROL 확장]**(으)로 **[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 확장]**(으)로 **[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 데이터 요소 형식]**(으)로 **[!UICONTROL ID 맵]**&#x200B;을(를) 선택하십시오.
 1. **[!UICONTROL 네임스페이스]**(으)로, 이전 단원에서 만든 [!UICONTROL 네임스페이스]인 `Luma CRM Id`을(를) 입력하십시오.
 
    >[!WARNING]
    >
-   >Adobe Experience Platform 웹 SDK 확장 버전 2.2에서는 Platform 계정의 실제 값을 사용하여 미리 채워진 드롭다운에서 네임스페이스를 선택할 수 있습니다. 죄송합니다. 이 기능은 아직 &quot;샌드박스 인식&quot;이 아니므로 `Luma CRM Id` 값이 드롭다운에 표시되지 않을 수 있습니다. 이 경우 이 연습을 완료하지 못할 수 있습니다. 확인 후 해결 방법을 게시하겠습니다.
+   >Adobe Experience Platform Web SDK 확장 버전 2.2에서는 Platform 계정의 실제 값을 사용하여 미리 채워진 드롭다운에서 네임스페이스를 선택할 수 있습니다. 죄송합니다. 이 기능은 아직 &quot;샌드박스 인식&quot;이 아니므로 `Luma CRM Id` 값이 드롭다운에 표시되지 않을 수 있습니다. 이 경우 이 연습을 완료하지 못할 수 있습니다. 확인 후 해결 방법을 게시하겠습니다.
 
 1. **[!UICONTROL ID]**&#x200B;로서 아이콘을 선택하여 데이터 요소 선택 모달을 열고 `CRM Id` 데이터 요소를 선택합니다
 1. **[!UICONTROL 인증됨 상태]**(으)로 **[!UICONTROL 인증됨]**&#x200B;을(를) 선택합니다
