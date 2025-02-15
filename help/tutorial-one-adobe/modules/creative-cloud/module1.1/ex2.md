@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
+source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1334'
 ht-degree: 1%
 
 ---
@@ -316,10 +316,6 @@ Azure 저장소 계정으로 프로그래밍 방식의 파일 업로드를 사�
    - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 ### Postman의 변수
-
->[!IMPORTANT]
->
->Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
 
 위의 섹션에서 볼 수 있듯이 읽기 및 쓰기 토큰 모두에 몇 가지 일반적인 변수가 있습니다.
 

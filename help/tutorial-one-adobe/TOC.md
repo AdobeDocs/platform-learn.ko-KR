@@ -4,15 +4,15 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 4%
+source-wordcount: '361'
+ht-degree: 3%
 
 ---
 
 
-# 포괄적인 기술 자습서 - 단일 Adobe {#tutorial-one-adobe}
+# 포괄적인 기술 튜토리얼 - One Adobe {#tutorial-one-adobe}
 
 + [튜토리얼 개요](/help/tutorial-one-adobe/overview.md)
 + [컨텐츠 상태](/help/tutorial-one-adobe/status.md)
@@ -26,8 +26,11 @@ ht-degree: 4%
       + [데이터 스트림 만들기](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [웹 사이트 사용](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [모바일 앱 사용](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+      + [Adobe I/O 프로젝트 구성](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
+      + [옵션 1: Postman 설정](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
+      + [옵션 2: PostBuster 설정](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
+      + [설치할 애플리케이션](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
    + [선행 작업](/help/tutorial-one-adobe/prework.md)
-   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1개 만들기 및 프로덕션 {#production}
    + 1.1 Adobe Firefly 서비스 개요 {#module11}
@@ -74,12 +77,12 @@ ht-degree: 4%
       + [3.2.2 캠페인 만들기](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
       + [3.2.3 이메일에 언어 추가](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
-   + 3.3 Adobe Journey Optimizer: Offer decisioning {#module33}
+   + 3.3 Adobe Journey Optimizer: Offer Decisioning {#module33}
       + [개요](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)
-      + [3.3.1 Offer decisioning 101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
+      + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
       + [3.3.2 오퍼 및 의사 결정 구성](/help/tutorial-one-adobe/modules/uce/module3.3/ex2.md)
-      + [3.3.3 Offer decisioning을 위해 Adobe Experience Platform 데이터 수집 클라이언트 속성 및 Web SDK 설정 준비](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
-      + [3.3.4 Adobe Target과 Offer decisioning 결합](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
+      + [3.3.3 Offer Decisioning용 Adobe Experience Platform Data Collection Client 속성 및 Web SDK 설정 준비](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
+      + [3.3.4 Adobe Target과 Offer Decisioning 결합](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
       + [3.3.5 이메일에서 의사 결정 사용](/help/tutorial-one-adobe/modules/uce/module3.3/ex5.md)
       + [3.3.6 API를 사용하여 의사 결정 테스트](/help/tutorial-one-adobe/modules/uce/module3.3/ex6.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/uce/module3.3/summary.md)

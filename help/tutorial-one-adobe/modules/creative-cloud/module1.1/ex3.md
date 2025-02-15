@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
+source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -52,10 +52,6 @@ Adobe I/O 프로젝트가 이제 Photoshop 및 Firefly 서비스 API와 작동�
 ![Azure 저장소](./images/ps6.png){zoomable="yes"}
 
 ## 1.1.3.2 프로그래밍 방식으로 PSD 파일과 상호 작용합니다
-
->[!IMPORTANT]
->
->Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
 
 1. 데스크톱에 [citsignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}를 다운로드합니다.
 

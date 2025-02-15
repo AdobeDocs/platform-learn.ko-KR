@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -135,10 +135,6 @@ Firefly 사용자 지정 모델에 액세스하려면 Adobe I/O 프로젝트의 
 ![Firefly 사용자 지정 모델](./images/ffcm22.png){zoomable="yes"}
 
 ## 1.1.4.4 Firefly Services 사용자 지정 모델 API와 상호 작용
-
->[!IMPORTANT]
->
->Adobe 직원의 경우 [PostBuster](./../../../postbuster.md)을(를) 사용하려면 여기 지침을 따르십시오.
 
 연습 1.1.1 Firefly 서비스 시작에서 이 파일 [postman-ff.zip](./../../../assets/postman/postman-ff.zip)을(를) 로컬 데스크톱에 다운로드한 다음 Postman에서 해당 컬렉션을 가져왔습니다.
 

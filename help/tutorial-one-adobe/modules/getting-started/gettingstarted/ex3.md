@@ -4,9 +4,9 @@ description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -173,8 +173,10 @@ ht-degree: 1%
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig17ma.png)
 
-다음 단계: [웹 사이트 사용](./ex4.md)
+## 다음 단계
 
-[시작하기 로 돌아가기](./getting-started.md)
+[웹 사이트 사용](./ex4.md)(으)로 이동
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
+
+[모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기

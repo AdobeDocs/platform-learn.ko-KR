@@ -4,10 +4,10 @@ description: 시작하기 - 하나의 Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
@@ -47,6 +47,26 @@ ht-degree: 3%
 [모바일 앱 사용](./ex5.md)
 
 이 연습에서는 데모 및 활성화에 사용할 수 있도록 모바일 애플리케이션을 설정합니다.
+
+[Adobe I/O 프로젝트 구성](./ex6.md)
+
+이 연습에서는 다양한 Adobe API 엔드포인트와 상호 작용하는 데 사용할 Adobe I/O 프로젝트를 구성합니다.
+
+[옵션 1: Postman 설정](./ex7.md)
+
+>[!NOTE]
+>
+>Adobe 직원이 아닌 경우 지침에 따라 Postman을 설치하십시오.
+
+이 연습에서는 다양한 Adobe API 엔드포인트와 상호 작용할 수 있도록 Postman 환경을 준비합니다
+
+[옵션 2: PostBuster 설정](./ex8.md)
+
+>[!NOTE]
+>
+>Adobe 직원의 경우 지침에 따라 PostBuster를 설치하십시오.
+
+이 연습에서는 다양한 Adobe API 엔드포인트와 상호 작용할 수 있도록 PostBuster 환경을 준비합니다
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

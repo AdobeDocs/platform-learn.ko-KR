@@ -4,7 +4,7 @@ description: 기초 - 데이터 수집 - 오프라인 소스에서 데이터 수
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 5%
@@ -236,19 +236,19 @@ Source 스키마 필드 **last_name**&#x200B;을(를) 대상 필드 **person.nam
 
 #### consents.marketing.email.val
 
-Source 스키마 필드 **last_name**&#x200B;을(를) 대상 필드 **consents.marketing.email.val**&#x200B;에 연결해야 합니다.
+Source 스키마 필드 **consent.email**&#x200B;은(는) 대상 필드 **consents.marketing.email.val**&#x200B;에 연결해야 합니다.
 
 ![데이터 수집](./images/cons1.png)
 
 #### consents.marketing.commercialEmail.val
 
-Source 스키마 필드 **last_name**&#x200B;을(를) 대상 필드 **consents.marketing.commercialEmail.val**&#x200B;에 연결해야 합니다.
+Source 스키마 필드 **consent.commercialEmail**&#x200B;을(를) 대상 필드 **consents.marketing.commercialEmail.val**&#x200B;에 연결해야 합니다.
 
 ![데이터 수집](./images/cons2.png)
 
 #### consents.marketing.any.val
 
-Source 스키마 필드 **last_name**&#x200B;을(를) 대상 필드 **consents.marketing.any.val**&#x200B;에 연결해야 합니다.
+Source 스키마 필드 **consent.any**&#x200B;은(는) 대상 필드 **consents.marketing.any.val**&#x200B;에 연결되어야 합니다.
 
 ![데이터 수집](./images/cons3.png)
 

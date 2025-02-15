@@ -4,9 +4,9 @@ description: 시작하기 - 웹 사이트 사용
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -101,8 +101,10 @@ ht-degree: 0%
 
 ![DSN](./images/web7.png)
 
-다음 단계: [모바일 앱 사용](./ex5.md)
+## 다음 단계
 
-[시작하기 로 돌아가기](./getting-started.md)
+[모바일 앱 사용](./ex5.md)(으)로 이동
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
+
+[모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기

@@ -4,9 +4,9 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -143,8 +143,10 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ![DSN](./images/mod7.png)
 
-다음 단계: [다음 데모 시스템을 사용하여 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정합니다](./ex2.md)
+## 다음 단계
 
-[시작하기 로 돌아가기](./getting-started.md)
+[데모 시스템 사용 다음으로 이동하여 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정합니다](./ex2.md)
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
+
+[모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기

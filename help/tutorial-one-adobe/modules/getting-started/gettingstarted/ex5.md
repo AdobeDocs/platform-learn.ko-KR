@@ -4,9 +4,9 @@ description: 시작하기 - 모바일 앱 사용
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->iOS 장치에 앱을 처음 설치한 후 앱을 열려고 하면 다음과 같은 오류 메시지가 표시될 수 있습니다. **신뢰할 수 없는 Enterprise 개발자**. 이 문제를 해결하려면 **설정 > 일반 > VPN 및 장치 관리 > Adobe Systems Inc.**(으)로 이동하여 **Adobe Systems Inc.**&#x200B;을(를) 클릭해야 합니다.
+>iOS 장치에 앱을 처음 설치한 후 앱을 열려고 하면 다음과 같은 오류 메시지가 표시될 수 있습니다. **신뢰할 수 없는 Enterprise 개발자**. 이 문제를 해결하려면 **설정 > 일반 > VPN 및 장치 관리 > Adobe Systems Inc.**(으)로 이동한 다음 **Adobe Systems Inc.**&#x200B;을(를) 클릭합니다.
 
 앱이 설치되면 디바이스의 홈 화면에서 찾을 수 있습니다. 아이콘을 클릭하여 앱을 엽니다.
 
@@ -81,8 +81,10 @@ ht-degree: 0%
 
 ![DSN](./images/mobileappn8.png)
 
-이제 시작 모듈을 완료하고 다음 연습을 시작할 준비가 되었습니다.
+## 다음 단계
 
-[시작하기 로 돌아가기](./getting-started.md)
+[Adobe I/O 프로젝트 구성](./ex6.md)(으)로 이동
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+[시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
+
+[모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기
