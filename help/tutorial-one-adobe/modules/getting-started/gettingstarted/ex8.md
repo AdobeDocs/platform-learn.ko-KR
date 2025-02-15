@@ -3,10 +3,11 @@ title: 시작하기 - Postman 설정
 description: 시작하기 - Postman 설정
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 2%
+source-wordcount: '430'
+ht-degree: 3%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Adobe 직원이 아닌 경우 지침을 따라 [Postman 설치](./ex7.md)하십시오. 아래 지침은 Adobe 직원만을 대상으로 합니다. 이미 Postman을 구성한 경우 이 연습을 건너뛰고 [설치할 응용 프로그램](./ex9.md)으로 이동하십시오.
+>Adobe 직원이 아닌 경우 지침을 따라 [Postman 설치](./ex7.md)하십시오. 아래 지침은 Adobe 직원만을 대상으로 합니다.
 
 ## PostBuster 설치
 

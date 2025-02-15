@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -17,65 +17,27 @@ ht-degree: 0%
 
 Photoshop API 및 Firefly Services를 사용하여 작업하는 방법을 알아봅니다.
 
-## 1.1.3.1 Adobe I/O 통합 업데이트
+## 1.1.3.1 사전 요구 사항
 
-1. [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}(으)로 이동합니다.
+이 연습을 계속하려면 [Adobe I/O 프로젝트](./../../../modules/getting-started/gettingstarted/ex6.md)의 설정을 완료해야 하며 [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) 또는 [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md)와 같이 API와 상호 작용하는 응용 프로그램을 구성해야 합니다.
 
-![Adobe I/O 새 통합](./images/iohome.png){zoomable="yes"}
+## 1.1.3.2 Adobe I/O - access_token
 
-1. **프로젝트**(으)로 이동하여 이전 연습에서 만든 프로젝트(`--aepUserLdap-- Firefly`)를 선택합니다.
+**Adobe IO - OAuth** 컬렉션에서 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 요청을 선택하고 **전송**&#x200B;을 선택합니다. 응답에는 새 **accesstoken**&#x200B;이(가) 포함되어야 합니다.
 
-![Azure 저장소](./images/ps1.png){zoomable="yes"}
+![Postman](./images/ioauthresp.png){zoomable="yes"}
 
-1. **+ 프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
+## 1.1.3.3 PSD 파일과 프로그래밍 방식으로 상호 작용합니다
 
-![Azure 저장소](./images/ps2.png){zoomable="yes"}
+데스크톱에 [citsignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}를 다운로드합니다.
 
-1. **Creative Cloud**&#x200B;을(를) 선택하고 **Photoshop - Firefly 서비스**&#x200B;를 선택합니다. **다음**&#x200B;을 선택합니다.
-
-![Azure 저장소](./images/ps3.png){zoomable="yes"}
-
-1. **다음**&#x200B;을 선택합니다.
-
-![Azure 저장소](./images/ps4.png){zoomable="yes"}
-
-그런 다음 이 통합에 사용할 수 있는 권한을 정의하는 제품 프로필을 선택해야 합니다.
-
-1. **기본 Firefly 서비스 구성** 및 **기본 Creative Cloud 자동화 서비스 구성**&#x200B;을 선택합니다.
-
-1. **구성된 API 저장**&#x200B;을 선택합니다.
-
-![Azure 저장소](./images/ps5.png){zoomable="yes"}
-
-Adobe I/O 프로젝트가 이제 Photoshop 및 Firefly 서비스 API와 작동하도록 업데이트되었습니다.
-
-![Azure 저장소](./images/ps6.png){zoomable="yes"}
-
-## 1.1.3.2 프로그래밍 방식으로 PSD 파일과 상호 작용합니다
-
-1. 데스크톱에 [citsignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}를 다운로드합니다.
-
-1. Photoshop에서 **citisignal-fiber.psd**&#x200B;를 엽니다.
+Photoshop에서 **citisignal-fiber.psd**&#x200B;를 엽니다.
 
 ![Azure 저장소](./images/ps7.png){zoomable="yes"}
 
 **레이어** 창에서 파일의 디자이너가 각 레이어에 고유한 이름을 지정했습니다. Photoshop에서 PSD 파일을 열어 레이어 정보를 볼 수 있지만 프로그래밍 방식으로 수행할 수도 있습니다.
 
 첫 번째 API 요청을 Photoshop API로 전송하겠습니다.
-
-1. Postman에서 API 요청을 Photoshop으로 전송하기 전에 Adobe I/O을 인증해야 합니다. 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 이전 요청을 엽니다.
-
-1. **Params**(으)로 이동하여 매개 변수 **Scope**&#x200B;이(가) 제대로 설정되어 있는지 확인하십시오. **범위**&#x200B;의 **값**&#x200B;은(는) 다음과 같이 표시되어야 합니다.
-
-`openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
-
-1. **보내기**&#x200B;를 선택합니다.
-
-![Azure 저장소](./images/ps8.png){zoomable="yes"}
-
-이제 Photoshop API와 상호 작용할 수 있는 올바른 액세스 토큰을 보유하게 되었습니다.
-
-![Azure 저장소](./images/ps9.png){zoomable="yes"}
 
 ### Photoshop API - Hello World
 
