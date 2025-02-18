@@ -3,10 +3,10 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
+source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
 workflow-type: tm+mt
-source-wordcount: '136'
-ht-degree: 10%
+source-wordcount: '359'
+ht-degree: 12%
 
 ---
 
@@ -14,16 +14,59 @@ ht-degree: 10%
 
 다음은 이 자습서의 콘텐츠 상태에 대한 개요입니다.
 
+## 시작하기
+
 | 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
 | ---------------------- | ------------ | ------------ |------------ |
-| [0. 시작하기](./modules/getting-started/gettingstarted/getting-started.md) | 14/11/2024 | 예 | - |
-| [1.1 Adobe Firefly 서비스](./modules/creative-cloud/module1.1/firefly-services.md) | 16/01/2025 | 예 | - |
-| Workfront Fusion을 사용한 [1.2 Creative Workflow Automation](./modules/creative-cloud/module1.2/automation.md) | 16/01/2025 | 예 | - |
-| [2.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/csc/module2.1/aemcs.md) | 16/01/2025 | 예 | - |
-| Adobe Workfront을 사용한 [2.2 워크플로 관리](./modules/csc/module2.2/workfront.md) | 16/01/2025 | 아니요 | 아직 완료되지 않은 콘텐츠 |
-| [3.1 페더레이션 대상 구성](./modules/uce/module3.1/fac.md) | 16/01/2025 | 예 | - |
-| [3.2 Adobe Journey Optimizer: 번역 서비스](./modules/uce/module3.2/ajotranslationsvcs.md) | 08/02/2025 | 예 | - |
-| [3.3 Adobe Journey Optimizer: Offer decisioning](./modules/uce/module3.3/offer-decisioning.md) | 14/11/2024 | 예 | - |
+| [0. 시작하기](./modules/getting-started/gettingstarted/getting-started.md) | 17/02/2025 | 예 | - |
+
+## 1. 워크플로 및 계획
+
+| 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
+| ---------------------- | ------------ | ------------ |------------ |
+| - | - | - | - |
+
+## 2. 제작 및 제작
+
+| 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 Adobe Firefly 서비스](./modules/creation-production/module1.1/firefly-services.md) | 16/01/2025 | 예 | - |
+| Workfront Fusion을 사용한 [1.2 Creative Workflow Automation](./modules/creation-production/module1.2/automation.md) | 16/01/2025 | 예 | - |
+
+
+## 3. 자산 관리
+
+| 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
+| ---------------------- | ------------ | ------------ |------------ |
+| [2.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md) | 16/01/2025 | 예 | - |
+| Adobe Workfront을 사용한 [2.2 워크플로 관리](./modules/asset-mgmt/module2.2/workfront.md) | 16/01/2025 | 아니요 | 아직 완료되지 않은 콘텐츠 |
+
+## 4. 배달 및 활성화
+
+| 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 설정](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md) | 18/11/2024 | 예 | - |
+| [1.2 기초 - 데이터 수집](./modules/delivery-activation/datacollection/dc1.2/data-ingestion.md) | 17/02/2025 | 예 | - |
+| [1.3 페더레이션 대상 구성](./modules/delivery-activation/datacollection/dc1.3/fac.md) | 17/02/2025 | 예 | - |
+| [2.1 Foundation - 실시간 고객 프로필](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md) | 19/11/2024 | 예 | - |
+| [2.2 지능형 서비스](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md) | 2024/03/12 | 예 | - |
+| [2.3 Real-Time CDP - 대상자를 빌드하고 작업을 수행합니다](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md) | 20/11/2024 | 예 | - |
+| [2.4 Real-Time CDP: Audience Activation에서 Microsoft Azure Event Hub로](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md) | 21/11/2024 | 예 | - |
+| [2.5 Real-Time CDP 연결: 이벤트 전달](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md) | 21/11/2024 | 예 | - |
+| [2.6 Apache Kafka에서 Real-Time CDP으로 데이터 스트리밍](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md) | 25/11/2024 | 예 | - |
+| [3.1 Adobe Journey Optimizer: 오케스트레이션](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md) | 30/12/2024 | 예 | - |
+| [3.2 Adobe Journey Optimizer: 외부 데이터 원본 및 사용자 지정 작업](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | 예 | - |
+| [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md) | 2025/06/01 | 예 | - |
+| [3.4 Adobe Journey Optimizer: 이벤트 기반 여정](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md) | 2025년 5월 01일 | 예 | - |
+| [3.5 Adobe Journey Optimizer: 번역 서비스](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md) | 08/02/2025 | 예 | - |
+
+## 5. 보고 및 통찰력
+
+| 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 Customer Journey Analytics: Adobe Experience Platform의 맨 위에 Analysis Workspace을 사용하여 대시보드를 만듭니다](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md) | 2025/06/01 | 예 | - |
+| [1.2 Customer Journey Analytics: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md) | 2025/07/01 | 아니요 | 소스 데이터에 대한 데이터 준비 모델링에 문제가 있습니다. 이 문제를 해결하기 위해 보류 중입니다. |
+| [2.1 쿼리 서비스](./modules/reporting-insights/datadistiller/dd-1/query-service.md) | 2024년 4월 12일 | 예 | - |
 
 {style="table-layout:auto"}
 
