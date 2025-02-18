@@ -5,15 +5,57 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: ce28c48d554727ce42803400373826315f5b2153
+source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 18%
 
 ---
 
 
 # Adobe Experience Platform 자습서 {#tutorials}
+
+<!--
+
+Data Modeling
+
+Profile vs Data Lake vs Identity
+how a record becomes an audience member
+
+Profiles
+Identities
+Audience
+
+Data Lake
+
+Data Ingestion
+-Batch
+-Streaming
+-Edge (Data Collection)
+-Monitoring
+
+Data Governance
+Privacy
+Consent
+Audit logs
+
+Administration
+-Sandboxes
+-Permissions
+-License usage
+
+
+---
+App specific
+
+Destinations
+
+Journeys
+
+Campaigns
+
+-->
+
 
 + [Platform 튜토리얼](/help/platform/overview.md)
 + {#intro-to-platform} 플랫폼 소개
@@ -37,15 +79,16 @@ ht-degree: 18%
 + [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md)
 + [Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
 + 관리 {#admin}
-   + [경고 사용](/help/platform/admin/use-alerts.md)
-   + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
-   + [샌드박스 간 패키지 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [IMS 조직 간 패키지 공유](/help/platform/admin/share-packages-across-orgs.md)
+   + [개요](/help/platform/admin/overview.md)
    + [사용자 추가](/help/platform/admin/add-users.md)
-   + [데이터 수집에 사용자 추가](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+   + [데이터 수집에 사용자 추가](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
    + [개발자 추가](/help/platform/admin/add-developers.md)
    + [제품 관리자 추가](/help/platform/admin/add-product-administrators.md)
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [샌드박스 사용](/help/platform/admin/use-sandboxes.md)
+   + [샌드박스 간 패키지 복사](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [IMS 조직 간 패키지 공유](/help/platform/admin/share-packages-across-orgs.md)
+   + [경고 사용](/help/platform/admin/use-alerts.md)
 + AI 어시스턴트 {#ai-assistant}
    + [개요](/help/platform/ai-assistant/overview.md)
    + [액세스 권한 얻기](/help/platform/ai-assistant/access.md)
