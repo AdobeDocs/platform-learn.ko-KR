@@ -1,18 +1,18 @@
 ---
-title: Publish 스테이징 및 프로덕션으로 마이그레이션
+title: 스테이징 및 프로덕션으로 마이그레이션 게시
 description: 마이그레이션에 대한 모든 개발이 완료되고 유효성이 확인되면 스테이징으로 빌드한 다음 준비가 되면 프로덕션에 게시합니다.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# Publish 스테이징 및 프로덕션으로 마이그레이션
+# 스테이징 및 프로덕션으로 마이그레이션 게시
 
 마이그레이션에 대한 모든 개발이 완료되고 유효성이 확인되면 스테이징으로 빌드한 다음 준비가 되면 프로덕션에 게시합니다.
 
@@ -51,6 +51,6 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->이 구현 마이그레이션을 수행하는 주요 이유 중 하나는 Customer Journey Analytics, Real-Time CDP 또는 Journey Optimizer과 같은 Adobe Experience Platform 애플리케이션을 사용할 준비를 하는 것입니다(위#3 설명된 대로). 이러한 목적으로 웹 사이트 데이터를 사용하는 경우 이 자습서에는 포함되지 않은 추가 단계가 포함되지만, 이 자습서는 구현의 추가 진행에 대한 필수 조건이 됩니다. 따라서 이 자습서를 완료한 다음 동일한 웹 사이트 데이터를 Experience Platform에게 전송하는 데 필요한 단계를 계속 수행할 수 있습니다.
+>이 구현 마이그레이션을 수행하는 주요 이유 중 하나는 Customer Journey Analytics, Real-Time CDP 또는 Journey Optimizer과 같은 Adobe Experience Platform 애플리케이션 사용을 준비하는 것입니다. 이러한 목적으로 웹 사이트 데이터를 사용하는 경우 이 자습서에는 포함되지 않은 추가 단계가 포함되지만, 이 자습서는 구현의 추가 진행에 대한 필수 조건이 됩니다. 이 자습서를 완료했으므로 동일한 웹 사이트 데이터를 Experience Platform에도 전송하는 데 필요한 단계를 수행할 준비가 되었습니다.
 
 분석 및 기타 콘텐츠와 마케팅 노력에서 여정에 행운을 빕니다!
