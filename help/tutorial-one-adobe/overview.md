@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 개요
-
-이 튜토리얼은에 대한 완벽한 시작점입니다.
 
 이 튜토리얼은 매우 다양하며 다음 애플리케이션에 대한 명확한 통찰력을 제공합니다.
 
@@ -50,17 +48,13 @@ ht-degree: 2%
 - Adobe Experience Platform 데이터 수집: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - 데모 시스템 액세스: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## 선행 작업
-
-[여기](./prework.md){target="_blank"}에서 컴퓨터에 설치해야 하는 필수 응용 프로그램을 확인하십시오.
-
 ## 완료 및 인증
 
-이 튜토리얼은 Adobe 인증 교육 과정의 일부입니다. [https://certification.adobe.com](https://certification.adobe.com)(으)로 이동하여 이 자습서와 함께 과정에 등록할 수 있습니다.
+이 튜토리얼은 Adobe 인증 교육 과정의 일부입니다. [https://certification.adobe.com](https://certification.adobe.com)&#x200B;(으)로 이동하여 이 자습서와 함께 과정에 등록할 수 있습니다.
 
 아래 자습서를 사용하여 완료하는 모든 모듈에 대해 [여기](./completion.md)에 표시된 대로 완료 증명을 제출해야 합니다.
 
-## 콘텐츠
+## 컨텐츠 상태
 
 아래 콘텐츠의 상태를 확인하려면 [상태 페이지](./status.md){target="_blank"}(으)로 이동하세요.
 
@@ -68,7 +62,7 @@ ht-degree: 2%
 
 [시작](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-이 기본 모듈에서는 데모 환경에 액세스하고 사용할 수 있도록 모든 것을 설정합니다.
+이 기본 모듈에서는 데모 환경에 액세스하고 사용할 수 있도록 모든 것을 준비합니다.
 
 ### 1. 워크플로 및 계획
 
