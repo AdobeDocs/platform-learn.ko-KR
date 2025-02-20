@@ -5,7 +5,7 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
+source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 18%
@@ -166,7 +166,7 @@ Campaigns
    + [대상 개요](/help/platform/destinations/understanding-destinations.md)
    + [대상에 연결](/help/platform/destinations/connecting-to-destinations.md)
    + [대상 만들기 및 데이터 활성화](/help/platform/destinations/create-destinations-and-activate-data.md)
-   + [대상에 대한 프로필 및 세그먼트 활성화](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [대상에 대한 프로필 및 대상자 활성화](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [데이터 세트 내보내기 대상 구성](/help/platform/destinations/configure-dataset-export-destination.md)
    + [Google Customer Match와 통합](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [Azure Blob 대상 구성](/help/platform/destinations/configure-the-azure-blob-destination.md)
