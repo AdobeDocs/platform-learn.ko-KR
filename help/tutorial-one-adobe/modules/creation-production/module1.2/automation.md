@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,10 @@ Workfront Fusion을 사용하여 크리에이티브 워크플로를 자동으로
 이 연습에서는 Workfront Fusion의 기능을 살펴보면서 Workfront Fusion 내에서 Firefly Services API 및 Photoshop API를 구성하고 사용하는 방법에 대해 알아봅니다.
 
 Workfront Fusion을 사용한 [1.2.3 프로세스 자동화](./ex3.md){target="_blank"}
+
+이 연습에서는 이미지 생성 프로세스를 자동화하기 위해 여정을 계속 세분화합니다.
+
+[커넥터를 사용하는 1.2.4 자동화](./ex4.md){target="_blank"}
 
 이 연습에서는 이미지 생성 프로세스를 자동화하기 위해 여정을 계속 세분화합니다.
 

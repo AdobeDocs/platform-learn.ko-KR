@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 792b43cc5a99b1864224fa7b028e60f9678c7495
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1105'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,7 @@ ht-degree: 2%
       + [1.2.1 Workfront Fusion 시작하기](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
       + [1.2.2 Workfront Fusion 내에서 Adobe API 사용](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3 Workfront Fusion을 사용한 프로세스 자동화](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
+      + [1.2.4 커넥터를 사용한 자동화](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
 
 + 자산 관리 {#assetmgmt}
