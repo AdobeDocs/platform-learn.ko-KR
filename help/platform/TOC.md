@@ -5,7 +5,7 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 18%
@@ -103,19 +103,19 @@ Campaigns
 + 대상 및 세분화 {#audiences}
    + [Audience Portal 및 구성 소개](audiences/introduction-to-audience-portal-and-composition.md)
    + [대상자 업로드](audiences/upload-audiences.md)
-   + [페더레이션 대상 구성 개요](audiences/overview-of-federated-audience-composition.md)
-   + [Federated Audience 컴포지션 연결 및 구성](audiences/connect-and-configure-federated-audience-composition.md)
-   + [페더레이션 대상 컴포지션 만들기](audiences/create-a-federated-audience-composition.md)
-   + [대상 규칙 빌더 개요](audiences/audience-rule-builder-overview.md)
-   + [대상자 만들기](audiences/create-audiences.md)
-   + [시간 제한 사용](audiences/time-constraints.md)
-   + [콘텐츠 기반 대상 만들기](audiences/create-content-based-audiences.md)
-   + [전환 대상자 만들기](audiences/create-conversion-audiences.md)
-   + [기존 대상에서 대상 만들기](audiences/create-audiences-from-existing-audiences.md)
-   + [순차적 대상자 만들기](audiences/create-sequential-audiences.md)
-   + [동적 대상자 만들기](audiences/create-dynamic-audiences.md)
-   + [다중 엔티티 대상 만들기](audiences/create-multi-entity-audiences.md)
-   + [계정 대상자 만들기 및 활성화(B2B)](audiences/create-audiences-with-b2b-data.md)
+   + [페더레이션 대상 구성 개요](audiences/fac/overview-of-federated-audience-composition.md)
+   + [Federated Audience 컴포지션 연결 및 구성](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [페더레이션 대상 컴포지션 만들기](audiences/fac/create-a-federated-audience-composition.md)
+   + [대상 규칙 빌더 개요](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [대상자 만들기](audiences/audience-builder/create-audiences.md)
+   + [시간 제한 사용](audiences/audience-builder/time-constraints.md)
+   + [콘텐츠 기반 대상 만들기](audiences/audience-builder/create-content-based-audiences.md)
+   + [전환 대상자 만들기](audiences/audience-builder/create-conversion-audiences.md)
+   + [기존 대상에서 대상 만들기](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [순차적 대상자 만들기](audiences/audience-builder/create-sequential-audiences.md)
+   + [동적 대상자 만들기](audiences/audience-builder/create-dynamic-audiences.md)
+   + [다중 엔티티 대상 만들기](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [계정 대상자 만들기 및 활성화(B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [스트리밍 세분화 데모](/help/platform/audiences/streaming-segmentation-demo.md)
    + [대상 규칙 평가](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [데이터를 내보낼 데이터 집합을 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
