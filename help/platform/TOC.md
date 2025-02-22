@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
+source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 18%
+source-wordcount: '883'
+ht-degree: 19%
 
 ---
 
@@ -137,6 +137,7 @@ Campaigns
    + [동의 시행](/help/platform/governance/enforce-consent.md)
    + [IAB 투명성 및 동의 프레임워크 2.0과 통합](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 데이터 위생 {#data-hygiene}
+   + [개요](/help/platform/data-hygiene/overview.md)
    + [데이터 위생을 위한 데이터 준비](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [데이터 세트 및 배치 삭제](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [데이터 세트 만료](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
