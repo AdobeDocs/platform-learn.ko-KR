@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
+source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 19%
+source-wordcount: '888'
+ht-degree: 18%
 
 ---
 
@@ -126,6 +126,8 @@ Campaigns
    + [세그먼트 일치 수신 데이터](/help/platform/segments/segment-match-receiving-data.md)
 + [감사 로그](/help/platform/governance/audit-logs.md)
 + [데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ Collaboration {#collaboration}
+   + [Real-Time CDP Collaboration 개요](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
 + 대시보드 {#dashboards}
    + [대시보드 만들기](/help/platform/dashboards/create-a-dashboard.md)
 + 데이터 거버넌스 {#data-governance}
