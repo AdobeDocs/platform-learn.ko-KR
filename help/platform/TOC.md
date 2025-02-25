@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
+source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 18%
+source-wordcount: '881'
+ht-degree: 19%
 
 ---
 
@@ -290,4 +290,3 @@ Campaigns
    + [두 가지 인식에 대한 이야기 - 브랜드 대 소비자](/help/platform/industry/brands-vs-consumers.md)
    + [Audience Center of Excellence 진화](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [고객 프로필을 통해 더 나은 경험 구축](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [자사 데이터 컨텍스트의 데이터 Collaboration](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
