@@ -5,9 +5,9 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
+source-git-commit: 7d300c94d4d52ad4785908497afc5ec4ace038bf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 19%
 
 ---
@@ -189,6 +189,7 @@ Campaigns
    + [ID 데이터 레이블 지정, 처리 및 확인](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [ID 그래프 보기](/help/platform/identities/view-identity-graphs.md)
    + ID 그래프 연결 규칙 {#graph-linking-rules}
+      + [개요](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [그래프 시뮬레이션](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
    + [개요](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
