@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 1.1.4.1 사용자 지정 모델 구성
 
-[https://firefly.adobe.com/](https://firefly.adobe.com/)(으)로 이동합니다. **사용자 지정 모델**&#x200B;을 클릭합니다.
+[https://firefly.adobe.com/](https://firefly.adobe.com/)&#x200B;(으)로 이동합니다. **사용자 지정 모델**&#x200B;을 클릭합니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm1.png){zoomable="yes"}
 
@@ -86,9 +86,9 @@ ht-degree: 0%
 
 ![Firefly 사용자 지정 모델](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2 UI에서 맞춤형 모델 사용
+## 1.1.4.2 UI에서 사용자 지정 모델 사용
 
-[https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train)(으)로 이동합니다. 사용자 정의 모델을 클릭하여 엽니다.
+[https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train)&#x200B;(으)로 이동합니다. 사용자 정의 모델을 클릭하여 엽니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm19.png){zoomable="yes"}
 
@@ -100,11 +100,11 @@ ht-degree: 0%
 
 ![Firefly 사용자 지정 모델](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3 Firefly Services 사용자 지정 모델 API에 대해 사용자 지정 모델 활성화
+## 1.1.4.3 Firefly Services 사용자 지정 모델 API에 대해 사용자 지정 모델을 사용하도록 설정합니다.
 
 사용자 지정 모델이 교육되면 API를 통해서도 사용할 수 있습니다. 연습 1.1.1에서는 API를 통해 Firefly Services와 상호 작용하기 위해 Adobe I/O 프로젝트를 이미 구성했습니다.
 
-[https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train)(으)로 이동합니다. 사용자 정의 모델을 클릭하여 엽니다.
+[https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train)&#x200B;(으)로 이동합니다. 사용자 정의 모델을 클릭하여 엽니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm19.png){zoomable="yes"}
 
@@ -112,9 +112,9 @@ ht-degree: 0%
 
 ![Firefly 사용자 지정 모델](./images/ffcm20.png){zoomable="yes"}
 
-Firefly 사용자 지정 모델에 액세스하려면 Adobe I/O 프로젝트의 **기술 계정 ID**&#x200B;에 사용자 지정 모델을 공유해야 합니다.
+Firefly 사용자 지정 모델에 액세스하려면 Adobe I/O 프로젝트의 **기술 계정 전자 메일**&#x200B;에 사용자 지정 모델을 공유해야 합니다.
 
-**기술 계정 ID**&#x200B;를 검색하려면 [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)(으)로 이동하십시오. 프로젝트를 열려면 클릭하세요. 프로젝트 이름은 `--aepUserLdap-- Firefly`입니다.
+**기술 계정 전자 메일**&#x200B;을 검색하려면 [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)&#x200B;(으)로 이동하십시오. 프로젝트를 열려면 클릭하세요. 프로젝트 이름은 `--aepUserLdap-- One Adobe tutorial`입니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm24.png){zoomable="yes"}
 
@@ -122,15 +122,15 @@ Firefly 사용자 지정 모델에 액세스하려면 Adobe I/O 프로젝트의 
 
 ![Firefly 사용자 지정 모델](./images/ffcm25.png){zoomable="yes"}
 
-**기술 계정 ID**&#x200B;를 복사하려면 클릭하세요.
+**기술 계정 전자 메일**&#x200B;을 복사하려면 클릭하세요.
 
 ![Firefly 사용자 지정 모델](./images/ffcm23.png){zoomable="yes"}
 
-**기술 계정 ID**&#x200B;를 붙여넣고 **편집하려면 초대**&#x200B;를 클릭하세요.
+**기술 계정 전자 메일**&#x200B;을 붙여넣고 **편집하려면 초대**&#x200B;를 클릭하세요.
 
 ![Firefly 사용자 지정 모델](./images/ffcm21.png){zoomable="yes"}
 
-이제 **기술 계정 ID**&#x200B;에서 사용자 지정 모델에 액세스할 수 있습니다.
+이제 **기술 계정 전자 메일**&#x200B;에서 사용자 지정 모델에 액세스할 수 있습니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm22.png){zoomable="yes"}
 

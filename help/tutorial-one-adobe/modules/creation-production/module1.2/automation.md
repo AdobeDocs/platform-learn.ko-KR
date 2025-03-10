@@ -1,14 +1,14 @@
 ---
-title: Workfront Fusion을 사용한 Creative Workflow Automation
+title: Workfront Fusion을 사용한 Creative 워크플로 자동화
 description: Workfront Fusion을 사용하여 크리에이티브 워크플로를 자동으로 수행하는 방법 알아보기
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '197'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,10 @@ Workfront Fusion을 사용한 [1.2.3 프로세스 자동화](./ex3.md){target="_
 [커넥터를 사용하는 1.2.4 자동화](./ex4.md){target="_blank"}
 
 이 연습에서는 이미지 생성 프로세스를 자동화하기 위해 여정을 계속 세분화합니다.
+
+[1.2.5 프레임 I/O 및 Workfront Fusion](./ex5.md){target="_blank"}
+
+이 연습에서는 프레임 I/O를 Workfront Fusion 시나리오에 연결합니다.
 
 [요약 및 이점](./summary.md){target="_blank"}
 
