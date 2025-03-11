@@ -8,16 +8,16 @@ doc-type: Feature Video
 duration: 135
 last-substantial-update: 2025-01-11T00:00:00Z
 jira: KT-16719
-source-git-commit: f64623255c045396799d0d627f199ce59c794d70
+exl-id: 29a4bf01-3bef-4434-b935-073e279b1575
+source-git-commit: 1218d9c7db030d7875c2f2a41e837dca0455cd39
 workflow-type: tm+mt
-source-wordcount: '42'
+source-wordcount: '52'
 ht-degree: 0%
 
 ---
 
-
 # AI Assistant의 응답 유효성 검사
 
-Adobe Experience Platform의 AI Assistant가 제공하는 응답을 확인하고 확인하는 방법을 알아봅니다.
+Adobe Experience Platform의 AI Assistant가 제공하는 응답을 확인하고 확인하는 방법을 알아봅니다. 자세한 내용은 [AI Assistant UI 안내서](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#verify-responses)를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)
