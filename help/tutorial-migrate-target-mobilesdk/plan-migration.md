@@ -1,10 +1,10 @@
 ---
-title: 마이그레이션 계획 - Adobe Target에서 Adobe Journey Optimizer으로 마이그레이션 - Decisioning Mobile 확장
+title: 마이그레이션 계획 - 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션
 description: at.js와 Platform Web SDK 간의 주요 차이점과 마이그레이션 노력을 계획하는 방법에 대해 알아봅니다.
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---

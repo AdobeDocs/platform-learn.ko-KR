@@ -8,12 +8,12 @@ role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-jira: null
+jira: KT-17468
 hide: true
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 93ecc7ca815fc982697d432f316943dde12b62a5
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 3%
+source-wordcount: '72'
+ht-degree: 4%
 
 ---
 
@@ -28,16 +28,13 @@ ht-degree: 3%
 
 + [SDK 바꾸기](replace-sdk.md)
 
-+ [렌더링 활동](render-activities.md)
++ [렌더링 활동](retrieve-activities.md)
 
 + [매개 변수 보내기](send-parameters.md)
 
 + [전환 이벤트 추적](track-events.md)
 
-+ [WebView 지원 활성화](webview.md)
-
 + [대상자 및 프로필 스크립트 업데이트](update-audiences.md)
 
 + [구현의 유효성 검사](validate.md)
 
-+ [Target 디버그](debugging.md)

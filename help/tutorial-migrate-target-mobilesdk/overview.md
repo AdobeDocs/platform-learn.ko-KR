@@ -1,16 +1,16 @@
 ---
-title: Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile Extension으로 마이그레이션
+title: 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션합니다.
 description: 모바일 앱 구현을 Adobe Target에서 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션하는 방법을 알아봅니다
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
 
-# Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile Extension으로 마이그레이션
+# 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션합니다.
 
 이 안내서는 숙련된 Adobe Target 구현자가 기존 Adobe SDK Experience Platform을 Adobe Target 확장에서 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션하는 방법을 배울 수 있는 것입니다.
 

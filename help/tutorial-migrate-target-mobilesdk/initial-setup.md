@@ -1,10 +1,10 @@
 ---
-title: 초기 설정 - Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile 확장 기능으로 마이그레이션
+title: 초기 설정 - 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션합니다.
 description: Platform Web SDK 구현에 필요한 중요한 기본 요소에 대해 알아보고 설정합니다
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '373'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ Decisioning 확장을 사용할 때 설치된 태그 확장:
 1. 프로필
 1. 동의
 1. ID
-1. AEP Assurance (선택 사항, 디버깅에 필요)
+1. AEP Assurance(선택 사항, 디버깅에 필요)
 
 ![Decisioning 확장을 사용할 때 설치된 태그 확장](assets/tag-extensions-decisioning.png)
 
