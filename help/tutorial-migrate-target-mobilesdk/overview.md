@@ -3,10 +3,10 @@ title: 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisio
 description: 모바일 앱 구현을 Adobe Target에서 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션하는 방법을 알아봅니다
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
+source-wordcount: '690'
+ht-degree: 1%
 
 ---
 
@@ -45,12 +45,19 @@ Target 확장에서 Decisioning 확장으로 마이그레이션하는 작업의 
 
 마이그레이션 프로세스에는 다음과 같은 주요 단계가 포함됩니다.
 
-1. 현재 구현 평가
+1. 다음을 포함하여 현재 구현 평가:
+   1. 사용된 모든 Target SDK API
+   1. Target의 전역 설정에 대한 수정 사항
+   1. Adobe Analytics와의 통합
+   1. mbox, 프로필 및 엔티티 매개 변수 사용
+   1. 프로필 스크립트 및 대상자 사용
+   1. 구현에 고유한 사용자 지정 코드
 1. Adobe Experience Platform Edge Network에 연결하도록 초기 구성 요소 설정
 1. Target 확장을 Decisioning 확장으로 대체하도록 기본 구현 업데이트
 1. 특정 사용 사례에 맞게 SDK 최적화 구현을 개선합니다. 여기에는 추가 매개 변수 전달, 응답 토큰 사용 등이 포함될 수 있습니다.
 1. 프로필 스크립트, 활동 및 대상 정의와 같은 Target 인터페이스의 객체 업데이트
 1. 프로덕션 앱에서 전환하기 전에 최종 구현의 유효성을 검사합니다.
+
 
 >[!INFO]
 >

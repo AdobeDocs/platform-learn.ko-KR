@@ -2,9 +2,9 @@
 title: Target 활동 검색 - 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션합니다.
 description: Adobe Target에서 Adobe Journey Optimizer - Decisioning Mobile 확장 기능으로 마이그레이션할 때 Adobe Target 활동을 검색하는 방법을 알아봅니다.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ Target에서 반환하는 콘텐츠(&quot;오퍼&quot;라고도 함)는 일반�
 
 
 ## 요청 시 콘텐츠 요청 및 적용
+
+>[!IMPORTANT]
+>
+>앱에 콘텐츠를 적용한 후에는 `displayed` API를 실행하여 방문자가 활동에 지정된 대체 콘텐츠 또는 기본 콘텐츠를 보았음을 Target에 알려야 합니다. 자세한 내용은 [대상 전환 이벤트 추적](track-events.md) 페이지를 참조하십시오.
+
 
 +++ Android 예
 

@@ -2,9 +2,9 @@
 title: SDK 교체 - 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장 프로그램으로 마이그레이션합니다.
 description: Adobe Target에서 SDK - Decisioning Mobile 확장 기능으로 마이그레이션할 때 Adobe Journey Optimizer을 교체하는 방법을 알아봅니다.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '717'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 2%
 * Podfile 또는 `build.gradle` 파일의 종속성 업데이트
 * 가져오기 업데이트
 * 애플리케이션 코드 업데이트
+
 
 >[!INFO]
 >
@@ -263,24 +264,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 +++
 
-## 함수 비교
+## API 비교
 
-많은 Target 확장 기능에는 아래 표에 요약된 의사 결정 확장을 사용하는 동일한 접근 방식이 있습니다. [함수](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/)에 대한 자세한 내용은 Adobe Target 개발자 안내서를 참조하십시오.
+많은 Target 확장 API에는 아래 표에 설명된 Decisioning 확장을 사용하는 동일한 접근 방식이 있습니다. [함수](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/)에 대한 자세한 내용은 API 참조를 참조하십시오.
 
 | Target 확장 | Decisioning 확장 | 참고 |
 | --- | --- | --- | 
-| `prefetchContent` | `updatePropositions` |  |
-| `retrieveLocationContent` | `getPropositions` | `getPropositions` API를 사용할 때 SDK에서 캐시되지 않은 범위를 가져오기 위한 원격 호출이 수행되지 않습니다. |
-| `displayedLocations` | 오퍼 -> `displayed()` | 또한 `generateDisplayInteractionXdm` Offer 메서드를 사용하여 항목 표시용 XDM을 생성할 수 있습니다. 그런 다음 Edge 네트워크 SDK의 sendEvent API를 사용하여 추가 XDM, 자유 형식 데이터를 첨부하고 경험 이벤트를 원격으로 전송할 수 있습니다. |
-| `clickedLocation` | 오퍼 -> `tapped()` | 또한 `generateTapInteractionXdm` 오퍼 메서드를 사용하여 항목 탭용 XDM을 생성할 수 있습니다. 그런 다음 Edge 네트워크 SDK의 sendEvent API를 사용하여 추가 XDM, 자유 형식 데이터를 첨부하고 경험 이벤트를 원격으로 전송할 수 있습니다. |
-| `clearPrefetchCache` | `clearCachedPropositions` |  |
-| `resetExperience` | 해당 사항 없음 | SDK용 Edge Network 확장 ID의 `removeIdentity` API를 사용하여 방문자 ID를 Edge 네트워크로 보내는 것을 중지합니다. 자세한 내용은 [removeIdentity API 설명서](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity)를 참조하세요. <br><br>참고: Mobile Core의 `resetIdentities` API는 ECID(Experience Cloud ID)를 포함하여 SDK에 저장된 모든 ID를 지웁니다. 드물게 사용해야 합니다! |
-| `getSessionId` | 해당 사항 없음 | `state:store` 응답 핸들은 세션 관련 정보를 전달합니다. Edge 네트워크 확장은 만료되지 않은 상태 저장소 항목을 후속 요청에 연결하여 관리하는 데 도움이 됩니다. |
-| `setSessionId` | 해당 사항 없음 | `state:store` 응답 핸들은 세션 관련 정보를 전달합니다. Edge 네트워크 확장은 만료되지 않은 상태 저장소 항목을 후속 요청에 연결하여 관리하는 데 도움이 됩니다. |
-| `getThirdPartyId` | 해당 사항 없음 | Edge Network 확장에 대한 ID의 updateIdentities API를 사용하여 타사 ID 값을 제공합니다. 그런 다음 데이터 스트림에서 타사 ID 네임스페이스를 구성합니다. 자세한 내용은 [Target 타사 ID 모바일 설명서](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)를 참조하십시오. |
-| `setThirdPartyId` | 해당 사항 없음 | Edge Network 확장에 대한 ID의 updateIdentities API를 사용하여 타사 ID 값을 제공합니다. 그런 다음 데이터 스트림에서 타사 ID 네임스페이스를 구성합니다. 자세한 내용은 [Target 타사 ID 모바일 설명서](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)를 참조하십시오. |
-| `getTntId` | 해당 사항 없음 | `locationHint:result` 응답 핸들은 Target 위치 힌트 정보를 전달합니다. Target Edge가 Experience Edge과 함께 위치한다고 가정합니다. <br> <br>Edge 네트워크 확장은 EdgeNetwork 위치 힌트를 사용하여 요청을 보낼 Edge 네트워크 클러스터를 결정합니다. SDK(하이브리드 앱)에서 Edge 네트워크 위치 힌트를 공유하려면 Edge Network 확장의 `getLocationHint` 및 `setLocationHint` API를 사용합니다. 자세한 내용은 [`getLocationHint` API 설명서](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)를 참조하십시오. |
-| `setTntId` | 해당 사항 없음 | `locationHint:result` 응답 핸들은 Target 위치 힌트 정보를 전달합니다. Target Edge가 Experience Edge과 함께 위치한다고 가정합니다. <br> <br>Edge 네트워크 확장은 EdgeNetwork 위치 힌트를 사용하여 요청을 보낼 Edge 네트워크 클러스터를 결정합니다. SDK(하이브리드 앱)에서 Edge 네트워크 위치 힌트를 공유하려면 Edge Network 확장의 `getLocationHint` 및 `setLocationHint` API를 사용합니다. 자세한 내용은 [`getLocationHint` API 설명서](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)를 참조하십시오. |
+| [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
+| [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | `getPropositions` API를 사용할 때 SDK에서 캐시되지 않은 범위를 가져오기 위한 원격 호출이 수행되지 않습니다. |
+| [displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [오퍼 -> 표시됨()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | 또한 `generateDisplayInteractionXdm` Offer 메서드를 사용하여 항목 표시용 XDM을 생성할 수 있습니다. 그런 다음 Edge 네트워크 SDK의 sendEvent API를 사용하여 추가 XDM, 자유 형식 데이터를 첨부하고 경험 이벤트를 원격으로 전송할 수 있습니다. |
+| [clickedLocation](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [오퍼 -> 탭()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | 또한 `generateTapInteractionXdm` 오퍼 메서드를 사용하여 항목 탭용 XDM을 생성할 수 있습니다. 그런 다음 Edge 네트워크 SDK의 sendEvent API를 사용하여 추가 XDM, 자유 형식 데이터를 첨부하고 경험 이벤트를 원격으로 전송할 수 있습니다. |
+| [clearPrefetchCache](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [clearCachedPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} |  |
+| [resetExperience](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#resetexperience){target=_blank} | 해당 사항 없음 | SDK용 Edge Network 확장 ID의 [removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity){target=_blank} API를 사용하여 방문자 ID를 Edge 네트워크로 보내는 것을 중지합니다. 자세한 내용은 [removeIdentity API 설명서](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity)를 참조하세요. <br><br>참고: Mobile Core의 `resetIdentities` API는 ECID(Experience Cloud ID)를 포함하여 SDK에 저장된 모든 ID를 지웁니다. 드물게 사용해야 합니다! |
+| [getSessionId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getsessionid){target=_blank} | 해당 사항 없음 | `state:store` 응답 핸들은 세션 관련 정보를 전달합니다. Edge 네트워크 확장은 만료되지 않은 상태 저장소 항목을 후속 요청에 연결하여 관리하는 데 도움이 됩니다. |
+| [setSessionId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setsessionid){target=_blank} | 해당 사항 없음 | `state:store` 응답 핸들은 세션 관련 정보를 전달합니다. Edge 네트워크 확장은 만료되지 않은 상태 저장소 항목을 후속 요청에 연결하여 관리하는 데 도움이 됩니다. |
+| [getThirdPartyId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getthirdpartyid){target=_blank} | 해당 사항 없음 | Edge Network 확장에 대한 ID의 updateIdentities API를 사용하여 타사 ID 값을 제공합니다. 그런 다음 데이터 스트림에서 타사 ID 네임스페이스를 구성합니다. 자세한 내용은 [Target 타사 ID 모바일 설명서](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)를 참조하십시오. |
+| [setThirdPartyId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setthirdpartyid){target=_blank} | 해당 사항 없음 | Edge Network 확장에 대한 ID의 updateIdentities API를 사용하여 타사 ID 값을 제공합니다. 그런 다음 데이터 스트림에서 타사 ID 네임스페이스를 구성합니다. 자세한 내용은 [Target 타사 ID 모바일 설명서](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)를 참조하십시오. |
+| [getTntId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | 해당 사항 없음 | `locationHint:result` 응답 핸들은 Target 위치 힌트 정보를 전달합니다. Target Edge가 Experience Edge과 함께 위치한다고 가정합니다. <br> <br>Edge 네트워크 확장은 EdgeNetwork 위치 힌트를 사용하여 요청을 보낼 Edge 네트워크 클러스터를 결정합니다. SDK(하이브리드 앱)에서 Edge 네트워크 위치 힌트를 공유하려면 Edge Network 확장의 `getLocationHint` 및 `setLocationHint` API를 사용합니다. 자세한 내용은 [`getLocationHint` API 설명서](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)를 참조하십시오. |
+| [setTntId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | 해당 사항 없음 | [locationHint:result](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#setlocationhint){target=_blank} 응답 핸들은 Target 위치 힌트 정보를 전달합니다. Target Edge가 Experience Edge과 함께 위치한다고 가정합니다. <br> <br>Edge 네트워크 확장은 EdgeNetwork 위치 힌트를 사용하여 요청을 보낼 Edge 네트워크 클러스터를 결정합니다. SDK(하이브리드 앱)에서 Edge 네트워크 위치 힌트를 공유하려면 Edge Network 확장의 `getLocationHint` 및 `setLocationHint` API를 사용합니다. 자세한 내용은 [`getLocationHint` API 설명서](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)를 참조하십시오. |
 
 
 다음으로 페이지에 [활동을 요청 및 렌더링](retrieve-activities.md)하는 방법에 대해 알아봅니다.
