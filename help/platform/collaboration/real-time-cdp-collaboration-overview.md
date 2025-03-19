@@ -8,9 +8,9 @@ duration: 92
 last-substantial-update: 2025-03-18T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: 449d3bfdf89f85301471555a8f0280196e874729
+source-git-commit: ff70af08af560ef69ed269a9425039851477cf43
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -25,38 +25,10 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
 
 ## 소개
 
-<!-- CARDS
-{cta=Watch}
-* real-time-cdp-collaboration-overview.md
+가치가 높은 대상을 검색 및 활성화하고 측정 기능을 사용하여 가시적인 결과를 가져올 수 있는 특수 목적으로 구축된 데이터 공동 작업 애플리케이션인 Adobe Real-Time Collaboration을 소개합니다.
 
--->
-<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
-<div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Real-Time CDP Collaboration Overview">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="real-time-cdp-collaboration-overview.md" title="Real-Time CDP Collaboration 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://cdn.experienceleague.adobe.com/thumb/exl-cards/tutorial.png" alt="Real-Time CDP Collaboration 개요"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="real-time-cdp-collaboration-overview.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration 개요">Real-Time CDP Collaboration 개요</a>
-                    </p>
-                    <p class="is-size-6">가치가 높은 대상을 검색 및 활성화하고 측정 기능을 사용하여 가시적인 결과를 가져올 수 있는 특수 목적으로 구축된 데이터 공동 작업 애플리케이션인 Adobe Real-Time Collaboration을 소개합니다.</p>
-                </div>
-                <a href="real-time-cdp-collaboration-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+
 
 ## 설정
 
