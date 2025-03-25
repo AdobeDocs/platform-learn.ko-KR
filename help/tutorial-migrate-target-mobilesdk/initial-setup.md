@@ -2,9 +2,9 @@
 title: 초기 설정 - 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션합니다.
 description: Platform Web SDK 구현에 필요한 중요한 기본 요소에 대해 알아보고 설정합니다
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '379'
 ht-degree: 6%
 
 ---
@@ -61,7 +61,7 @@ Target 확장에 [구성 가능한 설정](https://developer.adobe.com/client-sd
 | 클라이언트 코드 | 해당 사항 없음 | IMS 조직 세부 사항을 사용하여 에지에서 자동으로 설정 |
 | 환경 ID | 대상 환경 ID | 데이터스트림에 구성됨 |
 | Target Workspace 속성 | 속성 토큰 | 데이터스트림에 구성됨 |
-| 시간 초과 | 구성할 수 없음 | Decisioning 확장의 시간 제한은 10초입니다. |
+| 시간 초과 | 시간 초과 | Decisioning 확장 및 SDK 최적화에서 구성할 수 있습니다. 기본 시간 제한은 10초입니다. |
 | 서버 도메인 | Edge Network 도메인 | Adobe Experience Platform Edge Network 확장 기능 설정 |
 
 다음으로 [Target SDK을 바꾸기](replace-sdk.md)하는 방법을 알아봅니다.
