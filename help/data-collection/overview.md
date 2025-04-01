@@ -3,10 +3,10 @@ title: 데이터 수집 튜토리얼
 description: 데이터 수집의 강력한 사용자에게 유용한 방법 비디오 및 튜토리얼
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 25%
+source-wordcount: '263'
+ht-degree: 23%
 
 ---
 
@@ -28,11 +28,11 @@ ht-degree: 25%
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Adobe Target을 Web SDK으로 마이그레이션</strong>
     </a>
     </div>
@@ -41,16 +41,16 @@ ht-degree: 25%
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
       <img alt="Web SDK를 사용하여 Adobe Experience Cloud 구현" src="assets/thumb_analyticsWebSdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
     <strong>태그의 Adobe Analytics을 Web SDK으로 마이그레이션</strong>
     </a>
     </div>
     <p>
-    <em>태그를 사용하여 Web SDK으로 AppMeasurement.js 바꾸기</em>
+    <em>태그를 사용하여 AppMeasurement.js를 Web SDK으로 바꾸기</em>
     <p>
   </td>
   <td>
@@ -64,6 +64,25 @@ ht-degree: 25%
     <p>
   </td>
 </tr>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <img alt="Edge Network에서 Target을 모바일 SDK으로 마이그레이션" src="assets/thumb_targetMobileSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <strong>Adobe Target을 Edge Network의 Mobile SDK으로 마이그레이션</strong>
+    </a>
+    </div>
+    <p>
+    <em>Target 확장을 Journey Optimizer - Decisioning 확장으로 바꾸기</em>
+    <p>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  </tr>
 </table>
 
 ## 구현 안내서
