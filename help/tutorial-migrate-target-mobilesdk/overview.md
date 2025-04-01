@@ -1,30 +1,22 @@
 ---
-title: 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션합니다.
+title: 모바일 앱을 Adobe Target에서 Adobe Journey Optimizer - Decisioning 확장 기능으로 마이그레이션
 description: 모바일 앱 구현을 Adobe Target에서 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션하는 방법을 알아봅니다
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '650'
 ht-degree: 1%
 
 ---
 
-# 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션합니다.
+# 모바일 앱을 Adobe Target에서 Adobe Journey Optimizer - Decisioning 확장 기능으로 마이그레이션
 
 이 안내서는 숙련된 Adobe Target 구현자가 기존 Adobe SDK Experience Platform을 Adobe Target 확장에서 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션하는 방법을 배울 수 있는 것입니다.
 
 Adobe Experience Platform Mobile SDK은 모바일 애플리케이션에서 전체적인 구현을 지원합니다. Target 확장은 모바일 SDK을 기반으로 구축되어 Adobe Target을 통해 앱 경험을 개인화할 수 있습니다. Decisioning 확장은 Target을 Real-Time CDP 및 Journey Optimizer과 같은 플랫폼 기반 앱과 통합하는 데 도움이 되는 Adobe Experience Platform Edge Network 기능을 사용하는 모바일 앱에서 Adobe Target을 구현하는 새로운 접근 방식입니다.
 
 ![Decisioning 확장을 사용하여 Edge Network을 통해 Target에 연결하는 Mobile SDK을 보여 주는 다이어그램](assets/datacollection.png)
-
->[!INFO]
->
->Adobe Experience Platform Mobile SDK 생태계 내에서 확장은 다른 이름을 가질 수 있는 애플리케이션에 가져온 SDK에 의해 구현됩니다.
->
-> * **Target SDK**&#x200B;이(가) **Adobe Target 확장**&#x200B;을 구현함
-> * **SDK 최적화**&#x200B;에서 **Adobe Journey Optimizer - Decisioning 확장 기능**&#x200B;을 구현합니다.
-
 
 ## 주요 이점
 
