@@ -2,9 +2,9 @@
 title: Target 확장과 Decisioning 확장 비교
 description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 Target 확장과 Decisioning 확장 간의 차이점에 대해 알아봅니다.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,6 @@ Adobe Journey Optimizer - Decisioning 확장 프로그램은 모바일 앱용 Ad
 | thirdPartyId (mbox3rdPartyId) | 지원됨 | ID 맵 및 데이터 스트림의 Target 타사 ID 네임스페이스를 통해 지원됨 |
 | 알림(표시, 클릭) | 지원됨 | 지원됨 |
 | 응답 토큰 | 지원됨 | 지원됨 |
-| Analytics for Target (A4T) | 클라이언트측 전용 | 클라이언트측 및 서버측 |
 | 모바일 미리 보기(QA 모드) | 지원됨 | Assurance에 대한 제한된 지원 |
 
 >[!IMPORTANT]
