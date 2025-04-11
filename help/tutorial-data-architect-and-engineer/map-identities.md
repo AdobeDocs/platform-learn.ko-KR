@@ -8,9 +8,9 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '937'
 ht-degree: 6%
 
 ---
@@ -95,10 +95,10 @@ API를 통해 CRM 네임스페이스를 만듭니다.
 ID 네임스페이스 `Luma CRM Id`을(를) 만들어 보겠습니다.
 
 1. `Luma Tutorial Assets` 폴더에 [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) 다운로드
-1. 컬렉션을 [!DNL Postman](으)로 가져오기
+1. 컬렉션을 [!DNL Postman]&#x200B;(으)로 가져오기
 1. 액세스 토큰이 없는 경우 **[!DNL OAuth: Request Access Token]** 요청을 열고 **보내기**&#x200B;를 선택하여 새 액세스 토큰을 요청하세요.
 1. 요청 **[!UICONTROL ID 서비스] > [!UICONTROL ID 네임스페이스] > [!UICONTROL 새 ID 네임스페이스 만들기]를 선택합니다.**
-1. 다음을 요청의 [!DNL Body](으)로 붙여 넣습니다.
+1. 다음을 요청의 [!DNL Body]&#x200B;(으)로 붙여 넣습니다.
 
    ```json
    {
@@ -148,7 +148,7 @@ ID 네임스페이스 `Luma CRM Id`을(를) 만들어 보겠습니다.
 >
 >웹 SDK으로 수집된 데이터는 스키마에서 ID 필드에 레이블을 지정하는 일반적인 방법에 대한 예외입니다. Web SDK은 ID 맵을 사용하여 구현 측면에 *의 ID에 레이블을 지정합니다*. 따라서 Luma 웹 사이트에서 Web SDK을 구현할 때 `Luma Web Events Schema`의 ID를 결정합니다. 이후 단원에서는 기본 ID로 Experience Cloud 방문자 ID(ECID)를 수집하고 보조 ID로 crmId를 수집합니다.
 
-기본 ID를 선택하면 `Luma CRM Schema`이(가) 모두 `loyaltyId`을(를) 식별자로 사용하므로 `Luma Offline Purchase Events Schema`에 연결할 수 있는 방법을 알 수 있습니다. 하지만 어떻게 하면 오프라인 구매를 온라인 행동으로 연결시킬 수 있을까요? 제품 카탈로그로 구매한 제품을 어떻게 분류할 수 있습니까? 추가 ID 필드 및 스키마 관계를 사용합니다.
+기본 ID를 선택하면 `Luma Loyalty Schema`이(가) loyaltyId를 식별자로 사용하므로 `Luma Offline Purchase Events Schema`에 연결할 수 있는 방법을 알 수 있습니다. 그러나 CRM을 오프라인 구매 이벤트에 연결하는 방법은 무엇입니까? 오프라인 구매를 온라인 비헤이비어와 어떻게 연결할 수 있습니까? 그리고 우리 제품 카탈로그로 구매한 제품을 어떻게 분류할 수 있을까? 추가 ID 필드 및 스키마 관계를 사용합니다.
 
 <!--use a visual-->
 
