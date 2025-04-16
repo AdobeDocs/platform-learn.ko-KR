@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
+source-git-commit: 7d4970479ff1a7dcb3ebb1f46660f418ba768da3
 workflow-type: tm+mt
-source-wordcount: '1721'
+source-wordcount: '1724'
 ht-degree: 1%
 
 ---
@@ -346,8 +347,8 @@ Postman으로 돌아가서 **보내기**&#x200B;를 클릭합니다. 여기에 �
 
 ## 다음 단계
 
-[Firefly Services 자동화의 요약 및 이점](./summary.md){target="_blank"}(으)로 이동
+[1.2.5 프레임 I/O 및 Workfront Fusion으로 이동](./ex5.md){target="_blank"}
 
-[Adobe Firefly 서비스 자동화](./automation.md){target="_blank"}(으)로 돌아가기
+[Workfront Fusion을 사용한 Creative 워크플로 자동화로 돌아가기](./automation.md){target="_blank"}
 
 [모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기

@@ -3,10 +3,10 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -18,14 +18,12 @@ ht-degree: 2%
 
 이 튜토리얼은 매우 다양하며 다음 애플리케이션에 대한 명확한 통찰력을 제공합니다.
 
-- Adobe Firefly 서비스
-- Adobe Photoshop
+- Adobe Firefly Services, Adobe Photoshop, Adobe 프레임 I/O, Adobe Substance 3D 스테이징
 - Adobe Workfront 및 Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets 및 Edge Delivery Services
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
-
 
 이 튜토리얼은 Adobe 애플리케이션에만 중점을 두지 않고 브랜드가 작동하는 광범위한 에코시스템을 고려합니다. 이를 위해 일부 단원에서는 Adobe이 아닌 애플리케이션을 Adobe 애플리케이션과 통합하는 방법에 중점을 두고 있습니다. 따라서 다음 애플리케이션이 Adobe Experience Platform과 함께 작동하는 방식을 깊이 이해할 수 있습니다.
 
@@ -40,13 +38,12 @@ ht-degree: 2%
 
 고유한 Adobe Experience Cloud 인스턴스를 사용하여 이 자습서를 수행하려면 인스턴스에서 다음 애플리케이션을 프로비저닝하고 액세스할 수 있어야 합니다.
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
-- Adobe Photoshop
+- Adobe Firefly
+- Adobe Photoshop, Adobe 프레임 I/O, Adobe Substance 3D 스테이징
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
-- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
-- Adobe Experience Platform 데이터 수집: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
-- 데모 시스템 액세스: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+- Adobe Workfront Fusion
+- Adobe Experience Platform, Adobe Experience Platform 데이터 수집
+- 다음 데모 시스템에 액세스: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## 완료 및 인증
 
@@ -68,13 +65,17 @@ ht-degree: 2%
 
 ### 2. 제작 및 제작
 
-[1.1 Adobe Firefly 서비스](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 이 모듈에서는 Adobe Firefly Services API, Photoshop API 및 Microsoft Azure Storage Services를 사용하여 이미지를 생성하고 프로그래밍 방식으로 저장합니다.
 
-Workfront Fusion을 사용한 [1.2 Creative Workflow Automation](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2 Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 이 기본 모듈에서는 Adobe Workfront Fusion을 사용하여 콘텐츠 제작 워크플로를 자동화하고 확장하게 됩니다.
+
+[1.3 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+
+이 기본 모듈에서는 Adobe Express을 사용하여 이미지와 비디오를 만들고 이러한 에셋을 더 광범위한 Adobe Experience Cloud 에코시스템을 위해 공유합니다.
 
 ### 3. 자산 관리
 

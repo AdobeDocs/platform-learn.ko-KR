@@ -1,56 +1,60 @@
 ---
-title: Workfront Fusion을 사용한 Creative 워크플로 자동화
-description: Workfront Fusion을 사용하여 크리에이티브 워크플로를 자동으로 수행하는 방법 알아보기
+title: Workfront Fusion을 통한 Creative 워크플로 자동화
+description: Workfront Fusion으로 크리에이티브 워크플로우를 자동화하는 방법에 대해 알아보십시오.
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: 74590708e5b5e7ca156f2c7dcabc969b8ee66e2d
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 1%
+source-wordcount: '242'
+ht-degree: 0%
 
 ---
 
-# 1.2 Workfront Fusion을 사용한 Creative Workflow 자동화
+# 1.2 Workfront Fusion을 통한 Creative 워크플로우 자동화
 
-Workfront Fusion을 사용하여 크리에이티브 워크플로를 자동으로 수행하는 방법에 대해 알아봅니다.
+Workfront Fusion으로 크리에이티브 워크플로우를 자동화하는 방법을 알아보십시오.
 
 ## 전제 조건
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}에 액세스
+- Adobe Systems Firefly [https://firefly.adobe.com/ 액세스](https://firefly.adobe.com/){target="_blank"}
 
 ## 연습
 
 [1.2.1 Workfront Fusion 시작하기](./ex1.md){target="_blank"}
 
-이 연습에서는 Workfront Services와 함께 Firefly Fusion을 살펴보고 해당 기능에 대해 알아봅니다.
+이 연습에서는 Firefly 서비스와 함께 Workfront Fusion을 탐색하고 그 기능을 이해합니다.
 
-[1.2.2 Workfront Fusion 내에서 Adobe API 사용](./ex2.md){target="_blank"}
+[1.2.2 Workfront Fusion 내에서 Adobe Systems API 사용](./ex2.md){target="_blank"}
 
-이 연습에서는 Workfront Fusion의 기능을 살펴보면서 Workfront Fusion 내에서 Firefly Services API 및 Photoshop API를 구성하고 사용하는 방법에 대해 알아봅니다.
+이 연습에서는 Workfront Fusion 내에서 Firefly Services API 및 Photoshop API를 구성하고 사용하는 방법과 Workfront Fusion의 기능을 탐색하는 방법을 알아봅니다.
 
-Workfront Fusion을 사용한 [1.2.3 프로세스 자동화](./ex3.md){target="_blank"}
+[1.2.3 Workfront Fusion을 통한 프로세스 자동화](./ex3.md){target="_blank"}
 
-이 연습에서는 이미지 생성 프로세스를 자동화하기 위해 여정을 계속 세분화합니다.
+이 연습에서는 이미지 생성 프로세스를 자동화하기 위한 여정을 계속 구체화합니다.
 
-[커넥터를 사용하는 1.2.4 자동화](./ex4.md){target="_blank"}
+[1.2.4 커넥터를 사용한 자동화](./ex4.md){target="_blank"}
 
-이 연습에서는 이미지 생성 프로세스를 자동화하기 위해 여정을 계속 세분화합니다.
+이 연습에서는 이미지 생성 프로세스를 자동화하기 위한 여정을 계속 구체화합니다.
 
 [1.2.5 프레임 I/O 및 Workfront Fusion](./ex5.md){target="_blank"}
 
 이 연습에서는 프레임 I/O를 Workfront Fusion 시나리오에 연결합니다.
 
+[1.2.6 프레임 I/O-Workfront Fusion - AEM Assets](./ex6.md){target="_blank"}
+
+이 연습에서는 프레임 I/O의 승인된 자산가 Workfront Fusion 시나리오를 사용하여 자산의 PNG 렌디션 AEM Assets 쪽으로 내보내도록 설정을 더욱 구체화합니다.
+
 [요약 및 이점](./summary.md){target="_blank"}
 
-이 단원의 요약 및 이점 개요
+이 모듈 요약 및 이점 개요.
 
-![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+![기술 인사이더](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
->질문이 있는 경우 향후 콘텐츠에 대한 제안 사항에 대한 일반적인 피드백을 공유하려면 기술 인사이더에게 **techinsiders@adobe.com**&#x200B;로 전자 메일을 보내 직접 문의하십시오.
+>질문이 있거나 향후 컨텐츠 대한 제안에 대한 일반적인 피드백을 공유하려면 techinsiders@adobe.com **에 이메일을**&#x200B;보내 Tech Insiders에 직접 문의하십시오.
 
-[모든 모듈](../../../overview.md){target="_blank"}(으)로 돌아가기
+모든 모듈로 [돌아가기](../../../overview.md){target="_blank"}
