@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2674'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ ht-degree: 0%
 ## 1.2.5.2 Workfront Fusion 및 Frame.io
 
 이전 연습에서는 사용자 지정 Webhook으로 시작하여 Webhook 응답으로 끝나는 시나리오 `--aepUserLdap-- - Firefly + Photoshop`을(를) 만들었습니다. 그런 다음 Postman을 사용하여 웹후크의 사용을 테스트했지만, 이러한 시나리오의 핵심은 외부 애플리케이션에 의해 호출되는 것입니다. 앞에서 설명한 대로 Frame.io는 이러한 연습이 되지만 Frame.io와 `--aepUserLdap-- - Firefly + Photoshop` 사이에는 다른 Workfront Fusion 시나리오가 필요합니다. 이제 해당 시나리오를 구성합니다.
+
+[https://experience.adobe.com/](https://experience.adobe.com/)&#x200B;(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
+
+![WF Fusion](./images/wffusion1.png)
 
 왼쪽 메뉴에서 **시나리오**(으)로 이동하여 폴더 `--aepUserLdap--`을(를) 선택합니다. **새 시나리오 만들기**&#x200B;를 클릭합니다.
 
@@ -122,7 +126,7 @@ Frame.io로 돌아가서 사용자 지정 작업 `--aepUserLdap-- - Frame IO Cus
 
 ![프레임 IO](./images/frame22.png)
 
-버블의 상세 보기에는 Frame.io에서 받은 데이터가 표시됩니다. 여러 가지 신분증이 보일 겁니다 예를 들어 필드 **resource.id**&#x200B;은(는) 자산 **citisignal-fiber.psd**&#x200B;의 Frame.io에 있는 고유 ID를 표시합니다
+버블의 상세 보기에는 Frame.io에서 받은 데이터가 표시됩니다. 여러 가지 신분증이 보일 겁니다 예를 들어 필드 **resource.id**&#x200B;은(는) 자산 **citsignal-fiber.psd**&#x200B;의 Frame.io에 있는 고유 ID를 표시합니다.
 
 ![프레임 IO](./images/frame23.png)
 
