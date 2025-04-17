@@ -4,7 +4,7 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## Chrome 확장 설치
 
-해당 Chrome 확장을 설치하려면 Chrome 브라우저를 열고 [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi)(으)로 이동합니다. 그러면 이걸 보게 될 거야.
+해당 Chrome 확장을 설치하려면 Chrome 브라우저를 열고 [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi)&#x200B;(으)로 이동합니다. 그러면 이걸 보게 될 거야.
 
 **Chrome에 추가**&#x200B;를 클릭합니다.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## Chrome 확장 구성
 
-[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
+[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)&#x200B;(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
 
 ![DSN](./images/tuthome.png)
 
@@ -84,11 +84,11 @@ IMS 조직 ID는 Adobe Experience Cloud 인스턴스의 고유 식별자이며, 
 
 IMS 조직 ID를 찾는 작업은 여러 가지 방법으로 수행할 수 있습니다. 잘 모르겠으면 인스턴스의 시스템 관리자 중 한 명에게 문의하여 ID를 찾습니다.
 
-[Admin Console](https://https://adminconsole.adobe.com/)(으)로 이동하여 URL의 일부로 찾을 수 있습니다.
+[Admin Console](https://https://adminconsole.adobe.com/)&#x200B;(으)로 이동하여 URL의 일부로 찾을 수 있습니다.
 
 ![DSN](./images/aepid1.png)
 
-AEP 메뉴의 **데이터 관리 > 쿼리**&#x200B;로 이동하여 **사용자 이름**&#x200B;에서 찾을 수 있습니다.
+또한 AEP 메뉴의 **데이터 관리 > 쿼리**(으)로 이동하여 **사용자 이름**&#x200B;에서 찾을 수 있습니다.
 
 ![DSN](./images/aepid2.png)
 
@@ -135,11 +135,11 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ## 튜토리얼 콘텐츠 확인
 
-테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2)(으)로 이동하세요.
+테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2)&#x200B;(으)로 이동하세요.
 
 이제 이 페이지의 모든 **환경 변수**&#x200B;가 chrome 확장에서 활성화된 환경을 기반으로 실제 값으로 대체되었습니다.
 
-이제 아래와 유사한 보기가 제공됩니다. 환경 변수 `aepSandboxName`이(가) 실제 AEP 샌드박스 이름으로 대체되었습니다. 이 경우에는 **one-adobe**&#x200B;입니다.
+이제 아래와 유사한 보기가 제공됩니다. 환경 변수 `aepSandboxName`이(가) 실제 AEP 샌드박스 이름으로 바뀌었습니다. 이 경우에는 **one-adobe**&#x200B;입니다.
 
 ![DSN](./images/mod7.png)
 
