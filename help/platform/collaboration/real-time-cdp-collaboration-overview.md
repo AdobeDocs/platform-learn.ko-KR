@@ -1,16 +1,16 @@
 ---
 title: Real-Time CDP Collaboration 개요
 description: 가치가 높은 대상을 검색 및 활성화하고 측정 기능을 사용하여 가시적인 결과를 가져올 수 있는 특수 목적으로 구축된 데이터 공동 작업 애플리케이션인 Adobe Real-Time Collaboration을 소개합니다.
-feature: Use Cases
+feature: Collaboration
 role: Leader, User
 level: Beginner
 duration: 92
-last-substantial-update: 2025-03-18T00:00:00Z
+last-substantial-update: 2025-04-17T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
+source-git-commit: c61d6117d523340b233a1bd1f58b35400e760b20
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
 아래에는 Real-Time CDP Collaboration을 설정하고, 사용하고, 가치를 창출하는 방법을 학습하는 데 도움이 되는 비디오 및 기타 리소스가 있습니다. 이 페이지 및 사이트에 추가 자산이 추가되므로 자주 다시 확인하십시오. 즐거운 학습되시길 바랍니다!
 
 자세한 내용은 Real-Time CDP Collaboration [설명서](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}를 참조하세요.
+
+[![ExL LIVE 2025년 4월 10일](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## 소개
 
