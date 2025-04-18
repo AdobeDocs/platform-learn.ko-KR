@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '2050'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffc5.png)
 
-그럼 이걸 보셔야죠 **Webhook** 노드를 클릭합니다.
+그럼 이걸 보셔야죠 **Webhook** 모듈을 클릭합니다.
 
 ![WF Fusion](./images/wffc6.png)
 
@@ -83,33 +83,81 @@ Workfront Fusion 웹후크가 아직 입력을 기다리고 있습니다.
 
 ![WF Fusion](./images/wffc12.png)
 
-## 1.2.4.2 Firefly T2I 노드 업데이트
+## 1.2.4.2 Firefly T2I 모듈 업데이트
 
-**Firefly T2I** 노드를 클릭합니다. 그럼 이걸 보셔야죠 이 요청의 프롬프트는 이전에 필드의 **말**(으)로 하드코딩되었습니다. 이제 하드코딩된 텍스트를 제거하고 웹후크에서 들어오는 필드로 대체합니다.
+**Firefly T2I** 모듈을 마우스 오른쪽 단추로 클릭하고 **모듈 삭제**&#x200B;를 선택합니다.
 
-![WF Fusion](./images/wffcfft2i1.png)
+![WF Fusion](./images/wffcff1.png)
 
-필드 **말의**&#x200B;을(를) 제거하고 **Webhook** 변수에서 찾을 수 있는 변수 **prompt**(으)로 바꿉니다. 변경 내용을 저장하려면 **확인**&#x200B;을 클릭하세요.
+**+** 아이콘을 클릭하고 검색어 `firefly`을(를) 입력한 다음 **Adobe Firefly**&#x200B;을(를) 선택합니다.
 
-![WF Fusion](./images/wffcfft2i2.png)
+![WF Fusion](./images/wffcff2.png)
+
+**이미지 생성**&#x200B;을 선택합니다.
+
+![WF Fusion](./images/wffcff3.png)
+
+**Adobe Firefly** 모듈을 끌어다 놓아 **라우터** 모듈에 연결합니다.
+
+![WF Fusion](./images/wffcff4.png)
+
+**Adobe Firefly** 모듈을 클릭하여 연 다음 **추가**&#x200B;를 클릭하여 새 연결을 만듭니다.
+
+![WF Fusion](./images/wffcff5.png)
+
+다음 필드를 채웁니다.
+
+- **연결 이름**: `--aepUserLdap-- - Firefly connection` 사용
+- **환경**: **프로덕션**&#x200B;을 사용합니다.
+- **유형**: **개인 계정**&#x200B;을 사용하세요.
+- **클라이언트 ID**: 이름이 `--aepUserLdap-- - One Adobe tutorial`인 Adobe I/O 프로젝트에서 **클라이언트 ID**&#x200B;을(를) 복사합니다.
+- **클라이언트 암호**: 이름이 `--aepUserLdap-- - One Adobe tutorial`인 Adobe I/O 프로젝트에서 **클라이언트 암호**&#x200B;을(를) 복사합니다.
+
+Adobe I/O 프로젝트 [여기](https://developer.adobe.com/console/projects.)에서 **클라이언트 ID** 및 **클라이언트 암호**&#x200B;를 찾을 수 있습니다.
+
+![WF Fusion](./images/wffc20.png)
+
+모든 필드를 작성한 후 **계속**&#x200B;을 클릭하세요. 그러면 연결이 자동으로 확인됩니다.
+
+![WF Fusion](./images/wffcff6.png)
+
+그런 다음 들어오는 **사용자 지정 Webhook**&#x200B;에서 시나리오에 제공된 변수 **prompt**&#x200B;을(를) 선택합니다. **확인**&#x200B;을 클릭합니다.
+
+![WF Fusion](./images/wffcff7.png)
+
+계속하기 전에 이 연습에서는 시나리오에서 이전 경로를 비활성화해야 합니다. 현재 구성 중인 새 경로만 사용합니다. 이렇게 하려면 **Router** 모듈과 **Iterator** 모듈 사이에 있는 **렌치** 아이콘을 클릭하고 **경로 비활성화**&#x200B;를 선택합니다.
+
+![WF Fusion](./images/wffcff7a.png)
+
+변경 내용을 저장하려면 **저장**&#x200B;을 클릭하고 구성을 테스트하려면 **한 번 실행**&#x200B;을 클릭하십시오.
+
+![WF Fusion](./images/wffcff8.png)
+
+Postman으로 이동하여 요청에서 메시지를 확인한 다음 **보내기**&#x200B;를 클릭합니다.
+
+![WF Fusion](./images/wffcff8a.png)
+
+[보내기]를 클릭한 후 Workfront Fusion으로 돌아가서 **Adobe Firefly** 모듈에서 버블 아이콘을 클릭하여 세부 정보를 확인합니다.
+
+![WF Fusion](./images/wffcff9.png)
+
+**OUTPUT**&#x200B;에서 **세부 정보** > **url**(으)로 이동하여 **Adobe Firefly**&#x200B;에서 생성된 이미지의 URL을 찾습니다.
+
+![WF Fusion](./images/wffcff10.png)
+
+이제 Postman 요청에서 보낸 프롬프트를 나타내는 이미지가 표시됩니다(이 경우 **안개 초원**).
+
+![WF Fusion](./images/wffcff11.png)
 
 ## 1.2.4.2 PSD 파일의 배경 변경
 
-이제 기본 제공 커넥터를 사용하여 시나리오를 보다 스마트하게 업데이트하게 됩니다. 또한 Firefly의 출력을 Photoshop에 연결하므로 PSD 파일의 배경 이미지가 Firefly 이미지 생성 작업의 출력을 사용하여 동적으로 변경됩니다.
+이제 더 많은 기본 제공 커넥터를 사용하여 시나리오를 보다 스마트하게 업데이트하게 됩니다. 또한 Firefly의 출력을 Photoshop에 연결하므로 PSD 파일의 배경 이미지가 Firefly 이미지 생성 작업의 출력을 사용하여 동적으로 변경됩니다.
 
-이전 연습에서는 **Firefly T2I** 경로를 비활성화했습니다. 이제 실행을 취소해야 합니다. 경로를 다시 활성화하려면 **중지** 아이콘을 클릭하십시오.
-
-![WF Fusion](./images/wffc13.png)
-
-그러면 **stop** 아이콘이 사라집니다. 그런 다음 이전 연습의 구성에 대한 다른 경로에서 **렌치** 아이콘을 클릭하고 **경로 비활성화**&#x200B;를 선택합니다.
-
-![WF Fusion](./images/wffc14.png)
-
-그럼 이걸 보셔야죠 그런 다음 **Firefly T2I** 노드 위로 마우스를 가져간 후 **+** 아이콘을 클릭합니다.
+그럼 이걸 보셔야죠 그런 다음 **Adobe Firefly** 모듈 위로 마우스를 가져간 후 **+** 아이콘을 클릭합니다.
 
 ![WF Fusion](./images/wffc15.png)
 
-검색 메뉴에서 `Photoshop`을(를) 입력한 다음 **Adobe Photoshop** 동작을 클릭합니다.
+검색 메뉴에서 `Photoshop`을(를) 입력한 다음 **Adobe Photoshop** 작업을 클릭합니다.
 
 ![WF Fusion](./images/wffc16.png)
 
@@ -164,9 +212,9 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 ![WF Fusion](./images/wffc27.png)
 
-**입력**&#x200B;이 표시될 때까지 아래로 스크롤합니다. 이제 배경 레이어에 삽입해야 할 항목을 정의해야 합니다. 이 경우 동적으로 생성된 이미지가 포함된 Firefly T2I 개체의 출력을 선택해야 합니다.
+**입력**&#x200B;이 표시될 때까지 아래로 스크롤합니다. 이제 배경 레이어에 삽입해야 할 항목을 정의해야 합니다. 이 경우 동적으로 생성된 이미지가 포함된 **Adobe Firefly** 모듈의 출력을 선택해야 합니다.
 
-**저장소**&#x200B;에 대해 **외부**&#x200B;을(를) 선택하십시오. **파일 위치**&#x200B;의 경우 **Firefly T2I** 요청의 출력에서 변수 `data.outputs[].image.url`을(를) 검색하여 찾으십시오.
+**저장소**&#x200B;에 대해 **외부**&#x200B;을(를) 선택하십시오. **파일 위치**&#x200B;의 경우 **Adobe Firefly** 모듈의 출력에서 `{{XX.details[].url}}` 변수를 복사하여 붙여 넣으십시오. 변수의 **XX**&#x200B;을(를) **Adobe Firefly** 모듈의 시퀀스 번호로 바꿉니다(이 예에서는 **22**).
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -191,11 +239,27 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 ![WF Fusion](./images/wffc33.png)
 
+변경 내용을 저장하려면 **저장**&#x200B;을 클릭하고 구성을 테스트하려면 **한 번 실행**&#x200B;을 클릭하십시오.
+
+![WF Fusion](./images/wffc33a.png)
+
+Postman으로 이동하여 요청에서 메시지를 확인한 다음 **보내기**&#x200B;를 클릭합니다.
+
+![WF Fusion](./images/wffcff8a.png)
+
+그럼 이걸 보셔야죠 **Adobe Photoshop - PSD 편집 적용** 모듈에서 버블을 클릭합니다.
+
+![WF Fusion](./images/wffc33b.png)
+
+이제 새 PSD 파일이 성공적으로 생성되어 Microsoft Azure 스토리지 계정에 저장되었음을 확인할 수 있습니다.
+
+![WF Fusion](./images/wffc33c.png)
+
 ## 1.2.4.3 PSD 파일의 텍스트 레이어 변경
 
 ### 클릭 유도 문안 텍스트
 
-그런 다음 **Adobe Photoshop - PSD 편집 적용** 노드를 마우스로 가리키고 **+** 아이콘을 클릭합니다.
+그런 다음 **Adobe Photoshop - PSD 편집 적용** 모듈을 마우스로 가리킨 다음 **+** 아이콘을 클릭합니다.
 
 ![WF Fusion](./images/wffc34.png)
 
@@ -237,9 +301,13 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 ### 단추 텍스트
 
-방금 만든 노드를 마우스 오른쪽 단추로 클릭하고 **복제**&#x200B;를 선택합니다. 이렇게 하면 두 번째 유사한 개체가 생성됩니다.
+방금 만든 모듈을 마우스 오른쪽 단추로 클릭하고 **복제**&#x200B;를 선택합니다. 이렇게 하면 두 번째 유사한 모듈이 생성됩니다.
 
 ![WF Fusion](./images/wffc42.png)
+
+복제된 모듈을 이전 **Adobe Photoshop - 텍스트 레이어 편집** 모듈에 연결합니다.
+
+![WF Fusion](./images/wffc42a.png)
 
 그럼 이걸 보셔야죠 먼저 이전에 구성한 Adobe Photoshop 연결을 선택합니다. 이 연결을 `--aepUserLdap-- Adobe IO`(으)로 지정해야 합니다.
 
@@ -253,11 +321,11 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 ![WF Fusion](./images/wffc44.png)
 
-대화 상자의 **이름** 아래에 이름 **2048x2048-cta**&#x200B;을(를) 입력하십시오.
+대화 상자의 **이름** 아래에 이름 **2048x2048-button-text**&#x200B;을(를) 입력하십시오.
 
 ![WF Fusion](./images/wffc43.png)
 
-**텍스트** > **컨텐츠**&#x200B;가 표시될 때까지 아래로 스크롤합니다. Webhook 페이로드에서 변수 **cta**&#x200B;을(를) 선택하십시오.
+**텍스트** > **컨텐츠**&#x200B;가 표시될 때까지 아래로 스크롤합니다. Webhook 페이로드에서 변수 **button**&#x200B;을 선택합니다.
 
 ![WF Fusion](./images/wffc45.png)
 
@@ -275,11 +343,11 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 Photoshop 파일에 이러한 변경 사항을 적용한 후 이 시나리오를 활성화한 응용 프로그램으로 다시 전송되는 **Webhook 응답**&#x200B;을 구성해야 합니다.
 
-**Adobe Photoshop - 텍스트 레이어 편집** 노드 위로 마우스를 가져간 후 **+** 아이콘을 클릭합니다.
+**Adobe Photoshop - 텍스트 레이어 편집** 모듈 위로 마우스를 가져간 후 **+** 아이콘을 클릭합니다.
 
 ![WF Fusion](./images/wffc48.png)
 
-**Webhook**&#x200B;을(를) 검색하고 **Webhook**&#x200B;을(를) 선택하십시오.
+`webhooks`을(를) 검색하고 **Webhook**&#x200B;을(를) 선택하십시오.
 
 ![WF Fusion](./images/wffc49.png)
 
@@ -297,11 +365,11 @@ Photoshop 파일에 이러한 변경 사항을 적용한 후 이 시나리오를
 
 ![WF Fusion](./images/wffc51.png)
 
-이전 요청의 출력에서 `data[]._links.renditions[].href` 경로를 선택하십시오. **고급 설정 표시**&#x200B;에 대한 확인란을 활성화한 다음 **항목 추가**&#x200B;를 클릭합니다.
+`{{XX.data[]._links.renditions[].href}}` 변수를 복사하여 붙여 넣고 **XX**&#x200B;을(를) 마지막 **Adobe Photoshop - 텍스트 레이어 편집** 모듈의 시퀀스 번호로 바꿉니다(이 경우 **25**). **고급 설정 표시**&#x200B;에 대한 확인란을 활성화한 다음 **항목 추가**&#x200B;를 클릭합니다.
 
 ![WF Fusion](./images/wffc52.png)
 
-**Key** 필드에 `Content-Type`을(를) 입력합니다. **값** 필드에 `application/json`을(를) 입력하십시오. **저장**&#x200B;을 클릭합니다.
+**Key** 필드에 `Content-Type`을(를) 입력합니다. **값** 필드에 `application/json`을(를) 입력하십시오. **추가를 클릭합니다**.
 
 ![WF Fusion](./images/wffc52a.png)
 
@@ -313,7 +381,7 @@ Photoshop 파일에 이러한 변경 사항을 적용한 후 이 시나리오를
 
 ![WF Fusion](./images/wffc54.png)
 
-그럼 이걸 보셔야죠 **한 번 실행**&#x200B;을 클릭합니다.
+그럼 이걸 보셔야죠 변경 내용을 저장하려면 **저장**&#x200B;을 클릭한 다음 시나리오를 테스트하려면 **한 번 실행**&#x200B;을 클릭하십시오.
 
 ![WF Fusion](./images/wffc55.png)
 
@@ -325,7 +393,7 @@ Postman으로 돌아가서 **보내기**&#x200B;를 클릭합니다. 여기에 �
 
 ![WF Fusion](./images/wffc58.png)
 
-미리 알림: Workfront Fusion에서 시나리오가 실행되면 각 노드 위의 버블을 클릭하여 각 노드에 대한 정보를 볼 수 있습니다.
+미리 알림: Workfront Fusion에서 시나리오가 실행되면 각 모듈 위의 버블을 클릭하여 각 모듈에 대한 정보를 볼 수 있습니다.
 
 ![WF Fusion](./images/wffc59.png)
 

@@ -4,7 +4,7 @@ description: 시작하기 - 웹 사이트 사용
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![DSN](./images/web2.png)
 
-이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`)에서 **선택**&#x200B;을 클릭합니다. **저장**&#x200B;을 클릭합니다.
+이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap-- - One Adobe (DD/MM/YYYY) (web)`)에서 **선택**&#x200B;을 클릭합니다. **저장**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web2a.png)
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 옵션 2: 새로운 시크릿 브라우저 창으로 시작
 
-실수로 브라우저 창을 닫았거나 나중에 세션을 위해 [https://dsn.adobe.com/](https://dsn.adobe.com/)(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을(를) 클릭합니다.
+실수로 브라우저 창을 닫았거나 나중에 세션을 위해 [https://dsn.adobe.com/](https://dsn.adobe.com/)&#x200B;(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을(를) 클릭합니다.
 
 ![DSN](./images/web8.png)
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ![DSN](./images/web2.png)
 
-이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap - Demo System (DD/MM/YYYY) (web)`)에서 **선택**&#x200B;을 클릭합니다.
+이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap - One Adobe (DD/MM/YYYY) (web)`)에서 **선택**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web2a.png)
 

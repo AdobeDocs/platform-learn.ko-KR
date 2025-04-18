@@ -4,7 +4,7 @@ description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 데이터 스트림 만들기
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다.
 
 ![DSN](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ## 모바일용 데이터스트림 만들기
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다.
 
 **[!UICONTROL 데이터스트림]**&#x200B;을 클릭합니다.
 
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig12m.png)
 
-그러면 이걸 보게 될 거야. 이제 방금 구성한 올바른 샌드박스 및 데이터 스트림을 선택해야 합니다. 사용할 샌드박스는 `--aepSandboxName--`이고 데이터 스트림은 `--aepUserLdap-- - Demo System Datastream (Mobile)`입니다.
+그러면 이걸 보게 될 거야. 이제 방금 구성한 올바른 샌드박스 및 데이터 스트림을 선택해야 합니다. 사용할 샌드박스는 `--aepSandboxName--`이고 데이터 스트림은 `--aepUserLdap-- - One Adobe Datastream (Mobile)`입니다.
 
 **Edge Network 도메인**&#x200B;의 경우 기본 도메인을 사용하십시오.
 
