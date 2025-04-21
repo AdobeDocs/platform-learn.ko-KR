@@ -2,7 +2,7 @@
 title: 매개 변수 보내기 - 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장 프로그램으로 마이그레이션합니다.
 description: Experience Platform Web SDK을 사용하여 mbox, 프로필 및 엔티티 매개 변수를 Adobe Target에 보내는 방법을 알아봅니다.
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Target을 사용하면 단일 고객 ID를 사용하여 장치 및 시스템 간
 
 | at.js 매개 변수 예 | Platform Web SDK 옵션 | 참고 |
 | --- | --- | --- |
-| `at_property` | N/A | 속성 토큰이 [데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target)에 구성되어 `sendEvent` 호출에서 설정할 수 없습니다. |
+| `at_property` | N/A | 속성 토큰이 [데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target)에 구성되어 `sendEvent` 호출에서 설정할 수 없습니다. |
 | `pageName` | `xdm.web.webPageDetails.name` 또는 <br> `data.__adobe.target.pageName` | Target mbox 매개 변수는 `xdm` 개체의 일부 또는 `data.__adobe.target` 개체의 일부로 전달할 수 있습니다. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 모든 Target 프로필 매개 변수를 `data` 개체의 일부로 전달하고 `profile.` 접두사가 추가되어 적절하게 매핑해야 합니다. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | `data` 개체의 일부로 전달해야 하는 Target의 카테고리 선호도 기능에 사용되는 예약된 매개 변수입니다. |

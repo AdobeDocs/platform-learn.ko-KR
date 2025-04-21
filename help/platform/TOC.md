@@ -5,10 +5,10 @@ user-guide-description: Experience Platform의 다양한 구성 요소에 대해
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -58,7 +58,7 @@ Campaigns
 
 
 + [Platform 튜토리얼](/help/platform/overview.md)
-+ {#intro-to-platform} 플랫폼 소개
++ 플랫폼 소개 {#intro-to-platform}
    + [Experience Platform에서 제공하는 고객 경험](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [배경: Experience Platform 기반의 고객 경험](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform 개요](/help/platform/intro-to-platform/overview.md)
@@ -69,7 +69,7 @@ Campaigns
    + [기본 아키텍처](/help/platform/intro-to-platform/basic-architecture.md)
    + [사용자 인터페이스](/help/platform/intro-to-platform/interface-tour.md)
    + [역할 및 프로젝트 단계](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ Real-Time CDP {#rtcdp} 소개
++ Real-Time CDP 소개 {#rtcdp}
    + [개요](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [엔드 투 엔드 데모](/help/platform/rtcdp/demo.md)
    + [워크플로](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
@@ -127,7 +127,7 @@ Campaigns
    + [세그먼트 일치 수신 데이터](/help/platform/segments/segment-match-receiving-data.md)
 + [감사 로그](/help/platform/governance/audit-logs.md)
 + [데이터 수집](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Collaboration {#collaboration}
++ 공동 작업 {#collaboration}
    + [Real-Time CDP Collaboration 개요](collaboration/real-time-cdp-collaboration-overview.md)
    + [권한 설정](collaboration/set-permissions-for-collaboration.md)
    + [광고주 계정 설정](collaboration/set-up-an-advertiser-account.md)
@@ -168,7 +168,7 @@ Campaigns
    + [소스 커넥터를 사용하여 데이터 스트리밍](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=ko-KR)
    + [웹 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [모바일 SDK 자습서](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
-+ 데이터 수명 주기 {#data-lifecycle}
++ 데이터 라이프사이클 {#data-lifecycle}
    + [데이터 세트 만료](/help/platform/data-lifecycle/expire-datasets.md)
 + 대상 {#destinations}
    + [대상 개요](/help/platform/destinations/understanding-destinations.md)
@@ -193,10 +193,10 @@ Campaigns
    + [ID 및 ID 그래프 개요](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [ID 데이터 레이블 지정, 처리 및 확인](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [ID 그래프 보기](/help/platform/identities/view-identity-graphs.md)
-   + ID 그래프 연결 규칙 {#graph-linking-rules}
+   + 아이덴티티 그래프 연결 규칙 {#graph-linking-rules}
       + [개요](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [그래프 시뮬레이션](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
-+ Intelligent Services {#intelligent-services}
++ 인텔리전트 서비스 {#intelligent-services}
    + [개요](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Attribution AI 개요](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
    + [Attribution AI 값](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
@@ -227,7 +227,7 @@ Campaigns
    + [익명 프로필 만료(TTL)](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [프로필 삭제](/help/platform/profiles/delete-profiles.md)
    + [업데이트를 사용하여 특정 속성 업데이트](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
-+ 개인 정보 및 보안 {#privacy}
++ 개인 정보 보호 및 보안 {#privacy}
    + [Privacy Service 소개](/help/platform/privacy/introduction-to-privacy-services.md)
    + [개인 정보 보호 요청의 ID 데이터](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [개인 정보 JavaScript 라이브러리](/help/platform/privacy/using-privacy-javascript-library.md)
@@ -290,8 +290,8 @@ Campaigns
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
-+ 업계 트렌드 {#industry}
+   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
++ 업계 동향 {#industry}
    + [데이터 관리의 미래와 변화하는 환경](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [두 가지 인식에 대한 이야기 - 브랜드 대 소비자](/help/platform/industry/brands-vs-consumers.md)
    + [Audience Center of Excellence 진화](/help/platform/industry/evolving-your-audience-center-of-excellence.md)

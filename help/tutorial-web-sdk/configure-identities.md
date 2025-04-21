@@ -4,7 +4,7 @@ description: Adobe Experience Platform Web SDK에서 사용할 ID 네임스페�
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -17,7 +17,7 @@ Adobe Experience Platform Web SDK와 함께 사용할 ID 네임스페이스를 �
 
 [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home)은(는) SDK 기반 Adobe 응용 프로그램에서 공통 방문자 ID(ECID)를 설정하여 응용 프로그램 간 대상 공유와 같은 Experience Cloud 기능을 지원합니다. 또한 고유한 고객 ID를 서비스로 보내어 장치 간 타깃팅 및 CRM(고객 관계 관리) 시스템과 같은 다른 시스템과의 통합을 가능하게 할 수 있습니다.
 
-[Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)(예, 두 개 있음)에서는 ECID와 고객 ID를 사용하여 ID 그래프를 생성하므로 속성과 동작을 실시간 고객 프로필에 병합할 수 있습니다.
+[Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)&#x200B;(예, 두 개 있음)에서는 ECID와 고객 ID를 사용하여 ID 그래프를 생성하므로 속성과 동작을 실시간 고객 프로필에 병합할 수 있습니다.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Adobe Experience Platform Web SDK와 함께 사용할 ID 네임스페이스를 �
 
 이제 Luma CRM ID에 대한 네임스페이스를 만듭니다.
 
-1. [데이터 수집 인터페이스](https://launch.adobe.com/){target="_blank"} 열기
+1. [데이터 수집 인터페이스](https://experience.adobe.com/data-collection/){target="_blank"} 열기
 1. 자습서에 사용할 샌드박스를 선택합니다
 
    >[!NOTE]

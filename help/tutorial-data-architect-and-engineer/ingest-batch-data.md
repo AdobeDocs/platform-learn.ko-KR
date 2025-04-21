@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2446'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ ht-degree: 0%
 이제 데이터 세트에 일괄 처리를 만들 수 있습니다.
 
 1. `Luma Tutorial Assets` 폴더에 [데이터 수집 API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json) 다운로드
-1. 컬렉션을 [!DNL Postman](으)로 가져오기
+1. 컬렉션을 [!DNL Postman]&#x200B;(으)로 가져오기
 1. **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]** 요청 선택
 1. 다음을 요청의 **본문**(으)로 붙여 넣습니다. ***datasetId 값을 자신의 값으로 바꾸기***:
 
@@ -282,7 +282,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 연습에서 사용할 오프라인 구매 데이터에는 날짜/시간 데이터가 포함되어 있습니다. 날짜/시간 데이터는 [ISO 8061 형식의 문자열](https://www.iso.org/iso-8601-date-and-time-format.html)(&quot;2018-07-10T15:05:59.000-08:00&quot;) 또는 밀리초 형식의 Unix 시간(1531263959000)이어야 하며 수집 시간에 대상 XDM 유형으로 변환됩니다. 데이터 변환 및 기타 제약 조건에 대한 자세한 내용은 [일괄 처리 수집 API 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)를 참조하십시오.
+>이 연습에서 사용할 오프라인 구매 데이터에는 날짜/시간 데이터가 포함되어 있습니다. 날짜/시간 데이터는 [ISO 8061 형식의 문자열](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;) 또는 밀리초 형식의 Unix 시간(1531263959000)이어야 하며 수집 시간에 대상 XDM 유형으로 변환됩니다. 데이터 변환 및 기타 제약 조건에 대한 자세한 내용은 [일괄 처리 수집 API 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)를 참조하십시오.
 
 ### 원하는 클라우드 스토리지 공급업체에 데이터 다운로드, 준비 및 업로드
 
@@ -335,8 +335,6 @@ ht-degree: 0%
 Adobe은 여러 ETL 공급업체와 협력하여 Experience Platform으로의 데이터 수집을 지원합니다. 다양한 서드파티 공급업체로 인해 ETL은 이 자습서에서 다루지 않지만, 다음 리소스 중 일부를 검토할 수 있습니다.
 
 * [Adobe Experience Platform을 위한 ETL 통합 개발](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Adobe Exchange의 Informatica Adobe Experience Platform 커넥터 페이지](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Adobe Experience Platform 커넥터의 Informatica 설명서](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform 스냅 팩](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 추가 리소스

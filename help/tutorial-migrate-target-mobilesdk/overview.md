@@ -3,7 +3,7 @@ title: 모바일 앱을 Adobe Target에서 Adobe Journey Optimizer - Decisioning
 description: 모바일 앱 구현을 Adobe Target에서 Adobe Journey Optimizer - Decisioning 확장으로 마이그레이션하는 방법을 알아봅니다
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 1%
@@ -22,7 +22,7 @@ Adobe Experience Platform Mobile SDK은 모바일 애플리케이션에서 전�
 
 Target 확장과 비교하여 Adobe Journey Optimizer Decisioning 확장의 이점 중 일부는 다음과 같습니다.
 
-* [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization)에서 더 빠른 대상자 공유
+* [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)에서 더 빠른 대상자 공유
 * Target과 Journey Optimizer을 통합하여 [Offer Decisioning 게재](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision) 지원
 * 별도의 네트워크 호출의 정보 결합에 의존하지 않는 Adobe Analytics과의 긴밀한 통합
 * 개발자를 위한 추가적인 구현 유연성

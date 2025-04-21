@@ -1,12 +1,12 @@
 ---
-title: Platform Web SDK를 사용하여 Journey Optimizer 웹 채널 설정
-description: Platform Web SDK를 사용하여 Journey Optimizer 웹 채널을 구현하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
+title: Platform Web SDK으로 Journey Optimizer 웹 채널 설정
+description: Platform Web SDK을 사용하여 Journey Optimizer 웹 채널을 구현하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 0%
@@ -14,9 +14,9 @@ ht-degree: 0%
 ---
 
 
-# Web SDK를 사용하여 Journey Optimizer 웹 채널 설정
+# Web SDK으로 Journey Optimizer 웹 채널 설정
 
-Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 채널](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web)을 구현하는 방법에 대해 알아봅니다. 이 단원에서는 기본 웹 채널 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 설명합니다.
+Adobe Experience Platform Web SDK을 사용하여 Adobe Journey Optimizer [웹 채널](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web)을 구현하는 방법에 대해 알아봅니다. 이 단원에서는 기본 웹 채널 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 설명합니다.
 
 이 단원을 따르면 Journey Optimizer 사용자는 Journey Optimizer 웹 디자이너를 사용하여 고급 온라인 개인화에 웹 채널을 사용할 수 있습니다.
 
@@ -26,7 +26,7 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
 
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
-* 웹 채널 경험을 게재할 때 웹 SDK의 기능과 중요성을 이해합니다.
+* 웹 채널 경험을 게재하는 데 있어 웹 SDK의 기능과 중요성을 이해합니다.
 * 샘플 Luma 충성도 보상 사용 사례를 활용하여 처음부터 끝까지 웹 채널 캠페인을 만드는 프로세스를 이해합니다.
 * 인터페이스 내에서 캠페인 속성, 작업 및 일정을 구성합니다.
 * Adobe Experience Cloud Visual Editing Helper 확장 기능의 기능과 이점을 이해합니다.
@@ -39,7 +39,7 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
 이 섹션의 학습 내용을 완료하려면 먼저 다음을 수행해야 합니다.
 
 * 데이터 요소 및 규칙 설정을 포함하여 Platform Web SDK의 초기 구성에 대한 모든 단원을 완료합니다.
-* Adobe Experience Platform Web SDK 태그 확장 버전이 2.16 이상인지 확인하십시오.
+* Adobe Experience Platform Web SDK 태그 확장 버전이 2.16 이상인지 확인합니다.
 * Journey Optimizer 웹 디자이너를 사용하여 웹 채널 경험을 작성하는 경우 Google Chrome 또는 Microsoft® Edge 브라우저를 사용하고 있는지 확인하십시오.
 * 또한 [Adobe Experience Cloud Visual Editing Helper 브라우저 확장 기능](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)을 다운로드하여 활성화했는지 확인하십시오.
 * 브라우저에서 서드파티 쿠키가 허용되는지 확인하십시오. 브라우저에서 광고 차단기를 비활성화해야 할 수도 있습니다.
@@ -52,11 +52,11 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
   > 1. 웹 사이트는 iframe 내에 포함됩니다.
   > 1. 고객의 QA 또는 스테이지 사이트는 외부에서 액세스할 수 없습니다(내부 사이트임).
 
-* 웹 경험을 만들고 Adobe Experience Manager Assets Essentials 라이브러리의 콘텐츠를 포함할 때 [이 콘텐츠를 게시하기 위해 하위 도메인을 구성](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)해야 합니다.
+* 웹 경험을 만들고 Adobe Experience Manager Assets Essentials 라이브러리의 콘텐츠를 포함할 때 이 콘텐츠를 게시하기 위해 [하위 도메인을 구성](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)해야 합니다.
 * 콘텐츠 실험 기능을 사용하는 경우 웹 데이터 세트도 보고 구성에 포함되어야 합니다.
 * 현재, 웹 속성에서 웹 채널 캠페인을 작성하고 게재하기 위해 두 가지 유형의 구현이 지원됩니다.
-   * 클라이언트측 전용: 웹 사이트를 수정하려면 Adobe Experience Platform Web SDK를 구현해야 합니다.
-   * 하이브리드 모드: Platform Personalization Server API를 활용하여 Edge Network 서버측을 요청할 수 있습니다. 그런 다음 API의 응답이 클라이언트측에서 수정 사항을 렌더링하기 위해 Adobe Experience Platform Web SDK에 제공됩니다. 자세한 내용은 Adobe Experience Platform Edge Network 서버 API 설명서를 참조하십시오. 하이브리드 모드에 대한 추가 세부 정보 및 구현 샘플은 이 블로그 게시물에서 찾을 수 있습니다.
+   * 클라이언트측 전용: 웹 사이트를 수정하려면 Adobe Experience Platform Web SDK을 구현해야 합니다.
+   * 하이브리드 모드: Platform Edge Network Server API를 활용하여 서버측에 개인화 요청을 할 수 있습니다. 그런 다음 API의 응답이 클라이언트측에서 수정 사항을 렌더링하기 위해 Adobe Experience Platform Web SDK에 제공됩니다. 자세한 내용은 Adobe Experience Platform Edge Network 서버 API 설명서를 참조하십시오. 하이브리드 모드에 대한 추가 세부 정보 및 구현 샘플은 이 블로그 게시물에서 찾을 수 있습니다.
 
   >[!NOTE]
   >
@@ -69,7 +69,7 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
 
 먼저 웹 채널 캠페인 내에서 사용되는 용어를 이해해야 합니다.
 
-* **웹 채널**: 웹을 통해 콘텐츠를 전달하거나 통신하는 매체입니다. 이 안내서의 컨텍스트에서 개인화된 콘텐츠가 Adobe Journey Optimizer 내에서 Platform Web SDK를 사용하여 웹 사이트 방문자에게 전달되는 메커니즘을 나타냅니다.
+* **웹 채널**: 웹을 통해 콘텐츠를 전달하거나 통신하는 매체입니다. 이 안내서의 맥락에서 볼 때, 개인화된 콘텐츠가 Adobe Journey Optimizer 내에서 Platform Web SDK을 사용하여 웹 사이트 방문자에게 전달되는 메커니즘을 나타냅니다.
 * **웹 표면**: 콘텐츠가 전달되는 URL로 식별되는 웹 속성을 나타냅니다. 단일 또는 여러 웹 페이지를 포함할 수 있습니다.
 * **Journey Optimizer 웹 디자이너**: 사용자가 웹 채널 경험을 디자인할 수 있는 Journey Optimizer 내의 특정 도구 또는 인터페이스입니다.
 * **Adobe Experience Cloud Visual Editing Helper**: 웹 채널 환경을 시각적으로 편집하고 디자인하는 데 도움이 되는 브라우저 확장 기능입니다.
@@ -123,15 +123,15 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
 
 웹 채널 캠페인 내에서 콘텐츠 실험을 사용하려면 사용된 웹 데이터 세트도 보고 구성에 포함되어야 합니다. Journey Optimizer 보고 시스템은 읽기 전용 방식으로 데이터 세트를 사용하여 기본 제공 콘텐츠 실험 보고서를 채웁니다.
 
-[콘텐츠 실험 보고를 위한 데이터 세트 추가는 이 섹션에 자세히 설명되어 있습니다](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets).
+[콘텐츠 실험 보고를 위한 데이터 세트 추가는 이 섹션에 자세히 설명되어 있습니다](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## 사용 사례 개요 - 충성도 보상
 
-이 단원에서는 샘플 충성도 보상 사용 사례를 사용하여 Web SDK를 사용한 웹 채널 경험의 구현을 자세히 설명합니다.
+이 단원에서는 샘플 충성도 보상 사용 사례를 사용하여 웹 SDK을 사용하는 웹 채널 경험의 구현을 자세히 설명합니다.
 
 이 사용 사례를 통해 Journey Optimizer 캠페인 및 웹 디자이너를 활용하여 Journey Optimizer이 고객에게 최상의 인바운드 경험을 제공하는 데 어떻게 도움이 되는지 더 잘 이해할 수 있습니다.
 
-이 자습서는 구현자를 대상으로 하므로 이 단원에는 Journey Optimizer의 실질적인 인터페이스 작업이 포함되어 있습니다. 이러한 인터페이스 작업은 일반적으로 마케터가 처리하지만, 구현자가 일반적으로 웹 채널 캠페인 생성을 담당하지 않더라도 프로세스에 대한 통찰력을 얻는 것이 유용할 수 있습니다.
+이 자습서는 구현자를 대상으로 하므로 이 단원에는 Journey Optimizer의 실질적인 인터페이스 작업이 포함되어 있습니다. 이러한 인터페이스 작업은 일반적으로 마케터가 처리하지만, 일반적으로 웹 채널 캠페인 생성을 담당하지 않더라도 구현자가 insight을 프로세스에 참여시키는 것이 유용할 수 있습니다.
 
 ### 충성도 보상 캠페인 만들기
 
@@ -201,11 +201,11 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
 
 1. 또한 선택적으로 **[!UICONTROL 균등하게 분배]**&#x200B;하도록 선택하십시오. 처리 분할이 항상 균일하게 분할되도록 하려면 이 옵션을 선택합니다.
 
-[Adobe Journey Optimizer 웹 채널의 콘텐츠 실험에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
+[Adobe Journey Optimizer 웹 채널의 콘텐츠 실험에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
 
 ### Visual Helper를 사용하여 콘텐츠 편집
 
-이제 웹 채널 경험을 작성해 보겠습니다. 이렇게 하려면 Adobe Experience Cloud **[!UICONTROL Visual Helper]**&#x200B;를 사용하십시오. 이 도구는 Google Chrome 및 Microsoft® Edge과 호환되는 브라우저 확장 기능입니다. 경험을 빌드하기 전에 확장을 다운로드했는지 확인하십시오. 또한 웹 페이지에 웹 SDK가 포함되어 있는지 확인합니다.
+이제 웹 채널 경험을 작성해 보겠습니다. 이렇게 하려면 Adobe Experience Cloud **[!UICONTROL Visual Helper]**&#x200B;를 사용하십시오. 이 도구는 Google Chrome 및 Microsoft® Edge과 호환되는 브라우저 확장 기능입니다. 경험을 빌드하기 전에 확장을 다운로드했는지 확인하십시오. 또한 웹 페이지에 웹 SDK이 포함되어 있는지 확인합니다.
 
 1. 캠페인의 **[!UICONTROL 작업]** 탭에서 **[!UICONTROL 콘텐츠 편집]**&#x200B;을 클릭합니다. 단일 페이지 URL을 표면으로 입력했으므로 작성기에서 작업을 시작할 준비가 되어 있어야 합니다.
 
@@ -234,7 +234,7 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
 
 충성도 보상 캠페인의 구성 요소로서 사이트를 보다 발전시키거나 사용자 지정 변경하려는 경우 사용할 수 있는 몇 가지 방법이 있습니다.
 
-**[!UICONTROL 구성 요소]** 창을 사용하여 HTML 또는 다른 콘텐츠를 Luma 사이트에 직접 추가하십시오.
+**[!UICONTROL 구성 요소]** 창을 사용하여 HTML 또는 다른 콘텐츠를 Luma 사이트에 직접 추가합니다.
 
 ![구성 요소 창 탐색](assets/web-channel-components-pane.png)
 
@@ -242,13 +242,13 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Journey Optimizer [웹 �
 
 ![사용자 지정 HTML 추가](assets/web-channel-add-html-component.png)
 
-또는 **[!UICONTROL 수정 사항]** 창에서 HTML 편집 내용을 추가하십시오. 이 창에서는 페이지에서 구성 요소를 선택하고 디자이너 인터페이스에서 편집할 수 있습니다.
+또는 **[!UICONTROL 수정 사항]** 창에서 HTML 편집 내용을 추가합니다. 이 창에서는 페이지에서 구성 요소를 선택하고 디자이너 인터페이스에서 편집할 수 있습니다.
 
 편집기 내에서 `Luma Loyalty Rewards – Gold Status` 대상에 대한 HTML을 추가합니다. **[!UICONTROL 유효성 검사]**&#x200B;를 선택합니다.
 
 ![HTML 유효성 검사](assets/web-channel-add-custom-html-validate.png)
 
-이제 새로운 맞춤형 HTML 구성 요소를 검토하여 맞춤화 및 촉감을 확인하십시오.
+이제 새로운 맞춤형 HTML 구성 요소를 검토해 보십시오.
 
 ![사용자 지정 HTML 검토](assets/web-channel-review-custom-html.png)
 
@@ -330,7 +330,7 @@ Luma 사이트에서 디버거를 사용하여 프로덕션의 웹 채널 경험
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 **[!UICONTROL Adobe Experience Platform Edge 네트워크]**&#x200B;에 전송된 요청의 유효성을 검사합니다. 이러한 모든 요청은 로그 추적을 위해 **[!UICONTROL Assurance]**&#x200B;에 캡처해야 합니다.
+1. 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 **[!UICONTROL Adobe Experience Platform Edge 네트워크]**&#x200B;에 전송된 요청의 유효성을 검사합니다. 이러한 모든 요청은 로그 추적을 위해 **[!UICONTROL Assurance]**&#x200B;에서 캡처해야 합니다.
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -339,4 +339,4 @@ Luma 사이트에서 디버거를 사용하여 프로덕션의 웹 채널 경험
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
