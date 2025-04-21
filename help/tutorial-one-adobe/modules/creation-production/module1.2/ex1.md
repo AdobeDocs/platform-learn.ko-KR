@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -19,7 +19,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ## 1.2.1.1 새 시나리오 만들기
 
-[https://experience.adobe.com/](https://experience.adobe.com/)&#x200B;(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -71,7 +71,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 | `CONST_client_secret` | Adobe I/O 프로젝트 클라이언트 암호 |
 | `CONST_scope` | Adobe I/O 프로젝트 범위 |
 
-[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)&#x200B;(으)로 이동하여 이름이 `--aepUserLdap-- One Adobe tutorial`인 Adobe I/O 프로젝트를 열어 이러한 변수를 찾습니다.
+[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects){target="_blank"}(으)로 이동하여 이름이 `--aepUserLdap-- One Adobe tutorial`인 Adobe I/O 프로젝트를 열어 이러한 변수를 찾습니다.
 
 ![WF Fusion](./images/wffusion9.png)
 

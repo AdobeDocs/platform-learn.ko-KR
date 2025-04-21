@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1154'
 ht-degree: 3%
 
 ---
@@ -55,6 +55,7 @@ ht-degree: 3%
       + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
       + [1.3.1 Adobe Express 시작하기](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Adobe Express의 애니메이션 및 비디오](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [1.3.3 Adobe Express에서 Assets 벌크 만들기](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
 + 자산 관리 {#assetmgmt}

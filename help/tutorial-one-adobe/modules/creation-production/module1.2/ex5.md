@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 1.2.5.1 Frame.io 액세스
 
-[https://app.frame.io/projects](https://app.frame.io/projects)&#x200B;(으)로 이동합니다.
+[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}(으)로 이동합니다.
 
 **+ 아이콘**&#x200B;을 클릭하여 Frame.io에서 나만의 프로젝트를 만듭니다.
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 이전 연습에서는 사용자 지정 Webhook으로 시작하여 Webhook 응답으로 끝나는 시나리오 `--aepUserLdap-- - Firefly + Photoshop`을(를) 만들었습니다. 그런 다음 Postman을 사용하여 웹후크의 사용을 테스트했지만, 이러한 시나리오의 핵심은 외부 애플리케이션에 의해 호출되는 것입니다. 앞에서 설명한 대로 Frame.io는 이러한 연습이 되지만 Frame.io와 `--aepUserLdap-- - Firefly + Photoshop` 사이에는 다른 Workfront Fusion 시나리오가 필요합니다. 이제 해당 시나리오를 구성합니다.
 
-[https://experience.adobe.com/](https://experience.adobe.com/)&#x200B;(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ![프레임 IO](./images/frame10.png)
 
-[https://developer.frame.io/](https://developer.frame.io/)&#x200B;(으)로 이동합니다. **개발자 도구**&#x200B;를 클릭한 다음 **사용자 지정 작업**&#x200B;을 선택합니다.
+[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}(으)로 이동합니다. **개발자 도구**&#x200B;를 클릭한 다음 **사용자 지정 작업**&#x200B;을 선택합니다.
 
 ![프레임 IO](./images/frame11.png)
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ![프레임 IO](./images/frame14.png)
 
-[https://app.frame.io/projects](https://app.frame.io/projects)&#x200B;(으)로 돌아갑니다. 페이지를 새로 고칩니다.
+[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}(으)로 돌아갑니다. 페이지를 새로 고칩니다.
 
 ![프레임 IO](./images/frame16.png)
 
@@ -298,7 +298,7 @@ Frame.io 연결을 사용하려면 먼저 구성해야 합니다. **추가**&#x2
 
 ![프레임 IO](./images/frame49.png)
 
-API 토큰을 가져오려면 [https://developer.frame.io/](https://developer.frame.io/)&#x200B;(으)로 이동하십시오. **개발자 도구**&#x200B;를 클릭한 다음 **토큰**&#x200B;을 선택합니다.
+API 토큰을 가져오려면 [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}(으)로 이동하십시오. **개발자 도구**&#x200B;를 클릭한 다음 **토큰**&#x200B;을 선택합니다.
 
 ![프레임 IO](./images/frame50.png)
 

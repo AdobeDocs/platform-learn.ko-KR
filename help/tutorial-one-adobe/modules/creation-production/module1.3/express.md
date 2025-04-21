@@ -1,34 +1,43 @@
 ---
-title: Adobe Express and Adobe Experience Cloud
-description: Adobe Express and Adobe Experience Cloud
+title: Adobe Express 및 Adobe Experience Cloud
+description: Adobe Express 및 Adobe Experience Cloud
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
 
-# 1.3 Adobe Express and Adobe Experience Cloud
+# 1.3 Adobe Express 및 Adobe Experience Cloud
 
-Learn how to automatie creative workflows with Workfront Fusion.
+Workfront Fusion을 사용하여 크리에이티브 워크플로를 자동으로 수행하는 방법에 대해 알아봅니다.
 
 ## 전제 조건
 
-- Access to Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}에 액세스
 
 ## 연습
 
-[1.3.1 Getting started with Adobe Express](./ex1.md){target="_blank"}
+[1.3.1 Adobe Express 시작하기](./ex1.md){target="_blank"}
 
-In this exercise, explore Adobe Express in combination with Firefly Services and get an understanding of its capabilities.
+이 연습에서는 Firefly Services과 함께 Adobe Express을 살펴보고 그 기능에 대해 알아봅니다.
 
-[Summary and benefits](./summary.md){target="_blank"}
+Adobe Express의 [1.3.2 애니메이션 및 비디오](./ex2.md){target="_blank"}
 
-Summary of this module and overview of the benefits.
+이 연습에서는 Adobe Express을 사용하여 이미지에 애니메이션을 적용하고 비디오를 만듭니다.
+
+[1.3.3 Adobe Express에서 Assets 대량 만들기](./ex3.md){target="_blank"}
+
+이 연습에서는 Adobe Express을 사용하여 Adobe Express의 기본 자동화 기능을 사용하여 여러 버전의 자산을 만듭니다.
+
+[요약 및 이점](./summary.md){target="_blank"}
+
+이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

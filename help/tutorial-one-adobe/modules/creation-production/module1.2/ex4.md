@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 1.2.4.1 시나리오 복제 및 준비
 
-왼쪽 메뉴에서 **시나리오**(으)로 이동하여 폴더 `--aepUserLdap--`을(를) 선택합니다. 그러면 이전에 만든 `--aepUSerLdap-- - Adobe I/O Authentication` 시나리오가 표시됩니다.
+왼쪽 메뉴에서 **시나리오**(으)로 이동하여 폴더 `--aepUserLdap--`을(를) 선택합니다. 그러면 이전에 만든 `--aepUserLdap-- - Adobe I/O Authentication` 시나리오가 표시됩니다.
 
 ![WF Fusion](./images/wffc1.png)
 
@@ -113,7 +113,7 @@ Workfront Fusion 웹후크가 아직 입력을 기다리고 있습니다.
 - **클라이언트 ID**: 이름이 `--aepUserLdap-- - One Adobe tutorial`인 Adobe I/O 프로젝트에서 **클라이언트 ID**&#x200B;을(를) 복사합니다.
 - **클라이언트 암호**: 이름이 `--aepUserLdap-- - One Adobe tutorial`인 Adobe I/O 프로젝트에서 **클라이언트 암호**&#x200B;을(를) 복사합니다.
 
-Adobe I/O 프로젝트 [여기](https://developer.adobe.com/console/projects.)에서 **클라이언트 ID** 및 **클라이언트 암호**&#x200B;를 찾을 수 있습니다.
+Adobe I/O 프로젝트 [여기](https://developer.adobe.com/console/projects.){target="_blank"}에서 **클라이언트 ID** 및 **클라이언트 암호**&#x200B;를 찾을 수 있습니다.
 
 ![WF Fusion](./images/wffc20.png)
 

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 1.2.6.1 새 시나리오 만들기
 
-[https://experience.adobe.com/](https://experience.adobe.com/)&#x200B;(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.6.2 Frame.io에서 Webhook 구성
 
-[https://developer.frame.io/](https://developer.frame.io/)&#x200B;(으)로 이동합니다. **개발자 도구**&#x200B;를 클릭한 다음 **사용자 지정 작업**&#x200B;을 선택합니다.
+[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}(으)로 이동합니다. **개발자 도구**&#x200B;를 클릭한 다음 **사용자 지정 작업**&#x200B;을 선택합니다.
 
 ![프레임 IO](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ![프레임 IO](./images/aemf11.png)
 
-[https://app.frame.io/projects](https://app.frame.io/projects)&#x200B;(으)로 이동한 다음 이전에 만든 폴더(`--aepUserLdap--`)로 이동합니다. 이전 연습에서 만든 자산을 두 번 클릭하여 엽니다.
+[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}(으)로 이동한 다음 이전에 만든 폴더(`--aepUserLdap--`)로 이동합니다. 이전 연습에서 만든 자산을 두 번 클릭하여 엽니다.
 
 ![프레임 IO](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ Workfront Fusion으로 돌아가서 전체 JSON 페이로드를 JSON 형식의 *
 
 ![프레임 IO](./images/aemf51.png)
 
-새 전용 폴더를 만들려면 [https://experience.adobe.com](https://experience.adobe.com/)&#x200B;(으)로 이동하세요. 올바른 Experience Cloud 인스턴스가 선택되었는지 확인합니다. 이 인스턴스는 `--aepImsOrgName--`이어야 합니다. 그런 다음 **Experience Manager Assets**&#x200B;을(를) 클릭합니다.
+새 전용 폴더를 만들려면 [https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}(으)로 이동하세요. 올바른 Experience Cloud 인스턴스가 선택되었는지 확인합니다. 이 인스턴스는 `--aepImsOrgName--`이어야 합니다. 그런 다음 **Experience Manager Assets**&#x200B;을(를) 클릭합니다.
 
 ![프레임 IO](./images/aemf52.png)
 
