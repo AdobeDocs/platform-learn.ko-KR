@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
+source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -230,7 +230,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ![WF Fusion](./images/wffusion45.png)
 
-그런 다음 시나리오 이름을 `--aepUSerLdap-- - Adobe I/O Authentication`(으)로 변경합니다.
+그런 다음 시나리오 이름을 `--aepUserLdap-- - Adobe I/O Authentication`(으)로 변경합니다.
 
 ![WF Fusion](./images/wffusion46.png)
 
