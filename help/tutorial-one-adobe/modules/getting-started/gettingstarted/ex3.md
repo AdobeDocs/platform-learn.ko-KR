@@ -4,7 +4,7 @@ description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 데이터 스트림 만들기
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}(으)로 이동합니다.
 
 ![DSN](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ## 모바일용 데이터스트림 만들기
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}(으)로 이동합니다.
 
 **[!UICONTROL 데이터스트림]**&#x200B;을 클릭합니다.
 
@@ -175,7 +175,7 @@ ht-degree: 1%
 
 ## 다음 단계
 
-[웹 사이트 사용](./ex4.md)(으)로 이동
+[웹 사이트 사용](./ex4.md){target="_blank"}(으)로 이동
 
 [시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
 

@@ -4,7 +4,7 @@ description: 시작하기 - Launch 속성 설정 옆에 있는 데모 시스템 
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 다음 데모 시스템에 액세스한 후 아래 단계를 진행하십시오.
 
-[https://dsn.adobe.com/](https://dsn.adobe.com/)(으)로 이동하여 **설치**(으)로 이동합니다.
+[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}(으)로 이동하여 **설치**(으)로 이동합니다.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsnh1.png)
 
-그런 다음 사전 설정 **AEP 튜토리얼 사용자**&#x200B;를 선택합니다.
+그런 다음 사전 설정 **AEP 자습서 사용자**&#x200B;를 선택합니다.
 
 ![DSN](./images/dsnhome.png)
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 다음 단계
 
-[데이터 스트림 만들기](./ex3.md)(으)로 이동
+[데이터 스트림 만들기](./ex3.md){target="_blank"}(으)로 이동
 
 [시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
 

@@ -4,7 +4,7 @@ description: 시작하기 - 웹 사이트 사용
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 옵션 2: 새로운 시크릿 브라우저 창으로 시작
 
-실수로 브라우저 창을 닫았거나 나중에 세션을 위해 [https://dsn.adobe.com/](https://dsn.adobe.com/)&#x200B;(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을(를) 클릭합니다.
+실수로 브라우저 창을 닫았거나 나중에 세션을 위해 [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을(를) 클릭합니다.
 
 ![DSN](./images/web8.png)
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 ## 다음 단계
 
-[모바일 앱 사용](./ex5.md)(으)로 이동
+[모바일 앱 사용](./ex5.md){target="_blank"}(으)로 이동
 
 [시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
 

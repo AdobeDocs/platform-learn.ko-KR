@@ -4,7 +4,7 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## Chrome 확장 설치
 
-해당 Chrome 확장을 설치하려면 Chrome 브라우저를 열고 [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi)&#x200B;(으)로 이동합니다. 그러면 이걸 보게 될 거야.
+해당 Chrome 확장을 설치하려면 Chrome 브라우저를 열고 [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}(으)로 이동합니다. 그러면 이걸 보게 될 거야.
 
 **Chrome에 추가**&#x200B;를 클릭합니다.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## Chrome 확장 구성
 
-[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)&#x200B;(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
+[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
 
 ![DSN](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 **AEP IMS 조직 이름**
 
-[https://platform.adobe.com/](https://platform.adobe.com/)에서 Adobe Experience Platform 인스턴스에 로그인하면 화면 오른쪽 상단에 인스턴스 이름이 표시됩니다.
+[https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}에서 Adobe Experience Platform 인스턴스에 로그인하면 화면 오른쪽 상단에 인스턴스 이름이 표시됩니다.
 
 ![DSN](./images/aepname.png)
 
@@ -84,7 +84,7 @@ IMS 조직 ID는 Adobe Experience Cloud 인스턴스의 고유 식별자이며, 
 
 IMS 조직 ID를 찾는 작업은 여러 가지 방법으로 수행할 수 있습니다. 잘 모르겠으면 인스턴스의 시스템 관리자 중 한 명에게 문의하여 ID를 찾습니다.
 
-[Admin Console](https://https://adminconsole.adobe.com/)&#x200B;(으)로 이동하여 URL의 일부로 찾을 수 있습니다.
+[Admin Console](https://adminconsole.adobe.com/){target="_blank"}(으)로 이동하여 URL의 일부로 찾을 수 있습니다.
 
 ![DSN](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ IMS 조직 ID를 찾는 작업은 여러 가지 방법으로 수행할 수 있�
 
 **AEP 테넌트 ID**
 
-테넌트 ID는 조직의 AEP 인스턴스에 대한 고유 식별자입니다. [https://platform.adobe.com/](https://platform.adobe.com/)에서 Adobe Experience Platform 인스턴스에 로그인하면 URL에서 테넌트 ID를 찾을 수 있습니다.
+테넌트 ID는 조직의 AEP 인스턴스에 대한 고유 식별자입니다. [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}에서 Adobe Experience Platform 인스턴스에 로그인하면 URL에서 테넌트 ID를 찾을 수 있습니다.
 
 ![DSN](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ Chrome 확장에 입력하는 경우 밑줄이 접두사로 추가되었는지 �
 
 **AEP 샌드박스 이름**
 
-샌드박스 이름은 AEP 인스턴스에서 사용할 환경의 이름입니다. [https://platform.adobe.com/](https://platform.adobe.com/)에서 Adobe Experience Platform 인스턴스에 로그인하면 URL에서 테넌트 ID를 찾을 수 있습니다.
+샌드박스 이름은 AEP 인스턴스에서 사용할 환경의 이름입니다. [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}에서 Adobe Experience Platform 인스턴스에 로그인하면 URL에서 테넌트 ID를 찾을 수 있습니다.
 
 URL에서 샌드박스 이름을 가져오기 전에 이 자습서에 사용해야 하는 샌드박스에 있는지 확인해야 합니다. 화면 오른쪽 상단에 있는 샌드박스 전환기 메뉴를 클릭하여 오른쪽 샌드박스로 전환할 수 있습니다.
 
@@ -135,7 +135,7 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ## 튜토리얼 콘텐츠 확인
 
-테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2)&#x200B;(으)로 이동하세요.
+테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}(으)로 이동하세요.
 
 이제 이 페이지의 모든 **환경 변수**&#x200B;가 chrome 확장에서 활성화된 환경을 기반으로 실제 값으로 대체되었습니다.
 
@@ -145,7 +145,7 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ## 다음 단계
 
-[데모 시스템 사용 다음으로 이동하여 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정합니다](./ex2.md)
+[데모 시스템 사용 다음으로 이동하여 Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정합니다](./ex2.md){target="_blank"}
 
 [시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
 

@@ -4,9 +4,9 @@ description: Foundation - FAC - 통합 컴포지션 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./../dc1.2/images/home.png)
 
-계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 ``--aepSandboxName--``입니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
+계속하려면 **샌드박스**&#x200B;를 선택해야 합니다. 선택할 샌드박스 이름이 `--aepSandboxName--`입니다. 적절한 샌드박스를 선택하면 화면이 변경되고 이제 전용 샌드박스에 있습니다.
 
 ![데이터 수집](./../dc1.2/images/sb1.png)
 
@@ -47,7 +47,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp5.png)
 
-스키마 **—aepUserLdap—_POPULATIONS**&#x200B;을(를) 선택하십시오. **확인**&#x200B;을 클릭합니다.
+스키마 **`--aepUserLdap--_HOUSEHOLDS`**&#x200B;을(를) 선택하십시오. **확인**&#x200B;을 클릭합니다.
 
 ![FAC](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp11.png)
 
-추가할 두 번째 조건은 `Is the user an existing CitiSignal Mobile subscriber?`입니다. 이 질문에 답변하는 방법은 다른 테이블 **—aepUserLdap—_PERSONS**&#x200B;에 정의된 가정과 가정의 기본 고객 간의 관계를 사용하는 것입니다. **household2person** 링크를 사용하여 특성 메뉴에서 드릴다운할 수 있습니다.
+추가할 두 번째 조건은 `Is the user an existing CitiSignal Mobile subscriber?`입니다. 이 질문에 답변하는 방법은 다른 테이블 **`--aepUserLdap--_PERSONS`**&#x200B;에 정의된 가계와 가구의 기본 고객 간의 관계를 사용하는 것입니다. **household2person** 링크를 사용하여 특성 메뉴에서 드릴다운할 수 있습니다.
 
 ![FAC](./images/fedcomp12.png)
 
@@ -139,9 +139,9 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![FAC](./images/fedcomp21a.png)
 
-이제 쿼리를 Snowflake으로 푸시하고 여기에서 소스 데이터를 쿼리합니다. 결과는 AEP로 다시 푸시되지만 소스 데이터는 Snowflake에 유지됩니다.
+이제 쿼리를 Snowflake으로 푸시하고 여기에서 소스 데이터를 쿼리합니다. 결과는 AEP으로 다시 푸시되지만 소스 데이터는 Snowflake에 유지됩니다.
 
-이제 대상이 채워지고 AEP 생태계 내에서 대상을 타깃팅할 수 있습니다.
+이제 대상이 채워지고 AEP 에코시스템 내에서 대상을 타깃팅할 수 있습니다.
 
 ![FAC](./images/fedcomp22.png)
 

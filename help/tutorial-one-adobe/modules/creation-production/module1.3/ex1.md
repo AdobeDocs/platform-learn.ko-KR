@@ -6,16 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c1b1d78d-9374-4ccd-82cf-e71c682fc907
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
 # 1.3.1 Adobe Express 시작하기
 
-새 시크릿 브라우저 창을 열고 [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}(으)로 이동합니다. **회사 또는 학교 계정**&#x200B;을(를) 사용하여 로그인한 다음 계정 **—aepImsOrgName—**&#x200B;을(를) 선택합니다.
+## 1.3.1.1 Adobe Express에 로그인
+
+새 시크릿 브라우저 창을 열고 [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}(으)로 이동합니다. **회사 또는 학교 계정**&#x200B;을 사용하여 로그인한 다음 **`--aepImsOrgName--`** 계정을 선택하십시오.
 
 ![Adobe Express](./images/express1.png)
 
@@ -37,7 +39,7 @@ Adobe Express은 조직 라이선스의 일부로 사용할 수 있습니다. Ad
 
 ![Adobe Express](./images/express5.png)
 
-## 1.3.1.1 브랜드 템플릿에서 시작
+## 1.3.1.2 브랜드 템플릿에서 시작
 
 Adobe Express에서 **브랜드**(으)로 이동합니다. 현재 브랜드 템플릿 라이브러리가 비어 있을 수 있습니다. CitiSignal은 이전에 브랜드 템플릿을 정의했으므로 이제 기존 템플릿을 다시 사용해야 합니다.
 

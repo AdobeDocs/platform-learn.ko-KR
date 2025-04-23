@@ -2,7 +2,8 @@
 title: 시작하기 - 설치할 애플리케이션
 description: 시작하기 - 설치할 애플리케이션
 doc-type: multipage-overview
-source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
+exl-id: 25f80da8-88c3-4273-962a-476675cf6047
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 ## Adobe Creative Cloud
 
-[https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud)(으)로 이동합니다.
+[https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}(으)로 이동합니다.
 
 ![Adobe I/O 새 통합](./images/cc.png)
 
@@ -27,7 +28,7 @@ ht-degree: 1%
 
 ## Visual Studio 코드
 
-[https://code.visualstudio.com/](https://code.visualstudio.com/){target="_blank"}(으)로 이동하여 **Visual Studio 코드**&#x200B;를 다운로드하여 설치하십시오.
+[https://code.visualstudio.com/](https://code.visualstudio.com/){target="_blank"}(으)로 이동하여 **Visual Studio Code**&#x200B;을(를) 다운로드하여 설치하십시오.
 
 ![차단](./images/vsc1.png)
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
-source-git-commit: ebf183d1eb4382ab0e6ccf3c7bb32229ffa269db
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 이 연습을 시작하기 전에 [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"}에서 필요한 자산을 다운로드하고 바탕 화면에서 압축을 풉니다.
 
 ![Adobe Express](./images/expressassets.png)
+
+## 1.3.3.1 기본 자산 만들기
 
 [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}(으)로 이동합니다. 새 **이미지**&#x200B;을(를) 만들려면 **+** 아이콘을 클릭하십시오.
 
@@ -92,6 +94,8 @@ ht-degree: 0%
 그럼 이걸 보셔야죠
 
 ![Adobe Express](./images/expressbc17.png)
+
+## Adobe Express에서 1.3.3.2 대량 만들기
 
 **일괄 만들기**&#x200B;를 클릭합니다.
 

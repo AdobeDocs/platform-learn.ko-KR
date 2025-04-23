@@ -4,7 +4,7 @@ description: 시작하기 - 모바일 앱 사용
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 앱 다운로드
 
-컴퓨터의 [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app)(으)로 이동합니다. 그러면 이걸 보게 될 거야.
+컴퓨터의 [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"}(으)로 이동합니다. 그러면 이걸 보게 될 거야.
 
 ![DSN](./images/mobileapp.png)
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsn5b.png)
 
-실수로 브라우저 창을 닫은 경우 또는 향후 데모 또는 지원 세션을 위해 [https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 모바일 앱 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을 클릭합니다.
+실수로 브라우저 창을 닫은 경우 또는 향후 데모 또는 지원 세션을 위해 [https://dsn.adobe.com](https://dsn.adobe.com){target="_blank"}(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 모바일 앱 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web8a.png)
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 다음 단계
 
-[Adobe I/O 프로젝트 구성](./ex6.md)(으)로 이동
+[Adobe I/O 프로젝트 구성](./ex6.md){target="_blank"}(으)로 이동
 
 [시작하기](./getting-started.md){target="_blank"}(으)로 돌아가기
 

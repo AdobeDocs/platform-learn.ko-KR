@@ -4,7 +4,7 @@ description: 시작하기 - Postman 설정
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->Adobe 직원이 아닌 경우 지침을 따라 [Postman 설치](./ex7.md)하십시오. 아래 지침은 Adobe 직원만을 대상으로 합니다.
+>Adobe 직원이 아닌 경우 지침을 따라 [Postman 설치](./ex7.md){target="_blank"}하십시오. 아래 지침은 Adobe 직원만을 대상으로 합니다.
 
 ## PostBuster 설치
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542)(으)로 이동합니다.
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"}(으)로 이동합니다.
 
 **PostBuster**&#x200B;의 최신 릴리스를 다운로드하려면 클릭하세요.
 
@@ -33,7 +33,7 @@ OS에 맞는 버전을 다운로드하십시오.
 
 ![PostBuster](./images/pb3.png)
 
-[postbuster.json.zip](./../../../assets/postman/postbuster.json.zip)을(를) 다운로드하고 데스크톱에서 추출하십시오.
+[postbuster.json.zip](./../../../assets/postman/postbuster.json.zip){target="_blank"}을(를) 다운로드하고 데스크톱에서 추출하십시오.
 
 ![PostBuster](./images/pbpb.png)
 

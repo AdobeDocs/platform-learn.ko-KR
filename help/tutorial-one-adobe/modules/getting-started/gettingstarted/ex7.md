@@ -3,7 +3,8 @@ title: 시작하기 - Postman 설정
 description: 시작하기 - Postman 설정
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Adobe 직원인 경우 지침을 따라 [PostBuster 설치](./ex8.md)하세요!
+>Adobe 직원인 경우 지침을 따라 [PostBuster 설치](./ex8.md){target="_blank"}하세요!
 
 ## Postman 환경 다운로드
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ![Adobe I/O 새 통합](./images/iopr.png){zoomable="yes"}
 
-**Firefly - Firefly 서비스** API를 클릭합니다. 그런 다음 **Postman용 다운로드**&#x200B;를 클릭하고 **OAuth Server-to-Server**&#x200B;을(를) 선택하여 Postman 환경을 다운로드합니다.
+**Firefly - Firefly Services** API를 클릭합니다. 그런 다음 **Postman용 다운로드**&#x200B;를 클릭하고 **OAuth Server-to-Server**&#x200B;을(를) 선택하여 Postman 환경을 다운로드합니다.
 
 ![Adobe I/O 새 통합](./images/iopm.png){zoomable="yes"}
 
@@ -43,7 +44,7 @@ Postman에는 환경과 컬렉션의 두 가지 개념이 있습니다.
 - Adobe I/O 인증을 위한 1개 컬렉션
 - 이 단원의 연습에 대한 컬렉션 1개
 
-로컬 데스크톱에 [postman-ff.zip](./../../../assets/postman/postman-ff.zip)을(를) 다운로드합니다.
+로컬 데스크톱에 [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"}을(를) 다운로드합니다.
 
 ![Adobe I/O 새 통합](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ Postman에서 **가져오기**&#x200B;를 선택합니다.
 
 ![Adobe I/O 새 통합](./images/impconfirm.png){zoomable="yes"}
 
-이제 Postman에서 API를 통해 Firefly 서비스와 상호 작용하기 시작하는 데 필요한 모든 기능을 사용할 수 있습니다.
+이제 Postman에서 API를 통해 Firefly Services과 상호 작용하기 시작하는 데 필요한 모든 것을 갖추고 있습니다.
 
 ## 액세스 토큰 요청
 
