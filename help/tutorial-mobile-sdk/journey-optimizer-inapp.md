@@ -1,15 +1,15 @@
 ---
-title: Platform Mobile SDK를 사용하여 인앱 메시지 만들기 및 보내기
+title: Platform Mobile SDK으로 인앱 메시지 만들기 및 보내기
 description: Platform Mobile SDK 및 Adobe Journey Optimizer을 사용하여 인앱 메시지를 만들고 모바일 앱으로 전송하는 방법에 대해 알아봅니다.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
+source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
+source-wordcount: '1607'
+ht-degree: 1%
 
 ---
 
@@ -55,17 +55,36 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 >[Journey Optimizer 푸시 메시지](journey-optimizer-push.md) 단원의 일부로 환경을 이미 설정한 경우 이 설정 섹션의 일부 단계를 이미 수행했을 수 있습니다.
 
 
-### 데이터 수집에서 앱 표면 추가
+### Journey Optimizer에서 채널 구성 만들기
 
-1. [데이터 수집 인터페이스](https://experience.adobe.com/data-collection/)의 왼쪽 패널에서 **[!UICONTROL 앱 표면]**&#x200B;을 선택합니다.
-1. 구성을 만들려면 **[!UICONTROL 앱 표면 만들기]**를 선택하십시오.
-   ![앱 표면 홈](assets/push-app-surface.png)
-1. 구성에 대한 **[!UICONTROL 이름]**&#x200B;을(를) 입력하십시오(예: `Luma App Tutorial` ).
-1. **[!UICONTROL 모바일 응용 프로그램 구성]**&#x200B;에서 **[!UICONTROL Apple iOS]**&#x200B;을(를) 선택합니다.
-1. **[!UICONTROL 앱 ID(iOS 번들 ID)]** 필드에 모바일 앱 번들 ID를 입력합니다. 예: `com.adobe.luma.tutorial.swiftui`.
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+시작하려면 Journey Optimizer에서 앱 메시지 알림을 보낼 수 있도록 채널 구성을 만들어야 합니다.
 
-   ![앱 표면 구성](assets/push-app-surface-config-inapp.png)
+1. Journey Optimizer 인터페이스에서 **[!UICONTROL 채널]** > **[!UICONTROL 일반 설정]** > **[!UICONTROL 채널 구성]** 메뉴를 연 다음 **[!UICONTROL 채널 구성 만들기]**&#x200B;를 선택합니다.
+
+   ![채널 구성 만들기](assets/push-config-9.png)
+
+1. 구성의 이름 및 설명(선택 사항)을 입력합니다.
+
+   >[!NOTE]
+   >
+   > 이름은 문자(A-Z)로 시작해야 합니다. 영숫자만 포함할 수 있습니다. 밑줄 `_`, 점 `.`, 하이픈 `-`도 사용할 수 있습니다.
+
+
+1. 구성에 사용자 지정 또는 핵심 데이터 사용 레이블을 할당하려면 **[!UICONTROL 액세스 관리]**&#x200B;를 선택할 수 있습니다. [OLAC(개체 수준 액세스 제어)에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+
+1. **인앱 메시지** 채널을 선택하십시오.
+
+1. 이 구성을 사용하여 동의 정책을 메시지에 연결하려면 **[!UICONTROL 마케팅 액션]**&#x200B;을 선택하십시오. 마케팅 액션과 관련된 모든 동의 정책은 고객의 선호도를 존중하기 위해 활용됩니다. [마케팅 액션에 대해 자세히 알아보기](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+
+1. 설정을 정의할 플랫폼을 선택합니다. 이를 통해 각 플랫폼에 대한 대상 앱을 지정할 수 있으며, 여러 플랫폼에서 일관적으로 콘텐츠를 게재할 수 있습니다.
+
+   >[!NOTE]
+   >
+   >iOS 및 Android 플랫폼의 경우 게재는 앱 ID만을 기반으로 합니다. 두 앱이 동일한 앱 ID를 공유하는 경우 **[!UICONTROL 채널 구성]**&#x200B;에서 선택한 플랫폼에 관계없이 콘텐츠가 두 앱 ID 모두에 전달됩니다.
+
+1. 변경 내용을 저장하려면 **[!UICONTROL 제출]**&#x200B;을 선택하십시오.
+
+   ![인앱 채널 구성](assets/inapp_config_10.png)
 
 ### 데이터 스트림 구성 업데이트
 
@@ -97,14 +116,14 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 ### 앱에서 Journey Optimizer 구현
 
-이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 메시징 SDK를 설치하고 등록해야 합니다. 이 단계가 명확하지 않으면 [SDK 설치](install-sdks.md) 섹션을 검토하십시오.
+이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 메시징 SDK을 설치하고 등록해야 합니다. 이 단계가 명확하지 않으면 [SDK 설치](install-sdks.md) 섹션을 검토하십시오.
 
 >[!NOTE]
 >
->[SDK 설치](install-sdks.md) 섹션을 완료한 경우 SDK가 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
+>[SDK 설치](install-sdks.md) 섹션을 완료한 경우 SDK이 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
 >
 
-1. Xcode에서 [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios)이(가) 패키지 종속성의 패키지 목록에 추가되어 있는지 확인하십시오. [Swift 패키지 관리자](install-sdks.md#swift-package-manager)를 참조하세요.
+1. Xcode에서 [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios)이(가) 패키지 종속 항목의 패키지 목록에 추가되어 있는지 확인하십시오. [Swift 패키지 관리자](install-sdks.md#swift-package-manager)를 참조하세요.
 1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]**(으)로 이동합니다.
 1. `AEPMessaging`이(가) 가져오기 목록의 일부인지 확인하십시오.
 
@@ -129,7 +148,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
    ```
 
 
-## Assurance를 사용하여 설정 유효성 검사
+## Assurance으로 설정 유효성 검사
 
 1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
 1. Assurance UI에서 **[!UICONTROL 구성]**을 선택합니다.
@@ -152,7 +171,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 * 시작, 설치, 업그레이드, 닫기 또는 충돌과 같은 애플리케이션 라이프사이클 이벤트
 * 관심 영역 입력 또는 종료와 같은 지리적 위치 이벤트.
 
-이 자습서에서는 Mobile Core 일반 및 확장 독립적인 API([Mobile Core 일반 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis) 참조)를 사용하여 사용자 화면, 작업 및 PII 데이터의 이벤트 추적을 용이하게 합니다. 이러한 API에 의해 생성된 이벤트는 SDK 이벤트 허브에 게시되고 확장에서 사용할 수 있습니다. SDK 이벤트 허브는 등록된 확장 및 내부 모듈 목록, 등록된 이벤트 리스너 목록 및 공유 상태 데이터베이스를 유지 관리하며 모든 Mobile Platform SDK 확장에 연결된 핵심 데이터 구조를 제공합니다.
+이 자습서에서는 Mobile Core 일반 및 확장 독립적인 API([Mobile Core 일반 API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis) 참조)를 사용하여 사용자 화면, 작업 및 PII 데이터의 이벤트 추적을 용이하게 합니다. 이러한 API에 의해 생성된 이벤트는 SDK 이벤트 허브에 게시되며 확장에서 사용할 수 있습니다. SDK 이벤트 허브는 등록된 확장 및 내부 모듈 목록, 등록된 이벤트 리스너 목록 및 공유 상태 데이터베이스를 유지 관리하며 모든 Mobile Platform SDK 확장에 연결된 핵심 데이터 구조를 제공합니다.
 
 SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하고 수신하여 Adobe 및 서드파티 솔루션과의 통합을 단순화합니다. 예를 들어 최적화 확장이 설치되면, 모든 요청 및 Journey Optimizer - 의사 결정 관리 오퍼 엔진과의 상호 작용은 이벤트 허브에 의해 처리됩니다.
 
@@ -222,7 +241,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
-## Assurance에서 구현 유효성 검사
+## Assurance에서 구현의 유효성 검사
 
 Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 
@@ -230,8 +249,8 @@ Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 1. **[!UICONTROL 인앱 메시지]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 이벤트 목록]**&#x200B;을 선택하세요.
 1. **[!UICONTROL 메시지 표시]** 항목을 선택하십시오.
-1. Inspect은 원시 이벤트, 특히 인앱 메시지의 전체 레이아웃과 콘텐츠를 포함하는 `html`을(를) 포함합니다.
-   ![인앱 메시지 확인](assets/assurance-in-app-display-message.png)
+1. 원본 이벤트, 특히 인앱 메시지의 전체 레이아웃과 콘텐츠가 포함된 `html`을(를) 검사합니다.
+   ![Assurance 인앱 메시지](assets/assurance-in-app-display-message.png)
 
 
 ## 다음 단계
@@ -240,7 +259,7 @@ Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 
 >[!SUCCESS]
 >
->Experience Platform Mobile SDK용 Journey Optimizer 및 Journey Optimizer 확장을 사용하여 인앱 메시지를 활성화하고 인앱 메시지 캠페인을 추가했습니다.
+>Journey Optimizer 및 Experience Platform Mobile SDK용 Journey Optimizer 확장을 사용하여 인앱 메시지를 활성화하고 인앱 메시지 캠페인을 추가했습니다.
 >
 >Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 

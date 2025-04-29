@@ -4,10 +4,10 @@ description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ Experience Platform Mobile SDK은 Adobe Experience Cloud 고객이 Adobe Experie
 * 데이터 수집에서 다음을 수행해야 합니다.
    * **[!UICONTROL 플랫폼]**—권한 항목 **[!UICONTROL 모바일]**
    * **[!UICONTROL 속성 권한]**—권한 항목으로서 **[!UICONTROL 개발]**, **[!UICONTROL 승인]**, **[!UICONTROL 게시]**, **[!UICONTROL 확장 관리]** 및 **[!UICONTROL 환경 관리]**&#x200B;를 수행할 수 있습니다.
-   * **[!UICONTROL 회사 권한]**—권한 항목 **[!UICONTROL 속성 관리]** 및 선택적 푸시 메시지 단원을 완료한 경우 **[!UICONTROL 앱 구성 관리]**
+   * **[!UICONTROL 회사 권한]**—**[!UICONTROL 속성 관리]**&#x200B;에 대한 권한 항목
 
      태그 권한에 대한 자세한 내용은 제품 설명서에서 [태그에 대한 사용자 권한](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ko-KR){target="_blank"}을 참조하세요.
 * Experience Platform에서 다음을 수행해야 합니다.
@@ -93,7 +93,7 @@ Experience Platform Mobile SDK은 Adobe Experience Cloud 고객이 Adobe Experie
 
 
 1. [시작](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 이 자습서에서 실습형 연습을 완료하는 데 사용해야 하는 대부분의 Experience Platform Mobile SDK 코드에 대해 코드가 없거나 자리 표시자 코드가 있는 프로젝트입니다.
-1. [완료](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 참조용으로 전체 구현이 포함된 버전입니다.
+1. [완료](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: 전체 구현이 참조되는 버전입니다.
 
 >[!NOTE]
 >
