@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 1. **[!UICONTROL 계속]**을 선택하세요.
    ![새 키 구성](assets/mobile-push-apple-dev-config-key.png)
 1. 구성을 검토하고 **[!UICONTROL 등록]**&#x200B;을 선택하세요.
-1. `.p8` 개인 키를 다운로드합니다. 다음 연습에서 Journey Optimizer 채널 구성에 사용됩니다.
-1. **[!UICONTROL 키 ID]**&#x200B;을(를) 메모하세요. Journey Optimizer 채널 구성에서 사용됩니다.
-1. **[!UICONTROL 팀 ID]**를 메모하세요. Journey Optimizer 채널 구성에서 사용됩니다.
+1. `.p8` 개인 키를 다운로드합니다. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
+1. **[!UICONTROL 키 ID]**&#x200B;을(를) 메모하세요. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
+1. **[!UICONTROL 팀 ID]**를 메모하세요. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
    ![키 세부 정보](assets/push-apple-dev-key-details.png)
 
 추가 설명서는 [여기에서 찾을 수 있음](https://help.apple.com/developer-account/#/devcdfbb56a3).
@@ -98,17 +98,15 @@ Adobe이 사용자를 대신하여 푸시 알림을 전송하도록 승인하려
 
 1. **[!UICONTROL 플랫폼]** 드롭다운에서 **iOS** 운영 체제를 선택합니다.
 
+1. **[!UICONTROL 앱 ID]**(iOS 번들 ID) 필드에 모바일 앱 번들 ID를 입력합니다. 예: com.adobe.luma.tutorial.swiftui
 
-   1. **[!UICONTROL 앱 ID]**(iOS 번들 ID) 필드에 모바일 앱 번들 ID를 입력합니다. 예: com.adobe.luma.tutorial.swiftui
+1. **[!UICONTROL 모든 샌드박스에 적용]** 옵션을 활성화하여 모든 샌드박스에서 푸시 자격 증명을 사용할 수 있도록 합니다. 특정 샌드박스에 동일한 플랫폼 및 앱 ID 쌍에 대한 자체 자격 증명이 있는 경우 해당 샌드박스별 자격 증명이 우선합니다.
 
-   1. **[!UICONTROL 모든 샌드박스에 적용]** 옵션을 활성화하여 모든 샌드박스에서 푸시 자격 증명을 사용할 수 있도록 합니다. 특정 샌드박스에 동일한 플랫폼 및 앱 ID 쌍에 대한 자체 자격 증명이 있는 경우 해당 샌드박스별 자격 증명이 우선합니다.
+1. 이전 연습에서 가져온 .p8 **Apple 푸시 알림 인증 키** 파일을 끌어서 놓습니다.
 
+1. `p8` 인증 키를 만드는 동안 할당된 10자 문자열인 **[!UICONTROL 키 ID]**&#x200B;을(를) 제공하십시오. Apple 개발자 포털 페이지의 **인증서, 식별자 및 프로필** 페이지에 있는 **[!UICONTROL 키]** 탭에서 찾을 수 있습니다. (이전 연습에서 을(를) 기록해야 합니다.)
 
-   1. 이전 연습에서 가져온 .p8 **Apple 푸시 알림 인증 키** 파일을 끌어서 놓습니다.
-
-   1. `p8` 인증 키를 만드는 동안 할당된 10자 문자열인 **[!UICONTROL 키 ID]**&#x200B;을(를) 제공하십시오. Apple 개발자 포털 페이지의 **인증서, 식별자 및 프로필** 페이지에 있는 **[!UICONTROL 키]** 탭에서 찾을 수 있습니다. (이전 연습에서 을(를) 기록해야 합니다.)
-
-   1. **[!UICONTROL 팀 ID]**&#x200B;를 제공하십시오. 팀 ID는 **멤버십** 탭이나 Apple 개발자 포털 페이지의 맨 위에서 찾을 수 있는 값입니다. (이전 연습에서 을(를) 기록해야 합니다.)
+1. **[!UICONTROL 팀 ID]**&#x200B;를 제공하십시오. 팀 ID는 **멤버십** 탭이나 Apple 개발자 포털 페이지의 맨 위에서 찾을 수 있는 값입니다. (이전 연습에서 을(를) 기록해야 합니다.)
 
    ![Journey Optimizer에서 자격 증명 구성 푸시](assets/add-app-config-ios.png)
 
