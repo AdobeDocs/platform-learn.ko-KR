@@ -151,10 +151,10 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 ## Assurance으로 설정 유효성 검사
 
 1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
-1. Assurance UI에서 **[!UICONTROL 구성]**을 선택합니다.
+1. Assurance UI에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
    ![클릭 구성](assets/push-validate-config.png)
 1. **[!UICONTROL 인앱 메시지]** 옆에 있는 ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 단추를 선택하세요.
-1. **[!UICONTROL 저장]**을 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    ![저장](assets/assurance-in-app-config.png)
 1. 왼쪽 탐색에서 **[!UICONTROL 인앱 메시지]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 유효성 검사]** 탭을 선택합니다. 오류가 발생하지 않는지 확인합니다.
@@ -180,6 +180,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 1. **[!UICONTROL 캠페인 만들기]** 화면에서:
    1. **[!UICONTROL 인앱 메시지]**&#x200B;를 선택하고 **[!UICONTROL 앱 표면]** 목록에서 앱 표면을 선택합니다(예: **[!DNL Luma Mobile App]**).
    1. **[!UICONTROL 만들기]** 선택
+
       ![캠페인 속성](assets/ajo-campaign-properties.png)
 1. Campaign 정의 화면의 **[!UICONTROL 속성]**&#x200B;에서 캠페인에 대한 **[!UICONTROL 이름]**(예: `Luma - In-App Messaging Campaign`)과 **[!UICONTROL 설명]**(예: `In-app messaging campaign for Luma app`)을 입력하십시오.
    ![캠페인 이름](assets/ajo-campaign-properties-name.png)
@@ -190,7 +191,8 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
    3. **[!UICONTROL 머리글]**(예: `Welcome to this Luma In-App Message`)을 입력하고 **[!UICONTROL 본문]**(예: `Triggered by pushing that button in the app...`)을 입력하십시오.
    4. **[!UICONTROL Button #1 텍스트(기본)]**(으)로 **[!UICONTROL Dismiss]**&#x200B;을(를) 입력하십시오.
    5. 미리보기가 어떻게 업데이트되는지 확인합니다.
-   6. **[!UICONTROL 활성화하려면 검토]**를 선택하십시오.
+   6. **[!UICONTROL 활성화하려면 검토]**&#x200B;를 선택하십시오.
+
       ![인앱 편집기](assets/ajo-in-app-editor.png)
 1. **[!UICONTROL 활성화 검토(Luma - 인앱 메시지 캠페인)]** 화면에서 **[!UICONTROL 일정]** 타일의 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)을(를) 선택합니다.
    ![일정 검토 선택](assets/ajo-review-select-schedule.png)
@@ -198,14 +200,15 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 1. **[!UICONTROL 인앱 메시지 트리거]** 대화 상자에서 인앱 메시지를 트리거하는 추적 작업의 세부 사항을 구성합니다.
    1. **[!UICONTROL 응용 프로그램 시작 이벤트]**&#x200B;를 제거하려면 ![닫기](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) 를 선택하십시오.
    1. ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 조건 추가]**&#x200B;를 반복적으로 사용하여 **[!UICONTROL 메시지 표시]**&#x200B;에 대한 다음 논리를 빌드합니다.
-   1. **[!UICONTROL 완료]**를 클릭합니다.
+   1. **[!UICONTROL 완료]**&#x200B;를 클릭합니다.
+
       ![트리거 논리](assets/ajo-trigger-logic.png)
 
    **[!UICONTROL Action]**&#x200B;이(가) `in-app`이고 동작이 있는 **[!UICONTROL 컨텍스트 데이터]**&#x200B;가 `"showMessage" : "true"`의 키 값 쌍인 추적 동작을 정의했습니다.
 
 1. **[!DNL Luma - In-App Messaging Campaign]** 화면으로 돌아가서 **[!UICONTROL 활성화하려면 검토]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 활성화 검토(Luma - 인앱 메시지 캠페인)]** 화면에서 **[!UICONTROL 활성화]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 캠페인]** 목록에 **[!UICONTROL Live]** 상태의 **[!DNL Luma - In-App Messaging Campaign]**이(가) 표시됩니다.
+1. **[!UICONTROL 캠페인]** 목록에 **[!UICONTROL Live]** 상태의 **[!DNL Luma - In-App Messaging Campaign]**&#x200B;이(가) 표시됩니다.
    ![캠페인 목록](assets/ajo-campaign-list.png)
 
 

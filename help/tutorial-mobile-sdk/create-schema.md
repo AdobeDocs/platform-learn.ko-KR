@@ -103,7 +103,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
    ![스키마 마법사 기본 클래스](assets/schema-wizard-base-class.png)
 
-1. **[!UICONTROL 스키마 만들기]** 마법사의 **[!UICONTROL 이름 및 검토]** 단계에서 **[!UICONTROL 스키마 표시 이름]**(예: `Luma Mobile Event Schema`)과 [!UICONTROL 설명](예: `Schema for Luma mobile app experience events`)을 입력합니다.
+1. **[!UICONTROL 스키마 만들기]** 마법사의 **[!UICONTROL 이름 및 검토]** 단계에서 **[!UICONTROL 스키마 표시 이름]**(예: `Luma Mobile Event Schema`)과 [!UICONTROL 설명] (예: `Schema for Luma mobile app experience events`)을 입력합니다.
 
    >[!NOTE]
    >

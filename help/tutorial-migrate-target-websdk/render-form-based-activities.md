@@ -106,7 +106,7 @@ Platform Web SDK는 지정된 `actionType`과(와) 함께 `applyPropositions` �
 
 아래 예제 페이지는 이전 섹션에 설명된 구현에 따라 작성되며, `sendEvent` 명령에 추가 범위만 추가합니다.
 
-여러 범위가 있는 +++Platform Web SDK 예
++++여러 범위가 있는 Platform Web SDK 예
 
 ```HTML
 <!doctype html>

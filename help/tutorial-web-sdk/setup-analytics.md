@@ -435,12 +435,12 @@ Adobe Experience Platform Assurance를 사용하면 웹 사이트 및 모바일 
 [Assurance](validate-with-assurance.md) 단원에서 배운 대로 Assurance 세션을 시작하는 방법에는 여러 가지가 있습니다. 마지막 연습에서 시작한 Edge 추적 세션으로 이미 Adobe Experience Platform Debugger이 열려 있으므로 디버거를 통해 Assurance에 액세스하는 것이 좋습니다.
 ![Adobe Experience Platform 데이터 수집을 통한 보증](assets/assurance-open-aep-debugger.png)
 
-**[!UICONTROL &quot;웹 SDK 자습서 3&quot;]** 보증 세션 내에서 이벤트 검색 표시줄에 **[!UICONTROL &quot;hitdebugger&quot;]**를 입력하여 결과를 Adobe Analytics Post에서 처리된 데이터로 필터링합니다.
+**[!UICONTROL &quot;웹 SDK 자습서 3&quot;]** 보증 세션 내에서 이벤트 검색 표시줄에 **[!UICONTROL &quot;hitdebugger&quot;]**&#x200B;를 입력하여 결과를 Adobe Analytics Post에서 처리된 데이터로 필터링합니다.
 ![보증 Adobe 분석 Post 처리된 데이터](assets/assurance-hitdebugger.png)
 
 ### Experience Cloud ID 유효성 검사
 
-Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘의 공급업체는 **[!UICONTROL com.adobe.analytics.hitdebugger]**여야 합니다.
+Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘의 공급업체는 **[!UICONTROL com.adobe.analytics.hitdebugger]**&#x200B;여야 합니다.
 ![보증으로 Adobe Analytics 유효성 검사](assets/assurance-hitdebugger-payload.png)
 
 그런 다음 **[!UICONTROL mcvisId]**(으)로 아래로 스크롤하여 ECID가 올바르게 캡처되었는지 확인합니다

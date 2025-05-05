@@ -128,12 +128,12 @@ Adobe Analytics이 &quot;appMeasurement&quot;로 구현되어 있는 경우 Expe
 
 뭐, 그렇기도 하고 아니기도 하잖아요 예, 몇 가지 작은 항목을 변경해야 하지만, 이러한 작은 항목을 변경하는 한 코드의 대부분을 변경할 필요는 없습니다.
 
-_**코드 변경 1:**_
+_&#x200B;**코드 변경 1:**&#x200B;_
 선택한 후(또는 전에) &quot;플러그인&quot; 코드를 웹 SDK 확장의 코드 창에 붙여 넣으면 코드에서 &quot;doPlugin&quot; 줄을 **제거**&#x200B;합니다. 이러한 파일은 필요하지 않으며, 웹 SDK 코드가 아닌 appMeasurement.js에 속하기 때문에 오류가 발생합니다.
 
 ![doPlugins 코드 줄 제거](assets/remove-doplugins.jpg)
 
-_**코드 변경 2:**_
+_&#x200B;**코드 변경 2:**&#x200B;_
 필요한 다른 변경 사항은 &quot;s&quot; 개체가 정의되도록 일부 코드를 추가하는 것입니다. 이는 규칙 작업의 코드에 대해 위에서 설명한 것과 매우 유사합니다. 이 경우 코드를 약간 다르게 정의해야 하며 규칙 작업에 이미 정의되어 있지만 여기서는 정의되어 있지 않은 &quot;data&quot; 노드를 추가해야 합니다.
 이 정의는 코드 창의 맨 위에 배치해야 합니다. 코드를 웹 SDK 확장에 배치할 때 복사해야 하는 코드는 다음과 같습니다.
 
@@ -143,7 +143,7 @@ content.data.__adobe.analytics = content.data.__adobe.analytics || {};
 const s = content.data.__adobe.analytics;
 ```
 
-_**두 코드 변경 포함:**_
+_&#x200B;**두 코드 변경 포함:**&#x200B;_
 다음은 위에 나열된 코드이지만 두 가지 변경 사항을 사용하여 방금 설명한 것입니다.
 
 ![업데이트된 코드](assets/update-code.jpg)

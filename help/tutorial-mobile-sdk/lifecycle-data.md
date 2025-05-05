@@ -81,36 +81,39 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 이전 연습에서는 전경 및 배경 이벤트를 Adobe Experience Platform Mobile SDK에 전달했습니다. 이러한 이벤트를 Platform Edge Network에 전달하려면
 
-1. Tags 속성에서 **[!UICONTROL 규칙]**을(를) 선택합니다.
+1. Tags 속성에서 **[!UICONTROL 규칙]**&#x200B;을(를) 선택합니다.
    ![규칙 만들기](assets/rule-create.png)
 1. 사용할 라이브러리로 **[!UICONTROL 초기 빌드]**&#x200B;를 선택하십시오.
-1. **[!UICONTROL 새 규칙 만들기]**를 선택합니다.
+1. **[!UICONTROL 새 규칙 만들기]**&#x200B;를 선택합니다.
    ![새 규칙 만들기](assets/rules-create-new.png)
 1. **[!UICONTROL 규칙 만들기]** 화면에서 **[!UICONTROL 이름]**&#x200B;에 대해 `Application Status`을(를) 입력하십시오.
-1. **[!UICONTROL 이벤트]** 아래에서 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**를 선택합니다.
+1. **[!UICONTROL 이벤트]** 아래에서 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**&#x200B;를 선택합니다.
    ![규칙 만들기 대화 상자](assets/rule-create-name.png)
 1. **[!UICONTROL 이벤트 구성]** 단계:
    1. **[!UICONTROL Mobile Core]**&#x200B;을(를) **[!UICONTROL Extension]**(으)로 선택합니다.
    1. **[!UICONTROL 전경]**&#x200B;을(를) **[!UICONTROL 이벤트 유형]**(으)로 선택합니다.
-   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
+   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
+
       ![규칙 이벤트 구성](assets/rule-event-configuration.png)
-1. **[!UICONTROL 규칙 만들기]** 화면으로 돌아가서 **[!UICONTROL 모바일 코어 - 전경]** 옆에 있는 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**를 선택합니다.
+1. **[!UICONTROL 규칙 만들기]** 화면으로 돌아가서 **[!UICONTROL 모바일 코어 - 전경]** 옆에 있는 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**&#x200B;를 선택합니다.
    ![다음 이벤트 구성](assets/rule-event-configuration-next.png)
 1. **[!UICONTROL 이벤트 구성]** 단계:
    1. **[!UICONTROL Mobile Core]**&#x200B;을(를) **[!UICONTROL Extension]**(으)로 선택합니다.
    1. **[!UICONTROL Background]**&#x200B;을(를) **[!UICONTROL 이벤트 유형]**(으)로 선택합니다.
-   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
+   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
+
       ![규칙 이벤트 구성](assets/rule-event-configuration-background.png)
-1. **[!UICONTROL 규칙 만들기]** 화면으로 돌아가서 **[!UICONTROL 작업]** 아래의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**를 선택하십시오.
+1. **[!UICONTROL 규칙 만들기]** 화면으로 돌아가서 **[!UICONTROL 작업]** 아래의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**&#x200B;를 선택하십시오.
    ![규칙 추가 작업](assets/rule-action-button.png)
 1. **[!UICONTROL 작업 구성]** 단계:
    1. **[!UICONTROL Adobe 경험 Edge Network]**&#x200B;을(를) **[!UICONTROL 확장]**(으)로 선택합니다.
    1. **[!UICONTROL Edge Network에 이벤트 전달]**&#x200B;을(를) **[!UICONTROL 작업 형식]**(으)로 선택합니다.
-   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
+   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
+
       ![규칙 작업 구성](assets/rule-action-configuration.png)
-1. **[!UICONTROL 라이브러리에 저장]**을 선택합니다.
+1. **[!UICONTROL 라이브러리에 저장]**&#x200B;을 선택합니다.
    ![규칙 - 라이브러리에 저장](assets/rule-save-to-library.png)
-1. 라이브러리를 다시 빌드하려면 **[!UICONTROL 빌드]**를 선택하십시오.
+1. 라이브러리를 다시 빌드하려면 **[!UICONTROL 빌드]**&#x200B;를 선택하십시오.
    ![규칙 - 빌드](assets/rule-build.png)
 
 속성을 성공적으로 빌드하면 이벤트가 플랫폼 Edge Network으로 전송되고 이벤트는 데이터 스트림 구성에 따라 다른 애플리케이션 및 서비스로 전달됩니다.

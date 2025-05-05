@@ -132,7 +132,7 @@ Xcode에서:
 1. **[!UICONTROL 세션 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 시작]**&#x200B;을 선택하세요.
 1. `Luma Mobile App Session`과(와) 같은 **[!UICONTROL 세션 이름]**&#x200B;과(와) Xcode에 입력한 URL 체계인 **[!UICONTROL 기본 URL]**&#x200B;을(를) 제공한 다음 `://`을(를) 제공하십시오(예: `lumatutorialswiftui://`).
-1. **[!UICONTROL 다음]**을 선택합니다.
+1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
    ![확인 세션 만들기](assets/assurance-create-session.png)
 1. **[!UICONTROL 새 세션 만들기]** 모달 대화 상자에서:
 
@@ -146,6 +146,7 @@ Xcode에서:
 
    1. **[!UICONTROL 링크 복사]**&#x200B;를 선택합니다.
    1. ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)를 사용하여 딥링크를 복사하고 딥링크를 사용하여 시뮬레이터에서 Safari가 있는 앱을 엽니다.
+
       ![보증 복사 링크](assets/assurance-copy-link.png)
 
 1. 앱이 로드되면 7단계에 표시된 PIN을 입력하라는 모달 대화 상자가 표시됩니다.

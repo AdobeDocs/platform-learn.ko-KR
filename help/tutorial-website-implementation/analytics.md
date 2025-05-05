@@ -201,7 +201,7 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 **`Adobe Analytics Product String` 확장을 추가하려면**
 
 1. [!UICONTROL Extensions > Catalog] 페이지로 이동합니다.
-1. Adobe Consulting 서비스에서 `Adobe Analytics Product String` 확장을 찾아 **[!UICONTROL 설치]**를 클릭합니다.
+1. Adobe Consulting 서비스에서 `Adobe Analytics Product String` 확장을 찾아 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
    ![Adobe Consulting의 Adobe Analytics Product String 확장 추가](images/analytics-addProductStringExtension.png)
 1. 잠시 지침을 읽어 보십시오
 1. **[!UICONTROL 라이브러리에 저장]** 클릭
@@ -302,7 +302,7 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 
 ### 태그에 규칙 만들기
 
-1. 왼쪽 탐색에서 **[!UICONTROL 규칙]** 섹션으로 이동한 다음 **[!UICONTROL 규칙 추가]**를 클릭합니다
+1. 왼쪽 탐색에서 **[!UICONTROL 규칙]** 섹션으로 이동한 다음 **[!UICONTROL 규칙 추가]**&#x200B;를 클릭합니다
    ![규칙 추가](images/analytics-addRule3.png)
 1. 규칙 이름을 지정합니다 `Homepage - Featured Products enters Viewport`
 1. **[!UICONTROL 이벤트 > 추가]**&#x200B;를 클릭하여 `Event Configuration` 화면을 엽니다.

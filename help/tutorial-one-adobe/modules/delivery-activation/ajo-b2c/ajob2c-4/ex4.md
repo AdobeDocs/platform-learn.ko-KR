@@ -237,7 +237,7 @@ AEP Assurance 세션을 시작하려면 [https://experience.adobe.com/#/data-col
 
 그러면 빈 이벤트 구성이 표시됩니다.
 먼저 이벤트에 다음과 같은 이름(`--aepUserLdap--StoreEntryEvent`)을 지정하고 설명을 `Store Entry Event`(으)로 설정하십시오.
-다음은 **이벤트 유형** 선택입니다. **단일**을(를) 선택합니다.
+다음은 **이벤트 유형** 선택입니다. **단일**&#x200B;을(를) 선택합니다.
 다음은 **이벤트 ID 유형** 선택 항목입니다. **시스템 생성**&#x200B;을 선택하십시오.
 
 ![AOP](./images/eventname.png)

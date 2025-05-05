@@ -67,17 +67,17 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 #### 개인 키 만들기
 
 1. Apple 개발자 포털에서 **[!UICONTROL 키]**(으)로 이동합니다.
-1. 키를 만들려면 **[!UICONTROL +]**을(를) 선택합니다.
+1. 키를 만들려면 **[!UICONTROL +]**&#x200B;을(를) 선택합니다.
    ![새 키 만들기](assets/mobile-push-apple-dev-new-key.png)
 
 1. **[!UICONTROL 키 이름]**&#x200B;을 입력하십시오.
-1. **[!UICONTROL Apple 푸시 알림 서비스](APNs)** 확인란을 선택하십시오.
-1. **[!UICONTROL 계속]**을 선택하세요.
+1. **[!UICONTROL Apple 푸시 알림 서비스] (APNs)** 확인란을 선택하십시오.
+1. **[!UICONTROL 계속]**&#x200B;을 선택하세요.
    ![새 키 구성](assets/mobile-push-apple-dev-config-key.png)
 1. 구성을 검토하고 **[!UICONTROL 등록]**&#x200B;을 선택하세요.
 1. `.p8` 개인 키를 다운로드합니다. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
 1. **[!UICONTROL 키 ID]**&#x200B;을(를) 메모하세요. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
-1. **[!UICONTROL 팀 ID]**를 메모하세요. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
+1. **[!UICONTROL 팀 ID]**&#x200B;를 메모하세요. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
    ![키 세부 정보](assets/push-apple-dev-key-details.png)
 
 추가 설명서는 [여기에서 찾을 수 있음](https://help.apple.com/developer-account/#/devcdfbb56a3).
@@ -173,7 +173,8 @@ Adobe이 사용자를 대신하여 푸시 알림을 전송하도록 승인하려
 1. **[!UICONTROL 확장 설치]** 대화 상자에서
    1. 환경을 선택하십시오(예: **[!UICONTROL 개발]**).
    1. **[!UICONTROL 이벤트 데이터 세트]** 목록에서 **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 데이터 세트를 선택합니다.
-   1. **[!UICONTROL 라이브러리 및 빌드에 저장]**을 선택합니다.
+   1. **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 선택합니다.
+
       ![AJO 확장 설정](assets/push-tags-ajo.png)
 
 >[!NOTE]
@@ -184,10 +185,10 @@ Adobe이 사용자를 대신하여 푸시 알림을 전송하도록 승인하려
 ## Assurance으로 설정 유효성 검사
 
 1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
-1. Assurance UI에서 **[!UICONTROL 구성]**을 선택합니다.
+1. Assurance UI에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
    ![클릭 구성](assets/push-validate-config.png)
 1. **[!UICONTROL 디버그 푸시]** 옆에 있는 ![플러스](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)를 선택합니다.
-1. **[!UICONTROL 저장]**을 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    ![저장](assets/push-validate-save.png)
 1. 왼쪽 탐색에서 **[!UICONTROL 디버그 푸시]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 설정 유효성 검사]** 탭을 선택합니다.
@@ -306,7 +307,8 @@ Adobe이 사용자를 대신하여 푸시 알림을 전송하도록 승인하려
    1. **[!UICONTROL eventType]** 필드를 선택합니다.
    1. **[!UICONTROL 필드 속성]** 창에서 아래로 스크롤하여 이벤트 유형에 사용할 수 있는 값 목록을 확인합니다. **[!UICONTROL 행 추가]**&#x200B;를 선택하고 `application.test`을(를) **[!UICONTROL 값]**(으)로, `[!UICONTROL Test event for push notification]`을(를) `DISPLAY NAME`(으)로 추가합니다.
    1. **[!UICONTROL 적용]**&#x200B;을 선택합니다.
-   1. **[!UICONTROL 저장]**을 선택합니다.
+   1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+
       ![이벤트 유형에 값 추가](assets/ajo-update-schema-eventtype-enum.png)
 
 ### 이벤트 정의
@@ -342,12 +344,14 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
    1. **[!UICONTROL 이벤트 ID 조건]** 필드 옆에 있는 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)을 선택합니다.
 
       1. **[!UICONTROL 이벤트 ID 조건 추가]** 대화 상자에서 **[!UICONTROL 이벤트 유형(eventType)]**&#x200B;을(를) **[!UICONTROL 여기에 요소 끌어다 놓기]**&#x200B;로 끌어다 놓습니다.
-      1. 팝오버에서 아래쪽으로 스크롤하여 **[!UICONTROL application.test]**(스키마 업데이트](#update-your-schema)의 일부로 이벤트 유형 목록에 이전에 추가한 이벤트 유형)을 선택합니다. [ 그런 다음 위로 스크롤하여 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
-      1. **[!UICONTROL 확인]**을 선택하여 조건을 저장합니다.
+      1. 팝오버에서 아래쪽으로 스크롤하여 **[!UICONTROL application.test]**(스키마 업데이트[&#128279;](#update-your-schema)의 일부로 이벤트 유형 목록에 이전에 추가한 이벤트 유형)을 선택합니다.  그런 다음 위로 스크롤하여 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
+      1. **[!UICONTROL 확인]**&#x200B;을 선택하여 조건을 저장합니다.
+
          ![이벤트 조건 편집](assets/ajo-edit-condition.png)
 
    1. **[!UICONTROL 네임스페이스]** 목록에서 **[!UICONTROL ECID(ECID)]**&#x200B;을(를) 선택합니다. 자동으로 **[!UICONTROL 프로필 식별자]** 필드가 **[!UICONTROL 맵 identityMap에 대한 키 ECID의 첫 번째 요소의 ID]**(으)로 채워집니다.
-   1. **[!UICONTROL 저장]**을 선택합니다.
+   1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+
       ![이벤트 편집 단계 2](assets/ajo-edit-event2.png)
 
 이 자습서의 일부로 이전에 만든 모바일 앱 경험 이벤트 스키마를 기반으로 하는 이벤트 구성을 방금 만들었습니다. 이 이벤트 구성은 특정 이벤트 유형(`application.test`)을 사용하여 들어오는 경험 이벤트를 필터링하므로, 모바일 앱에서 시작된 해당 특정 유형의 이벤트만 다음 단계에서 빌드하는 여정을 트리거합니다. 실제 시나리오에서는 외부 서비스에서 푸시 알림을 전송할 수 있지만 동일한 개념이 적용됩니다. 외부 애플리케이션에서 여정이 트리거되기 전에 이러한 이벤트에 조건을 적용하는 데 사용할 수 있는 특정 필드가 있는 Experience Platform으로 경험 이벤트를 보냅니다.
@@ -363,7 +367,8 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
    1. 여정의 **[!UICONTROL 이름]**(예: `Luma - Test Push Notification Journey`)을 입력하십시오.
    1. 여정에 대한 **[!UICONTROL 설명]**&#x200B;을(를) 입력하십시오(예: `Journey for test push notifications in Luma mobile app`).
    1. **[!UICONTROL 다시 입력 허용]**&#x200B;을 선택하고 **[!UICONTROL 다시 입력 대기 기간]**&#x200B;을 **[!UICONTROL 30]** **[!UICONTROL 초]**(으)로 설정하십시오.
-   1. **[!UICONTROL 확인]**을 선택합니다.
+   1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
+
       ![여정 속성](assets/ajo-journey-properties.png)
 
 1. 여정 캔버스로 돌아가서 **[!UICONTROL EVENTS]**&#x200B;에서 ![Event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]**&#x200B;을(를) 캔버스에 끌어다 놓습니다. 캔버스에는 **[!UICONTROL 시작 이벤트 또는 대상자 읽기 활동 선택]**&#x200B;이 표시됩니다.
@@ -373,7 +378,8 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 1. **[!UICONTROL ACTIONS]** 드롭다운에서 **[!DNL LumaTestEvent]** 활동의 오른쪽에 나타나는 ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)에서 ![Push](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL Push]**&#x200B;을(를) 끌어서 놓습니다. **[!UICONTROL 작업: 푸시]** 창에서:
 
    1. **[!UICONTROL 레이블]**(예: `Luma Test Push Notification`)을 제공하고 **[!UICONTROL 설명]**(예: `Test push notification for Luma mobile app`)을 제공하고 **[!UICONTROL 범주]** 목록에서 **[!UICONTROL 트랜잭션]**&#x200B;을(를) 선택한 다음 **[!UICONTROL 푸시 표면]**&#x200B;에서 **[!DNL Luma]**&#x200B;을(를) 선택합니다.
-   1. 실제 푸시 알림의 편집을 시작하려면 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 콘텐츠 편집]**을(를) 선택하십시오.
+   1. 실제 푸시 알림의 편집을 시작하려면 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 콘텐츠 편집]**&#x200B;을(를) 선택하십시오.
+
       ![푸시 속성](assets/ajo-push-properties.png)
 
       **[!UICONTROL 푸시 알림]** 편집기에서:
@@ -381,11 +387,12 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
       1. **[!UICONTROL 제목]**(예: `Luma Test Push Notification`)을 입력하고 **[!UICONTROL 본문]**(예: `Test push notification for Luma mobile app`)을 입력하십시오.
       1. **[!UICONTROL 미디어 추가]**&#x200B;에서 이미지(.png 또는 .jpg)에 대한 링크를 입력할 수도 있습니다. 그렇게 하면 이미지가 푸시 알림의 일부가 됩니다.
       1. 저장하고 편집기에서 나가려면 ![V자형 화살표 왼쪽](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg)을(를) 선택합니다.
+
          ![푸시 편집기](assets/ajo-push-editor.png)
 
    1. 푸시 알림 정의를 저장하고 완료하려면 **[!UICONTROL 확인]**&#x200B;을 선택하세요.
 
-1. 여정은 다음과 같아야 합니다. 여정을 게시하고 활성화하려면 **[!UICONTROL 게시]**를 선택하십시오.
+1. 여정은 다음과 같아야 합니다. 여정을 게시하고 활성화하려면 **[!UICONTROL 게시]**&#x200B;를 선택하십시오.
    ![완료된 여정](assets/ajo-journey-finished.png)
 
 

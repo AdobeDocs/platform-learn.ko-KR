@@ -68,7 +68,7 @@ Adobe Developer Console은 Adobe API 및 SDK에 액세스하거나, 실시간에
 
    ![Adobe Developer Console 프로젝트 API 구성](assets/adobeio-AEPAPI.png)
 
-1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 자격 증명으로 선택하고 **[!UICONTROL 다음]**을(를) 선택합니다.
+1. **[!UICONTROL OAuth 서버 간]**&#x200B;을(를) 자격 증명으로 선택하고 **[!UICONTROL 다음]**&#x200B;을(를) 선택합니다.
    ![OAuth 서버 간 선택](assets/adobeio-choose-auth.png)
 
 1. `AEP-Default-All-Users` 제품 프로필을 선택하고 **[!UICONTROL 구성된 API 저장]**&#x200B;을 선택합니다.
@@ -86,8 +86,8 @@ Adobe Developer Console은 Adobe API 및 SDK에 액세스하거나, 실시간에
 
 API 자격 증명을 사용하여 Experience Platform과 상호 작용하려면 시스템 관리자가 이전 단원에서 만든 역할에 API 자격 증명을 할당하도록 해야 합니다.  시스템 관리자가 아닌 경우 다음 메시지를 보냅니다.
 
-1. API 자격 증명의 [!UICONTROL 이름](`Credential in Luma Tutorial API Project`)
-1. 자격 증명의 [!UICONTROL 기술 계정 전자 메일](시스템 관리자가 자격 증명을 찾는 데 도움이 됨)
+1. API 자격 증명의 [!UICONTROL 이름] (`Credential in Luma Tutorial API Project`)
+1. 자격 증명의 [!UICONTROL 기술 계정 전자 메일] (시스템 관리자가 자격 증명을 찾는 데 도움이 됨)
 
    자격 증명의 ![[!UICONTROL 이름] 및 [!UICONTROL 기술 계정 전자 메일]](assets/postman-credentialDetails.png)
 
@@ -166,7 +166,7 @@ Adobe은 Experience Platform의 API를 탐색하는 데 도움이 되는 다양�
 액세스 토큰을 생성하려면:
 
 1. `Luma Tutorial Assets` 폴더에 [Identity Management 서비스 API 컬렉션](https://github.com/adobe/experience-platform-postman-samples/blob/master/apis/ims/Identity%20Management%20Service.postman_collection.json)을(를) 다운로드합니다.
-1. 컬렉션을 [!DNL Postman](으)로 가져오기
+1. 컬렉션을 [!DNL Postman] (으)로 가져오기
 1. 요청 **oAuth: 액세스 토큰 요청** 요청을 선택하고 **보내기**&#x200B;를 선택합니다.
 1. 응답에 액세스 토큰이 있는 `200 OK` 응답을 가져와야 합니다.
 
@@ -186,7 +186,7 @@ GitHub에서 [Experience Platform [!DNL Postman] 컬렉션을 엽니다](https:/
 이제 첫 번째 API 호출을 만들어 보겠습니다.
 
 1. `Luma Tutorial Assets` 폴더에 [스키마 레지스트리 API 컬렉션](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json)을(를) 다운로드합니다.
-1. [!DNL Postman](으)로 가져오기
+1. [!DNL Postman] (으)로 가져오기
 1. **스키마 레지스트리 API > 스키마 > 스키마 목록** 열기
 1. **Params** 및 **Headers** 탭을 보고 이전에 입력한 환경 변수 중 일부를 포함하는 방법을 참고하십시오.
 1. **헤더 > 값 수락 필드**&#x200B;이(가) `application/vnd.adobe.xed-id+json`(으)로 설정되어 있습니다. 스키마 레지스트리 API에는 응답에서 다른 형식을 제공하는 [지정된 Accept 헤더 값](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) 중 하나가 필요합니다.

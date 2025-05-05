@@ -152,7 +152,7 @@ GDPR, CCPA 및 기타 개인 정보 보호 작업은 동의 구현을 설계하�
 
 1. 방문자가 **거부**&#x200B;를 클릭할 때 트리거되는 규칙을 만듭니다.  이 규칙의 이름을 `all pages - click consent banner - set consent "out"`(으)로 지정합니다.
 
-1. **[!UICONTROL 이벤트]**&#x200B;로서 **[!UICONTROL CSS 선택기와 일치하는 요소에 대해**[!UICONTROL &#x200B;클릭&#x200B;]**을 사용합니다]** `#klaro .cn-decline`
+1. **[!UICONTROL 이벤트]**&#x200B;로서 **[!UICONTROL CSS 선택기와 일치하는 요소에 대해**&#x200B;[!UICONTROL &#x200B;클릭&#x200B;]&#x200B;**을 사용합니다]** `#klaro .cn-decline`
 
    ![규칙 조건 사용자가 &quot;거부&quot;를 클릭합니다](assets/consent-optOut-clickEvent.png)
 
@@ -196,7 +196,7 @@ Luma 데모 사이트로 이동하여 유효성을 확인하고, 쿠키를 거�
 
 1. 방문자가 **클릭하여**&#x200B;을(를) 클릭할 때 트리거되는 규칙을 만듭니다.  이 규칙의 이름을 `all pages - click consent banner - set consent "in"`(으)로 지정합니다.
 
-1. **[!UICONTROL 이벤트]**&#x200B;로서 **[!UICONTROL CSS 선택기와 일치하는 요소에 대해**[!UICONTROL &#x200B;클릭&#x200B;]**을 사용합니다]** `#klaro .cm-btn-success`
+1. **[!UICONTROL 이벤트]**&#x200B;로서 **[!UICONTROL CSS 선택기와 일치하는 요소에 대해**&#x200B;[!UICONTROL &#x200B;클릭&#x200B;]&#x200B;**을 사용합니다]** `#klaro .cm-btn-success`
 
    ![규칙 조건 사용자가 &quot;정상&quot;을 클릭합니다](assets/consent-optIn-clickEvent.png)
 

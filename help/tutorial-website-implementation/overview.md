@@ -130,7 +130,7 @@ Adobe Experience Platform의 태그 기능은 Adobe의 차세대 웹 사이트 �
    </html>
    ```
 
-+++
+   +++
 
 1. 샘플 html 페이지를 변경할 수 있는 텍스트 편집기를 가져옵니다. (텍스트 편집기가 없다면 [Brackets](https://brackets.io/)를 추천합니다.)
 1. [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)에 책갈피를 지정합니다.

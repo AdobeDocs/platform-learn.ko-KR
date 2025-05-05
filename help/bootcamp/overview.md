@@ -97,7 +97,7 @@ Experience Makers Bootcamp의 주요 목적은 조직이 규모에 맞는 개인
 
 ## YouTube
 
-YouTube 채널](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)에서 [개의 추가 관심 있는 비디오를 찾을 수 있습니다.
+YouTube 채널[&#128279;](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)에서 개의 추가 관심 있는 비디오를 찾을 수 있습니다.
 
 ## 사용자 흐름
 

@@ -41,7 +41,7 @@ ht-degree: 0%
 
    ![데이터 스트림 만들기](assets/create-new-datastream.jpg)
 
-1. 데이터 스트림을 저장하면 아직 구성된 서비스가 없음을 알리는 새 화면이 표시됩니다. 즉, 데이터가 Edge 서버로 전송되지만 서비스를 추가할 때까지 애플리케이션에 전송되지 않습니다. 이제 Adobe Analytics으로 데이터를 전송하도록 데이터 스트림을 구성하겠습니다. **[!UICONTROL 서비스 추가]**를 클릭합니다.
+1. 데이터 스트림을 저장하면 아직 구성된 서비스가 없음을 알리는 새 화면이 표시됩니다. 즉, 데이터가 Edge 서버로 전송되지만 서비스를 추가할 때까지 애플리케이션에 전송되지 않습니다. 이제 Adobe Analytics으로 데이터를 전송하도록 데이터 스트림을 구성하겠습니다. **[!UICONTROL 서비스 추가]**&#x200B;를 클릭합니다.
    ![서비스 추가](assets/datastream-add-service.jpg)
 1. 서비스 드롭다운 메뉴에서 **[!UICONTROL Adobe Analytics]**&#x200B;을(를) 선택합니다.
 1. 보고서 세트 ID 필드에 [유효성 검사 보고서 세트 만들기](create-a-validation-report-suite.md) 활동에서 만든 유효성 검사 보고서 세트의 ID(제목이 아니라 보고서 세트 ID)를 입력합니다. **[!UICONTROL 저장]**&#x200B;을 클릭합니다.

@@ -74,12 +74,12 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 1. [데이터 수집 인터페이스](https://experience.adobe.com/#/data-collection) 열기
 1. 왼쪽 탐색에서 **[!UICONTROL 이벤트 전달]** 선택
-1. **[!UICONTROL 새 속성]**을 선택합니다.
+1. **[!UICONTROL 새 속성]**&#x200B;을 선택합니다.
    ![이벤트 전달 속성](assets/event-forwarding-new.png)
 
 1. 속성 이름을 지정합니다. 이 경우 `Server-Side - Web SDK Course`
 
-1. **[!UICONTROL 저장]**을 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    ![이벤트 전달 속성 저장](assets/event-forwarding-save.png)
 
 ## 데이터 스트림 구성
@@ -290,7 +290,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 이제 Platform Debugger 및 Webhook.site를 사용하여 이벤트 전달 속성을 확인할 수 있습니다.
 
-1. [태그 라이브러리를 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en/men.html)에서 ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)을(를) 데이터 스트림에서 이벤트 전달 속성을 매핑한 Web SDK 태그 속성으로 전환하려면 단계를 따르십시오.
+1. [&#128279;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)태그 라이브러리를 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en/men.html)에서 을(를) 데이터 스트림에서 이벤트 전달 속성을 매핑한 Web SDK 태그 속성으로 전환하려면 단계를 따르십시오.
 
 1. 페이지를 다시 로드하기 전에 Experience Platform 디버거에서 왼쪽 탐색에서 **[!UICONTROL 로그]**&#x200B;를 엽니다.
 

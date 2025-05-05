@@ -98,7 +98,7 @@ ht-degree: 2%
    >
    > 주문 번호가 낮을수록 더 빨리 실행됩니다. 따라서 &quot;글로벌 구성&quot;에 낮은 주문 번호를 제공합니다.
 
-1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**를 선택하십시오.
+1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택하십시오.
    ![로드된 라이브러리 트리거 선택](assets/create-tag-rule-trigger-loaded.png)
 
 1. **[!UICONTROL 작업]** 섹션에서 **[!UICONTROL 추가]**&#x200B;를 선택합니다.
@@ -342,9 +342,9 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 1. **[!UICONTROL 코어 확장]**&#x200B;을(를) 사용하고 **[!UICONTROL 이벤트 유형]**(으)로 `Library Loaded (Page Top)`을(를) 선택하십시오.
 
-1. **[!UICONTROL 고급]** 드롭다운을 선택하고 **[!UICONTROL 순서]**&#x200B;에 `50`을(를) 입력하십시오. 이렇게 하면 `1` 또는 `20`을(를) [!UICONTROL Order](으)로 설정한 다른 모든 규칙 이후에 이 규칙이 실행됩니다.
+1. **[!UICONTROL 고급]** 드롭다운을 선택하고 **[!UICONTROL 순서]**&#x200B;에 `50`을(를) 입력하십시오. 이렇게 하면 `1` 또는 `20`을(를) [!UICONTROL Order] (으)로 설정한 다른 모든 규칙 이후에 이 규칙이 실행됩니다.
 
-1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**를 선택하십시오.
+1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택하십시오.
    ![로드된 라이브러리 트리거 선택](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. **[!UICONTROL 작업]** 섹션에서 **[!UICONTROL 추가]**&#x200B;를 선택합니다.

@@ -29,10 +29,13 @@ ht-degree: 0%
 
 - 귀하가 관심 있는 항목은 다음과 같습니다.
    - Adobike 배너 어둡게: 선택한 에셋을 기반으로 어두운 오버레이가 있는 Adobike 배너를 만듭니다.
+
      ![어두운 배너](./images/prod-banner-dark.jpg)
    - Adobike 배너 조명: 선택한 에셋을 기반으로 조명 오버레이가 있는 Adobike 배너를 만듭니다
+
      ![밝은 배너](./images/prod-banner-light.jpg)
    - Adobike 배너 녹색: 선택한 에셋을 기반으로 녹색 오버레이가 있는 Adobike 배너를 만듭니다
+
      ![녹색 배너](./images/prod-banner-green.jpg)
 
 - 만들려는 배너 유형을 선택한 후 해당 처리 프로필을 선택한 다음 &quot;폴더에 프로필 적용&quot;을 선택합니다.

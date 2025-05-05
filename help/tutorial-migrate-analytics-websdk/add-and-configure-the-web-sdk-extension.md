@@ -18,9 +18,11 @@ Tags 속성에서 웹 SDK 확장을 추가 및 구성하여 마이그레이션�
 확장을 추가하고 구성하려면 다음 단계를 따르십시오.
 
 1. Experience Platform 데이터 수집으로 이동합니다. 이 작업은 다음 두 가지 방법 중 하나로 수행할 수 있습니다.
-   1. [Adobe Experience Platform 인터페이스](https://platform.adobe.com/)(으)로 이동한 다음 왼쪽 탐색 아래의 **[!UICONTROL 태그]**를 선택합니다.
+   1. [Adobe Experience Platform 인터페이스](https://platform.adobe.com/)(으)로 이동한 다음 왼쪽 탐색 아래의 **[!UICONTROL 태그]**&#x200B;를 선택합니다.
+
       ![태그 1](assets/access-tags-1.jpg)에 액세스
    1. Platform에 액세스할 수 없는 경우에는 창의 오른쪽 상단에 있는 애플리케이션 전환기(9점)를 사용하고 데이터 수집(Experience.Adobe.com에 로그인한 후)을 선택할 수 있습니다.
+
       ![액세스 태그 2](assets/access-tags-2.jpg)
 1. 웹 SDK으로 마이그레이션할 태그 속성을 찾아 선택합니다.
 1. 태그 속성의 왼쪽 탐색에서 **[!UICONTROL 확장]**&#x200B;을 선택합니다.

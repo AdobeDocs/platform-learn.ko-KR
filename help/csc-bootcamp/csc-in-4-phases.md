@@ -52,7 +52,7 @@ _Source:_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/uk
 
 이상적으로 마케팅 팀은 다양한 분야의 사람들과 협업하고 프로젝트를 데이터 중심의 계획된 성과에 연결할 수 있는 작업 관리 솔루션을 사용해야 합니다. 또한 마케팅 팀이 작업의 우선 순위를 전략적으로 결정하고 이러한 우선 순위를 크리에이티브 팀에 알릴 수 있도록 권한을 부여해야 합니다. 여기에서 크리에이티브 개요, 콘텐츠 버전 및 피드백은 각 프로젝트 내에서 함께 연결되어야 하므로 팀이 찾고 있는 내용을 찾기 위해 이전 이메일을 검색할 필요가 없습니다.
 
-크리에이티브 팀은 크리에이티브 및 작업 관리 도구와 통합된 [우수한 디지털 에셋 관리](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[시스템](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)(으)로 설정해야 합니다. 이렇게 하면 관련 에셋을 쉽게 찾고, 사용하고, 업데이트하거나, 용도를 변경할 수 있습니다. 이러한 모든 작업을 통해 시장 출시 속도를 높이고 내부 운영 및 프로세스를 단순화할 수 있습니다.
+크리에이티브 팀은 크리에이티브 및 작업 관리 도구와 통합된 [우수한 디지털 에셋 관리](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [시스템](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)(으)로 설정해야 합니다. 이렇게 하면 관련 에셋을 쉽게 찾고, 사용하고, 업데이트하거나, 용도를 변경할 수 있습니다. 이러한 모든 작업을 통해 시장 출시 속도를 높이고 내부 운영 및 프로세스를 단순화할 수 있습니다.
 
 ### 원활한 워크플로우를 통해 생산 효율성 향상
 

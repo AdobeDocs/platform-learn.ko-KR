@@ -46,17 +46,17 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 
 1. 데이터 수집 UI에서 **[!UICONTROL 위치]**&#x200B;를 선택합니다.
 1. ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)를 선택하세요.
-1. 컨텍스트 메뉴에서 **[!UICONTROL 라이브러리 관리]**를 선택합니다.
+1. 컨텍스트 메뉴에서 **[!UICONTROL 라이브러리 관리]**&#x200B;를 선택합니다.
    ![라이브러리 관리](assets/places-manage-libraries.png)
 1. **[!UICONTROL 라이브러리 관리]** 대화 상자에서 **[!UICONTROL 새로 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 라이브러리 만들기]** 대화 상자에서 **[!UICONTROL 이름]**(예: `Luma`)을 입력하십시오.
-1. **[!UICONTROL 확인]**을 선택합니다.
+1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
    ![라이브러리 만들기](assets/places-create-library.png)
 1. **[!UICONTROL 라이브러리 관리]** 대화 상자를 닫으려면 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL POI 관리]**&#x200B;로 돌아가서 **[!UICONTROL POI 가져오기]**&#x200B;를 선택하십시오.
 1. **[!UICONTROL 위치 가져오기]** 대화 상자에서 **[!UICONTROL 시작]**&#x200B;을 선택합니다.
 1. 라이브러리 목록에서 **[!DNL Luma]**&#x200B;을(를) 선택합니다.
-1. **[!UICONTROL 다음]**을 선택합니다.
+1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
    ![라이브러리 선택](assets/places-import-select-library.png)
 1. [Luma POIs ZIP 파일](assets/luma_pois.csv.zip)을 다운로드하고 컴퓨터의 위치에 추출합니다.
 1. **[!UICONTROL 위치 가져오기]** 대화 상자에서 추출한 `luma_pois.csv` 파일을 **[!UICONTROL CSV 파일 선택 - 파일 드래그 앤 드롭]**&#x200B;에 끌어다 놓습니다. **[!UICONTROL 유효성 검사 성공]** - **[!UICONTROL CSV 파일의 유효성을 검사했습니다]**&#x200B;가 표시됩니다.
@@ -79,7 +79,8 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. **[!UICONTROL 확장 설치]** 대화 상자에서:
    1. **[!UICONTROL 라이브러리 선택]** 목록에서 **[!DNL Luma]**&#x200B;을(를) 선택합니다.
    1. 작업 라이브러리(예: **[!UICONTROL 초기 빌드]**)를 선택했는지 확인하십시오.
-   1. **[!UICONTROL 라이브러리에 저장]**&#x200B;에서 **[!UICONTROL 라이브러리 및 빌드에 저장]**을 선택합니다.
+   1. **[!UICONTROL 라이브러리에 저장]**&#x200B;에서 **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 선택합니다.
+
       ![위치 확장 설치](assets/places-install-extension.png).
 
 1. 라이브러리가 다시 빌드되었습니다.
@@ -112,7 +113,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL 위치]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 데이터 요소 형식]** 목록에서 **[!UICONTROL 이름]**&#x200B;을(를) 선택하십시오.
 1. **[!UICONTROL TARGET]** 아래에서 **[!UICONTROL 현재 POI]**&#x200B;를 선택하십시오.
-1. **[!UICONTROL 라이브러리에 저장]**을 선택합니다.
+1. **[!UICONTROL 라이브러리에 저장]**&#x200B;을 선택합니다.
    ![데이터 요소](assets/tags-create-data-element.png)
 
 1. 아래 표의 정보를 사용하여 4~8단계를 반복하여 추가 데이터 요소를 만듭니다.
@@ -138,7 +139,8 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. **[!UICONTROL 규칙 만들기]** 화면에서 규칙 이름(예: `POI - Entry`)을 입력하십시오.
 1. **[!UICONTROL 이벤트]** 아래의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)를 선택하십시오.
    1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL 위치]**&#x200B;를 선택하고 **[!UICONTROL 이벤트 유형]** 목록에서 **[!UICONTROL POI 입력]**&#x200B;을 선택합니다.
-   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
+   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
+
       ![이벤트 태그](assets/tags-event-mobile-core.png).
 1. **[!UICONTROL 작업]** 아래의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)을(를) 선택하십시오.
    1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL Mobile Core]**&#x200B;를 선택하고 **[!UICONTROL 작업 유형]**&#x200B;에서 **[!UICONTROL 데이터 첨부]**&#x200B;를 선택합니다. 이 작업은 페이로드 데이터를 첨부합니다.
@@ -168,7 +170,8 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 
       ![데이터](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)을(를) 선택하여 JSON에 `{%% ... %%}` 데이터 요소 자리 표시자 값을 삽입할 수도 있습니다. 팝업 대화 상자를 통해 만든 데이터 요소를 선택할 수 있습니다.
 
-   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
+   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
+
       ![태그 작업](assets/tags-action-mobile-core.png)
 
 1. **[!UICONTROL Mobile Core - 데이터 첨부]** 작업 옆에 있는 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)를 선택합니다.
@@ -225,7 +228,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 태그의 모든 변경 사항이 게시되도록 하려면
 
 1. 빌드할 라이브러리로 **[!UICONTROL 초기 빌드]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 빌드]**를 선택합니다.
+1. **[!UICONTROL 빌드]**&#x200B;를 선택합니다.
    ![라이브러리 빌드](assets/tags-build-library.png)
 
 
@@ -242,9 +245,9 @@ Assurance에서 설정을 확인하려면:
 1. 지도를 POI 중 하나의 위치로 이동합니다.
 1. ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 부하 POI를 시뮬레이션하도록 선택합니다. POI는 원과 핀을 사용하여 식별됩니다.
 1. POI를 선택합니다.
-1. 팝업에서 ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 시작 이벤트 시뮬레이션]**을 선택합니다.
+1. 팝업에서 ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 시작 이벤트 시뮬레이션]**&#x200B;을 선택합니다.
    ![시작 이벤트 시뮬레이션](assets/places-simulate.png)
-1. 왼쪽 레일에서 **[!UICONTROL 이벤트]**를 선택하면 시뮬레이션한 이벤트가 표시됩니다.
+1. 왼쪽 레일에서 **[!UICONTROL 이벤트]**&#x200B;를 선택하면 시뮬레이션한 이벤트가 표시됩니다.
    ![AJO 의사 결정 유효성 검사](assets/places-events.png)
 
 

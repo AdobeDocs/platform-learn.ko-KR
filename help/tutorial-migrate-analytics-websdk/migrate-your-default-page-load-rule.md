@@ -33,6 +33,7 @@ ht-degree: 0%
 
    ![Adobe Analytics - 변수 설정](assets/aa-set-variables.jpg)
    1. 해당 규칙에서 설정되는 변수 확인
+
       ![설정 중인 변수](assets/aa-vars-set.jpg)
 
 1. 페이지 맨 위에서 라디오 단추를 **JSON 제공**(으)로 변경하면 설정된 변수의 코드 보기가 표시됩니다. 이 코드 보기와 UI 보기는 서로 호환되며, 한 UI에서 어떤 것을 설정하면 다른 UI에서도 업데이트됩니다.

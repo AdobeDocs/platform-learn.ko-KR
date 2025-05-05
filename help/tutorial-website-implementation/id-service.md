@@ -90,6 +90,7 @@ ID 서비스 확장은 규칙 작업을 사용하지 않고도 요청을 수행�
    1. 왼쪽의 `Cookies`를 확장합니다.
    1. 도메인 `https://luma.enablementadobe.com`을 클릭합니다.
    1. 오른쪽에서 AMCV_ 쿠키를 찾습니다. 하드코딩된 태그 속성을 사용하여 Luma 사이트를 로드하고 자체 사이트에 매핑했으므로 여러 개가 표시될 수 있습니다.
+
       ![AMCV_ 쿠키 확인](images/idservice-AMCVCookie.png)
 
 됐습니다. 첫 번째 확장을 추가했습니다. ID 서비스의 구성 옵션에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html)를 참조하십시오.

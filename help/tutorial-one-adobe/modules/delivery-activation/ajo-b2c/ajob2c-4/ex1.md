@@ -35,7 +35,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 먼저 이벤트에 다음과 같은 이름(`--aepUserLdap--PurchaseEvent`)을 지정하고 다음과 같은 설명을 추가하십시오. `Purchase Event`
 
-**Type**&#x200B;에 대해 **Unitary**를 선택합니다.
+**Type**&#x200B;에 대해 **Unitary**&#x200B;를 선택합니다.
 **이벤트 ID 유형**&#x200B;에 대해 **시스템 생성**&#x200B;을 선택하십시오.
 
 ![Journey Optimizer](./images/eventidtype.png)
@@ -282,7 +282,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc71.png)
 
-왼쪽 메뉴에서 **컨텍스트 특성**을 클릭합니다.
+왼쪽 메뉴에서 **컨텍스트 특성**&#x200B;을 클릭합니다.
 자세히 드릴하려면 **Journey Orchestration** 옆에 있는 화살표를 클릭하십시오.
 
 ![Journey Optimizer](./images/oc72.png)

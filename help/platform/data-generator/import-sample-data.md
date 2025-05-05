@@ -75,7 +75,7 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
    > 작업 디렉터리 내에서 파일이 로드되는 경우 동일한 파일이 다른 장치에 저장되어 있으면 여러 장치에서 원활하게 실행됩니다. 그러나 작업 디렉터리 외부에서 파일을 실행하려면 설정을 켜야 동일한 의도를 나타낼 수 있습니다. `FILE_PATH`이(가) [!DNL Postman]의 작업 디렉터리 경로와 같지 않은 경우 이 옵션을 사용하도록 설정해야 합니다.
 
 1. **설정** 패널을 닫습니다.
-1. **환경**&#x200B;을 선택한 다음 **가져오기**를 선택하십시오.
+1. **환경**&#x200B;을 선택한 다음 **가져오기**&#x200B;를 선택하십시오.
    ![환경 가져오기](../assets/data-generator/images/env-import.png)
 1. 다운로드한 JSON 환경 파일 `DataInExperiencePlatform.postman_environment` 가져오기
 1. Postman의 오른쪽 상단 드롭다운에서 환경을 선택하고 눈 모양 아이콘을 클릭하여 환경 변수를 봅니다.
@@ -187,7 +187,7 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
 
 Adobe Journey Optimizer에 대해 알아보려면 이 샌드박스에는 [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)를 수행하는 데 필요한 모든 것이 포함되어 있습니다.
 
-병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 데이터 설계자 및 데이터 엔지니어 시작하기 자습서](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)의 [단원 11로 건너뜁니다. 이 다른 자습서의 이전 단원을 통해 이러한 Postman 컬렉션에서 방금 채운 모든 항목을 수동으로 빌드할 수 있습니다. 바로 시작할 수 있습니다.
+병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 데이터 설계자 및 데이터 엔지니어 시작하기 자습서[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)의 단원 11로 건너뜁니다. 이 다른 자습서의 이전 단원을 통해 이러한 Postman 컬렉션에서 방금 채운 모든 항목을 수동으로 빌드할 수 있습니다. 바로 시작할 수 있습니다.
 
 이 샌드박스에 연결되는 샘플 웹 SDK 구현을 빌드하려면 다음을 수행하십시오.
 [Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR). Web SDK 자습서의 &quot;초기 구성&quot;, &quot;태그 구성&quot; 및 &quot;Experience Platform 설정&quot; 단원을 설정한 후 `luma-crm.json` 파일의 처음 10개 이메일 주소를 사용하여 Luma 웹 사이트에 로그인 `test` 암호를 사용하여 이 자습서에서 업로드한 데이터와 프로필 조각이 병합되는 것을 확인합니다.

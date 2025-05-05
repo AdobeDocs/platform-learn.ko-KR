@@ -241,10 +241,10 @@ Workspace 프로젝트는 Customer Journey Analytics에서 보고서 및 시각�
 1. 프로젝트 이름(**[!UICONTROL 새 프로젝트]**)을 선택하고 고유한 프로젝트 이름을 제공하십시오. 예: `Luma App - AEP Mobile SDK Tutorial Project`.
    ![CJA 프로젝트 2](assets/cja-projects-2.png)
 
-1. 프로젝트를 저장하려면 **[!UICONTROL 프로젝트]** > **[!UICONTROL 저장]**을 선택합니다.
+1. 프로젝트를 저장하려면 **[!UICONTROL 프로젝트]** > **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    ![CJA 프로젝트 3](assets/cja-projects-3.png)
 
-1. **[!UICONTROL 저장]** 대화 상자에서 다른 필드는 모두 무시하고 **[!UICONTROL 저장]**을 선택합니다.
+1. **[!UICONTROL 저장]** 대화 상자에서 다른 필드는 모두 무시하고 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    ![CJA 프로젝트 4](assets/cja-projects-4.png)
 
 
@@ -254,10 +254,10 @@ Workspace 프로젝트는 Customer Journey Analytics에서 보고서 및 시각�
 
 이제 프로젝트를 설정했습니다. 자유 형식 테이블은 기본적으로 제공됩니다. 구성 요소를 추가하기 전에 자유 형식 패널이 올바른 데이터 보기 및 기간을 사용하고 있는지 확인하십시오.
 
-1. 드롭다운 목록에서 데이터 보기를 선택합니다. 예: **[!UICONTROL Luma 앱 - AEP 모바일 SDK 튜토리얼 데이터 보기]**. 목록에서 데이터 보기를 볼 수 없는 경우 드롭다운 목록 하단에서 **[!UICONTROL 모두 표시]**를 선택합니다.
+1. 드롭다운 목록에서 데이터 보기를 선택합니다. 예: **[!UICONTROL Luma 앱 - AEP 모바일 SDK 튜토리얼 데이터 보기]**. 목록에서 데이터 보기를 볼 수 없는 경우 드롭다운 목록 하단에서 **[!UICONTROL 모두 표시]**&#x200B;를 선택합니다.
    ![CJA 프로젝트 5](assets/cja-projects-5.png)
 
-1. 패널에 적절한 기간을 정의하려면 기본 사전 설정 **[!UICONTROL 이번 달]**&#x200B;을(를) 선택하고 사용자 지정 시작 및 종료 날짜를 입력하거나 **[!UICONTROL 사전 설정]**(예: **[!UICONTROL 지난 6개월]**)을 사용하고 **[!UICONTROL 적용]**을(를) 선택합니다.
+1. 패널에 적절한 기간을 정의하려면 기본 사전 설정 **[!UICONTROL 이번 달]**&#x200B;을(를) 선택하고 사용자 지정 시작 및 종료 날짜를 입력하거나 **[!UICONTROL 사전 설정]**(예: **[!UICONTROL 지난 6개월]**)을 사용하고 **[!UICONTROL 적용]**&#x200B;을(를) 선택합니다.
    ![CJA 프로젝트 6](assets/cja-projects-6.png)
 
 
@@ -284,7 +284,7 @@ Workspace 프로젝트는 Customer Journey Analytics에서 보고서 및 시각�
 
 1. **[!UICONTROL DIMENSION]** 목록 아래에서 **[!UICONTROL 모두 표시]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL 일]** 헤더에 **[!UICONTROL 화면 이름]** 구성 요소를 끌어다 놓습니다. 이 작업에는 차원의 교체를 나타내는 ![전환](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL 바꾸기]**이 표시됩니다.
+1. **[!UICONTROL 일]** 헤더에 **[!UICONTROL 화면 이름]** 구성 요소를 끌어다 놓습니다. 이 작업에는 차원의 교체를 나타내는 ![전환](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL 바꾸기]**&#x200B;이 표시됩니다.
    ![CJA 프로젝트 9](assets/cja-projects-9.png)
 
 보고서의 첫 번째 자유 형식 테이블이 완료되었습니다.
@@ -330,7 +330,7 @@ Workspace 프로젝트는 Customer Journey Analytics에서 보고서 및 시각�
 
 1. 적절한 기간을 선택해야 합니다.
 
-1. 새 자유 형식 테이블을 만들려면 ![자유 형식 테이블](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) **[!UICONTROL 자유 형식 테이블]**을 선택하십시오.
+1. 새 자유 형식 테이블을 만들려면 ![자유 형식 테이블](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) **[!UICONTROL 자유 형식 테이블]**&#x200B;을 선택하십시오.
    ![CJA 프로젝트 14](assets/cja-projects-14.png)
 
 1. **[!UICONTROL Panel]**&#x200B;의 이름을 `Commerce`(으)로 바꾸십시오.
@@ -360,7 +360,7 @@ Commerce 이벤트 보고서가 완료되었습니다.
 
 1. **[!UICONTROL Commerce]** 패널에서 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)를 선택하고 팝업에서 ![폴아웃](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg)(폴아웃 시각화를 나타냄)을 선택합니다.
 
-1. [!UICONTROL *터치포인트 추가*] 드롭다운 목록에서 **[!UICONTROL 제품 보기]**를 선택합니다.
+1. [!UICONTROL *터치포인트 추가*] 드롭다운 목록에서 **[!UICONTROL 제품 보기]**&#x200B;를 선택합니다.
    ![CJA 프로젝트 18](assets/cja-projects-18.png)
 또는 **[!UICONTROL 폴아웃]** 시각화에서 **[!UICONTROL 제품 보기]** 차원을 **[!UICONTROL 모든 사람]** 차원 아래에 끌어다 놓을 수 있습니다.
 
@@ -417,7 +417,7 @@ Commerce 이벤트 보고서가 완료되었습니다.
 
 1. 행을 마우스 오른쪽 단추로 클릭하여 [의사 결정 관리를 사용하여 오퍼 만들기 및 표시](journey-optimizer-offers.md) 단원에서 정의한 오퍼 결정 중 하나 이상을 식별합니다. 예: **[!UICONTROL Luma - 모바일 앱 결정]**.
 
-1. 컨텍스트 메뉴에서 **[!UICONTROL 분류]** > **[!UICONTROL Dimension]** > **[!UICONTROL 오퍼 이름]**을 선택합니다. 이 옵션을 선택하면 활동 이름 차원이 오퍼 이름으로 분류됩니다.
+1. 컨텍스트 메뉴에서 **[!UICONTROL 분류]** > **[!UICONTROL Dimension]** > **[!UICONTROL 오퍼 이름]**&#x200B;을 선택합니다. 이 옵션을 선택하면 활동 이름 차원이 오퍼 이름으로 분류됩니다.
    ![CJA 프로젝트 20b](assets/cja-projects-20b.png)
 
 사람들에게 오퍼 보고서가 완료되었습니다.

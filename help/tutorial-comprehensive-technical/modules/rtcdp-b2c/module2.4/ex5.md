@@ -27,7 +27,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![데이터 수집](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-**대상**(으)로 이동한 다음 **찾아보기**&#x200B;를 클릭합니다. 그러면 사용 가능한 모든 대상을 볼 수 있습니다. 대상을 찾고 아래 표시된 대로 세 점**..**을 클릭한 다음 **대상 활성화**&#x200B;를 클릭합니다.
+**대상**(으)로 이동한 다음 **찾아보기**&#x200B;를 클릭합니다. 그러면 사용 가능한 모든 대상을 볼 수 있습니다. 대상을 찾고 아래 표시된 대로 세 점&#x200B;**..**&#x200B;을 클릭한 다음 **대상 활성화**&#x200B;를 클릭합니다.
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 

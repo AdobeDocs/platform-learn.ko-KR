@@ -88,7 +88,7 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 이제 데이터 세트를 만들 수 있습니다.
 
 1. [카탈로그 서비스 API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json)을(를) `Luma Tutorial Assets` 폴더로 다운로드합니다.
-1. 컬렉션을 [!DNL Postman](으)로 가져오기
+1. 컬렉션을 [!DNL Postman] (으)로 가져오기
 1. **[!DNL Catalog Service API > Datasets > Create a new dataset.]** 요청 선택
 1. 다음을 요청의 **본문**(으)로 붙여 넣으십시오. ***ID 값을 자신의 ID 값으로 바꾸기***:
 
