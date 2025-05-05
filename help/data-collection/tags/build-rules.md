@@ -18,4 +18,4 @@ ht-degree: 37%
 
 태그에서 명령을 실행할 수 있도록 규칙을 만드는 방법을 알아봅니다. 작업과 조건에 따라 *when*&#x200B;이 작업을 수행하는 반면 작업은 *what*&#x200B;을(를) 결정합니다. 자세한 내용은 [규칙](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=ko) 설명서를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430499/?learn=on&enablevpops&captions=kor)

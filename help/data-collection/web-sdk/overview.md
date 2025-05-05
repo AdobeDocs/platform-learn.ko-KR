@@ -20,7 +20,7 @@ ht-degree: 41%
 
 Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScript 라이브러리와 하나의 비콘 유형을 사용하여 Adobe 애플리케이션 및 서드파티 대상으로 데이터를 전송하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37266?learn=on&enablevpops&captions=kor)
 
 >[!NOTE]
 >

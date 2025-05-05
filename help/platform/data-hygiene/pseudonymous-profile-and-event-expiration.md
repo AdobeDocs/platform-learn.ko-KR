@@ -22,4 +22,4 @@ Experience Platform에서 익명 프로필 및 이벤트에 대한 만료 설정
 이러한 설정을 통해 데이터 관리자는 인증되지 않은 프로필 및 관련 이벤트에 대한 만료 날짜를 설정할 수 있습니다. 이렇게 하면 마케팅 및 광고 사용 사례와 관련된 [!DNL Profile Service]을(를) 유지할 수 있습니다. 자세한 내용은 [경험 이벤트 만료](https://experienceleague.adobe.com/ko/docs/experience-platform/profile/event-expirations) 및 [익명 프로필 데이터 만료](https://experienceleague.adobe.com/ko/docs/experience-platform/profile/event-expirations) 설명서를 참조하십시오.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449862?learn=on&enablevpops&captions=kor)

@@ -20,7 +20,7 @@ ht-degree: 0%
 
 이 통합 비디오에서는 Audience Manager Data Connector를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고 다른 풍부한 데이터와 결합하는 방법을 알아봅니다. 자세한 내용은 [Audience Manager 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346987/?learn=on&enablevpops&captions=kor)
 
 프로세스와 직원을 Adobe Audience Manager에서 Real-Time Customer Data Platform(Real-Time CDP)로 이동하도록 재구성할 때 Audience Manager 데이터 커넥터를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고, 이를 다른 풍부한 데이터(PII 포함)와 결합하여 대상 파트너에게 보낼 수 있습니다. 이 비디오에서는 Real-Time CDP용 AAM 데이터 커넥터의 구성을 소개합니다.
 

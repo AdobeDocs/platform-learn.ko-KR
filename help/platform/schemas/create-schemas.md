@@ -18,4 +18,4 @@ ht-degree: 8%
 
 이 비디오는 XDM 개별 프로필 클래스 및 다양한 필드 그룹을 사용하여 Adobe Experience Platform에서 스키마를 만드는 방법을 보여 줍니다. 자세한 제품 설명서는 [UI에서 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ko) 및 [API로 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/27012?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430221?learn=on&enablevpops&captions=kor)

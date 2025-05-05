@@ -19,4 +19,4 @@ ht-degree: 33%
 
 Adobe Real-Time Customer Data Platform(CDP)가 알려지거나 알려지지 않은 고객 데이터를 통합해 신뢰할 수 있는 고객 프로필을 생성하고 활성화하는 방법에 대해 알아봅니다. 자세한 내용은 [Real-Time Customer Data Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/29705?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32142?learn=on&enablevpops&captions=kor)

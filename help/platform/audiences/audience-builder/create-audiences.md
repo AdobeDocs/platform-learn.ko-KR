@@ -22,5 +22,5 @@ Adobe Experience Platform에서 대상자를 만드는 방법을 알아봅니다
 >
 > Platform 인터페이스에서 &quot;[!UICONTROL 세그먼트]&quot;의 이름이 &quot;[!UICONTROL 대상]&quot;으로 변경되었습니다. **[!UICONTROL 대상 만들기]** > **[!UICONTROL 규칙 빌드]**&#x200B;를 선택하여 이 비디오에 포함된 규칙 빌더를 입력합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31708?learn=on&enablevpops&captions=kor)
 

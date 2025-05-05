@@ -19,7 +19,7 @@ ht-degree: 43%
 
 마케팅 분석가 및 전문가가 데이터 과학에 대한 전문 지식 없이도 고객 경험 사용 사례에서 인공 지능(AI) 및 머신 러닝을 사용할 수 있는 Intelligent Services에 대한 높은 수준의 소개입니다. 자세한 내용은 [Intelligent Services 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36615?learn=on&enablevpops&captions=kor)
 
 ## 고객 AI
 
@@ -39,7 +39,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-customer-ai.md" title="고객 AI 소개" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="고객 AI 소개"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36519?format=jpeg&nocache=1740250112240&captions=kor" alt="고객 AI 소개"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-customer-ai.md" title="고객 AI 구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="고객 AI 구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36614?format=jpeg&nocache=1740250112226&captions=kor" alt="고객 AI 구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-customer-ai-scores-and-insights.md" title="고객 AI 스코어 및 인사이트 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="고객 AI 스코어 및 인사이트 사용"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36613?format=jpeg&nocache=1740250112262&captions=kor" alt="고객 AI 스코어 및 인사이트 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -108,7 +108,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-customer-ai.md" title="고객 AI의 비즈니스 가치" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="고객 AI의 비즈니스 가치"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328479?format=jpeg&nocache=1740250112251&captions=kor" alt="고객 AI의 비즈니스 가치"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -147,7 +147,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-attribution-ai.md" title="Attribution AI 소개" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="Attribution AI 소개"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36606?format=jpeg&nocache=1740250113366&captions=kor" alt="Attribution AI 소개"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -170,7 +170,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribution-ai.md" title="Attribution AI 구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="Attribution AI 구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36612?format=jpeg&nocache=1740250113378&captions=kor" alt="Attribution AI 구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -193,7 +193,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-attribution-ai-scores-and-insights.md" title="Attribution AI 스코어 및 인사이트 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="Attribution AI 스코어 및 인사이트 사용"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345103?format=jpeg&nocache=1740250113402&captions=kor" alt="Attribution AI 스코어 및 인사이트 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-attribution-ai.md" title="Attribution AI의 비즈니스 가치" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="Attribution AI의 비즈니스 가치"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328470?format=jpeg&nocache=1740250113390&captions=kor" alt="Attribution AI의 비즈니스 가치"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

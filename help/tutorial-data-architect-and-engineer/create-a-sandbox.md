@@ -26,7 +26,7 @@ ht-degree: 2%
 **데이터 설계자** 및 **데이터 엔지니어**&#x200B;는 이 자습서 외부에서 샌드박스를 만들어야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 샌드박스에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430298/?learn=on&enablevpops&captions=kor)
 
 ## 권한 필요
 

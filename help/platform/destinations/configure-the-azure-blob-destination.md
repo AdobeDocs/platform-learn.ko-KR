@@ -22,5 +22,5 @@ ht-degree: 0%
 
 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346820/?learn=on&enablevpops&captions=kor)
 

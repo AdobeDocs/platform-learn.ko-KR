@@ -18,4 +18,4 @@ ht-degree: 46%
 
 마케팅 채널 및 캠페인의 영향을 파악하기 위해 Attribution AI 인스턴스를 만드는 방법을 알아봅니다. 자세한 내용은 [Attribution AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36612?learn=on&enablevpops&captions=kor)

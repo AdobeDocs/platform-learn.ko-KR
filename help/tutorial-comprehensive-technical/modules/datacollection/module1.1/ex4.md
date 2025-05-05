@@ -25,7 +25,7 @@ Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 
 
 이전에 디버거를 사용한 적이 없고 이전 Adobe Experience Cloud 디버거와 다른 경우 5분 분량의 개요 비디오를 시청하면 됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36114?quality=12&learn=on&enablevpops&captions=kor)
 
 시크릿 모드에서 데모 웹 사이트를 로드할 경우 Experience Platform Debugger를 시크릿 모드에서도 사용할 수 있는지 확인해야 합니다. 이렇게 하려면 브라우저에서 **chrome://extensions**(으)로 이동하여 Experience Platform Debugger 확장을 엽니다.
 

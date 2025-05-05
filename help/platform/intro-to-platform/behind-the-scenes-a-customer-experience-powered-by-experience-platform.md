@@ -17,5 +17,5 @@ ht-degree: 0%
 
 이전 비디오에서는 예제 브랜드인 Luma가 어떻게 풍부하고, 보람 있고, 적절한 고객 경험을 만들 수 있는지 보았습니다. 이 비디오에서는 Adobe Experience Platform을 사용하여 이 여정을 수행하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36314?learn=on&enablevpops&captions=kor)
 

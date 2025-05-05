@@ -18,4 +18,4 @@ ht-degree: 0%
 
 이 비디오는 원활하고 확장 가능한 방식으로 클라우드 스토리지 서비스의 데이터를 Adobe Experience Platform의 실시간 고객 프로필 및 데이터 레이크로 손쉽게 일괄 수집하는 방법을 보여 줍니다. 자세한 제품 설명서는 Source Connectors 개요 페이지의 [클라우드 저장소](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ko#cloud-storage) 또는 [Amazon S3 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32137?learn=on&enablevpops&captions=kor)

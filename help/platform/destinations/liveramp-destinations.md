@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Real-Time CDP에서 LiveRamp 대상을 구성하여 활성화 파트너에게 대상자를 보내는 방법을 알아봅니다. 자세한 문서는 [LiveRamp - 온보딩 연결](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=ko) 및 [LiveRamp - 배포 연결](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=ko)을 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452664/?learn=on&enablevpops&captions=kor)

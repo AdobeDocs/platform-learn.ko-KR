@@ -18,7 +18,7 @@ ht-degree: 13%
 
 이 비디오에서는 Adobe Experience Platform에서 실시간 고객 프로필을 조합하고 업데이트하는 방법과 이러한 프로필에 액세스하여 사용하는 방법을 설명합니다. 자세한 내용은 [실시간 고객 프로필 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31709?learn=on&enablevpops&captions=kor)
 
 ## 아키텍처 및 기능
 
@@ -35,7 +35,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="실시간 고객 프로필 개요 다이어그램" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="실시간 고객 프로필 개요 다이어그램"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36873?format=jpeg&nocache=1740415066741&captions=kor" alt="실시간 고객 프로필 개요 다이어그램"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-merge-policies.md" title="병합 정책 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330433?format=jpeg&nocache=1740415066765" alt="병합 정책 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345079?format=jpeg&nocache=1740415066765&captions=kor" alt="병합 정책 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="union-schemas-overview.md" title="결합 스키마 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329940?format=jpeg&nocache=1740415066755" alt="결합 스키마 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342825?format=jpeg&nocache=1740415066755&captions=kor" alt="결합 스키마 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -104,7 +104,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="구매 합계에 대한 계산된 속성 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="구매 합계에 대한 계산된 속성 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443558?format=jpeg&nocache=1740415066775&captions=kor" alt="구매 합계에 대한 계산된 속성 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -139,7 +139,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="bring-data-into-the-real-time-customer-profile.md" title="실시간 고객 프로필로 데이터 가져오기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27301?format=jpeg&nocache=1740415067018" alt="실시간 고객 프로필로 데이터 가져오기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34358?format=jpeg&nocache=1740415067018&captions=kor" alt="실시간 고객 프로필로 데이터 가져오기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -185,7 +185,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443448/?format=jpeg&nocache=1740415067029&captions=kor" alt="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -218,7 +218,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-account-profiles.md" title="계정 프로필 보기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/338251?format=jpeg&nocache=1740415067214" alt="계정 프로필 보기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446584?format=jpeg&nocache=1740415067214&captions=kor" alt="계정 프로필 보기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

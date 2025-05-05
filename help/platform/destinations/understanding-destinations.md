@@ -20,5 +20,5 @@ ht-degree: 3%
 
 대상은 데이터를 활성화하고 원활한 방법으로 해당 파트너에게 내보내는 대상 플랫폼과의 사전 구축된 통합입니다. 다양한 사용 사례를 지원하기 위해 [!DNL Real-Time CDP], [!DNL Experience Platform] 및 [!DNL Tags]에서 데이터를 가져오는 데 사용할 수 있는 대상 유형에 대해 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/29707?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32149?learn=on&enablevpops&captions=kor)
 

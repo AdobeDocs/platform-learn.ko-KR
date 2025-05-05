@@ -29,7 +29,7 @@ Customer Journey Analytics은 플랫폼 데이터 위에 이 솔루션을 제공
 
 Analysis Workspace을 사용하지 않았다면 이 비디오를 시청하는 것이 좋습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35560?quality=12&learn=on&enablevpops&captions=kor)
 
 ### 프로젝트 만들기
 

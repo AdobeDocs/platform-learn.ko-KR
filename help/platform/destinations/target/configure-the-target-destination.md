@@ -23,4 +23,4 @@ ht-degree: 1%
 
 Adobe Target과 Real-Time Customer Data Platform을 통합하여 Real-Time CDP에서 Target으로 세그먼트 및 프로필 속성을 보내는 방법을 알아봅니다. 자세한 내용은 [Adobe Target 연결 설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449800/?learn=on&enablevpops&captions=kor)

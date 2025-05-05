@@ -18,4 +18,4 @@ ht-degree: 1%
 
 이 비디오는 필드, 데이터 유형, 스키마 필드 그룹, 클래스 및 비헤이비어를 포함한 XDM(Experience Data Model) 스키마의 주요 빌딩 블록 요소를 검토합니다. 자세한 내용은 [스키마 설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/333469?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413661?learn=on&enablevpops&captions=kor)

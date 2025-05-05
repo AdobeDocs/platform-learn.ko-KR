@@ -18,7 +18,7 @@ ht-degree: 16%
 
 데이터 소스에서 데이터를 수집한 시점부터 Adobe Experience Platform 외부의 대상으로 내보낼 때까지 데이터를 완벽하게 제어하는 방법에 대해 알아봅니다. 데이터 거버넌스는 데이터 사용 워크플로에 심층적으로 포함된 쉽게 확장 가능한 프레임워크입니다. 이 프레임워크는 레이블, 정책 및 집행이라는 세 가지 주요 측면을 기반으로 구축됩니다. 자세한 내용은 [데이터 거버넌스 설명서](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32135?learn=on&enablevpops&captions=kor)
 
 ## 데모
 
@@ -35,7 +35,7 @@ Adobe Experience Platform의 데이터 거버넌스 기능에 대한 전체적�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-data-governance.md" title="데이터 거버넌스 엔드투엔드 데모" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36653?format=jpeg&nocache=1740179989077" alt="데이터 거버넌스 엔드투엔드 데모"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/41326?format=jpeg&nocache=1740179989077&captions=kor" alt="데이터 거버넌스 엔드투엔드 데모"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -73,7 +73,7 @@ Adobe Experience Platform의 데이터 거버넌스 기능에 대한 전체적�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="레이블을 사용한 데이터 분류" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="레이블을 사용한 데이터 분류"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422792?format=jpeg&nocache=1740179989358&captions=kor" alt="레이블을 사용한 데이터 분류"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +96,7 @@ Adobe Experience Platform의 데이터 거버넌스 기능에 대한 전체적�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-data-usage-policies.md" title="데이터 사용 정책 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32977?format=jpeg&nocache=1740179989347" alt="데이터 사용 정책 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37138?format=jpeg&nocache=1740179989347&captions=kor" alt="데이터 사용 정책 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -156,7 +156,7 @@ Experience Platform이 고객 동의를 구하는 방법에 대해 알아봅니�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="integrate-with-iab-transparency-and-consent-framework-2.md" title="IAB의 투명성 및 동의 프레임워크 2.0 통합" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/38346?format=jpeg&nocache=1740179989597" alt="IAB의 투명성 및 동의 프레임워크 2.0 통합"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/326480?format=jpeg&nocache=1740179989597&captions=kor" alt="IAB의 투명성 및 동의 프레임워크 2.0 통합"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -179,7 +179,7 @@ Experience Platform이 고객 동의를 구하는 방법에 대해 알아봅니�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="enforce-consent.md" title="동의 시행" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345677?format=jpeg&nocache=1740179989584" alt="동의 시행"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3412102?format=jpeg&nocache=1740179989584&captions=kor" alt="동의 시행"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

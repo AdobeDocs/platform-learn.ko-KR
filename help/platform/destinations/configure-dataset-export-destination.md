@@ -22,4 +22,4 @@ ht-degree: 0%
 
 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/ui/activate/export-datasets)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448825/?learn=on&enablevpops&captions=kor)

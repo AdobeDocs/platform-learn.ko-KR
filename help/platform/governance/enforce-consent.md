@@ -18,7 +18,7 @@ ht-degree: 2%
 
 고객의 동의 환경 설정을 적용하는 정책을 만드는 방법을 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3412102?learn=on&enablevpops&captions=kor)
 
 >[!IMPORTANT]
 >

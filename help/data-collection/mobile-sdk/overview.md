@@ -20,4 +20,4 @@ Adobe Experience Platform Mobile SDK가 모바일 애플리케이션에서 전�
 >
 > Launch는 현재 **[!DNL tags]**&#x200B;입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33547?learn=on&enablevpops&captions=kor)

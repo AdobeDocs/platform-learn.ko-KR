@@ -22,4 +22,4 @@ ht-degree: 1%
 >
 >샌드박스 간에 스키마와 다른 개체를 이동하는 훨씬 쉬운 인터페이스 중심 프로세스가 2023년 말에 도입되었으며, 이를 대신 사용하는 것이 좋습니다. [샌드박스 간 개체 복사](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413598?learn=on&enablevpops&captions=kor)

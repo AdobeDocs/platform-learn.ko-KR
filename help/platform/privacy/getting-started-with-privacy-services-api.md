@@ -18,4 +18,4 @@ ht-degree: 2%
 
 Privacy Service API를 설정하고 인증하는 방법을 알아봅니다. 자세한 내용은 [Privacy Services 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/336075?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447183?learn=on&enablevpops&captions=kor)

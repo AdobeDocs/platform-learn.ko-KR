@@ -24,7 +24,7 @@ ht-degree: 0%
 * 활용할 수 있는 Adobe Experience Platform 데이터 준비 기능
 * Adobe Real-Time CDP, Adobe Journey Optimizer 및 Customer Journey Analytics의 ROI 향상
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454951?learn=on&enablevpops&captions=kor)
 
 ## SQL 예
 

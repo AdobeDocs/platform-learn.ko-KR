@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Adobe의 Real-Time Customer Data Platform 및 Google의 Customer Match 기능이 브랜드가 Google의 소유 및 운영 속성을 보유한 고객과 참여하여 캠페인 규모를 확장하는 데 어떻게 도움이 되는지에 대해 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326488?learn=on&enablevpops&captions=kor)

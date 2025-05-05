@@ -23,4 +23,4 @@ Adobe Experience Platform에서 대시보드를 만드는 방법을 알아봅니
 >
 >사용자 정의 대시보드 기능은 Beta 버전입니다. 기능 및 설명서는 변경될 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413784/?learn=on&enablevpops&captions=kor)

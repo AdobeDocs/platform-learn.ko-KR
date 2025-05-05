@@ -56,7 +56,7 @@ Platform Web SDK은 Target at.js 라이브러리의 진화가 아닙니다. 웹 
 
 다음 비디오는 Adobe Experience Platform Web SDK 및 Adobe Experience Platform Edge Network에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37266/?learn=on&enablevpops&captions=kor)
 
 이제 at.js와 Platform Web SDK의 높은 수준의 차이점을 이해했으므로 [마이그레이션을 계획](plan-migration.md)할 수 있습니다.
 

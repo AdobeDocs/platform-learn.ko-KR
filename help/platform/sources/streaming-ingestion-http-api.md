@@ -17,7 +17,7 @@ ht-degree: 42%
 
 이 비디오는 HTTP API 끝점을 사용하여 실시간으로 Adobe Experience Platform에 데이터를 스트리밍하는 방법을 보여 줍니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331028?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410931?learn=on&enablevpops&captions=kor)
 
 ## 추가 정보
 

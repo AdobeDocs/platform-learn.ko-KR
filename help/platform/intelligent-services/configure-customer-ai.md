@@ -23,4 +23,4 @@ ht-degree: 45%
 >
 >고객 AI는 CEE(고객 경험 이벤트) 스키마에 맞게 데이터를 ETL할 필요 없이 Adobe Analytics 및 Adobe Audience Manager 데이터 세트를 모두 지원합니다. 자세한 내용은 [Intelligent Services 데이터 준비 안내서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36614?learn=on&enablevpops&captions=kor)

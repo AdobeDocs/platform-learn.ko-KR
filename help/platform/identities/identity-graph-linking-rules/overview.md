@@ -24,4 +24,4 @@ ht-degree: 0%
 
 ID 그래프 연결 규칙이 데이터 설계자가 정확한 고객 프로필을 유지하고 그래프 붕괴를 방지하는 데 어떻게 도움이 되는지에 대한 개요를 살펴보십시오. 자세한 내용은 [ID 그래프 연결 규칙 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448279/?learn=on&enablevpops&captions=kor)

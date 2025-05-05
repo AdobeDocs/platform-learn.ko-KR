@@ -18,4 +18,4 @@ ht-degree: 1%
 
 데이터 파트너와의 세그먼트 공유가 연결되면 파트너와의 데이터 공유를 탐색하고 시작할 수 있습니다. 이 비디오에서는 데이터 공유에 대한 세그먼트 일치 인스턴스를 구성하는 과정을 안내합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346708/?learn=on&enablevpops&captions=kor)

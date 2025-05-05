@@ -19,5 +19,5 @@ ht-degree: 21%
 
 개인 정보 보호 이벤트에 가입하여 작업 상태 기반 워크플로를 자동화하는 방법에 대해 알아봅니다. 자세한 내용은 [Privacy Services 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448179?learn=on&enablevpops&captions=kor)
 

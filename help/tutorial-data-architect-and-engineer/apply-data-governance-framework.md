@@ -24,9 +24,9 @@ ht-degree: 1%
 Adobe Experience Platform 데이터 거버넌스를 사용하면 고객 데이터를 관리하고 데이터 사용에 적용되는 규정, 제한 사항 및 정책을 준수할 수 있습니다. 데이터 사용 제어를 포함하여 다양한 수준에서 Experience Platform 내에서 핵심적인 역할을 수행합니다.
 
 연습을 시작하기 전에 데이터 거버넌스에 대한 다음 짧은 비디오를 시청하십시오.
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41326?learn=on&enablevpops&captions=kor)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32135?learn=on&enablevpops&captions=kor)
 
 <!--
 ## Permissions required

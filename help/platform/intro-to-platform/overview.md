@@ -18,6 +18,6 @@ ht-degree: 0%
 
 Experience Platform이 무엇이며 해결할 수 있는 비즈니스 문제에 대한 개요를 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428497?learn=on&enablevpops&captions=kor)
 
 

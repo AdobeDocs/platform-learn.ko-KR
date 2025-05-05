@@ -19,7 +19,7 @@ ht-degree: 2%
 실시간으로 클라우드 스토리지 소스의 데이터를 플랫폼으로 스트리밍하고 고객 참여를 위해 데이터를 실시간으로 사용하는 방법에 대해 알아봅니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410106?learn=on&enablevpops&captions=kor)
 
 ## 추가 리소스
 

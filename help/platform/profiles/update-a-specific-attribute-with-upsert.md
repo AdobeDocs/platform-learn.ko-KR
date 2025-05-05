@@ -19,4 +19,4 @@ ht-degree: 0%
 
 Adobe Experience Platform의 `upsert` 기능을 사용하여 프로필의 특정 특성을 업데이트하는 방법을 알아봅니다. 일반적으로 특정 특성만 있는 레코드를 Platform으로 수집하면 값이 업데이트되지만 다른 특성은 `null` 값으로 업데이트됩니다. `Upsert`을(를) 사용하면 원하는 특성만 업데이트할 수 있고 나머지 필드는 현재 값을 유지할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416133/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443448/?learn=on&enablevpops&captions=kor)

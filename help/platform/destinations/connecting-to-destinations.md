@@ -20,6 +20,6 @@ ht-degree: 0%
 
 Real-Time CDP에서 대상 파트너에게 데이터를 보내려면 먼저 해당 파트너에 연결해야 합니다. 이 비디오는 일반적으로 관리자가 수행하는 프로세스를 안내합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346368/?learn=on&enablevpops&captions=kor)
 
 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/ui/connect-destination)를 참조하세요.

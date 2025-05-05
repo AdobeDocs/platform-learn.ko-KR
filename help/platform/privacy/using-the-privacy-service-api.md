@@ -19,4 +19,4 @@ ht-degree: 1%
 
 목록 및 조회, 작업 요청 만들기 및 동의 요청 만들기 등 API 끝점을 호출하는 방법을 알아봅니다. 자세한 내용은 [Privacy Services 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448880?learn=on&enablevpops&captions=kor)

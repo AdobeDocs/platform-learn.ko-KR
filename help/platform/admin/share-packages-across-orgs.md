@@ -20,4 +20,4 @@ ht-degree: 0%
 
 패키지를 사용하여 IMS 조직 간에 Experience Platform 구성을 복사하는 방법에 대해 알아봅니다. 여러 IMS 조직 간에 스키마, 데이터 세트, 여정 등을 쉽게 복제하여 릴리스 프로세스와 다중 지역/다중 브랜드 배포를 지원합니다. 자세한 내용은 [샌드박스 도구 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443924/?learn=on&enablevpops&captions=kor)

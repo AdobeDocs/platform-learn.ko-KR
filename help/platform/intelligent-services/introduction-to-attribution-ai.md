@@ -18,4 +18,4 @@ ht-degree: 0%
 
 마케터와 분석가가 Attribution AI를 사용하여 마케팅 채널 및 캠페인의 영향을 이해하는 방법에 대한 높은 수준의 개요입니다. 자세한 내용은 [Attribution AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36606?learn=on&enablevpops&captions=kor)

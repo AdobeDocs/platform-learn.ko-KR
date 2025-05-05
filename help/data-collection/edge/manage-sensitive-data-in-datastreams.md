@@ -19,4 +19,4 @@ ht-degree: 26%
 
 데이터스트림의 민감한 데이터를 관리하는 방법에 대해 알아봅니다.  자세한 내용은 [데이터스트림 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413105/?learn=on&enablevpops&captions=kor)

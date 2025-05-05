@@ -25,7 +25,7 @@ ht-degree: 0%
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 세그먼트를 만들고 이 작업으로 동료를 지원해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 세그먼트 만들기에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31708?learn=on&enablevpops&captions=kor)
 
 
 ## 권한 필요

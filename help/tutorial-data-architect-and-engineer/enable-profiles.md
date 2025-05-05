@@ -33,7 +33,7 @@ ht-degree: 0%
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 실시간 고객 프로필을 활성화해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 실시간 고객 프로필에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31709?learn=on&enablevpops&captions=kor)
 
 ## 권한 필요
 

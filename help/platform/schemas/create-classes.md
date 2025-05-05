@@ -18,4 +18,4 @@ ht-degree: 1%
 
 이 비디오는 XDM(경험 데이터 모델) 스키마에서 사용하기 위해 Adobe Experience Platform에서 클래스를 만드는 방법을 보여 줍니다. 자세한 내용은 [스키마 설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/333538?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413626?learn=on&enablevpops&captions=kor)

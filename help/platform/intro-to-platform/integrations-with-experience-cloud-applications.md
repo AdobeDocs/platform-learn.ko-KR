@@ -18,6 +18,6 @@ ht-degree: 57%
 
 Experience Platform이 Experience Cloud 애플리케이션과 통합되는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32553?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430386?learn=on&enablevpops&captions=kor)
 
 

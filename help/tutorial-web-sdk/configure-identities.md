@@ -53,7 +53,7 @@ Adobe Experience Platform Web SDK와 함께 사용할 ID 네임스페이스를 �
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 Adobe Experience Platform의 ID에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422775?learn=on&enablevpops&captions=kor)
 
 이제 Luma CRM ID에 대한 네임스페이스를 만듭니다.
 

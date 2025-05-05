@@ -18,4 +18,4 @@ ht-degree: 0%
 
 회사 직원이 작업을 수행하는 데 필요한 액세스 권한을 가질 수 있도록 Adobe Experience Platform 데이터 수집 기능에 대한 사용자를 추가하고 권한을 관리하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33397/?learn=on&enablevpops&captions=kor)

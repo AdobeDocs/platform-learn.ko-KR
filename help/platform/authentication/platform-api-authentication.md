@@ -31,20 +31,20 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 이 튜
 >
 > API 자격 증명을 만든 후 시스템 관리자는 자격 증명을 Experience Platform의 역할에 연결해야 합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31705/?learn=on&enablevpops&captions=kor)
 
 ## Postman으로 액세스 토큰 생성{#generate-an-access-token-with-postman}
 
 [Adobe Identity Management 서비스 API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)를 사용하여 Adobe Experience Platform API에 액세스할 수 있는 액세스 토큰을 얻으십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32728/?learn=on&enablevpops&captions=kor)
 
 
 ## Postman을 사용하여 Experience Platform API와 상호 작용
 
 [Adobe Experience Platform에서 제공한 Experience Platform API Postman 컬렉션](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)을 사용하여 [Adobe Developer Console 환경 변수](#export-integration-details-to-postman) 및 [생성된 액세스 토큰](#generate-an-access-token-with-postman)을 기반으로 빌드하는 Adobe API와 상호 작용하는 방법을 살펴봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32722/?learn=on&enablevpops&captions=kor)
 
 
 ## 이 비디오에서 참조된 리소스

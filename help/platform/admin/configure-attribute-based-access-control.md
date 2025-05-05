@@ -20,4 +20,4 @@ ht-degree: 100%
 
 특정 Experience Platform 리소스에 대한 액세스를 제한하기 위해 속성 기반 액세스 제어를 구성하는 방법에 대해 알아봅니다. 자세한 내용은 [액세스 제어 설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/345641?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451845?learn=on&enablevpops&captions=kor)

@@ -18,4 +18,4 @@ ht-degree: 2%
 
 이 비디오는 Adobe Experience Platform에서 기존 스키마를 업데이트할 때 알아야 할 몇 가지 기본 사항을 검토합니다. 자세한 내용은 [스키마 설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/333612?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413640?learn=on&enablevpops&captions=kor)

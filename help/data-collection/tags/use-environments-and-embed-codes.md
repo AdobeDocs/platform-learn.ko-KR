@@ -18,4 +18,4 @@ ht-degree: 34%
 
 개발, 스테이징 및 프로덕션 환경과 포함 코드를 사용하여 태그 속성을 개발하고 확인하는 방법을 알아봅니다. 자세한 내용은 [환경](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=ko) 설명서를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430487/?learn=on&enablevpops&captions=kor)

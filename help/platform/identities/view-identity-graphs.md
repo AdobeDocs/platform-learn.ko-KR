@@ -18,6 +18,6 @@ ht-degree: 1%
 
 ID 그래프 뷰어 기능을 사용하여 유효성 검사 및 디버깅을 위해 ID 그래프를 검색, 탐색 및 필터링하는 방법을 알아봅니다. 자세한 내용은 [ID 그래프 뷰어 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/331030?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345657?learn=on&enablevpops&captions=kor)
 
 

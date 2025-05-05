@@ -43,7 +43,7 @@ Key terms:
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 스키마를 만들어야 하지만 **데이터 엔지니어**&#x200B;는 데이터 설계자가 만든 스키마와 긴밀하게 작업합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 스키마 및 XDM(Experience Data Model)에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38515?learn=on&enablevpops&captions=kor)
 
 >[!TIP]
 >

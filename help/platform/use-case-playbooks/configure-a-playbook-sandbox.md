@@ -26,4 +26,4 @@ ht-degree: 1%
 
 자세한 내용은 [사용 사례 플레이북 시작](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=ko)을 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449833/?learn=on&enablevpops&captions=kor)

@@ -17,4 +17,4 @@ ht-degree: 0%
 
 안전하고 인증된 서버 API를 사용하여 Platform Edge Network에 데이터를 전송할 때의 이점에 대해 알아보십시오. 자세한 내용은 [Server API 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/341448?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344661?learn=on&enablevpops&captions=kor)

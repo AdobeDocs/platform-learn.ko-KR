@@ -18,5 +18,5 @@ ht-degree: 0%
 
 지능형 재참여, &quot;잃지 않음&quot; 캠페인, 고객 전환 최적화, 상황별 인식 및 일회성 가치 대 라이프타임 가치 등 Experience Platform의 5가지 주요 사용 사례에 대한 개요를 살펴보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430458?learn=on&enablevpops&captions=kor)
 

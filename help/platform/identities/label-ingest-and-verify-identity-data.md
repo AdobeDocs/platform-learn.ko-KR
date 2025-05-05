@@ -18,4 +18,4 @@ ht-degree: 35%
 
 데이터 필드에 ID로 레이블을 지정하고, ID 데이터를 수집한 다음 Adobe Experience Platform ID 서비스 개인 그래프에서 데이터를 확인하는 방법에 대해 알아봅니다. 자세한 내용은 [ID 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31707?learn=on&enablevpops&captions=kor)

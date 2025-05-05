@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Real-Time Customer Data Platform, B2B edition을 사용하여 비즈니스 데이터에 대한 스키마를 만드는 방법을 알아봅니다. 비즈니스 클래스, 필드 그룹 및 ID 네임스페이스와 Postman 유틸리티를 사용하여 계정에서 비즈니스 클래스, 필드 그룹 및 ID 네임스페이스를 자동으로 만드는 방법에 대해 알아봅니다. 자세한 내용은 [스키마 설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453401?learn=on&enablevpops&captions=kor)

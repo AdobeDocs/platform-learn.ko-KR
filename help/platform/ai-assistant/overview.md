@@ -61,7 +61,7 @@ AI Assistant를 설정하고 기본 기능을 살펴보십시오.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="AI Assistant의 검색 기능 패널 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1739896314393" alt="AI Assistant의 검색 기능 패널 사용"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440969/?format=jpeg&nocache=1739896314393&captions=kor" alt="AI Assistant의 검색 기능 패널 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ AI Assistant를 설정하고 기본 기능을 살펴보십시오.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="AI Assistant의 응답 유효성 검사" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1739896314405" alt="AI Assistant의 응답 유효성 검사"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441746/?format=jpeg&nocache=1739896314405&captions=kor" alt="AI Assistant의 응답 유효성 검사"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +122,7 @@ AI Assistant를 통해 Platform 계정을 관리하거나 마케팅 전략을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="AI Assistant를 통해 운영 인사이트 확보" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1739896314636" alt="AI Assistant를 통해 운영 인사이트 확보"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444039/?format=jpeg&nocache=1739896314636&captions=kor" alt="AI Assistant를 통해 운영 인사이트 확보"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -145,7 +145,7 @@ AI Assistant를 통해 Platform 계정을 관리하거나 마케팅 전략을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI Assistant - 대상 정리 사용 사례" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1739896314622" alt="AI Assistant - 대상 정리 사용 사례"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441994/?format=jpeg&nocache=1739896314622&captions=kor" alt="AI Assistant - 대상 정리 사용 사례"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -168,7 +168,7 @@ AI Assistant를 통해 Platform 계정을 관리하거나 마케팅 전략을 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="AI Assistant를 사용한 영향 분석" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1739896314647" alt="AI Assistant를 사용한 영향 분석"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441687/?format=jpeg&nocache=1739896314647&captions=kor" alt="AI Assistant를 사용한 영향 분석"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +204,7 @@ AI Assistant는 새로운 제품을 학습하거나 익숙한 제품에 대한 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="AI Assistant를 사용하여 Experience Platform 애플리케이션 학습" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1739896314791" alt="AI Assistant를 사용하여 Experience Platform 애플리케이션 학습"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441031/?format=jpeg&nocache=1739896314791&captions=kor" alt="AI Assistant를 사용하여 Experience Platform 애플리케이션 학습"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -262,7 +262,7 @@ AI Assistant의 보안 기능에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="AI Assistant 보안 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1739896315547" alt="AI Assistant 보안 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441087/?format=jpeg&nocache=1739896315547&captions=kor" alt="AI Assistant 보안 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -17,5 +17,5 @@ ht-degree: 0%
 
 성공적인 Experience Platform 프로젝트에 관련된 역할, 단계 및 주요 결과에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32807?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430453?learn=on&enablevpops&captions=kor)
 

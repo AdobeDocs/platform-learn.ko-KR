@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Adobe Experience Platform 사용자 인터페이스를 탐색하는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32792?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430445?learn=on&enablevpops&captions=kor)
 

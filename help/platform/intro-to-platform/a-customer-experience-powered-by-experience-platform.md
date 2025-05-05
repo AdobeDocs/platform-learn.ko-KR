@@ -17,5 +17,5 @@ ht-degree: 0%
 
 고객의 관점에서 볼 수 있듯이 Adobe Experience Platform으로 구축된 가상 경험을 확인하십시오. Experience Platform에서 풍부하고 관련성이 높은 실시간 경험을 만드는 방법을 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35392?learn=on&enablevpops&captions=kor)
 

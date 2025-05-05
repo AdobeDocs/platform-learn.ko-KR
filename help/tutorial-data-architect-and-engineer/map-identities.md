@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service를 사용하면 디바이스와 시�
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 ID를 매핑해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 Adobe Experience Platform의 ID에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422775?learn=on&enablevpops&captions=kor)
 
 >[!NOTE]
 >

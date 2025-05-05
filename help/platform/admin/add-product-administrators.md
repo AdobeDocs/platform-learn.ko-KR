@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Adobe Experience Platform용 제품 관리자를 추가하는 방법을 알아봅니다. 제품 관리자는 Real-Time Customer Data Platform 및 Journey Optimizer과 같은 플랫폼 기반 애플리케이션에 대한 액세스 제어를 관리합니다. 사용자는 Admin Console에서 사용자, 개발자 및 추가 관리자를 만든 다음 플랫폼 또는 Journey Optimizer 인터페이스에서 권한(및 API 자격 증명)을 부여할 수 있습니다. 자세한 내용은 [액세스 제어 설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423936?learn=on&enablevpops&captions=kor)
 
 >[!TIP]
 >

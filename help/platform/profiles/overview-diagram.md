@@ -18,4 +18,4 @@ ht-degree: 1%
 
 이 비디오에서는 Adobe Experience Platform의 실시간 고객 프로필 기능을 보여 주는 개요 다이어그램을 소개합니다. 자세한 내용은 [실시간 고객 프로필 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36873?learn=on&enablevpops&captions=kor)

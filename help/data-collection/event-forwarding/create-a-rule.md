@@ -25,4 +25,4 @@ ht-degree: 0%
 > * 이제 Platform Launch Server Side가 **[!DNL event forwarding]**&#x200B;입니다.
 > * 이제 Edge 구성이 **[!DNL datastreams]**&#x200B;입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/331942?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410375?learn=on&enablevpops&captions=kor)

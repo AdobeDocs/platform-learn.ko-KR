@@ -18,4 +18,4 @@ ht-degree: 1%
 
 Adobe Experience Platform의 데이터 거버넌스 기능에 대해 알아보고 브랜드가 고객 데이터를 완전히 제어하면서 개인화된 경험을 고객에게 전달하는 방법을 알아봅니다. 자세한 내용은 [데이터 거버넌스 설명서](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41326?learn=on&enablevpops&captions=kor)

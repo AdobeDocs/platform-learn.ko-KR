@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Customer Journey Analytics, Real-Time Customer Data Platform, Journey Optimizer, Mix Modeler 등 Adobe Experience Platform을 기반으로 구축된 애플리케이션에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428520?learn=on&enablevpops&captions=kor)
 

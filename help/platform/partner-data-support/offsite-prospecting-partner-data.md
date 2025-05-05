@@ -21,4 +21,4 @@ ht-degree: 0%
 
 사전 방문 타깃팅을 위해 [!DNL Real-Time CDP]의 파트너로부터 새 잠재 고객을 수집하는 데 사용되는 워크플로에 대해 알아봅니다. 자세한 내용은 [참여 및 잠재 고객 확보](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html?lang=ko) 설명서를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452864/?learn=on&enablevpops&captions=kor)

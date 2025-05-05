@@ -18,4 +18,4 @@ ht-degree: 1%
 
 개인 데이터 감사 및 비즈니스의 개인 정보 보호 요구 사항에 따른 준비와 관련된 주요 개념 및 의사 결정에 대해 알아봅니다. 자세한 내용은 [Privacy Services 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447655?learn=on&enablevpops&captions=kor)

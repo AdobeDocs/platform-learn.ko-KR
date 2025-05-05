@@ -26,7 +26,7 @@ ht-degree: 0%
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 데이터 수집에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346834?learn=on&enablevpops&captions=kor)
 
 
 ## 권한 필요

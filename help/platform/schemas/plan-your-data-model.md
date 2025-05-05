@@ -18,4 +18,4 @@ ht-degree: 1%
 
 이 비디오는 Adobe Experience Platform에서 스키마 빌드를 시작하기 전에 수행할 작업을 검토합니다. 비즈니스 사용 사례를 문서화하고, 플랫폼 라이선스를 이해하고, 제품 가드레일을 숙지하고, 데이터 모델을 완성하기 전에 수집할 데이터를 식별합니다. 자세한 내용은 [스키마 설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413633?learn=on&enablevpops&captions=kor)

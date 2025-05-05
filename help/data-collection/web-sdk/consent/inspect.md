@@ -20,4 +20,4 @@ ht-degree: 0%
 >
 > Launch는 현재 **[!DNL tags]**&#x200B;입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332696/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443794/?learn=on&enablevpops&captions=kor)

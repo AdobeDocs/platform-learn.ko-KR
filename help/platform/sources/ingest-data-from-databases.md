@@ -18,4 +18,4 @@ ht-degree: 0%
 
 이 비디오는 원활하고 확장 가능한 방식으로 데이터베이스 소스의 데이터를 Adobe Experience Platform의 실시간 고객 프로필 및 Experience 데이터 레이크로 일괄 수집하는 방법을 안내합니다. 자세한 제품 설명서는 Source Connectors 개요 페이지의 [데이터베이스](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ko#database) 또는 [Google Big Query 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345124?learn=on&enablevpops&captions=kor)

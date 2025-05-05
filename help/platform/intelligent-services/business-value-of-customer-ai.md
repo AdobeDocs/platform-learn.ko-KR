@@ -19,5 +19,5 @@ ht-degree: 0%
 
 이 비디오에서는 고객 AI가 AI 기반 성향으로 고객 프로필을 강화하고 고객 세분화와 타기팅 활동을 강화하는 방법을 보여줍니다. 자세한 내용은 [고객 AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328479?learn=on&enablevpops&captions=kor)
 

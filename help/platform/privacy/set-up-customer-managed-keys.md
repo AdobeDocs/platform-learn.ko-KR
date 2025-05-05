@@ -19,7 +19,7 @@ ht-degree: 8%
 
 자체 암호화 키를 사용하여 활용도가 낮은 데이터 암호화를 관리합니다. 자세한 내용은 [고객 관리 키 설명서](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413985/?learn=on&enablevpops&captions=kor)
 
 >[!IMPORTANT]
 >

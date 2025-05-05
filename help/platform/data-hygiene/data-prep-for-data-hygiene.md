@@ -20,4 +20,4 @@ ht-degree: 85%
 
 Experience Platform의 데이터 준비 기능으로 데이터 최소화 원칙을 지원하는 방법을 알아보십시오. 필요한 필드만 수집하고 수집 중에 데이터를 해시하는 방법을 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449282/?learn=on&enablevpops&captions=kor)

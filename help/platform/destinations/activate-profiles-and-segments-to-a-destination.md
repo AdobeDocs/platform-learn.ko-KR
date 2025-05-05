@@ -18,5 +18,5 @@ ht-degree: 0%
 
 Real-Time CDP에서 프로필 및 대상자를 대상으로 활성화하는 방법을 알아봅니다.  대상 또는 대상 사용자 인터페이스에서 이 워크플로우를 시작합니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/ui/activate/activation-overview)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3418826/?learn=on&enablevpops&captions=kor)
 

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Adobe Experience Platform의 AI Assistant가 제공하는 응답을 확인하고 확인하는 방법을 알아봅니다. 자세한 내용은 [AI Assistant UI 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/ai-assistant/ui-guide#verify-responses)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441746/?learn=on&enablevpops&captions=kor)

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 태그 라이브러리에 가장 적합한 호스팅 옵션을 선택하는 방법을 알아봅니다. 자세한 내용은 [호스트](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html?lang=ko) 설명서를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428609/?learn=on&enablevpops&captions=kor)

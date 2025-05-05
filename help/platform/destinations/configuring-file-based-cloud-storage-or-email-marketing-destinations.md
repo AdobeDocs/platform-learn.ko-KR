@@ -22,4 +22,4 @@ Adobe의 Real-Time Customer Data Platform(CDP)에서 파일 기반 대상을 구
 * Experience Platform UI를 사용하여 데이터를 일괄 처리 또는 이메일 마케팅 대상으로 활성화하는 방법에 대한 지침은 [대상 데이터를 일괄 프로필 내보내기 대상으로 활성화](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=ko)
 * [일괄 처리 대상에 연결하고 Flow Service API를 사용하여 데이터를 활성화하십시오](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=ko) Flow Service API를 사용하여 데이터를 일괄 처리 또는 이메일 마케팅 대상으로 활성화하는 방법에 대한 지침을 확인하십시오
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/340714/?learn=on&enablevpops&captions=kor)

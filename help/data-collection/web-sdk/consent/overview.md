@@ -20,5 +20,5 @@ Adobe Experience Platform Web SDK의 동의 관리를 통해 법적 개인 정�
 >
 > Launch는 현재 **[!DNL tags]**&#x200B;입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437795/?learn=on&enablevpops&captions=kor)
 

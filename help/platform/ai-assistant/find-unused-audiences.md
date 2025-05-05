@@ -20,4 +20,4 @@ ht-degree: 0%
 
 AI Assistant를 사용하여 사용하지 않는 대상을 식별하여 이를 삭제하고 마케팅 작업을 보다 효율적으로 하는 방법에 대해 알아봅니다. AI Assistant 쿼리에 대한 자세한 내용은 [AI Assistant에 대한 질문 안내서](https://experienceleague.adobe.com/ko/docs/experience-platform/ai-assistant/questions)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441994/?learn=on&enablevpops&captions=kor)
