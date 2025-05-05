@@ -35,5 +35,5 @@ Analytics 구현의 크기와 복잡성에 따라 웹 SDK으로 마이그레이�
 
 >[!TIP]
 >
->보고서 세트 만들기에 대한 비디오 설명은 [보고서 세트 이해 및 만들기](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}를 참조하십시오.
+>보고서 세트 만들기에 대한 비디오 설명은 [보고서 세트 이해 및 만들기](https://experienceleague.adobe.com/ko/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}를 참조하십시오.
 

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Adobe의 Real-Time Customer Data Platform(CDP)에서 파일 기반 대상을 구성하는 과정에서 팁을 얻을 수 있습니다. 이는 [!UICONTROL 클라우드 저장소] 대상(예: S3 또는 SFTP) 및 [!UICONTROL 이메일 마케팅] 대상에도 적용됩니다. 자세한 제품 설명서는 다음을 참조하십시오.
 
-* Experience Platform UI를 사용하여 데이터를 일괄 처리 또는 이메일 마케팅 대상으로 활성화하는 방법에 대한 지침은 [대상 데이터를 일괄 프로필 내보내기 대상으로 활성화](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html)
-* [일괄 처리 대상에 연결하고 Flow Service API를 사용하여 데이터를 활성화하십시오](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) Flow Service API를 사용하여 데이터를 일괄 처리 또는 이메일 마케팅 대상으로 활성화하는 방법에 대한 지침을 확인하십시오
+* Experience Platform UI를 사용하여 데이터를 일괄 처리 또는 이메일 마케팅 대상으로 활성화하는 방법에 대한 지침은 [대상 데이터를 일괄 프로필 내보내기 대상으로 활성화](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=ko)
+* [일괄 처리 대상에 연결하고 Flow Service API를 사용하여 데이터를 활성화하십시오](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=ko) Flow Service API를 사용하여 데이터를 일괄 처리 또는 이메일 마케팅 대상으로 활성화하는 방법에 대한 지침을 확인하십시오
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)

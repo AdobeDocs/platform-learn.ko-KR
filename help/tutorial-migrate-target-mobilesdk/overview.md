@@ -22,8 +22,8 @@ Adobe Experience Platform Mobile SDK은 모바일 애플리케이션에서 전�
 
 Target 확장과 비교하여 Adobe Journey Optimizer Decisioning 확장의 이점 중 일부는 다음과 같습니다.
 
-* [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)에서 더 빠른 대상자 공유
-* Target과 Journey Optimizer을 통합하여 [Offer Decisioning 게재](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision) 지원
+* [Real-Time Customer Data Platform](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)에서 더 빠른 대상자 공유
+* Target과 Journey Optimizer을 통합하여 [Offer Decisioning 게재](https://experienceleague.adobe.com/ko/docs/target/using/integrate/ajo/offer-decision) 지원
 * 별도의 네트워크 호출의 정보 결합에 의존하지 않는 Adobe Analytics과의 긴밀한 통합
 * 개발자를 위한 추가적인 구현 유연성
 
@@ -62,4 +62,4 @@ Target 확장에서 Decisioning 확장으로 마이그레이션하는 작업의 
 
 >[!NOTE]
 >
->Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)에 게시하여 알려 주십시오.
+>Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ko#M625)에 게시하여 알려 주십시오.

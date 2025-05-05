@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Experience Platform 보증을 사용하여 웹 SDK 구현 유효성 검사
 
-Adobe Experience Platform Assurance는 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 기능입니다. [Adobe 확인](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home)에 대해 자세히 알아보세요.
+Adobe Experience Platform Assurance는 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되는 기능입니다. [Adobe 확인](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home)에 대해 자세히 알아보세요.
 
 
 ## 학습 목표
@@ -96,4 +96,4 @@ Debugger 단원에서 이 작업을 수행하는 방법 검토:
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.

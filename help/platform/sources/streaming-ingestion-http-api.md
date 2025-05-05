@@ -21,7 +21,7 @@ ht-degree: 42%
 
 ## 추가 정보
 
-* [API 설명서를 사용하여 스트리밍 연결을 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
-* [스트리밍 수집 API 설명서를 사용하여 레코드 데이터 스트리밍](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [스트리밍 수집 API 설명서를 사용하여 시계열 데이터 스트리밍](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [단일 HTTP 요청 설명서에서 여러 메시지 보내기](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [API 설명서를 사용하여 스트리밍 연결을 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=ko).
+* [스트리밍 수집 API 설명서를 사용하여 레코드 데이터 스트리밍](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=ko)
+* [스트리밍 수집 API 설명서를 사용하여 시계열 데이터 스트리밍](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=ko)
+* [단일 HTTP 요청 설명서에서 여러 메시지 보내기](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=ko)

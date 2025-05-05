@@ -48,7 +48,7 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 
 ## 전제 조건
 
-* Experience League에서 [Adobe Experience Platform 재생 목록 소개](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction)를 시청했으며 플랫폼 기능에 익숙합니다
+* Experience League에서 [Adobe Experience Platform 재생 목록 소개](https://experienceleague.adobe.com/ko/playlists/experience-platform-introduction)를 시청했으며 플랫폼 기능에 익숙합니다
 * Adobe Experience Platform(또는 Real-Time CDP 또는 Journey Optimizer과 같은 플랫폼 기반 애플리케이션) 및 데이터 수집(이전 Launch)으로 프로비저닝된 계정에 액세스할 수 있습니다.
 * 해당 계정의 시스템 관리자이거나 [사용자 권한을 구성](configure-permissions.md)할 수 있습니다.
 
@@ -58,7 +58,7 @@ Adobe Experience Platform은 마케팅 목표를 달성하는 데 도움이 되�
 
 이 자습서 중에 다양한 플랫폼 요소를 만들 때 최대한 권장하는 이름을 사용하십시오. 그러나 조직에서 이 자습서를 동시에 수강하는 사람이 여러 명인 경우 사용자 지정할 수 있는 높은 수준의 요소 이름이 몇 개 있습니다. 예를 들어, &quot;Luma 튜토리얼 플랫폼&quot; 대신 Platform 샌드박스의 이름을 &quot;Luma 튜토리얼 플랫폼 - Ignatius J Reilly&quot;로 지정할 수 있습니다.
 
-문제가 발생하면 먼저 지침을 다시 읽은 다음 각 페이지의 사이드바에 있는 ![문제 기록](https://experienceleague.adobe.com/assets/img/feedback.svg) 링크를 사용하여 내게 연락하십시오.
+문제가 발생하면 먼저 지침을 다시 읽은 다음 각 페이지의 사이드바에 있는 ![문제 기록](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=ko) 링크를 사용하여 내게 연락하십시오.
 
 ## 기술 참고 사항
 

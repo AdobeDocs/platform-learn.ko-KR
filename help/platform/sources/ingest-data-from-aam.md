@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Adobe Audience Manager Data Connector를 사용하여 데이터 수집
 
-이 통합 비디오에서는 Audience Manager Data Connector를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고 다른 풍부한 데이터와 결합하는 방법을 알아봅니다. 자세한 내용은 [Audience Manager 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)를 참조하세요.
+이 통합 비디오에서는 Audience Manager Data Connector를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고 다른 풍부한 데이터와 결합하는 방법을 알아봅니다. 자세한 내용은 [Audience Manager 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 
@@ -28,4 +28,4 @@ ht-degree: 0%
 >
 >위의 비디오에서 모든 세그먼트 및/또는 트레이트를 선택하는 옵션을 보여 줍니다. 세그먼트 수가 제한되어 있고 해당 세그먼트에 고유 방문자 수가 파악되지 않는 한 이 옵션을 사용하지 않는 것이 좋습니다. &quot;모든 세그먼트&quot; 또는 &quot;모든 트레이트&quot;에서 많은 수의 방문자 프로필을 가져오면 Real-Time CDP의 프로필 서비스가 풍선화될 수 있으므로 애플리케이션 가격에 큰 영향을 미칠 수 있습니다(프로필 수가 애플리케이션 비용에 영향을 미치기 때문). 따라서 &quot;모두&quot;를 선택하는 대신 Real-Time CDP으로 가져올 특정 세그먼트를 선택하는 것이 좋습니다.
 >
->자세한 내용은 Experience League LIVE [2022년 4월 28일 에피소드](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html)를 참조하세요.
+>자세한 내용은 Experience League LIVE [2022년 4월 28일 에피소드](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html?lang=ko)를 참조하세요.

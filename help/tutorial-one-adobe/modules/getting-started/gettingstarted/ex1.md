@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## Chrome 확장 구성
 
-[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
+[https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +135,7 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ## 튜토리얼 콘텐츠 확인
 
-테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}(으)로 이동하세요.
+테스트로 [이 페이지](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}(으)로 이동하세요.
 
 이제 이 페이지의 모든 **환경 변수**&#x200B;가 chrome 확장에서 활성화된 환경을 기반으로 실제 값으로 대체되었습니다.
 

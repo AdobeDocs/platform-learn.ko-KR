@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 추가 리소스
 
-* [UI에서 Amazon Kinesis 원본 연결 만들기](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
-* [UI에서 Azure Event Hubs 원본 연결 만들기](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
+* [UI에서 Amazon Kinesis 원본 연결 만들기](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html?lang=ko)
+* [UI에서 Azure Event Hubs 원본 연결 만들기](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html?lang=ko)
 * [Azure Event Hubs 설명서](https://docs.microsoft.com/en-us/azure/event-hubs/)
 * [Amazon Kinesis 데이터 스트림 설명서](https://docs.aws.amazon.com/kinesis/index.html)

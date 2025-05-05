@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 전환 대상자 만들기
 
-이 비디오에서는 Experience Platform의 대상 규칙 빌더를 사용하여 웹 사이트나 다른 데이터 시스템에서 전환 이벤트를 수행한 대상을 만드는 방법을 알아봅니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)를 참조하세요.
+이 비디오에서는 Experience Platform의 대상 규칙 빌더를 사용하여 웹 사이트나 다른 데이터 시스템에서 전환 이벤트를 수행한 대상을 만드는 방법을 알아봅니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >

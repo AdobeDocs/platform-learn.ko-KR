@@ -26,14 +26,14 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
 
 >[!NOTE]
 >
->이 자습서의 최종 결과는 [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기 자습서](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)와 유사한 데이터가 포함된 샌드박스입니다. [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)를 지원하도록 2023년 4월에 업데이트되었습니다. 인증 방법을 OAuth로 전환하도록 2023년 6월에 업데이트했습니다.
+>이 자습서의 최종 결과는 [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기 자습서](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ko)와 유사한 데이터가 포함된 샌드박스입니다. [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)를 지원하도록 2023년 4월에 업데이트되었습니다. 인증 방법을 OAuth로 전환하도록 2023년 6월에 업데이트했습니다.
 
 
 ## 전제 조건
 
-* Experience Platform API에 대한 액세스 권한이 있으며 인증 방법을 알고 있습니다. 그렇지 않으면 이 [자습서](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html)를 검토하십시오.
+* Experience Platform API에 대한 액세스 권한이 있으며 인증 방법을 알고 있습니다. 그렇지 않으면 이 [자습서](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ko)를 검토하십시오.
 * Experience Platform 개발 샌드박스에 액세스할 수 있습니다.
-* Experience Platform 테넌트 ID를 알고 있습니다. 인증된 [API 요청](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)을(를) 수행하면 가져올 수 있습니다.
+* Experience Platform 테넌트 ID를 알고 있습니다. 인증된 [API 요청](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=ko#know-your-tenant_id)을(를) 수행하면 가져올 수 있습니다.
 또는 Platform 계정에 로그인할 때 URL에서 추출하여 사용할 수 있습니다. 예를 들어 다음 URL에서 테넌트는 &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`입니다.
 
 ## [!DNL Postman] 사용 중 {#postman}
@@ -187,7 +187,7 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
 
 Adobe Journey Optimizer에 대해 알아보려면 이 샌드박스에는 [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)를 수행하는 데 필요한 모든 것이 포함되어 있습니다.
 
-병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 데이터 설계자 및 데이터 엔지니어 시작하기 자습서[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)의 단원 11로 건너뜁니다. 이 다른 자습서의 이전 단원을 통해 이러한 Postman 컬렉션에서 방금 채운 모든 항목을 수동으로 빌드할 수 있습니다. 바로 시작할 수 있습니다.
+병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 데이터 설계자 및 데이터 엔지니어 시작하기 자습서[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=ko)의 단원 11로 건너뜁니다. 이 다른 자습서의 이전 단원을 통해 이러한 Postman 컬렉션에서 방금 채운 모든 항목을 수동으로 빌드할 수 있습니다. 바로 시작할 수 있습니다.
 
 이 샌드박스에 연결되는 샘플 웹 SDK 구현을 빌드하려면 다음을 수행하십시오.
 [Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR). Web SDK 자습서의 &quot;초기 구성&quot;, &quot;태그 구성&quot; 및 &quot;Experience Platform 설정&quot; 단원을 설정한 후 `luma-crm.json` 파일의 처음 10개 이메일 주소를 사용하여 Luma 웹 사이트에 로그인 `test` 암호를 사용하여 이 자습서에서 업로드한 데이터와 프로필 조각이 병합되는 것을 확인합니다.
@@ -199,4 +199,4 @@ Adobe Journey Optimizer에 대해 알아보려면 이 샌드박스에는 [Journe
 
 비프로덕션 샌드박스를 재설정하면 샌드박스의 이름과 관련 권한을 유지하면서 해당 샌드박스(스키마, 데이터 세트 등)와 관련된 모든 리소스가 삭제됩니다. 이 &quot;클린&quot; 샌드박스는 액세스 권한이 있는 사용자가 동일한 이름으로 계속 사용할 수 있습니다.
 
-샌드박스 환경을 재설정하려면 [여기](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox)단계를 따르십시오.
+샌드박스 환경을 재설정하려면 [여기](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=ko#reset-a-sandbox)단계를 따르십시오.

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AI Assistant 보안 개요
 
-<a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">보안 팩트시트</a>를 기반으로 하는 AI Assistant의 보안 기능에 대한 개요입니다.  자세한 내용은 [AI Assistant 개인 정보 보호 문서](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/privacy)를 참조하십시오.
+<a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">보안 팩트시트</a>를 기반으로 하는 AI Assistant의 보안 기능에 대한 개요입니다.  자세한 내용은 [AI Assistant 개인 정보 보호 문서](https://experienceleague.adobe.com/ko/docs/experience-platform/ai-assistant/privacy)를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)

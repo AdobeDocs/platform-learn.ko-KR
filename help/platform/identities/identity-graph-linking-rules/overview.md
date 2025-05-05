@@ -22,6 +22,6 @@ ht-degree: 0%
 >
 >ID 그래프 연결 규칙은 현재 제한적 가용성입니다. 개발 샌드박스의 기능에 액세스하는 방법에 대한 자세한 내용은 Adobe 계정 팀에 문의하십시오.
 
-ID 그래프 연결 규칙이 데이터 설계자가 정확한 고객 프로필을 유지하고 그래프 붕괴를 방지하는 데 어떻게 도움이 되는지에 대한 개요를 살펴보십시오. 자세한 내용은 [ID 그래프 연결 규칙 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)를 참조하세요.
+ID 그래프 연결 규칙이 데이터 설계자가 정확한 고객 프로필을 유지하고 그래프 붕괴를 방지하는 데 어떻게 도움이 되는지에 대한 개요를 살펴보십시오. 자세한 내용은 [ID 그래프 연결 규칙 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)

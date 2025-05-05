@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 샌드박스 간 구성 복사
 
-패키지를 사용하여 Experience Platform 샌드박스 간에 구성을 복사하는 방법을 알아봅니다. 샌드박스 전체에서 스키마, 데이터 세트, 여정 등을 손쉽게 복제하여 릴리스 프로세스 및 다중 지역/다중 브랜드 배포를 지원합니다. 자세한 내용은 [샌드박스 도구 설명서](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html)를 참조하세요.
+패키지를 사용하여 Experience Platform 샌드박스 간에 구성을 복사하는 방법을 알아봅니다. 샌드박스 전체에서 스키마, 데이터 세트, 여정 등을 손쉽게 복제하여 릴리스 프로세스 및 다중 지역/다중 브랜드 배포를 지원합니다. 자세한 내용은 [샌드박스 도구 설명서](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)

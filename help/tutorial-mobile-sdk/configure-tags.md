@@ -15,7 +15,7 @@ ht-degree: 3%
 
 [!UICONTROL 데이터 수집] 인터페이스에서 태그 속성을 구성하는 방법에 대해 알아봅니다.
 
-Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능입니다. 태그는 관련 고객 환경을 향상하는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 간단한 방법을 고객에게 제공합니다. 제품 설명서에서 [태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)에 대해 자세히 알아보세요.
+Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능입니다. 태그는 관련 고객 환경을 향상하는 데 필요한 분석, 마케팅 및 광고 태그를 배포하고 관리하는 간단한 방법을 고객에게 제공합니다. 제품 설명서에서 [태그](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)에 대해 자세히 알아보세요.
 
 ## 전제 조건
 
@@ -165,6 +165,6 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 >
 >이제 이 자습서의 나머지 부분에서 사용할 모바일 태그 속성이 있습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[SDK 설치](install-sdks.md)**

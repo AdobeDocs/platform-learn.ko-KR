@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 이벤트 전달을 위한 데이터스트림 설정
 
-이벤트 전달을 위한 데이터스트림을 설정하는 방법에 대해 알아봅니다. 자세한 내용은 [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)를 참조하세요.
+이벤트 전달을 위한 데이터스트림을 설정하는 방법에 대해 알아봅니다. 자세한 내용은 [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=ko#create-a-datastream)를 참조하세요.
 
 
 >[!NOTE]

@@ -54,7 +54,7 @@ Adobe Experience Platform의 태그 기능을 사용하여 데이터 레이어�
 
 ### 데이터 레이어에서 XDM 구현
 
-이 접근 방법에는 데이터 레이어의 구조로 완전히 정의된 XDM 개체를 사용하는 작업이 포함됩니다. 그런 다음 전체 데이터 레이어를 태그의 XDM 개체 데이터 요소에 매핑합니다. 구현이 태그 관리자를 사용하지 않는 경우 [XDM sendEvent 명령](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)을 사용하여 응용 프로그램에서 직접 XDM으로 데이터를 보낼 수 있으므로 이 방법이 이상적일 수 있습니다. 태그를 사용하는 경우 전체 데이터 레이어를 XDM에 대한 통과 JSON 개체로 캡처하는 사용자 지정 코드 데이터 요소를 만들 수 있습니다. 그런 다음 통과 JSON을 이벤트 보내기 작업의 XDM 개체 필드에 매핑합니다.
+이 접근 방법에는 데이터 레이어의 구조로 완전히 정의된 XDM 개체를 사용하는 작업이 포함됩니다. 그런 다음 전체 데이터 레이어를 태그의 XDM 개체 데이터 요소에 매핑합니다. 구현이 태그 관리자를 사용하지 않는 경우 [XDM sendEvent 명령](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)을 사용하여 응용 프로그램에서 직접 XDM으로 데이터를 보낼 수 있으므로 이 방법이 이상적일 수 있습니다. 태그를 사용하는 경우 전체 데이터 레이어를 XDM에 대한 통과 JSON 개체로 캡처하는 사용자 지정 코드 데이터 요소를 만들 수 있습니다. 그런 다음 통과 JSON을 이벤트 보내기 작업의 XDM 개체 필드에 매핑합니다.
 
 다음은 Adobe 클라이언트 데이터 레이어 형식을 사용하는 데이터 레이어의 모습에 대한 예입니다.
 
@@ -129,17 +129,17 @@ window.adobeDataLayer.push({
 >
 > Google 데이터 레이어
 > 
-> 조직에서 이미 Google Analytics을 사용하고 웹 사이트에 기존 Google dataLayer 개체가 있는 경우 태그에서 [Google 데이터 레이어 확장](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)을 사용할 수 있습니다. 이렇게 하면 IT 팀에 지원을 요청하지 않고도 Adobe 기술을 보다 신속하게 배포할 수 있습니다. Google 데이터 레이어를 XDM에 매핑하면 위와 동일한 단계를 따릅니다.
+> 조직에서 이미 Google Analytics을 사용하고 웹 사이트에 기존 Google dataLayer 개체가 있는 경우 태그에서 [Google 데이터 레이어 확장](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/google-data-layer/overview)을 사용할 수 있습니다. 이렇게 하면 IT 팀에 지원을 요청하지 않고도 Adobe 기술을 보다 신속하게 배포할 수 있습니다. Google 데이터 레이어를 XDM에 매핑하면 위와 동일한 단계를 따릅니다.
 
 ### 데이터 스트림의 XDM에 매핑
 
-이 방법은 데이터 스트림 구성에 내장된 기능([데이터 수집을 위한 데이터 준비](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep))을 사용하고 데이터 레이어 변수를 태그의 XDM에 매핑하는 작업을 건너뜁니다.
+이 방법은 데이터 스트림 구성에 내장된 기능([데이터 수집을 위한 데이터 준비](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/data-prep))을 사용하고 데이터 레이어 변수를 태그의 XDM에 매핑하는 작업을 건너뜁니다.
 
 #### 장점
 
 * 개별 변수를 XDM에 매핑할 수 있어 유연함
-* XDM으로 이동하기 전에 데이터 레이어에서 [새 값을 계산](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) 또는 [데이터 형식을 변환](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)하는 기능
-* [매핑 UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping)를 활용하여 포인트 앤 클릭 UI로 소스 데이터의 필드를 XDM에 매핑합니다.
+* XDM으로 이동하기 전에 데이터 레이어에서 [새 값을 계산](https://experienceleague.adobe.com/ko/docs/experience-platform/data-prep/functions) 또는 [데이터 형식을 변환](https://experienceleague.adobe.com/ko/docs/experience-platform/data-prep/data-handling)하는 기능
+* [매핑 UI](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/data-prep#create-mapping)를 활용하여 포인트 앤 클릭 UI로 소스 데이터의 필드를 XDM에 매핑합니다.
 
 #### 단점
 
@@ -312,4 +312,4 @@ XDM에 대한 변수 데이터 요소를 만들려면 [스키마 구성](configu
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.

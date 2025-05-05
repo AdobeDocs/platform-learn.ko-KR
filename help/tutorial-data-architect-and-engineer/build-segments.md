@@ -108,7 +108,7 @@ ht-degree: 0%
 왼쪽 탐색에서 **[!UICONTROL 세그먼트]**&#x200B;를 클릭하고 잠시 다음 세 가지 세그먼트를 검토해 보겠습니다.
 
 * 세그먼트 중 두 개는 일괄 처리 세그먼트이고 한 개는 스트리밍 세그먼트입니다.
-* Platform은 가능하면 기본적으로 스트리밍 세그먼테이션으로 설정하므로 기준을 충족하는 즉시 세그먼트를 얻을 수 있습니다. 세그먼트 정의가 스트리밍하기에 너무 복잡한 경우 자동으로 배치로 변환됩니다. 이 경우, 구매 이벤트의 전환 확인 기간이 7일 이상이었으므로 두 세그먼트는 뱃치로 기본 설정되었습니다. 스트리밍 제한 사항의 전체 및 최신 목록은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html)를 참조하세요.
+* Platform은 가능하면 기본적으로 스트리밍 세그먼테이션으로 설정하므로 기준을 충족하는 즉시 세그먼트를 얻을 수 있습니다. 세그먼트 정의가 스트리밍하기에 너무 복잡한 경우 자동으로 배치로 변환됩니다. 이 경우, 구매 이벤트의 전환 확인 기간이 7일 이상이었으므로 두 세그먼트는 뱃치로 기본 설정되었습니다. 스트리밍 제한 사항의 전체 및 최신 목록은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=ko)를 참조하세요.
 * 배치 작업은 매일 일정으로 실행되며 전환할 수 있습니다.
 
 ![지난 30일 동안 동일한 제품을 구입함](assets/segment-review.png)

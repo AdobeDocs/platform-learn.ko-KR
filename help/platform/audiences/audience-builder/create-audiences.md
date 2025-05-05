@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # 대상자 만들기
 
-Adobe Experience Platform에서 대상자를 만드는 방법을 알아봅니다. 대상 규칙을 작성하고 실시간 고객 프로필에 적용하여 고객 경험을 강화할 대상을 생성합니다. 자세한 제품 설명서는 [UI에서 세그먼트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ko) 및 [API로 세그먼트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html)를 참조하십시오.
+Adobe Experience Platform에서 대상자를 만드는 방법을 알아봅니다. 대상 규칙을 작성하고 실시간 고객 프로필에 적용하여 고객 경험을 강화할 대상을 생성합니다. 자세한 제품 설명서는 [UI에서 세그먼트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=ko) 및 [API로 세그먼트 만들기](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=ko)를 참조하십시오.
 
 >[!NOTE]
 >

@@ -19,11 +19,11 @@ ht-degree: 1%
 
 ## Analytics의 변수 매핑
 
-Adobe Experience Platform [!DNL Web SDK]은(는) 특정 값을 자동으로 매핑하므로 웹 SDK을 통해 가능한 한 빨리 Analytics를 새로 구현할 수 있습니다. 자동으로 매핑된 변수는 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)에 나열됩니다.
+Adobe Experience Platform [!DNL Web SDK]은(는) 특정 값을 자동으로 매핑하므로 웹 SDK을 통해 가능한 한 빨리 Analytics를 새로 구현할 수 있습니다. 자동으로 매핑된 변수는 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=ko#data-collection)에 나열됩니다.
 
-Adobe Analytics에 자동으로 매핑되지 않는 XDM 데이터의 경우 [컨텍스트 데이터](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ko-KR)를 사용하여 [스키마](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ko-KR)를 일치시킬 수 있습니다. 그런 다음 [처리 규칙](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)을 사용하여 Analytics에 매핑하여 Analytics 변수를 채울 수 있습니다. 컨텍스트 데이터 및 처리 규칙 은 과거에 Analytics에서 작업한 사용자에게 익숙한 개념이지만 새로운 개념인 경우 지금은 세부 정보에 대해 걱정하지 마십시오.
+Adobe Analytics에 자동으로 매핑되지 않는 XDM 데이터의 경우 [컨텍스트 데이터](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=ko-KR)를 사용하여 [스키마](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=ko-KR)를 일치시킬 수 있습니다. 그런 다음 [처리 규칙](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=ko)을 사용하여 Analytics에 매핑하여 Analytics 변수를 채울 수 있습니다. 컨텍스트 데이터 및 처리 규칙 은 과거에 Analytics에서 작업한 사용자에게 익숙한 개념이지만 새로운 개념인 경우 지금은 세부 정보에 대해 걱정하지 마십시오.
 
-또한 기본 작업 세트 및 제품 목록을 사용하여 AEP 웹 SDK으로 데이터를 전송하거나 검색할 수 있습니다. 이렇게 하려면 [제품](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)을 참조하세요.
+또한 기본 작업 세트 및 제품 목록을 사용하여 AEP 웹 SDK으로 데이터를 전송하거나 검색할 수 있습니다. 이렇게 하려면 [제품](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=ko#data-collection)을 참조하세요.
 
 ### 컨텍스트 데이터
 
@@ -54,7 +54,7 @@ Analytics에서 사용하기 위해 XDM 데이터는 점 표기법을 사용하�
 
 ### 처리 규칙
 
-에지 네트워크에서 수집한 모든 데이터는 [처리 규칙](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)을 통해 액세스할 수 있습니다. Analytics에서는 처리 규칙을 사용하여 컨텍스트 데이터를 Analytics 변수에 통합할 수 있습니다.
+에지 네트워크에서 수집한 모든 데이터는 [처리 규칙](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=ko)을 통해 액세스할 수 있습니다. Analytics에서는 처리 규칙을 사용하여 컨텍스트 데이터를 Analytics 변수에 통합할 수 있습니다.
 
 ## Experience Platform Edge Network의 Audience Manager
 

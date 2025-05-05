@@ -189,13 +189,13 @@ GitHub에서 [Experience Platform [!DNL Postman] 컬렉션을 엽니다](https:/
 1. [!DNL Postman] (으)로 가져오기
 1. **스키마 레지스트리 API > 스키마 > 스키마 목록** 열기
 1. **Params** 및 **Headers** 탭을 보고 이전에 입력한 환경 변수 중 일부를 포함하는 방법을 참고하십시오.
-1. **헤더 > 값 수락 필드**&#x200B;이(가) `application/vnd.adobe.xed-id+json`(으)로 설정되어 있습니다. 스키마 레지스트리 API에는 응답에서 다른 형식을 제공하는 [지정된 Accept 헤더 값](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) 중 하나가 필요합니다.
+1. **헤더 > 값 수락 필드**&#x200B;이(가) `application/vnd.adobe.xed-id+json`(으)로 설정되어 있습니다. 스키마 레지스트리 API에는 응답에서 다른 형식을 제공하는 [지정된 Accept 헤더 값](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=ko#accept) 중 하나가 필요합니다.
 1. **보내기**&#x200B;를 선택하여 첫 번째 Platform API를 호출하십시오!
 
 아래 그림과 같이 샌드박스에서 사용 가능한 Adobe 제공 XDM 스키마 목록이 포함된 `200 OK` 응답을 받았으면 합니다.
 
 ![Postman의 첫 번째 API 호출](assets/postman-firstAPICall.png)
 
-호출이 성공하지 못한 경우 잠시 API 호출의 오류 응답 세부 정보를 사용하여 디버깅하고 위의 단계를 검토하십시오. 문제가 발생하면 [커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community)에서 도움을 요청하거나 이 페이지 오른쪽의 링크를 사용하여 &quot;문제를 기록하십시오.&quot;를 참조하십시오.
+호출이 성공하지 못한 경우 잠시 API 호출의 오류 응답 세부 정보를 사용하여 디버깅하고 위의 단계를 검토하십시오. 문제가 발생하면 [커뮤니티 포럼](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=ko)에서 도움을 요청하거나 이 페이지 오른쪽의 링크를 사용하여 &quot;문제를 기록하십시오.&quot;를 참조하십시오.
 
 Platform 권한, 샌드박스 및 [!DNL Postman]이(가) 설정되면 [스키마에서 데이터를 모델링](model-data-in-schemas.md)할 준비가 된 것입니다!

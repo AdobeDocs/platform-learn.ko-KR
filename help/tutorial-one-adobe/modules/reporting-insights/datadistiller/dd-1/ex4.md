@@ -179,7 +179,7 @@ limit 10;
 
 ### Adobe 정의 함수
 
-Adobe에서 경험 데이터를 더 잘 이해할 수 있도록 표준 SQL 구문에 **Adobe 정의 함수** 집합을 추가했습니다. 다음 두 개의 쿼리에서는 이러한 ADF 함수에 대해 알아봅니다. 설명서에서 자세한 정보와 전체 목록 [을(를) 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
+Adobe에서 경험 데이터를 더 잘 이해할 수 있도록 표준 SQL 구문에 **Adobe 정의 함수** 집합을 추가했습니다. 다음 두 개의 쿼리에서는 이러한 ADF 함수에 대해 알아봅니다. 설명서에서 자세한 정보와 전체 목록 [을(를) 찾을 수 있습니다](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html?lang=ko).
 
 ### 사람들이 세션에서 세 번째 페이지로 &quot;서비스 취소&quot; 페이지에 도달하기 전에 사이트에서 수행하는 작업은 무엇입니까?
 

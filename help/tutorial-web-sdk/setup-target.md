@@ -15,7 +15,7 @@ ht-degree: 1%
 
 Adobe Experience Platform Web SDK를 사용하여 Adobe Target을 구현하는 방법을 알아봅니다. 경험을 제공하는 방법과 추가 매개변수를 Target에 전달하는 방법을 알아봅니다.
 
-[Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home)은(는) 사용자의 웹 및 모바일 사이트, 앱 및 기타 디지털 채널의 매출을 극대화하도록 고객의 경험을 조정하고 개인화하는 데 필요한 모든 기능을 제공하는 Adobe Experience Cloud 애플리케이션입니다.
+[Adobe Target](https://experienceleague.adobe.com/ko/docs/target/using/target-home)은(는) 사용자의 웹 및 모바일 사이트, 앱 및 기타 디지털 채널의 매출을 극대화하도록 고객의 경험을 조정하고 개인화하는 데 필요한 모든 기능을 제공하는 Adobe Experience Cloud 애플리케이션입니다.
 
 ![웹 SDK 및 Adobe Target 다이어그램](assets/dc-websdk-at.png)
 
@@ -42,13 +42,13 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Target을 구현하는 �
 이 섹션의 학습 내용을 완료하려면 먼저 다음을 수행해야 합니다.
 
 * 데이터 요소 및 규칙 설정을 포함하여 Platform Web SDK의 초기 구성에 대한 모든 단원을 완료합니다.
-* Adobe Target에 [편집자 또는 승인자 역할](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)이 있는지 확인하십시오.
-* Google Chrome 브라우저를 사용하는 경우 [시각적 경험 작성기 Helper 확장 기능](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)을 설치하십시오.
+* Adobe Target에 [편집자 또는 승인자 역할](https://experienceleague.adobe.com/ko/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)이 있는지 확인하십시오.
+* Google Chrome 브라우저를 사용하는 경우 [시각적 경험 작성기 Helper 확장 기능](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)을 설치하십시오.
 * Target에서 활동을 설정하는 방법을 이해할 수 있습니다. 새로 고침이 필요한 경우 다음 튜토리얼 및 안내서가 이 단원에 유용합니다.
-   * [VEC(시각적 경험 작성기) Helper 확장 프로그램 사용](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
-   * [Visual Experience Composer 사용](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
-   * [양식 기반 경험 작성기 사용](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
-   * [경험 타깃팅 활동 만들기](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
+   * [VEC(시각적 경험 작성기) Helper 확장 프로그램 사용](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [Visual Experience Composer 사용](https://experienceleague.adobe.com/ko/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [양식 기반 경험 작성기 사용](https://experienceleague.adobe.com/ko/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [경험 타깃팅 활동 만들기](https://experienceleague.adobe.com/ko/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
 
 ## 깜박임 처리 추가
 
@@ -117,7 +117,7 @@ Adobe은 Luma 사이트에 표시된 대로 태그를 비동기식으로 구현�
 >
 >사전 숨김 스타일 설정은 동기식 구현에만 사용됩니다. 태그의 비동기 구현을 사용하는 경우 이 스타일은 비워 두거나 주석 처리해야 합니다.
 
-Platform Web SDK에서 플리커를 관리하는 방법에 대한 자세한 내용은 [개인화된 경험에 대한 플리커 관리](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/manage-flicker) 가이드 섹션을 참조하십시오.
+Platform Web SDK에서 플리커를 관리하는 방법에 대한 자세한 내용은 [개인화된 경험에 대한 플리커 관리](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/personalization/manage-flicker) 가이드 섹션을 참조하십시오.
 
 
 ## 데이터 스트림 구성
@@ -142,7 +142,7 @@ Platform Web SDK에서 Target 활동을 제공하려면 먼저 데이터 스트�
 
 ### 속성 토큰
 
-Target Premium 고객은 속성을 사용하여 사용자 권한을 관리할 수 있습니다. Target 속성을 사용하면 사용자가 Target 활동을 실행할 수 있는 경계를 설정할 수 있습니다. 자세한 내용은 Target 설명서의 [엔터프라이즈 권한](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview) 섹션을 참조하십시오.
+Target Premium 고객은 속성을 사용하여 사용자 권한을 관리할 수 있습니다. Target 속성을 사용하면 사용자가 Target 활동을 실행할 수 있는 경계를 설정할 수 있습니다. 자세한 내용은 Target 설명서의 [엔터프라이즈 권한](https://experienceleague.adobe.com/ko/docs/target/using/administer/manage-users/enterprise/properties-overview) 섹션을 참조하십시오.
 
 속성 토큰을 설정하거나 찾으려면 **Adobe Target** > **[!UICONTROL 관리]** > **[!UICONTROL 속성]**&#x200B;으로 이동합니다. `</>` 아이콘에 구현 코드가 표시됩니다. `at_property` 값은 데이터 스트림에서 사용할 속성 토큰입니다.
 
@@ -156,9 +156,9 @@ Target Premium 고객은 속성을 사용하여 사용자 권한을 관리할 �
 
 ### 대상 환경 ID
 
-Target의 [환경](https://experienceleague.adobe.com/en/docs/target/using/administer/environments)을 사용하면 모든 개발 단계에서 구현을 관리할 수 있습니다. 이 선택적 설정은 각 데이터 스트림에 사용할 Target 환경을 지정합니다.
+Target의 [환경](https://experienceleague.adobe.com/ko/docs/target/using/administer/environments)을 사용하면 모든 개발 단계에서 구현을 관리할 수 있습니다. 이 선택적 설정은 각 데이터 스트림에 사용할 Target 환경을 지정합니다.
 
-Adobe은 개발, 스테이징 및 프로덕션 데이터스트림마다 타겟 환경 ID를 다르게 설정하여 작업을 단순화할 것을 권장합니다. 또는 [호스트](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts) 기능을 사용하여 Target 인터페이스에서 환경을 구성할 수 있습니다.
+Adobe은 개발, 스테이징 및 프로덕션 데이터스트림마다 타겟 환경 ID를 다르게 설정하여 작업을 단순화할 것을 권장합니다. 또는 [호스트](https://experienceleague.adobe.com/ko/docs/target/using/administer/hosts) 기능을 사용하여 Target 인터페이스에서 환경을 구성할 수 있습니다.
 
 환경 ID를 설정하거나 찾으려면 **Adobe Target** > **[!UICONTROL 관리]** > **[!UICONTROL 환경]**&#x200B;으로 이동합니다.
 
@@ -170,7 +170,7 @@ Adobe은 개발, 스테이징 및 프로덕션 데이터스트림마다 타겟 �
 
 ### Target 타사 ID 네임스페이스
 
-이 선택적 설정을 사용하면 Target 타사 ID에 사용할 ID 기호를 지정할 수 있습니다. Target은 단일 ID 기호 또는 네임스페이스에서만 프로필 동기화를 지원합니다. 자세한 내용은 Target 안내서의 [mbox3rdPartyId에 대한 실시간 프로필 동기화](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id) 섹션을 참조하십시오.
+이 선택적 설정을 사용하면 Target 타사 ID에 사용할 ID 기호를 지정할 수 있습니다. Target은 단일 ID 기호 또는 네임스페이스에서만 프로필 동기화를 지원합니다. 자세한 내용은 Target 안내서의 [mbox3rdPartyId에 대한 실시간 프로필 동기화](https://experienceleague.adobe.com/ko/docs/target/using/audiences/visitor-profiles/3rd-party-id) 섹션을 참조하십시오.
 
 ID 기호는 **데이터 수집** > **[!UICONTROL 고객]** > **[!UICONTROL ID]**&#x200B;의 ID 목록에서 찾을 수 있습니다.
 
@@ -216,16 +216,16 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 >
 >일반적으로 [!UICONTROL 시각적 개인화 결정 렌더링] 설정은 전체 페이지 로드당 단일 이벤트 전송 작업에 대해서만 활성화되어야 합니다. 여러 이벤트 보내기 작업에서 이 설정이 활성화되어 있으면 후속 렌더링 요청이 무시됩니다.
 
-사용자 지정 코드를 사용하여 직접 이러한 결정에 대해 렌더링하거나 작업을 수행하려는 경우 [!UICONTROL 시각적 개인화 결정 렌더링] 설정을 사용하지 않도록 설정할 수 있습니다. Platform Web SDK는 유연하며 완벽한 제어 기능을 제공하는 이 기능을 제공합니다. [개인화된 콘텐츠를 수동으로 렌더링](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content)하는 방법에 대한 자세한 내용은 안내서를 참조하세요.
+사용자 지정 코드를 사용하여 직접 이러한 결정에 대해 렌더링하거나 작업을 수행하려는 경우 [!UICONTROL 시각적 개인화 결정 렌더링] 설정을 사용하지 않도록 설정할 수 있습니다. Platform Web SDK는 유연하며 완벽한 제어 기능을 제공하는 이 기능을 제공합니다. [개인화된 콘텐츠를 수동으로 렌더링](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/personalization/rendering-personalization-content)하는 방법에 대한 자세한 내용은 안내서를 참조하세요.
 
 
 ### 시각적 경험 작성기로 Target 활동 설정
 
-이제 기본 구현 부분이 완료되었으므로 Target에서 XT(경험 타깃팅) 활동을 만들어 모든 것이 올바르게 작동하는지 확인하십시오. 도움이 필요한 경우 Target 자습서에서 [경험 타깃팅 활동 만들기](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities)를 참조할 수 있습니다.
+이제 기본 구현 부분이 완료되었으므로 Target에서 XT(경험 타깃팅) 활동을 만들어 모든 것이 올바르게 작동하는지 확인하십시오. 도움이 필요한 경우 Target 자습서에서 [경험 타깃팅 활동 만들기](https://experienceleague.adobe.com/ko/docs/target-learn/tutorials/activities/create-experience-targeting-activities)를 참조할 수 있습니다.
 
 >[!NOTE]
 >
->Google Chrome을 브라우저로 사용하는 경우 VEC에서 편집할 사이트를 제대로 로드하려면 [VEC(시각적 경험 작성기) Helper 확장 프로그램](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)이 필요합니다.
+>Google Chrome을 브라우저로 사용하는 경우 VEC에서 편집할 사이트를 제대로 로드하려면 [VEC(시각적 경험 작성기) Helper 확장 프로그램](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)이 필요합니다.
 
 1. Adobe Target 인터페이스로 이동합니다
 1. 활동 URL에 대한 Luma 홈 페이지를 사용하여 경험 타깃팅 (XT) 활동을 만듭니다
@@ -249,9 +249,9 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
    >Adobe Analytics을 사용하지 않는 경우 보고 소스로 Target을 선택하고 대신 **참여 > 페이지 보기 수**&#x200B;와 같은 다른 지표를 선택합니다. 활동을 저장하고 미리 보려면 목표 지표가 필요합니다.
 
 1. 활동 저장
-1. 변경 사항이 익숙하다면 활동을 활성화할 수 있습니다. 활성화하지 않고 환경을 미리 보려면 [QA 미리 보기 URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa)을(를) 복사할 수 있습니다.
+1. 변경 사항이 익숙하다면 활동을 활성화할 수 있습니다. 활성화하지 않고 환경을 미리 보려면 [QA 미리 보기 URL](https://experienceleague.adobe.com/ko/docs/target/using/activities/activity-qa/activity-qa)을(를) 복사할 수 있습니다.
 1. Luma 홈 페이지를 로드하면 변경 사항이 적용된 것을 볼 수 있습니다
-1. 몇 시간 후에 Adobe Analytics에서 Target 활동 데이터 및 전환을 볼 수 있습니다. [Analytics for Target(A4T) 보고](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting)에 대한 자세한 내용은 Target 안내서를 참조하십시오.
+1. 몇 시간 후에 Adobe Analytics에서 Target 활동 데이터 및 전환을 볼 수 있습니다. [Analytics for Target(A4T) 보고](https://experienceleague.adobe.com/ko/docs/target/using/integrate/a4t/reporting)에 대한 자세한 내용은 Target 안내서를 참조하십시오.
 
 
 
@@ -261,7 +261,7 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 
 >[!CAUTION]
 >
->Google Chrome을 사용하고 있고 [VEC(시각적 경험 작성기) Helper 확장 프로그램](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)이 설치되어 있는 경우 **Target 라이브러리 삽입** 설정이 비활성화되어 있는지 확인하십시오. 이 설정을 활성화하면 추가 Target 요청이 발생합니다.
+>Google Chrome을 사용하고 있고 [VEC(시각적 경험 작성기) Helper 확장 프로그램](https://experienceleague.adobe.com/ko/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)이 설치되어 있는 경우 **Target 라이브러리 삽입** 설정이 비활성화되어 있는지 확인하십시오. 이 설정을 활성화하면 추가 Target 요청이 발생합니다.
 
 1. Adobe Experience Platform Debugger 브라우저 확장 열기
 1. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)(으)로 이동하여 디버거를 사용하여 [사이트의 태그 속성을 자신의 개발 속성으로 전환](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)합니다.
@@ -405,7 +405,7 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 
 1. [!UICONTROL 목표 및 설정] 단계에서 보고 소스로 Adobe Target을 선택하고 목표로 [!UICONTROL 참여] > [!UICONTROL 페이지 보기]를 선택합니다
 1. 활동 저장
-1. 변경 사항이 익숙하다면 활동을 활성화할 수 있습니다. 활성화하지 않고 환경을 미리 보려면 [QA 미리 보기 URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa)을(를) 복사할 수 있습니다.
+1. 변경 사항이 익숙하다면 활동을 활성화할 수 있습니다. 활성화하지 않고 환경을 미리 보려면 [QA 미리 보기 URL](https://experienceleague.adobe.com/ko/docs/target/using/activities/activity-qa/activity-qa)을(를) 복사할 수 있습니다.
 1. Luma 홈 페이지를 로드하면 변경 사항이 적용된 것을 볼 수 있습니다
 
 >[!NOTE]
@@ -440,7 +440,7 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 
 ### 페이지(mbox) 매개 변수 및 XDM
 
-모든 XDM 필드는 [페이지 매개 변수](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) 또는 mbox 매개 변수로 Target에 자동으로 전달됩니다.
+모든 XDM 필드는 [페이지 매개 변수](https://experienceleague.adobe.com/ko/docs/target-dev/developer/implementation/methods/page-parameters) 또는 mbox 매개 변수로 Target에 자동으로 전달됩니다.
 
 이러한 XDM 필드 중 일부는 Target 백엔드의 특수 오브젝트에 매핑됩니다. 예를 들어 `web.webPageDetails.URL`은(는) URL 기반 타깃팅 조건을 빌드하거나 프로필 스크립트를 만들 때 `page.url` 개체로 자동으로 사용할 수 있습니다.
 
@@ -450,10 +450,10 @@ Target이 데이터 스트림에서 활성화되어 있을 경우 Target의 시�
 
 XDM 오브젝트에서 매핑되지 않은 Target에 유용할 수 있는 일부 데이터 포인트가 있습니다. 이러한 특수 Target 매개 변수는 다음과 같습니다.
 
-* [프로필 속성](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
-* [Recommendations 엔터티 특성](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
-* [Recommendations 예약 매개 변수](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
-* [카테고리 관심도](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)의 카테고리 값
+* [프로필 속성](https://experienceleague.adobe.com/ko/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
+* [Recommendations 엔터티 특성](https://experienceleague.adobe.com/ko/docs/target/using/recommendations/entities/entity-attributes)
+* [Recommendations 예약 매개 변수](https://experienceleague.adobe.com/ko/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* [카테고리 관심도](https://experienceleague.adobe.com/ko/docs/target/using/audiences/visitor-profiles/category-affinity)의 카테고리 값
 
 이러한 매개 변수는 `xdm` 개체 대신 `data` 개체에서 전송해야 합니다. 또한 페이지(또는 mbox) 매개 변수도 `data` 개체에 포함될 수 있습니다.
 
@@ -599,4 +599,4 @@ Target Premium이 있는 경우 엔티티 데이터가 올바르게 전달되었
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.

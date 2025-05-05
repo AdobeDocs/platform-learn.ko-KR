@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 세그먼트 활성화 성공 모니터링
 
-활성화 파트너에게 세그먼트 프로필을 보낼 때는 특히 문제를 해결할 수 있도록 이 데이터 전송의 성공과 관련된 정보를 반드시 확인해야 합니다. 이 비디오는 대상으로의 세그먼트 흐름을 모니터링하는 두 가지 주요 방법을 보여 줍니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=en)를 참조하세요.
+활성화 파트너에게 세그먼트 프로필을 보낼 때는 특히 문제를 해결할 수 있도록 이 데이터 전송의 성공과 관련된 정보를 반드시 확인해야 합니다. 이 비디오는 대상으로의 세그먼트 흐름을 모니터링하는 두 가지 주요 방법을 보여 줍니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on&enablevpops)
 

@@ -62,14 +62,14 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->태그 기능(이전 Launch)을 사용하여 Web SDK를 구현하는 경우 사용자 지정 코드 없이 도메인 간 ID 공유를 수행할 수 있습니다. 자세한 내용은 [전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension)를 참조하세요.
+>태그 기능(이전 Launch)을 사용하여 Web SDK를 구현하는 경우 사용자 지정 코드 없이 도메인 간 ID 공유를 수행할 수 있습니다. 자세한 내용은 [전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=ko#tags-extension)를 참조하세요.
 
 >[!NOTE]
 >
->Platform Web SDK는 기본 모바일 앱 사용 사례에 대해 모바일-웹 ID 공유도 지원합니다. 자세한 내용은 [Mobile-to-Web 및 도메인 간 ID 공유](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html)에 대한 전용 설명서를 참조하십시오.
+>Platform Web SDK는 기본 모바일 앱 사용 사례에 대해 모바일-웹 ID 공유도 지원합니다. 자세한 내용은 [Mobile-to-Web 및 도메인 간 ID 공유](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=ko)에 대한 전용 설명서를 참조하십시오.
 
 다음으로 Platform Web SDK와의 호환성을 보장하기 위해 [대상 및 프로필 스크립트를 업데이트](update-audiences.md)하는 방법에 대해 알아봅니다.
 
 >[!NOTE]
 >
->at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ko#M463)에 게시하여 알려 주십시오.

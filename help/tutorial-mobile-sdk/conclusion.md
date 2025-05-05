@@ -40,12 +40,12 @@ ht-degree: 3%
 
 그리고 항상 배울 게 더 있어! 구현을 기반으로 구축하기 위해 다음과 같이 살펴볼 다른 콘텐츠의 몇 가지 제안 사항이 있습니다.
 
-* **이벤트 전달 사용**. 데이터 스트림에서 이벤트 전달을 쉽게 활성화할 수 있습니다. 다음은 Web SDK 자습서에서 이벤트 전달을 구성하는 [실습 레슨](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html)입니다. 모바일 구현을 위해 생성된 리소스를 사용하고 앱에서 구현한 XDM 필드를 선택합니다.
-* **Customer Journey Analytics 연결**. [플랫폼 데이터 세트](platform.md)를 만든 경우 데이터 세트를 Customer Journey Analytics에 연결할 수 있습니다. 이 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform.html)에서 자세히 알아보기
+* **이벤트 전달 사용**. 데이터 스트림에서 이벤트 전달을 쉽게 활성화할 수 있습니다. 다음은 Web SDK 자습서에서 이벤트 전달을 구성하는 [실습 레슨](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html?lang=ko)입니다. 모바일 구현을 위해 생성된 리소스를 사용하고 앱에서 구현한 XDM 필드를 선택합니다.
+* **Customer Journey Analytics 연결**. [플랫폼 데이터 세트](platform.md)를 만든 경우 데이터 세트를 Customer Journey Analytics에 연결할 수 있습니다. 이 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform.html?lang=ko)에서 자세히 알아보기
 * **데이터 스트림에서 Audience Manager을 사용하도록 설정**. XDM 경험 이벤트를 전송하여 모바일 앱 참여 Audience Manager을 기반으로 Audience Manager을 만들고 세그먼트 작성을 시작합니다.
-* **플랫폼에서 세그먼트를 만듭니다**. [실시간 고객 프로필에 대한 스키마 및 데이터 집합](platform.md)을(를) 활성화한 경우 모바일 앱 이벤트를 기반으로 세그먼트를 작성하고 다른 소스의 데이터와 결합한 다음 이러한 세그먼트를 Real-time Customer Data Platform의 대상으로 보낼 수 있습니다. 이 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/audiences/create-audiences.html)에서 세그먼트 빌더에 대해 자세히 알아보세요.
+* **플랫폼에서 세그먼트를 만듭니다**. [실시간 고객 프로필에 대한 스키마 및 데이터 집합](platform.md)을(를) 활성화한 경우 모바일 앱 이벤트를 기반으로 세그먼트를 작성하고 다른 소스의 데이터와 결합한 다음 이러한 세그먼트를 Real-time Customer Data Platform의 대상으로 보낼 수 있습니다. 이 [비디오 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/audiences/create-audiences.html?lang=ko)에서 세그먼트 빌더에 대해 자세히 알아보세요.
 * **Platform Web SDK 구현**. 이제 SDK를 마스터했으므로 다른 SDK를 학습하세요! Adobe Experience Platform Web SDK는 웹 사이트에서 Experience Cloud 및 타사 서비스를 제공하는 데 사용되는 JavaScript SDK입니다. Web SDK에 대해 유사한 [실습 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR)이 있습니다. 둘 다 완료하고 장치 간 프로필 병합을 확인합니다!
-* **Experience Platform에 대해 자세히 알아보기**. [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)에서 다른 소스의 데이터를 수집하여 모바일 SDK 데이터와 결합하는 방법에 대해 자세히 알아보십시오
+* **Experience Platform에 대해 자세히 알아보기**. [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ko)에서 다른 소스의 데이터를 수집하여 모바일 SDK 데이터와 결합하는 방법에 대해 자세히 알아보십시오
 
 
 >[!NOTE]

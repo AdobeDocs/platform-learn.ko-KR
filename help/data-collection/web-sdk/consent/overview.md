@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 동의 개요
 
-Adobe Experience Platform Web SDK의 동의 관리를 통해 법적 개인 정보 보호 요구 사항을 준수하고 고객의 환경 설정을 준수하는 방법에 대해 알아봅니다. 자세한 내용은 [Platform의 거버넌스, 개인 정보 및 보안에 대한 개요](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en#consent)를 참조하십시오.
+Adobe Experience Platform Web SDK의 동의 관리를 통해 법적 개인 정보 보호 요구 사항을 준수하고 고객의 환경 설정을 준수하는 방법에 대해 알아봅니다. 자세한 내용은 [Platform의 거버넌스, 개인 정보 및 보안에 대한 개요](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=ko#consent)를 참조하십시오.
 
 >[!NOTE]
 >

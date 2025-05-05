@@ -17,7 +17,7 @@ ht-degree: 43%
 
 # Intelligent Services 소개
 
-마케팅 분석가 및 전문가가 데이터 과학에 대한 전문 지식 없이도 고객 경험 사용 사례에서 인공 지능(AI) 및 머신 러닝을 사용할 수 있는 Intelligent Services에 대한 높은 수준의 소개입니다. 자세한 내용은 [Intelligent Services 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html)를 참조하십시오.
+마케팅 분석가 및 전문가가 데이터 과학에 대한 전문 지식 없이도 고객 경험 사용 사례에서 인공 지능(AI) 및 머신 러닝을 사용할 수 있는 Intelligent Services에 대한 높은 수준의 소개입니다. 자세한 내용은 [Intelligent Services 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ko)를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 

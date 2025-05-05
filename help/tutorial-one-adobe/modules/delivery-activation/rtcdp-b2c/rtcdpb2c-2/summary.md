@@ -39,7 +39,7 @@ Adobe은 심층적인 CXM 경험과 결합된 AI/ML 전문 지식을 갖추고 �
 
 ## 이 항목 확인
 
-- Intelligent Services 개요: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- Intelligent Services 개요: [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ko](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=ko)
 
 ## 다음 단계
 

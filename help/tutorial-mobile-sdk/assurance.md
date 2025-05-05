@@ -17,7 +17,7 @@ ht-degree: 5%
 
 Assurance는 정식적으로 프로젝트 그리폰이라고 하며, 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인하는 데 도움이 되도록 설계되었습니다.
 
-Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 SDK 이벤트를 검사할 수 있습니다. SDK에서 수집한 모든 이벤트를 검사할 수 있습니다. SDK 이벤트는 시간별로 정렬된 목록 보기에 로드됩니다. 각 이벤트에는 추가 정보를 제공하는 상세 보기가 있습니다. SDK 구성, 데이터 요소, 공유 상태 및 SDK 확장 버전을 검색할 수 있는 추가 보기도 제공됩니다. 제품 설명서에서 [보증](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html)에 대해 자세히 알아보세요.
+Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 SDK 이벤트를 검사할 수 있습니다. SDK에서 수집한 모든 이벤트를 검사할 수 있습니다. SDK 이벤트는 시간별로 정렬된 목록 보기에 로드됩니다. 각 이벤트에는 추가 정보를 제공하는 상세 보기가 있습니다. SDK 구성, 데이터 요소, 공유 상태 및 SDK 확장 버전을 검색할 수 있는 추가 보기도 제공됩니다. 제품 설명서에서 [보증](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ko)에 대해 자세히 알아보세요.
 
 
 ## 전제 조건
@@ -35,7 +35,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 
 ## 액세스 확인
 
-조직에서 Assurance에 액세스할 수 있는지 확인합니다. 사용자는 Adobe Experience Platform의 프로필에 추가되어야 합니다. 자세한 내용은 Assurance 가이드의 [사용자 액세스](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en)를 참조하십시오.
+조직에서 Assurance에 액세스할 수 있는지 확인합니다. 사용자는 Adobe Experience Platform의 프로필에 추가되어야 합니다. 자세한 내용은 Assurance 가이드의 [사용자 액세스](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=ko)를 참조하십시오.
 
 ## 구현
 
@@ -169,7 +169,7 @@ Xcode에서:
 
          ![보증 이벤트](assets/assurance-events.png)
 
-문제가 발생하면 [기술](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} 및 [일반 설명서](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}를 검토하십시오.
+문제가 발생하면 [기술](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} 및 [일반 설명서](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=ko){target="_blank"}를 검토하십시오.
 
 
 ## 확장 확인
@@ -203,7 +203,7 @@ Xcode에서:
 >
 >이제 자습서의 나머지 부분에서 Assurance를 사용하도록 앱을 설정했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 
 다음: **[동의 구현](consent.md)**

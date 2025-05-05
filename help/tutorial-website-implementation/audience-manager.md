@@ -14,15 +14,15 @@ ht-degree: 72%
 
 이 단원에서는 서버측 전달을 사용하여 Adobe Audience Manager를 활성화하는 절차를 안내합니다.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html)(AAM)는 온라인 대상 데이터 관리를 위해 디지털 광고주와 게시자에게 매출 성과를 높이는 데 도움이 되도록 데이터 자산을 제어하고 활용하는 데 필요한 도구를 제공하는 업계 선두 서비스를 제공합니다.
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=ko)(AAM)는 온라인 대상 데이터 관리를 위해 디지털 광고주와 게시자에게 매출 성과를 높이는 데 도움이 되도록 데이터 자산을 제어하고 활용하는 데 필요한 도구를 제공하는 업계 선두 서비스를 제공합니다.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
-> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
+> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)**&#x200B;입니다.
+> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -44,7 +44,7 @@ ht-degree: 72%
 
    ![디버거를 사용하여 실제 웹 사이트에서 Audience Manager 하위 도메인을 찾을 수 있습니다](images/aam-debugger-partner.png)
 
-Audience Manager가 아직 구현되지 않았다면 다음 지침에 따라 [Audience Manager 하위 도메인을 획득](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)하십시오.
+Audience Manager가 아직 구현되지 않았다면 다음 지침에 따라 [Audience Manager 하위 도메인을 획득](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=ko)하십시오.
 
 ## 구현 옵션
 
@@ -95,7 +95,7 @@ Adobe Analytics에서 Adobe Audience Manager로 데이터를 전달하려면 Ado
 >
 >보고서 세트별로 SSF를 활성화해야 하므로 실제 사이트의 보고서 세트에서 SSF를 배포할 때에는 실제 보고서 세트에 대해 이 단계를 잊지 말고 반복하십시오.
 >
->또한 SSF 옵션이 회색으로 표시되어 있는 경우 옵션을 활성화하려면 보고서 세트를 Experience Cloud 조직에 매핑해야 합니다. 이 내용은 [설명서](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)에 자세히 나와 있습니다.
+>또한 SSF 옵션이 회색으로 표시되어 있는 경우 옵션을 활성화하려면 보고서 세트를 Experience Cloud 조직에 매핑해야 합니다. 이 내용은 [설명서](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=ko)에 자세히 나와 있습니다.
 
 이 단계를 완료했고 Adobe Experience Platform ID 서비스가 활성화되어 있으면 데이터가 Analytics에서 AAM으로 전달됩니다. 하지만, 응답이 AAM에서 페이지로(그리고 Audience Analytics 기능을 통해 Analytics로도) 올바르게 돌아오도록 프로세스를 완료하려면 태그에서 다음 단계를 완료해야 합니다. 걱정하지 마십시오. 아주 쉽습니다.
 
@@ -117,7 +117,7 @@ SSF 활성화를 위한 두 단계 중 두 번째 단계입니다. Analytics Adm
 
 1. **[!UICONTROL Audience Manager과 Analytics 데이터를 자동으로 공유]**&#x200B;하려면 이 확인란을 선택하세요. 이렇게 하면 Audience Manager &quot;모듈&quot;(코드)이 Analytics `AppMeasurement.js` 구현에 추가됩니다.
 
-1. Audience Manager 하위 도메인을 추가합니다(&quot;파트너 이름&quot; &quot;파트너 ID&quot; 또는 &quot;파트너 하위 도메인&quot;이라고도 함). 다음 지침에 따라 [Audience Manager 하위 도메인을 획득](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)하십시오.
+1. Audience Manager 하위 도메인을 추가합니다(&quot;파트너 이름&quot; &quot;파트너 ID&quot; 또는 &quot;파트너 하위 도메인&quot;이라고도 함). 다음 지침에 따라 [Audience Manager 하위 도메인을 획득](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=ko)하십시오.
 
 1. **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 클릭합니다.
 

@@ -54,11 +54,11 @@ Edge Network에서 Adobe Analytics으로 XDM 데이터를 전송하려면 [데�
 
 ## 자동 매핑
 
-대부분의 표준 XDM 필드는 Analytics 변수에 자동으로 매핑됩니다. 전체 목록은 [여기](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en)에서 확인하십시오.
+대부분의 표준 XDM 필드는 Analytics 변수에 자동으로 매핑됩니다. 전체 목록은 [여기](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=ko)에서 확인하십시오.
 
 ### 예 #1 - s.products
 
-처리 규칙을 사용하여 채울 수 없는 [products 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en)이(가) 좋은 예입니다. XDM 구현을 사용하면 `productListItems`에 필요한 모든 데이터를 전달하고 `s.products`은(는) Analytics 매핑을 통해 자동으로 채워집니다.
+처리 규칙을 사용하여 채울 수 없는 [products 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=ko)이(가) 좋은 예입니다. XDM 구현을 사용하면 `productListItems`에 필요한 모든 데이터를 전달하고 `s.products`은(는) Analytics 매핑을 통해 자동으로 채워집니다.
 
 이 개체:
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->`productListItems[].SKU`과(와) `productListItems[].name`이(가) 모두 데이터를 포함하는 경우 `productListItems[].SKU`의 값이 사용됩니다. 자세한 내용은 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en)을 참조하십시오.
+>`productListItems[].SKU`과(와) `productListItems[].name`이(가) 모두 데이터를 포함하는 경우 `productListItems[].SKU`의 값이 사용됩니다. 자세한 내용은 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=ko)을 참조하십시오.
 
 
 ### 예 #2 - scAdd
@@ -171,7 +171,7 @@ Analytics 매핑에서 다음을 참고하십시오.
 
 ## 컨텍스트 데이터로 매핑
 
-Analytics로 전달된 XDM 데이터는 표준 및 사용자 지정 필드를 모두 포함하는 [컨텍스트 데이터](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en)(으)로 변환됩니다.
+Analytics로 전달된 XDM 데이터는 표준 및 사용자 지정 필드를 모두 포함하는 [컨텍스트 데이터](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=ko)(으)로 변환됩니다.
 
 컨텍스트 데이터 키는 다음 구문에 따라 구성됩니다.
 
@@ -211,7 +211,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 ### 머천다이징 eVar
 
-예를 들어 Analytics 설정에서 [머천다이징 eVar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en)을(를) 사용하여 `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`과(와) 같은 제품의 색상을 캡처하는 경우 [이벤트 데이터 추적](events.md)에서 정의한 XDM 페이로드를 확장하여 해당 머천다이징 정보를 캡처해야 합니다.
+예를 들어 Analytics 설정에서 [머천다이징 eVar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=ko)을(를) 사용하여 `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`과(와) 같은 제품의 색상을 캡처하는 경우 [이벤트 데이터 추적](events.md)에서 정의한 XDM 페이로드를 확장하여 해당 머천다이징 정보를 캡처해야 합니다.
 
 * JSON에서:
 
@@ -301,7 +301,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >처리 규칙에 처음 매핑하면 XDM 객체의 컨텍스트 데이터 변수가 인터페이스에 표시되지 않습니다. 이 문제를 해결하려면 를 저장하고 다시 편집하십시오. 이제 모든 XDM 변수가 표시됩니다.
 
 
-처리 규칙 및 컨텍스트 데이터에 대한 추가 정보는 [여기](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en)에서 찾을 수 있습니다.
+처리 규칙 및 컨텍스트 데이터에 대한 추가 정보는 [여기](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=ko)에서 찾을 수 있습니다.
 
 >[!TIP]
 >

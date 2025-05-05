@@ -16,7 +16,7 @@ ht-degree: 7%
 
 # 동적 대상자 만들기
 
-동적 대상은 Adobe Experience Platform의 고급 세분화 기능으로, 마케터가 마케팅 캠페인용 대상을 구축할 때 일반적으로 직면했던 확장성 문제를 해결합니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)를 참조하세요.
+동적 대상은 Adobe Experience Platform의 고급 세분화 기능으로, 마케터가 마케팅 캠페인용 대상을 구축할 때 일반적으로 직면했던 확장성 문제를 해결합니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >

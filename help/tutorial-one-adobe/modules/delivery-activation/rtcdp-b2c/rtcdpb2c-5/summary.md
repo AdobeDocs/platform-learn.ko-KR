@@ -31,7 +31,7 @@ Adobe Experience Platform 데이터 수집 덕분에 이제 브랜드로서는 �
 
 - 기술 블로그: [Adobe Experience Platform Web SDK 및 Edge Network으로 구현 불만 사항 해결](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - 기술 블로그: [Adobe Experience Platform Web SDK 및 Edge Network을 통해 웹 사이트 성능 향상](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
-- 설명서: [Adobe Experience Platform 데이터 수집 서버측 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
+- 설명서: [Adobe Experience Platform 데이터 수집 서버측 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko#server-side-info)
 - 비디오: [Adobe 이외의 Tag Management 솔루션을 사용하여 Edge 및 Adobe Experience Platform 데이터 수집 서버 구현](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
 
 ## 다음 단계

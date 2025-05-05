@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 태그를 사용하여 Adobe Analytics을 Web SDK으로 마이그레이션
 
-Experience Platform 태그(이전의 Launch)의 Analytics 확장 기능을 사용하여 Adobe Analytics 구현을 Tags의 Web SDK 확장 기능을 사용하여 웹 SDK으로 마이그레이션하는 단계에 대해 알아봅니다. Tags의 Adobe Analytics 확장을 사용하면 &quot;AppMeasurement.js&quot; 코드가 백그라운드에서 사용됩니다. 따라서 이 자습서는 AppMeasurement을 Web SDK으로 마이그레이션하는 자습서로 생각할 수 있지만, 이 자습서는 Tags에 완전히 포함되어 있으며 JavaScript 구현으로 이동하거나 JavaScript 구현에서 이동하는 것은 포함하지 않습니다(Tags UI 내에서 사용되는 코드 제외). JavaScript 구현의 마이그레이션에 대해서는 [설명서](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)를 참조하세요.
+Experience Platform 태그(이전의 Launch)의 Analytics 확장 기능을 사용하여 Adobe Analytics 구현을 Tags의 Web SDK 확장 기능을 사용하여 웹 SDK으로 마이그레이션하는 단계에 대해 알아봅니다. Tags의 Adobe Analytics 확장을 사용하면 &quot;AppMeasurement.js&quot; 코드가 백그라운드에서 사용됩니다. 따라서 이 자습서는 AppMeasurement을 Web SDK으로 마이그레이션하는 자습서로 생각할 수 있지만, 이 자습서는 Tags에 완전히 포함되어 있으며 JavaScript 구현으로 이동하거나 JavaScript 구현에서 이동하는 것은 포함하지 않습니다(Tags UI 내에서 사용되는 코드 제외). JavaScript 구현의 마이그레이션에 대해서는 [설명서](https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)를 참조하세요.
 
 >[!NOTE]
 >
@@ -61,7 +61,7 @@ Analytics 구현을 마이그레이션하는 단계로 들어가기 전에 Analy
 단계를 거치면서 이해해야 할 몇 가지 주의 사항이 있습니다.
 
 1. 먼저, 이 모든 단계가 필요할 수도 있고 필요하지 않을 수도 있습니다. 예를 들어 사용자 지정 코드 마이그레이션에 대한 단원이 있습니다. 사용자 지정 코드(플러그인 사용 포함)를 사용하지 않는 태그 구현이 있는 경우에는 이 단원이 필요하지 않습니다. 대부분의 사용자에게 필요한 단원을 포함시키려고 시도했으므로, 마이그레이션 중에 사이트를 조정할 필요가 있는지 단원 전체를 읽으십시오.
-1. 또한 모든 사용자가 사용하는 사용 사례의 100%를 다루는 마이그레이션 튜토리얼을 만들 수 있는 방법도 없습니다. 앞의 항목에서 언급했듯이 대부분의 사람들에게 필요한 교훈을 포함시키려고 했으며, 이는 주요 사용 사례의 대부분을 차지합니다. 그러나 이 자습서에서 다루지 않는 사용 사례는 틀림없이 있을 것입니다. 이 경우 포함된 단원이 사용 사례에 맞게 마이그레이션하는 방법을 잘 보여 주는지 확인하십시오. [Experience League 커뮤니티에서 동료에게 데이터 수집을 요청](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community)할 수도 있습니다.
+1. 또한 모든 사용자가 사용하는 사용 사례의 100%를 다루는 마이그레이션 튜토리얼을 만들 수 있는 방법도 없습니다. 앞의 항목에서 언급했듯이 대부분의 사람들에게 필요한 교훈을 포함시키려고 했으며, 이는 주요 사용 사례의 대부분을 차지합니다. 그러나 이 자습서에서 다루지 않는 사용 사례는 틀림없이 있을 것입니다. 이 경우 포함된 단원이 사용 사례에 맞게 마이그레이션하는 방법을 잘 보여 주는지 확인하십시오. [Experience League 커뮤니티에서 동료에게 데이터 수집을 요청](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=ko)할 수도 있습니다.
 
 마이그레이션 프로세스에는 다음과 같은 주요 단계가 포함됩니다.
 
@@ -81,5 +81,5 @@ Analytics 구현을 마이그레이션하는 단계로 들어가기 전에 Analy
 
 >[!NOTE]
 >
->Web SDK으로 Analytics를 마이그레이션하는 데 도움이 되도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}에 게시하여 알려 주십시오.
+>Web SDK으로 Analytics를 마이그레이션하는 데 도움이 되도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=ko#M604){target="_blank"}에 게시하여 알려 주십시오.
 

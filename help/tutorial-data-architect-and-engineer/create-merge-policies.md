@@ -140,7 +140,7 @@ CRM ID는 `Luma Loyalty Dataset`의 ID 필드이지만 기본 ID만 프로필을
 
 ## 추가 리소스
 
-* [병합 정책 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [병합 정책 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ko)
 * [병합 정책 API(실시간 고객 프로필 API의 일부) 참조](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 이제 [데이터 거버넌스 프레임워크](apply-data-governance-framework.md)(으)로 이동하겠습니다.

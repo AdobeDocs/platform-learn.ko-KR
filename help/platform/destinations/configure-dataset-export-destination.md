@@ -20,6 +20,6 @@ ht-degree: 0%
 
 연결을 설정하고 클라우드 서비스 대상을 사용하여 데이터 세트 내보내기에 워크플로를 사용하는 방법에 대해 알아봅니다. 이 기능의 이점 및 사용 사례도 다룹니다.
 
-자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)를 참조하세요.
+자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/ui/activate/export-datasets)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

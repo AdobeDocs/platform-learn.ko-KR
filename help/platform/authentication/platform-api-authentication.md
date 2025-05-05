@@ -27,7 +27,7 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 이 튜
 
 >[!IMPORTANT]
 >
->[Adobe Developer Console](https://developer.adobe.com/console/home)에 액세스하려면 [Adobe Admin Console](https://adminconsole.adobe.com)의 [시스템 관리자](https://helpx.adobe.com/enterprise/using/admin-roles.html) 또는 [개발자](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)여야 합니다.
+>[Adobe Developer Console](https://developer.adobe.com/console/home)에 액세스하려면 [Adobe Admin Console](https://adminconsole.adobe.com)의 [시스템 관리자](https://helpx.adobe.com/kr/enterprise/using/admin-roles.html) 또는 [개발자](https://helpx.adobe.com/kr/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&amp;text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)여야 합니다.
 >
 > API 자격 증명을 만든 후 시스템 관리자는 자격 증명을 Experience Platform의 역할에 연결해야 합니다.
 

@@ -47,8 +47,8 @@ ht-degree: 2%
 
 주요 리소스:
 
-* [Experience Platform 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
+* [Experience Platform 튜토리얼](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=ko)
 * [Experience Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=ko)
-* [Experience League 과정](https://experienceleague.adobe.com/#dashboard/learning)
+* [Experience League 과정](https://experienceleague.adobe.com/ko#dashboard/learning)
 
 당신의 노력에 감사하고 Adobe Experience Platform과의 여정에 행운을 빌어요!

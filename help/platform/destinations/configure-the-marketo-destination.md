@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Marketo 대상 구성
 
-Marketo Engage 인스턴스에 Marketo 세그먼트를 활성화할 수 있도록 Adobe Experience Platform에서 대상을 구성하는 방법에 대해 알아봅니다. 자세한 내용은 [프로필 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html)를 참조하세요.
+Marketo Engage 인스턴스에 Marketo 세그먼트를 활성화할 수 있도록 Adobe Experience Platform에서 대상을 구성하는 방법에 대해 알아봅니다. 자세한 내용은 [프로필 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 

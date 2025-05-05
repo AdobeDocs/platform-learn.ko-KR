@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Adobe Experience Platform Debugger
 
-이 디버거는 브라우저 확장 프로그램이며 Chrome 스토어에서 사용할 수 있습니다. 디버거를 다운로드하고 사용하는 방법에 대해 설명하는 [비디오 튜토리얼](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)이 있습니다. 기본 사용을 알아보려면 먼저 이러한 과정을 거치는 것이 좋습니다.
+이 디버거는 브라우저 확장 프로그램이며 Chrome 스토어에서 사용할 수 있습니다. 디버거를 다운로드하고 사용하는 방법에 대해 설명하는 [비디오 튜토리얼](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/debugger/overview)이 있습니다. 기본 사용을 알아보려면 먼저 이러한 과정을 거치는 것이 좋습니다.
 
 디버거를 실행 중인 경우 이 디버거를 사용하여 데이터가 사이트에서 Edge Network을 통해 올바르게 이동되는지 확인할 수 있습니다. 이 자습서는 매우 기본적으로 사용되지만, 디버거를 전체 용량으로 사용하여 데이터를 확인하십시오.
 

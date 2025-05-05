@@ -83,7 +83,7 @@ ht-degree: 1%
 
 실습 위주의 연습을 시작하기 전에 이 자습서 뒤의 아키텍처를 살펴보십시오. 이 부트캠프는 Adobe Experience Platform의 다양한 기능과 특징을 살펴보며 다양한 소스 및 대상에 대한 여러 통합에 대해서도 논의할 예정입니다. 이 자습서에 포함된 아키텍처와 Adobe Experience Platform이 엔터프라이즈 생태계에 미치는 전반적인 위치를 올바르게 이해하려면 먼저 아키텍처 비디오 및 다이어그램을 검토하십시오.
 
-[아키텍처](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en)(으)로 이동합니다.
+[아키텍처](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=ko)(으)로 이동합니다.
 
 ## 비디오
 
@@ -93,7 +93,7 @@ Experience Makers Bootcamp의 주요 목적은 조직이 규모에 맞는 개인
 
 부트캠프의 요소와 Adobe Experience Platform과 Adobe 이외의 애플리케이션 간의 강력한 통합을 보여 주는 다른 여러 비디오가 만들어졌습니다. 아래 링크를 클릭하여 해당 비디오에 대한 개요를 확인하십시오.
 
-[비디오](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en)(으)로 이동합니다.
+[비디오](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=ko)(으)로 이동합니다.
 
 ## YouTube
 

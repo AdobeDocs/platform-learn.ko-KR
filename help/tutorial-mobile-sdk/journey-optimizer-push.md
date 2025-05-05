@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Experience Platform Mobile SDK 및 Journey Optimizer을 사용하여 모바일 앱용 푸시 알림을 만드는 방법을 알아봅니다.
 
-Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에게 메시지를 보낼 수 있습니다. Journey Optimizer을 사용하여 푸시 알림을 전송하기 전에 적절한 구성 및 통합이 있는지 확인해야 합니다. Journey Optimizer의 푸시 알림 데이터 흐름을 이해하려면 [설명서](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html)를 참조하세요.
+Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에게 메시지를 보낼 수 있습니다. Journey Optimizer을 사용하여 푸시 알림을 전송하기 전에 적절한 구성 및 통합이 있는지 확인해야 합니다. Journey Optimizer의 푸시 알림 데이터 흐름을 이해하려면 [설명서](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html?lang=ko)를 참조하세요.
 
 ![아키텍쳐](assets/architecture-ajo.png)
 
@@ -30,7 +30,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Adobe Experience Platform용 앱을 설정합니다.
-* [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en)에 설명된 대로 Journey Optimizer에 대한 액세스 및 충분한 사용 권한. 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
+* [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=ko)에 설명된 대로 Journey Optimizer에 대한 액세스 및 충분한 사용 권한. 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
    * 푸시 자격 증명을 만듭니다.
    * 푸시 채널 구성을 만듭니다.
    * 여정 만들기
@@ -127,12 +127,12 @@ Adobe이 사용자를 대신하여 푸시 알림을 전송하도록 승인하려
    > 이름은 문자(A-Z)로 시작해야 합니다. 영숫자만 포함할 수 있습니다. 밑줄 `_`, 점 `.`, 하이픈 `-`도 사용할 수 있습니다.
 
 
-1. 구성에 사용자 지정 또는 핵심 데이터 사용 레이블을 할당하려면 **[!UICONTROL 액세스 관리]**&#x200B;를 선택할 수 있습니다. [OLAC(개체 수준 액세스 제어)에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+1. 구성에 사용자 지정 또는 핵심 데이터 사용 레이블을 할당하려면 **[!UICONTROL 액세스 관리]**&#x200B;를 선택할 수 있습니다. [OLAC(개체 수준 액세스 제어)에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. **푸시** 채널을 선택하십시오.
 
 
-1. 이 구성을 사용하여 동의 정책을 메시지에 연결하려면 **[!UICONTROL 마케팅 액션]**&#x200B;을 선택하십시오. 마케팅 액션과 관련된 모든 동의 정책은 고객의 선호도를 존중하기 위해 활용됩니다. [마케팅 액션에 대해 자세히 알아보기](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+1. 이 구성을 사용하여 동의 정책을 메시지에 연결하려면 **[!UICONTROL 마케팅 액션]**&#x200B;을 선택하십시오. 마케팅 액션과 관련된 모든 동의 정책은 고객의 선호도를 존중하기 위해 활용됩니다. [마케팅 액션에 대해 자세히 알아보기](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
 
 1. **[!UICONTROL 플랫폼]**&#x200B;을 선택하세요.
 
@@ -153,7 +153,7 @@ Adobe이 사용자를 대신하여 푸시 알림을 전송하도록 승인하려
 
    1. 아직 선택하지 않은 경우 **[!UICONTROL 프로필 데이터 세트]**&#x200B;에서 **[!UICONTROL AJO 푸시 프로필 데이터 세트]**&#x200B;을(를) 선택하십시오. 푸시 알림에 대한 고유 식별자(푸시 식별자)가 사용자 프로필의 일부로 저장되도록 하는 `MobileCore.setPushIdentifier` API 호출([푸시 알림에 대한 장치 토큰 등록](#register-device-token-for-push-notifications) 참조)을 사용할 때 이 프로필 데이터 세트가 필요합니다.
 
-   1. **[!UICONTROL Adobe Journey Optimizer]**&#x200B;을(를) 선택했습니다. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)을 참조하세요.
+   1. **[!UICONTROL Adobe Journey Optimizer]**&#x200B;을(를) 선택했습니다. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ko#aep)을 참조하세요.
 
    1. 데이터스트림 구성을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -313,7 +313,7 @@ Adobe이 사용자를 대신하여 푸시 알림을 전송하도록 승인하려
 
 ### 이벤트 정의
 
-Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지를 보내기 위해 여정을 통합적으로 트리거할 수 있습니다. 자세한 내용은 [이벤트 정보](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en)를 참조하세요.
+Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지를 보내기 위해 여정을 통합적으로 트리거할 수 있습니다. 자세한 내용은 [이벤트 정보](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=ko)를 참조하세요.
 
 1. Journey Optimizer UI의 왼쪽 레일에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
 
@@ -481,6 +481,6 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 >
 >이제 Journey Optimizer 및 Experience Platform Mobile SDK용 Journey Optimizer 확장을 사용하여 푸시 알림에 대한 앱을 활성화했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[인앱 메시지 만들기 및 보내기](journey-optimizer-inapp.md)**

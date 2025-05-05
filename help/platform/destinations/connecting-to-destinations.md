@@ -22,4 +22,4 @@ Real-Time CDP에서 대상 파트너에게 데이터를 보내려면 먼저 해�
 
 >[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
 
-자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination)를 참조하세요.
+자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/ui/connect-destination)를 참조하세요.

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 대상 규칙 빌더 개요
 
-대상자 빌딩 블록, 사용자 인터페이스 및 대상자 규칙 작성 시작에 대한 몇 가지 팁을 포함하여 Experience Platform의 대상자 규칙 빌더에 대해 소개합니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)를 참조하세요.
+대상자 빌딩 블록, 사용자 인터페이스 및 대상자 규칙 작성 시작에 대한 몇 가지 팁을 포함하여 Experience Platform의 대상자 규칙 빌더에 대해 소개합니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >

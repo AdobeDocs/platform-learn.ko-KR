@@ -100,7 +100,7 @@ Platform Web SDK는 지정된 `actionType`과(와) 함께 `applyPropositions` �
 | `replaceHtml` | 컨테이너를 제거하고 오퍼로 바꿉니다. | 아니요 | 예 |
 | `appendHtml` | 지정된 선택기 뒤에 오퍼를 추가합니다. | 아니요 | 예 |
 
-추가 렌더링 옵션 및 예제는 Platform Web SDK를 사용한 콘텐츠 렌더링에 대한 [전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)를 참조하십시오.
+추가 렌더링 옵션 및 예제는 Platform Web SDK를 사용한 콘텐츠 렌더링에 대한 [전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko)를 참조하십시오.
 
 ## 구현 예
 
@@ -201,4 +201,4 @@ Platform Web SDK는 지정된 `actionType`과(와) 함께 `applyPropositions` �
 
 >[!NOTE]
 >
->at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ko#M463)에 게시하여 알려 주십시오.

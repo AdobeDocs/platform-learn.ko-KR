@@ -36,8 +36,8 @@ Adobe Experience Platform과 Customer Journey Analytics을 함께 사용할 때�
 
 ## 이 항목 확인
 
-- 도움말 센터: [Source 커넥터 - Google BigQuery 커넥터](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html)
-- Experience Platform 설명서: [Customer Journey Analytics - 제품 설명서](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
+- 도움말 센터: [Source 커넥터 - Google BigQuery 커넥터](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=ko)
+- Experience Platform 설명서: [Customer Journey Analytics - 제품 설명서](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ko)
 
 ## 다음 단계
 

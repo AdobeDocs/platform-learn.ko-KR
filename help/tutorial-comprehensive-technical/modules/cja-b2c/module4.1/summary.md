@@ -37,7 +37,7 @@ Adobe Experience Platform과 함께 Customer Journey Analytics을 사용할 때�
 
 ## 이 항목 확인
 
-- Experience Platform 설명서: [Customer Journey Analytics - 제품 설명서](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
+- Experience Platform 설명서: [Customer Journey Analytics - 제품 설명서](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ko)
 
 [모듈 4.1로 돌아가기](./customer-journey-analytics-build-a-dashboard.md)
 

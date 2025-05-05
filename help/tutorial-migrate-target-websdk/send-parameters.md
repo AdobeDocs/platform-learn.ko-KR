@@ -113,7 +113,7 @@ Platform Web SDK는 추가 기능 없이 데이터를 일관성 있게 전송할
 
 | at.js 매개 변수 예 | Platform Web SDK 옵션 | 참고 |
 | --- | --- | --- |
-| `at_property` | N/A | 속성 토큰이 [데이터스트림](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target)에 구성되어 `sendEvent` 호출에서 설정할 수 없습니다. |
+| `at_property` | N/A | 속성 토큰이 [데이터스트림](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ko#target)에 구성되어 `sendEvent` 호출에서 설정할 수 없습니다. |
 | `pageName` | `xdm.web.webPageDetails.name` | 모든 Target mbox 매개 변수는 `xdm` 개체의 일부로 전달해야 하며 XDM ExperienceEvent 클래스를 사용하는 스키마를 따라야 합니다. Mbox 매개 변수는 `data` 개체의 일부로 전달할 수 없습니다. |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 모든 Target 프로필 매개 변수를 `data` 개체의 일부로 전달하고 `profile.` 접두사가 추가되어 적절하게 매핑해야 합니다. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | `data` 개체의 일부로 전달해야 하는 Target의 카테고리 선호도 기능에 사용되는 예약된 매개 변수입니다. |
@@ -122,11 +122,11 @@ Platform Web SDK는 추가 기능 없이 데이터를 일관성 있게 전송할
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 사용자 지정 엔티티 매개 변수는 Recommendations 제품 카탈로그를 업데이트하는 데 사용됩니다. 이러한 사용자 지정 매개 변수는 `data` 개체의 일부로 전달해야 합니다. |
 | `cartIds` | `data.__adobe.target.cartIds` | Target의 장바구니 기반 권장 사항 알고리즘에 사용됩니다. |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 권장 사항 디자인에서 특정 엔티티 ID가 반환되지 않도록 하는 데 사용됩니다. |
-| `mbox3rdPartyId` | `xdm.identityMap` 개체에 설정 | 여러 장치 및 고객 속성에서 Target 프로필을 동기화하는 데 사용됩니다. 고객 ID에 사용할 네임스페이스는 데이터 스트림의 [Target 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)에서 지정해야 합니다. |
+| `mbox3rdPartyId` | `xdm.identityMap` 개체에 설정 | 여러 장치 및 고객 속성에서 Target 프로필을 동기화하는 데 사용됩니다. 고객 ID에 사용할 네임스페이스는 데이터 스트림의 [Target 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=ko)에서 지정해야 합니다. |
 | `orderId` | `xdm.commerce.order.purchaseID` | 타겟 전환 추적을 위한 고유한 주문을 식별하는 데 사용됩니다. |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Target 전환 및 최적화 목표를 위한 주문 합계를 추적하는 데 사용됩니다. |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>또는<br> `xdm.productListItems[0-n].SKU` | Target 전환 추적 및 권장 사항 알고리즘에 사용됩니다. 자세한 내용은 아래의 [엔티티 매개 변수](#entity-parameters) 섹션을 참조하십시오. |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [사용자 지정 점수](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) 활동 목표에 사용됩니다. |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | [사용자 지정 점수](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=ko) 활동 목표에 사용됩니다. |
 
 {style="table-layout:auto"}
 
@@ -169,7 +169,7 @@ alloy("sendEvent", {
 
 ![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-pageName.png){zoomable="yes"}
 
-그런 다음 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업]에 [!UICONTROL XDM 개체]를 포함하십시오(여러 [!UICONTROL XDM 개체]은(는) [병합](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)될 수 있음).
+그런 다음 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업]에 [!UICONTROL XDM 개체]를 포함하십시오(여러 [!UICONTROL XDM 개체]은(는) [병합](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ko#merged-objects)될 수 있음).
 
 ![Send 이벤트에 XDM 개체 데이터 요소를 포함합니다](assets/params-tags-sendEvent.png){zoomable="yes"}
 
@@ -223,7 +223,7 @@ alloy("sendEvent", {
 
 ![데이터 요소에서 데이터 개체 정의](assets/params-tags-dataObject.png){zoomable="yes"}
 
-그런 다음 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업]에 데이터 개체를 포함합니다(여러 [!UICONTROL 개체]는 [병합](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)될 수 있음).
+그런 다음 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업]에 데이터 개체를 포함합니다(여러 [!UICONTROL 개체]는 [병합](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ko#merged-objects)될 수 있음).
 
 ![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -231,7 +231,7 @@ alloy("sendEvent", {
 
 ## 엔티티 매개 변수
 
-엔티티 매개 변수는 Target Recommendations에 대한 동작 데이터 및 보조 카탈로그 정보를 전달하는 데 사용됩니다. at.js에서 지원하는 모든 [엔티티 매개 변수](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html)도 Platform Web SDK에서 지원됩니다. 프로필 매개 변수와 유사한 모든 엔터티 매개 변수는 Platform Web SDK `sendEvent` 명령 페이로드의 `data.__adobe.target` 개체 아래에 전달되어야 합니다.
+엔티티 매개 변수는 Target Recommendations에 대한 동작 데이터 및 보조 카탈로그 정보를 전달하는 데 사용됩니다. at.js에서 지원하는 모든 [엔티티 매개 변수](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=ko)도 Platform Web SDK에서 지원됩니다. 프로필 매개 변수와 유사한 모든 엔터티 매개 변수는 Platform Web SDK `sendEvent` 명령 페이로드의 `data.__adobe.target` 개체 아래에 전달되어야 합니다.
 
 적절한 데이터 캡처를 위해서는 특정 항목의 엔터티 매개 변수 앞에 `entity.`이(가) 있어야 합니다. 권장 사항 알고리즘에 대해 예약된 `cartIds` 및 `excludedIds` 매개 변수는 접두사가 없어야 하며 각 값은 쉼표로 구분된 엔티티 ID 목록을 포함해야 합니다.
 
@@ -277,7 +277,7 @@ alloy("sendEvent", {
 
 ![데이터 요소에서 데이터 개체 정의](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-그런 다음 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업]에 데이터 개체를 포함합니다(여러 [!UICONTROL 개체]는 [병합](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)될 수 있음).
+그런 다음 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업]에 데이터 개체를 포함합니다(여러 [!UICONTROL 개체]는 [병합](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ko#merged-objects)될 수 있음).
 
 ![전송 이벤트에 데이터 개체 포함](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -349,7 +349,7 @@ alloy("sendEvent", {
 
 ![XDM 개체 데이터 요소의 XDM 필드에 매핑](assets/params-tags-purchase.png){zoomable="yes"}
 
-그런 다음 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업]에 [!UICONTROL XDM 개체]를 포함하십시오(여러 [!UICONTROL XDM 개체]은(는) [병합](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)될 수 있음).
+그런 다음 [!UICONTROL 이벤트 보내기] [!UICONTROL 작업]에 [!UICONTROL XDM 개체]를 포함하십시오(여러 [!UICONTROL XDM 개체]은(는) [병합](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=ko#merged-objects)될 수 있음).
 
 ![Send 이벤트에 XDM 개체 데이터 요소를 포함합니다](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
@@ -604,4 +604,4 @@ Platform Web SDK를 사용하여 다양한 Target 매개 변수가 매핑되는 
 
 >[!NOTE]
 >
->at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ko#M463)에 게시하여 알려 주십시오.

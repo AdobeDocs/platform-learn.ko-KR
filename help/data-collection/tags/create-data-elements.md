@@ -16,6 +16,6 @@ ht-degree: 38%
 
 # 데이터 요소 만들기
 
-데이터 레이어에서 가져온 값을 저장하는 데이터 요소를 만들고 태그 속성의 규칙 및 확장에 사용할 수 있도록 하는 방법에 대해 알아봅니다. 자세한 내용은 [데이터 요소](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html) 설명서를 참조하십시오.
+데이터 레이어에서 가져온 값을 저장하는 데이터 요소를 만들고 태그 속성의 규칙 및 확장에 사용할 수 있도록 하는 방법에 대해 알아봅니다. 자세한 내용은 [데이터 요소](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=ko) 설명서를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)

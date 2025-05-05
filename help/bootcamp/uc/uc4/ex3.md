@@ -115,7 +115,7 @@ ht-degree: 3%
 
 이러한 설정을 변경하지 않으면 CJA는 차원을 **Prop**(히트 수준)으로 해석합니다. 또한 지속성을 변경하여 차원을 **eVar**(여정 전반에 걸쳐 값을 유지)로 만들 수 있습니다.
 
-eVar 및 Prop에 익숙하지 않은 경우 [설명서에서 자세한 내용을 읽어보세요](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+eVar 및 Prop에 익숙하지 않은 경우 [설명서에서 자세한 내용을 읽어보세요](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=ko).
 
 페이지 이름을 Prop으로 남겨 두겠습니다. 따라서 **지속성 설정**&#x200B;을 변경할 필요가 없습니다.
 

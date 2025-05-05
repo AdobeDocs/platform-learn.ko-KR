@@ -23,8 +23,8 @@ Offer Decisioning과 Adobe Journey Optimizer에 대해 학습하는 데 시간�
 
 ## 이 항목 확인
 
-- 제품 설명서: [Offer Decisioning 용어](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=en)
-- 제품 설명서: [웹 SDK - Offer Decisioning 개요](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en)
+- 제품 설명서: [Offer Decisioning 용어](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=ko)
+- 제품 설명서: [웹 SDK - Offer Decisioning 개요](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=ko)
 
 ## 다음 단계
 

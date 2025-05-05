@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # 콘텐츠 기반 대상 만들기
 
-Experience Platform의 대상 규칙 빌더에서 콘텐츠 친화성 대상을 만드는 기본 사항에 대해 알아봅니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)를 참조하세요.
+Experience Platform의 대상 규칙 빌더에서 콘텐츠 친화성 대상을 만드는 기본 사항에 대해 알아봅니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >

@@ -20,29 +20,29 @@ ht-degree: 0%
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
-> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
+> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)**&#x200B;입니다.
+> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)**&#x200B;입니다.
 
 이 튜토리얼에서는 데이터 수집에서 Platform Web SDK 확장을 사용하여 CMP(동의 관리 플랫폼)에서 얻은 동의 데이터를 구현하고 활성화하는 방법을 보여 줍니다. OneTrust 또는 Sourcepoint를 CMP로 사용하여 Adobe 표준과 IAB TCF 2.0 동의 표준을 모두 사용하여 이를 수행합니다.
 
-이 자습서에서는 Platform Web SDK 확장을 사용하여 동의 데이터를 Platform으로 보냅니다. 웹 SDK에 대한 개요는 [이 페이지](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)를 참조하십시오.
+이 자습서에서는 Platform Web SDK 확장을 사용하여 동의 데이터를 Platform으로 보냅니다. 웹 SDK에 대한 개요는 [이 페이지](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ko)를 참조하십시오.
 
 ## 전제 조건
 
-웹 SDK를 사용하기 위한 필수 구성 요소가 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html#fundamentals)에 나열되어 있습니다.
+웹 SDK를 사용하기 위한 필수 구성 요소가 [여기](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html?lang=ko#fundamentals)에 나열되어 있습니다.
 
-해당 페이지에는 &quot;이벤트 데이터 세트&quot;에 대한 요구 사항이 있으며, 소리처럼 이는 경험 이벤트 데이터를 보관할 수 있는 데이터 세트입니다. 이벤트와 함께 동의 정보를 보내려면 [IAB TCF 2.0 동의 세부 정보](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html) 필드 그룹을 경험 이벤트 스키마에 추가해야 합니다.
+해당 페이지에는 &quot;이벤트 데이터 세트&quot;에 대한 요구 사항이 있으며, 소리처럼 이는 경험 이벤트 데이터를 보관할 수 있는 데이터 세트입니다. 이벤트와 함께 동의 정보를 보내려면 [IAB TCF 2.0 동의 세부 정보](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html?lang=ko) 필드 그룹을 경험 이벤트 스키마에 추가해야 합니다.
 
 ![](./images/event-schema.png)
 
-Platform 동의 표준 v2.0의 경우 XDM 개별 프로필 스키마 및 데이터 세트를 만들려면 Adobe Experience Platform에 액세스해야 합니다. 스키마 만들기에 대한 자습서는 [스키마 편집기를 사용하여 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#tutorials)를 참조하고, 필수 동의 및 환경 설정 세부 정보 필드 그룹은 [동의 및 환경 설정 데이터를 캡처하도록 데이터 집합 구성](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html)을 참조하십시오.
+Platform 동의 표준 v2.0의 경우 XDM 개별 프로필 스키마 및 데이터 세트를 만들려면 Adobe Experience Platform에 액세스해야 합니다. 스키마 만들기에 대한 자습서는 [스키마 편집기를 사용하여 스키마 만들기](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=ko#tutorials)를 참조하고, 필수 동의 및 환경 설정 세부 정보 필드 그룹은 [동의 및 환경 설정 데이터를 캡처하도록 데이터 집합 구성](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html?lang=ko)을 참조하십시오.
 
 이 자습서에서는 데이터 수집에 액세스할 수 있고 Web SDK 확장이 설치된 클라이언트측 태그 속성과 개발용으로 생성 및 구축된 작업 라이브러리를 만들었다고 가정합니다. 이 주제들은 다음 문서에 자세히 설명되어 있습니다.
 
-* [속성 만들기 또는 구성](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
-* [라이브러리 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
-* [게시 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)
+* [속성 만들기 또는 구성](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=ko#create-or-configure-a-property)
+* [라이브러리 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html?lang=ko)
+* [게시 개요](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=ko)
 
 또한 [Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome 확장을 사용하여 구현을 검사하고 확인합니다.
 
@@ -52,9 +52,9 @@ Platform 동의 표준 v2.0의 경우 XDM 개별 프로필 스키마 및 데이�
 
 >[!NOTE]
 >
->1.0 표준은 v2.0을 위해 단계적으로 폐지되고 있습니다. 2.0 표준을 사용하면 동의 환경 설정을 수동으로 적용하는 데 사용할 수 있는 추가 동의 데이터를 추가할 수 있습니다. Platform Web SDK 확장의 아래 스크린샷은 Adobe 동의 표준의 v1.0 또는 v2.0과 호환되는 확장 버전 [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html#version-2.4.0)에서 찍은 것입니다.
+>1.0 표준은 v2.0을 위해 단계적으로 폐지되고 있습니다. 2.0 표준을 사용하면 동의 환경 설정을 수동으로 적용하는 데 사용할 수 있는 추가 동의 데이터를 추가할 수 있습니다. Platform Web SDK 확장의 아래 스크린샷은 Adobe 동의 표준의 v1.0 또는 v2.0과 호환되는 확장 버전 [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html?lang=ko#version-2.4.0)에서 찍은 것입니다.
 
-이러한 표준에 대한 자세한 내용은 [고객 동의 환경 설정 지원](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)을 참조하십시오.
+이러한 표준에 대한 자세한 내용은 [고객 동의 환경 설정 지원](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=ko)을 참조하십시오.
 
 ### 1단계: 웹 SDK 확장에서 동의 구성
 
@@ -83,7 +83,7 @@ CMP가 사용자의 환경 설정을 수집하면 SDK에 해당 환경 설정을
 
 참고: SDK에 대한 이 구성 설정은 사용자의 프로필에 유지되지 않습니다. 이는 방문자가 명시적 동의 환경 설정을 제공하기 전에 SDK의 동작을 설정하는 것과 관련이 있습니다.
 
-Web SDK 확장 구성에 대한 자세한 내용은 [Platform Web SDK 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=en#configure-the-extension) 및 [고객 동의 환경 설정 지원](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)을 참조하십시오.
+Web SDK 확장 구성에 대한 자세한 내용은 [Platform Web SDK 확장 개요](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=ko#configure-the-extension) 및 [고객 동의 환경 설정 지원](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=ko)을 참조하십시오.
 
 이 예제에서는 &quot;보류 중&quot; 옵션을 선택하고 **저장**&#x200B;을 선택하여 구성 설정을 저장하겠습니다.
 
@@ -105,17 +105,17 @@ Web SDK 확장 구성에 대한 자세한 내용은 [Platform Web SDK 확장 개
 
 참고: 웹 사이트 방문자가 옵트아웃하면 SDK에서에 대한 사용자 동의를 설정할 수 없습니다.
 
-태그 규칙은 다양한 기본 제공 또는 사용자 지정 [이벤트](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html)에 의해 트리거될 수 있으며, 이 이벤트는 방문자 세션 중 적절한 시간에 이 동의 데이터를 전달하는 데 사용할 수 있습니다. 위의 예에서는 window loaded 이벤트를 사용하여 규칙을 트리거했습니다. 이후 섹션에서는 CMP의 동의 환경 설정 이벤트를 사용하여 동의 설정 작업을 트리거합니다. 옵트인 환경 설정 지정을 나타내는 원하는 이벤트에 의해 트리거되는 규칙에서 동의 설정 작업을 사용할 수 있습니다.
+태그 규칙은 다양한 기본 제공 또는 사용자 지정 [이벤트](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=ko)에 의해 트리거될 수 있으며, 이 이벤트는 방문자 세션 중 적절한 시간에 이 동의 데이터를 전달하는 데 사용할 수 있습니다. 위의 예에서는 window loaded 이벤트를 사용하여 규칙을 트리거했습니다. 이후 섹션에서는 CMP의 동의 환경 설정 이벤트를 사용하여 동의 설정 작업을 트리거합니다. 옵트인 환경 설정 지정을 나타내는 원하는 이벤트에 의해 트리거되는 규칙에서 동의 설정 작업을 사용할 수 있습니다.
 
 #### Platform Consent Standard 2.0으로 동의 설정
 
-Platform 동의 표준 버전 2.0은 [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) 데이터와 함께 작동합니다. 또한 동의 및 환경 설정 세부 사항 필드 그룹을 플랫폼의 프로필 스키마에 추가해야 합니다. Adobe 표준 버전 2.0 및 이 필드 그룹에 대한 자세한 내용은 [플랫폼의 동의 처리](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html)를 참조하십시오.
+Platform 동의 표준 버전 2.0은 [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=ko) 데이터와 함께 작동합니다. 또한 동의 및 환경 설정 세부 사항 필드 그룹을 플랫폼의 프로필 스키마에 추가해야 합니다. Adobe 표준 버전 2.0 및 이 필드 그룹에 대한 자세한 내용은 [플랫폼의 동의 처리](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=ko)를 참조하십시오.
 
 사용자 지정 코드 데이터 요소를 만들어 아래 스키마에 표시된 동의 오브젝트의 컬렉션 및 메타데이터 속성에 데이터를 전달합니다.
 
 ![](./images/collect-metadata.png)
 
-이 동의 및 환경 설정 세부 정보 필드 그룹에는 규칙 작업에서 Platform Web SDK 확장을 사용하여 Platform으로 보내는 동의 환경 설정 데이터를 포함할 [동의 및 환경 설정 XDM 데이터 형식](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites)에 대한 필드가 포함되어 있습니다. 현재, 플랫폼 동의 표준 2.0을 구현하는 데 필요한 유일한 속성은 수집 값(val) 및 위에서 빨간색으로 강조 표시된 메타데이터 시간 값입니다.
+이 동의 및 환경 설정 세부 정보 필드 그룹에는 규칙 작업에서 Platform Web SDK 확장을 사용하여 Platform으로 보내는 동의 환경 설정 데이터를 포함할 [동의 및 환경 설정 XDM 데이터 형식](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=ko#prerequisites)에 대한 필드가 포함되어 있습니다. 현재, 플랫폼 동의 표준 2.0을 구현하는 데 필요한 유일한 속성은 수집 값(val) 및 위에서 빨간색으로 강조 표시된 메타데이터 시간 값입니다.
 
 이 데이터에 대한 데이터 요소를 만들어 보겠습니다. Data Elements 를 선택하고 파란색 데이터 요소 추가 버튼을 클릭합니다. 이 &quot;xdm-consent 2.0&quot;을 호출하고 코어 확장을 사용하면 사용자 지정 코드 유형을 선택합니다. 사용자 지정 코드 편집기 창에 다음 데이터를 입력하거나 복사하여 붙여넣을 수 있습니다.
 
@@ -174,7 +174,7 @@ IAB TCF 2.0 동의 표준을 사용하여 태그에서 동의 이벤트 데이�
 
 `consentStandard` 및 `consentStandardVersion` 필드는 모두 사용 중인 표준(IAB TCF 버전 2.0)의 텍스트 문자열입니다. `consentStringValue`이(가) &quot;IAB TCF 동의 문자열&quot;이라는 데이터 요소를 참조합니다. 텍스트를 둘러싼 퍼센트 기호는 데이터 요소의 이름을 나타내며 잠시 후 살펴보도록 하겠습니다. `containsPersonalData` 필드는 IAB TCF 2.0 동의 문자열에 &quot;True&quot; 또는 &quot;False&quot;가 있는 개인 데이터가 포함되어 있는지 여부를 나타냅니다. `gdprApplies` 필드는 GDPR이 적용되는 경우 &quot;true&quot;를, GDPR이 적용되지 않는 경우 &quot;false&quot;를, GDPR이 적용되는지 여부를 알 수 없는 경우 &quot;정의되지 않음&quot;을 나타냅니다. 현재 웹 SDK는 &quot;정의되지 않음&quot;을 &quot;true&quot;로 처리하므로 &quot;gdprApply: 정의되지 않음&quot;으로 전송된 동의 데이터는 방문자가 GDPR이 적용되는 영역에 있는 것처럼 처리됩니다.
 
-이러한 속성과 태그의 IAB TCF 2.0에 대한 자세한 내용은 [동의 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started)를 참조하십시오.
+이러한 속성과 태그의 IAB TCF 2.0에 대한 자세한 내용은 [동의 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=ko#getting-started)를 참조하십시오.
 
 ### 2단계: IAB TCF 2.0 표준으로 동의를 설정하는 규칙 만들기
 
@@ -230,7 +230,7 @@ GDPR 개인 데이터 포함 아래에서 이 사용자의 데이터에 개인 �
 
 ### 3단계: Save to Library and Build
 
-[작업 라이브러리](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature) 필수 구성 요소를 사용하는 경우 이러한 변경 내용을 이미 저장하고 개발 라이브러리를 빌드했습니다.
+[작업 라이브러리](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=ko#use-the-working-library-feature) 필수 구성 요소를 사용하는 경우 이러한 변경 내용을 이미 저장하고 개발 라이브러리를 빌드했습니다.
 
 ![](./images/save-library.png)
 

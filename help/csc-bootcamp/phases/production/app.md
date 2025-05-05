@@ -41,7 +41,7 @@ AEM as a Cloud Service은 다음과 같은 세 가지 강력한 기능을 제공
 1. 전달을 위한 콘텐츠 API
    - AEM GraphQL API는 콘텐츠 조각 전달을 지원합니다.
    - AEM Assets REST API는 콘텐츠 조각 CRUD 작업을 지원합니다.
-   - 콘텐츠 조각 핵심 구성 요소의 [JSON 내보내기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)를 통해 직접 콘텐츠 전달도 가능합니다.
+   - 콘텐츠 조각 핵심 구성 요소의 [JSON 내보내기](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=ko)를 통해 직접 콘텐츠 전달도 가능합니다.
 
 ## 운동
 

@@ -34,9 +34,9 @@ Adobe Experience Platform Web SDK은 Adobe Experience Cloud 고객이 Adobe Expe
 
 독립형 at.js 라이브러리와 비교한 Platform Web SDK의 이점 중 일부는 다음과 같습니다.
 
-* [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)에서 더 빠른 대상자 공유
-* Target과 Journey Optimizer을 통합하여 [Offer Decisioning 게재](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision) 지원
-* [자사 ID](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids)를 사용하여 더 긴 기간 방문자 식별을 위해 ECID를 생성하는 기능
+* [Real-Time Customer Data Platform](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)에서 더 빠른 대상자 공유
+* Target과 Journey Optimizer을 통합하여 [Offer Decisioning 게재](https://experienceleague.adobe.com/ko/docs/target/using/integrate/ajo/offer-decision) 지원
+* [자사 ID](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids)를 사용하여 더 긴 기간 방문자 식별을 위해 ECID를 생성하는 기능
 * 적은 설치 공간으로 페이지 속도 지표 개선
 * 개발자를 위한 추가적인 구현 유연성
 
@@ -63,14 +63,14 @@ Adobe Experience Platform Web SDK은 Adobe Experience Cloud 고객이 Adobe Expe
 이 자습서를 완료하려면 먼저 다음 작업을 수행해야 합니다.
 
 * 현재 Target at.js 구현에 대한 기술적인 이해를 구하십시오
-* 스스로 예제를 시도할 수 있도록 Target 인스턴스에 대해 [편집기 또는 게시자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80)이 있는지 확인하십시오
+* 스스로 예제를 시도할 수 있도록 Target 인스턴스에 대해 [편집기 또는 게시자 역할](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=ko#section_8C425E43E5DD4111BBFC734A2B7ABC80)이 있는지 확인하십시오
 * Adobe Target에서 활동을 설정하는 방법을 이해할 수 있습니다. 새로 고침이 필요한 경우 다음 튜토리얼 및 안내서가 이 단원에 유용합니다.
-   * [Visual Experience Composer 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [양식 기반 경험 작성기 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [경험 타기팅 활동 만들기](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
+   * [Visual Experience Composer 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html?lang=ko)
+   * [양식 기반 경험 작성기 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html?lang=ko)
+   * [경험 타기팅 활동 만들기](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html?lang=ko)
 
 준비가 되면 성공적으로 마이그레이션하기 위한 첫 번째 단계는 [마이그레이션 프로세스와 at.js 및 Platform Web SDK의 차이점에 대해 알아보는 것입니다](migration-overview.md).
 
 >[!NOTE]
 >
->at.js에서 웹 SDK으로 Target을 성공적으로 이전할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 웹 SDK으로 Target을 성공적으로 이전할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ko#M463)에 게시하여 알려 주십시오.

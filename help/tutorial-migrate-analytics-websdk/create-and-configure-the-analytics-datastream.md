@@ -35,7 +35,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >[데이터 수집을 위한 데이터 준비](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep) 기능을 사용하는 경우 스키마를 선택하기만 하면 됩니다. 이 작업은 이 자습서에서는 수행하지 않습니다. 자세한 내용은 링크를 참조하십시오.
+   >[데이터 수집을 위한 데이터 준비](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/edge-network/data-prep) 기능을 사용하는 경우 스키마를 선택하기만 하면 됩니다. 이 작업은 이 자습서에서는 수행하지 않습니다. 자세한 내용은 링크를 참조하십시오.
 
 1. **[!UICONTROL 저장]** 선택
 

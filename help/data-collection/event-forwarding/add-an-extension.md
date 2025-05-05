@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 이벤트 전달 확장 추가
 
-데이터 수집에서 이벤트 전달 확장을 추가하는 방법을 알아봅니다. 자세한 내용은 [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)를 참조하세요.
+데이터 수집에서 이벤트 전달 확장을 추가하는 방법을 알아봅니다. 자세한 내용은 [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >

@@ -42,4 +42,4 @@ Tags 속성에서 웹 SDK 확장을 추가 및 구성하여 마이그레이션�
 
 >[!NOTE]
 >
->이제 Tags 속성에 Web SDK 확장의 기본 설치 및 구성이 포함됩니다. 이 마이그레이션 자습서에서는 웹 SDK 확장의 일부를 사용하여 데이터 요소와 규칙을 만들거나 수정하지만 자습서에서 확장 구성 항목을 더 이상 변경하지 않습니다. 추가 구성 항목은 추가 사용 사례에 사용할 수 있으며 사용해야 합니다. 이러한 구성에 대한 자세한 설명서는 [웹 SDK 태그 확장 구성](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)을 참조하십시오.
+>이제 Tags 속성에 Web SDK 확장의 기본 설치 및 구성이 포함됩니다. 이 마이그레이션 자습서에서는 웹 SDK 확장의 일부를 사용하여 데이터 요소와 규칙을 만들거나 수정하지만 자습서에서 확장 구성 항목을 더 이상 변경하지 않습니다. 추가 구성 항목은 추가 사용 사례에 사용할 수 있으며 사용해야 합니다. 이러한 구성에 대한 자세한 설명서는 [웹 SDK 태그 확장 구성](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)을 참조하십시오.

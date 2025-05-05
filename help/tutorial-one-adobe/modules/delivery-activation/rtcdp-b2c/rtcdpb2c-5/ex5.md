@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 알아 둘 사항
 
 Adobe Experience Platform은 다양한 Amazon 서비스를 대상으로 지원합니다.
-Kinesis와 S3는 모두 [프로필 내보내기 대상](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en)이며 Adobe Experience Platform의 Real-Time CDP의 일부로 사용할 수 있습니다.
+Kinesis와 S3는 모두 [프로필 내보내기 대상](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=ko)이며 Adobe Experience Platform의 Real-Time CDP의 일부로 사용할 수 있습니다.
 고가치 세그먼트 이벤트 및 관련 프로필 속성을 선택한 시스템에 쉽게 제공할 수 있습니다.
 
 이 연습에서는 고유한 Amazon Kinesis 스트림을 설정하여 Adobe Experience Platform Edge 에코시스템에서 오는 이벤트 데이터를 Amazon S3와 같은 클라우드 스토리지 대상으로 스트리밍하는 방법에 대해 알아봅니다. 이 기능은 웹 및 모바일 속성에서 경험 이벤트를 수집하고 분석 및 운영 보고를 위해 데이터 레이크에 푸시하려는 경우에 유용합니다. 데이터 수집은 일반적으로 큰 일별 파일 가져오기로 일괄 처리 방식으로 데이터를 수집하지만, 이벤트 전달과 함께 사용할 수 있는 공개 http 끝점은 노출하지 않습니다.

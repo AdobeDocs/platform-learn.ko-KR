@@ -32,11 +32,11 @@ Visual Editing Helper 브라우저 확장 기능은 at.js 또는 Platform Web SD
 
 작성 기능을 향상시키기 위해 Target VEC에서 웹 사이트를 열면 Visual Editing Helper 가 자동으로 활성화됩니다. 확장에는 조건부 설정이 없습니다. 확장은 SameSite 쿠키 설정을 포함한 모든 설정을 자동으로 처리합니다.
 
-[Visual Editing Helper 확장 기능](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 및 [시각적 경험 작성기 문제 해결](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html)에 대한 자세한 내용은 전용 설명서를 참조하십시오.
+[Visual Editing Helper 확장 기능](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=ko) 및 [시각적 경험 작성기 문제 해결](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=ko)에 대한 자세한 내용은 전용 설명서를 참조하십시오.
 
 >[!IMPORTANT]
 >
->새 [Visual Editing Helper 확장 기능](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)은(는) 이전 [Target VEC Helper 브라우저 확장 기능](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)을 대체합니다. 이전 VEC Helper 확장이 설치되어 있는 경우 Visual Editing Helper 확장을 사용하기 전에 제거하거나 비활성화해야 합니다.
+>새 [Visual Editing Helper 확장 기능](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)은(는) 이전 [Target VEC Helper 브라우저 확장 기능](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=ko)을 대체합니다. 이전 VEC Helper 확장이 설치되어 있는 경우 Visual Editing Helper 확장을 사용하기 전에 제거하거나 비활성화해야 합니다.
 
 ## 자동으로 콘텐츠 요청 및 적용
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->Visual Experience Composer에서 수정한 내용을 [수동으로 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content)할 수 있습니다. VEC 기반 수정 사항을 수동으로 렌더링하는 것은 일반적이지 않습니다. at.js 구현이 `applyOffers()`을(를) 사용하여 페이지에 콘텐츠를 적용하지 않고 `getOffers()` 함수를 사용하여 Target `pageLoad` 요청을 수동으로 실행하는지 확인하십시오.
+>Visual Experience Composer에서 수정한 내용을 [수동으로 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko#manually-rendering-content)할 수 있습니다. VEC 기반 수정 사항을 수동으로 렌더링하는 것은 일반적이지 않습니다. at.js 구현이 `applyOffers()`을(를) 사용하여 페이지에 콘텐츠를 적용하지 않고 `getOffers()` 함수를 사용하여 Target `pageLoad` 요청을 수동으로 실행하는지 확인하십시오.
 
-Platform Web SDK는 개발자에게 콘텐츠 요청 및 렌더링과 관련된 다양한 유연성을 제공합니다. 추가 옵션 및 자세한 내용은 [개인화된 콘텐츠 렌더링에 대한 전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)를 참조하세요.
+Platform Web SDK는 개발자에게 콘텐츠 요청 및 렌더링과 관련된 다양한 유연성을 제공합니다. 추가 옵션 및 자세한 내용은 [개인화된 콘텐츠 렌더링에 대한 전용 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko)를 참조하세요.
 
 ## 구현 예
 
@@ -263,4 +263,4 @@ Platform Web SDK는 개발자에게 콘텐츠 요청 및 렌더링과 관련된 
 
 >[!NOTE]
 >
->at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ko#M463)에 게시하여 알려 주십시오.

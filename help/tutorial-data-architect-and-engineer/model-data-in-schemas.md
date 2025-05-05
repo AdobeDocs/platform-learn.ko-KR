@@ -47,7 +47,7 @@ Key terms:
 
 >[!TIP]
 >
-> Experience Platform에서 데이터 모델링에 대해 자세히 알아보려면 Experience League에서 무료로 사용할 수 있는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)을 시청하는 것이 좋습니다.
+> Experience Platform에서 데이터 모델링에 대해 자세히 알아보려면 Experience League에서 무료로 사용할 수 있는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/ko/playlists/experience-platform-model-your-customer-experience-data-with-xdm)을 시청하는 것이 좋습니다.
 
 ## 권한 필요
 
@@ -86,7 +86,7 @@ Key terms:
 
 스키마가 만들어지면 스키마에 필드를 추가할 수 있는 스키마 편집기로 리디렉션됩니다. 스키마에 개별 필드를 직접 추가하거나 필드 그룹을 사용할 수 있습니다. 모든 개별 필드는 여전히 클래스 또는 필드 그룹과 연결되어 있다는 점에 유의해야 합니다. Adobe에서 제공하는 다양한 산업 표준 필드 그룹 세트에서 선택하거나 직접 생성할 수 있습니다. Experience Platform에서 고유한 데이터를 모델링하기 시작할 때 Adobe에서 제공하는 업계 표준 필드 그룹에 익숙해지는 것이 좋습니다. 가능하면 Customer AI, Attribution AI 및 Adobe Analytics과 같은 다운스트림 서비스를 제공할 때 이를 사용하는 것이 좋습니다.
 
-자체 데이터를 사용하여 작업할 때 중요한 단계는 플랫폼에서 캡처해야 하는 자체 데이터와 이를 모델링하는 방법을 결정하는 것입니다. 이 큰 주제는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)에서 자세히 설명합니다. 이 자습서에서는 미리 결정된 몇 가지 스키마의 구현을 안내하겠습니다.
+자체 데이터를 사용하여 작업할 때 중요한 단계는 플랫폼에서 캡처해야 하는 자체 데이터와 이를 모델링하는 방법을 결정하는 것입니다. 이 큰 주제는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/ko/playlists/experience-platform-model-your-customer-experience-data-with-xdm)에서 자세히 설명합니다. 이 자습서에서는 미리 결정된 몇 가지 스키마의 구현을 안내하겠습니다.
 
 필드 그룹을 추가하려면:
 

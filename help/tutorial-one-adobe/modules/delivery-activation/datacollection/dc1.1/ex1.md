@@ -55,9 +55,9 @@ Adobe Experience Platform 데이터 수집은 여러 사용 사례에 브랜드�
 Adobe Experience Platform 데이터 수집은 Adobe Experience Platform 자습서 이상의 범위를 갖는 매우 고급 도구입니다. 조직은 태그 관리 기능에 Adobe Experience Platform 데이터 수집을 사용하지 않고, 대신 코드를 삽입하고 태그를 관리하는 데 Adobe 이외의 태그 관리 솔루션을 사용할 수 있습니다. Adobe 및 Adobe Professional Services에서는 비 Adobe 태그 관리 솔루션을 사용할 수 있습니다.
 Adobe Experience Platform 데이터 수집을 이해하는 데 관심이 있는 사람들을 위한 몇 가지 추가 읽기가 아래에 포함되어 있습니다.
 
-- [Adobe Experience Platform 데이터 수집 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+- [Adobe Experience Platform 데이터 수집 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)
 - [Web SDK 튜토리얼을 통해 Adobe Experience Cloud 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR)
-- [사용자 권한 설정](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
+- [사용자 권한 설정](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ko)
 - [API 설명서](https://developer.adobelaunch.com/api/)
 
 ## 다음 단계

@@ -39,17 +39,17 @@ Adobike는 브뤼셀에 본사를 둔 회사로 이미 시장에서 입지가 �
 
 ### Adobe Experience Manager
 
-- [Creative Cloud 서비스를 통한 콘텐츠 자동화 개요](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
-- [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)
-- [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
+- [Creative Cloud 서비스를 통한 콘텐츠 자동화 개요](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=ko)
+- [AEM Commerce as a Cloud Service 시작하기](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=ko)
+- [Adobe Experience Manager as a Headless CMS 소개](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=ko)
 
 ### Adobe Express
 
-- [Adobe Express 템플릿 시작](https://helpx.adobe.com/express/using/work-with-templates.html)
+- [Adobe Express 템플릿 시작](https://helpx.adobe.com/kr/express/using/work-with-templates.html)
 
 ### Adobe Workfront
 
-- [제품 설명서 Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=en)
+- [제품 설명서 Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=ko)
 - [AEM Assets용 Workfront](https://exchange.adobe.com/apps/ec/101385/workfront-for-aem-assets)
 
 

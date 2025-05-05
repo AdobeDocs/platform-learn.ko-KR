@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 동의 신호 검사 및 확인
 
-동의 설정이 Adobe Experience Platform의 데이터에 제대로 적용되는지 확인하는 방법을 알아봅니다. [구현 테스트](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=en#test-implementation)에 대한 자세한 내용은 동의 설명서를 참조하세요.
+동의 설정이 Adobe Experience Platform의 데이터에 제대로 적용되는지 확인하는 방법을 알아봅니다. [구현 테스트](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=ko#test-implementation)에 대한 자세한 내용은 동의 설명서를 참조하세요.
 
 >[!NOTE]
 >

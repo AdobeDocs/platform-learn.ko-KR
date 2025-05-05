@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # 고객 AI 소개
 
-마케터가 고객 AI를 사용하여 고객 예측을 생성하는 방법에 대한 높은 수준의 개요입니다. 자세한 내용은 [고객 AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)를 참조하세요.
+마케터가 고객 AI를 사용하여 고객 예측을 생성하는 방법에 대한 높은 수준의 개요입니다. 자세한 내용은 [고객 AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)

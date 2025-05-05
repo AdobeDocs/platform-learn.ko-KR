@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # 플레이북 인스턴스 만들기 및 게시
 
-이 전체적인 데모 비디오에서 사용 사례 플레이북의 인스턴스를 검색, 만들고, 게시하고, 문제를 해결하는 방법을 알아봅니다. 자세한 내용은 [플레이북 인스턴스 만들기, 공유 및 재사용](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html)을 참조하십시오.
+이 전체적인 데모 비디오에서 사용 사례 플레이북의 인스턴스를 검색, 만들고, 게시하고, 문제를 해결하는 방법을 알아봅니다. 자세한 내용은 [플레이북 인스턴스 만들기, 공유 및 재사용](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=ko)을 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

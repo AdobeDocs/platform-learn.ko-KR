@@ -176,7 +176,7 @@ AEM과 통합된 Adobe Commerce을 사용하는 경우 생성된 개요에서 �
 
 >[!NOTE]
 >
-> 라이브 카피에 대한 자세한 정보가 궁금하십니까? [&quot;라이브 카피 만들기 및 동기화&quot;를 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=en)
+> 라이브 카피에 대한 자세한 정보가 궁금하십니까? [&quot;라이브 카피 만들기 및 동기화&quot;를 확인하십시오.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=ko)
 
 - 완료되면 이제 웹 사이트에 사용 가능한 스토어가 표시됩니다. 선택한 다음 만들기 \> 페이지 를 클릭하여 영감을 주는 제품 페이지를 만듭니다.
 

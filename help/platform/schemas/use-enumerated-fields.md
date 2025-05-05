@@ -17,6 +17,6 @@ ht-degree: 33%
 
 # 열거형 필드 및 제안 값 사용
 
-열거형 필드와 제안 값을 사용하여 세그먼트 빌더 인터페이스에서 친숙한 드롭다운 메뉴를 만드는 방법에 대해 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html)를 참조하세요.
+열거형 필드와 제안 값을 사용하여 세그먼트 빌더 인터페이스에서 친숙한 드롭다운 메뉴를 만드는 방법에 대해 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)

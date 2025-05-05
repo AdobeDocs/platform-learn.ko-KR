@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Web SDK으로 Journey Optimizer 웹 채널 설정
 
-Adobe Experience Platform Web SDK을 사용하여 Adobe Journey Optimizer [웹 채널](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web)을 구현하는 방법에 대해 알아봅니다. 이 단원에서는 기본 웹 채널 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 설명합니다.
+Adobe Experience Platform Web SDK을 사용하여 Adobe Journey Optimizer [웹 채널](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/web/get-started-web)을 구현하는 방법에 대해 알아봅니다. 이 단원에서는 기본 웹 채널 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 설명합니다.
 
 이 단원을 따르면 Journey Optimizer 사용자는 Journey Optimizer 웹 디자이너를 사용하여 고급 온라인 개인화에 웹 채널을 사용할 수 있습니다.
 
@@ -52,7 +52,7 @@ Adobe Experience Platform Web SDK을 사용하여 Adobe Journey Optimizer [웹 �
   > 1. 웹 사이트는 iframe 내에 포함됩니다.
   > 1. 고객의 QA 또는 스테이지 사이트는 외부에서 액세스할 수 없습니다(내부 사이트임).
 
-* 웹 경험을 만들고 Adobe Experience Manager Assets Essentials 라이브러리의 콘텐츠를 포함할 때 이 콘텐츠를 게시하기 위해 [하위 도메인을 구성](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)해야 합니다.
+* 웹 경험을 만들고 Adobe Experience Manager Assets Essentials 라이브러리의 콘텐츠를 포함할 때 이 콘텐츠를 게시하기 위해 [하위 도메인을 구성](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)해야 합니다.
 * 콘텐츠 실험 기능을 사용하는 경우 웹 데이터 세트도 보고 구성에 포함되어야 합니다.
 * 현재, 웹 속성에서 웹 채널 캠페인을 작성하고 게재하기 위해 두 가지 유형의 구현이 지원됩니다.
    * 클라이언트측 전용: 웹 사이트를 수정하려면 Adobe Experience Platform Web SDK을 구현해야 합니다.
@@ -123,7 +123,7 @@ Adobe Experience Platform Web SDK을 사용하여 Adobe Journey Optimizer [웹 �
 
 웹 채널 캠페인 내에서 콘텐츠 실험을 사용하려면 사용된 웹 데이터 세트도 보고 구성에 포함되어야 합니다. Journey Optimizer 보고 시스템은 읽기 전용 방식으로 데이터 세트를 사용하여 기본 제공 콘텐츠 실험 보고서를 채웁니다.
 
-[콘텐츠 실험 보고를 위한 데이터 세트 추가는 이 섹션에 자세히 설명되어 있습니다](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
+[콘텐츠 실험 보고를 위한 데이터 세트 추가는 이 섹션에 자세히 설명되어 있습니다](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets).
 
 ## 사용 사례 개요 - 충성도 보상
 
@@ -302,7 +302,7 @@ Chrome 및 Firefox 모두에서 사용할 수 있는 Adobe Experience Platform D
 
 Luma 사이트에서 디버거를 사용하여 프로덕션의 웹 채널 경험을 확인할 수 있습니다. 이는 충성도 보상 사용 사례가 작동하고 실행 중인 경우 모든 것이 올바르게 구성되도록 하는 모범 사례입니다.
 
-[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아보세요](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아보세요](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/debugger/overview).
 
 디버거를 사용하여 유효성 검사를 시작하려면 다음을 수행하십시오.
 
@@ -339,4 +339,4 @@ Luma 사이트에서 디버거를 사용하여 프로덕션의 웹 채널 경험
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.

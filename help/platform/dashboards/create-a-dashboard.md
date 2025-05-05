@@ -17,7 +17,7 @@ ht-degree: 20%
 
 # 대시보드 만들기
 
-Adobe Experience Platform에서 대시보드를 만드는 방법을 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html)를 참조하세요.
+Adobe Experience Platform에서 대시보드를 만드는 방법을 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=ko)를 참조하세요.
 
 >[!IMPORTANT]
 >

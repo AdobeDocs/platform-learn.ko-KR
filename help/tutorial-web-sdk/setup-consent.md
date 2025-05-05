@@ -217,13 +217,13 @@ Luma 데모 사이트로 이동하여 유효성을 확인하고, 쿠키를 거�
 ![동의 Post 방문자 옵션](assets/consent-post-user-optin.png)
 
 
-Web SDK의 동의에 대한 자세한 내용은 [고객 동의 환경 설정 지원](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent)을 참조하십시오.
+Web SDK의 동의에 대한 자세한 내용은 [고객 동의 환경 설정 지원](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/consent/supporting-consent)을 참조하십시오.
 
 
-[!UICONTROL 동의 설정] 작업에 대한 자세한 내용은 [동의 설정](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)을 참조하십시오.
+[!UICONTROL 동의 설정] 작업에 대한 자세한 내용은 [동의 설정](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)을 참조하십시오.
 
 [다음: ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.

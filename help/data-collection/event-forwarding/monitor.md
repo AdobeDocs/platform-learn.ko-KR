@@ -15,6 +15,6 @@ ht-degree: 28%
 
 # 이벤트 전달 모니터링
 
-데이터 수집 인터페이스에서 이벤트 전달을 모니터링하는 방법에 대해 알아봅니다. 자세한 내용은 [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)를 참조하세요.
+데이터 수집 인터페이스에서 이벤트 전달을 모니터링하는 방법에 대해 알아봅니다. 자세한 내용은 [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)

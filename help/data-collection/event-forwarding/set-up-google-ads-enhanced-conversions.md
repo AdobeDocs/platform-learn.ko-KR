@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Google Ads 고급 전환 설정
 
-이벤트 전달 및 Google Ads API를 사용하여 자사 해시된 데이터로 Google 전환 데이터를 향상시킵니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html)를 참조하세요.
+이벤트 전달 및 Google Ads API를 사용하여 자사 해시된 데이터로 Google 전환 데이터를 향상시킵니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)

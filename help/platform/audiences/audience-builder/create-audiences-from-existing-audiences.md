@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 기존 대상에서 대상 만들기
 
-Experience Platform의 대상 규칙 빌더를 사용하면 새 대상 규칙 정의의 일부로 기존 대상을 사용할 수 있습니다. 이 비디오를 통해 수행 방법에 대한 팁을 확인하십시오. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)를 참조하세요.
+Experience Platform의 대상 규칙 빌더를 사용하면 새 대상 규칙 정의의 일부로 기존 대상을 사용할 수 있습니다. 이 비디오를 통해 수행 방법에 대한 팁을 확인하십시오. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Real-Time CDP Collaboration에서 게시자와 연결
 
-광고주로서 게시자와 공동 작업을 위해 게시자와 연결하는 방법을 알아봅니다. 자세한 설명서는 [광고주 또는 게시자와 연결](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}을 참조하십시오.
+광고주로서 게시자와 공동 작업을 위해 게시자와 연결하는 방법을 알아봅니다. 자세한 설명서는 [광고주 또는 게시자와 연결](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}을 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452218/?learn=on&enablevpops)

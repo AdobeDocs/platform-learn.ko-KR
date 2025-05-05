@@ -35,5 +35,5 @@ ht-degree: 18%
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
 
 자세한 내용은 다음 설명서를 참조하십시오.
-* [Marketo Engage 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [UI에서 템플릿을 사용하여 소스 데이터 흐름을 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Marketo Engage 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=ko).
+* [UI에서 템플릿을 사용하여 소스 데이터 흐름을 만듭니다](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=ko#)

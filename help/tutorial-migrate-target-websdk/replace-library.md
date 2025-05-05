@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->제공된 예는 예시 목적으로 제공되며 실제 Target 구현은 다를 수 있습니다. 기존 Target 구현에서 Adobe의 데이터 수집 태그 관리자를 사용하는 경우 [Platform Web SDK Target 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html)를 참조하여 추가 정보를 확인할 수도 있습니다.
+>제공된 예는 예시 목적으로 제공되며 실제 Target 구현은 다를 수 있습니다. 기존 Target 구현에서 Adobe의 데이터 수집 태그 관리자를 사용하는 경우 [Platform Web SDK Target 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ko)를 참조하여 추가 정보를 확인할 수도 있습니다.
 
 
 ## Target 관리 설정 검토
@@ -52,7 +52,7 @@ Platform Web SDK는 별도의 개발, 스테이징 및 프로덕션 데이터스
 >
 >데이터 스트림 구성에 환경 ID가 지정되지 않은 경우 Target은 **호스트** 섹션에 지정된 대로 도메인-환경 매핑을 사용합니다.
 
-자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) 안내서 및 Target [호스트](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html) 설명서를 참조하십시오.
+자세한 내용은 [데이터 스트림 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=ko#target) 안내서 및 Target [호스트](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=ko) 설명서를 참조하십시오.
 
 ## Platform Web SDK 배포
 
@@ -173,7 +173,7 @@ alloy JavsScript 라이브러리 또는 태그 포함 코드 및 Adobe Experienc
 
 미리 빌드된 독립 실행형 버전에는 alloy라는 글로벌 함수를 만드는 페이지에 직접 추가된 &quot;기본 코드&quot;가 필요합니다. 이 함수를 사용하여 SDK와 상호 작용합니다. 전역 함수의 이름을 다른 이름으로 지정하려면 `alloy` 이름을 변경하십시오.
 
-자세한 내용 및 배포 옵션은 [Platform Web SDK 설치](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) 설명서를 참조하십시오.
+자세한 내용 및 배포 옵션은 [Platform Web SDK 설치](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=ko) 설명서를 참조하십시오.
 
 
 ## 콘텐츠 사전 숨김 접근 방식 업데이트
@@ -213,9 +213,9 @@ at.js와 마찬가지로, Platform Web SDK 라이브러리가 비동기적으로
 
 Adobe은 전반적인 페이지 성능을 최대화하기 위해 Platform Web SDK를 비동기식으로 구현할 것을 권장합니다. 그러나 alloy.js 라이브러리 또는 태그 포함 코드가 동기식으로 로드되면 코드 조각을 미리 숨길 필요가 없습니다. 대신 Platform 웹 SDK 구성에 사전 숨김 스타일이 지정됩니다.
 
-동기 구현을 위한 미리 숨김 스타일은 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) 옵션을 사용하여 구성할 수 있습니다. Platform Web SDK 구성에 대해서는 다음 섹션에서 다룹니다.
+동기 구현을 위한 미리 숨김 스타일은 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#prehidingStyle) 옵션을 사용하여 구성할 수 있습니다. Platform Web SDK 구성에 대해서는 다음 섹션에서 다룹니다.
 
-Platform Web SDK에서 플리커를 관리하는 방법에 대한 자세한 내용은 [개인화된 경험에 대한 플리커 관리](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html) 가이드 섹션을 참조하십시오.
+Platform Web SDK에서 플리커를 관리하는 방법에 대한 자세한 내용은 [개인화된 경험에 대한 플리커 관리](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=ko) 가이드 섹션을 참조하십시오.
 
 ## Platform Web SDK 구성
 
@@ -274,7 +274,7 @@ Target과 관련된 주목할 만한 구성 옵션은 아래에 요약되어 있
 | `thirdPartyCookiesEnabled` | Adobe 서드파티 쿠키의 설정을 활성화합니다. SDK는 타사 컨텍스트에서 방문자 ID를 유지하여 사이트 간에 동일한 방문자 ID를 사용할 수 있습니다. 여러 사이트가 있는 경우 이 옵션을 사용하십시오. 하지만 개인 정보 보호를 위해 이 옵션을 사용하지 않는 경우도 있습니다. | `true` |
 | `prehidingStyle` | 개인화된 콘텐츠가 서버에서 로드되는 동안 웹 페이지의 콘텐츠 영역을 숨기는 CSS 스타일 정의를 만드는 데 사용됩니다. SDK의 동기식 배포에서만 사용됩니다. | `body { opacity: 0 !important }` |
 
-전체 옵션 목록은 [Platform Web SDK 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) 안내서를 참조하십시오.
+전체 옵션 목록은 [Platform Web SDK 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko) 안내서를 참조하십시오.
 
 ## 구현 예
 
@@ -400,4 +400,4 @@ Platform Web SDK가 제대로 갖추어지면 예제 페이지가 다음과 같�
 
 >[!NOTE]
 >
->at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ko#M463)에 게시하여 알려 주십시오.

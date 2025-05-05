@@ -22,6 +22,6 @@ ht-degree: 1%
 1. 워크플로우를 사용하여 참조 객체를 생성합니다. 
 1. 참조 객체를 기존 구현에 복사합니다.
 
-메타 전환 API 빠른 시작 워크플로우에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=en#quick-start)를 참조하십시오.
+메타 전환 API 빠른 시작 워크플로우에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=ko#quick-start)를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

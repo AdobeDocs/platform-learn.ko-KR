@@ -46,7 +46,7 @@ Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래
 | 온디바이스 의사 결정 | 지원됨 | 현재 지원되지 않음 |
 | Mbox 미리 가져오기 | 사용자 지정 범위 및 SPA VEC에 대해 지원됨 | 미리 가져오기는 웹 SDK의 기본 모드입니다. |
 | 사용자 지정 이벤트 | 지원됨 | 지원되지 않습니다. 현재 상태는 [공개 로드맵](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"})을 참조하세요. |
-| 응답 토큰 | 지원됨 | 지원됨. at.js와 Platform Web SDK의 코드 예제 및 차이점에 대해서는 [전용 응답 토큰 설명서](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html)를 참조하십시오 |
+| 응답 토큰 | 지원됨 | 지원됨. at.js와 Platform Web SDK의 코드 예제 및 차이점에 대해서는 [전용 응답 토큰 설명서](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=ko)를 참조하십시오 |
 | 데이터 공급자 | 지원됨 | 지원되지 않습니다. 사용자 지정 코드는 다른 공급자에서 데이터를 검색한 후 Platform Web SDK `sendEvent` 명령을 트리거하는 데 사용할 수 있습니다. |
 
 
@@ -66,7 +66,7 @@ Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래
 >
 >지정된 페이지에 대한 기존 AppMeasurement Adobe Analytics 구현을 유지하면서 Target을 Platform Web SDK로 마이그레이션하는 기능은 지원되지 않습니다.
 >
-> at.js(및 AppMeasurement.js) 구현을 Platform Web SDK에 한 번에 한 페이지씩 마이그레이션할 수 있습니다. 이 방법을 사용하는 경우 `configure` 명령을 사용하여 [`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) 및 [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled) 옵션을 `true`(으)로 설정하는 것이 좋습니다.
+> at.js(및 AppMeasurement.js) 구현을 Platform Web SDK에 한 번에 한 페이지씩 마이그레이션할 수 있습니다. 이 방법을 사용하는 경우 `configure` 명령을 사용하여 [`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#id-migration-enabled) 및 [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#targetMigrationEnabled) 옵션을 `true`(으)로 설정하는 것이 좋습니다.
 
 ## at.js 함수 및 이에 상응하는 Platform Web SDK
 
@@ -74,13 +74,13 @@ Platform Web SDK를 처음 사용하는 경우 걱정하지 마십시오. 아래
 
 | at.js 2.x 함수 | Platform Web SDK에 해당하는 함수 |
 | --- | --- | 
-| `getOffer()` 및 `getOffers()` | Target VEC 기반 경험을 요청하고 [자동으로 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#automatically-rendering-content)하려면 `sendEvent` 명령을 사용하고 `renderDecisions` 옵션을 true로 설정하십시오.<br><br>양식 기반 경험을 요청하거나 [수동으로 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) 콘텐츠를 요청하려면 `sendEvent` 명령을 사용하여 `decisionScopes`(mbox)의 배열을 지정하십시오. |
-| `applyOffer()` 및 `applyOffers()` | 콘텐츠를 적용하려면 [`applyPropositions`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#applypropositions) 명령을 사용하십시오. 특정 선택기에 HTML을 설정, 대체 또는 추가하도록 선택할 수 있습니다. |
-| `triggerView()` | `sendEvent` 명령의 `xdm` 옵션 아래에 `web.webPageDetails.viewName` 속성이 설정된 경우 SPA VEC를 위해 Platform Web SDK에서 [보기 변경](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-trigger-a-view-change-in-a-single-page-application)을 자동으로 트리거합니다. |
-| `trackEvent()` 및 `sendNotifications()` | `sendEvent` 명령을 [특정 `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) 집합과 함께 사용하면:<br><br>`decisioning.propositionDisplay` 활동을 렌더링한다는 신호를 보냅니다<br><br>`decisioning.propositionInteract` 마우스 클릭과 같은 활동과 사용자 상호 작용을 한다는 신호를 보냅니다. |
+| `getOffer()` 및 `getOffers()` | Target VEC 기반 경험을 요청하고 [자동으로 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko#automatically-rendering-content)하려면 `sendEvent` 명령을 사용하고 `renderDecisions` 옵션을 true로 설정하십시오.<br><br>양식 기반 경험을 요청하거나 [수동으로 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko#manually-rendering-content) 콘텐츠를 요청하려면 `sendEvent` 명령을 사용하여 `decisionScopes`(mbox)의 배열을 지정하십시오. |
+| `applyOffer()` 및 `applyOffers()` | 콘텐츠를 적용하려면 [`applyPropositions`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko#applypropositions) 명령을 사용하십시오. 특정 선택기에 HTML을 설정, 대체 또는 추가하도록 선택할 수 있습니다. |
+| `triggerView()` | `sendEvent` 명령의 `xdm` 옵션 아래에 `web.webPageDetails.viewName` 속성이 설정된 경우 SPA VEC를 위해 Platform Web SDK에서 [보기 변경](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=ko#how-to-trigger-a-view-change-in-a-single-page-application)을 자동으로 트리거합니다. |
+| `trackEvent()` 및 `sendNotifications()` | `sendEvent` 명령을 [특정 `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=ko#how-to-track-events) 집합과 함께 사용하면:<br><br>`decisioning.propositionDisplay` 활동을 렌더링한다는 신호를 보냅니다<br><br>`decisioning.propositionInteract` 마우스 클릭과 같은 활동과 사용자 상호 작용을 한다는 신호를 보냅니다. |
 | `targetGlobalSettings()` | 직접 동등 항목 없음. 자세한 내용은 [대상 설정 비교](detailed-comparison.md)를 참조하세요. |
-| `targetPageParams()` 및 `targetPageParamsAll()` | `sendEvent` 명령의 `xdm` 옵션에서 전달된 모든 데이터가 Target mbox 매개 변수에 매핑됩니다. mbox 매개 변수는 직렬화된 점 표기법을 사용하여 이름이 지정되므로 Platform Web SDK로 마이그레이션하려면 기존 대상과 활동을 업데이트하여 새 mbox 매개 변수 이름을 사용해야 할 수 있습니다. `sendEvent` 명령의 `data.__adobe.target` 일부로 전달된 <br><br>데이터가 [Target 프로필 및 Recommendations 특정 매개 변수](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update)에 매핑됩니다. |
-| at.js 사용자 지정 이벤트 | 지원되지 않습니다. 현재 상태는 [공개 로드맵](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"})을 참조하세요. [응답 토큰](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html)이 `sendEvent` 호출의 응답에서 `propositions`의 일부로 노출됩니다. |
+| `targetPageParams()` 및 `targetPageParamsAll()` | `sendEvent` 명령의 `xdm` 옵션에서 전달된 모든 데이터가 Target mbox 매개 변수에 매핑됩니다. mbox 매개 변수는 직렬화된 점 표기법을 사용하여 이름이 지정되므로 Platform Web SDK로 마이그레이션하려면 기존 대상과 활동을 업데이트하여 새 mbox 매개 변수 이름을 사용해야 할 수 있습니다. `sendEvent` 명령의 `data.__adobe.target` 일부로 전달된 <br><br>데이터가 [Target 프로필 및 Recommendations 특정 매개 변수](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=ko#single-profile-update)에 매핑됩니다. |
+| at.js 사용자 지정 이벤트 | 지원되지 않습니다. 현재 상태는 [공개 로드맵](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"})을 참조하세요. [응답 토큰](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html?lang=ko)이 `sendEvent` 호출의 응답에서 `propositions`의 일부로 노출됩니다. |
 
 ## at.js 설정 및 이에 해당하는 Platform Web SDK
 
@@ -88,12 +88,12 @@ Target UI의 다양한 설정을 사용하여 at.js 라이브러리를 구성하
 
 | at.js 설정 | Platform Web SDK에 해당하는 함수 |
 | --- | --- |
-| `bodyHiddenStyle` | `configure` 명령을 사용하여 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) 설정 |
+| `bodyHiddenStyle` | `configure` 명령을 사용하여 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#prehidingStyle) 설정 |
 | `bodyHidingEnabled` | `configure` 명령으로 `prehidingStyle`이(가) 정의된 경우 이 기능을 사용할 수 있습니다. 스타일이 정의되지 않은 경우 Platform Web SDK는 콘텐츠를 숨기지 않습니다. |
 | `clientCode` | 자동으로 구성됨 |
 | `cookieDomain` | 적용할 수 없음 |
 | `crossDomain` | `configure` 명령을 사용하여 `thirdPartyCookiesEnabled` 옵션을 `true`(으)로 설정하여 도메인 간 사용 사례에 대해 자사 및 서드파티 쿠키를 사용하도록 설정합니다. |
-| `cspScriptNonce` 및 `cspStyleNonce` | [CSP 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-a-csp.html)에 대한 설명서를 참조하세요. |
+| `cspScriptNonce` 및 `cspStyleNonce` | [CSP 구성](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-a-csp.html?lang=ko)에 대한 설명서를 참조하세요. |
 | `dataProviders` | 지원되지 않음 |
 | `decisioningMethod` | 모든 Platform Web SDK `sendEvent` 명령은 서버측 의사 결정을 사용합니다. 하이브리드 및 온디바이스 의사 결정은 지원되지 않습니다. |
 | `defaultContentHiddenStyle` 및 `defaultContentVisibleStyle` | at.js 1.x에서만 적용할 수 있습니다. at.js 2.x와 마찬가지로, 양식 기반 경험에 대한 플리커 완화는 사용자 지정 코드를 사용하여 수행할 수 있습니다. |
@@ -101,7 +101,7 @@ Target UI의 다양한 설정을 사용하여 at.js 라이브러리를 구성하
 | `enabled` | 대상 기능은 데이터 스트림 구성으로 활성화되거나 비활성화됩니다. |
 | `globalMboxAutoCreate` | VEC 기반 경험을 자동으로 가져오고 렌더링하려면 `sendEvent` 명령을 사용하여 `renderDecisions` 옵션을 `true`(으)로 설정하십시오.VEC 기반 경험을 수동으로 렌더링하려면 <br><br>`__view__`에 대해 `decisionScope`을(를) 요청합니다. |
 | `imsOrgId` | `configure` 명령으로 `orgId` 설정 |
-| `optinEnabled` 및 `optoutEnabled` | Platform Web SDK [개인 정보 보호 옵션](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)을 참조하세요. `defaultConsent` 옵션은 Platform Web SDK에서 지원하는 모든 Adobe 솔루션에 적용됩니다. |
+| `optinEnabled` 및 `optoutEnabled` | Platform Web SDK [개인 정보 보호 옵션](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=ko)을 참조하세요. `defaultConsent` 옵션은 Platform Web SDK에서 지원하는 모든 Adobe 솔루션에 적용됩니다. |
 | `overrideMboxEdgeServer` 및 `overrideMboxEdgeServerTimeout` | 해당 사항 없음. 모든 Platform Web SDK 요청은 Adobe Experience Platform Edge 네트워크를 사용합니다. |
 | `pageLoadEnabled` | `sendEvent` 명령을 사용하여 `renderDecisions` 옵션을 `true`(으)로 설정 |
 | `secureOnly` | 지원되지 않습니다. Platform Web SDK는 `secure` 및 `sameSite="none"` 특성이 있는 모든 쿠키를 설정합니다. |
@@ -148,10 +148,10 @@ Target UI의 다양한 설정을 사용하여 at.js 라이브러리를 구성하
 | 6 | a. 에지 네트워크는 추가적인 개인화를 위한 프로필 값을 선택적으로 포함하여 개인화 응답을 다시 페이지로 전송합니다. 현재 페이지의 개인화된 콘텐츠는 기본 콘텐츠의 플리커 없이 가능한 한 빨리 나타납니다.<br><br>b. SPA(단일 페이지 애플리케이션)에서 사용자 작업의 결과로 표시되는 보기를 위한 개인화된 콘텐츠는 추가 서버 호출 없이 즉각적인 렌더링을 위해 캐시됩니다.<br><br>c입니다. Edge 네트워크는 방문자 ID와 쿠키의 다른 값(예: 동의, 세션 ID, ID, 쿠키 확인, 개인화 등)을 전송합니다. |
 | 7 | 에지 네트워크는 Analytics for Target(A4T) 세부 사항(활동, 경험 및 전환 메타데이터)을 Analytics 에지로 전달합니다. |
 
-단일 페이지 애플리케이션용 Platform Web SDK를 사용하여 [Target을 구현](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/spa-implementation.html)하는 방법에 대한 자세한 내용은 개발자 안내서를 참조하십시오.
+단일 페이지 애플리케이션용 Platform Web SDK를 사용하여 [Target을 구현](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/spa-implementation.html?lang=ko)하는 방법에 대한 자세한 내용은 개발자 안내서를 참조하십시오.
 
 현재 Target 구현과 사용 중인 기능에 대한 기술적인 이해를 완료한 후 다음 단계는 [초기 설정](initial-setup.md)을 수행하는 것입니다.
 
 >[!NOTE]
 >
->at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 Web SDK로 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ko#M463)에 게시하여 알려 주십시오.

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 주문형 일괄 처리 대상 평가
 
-Adobe Experience Platform의 유연한 대상 평가 기능을 사용하여 배치 대상을 온디맨드로 평가합니다. 자세한 내용 및 보호 기능은 [유연한 대상 평가 가이드](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation)를 참조하십시오.
+Adobe Experience Platform의 유연한 대상 평가 기능을 사용하여 배치 대상을 온디맨드로 평가합니다. 자세한 내용 및 보호 기능은 [유연한 대상 평가 가이드](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/methods/flexible-audience-evaluation)를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)

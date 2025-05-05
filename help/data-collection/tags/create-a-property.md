@@ -16,7 +16,7 @@ ht-degree: 31%
 
 # 태그 속성 만들기
 
-웹 사이트에서 마케팅 태그를 관리하기 위해 태그 속성을 만드는 방법을 알아봅니다. 자세한 내용은 [속성](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html) 설명서를 참조하십시오.
+웹 사이트에서 마케팅 태그를 관리하기 위해 태그 속성을 만드는 방법을 알아봅니다. 자세한 내용은 [속성](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=ko) 설명서를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on&enablevpops)
 

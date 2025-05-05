@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 순차적 대상자 만들기
 
-이 비디오에서는 특정 시간 내에 특정 순서로 작업을 수행한 대상자를 만들기 위해 대상자의 타임라인에 경험 이벤트를 추가하는 방법을 알아봅니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)를 참조하세요.
+이 비디오에서는 특정 시간 내에 특정 순서로 작업을 수행한 대상자를 만들기 위해 대상자의 타임라인에 경험 이벤트를 추가하는 방법을 알아봅니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ko)를 참조하세요.
 
 >[!NOTE]
 >
