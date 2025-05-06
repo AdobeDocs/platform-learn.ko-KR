@@ -4,9 +4,9 @@ description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## Chrome 확장 기본 정보
 
-모든 Adobe Experience Platform 인스턴스를 사용하여 누구나 쉽게 재사용할 수 있도록 설명서가 일반화되었습니다.
-설명서를 재사용할 수 있도록 하기 위해 **환경 변수**&#x200B;가 설명서에 도입되었습니다. 즉, 설명서에서 아래 **자리 표시자**&#x200B;를 찾을 수 있습니다. 모든 자리 표시자는 특정 환경에 대한 특정 변수이며, Chrome 확장은 해당 변수를 변경하여 자습서 페이지에서 코드와 텍스트를 복사하여 자습서의 일부로 사용할 다양한 사용자 인터페이스에 쉽게 붙여넣을 수 있도록 합니다.
+이 자습서는 Adobe Experience Cloud 인스턴스를 사용하여 누구나 쉽게 재사용할 수 있도록 일반화되었습니다.
+
+설명서를 재사용할 수 있도록 하기 위해 튜토리얼에 **환경 변수**&#x200B;가 도입되었습니다. 이는 설명서에서 아래 **자리 표시자**&#x200B;을 찾을 수 있음을 의미합니다. 모든 자리 표시자는 특정 환경에 대한 특정 변수이며, Chrome 확장은 해당 변수를 변경하여 자습서 페이지에서 코드와 텍스트를 복사하여 자습서의 일부로 사용할 다양한 사용자 인터페이스에 쉽게 붙여넣을 수 있도록 합니다.
 
 이러한 값의 예는 아래에서 찾을 수 있습니다. 현재 이러한 값을 사용할 수 없지만 Chrome 확장을 설치하고 활성화하면 이러한 변수가 복사하여 다시 사용할 수 있는 일반 텍스트로 변경됩니다.
 
 | 이름 | 키 | 예 |
 |:-------------:| :---------------:| :---------------:|
-| AEP IMS 조직 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| AEP IMS 조직 이름 | `--aepImsOrgName--` | `Experience Platform International` |
+| IMS 조직 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| IMS 조직 이름 | `--aepImsOrgName--` | `Experience Platform International` |
 | AEP 테넌트 ID | `--aepTenantId--` | `_experienceplatform` |
 | AEP 샌드박스 이름 | `--aepSandboxName--` | `one-adobe` |
 | 학습자 프로필 LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ ht-degree: 0%
 
 ## Chrome 확장 구성
 
-[https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
+[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
 
 ![DSN](./images/tuthome.png)
 
@@ -135,7 +136,7 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ## 튜토리얼 콘텐츠 확인
 
-테스트로 [이 페이지](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}(으)로 이동하세요.
+테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}(으)로 이동하세요.
 
 이제 이 페이지의 모든 **환경 변수**&#x200B;가 chrome 확장에서 활성화된 환경을 기반으로 실제 값으로 대체되었습니다.
 

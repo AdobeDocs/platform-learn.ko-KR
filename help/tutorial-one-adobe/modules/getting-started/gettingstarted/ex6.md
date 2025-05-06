@@ -3,9 +3,10 @@ title: 시작하기 - Adobe I/O
 description: 시작하기 - Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,16 @@ ht-degree: 0%
 ![Adobe I/O 새 통합](./images/iohome.png){zoomable="yes"}
 
 화면 오른쪽 상단 모서리에서 올바른 인스턴스를 선택해야 합니다. 인스턴스는 `--aepImsOrgName--`입니다.
+
+>[!NOTE]
+>
+> 아래 스크린샷은 선택된 특정 조직을 보여 줍니다. 이 자습서를 수행하는 경우 조직의 이름이 다를 수 있습니다. 이 자습서에 등록하면 사용할 환경 세부 정보가 제공되었으므로 해당 지침을 따르십시오.
+
 **새 프로젝트 만들기**&#x200B;를 선택합니다.
 
 ![Adobe I/O 새 통합](./images/iocomp.png){zoomable="yes"}
 
-### Firefly 서비스 API
+### FIREFLY SERVICES API
 
 그럼 이걸 보셔야죠 **+ 프로젝트에 추가**&#x200B;를 선택하고 **API**&#x200B;를 선택합니다.
 
@@ -35,7 +41,7 @@ ht-degree: 0%
 
 ![Adobe I/O 새 통합](./images/api1.png){zoomable="yes"}
 
-**Creative Cloud**&#x200B;을(를) 선택하고 **Firefly - Firefly 서비스**&#x200B;를 선택한 후 **다음**&#x200B;을(를) 선택하십시오.
+**Creative Cloud**&#x200B;을(를) 선택하고 **Firefly - Firefly Services**&#x200B;을(를) 선택한 후 **다음**&#x200B;을(를) 선택합니다.
 
 ![Adobe I/O 새 통합](./images/api3.png){zoomable="yes"}
 
@@ -43,7 +49,7 @@ ht-degree: 0%
 
 ![Adobe I/O 새 통합](./images/api4.png){zoomable="yes"}
 
-기본 프로필 **기본 Firefly 서비스 구성**&#x200B;을 선택하고 **구성된 API 저장**&#x200B;을 선택합니다.
+기본 프로필 **기본 Firefly Services 구성**&#x200B;을 선택하고 **구성된 API 저장**&#x200B;을 선택합니다.
 
 ![Adobe I/O 새 통합](./images/api9.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ ht-degree: 0%
 
 ![Azure 저장소](./images/ps2.png){zoomable="yes"}
 
-**Creative Cloud**&#x200B;을(를) 선택하고 **Photoshop - Firefly 서비스**&#x200B;를 선택합니다. **다음**&#x200B;을 선택합니다.
+**Creative Cloud**&#x200B;을(를) 선택하고 **Photoshop - Firefly Services**&#x200B;을(를) 선택합니다. **다음**&#x200B;을 선택합니다.
 
 ![Azure 저장소](./images/ps3.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ ht-degree: 0%
 
 그런 다음 이 통합에 사용할 수 있는 권한을 정의하는 제품 프로필을 선택해야 합니다.
 
-**기본 Firefly 서비스 구성** 및 **기본 Creative Cloud 자동화 서비스 구성**&#x200B;을 선택합니다.
+**기본 Firefly Services 구성** 및 **기본 Creative Cloud 자동화 서비스 구성**&#x200B;을 선택합니다.
 
 **구성된 API 저장**&#x200B;을 선택합니다.
 

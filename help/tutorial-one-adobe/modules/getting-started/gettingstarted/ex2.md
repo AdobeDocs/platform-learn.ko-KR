@@ -4,9 +4,9 @@ description: 시작하기 - Launch 속성 설정 옆에 있는 데모 시스템 
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsnsetup.png)
 
-**환경** 드롭다운에서 AEP 인스턴스와 샌드박스를 선택합니다.
+**환경** 드롭다운에서 인스턴스와 샌드박스를 선택합니다.
 
 ![DSN](./images/dsnh1.png)
 

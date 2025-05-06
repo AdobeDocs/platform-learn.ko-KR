@@ -4,9 +4,9 @@ description: 시작하기 - 데이터 스트림 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,15 @@ ht-degree: 1%
 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}(으)로 이동합니다.
 
 ![DSN](./images/launchprop.png)
+
+계속하기 전에 화면 오른쪽 상단의 환경 전환기를 사용하여 올바른 환경을 선택했는지 확인하십시오. 사용할 올바른 환경은 `--aepImsOrgName--`입니다.
+
+>[!NOTE]
+>
+> 아래 스크린샷은 선택된 특정 조직을 보여 줍니다. 이 자습서를 수행하는 경우 조직의 이름이 다를 수 있습니다. 이 자습서에 등록하면 사용할 환경 세부 정보가 제공되었으므로 해당 지침을 따르십시오.
+
+
+![DSN](./images/org.png)
 
 왼쪽 메뉴에서 **[!UICONTROL 태그]**&#x200B;를 클릭합니다. 이전 연습이 끝나면 이제 3개의 데이터 수집 속성이 있습니다. 하나는 웹용, 하나는 모바일용 및 하나는 CX 앱용 입니다.
 
@@ -33,13 +42,17 @@ ht-degree: 1%
 
 화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxName--`이어야 합니다.
 
+>[!NOTE]
+>
+> 아래 스크린샷은 선택된 특정 샌드박스를 보여 줍니다. 이 자습서를 수행하는 경우 샌드박스의 이름이 다를 수 있습니다. 이 자습서에 등록하면 사용할 환경 세부 정보가 제공되었으므로 해당 지침을 따르십시오.
+
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1b.png)
 
 **[!UICONTROL 새 데이터 스트림]**&#x200B;을 클릭합니다.
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1.png)
 
-**[!UICONTROL Name]**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - One Adobe Datastream`을(를) 입력하십시오. **매핑 스키마**&#x200B;에 대해 **데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
+**Name**&#x200B;에 대해, 선택적 설명에 대해 `--aepUserLdap-- - One Adobe Datastream`을(를) 입력하십시오. **매핑 스키마**&#x200B;에 대해 **데모 시스템 - 웹 사이트에 대한 이벤트 스키마(전역 v1.1)**&#x200B;를 선택하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![Edge 구성 이름 지정 및 저장](./images/edgeconfig2.png)
 
@@ -108,6 +121,10 @@ ht-degree: 1%
 ![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1a.png)
 
 화면 오른쪽 상단에서 샌드박스 이름을 선택합니다. 이름은 `--aepSandboxName--`이어야 합니다.
+
+>[!NOTE]
+>
+> 아래 스크린샷은 선택된 특정 샌드박스를 보여 줍니다. 이 자습서를 수행하는 경우 샌드박스의 이름이 다를 수 있습니다. 이 자습서에 등록하면 사용할 환경 세부 정보가 제공되었으므로 해당 지침을 따르십시오.
 
 ![왼쪽 탐색에서 Edge 구성 아이콘을 클릭합니다](./images/edgeconfig1b.png)
 
