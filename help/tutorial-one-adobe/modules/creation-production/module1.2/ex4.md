@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 1%
 ![WF Fusion](./images/wffc2.png)
 
 복제된 시나리오의 **Name**&#x200B;을(를) `--aepUserLdap-- - Firefly + Photoshop`(으)로 설정하고 적절한 **대상 팀**&#x200B;을(를) 선택하십시오. 새 웹후크를 추가하려면 **추가**&#x200B;를 클릭하십시오.
+
+>[!NOTE]
+>
+>**대상 팀**&#x200B;을 선택하는 옵션이 표시되지 않을 수 있습니다. 이 옵션은 Workfront Fusion에서 1개 이상의 팀에 속한 사용자에게만 표시됩니다. 이 선택 사항이 표시되지 않으면 단순히 1개 팀에만 추가되었음을 의미하므로 선택이 필요하지 않습니다.
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -214,7 +218,7 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 **입력**&#x200B;이 표시될 때까지 아래로 스크롤합니다. 이제 배경 레이어에 삽입해야 할 항목을 정의해야 합니다. 이 경우 동적으로 생성된 이미지가 포함된 **Adobe Firefly** 모듈의 출력을 선택해야 합니다.
 
-**저장소**&#x200B;에 대해 **외부**&#x200B;을(를) 선택하십시오. **파일 위치**&#x200B;의 경우 **Adobe Firefly** 모듈의 출력에서 `{{XX.details[].url}}` 변수를 복사하여 붙여 넣으십시오. 변수의 **XX**&#x200B;을(를) **Adobe Firefly** 모듈의 시퀀스 번호로 바꿉니다(이 예에서는 **22**).
+**저장소**&#x200B;에 대해 **외부**&#x200B;을(를) 선택하십시오. **파일 위치**&#x200B;의 경우 **Adobe Firefly** 모듈의 출력에서 변수 `{{XX.details[].url}}`을(를) 복사하여 붙여 넣어야 하지만 이 예제에서는 **22**&#x200B;인 **Adobe Firefly** 모듈의 시퀀스 번호로 변수의 **XX**&#x200B;을(를) 바꾸어야 합니다.
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -230,7 +234,7 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 ![WF Fusion](./images/wffc31.png)
 
-**고급 설정**&#x200B;에서 **예**&#x200B;를 선택하여 같은 이름의 파일을 덮어씁니다.
+**고급 설정**&#x200B;에서 **예**를 선택하여 같은 이름의 파일을 덮어씁니다.
 **추가를 클릭합니다**.
 
 ![WF Fusion](./images/wffc32.png)

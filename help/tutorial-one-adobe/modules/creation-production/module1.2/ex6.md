@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.6.2 Frame.io에서 Webhook 구성
 
-[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}(으)로 이동합니다. **개발자 도구**&#x200B;를 클릭한 다음 **사용자 지정 작업**&#x200B;을 선택합니다.
+[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}(으)로 이동합니다. **개발자 도구**&#x200B;를 클릭한 다음 **웹후크**&#x200B;를 선택합니다.
 
 ![프레임 IO](./images/aemf7.png)
 

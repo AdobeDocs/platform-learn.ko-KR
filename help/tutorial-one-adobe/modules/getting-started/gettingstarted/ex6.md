@@ -4,9 +4,9 @@ description: 시작하기 - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ![Adobe I/O 새 통합](./images/api3.png){zoomable="yes"}
 
-자격 증명의 이름을 지정하십시오. `--aepUserLdap-- - One Adobe OAuth credential`다음 **다음**&#x200B;을 선택하세요.
+자격 증명의 이름을 입력하십시오. `--aepUserLdap-- - One Adobe OAuth credential` **다음**.
 
 ![Adobe I/O 새 통합](./images/api4.png){zoomable="yes"}
 
@@ -101,6 +101,10 @@ ht-degree: 0%
 
 **Adobe Experience Platform - 모든 사용자 - PROD**&#x200B;를 선택합니다.
 
+>[!NOTE]
+>
+>AEP에 대한 제품 프로필 이름은 환경 구성 방식에 따라 다릅니다. 위에서 언급한 제품 프로필이 표시되지 않으면 **기본 프로덕션 모든 액세스**&#x200B;라는 제품 프로필이 있을 수 있습니다. 어떤 것을 선택할지 확실하지 않은 경우 AEP 시스템 관리자에게 문의하십시오.
+
 **구성된 API 저장**&#x200B;을 선택합니다.
 
 ![Azure 저장소](./images/aep4.png){zoomable="yes"}
@@ -119,7 +123,7 @@ ht-degree: 0%
 
 ![Adobe I/O 새 통합](./images/api14.png){zoomable="yes"}
 
-통합 이름을 입력하십시오. `--aepUserLdap-- One Adobe tutorial`다음 **저장**&#x200B;을 선택합니다.
+통합 이름 `--aepUserLdap-- One Adobe tutorial`을(를) 입력하고 **저장**&#x200B;을(를) 선택하십시오.
 
 ![Adobe I/O 새 통합](./images/api15.png){zoomable="yes"}
 

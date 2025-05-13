@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -250,7 +250,7 @@ Frame.io로 돌아가서 자산 **citisignal-fiber.psd**&#x200B;에서 사용자
 
 ![프레임 IO](./images/frame38.png)
 
-Workfront Fusion으로 다시 전환하고 **Webhook 응답** 모듈에서 버블을 클릭합니다. **OUTPUT** 아래에 양식의 JSON 페이로드가 포함된 본문이 표시됩니다. **한 번 실행**&#x200B;을 다시 클릭합니다.
+Workfront Fusion으로 다시 전환하고 **Webhook 응답** 모듈에서 버블을 클릭합니다. **INPUT** 아래에 양식에 대한 JSON 페이로드가 포함된 본문이 표시됩니다. **한 번 실행**&#x200B;을 다시 클릭합니다.
 
 ![프레임 IO](./images/frame40.png)
 

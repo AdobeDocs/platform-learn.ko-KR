@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1438'
 ht-degree: 1%
 
 ---
@@ -186,7 +186,7 @@ Azure 저장소 탐색기에서 컨테이너를 마우스 오른쪽 단추로 �
 
 ![Azure 저장소](./images/az28.png){zoomable="yes"}
 
-**SAS-token**&#x200B;을 받은 후 **복사**&#x200B;를 선택하세요.
+**공유 액세스 서명**&#x200B;을(를) 받은 후 **복사**&#x200B;를 선택하여 URL을 복사합니다.
 
 ![Azure 저장소](./images/az29.png){zoomable="yes"}
 
@@ -278,8 +278,8 @@ URL은 다음과 같아야 합니다.
 
 위의 URL에서 두 가지 값을 파생할 수 있습니다.
 
-- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_URL`:`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`:`vangeluw`
 - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 
 ### 장기 쓰기 SAS 토큰
@@ -312,9 +312,9 @@ URL은 다음과 같아야 합니다.
 
 위의 URL에서 두 가지 값을 파생할 수 있습니다.
 
-- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`: `vangeluw`
-- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_URL`:`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`:`vangeluw`
+- `AZURE_STORAGE_SAS_READ`:`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 ### Postman의 변수
@@ -323,9 +323,9 @@ URL은 다음과 같아야 합니다.
 
 그런 다음 위의 SAS 토큰의 다양한 요소를 저장하는 변수를 Postman에서 만들어야 합니다. 두 URL에 동일한 몇 가지 값이 있습니다.
 
-- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`: `vangeluw`
-- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_URL`:`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`:`vangeluw`
+- `AZURE_STORAGE_SAS_READ`:`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 향후 API 상호 작용의 경우, 주요 변경 사항은 에셋 이름이지만 위의 변수는 동일합니다. 이 경우 매번 수동으로 지정할 필요가 없도록 Postman에서 변수를 만드는 것이 적절합니다.
@@ -351,9 +351,9 @@ Postman에서 **환경**&#x200B;을 선택하고 **모든 변수**&#x200B;을 �
 
 그런 다음 위의 SAS 토큰의 다양한 요소를 저장하는 PostBuster에서 변수를 만들어야 합니다. 두 URL에 동일한 몇 가지 값이 있습니다.
 
-- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`: `vangeluw`
-- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_URL`:`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`:`vangeluw`
+- `AZURE_STORAGE_SAS_READ`:`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 포스트버스터 열기 **기본 환경**&#x200B;을 선택한 다음 **편집** 아이콘을 클릭하여 기본 환경을 엽니다.
