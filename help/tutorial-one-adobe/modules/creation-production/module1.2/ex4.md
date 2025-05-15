@@ -238,7 +238,7 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 ![WF Fusion](./images/wffc31.png)
 
-**고급 설정**&#x200B;에서 **예**를 선택하여 같은 이름의 파일을 덮어씁니다.
+**고급 설정**&#x200B;에서 **예**&#x200B;를 선택하여 같은 이름의 파일을 덮어씁니다.
 **추가를 클릭합니다**.
 
 ![WF Fusion](./images/wffc32.png)
