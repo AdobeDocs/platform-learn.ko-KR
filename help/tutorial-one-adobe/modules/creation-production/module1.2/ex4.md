@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -125,9 +125,13 @@ Adobe I/O 프로젝트 [여기](https://developer.adobe.com/console/projects.){t
 
 ![WF Fusion](./images/wffcff6.png)
 
-그런 다음 들어오는 **사용자 지정 Webhook**&#x200B;에서 시나리오에 제공된 변수 **prompt**&#x200B;을(를) 선택합니다. **확인**&#x200B;을 클릭합니다.
+그런 다음 들어오는 **사용자 지정 Webhook**&#x200B;에서 시나리오에 제공된 변수 **prompt**&#x200B;을(를) 선택합니다.
 
 ![WF Fusion](./images/wffcff7.png)
+
+그런 다음 **모델 버전** **프롬프트**&#x200B;을(를) **image4 표준**(으)로 설정합니다. **확인**&#x200B;을 클릭합니다.
+
+![WF Fusion](./images/wffcff7b.png)
 
 계속하기 전에 이 연습에서는 시나리오에서 이전 경로를 비활성화해야 합니다. 현재 구성 중인 새 경로만 사용합니다. 이렇게 하려면 **Router** 모듈과 **Iterator** 모듈 사이에 있는 **렌치** 아이콘을 클릭하고 **경로 비활성화**&#x200B;를 선택합니다.
 
@@ -234,7 +238,7 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 ![WF Fusion](./images/wffc31.png)
 
-**고급 설정**&#x200B;에서 **예**&#x200B;를 선택하여 같은 이름의 파일을 덮어씁니다.
+**고급 설정**&#x200B;에서 **예**를 선택하여 같은 이름의 파일을 덮어씁니다.
 **추가를 클릭합니다**.
 
 ![WF Fusion](./images/wffc32.png)
@@ -261,8 +265,6 @@ Postman으로 이동하여 요청에서 메시지를 확인한 다음 **보내�
 
 ## 1.2.4.3 PSD 파일의 텍스트 레이어 변경
 
-### 클릭 유도 문안 텍스트
-
 그런 다음 **Adobe Photoshop - PSD 편집 적용** 모듈을 마우스로 가리킨 다음 **+** 아이콘을 클릭합니다.
 
 ![WF Fusion](./images/wffc34.png)
@@ -277,67 +279,59 @@ Postman으로 이동하여 요청에서 메시지를 확인한 다음 **보내�
 
 그럼 이걸 보셔야죠 먼저 이전에 구성한 Adobe Photoshop 연결을 선택합니다. 이 연결을 `--aepUserLdap-- Adobe IO`(으)로 지정해야 합니다.
 
-이제 이전 단계의 출력인 **입력 파일**&#x200B;의 위치를 정의해야 하며 **레이어**&#x200B;에서 변경할 텍스트 레이어의 **이름**&#x200B;을 입력해야 합니다.
+이제 이전 단계의 출력인 **입력 파일**&#x200B;의 위치를 정의해야 하며 **레이어**&#x200B;에서 텍스트를 변경해야 하는 각 레이어에 대해 **+ 항목 추가**&#x200B;를 클릭해야 합니다.
 
 ![WF Fusion](./images/wffc37.png)
 
-**입력 파일**&#x200B;의 경우 **입력 파일 저장소**&#x200B;에 대해 **Azure**&#x200B;을(를) 선택하고 이전 요청인 **Adobe Photoshop - PSD 편집 적용**&#x200B;의 출력을 선택하십시오. `data[]._links.renditions[].href`에서 가져올 수 있습니다.
+**입력 파일**&#x200B;의 경우 **입력 파일 저장소**&#x200B;에 대해 **Azure**&#x200B;를 선택하고 이전 요청에서 출력을 선택하십시오. **Adobe Photoshop - PSD 편집 적용**. ``{{XX.data[].`_links`.renditions[].href}}``(XX를 이전 모듈의 시퀀스 번호로 바꾸기 Adobe Photoshop - PSD 편집 적용)과 같이 정의할 수 있습니다.
+
+그런 다음 **레이어**&#x200B;에서 **+항목 추가**&#x200B;를 클릭하여 업데이트해야 하는 텍스트 레이어를 추가합니다.
 
 ![WF Fusion](./images/wffc37a.png)
 
-**citisignal-fiber.psd** 파일을 엽니다. 파일에서 콜 투 액션이 포함된 레이어의 이름이 **2048x2048-cta**&#x200B;임을 알 수 있습니다.
+두 가지 변경 사항이 있습니다. **citisignal-fiber.psd** 파일의 CTA 텍스트와 단추 텍스트를 업데이트해야 합니다.
+
+레이어 이름을 찾으려면 **citisignal-fiber.psd** 파일을 엽니다. 파일에서 콜 투 액션이 포함된 레이어의 이름이 **2048x2048-cta**&#x200B;임을 알 수 있습니다.
 
 ![WF Fusion](./images/wffc38.png)
 
-대화 상자의 **이름** 아래에 이름 **2048x2048-cta**&#x200B;을(를) 입력하십시오.
+**citisignal-fiber.psd** 파일에서 call to action이 포함된 레이어의 이름이 **2048x2048-button-text**&#x200B;이라는 것도 볼 수 있습니다.
+
+![WF Fusion](./images/wffc44.png)
+
+먼저 **2048x2048-cta** 레이어에 적용할 변경 사항을 구성해야 합니다. 대화 상자의 **이름** 아래에 이름 **2048x2048-cta**&#x200B;을(를) 입력하십시오.
 
 ![WF Fusion](./images/wffc39.png)
 
-**텍스트** > **컨텐츠**&#x200B;가 표시될 때까지 아래로 스크롤합니다. Webhook 페이로드에서 변수 **cta**&#x200B;을(를) 선택하십시오.
+**텍스트** > **컨텐츠**&#x200B;가 표시될 때까지 아래로 스크롤합니다. Webhook 페이로드에서 변수 **cta**&#x200B;을(를) 선택하십시오. **추가를 클릭합니다**.
 
 ![WF Fusion](./images/wffc40.png)
 
-**출력**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **저장소**&#x200B;에 대해 **Azure**&#x200B;를 선택하세요. **파일 위치**&#x200B;에 대해 아래 위치를 입력하십시오. 생성된 모든 파일에 고유한 이름이 있는지 확인하는 데 사용되는 파일 이름에 `{{timestamp}}` 변수를 추가했는지 확인하십시오. 또한 **Type**&#x200B;을(를) **vnd.adobe.photoshop**(으)로 설정하십시오. **확인**&#x200B;을 클릭합니다.
+그럼 이걸 보셔야죠 업데이트해야 하는 텍스트 레이어를 추가하려면 **레이어** 아래의 **+항목 추가**&#x200B;를 클릭합니다.
+
+![WF Fusion](./images/wffc40a.png)
+
+대화 상자의 **이름** 아래에 이름 **2048x2048-button-text**&#x200B;을(를) 입력하십시오.
+
+![WF Fusion](./images/wffc40b.png)
+
+**텍스트** > **컨텐츠**&#x200B;가 표시될 때까지 아래로 스크롤합니다. Webhook 페이로드에서 변수 **button**&#x200B;을 선택합니다. **추가를 클릭합니다**.
+
+![WF Fusion](./images/wffc40c.png)
+
+그럼 이걸 보셔야죠
+
+![WF Fusion](./images/wffc40d.png)
+
+**출력**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **저장소**&#x200B;에 대해 **Azure**&#x200B;를 선택하세요. **파일 위치**&#x200B;에 대해 아래 위치를 입력하십시오. 생성된 모든 파일에 고유한 이름이 있는지 확인하는 데 사용되는 파일 이름에 `{{timestamp}}` 변수를 추가했는지 확인하십시오. 또한 **Type**&#x200B;을(를) **vnd.adobe.photoshop**(으)로 설정하십시오.
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### 단추 텍스트
+**Type**&#x200B;을(를) **vnd.adobe.photoshop**(으)로 설정합니다. **확인**&#x200B;을 클릭합니다.
 
-방금 만든 모듈을 마우스 오른쪽 단추로 클릭하고 **복제**&#x200B;를 선택합니다. 이렇게 하면 두 번째 유사한 모듈이 생성됩니다.
-
-![WF Fusion](./images/wffc42.png)
-
-복제된 모듈을 이전 **Adobe Photoshop - 텍스트 레이어 편집** 모듈에 연결합니다.
-
-![WF Fusion](./images/wffc42a.png)
-
-그럼 이걸 보셔야죠 먼저 이전에 구성한 Adobe Photoshop 연결을 선택합니다. 이 연결을 `--aepUserLdap-- Adobe IO`(으)로 지정해야 합니다.
-
-이제 이전 단계의 출력인 **입력 파일**&#x200B;의 위치를 정의해야 하며 **레이어**&#x200B;에서 변경할 텍스트 레이어의 **이름**&#x200B;을 입력해야 합니다.
-
-![WF Fusion](./images/wffc43.png)
-
-**입력 파일**&#x200B;에 대해 **입력 파일 저장소**&#x200B;에 대해 **Azure**&#x200B;을(를) 선택하고 이전 요청인 **Adobe Photoshop - 텍스트 레이어 편집**&#x200B;에서 출력을 선택하십시오. `data[]._links.renditions[].href`에서 가져올 수 있습니다.
-
-**citisignal-fiber.psd** 파일을 엽니다. 파일에서 콜 투 액션이 포함된 레이어의 이름이 **2048x2048-button-text**&#x200B;이라는 것을 알 수 있습니다.
-
-![WF Fusion](./images/wffc44.png)
-
-대화 상자의 **이름** 아래에 이름 **2048x2048-button-text**&#x200B;을(를) 입력하십시오.
-
-![WF Fusion](./images/wffc43.png)
-
-**텍스트** > **컨텐츠**&#x200B;가 표시될 때까지 아래로 스크롤합니다. Webhook 페이로드에서 변수 **button**&#x200B;을 선택합니다.
-
-![WF Fusion](./images/wffc45.png)
-
-**출력**&#x200B;이 표시될 때까지 아래로 스크롤합니다. **저장소**&#x200B;에 대해 **Azure**&#x200B;를 선택하세요. **파일 위치**&#x200B;에 대해 아래 위치를 입력하십시오. 생성된 모든 파일에 고유한 이름이 있는지 확인하는 데 사용되는 파일 이름에 `{{timestamp}}` 변수를 추가했는지 확인하십시오. 또한 **Type**&#x200B;을(를) **vnd.adobe.photoshop**(으)로 설정하십시오. **확인**&#x200B;을 클릭합니다.
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
+![WF Fusion](./images/wffc41a.png)
 
 변경 내용을 저장하려면 **저장**&#x200B;을 클릭하세요.
 
@@ -369,9 +363,13 @@ Photoshop 파일에 이러한 변경 사항을 적용한 후 이 시나리오를
 
 ![WF Fusion](./images/wffc51.png)
 
-`{{XX.data[]._links.renditions[].href}}` 변수를 복사하여 붙여 넣고 **XX**&#x200B;을(를) 마지막 **Adobe Photoshop - 텍스트 레이어 편집** 모듈의 시퀀스 번호로 바꿉니다(이 경우 **25**). **고급 설정 표시**&#x200B;에 대한 확인란을 활성화한 다음 **항목 추가**&#x200B;를 클릭합니다.
+`{{XX.data[]._links.renditions[].href}}` 변수를 복사하여 붙여 넣고 **XX**&#x200B;을(를) 마지막 **Adobe Photoshop - 텍스트 레이어 편집** 모듈의 시퀀스 번호로 바꿉니다(이 경우 **30**).
 
 ![WF Fusion](./images/wffc52.png)
+
+**고급 설정 표시**&#x200B;에 대한 확인란을 활성화한 다음 **항목 추가**&#x200B;를 클릭합니다.
+
+![WF Fusion](./images/wffc52b.png)
 
 **Key** 필드에 `Content-Type`을(를) 입력합니다. **값** 필드에 `application/json`을(를) 입력하십시오. **추가를 클릭합니다**.
 
