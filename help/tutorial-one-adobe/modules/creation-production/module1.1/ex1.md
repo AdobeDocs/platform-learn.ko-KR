@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 64cce12ba89112583a9cabb4558622ba970335f0
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,37 @@ Postman 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼리하는
 
 이 연습을 계속하려면 [Adobe I/O 프로젝트](./../../../modules/getting-started/gettingstarted/ex6.md)의 설정을 완료해야 하며 [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) 또는 [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md)와 같이 API와 상호 작용하는 응용 프로그램을 구성해야 합니다.
 
-## 1.1.1.2 탐색 firefly.adobe.com - 1단계
+## 1.1.1.2 API 기본 사항
+
+API 요청에는 여러 유형이 있습니다.
+
+- **GET**: 상태 보고서 가져오기와 같이 API 끝점에서 정보를 검색하려고 할 때 사용됩니다.
+- **POST**: Adobe Firefly Services에서 새 이미지를 생성하도록 하는 것과 같이 새로운 작업을 수행해야 할 때 사용됩니다
+- **PUT**: 기존 데이터를 완전히 업데이트하는 데 사용됩니다.
+- **PATCH**: 기존 데이터를 선택적으로 업데이트하는 데 사용됩니다.
+- **DELETE**: 데이터를 삭제하는 데 사용됩니다.
+
+API를 사용하여 작업할 때 다양한 API 엔드포인트에서 응답 코드가 반환되는 것을 볼 수도 있습니다.
+
+예상할 수 있는 5가지 유형의 응답이 있습니다.
+
+- **1xx 정보 응답**: 요청을 받았습니다. 프로세스를 계속합니다.
+- **2xx 성공**: 요청이 정상적으로 수신, 확인 및 수락되었습니다.
+- **3xx 리디렉션**: 요청을 완료하려면 추가 작업을 수행해야 합니다.
+- **4xx 클라이언트 오류**: 요청에 잘못된 구문이 포함되어 있거나 완료할 수 없습니다.
+- **5xx 서버 오류**: 서버가 올바른 요청을 수행하지 못했습니다.
+
+다음은 일반적인 응답 코드의 예입니다.
+
+- **200 OK**: 좋습니다. 요청이 완료되었습니다.
+- **201 생성됨**: 예를 들어 이미지가 생성되었습니다
+- **202 수락됨**: 양호한 수준이며 요청이 수락되어 처리됩니다.
+- **401 권한 없음**: 올바르지 않습니다. 액세스 토큰이 유효하지 않을 수 있습니다.
+- **403 사용할 수 없음**: 올바르지 않습니다. 실행하려는 작업에 필요한 권한이 없을 수 있습니다.
+- **404 찾을 수 없음**: 올바르지 않습니다. 연결하려는 URL이 없을 수 있습니다.
+- **429 요청이 너무 많음**: 좋지 않습니다. 짧은 기간에 많은 요청을 보냈을 수 있습니다. 나중에 다시 시도하십시오.
+
+## 1.1.1.3 탐색 firefly.adobe.com - 1단계
 
 Adobe Firefly Services을 살펴보도록 하겠습니다. 자세한 내용은 CitiSignal 이미지 생성 예제를 참조하십시오. CitiSignal 디자인 팀이 CitiSignal 브랜드 이름의 네온 버전을 생성하려고 합니다. 이를 위해 Adobe Firefly Services을 사용하고 싶어합니다.
 
@@ -29,7 +59,7 @@ Adobe Firefly Services을 살펴보도록 하겠습니다. 자세한 내용은 C
 
 ![Postman](./images/CitiSignal.jpg)
 
-### 1.1.1.2.1 컴포지션 참조 이미지 만들기
+### 1.1.1.3.1 컴포지션 참조 이미지 만들기
 
 [이 샘플 이미지](./images/CitiSignal.jpg)를 사용하거나 직접 텍스트를 만들어 실험해 볼 수 있습니다. Adobe Illustrator에서 아래 단계에 따라 고유한 이미지 파일을 만듭니다. 미리 정의된 이미지를 사용하는 경우 아래 섹션을 건너뛰고 **1.1.1.2단계로 이동합니다.2 직접 이미지 생성**.
 
@@ -81,7 +111,7 @@ Adobe Firefly Services을 살펴보도록 하겠습니다. 자세한 내용은 C
 
 ![Postman](./images/ill13.png)
 
-### 1.1.1.2.2 이미지 생성
+### 1.1.1.3.2 이미지 생성
 
 [https://firefly.adobe.com](https://firefly.adobe.com)&#x200B;(으)로 이동합니다. **프로필** 아이콘을 클릭하고 올바른 **계정**&#x200B;에 로그인했는지 확인하십시오. 올바른 계정 번호는 `--aepImsOrgName--`입니다. 필요한 경우 **프로필 전환**&#x200B;을 클릭하여 해당 계정으로 전환합니다.
 
@@ -109,7 +139,7 @@ Adobe Firefly Services을 살펴보도록 하겠습니다. 자세한 내용은 C
 
 이제 Firefly을 사용하여 몇 분 만에 디자인 문제를 해결하는 방법을 배웠습니다.
 
-## 1.1.1.3 탐색 firefly.adobe.com - 2단계
+## 1.1.1.4 탐색 firefly.adobe.com - 2단계
 
 [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image)&#x200B;(으)로 이동합니다. 그럼 이걸 보셔야죠 **모델** 드롭다운 목록을 클릭합니다. Adobe Firefly Services에는 3개의 사용 가능한 버전이 있습니다.
 
@@ -184,13 +214,13 @@ UI를 다시 살펴보십시오. **종횡비**&#x200B;을 **와이드스크린(1
 
 다음 연습에서는 Firefly Services을 사용하여 유사한 작업을 수행한 다음 UI 대신 API를 사용합니다. 이 예제에서 시드 숫자는 두 마리의 말이 머리를 마주보고 서로를 바라보는 첫 번째 이미지의 **142194**&#x200B;입니다.
 
-## 1.1.1.4 Adobe I/O - access_token
+## 1.1.1.5 Adobe I/O - access_token
 
 **Adobe IO - OAuth** 컬렉션에서 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 요청을 선택하고 **전송**&#x200B;을 선택합니다. 응답에는 새 **accesstoken**&#x200B;이(가) 포함되어야 합니다.
 
 ![Postman](./images/ioauthresp.png)
 
-## 1.1.1.5 Firefly Services API, 텍스트 2 이미지, 이미지 3
+## 1.1.1.6 Firefly Services API, 텍스트 2 이미지, 이미지 3
 
 유효하고 새로운 access_token이 있으므로 첫 번째 요청을 Firefly Services API로 전송할 준비가 되었습니다.
 
@@ -269,7 +299,7 @@ UI를 다시 살펴보십시오. **종횡비**&#x200B;을 **와이드스크린(1
 
 ![Firefly](./images/ff10.png)
 
-## 1.1.1.6 Firefly Services API, 세대 확장
+## 1.1.1.7 Firefly Services API, 세대 확장
 
 **FF - Firefly Services 기술 내부자** 컬렉션에서 **POST - Firefly - Gen Expand**(이)라는 요청을 선택하고 요청의 **Body**(으)로 이동합니다.
 
@@ -297,15 +327,25 @@ UI를 다시 살펴보십시오. **종횡비**&#x200B;을 **와이드스크린(1
 
 ![Firefly](./images/ff15.png)
 
-## 1.1.1.7 Firefly Services API, 텍스트 2 이미지, 이미지 4 및 이미지 4 Ultra
+## 1.1.1.8 Firefly Services API, 텍스트 2 이미지, 이미지 4 및 이미지 4 Ultra
 
-### 1.1.1.7.1 image4_standard
+Firefly Image Model 4의 최신 릴리스에서는 몇 가지 기능이 개선되었습니다.
+
+- Firefly Image Model 4는 향상된 정의 및 세부 사항을 통해 2K 해상도 출력을 제공합니다.
+- Firefly Image Model 4는 텍스트 렌더링, 인간, 동물 및 아키텍처에서 상당한 개선을 제공합니다.
+- Firefly Image Model 4는 IP 친화적이고 상업적으로 안전한 생성 AI에 대한 Adobe의 약속을 유지합니다.
+
+Firefly Image Model 4는 사람, 동물 및 세부 장면에 대한 뛰어난 이미지를 제공하며 Image Model 4 Ultra를 사용하여 초현실적인 인간 상호 작용, 건축 요소 및 복잡한 풍경을 통한 이미지를 생성할 수 있습니다&#x200B;.
+
+### 1.1.1.8.1 image4_standard
 
 **FF - Firefly Services 기술 내부자** 컬렉션에서 **POST - Firefly - T2I V4**(이)라는 요청을 선택하고 요청의 **헤더**(으)로 이동합니다.
 
 요청의 URL이 **Firefly Services API, 텍스트 2 이미지, 이미지 3** 요청(**https://firefly-api.adobe.io/v3/images/generate**)과 다릅니다. 이 URL은 **https://firefly-api.adobe.io/v3/images/generate-async**&#x200B;을 가리킵니다. URL에 **-async**&#x200B;을(를) 추가하면 비동기 끝점을 사용하고 있음을 의미합니다.
 
 **Header** 변수에서 **x-model-version**&#x200B;이라는 새 변수를 볼 수 있습니다. Firefly Image 4 및 Image 4 Ultra와 상호 작용할 때 필요한 헤더입니다. 이미지를 생성할 때 Firefly Image 4 또는 Image 4 Ultra를 사용하려면 헤더의 값을 `image4_standard` 또는 `image4_ultra`(으)로 설정해야 합니다. 이 예제에서는 `image4_standard`을(를) 사용합니다.
+
+**x-model-version**&#x200B;을(를) `image4_standard` 또는 `image4_ultra`(으)로 설정하지 않으면 Firefly Services에서 기본적으로 현재 `image3`을(를) 사용합니다.
 
 ![Firefly](./images/ffim4_1.png)
 
@@ -333,7 +373,7 @@ UI를 다시 살펴보십시오. **종횡비**&#x200B;을 **와이드스크린(1
 
 ![Firefly](./images/ffim4_7.png)
 
-### 1.1.1.7.2 image4_ultra
+### 1.1.1.8.2 image4_ultra
 
 **FF - Firefly Services 기술 내부자** 컬렉션에서 이름이 **POST - Firefly - T2I V4**&#x200B;인 요청으로 돌아가서 요청의 **헤더**(으)로 이동합니다.
 
