@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -166,6 +166,13 @@ Microsoft Azure Storage Explorer 앱으로 돌아가서 구독을 선택하고 *
 ## 1.1.2.5 수동 파일 업로드 및 이미지 파일을 스타일 참조로 사용
 
 원하는 이미지 파일을 업로드하거나 [이 파일](./images/gradient.jpg){target="_blank"}을 컨테이너에 업로드하십시오.
+
+>[!NOTE]
+>
+>이미지를 스타일 참조, 컴포지션 참조 또는 마스크 이미지로 사용하는 경우 다음 이미지 유형이 적용됩니다.
+>- image/jpeg
+>- image/png
+>- image/webp
 
 ![Azure 저장소](./images/gradient.jpg)
 

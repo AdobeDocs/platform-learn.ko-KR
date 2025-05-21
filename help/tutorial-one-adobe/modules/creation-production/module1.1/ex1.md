@@ -6,16 +6,31 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
 workflow-type: tm+mt
-source-wordcount: '2596'
+source-wordcount: '3182'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Firefly Services 시작하기
 
-Postman 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼리하는 방법에 대해 알아봅니다.
+Firefly Services에는 **Firefly API**, **Lightroom API**, **Photoshop API**, **InDesign API** 및 **컨텐츠 태그 지정 API**&#x200B;가 포함되어 있습니다.
+
+이러한 API 세트는 Photoshop 및 Lightroom과 같은 Adobe의 크리에이티브 도구의 힘과 컨텐츠 태깅, 생성 채우기, 텍스트 변환 이미지 등과 같은 최신 AI/ML 기능을 결합합니다.
+
+Firefly Services을 사용하면 컨텐츠를 자동화하고, 확장하고, 최신 AI/ML 기술을 활용하여 워크플로우를 과급할 수 있습니다.
+
+이 연습에서는 Postman 및 Adobe I/O을 사용하여 다양한 Adobe Firefly Services API와 작업하는 방법을 알아봅니다.
+
+이 연습에서는 특히 다음과 같은 Firefly API에 중점을 둡니다.
+
+- **Firefly 이미지 생성 API**: 이 API는 Firefly 모델을 사용하여 이미지를 생성하는 데 사용됩니다.
+- **Firefly 유사 이미지 생성 API**: 이 API는 기존 이미지와 유사한 이미지를 생성하는 데 사용됩니다.
+- **Firefly 이미지 API 확장**: 이 API는 기존 이미지를 더 큰 종횡비/크기로 확장하는 데 사용됩니다
+- **Firefly 이미지 채우기 API**: 이 API는 Firefly이 프롬프트를 기반으로 생성하는 이미지를 기반으로 기존 이미지의 영역을 채웁니다. 이는 채워져야 하는 영역을 정의하는 마스크를 사용하여 달성된다.
+- **Firefly 개체 합성 API 생성**: 이 API를 사용하면 입력 이미지를 직접 제공할 수 있습니다. 그러면 이 API는 이미지를 Firefly에서 생성된 이미지와 결합하여 이미지 합성 또는 장면을 만듭니다.
+- **Firefly 사용자 지정 모델 API**: 이 API를 사용하면 고유한 Firefly 사용자 지정 모델로 작업하여 Firefly 사용자 지정 모델을 기반으로 새 이미지를 생성할 수 있습니다
 
 ## 1.1.1.1 필수 구성 요소
 
@@ -216,7 +231,7 @@ UI를 다시 살펴보십시오. **종횡비**&#x200B;을 **와이드스크린(1
 
 ## 1.1.1.5 Adobe I/O - access_token
 
-**Adobe IO - OAuth** 컬렉션에서 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 요청을 선택하고 **전송**&#x200B;을 선택합니다. 응답에는 새 **accesstoken**&#x200B;이(가) 포함되어야 합니다.
+**Adobe IO - OAuth** 컬렉션에서 이름이 **POST - 액세스 토큰 가져오기**&#x200B;인 요청을 선택하고 **전송**&#x200B;을 선택합니다. 응답에는 새 **access_token**&#x200B;이 포함되어야 합니다.
 
 ![Postman](./images/ioauthresp.png)
 
@@ -224,13 +239,26 @@ UI를 다시 살펴보십시오. **종횡비**&#x200B;을 **와이드스크린(1
 
 유효하고 새로운 access_token이 있으므로 첫 번째 요청을 Firefly Services API로 전송할 준비가 되었습니다.
 
-**FF - Firefly Services 기술 내부자** 컬렉션에서 **POST - Firefly - T2I V3**(이)라는 요청을 선택합니다. **Body**(으)로 이동하여 프롬프트를 확인합니다. **보내기**&#x200B;를 클릭합니다.
-
-여기서 사용 중인 요청은 **동기** 요청으로, 몇 초 내에 요청된 이미지가 포함된 응답을 제공합니다.
+여기서 사용할 요청은 **동기** 요청이며, 몇 초 내에 요청된 이미지가 포함된 응답을 제공합니다.
 
 >[!NOTE]
 >
 >Firefly Image 4 및 Image 4 Ultra의 릴리스에서는 비동기 요청을 위해 동기 요청이 더 이상 사용되지 않습니다. 이 자습서에서 아래에 비동기 요청에 대한 연습을 찾을 수 있습니다.
+
+**FF - Firefly Services 기술 내부자** 컬렉션에서 **POST - Firefly - T2I V3**(이)라는 요청을 선택합니다. **Headers**(으)로 이동하여 키/값 쌍 조합을 확인하십시오.
+
+| 키 | 값 |
+|:-------------:| :---------------:| 
+| `x-api-key` | `{{API_KEY}}` |
+| `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
+
+이 요청의 두 값 모두 앞에 정의된 환경 변수를 참조합니다. `{{API_KEY}}`이(가) Adobe I/O 프로젝트의 필드 **클라이언트 ID**&#x200B;을(를) 참조합니다. 이 자습서의 **시작하기** 섹션의 일부로 Postman에서 이를 구성했습니다.
+
+필드 **권한 부여**&#x200B;의 값이 좀 특별합니다. `Bearer {{ACCESS_TOKEN}}`. 여기에는 이전 단계에서 생성한 **액세스 토큰**&#x200B;에 대한 참조가 포함되어 있습니다. **Adobe IO - OAuth** 컬렉션에서 요청 **POST - 액세스 토큰 가져오기**&#x200B;를 사용하여 **액세스 토큰**&#x200B;을(를) 수신하면 필드 **access_token**&#x200B;을(를) 환경 변수로 저장한 스크립트가 Postman에서 실행되었으며, 이는 현재 요청 **POST - Firefly - T2I V3**&#x200B;에서 참조되고 있습니다. 단어 **전달자**&#x200B;의 특정 추가와 `{{ACCESS_TOKEN}}` 앞에 공백을 추가하십시오. 단어 전달자는 대/소문자를 구분하며 공백이 필요합니다. 이 작업이 올바르게 수행되지 않으면 Adobe I/O에서 **액세스 토큰**&#x200B;을(를) 올바르게 처리할 수 없으므로 **401 Unauthorized** 오류가 반환됩니다.
+
+![Firefly](./images/ff0.png)
+
+그런 다음 **Body**(으)로 이동하여 프롬프트를 확인합니다. **보내기**&#x200B;를 클릭합니다.
 
 ![Firefly](./images/ff1.png)
 
@@ -400,6 +428,30 @@ Firefly Image Model 4는 사람, 동물 및 세부 장면에 대한 뛰어난 �
 그러면 필드에 있는 **말의 비현실적인 이미지를 볼 수 있습니다**.
 
 ![Firefly](./images/ffim4_16.png)
+
+### 음성 프롬프트
+
+Firefly에 생성될 이미지에 항목을 포함하지 않도록 요청하려는 경우 API를 사용할 때 필드 `negativePrompt`을(를) 포함할 수 있습니다(이 옵션은 현재 UI에 노출되지 않음). 예를 들어, **필드의 말** 프롬프트가 실행될 때 꽃을 포함하지 않으려면 API 요청의 **Body**&#x200B;에 이를 지정할 수 있습니다.
+
+```
+"negativePrompt": "no flowers",
+```
+
+**FF - Firefly Services Tech Insiders** 컬렉션에서 **POST - Firefly - T2I V4** 요청으로 이동한 다음 요청의 **Body**(으)로 이동합니다. 위의 텍스트를 요청 본문에 붙여넣습니다. **보내기**&#x200B;를 클릭합니다.
+
+![Firefly](./images/ffim4_17.png)
+
+그럼 이걸 보셔야죠
+
+![Firefly](./images/ffim4_18.png)
+
+실행 중인 작업의 상태 보고서를 확인하려면 **FF - Firefly Services 기술 내부자** 컬렉션에서 **GET - Firefly - 상태 보고서 가져오기** 요청을 선택합니다. 클릭하여 연 다음 **보내기**&#x200B;를 클릭합니다. 생성된 이미지의 URL을 선택하고 브라우저에서 엽니다.
+
+![Firefly](./images/ffim4_19.png)
+
+그러면 생성된 이미지가 표시되며 꽃은 포함되지 않아야 합니다.
+
+![Firefly](./images/ffim4_20.png)
 
 ## 다음 단계
 
