@@ -9,22 +9,18 @@ duration: 262
 last-substantial-update: 2025-02-27T00:00:00Z
 jira: KT-16731
 exl-id: a61a83fe-76af-4b29-95ee-2fdb9b6bc096
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 837c9b4386fbca106db313ee4e27fc7b69ea54ff
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 17%
+source-wordcount: '183'
+ht-degree: 20%
 
 ---
 
 # 아이덴티티 그래프 연결 규칙 개요
 
->[!AVAILABILITY]
->
->ID 그래프 연결 규칙은 현재 제한적 가용성입니다. 개발 샌드박스의 기능에 액세스하는 방법에 대한 자세한 내용은 Adobe 계정 팀에 문의하십시오.
+ID 그래프 연결 규칙이 데이터 설계자가 정확한 고객 프로필을 유지하고 그래프 붕괴를 방지하는 데 어떻게 도움이 되는지에 대한 개요를 살펴보십시오. 자세한 내용은 [ID 그래프 연결 규칙 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)를 참조하세요.
 
-ID 그래프 연결 규칙이 데이터 설계자가 정확한 고객 프로필을 유지하고 그래프 붕괴를 방지하는 데 어떻게 도움이 되는지에 대한 개요를 살펴보십시오. 자세한 내용은 [ID 그래프 연결 규칙 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)를 참조하세요.
-
->[!VIDEO](https://video.tv.adobe.com/v/3448279/?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
 ## 구성
 
@@ -41,7 +37,7 @@ ID 그래프 연결 규칙이 데이터 설계자가 정확한 고객 프로필�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="ID 그래프 연결 규칙 - 그래프 시뮬레이션" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444050/?format=jpeg&nocache=1747355376342&captions=kor" alt="ID 그래프 연결 규칙 - 그래프 시뮬레이션"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="ID 그래프 연결 규칙 - 그래프 시뮬레이션"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
