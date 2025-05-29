@@ -4,9 +4,9 @@ description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,13 @@ Adobe Experience Platform 데이터 수집은 여러 사용 사례에 브랜드�
 
 ## UI 살펴보기
 
-[Adobe Experience Platform 데이터 수집](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다.
+[Adobe Experience Platform 데이터 수집](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다. 올바른 환경을 사용하고 있는지 확인하십시오. 올바른 환경은 `--aepImsOrgName--`이어야 합니다.
+
+>[!NOTE]
+>
+>이 자습서는 환경 **Experience Platform International**&#x200B;을(를) 사용하여 문서화되었습니다. 환경 이름이 다를 수 있으므로 스크린샷에 **Experience Platform International** 이름이 표시될 때마다 `--aepImsOrgName--` 환경 이름으로 바꾸어야 합니다.
+
+![시작 속성 보기](./images/launch0.png)
 
 **태그**&#x200B;로 이동합니다. 이제 **[!UICONTROL 속성]** 보기가 표시됩니다. 여기에 나열된 속성은 튜토리얼 관리를 위한 것입니다. 이러한 속성은 다음을 나타냅니다.
 
@@ -55,9 +61,9 @@ Adobe Experience Platform 데이터 수집은 여러 사용 사례에 브랜드�
 Adobe Experience Platform 데이터 수집은 Adobe Experience Platform 자습서 이상의 범위를 갖는 매우 고급 도구입니다. 조직은 태그 관리 기능에 Adobe Experience Platform 데이터 수집을 사용하지 않고, 대신 코드를 삽입하고 태그를 관리하는 데 Adobe 이외의 태그 관리 솔루션을 사용할 수 있습니다. Adobe 및 Adobe Professional Services에서는 비 Adobe 태그 관리 솔루션을 사용할 수 있습니다.
 Adobe Experience Platform 데이터 수집을 이해하는 데 관심이 있는 사람들을 위한 몇 가지 추가 읽기가 아래에 포함되어 있습니다.
 
-- [Adobe Experience Platform 데이터 수집 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)
+- [Adobe Experience Platform 데이터 수집 사용 안내서](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 - [Web SDK 튜토리얼을 통해 Adobe Experience Cloud 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR)
-- [사용자 권한 설정](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ko)
+- [사용자 권한 설정](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
 - [API 설명서](https://developer.adobelaunch.com/api/)
 
 ## 다음 단계

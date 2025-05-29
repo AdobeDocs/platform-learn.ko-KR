@@ -4,10 +4,10 @@ description: 기초 - FAC - 스키마, 데이터 모델 및 링크 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +67,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb5.png)
 
-페더레이션 데이터베이스를 선택하고 **+ 테이블 추가**&#x200B;를 클릭합니다.
+페더레이션 데이터베이스를 선택하고 **다음**&#x200B;을 클릭합니다.
 
 ![FAC](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-**추가를 클릭합니다**.
+**다음**&#x200B;을 클릭합니다.
 
 ![FAC](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 이 연습에서는 변경할 필요가 없습니다.
 
-**만들기**&#x200B;를 클릭합니다.
+**완료**&#x200B;를 클릭합니다.
 
 ![FAC](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb10.png)
 
-그러면 데이터 샘플이 표시됩니다.
+그러면 데이터 샘플이 표시됩니다. 이 데이터는 Snowflake에서 직접 로드되며 AEP에서 지속되지 않습니다.
 
 ![FAC](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 이제 스키마 간의 링크 정의를 시작할 수 있습니다. 링크 정의를 시작하려면 **링크 만들기**&#x200B;를 클릭하세요.
 
-![FAC](./images/fdb16.png)
+![FAC](./images/fdb16a.png)
 
-먼저 테이블 `--aepUserLdap--_USERS`과(와) `--aepUserLdap--_PERSONS` 사이의 연결을 정의하겠습니다.
+먼저 `--aepUserLdap--_USERS` 테이블과 `--aepUserLdap--_PERSONS` 테이블 간의 링크를 정의해야 합니다.
 
 **추가를 클릭합니다**.
 
@@ -150,7 +150,9 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb17.png)
 
-이제 테이블 `--aepUserLdap--_HOUSEHOLDS`과(와) `--aepUserLdap--_PERSONS` 사이의 연결을 정의하겠습니다.
+`--aepUserLdap--_HOUSEHOLDS` 테이블과 `--aepUserLdap--_PERSONS` 테이블 간의 연결을 정의해야 합니다.
+
+**추가를 클릭합니다**.
 
 ![FAC](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb20.png)
 
-이제 테이블 `--aepUserLdap--_USERS`과(와) `--aepUserLdap--_MONTHLY_DATA_USAGE` 사이의 연결을 정의하겠습니다.
+`--aepUserLdap--_USERS` 테이블과 `--aepUserLdap--_MONTHLY_DATA_USAGE` 테이블 간의 연결을 정의해야 합니다.
+
+**추가를 클릭합니다**.
 
 ![FAC](./images/fdb21.png)
-
 
 ### 사용자 - 세대
 
@@ -171,7 +174,9 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb22.png)
 
-이제 테이블 `--aepUserLdap--_USERS`과(와) `--aepUserLdap--_HOUSEHOLDS` 사이의 연결을 정의하겠습니다.
+`--aepUserLdap--_USERS` 테이블과 `--aepUserLdap--_HOUSEHOLDS` 테이블 간의 연결을 정의해야 합니다.
+
+**추가를 클릭합니다**.
 
 ![FAC](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb24.png)
 
-이제 테이블 `--aepUserLdap--_USERS`과(와) `--aepUserLdap--_MOBILE_DATA_USAGE` 사이의 연결을 정의하겠습니다.
+`--aepUserLdap--_USERS` 테이블과 `--aepUserLdap--_MOBILE_DATA_USAGE` 테이블 간의 연결을 정의해야 합니다.
+
+**추가를 클릭합니다**.
 
 ![FAC](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ Snowflake에서 **관리자 > 계정**(으)로 이동합니다. 계정 옆에 �
 
 ![FAC](./images/fdb26.png)
 
-이제 AEP의 설정이 완료되었습니다. 이제 연합 대상 구성에서 연합 데이터를 사용할 수 있습니다.
+이제 Adobe Experience Platform에서 Federated Database 설정이 완료되었습니다. 이제 연합 대상 구성에서 연합 데이터를 사용할 수 있습니다.
 
 ## 다음 단계
 

@@ -4,9 +4,9 @@ description: 기초 - 실시간 고객 프로필 - 대상 만들기 - UI
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 이 연습에서는 Adobe Experience Platform의 대상 빌더를 사용하여 대상을 만듭니다.
 
-[Adobe Experience Platform](https://experience.adobe.com/platform)(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
+[Adobe Experience Platform](https://experience.adobe.com/platform)&#x200B;(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
 ![데이터 수집](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![세그먼테이션](./images/menusegbr.png)
 
-새 대상 빌더에 로그인하면 **특성** 메뉴 옵션과 **XDM 개별 프로필** 참조가 즉시 표시됩니다.
+대상 빌더에 있으면 **특성** 메뉴 옵션과 **XDM 개별 프로필** 참조가 즉시 표시됩니다.
 
 ![세그먼테이션](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ XDM은 경험 비즈니스를 지원하는 언어이므로 XDM은 대상 빌더�
 
 ![세그먼테이션](./images/pv.png)
 
+세그먼트의 시간 조건을 **지난 24시간**(으)로 설정합니다.
+
+![세그먼테이션](./images/pv1.png)
+
 대상 빌더에 요소를 추가할 때마다 **예상 새로 고침** 단추를 클릭하여 대상에 있는 모집단의 새 예상 값을 가져올 수 있습니다.
 
 지금까지 UI를 사용하여 대상자를 빌드했지만 대상자를 빌드하는 코드 옵션도 있습니다.
@@ -102,7 +106,7 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 ![세그먼테이션](./images/previewprofilesdtl.png)
 
 마지막으로, 청중에게 이름을 알려 주십시오.
-**평가 메서드**&#x200B;을(를) **스트리밍**(으)로 설정하고 **게시**&#x200B;를 클릭합니다.
+**평가 메서드**&#x200B;을(를) **Edge**(으)로 설정하고 **게시**&#x200B;를 클릭합니다.
 
 명명 규칙으로 다음을 사용합니다.
 
