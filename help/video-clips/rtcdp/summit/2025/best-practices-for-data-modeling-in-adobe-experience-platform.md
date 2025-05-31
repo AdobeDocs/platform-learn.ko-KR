@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Experience Platform에서 스키마 디자인의 중요성과 확장성을 이해하고 많은 비용이 드는 실수를 방지합니다.
 
 <!-- 85_S655_3442541_276_best-practices-for-data-modeling-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458291/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460139/?learn=on&enablevpops=true&captions=kor)

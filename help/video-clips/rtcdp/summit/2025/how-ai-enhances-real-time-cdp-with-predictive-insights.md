@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDP의 Adobe 예측 AI 기능을 통해 마케터는 세그먼테이션, 개인화 및 대상자 인사이트를 최적화하는 방법에 대해 알아봅니다.
 
 <!-- 85_OS512_3442427_65_how-ai-enhances-realtime-cdp-with-predictive-insights -->
->[!VIDEO](https://video.tv.adobe.com/v/3458200/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459963/?learn=on&enablevpops=true&captions=kor)

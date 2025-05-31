@@ -20,4 +20,4 @@ ht-degree: 0%
 Federated Audience Composition을 통해 외부 데이터 웨어하우스를 Real-Time CDP에 연결하여 즉각적인 마케팅을 수행할 수 있는 방법에 대해 알아봅니다.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-audience-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458295/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459798/?learn=on&enablevpops=true&captions=kor)

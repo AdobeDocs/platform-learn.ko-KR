@@ -20,4 +20,4 @@ ht-degree: 0%
 캠페인 중심에서 고객 중심 접근 방식으로 전환하여 지속 가능한 성장을 유도하고 고객 경험을 개선하는 방법을 알아봅니다.
 
 <!-- 85_S651_3442537_125_customercentric-approach-vs-campaigncentric-approach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458235/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460113/?learn=on&enablevpops=true&captions=kor)

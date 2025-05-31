@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe의 AI Assistant가 자연어 쿼리로 데이터 통찰력을 혁신하여 마케터에게 즉각적이고 실행 가능한 결과를 제공하는 방법을 살펴보십시오.
 
 <!-- 62_S653_3442539_57_how-ai-assistant-transforms-data-insights-in-realtime-cdp -->
->[!VIDEO](https://video.tv.adobe.com/v/3458199/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459864/?learn=on&enablevpops=true&captions=kor)

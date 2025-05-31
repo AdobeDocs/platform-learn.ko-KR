@@ -20,4 +20,4 @@ ht-degree: 0%
 역할 기반 및 속성 기반 액세스 제어를 사용하여 Adobe Experience Platform에서 데이터를 효과적으로 제어하는 방법에 대해 알아봅니다.
 
 <!-- 62_S601_3442532_118_managing-data-governance-and-access-in-aep -->
->[!VIDEO](https://video.tv.adobe.com/v/3458316/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460537/?learn=on&enablevpops=true&captions=kor)

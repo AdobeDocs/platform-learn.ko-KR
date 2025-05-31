@@ -20,4 +20,4 @@ ht-degree: 0%
 효율적인 구현을 위해 Adobe Experience Platform을 구조화하고 중앙 집중화와 분산 접근 방식의 균형을 잡는 방법에 대해 알아봅니다.
 
 <!-- 62_S601_3442532_176_architecting-adobe-experience-platform-for-scalability -->
->[!VIDEO](https://video.tv.adobe.com/v/3458321/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459711/?learn=on&enablevpops=true&captions=kor)

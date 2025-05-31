@@ -20,4 +20,4 @@ ht-degree: 0%
 Federated Audience Composition이 외부 데이터 소스를 Real-Time CDP에 통합하여 실시간 마케팅을 가능하게 하는 방법을 이해합니다.
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-your-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458250/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459908/?learn=on&enablevpops=true&captions=kor)

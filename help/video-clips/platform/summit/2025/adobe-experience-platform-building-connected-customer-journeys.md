@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Experience Platform을 통해 데이터, 컨텐츠 및 크로스 채널 활성화를 통해 연결된 고객 여정을 활성화하는 방법에 대해 알아봅니다.
 
 <!-- 62_S655_3442541_51_adobe-experience-platform-building-connected-customer-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458326/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459634/?learn=on&enablevpops=true&captions=kor)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe에서 데이터 기반 인사이트 및 AJO을 사용하여 구성원 온보딩을 강화하고 보존을 유도하는 방법을 살펴봅니다.
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459645/?learn=on&enablevpops=true&captions=kor)

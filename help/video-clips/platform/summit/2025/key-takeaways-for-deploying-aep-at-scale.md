@@ -20,4 +20,4 @@ ht-degree: 0%
 거버넌스, 성장 계획 및 아키텍처를 포함하여 Adobe Experience Platform 배포에 대한 중요한 고려 사항을 이해합니다.
 
 <!-- 62_S601_3442532_72_key-takeaways-for-deploying-aep-at-scale -->
->[!VIDEO](https://video.tv.adobe.com/v/3458314/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460524/?learn=on&enablevpops=true&captions=kor)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe의 Real-Time CDP Collaboration을 통해 마케터의 데이터 클린룸을 간소화하여 원활한 대상 검색, 활성화 및 측정을 가능하게 하는 방법을 살펴볼 수 있습니다.
 
 <!-- 65_OS511_3442426_34_introduction-to-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458279/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459974/?learn=on&enablevpops=true&captions=kor)

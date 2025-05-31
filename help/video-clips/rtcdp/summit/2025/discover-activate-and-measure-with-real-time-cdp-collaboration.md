@@ -20,4 +20,4 @@ ht-degree: 0%
 대상 검색, 보안 활성화 및 성능 측정과 같은 Adobe Real-Time CDP Collaboration의 핵심 기능에 대해 알아봅니다.
 
 <!-- 72_OS511_3442426_179_discover-activate-and-measure-with-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458275/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460179/?learn=on&enablevpops=true&captions=kor)

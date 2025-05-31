@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDP의 유사 대상 모델이 어떻게 마케터가 유사한 고가치 고객을 식별하여 범위를 확장하도록 지원하는지 알아봅니다.
 
 <!-- 82_OS512_3442427_58_expanding-highvalue-audiences-with-lookalike-models -->
->[!VIDEO](https://video.tv.adobe.com/v/3458190/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459930/?learn=on&enablevpops=true&captions=kor)

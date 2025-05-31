@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe이 AEP을 사용하여 데이터 기반 인사이트와 개인화된 고객 여정을 활용하여 유지 및 참여를 유도하는 방법을 살펴봅니다.
 
 <!-- 62_S655_3442541_61_adobes-internal-use-of-aep-driving-retention-with-datadriven-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458264/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459656/?learn=on&enablevpops=true&captions=kor)

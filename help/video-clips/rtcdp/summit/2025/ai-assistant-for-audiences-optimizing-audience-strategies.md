@@ -20,4 +20,4 @@ ht-degree: 0%
 AI Assistant for Audiences가 고가치 세그먼트를 식별하고 대상 전략을 최적화하며 시간을 절약하는 데 어떻게 도움이 되는지 확인하십시오.
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459667/?learn=on&enablevpops=true&captions=kor)

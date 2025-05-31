@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe의 AI Assistant가 어떻게 고객 관리 작업을 단순화하고, 통찰력을 제공하고, 마케터를 위해 트렌드를 예측하는지 확인하십시오.
 
 <!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
->[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459601/?learn=on&enablevpops=true&captions=kor)

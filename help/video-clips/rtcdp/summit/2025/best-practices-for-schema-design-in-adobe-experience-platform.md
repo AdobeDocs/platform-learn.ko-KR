@@ -20,4 +20,4 @@ ht-degree: 0%
 확장성, 유효성 검사 및 Adobe Experience Platform의 데이터 모델과의 정렬을 위한 이러한 모범 사례를 사용하여 스키마 디자인에서 많은 비용이 드는 실수를 방지하십시오.
 
 <!-- 72_S655_3442541_260_best-practices-for-schema-design-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458268/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460125/?learn=on&enablevpops=true&captions=kor)

@@ -20,4 +20,4 @@ ht-degree: 0%
 AI Assistant를 통해 마케터가 예측 모델을 구축하고 캠페인에 대한 고도로 타깃팅된 대상을 만드는 방법을 살펴봅니다.
 
 <!-- 62_OS512_3442427_175_creating-targeted-audiences-with-ai-assistant -->
->[!VIDEO](https://video.tv.adobe.com/v/3458186/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460194/?learn=on&enablevpops=true&captions=kor)

@@ -20,4 +20,4 @@ ht-degree: 0%
 데이터, 대상, 여정, 측정 및 콘텐츠 개인화를 발전시키기 위한 크롤링, 보행 및 실행 프레임워크를 탐색합니다.
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460178/?learn=on&enablevpops=true&captions=kor)

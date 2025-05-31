@@ -20,4 +20,4 @@ ht-degree: 0%
 샌드박스 도구를 사용하여 워크플로우를 간소화하고 Adobe Experience Platform에서 팀 간의 공동 작업을 가능하게 하는 방법을 알아봅니다.
 
 <!-- 62_S601_3442532_175_optimizing-aep-with-sandbox-tooling -->
->[!VIDEO](https://video.tv.adobe.com/v/3458320/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460559/?learn=on&enablevpops=true&captions=kor)

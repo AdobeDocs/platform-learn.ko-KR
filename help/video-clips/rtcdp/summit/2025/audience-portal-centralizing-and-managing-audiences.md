@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDP의 Audience Portal이 고객 데이터를 통합하고, 대상을 관리하며, 실시간 활성화를 가능하게 하는 방법을 살펴봅니다.
 
 <!-- 62_S508_3442517_101_audience-portal-centralizing-and-managing-audiences -->
->[!VIDEO](https://video.tv.adobe.com/v/3458287/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459744/?learn=on&enablevpops=true&captions=kor)

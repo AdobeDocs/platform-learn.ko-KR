@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe이 내부적으로 AEP을 사용하여 고객 프로필을 통합하고 참여를 유도하며 팀 간의 작업을 확장하는 방법을 알아봅니다.
 
 <!-- 62_S655_3442541_255_adobes-internal-use-of-aep-driving-experienceled-growth -->
->[!VIDEO](https://video.tv.adobe.com/v/3458328/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459700/?learn=on&enablevpops=true&captions=kor)

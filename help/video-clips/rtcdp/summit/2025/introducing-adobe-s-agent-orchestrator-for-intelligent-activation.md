@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe의 Agent Orchestrator을 통해 초개인화된 실시간 고객 경험을 구현하여 차세대 GenAI 혁신 시대에 대해 알아보십시오.
 
 <!-- 62_S653_3442539_67_introducing-adobes-agent-orchestrator-for-intelligent-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3458205/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460031/?learn=on&enablevpops=true&captions=kor)

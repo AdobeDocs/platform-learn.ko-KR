@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Real-Time CDP의 Audience Portal이 고객 데이터를 통합하여 고급 대상 관리 및 실시간 활성화를 활성화하는 방법을 살펴봅니다.
 
 <!-- 72_S508_3442517_82_audience-portal-centralizing-data-for-better-marketing-decisions -->
->[!VIDEO](https://video.tv.adobe.com/v/3458185/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459689/?learn=on&enablevpops=true&captions=kor)

@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe Real-Time CDP의 Audiences용 AI Assistant를 통해 마케터는 크기 추정, 성향 점수 및 실시간 인사이트로 대상 전략을 최적화하는 방법에 대해 알아봅니다.
 
 <!-- 62_S508_3442517_109_the-power-of-ai-in-realtime-cdp-for-audience-optimization -->
->[!VIDEO](https://video.tv.adobe.com/v/3458207/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463021/?learn=on&enablevpops=true&captions=kor)

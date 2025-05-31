@@ -20,4 +20,4 @@ ht-degree: 0%
 Adobe이 통합 프로필을 사용하여 70개 이상의 팀에서 공동 작업을 추진하고 Creative Cloud 사용자를 위한 개인화된 경험을 제공하는 방법을 알아봅니다.
 
 <!-- 62_S655_3442541_146_adobes-internal-use-of-unified-profiles-for-creative-cloud -->
->[!VIDEO](https://video.tv.adobe.com/v/3458283/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459678/?learn=on&enablevpops=true&captions=kor)
