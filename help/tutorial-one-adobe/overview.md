@@ -3,10 +3,10 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 3%
+source-wordcount: '944'
+ht-degree: 2%
 
 ---
 
@@ -34,22 +34,16 @@ ht-degree: 3%
 - Snowflake
 - ...
 
-## 전제 조건
+## 지식 표시
 
-고유한 Adobe Experience Cloud 인스턴스를 사용하여 이 자습서를 수행하려면 인스턴스에서 다음 애플리케이션을 프로비저닝하고 액세스할 수 있어야 합니다.
+![Adobe 적격](./assets/images/badge.png){width="100px" align="left"}
 
-- Adobe Firefly
-- Adobe Photoshop, Adobe 프레임 I/O, Adobe Substance 3D 스테이징
-- Adobe Workfront
-- Adobe Workfront Fusion
-- Adobe Experience Platform, Adobe Experience Platform 데이터 수집
-- 다음 데모 시스템에 액세스: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
 
-## 완료 및 인증
-
-이 튜토리얼은 Adobe 인증 교육 과정의 일부입니다. [https://certification.adobe.com](https://certification.adobe.com)&#x200B;(으)로 이동하여 이 자습서와 함께 과정에 등록할 수 있습니다.
-
-아래 자습서를 사용하여 완료하는 모든 모듈에 대해 [여기](./completion.md)에 표시된 대로 완료 증명을 제출해야 합니다.
+- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**에 합격할 수 있습니다.
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
+- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험 **XXX**을(를) 선택하여 통과할 수 있습니다.
+  [TBC](https://certification.adobe.com/certification/services-qualified-credential)
 
 ## 컨텐츠 상태
 
@@ -61,11 +55,11 @@ ht-degree: 3%
 
 이 기본 모듈에서는 데모 환경에 액세스하고 사용할 수 있도록 모든 것을 준비합니다.
 
-### 1. 워크플로 및 계획
+### &#x200B;1. 워크플로 및 계획
 
-### 2. 제작 및 제작
+### &#x200B;2. 제작 및 제작
 
-[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 이 모듈에서는 Adobe Firefly Services API, Photoshop API 및 Microsoft Azure Storage Services를 사용하여 이미지를 생성하고 프로그래밍 방식으로 저장합니다.
 
@@ -77,7 +71,7 @@ ht-degree: 3%
 
 이 기본 모듈에서는 Adobe Express을 사용하여 이미지와 비디오를 만들고 이러한 에셋을 더 광범위한 Adobe Experience Cloud 에코시스템을 위해 공유합니다.
 
-### 3. 자산 관리
+### &#x200B;3. 자산 관리
 
 [1.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
@@ -87,7 +81,7 @@ Adobe Workfront을 사용한 [1.2 워크플로 관리](./modules/asset-mgmt/modu
 
 이 기본 모듈에서는 Adobe Workfront을 구성 및 사용하여 승인 흐름을 관리하고 Adobe Experience Manager Assets, 유니버설 편집기, Photoshop 등과의 통합을 사용합니다.
 
-### 4. 배달 및 활성화
+### &#x200B;4. 배달 및 활성화
 
 #### 데이터 수집
 
@@ -151,7 +145,7 @@ Adobe Workfront을 사용한 [1.2 워크플로 관리](./modules/asset-mgmt/modu
 
 이 모듈에서는 Adobe Journey Optimizer 내에서 번역 서비스를 설정하고 사용하여 고객에게 메시지를 현지화하는 방법에 대해 알아봅니다.
 
-### 5. 보고 및 통찰력
+### &#x200B;5. 보고 및 통찰력
 
 #### Adobe Customer Journey Analytics
 

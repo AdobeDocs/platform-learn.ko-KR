@@ -3,16 +3,16 @@ title: 시작하기 - 설치할 애플리케이션
 description: 시작하기 - 설치할 애플리케이션
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 1%
 
 ---
 
 # 설치할 애플리케이션
 
-다음은 라이브 워크샵에 참여하기 전에 필요한 사전 작업에 대한 개요입니다.
+다음은 자습서를 시작하기 전에 컴퓨터에 설치해야 하는 애플리케이션에 대한 개요입니다.
 
 ## Adobe Creative Cloud
 

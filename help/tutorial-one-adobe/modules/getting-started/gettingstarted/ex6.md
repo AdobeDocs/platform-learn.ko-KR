@@ -4,9 +4,9 @@ description: 시작하기 - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 0%
 ![Adobe I/O 새 통합](./images/iocomp.png){zoomable="yes"}
 
 ### FIREFLY SERVICES API
+
+>[!IMPORTANT]
+>
+>선택한 학습 경로에 따라 Firefly Services API에 대한 액세스 권한이 없을 수도 있습니다. 학습 과정(**Firefly Services**, **Workfront Fusion**, **모두**)에 있거나 **실시간 대면 워크숍**&#x200B;에 참석하는 경우에만 Firefly API에 액세스할 수 있습니다. 이 학습 경로 중 하나에 있지 않은 경우 이 단계를 건너뛸 수 있습니다.
 
 그럼 이걸 보셔야죠 **+ 프로젝트에 추가**&#x200B;를 선택하고 **API**&#x200B;를 선택합니다.
 
@@ -59,6 +63,10 @@ ht-degree: 0%
 
 ### PHOTOSHOP SERVICES API
 
+>[!IMPORTANT]
+>
+>선택한 학습 경로에 따라 Photoshop Services API에 대한 액세스 권한이 없을 수도 있습니다. 학습 과정(**Photoshop Services**, **Workfront Fusion**, **모두**)에 있거나 **실시간 대면 워크숍**&#x200B;에 참석하는 경우에만 Firefly API에 액세스할 수 있습니다. 이 학습 경로 중 하나에 있지 않은 경우 이 단계를 건너뛸 수 있습니다.
+
 **+ 프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
 
 ![Azure 저장소](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ ht-degree: 0%
 ![Adobe I/O 새 통합](./images/ps7.png){zoomable="yes"}
 
 ### ADOBE EXPERIENCE PLATFORM API
+
+>[!IMPORTANT]
+>
+>선택한 학습 경로에 따라 Adobe Experience Platform API에 대한 액세스 권한이 없을 수도 있습니다. 학습 과정(**AEP + 앱**, **모두**)에 있거나 **실시간 대면 워크숍**&#x200B;에 참석하는 경우에만 Adobe Experience Platform API에 액세스할 수 있습니다. 이 학습 경로 중 하나에 있지 않은 경우 이 단계를 건너뛸 수 있습니다.
 
 **+ 프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
 

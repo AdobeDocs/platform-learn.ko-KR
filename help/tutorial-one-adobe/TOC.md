@@ -4,9 +4,9 @@ breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1153'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 3%
 + [튜토리얼 개요](/help/tutorial-one-adobe/overview.md)
 + [컨텐츠 상태](/help/tutorial-one-adobe/status.md)
 + [완료](/help/tutorial-one-adobe/completion.md)
-+ [선행 작업](/help/tutorial-one-adobe/prework.md)
 
 + 시작하기 {#gettingstarted}
    + 시작하기 {#gettingstarted}
@@ -92,7 +91,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
