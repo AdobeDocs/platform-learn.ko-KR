@@ -116,7 +116,7 @@ ID 네임스페이스는 [ID 서비스](https://experienceleague.adobe.com/docs/
 
 ## ID 제거
 
-[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API를 사용하여 저장된 클라이언트측 ID 맵에서 ID를 제거할 수 있습니다. ID 확장은 Edge Network에 대한 식별자 전송을 중지합니다. 이 API를 사용해도 서버측 ID 그래프에서 식별자가 제거되지는 않습니다. ID 그래프에 대한 자세한 내용은 [ID 그래프 보기](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en)를 참조하십시오.
+[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API를 사용하여 저장된 클라이언트측 ID 맵에서 ID를 제거할 수 있습니다. ID 확장은 Edge Network에 대한 식별자 전송을 중지합니다. 이 API를 사용해도 서버측 ID 그래프에서 식별자가 제거되지는 않습니다. ID 그래프에 대한 자세한 내용은 [ID 그래프 보기](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=ko)를 참조하십시오.
 
 1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**(으)로 이동하여 `func removeIdentities(emailAddress: String, crmId: String)` 함수에 다음 코드를 추가합니다.
 
@@ -176,6 +176,6 @@ ID 네임스페이스는 [ID 서비스](https://experienceleague.adobe.com/docs/
 >
 >이제 Edge Network 및 Adobe Experience Platform에서 ID를 업데이트하도록 앱을 설정했습니다(설정 시).
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[프로필 데이터 수집](profile.md)**
