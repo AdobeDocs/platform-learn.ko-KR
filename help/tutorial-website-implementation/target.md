@@ -386,7 +386,7 @@ Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다
 
    ![Keep Changes 클릭](images/target-addATProperty-keepChanges.png)
 
-1. **[!UICONTROL 라이브러리 및 빌드에 저장]**을 클릭합니다.
+1. **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 클릭합니다.
    ![Save and Build to Library 클릭](images/target-addATProperty-save.png)
 
 >[!WARNING]
