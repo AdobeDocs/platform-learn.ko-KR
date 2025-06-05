@@ -1,9 +1,9 @@
 ---
 title: 태그를 사용하여 Adobe Target 추가
-description: at.js, 페이지 로드 요청, 매개 변수, 순서 요청 및 사용자 지정 머리글/바닥글 코드와 함께 태그를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
+description: at.js, 페이지 로드 요청, 매개 변수, 순서 요청 및 사용자 지정 머리글/바닥글 코드와 함께 태그를 사용하여 Adobe Target을 구현하는 방법에 대해 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '4252'
 ht-degree: 68%
@@ -12,16 +12,16 @@ ht-degree: 68%
 
 # Adobe Target 추가
 
-이 단원에서는 페이지 로드 요청 및 사용자 지정 매개 변수와 함께 [Adobe Target 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=ko)을 구현합니다.
+이 단원에서는 페이지 로드 요청 및 사용자 지정 매개 변수와 함께 [Adobe Target 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html)을 구현합니다.
 
-[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=ko)은 고객의 경험을 조정하고 개인화하는 데 필요한 모든 기능을 제공하는 Adobe Experience Cloud 솔루션입니다. 따라서 사용자의 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널의 매출을 극대화할 수 있습니다.
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html)은 고객의 경험을 조정하고 개인화하는 데 필요한 모든 기능을 제공하는 Adobe Experience Cloud 솔루션입니다. 따라서 사용자의 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널의 매출을 극대화할 수 있습니다.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 platform launch(Client Side)가 **[!DNL tags]**&#x200B;입니다.
-> * 이제 platform launch 서버측이 **[!DNL event forwarding]**&#x200B;입니다.
+> * 이제 Platform Launch(Client Side)가 **[!DNL tags]**&#x200B;입니다.
+> * 이제 Platform Launch Server Side가 **[!DNL event forwarding]**&#x200B;입니다.
 > * 이제 Edge 구성이 **[!DNL datastreams]**&#x200B;입니다.
 
 ## 학습 목표
@@ -91,11 +91,11 @@ ht-degree: 68%
 * `body {opacity: 0 !important}` - Target이 로드되기 전까지 사전 숨김에 사용할 css 정의를 지정합니다. 기본적으로 전체 본문은 숨겨집니다. 탐색 아래의 모든 컨텐츠를 줄바꿈하는 쉽게 식별할 수 있는 컨테이너 요소와 일관된 DOM 구조가 있으며, 탐색을 테스트하거나 개인화할 필요가 없는 경우 이 설정을 사용하여 해당 컨테이너 요소로 사전 숨김을 제한할 수 있습니다.
 * `3000` - 사전 숨김에 대한 시간 초과 설정을 지정합니다. 기본적으로 Target이 3초 후에 로드되지 않으면 페이지가 표시됩니다. 이는 매우 드문 경우입니다.
 
-자세한 내용을 알고 축소되지 않은 사전 숨김 코드 조각을 가져오려면 [비동기 배포를 사용한 Adobe Target 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=ko#adobe-target-extension-with-an-asynchronous-deployment)을 참조하십시오.
+자세한 내용을 알고 축소되지 않은 사전 숨김 코드 조각을 가져오려면 [비동기 배포를 사용한 Adobe Target 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment)을 참조하십시오.
 
 ## Target 확장 추가
 
-Adobe Target 확장은 최신 웹, at.js에 Target의 JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 여전히 Target의 이전 라이브러리인 mbox.js [을(를) 사용하는 고객은 태그를 사용하려면 at.js 2.x로 업그레이드](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html?lang=ko)해야 합니다.
+Adobe Target 확장은 최신 웹, at.js에 Target의 JavaScript SDK를 사용하여 클라이언트측 구현을 지원합니다. 여전히 Target의 이전 라이브러리인 mbox.js [을(를) 사용하는 고객은 태그를 사용하려면 at.js 2.x로 업그레이드](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html)해야 합니다.
 
 Target v2 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
@@ -208,9 +208,9 @@ Target v2 확장을 추가하고 `Load Target` 및 `Fire Page Load Request` 작�
 
 Target 요청에 매개 변수를 전달하면 타깃팅, 테스트 및 개인화 활동에 강력한 기능이 추가됩니다. 태그 확장은 전달 매개 변수에 두 가지 작업을 제공합니다.
 
-1. `Add Params to Page Load Request` - 페이지 로드 요청에 매개 변수를 추가합니다([targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=ko) 메서드에 해당).
+1. `Add Params to Page Load Request` - 페이지 로드 요청에 매개 변수를 추가합니다([targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) 메서드에 해당).
 
-1. `Add Params to All Requests` - 페이지 로드 요청과 사용자 지정 코드 작업으로 만들었거나 사이트에서 하드코딩된 추가적인 요청([targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=ko) 메서드에 해당)과 같은 모든 Target 요청에서 매개 변수를 추가합니다.
+1. `Add Params to All Requests` - 페이지 로드 요청과 사용자 지정 코드 작업으로 만들었거나 사이트에서 하드코딩된 추가적인 요청([targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) 메서드에 해당)과 같은 모든 Target 요청에서 매개 변수를 추가합니다.
 
 이러한 작업은 `Load Target` 작업 *전에* 사용할 수 있으며, 규칙 구성에 따라 페이지마다 다른 매개 변수를 설정할 수 있습니다. 페이지 로드 요청을 실행하는 규칙 전에 고객 ID를 ID 서비스로 설정할 때 사용한 규칙 순서 지정 기능을 사용하여 `Library Loaded` 이벤트에 대한 추가적인 매개 변수를 설정합니다.
 >[!TIP]
@@ -277,15 +277,15 @@ Target 요청에 매개 변수를 전달하면 타깃팅, 테스트 및 개인�
 
 ### 프로필 매개 변수
 
-요청 매개 변수와 유사한 프로필 매개 변수는 Target 요청을 통해서도 전달됩니다. 하지만 프로필 매개 변수는 Target의 방문자 프로필 데이터베이스에 저장되고 [방문자 프로필의 지속 시간](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=ko) 동안 지속됩니다. 사이트의 한 페이지에서 이러한 매개 변수를 설정하고 다른 페이지의 Target 활동에 사용할 수 있습니다. 다음은 자동차 웹 사이트의 예입니다. 방문자가 차량 페이지로 이동하면 프로필 매개 변수 &quot;profile.lastViewed=sportscar&quot;를 전달하여 해당 특정 차량에 관심 사항을 기록할 수 있습니다. 방문자가 다른 비차량 페이지로 이동하면 마지막으로 본 차량을 기준으로 컨텐츠를 타깃팅할 수 있습니다.  프로필 매개 변수는 거의 변경되지 않거나 특정 페이지에서만 사용할 수 있는 속성에 이상적입니다
+요청 매개 변수와 유사한 프로필 매개 변수는 Target 요청을 통해서도 전달됩니다. 하지만 프로필 매개 변수는 Target의 방문자 프로필 데이터베이스에 저장되고 [방문자 프로필의 지속 시간](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html) 동안 지속됩니다. 사이트의 한 페이지에서 이러한 매개 변수를 설정하고 다른 페이지의 Target 활동에 사용할 수 있습니다. 다음은 자동차 웹 사이트의 예입니다. 방문자가 차량 페이지로 이동하면 프로필 매개 변수 &quot;profile.lastViewed=sportscar&quot;를 전달하여 해당 특정 차량에 관심 사항을 기록할 수 있습니다. 방문자가 다른 비차량 페이지로 이동하면 마지막으로 본 차량을 기준으로 컨텐츠를 타깃팅할 수 있습니다.  프로필 매개 변수는 거의 변경되지 않거나 특정 페이지에서만 사용할 수 있는 속성에 이상적입니다
 
-이 자습서에서는 프로필 매개 변수를 전달하지 않지만, 작업 과정은 `pageName` 매개 변수를 전달할 때 수행한 작업 과정과 거의 동일합니다. 한 가지 차이점은 프로필 매개 변수 이름에 `profile.` 접두사를 지정해야 한다는 것입니다. 프로필 매개 변수 &quot;userType&quot;은 `Add Params to Page Load Request` 작업에서 다음과 같이 표시됩니다.
+이 자습서에서는 프로필 매개 변수를 전달하지 않지만, 워크플로는 `pageName` 매개 변수를 전달할 때 수행한 워크플로와 거의 동일합니다. 한 가지 차이점은 프로필 매개 변수 이름에 `profile.` 접두사를 지정해야 한다는 것입니다. 프로필 매개 변수 &quot;userType&quot;은 `Add Params to Page Load Request` 작업에서 다음과 같이 표시됩니다.
 
 ![프로필 매개 변수 설정](images/target-profileParameter.png)
 
 ### 엔티티 매개 변수
 
-엔티티 매개 변수는 다음과 같은 세 가지 주된 이유로 [추천 구현](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=ko)에 사용되는 특수 매개 변수입니다.
+엔티티 매개 변수는 다음과 같은 세 가지 주된 이유로 [추천 구현](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)에 사용되는 특수 매개 변수입니다.
 
 1. 제품 추천을 트리거할 키로. 예를 들어 &quot;제품 X를 보고, Y도 본 사람&quot;과 같은 추천 알고리즘을 사용할 때 &quot;X&quot;는 추천 &quot;키&quot;입니다. 일반적으로 방문자가 현재 보고 있는 제품 sku(`entity.id`) 또는 카테고리(`entity.categoryId`)입니다.
 1. 최근에 본 제품 또는 가장 많이 본 제품과 같은 추천 알고리즘을 실행하는 방문자 행동을 수집하기 위해.
@@ -297,7 +297,7 @@ Target 요청에 매개 변수를 전달하면 타깃팅, 테스트 및 개인�
 
 ### 고객 ID 매개 변수 추가
 
-Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe Experience Cloud의 [사용자 특성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=ko) 기능을 사용하여 CRM 데이터를 Target에 쉽게 가져올 수 있습니다. 또한 [장치 간 방문자 스티칭](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html?lang=ko)을 지원하므로 고객이 랩톱 및 모바일 장치 간을 전환할 때 일관된 사용자 환경을 유지할 수 있습니다.
+Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe Experience Cloud의 [사용자 특성](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html) 기능을 사용하여 CRM 데이터를 Target에 쉽게 가져올 수 있습니다. 또한 [장치 간 방문자 스티칭](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)을 지원하므로 고객이 랩톱 및 모바일 장치 간을 전환할 때 일관된 사용자 환경을 유지할 수 있습니다.
 
 페이지 로드 요청을 실행하기 전에 ID 서비스의 `Set Customer IDs` 작업에서 고객 ID를 설정해야 합니다. 이렇게 하려면 사이트에 다음과 같은 기능이 있는지 확인하십시오.
 
@@ -320,7 +320,7 @@ Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe
 
    ![디버거에 태그 개발 환경이 표시됨](images/switchEnvironments-debuggerOnWeRetail.png)
 
-1. 자격 증명 `test@adobe.com`/`test`를 사용하여 Luma 사이트에 로그인합니다.
+1. 자격 증명 `test@test.com`/`test`를 사용하여 Luma 사이트에 로그인합니다.
 1. [Luma 홈 페이지](https://luma.enablementadobe.com/content/luma/us/en.html)로 돌아갑니다.
 
 1. 브라우저의 개발자 도구를 엽니다
@@ -334,7 +334,7 @@ Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=ko):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html):
 
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
@@ -347,9 +347,9 @@ Adobe Experience Platform ID 서비스를 통해 고객 ID를 수집하면 Adobe
 
 >[!NOTE]
 >
->Target Premium 고객이 선택할 수 있는 연습입니다.
+>Target Premium 고객을 위한 선택적인 연습입니다.
 
-속성 토큰은 Target Premium [Enterprise 사용자 권한](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=ko) 기능과 함께 사용되는 예약된 매개 변수입니다. Experience Cloud 조직의 서로 다른 구성원에게 각 속성에 대한 서로 다른 권한을 할당할 수 있도록 다양한 디지털 속성을 정의하는 데 사용됩니다. 예를 들어, 사용자 그룹 하나가 여러분의 웹 사이트에서는 Target 활동을 설정할 수 있지만 모바일 애플리케이션에서는 설정할 수 없도록 할 수 있습니다.
+속성 토큰은 Target Premium [Enterprise 사용자 권한](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) 기능과 함께 사용되는 예약된 매개 변수입니다. Experience Cloud 조직의 서로 다른 구성원에게 각 속성에 대한 서로 다른 권한을 할당할 수 있도록 다양한 디지털 속성을 정의하는 데 사용됩니다. 예를 들어, 사용자 그룹 하나가 여러분의 웹 사이트에서는 Target 활동을 설정할 수 있지만 모바일 애플리케이션에서는 설정할 수 없도록 할 수 있습니다.
 
 Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다. 여러 브랜드, 웹 사이트 및 마케팅 팀이 있는 기업은 각 웹 사이트 또는 모바일 앱에서 다른 Target 속성, 태그 속성 및 Analytics 보고서 세트를 사용할 수 있습니다. 태그 속성은 해당 포함 코드로 구별되고, Analytics 보고서 세트는 해당 보고서 세트 ID로 구별되며, Target 속성은 해당 속성 토큰 매개 변수로 구별됩니다.
 
@@ -386,7 +386,7 @@ Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다
 
    ![Keep Changes 클릭](images/target-addATProperty-keepChanges.png)
 
-1. **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 클릭합니다.
+1. **[!UICONTROL 라이브러리 및 빌드에 저장]**을 클릭합니다.
    ![Save and Build to Library 클릭](images/target-addATProperty-save.png)
 
 >[!WARNING]
@@ -430,7 +430,7 @@ Target 속성은 태그 속성 및 Analytics 보고서 세트와 유사합니다
 
 모범 사례는 비소매 사이트에서도 모든 주문 유입 경로에 주문 확인 요청을 사용하는 것입니다. 예를 들어 리드 생성 사이트에는 일반적으로 끝에 고유한 &quot;리드 ID&quot;가 생성되는 리드 유입 경로가 있습니다. 이러한 사이트에서는 orderTotal에 정적 값(예: &quot;1&quot;)을 사용하여 주문 요청을 구현해야 합니다.
 
-대부분의 보고에 A4T(Analytics for Target) 통합을 사용하는 고객은 A4T를 지원하지 않는 Automated Personalization 활동을 사용하는 경우 주문 요청을 구현하고자 할 수도 있습니다. 또한 주문 요청은 Recommendations 구현에 중요한 요소로, 구매 행동에 따라 알고리즘을 강화합니다. A4T 지원에 대한 최신 정보는 [설명서](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=ko#section_F487896214BF4803AF78C552EF1669AA)를 참조하세요.
+대부분의 보고에 A4T(Analytics for Target) 통합을 사용하는 고객은 A4T를 지원하지 않는 Automated Personalization 활동을 사용하는 경우 주문 요청을 구현하고자 할 수도 있습니다. 또한 주문 요청은 Recommendations 구현에 중요한 요소로, 구매 행동에 따라 알고리즘을 강화합니다. A4T 지원에 대한 최신 정보는 [설명서](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA)를 참조하세요.
 
 주문 확인 요청은 주문 확인 페이지나 이벤트에서만 트리거되는 규칙에서 실행해야 합니다. 이 요청은 종종 Adobe Analytics 구매 이벤트를 설정하는 규칙과 결합될 수 있습니다. 적절한 데이터 요소를 사용하여 orderId, orderTotal 및 productPurchasedId 매개 변수를 설정하는 Core 확장의 사용자 지정 코드 작업을 사용하여 구성해야 합니다.
 
@@ -564,11 +564,11 @@ Luma 사이트에서 주문 확인 요청을 실행하기 위해 필요한 데�
 
 드물게 페이지 로드 및 주문 확인 요청 이외의 Target 요청을 수행해야 하는 경우가 있습니다. 예를 들어 개인화에 사용하려는 중요한 데이터가 태그 포함 코드 앞에 페이지에 정의되지 않은 경우가 있습니다. 이 데이터는 페이지 하단에 하드코딩되거나 비동기 API 요청에서 반환될 수 있습니다. 페이지가 이미 표시되므로 이 요청을 컨텐츠 전달에 사용하는 것이 최적은 아니지만, 추가 요청을 사용하여 이 데이터를 Target에 보낼 수 있습니다. 이 데이터는 나중에 사용하기 위해 방문자 프로필을 보강하거나(프로필 매개 변수 사용) Recommendations 카탈로그를 채우는 데 사용할 수 있습니다.
 
-이러한 경우 [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html?lang=ko)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html?lang=ko) 및 [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=ko) 메서드를 사용하여 요청을 실행하도록 Core 확장에서 사용자 지정 코드 작업을 수행합니다. 이는 [주문 확인 요청](#order-confirmation-request) 연습에서 수행한 것과 매우 유사하지만, 다른 요청 이름을 사용하고 특별한 주문 매개 변수는 사용하지 않습니다. 사용자 지정 코드에서 Target 요청을 수행하기 전에 **[!UICONTROL Target 로드]** 작업을 사용하십시오.
+이러한 경우 [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) 및 [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) 메서드를 사용하여 요청을 실행하도록 Core 확장에서 사용자 지정 코드 작업을 수행합니다. 이는 [주문 확인 요청](#order-confirmation-request) 연습에서 수행한 것과 매우 유사하지만, 다른 요청 이름을 사용하고 특별한 주문 매개 변수는 사용하지 않습니다. 사용자 지정 코드에서 Target 요청을 수행하기 전에 **[!UICONTROL Target 로드]** 작업을 사용하십시오.
 
 ## 라이브러리 머리글 및 라이브러리 바닥글
 
-Target 사용자 인터페이스의 Edit at.js 화면에는 at.js 파일 전후에 바로 실행되는 사용자 지정 JavaScript를 붙여넣을 수 있는 위치가 있습니다. 라이브러리 헤더는 경우에 따라 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html?lang=ko) 함수를 통해 at.js 설정을 재정의하거나 [데이터 공급자](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=ko) 기능을 사용하여 타사의 데이터를 전달하는 데 사용됩니다. 라이브러리 바닥글은 경우에 따라 [at.js 사용자 지정 이벤트](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html?lang=ko) 리스너를 추가하는 데 사용됩니다.
+Target 사용자 인터페이스의 Edit at.js 화면에는 at.js 파일 전후에 바로 실행되는 사용자 지정 JavaScript를 붙여넣을 수 있는 위치가 있습니다. 라이브러리 헤더는 경우에 따라 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 함수를 통해 at.js 설정을 재정의하거나 [데이터 공급자](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html) 기능을 사용하여 타사의 데이터를 전달하는 데 사용됩니다. 라이브러리 바닥글은 경우에 따라 [at.js 사용자 지정 이벤트](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html) 리스너를 추가하는 데 사용됩니다.
 
 태그에서 이 기능을 복제하려면 코어 확장에서 사용자 지정 코드 작업을 사용하고, 이 작업 순서를 Target 로드 작업 전(라이브러리 헤더) 또는 후(라이브러리 바닥글)로 지정합니다. 이 작업은 아래 그림에 표시된 대로 `Load Target` 작업과 동일한 규칙으로 수행하거나, `Load Target`가 들어 있는 규칙 전이나 후에 안정적으로 실행되는 이벤트 또는 주문 설정을 사용하여 별도의 규칙으로 수행할 수 있습니다.
 
@@ -576,8 +576,8 @@ Target 사용자 인터페이스의 Edit at.js 화면에는 at.js 파일 전후�
 
 사용자 지정 머리글과 바닥글에 대한 사용 사례에 대해 자세히 알아보려면 다음 리소스를 참조하십시오.
 
-* [dataProviders를 사용하여 Adobe Target에 타사 데이터 통합](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=ko)
-* [dataProviders를 구현하여 Adobe Target에 타사 데이터 통합](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=ko)
-* [Adobe Target에서 응답 토큰 및 at.js 사용자 지정 이벤트 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html?lang=ko)
+* [dataProviders를 사용하여 Adobe Target에 타사 데이터 통합](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
+* [dataProviders를 구현하여 Adobe Target에 타사 데이터 통합](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
+* [Adobe Target에서 응답 토큰 및 at.js 사용자 지정 이벤트 사용](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
 [다음 &quot;Adobe Analytics 추가&quot; >](analytics.md)

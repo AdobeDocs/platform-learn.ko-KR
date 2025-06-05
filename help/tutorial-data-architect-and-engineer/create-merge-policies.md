@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Adobe Experience Platform을 사용하면 여러 소스에서 데이터를 결�
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 병합 정책을 만들어야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 병합 정책에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/345079?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 권한 필요
 
@@ -83,7 +83,7 @@ ExperienceEvent 클래스에 대한 유니온 스키마는 없습니다. Experie
 1. **[!UICONTROL 찾아보기]** 탭으로 이동
 1. **[!UICONTROL 병합 정책]**&#x200B;을(를) 새 `Loyalty Prioritized` 정책으로 변경
 1. **[!UICONTROL ID 네임스페이스]**(으)로 `Luma CRM Id`을(를) 사용합니다.
-1. **[!UICONTROL ID 값]**(으)로 `112ca06ed53d3db37e4cea49cc45b71e` 사용
+1. **[!UICONTROL ID 값]**(으)로 `b642b4217b34b1e8d3bd915fc65c4452` 사용
 1. **[!UICONTROL 프로필 표시]** 단추 선택
 1. `Daniel`이(가) 돌아왔습니다!
 
@@ -110,7 +110,7 @@ ExperienceEvent 클래스에 대한 유니온 스키마는 없습니다. Experie
 1. **[!UICONTROL 찾아보기]** 탭으로 이동
 1. **[!UICONTROL 병합 정책]**&#x200B;을(를) 새 `Loyalty Only` 정책으로 변경
 1. **[!UICONTROL ID 네임스페이스]**(으)로 `Luma CRM Id`을(를) 사용합니다.
-1. **[!UICONTROL ID 값]**(으)로 `112ca06ed53d3db37e4cea49cc45b71e` 사용
+1. **[!UICONTROL ID 값]**(으)로 `b642b4217b34b1e8d3bd915fc65c4452` 사용
 1. **[!UICONTROL 프로필 표시]** 단추 선택
 1. 프로필을 찾을 수 없음 확인:
    ![충성도 전용 CRM ID 조회 없음.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ CRM ID는 `Luma Loyalty Dataset`의 ID 필드이지만 기본 ID만 프로필을
 
 ## 추가 리소스
 
-* [병합 정책 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ko)
+* [병합 정책 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [병합 정책 API(실시간 고객 프로필 API의 일부) 참조](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 이제 [데이터 거버넌스 프레임워크](apply-data-governance-framework.md)(으)로 이동하겠습니다.

@@ -1,9 +1,9 @@
 ---
 title: 태그를 사용하여 Adobe Experience Platform ID 서비스 추가
-description: Adobe Experience Platform ID 서비스 확장을 추가하고 고객 ID 설정 작업을 사용하여 고객 ID를 수집하는 방법을 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
+description: Adobe Experience Platform ID 서비스 확장을 추가하고 고객 ID 설정 작업을 사용하여 고객 ID를 수집하는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 64%
@@ -12,17 +12,17 @@ ht-degree: 64%
 
 # Adobe Experience Platform ID 서비스 추가
 
-이 단원에서는 [Adobe Experience Platform ID 서비스 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=ko)을 구현하고 고객 ID를 전송하는 데 필요한 절차를 안내합니다.
+이 단원에서는 [Adobe Experience Platform ID 서비스 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)을 구현하고 고객 ID를 전송하는 데 필요한 절차를 안내합니다.
 
-[Adobe Experience Platform Identity 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ko)에서는 솔루션 간 대상 공유와 같은 Experience Cloud 기능을 지원하기 위해 모든 Adobe 솔루션에 공통 방문자 ID를 설정합니다. 또한 고유한 고객 ID를 서비스로 보내어 장치 간 타깃팅 및 CRM(고객 관계 관리) 시스템과의 통합을 가능하게 할 수 있습니다.
+[Adobe Experience Platform Identity 서비스](https://experienceleague.adobe.com/docs/id-service/using/home.html)에서는 솔루션 간 대상 공유와 같은 Experience Cloud 기능을 지원하기 위해 모든 Adobe 솔루션에 공통 방문자 ID를 설정합니다. 또한 고유한 고객 ID를 서비스로 보내어 장치 간 타깃팅 및 CRM(고객 관계 관리) 시스템과의 통합을 가능하게 할 수 있습니다.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)**&#x200B;입니다.
-> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)**&#x200B;입니다.
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)**&#x200B;입니다.
+> * 이제 Platform Launch(Client Side)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
+> * 이제 Platform Launch Server Side가 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -90,14 +90,13 @@ ID 서비스 확장은 규칙 작업을 사용하지 않고도 요청을 수행�
    1. 왼쪽의 `Cookies`를 확장합니다.
    1. 도메인 `https://luma.enablementadobe.com`을 클릭합니다.
    1. 오른쪽에서 AMCV_ 쿠키를 찾습니다. 하드코딩된 태그 속성을 사용하여 Luma 사이트를 로드하고 자체 사이트에 매핑했으므로 여러 개가 표시될 수 있습니다.
-
       ![AMCV_ 쿠키 확인](images/idservice-AMCVCookie.png)
 
-됐습니다. 첫 번째 확장을 추가했습니다. ID 서비스의 구성 옵션에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=ko)를 참조하십시오.
+됐습니다. 첫 번째 확장을 추가했습니다. ID 서비스의 구성 옵션에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html)를 참조하십시오.
 
 ## 고객 ID 보내기
 
-다음으로, [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=ko)를 ID 서비스로 보냅니다. 이렇게 하면 Experience Cloud와 [CRM을 통합](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ko-KR)하고 장치 간에 방문자를 추적할 수 있습니다.
+다음으로, [고객 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)를 ID 서비스로 보냅니다. 이렇게 하면 Experience Cloud와 [CRM을 통합](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=ko-KR)하고 장치 간에 방문자를 추적할 수 있습니다.
 
 이전 단원 [데이터 요소, 규칙 및 라이브러리 추가](add-data-elements-rules.md)에서는 데이터 요소를 만들어 규칙에 사용했습니다. 이제 방문자가 인증되면 동일한 기술을 사용하여 고객 ID를 보냅니다.
 
@@ -237,7 +236,7 @@ Adobe Experience Platform ID 서비스는 &quot;고객 ID 설정&quot;이라는 
 
    ![위쪽 탐색에서 Login 클릭](images/idservice-loginNav.png)
 
-1. 사용자 이름으로 `test@adobe.com`을 입력합니다.
+1. 사용자 이름으로 `test@test.com`을 입력합니다.
 1. 암호로 `test`를 입력합니다.
 1. **[!UICONTROL 로그인]** 단추를 클릭합니다.
 

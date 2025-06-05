@@ -1,10 +1,10 @@
 ---
-title: Mobile SDK를 사용하여 모바일 앱에서 ID 데이터 수집
+title: Mobile SDK을 사용하여 모바일 앱에서 ID 데이터 수집
 description: 모바일 앱에서 ID 데이터를 수집하는 방법에 대해 알아봅니다.
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -39,13 +39,13 @@ ID 네임스페이스는 [ID 서비스](https://experienceleague.adobe.com/docs/
 
 >[!NOTE]
 >
->Mobile SDK는 앱이 설치되면 자체 네임스페이스에 ECID(Experience Cloud ID)라는 고유 ID를 생성합니다. 이 ECID는 모바일 장치의 영구 메모리에 저장되고 모든 히트와 함께 전송됩니다. 사용자가 앱을 제거할 때 또는 Mobile SDK 전역 개인 정보 상태를 옵트아웃으로 설정할 때 ECID가 제거됩니다. 샘플 Luma 앱에서는 앱을 제거하고 다시 설치하여 고유한 ECID로 새 프로필을 만들어야 합니다.
+>Mobile SDK은 앱이 설치되면 자체 네임스페이스에 ECID(Experience Cloud ID)라는 고유한 ID를 생성합니다. 이 ECID는 모바일 장치의 영구 메모리에 저장되고 모든 히트와 함께 전송됩니다. 사용자가 앱을 제거할 때 또는 Mobile SDK 전역 개인 정보 상태를 옵트아웃으로 설정할 때 ECID가 제거됩니다. 샘플 Luma 앱에서는 앱을 제거하고 다시 설치하여 고유한 ECID로 새 프로필을 만들어야 합니다.
 
 
 새 ID 네임스페이스를 만들려면 다음 작업을 수행하십시오.
 
 1. 데이터 수집 인터페이스의 왼쪽 레일 탐색에서 **[!UICONTROL ID]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 신원 네임스페이스 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL ID 네임스페이스 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 표시 이름]**/`Luma CRM ID`과(와) **[!UICONTROL ID 기호]** 값 `lumaCRMId`을(를) 제공하십시오.
 1. **[!UICONTROL 장치 간 ID]**&#x200B;을(를) 선택하십시오.
 1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
@@ -95,7 +95,7 @@ ID 네임스페이스는 [ID 서비스](https://experienceleague.adobe.com/docs/
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. `Identity.updateIdentities` API 호출의 일부로 `IdentityItem` 개체를 Edge Network에게 보냅니다.
+   1. `Identity.updateIdentities` API 호출의 일부로 `IdentityItem` 개체를 Edge Network으로 보냅니다.
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
@@ -116,7 +116,7 @@ ID 네임스페이스는 [ID 서비스](https://experienceleague.adobe.com/docs/
 
 ## ID 제거
 
-[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API를 사용하여 저장된 클라이언트측 ID 맵에서 ID를 제거할 수 있습니다. ID 확장은 Edge Network에 대한 식별자 전송을 중지합니다. 이 API를 사용해도 서버측 ID 그래프에서 식별자가 제거되지는 않습니다. ID 그래프에 대한 자세한 내용은 [ID 그래프 보기](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=ko)를 참조하십시오.
+[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API를 사용하여 저장된 클라이언트측 ID 맵에서 ID를 제거할 수 있습니다. ID 확장은 Edge Network에 대한 식별자 전송을 중지합니다. 이 API를 사용해도 서버측 ID 그래프에서 식별자가 제거되지는 않습니다. ID 그래프에 대한 자세한 내용은 [ID 그래프 보기](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en)를 참조하십시오.
 
 1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**(으)로 이동하여 `func removeIdentities(emailAddress: String, crmId: String)` 함수에 다음 코드를 추가합니다.
 
@@ -125,7 +125,7 @@ ID 네임스페이스는 [ID 서비스](https://experienceleague.adobe.com/docs/
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
    ```
 
 1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**(으)로 이동하여 **[!UICONTROL 로그아웃]** 단추를 선택할 때 실행할 코드를 찾습니다. 다음 코드를 추가합니다.
@@ -140,7 +140,7 @@ ID 네임스페이스는 [ID 서비스](https://experienceleague.adobe.com/docs/
 
 1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
 1. Luma 앱에서
-   1. **[!UICONTROL 홈]** 탭을 선택하고 확인 아이콘을 왼쪽으로 이동합니다.
+   1. **[!UICONTROL 홈]** 탭을 선택하고 Assurance 아이콘을 왼쪽으로 이동합니다.
    1. 다음 항목 선택 오른쪽 상단의 <img src="assets/login.png" width="15" /> 아이콘
 
       <img src="./assets/identity1.png" width="300">
@@ -174,8 +174,8 @@ ID 네임스페이스는 [ID 서비스](https://experienceleague.adobe.com/docs/
 
 >[!SUCCESS]
 >
->이제 Adobe Experience Platform을 사용하여 Edge Network 및 (설정 시) ID를 업데이트하도록 앱을 설정했습니다.
+>이제 Edge Network 및 Adobe Experience Platform에서 ID를 업데이트하도록 앱을 설정했습니다(설정 시).
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[프로필 데이터 수집](profile.md)**

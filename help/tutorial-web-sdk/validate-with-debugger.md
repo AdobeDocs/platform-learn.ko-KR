@@ -4,7 +4,7 @@ description: Adobe Experience Platform Debugger을 사용하여 Platform Web SDK
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 
 
 이전에 디버거를 사용한 적이 없는 경우 5분 분량의 개요 비디오를 시청해 보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/36114?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 이 단원에서는 [Adobe Experience Platform Debugger 확장](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)을 사용하여 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)에서 하드코딩된 태그 속성을 자신의 속성으로 바꿉니다.
 
@@ -52,7 +52,7 @@ Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 
 
 Experience Platform Debugger에는 기존 태그 라이브러리를 다른 태그 라이브러리로 바꿀 수 있는 멋진 기능이 있습니다. 이 기법은 유효성 검사에 유용하며, 이를 통해 이 자습서의 많은 구현 단계를 건너뛸 수 있습니다.
 
-1. [Luma 데모 웹 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}가 열려 있는지 확인하고 Experience Platform 디버거 확장 아이콘을 선택합니다.
+1. [Luma 데모 웹 사이트](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}가 열려 있는지 확인하고 Experience Platform Debugger 확장 프로그램 아이콘을 선택합니다
 1. 디버거가 열리고, 하드코딩된 구현에 대한 몇 가지 세부 사항이 표시됩니다(디버거를 연 후 Luma 사이트를 다시 로드해야 할 수 있음)
 1. 디버거가 아래 그림과 같이 &quot;**[!UICONTROL Luma]**&quot;에 연결되어 있는지 확인한 다음 &quot;**[!UICONTROL 잠금]**&quot; 아이콘을 선택하여 디버거를 Luma 사이트에 잠급니다.
 1. **[!UICONTROL 로그인]** 단추를 선택하고 Adobe ID를 사용하여 Adobe Experience Cloud에 로그인합니다.
@@ -108,7 +108,7 @@ Experience Platform Debugger에는 기존 태그 라이브러리를 다른 태�
 
 ID 맵 세부 정보의 유효성을 검사할 수도 있습니다.
 
-1. 자격 증명 `test@adobe.com`/`test`을(를) 사용하여 Luma 사이트에 로그인합니다
+1. 자격 증명 `test@test.com`/`test`을(를) 사용하여 Luma 사이트에 로그인합니다
 
 1. [Luma 홈 페이지](https://luma.enablementadobe.com/content/luma/us/en.html)로 돌아갑니다.
 
@@ -143,7 +143,7 @@ ID 맵 세부 정보의 유효성을 검사할 수도 있습니다.
 
 [데이터 스트림 구성](configure-datastream.md) 단원에서 학습한 대로 Platform Web SDK은 먼저 디지털 속성에서 Platform Edge Network으로 데이터를 전송합니다. 그런 다음 Platform Edge Network에서 데이터 스트림에 활성화된 해당 서비스에 대한 추가 서버측 요청을 수행합니다. 디버거에서 Edge Trace 를 사용하여 Platform Edge Network에서 수행한 서버측 요청의 유효성을 검사할 수 있습니다.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### Edge 추적 활성화
@@ -169,4 +169,4 @@ Edge 추적을 활성화하려면 다음을 수행하십시오.
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
