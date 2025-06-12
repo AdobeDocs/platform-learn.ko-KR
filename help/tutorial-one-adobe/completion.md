@@ -1,18 +1,18 @@
 ---
-title: 완료 - 단일 Adobe 자습서
+title: 완료 - 원 Adobe 자습서
 description: 완료는 어떻게 측정됩니까?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
 
 # 완료는 어떻게 측정됩니까?
 
-[https://certification.adobe.com](https://certification.adobe.com)(으)로 이동하여 강의 **XXX**(으)로 이동합니다.
+[https://certification.adobe.com](https://certification.adobe.com)&#x200B;(으)로 이동하여 강의 **XXX**(으)로 이동합니다.
 
 모듈을 완료하려면 완료 증명을 제공해야 합니다.
 
@@ -27,17 +27,17 @@ ht-degree: 0%
 ![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 
-## 1.1 Adobe Firefly 서비스
+## 1.1 Adobe Firefly Services
 
-**Adobe Firefly 서비스** 모듈에 대해 필요한 완료 증명은 **Photoshop API - 텍스트 변경** 단계를 거친 후 연습 1.1.3이 끝날 때 생성된 PSD 파일의 **URL**&#x200B;입니다.
+**Adobe Firefly Services API - 텍스트 변경** 단계를 거친 후 연습 1.1.3이 끝날 때 생성된 PSD 파일의 **URL**&#x200B;은(는) **Photoshop** 모듈에 대한 예상 완료 증명입니다.
 
 URL은 다음과 같습니다. `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`.
 
 ![3](./assets/images/ps24.png){zoomable="yes"}
 
-## 1.2 Workfront Fusion을 사용한 Creative Workflow 자동화
+## 1.2 Workfront Fusion을 사용한 Creative 워크플로 자동화
 
-**Webhook를 사용하여 시나리오 활성화** 단계를 거친 후 **Workfront Fusion을 통한 Creative Workflow Automation** 모듈의 예상 완료 증명은 연습 1.2.3에서 만든 Webhook의 **URL**&#x200B;입니다.
+**Webhook를 사용하여 시나리오 활성화** 단계를 거친 후 **Workfront Fusion을 통한 Creative 워크플로 자동화** 모듈의 예상 완료 증명은 연습 1.2.3에서 만든 Webhook의 **URL**&#x200B;입니다.
 
 URL은 다음과 같습니다. `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
@@ -45,15 +45,15 @@ URL은 다음과 같습니다. `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqh
 
 ## 2.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services
 
-**Adobe Experience Manager Cloud Service 및 Edge Delivery Services** 모듈의 예상 완료 증명은 만들어진 웹 사이트의 **URL**&#x200B;입니다.
+**Adobe Experience Manager Cloud Service 및 Edge Delivery Services** 모듈에 대한 예상 완료 증명은 만들어진 웹 사이트의 **URL**&#x200B;입니다.
 
-URL은 다음과 같습니다. `https://main--citisignal--xxx.aem.page/us/en`.
+URL은 다음과 같습니다. `https://main--citisignal--xxx.aem.page/us/en/`.
 
 ![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Adobe Workfront을 사용한 워크플로우 관리
 
-Adobe Workfront을 통한 **워크플로 관리** 모듈의 예상 완료 증명은 연습 **2.2.2.5 AEM Assets에서 파일 보기**&#x200B;의 일부로 AEM Assets에 업로드된 이미지의 **URL**&#x200B;입니다.
+Adobe Workfront을 사용한 **워크플로 관리**&#x200B;의 예상 완료 증명은 연습 **2.2.2.5AEM Assets에서 파일 보기**&#x200B;의 일부로 AEM Assets에 업로드된 이미지의 **URL**&#x200B;입니다.
 
 URL을 가져오려면 AEM Assets에서 업로드한 이미지에서 **링크 공유**&#x200B;를 클릭합니다.
 
@@ -81,9 +81,9 @@ URL은 다음과 같습니다. `https://author-p148121-e1511399.adobeaemcloud.co
 
 ![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
-## 3.3 Adobe Journey Optimizer: Offer decisioning
+## 3.3 Adobe Journey Optimizer: Offer Decisioning
 
-**Adobe Journey Optimizer: Offer decisioning** 모듈에 대한 예상 완료 증명은 사용자가 만든 **결정**&#x200B;의 ID입니다.
+**Adobe Journey Optimizer: Offer Decisioning** 모듈에 대한 예상 완료 증명은 사용자가 만든 **결정**&#x200B;의 ID입니다.
 
 이 **`dps:offer-activity:1a08ba4b529b2fb2`**&#x200B;과(와) 유사한 **결정 ID**&#x200B;은(는) 여기에서 찾을 수 있습니다.
 

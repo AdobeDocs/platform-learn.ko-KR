@@ -4,9 +4,9 @@ description: AEM CS - 기본 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ Visual Studio 코드에서 **component-filters.json** 파일을 엽니다.
 
 ![차단](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 변경 사항 커밋
+## 1.1.4.3 변경 내용 커밋
 
 이제 프로젝트에서 GitHub 저장소로 다시 커밋해야 하는 몇 가지 변경 사항을 만들었습니다. 이렇게 하려면 **GitHub Desktop**&#x200B;을 엽니다.
 
@@ -169,7 +169,7 @@ PR 이름 `Fiber Offer custom block`을(를) 입력하십시오. **주 데이터
 
 ![차단](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 페이지에 블록 추가
+## 1.1.4.4 블록에 블록 추가
 
 기본 견적 블록이 정의되어 CitiSignal 프로젝트에 커밋되었으므로 기존 페이지에 **fiberoffer** 블록을 추가할 수 있습니다.
 
@@ -259,7 +259,7 @@ AEM Sites 개요에서 **CitiSignal** > **조각**(으)로 이동하여 **헤더
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-**URL** `/us/en/citisignal-fiber`에 입력한 다음 **V** 아이콘을 클릭하여 확인합니다.
+**URL** `/us/en//citisignal-fiber`에 입력한 다음 **V** 아이콘을 클릭하여 확인합니다.
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -271,10 +271,10 @@ AEM Sites 개요에서 **CitiSignal** > **조각**(으)로 이동하여 **헤더
 
 ![AEMCS](./images/nav5.png){zoomable="yes"}
 
-이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en` 및/또는 `main--citisignal--XXX.aem.live/us/en`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en/` 및/또는 `main--citisignal--XXX.aem.live/us/en/`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
 이 예에서 전체 URL은 다음과 같이 됩니다.
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 그럼 이걸 보셔야죠 **파이버**&#x200B;를 클릭합니다.
 

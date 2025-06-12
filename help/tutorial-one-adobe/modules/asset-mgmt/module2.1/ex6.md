@@ -4,9 +4,9 @@ description: AEM CS - MarTech 플러그인
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ AEM MarTech 플러그인을 사용하면 AEM 프로젝트에 대한 전체 MarTe
 >
 >이 플러그인은 현재 공동 혁신 프로젝트를 통해 AEM 엔지니어링과 협력하여 고객이 사용할 수 있습니다. [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech)에서 자세한 정보를 찾을 수 있습니다.
 
-## 1.1.6.1 저장소에 플러그인 추가
+## 1.1.6.1 플러그 인을 저장소에 추가합니다.
 
 **citsignal** GitHub 리포지토리에 사용 중인 폴더로 이동합니다. 폴더 이름을 마우스 오른쪽 단추로 클릭한 다음 **폴더의 새 터미널**&#x200B;을 선택합니다.
 
@@ -82,31 +82,31 @@ const AUDIENCES = {
 };
 ```
 
-**const AUDIENCES = {...};**&#x200B;에서 아래 코드를 붙여넣습니다.
+**const AUDIENCES = {...};**&#x200B;에서 아래 코드를 붙여 넣습니다.
 
 ```javascript
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/ko/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -151,19 +151,19 @@ const AUDIENCES = {
 
 ### datastreamId
 
-[https://platform.adobe.com/](https://platform.adobe.com/)(으)로 이동한 다음 왼쪽 메뉴에서 **데이터스트림**(으)로 이동합니다. 올바른 샌드박스에 있는지 확인하십시오. 샌드박스는 `--aepSandboxName--`이어야 합니다. 이 자습서의 시작 섹션에서 만든 `--aepUserLdap-- - One Adobe Datastream`(이)라는 이름의 데이터 스트림을 검색합니다. **복사** 아이콘을 클릭하여 **데이터 스트림 ID**&#x200B;을(를) 복사하고 `datastreamId:` 옆에 있는 자리 표시자 값 `XXX`을(를) 바꾸어 **scripts.js** 파일의 Visual Studio 코드에 붙여넣습니다.
+[https://platform.adobe.com/](https://platform.adobe.com/)&#x200B;(으)로 이동한 다음 왼쪽 메뉴에서 **데이터스트림**(으)로 이동합니다. 올바른 샌드박스에 있는지 확인하십시오. 샌드박스는 `--aepSandboxName--`이어야 합니다. 이 자습서의 시작 섹션에서 만든 `--aepUserLdap-- - One Adobe Datastream`(이)라는 이름의 데이터 스트림을 검색합니다. **복사** 아이콘을 클릭하여 **데이터 스트림 ID**&#x200B;을(를) 복사하고 `datastreamId:` 옆에 있는 자리 표시자 값 `XXX`을(를) 바꾸어 **scripts.js** 파일의 Visual Studio 코드에 붙여넣습니다.
 
 ![AEMCS](./images/scriptsvar1.png){zoomable="yes"}
 
 ### orgId
 
-[https://platform.adobe.com/](https://platform.adobe.com/)(으)로 이동한 다음 왼쪽 메뉴에서 **쿼리**(으)로 이동합니다. **자격 증명**&#x200B;에서 **사용자 이름**(으)로 **IMS 조직 ID**&#x200B;을(를) 찾을 수 있습니다. **복사** 아이콘을 클릭하여 **IMS 조직 ID**&#x200B;을(를) 복사하고 `orgId:` 옆에 있는 자리 표시자 값 `XXX`을(를) 바꾸어 **scripts.js** 파일의 Visual Studio 코드에 붙여넣습니다.
+[https://platform.adobe.com/](https://platform.adobe.com/)&#x200B;(으)로 이동한 다음 왼쪽 메뉴에서 **쿼리**(으)로 이동합니다. **자격 증명**&#x200B;에서 **사용자 이름**(으)로 **IMS 조직 ID**&#x200B;을(를) 찾을 수 있습니다. **복사** 아이콘을 클릭하여 **IMS 조직 ID**&#x200B;을(를) 복사하고 `orgId:` 옆에 있는 자리 표시자 값 `XXX`을(를) 바꾸어 **scripts.js** 파일의 Visual Studio 코드에 붙여넣습니다.
 
 ![AEMCS](./images/scriptsvar2.png){zoomable="yes"}
 
 ### launchUrls
 
-[https://platform.adobe.com/](https://platform.adobe.com/)(으)로 이동한 다음 왼쪽 메뉴에서 **태그**(으)로 이동합니다. LDAP를 사용하여 속성을 검색합니다. LDAP는 `--aepUserLdap--`이어야 합니다. 웹 속성을 엽니다.
+[https://platform.adobe.com/](https://platform.adobe.com/)&#x200B;(으)로 이동한 다음 왼쪽 메뉴에서 **태그**(으)로 이동합니다. LDAP를 사용하여 속성을 검색합니다. LDAP는 `--aepUserLdap--`이어야 합니다. 웹 속성을 엽니다.
 
 ![AEMCS](./images/scriptsvar3.png){zoomable="yes"}
 
@@ -319,7 +319,7 @@ GitHub Desktop Client를 열고 변경 사항을 커밋합니다.
 
 AEM Edge Delivery Services MarTech 플러그인이 제대로 작동하려면 용 확장을 추가해야 합니다.
 
-[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)(으)로 이동합니다. 이름이 `--aepUserLdap-- - One Adobe (DD/MM/YYYY)`인 웹용 Tags 속성을 검색하여 엽니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다. 이름이 `--aepUserLdap-- - One Adobe (DD/MM/YYYY)`인 웹용 Tags 속성을 검색하여 엽니다.
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
@@ -343,10 +343,10 @@ AEM Edge Delivery Services MarTech 플러그인이 제대로 작동하려면 용
 
 ## 1.1.6.5 Adobe Experience Platform Edge Network으로 데이터 보내기
 
-이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en` 및/또는 `main--citisignal--XXX.aem.live/us/en`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en/` 및/또는 `main--citisignal--XXX.aem.live/us/en/`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
 이 예에서 전체 URL은 다음과 같이 됩니다.
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 >[!NOTE]
 >

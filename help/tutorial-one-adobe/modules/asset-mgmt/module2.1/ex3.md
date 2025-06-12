@@ -4,9 +4,9 @@ description: AEM CS 환경 설정
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -123,7 +123,7 @@ ZZZ = `citisignal`
 
 `fstab.yaml` 파일이 업데이트되었습니다.
 
-## 1.1.3.3 CitiSignal 에셋 업로드
+## 1.1.3.3 CitiSignal 자산 업로드
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
 
@@ -308,10 +308,10 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
-이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en` 및/또는 `main--citisignal--XXX.aem.live/us/en`(으)로 이동하여 웹 사이트에 액세스할 수 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en/` 및/또는 `main--citisignal--XXX.aem.live/us/en/`(으)로 이동하여 웹 사이트에 액세스할 수 있습니다.
 
 이 예에서 전체 URL은 다음과 같이 됩니다.
-`https://main--citisignal--woutervangeluwe.aem.page/us/en` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
 
 에셋을 먼저 게시해야 하므로 모든 에셋이 올바르게 표시되기까지 시간이 걸릴 수 있습니다.
 
@@ -323,7 +323,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p148073-e1511503.adobea
 
 ![AEMCS](./images/aemcssetup47.png){zoomable="yes"}
 
-## 1.1.3.7 페이지 성능 테스트
+## 1.1.3.7 테스트 페이지 성능
 
 [https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}(으)로 이동합니다. URL을 입력하고 **분석**&#x200B;을 클릭합니다.
 

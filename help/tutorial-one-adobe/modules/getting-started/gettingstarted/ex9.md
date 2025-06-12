@@ -3,9 +3,9 @@ title: 시작하기 - 설치할 애플리케이션
 description: 시작하기 - 설치할 애플리케이션
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '212'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,15 @@ ht-degree: 1%
 
 ![Adobe I/O 새 통합](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 **Adobe Creative Cloud** 앱을 열고 **앱**(으)로 이동합니다. 컴퓨터에 Photoshop을 설치합니다.
+
+![Adobe I/O 새 통합](./images/psd.png)
+
+## Adobe Illustrator
+
+**Adobe Creative Cloud** 앱을 열고 **앱**(으)로 이동합니다. 컴퓨터에 Illustrator을 설치합니다.
 
 ![Adobe I/O 새 통합](./images/psd.png)
 

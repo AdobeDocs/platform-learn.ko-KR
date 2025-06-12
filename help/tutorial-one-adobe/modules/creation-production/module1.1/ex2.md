@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 0%
 
 ---
@@ -233,7 +233,7 @@ Azure 저장소 탐색기에서 컨테이너를 마우스 오른쪽 단추로 �
 
 ![Azure 저장소](./images/az29.png){zoomable="yes"}
 
-**SAS-token**&#x200B;을 사용하여 Azure 저장소 계정에 파일을 업로드하세요.
+**SAS 토큰 URL**&#x200B;을(를) 사용하여 Azure 저장소 계정에 파일을 업로드하세요.
 
 Postman으로 돌아가서 **FF - Firefly Services 기술 내부자** 폴더를 선택한 다음 **Firefly** 폴더에서 **..**&#x200B;을(를) 선택하고 **요청 추가**&#x200B;를 선택합니다.
 
@@ -345,7 +345,7 @@ Azure Storage Explorer로 돌아가서 컨테이너를 마우스 오른쪽 단�
 
 ![Azure 저장소](./images/az102.png){zoomable="yes"}
 
-URL을 복사하고 컴퓨터의 파일에 기록하여 읽기 권한이 있는 장기 SAS 토큰을 가져옵니다.
+URL을 복사하고 컴퓨터의 파일에 기록하여 읽기/쓰기 권한이 있는 장기 SAS 토큰을 가져옵니다.
 
 ![Azure 저장소](./images/az103.png){zoomable="yes"}
 
