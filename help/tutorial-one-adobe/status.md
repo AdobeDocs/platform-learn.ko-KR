@@ -3,9 +3,9 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '367'
 ht-degree: 12%
 
 ---
@@ -32,7 +32,8 @@ ht-degree: 12%
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} | 2025년 4월 6일 | 예 | - |
 | [1.2 Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} | 2025년 4월 6일 | 예 | - |
-| [1.3 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"} | 2025년 1월 4일 | 예 | - |
+| [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025 | 예 | - |
+| [1.4 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 2025년 1월 4일 | 예 | - |
 
 
 ## &#x200B;3. 자산 관리

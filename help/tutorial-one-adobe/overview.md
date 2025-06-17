@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 2%
 
 이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
 
-- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**&#x200B;에 합격할 수 있습니다.
+- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**에 합격할 수 있습니다.
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
-- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험 **XXX**&#x200B;을(를) 선택하여 통과할 수 있습니다.
+- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험 **XXX**을(를) 선택하여 통과할 수 있습니다.
   [TBC](https://certification.adobe.com/certification/services-qualified-credential)
 
 ## 컨텐츠 상태
@@ -65,9 +65,13 @@ ht-degree: 2%
 
 [1.2 Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-이 기본 모듈에서는 Adobe Workfront Fusion을 사용하여 콘텐츠 제작 워크플로를 자동화하고 확장하게 됩니다.
+이 모듈에서는 Adobe Workfront Fusion을 사용하여 콘텐츠 제작 워크플로를 자동화하고 확장하게 됩니다.
 
-[1.3 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+이 모듈에서는 마케팅 및 크리에이티브 팀이 옴니채널 컨텐츠를 생성하고 활성화하고 디지털 마케팅 캠페인을 위한 엔터프라이즈 거버넌스를 통해 최적화할 수 있는 Gen AI-first-end인 Adobe GenStudio for Performance Marketing의 최종 워크플로 애플리케이션을 사용합니다.
+
+[1.4 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 이 기본 모듈에서는 Adobe Express을 사용하여 이미지와 비디오를 만들고 이러한 에셋을 더 광범위한 Adobe Experience Cloud 에코시스템을 위해 공유합니다.
 
