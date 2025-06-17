@@ -22,4 +22,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
 
-자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}를 참조하세요.
+자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}를 참조하세요.
