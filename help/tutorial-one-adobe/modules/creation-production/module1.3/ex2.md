@@ -238,7 +238,7 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ![GSPeM](./images/gspem129.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-meta-ad`을(를) 설정하고 종횡비를 **1:1**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem130.png)
@@ -267,7 +267,7 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ![GSPeM](./images/gspem136.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem137.png)
@@ -296,7 +296,7 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ![GSPeM](./images/gspem143.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x600`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x600**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem144.png)
@@ -325,7 +325,7 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ![GSPeM](./images/gspem150.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-displaytemplate-970x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **970x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem151.png)
