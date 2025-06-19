@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: badef353b0df7b678e05d2e89280393b56fd65b6
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3352'
 ht-degree: 0%
 
 ---
@@ -524,14 +524,12 @@ Frame.io 연결이 자동으로 선택됩니다.
 
 **Frame.io 모듈 구성의 경우 - 사용자 지정 API 호출**&#x200B;을(를) 수행하려면 URL `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`을(를) 사용하십시오.
 
-폴더 ID로 위의 URL에서 XXX를 교체해야 합니다.
-
 >[!NOTE]
 >
 >앞에서 설명한 대로 Workfront Fusion의 변수는 `{{1.account_id}}` 및 `{{4.body.data.parent_id}}` 구문을 사용하여 수동으로 지정할 수 있습니다. 변수의 숫자는 시나리오의 모듈을 참조합니다.
->&#x200B;>이 예제에서는 시나리오의 첫 번째 모듈이 **Webhooks**&#x200B;이고 시퀀스 번호가 **1**&#x200B;인 것을 볼 수 있습니다. 즉, `{{1.account_id}}` 변수가 시퀀스 번호가 1인 모듈에서 해당 필드에 액세스합니다.
->&#x200B;>이 예제에서는 시나리오의 네 번째 모듈이 **Frame.io - 사용자 지정 API 호출 만들기**&#x200B;이고 시퀀스 번호가 **4**&#x200B;인 것을 볼 수 있습니다. 즉, `{{4.body.data.parent_id}}` 변수가 시퀀스 번호가 4인 모듈에서 해당 필드에 액세스합니다.
->&#x200B;>모듈의 시퀀스 번호가 다른 경우 올바른 모듈에 연결되도록 위 URL의 변수를 업데이트해야 합니다.
+>>이 예제에서는 시나리오의 첫 번째 모듈이 **Webhooks**&#x200B;이고 시퀀스 번호가 **1**&#x200B;인 것을 볼 수 있습니다. 즉, `{{1.account_id}}` 변수가 시퀀스 번호가 1인 모듈에서 해당 필드에 액세스합니다.
+>>이 예제에서는 시나리오의 네 번째 모듈이 **Frame.io - 사용자 지정 API 호출 만들기**&#x200B;이고 시퀀스 번호가 **4**&#x200B;인 것을 볼 수 있습니다. 즉, `{{4.body.data.parent_id}}` 변수가 시퀀스 번호가 4인 모듈에서 해당 필드에 액세스합니다.
+>>모듈의 시퀀스 번호가 다른 경우 올바른 모듈에 연결되도록 위 URL의 변수를 업데이트해야 합니다.
 
 ![프레임 IO](./images/frame78.png)
 
@@ -551,7 +549,7 @@ Frame.io 연결이 자동으로 선택됩니다.
 >[!NOTE]
 >
 >Workfront Fusion의 변수는 `{{6.data.newPsdTemplate}}` 구문을 사용하여 수동으로 지정할 수 있습니다. 변수의 숫자는 시나리오의 모듈을 참조합니다. 이 예제에서는 시나리오의 여섯 번째 모듈을 **HTTP - 요청 만들기**&#x200B;라고 하고 시퀀스 번호가 **6**&#x200B;인 것을 볼 수 있습니다. 즉, `{{6.data.newPsdTemplate}}` 변수가 시퀀스 번호가 6인 모듈에서 **data.newPsdTemplate** 필드에 액세스합니다.
->&#x200B;>모듈의 시퀀스 번호가 다른 경우 올바른 모듈에 연결되도록 위 URL의 변수를 업데이트해야 합니다.
+>>모듈의 시퀀스 번호가 다른 경우 올바른 모듈에 연결되도록 위 URL의 변수를 업데이트해야 합니다.
 
 **확인**&#x200B;을 클릭합니다.
 
