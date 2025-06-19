@@ -5,18 +5,27 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 32f7cfc1aafb7a58dca99be3be9149c90bcfd040
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
 # 1.3.2 구성: 가상 사용자, 제품 및 템플릿
 
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **GenStudio**&#x200B;을(를) 엽니다.
+
+![GSPeM](./images/gspem1.png)
+
 ## 1.3.2.1개 제품
 
-세 점 **..**&#x200B;을(를) 클릭한 다음 **제품**&#x200B;을(를) 선택합니다.
+GenStudio for Performance Marketing의 제품은 제품 사양, 장점 및 차별화 요소에 대한 깊은 이해를 활용하여 효과적인 콘텐츠를 생성합니다.
+
+제품은 이미지, 설명 및 가치 제안 등 특정 제품의 모든 요소를 포괄하여 일관된 브랜드 표현을 만듭니다. Adobe의 고급 AI 기술을 활용하는 GenStudio for Performance Marketing 지침(브랜드, 제품 및 가상 사용자)은 함께 작동하여 제품의 강점을 보여주고 모든 메시지에서 일관성을 보장하는 매력적인 콘텐츠를 생성합니다.
+
+제품 만들기를 시작하려면 세 점 **..**&#x200B;을(를) 클릭한 다음 **제품**&#x200B;을(를) 선택하십시오.
 
 ![GSPeM](./images/gspem101.png)
 
@@ -102,7 +111,11 @@ Smart Home Families: “Every room. Every device. Always on. Welcome to whole-ho
 
 ## 1.3.2.2명의 가상 사용자
 
-세 점 **..**&#x200B;을(를) 클릭한 다음 **가상 사용자**&#x200B;을(를) 선택하십시오.
+가상 사용자는 정보, 관심사, 불만 사항, 환경 설정 및 행동 트레이트를 포함하여 고객 세그먼트에 대한 실제 묘사를 제공합니다.
+
+GenStudio for Performance Marketing은 지침(브랜드, 제품 및 가상 사용자)의 힘과 Adobe의 생성 AI 기술을 활용하여 대상 고객을 위한 개인화된 마케팅 콘텐츠를 선별합니다&#x200B;.
+
+가상 사용자를 만들려면 세 점 **..**&#x200B;을(를) 클릭한 다음 **가상 사용자**&#x200B;를 선택하십시오.
 
 ![GSPeM](./images/gspem111.png)
 
@@ -214,6 +227,10 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ## 템플릿 1.3.2.3개
 
+GenStudio for Performance Marketing을 통해 콘텐츠 작성자는 템플릿을 사용하여 일관된 온브랜드 마케팅 콘텐츠를 신속하게 제작할 수 있습니다. 템플릿은 사전 구성된 레이아웃 및 디자인 요소를 포함하는 시작점을 제공하여 새 콘텐츠를 생성하는 데 필요한 시간과 노력을 크게 줄입니다.
+
+GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플릿을 직접 만들 수 없지만 Adobe InDesign, Illustrator 또는 Express와 같이 인기 있는 디자인 도구를 사용하여 템플릿을 쉽게 디자인하고 준비할 수 있습니다. 디자인이 완료되면 GenStudio for Performance Marketing에서 사용하도록 조정할 수 있습니다. 이 연습에서는 사전 정의된 여러 템플릿을 GenStudio for Performance Marketing으로 가져옵니다.
+
 이전 연습에서는 바탕 화면에 [CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) 파일을 다운로드하고 압축을 풀었습니다. 해당 폴더에는 이제 GenStudio에서 가져와야 하는 4개의 샘플 템플릿이 포함되어 있습니다.
 
 ![GSPeM](./images/gspem17.png)
@@ -238,7 +255,7 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ![GSPeM](./images/gspem129.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-meta-ad`을(를) 설정하고 종횡비를 **1:1**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem130.png)
@@ -267,7 +284,7 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ![GSPeM](./images/gspem136.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem137.png)
@@ -296,7 +313,7 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ![GSPeM](./images/gspem143.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x600`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x600**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem144.png)
@@ -325,7 +342,7 @@ Messaging that highlights “work-from-anywhere” flexibility
 
 ![GSPeM](./images/gspem150.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-970x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **970x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem151.png)

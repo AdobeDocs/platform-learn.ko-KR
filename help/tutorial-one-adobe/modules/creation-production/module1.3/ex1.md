@@ -5,14 +5,21 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '465'
-ht-degree: 3%
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
 # 1.3.1 구성: 브랜드
+
+브랜드는 조직, 제품, 서비스 또는 개념을 다른 브랜드와 구별합니다. 브랜드의 일부 측면이 로고와 같이 객관적인 반면, 다른 측면은 목소리 톤과 같이 주관적인 것입니다.
+
+GenStudio for Performance Marketing은 브랜드의 풍부한 브랜드 정보를 사용하고 제품 및 성향 정보와 파트너 관계를 맺으며 포괄적인 브랜드 정체성을 구축합니다. 이 브랜드 정체성은 Adobe의 생성 AI 기술을 사용하여 온브랜드 콘텐츠 생성을 알리는 데 사용됩니다.
+
+나만의 브랜드를 만들려면 아래 단계를 따르십시오.
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **GenStudio**&#x200B;을(를) 엽니다.
 
