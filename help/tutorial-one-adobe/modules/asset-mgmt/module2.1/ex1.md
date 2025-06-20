@@ -4,10 +4,10 @@ description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 1bcc5123f16dbde30877662159e06d61d75e7287
+source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '360'
+ht-degree: 3%
 
 ---
 
@@ -76,7 +76,34 @@ ht-degree: 4%
 
 그러면 다음 연습에서 필요한 **작성자** 환경의 URL을 포함한 환경 세부 정보가 표시됩니다.
 
+**Content Hub** 줄을 보고 **활성화하려면 클릭**&#x200B;을 선택하세요.
+
 ![AEMCS](./images/aemcs10.png)
+
+**활성화**&#x200B;를 클릭합니다.
+
+![AEMCS](./images/aemcsact1.png)
+
+**Content Hub** 활성화가 시작되었습니다. 10분 이상 걸릴 수 있습니다.
+
+![AEMCS](./images/aemcsact2.png)
+
+약 10분 후에 **Content Hub**의 활성화가 완료됩니다.
+그런 다음 **Dynamic Media** 줄을 보고 **활성화하려면 클릭**&#x200B;을 선택하세요.
+
+![AEMCS](./images/aemcsact3.png)
+
+**활성화**&#x200B;를 클릭합니다.
+
+![AEMCS](./images/aemcsact4.png)
+
+**Dynamic Media** 활성화가 시작되었습니다. 10분 이상 걸릴 수 있습니다.
+
+![AEMCS](./images/aemcsact5.png)
+
+약 10분 후 **Dynamic Media**&#x200B;의 활성화가 완료됩니다.
+
+![AEMCS](./images/aemcsact6.png)
 
 파이프라인 실행이 완료되면 다음 연습을 계속할 수 있습니다.
 

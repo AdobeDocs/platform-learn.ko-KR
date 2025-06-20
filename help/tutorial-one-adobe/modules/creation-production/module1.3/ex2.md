@@ -1,23 +1,21 @@
 ---
-title: Adobe Express 시작하기
-description: Adobe Express 시작하기
+title: GenStudio for Performance Marketing 구성 가상 사용자 제품 템플릿
+description: GenStudio for Performance Marketing 구성 가상 사용자 제품 템플릿
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # 1.3.2 구성: 가상 사용자, 제품 및 템플릿
 
-[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **GenStudio**&#x200B;을(를) 엽니다.
-
-![GSPeM](./images/gspem1.png)
+이 연습에서는 GenStudio for Performance Marketing에서 가상 사용자, 제품 및 템플릿을 구성합니다.
 
 ## 1.3.2.1개 제품
 
@@ -255,7 +253,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem129.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-meta-ad`을(를) 설정하고 종횡비를 **1:1**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem130.png)
@@ -284,7 +282,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem136.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem137.png)
@@ -313,7 +311,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem143.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x600`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x600**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem144.png)
@@ -342,7 +340,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem150.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-970x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **970x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem151.png)

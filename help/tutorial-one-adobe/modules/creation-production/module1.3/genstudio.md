@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '462'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,9 @@ GenStudio for Performance Marketing은 브랜드 및 시장에 대한 정보를 
 
 ## 전제 조건
 
-- Adobe GenStudio for Performance Marketing [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}에 액세스
+- Adobe GenStudio for Performance Marketing 액세스
+- Adobe Workfront 및 Adobe Workfront Planning 액세스
+- Content Hub이 활성화된 Adobe Experience Manager Cloud Service 샌드박스에 액세스
 
 ## 연습
 
@@ -40,11 +42,11 @@ GenStudio for Performance Marketing은 브랜드 및 시장에 대한 정보를 
 
 [1.3.2 구성: 가상 사용자, 제품 및 템플릿](./ex2.md){target="_blank"}
 
-이 연습에서는 GenStudio for Performance Marketing에서 가상 사용자 및 제품을 구성합니다.
+이 연습에서는 GenStudio for Performance Marketing에서 가상 사용자, 제품 및 템플릿을 구성합니다.
 
 [1.3.3 메타로 캠페인 활성화](./ex3.md){target="_blank"}
 
-이 연습에서는 Meta에 대한 연결을 구성하고 광고를 만들고, Adobe Workfront을 사용하여 광고를 승인하고, Meta에 광고를 게시하는 데 필요한 모든 단계를 설명합니다.
+이 연습에서는 Campaign을 만듭니다. 또한 Meta에 대한 연결을 구성하고 광고를 만들고, Adobe Workfront을 사용하여 광고를 승인하고, 광고를 Meta에 게시하는 데 필요한 모든 단계를 설명합니다.
 
 [요약 및 이점](./summary.md){target="_blank"}
 
