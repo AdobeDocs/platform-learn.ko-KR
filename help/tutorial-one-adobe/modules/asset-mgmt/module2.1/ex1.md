@@ -88,7 +88,7 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcsact2.png)
 
-약 10분 후에 **Content Hub**의 활성화가 완료됩니다.
+약 10분 후에 **Content Hub**&#x200B;의 활성화가 완료됩니다.
 그런 다음 **Dynamic Media** 줄을 보고 **활성화하려면 클릭**&#x200B;을 선택하세요.
 
 ![AEMCS](./images/aemcsact3.png)
