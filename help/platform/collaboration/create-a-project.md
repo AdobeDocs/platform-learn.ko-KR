@@ -20,6 +20,6 @@ ht-degree: 0%
 
 검색, 활성화 및 측정에 대한 간단한 개요를 포함하여 Collaboration에서 프로젝트를 만드는 기본 사항에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464041/?learn=on&enablevpops&captions=kor)
 
 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}를 참조하세요.
