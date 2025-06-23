@@ -4,16 +4,16 @@ description: Experience Platform Web SDK을 사용하여 Adobe Analytics을 설�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # Adobe Experience Platform Web SDK으로 Adobe Analytics 설정
 
-[Adobe Analytics Web SDK](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/web-sdk/overview)를 사용하여 Adobe Experience Platform을 설정하고, Adobe Analytics에 데이터를 보내기 위한 태그 규칙을 만들고, Analytics가 데이터를 예상대로 캡처하고 있는지 확인하는 방법에 대해 알아봅니다.
+[Adobe Analytics Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)를 사용하여 Adobe Experience Platform을 설정하고, Adobe Analytics에 데이터를 보내기 위한 태그 규칙을 만들고, Analytics가 데이터를 예상대로 캡처하고 있는지 확인하는 방법에 대해 알아봅니다.
 
 [Adobe Analytics](https://experienceleague.adobe.com/ko/docs/analytics)은(는) 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * Adobe Analytics에 대해 잘 알고 있고 액세스할 수 있습니다.
 
-* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [만드십시오](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [만드십시오](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * 이 자습서의 초기 구성 및 태그 구성 섹션에서 이전 단원을 완료합니다.
 
@@ -78,7 +78,7 @@ Platform Web SDK은 웹 사이트에서 Platform Edge Network으로 데이터를
 
 ### 자동으로 매핑된 필드
 
-많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다. 최신 매핑 목록을 확인하려면 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)을 참조하십시오.
+많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다. 최신 매핑 목록을 확인하려면 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)을 참조하십시오.
 
 사용자 지정 스키마를 정의하지 않았더라도 _이(가) 발생할 경우_&#x200B;입니다. Experience Platform Web SDK은 자동으로 일부 데이터를 수집하여 XDM 필드로 Platform Edge Network에 보냅니다. 예를 들어 Web SDK은 현재 페이지 URL을 읽고 XDM 필드 `web.webPageDetails.URL`(으)로 보냅니다. 이 필드는 Adobe Analytics으로 전달되며 Adobe Analytics의 페이지 URL 보고서가 자동으로 채워집니다.
 
@@ -106,8 +106,8 @@ Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체 아래�
 >[!NOTE]
 >
 >2022년 8월 18일부터 `productListItems[].SKU`은(는) s.products 변수의 제품 이름에 매핑하는 우선 순위를 갖습니다.
->&#x200B;>`productListItems[].name`(으)로 설정된 값은 `productListItems[].SKU`이(가) 없는 경우에만 제품 이름에 매핑됩니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
->&#x200B;>빈 문자열 또는 null을 `productListItems[].SKU`(으)로 설정하지 마십시오. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
+>>`productListItems[].name`(으)로 설정된 값은 `productListItems[].SKU`이(가) 없는 경우에만 제품 이름에 매핑됩니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
+>>빈 문자열 또는 null을 `productListItems[].SKU`(으)로 설정하지 마십시오. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
 
 
 ### 데이터 개체에서 변수 설정
@@ -366,6 +366,10 @@ Analytics가 Experience Platform Web SDK을 통해 데이터를 제대로 캡처
 1. `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1` 검색
 1. 아래로 스크롤하여 `[!UICONTROL gn]` 변수를 확인합니다. `[!UICONTROL s.pageName]` 변수에 대한 Analytics 동적 구문입니다. 데이터 레이어에서 페이지 이름을 캡처합니다.
 
+   >[!NOTE]
+   >
+   > 이전 연습에서 `data` 개체로 `xdm` 개체를 덮어쓴 경우 `gn` 값이 `test`일 수 있습니다.
+
    ![Analytics 제품 문자열](assets/analytics-debugger-edge-page-view.png)
 
 ### 제품 문자열 및 전자 상거래 이벤트 유효성 검사
@@ -389,7 +393,7 @@ Analytics가 Experience Platform Web SDK을 통해 데이터를 제대로 캡처
 
    >[!TIP]
    >
-   > `ecommerce - pdp library loaded - AA (order 20)` 규칙은 `all pages global content variables - library loaded - AA (order 1)` 규칙이 설정한 `eventType`의 값을 시퀀스 뒷부분에서 트리거하도록 설정했으므로 덮어씁니다
+   > `ecommerce - library loaded - set product details variables - 20` 규칙은 `all pages - library loaded - set global variables - 1` 규칙이 설정한 `eventType`의 값을 시퀀스 뒷부분에서 트리거하도록 설정했으므로 덮어씁니다
 
 
    ![Analytics 제품 보기](assets/analytics-debugger-prodView.png)
@@ -435,12 +439,12 @@ Adobe Experience Platform Assurance을 사용하면 웹 사이트 및 모바일 
 [Assurance](validate-with-assurance.md) 단원에서 배운 대로 Assurance 세션을 시작하는 방법에는 여러 가지가 있습니다. 마지막 연습에서 시작한 Edge 추적 세션으로 이미 Adobe Experience Platform Debugger이 열려 있으므로 디버거를 통해 Assurance에 액세스하는 것이 좋습니다.
 ![Adobe Experience Platform 데이터 수집을 통한 Assurance](assets/assurance-open-aep-debugger.png)
 
-**[!UICONTROL &quot;웹 SDK 자습서 3&quot;]** Assurance 세션 내에서 이벤트 검색 표시줄에 **[!UICONTROL &quot;hitdebugger&quot;]**&#x200B;을(를) 입력하여 결과를 Adobe Analytics Post에서 처리된 데이터로 필터링합니다.
+**[!UICONTROL &quot;웹 SDK 자습서 3&quot;]** Assurance 세션 내에서 이벤트 검색 표시줄에 **[!UICONTROL &quot;hitdebugger&quot;]**을(를) 입력하여 결과를 Adobe Analytics Post에서 처리된 데이터로 필터링합니다.
 ![Assurance Adobe Analytics 사후 처리된 데이터](assets/assurance-hitdebugger.png)
 
 ### Experience Cloud ID 유효성 검사
 
-Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘의 공급업체는 **[!UICONTROL com.adobe.analytics.hitdebugger]**&#x200B;여야 합니다.
+Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘의 공급업체는 **[!UICONTROL com.adobe.analytics.hitdebugger]**여야 합니다.
 ![Assurance에서 Adobe Analytics 유효성 검사](assets/assurance-hitdebugger-payload.png)
 
 그런 다음 **[!UICONTROL mcvisId]**(으)로 아래로 스크롤하여 ECID가 올바르게 캡처되었는지 확인합니다
@@ -450,7 +454,13 @@ Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선�
 
 동일한 비콘을 사용하여 컨텐츠 페이지 보기가 올바른 Adobe Analytics 변수에 매핑되었는지 확인합니다.
 **[!UICONTROL pageName]**(으)로 아래로 스크롤하여 `Page Name`이(가) 올바르게 캡처되었는지 확인합니다.
-![Assurance을 사용한 페이지 이름 유효성 검사](assets/assurance-hitdebugger-content-pagename.png)
+
+
+    >[!NOTE]
+    >
+    > 이전 연습에서 &#39;data&#39; 개체로 &#39;xdm&#39; 개체를 덮어쓴 경우 &#39;pageName&#39; 값이 &#39;test&#39;일 수 있습니다.
+    
+    ![Assurance으로 페이지 이름 유효성 검사](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 제품 문자열 및 전자 상거래 이벤트 유효성 검사
 
@@ -481,4 +491,4 @@ Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선�
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.

@@ -1,24 +1,24 @@
 ---
-title: 쿼리 서비스 개요
-description: Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 영향력 있는 통찰력을 생성하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
+title: 쿼리 서비스 및 데이터 Distiller 개요
+description: Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 기능을 통해 사용할 수 있는 데이터 출력 및 예약과 같은 향상된 기능을 통해 SQL을 사용하여 데이터 레이크에 저장된 고객 경험 데이터를 탐색, 유효성 검사 및 변환할 수 있습니다. 이 비디오는 사용자가 다양한 플랫폼 기반 애플리케이션에서 쿼리 서비스를 활용하는 방법을 이해하는 데 도움이 되는 핵심 기능에 대한 개요를 제공합니다.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3139
 thumbnail: 29795.jpg
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 8092c5f120a51b35f068261b70131ef303b4c51d
 workflow-type: tm+mt
-source-wordcount: '643'
-ht-degree: 15%
+source-wordcount: '727'
+ht-degree: 13%
 
 ---
 
-# 쿼리 서비스 개요
+# 쿼리 서비스 및 데이터 Distiller 개요
 
-Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 영향력 있는 통찰력을 생성하는 데 어떻게 도움이 되는지에 대해 알아봅니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ko)를 참조하세요.
+Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 기능을 통해 사용할 수 있는 데이터 출력 및 예약과 같은 향상된 기능을 통해 SQL을 사용하여 데이터 레이크에 저장된 고객 경험 데이터를 탐색, 유효성 검사 및 변환할 수 있습니다. 이 비디오는 사용자가 다양한 플랫폼 기반 애플리케이션에서 쿼리 서비스를 활용하는 방법을 이해하는 데 도움이 되는 핵심 기능에 대한 개요를 제공합니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/32949?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## 기본 사용
 
@@ -59,7 +59,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="query-service-api.md" title="쿼리 서비스 API" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414088?format=jpeg&nocache=1740415310716&captions=kor" alt="쿼리 서비스 API"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333700?format=jpeg&nocache=1740415310716" alt="쿼리 서비스 API"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="adobe-defined-functions.md" title="Adobe 정의 함수" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414052?format=jpeg&nocache=1740415310668&captions=kor" alt="Adobe 정의 함수"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333701?format=jpeg&nocache=1740415310668" alt="Adobe 정의 함수"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="쿼리 서비스로 쿼리 실행" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32942?format=jpeg&nocache=1740415310683&captions=kor" alt="쿼리 서비스로 쿼리 실행"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1740415310683" alt="쿼리 서비스로 쿼리 실행"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="쿼리 서비스를 통한 데이터 사용 패턴 이해" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32950?format=jpeg&nocache=1740415310706&captions=kor" alt="쿼리 서비스를 통한 데이터 사용 패턴 이해"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415310706" alt="쿼리 서비스를 통한 데이터 사용 패턴 이해"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="데이터 탐색" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414058?format=jpeg&nocache=1740415312087&captions=kor" alt="데이터 탐색"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1740415312087" alt="데이터 탐색"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="쿼리 서비스로 데이터 레이크의 데이터 유효성 검사" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445684?format=jpeg&nocache=1740415312076&captions=kor" alt="쿼리 서비스로 데이터 레이크의 데이터 유효성 검사"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="쿼리 서비스로 데이터 레이크의 데이터 유효성 검사"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -221,7 +221,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="데이터 준비" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414070?format=jpeg&nocache=1740415313086&captions=kor" alt="데이터 준비"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1740415313086" alt="데이터 준비"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="쿼리 서비스를 통한 데이터 사용 패턴 이해" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32950?format=jpeg&nocache=1740415313190&captions=kor" alt="쿼리 서비스를 통한 데이터 사용 패턴 이해"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415313190" alt="쿼리 서비스를 통한 데이터 사용 패턴 이해"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -280,7 +280,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="쿼리 서비스에 타블로 연결" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414046?format=jpeg&nocache=1740415313229&captions=kor" alt="쿼리 서비스에 타블로 연결"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1740415313229" alt="쿼리 서비스에 타블로 연결"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ Adobe Experience Platform의 쿼리 서비스가 고객 행동을 이해하고 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="고객 데이터를 재충전하여 혁신적인 경험 제공" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454951?format=jpeg&nocache=1740415313218&captions=kor" alt="고객 데이터를 재충전하여 혁신적인 경험 제공"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="고객 데이터를 재충전하여 혁신적인 경험 제공"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

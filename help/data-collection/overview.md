@@ -3,10 +3,10 @@ title: 데이터 수집 튜토리얼
 description: 데이터 수집의 강력한 사용자에게 유용한 방법 비디오 및 튜토리얼
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -23,16 +23,62 @@ ht-degree: 22%
 
 <div id="staff-picks-section">
 
+## 구현 안내서
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+      <img alt="Web SDK를 사용하여 Adobe Experience Cloud 구현" src="assets/thumb_websdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+    <strong>Web SDK으로 Experience Cloud 구현</strong>
+    </a>
+    </div>
+    <p>
+    <em>태그를 사용하여 Platform Web SDK 구현</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <img alt="모바일 앱에서 구현" src="assets/thumb_swift.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <strong>모바일 앱에서 Experience Cloud 구현</strong>
+    </a>
+    </div>
+    <p>
+    <em>태그를 사용하여 Platform Mobile SDK 구현</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_legacy.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <strong>태그를 사용하여 레거시 라이브러리 구현</strong>
+    </a>
+    </div>
+    <p>
+    <em>태그를 사용하여 기존 Analytics, Target 및 Audience Manager 라이브러리를 구현합니다</em>
+    <p>
+  </td>
+</tr>
+</table>
+
 ## 마이그레이션 안내서
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Adobe Target을 Web SDK으로 마이그레이션</strong>
     </a>
     </div>
@@ -83,52 +129,6 @@ ht-degree: 22%
   <td>
   </td>
   </tr>
-</table>
-
-## 구현 안내서
-
-<table>
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-      <img alt="Web SDK를 사용하여 Adobe Experience Cloud 구현" src="assets/thumb_websdk.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-    <strong>Web SDK으로 Experience Cloud 구현</strong>
-    </a>
-    </div>
-    <p>
-    <em>태그를 사용하여 Platform Web SDK 구현</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-      <img alt="모바일 앱에서 구현" src="assets/thumb_swift.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-    <strong>모바일 앱에서 Experience Cloud 구현</strong>
-    </a>
-    </div>
-    <p>
-    <em>태그를 사용하여 Platform Mobile SDK 구현</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-      <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_legacy.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-    <strong>태그를 사용하여 레거시 라이브러리 구현</strong>
-    </a>
-    </div>
-    <p>
-    <em>태그를 사용하여 기존 Analytics, Target 및 Audience Manager 라이브러리를 구현합니다</em>
-    <p>
-  </td>
-</tr>
 </table>
 
 </div>

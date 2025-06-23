@@ -3,10 +3,10 @@ title: Platform Web SDK을 사용하여 Adobe Experience Platform에 데이터 �
 description: 웹 SDK을 사용하여 Adobe Experience Platform에 웹 데이터를 스트리밍하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 5%
+source-wordcount: '2307'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용
 
 ## 데이터 세트 만들기
 
-Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. [dataset](https://experienceleague.adobe.com/ko/docs/experience-platform/catalog/datasets/overview)은(는) 데이터 수집을 위한 저장소 및 관리 구성이며, 일반적으로 스키마(열) 및 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
+Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)은(는) 데이터 수집을 위한 저장소 및 관리 구성이며, 일반적으로 스키마(열) 및 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
 
 Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습니다.
 
@@ -160,14 +160,14 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 
 >[!INFO]
 >
->  Adobe Experience Platform의 쿼리 서비스에 대한 자세한 내용은 Platform 튜토리얼 섹션에서 [데이터 탐색](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/queries/explore-data)을 참조하세요.
+>  Adobe Experience Platform의 쿼리 서비스에 대한 자세한 내용은 Platform 튜토리얼 섹션에서 [데이터 탐색](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)을 참조하세요.
 
 
 ## 실시간 고객 프로필에 대한 데이터 세트 및 스키마 활성화
 
 Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 단계는 실시간 고객 프로필에 대한 데이터 세트 및 스키마를 활성화하는 것입니다. 웹 SDK에서 데이터 스트리밍은 플랫폼으로 유입되는 여러 데이터 소스 중 하나이며 웹 데이터를 다른 데이터 소스와 결합하여 360도 고객 프로필을 빌드하려고 합니다. 실시간 고객 프로필에 대해 자세히 알아보려면 다음 짧은 비디오를 시청하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/31709?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -252,11 +252,15 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 �
 
 이제 Experience Platform(및 Real-Time CDP)용 Platform Web SDK을 활성화했습니다! 그리고 Journey Optimizer! 그리고 Customer Journey Analytics!)
 
+## Edge 평가 대상 만들기
+
+이 연습을 완료하는 것은 Real-Time Customer Data Platform 및 Journey Optimizer 고객에게 권장됩니다.
+
+웹 SDK 데이터를 Adobe Experience Platform에 수집하면 Platform에 수집한 다른 데이터 소스에서 보강할 수 있습니다. 예를 들어 사용자가 Luma 사이트에 로그인하면 Experience Platform에서 ID 그래프가 생성되고 다른 모든 프로필 지원 데이터 세트가 잠재적으로 함께 결합되어 실시간 고객 프로필을 구축할 수 있습니다. 이 작업을 보려면 Real-Time Customer Data Platform 및 Journey Optimizer에서 실시간 고객 프로필을 사용할 수 있도록 몇 가지 샘플 충성도 데이터를 사용하여 Adobe Experience Platform에서 다른 데이터 세트를 빠르게 만듭니다. 그런 다음 이 데이터를 기반으로 대상을 작성합니다.
+
 ### 충성도 스키마 만들기 및 샘플 데이터 수집
 
-Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 이 연습을 완료해야 합니다.
-
-웹 SDK 데이터를 Adobe Experience Platform에 수집하면 Platform에 수집한 다른 데이터 소스에서 보강할 수 있습니다. 예를 들어 사용자가 Luma 사이트에 로그인하면 Experience Platform에서 ID 그래프가 생성되고 다른 모든 프로필 지원 데이터 세트가 잠재적으로 함께 결합되어 실시간 고객 프로필을 구축할 수 있습니다. 이 작업을 보려면 Real-Time Customer Data Platform 및 Journey Optimizer에서 실시간 고객 프로필을 사용할 수 있도록 몇 가지 샘플 충성도 데이터를 사용하여 Adobe Experience Platform에서 다른 데이터 세트를 빠르게 만드십시오. 이미 유사한 연습을 했기 때문에, 방법은 간단할 것입니다.
+이미 유사한 연습을 했기 때문에, 방법은 간단할 것입니다.
 
 충성도 스키마를 만듭니다.
 
@@ -282,9 +286,33 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 이 연�
 
    ![충성도 스키마](assets/web-channel-loyalty-dataset.png)
 
+
+### 활성-Edge 병합 정책 설정
+
+모든 대상은 병합 정책으로 만들어집니다. 병합 정책은 프로필의 다양한 &quot;보기&quot;를 만들고, 데이터 세트의 하위 집합을 포함할 수 있으며, 서로 다른 데이터 세트가 동일한 프로필 속성에 기여할 때 우선 순위를 규정합니다. 에지에서 평가하려면 대상자가 **[!UICONTROL Active-On-Edge 병합 정책]** 설정을 갖는 병합 정책을 사용해야 합니다.
+
+
+>[!IMPORTANT]
+>
+>샌드박스당 하나의 병합 정책만 **[!UICONTROL Active-On-Edge 병합 정책]** 설정을 가질 수 있습니다.
+
+
+1. Experience Platform 또는 Journey Optimizer 인터페이스를 열고 자습서에 사용 중인 개발 환경에 있는지 확인합니다.
+1. **[!UICONTROL 고객]** > **[!UICONTROL 프로필]** > **[!UICONTROL 병합 정책]** 페이지로 이동합니다.
+1. **[!UICONTROL 기본 병합 정책]**(이름이 `Default Timebased`일 수 있음)을 엽니다.
+   ![대상자 만들기](assets/merge-policy-open-default.png)
+1. **[!UICONTROL Active-On-Edge 병합 정책]** 설정 사용
+1. **[!UICONTROL 다음]** 선택
+
+   ![대상자 만들기](assets/merge-policy-set-active-on-edge.png)
+1. 워크플로우의 다른 단계를 계속하려면 **[!UICONTROL 다음]**&#x200B;을(를) 계속 선택하고 설정을 저장하려면 **[!UICONTROL 마침]**을(를) 선택하십시오
+   ![대상자 만들기](assets/merge-policy-finish.png)
+
+이제 Edge에서 평가할 대상을 만들 수 있습니다.
+
 ### 대상자 만들기
 
-대상자는 공통 트레이트를 중심으로 프로필을 함께 그룹화합니다. 웹 캠페인에서 사용할 수 있는 빠른 대상을 만듭니다.
+대상자는 공통 트레이트를 중심으로 프로필을 함께 그룹화합니다. Real-Time CDP 또는 Journey Optimizer에서 사용할 수 있는 간단한 대상을 작성합니다.
 
 1. Experience Platform 또는 Journey Optimizer 인터페이스에서 왼쪽 탐색 메뉴의 **[!UICONTROL 고객]** > **[!UICONTROL 대상]**(으)로 이동합니다.
 1. **[!UICONTROL 대상자 만들기]** 선택
@@ -302,6 +330,11 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 이 연�
 
    ![대상자 정의](assets/web-campaign-define-audience.png)
 
+>[!NOTE]
+>
+> 기본 병합 정책을 **[!UICONTROL Active-On-Edge 병합 정책]**(으)로 설정했으므로 사용자가 만든 대상은 이 병합 정책과 자동으로 연결됩니다.
+
+
 이는 매우 간단한 대상이므로 Edge 평가 방법을 사용할 수 있습니다. Edge 대상자는 에지에서 평가되므로 웹 SDK에서 Platform Edge Network으로 보낸 동일한 요청에서 대상 정의를 평가하고 사용자가 자격이 있는지 즉시 확인할 수 있습니다.
 
 
@@ -309,4 +342,4 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 이 연�
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
