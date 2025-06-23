@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Adobe Experience Platform Web SDK으로 Adobe Analytics 설정
 
-[Adobe Analytics Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)를 사용하여 Adobe Experience Platform을 설정하고, Adobe Analytics에 데이터를 보내기 위한 태그 규칙을 만들고, Analytics가 데이터를 예상대로 캡처하고 있는지 확인하는 방법에 대해 알아봅니다.
+[Adobe Analytics Web SDK](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/web-sdk/overview)를 사용하여 Adobe Experience Platform을 설정하고, Adobe Analytics에 데이터를 보내기 위한 태그 규칙을 만들고, Analytics가 데이터를 예상대로 캡처하고 있는지 확인하는 방법에 대해 알아봅니다.
 
 [Adobe Analytics](https://experienceleague.adobe.com/ko/docs/analytics)은(는) 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * Adobe Analytics에 대해 잘 알고 있고 액세스할 수 있습니다.
 
-* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [만드십시오](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [만드십시오](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * 이 자습서의 초기 구성 및 태그 구성 섹션에서 이전 단원을 완료합니다.
 
@@ -78,7 +78,7 @@ Platform Web SDK은 웹 사이트에서 Platform Edge Network으로 데이터를
 
 ### 자동으로 매핑된 필드
 
-많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다. 최신 매핑 목록을 확인하려면 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)을 참조하십시오.
+많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다. 최신 매핑 목록을 확인하려면 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)을 참조하십시오.
 
 사용자 지정 스키마를 정의하지 않았더라도 _이(가) 발생할 경우_&#x200B;입니다. Experience Platform Web SDK은 자동으로 일부 데이터를 수집하여 XDM 필드로 Platform Edge Network에 보냅니다. 예를 들어 Web SDK은 현재 페이지 URL을 읽고 XDM 필드 `web.webPageDetails.URL`(으)로 보냅니다. 이 필드는 Adobe Analytics으로 전달되며 Adobe Analytics의 페이지 URL 보고서가 자동으로 채워집니다.
 
@@ -491,4 +491,4 @@ Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선�
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
