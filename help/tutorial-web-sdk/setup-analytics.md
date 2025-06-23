@@ -106,8 +106,8 @@ Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체 아래�
 >[!NOTE]
 >
 >2022년 8월 18일부터 `productListItems[].SKU`은(는) s.products 변수의 제품 이름에 매핑하는 우선 순위를 갖습니다.
->>`productListItems[].name`(으)로 설정된 값은 `productListItems[].SKU`이(가) 없는 경우에만 제품 이름에 매핑됩니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
->>빈 문자열 또는 null을 `productListItems[].SKU`(으)로 설정하지 마십시오. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
+>&#x200B;>`productListItems[].name`(으)로 설정된 값은 `productListItems[].SKU`이(가) 없는 경우에만 제품 이름에 매핑됩니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
+>&#x200B;>빈 문자열 또는 null을 `productListItems[].SKU`(으)로 설정하지 마십시오. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
 
 
 ### 데이터 개체에서 변수 설정
@@ -439,12 +439,12 @@ Adobe Experience Platform Assurance을 사용하면 웹 사이트 및 모바일 
 [Assurance](validate-with-assurance.md) 단원에서 배운 대로 Assurance 세션을 시작하는 방법에는 여러 가지가 있습니다. 마지막 연습에서 시작한 Edge 추적 세션으로 이미 Adobe Experience Platform Debugger이 열려 있으므로 디버거를 통해 Assurance에 액세스하는 것이 좋습니다.
 ![Adobe Experience Platform 데이터 수집을 통한 Assurance](assets/assurance-open-aep-debugger.png)
 
-**[!UICONTROL &quot;웹 SDK 자습서 3&quot;]** Assurance 세션 내에서 이벤트 검색 표시줄에 **[!UICONTROL &quot;hitdebugger&quot;]**을(를) 입력하여 결과를 Adobe Analytics Post에서 처리된 데이터로 필터링합니다.
+**[!UICONTROL &quot;웹 SDK 자습서 3&quot;]** Assurance 세션 내에서 이벤트 검색 표시줄에 **[!UICONTROL &quot;hitdebugger&quot;]**&#x200B;을(를) 입력하여 결과를 Adobe Analytics Post에서 처리된 데이터로 필터링합니다.
 ![Assurance Adobe Analytics 사후 처리된 데이터](assets/assurance-hitdebugger.png)
 
 ### Experience Cloud ID 유효성 검사
 
-Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘의 공급업체는 **[!UICONTROL com.adobe.analytics.hitdebugger]**여야 합니다.
+Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘의 공급업체는 **[!UICONTROL com.adobe.analytics.hitdebugger]**&#x200B;여야 합니다.
 ![Assurance에서 Adobe Analytics 유효성 검사](assets/assurance-hitdebugger-payload.png)
 
 그런 다음 **[!UICONTROL mcvisId]**(으)로 아래로 스크롤하여 ECID가 올바르게 캡처되었는지 확인합니다

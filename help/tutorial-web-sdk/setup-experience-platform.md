@@ -305,7 +305,7 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 �
 1. **[!UICONTROL 다음]** 선택
 
    ![대상자 만들기](assets/merge-policy-set-active-on-edge.png)
-1. 워크플로우의 다른 단계를 계속하려면 **[!UICONTROL 다음]**&#x200B;을(를) 계속 선택하고 설정을 저장하려면 **[!UICONTROL 마침]**을(를) 선택하십시오
+1. 워크플로우의 다른 단계를 계속하려면 **[!UICONTROL 다음]**&#x200B;을(를) 계속 선택하고 설정을 저장하려면 **[!UICONTROL 마침]**&#x200B;을(를) 선택하십시오
    ![대상자 만들기](assets/merge-policy-finish.png)
 
 이제 Edge에서 평가할 대상을 만들 수 있습니다.
