@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
+source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1069'
 ht-degree: 2%
 
 ---
@@ -40,9 +40,9 @@ ht-degree: 2%
 
 이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
 
-- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**&#x200B;에 합격할 수 있습니다.
+- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**에 합격할 수 있습니다.
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
-- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**&#x200B;을(를) 참여하여 통과할 수 있습니다.
+- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**을(를) 참여하여 통과할 수 있습니다.
   [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## 컨텐츠 상태
@@ -137,9 +137,9 @@ Adobe Workfront을 사용한 [1.2 워크플로 관리](./modules/asset-mgmt/modu
 
 이 모듈에서는 Adobe Journey Optimizer을 사용하여 온라인과 오프라인 모두에서 고객 행동을 청취하고 다양한 채널을 통해 지능적이고 상황에 맞는 실시간 방식으로 응답합니다.
 
-[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
+[3.3 Adobe Journey Optimizer: 푸시 및 인앱 메시지](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
 
-이 모듈에서는 Adobe Journey Optimizer을 사용하여 개인화된 오퍼와 나만의 오퍼 의사 결정을 구성합니다.
+이 모듈에서는 Adobe Journey Optimizer을 사용하여 푸시 알림 및 인앱 메시지를 구성합니다.
 
 [3.4 Adobe Journey Optimizer: 이벤트 기반 여정](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
 
@@ -148,6 +148,18 @@ Adobe Workfront을 사용한 [1.2 워크플로 관리](./modules/asset-mgmt/modu
 [3.5 Adobe Journey Optimizer: 번역 서비스](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
 이 모듈에서는 Adobe Journey Optimizer 내에서 번역 서비스를 설정하고 사용하여 고객에게 메시지를 현지화하는 방법에 대해 알아봅니다.
+
+[3.6 Adobe Journey Optimizer: 컨텐츠 관리](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+
+이 모듈에서는 Adobe Journey Optimizer 내에서 컨텐츠 카드 및 랜딩 페이지를 설정하고 사용하는 방법을 배우고 Adobe Journey Optimizer과 GenStudio for Performance Marketing 간의 통합에 대해 자세히 알아봅니다.
+
+[3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+
+이 모듈에서는 Adobe Journey Optimizer 내에서 Decisioning 및 코드 기반 경험을 설정하고 사용하는 방법을 알아봅니다.
+
+[3.8 Adobe Journey Optimizer: 캠페인](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+
+이 모듈에서는 Adobe Journey Optimizer 내에서 캠페인을 설정하고 사용하는 방법에 대해 알아봅니다.
 
 ### &#x200B;5. 보고 및 통찰력
 

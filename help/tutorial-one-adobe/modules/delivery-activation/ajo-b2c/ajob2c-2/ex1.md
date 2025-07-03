@@ -4,20 +4,20 @@ description: Adobe Journey Optimizer - 외부 날씨 API, SMS 동작 등
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
 
 # 3.2.1 이벤트 정의
 
-[Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 **의**&#x200B;홈`--aepSandboxName--` 보기에 있게 됩니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![데모](./images/evname.png)
 
-그런 다음 스키마를 선택해야 합니다. 여기에 표시되는 모든 스키마는 Adobe Experience Platform 스키마입니다.
+그런 다음 스키마를 선택해야 합니다.
 
 ![데모](./images/evschema.png)
 
@@ -103,13 +103,13 @@ Adobe Journey Optimizer에는 고객을 식별하기 위한 식별자도 필요�
 
 ![데모](./images/fieldseyepayload.png)
 
-**페이로드 보기** 아이콘을 클릭하면 이 이벤트에 대한 샘플 XDM 페이로드가 열립니다. `eventID`줄이 표시될 때까지 **페이로드**&#x200B;에서 아래로 스크롤합니다.
+**페이로드 보기** 아이콘을 클릭하면 이 이벤트에 대한 샘플 XDM 페이로드가 열립니다. **줄이 표시될 때까지**&#x200B;페이로드`eventID`에서 아래로 스크롤합니다.
 
 ![데모](./images/fieldseyepayloadev.png)
 
 구성을 테스트하기 위해 마지막에 필요한 `eventID`을(를) 적어 두십시오.
 
-이 예제에서 `eventID`은(는) `4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`입니다.
+이 예제에서 `eventID`은(는) `209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`입니다.
 
 이제 만들고 있는 여정을 트리거할 이벤트를 정의했습니다. 여정이 트리거되면 City와 같은 지오펜스 필드 및 선택했을 수 있는 다른 모든 필드(예: 국가, 위도 및 경도)를 여정이 사용할 수 있게 됩니다.
 

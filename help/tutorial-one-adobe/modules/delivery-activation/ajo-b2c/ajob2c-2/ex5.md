@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer - 외부 데이터 소스 및 사용자 지
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 0%
+source-wordcount: '638'
+ht-degree: 1%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 이 연습에서는 이 모듈에서 구성한 여정을 테스트하고 트리거합니다.
 
-## 3.2.5.1 Geofence 이벤트 구성 업데이트
+## 3.2.5.1 지오펜스 이벤트 구성 업데이트
 
-[Adobe Experience Platform 데이터 수집](https://experience.adobe.com/launch/)(으)로 이동하여 **태그**&#x200B;를 선택합니다.
+[Adobe Experience Platform 데이터 수집](https://experience.adobe.com/launch/)&#x200B;(으)로 이동하여 **태그**&#x200B;를 선택합니다.
 
 이전에 보았던 Adobe Experience Platform 데이터 수집 속성 페이지입니다.
 
 ![속성 페이지](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-**시작하기**&#x200B;에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
+**시작하기**&#x200B;에서 데모 시스템은 다음에 사용자를 위해 태그 속성을 만들었습니다. 하나는 웹 사이트용이고 하나는 모바일 앱용입니다. `--aepUserLdap--`검색&#x200B;**[!UICONTROL 상자에서]**&#x200B;을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
 
 ![검색 상자](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ![설치 시작](./images/rule3.png)
 
-그런 다음 이 작업이 트리거되면 특정 데이터 요소를 사용하여 XDM 데이터 구조를 정의하는 것을 볼 수 있습니다. 해당 데이터 요소를 업데이트해야 하며 [연습 3.2.1](./ex1.md)에서 구성한 이벤트의 **이벤트 ID**&#x200B;을(를) 정의해야 합니다.
+그런 다음 이 작업이 트리거되면 특정 데이터 요소를 사용하여 XDM 데이터 구조를 정의하는 것을 볼 수 있습니다. 해당 데이터 요소를 업데이트해야 하며 **연습 3.2.1**&#x200B;에서 구성한 이벤트의 [이벤트 ID](./ex1.md)을(를) 정의해야 합니다.
 
 ![설치 시작](./images/rule4.png)
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 `_experience.campaign.orchestration.eventID` 필드로 이동합니다. 현재 값을 제거하고 eventID를 붙여넣습니다.
 
-다시 말해서 이벤트 ID는 **구성 > 이벤트**&#x200B;의 Adobe Journey Optimizer에서 찾을 수 있으며 이벤트 ID는 이벤트 페이로드의 샘플 페이로드에서 찾을 수 있습니다. 이러한 페이로드는 `"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`과(와) 같습니다.
+다시 말해서 이벤트 ID는 **구성 > 이벤트**&#x200B;의 Adobe Journey Optimizer에서 찾을 수 있으며 이벤트 ID는 이벤트 페이로드의 샘플 페이로드에서 찾을 수 있습니다. 이러한 페이로드는 `"eventID": "209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7"`과(와) 같습니다.
 
 ![AOP](./images/payloadeventID.png)
 
@@ -71,7 +71,7 @@ ht-degree: 0%
 
 ## 3.2.5.2 여정 트리거
 
-[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)&#x200B;(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
 ![DSN](./../../datacollection/dc1.1/images/web8.png)
 
@@ -103,11 +103,17 @@ ht-degree: 0%
 
 ![데모](./images/pv2.png)
 
-프로필 뷰어 패널에서 **유틸리티**&#x200B;를 클릭합니다. `geofenceevent`을(를) 입력하고 **보내기**&#x200B;를 클릭합니다.
+프로필 뷰어 패널에서 **유틸리티**&#x200B;를 클릭한 다음 **직접 호출**&#x200B;을 선택합니다.
 
 >[!NOTE]
 >
 >직접 호출 이벤트를 보낼 수 있는 옵션이 프로필 뷰어 패널에 없는 경우, 브라우저의 개발자 보기를 열고 **콘솔**(으)로 이동한 다음 이 명령을 붙여 넣어 보내면 수동으로 보낼 수 있습니다. `_satellite.track('geofenceevent')`.
+
+![데모](./images/pv3.png)
+
+`geofenceevent`을(를) 입력하고 **제출**&#x200B;을(를) 클릭합니다.
+
+![데모](./images/pv4.png)
 
 몇 초 후에 Adobe Journey Optimizer의 메시지가 Slack 채널에 표시되는 것을 볼 수 있습니다.
 

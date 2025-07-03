@@ -4,9 +4,9 @@ description: Journey Optimizer - 조각 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 이 연습에서는 2개의 조각, 즉 재사용 가능한 머리글에 1개 및 재사용 가능한 바닥글에 1개를 구성합니다.
 
-[Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![AOP](./images/acophome.png)
 
@@ -49,7 +49,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 >[!NOTE]
 >
->AEM Assets 라이브러리에 Citi Signal 이미지가 없으면 [여기](./../../../../assets/ajo/CitiSignal-images.zip)에서 찾을 수 있습니다. 데스크톱에 다운로드하고 **citi-signal-images** 폴더를 만든 다음 해당 폴더의 모든 이미지를 업로드하세요.
+>AEM Assets 라이브러리에 CitiSignal 이미지가 없으면 [여기](./../../../../assets/ajo/CitiSignal-images.zip)에서 찾을 수 있습니다. 데스크톱에 다운로드하고 **citi-signal-images** 폴더를 만든 다음 해당 폴더의 모든 이미지를 업로드하세요.
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -231,8 +231,6 @@ Unsubscribe
 몇 분 후에 바닥글의 상태가 **Live**(으)로 변경됩니다.
 
 ![Journey Optimizer](./images/fragm38.png)
-
-이제 이 연습을 완료했습니다.
 
 ## 다음 단계
 

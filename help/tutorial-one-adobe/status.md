@@ -3,9 +3,9 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '397'
 ht-degree: 12%
 
 ---
@@ -56,11 +56,14 @@ ht-degree: 12%
 | [2.4 Real-Time CDP: Audience Activation에서 Microsoft Azure Event Hub로](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md){target="_blank"} | 21/11/2024 | 예 | - |
 | [2.5 Real-Time CDP 연결: 이벤트 전달](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md){target="_blank"} | 21/11/2024 | 예 | - |
 | [2.6 Apache Kafka에서 Real-Time CDP으로 데이터 스트리밍](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md){target="_blank"} | 25/11/2024 | 예 | - |
-| [3.1 Adobe Journey Optimizer: 오케스트레이션](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 30/12/2024 | 예 | - |
-| [3.2 Adobe Journey Optimizer: 외부 데이터 원본 및 사용자 지정 작업](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 30/12/2024 | 예 | - |
-| [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md){target="_blank"} | 2025/06/01 | 예 | - |
-| [3.4 Adobe Journey Optimizer: 이벤트 기반 여정](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 2025년 5월 01일 | 예 | - |
-| [3.5 Adobe Journey Optimizer: 번역 서비스](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 08/02/2025 | 예 | - |
+| [3.1 Adobe Journey Optimizer: 오케스트레이션](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 03/07/2025 | 예 | - |
+| [3.2 Adobe Journey Optimizer: 외부 데이터 원본 및 사용자 지정 작업](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 03/07/2025 | 예 | - |
+| [3.3 Adobe Journey Optimizer: 푸시 및 인앱 메시지](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 03/07/2025/2025 | 예 | - |
+| [3.4 Adobe Journey Optimizer: 이벤트 기반 여정](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | 예 | - |
+| [3.5 Adobe Journey Optimizer: 번역 서비스](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | 예 | - |
+| [3.6 Adobe Journey Optimizer: 컨텐츠 관리](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | 아니요 | 개발 중인 콘텐츠 |
+| [3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | 아니요 | 개발 중인 콘텐츠 |
+| [3.8 Adobe Journey Optimizer: 캠페인](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | 아니요 | 개발 중인 콘텐츠 |
 
 ## &#x200B;5. 보고 및 통찰력
 

@@ -4,16 +4,16 @@ description: Journey Optimizer 이벤트 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 2c03cc8d-0106-4fa5-80c6-e25712ca2eab
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '410'
 ht-degree: 1%
 
 ---
 
 # 3.1.1 이벤트 만들기
 
-[Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![AOP](./images/acophome.png)
 
@@ -46,7 +46,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![AOP](./images/eventpayload.png)
 
-**필드** 창 팝업이 나타나며, 여기에서 전자 메일을 개인화하는 데 필요한 일부 필드를 선택해야 합니다.  나중에 Adobe Experience Platform에 이미 있는 데이터를 사용하여 다른 프로필 속성을 선택합니다.
+**필드** 창 팝업이 나타나며, 여기에서 전자 메일을 개인화하는 데 필요한 일부 필드를 선택해야 합니다.  Adobe Experience Platform에 이미 있는 데이터를 사용하여 나중에 다른 프로필 속성을 선택합니다.
 
 ![AOP](./images/eventfields.png)
 
@@ -58,7 +58,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![AOP](./images/eventpayloadbrid.png)
 
-그럼 이걸 보셔야죠 **네임스페이스**&#x200B;을(를) **ECID(ECID)**(으)로 설정합니다. **저장**&#x200B;을 클릭합니다.
+그럼 이걸 보셔야죠 **네임스페이스**&#x200B;이(가) **ECID(ECID)**(으)로 설정되어 있는지 확인하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![AOP](./images/eventsave.png)
 
@@ -77,17 +77,15 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 이벤트에는 고유한 오케스트레이션 eventID가 있으며 `_experience.campaign.orchestration.eventID`이(가) 표시될 때까지 해당 페이로드에서 아래로 스크롤하여 찾을 수 있습니다.
 
 여정 ID는 다음에 빌드할 이벤트를 트리거하기 위해 Adobe Experience Platform에 전송해야 하는 ID입니다. 다음 연습 중 하나에서 필요하므로 이 eventID를 기억하십시오.
-`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+`"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`
 
 **확인**&#x200B;을 클릭합니다.
 
 ![AOP](./images/payloadeventID.png)
 
-**취소**&#x200B;를 클릭합니다.
+이 창을 닫으려면 **취소**&#x200B;를 클릭하십시오.
 
 ![AOP](./images/payloadeventID1.png)
-
-이제 이 연습을 완료했습니다.
 
 ## 다음 단계
 

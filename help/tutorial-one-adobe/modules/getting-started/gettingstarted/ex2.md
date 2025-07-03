@@ -4,7 +4,7 @@ description: 시작하기 - Launch 속성 설정 옆에 있는 데모 시스템 
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 다음 데모 시스템에 액세스한 후 아래 단계를 진행하십시오.
 
-[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}(으)로 이동하여 **설치**(으)로 이동합니다.
+[https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"}(으)로 이동하여 **설치**(으)로 이동합니다.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsnh1.png)
 
-그런 다음 사전 설정 **AEP 자습서 사용자**&#x200B;를 선택합니다.
+그런 다음 사전 설정 **One Adobe 자습서**&#x200B;를 선택합니다.
 
 ![DSN](./images/dsnhome.png)
 

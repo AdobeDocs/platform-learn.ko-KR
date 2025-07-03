@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - 여정 및 메시지 구성
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1484'
 ht-degree: 4%
 
 ---
@@ -25,11 +25,11 @@ ht-degree: 4%
 
 ## 3.2.4.1 여정 만들기
 
-[Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 **의**&#x200B;홈`--aepSandboxName--` 보기에 있게 됩니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -43,7 +43,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![데모](./images/joname.png)
 
-화면 왼쪽에서 **이벤트**&#x200B;를 봅니다. 이전에 만든 이벤트가 해당 목록에 표시됩니다. 선택한 다음 여정 캔버스에 드래그하여 놓습니다. 그러면 여정은 다음과 같이 표시됩니다. **저장**&#x200B;을 클릭합니다.
+화면 왼쪽에서 **이벤트**&#x200B;를 봅니다. 이전에 만든 이벤트가 해당 목록에 `--aepUserLdap--GeofenceEntry`(으)로 표시됩니다. 선택한 다음 여정 캔버스에 드래그하여 놓습니다. 그러면 여정은 다음과 같이 표시됩니다.
 
 ![데모](./images/joevents.png)
 
@@ -201,7 +201,7 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![데모](./images/joa18.png)
 
-**작업 매개 변수**(으)로 이동하여 `textToSlack` 매개 변수에 대한 **편집** 아이콘을 클릭합니다.
+**매개 변수 요청**(으)로 스크롤한 다음 **매개 변수에 대한**&#x200B;편집`textToSlack` 아이콘을 클릭합니다.
 
 ![데모](./images/joa19.png)
 
@@ -215,13 +215,13 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![데모](./images/joa21.png)
 
-완료된 작업이 표시됩니다. **저장**&#x200B;을 클릭합니다.
+완료된 작업이 표시됩니다. 위로 스크롤하여 **저장**&#x200B;을 클릭합니다.
 
 ![데모](./images/joa22.png)
 
 이제 여정의 이 경로가 준비되었습니다.
 
-## 3.2.4.3 경로에 대한 메시지 보내기: 섭씨 10~25도 사이
+## 3.2.4.3 경로에 대한 메시지 보내기: 섭씨 10도에서 25도 사이
 
 각 온도 컨텍스트에 대해 고객에게 메시지를 보내려고 시도합니다. 이 연습에서는 휴대폰 번호 대신 Slack 채널로 실제 메시지를 보냅니다.
 
@@ -233,7 +233,7 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![데모](./images/jop18.png)
 
-**작업 매개 변수**(으)로 이동하여 `textToSlack` 매개 변수에 대한 **편집** 아이콘을 클릭합니다.
+**매개 변수 요청**(으)로 스크롤한 다음 **매개 변수에 대한**&#x200B;편집`textToSlack` 아이콘을 클릭합니다.
 
 ![데모](./images/joa19z.png)
 
@@ -247,13 +247,13 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![데모](./images/jop21.png)
 
-완료된 작업이 표시됩니다. **확인**&#x200B;을 클릭합니다.
+완료된 작업이 표시됩니다. 위로 스크롤하여 **저장**&#x200B;을 클릭합니다.
 
 ![데모](./images/jop22.png)
 
 이제 여정의 이 경로가 준비되었습니다.
 
-## 3.2.4.4 메시지 전송 경로: 섭씨 25도 이상
+## 3.2.4.4 메시지 보내기 경로: 섭씨 25도 이상
 
 각 온도 컨텍스트에 대해 고객에게 메시지를 보내려고 시도합니다. 이 연습에서는 휴대폰 번호 대신 Slack 채널로 실제 메시지를 보냅니다.
 
@@ -265,7 +265,7 @@ Path1을 두 번 클릭하여 이름을 **25C보다 따뜻함**(으)로 변경�
 
 ![데모](./images/jod18.png)
 
-**작업 매개 변수**(으)로 이동하여 `textToSlack` 매개 변수에 대한 **편집** 아이콘을 클릭합니다.
+**매개 변수 요청**(으)로 스크롤한 다음 **매개 변수에 대한**&#x200B;편집`textToSlack` 아이콘을 클릭합니다.
 
 ![데모](./images/joa19zzz.png)
 

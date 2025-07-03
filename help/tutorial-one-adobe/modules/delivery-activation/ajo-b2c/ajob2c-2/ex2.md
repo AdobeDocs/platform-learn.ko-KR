@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 외�
 kt: 5342
 doc-type: tutorial
 exl-id: 0ad27ffb-51fe-4bd1-b0be-feeb232039fa
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 4%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 4%
 
 이 연습에서는 Adobe Journey Optimizer을 사용하여 사용자 지정 외부 데이터 소스를 만듭니다.
 
-[Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 **의**&#x200B;홈`--aepSandboxName--` 보기에 있게 됩니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 이 구성을 시작하려면 **Open Weather Map** 서비스에 계정이 필요합니다. 다음 단계에 따라 계정을 만들고 API 키를 가져옵니다.
 
-[https://openweathermap.org/](https://openweathermap.org/)(으)로 이동합니다. 홈페이지에서 **로그인**&#x200B;을 클릭합니다.
+[https://openweathermap.org/](https://openweathermap.org/)&#x200B;(으)로 이동합니다. 홈페이지에서 **로그인**&#x200B;을 클릭합니다.
 
 ![WeatherMap](./images/owm.png)
 
@@ -60,7 +60,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 **API 키**&#x200B;은(는) 다음과 같습니다. `b2c4c36b6bb59c3458d6686b05311dc3`.
 
-**현재 날씨** [여기](https://openweathermap.org/current)에 대한 **API 설명서**&#x200B;를 찾을 수 있습니다.
+**현재 날씨** **여기**&#x200B;에 대한 [API 설명서](https://openweathermap.org/current)를 찾을 수 있습니다.
 
 이 사용 사례의 경우 **도시 이름별 기본 제공 API 요청**&#x200B;을 사용하여 고객이 거주하는 도시를 기반으로 개방형 날씨 지도와의 연결을 구현합니다.
 
@@ -74,7 +74,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 설명을 `Access to the Open Weather Map`(으)로 설정합니다.
 
-Open Weather Map API의 URL: **http://api.openweathermap.org/data/2.5/weather?units=metric**
+Open Weather Map API의 URL은 `http://api.openweathermap.org/data/2.5/weather?units=metric`입니다.
 
 ![데모](./images/dsname.png)
 

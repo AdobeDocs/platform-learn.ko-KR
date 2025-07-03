@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - 외부 날씨 API, SMS 작업 등 - 사�
 kt: 5342
 doc-type: tutorial
 exl-id: 92752e84-3bbe-4d11-b187-bd9fdbbee709
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 이 연습에서는 Slack 채널에 메시지를 보내는 사용자 지정 작업을 만듭니다.
 
-[Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 **의**&#x200B;홈`--aepSandboxName--` 보기에 있게 됩니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -54,10 +54,6 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![데모](./images/slackname.png)
 
-헤더 필드를 변경할 필요가 없습니다.
-
-![데모](./images/slackurl.png)
-
 **인증**&#x200B;을 **인증 안 함**(으)로 설정해야 합니다.
 
 ![데모](./images/slackauth.png)
@@ -84,7 +80,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 }
 ```
 
-그러면 다음과 같은 결과가 표시됩니다.
+그러면 이걸 보게 될 거야. **저장**&#x200B;을 클릭합니다.
 
 ![데모](./images/slackmsgpopup1.png)
 
@@ -96,7 +92,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![데모](./images/slackdone.png)
 
-이벤트, 외부 데이터 소스 및 작업을 정의했습니다. 이제 이러한 모든 것을 하나의 여정에 통합해 보겠습니다.
+이벤트, 외부 데이터 소스 및 작업을 정의했습니다. 그런 다음 이 모든 것을 하나의 여정에 결합합니다.
 
 ## 다음 단계
 

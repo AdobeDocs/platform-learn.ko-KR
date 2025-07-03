@@ -4,9 +4,9 @@ description: 구성 ID 업데이트 및 여정 테스트
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 ## 3.1.3.1 데이터 수집 속성 업데이트
 
-[Adobe Experience Platform 데이터 수집](https://experience.adobe.com/launch/)(으)로 이동하여 **태그**&#x200B;를 선택합니다.
+[Adobe Experience Platform 데이터 수집](https://experience.adobe.com/data-collection/home)&#x200B;(으)로 이동하여 **태그**&#x200B;를 선택합니다.
 
 ![속성 페이지](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-**시작하기**&#x200B;에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
+**시작하기**&#x200B;에서 데모 시스템 다음에 웹 사이트용 태그 속성과 모바일 앱용 태그 속성 두 개를 만들었습니다. `--aepUserLdap-- - One Adobe`검색&#x200B;**[!UICONTROL 상자에서]**&#x200B;을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
 
 ![검색 상자](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ![설치 시작](./images/rule3.png)
 
-그런 다음 이 작업이 트리거되면 특정 데이터 요소를 사용하여 XDM 데이터 구조를 정의하는 것을 볼 수 있습니다. 해당 데이터 요소를 업데이트해야 하며 [연습 3.1.1](./ex1.md)에서 구성한 이벤트의 **이벤트 ID**&#x200B;을(를) 정의해야 합니다.
+그런 다음 이 작업이 트리거되면 특정 데이터 요소를 사용하여 XDM 데이터 구조를 정의하는 것을 볼 수 있습니다. 해당 데이터 요소를 업데이트해야 하며 **연습 3.1.1**&#x200B;에서 구성한 이벤트의 [이벤트 ID](./ex1.md)을(를) 정의해야 합니다.
 
 ![설치 시작](./images/rule4.png)
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 `_experience.campaign.orchestration.eventID` 필드로 이동합니다. 현재 값을 제거하고 eventID를 붙여넣습니다.
 
-다시 말해서 이벤트 ID는 **구성 > 이벤트**&#x200B;의 Adobe Journey Optimizer에서 찾을 수 있으며 이벤트 ID는 이벤트 페이로드의 샘플 페이로드에서 찾을 수 있습니다. 이러한 페이로드는 `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`과(와) 같습니다.
+다시 말해서 이벤트 ID는 **구성 > 이벤트**&#x200B;의 Adobe Journey Optimizer에서 찾을 수 있으며 이벤트 ID는 이벤트 페이로드의 샘플 페이로드에서 찾을 수 있습니다. 이러한 페이로드는 `"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`과(와) 같습니다.
 
 ![AOP](./images/payloadeventID.png)
 
@@ -69,7 +69,7 @@ eventID를 붙여넣은 후 화면은 다음과 같아야 합니다. **저장** 
 
 ## 3.1.3.2 여정 테스트
 
-[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)&#x200B;(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
 ![DSN](./../../datacollection/dc1.1/images/web8.png)
 

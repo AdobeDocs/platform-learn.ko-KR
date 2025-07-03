@@ -1,170 +1,234 @@
 ---
-title: Offer Decisioning - Offer Decisioning 101
-description: Offer Decisioning - Offer Decisioning 101
+title: 푸시 알림 시작
+description: 푸시 알림 시작
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-exl-id: b46e0205-b0a1-4a14-95f6-9afe21cd2b5e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 3%
+source-wordcount: '1264'
+ht-degree: 1%
 
 ---
 
-# 3.3.1 Offer Decisioning 101
+# 3.3.1 푸시 알림 시작
 
-## 3.3.1.1 용어
+Adobe Journey Optimizer에서 푸시 알림을 사용하기 위해 확인하고 알아야 할 다양한 설정이 있습니다.
 
-Offer Decisioning에 대해 더 잘 이해하려면 Offer Decisioning 응용 프로그램 서비스가 Adobe Experience Platform에서 작동하는 방식에 대한 [개요](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=ko)를 읽는 것이 좋습니다.
+확인할 모든 설정은 다음과 같습니다.
 
-Offer Decisioning을 사용하여 작업하려면 다음 개념을 이해해야 합니다.
+- Adobe Experience Platform의 데이터 세트 및 스키마
+- 모바일용 데이터스트림
+- 모바일용 데이터 수집 속성
+- 푸시 인증서의 앱 표면
+- AEP Assurance을 사용하여 푸시 설정 테스트
 
-| 용어 | 설명 |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **오퍼** | 오퍼는 오퍼를 볼 자격이 있는 사람을 지정하는 규칙과 관련된 마케팅 메시지입니다. 오퍼의 상태는 초안, 승인됨 또는 보관됨입니다. |
-| **배치** | 최종 사용자를 위한 오퍼가 표시되는 위치(또는 채널 유형)와 컨텍스트(또는 컨텐츠 유형)의 조합입니다. 효과적으로 텍스트, HTML, 이미지, 모바일, 웹, 소셜, 인스턴트 메시징 및 비디지털 채널의 JSON 조합입니다. |
-| **규칙** | 오퍼에 대한 최종 사용자의 자격을 정의하고 제어하는 논리입니다. |
-| **개인 맞춤화된 오퍼** | 자격 규칙 및 제약 조건을 기반으로 한 사용자 지정 가능한 마케팅 메시지입니다. |
-| **대체 오퍼** | 최종 사용자가 사용된 컬렉션에 있는 오퍼에 대한 자격이 없을 때 표시되는 기본 오퍼입니다. |
-| **최대 가용량** | 오퍼를 총 몇 번이나 특정 사용자에게 제시할 수 있는지 정의하는 데 오퍼 정의에 사용됩니다. |
-| **우선 순위** | 수준 : 오퍼의 결과 세트에서 우선 순위 등급을 결정합니다. |
-| **컬렉션** | Offer Decisioning 프로세스 속도를 높이기 위해 개인화된 오퍼 목록에서 오퍼의 하위 세트를 필터링하는 데 사용됩니다. |
-| **결정** | 마케터는 의사 결정 엔진에서 최상의 오퍼를 제공하도록 오퍼, 배치 및 프로필 세트의 조합입니다. |
-| **AEM Assets Essentials** | Adobe Experience Cloud 솔루션 및 Adobe Experience Platform에서 자산을 저장, 검색 및 선택할 수 있는 범용 및 중앙 집중식 경험입니다. |
+이것을 하나씩 검토해 봅시다.
 
-{style="table-layout:auto"}
-
-## 3.3.1.2 Offer Decisioning
-
-[Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 **의**&#x200B;홈`--aepSandboxName--` 보기에 있게 됩니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-왼쪽 메뉴에서 **오퍼**&#x200B;를 클릭합니다. 이제 오퍼, 컬렉션 및 의사 결정과 같은 것이 포함된 오퍼 메뉴가 표시됩니다.
+## 3.4.4.1 푸시 데이터 세트
 
-![배치](./images/homedec.png)
+Adobe Journey Optimizer은 데이터 세트를 사용하여 모바일 장치의 푸시 토큰 또는 푸시 메시지(예: 보낸 메시지, 열린 메시지 등)와의 상호 작용 등을 Adobe Journey Optimizer 데이터 세트에 저장합니다.
 
-**구성 요소**&#x200B;를 클릭합니다. 이제 배치, 컬렉션 한정자, 규칙 및 순위와 같은 항목을 볼 수 있습니다.
+화면 왼쪽의 메뉴에서 **[!UICONTROL 데이터 세트]**(으)로 이동하여 이러한 데이터 세트를 찾을 수 있습니다. 시스템 데이터 세트를 표시하려면 필터 아이콘을 클릭합니다.
 
-![배치](./images/components.png)
+**시스템 데이터 세트 표시** 옵션을 활성화하고 **AJO**&#x200B;을 검색합니다. 그러면 푸시 알림에 사용되는 데이터 세트가 표시됩니다.
 
-## 3.3.1.3 배치
+![데이터 수집](./images/menudsjo1.png)
 
-**배치**(으)로 이동합니다.
+## 모바일용 3.4.4.2 데이터스트림
 
-![배치](./images/placements.png)
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다.
 
-**배치** 탭에서 오퍼에 대한 배치를 정의할 수 있습니다. 의사 결정을 정의할 때 배치는 결과 오퍼가 표시되는 위치(채널 유형)와 모양 또는 양식(콘텐츠 유형)을 정의합니다.
+왼쪽 메뉴에서 **[!UICONTROL 데이터스트림]**(으)로 이동하여 [시작](./../../../../modules/getting-started/gettingstarted/ex2.md)에서 만든 데이터스트림(`--aepUserLdap-- - Demo System Datastream (Mobile)`)을 검색합니다. 클릭하여 엽니다.
 
-환경에 배치가 표시되지 않으면 아래 및 스크린샷과 같이 생성하십시오.
+![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1a.png)
 
-| 이름 | 채널 유형 | 콘텐츠 유형 |
-| ---------------------- | ------------ | ------------ |
-| **디지털이 아님 - 텍스트** | 비 디지털 | 텍스트 |
-| **웹 - JSON** | 웹 | JSON |
-| **웹 - HTML** | 웹 | HTML |
-| **웹 - 텍스트** | 웹 | 텍스트 |
-| **웹 - 이미지** | 웹 | 이미지 |
-| **전자 메일 - JSON** | 이메일 | JSON |
-| **전자 메일 - HTML** | 이메일 | HTML |
-| **전자 메일 - 텍스트** | 이메일 | 텍스트 |
-| **전자 메일 - 이미지** | 이메일 | 이미지 |
+**Adobe Experience Platform** 서비스에서 **편집**&#x200B;을 클릭합니다.
 
-{style="table-layout:auto"}
+![왼쪽 탐색에서 데이터 스트림 아이콘 클릭](./images/edgeconfig1.png)
 
-**참고**: 이미 사용 가능한 배치로 변경하지 마십시오.
+그러면 정의된 데이터 스트림 설정과 이벤트 및 프로필 속성이 저장될 데이터 세트가 표시됩니다.
 
-배치를 클릭하여 설정을 시각화합니다.
+아직 활성화되지 않은 경우 다음 옵션도 활성화해야 합니다.
 
-![배치](./images/placement1.png)
+- **Offer Decisioning**
+- **개인화 대상**
+- **Adobe Journey Optimizer**
 
-이제 배치의 모든 필드가 표시됩니다.
+**저장**&#x200B;을 클릭합니다.
 
-- 배치의 **이름**
-- **배치 ID**
-- 배치에 대한 **채널 유형**
-- **텍스트**, **HTML**, **이미지** 또는 **JSON**&#x200B;일 수 있는 배치의 **콘텐츠 형식**
-- 배치에 대한 설명을 추가할 수 있는 **설명** 필드
+![데이터 스트림 이름 지정 및 저장](./images/edgeconfig2.png)
 
-## 3.3.1.4 결정 규칙
+## 3.4.4.3 모바일에 대한 데이터 수집 속성을 검토합니다.
 
-규칙(자격 규칙이라고도 함)은 **대상자**&#x200B;와 동일합니다. 실제로 규칙은 오퍼 와 함께 규칙을 사용하여 Adobe Experience Platform에서 프로필에 최상의 오퍼를 제공할 수 있는 유일한 차이점을 가진 대상 자체입니다.
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다. [시작](./../../../../modules/getting-started/gettingstarted/ex1.md)의 일부로 2개의 데이터 수집 속성이 만들어졌습니다.
+이러한 데이터 수집 클라이언트 속성을 이전 모듈의 일부로 이미 사용하고 있습니다.
 
-이전 지원 모듈을 기반으로 대상을 정의하는 방법을 이미 알고 있으므로 세그멘테이션 환경을 신속하게 다시 살펴보겠습니다.
+모바일에 대한 데이터 수집 속성을 열려면 를 클릭합니다.
 
-**규칙**(으)로 이동합니다. **+ 규칙 만들기**&#x200B;를 클릭합니다.
+![DSN](./images/launchprop.png)
 
-![결정 규칙](./images/rules.png)
+데이터 수집 속성에서 **확장**(으)로 이동합니다. 모바일 앱에 필요한 다양한 확장이 표시됩니다. 확장 **Adobe Experience Platform Edge Network**&#x200B;을(를) 열려면 클릭하세요.
 
-그러면 Adobe Experience Platform의 대상 만들기 인터페이스를 볼 수 있습니다.
+![Adobe Experience Platform 데이터 수집](./images/launchprop1.png)
 
-![결정 규칙](./images/createrule1.png)
+그러면 모바일용 데이터스트림이 여기에 연결되어 있는 것을 볼 수 있습니다. 다음으로 **취소**&#x200B;를 클릭하여 확장 개요로 돌아갑니다.
 
-이제 실시간 고객 프로필에 대한 결합 스키마의 일부인 모든 필드에 액세스할 수 있으며 모든 규칙을 작성할 수 있습니다.
+![Adobe Experience Platform 데이터 수집](./images/launchprop2.png)
 
-**대상** > ``--aepTenantId--``(으)로 이동하여 Adobe Experience Platform에서 이미 정의된 대상을 간단히 재사용할 수도 있습니다.
+그럼 다시 여기로 돌아오게 될 거야 **AEP Assurance**&#x200B;용 확장이 표시됩니다. AEP Assurance을 사용하면 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인할 수 있습니다. AEP Assurance 및 프로젝트 그리폰에 대한 자세한 내용은 [https://aep-sdks.gitbook.io/docs/beta/project-griffon](https://aep-sdks.gitbook.io/docs/beta/project-griffon)에서 확인할 수 있습니다.
 
-그러면 다음과 같은 결과가 표시됩니다.
+![Adobe Experience Platform 데이터 수집](./images/launchprop8.png)
 
-![결정 규칙](./images/decisionruleaud.png)
+그런 다음 **구성**&#x200B;을 클릭하여 확장 **Adobe Journey Optimizer**&#x200B;을(를) 엽니다.
 
-원하는 경우 이제 나만의 규칙을 구성할 수 있습니다. 이 연습에서는 두 가지 규칙이 필요합니다.
+![Adobe Experience Platform 데이터 수집](./images/launchprop9.png)
 
-- 모두 - 남성 고객
-- 모두 - 여성 고객
+그런 다음 푸시 이벤트 추적을 위한 데이터 세트가 여기에서 연결되는지 확인합니다.
 
-이러한 규칙이 아직 존재하지 않는 경우 규칙을 만드십시오. 이미 존재하는 경우 해당 규칙을 사용하고 새 규칙을 만들지 마십시오.
+![Adobe Experience Platform 데이터 수집](./images/launchprop10.png)
 
-규칙을 만드는 데 사용할 특성은 **XDM 개인 프로필** > **개인** > **성별**&#x200B;입니다.
+데이터 수집 속성을 변경할 필요가 없습니다.
 
-예를 들어, **모두 - 남성 고객** 규칙에 대한 규칙 정의는 다음과 같습니다.
+## 3.4.4.4 앱 표면 설정 검토
 
-![결정 규칙](./images/allmale.png)
+[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다. 왼쪽 메뉴에서 **앱 표면**(으)로 이동하여 **DX 데모 앱 APNS**&#x200B;용 앱 표면을 엽니다.
 
-예를 들어, **모두 - 여성 고객** 규칙에 대한 규칙 정의는 다음과 같습니다.
+![Adobe Experience Platform 데이터 수집](./images/appsf.png)
 
-![결정 규칙](./images/allfemale.png)
+그러면 iOS 및 Android에 대해 구성된 앱 표면이 표시됩니다.
 
-## 3.3.1.5 오퍼
+![Adobe Experience Platform 데이터 수집](./images/appsf1.png)
 
-**오퍼**(으)로 이동한 다음 **오퍼**&#x200B;을(를) 선택합니다. **+ 오퍼 만들기**&#x200B;를 클릭합니다.
+## 3.4.4.5 AEP Assurance을 사용하여 푸시 알림 설정을 테스트합니다.
 
-![결정 규칙](./images/offers1.png)
+앱이 설치되면 디바이스의 홈 화면에서 찾을 수 있습니다. 아이콘을 클릭하여 앱을 엽니다.
 
-그러면 이 팝업이 표시됩니다.
+![DSN](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
-![결정 규칙](./images/offers2.png)
+앱을 처음 사용하는 경우 Adobe ID을 사용하여 로그인하라는 메시지가 표시됩니다. 로그인 프로세스를 완료합니다.
 
-지금은 오퍼를 만들지 않습니다. 다음 연습에서 이 작업을 수행합니다.
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-이제 두 가지 유형의 오퍼가 있습니다.
+로그인하면 알림 전송 권한을 요청하는 알림이 표시됩니다. 자습서의 일부로 알림을 전송하므로 **허용**&#x200B;을 클릭하세요.
 
-- 개인화된 오퍼
-- 대체 오퍼
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
-개인화된 오퍼는 특정 상황에서 표시되어야 하는 특정 콘텐츠입니다. 개인화된 오퍼는 특정 기준이 충족되는 경우 개인적이고 상황별 경험을 제공하기 위해 특별히 제작됩니다.
+그러면 앱의 홈페이지가 표시됩니다. **설정**(으)로 이동합니다.
 
-대체 오퍼는 개인화된 오퍼에 대한 기준이 충족되지 않는 경우 표시되는 오퍼입니다.
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
 
-## 3.3.1.6 결정
+설정에서 현재 **공개 프로젝트**&#x200B;가 앱에 로드되어 있습니다. **사용자 지정 프로젝트**&#x200B;를 클릭합니다.
 
-의사 결정은 우선 순위, 자격 제한 및 총/사용자 상한과 같은 개별 맞춤형 오퍼 특성 각각을 기반으로 특정 프로필에 가장 적합한 오퍼를 찾기 위해 Offer Decisioning 엔진에서 궁극적으로 사용할 배치, 맞춤형 오퍼 컬렉션 및 대체 오퍼를 결합합니다.
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
 
-**결정**&#x200B;을 구성하려면 **결정**&#x200B;을 클릭하십시오.
+이제 사용자 지정 프로젝트를 로드할 수 있습니다. 프로젝트를 쉽게 로드하려면 QR 코드를 클릭하십시오.
 
-![결정 규칙](./images/activity.png)
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn6.png)
 
-다음 연습에서는 오퍼 및 결정을 직접 구성합니다.
+**시작하기** 섹션을 거쳐서 이 결과를 얻었습니다. 자동으로 만든 **Mobile Retail 프로젝트**&#x200B;를 열려면 클릭하세요.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/dsn5b.png)
+
+실수로 브라우저 창을 닫은 경우 또는 향후 데모 또는 지원 세션을 위해 [https://dsn.adobe.com/projects](https://dsn.adobe.com/projects)&#x200B;(으)로 이동하여 웹 사이트 프로젝트에 액세스할 수도 있습니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 모바일 앱 프로젝트를 클릭하여 엽니다.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/web8a.png)
+
+그런 다음 **실행**&#x200B;을 클릭합니다.
+
+![DSN](./images/web8b.png)
+
+그러면 QR 코드가 포함된 이 팝업이 표시됩니다. 모바일 앱 내에서 이 QR 코드를 스캔합니다.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
+
+그러면 앱에 프로젝트 ID가 표시되고 **저장**&#x200B;을 클릭할 수 있습니다.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
+
+이제 앱의 **홈**(으)로 돌아갑니다. 이제 앱을 사용할 준비가 되었습니다.
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
+
+이제 QR 코드를 스캔하여 모바일 장치를 AEP Assurance 세션에 연결해야 합니다.
+
+AEP Assurance 세션을 시작하려면 [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)&#x200B;(으)로 이동합니다. 왼쪽 메뉴에서 **Assurance**&#x200B;을(를) 클릭합니다. 그런 다음 **세션 만들기**&#x200B;를 클릭합니다.
+
+![Adobe Experience Platform 데이터 수집](./images/griffon3.png)
+
+**시작**&#x200B;을 클릭합니다.
+
+![Adobe Experience Platform 데이터 수집](./images/griffon5.png)
+
+값을 입력합니다.
+
+- 세션 이름: `--aepUserLdap-- - push debugging`을(를) 사용하고 ldap를 ldap로 바꾸기
+- 기본 URL: `dxdemo://default` 사용
+
+**다음**&#x200B;을 클릭합니다.
+
+![Adobe Experience Platform 데이터 수집](./images/griffon4.png)
+
+그러면 화면에 QR 코드가 표시되며, 이 코드를 iOS 장치로 스캔해야 합니다.
+
+![Adobe Experience Platform 데이터 수집](./images/griffon6.png)
+
+모바일 장치에서 카메라 앱을 열고 AEP Assurance에 표시되는 QR 코드를 스캔합니다.
+
+![Adobe Experience Platform 데이터 수집](./images/ipadPushTest8a.png)
+
+그러면 PIN 코드를 입력하라는 팝업 화면이 표시됩니다. AEP Assurance 화면에서 PIN 코드를 복사하고 **연결**&#x200B;을 클릭합니다.
+
+![Adobe Experience Platform 데이터 수집](./images/ipadPushTest9.png)
+
+그러면 이걸 보게 될 거야.
+
+![Adobe Experience Platform 데이터 수집](./images/ipadPushTest11.png)
+
+이제 Assurance에서 디바이스가 Assurance 세션에 연결되었음을 알 수 있습니다. **완료**&#x200B;를 클릭합니다.
+
+![Adobe Experience Platform 데이터 수집](./images/griffon7.png)
+
+**Push Debug**(으)로 이동합니다.
+
+>[!NOTE]
+>
+>왼쪽 메뉴에서 **디버그 푸시**&#x200B;를 찾을 수 없는 경우 화면 왼쪽 하단의 **구성**&#x200B;을 클릭하고 **디버그 푸시**&#x200B;를 메뉴에 추가합니다.
+
+이런 걸 보게 될 거야
+
+![Adobe Experience Platform 데이터 수집](./images/griffon10.png)
+
+자세한 설명:
+
+- 첫 번째 열인 **Client**&#x200B;에는 iOS 장치에서 사용 가능한 식별자가 표시됩니다. ECID와 푸시 토큰이 표시됩니다.
+- 두 번째 열에는 연습 **Launch에서 앱 구성 만들기**&#x200B;의 일부로 설정된 **3.4.5.4App Store 자격 증명 및 구성**&#x200B;이 표시됩니다
+- 두 번째 열에는 푸시 토큰이 있는 플랫폼(APNS 또는 APNSSandbox)에 대한 추가 정보와 함께 **프로필** 정보가 표시됩니다. **프로필 검사** 단추를 클릭하면 Adobe Experience Platform으로 이동하며 전체 실시간 고객 프로필이 표시됩니다.
+
+푸시 구성 설정을 테스트하려면 **테스트 푸시 설정 보내기** 단추로 이동합니다. **테스트 푸시 알림 보내기** 클릭
+
+![Adobe Experience Platform 데이터 수집](./images/griffon11.png)
+
+**푸시 알림 보내기** 단추를 클릭할 때 **DX 데모** 앱이 열려 있지 않은지 확인해야 합니다. 앱이 열려 있으면 푸시 알림이 백그라운드에서 수신되어 표시되지 않을 수 있습니다.
+
+그런 다음 모바일 장치에 표시되는 것과 같은 푸시 알림이 표시됩니다.
+
+![Adobe Experience Platform 데이터 수집](./images/ipadPush2.png)
+
+푸시 알림을 받은 경우 설정이 올바르고 제대로 작동하며 이제 Journey Optimizer에서 푸시 메시지를 전송하는 실제 여정을 만들 수 있습니다.
 
 ## 다음 단계
 
-[3.3.2 오퍼 및 의사 결정 구성](./ex2.md){target="_blank"}(으)로 이동
+[3.3.2(으)로 이동 푸시 메시지로 여정 구성](./ex2.md){target="_blank"}
 
-[Offer Decisioning](offer-decisioning.md){target="_blank"}로 돌아가기
+[Adobe Journey Optimizer: 푸시 및 인앱 메시지](ajopushinapp.md){target="_blank"}(으)로 돌아가기
 
 [모든 모듈](./../../../../overview.md){target="_blank"}(으)로 돌아가기
