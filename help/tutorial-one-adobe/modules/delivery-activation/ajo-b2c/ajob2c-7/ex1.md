@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 3.7.1.1 용어
 
-Experience Decisioning에 대한 이해를 높이려면 Offer Decisioning 응용 프로그램 서비스가 Adobe Experience Platform에서 작동하는 방식에 대한 [개요](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en)를 읽는 것이 좋습니다.
+Experience Decisioning에 대한 이해를 높이려면 Offer Decisioning 응용 프로그램 서비스가 Adobe Experience Platform에서 작동하는 방식에 대한 [개요](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=ko)를 읽는 것이 좋습니다.
 
 Offer Decisioning을 사용하여 작업하려면 다음 개념을 이해해야 합니다.
 

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 이 연습에서는 **데이터 스트림**&#x200B;을 만듭니다. **데이터스트림**&#x200B;은(는) Web SDK에서 데이터를 수집한 후 데이터를 보낼 위치를 Adobe Edge Network 서버에 알려줍니다. 예를 들어 데이터를 Adobe Experience Platform으로 전송하시겠습니까? Adobe Analytics? Adobe Audience Manager? Adobe Target?
 
-데이터 스트림은 항상 Experience Platform 데이터 수집 사용자 인터페이스에서 관리되며 [웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)을(를) 사용하는 Experience Platform 데이터 수집에 중요합니다. 비 Adobe 태그 관리 솔루션으로 Web SDK을 구현하는 경우에도 데이터 스트림을 생성해야 합니다.
+데이터 스트림은 항상 Experience Platform 데이터 수집 사용자 인터페이스에서 관리되며 [웹 SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)을(를) 사용하는 Experience Platform 데이터 수집에 중요합니다. 비 Adobe 태그 관리 솔루션으로 Web SDK을 구현하는 경우에도 데이터 스트림을 생성해야 합니다.
 
 다음 연습에서는 브라우저에서 웹 SDK을 구현합니다. 그런 다음 수집 중인 데이터의 모습을 보다 명확하게 파악할 수 있습니다. 지금은 데이터 스트림을 통해 데이터를 전달할 위치를 알려줍니다.
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 [시작하기](./../../../../modules/getting-started/gettingstarted/ex2.md)에서 이미 데이터 스트림을 만들었지만 만든 배경과 이유에 대해서는 설명하지 않았습니다.
 
-[데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)은(는) Web SDK에서 데이터를 수집한 후 Edge Network 서버에 데이터를 보낼 위치를 알려줍니다. 데이터 스트림을 통해 데이터를 보낼 수 있는 위치에 대한 자세한 내용은 [데이터 스트림에 서비스 추가](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services)에 대한 설명서를 참조하십시오.
+[데이터스트림](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)은(는) Web SDK에서 데이터를 수집한 후 Edge Network 서버에 데이터를 보낼 위치를 알려줍니다. 데이터 스트림을 통해 데이터를 보낼 수 있는 위치에 대한 자세한 내용은 [데이터 스트림에 서비스 추가](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/configure#add-services)에 대한 설명서를 참조하십시오.
 
 데이터 스트림은 Experience Platform 데이터 수집 사용자 인터페이스에서 관리되며, Adobe Experience Platform 데이터 수집을 통한 Web SDK 구현 여부와 관계없이 Web SDK을 통한 데이터 수집에 중요합니다.
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 - 모든 경험 이벤트 데이터는 기본적으로 데이터 집합 **데모 시스템 - 웹 사이트에 대한 이벤트 데이터 집합(전역 v1.1)**&#x200B;에 수집됩니다.
 - 모든 프로필 데이터는 기본적으로 데이터 세트 **데모 시스템 - 웹 사이트에 대한 프로필 데이터 세트(전역 v1.1)**&#x200B;에 수집됩니다(기본적으로 Web SDK에서 프로필 데이터 수집은 현재 Web SDK에서 아직 지원되지 않음).
 - **Edge 세그멘테이션**&#x200B;은(는) 기본적으로 활성화되어 있습니다. 즉, 들어오는 트래픽이 수집되면 자격을 갖춘 대상이 에지에서 평가됩니다
-- [개인화 대상](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview)을 사용하려면 **Personalization 대상** 확인란을 선택하세요.
+- [개인화 대상](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/catalog/personalization/overview)을 사용하려면 **Personalization 대상** 확인란을 선택하세요.
 - 이 데이터 스트림에서 **Adobe Journey Optimizer**&#x200B;의 기능을 사용하려면 **Adobe Journey Optimizer** 확인란을 선택해야 합니다.
 
 지금은 데이터 스트림에 다른 구성이 필요하지 않습니다.
