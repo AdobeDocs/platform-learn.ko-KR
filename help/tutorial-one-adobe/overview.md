@@ -40,9 +40,9 @@ ht-degree: 2%
 
 이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
 
-- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**에 합격할 수 있습니다.
+- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**&#x200B;에 합격할 수 있습니다.
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
-- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**을(를) 참여하여 통과할 수 있습니다.
+- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**&#x200B;을(를) 참여하여 통과할 수 있습니다.
   [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## 컨텐츠 상태
