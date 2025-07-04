@@ -3,19 +3,27 @@ title: 푸시 메시지로 여정 구성
 description: 푸시 메시지로 여정 구성
 kt: 5342
 doc-type: tutorial
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
+source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
 workflow-type: tm+mt
-source-wordcount: '622'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
 
 # 3.3.2 푸시 메시지로 여정 구성
 
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
-## 3.4.4.6 새 이벤트 만들기
+![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-**Journey Optimizer**(으)로 이동합니다. 왼쪽 메뉴에서 **구성**(으)로 이동한 다음 **이벤트**&#x200B;에서 **관리**&#x200B;를 클릭합니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 **의**&#x200B;홈`--aepSandboxName--` 보기에 있게 됩니다.
+
+![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+
+## 3.3.2.1 새 이벤트 만들기
+
+왼쪽 메뉴에서 **구성**(으)로 이동한 다음 **이벤트**&#x200B;에서 **관리**&#x200B;를 클릭합니다.
 
 ![AOP](./images/acopmenu.png)
 
@@ -25,14 +33,14 @@ ht-degree: 1%
 
 그러면 빈 이벤트 구성이 표시됩니다.
 먼저 이벤트에 다음과 같은 이름(`--aepUserLdap--StoreEntryEvent`)을 지정하고 설명을 `Store Entry Event`(으)로 설정하십시오.
-다음은 **이벤트 유형** 선택입니다. **단일**&#x200B;을(를) 선택합니다.
+다음은 **이벤트 유형** 선택입니다. **단일**을(를) 선택합니다.
 다음은 **이벤트 ID 유형** 선택 항목입니다. **시스템 생성**&#x200B;을 선택하십시오.
 
 ![AOP](./images/eventname.png)
 
 다음은 스키마 선택 사항입니다. 이 연습을 위해 스키마가 준비되었습니다. 스키마 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`을(를) 사용하십시오.
 
-스키마를 선택하면 **페이로드** 섹션에서 여러 필드를 선택할 수 있습니다. 이제 이벤트가 완전히 구성되었습니다.
+스키마를 선택하면 **페이로드** 섹션에서 여러 필드를 선택할 수 있습니다. 필드 **Namespace**&#x200B;이(가) **ECID**(으)로 설정되어 있는지 확인하십시오. 이제 이벤트가 완전히 구성되었습니다.
 
 **저장**&#x200B;을 클릭합니다.
 
@@ -50,20 +58,24 @@ ht-degree: 1%
 
 이벤트에는 고유한 오케스트레이션 eventID가 있으며 `_experience.campaign.orchestration.eventID`이(가) 표시될 때까지 해당 페이로드에서 아래로 스크롤하여 찾을 수 있습니다.
 
+이벤트 ID는 다음 단계에서 빌드할 여정을 트리거하기 위해 Adobe Experience Platform에 전송해야 하는 ID입니다. 다음 단계에서 필요하므로 이 eventID를 기록하십시오.
+`"eventID": "aa895251f76831e6440f169f1bb9d2a4388f0696d8e2782cfab192a275817dfa"`
+
+**확인**&#x200B;을 클릭합니다.
+
 ![AOP](./images/payloadeventID.png)
 
-이벤트 ID는 다음 단계에서 빌드할 여정을 트리거하기 위해 Adobe Experience Platform에 전송해야 하는 ID입니다. 다음 단계에서 필요하므로 이 eventID를 기록하십시오.
-`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
+**취소**&#x200B;를 클릭합니다.
 
-**확인**, **취소**&#x200B;를 차례로 클릭합니다.
+![AOP](./images/payloadeventIDa.png)
 
-## 3.4.4.7 여정 만들기
+## 3.3.2.2 여정 만들기
 
-메뉴에서 **여정**(으)로 이동하여 **여정 만들기**&#x200B;를 클릭합니다.
+왼쪽 메뉴에서 **여정**(으)로 이동하여 **여정 만들기**&#x200B;를 클릭합니다.
 
 ![DSN](./images/sjourney1.png)
 
-그러면 이걸 보게 될 거야. 여정 이름을 지정합니다. `--aepUserLdap-- - Store Entry journey` 사용. **저장**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. 여정 이름을 지정하십시오. `--aepUserLdap-- - Store Entry journey`. **저장**&#x200B;을 클릭합니다.
 
 ![DSN](./images/sjourney3.png)
 
@@ -129,23 +141,61 @@ ht-degree: 1%
 
 ![DSN](./images/sjourney11.png)
 
-## 3.4.4.8 여정 및 푸시 메시지 테스트
+## 3.3.2.3 모바일에 대한 데이터 수집 속성 업데이트
 
-DX 데모 2.0 모바일 응용 프로그램에서 **설정** 화면으로 이동합니다. **항목 저장** 단추를 클릭합니다.
+**시작하기**&#x200B;에서 데모 시스템은 다음에 사용자를 위해 태그 속성을 만들었습니다. 하나는 웹 사이트용이고 하나는 모바일 앱용입니다. `--aepUserLdap--`검색&#x200B;**상자에서**&#x200B;을(를) 검색하여 찾으십시오. **Mobile** 속성을 열려면 클릭하세요.
 
->[!NOTE]
->
->**스토어 항목** 단추가 현재 구현되고 있습니다. 앱에서 아직 찾을 수 없습니다.
+![DSN](./images/pushpoi1.png)
 
-![DSN](./images/demo1b.png)
+그럼 이걸 보셔야죠
 
-**스토어 시작** 아이콘을 클릭한 후 바로 앱을 닫아야 합니다. 그렇지 않으면 푸시 메시지가 표시되지 않습니다.
+![DSN](./images/pushpoi2.png)
 
-몇 초 후에 메시지가 나타납니다.
+왼쪽 메뉴에서 **규칙**(으)로 이동한 다음 클릭하여 **위치 항목** 규칙을 엽니다.
 
-![DSN](./images/demo2.png)
+![DSN](./images/pushpoi3.png)
 
-이 연습을 완료했습니다.
+그럼 이걸 보셔야죠 **Mobile Core - 데이터 첨부** 작업을 클릭합니다.
+
+![DSN](./images/pushpoi4.png)
+
+그럼 이걸 보셔야죠
+
+![DSN](./images/pushpoi5.png)
+
+`--aepUserLdap--StoreEntryEvent` 이벤트의 eventID를 **JSON 페이로드** 창에 붙여 넣습니다. **변경 내용 유지**&#x200B;를 클릭합니다.
+
+![DSN](./images/pushpoi6.png)
+
+**저장** 또는 **라이브러리에 저장**&#x200B;을 클릭합니다.
+
+![DSN](./images/pushpoi7.png)
+
+**Publishing Flow**(으)로 이동한 다음 클릭하여 라이브러리 **Main**&#x200B;을(를) 엽니다.
+
+![DSN](./images/pushpoi8.png)
+
+**변경된 모든 리소스 추가**&#x200B;를 클릭한 다음 **개발에 저장 및 빌드**&#x200B;를 클릭합니다.
+
+![DSN](./images/pushpoi9.png)
+
+## 3.3.2.4 여정 및 푸시 메시지 테스트
+
+**DSN Mobile** 응용 프로그램을 엽니다.
+
+![DSN](./images/dxdemo1.png)
+
+**스토어 로케이터** 페이지로 이동합니다.
+
+![DSN](./images/dxdemo2.png)
+
+**POI 항목 시뮬레이션**&#x200B;을 클릭합니다.
+
+![DSN](./images/dxdemo3.png)
+
+몇 초 후에 푸시 알림이 표시되는 것을 볼 수 있습니다.
+
+![DSN](./images/dxdemo4.png)
 
 ## 다음 단계
 

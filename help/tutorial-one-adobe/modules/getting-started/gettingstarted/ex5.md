@@ -4,9 +4,9 @@ description: 시작하기 - 모바일 앱 사용
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 53f21d39caa047170811a063ff9d01d57e456626
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -15,39 +15,39 @@ ht-degree: 0%
 
 ## 앱 다운로드
 
-컴퓨터의 [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"}(으)로 이동합니다. Adobe ID을 사용하여 로그인하면 이 메시지가 표시됩니다.
+컴퓨터의 [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"}(으)로 이동한 다음 **Beta 버전**(으)로 이동합니다. Adobe ID을 사용하여 로그인하면 이 메시지가 표시됩니다.
 
 ![DSN](./images/mobileapp.png)
 
-스마트폰의 **카메라** 앱을 사용하여 장치의 OS용 모바일 앱을 설치하십시오. 이 기능을 사용하려면 Adobe Experience Platform Mobile SDK을 사용하는 **버전 2.x**&#x200B;을 설치해야 합니다.
+스마트폰의 **카메라** 앱을 사용하여 장치의 OS용 모바일 앱을 설치하십시오. 이 기능을 사용하려면 Adobe Experience Platform Mobile SDK을 사용하는 버전 **0.6.1** 이상을 설치해야 합니다.
 
 >[!NOTE]
 >
 >iOS 장치에 앱을 처음 설치한 후 앱을 열려고 하면 다음과 같은 오류 메시지가 표시될 수 있습니다. **신뢰할 수 없는 Enterprise 개발자**. 이 문제를 해결하려면 **설정 > 일반 > VPN 및 장치 관리 > Adobe Systems Inc.**(으)로 이동한 다음 **Adobe Systems Inc.**&#x200B;을(를) 클릭합니다.
 
+QR 코드를 스캔한 후 **설치**&#x200B;를 선택합니다.
+
+![DSN](./images/mobileappn0.png)
+
 앱이 설치되면 디바이스의 홈 화면에서 찾을 수 있습니다. 아이콘을 클릭하여 앱을 엽니다.
 
 ![DSN](./images/mobileappn1.png)
 
-앱을 처음 사용하는 경우 Adobe ID을 사용하여 로그인하라는 메시지가 표시됩니다. 로그인 프로세스를 완료합니다.
+로그인하면 알림 전송 권한을 요청하는 알림이 표시됩니다. 자습서의 일부로 알림을 전송하므로 **허용**&#x200B;을 클릭하세요.
 
 ![DSN](./images/mobileappn2.png)
 
-로그인하면 알림 전송 권한을 요청하는 알림이 표시됩니다. 자습서의 일부로 알림을 전송하므로 **허용**&#x200B;을 클릭하세요.
+그러면 앱의 홈페이지가 표시됩니다. **설정**(으)로 이동합니다.
 
 ![DSN](./images/mobileappn3.png)
 
-그러면 앱의 홈페이지가 표시됩니다. **설정**(으)로 이동합니다.
+설정에서 현재 **공개 프로젝트**&#x200B;가 앱에 로드되어 있습니다. **사용자 지정 프로젝트**&#x200B;를 클릭합니다.
 
 ![DSN](./images/mobileappn4.png)
 
-설정에서 현재 **공개 프로젝트**&#x200B;가 앱에 로드되어 있습니다. **사용자 지정 프로젝트**&#x200B;를 클릭합니다.
-
-![DSN](./images/mobileappn5.png)
-
 이제 사용자 지정 프로젝트를 로드할 수 있습니다. 프로젝트를 쉽게 로드하려면 QR 코드를 클릭하십시오.
 
-![DSN](./images/mobileappn6.png)
+![DSN](./images/mobileappn5.png)
 
 이전 연습 이후에, 당신은 이 결과를 얻었습니다. 자동으로 만든 **Mobile Edge Telco 프로젝트**&#x200B;를 열려면 클릭하세요.
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ![DSN](./images/web8aa.png)
 
-이전 단계에서 만든 데이터 수집 속성(`--aepUserLdap - One Adobe (DD/MM/YYYY) (mobile)`)에서 **선택**&#x200B;을 클릭합니다. 그런 다음 **저장**&#x200B;을 클릭합니다.
+이전 단계에서 만든 데이터 수집 속성(**)에서**&#x200B;선택`--aepUserLdap - One Adobe (DD/MM/YYYY) (mobile)`을 클릭합니다. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
 ![DSN](./images/web8b.png)
 
@@ -73,11 +73,11 @@ ht-degree: 0%
 
 ![DSN](./images/web8c.png)
 
-그러면 앱에 프로젝트 ID가 표시되고 **저장**&#x200B;을 클릭할 수 있습니다.
+그러면 앱에서 프로젝트 ID가 로드되는 것을 볼 수 있으며 **전환**&#x200B;을 클릭할 수 있습니다.
 
 ![DSN](./images/mobileappn7.png)
 
-이제 앱의 **홈**(으)로 돌아갑니다. 이제 앱을 사용할 준비가 되었습니다.
+그러면 **CitiSignal** 데모 브랜드가 로드되는 것을 볼 수 있습니다. 이제 앱을 사용할 준비가 되었습니다.
 
 ![DSN](./images/mobileappn8.png)
 
