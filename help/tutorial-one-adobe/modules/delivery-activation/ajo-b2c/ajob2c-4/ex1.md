@@ -4,24 +4,24 @@ description: 이 섹션에서는 트리거 기반 여정 - 주문 확인을 구�
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
 
 # 3.4.1 트리거 기반 여정 구성 - 주문 확인
 
-[Adobe Journey Optimizer](https://experience.adobe.com)(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[Adobe Journey Optimizer](https://experience.adobe.com)&#x200B;(으)로 이동하여 Adobe Experience Cloud에 로그인합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 `--aepSandboxName--`의 **홈** 보기에 있게 됩니다.
+Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 샌드박스를 사용하고 있는지 확인하십시오. 사용할 샌드박스를 `--aepSandboxName--`이라고 합니다. 그러면 샌드박스 **의**&#x200B;홈`--aepSandboxName--` 보기에 있게 됩니다.
 
 ![AOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.1.1 이벤트 만들기
+## 3.4.1.1 내 이벤트 만들기
 
 메뉴에서 **구성**(으)로 이동하여 **이벤트**&#x200B;에서 **관리**&#x200B;를 클릭합니다.
 
@@ -35,12 +35,12 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 먼저 이벤트에 다음과 같은 이름(`--aepUserLdap--PurchaseEvent`)을 지정하고 다음과 같은 설명을 추가하십시오. `Purchase Event`
 
-**Type**&#x200B;에 대해 **Unitary**&#x200B;를 선택합니다.
+**Type**&#x200B;에 대해 **Unitary**를 선택합니다.
 **이벤트 ID 유형**&#x200B;에 대해 **시스템 생성**&#x200B;을 선택하십시오.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
-다음은 스키마 선택 사항입니다. 이 연습을 위해 스키마가 준비되었습니다. 스키마 `Demo System - Event Schema for Website (Global v1.1) v.1`을(를) 사용하십시오.
+다음은 스키마 선택입니다. 이 연습을 위해 스키마가 준비되었습니다. 스키마 `Demo System - Event Schema for Website (Global v1.1) v.1`을(를) 사용하십시오.
 
 스키마를 선택하면 **페이로드** 섹션에서 여러 필드를 선택할 수 있습니다. 이 이벤트에 필드를 추가하려면 **편집/연필** 아이콘을 클릭하십시오.
 
@@ -78,7 +78,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 ![Journey Optimizer](./images/oc42.png)
 
 이벤트 ID는 다음 단계에서 빌드할 여정을 트리거하기 위해 Adobe Journey Optimizer에 전송해야 하는 ID입니다. 다음 단계 중 하나에서 필요하므로 이 eventID를 적어 두십시오.
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 **확인**, **취소**&#x200B;를 차례로 클릭합니다.
 
@@ -102,23 +102,19 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/oc47.png)
 
-**카테고리**&#x200B;을(를) **마케팅**(으)로 설정하고 전자 메일을 보낼 수 있는 전자 메일 표면을 선택합니다. 이 경우 선택할 전자 메일 표면은 **전자 메일**&#x200B;입니다. **이메일 클릭 수** 및 **이메일 열기**&#x200B;에 대한 확인란이 모두 활성화되어 있는지 확인하십시오.
+**카테고리**&#x200B;을(를) **마케팅**(으)로 설정하고 전자 메일을 보낼 수 있는 전자 메일 표면을 선택합니다. 이 경우 선택할 전자 메일 표면은 **전자 메일**&#x200B;입니다. 다음 단계는 메시지를 만드는 것입니다. 이렇게 하려면 **콘텐츠 편집**&#x200B;을 클릭하세요.
 
 ![AOP](./images/journeyactions1.png)
-
-다음 단계는 메시지를 만드는 것입니다. 이렇게 하려면 **콘텐츠 편집**&#x200B;을 클릭하세요.
-
-![AOP](./images/journeyactions2.png)
 
 이제 이 항목을 볼 수 있습니다. **제목 줄** 텍스트 필드를 클릭합니다.
 
 ![AOP](./images/journeyactions3.png)
 
-텍스트 영역에서 **주문해 주셔서 감사합니다.** 쓰기를 시작하고 **Personalization** 아이콘을 클릭합니다.
+텍스트 영역에서 `Thanks for your order, ` 쓰기를 시작하고 **Personalization** 아이콘을 클릭합니다.
 
 ![Journey Optimizer](./images/oc5.png)
 
-제목란은 아직 완성되지 않았습니다. 다음으로 `profile.person.name.firstName` 아래에 저장된 필드 **이름**&#x200B;에 대한 개인화 토큰을 가져와야 합니다. 왼쪽 메뉴에서 아래로 스크롤하여 **개인** > **전체 이름** > **이름** 필드를 찾은 다음 **+** 아이콘을 클릭하여 제목 줄에 개인화 토큰을 추가합니다. **저장**&#x200B;을 클릭합니다.
+제목란은 아직 완성되지 않았습니다. 다음으로 **아래에 저장된 필드**&#x200B;이름`profile.person.name.firstName`에 대한 개인화 토큰을 가져와야 합니다. 왼쪽 메뉴에서 아래로 스크롤하여 **개인** > **전체 이름** > **이름** 필드를 찾은 다음 **+** 아이콘을 클릭하여 제목 줄에 개인화 토큰을 추가합니다. **저장**&#x200B;을 클릭합니다.
 
 ![Journey Optimizer](./images/oc6.png)
 
@@ -282,7 +278,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc71.png)
 
-왼쪽 메뉴에서 **컨텍스트 특성**&#x200B;을 클릭합니다.
+왼쪽 메뉴에서 **컨텍스트 특성**을 클릭합니다.
 자세히 드릴하려면 **Journey Orchestration** 옆에 있는 화살표를 클릭하십시오.
 
 ![Journey Optimizer](./images/oc72.png)
@@ -347,13 +343,13 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ## 3.4.1.5 Adobe Experience Platform 데이터 수집 클라이언트 속성 업데이트
 
-[Adobe Experience Platform 데이터 수집](https://experience.adobe.com/launch/)(으)로 이동하여 **태그**&#x200B;를 선택합니다.
+[Adobe Experience Platform 데이터 수집](https://experience.adobe.com/launch/)&#x200B;(으)로 이동하여 **태그**&#x200B;를 선택합니다.
 
 이전에 보았던 Adobe Experience Platform 데이터 수집 속성 페이지입니다.
 
 ![속성 페이지](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-**시작하기**&#x200B;에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. **[!UICONTROL 검색]** 상자에서 `--aepUserLdap--`을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
+**시작하기**&#x200B;에서 데모 시스템은 웹 사이트용 클라이언트 속성과 모바일 앱용 클라이언트 속성 두 개를 만들었습니다. `--aepUserLdap--`검색&#x200B;**[!UICONTROL 상자에서]**&#x200B;을(를) 검색하여 찾으십시오. **Web** 속성을 열려면 클릭하세요.
 
 ![검색 상자](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -361,7 +357,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc91.png)
 
-그러면 이걸 보게 될 거야. **_experience.campaign.orchestration.eventID** 필드로 이동하여 여기에서 eventID를 입력하십시오. 여기에서 작성할 eventID는 연습 3.4.1.1의 일부로 만든 eventID입니다. **저장** 또는 **라이브러리에 저장**&#x200B;을 클릭합니다.
+그러면 이걸 보게 될 거야. **_experience.campaign.orchestration.eventID** 필드로 이동하여 여기에서 eventID를 입력하십시오. 여기에서 작성할 eventID는 연습 3.4.1.1의 일부로 만든 eventID입니다. **저장** 또는 **라이브러리에 저장**&#x200B;을 클릭하십시오.
 
 ![Journey Optimizer](./images/oc92.png)
 
@@ -371,11 +367,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 이제 변경 사항이 배포되고 테스트할 수 있습니다.
 
-## 3.4.1.6 데모 웹 사이트를 사용하여 주문 확인 이메일 테스트
+## 3.4.1.6 데모 웹 사이트를 사용하여 주문 확인 이메일을 테스트합니다.
 
 데모 웹 사이트에서 제품을 구입하여 업데이트된 여정을 테스트해 보겠습니다.
 
-[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)&#x200B;(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
 ![DSN](./../../datacollection/dc1.1/images/web8.png)
 
@@ -403,15 +399,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![데모](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-등록/로그인 페이지로 이동합니다. **계정 만들기**&#x200B;를 클릭합니다.
+**로그인** 페이지로 이동하여 **계정 만들기**&#x200B;를 클릭하고 이 필드를 채우십시오. **등록**&#x200B;을 클릭하면 이전 페이지로 리디렉션됩니다.
 
 ![데모](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-자세한 내용을 입력하고 **등록**&#x200B;을 클릭하면 이전 페이지로 리디렉션됩니다.
-
-![데모](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-장바구니에 제품 추가
+장바구니에 제품을 추가합니다.
 
 ![Journey Optimizer](./images/cart1a.png)
 

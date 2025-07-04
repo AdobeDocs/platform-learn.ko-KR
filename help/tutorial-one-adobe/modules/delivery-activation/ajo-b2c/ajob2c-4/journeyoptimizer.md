@@ -4,9 +4,9 @@ description: 이 모듈에서는 기업이 고객에게 연관성 있고 상황�
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 2%
 - Adobe Journey Optimizer에 익숙해지기
 - 이메일 및 푸시 메시지 만들기
 - 트리거 기반 및 일괄 여정 구성
-- 고객 여정의 일부로 이메일 및 푸시 알림 보내기
 
 ## 전제 조건
 

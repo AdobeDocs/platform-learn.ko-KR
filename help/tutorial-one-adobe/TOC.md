@@ -1,18 +1,18 @@
 ---
-user-guide-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe 애플리케이션을 위한 포괄적인 기술 자습서
-breadcrumb-title: Creative Cloud에서 Experience Cloud에 이르기까지 Adobe 애플리케이션을 위한 포괄적인 기술 자습서
+user-guide-title: 원 Adobe 기술 튜토리얼
+breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: decd2a5545cf3bb856d893d6af178b1f96ae20ae
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1200'
 ht-degree: 3%
 
 ---
 
 
-# 포괄적인 기술 튜토리얼 - One Adobe {#tutorial-one-adobe}
+# 원 Adobe 기술 튜토리얼 {#tutorial-one-adobe}
 
 + [튜토리얼 개요](/help/tutorial-one-adobe/overview.md)
 + [컨텐츠 상태](/help/tutorial-one-adobe/status.md)
@@ -97,7 +97,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
