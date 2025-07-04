@@ -86,7 +86,7 @@ Adobe Journey Optimizer은 데이터 세트를 사용하여 모바일 장치의 
 
 ![Adobe Experience Platform 데이터 수집](./images/launchprop2.png)
 
-그럼 다시 여기로 돌아오게 될 거야 **AEP Assurance**&#x200B;용 확장이 표시됩니다. AEP Assurance을 사용하면 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인할 수 있습니다. AEP Assurance에 대한 자세한 내용은 [https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home)에서 확인할 수 있습니다.
+그럼 다시 여기로 돌아오게 될 거야 **AEP Assurance**&#x200B;용 확장이 표시됩니다. AEP Assurance을 사용하면 모바일 앱에서 데이터를 수집하거나 경험을 제공하는 방법을 검사, 증명, 시뮬레이션 및 확인할 수 있습니다. AEP Assurance에 대한 자세한 내용은 [https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home)에서 확인할 수 있습니다.
 
 ![Adobe Experience Platform 데이터 수집](./images/launchprop8.png)
 
