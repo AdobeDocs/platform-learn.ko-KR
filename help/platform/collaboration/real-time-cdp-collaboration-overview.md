@@ -41,7 +41,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration 인트로" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1751925455077" alt="Real-Time CDP Collaboration 인트로"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446808/?format=jpeg&nocache=1751925455077&captions=kor" alt="Real-Time CDP Collaboration 인트로"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -125,7 +125,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Real-Time CDP Collaboration에 대한 권한 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1751925455752" alt="Real-Time CDP Collaboration에 대한 권한 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452237/?format=jpeg&nocache=1751925455752&captions=kor" alt="Real-Time CDP Collaboration에 대한 권한 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,7 +231,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Real-Time CDP Collaboration에서 프로젝트 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1751925456092" alt="Real-Time CDP Collaboration에서 프로젝트 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464041/?format=jpeg&nocache=1751925456092&captions=kor" alt="Real-Time CDP Collaboration에서 프로젝트 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

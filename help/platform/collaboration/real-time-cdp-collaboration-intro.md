@@ -20,4 +20,4 @@ ht-degree: 0%
 
 가치가 높은 대상을 검색 및 활성화하고 측정 기능을 사용하여 가시적인 결과를 가져올 수 있는 특수 목적으로 구축된 데이터 공동 작업 애플리케이션인 Adobe Real-Time CDP Collaboration을 소개합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446808/?learn=on&enablevpops&captions=kor)
