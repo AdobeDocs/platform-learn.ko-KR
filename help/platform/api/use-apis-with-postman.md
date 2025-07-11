@@ -18,4 +18,4 @@ ht-degree: 0%
 
 [Adobe Experience Platform 환경 변수](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) 및 [생성된 액세스 토큰](platform-api-authentication.md)을 기반으로 빌드하는 [Adobe에서 제공한 Experience Platform API Postman 컬렉션](generate-an-access-token.md)을 사용하여 Adobe Developer Console API를 탐색합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32722/?learn=on&enablevpops&captions=kor)

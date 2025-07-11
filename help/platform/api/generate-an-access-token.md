@@ -20,5 +20,5 @@ ht-degree: 2%
 
 [Adobe Identity Management 서비스 API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)를 사용하여 Adobe Experience Platform API에 액세스할 수 있는 액세스 토큰을 얻으십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32728/?learn=on&enablevpops&captions=kor)
 
