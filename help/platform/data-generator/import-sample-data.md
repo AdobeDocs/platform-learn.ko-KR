@@ -7,7 +7,7 @@ level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
+source-git-commit: 1836e80bbf3d38b600f120d83d6628a9cb3c257b
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 3%
@@ -20,20 +20,20 @@ ht-degree: 3%
 
 ## 샘플 데이터 사용 사례
 
-Experience Platform 비즈니스 사용자는 Experience Platform이 제공하는 마케팅 기능을 탐색하기 전에 필드 그룹 식별, 스키마 만들기, 데이터 준비, 데이터 세트 만들기 및 데이터 수집을 포함하는 일련의 단계를 거쳐야 하는 경우가 많습니다. 이 자습서는 일부 단계를 자동화하여 데이터를 Platform 샌드박스로 최대한 빨리 가져올 수 있습니다.
+Experience Platform 비즈니스 사용자는 Experience Platform에서 제공하는 마케팅 기능을 탐색하기 전에 필드 그룹 식별, 스키마 만들기, 데이터 준비, 데이터 세트 만들기 및 데이터 수집을 포함하는 일련의 단계를 거쳐야 하는 경우가 많습니다. 이 자습서는 일부 단계를 자동화하여 데이터를 Platform 샌드박스로 최대한 빨리 가져올 수 있습니다.
 
 이 튜토리얼은 Luma라는 가상의 소매 브랜드에 중점을 둡니다. 이들은 Adobe Experience Platform에 투자하여 충성도, CRM, 제품 카탈로그 및 오프라인 구매 데이터를 실시간 고객 프로필에 결합하고 이러한 프로필을 활성화하여 마케팅을 한 차원 더 발전시킵니다. Luma에 대한 샘플 데이터를 생성했으며 이 자습서의 나머지 부분에서 이 데이터를 Experience Platform 샌드박스 환경 중 하나로 가져옵니다.
 
 >[!NOTE]
 >
->이 자습서의 최종 결과는 [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기 자습서](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ko)와 유사한 데이터가 포함된 샌드박스입니다. [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)를 지원하도록 2023년 4월에 업데이트되었습니다. 인증 방법을 OAuth로 전환하도록 2023년 6월에 업데이트했습니다.
+>이 자습서의 최종 결과는 [데이터 설계자 및 데이터 엔지니어를 위한 Adobe Experience Platform 시작하기 자습서](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)와 유사한 데이터가 포함된 샌드박스입니다. [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)를 지원하도록 2023년 4월에 업데이트되었습니다. 인증 방법을 OAuth로 전환하도록 2023년 6월에 업데이트했습니다.
 
 
 ## 전제 조건
 
-* Experience Platform API에 대한 액세스 권한이 있으며 인증 방법을 알고 있습니다. 그렇지 않으면 이 [자습서](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=ko)를 검토하십시오.
+* Experience Platform API에 액세스할 수 있으며 인증 방법을 알고 있습니다. 그렇지 않으면 이 [자습서](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html)를 검토하십시오.
 * Experience Platform 개발 샌드박스에 액세스할 수 있습니다.
-* Experience Platform 테넌트 ID를 알고 있습니다. 인증된 [API 요청](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=ko#know-your-tenant_id)을(를) 수행하면 가져올 수 있습니다.
+* Experience Platform 테넌트 ID를 알고 있습니다. 인증된 [API 요청](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)을(를) 수행하면 가져올 수 있습니다.
 또는 Platform 계정에 로그인할 때 URL에서 추출하여 사용할 수 있습니다. 예를 들어 다음 URL에서 테넌트는 &quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`입니다.
 
 ## [!DNL Postman] 사용 중 {#postman}
@@ -75,13 +75,13 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
    > 작업 디렉터리 내에서 파일이 로드되는 경우 동일한 파일이 다른 장치에 저장되어 있으면 여러 장치에서 원활하게 실행됩니다. 그러나 작업 디렉터리 외부에서 파일을 실행하려면 설정을 켜야 동일한 의도를 나타낼 수 있습니다. `FILE_PATH`이(가) [!DNL Postman]의 작업 디렉터리 경로와 같지 않은 경우 이 옵션을 사용하도록 설정해야 합니다.
 
 1. **설정** 패널을 닫습니다.
-1. **환경**&#x200B;을 선택한 다음 **가져오기**&#x200B;를 선택하십시오.
+1. **환경**&#x200B;을 선택한 다음 **가져오기**를 선택하십시오.
    ![환경 가져오기](../assets/data-generator/images/env-import.png)
 1. 다운로드한 JSON 환경 파일 `DataInExperiencePlatform.postman_environment` 가져오기
 1. Postman의 오른쪽 상단 드롭다운에서 환경을 선택하고 눈 모양 아이콘을 클릭하여 환경 변수를 봅니다.
    ![환경 선택](../assets/data-generator/images/env-selection.png)
 
-1. 다음 환경 변수가 채워져 있는지 확인합니다. 환경 변수의 값을 얻는 방법에 대해 알아보려면 [Experience Platform API 인증](/help/platform/authentication/platform-api-authentication.md) 자습서에서 단계별 지침을 확인하십시오.
+1. 다음 환경 변수가 채워져 있는지 확인합니다. 환경 변수의 값을 얻는 방법에 대해 알아보려면 [Experience Platform API 인증](/help/platform/api/platform-api-authentication.md) 자습서에서 단계별 지침을 확인하십시오.
 
    * `CLIENT_SECRET`
    * Adobe Developer Console의 `API_KEY`—`Client ID`
@@ -120,7 +120,7 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
 
 ### 인증
 
-다음으로 사용자 토큰을 인증하고 생성해야 합니다. 이 자습서에서 사용되는 토큰 생성 방법은 비프로덕션 전용에 적합합니다. 로컬 서명은 서드파티 호스트에서 JavaScript 라이브러리를 로드하고 원격 서명은 개인 키를 Adobe이 소유하고 운영하는 웹 서비스로 전송합니다. Adobe은 이 개인 키를 저장하지 않지만 프로덕션 키는 누구와도 공유하면 안 됩니다.
+다음으로 사용자 토큰을 인증하고 생성해야 합니다. 이 자습서에서 사용되는 토큰 생성 방법은 비프로덕션 전용에 적합합니다. 로컬 서명은 서드파티 호스트에서 JavaScript 라이브러리를 로드하고 원격 서명은 개인 키를 Adobe 소유 및 운영되는 웹 서비스에 보냅니다. Adobe은 이 개인 키를 저장하지 않지만 프로덕션 키는 누구와도 공유하면 안 됩니다.
 
 1. `0-Authentication` 컬렉션을 열고 `OAuth: Request Access Token` 요청을 선택한 다음 `SEND`을(를) 클릭하여 인증하고 액세스 토큰을 가져옵니다.
 
@@ -187,16 +187,16 @@ Experience Platform 비즈니스 사용자는 Experience Platform이 제공하�
 
 Adobe Journey Optimizer에 대해 알아보려면 이 샌드박스에는 [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)를 수행하는 데 필요한 모든 것이 포함되어 있습니다.
 
-병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 데이터 설계자 및 데이터 엔지니어 시작하기 자습서[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=ko)의 단원 11로 건너뜁니다. 이 다른 자습서의 이전 단원을 통해 이러한 Postman 컬렉션에서 방금 채운 모든 항목을 수동으로 빌드할 수 있습니다. 바로 시작할 수 있습니다.
+병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 데이터 설계자 및 데이터 엔지니어 시작하기 자습서[의 ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)단원 11로 건너뜁니다. 이 다른 자습서의 이전 단원을 통해 이러한 Postman 컬렉션에서 방금 채운 모든 항목을 수동으로 빌드할 수 있습니다. 바로 시작할 수 있습니다.
 
 이 샌드박스에 연결되는 샘플 웹 SDK 구현을 빌드하려면 다음을 수행하십시오.
-[Web SDK를 사용하여 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR). Web SDK 자습서의 &quot;초기 구성&quot;, &quot;태그 구성&quot; 및 &quot;Experience Platform 설정&quot; 단원을 설정한 후 `luma-crm.json` 파일의 처음 10개 이메일 주소를 사용하여 Luma 웹 사이트에 로그인 `test` 암호를 사용하여 이 자습서에서 업로드한 데이터와 프로필 조각이 병합되는 것을 확인합니다.
+[Web SDK 자습서를 사용하여 Adobe Experience Cloud 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;태그 구성&quot; 및 &quot;Experience Platform 설정&quot; 단원을 설정한 후 `luma-crm.json` 파일의 처음 10개 이메일 주소를 사용하여 Luma 웹 사이트에 로그인(`test` 암호 사용)하여 프로필 조각이 이 이 자습서에서 업로드한 데이터와 병합되는 것을 확인합니다.
 
-이 샌드박스에 연결되는 샘플 Mobile SDK 구현을 빌드하려면 다음을 수행하십시오.
+이 샌드박스에 연결되는 샘플 모바일 SDK 구현을 빌드하려면 다음을 수행하십시오.
 [모바일 앱에서 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=ko-KR). Web SDK 자습서의 &quot;초기 구성&quot;, &quot;앱 구현&quot; 및 &quot;Experience Platform&quot; 단원을 설정한 후 `luma-crm.json` 파일의 첫 번째 이메일 주소를 사용하여 Luma 웹 사이트에 로그인하여 프로필 조각이 이 자습서에서 업로드한 데이터와 병합되는 것을 확인합니다.
 
 ## 샌드박스 환경 재설정 {#reset-sandbox}
 
 비프로덕션 샌드박스를 재설정하면 샌드박스의 이름과 관련 권한을 유지하면서 해당 샌드박스(스키마, 데이터 세트 등)와 관련된 모든 리소스가 삭제됩니다. 이 &quot;클린&quot; 샌드박스는 액세스 권한이 있는 사용자가 동일한 이름으로 계속 사용할 수 있습니다.
 
-샌드박스 환경을 재설정하려면 [여기](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=ko#reset-a-sandbox)단계를 따르십시오.
+샌드박스 환경을 재설정하려면 [여기](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox)단계를 따르십시오.
