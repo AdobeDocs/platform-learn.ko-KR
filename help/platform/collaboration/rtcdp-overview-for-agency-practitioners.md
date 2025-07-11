@@ -20,4 +20,4 @@ ht-degree: 0%
 
 이 비디오는 에이전시 또는 유료 미디어 실무자에게 Real-Time CDP의 가치 속성, 현재 상태, 작동 방식 및 Real-Time CDP Collaboration 사용 사례 및 워크플로를 구동하는 데이터 소스 및 대상에 중점을 두고 수행하는 작업에 대한 높은 수준의 개요를 제공하기 위한 것입니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464657/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464665/?learn=on&enablevpops&captions=kor)
