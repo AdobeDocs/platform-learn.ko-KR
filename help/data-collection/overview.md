@@ -41,11 +41,11 @@ ht-degree: 23%
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="모바일 앱에서 구현" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>모바일 앱에서 Experience Cloud 구현</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ ht-degree: 23%
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>태그를 사용하여 레거시 라이브러리 구현</strong>
     </a>
     </div>
@@ -74,11 +74,11 @@ ht-degree: 23%
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="Target을 웹 SDK으로 마이그레이션" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>Adobe Target을 Web SDK으로 마이그레이션</strong>
     </a>
     </div>
