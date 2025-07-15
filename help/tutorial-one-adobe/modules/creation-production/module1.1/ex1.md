@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
+source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
 workflow-type: tm+mt
 source-wordcount: '3788'
 ht-degree: 0%
@@ -76,7 +76,7 @@ Adobe Firefly Services을 살펴보도록 하겠습니다. 자세한 내용은 C
 
 ### 1.1.1.3.1 컴포지션 참조 이미지 만들기
 
-[이 샘플 이미지](./images/CitiSignal.jpg)를 사용하거나 직접 텍스트를 만들어 실험해 볼 수 있습니다. Adobe Illustrator에서 아래 단계에 따라 고유한 이미지 파일을 만듭니다. 미리 정의된 이미지를 사용하는 경우 아래 섹션을 건너뛰고 **1.1.1.2단계로 이동합니다.2 직접 이미지 생성**.
+[이 샘플 이미지](./images/CitiSignal.jpg)를 사용하거나 직접 텍스트를 만들어 실험해 볼 수 있습니다. Adobe Illustrator에서 아래 단계에 따라 고유한 이미지 파일을 만듭니다. 미리 정의된 이미지를 사용하는 경우 아래 섹션을 건너뛰고 **1.1.1.3단계로 이동합니다.2 직접 이미지 생성**.
 
 **Adobe Illustrator**&#x200B;을(를) 엽니다. **새 파일**&#x200B;을 클릭합니다.
 
@@ -451,7 +451,7 @@ Firefly Image Model 4는 사람, 동물 및 세부 장면에 대한 뛰어난 �
 
 **FF - Firefly Services 기술 내부자** 컬렉션에서 이름이 **POST - Firefly - T2I V4**&#x200B;인 요청으로 돌아가서 요청의 **헤더**(으)로 이동합니다.
 
-**x-model-version** 변수를 `image4_ultra`(으)로 변경합니다. 이 예제에서는 `image4_standard`을(를) 사용합니다.
+**x-model-version** 변수를 `image4_ultra`(으)로 변경합니다. 이 예제에서는 `image4_ultra`을(를) 사용합니다.
 
 ![Firefly](./images/ffim4_11.png)
 

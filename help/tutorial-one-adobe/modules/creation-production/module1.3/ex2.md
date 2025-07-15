@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,8 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem17.png)
 
+### 메타 템플릿
+
 **콘텐츠** > **템플릿**(으)로 이동합니다. **+ 템플릿 추가**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem125.png)
@@ -253,7 +255,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem129.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-meta-ad`을(를) 설정하고 종횡비를 **1:1**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem130.png)
@@ -261,6 +263,8 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 템플릿이 저장되었으며 템플릿 라이브러리에서 사용할 수 있습니다.
 
 ![GSPeM](./images/gspem131.png)
+
+### 배너 광고 템플릿 표시
 
 **+ 템플릿 추가**&#x200B;를 클릭합니다.
 
@@ -282,7 +286,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem136.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem137.png)
@@ -311,7 +315,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem143.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x600`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x600**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem144.png)
@@ -340,7 +344,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem150.png)
 
-필드 **템플릿 이름**&#x200B;에 사용:
+필드 **템플릿 이름**에 사용:
 `--aepUserLdap---citisignal-displaytemplate-970x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **970x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem151.png)
@@ -348,6 +352,39 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 템플릿이 저장되었으며 템플릿 라이브러리에서 사용할 수 있습니다.
 
 ![GSPeM](./images/gspem152.png)
+
+### 이메일 템플릿
+
+**+ 템플릿 추가**&#x200B;를 클릭합니다.
+
+![GSPeM](./images/gspem153.png)
+
+**전자 메일**&#x200B;을 선택한 다음 **찾아보기**&#x200B;를 클릭합니다.
+
+![GSPeM](./images/gspem154.png)
+
+다운로드한 **CitiSignal-GSPeM-assets** 파일이 포함된 폴더에서 **템플릿** 폴더로 이동합니다. **citisignal-email-template.html** 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
+
+![GSPeM](./images/gspem155.png)
+
+그럼 이걸 보셔야죠 **다음**&#x200B;을 클릭합니다.
+
+![GSPeM](./images/gspem156.png)
+
+**다음**&#x200B;을 클릭합니다.
+
+![GSPeM](./images/gspem157.png)
+
+필드 **템플릿 이름**에 사용:
+`--aepUserLdap---citisignal-email-template`.
+
+**템플릿 게시**&#x200B;를 클릭합니다.
+
+![GSPeM](./images/gspem158.png)
+
+템플릿이 저장되었으며 템플릿 라이브러리에서 사용할 수 있습니다.
+
+![GSPeM](./images/gspem159.png)
 
 이제 다음 연습에 필요한 템플릿을 구성했습니다.
 

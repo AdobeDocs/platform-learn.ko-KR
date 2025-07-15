@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1207'
 ht-degree: 3%
 
 ---
@@ -55,6 +55,7 @@ ht-degree: 3%
       + [1.3.1 구성: 브랜드](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 구성: 가상 사용자, 제품 및 템플릿](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
       + [1.3.3 메타로 Campaign 활성화](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+      + [1.3.4 AJO용 이메일 경험 만들기](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express 및 Adobe Experience Cloud {#crpr4}
       + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)
@@ -97,7 +98,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}

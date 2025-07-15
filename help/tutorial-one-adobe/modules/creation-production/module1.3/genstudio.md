@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,10 @@ GenStudio for Performance Marketing은 브랜드 및 시장에 대한 정보를 
 [1.3.3 메타로 캠페인 활성화](./ex3.md){target="_blank"}
 
 이 연습에서는 Campaign을 만듭니다. 또한 Meta에 대한 연결을 구성하고 광고를 만들고, Adobe Workfront을 사용하여 광고를 승인하고, 광고를 Meta에 게시하는 데 필요한 모든 단계를 설명합니다.
+
+[1.3.4 AJO에 대한 전자 메일 환경 만들기](./ex4.md){target="_blank"}
+
+이 연습에서는 GenStudio for Performance Marketing의 템플릿을 사용하여 이메일 경험을 만들고 Adobe Journey Optimizer과 공유하여 이메일 캠페인을 보냅니다.
 
 [요약 및 이점](./summary.md){target="_blank"}
 
