@@ -1,35 +1,35 @@
 ---
-title: Target 확장과 Decisioning 확장 비교
-description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 Target 확장과 Decisioning 확장 간의 차이점에 대해 알아봅니다.
+title: Target 확장을 Offer Decisioning 및 Target 확장과 비교
+description: 기능, 함수, 설정 및 데이터 흐름을 포함하여 Offer Decisioning과 Target 확장의 Target 확장에 대한 차이점에 대해 알아봅니다.
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
 
-# Target 확장과 Decisioning 확장 비교
+# Target 확장을 Offer Decisioning 및 Target 확장과 비교
 
-Adobe Journey Optimizer - Decisioning 확장 프로그램은 모바일 앱용 Adobe Target 확장 프로그램과 다릅니다. 다음 표는 마이그레이션 프로세스 중에 초점을 두어야 할 구현 영역을 평가하는 데 도움이 되는 참조입니다.
+Offer Decisioning 및 Target 확장은 모바일 앱용 Adobe Target 확장과 다릅니다. 다음 표는 마이그레이션 프로세스 중에 초점을 두어야 할 구현 영역을 평가하는 데 도움이 되는 참조입니다.
 
 아래 정보를 검토하고 현재 기술 Target 확장 구현을 평가한 후 다음을 이해할 수 있어야 합니다.
 
-- Adobe Journey Optimizer - Decisioning에서 지원하는 Target 기능
-- 어떤 Adobe Target 확장 기능에 Adobe Journey Optimizer - Decisioning 기능이 포함됩니까?
-- Target 설정이 Adobe Journey Optimizer에 적용되는 방법 - Decisioning
-- Adobe Journey Optimizer - Decisioning 확장을 사용하여 데이터가 흐르는 방식
+- Offer Decisioning 및 Target에서 지원하는 Target 기능
+- Offer Decisioning 및 Target에 해당하는 기능이 있는 Adobe Target 확장 기능
+- Target 설정이 Offer Decisioning 및 Target에 적용되는 방법
+- Offer Decisioning 및 Target 확장을 사용하여 데이터가 흐르는 방식
 
 ## 운영상의 차이점
 
-| | Target 확장 | Decisioning 확장 |
+| | Target 확장 | Offer Decisioning 및 Target 확장 |
 |---|---|---|
-| 프로세스 | Target 구현을 변경하면 Analytics와 같은 다른 애플리케이션과 비교하여 케이던스 또는 QA 요구 사항이 다른 프로세스를 따를 수 있습니다. | Decisioning 확장 구현을 변경하면 모든 다운스트림 애플리케이션을 고려해야 하며 QA 및 게시 프로세스를 적절하게 조정해야 합니다. |
-| 공동 작업 | Target에 대한 데이터는 Target 호출에서 직접 전달할 수 있습니다. Target 보고 소스가 Adobe Analytics(A4T)인 경우 Target 컨텐츠 표시 및 상호 작용을 위해 Target 확장의 적절한 추적 메서드가 호출될 때 Target에 관련된 데이터를 Adobe Analytics에 전달할 수도 있습니다. | Target 보고 소스가 Adobe Analytics(A4T)이고, Adobe Analytics이 데이터 스트림에서 활성화되어 있으며, Target 콘텐츠가 표시되고 상호 작용할 때 Decisioning 확장의 적절한 추적 메서드가 호출되는 경우 Decisioning 확장 호출에서 전달된 데이터는 Target과 Analytics 모두에 전달될 수 있습니다. |
+| 프로세스 | Target 구현을 변경하면 Analytics와 같은 다른 애플리케이션과 비교하여 케이던스 또는 QA 요구 사항이 다른 프로세스를 따를 수 있습니다. | Offer Decisioning 및 Target 확장 구현을 변경하면 모든 다운스트림 애플리케이션을 고려해야 하며 QA 및 게시 프로세스가 적절하게 조정되어야 합니다. |
+| 공동 작업 | Target에 대한 데이터는 Target 호출에서 직접 전달할 수 있습니다. Target 보고 소스가 Adobe Analytics(A4T)인 경우 Target 컨텐츠 표시 및 상호 작용을 위해 Target 확장의 적절한 추적 메서드가 호출될 때 Target에 관련된 데이터를 Adobe Analytics에 전달할 수도 있습니다. | Target 보고 소스가 Adobe Analytics(A4T)이고, Adobe Analytics이 데이터 스트림에서 활성화되어 있으며, Target 콘텐츠가 표시되고 상호 작용할 때 Offer Decisioning 및 Target 확장의 적절한 추적 메서드가 호출되는 경우 Offer Decisioning 및 Target 확장 호출에서 전달된 데이터는 Target 및 Analytics 모두에 전달될 수 있습니다. |
 
 ## 기본 차이점
 
-| | Target 확장 | Decisioning 확장 |
+| | Target 확장 | Offer Decisioning 및 Target 확장 |
 |---|---|---|
 | 종속성 | Mobile Core SDK에만 종속 | Mobile Core 및 Edge Network SDK에 따라 다름 |
 | 라이브러리 기능 | Adobe Target에서만 콘텐츠 가져오기 지원 | Adobe Target 및 Offer Decisioning에서 콘텐츠 가져오기 지원 |
@@ -43,7 +43,7 @@ Adobe Journey Optimizer - Decisioning 확장 프로그램은 모바일 앱용 Ad
 
 ## 기능 비교
 
-| 기능 | Target 확장 | Decisioning 확장 프로그램(Edge을 통한 Target) |
+| 기능 | Target 확장 | Offer Decisioning 및 Target 확장 프로그램(Edge을 통한 Target) |
 |---|---|---|
 | 프리페치 모드 | 지원됨 | 지원됨 |
 | 실행 모드 | 지원됨 | 지원되지 않음 |
@@ -69,9 +69,9 @@ Adobe Journey Optimizer - Decisioning 확장 프로그램은 모바일 앱용 Ad
 
 >[!NOTE]
 >
->앱 코드를 Decisioning 확장으로 마이그레이션한 후에도 Target 확장 태그 구성 및 설정을 유지하십시오. 이렇게 하면 앱을 새 버전으로 업데이트하지 않은 고객에게 Target이 계속 작동하도록 하는 데 도움이 됩니다.
+>앱 코드를 Offer Decisioning 및 Target 확장으로 마이그레이션한 후에도 Target 확장 태그 구성 및 설정을 유지하십시오. 이렇게 하면 앱을 새 버전으로 업데이트하지 않은 고객에게 Target이 계속 작동하도록 하는 데 도움이 됩니다.
 >
->Analytics for Target 통합(A4T)을 사용하는 경우 Target 구현을 Decisioning 확장으로 마이그레이션하는 동시에 Edge Bridge 확장 프로그램으로 Analytics 구현도 마이그레이션해야 합니다.
+>Analytics for Target 통합(A4T)을 사용하는 경우 Target 구현을 Offer Decisioning 및 Target 확장으로 마이그레이션하는 동시에 Edge Bridge 확장 프로그램으로 Analytics 구현도 마이그레이션해야 합니다.
 
 
 
@@ -79,15 +79,15 @@ Adobe Journey Optimizer - Decisioning 확장 프로그램은 모바일 앱용 Ad
 
 >[!IMPORTANT]
 >
-> 앱 코드를 Decisioning 확장으로 마이그레이션한 후에도 Target 확장 설정 을 유지합니다. 이렇게 하면 앱을 아직 업데이트하지 않은 사용자에게 Target이 계속 작동하도록 하는 데 도움이 됩니다.
+> 앱 코드를 Offer Decisioning 및 Target 확장으로 마이그레이션한 후에도 Target 확장 설정을 유지하십시오. 이렇게 하면 앱을 아직 업데이트하지 않은 사용자에게 Target이 계속 작동하도록 하는 데 도움이 됩니다.
 
-## Decisioning 확장 시스템 다이어그램
+## Offer Decisioning 및 Target 확장 시스템 다이어그램
 
-다음 다이어그램은 Adobe Journey Optimizer - Decisioning 확장을 사용하는 데이터 흐름을 이해하는 데 도움이 됩니다.
+다음 다이어그램은 Offer Decisioning 및 Target 확장을 사용하는 데이터 흐름을 이해하는 데 도움이 됩니다.
 
 ![클라이언트측 모바일 SDK을 통한 Adobe Target Edge Decisioning](assets/diagram.png)
 
 
 >[!NOTE]
 >
->Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ko#M625)에 게시하여 알려 주십시오.
+>Target 확장에서 Offer Decisioning 및 Target 확장으로 모바일 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)에 게시하여 알려 주십시오.

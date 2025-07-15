@@ -1,10 +1,10 @@
 ---
-title: SDK 교체 - 모바일 앱의 Adobe Target 구현을 Adobe Journey Optimizer - Decisioning 확장 프로그램으로 마이그레이션합니다.
-description: Adobe Target에서 SDK - Decisioning Mobile 확장 기능으로 마이그레이션할 때 Adobe Journey Optimizer을 교체하는 방법을 알아봅니다.
+title: SDK 바꾸기 - 모바일 앱의 Adobe Target 구현을 Offer Decisioning 및 Target 확장으로 마이그레이션합니다.
+description: Adobe Target에서 SDK 및 Target Mobile 확장 기능으로 마이그레이션할 때 Offer Decisioning을 교체하는 방법을 알아봅니다.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 >Adobe Experience Platform Mobile SDK 생태계 내에서 확장은 다른 이름을 가질 수 있는 애플리케이션에 가져온 SDK에 의해 구현됩니다.
 >
 > * **Target SDK**&#x200B;이(가) **Adobe Target 확장**&#x200B;을 구현함
-> * **SDK 최적화**&#x200B;에서 **Adobe Journey Optimizer - Decisioning 확장 기능**&#x200B;을 구현합니다.
+> * **SDK 최적화**&#x200B;에서 **Offer Decisioning 및 Target 확장 구현**
 
 ## 종속성 업데이트
 
@@ -132,7 +132,7 @@ public class MainApp extends Application {
  
         MobileCore.registerExtensions(
             Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
-            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
+            o -> Log.d("MainApp", "Offer Decisioning and Target Mobile SDK was initialized.")
         );
     }
 }
@@ -266,9 +266,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## API 비교
 
-많은 Target 확장 API에는 아래 표에 설명된 Decisioning 확장을 사용하는 동일한 접근 방식이 있습니다. [함수](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/)에 대한 자세한 내용은 API 참조를 참조하십시오.
+많은 Target 확장 API에는 아래 표에 설명된 Offer Decisioning 및 Target 확장을 사용하는 동일한 접근 방식이 있습니다. [함수](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/)에 대한 자세한 내용은 API 참조를 참조하십시오.
 
-| Target 확장 | Decisioning 확장 | 참고 |
+| Target 확장 | Offer Decisioning 및 Target 확장 | 참고 |
 | --- | --- | --- | 
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | `getPropositions` API를 사용할 때 SDK에서 캐시되지 않은 범위를 가져오기 위한 원격 호출이 수행되지 않습니다. |
@@ -288,4 +288,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 >[!NOTE]
 >
->Target 확장에서 Decisioning 확장으로 모바일 Target을 성공적으로 마이그레이션할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ko#M625)에 게시하여 알려 주십시오.
+>Target 확장에서 Offer Decisioning 및 Target 확장으로 모바일 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)에 게시하여 알려 주십시오.

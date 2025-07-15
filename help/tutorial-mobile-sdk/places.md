@@ -1,11 +1,11 @@
 ---
-title: Platform Mobile SDK로 위치 사용
+title: Platform Mobile SDK으로 위치 사용
 description: 모바일 앱에서 Places geolocation 서비스를 사용하는 방법을 알아봅니다.
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1591'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Adobe Experience Platform 데이터 수집 위치 서비스 는 위치를 인식
 
 ## 설정
 
-Places 서비스가 앱 및 Mobile SDK 내에서 작동하려면 일부 설정을 수행해야 합니다.
+Places 서비스가 앱 내에서 및 Mobile SDK 내에서 작동하려면 일부 설정을 수행해야 합니다.
 
 ### 위치 정의
 
@@ -46,17 +46,17 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 
 1. 데이터 수집 UI에서 **[!UICONTROL 위치]**&#x200B;를 선택합니다.
 1. ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)를 선택하세요.
-1. 컨텍스트 메뉴에서 **[!UICONTROL 라이브러리 관리]**&#x200B;를 선택합니다.
+1. 컨텍스트 메뉴에서 **[!UICONTROL 라이브러리 관리]**를 선택합니다.
    ![라이브러리 관리](assets/places-manage-libraries.png)
 1. **[!UICONTROL 라이브러리 관리]** 대화 상자에서 **[!UICONTROL 새로 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 라이브러리 만들기]** 대화 상자에서 **[!UICONTROL 이름]**(예: `Luma`)을 입력하십시오.
-1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 확인]**을 선택합니다.
    ![라이브러리 만들기](assets/places-create-library.png)
 1. **[!UICONTROL 라이브러리 관리]** 대화 상자를 닫으려면 **[!UICONTROL 닫기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL POI 관리]**&#x200B;로 돌아가서 **[!UICONTROL POI 가져오기]**&#x200B;를 선택하십시오.
 1. **[!UICONTROL 위치 가져오기]** 대화 상자에서 **[!UICONTROL 시작]**&#x200B;을 선택합니다.
 1. 라이브러리 목록에서 **[!DNL Luma]**&#x200B;을(를) 선택합니다.
-1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 다음]**을 선택합니다.
    ![라이브러리 선택](assets/places-import-select-library.png)
 1. [Luma POIs ZIP 파일](assets/luma_pois.csv.zip)을 다운로드하고 컴퓨터의 위치에 추출합니다.
 1. **[!UICONTROL 위치 가져오기]** 대화 상자에서 추출한 `luma_pois.csv` 파일을 **[!UICONTROL CSV 파일 선택 - 파일 드래그 앤 드롭]**&#x200B;에 끌어다 놓습니다. **[!UICONTROL 유효성 검사 성공]** - **[!UICONTROL CSV 파일의 유효성을 검사했습니다]**&#x200B;가 표시됩니다.
@@ -74,13 +74,12 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. **[!UICONTROL Places]** 확장을 검색합니다.
 1. 확장을 설치합니다.
 
-   ![의사 결정 확장 추가](assets/tag-places-extension.png)
+   ![Offer Decisioning 및 Target 확장 추가](assets/tag-places-extension.png)
 
 1. **[!UICONTROL 확장 설치]** 대화 상자에서:
-   1. **[!UICONTROL 라이브러리 선택]** 목록에서 **[!DNL Luma]**&#x200B;을(를) 선택합니다.
+   1. **[!DNL Luma]**&#x200B;라이브러리 선택&#x200B;**[!UICONTROL 목록에서]**&#x200B;을(를) 선택합니다.
    1. 작업 라이브러리(예: **[!UICONTROL 초기 빌드]**)를 선택했는지 확인하십시오.
-   1. **[!UICONTROL 라이브러리에 저장]**&#x200B;에서 **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 선택합니다.
-
+   1. **[!UICONTROL 라이브러리에 저장]**&#x200B;에서 **[!UICONTROL 라이브러리 및 빌드에 저장]**을 선택합니다.
       ![위치 확장 설치](assets/places-install-extension.png).
 
 1. 라이브러리가 다시 빌드되었습니다.
@@ -113,7 +112,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL 위치]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 데이터 요소 형식]** 목록에서 **[!UICONTROL 이름]**&#x200B;을(를) 선택하십시오.
 1. **[!UICONTROL TARGET]** 아래에서 **[!UICONTROL 현재 POI]**&#x200B;를 선택하십시오.
-1. **[!UICONTROL 라이브러리에 저장]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 라이브러리에 저장]**을 선택합니다.
    ![데이터 요소](assets/tags-create-data-element.png)
 
 1. 아래 표의 정보를 사용하여 4~8단계를 반복하여 추가 데이터 요소를 만듭니다.
@@ -137,12 +136,11 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 1. 태그 속성의 왼쪽 레일에서 **[!UICONTROL 규칙]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 규칙 추가]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 규칙 만들기]** 화면에서 규칙 이름(예: `POI - Entry`)을 입력하십시오.
-1. **[!UICONTROL 이벤트]** 아래의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)를 선택하십시오.
+1. ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래의 **[!UICONTROL 추가]**&#x200B;를 선택하십시오.
    1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL 위치]**&#x200B;를 선택하고 **[!UICONTROL 이벤트 유형]** 목록에서 **[!UICONTROL POI 입력]**&#x200B;을 선택합니다.
-   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
-
+   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
       ![이벤트 태그](assets/tags-event-mobile-core.png).
-1. **[!UICONTROL 작업]** 아래의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)을(를) 선택하십시오.
+1. ![작업](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래의 **[!UICONTROL 추가]**&#x200B;을(를) 선택하십시오.
    1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL Mobile Core]**&#x200B;를 선택하고 **[!UICONTROL 작업 유형]**&#x200B;에서 **[!UICONTROL 데이터 첨부]**&#x200B;를 선택합니다. 이 작업은 페이로드 데이터를 첨부합니다.
    1. **[!UICONTROL JSON 페이로드]**&#x200B;에 다음 페이로드를 붙여 넣습니다.
 
@@ -168,14 +166,13 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
       }
       ```
 
-      ![데이터](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)을(를) 선택하여 JSON에 `{%% ... %%}` 데이터 요소 자리 표시자 값을 삽입할 수도 있습니다. 팝업 대화 상자를 통해 만든 데이터 요소를 선택할 수 있습니다.
+      `{%% ... %%}`데이터![을(를) 선택하여 JSON에 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 데이터 요소 자리 표시자 값을 삽입할 수도 있습니다. 팝업 대화 상자를 통해 만든 데이터 요소를 선택할 수 있습니다.
 
-   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
-
+   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
       ![태그 작업](assets/tags-action-mobile-core.png)
 
-1. **[!UICONTROL Mobile Core - 데이터 첨부]** 작업 옆에 있는 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)를 선택합니다.
-   1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL Adobe Experience Platform Edge Network]**&#x200B;을 선택하고 **[!UICONTROL Edge Network으로 이벤트 전달]**&#x200B;을 선택합니다. 이 작업을 수행하면 이벤트와 추가 페이로드 데이터가 플랫폼 Edge Network으로 전달됩니다.
+1. ![Mobile Core - 데이터 첨부](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 작업 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 선택합니다.
+   1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL Adobe Experience Platform Edge Network]**&#x200B;을 선택하고 **[!UICONTROL Edge Network으로 이벤트 전달]**&#x200B;을 선택합니다. 이 작업을 수행하면 이벤트 및 추가 페이로드 데이터가 Platform Edge Network에 전달됩니다.
    1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
 
 1. 규칙을 저장하려면 **[!UICONTROL 라이브러리에 저장]**&#x200B;을 선택합니다.
@@ -185,10 +182,10 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 다른 규칙을 만들어 보겠습니다
 
 1. **[!UICONTROL 규칙 만들기]** 화면에서 규칙 이름(예: `POI - Exit`)을 입력하십시오.
-1. **[!UICONTROL 이벤트]** 아래의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)를 선택하십시오.
+1. ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래의 **[!UICONTROL 추가]**&#x200B;를 선택하십시오.
    1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL 위치]**&#x200B;를 선택하고 **[!UICONTROL 이벤트 유형]** 목록에서 **[!UICONTROL POI 종료]**&#x200B;를 선택합니다.
    1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 작업]** 아래의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)을(를) 선택하십시오.
+1. ![작업](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래의 **[!UICONTROL 추가]**&#x200B;을(를) 선택하십시오.
    1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL Mobile Core]**&#x200B;을 선택하고 **[!UICONTROL 작업 유형]** 목록에서 **[!UICONTROL 데이터 첨부]**&#x200B;를 선택합니다.
    1. **[!UICONTROL JSON 페이로드]**&#x200B;에 다음 페이로드를 붙여 넣습니다.
 
@@ -216,7 +213,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 
    1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL Mobile Core - 데이터 첨부]** 작업 옆에 있는 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)를 선택합니다.
+1. ![Mobile Core - 데이터 첨부](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 작업 옆에 있는 **[!UICONTROL 추가]**&#x200B;를 선택합니다.
    1. **[!UICONTROL 확장]** 목록에서 **[!UICONTROL Adobe Experience Platform Edge Network]**&#x200B;을 선택하고 **[!UICONTROL Edge Network으로 이벤트 전달]**&#x200B;을 선택합니다.
    1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
 
@@ -228,39 +225,39 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
 태그의 모든 변경 사항이 게시되도록 하려면
 
 1. 빌드할 라이브러리로 **[!UICONTROL 초기 빌드]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 빌드]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 빌드]**를 선택합니다.
    ![라이브러리 빌드](assets/tags-build-library.png)
 
 
 
 
-## Assurance에서 설정 확인
+## Assurance에서 설정 유효성 검사
 
-Assurance에서 설정을 확인하려면:
+Assurance에서 설정의 유효성을 검사하려면:
 
 1. Assurance UI로 이동합니다.
-1. 왼쪽 레일에서 아직 사용할 수 없는 경우 왼쪽 레일에서 **[!UICONTROL 구성]**&#x200B;을 선택하고 **[!UICONTROL 이벤트]** 옆의 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)을(를) 선택한 다음 **[!UICONTROL 장소 서비스]** 아래의 **[!UICONTROL 맵 및 시뮬레이션]**&#x200B;을(를) 선택합니다.
+1. 왼쪽 레일에서 아직 사용할 수 없는 경우 왼쪽 레일에서 **[!UICONTROL 구성]**&#x200B;을 선택하고 ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 옆의 **[!UICONTROL 추가]**&#x200B;을(를) 선택한 다음 **[!UICONTROL 장소 서비스]** 아래의 **[!UICONTROL 맵 및 시뮬레이션]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 왼쪽 레일에서 **[!UICONTROL 맵 및 시뮬레이션]**&#x200B;을 선택합니다.
 1. 지도를 POI 중 하나의 위치로 이동합니다.
 1. ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 부하 POI를 시뮬레이션하도록 선택합니다. POI는 원과 핀을 사용하여 식별됩니다.
 1. POI를 선택합니다.
-1. 팝업에서 ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 시작 이벤트 시뮬레이션]**&#x200B;을 선택합니다.
+1. 팝업에서 ![톱니바퀴](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 시작 이벤트 시뮬레이션]**을 선택합니다.
    ![시작 이벤트 시뮬레이션](assets/places-simulate.png)
-1. 왼쪽 레일에서 **[!UICONTROL 이벤트]**&#x200B;를 선택하면 시뮬레이션한 이벤트가 표시됩니다.
+1. 왼쪽 레일에서 **[!UICONTROL 이벤트]**를 선택하면 시뮬레이션한 이벤트가 표시됩니다.
    ![AJO 의사 결정 유효성 검사](assets/places-events.png)
 
 
 ## 앱의 위치 구현
 
-이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 Places SDK를 설치하고 등록해야 합니다. 이 단계가 명확하지 않으면 [SDK 설치](install-sdks.md) 섹션을 검토하십시오.
+이전 단원에서 설명한 대로 모바일 태그 확장을 설치하면 구성만 제공됩니다. 그런 다음 Places SDK을 설치하고 등록해야 합니다. 이 단계가 명확하지 않으면 [SDK 설치](install-sdks.md) 섹션을 검토하십시오.
 
 >[!NOTE]
 >
->[SDK 설치](install-sdks.md) 섹션을 완료한 경우 위치 SDK가 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
+>[SDK 설치](install-sdks.md) 섹션을 완료한 경우 위치 SDK이 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
 >
 
-1. Xcode에서 [AEP Places](https://github.com/adobe/aepsdk-places-ios)이(가) 패키지 종속 항목의 패키지 목록에 추가되어 있는지 확인하십시오. [Swift 패키지 관리자](install-sdks.md#swift-package-manager)를 참조하세요.
+1. Xcode에서 패키지 종속 항목의 패키지 목록에 [AEP Places](https://github.com/adobe/aepsdk-places-ios)이(가) 추가되었는지 확인하십시오. [Swift 패키지 관리자](install-sdks.md#swift-package-manager)를 참조하세요.
 1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]**(으)로 이동합니다.
 1. `AEPPlaces`이(가) 가져오기 목록의 일부인지 확인하십시오.
 
@@ -333,22 +330,22 @@ Assurance에서 설정을 확인하려면:
 
    <img src="assets/appentryexit.png" width="300" />
 
-1. 보증 UI에 이벤트가 표시됩니다.
+1. Assurance UI에 이벤트가 표시됩니다.
 
 
 
 ## 다음 단계
 
-이제 앱에서 지리적 위치 기능에 더 많은 기능을 추가하려면 모든 도구가 있어야 합니다. 이벤트를 Edge Network에 전달했으므로 [Experience Platform](platform.md)에 대해 앱을 설정한 후에는 앱에 사용된 프로필에 대해 경험 이벤트가 표시되는 것을 볼 수 있습니다.
+이제 앱에서 지리적 위치 기능에 더 많은 기능을 추가하려면 모든 도구가 있어야 합니다. 이벤트를 Edge Network으로 전달했으므로 [Experience Platform](platform.md)에 대한 앱을 설정한 후에는 앱에 사용된 프로필에 대해 경험 이벤트가 표시되는 것을 볼 수 있습니다.
 
 이 자습서의 Journey Optimizer 섹션에서 여정을 트리거하는 데 경험 이벤트를 사용할 수 있습니다([푸시 알림](journey-optimizer-inapp.md) 및 Journey Optimizer을 사용한 [인앱 메시지](journey-optimizer-push.md) 참조). 예를 들어 앱 사용자가 실제 스토어의 geofence에 들어오면 일부 제품 프로모션과 함께 푸시 알림을 전송하는 일반적인 사례입니다.
 
-주로 태그 속성에서 정의한 Places 서비스 및 데이터 요소와 규칙에 의해 앱에 대한 기능이 구현된 것을 보았습니다. 따라서 앱의 코드를 최소화합니다. 또는 채워진 `placeContext` 개체가 포함된 XDM 페이로드와 함께 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API(자세한 내용은 [이벤트](events.md) 참조)를 사용하여 앱에서 직접 동일한 기능을 구현할 수 있습니다.
+주로 태그 속성에서 정의한 Places 서비스 및 데이터 요소와 규칙에 의해 앱에 대한 기능이 구현된 것을 보았습니다. 따라서 앱의 코드를 최소화합니다. 또는 채워진 [`Edge.sendEvent` 개체가 포함된 XDM 페이로드와 함께 ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)[ API(자세한 내용은 ](events.md)이벤트`placeContext` 참조)를 사용하여 앱에서 직접 동일한 기능을 구현할 수 있습니다.
 
 >[!SUCCESS]
 >
 >이제 Experience Platform Mobile SDK에서 위치 확장 기능을 사용하여 지리적 위치 서비스용 앱을 활성화했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[Adobe Analytics에 데이터 매핑](analytics.md)**
