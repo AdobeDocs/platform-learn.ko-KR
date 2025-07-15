@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Platform Mobile SDK 및 Adobe Target을 사용하여 모바일 앱에서 경험을 최적화하고 개인화하는 방법을 알아봅니다.
 
-Target은 고객의 경험을 조정하고 개인화해야 하는 모든 기능을 제공합니다. Target을 사용하면 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화할 수 있습니다. Target은 A/B 테스트, 다변량 테스트, 제품 및 콘텐츠 추천, 콘텐츠 타겟팅, AI를 통한 콘텐츠 자동 개인화 등을 수행할 수 있습니다. 이 단원에서는 Target의 A/B 테스트 기능에 초점을 둡니다. 자세한 내용은 [A/B 테스트 개요](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en)를 참조하십시오.
+Target은 고객의 경험을 조정하고 개인화해야 하는 모든 기능을 제공합니다. Target을 사용하면 웹 및 모바일 사이트, 앱, 소셜 미디어 및 기타 디지털 채널에서 매출을 극대화할 수 있습니다. Target은 A/B 테스트, 다변량 테스트, 제품 및 콘텐츠 추천, 콘텐츠 타겟팅, AI를 통한 콘텐츠 자동 개인화 등을 수행할 수 있습니다. 이 단원에서는 Target의 A/B 테스트 기능에 초점을 둡니다. 자세한 내용은 [A/B 테스트 개요](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=ko)를 참조하십시오.
 
 ![아키텍쳐](assets/architecture-at.png)
 
@@ -66,9 +66,9 @@ Target에서 A/B 테스트를 수행하려면 먼저 적절한 구성 및 통합
 
    Target UI의 **[!UICONTROL 관리]** > **[!UICONTROL 속성]**&#x200B;에서 속성을 찾을 수 있습니다. 사용할 속성에 대한 속성 토큰을 표시하려면 ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)을(를) 선택하십시오. 속성 토큰에 `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`과(와) 같은 형식이 있습니다. `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx` 값만 입력해야 합니다.
 
-   필요한 경우 Target 환경 ID를 지정할 수 있습니다. Target은 환경을 사용하여 사이트와 사전 프로덕션 환경을 구성하여 손쉽게 관리하고 별도의 보고를 수행합니다. 사전 설정된 환경에는 프로덕션, 스테이징 및 개발이 포함됩니다. 자세한 내용은 [환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) 및 [대상 환경 ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id)를 참조하십시오.
+   필요한 경우 Target 환경 ID를 지정할 수 있습니다. Target은 환경을 사용하여 사이트와 사전 프로덕션 환경을 구성하여 손쉽게 관리하고 별도의 보고를 수행합니다. 사전 설정된 환경에는 프로덕션, 스테이징 및 개발이 포함됩니다. 자세한 내용은 [환경](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=ko) 및 [대상 환경 ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ko#target-environment-id)를 참조하십시오.
 
-   원할 경우 ID 네임스페이스(예: CRM ID)에서 프로필 동기화를 지원하도록 Target 타사 ID 네임스페이스를 지정할 수 있습니다. 자세한 내용은 [Target 타사 ID 네임스페이스](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace)를 참조하십시오.
+   원할 경우 ID 네임스페이스(예: CRM ID)에서 프로필 동기화를 지원하도록 Target 타사 ID 네임스페이스를 지정할 수 있습니다. 자세한 내용은 [Target 타사 ID 네임스페이스](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=ko#target-third-party-id-namespace)를 참조하십시오.
 
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -81,7 +81,7 @@ Target에서 A/B 테스트를 수행하려면 먼저 적절한 구성 및 통합
 
 1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을(를) 선택하고 데이터스트림(예: **[!DNL Luma Mobile App]**)을 선택합니다.
 1. ![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)에 대해 **[!UICONTROL 자세히]**&#x200B;를 선택하고 상황에 맞는 메뉴에서 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** 화면에서 **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge 세분화]** 및 **[!UICONTROL Personalization 대상]**&#x200B;을 선택했는지 확인하십시오. Journey Optimizer 단원을 따르는 경우 **[!UICONTROL Adobe Journey Optimizer]**&#x200B;을(를) 선택합니다. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)을 참조하세요.
+1. **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** 화면에서 **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge 세분화]** 및 **[!UICONTROL Personalization 대상]**&#x200B;을 선택했는지 확인하십시오. Journey Optimizer 단원을 따르는 경우 **[!UICONTROL Adobe Journey Optimizer]**&#x200B;을(를) 선택합니다. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ko#aep)을 참조하세요.
 1. 데이터스트림 구성을 저장하려면 **[!UICONTROL 저장]** 을 선택합니다.
 
    ![AEP 데이터스트림 구성](assets/datastream-aep-configuration-target.png)
@@ -293,6 +293,6 @@ Assurance에서 A/B 테스트의 유효성을 검사하려면:
 >
 >A/B 테스트를 위해 앱을 활성화하고 Adobe Experience Platform Mobile SDK용 Offer Decisioning 및 Target 확장을 사용한 A/B 테스트 결과를 표시했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[결론 및 다음 단계](conclusion.md)**
