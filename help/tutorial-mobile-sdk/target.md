@@ -104,7 +104,7 @@ Target에서 A/B 테스트를 수행하려면 먼저 적절한 구성 및 통합
 1. 상단 표시줄에서 **[!UICONTROL 찾아보기]**&#x200B;를 선택합니다.
 1. 스키마를 선택하여 엽니다.
 1. 스키마 편집기에서 ![필드 그룹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 옆에 있는 **[!UICONTROL 추가]** **[!UICONTROL 추가]**&#x200B;을(를) 선택합니다.
-1. **[!UICONTROL 필드 그룹 추가]** 대화 상자에서 `proposition`을(를) 검색하고 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]**&#x200B;을 선택하고 **[!UICONTROL 필드 그룹 추가]**를 선택합니다.
+1. **[!UICONTROL 필드 그룹 추가]** 대화 상자에서 `proposition`을(를) 검색하고 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]**&#x200B;을 선택하고 **[!UICONTROL 필드 그룹 추가]**&#x200B;를 선택합니다.
    ![제안](assets/schema-fieldgroup-proposition.png)
 1. 스키마에 변경 내용을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
@@ -116,7 +116,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 1. Assurance UI로 이동합니다.
 1. 왼쪽 레일에서 **[!UICONTROL 구성]**&#x200B;을 선택하고 ![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래의 **[!UICONTROL 설정 유효성 검사]** 옆에 있는 **[!UICONTROL 추가]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. 왼쪽 레일에서 **[!UICONTROL 설정 유효성 검사]**를 선택합니다. 두 데이터 스트림 설정의 유효성을 검사하고 애플리케이션에서 SDK 설정을 확인합니다.
+1. 왼쪽 레일에서 **[!UICONTROL 설정 유효성 검사]**&#x200B;를 선택합니다. 두 데이터 스트림 설정의 유효성을 검사하고 애플리케이션에서 SDK 설정을 확인합니다.
    ![AJO 의사 결정 유효성 검사](assets/ajo-decisioning-validation.png)
 
 ## A/B 테스트 만들기
@@ -126,7 +126,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 1. Target UI의 상단 표시줄에서 **[!UICONTROL 활동]**&#x200B;을 선택합니다.
 1. 컨텍스트 메뉴에서 **[!UICONTROL 활동 만들기]** 및 **[!UICONTROL A/B 테스트]**&#x200B;를 선택합니다.
 1. **[!UICONTROL A/B 테스트 활동 만들기]** 대화 상자에서 **[!UICONTROL Mobile]**&#x200B;을(를) **[!UICONTROL 유형]**(으)로 선택하고, **[!UICONTROL Workspace 선택]** 목록에서 작업 영역을 선택하고, Target Premium 고객이고 데이터 스트림에 속성 토큰을 지정한 경우 **[!UICONTROL 속성 선택]** 목록에서 속성을 선택합니다.
-1. **[!UICONTROL 만들기]**를 선택합니다.
+1. **[!UICONTROL 만들기]**&#x200B;를 선택합니다.
    ![대상 활동 만들기](assets/target-create-activity1.png)
 
 1. **[!UICONTROL 제목 없는 활동]** 화면의 **[!UICONTROL 경험]** 단계에서 다음을 수행합니다.
