@@ -255,7 +255,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem129.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-meta-ad`을(를) 설정하고 종횡비를 **1:1**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem130.png)
@@ -286,7 +286,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem136.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem137.png)
@@ -315,7 +315,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem143.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-displaytemplate-300x600`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **300x600**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem144.png)
@@ -344,7 +344,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem150.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-displaytemplate-970x250`을(를) 설정하고 **광고 너비** 및 **광고 높이**&#x200B;을(를) **970x250**(으)로 설정합니다. **템플릿 게시**&#x200B;를 클릭합니다.
 
 ![GSPeM](./images/gspem151.png)
@@ -375,7 +375,7 @@ GenStudio for Performance Marketing에서는 애플리케이션 내에서 템플
 
 ![GSPeM](./images/gspem157.png)
 
-필드 **템플릿 이름**에 사용:
+필드 **템플릿 이름**&#x200B;에 사용:
 `--aepUserLdap---citisignal-email-template`.
 
 **템플릿 게시**&#x200B;를 클릭합니다.
