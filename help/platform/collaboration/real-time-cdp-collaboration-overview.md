@@ -41,7 +41,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration 인트로" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1752870045626" alt="Real-Time CDP Collaboration 인트로"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446808/?format=jpeg&nocache=1752870045626&captions=kor" alt="Real-Time CDP Collaboration 인트로"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -64,7 +64,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="에이전시 전문가를 위한 Real-Time CDP 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1752870045622" alt="에이전시 전문가를 위한 Real-Time CDP 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464665/?format=jpeg&nocache=1752870045622&captions=kor" alt="에이전시 전문가를 위한 Real-Time CDP 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - 프로세스 및 사람" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1752870045616" alt="Real-Time CDP Collaboration - 프로세스 및 사람"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464676/?format=jpeg&nocache=1752870045616&captions=kor" alt="Real-Time CDP Collaboration - 프로세스 및 사람"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1752870046144" alt="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423936?format=jpeg&nocache=1752870046144&captions=kor" alt="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Real-Time CDP Collaboration에 대한 권한 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1752870046165" alt="Real-Time CDP Collaboration에 대한 권한 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452237/?format=jpeg&nocache=1752870046165&captions=kor" alt="Real-Time CDP Collaboration에 대한 권한 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Real-Time CDP Collaboration에서 프로젝트 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1752870046719" alt="Real-Time CDP Collaboration에서 프로젝트 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464041/?format=jpeg&nocache=1752870046719&captions=kor" alt="Real-Time CDP Collaboration에서 프로젝트 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
