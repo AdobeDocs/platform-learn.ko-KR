@@ -20,7 +20,7 @@ ht-degree: 1%
 
 Federated Audience Composition 경고를 구독하여 실행 성공 및 실패 시 인앱 또는 이메일 알림을 받는 방법에 대해 알아봅니다. 이를 활성화하려면 Experience Platform 제품 아래의 알림 설정에서 해당 환경 설정을 구성합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470061/?learn=on&enablevpops&captions=kor)
 
 
 ## 알림을 활성화하는 방법
