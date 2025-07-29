@@ -1,6 +1,6 @@
 ---
 title: Real-Time CDP Collaboration 개요
-description: 가치가 높은 대상을 검색 및 활성화하고 측정 기능을 사용하여 가시적인 결과를 가져올 수 있는 특수 목적으로 구축된 데이터 공동 작업 애플리케이션인 Adobe Real-Time Collaboration을 소개합니다.
+description: 고부가가치 대상자를 검색하고 활성화한 후 측정 기능을 사용하여 가시적인 결과를 이끌어낼 수 있는 특수 목적의 데이터 협업 애플리케이션인 Adobe Real-Time CDP Collaboration을 소개합니다.
 feature: Collaboration
 role: Leader, User
 level: Beginner
@@ -8,22 +8,22 @@ duration: 92
 last-substantial-update: 2025-07-07T00:00:00Z
 jira: KT-17316
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: 26f0df1b3b62ac4687243f7c564dacc385b4ede4
+source-git-commit: 250163d15e7ed54252bf1f2762dc35663bc7647d
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 12%
+source-wordcount: '642'
+ht-degree: 18%
 
 ---
 
 # Real-Time CDP Collaboration 개요
 
-Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드파티 쿠키에 의존하지 않고 가치가 높은 대상을 검색, 활성화 및 측정할 수 있습니다. 이 솔루션을 사용하면 광고주와 게시자 간의 고급 데이터 공동 작업이 가능하므로 개인 정보가 안전한 중앙 집중식 환경에서 개인화되고 영향력 있는 고객 경험을 만들 수 있습니다.
+Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존하지 않고 고가치 대상을 검색, 활성화 및 측정할 수 있습니다. 이 솔루션을 사용하면 공동 작업자 간의 고급 데이터 공동 작업을 통해 개인 정보가 안전한 중앙 집중식 환경에서 개인화되고 영향을 받는 고객 경험을 만들 수 있습니다.
 
 아래에는 Real-Time CDP Collaboration을 설정하고, 사용하고, 가치를 창출하는 방법을 학습하는 데 도움이 되는 비디오 및 기타 리소스가 있습니다. 이 페이지 및 사이트에 추가 자산이 추가되므로 자주 다시 확인하십시오. 즐거운 학습되시길 바랍니다!
 
-자세한 내용은 Real-Time CDP Collaboration [설명서](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/home){target="_blank"}를 참조하세요.
+자세한 내용은 Real-Time CDP Collaboration [설명서](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}를 참조하세요.
 
-[![ExL LIVE 2025년 4월 10일](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/ko/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 2025년 4월 10일](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## 시작
 
@@ -41,7 +41,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration 인트로" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446808/?format=jpeg&nocache=1752870045626&captions=kor" alt="Real-Time CDP Collaboration 인트로"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1752870045626" alt="Real-Time CDP Collaboration 인트로"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -51,7 +51,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="real-time-cdp-collaboration-intro.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration 인트로">Real-Time CDP Collaboration 소개</a>
                     </p>
-                    <p class="is-size-6">가치가 높은 대상을 검색 및 활성화하고 측정 기능을 사용하여 가시적인 결과를 가져올 수 있는 특수 목적으로 구축된 데이터 공동 작업 애플리케이션인 Adobe Real-Time CDP Collaboration을 소개합니다.</p>
+                    <p class="is-size-6">고부가가치 대상자를 검색하고 활성화한 후 측정 기능을 사용하여 가시적인 결과를 이끌어낼 수 있는 특수 목적의 데이터 협업 애플리케이션인 Adobe Real-Time CDP Collaboration을 소개합니다.</p>
                 </div>
                 <a href="real-time-cdp-collaboration-intro.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
@@ -64,7 +64,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="에이전시 전문가를 위한 Real-Time CDP 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464665/?format=jpeg&nocache=1752870045622&captions=kor" alt="에이전시 전문가를 위한 Real-Time CDP 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1752870045622" alt="에이전시 전문가를 위한 Real-Time CDP 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - 프로세스 및 사람" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464676/?format=jpeg&nocache=1752870045616&captions=kor" alt="Real-Time CDP Collaboration - 프로세스 및 사람"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1752870045616" alt="Real-Time CDP Collaboration - 프로세스 및 사람"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +112,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
 
 ## 설정
 
-시작하려면 Adobe Experience Platform(AEP) 관리자에게 문의하여 후속 자습서에 설명된 대로 Real-Time CDP Collaboration 권한을 설정할 수 있는 적절한 액세스 권한이 있는지 확인하십시오. AEP 관리자를 식별할 수 없는 경우 Adobe 계정 팀에 문의하십시오.
+시작하려면 Adobe Experience Platform 관리자에게 문의하여 후속 자습서에 설명된 대로 Real-Time CDP Collaboration 권한을 설정할 수 있는 적절한 액세스 권한이 있는지 확인하십시오. Experience Platform 관리자를 식별할 수 없는 경우 Adobe 계정 팀에 문의하십시오.
 
 <!-- CARDS
 {cta=Watch}
@@ -128,7 +128,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423936?format=jpeg&nocache=1752870046144&captions=kor" alt="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1752870046144" alt="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Real-Time CDP Collaboration에 대한 권한 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452237/?format=jpeg&nocache=1752870046165&captions=kor" alt="Real-Time CDP Collaboration에 대한 권한 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1752870046165" alt="Real-Time CDP Collaboration에 대한 권한 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -184,7 +184,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="set-up-an-advertiser-account.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration에서 광고주 계정 설정">Real-Time CDP Collaboration에서 광고주 계정 설정</a>
                     </p>
-                    <p class="is-size-6">Real-Time CDP Collaboration에서 광고주 계정(조직)을 설정하는 방법에 대해 알아봅니다.</p>
+                    <p class="is-size-6">Real-Time CDP Collaboration에서 광고주 계정을 설정하는 방법을 알아봅니다.</p>
                 </div>
                 <a href="set-up-an-advertiser-account.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
@@ -219,9 +219,9 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration에서 광고주로 대상 참조">Real-Time CDP 공동 작업에서 광고주로서의 참조 대상자</a>
+                        <a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration에서 광고주로 대상 참조">Real-Time CDP Collaboration에서 광고주로서의 Source 대상</a>
                     </p>
-                    <p class="is-size-6">광고주로서 대상자를 참조하는 방법을 배우고 이를 인터페이스에 가져와 파트너와 협업할 때 활용할 수 있습니다.</p>
+                    <p class="is-size-6">광고주로서 파트너와 공동 작업을 수행할 때 사용할 수 있도록 대상을 인터페이스에 포함시켜 소싱하는 방법을 알아봅니다.</p>
                 </div>
                 <a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
@@ -257,7 +257,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Real-Time CDP Collaboration에서 프로젝트 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464041/?format=jpeg&nocache=1752870046719&captions=kor" alt="Real-Time CDP Collaboration에서 프로젝트 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1752870046719" alt="Real-Time CDP Collaboration에서 프로젝트 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -267,7 +267,7 @@ Adobe Real-Time Customer Data Platform(CDP) Collaboration을 사용하면 서드
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="create-a-project.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration에서 프로젝트 만들기">Real-Time CDP Collaboration에서 프로젝트 만들기</a>
                     </p>
-                    <p class="is-size-6">검색, 활성화 및 측정에 대한 간단한 개요를 포함하여 Collaboration에서 프로젝트를 만드는 기본 사항에 대해 알아봅니다.</p>
+                    <p class="is-size-6">검색, 활성화 및 측정에 대한 간략한 개요를 포함해 Collaboration에서 프로젝트를 만드는 기본 사항을 알아봅니다.</p>
                 </div>
                 <a href="create-a-project.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
