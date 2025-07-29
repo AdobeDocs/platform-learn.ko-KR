@@ -20,4 +20,4 @@ ht-degree: 0%
 
 이 비디오에서는 Real-Time CDP Collaboration 사용자, 에이전시 실무자 및 전문 기술 팀에 대해 Real-Time CDP Collaboration 채택 시 성공 및 운영 효율성을 보장하기 위해 다양한 사용 사례, 데이터 소스, 대상 및 목표 전반에 걸쳐 이러한 다양한 기능 팀이 어떻게 공동 작업해야 하는지에 대한 지침을 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464676/?learn=on&enablevpops&captions=kor)

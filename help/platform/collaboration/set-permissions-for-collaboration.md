@@ -20,5 +20,5 @@ ht-degree: 0%
 
 Real-Time CDP Collaboration에 액세스하고 사용하는 데 필요한 권한을 설정하는 방법을 알아봅니다. 자세한 설명서를 보려면 [액세스 제어 개요](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}(으)로 이동하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452237/?learn=on&enablevpops&captions=kor)
 
