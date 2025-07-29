@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Real-Time CDP Collaboration에서 광고주로서의 Source 대상
 
-광고주로서 파트너와 공동 작업을 수행할 때 사용할 수 있도록 대상을 인터페이스에 포함시켜 소싱하는 방법을 알아봅니다. 자세한 설명서는 [대상자 소스 및 관리](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}를 참조하십시오.
+광고주로서 파트너와 공동 작업을 수행할 때 사용할 수 있도록 대상을 인터페이스에 포함시켜 소싱하는 방법을 알아봅니다. 자세한 설명서는 [대상자 소스 및 관리](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}를 참조하십시오.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)
