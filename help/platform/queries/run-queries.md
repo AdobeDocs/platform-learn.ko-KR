@@ -1,22 +1,21 @@
 ---
 title: 쿼리 서비스로 쿼리 실행
-description: 이 비디오는 Adobe Experience Platform 인터페이스 및 PSQL 클라이언트에서 쿼리를 실행하는 방법을 보여 줍니다. 또한 XDM 개체에서 개별 속성 사용, Adobe 정의 함수 사용 및 CREATE TABLE AS SELECT(CTAS) 사용이 표시됩니다.
+description: Adobe Experience Platform 쿼리 편집기를 사용하여 SQL 쿼리를 효율적으로 만들고, 실행하고, 관리하는 방법에 대해 알아봅니다. 뷰어에서는 개체 브라우저, 자동 완성, 매개 변수화된 쿼리 및 예약 도구와 같은 기능을 사용하여 데이터 워크플로를 간소화하고 조직 전체에 걸쳐 실행 가능한 통찰력을 생성하는 방법을 알아봅니다.
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 3d32a0557ef389fead5387c1e5f85d2c8c55631c
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 1%
+source-wordcount: '109'
+ht-degree: 0%
 
 ---
 
 # 쿼리 실행
 
-이 비디오는 Adobe Experience Platform 인터페이스 및 PSQL 클라이언트에서 쿼리를 실행하는 방법을 보여 줍니다. 또한 XDM 개체에서 개별 속성 사용, Adobe 정의 함수 사용 및 CREATE TABLE AS SELECT(CTAS) 사용이 표시됩니다. 자세한 제품 설명서는 [쿼리 편집기 UI 안내서](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=ko)를 참조하십시오.
-자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ko)를 참조하세요.
+Adobe Experience Platform 쿼리 편집기를 사용하여 SQL 쿼리를 효율적으로 만들고, 실행하고, 관리하는 방법에 대해 알아봅니다. 뷰어에서는 개체 브라우저, 자동 완성, 매개 변수화된 쿼리 및 예약 도구와 같은 기능을 사용하여 데이터 워크플로를 간소화하고 조직 전체에 걸쳐 실행 가능한 통찰력을 생성하는 방법을 알아봅니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/32942?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
