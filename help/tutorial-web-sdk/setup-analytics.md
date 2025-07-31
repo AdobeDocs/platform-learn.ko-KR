@@ -4,16 +4,16 @@ description: Experience Platform Web SDK을 사용하여 Adobe Analytics을 설�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2903'
 ht-degree: 1%
 
 ---
 
 # Adobe Experience Platform Web SDK으로 Adobe Analytics 설정
 
-[Adobe Analytics Web SDK](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/web-sdk/overview)를 사용하여 Adobe Experience Platform을 설정하고, Adobe Analytics에 데이터를 보내기 위한 태그 규칙을 만들고, Analytics가 데이터를 예상대로 캡처하고 있는지 확인하는 방법에 대해 알아봅니다.
+[Adobe Analytics Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)를 사용하여 Adobe Experience Platform을 설정하고, Adobe Analytics에 데이터를 보내기 위한 태그 규칙을 만들고, Analytics가 데이터를 예상대로 캡처하고 있는지 확인하는 방법에 대해 알아봅니다.
 
 [Adobe Analytics](https://experienceleague.adobe.com/ko/docs/analytics)은(는) 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 애플리케이션입니다.
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * Adobe Analytics에 대해 잘 알고 있고 액세스할 수 있습니다.
 
-* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [만드십시오](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+* 하나 이상의 테스트/개발 보고서 세트 ID가 있습니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 [만드십시오](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * 이 자습서의 초기 구성 및 태그 구성 섹션에서 이전 단원을 완료합니다.
 
@@ -74,11 +74,11 @@ Platform Web SDK은 웹 사이트에서 Platform Edge Network으로 데이터를
 1. Analytics 처리 규칙에서 XDM 필드를 Analytics 변수에 매핑합니다(더 이상 권장되지 않음).
 1. XDM 스키마에서 Analytics 변수에 직접 매핑합니다(더 이상 권장되지 않음).
 
-2024년 5월부터 Platform Web SDK을 사용하여 Adobe Analytics을 구현하기 위해 XDM 스키마를 만들 필요가 없습니다. `data` 개체(및 [데이터 요소 만들기](create-data-elements.md) 단원에서 만든 `data.variable` 데이터 요소)를 사용하여 모든 사용자 지정 Analytics 변수를 설정할 수 있습니다. 데이터 개체에서 이러한 변수를 설정하면 기존 Analytics 고객에게 익숙하고, 처리 규칙 인터페이스를 사용하는 것보다 효율적이며, 불필요한 데이터가 실시간 고객 프로필에 공간을 차지하는 것을 방지합니다(Real-Time Customer Data Platform 또는 Journey Optimizer이 있는 경우 중요).
+2024년 5월부터 Platform Web SDK을 사용하여 Adobe Analytics을 구현하기 위해 XDM 스키마를 만들 필요가 없습니다. `data` 개체(및 `data.variable`데이터 요소 만들기[ 단원에서 만든 ](create-data-elements.md) 데이터 요소)를 사용하여 모든 사용자 지정 Analytics 변수를 설정할 수 있습니다. 데이터 개체에서 이러한 변수를 설정하면 기존 Analytics 고객에게 익숙하고, 처리 규칙 인터페이스를 사용하는 것보다 효율적이며, 불필요한 데이터가 실시간 고객 프로필에 공간을 차지하는 것을 방지합니다(Real-Time Customer Data Platform 또는 Journey Optimizer이 있는 경우 중요).
 
 ### 자동으로 매핑된 필드
 
-많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다. 최신 매핑 목록을 확인하려면 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)을 참조하십시오.
+많은 XDM 필드는 자동으로 Analytics 변수에 매핑됩니다. 최신 매핑 목록을 확인하려면 [Adobe Experience Edge의 Analytics 변수 매핑](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)을 참조하십시오.
 
 사용자 지정 스키마를 정의하지 않았더라도 _이(가) 발생할 경우_&#x200B;입니다. Experience Platform Web SDK은 자동으로 일부 데이터를 수집하여 XDM 필드로 Platform Edge Network에 보냅니다. 예를 들어 Web SDK은 현재 페이지 URL을 읽고 XDM 필드 `web.webPageDetails.URL`(으)로 보냅니다. 이 필드는 Adobe Analytics으로 전달되며 Adobe Analytics의 페이지 URL 보고서가 자동으로 채워집니다.
 
@@ -106,8 +106,8 @@ Analytics 제품 문자열의 개별 섹션은 `productListItems` 개체 아래�
 >[!NOTE]
 >
 >2022년 8월 18일부터 `productListItems[].SKU`은(는) s.products 변수의 제품 이름에 매핑하는 우선 순위를 갖습니다.
->&#x200B;>`productListItems[].name`(으)로 설정된 값은 `productListItems[].SKU`이(가) 없는 경우에만 제품 이름에 매핑됩니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
->&#x200B;>빈 문자열 또는 null을 `productListItems[].SKU`(으)로 설정하지 마십시오. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
+>>`productListItems[].name`(으)로 설정된 값은 `productListItems[].SKU`이(가) 없는 경우에만 제품 이름에 매핑됩니다. 그렇지 않으면 매핑되지 않고 컨텍스트 데이터에서 사용할 수 있습니다.
+>>빈 문자열 또는 null을 `productListItems[].SKU`(으)로 설정하지 마십시오. 이렇게 하면 s.products 변수의 제품 이름에 매핑되지 않는 효과가 있습니다.
 
 
 ### 데이터 개체에서 변수 설정
@@ -218,7 +218,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 데이터 스트림에서 Adobe Analytics 보고서 세트 재정의 설정을 구성하려면 다음 작업을 수행하십시오.
 
 1. 데이터 스트림 열기
-1. ![자세히](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 메뉴를 연 다음 **[!UICONTROL 편집]**&#x200B;을 선택하여 **[!UICONTROL Adobe Analytics]** 구성을 편집하십시오.
+1. **[!UICONTROL 자세히]** 메뉴를 연 다음 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg)을 선택하여 **[!UICONTROL Adobe Analytics]** 구성을 편집하십시오.
 
    ![데이터 스트림 덮어쓰기](assets/datastream-edit-analytics.png)
 
@@ -243,7 +243,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. **[!UICONTROL 이벤트 유형]**&#x200B;에서 **[!UICONTROL 로드된 라이브러리(페이지 상단)]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL 고급 옵션]**&#x200B;을(를) 열려면 선택하고 `51`을(를) 입력하십시오. 이렇게 하면 **[!UICONTROL 변수 업데이트]** 작업 유형으로 기준 XDM을 설정하는 `all pages - library loaded - send event - 50` 이후에 규칙이 실행됩니다.
+1. **[!UICONTROL 고급 옵션]**&#x200B;을(를) 열려면 선택하고 `51`을(를) 입력하십시오. 이렇게 하면 `all pages - library loaded - send event - 50`변수 업데이트&#x200B;**[!UICONTROL 작업 유형으로 기준 XDM을 설정하는]** 이후에 규칙이 실행됩니다.
 1. **[!UICONTROL 변경 내용 유지]** 선택
 
    ![Analytics 보고서 세트 재정의](assets/set-up-analytics-rs-override.png)
@@ -270,9 +270,9 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. **[!UICONTROL 작업 유형]**(으)로 **[!UICONTROL 이벤트 보내기]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL XDM 데이터]**(으)로, [데이터 요소 만들기](create-data-elements.md) 단원에서 만든 `xdm.variable.content` 데이터 요소를 선택합니다
+1. **[!UICONTROL XDM 데이터]**(으)로, `xdm.variable.content`데이터 요소 만들기[ 단원에서 만든 ](create-data-elements.md) 데이터 요소를 선택합니다
 
-1. **[!UICONTROL Data]**(으)로 [데이터 요소 만들기](create-data-elements.md) 단원에서 만든 `data.variable` 데이터 요소를 선택합니다
+1. **[!UICONTROL Data]**(으)로 `data.variable`데이터 요소 만들기[ 단원에서 만든 ](create-data-elements.md) 데이터 요소를 선택합니다
 
    ![Analytics 데이터 스트림 재정의](assets/set-up-analytics-datastream-override-1.png)
 
@@ -345,7 +345,7 @@ Analytics가 Experience Platform Web SDK을 통해 데이터를 제대로 캡처
 
    >[!NOTE]
    >
-   >로그인했으므로 `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`에서 **`test@test.com`** 사용자에 대한 인증된 ID `b642b4217b34b1e8d3bd915fc65c4452`의 유효성을 검사하는 동안 잠시 기다려 주십시오.
+   >로그인했으므로 `b642b4217b34b1e8d3bd915fc65c4452`에서 **`test@test.com`** 사용자에 대한 인증된 ID `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`의 유효성을 검사하는 동안 잠시 기다려 주십시오.
 
 ### 보고서 세트 재정의 유효성 검사
 
@@ -368,13 +368,13 @@ Analytics가 Experience Platform Web SDK을 통해 데이터를 제대로 캡처
 
    >[!NOTE]
    >
-   > 이전 연습에서 `data` 개체로 `xdm` 개체를 덮어쓴 경우 `gn` 값이 `test`일 수 있습니다.
+   > 이전 연습에서 `gn` 개체로 `test` 개체를 덮어쓴 경우 `xdm` 값이 `data`일 수 있습니다.
 
    ![Analytics 제품 문자열](assets/analytics-debugger-edge-page-view.png)
 
 ### 제품 문자열 및 전자 상거래 이벤트 유효성 검사
 
-이미 제품 페이지를 사용하고 있으므로 이 연습에서는 동일한 Edge 추적을 사용하여 Analytics가 제품 데이터를 캡처하는지 확인합니다. 제품 문자열 및 전자 상거래 이벤트는 모두 XDM 변수를 Analytics에 자동으로 매핑합니다. [Adobe Analytics에 대한 XDM 스키마를 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)하는 동안 적절한 `productListItem` XDM 변수에 매핑했다면 Platform Edge Network에서 적절한 Analytics 변수에 데이터를 매핑합니다.
+이미 제품 페이지를 사용하고 있으므로 이 연습에서는 동일한 Edge 추적을 사용하여 Analytics가 제품 데이터를 캡처하는지 확인합니다. 제품 문자열 및 전자 상거래 이벤트는 모두 XDM 변수를 Analytics에 자동으로 매핑합니다. `productListItem`Adobe Analytics에 대한 XDM 스키마를 구성[하는 동안 적절한 ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) XDM 변수에 매핑했다면 Platform Edge Network에서 적절한 Analytics 변수에 데이터를 매핑합니다.
 
 **먼저 `Product String`이(가) 설정되어 있는지 확인**
 
@@ -385,7 +385,7 @@ Analytics가 Experience Platform Web SDK을 통해 데이터를 제대로 캡처
 
    ![Analytics 제품 문자열](assets/analytics-debugger-prodstring.png)
 
-   Edge 추적은 `commerce` 이벤트를 `productList` 차원과 약간 다르게 처리합니다. 위의 `[!UICONTROL c.a.x.productlistitem.[0].name]`에 매핑된 제품 이름과 같은 방식으로 매핑된 컨텍스트 데이터 변수가 없습니다. 대신 Edge 추적은 Analytics `event` 변수에 최종 이벤트 자동 매핑을 표시합니다. Platform Edge Network은 [Adobe Analytics에 대한 스키마를 구성](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)(이 경우 `commerce.productViews.value=1`)하는 동안 적절한 XDM `commerce` 변수에 매핑하기만 하면 해당 변수를 매핑합니다.
+   Edge 추적은 `commerce` 이벤트를 `productList` 차원과 약간 다르게 처리합니다. 위의 `[!UICONTROL c.a.x.productlistitem.[0].name]`에 매핑된 제품 이름과 같은 방식으로 매핑된 컨텍스트 데이터 변수가 없습니다. 대신 Edge 추적은 Analytics `event` 변수에 최종 이벤트 자동 매핑을 표시합니다. Platform Edge Network은 `commerce`Adobe Analytics에 대한 스키마를 구성[(이 경우 ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics))하는 동안 적절한 XDM `commerce.productViews.value=1` 변수에 매핑하기만 하면 해당 변수를 매핑합니다.
 
 1. Experience Platform Debugger 창으로 돌아가 `[!UICONTROL events]` 변수로 스크롤하면 `[!UICONTROL prodView]`(으)로 설정됩니다.
 
@@ -393,7 +393,7 @@ Analytics가 Experience Platform Web SDK을 통해 데이터를 제대로 캡처
 
    >[!TIP]
    >
-   > `ecommerce - library loaded - set product details variables - 20` 규칙은 `all pages - library loaded - set global variables - 1` 규칙이 설정한 `eventType`의 값을 시퀀스 뒷부분에서 트리거하도록 설정했으므로 덮어씁니다
+   > `ecommerce - library loaded - set product details variables - 20` 규칙은 `eventType` 규칙이 설정한 `all pages - library loaded - set global variables - 1`의 값을 시퀀스 뒷부분에서 트리거하도록 설정했으므로 덮어씁니다
 
 
    ![Analytics 제품 보기](assets/analytics-debugger-prodView.png)
@@ -439,12 +439,12 @@ Adobe Experience Platform Assurance을 사용하면 웹 사이트 및 모바일 
 [Assurance](validate-with-assurance.md) 단원에서 배운 대로 Assurance 세션을 시작하는 방법에는 여러 가지가 있습니다. 마지막 연습에서 시작한 Edge 추적 세션으로 이미 Adobe Experience Platform Debugger이 열려 있으므로 디버거를 통해 Assurance에 액세스하는 것이 좋습니다.
 ![Adobe Experience Platform 데이터 수집을 통한 Assurance](assets/assurance-open-aep-debugger.png)
 
-**[!UICONTROL &quot;웹 SDK 자습서 3&quot;]** Assurance 세션 내에서 이벤트 검색 표시줄에 **[!UICONTROL &quot;hitdebugger&quot;]**&#x200B;을(를) 입력하여 결과를 Adobe Analytics Post에서 처리된 데이터로 필터링합니다.
+**[!UICONTROL &quot;웹 SDK 자습서 3&quot;]** Assurance 세션 내에서 이벤트 검색 표시줄에 **[!UICONTROL &quot;hitdebugger&quot;]**을(를) 입력하여 결과를 Adobe Analytics Post에서 처리된 데이터로 필터링합니다.
 ![Assurance Adobe Analytics 사후 처리된 데이터](assets/assurance-hitdebugger.png)
 
 ### Experience Cloud ID 유효성 검사
 
-Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘의 공급업체는 **[!UICONTROL com.adobe.analytics.hitdebugger]**&#x200B;여야 합니다.
+Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선택하고 페이로드를 엽니다.  이 비콘의 공급업체는 **[!UICONTROL com.adobe.analytics.hitdebugger]**여야 합니다.
 ![Assurance에서 Adobe Analytics 유효성 검사](assets/assurance-hitdebugger-payload.png)
 
 그런 다음 **[!UICONTROL mcvisId]**(으)로 아래로 스크롤하여 ECID가 올바르게 캡처되었는지 확인합니다
@@ -487,8 +487,6 @@ Adobe Analytics이 ECID를 캡처하고 있는지 확인하려면 비콘을 선�
 
 축하합니다! 네가 해냈어! 이 작업은 단원을 마쳤으며 이제 자신의 웹 사이트에 대해 Platform Web SDK을 사용하여 Adobe Analytics을 구현할 준비가 되었습니다.
 
-[다음: ](setup-audience-manager.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.

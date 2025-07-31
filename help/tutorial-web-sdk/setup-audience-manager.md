@@ -1,21 +1,21 @@
 ---
-title: Platform Web SDK를 사용하여 Audience Manager 설정
-description: Platform Web SDK를 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
+title: Platform Web SDK으로 Audience Manager 설정
+description: Platform Web SDK을 사용하여 Adobe Audience Manager을 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 solution: Data Collection, Audience Manager
 jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1339'
 ht-degree: 4%
 
 ---
 
-# Platform Web SDK를 사용하여 Audience Manager 설정
+# Platform Web SDK으로 Audience Manager 설정
 
 Adobe Experience Platform Web SDK를 사용하여 Adobe Audience Manager를 설정하고 쿠키 대상을 사용하여 구현의 유효성을 검사하는 방법을 알아봅니다.
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/ko/docs/audience-manager)은(는) 사이트 방문자에 대한 상업적인 연관성 있는 정보를 수집하고, 마케팅 가능한 세그먼트를 만들고, 타기팅된 광고 및 콘텐츠를 적절한 고객에게 제공하는 데 필요한 모든 것을 제공하는 Adobe Experience Cloud 솔루션입니다.
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager)은(는) 사이트 방문자에 대한 상업적인 연관성 있는 정보를 수집하고, 마케팅 가능한 세그먼트를 만들고, 타기팅된 광고 및 콘텐츠를 적절한 고객에게 제공하는 데 필요한 모든 것을 제공하는 Adobe Experience Cloud 솔루션입니다.
 
 ![웹 SDK 및 Adobe Audience Manager 다이어그램](assets/dc-websdk-aam.png)
 
@@ -25,18 +25,18 @@ Adobe Experience Platform Web SDK를 사용하여 Adobe Audience Manager를 설�
 
 * Audience Manager을 활성화하기 위한 데이터 스트림 구성
 * Audience Manager에서 쿠키 대상 활성화
-* Adobe Experience Platform Debugger으로 대상 자격을 확인하여 Audience Manager 구현의 유효성 검사
+* Adobe Experience Platform Debugger으로 대상 자격을 확인하여 Audience Manager 구현의 유효성을 검사합니다
 
 ## 전제 조건
 
 이 단원을 완료하려면 먼저 다음 작업을 수행해야 합니다.
 
 * 이 자습서의 초기 구성 및 태그 구성 섹션에서 이전 단원을 완료합니다.
-* Adobe Audience Manager에 대한 액세스 권한과 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 적절한 권한이 있습니다. 자세한 내용은 [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/ko/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)를 검토하세요.
+* Adobe Audience Manager에 대한 액세스 권한과 트레이트, 세그먼트 및 대상을 만들고, 읽고, 쓸 수 있는 적절한 권한이 있습니다. 자세한 내용은 [Audience Manager의 역할 기반 액세스 제어](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)를 검토하십시오.
 
 ## 데이터 스트림 구성
 
-Platform Web SDK를 사용하는 Audience Manager 구현은 [SSF(서버측 전달)를 사용하는 구현과 다릅니다](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). 서버측 전달은 Adobe Analytics 요청 데이터를 Audience Manager에 전달합니다. Platform 웹 SDK 구현은 Platform Edge Network으로 전송된 XDM 데이터를 Audience Manager에 전달합니다. Audience Manager은 데이터 스트림에서 활성화됩니다.
+Platform Web SDK을 사용하는 Audience Manager 구현은 [SSF(서버측 전달)를 사용하는 구현과 다릅니다](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). 서버측 전달은 Adobe Analytics 요청 데이터를 Audience Manager으로 전달합니다. Platform Web SDK 구현은 Platform Edge Network으로 전송된 XDM 데이터를 Audience Manager에 전달합니다. Audience Manager은 데이터 스트림에서 활성화됩니다.
 
 1. [데이터 수집](https://experience.adobe.com/#/data-collection){target="blank"} 인터페이스로 이동
 1. 왼쪽 탐색에서 **[!UICONTROL 데이터스트림]**&#x200B;을 선택합니다.
@@ -53,14 +53,14 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 [SSF(서버측 전�
 
 ## 데이터 소스 만들기
 
-그런 다음 Audience Manager 내에서 데이터를 구성하는 기본 도구인 [Data Source](https://experienceleague.adobe.com/ko/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings)을(를) 만듭니다.
+그런 다음 Audience Manager 내에서 데이터를 구성하는 기본 도구인 [Data Source](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings)을(를) 만듭니다.
 
 1. [Audience Manager](https://experience.adobe.com/#/audience-manager/) 인터페이스로 이동
 1. 위쪽 탐색에서 **[!UICONTROL 대상 데이터]** 선택
 1. 드롭다운 메뉴에서 **[!UICONTROL 데이터 원본]**&#x200B;을(를) 선택합니다
 1. 데이터 소스 페이지 상단에서 **[!UICONTROL 새로 추가]** 단추를 선택합니다.
 
-   ![Adobe Experience Platform Audience Manager 데이터 원본](assets/data-sources-list.jpg)
+   ![Adobe Experience Platform Audience Manager 데이터 소스](assets/data-sources-list.jpg)
 
 1. Data Source에 친숙한 이름과 설명을 지정합니다. 초기 설정의 경우 이 `Platform Web SDK tutorial`의 이름을 지정할 수 있습니다.
 1. **[!UICONTROL ID 유형]**&#x200B;을(를) **[!UICONTROL 쿠키]**(으)로 설정
@@ -73,7 +73,7 @@ Platform Web SDK를 사용하는 Audience Manager 구현은 [SSF(서버측 전�
 
 ## 트레이트 만들기
 
-Data Source이 저장되면 [트레이트](https://experienceleague.adobe.com/ko/docs/audience-manager/user-guide/features/traits/traits-overview)를 설정합니다. 트레이트는 Audience Manager에 있는 하나 이상의 신호가 결합된 것입니다. 홈 페이지 방문자에 대한 트레이트를 만듭니다.
+Data Source이 저장되면 [트레이트](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview)를 설정합니다. 트레이트는 Audience Manager에 있는 하나 이상의 신호가 결합된 것입니다. 홈 페이지 방문자에 대한 트레이트를 만듭니다.
 
 >[!NOTE]
 >
@@ -88,8 +88,8 @@ Data Source이 저장되면 [트레이트](https://experienceleague.adobe.com/ko
 1. 이전 섹션에서 만든 **[!UICONTROL 데이터 Source]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 오른쪽 창에서 특성을 저장할 폴더를 선택]**&#x200B;합니다. 기존 상위 폴더 옆에 있는 **+ 아이콘**&#x200B;을(를) 선택하여 폴더를 만들 수 있습니다. 이 새 폴더의 이름을 `Platform Web SDK tutorial`로 지정할 수 있습니다.
 1. **[!UICONTROL 트레이트 식]** 캐럿을 확장하고 **[!UICONTROL 식 빌더]**&#x200B;를 선택합니다. 홈 페이지 방문을 나타내는 키 값 쌍을 제공해야 합니다.
-1. [Luma 홈 페이지](https://luma.enablementadobe.com/content/luma/us/en.html)(태그 속성에 매핑됨)와 **Adobe Experience Platform Debugger**&#x200B;을(를) 열고 페이지를 새로 고칩니다.
-1. Platform Web SDK에 대한 네트워크 요청 및 이벤트 세부 정보를 확인하여 홈페이지의 키 및 이름 값을 찾습니다.
+1. [Luma 홈 페이지](https://luma.enablementadobe.com/content/luma/us/en.html)&#x200B;(태그 속성에 매핑됨)와 **Adobe Experience Platform Debugger**&#x200B;을(를) 열고 페이지를 새로 고칩니다.
+1. Platform Web SDK에 대한 네트워크 요청 및 이벤트 세부 정보를 확인하여 홈 페이지의 키 및 이름 값을 찾습니다.
    ![Adobe Experience Platform Audience Manager XDM 데이터](assets/xdm-keyvalue.jpg)
 1. Audience Manager UI에서 표현식 빌더로 돌아가서 키를 **`web.webPageDetails.name`**(으)로 입력하고 **`content:luma:us:en`** 값을 입력합니다. 이 단계에서는 홈 페이지를 로드할 때마다 트레이트를 실행합니다.
 1. 트레이트를 **[!UICONTROL 저장]**&#x200B;합니다.
@@ -117,7 +117,7 @@ Data Source이 저장되면 [트레이트](https://experienceleague.adobe.com/ko
 
 그런 다음 **대상 빌더**&#x200B;를 사용하여 **쿠키 기반 대상**&#x200B;을 만듭니다. Destination Builder를 사용하여 쿠키, URL 및 서버 간 대상을 만들고 관리할 수 있습니다.
 
-1. 위쪽 탐색의 **대상 데이터** 메뉴에서 **[!UICONTROL 대상]**&#x200B;을 선택하여 대상 빌더를 엽니다.
+1. 위쪽 탐색의 **[!UICONTROL 대상 데이터]** 메뉴에서 **대상**&#x200B;을 선택하여 대상 빌더를 엽니다.
 1. **[!UICONTROL 대상 만들기]** 선택
 1. 이름 및 설명 입력, `Platform Web SDK tutorial`
 1. **[!UICONTROL Category]**(으)로 **[!UICONTROL Custom]**&#x200B;을(를) 선택하십시오.
@@ -128,7 +128,7 @@ Data Source이 저장되면 [트레이트](https://experienceleague.adobe.com/ko
 1. **[!UICONTROL 구성]** 섹션을 열어 쿠키 대상에 대한 세부 정보를 입력하십시오.
 1. 쿠키에 친숙한 이름 `platform_web_sdk_tutorial`을(를) 지정하십시오.
 1. **[!UICONTROL 쿠키 도메인]**(으)로 통합을 계획하고 있는 사이트의 도메인을 추가하십시오. 튜토리얼에 Luma 도메인 `luma.enablementadobe.com`을(를) 입력합니다.
-1. **[!UICONTROL Publish 데이터를]** 옵션으로 **[!UICONTROL 선택한 도메인만]**&#x200B;을(를) 선택하십시오.
+1. **[!UICONTROL 데이터를]**&#x200B;에 게시&#x200B;**[!UICONTROL 선택한 도메인만 선택]**
 1. 아직 추가되지 않은 경우 도메인 선택
 1. **[!UICONTROL 데이터 형식]**(으)로 **[!UICONTROL 단일 키]**&#x200B;를 선택하고 쿠키에 키를 지정하십시오. 이 자습서에서는 `segment`을(를) 키 값으로 사용합니다.
 1. 마지막으로 **[!UICONTROL 저장]**&#x200B;을 선택하여 대상 구성 세부 정보를 저장합니다.
@@ -162,9 +162,9 @@ Data Source이 저장되면 [트레이트](https://experienceleague.adobe.com/ko
 
 1. 태그 속성에 매핑된 상태로 [Luma 데모 사이트 홈 페이지](https://luma.enablementadobe.com/content/luma/us/en.html)를 열어 새로 만든 세그먼트를 확인합니다.
 1. 브라우저의 **개발자 도구** > **네트워크** 탭을 엽니다.
-1. `interact`을(를) 텍스트 필터로 사용하여 Platform Web SDK 요청을 필터링합니다.
+1. `interact`을(를) 텍스트 필터로 사용하여 Platform 웹 SDK 요청을 필터링합니다.
 1. 통화를 선택하고 **미리 보기** 탭을 열어 응답 세부 정보를 봅니다.
-1. 이전에 Audience Manager에서 구성한 대로 **페이로드**&#x200B;를 확장하여 필요한 쿠키 세부 정보를 봅니다. 이 예제에서는 예상 쿠키 이름 `platform_web_sdk_tutorial`이(가) 표시됩니다.
+1. 이전에 Audience Manager에서 구성한 대로 필요한 쿠키 세부 정보를 보려면 **페이로드**&#x200B;를 확장하십시오. 이 예제에서는 예상 쿠키 이름 `platform_web_sdk_tutorial`이(가) 표시됩니다.
 
    ![Adobe Experience Platform Audience Manager 특성 추가](assets/segment-validate-response.jpg)
 
@@ -179,10 +179,8 @@ Data Source이 저장되면 [트레이트](https://experienceleague.adobe.com/ko
 ![Adobe Experience Platform Audience Manager 특성 추가](assets/segment-population.jpg)
 
 
-이 단원을 완료했으므로 Platform Web SDK가 데이터를 Audience Manager에 전달하는 방법을 확인하고 쿠키 대상이 있는 세그먼트별 자사 쿠키를 설정할 수 있습니다.
-
-[다음: ](setup-target.md)
+이 단원을 완료했으므로 Platform Web SDK이 데이터를 Audience Manager에 전달하는 방법을 확인하고 쿠키 대상이 있는 세그먼트별 자사 쿠키를 설정할 수 있습니다.
 
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.

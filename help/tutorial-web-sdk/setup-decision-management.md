@@ -1,21 +1,21 @@
 ---
-title: Platform Web SDK를 사용하여 Journey Optimizer 의사 결정 관리 설정
-description: Platform Web SDK를 사용하여 의사 결정 관리를 구현하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
+title: Platform Web SDK을 사용하여 Journey Optimizer 의사 결정 관리 설정
+description: Platform Web SDK을 사용하여 의사 결정 관리를 구현하는 방법을 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
 
-# Platform Web SDK를 사용하여 의사 결정 관리 설정
+# Platform Web SDK을 사용하여 의사 결정 관리 설정
 
-Platform Web SDK를 사용하여 Adobe Journey Optimizer의 의사 결정 관리 기능을 구현하는 방법에 대해 알아봅니다. 이 안내서에서는 기본 의사 결정 관리 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 자세히 설명합니다.
+Platform Web SDK을 사용하여 Adobe Journey Optimizer의 의사 결정 관리 기능을 구현하는 방법을 알아봅니다. 이 안내서에서는 기본 의사 결정 관리 사전 요구 사항, 구성을 위한 자세한 단계 및 충성도 상태를 중심으로 하는 사용 사례에 대해 자세히 설명합니다.
 
 이 자습서를 통해 Journey Optimizer 사용자는 의사 결정 관리 기능을 사용할 수 있으므로 고객 상호 작용의 개인화와 관련성을 높일 수 있습니다.
 
@@ -26,9 +26,9 @@ Platform Web SDK를 사용하여 Adobe Journey Optimizer의 의사 결정 관리
 
 이 단원을 마치면 다음을 수행할 수 있습니다.
 
-* Adobe Journey Optimizer 내 의사 결정 관리의 핵심 개념과 Adobe Experience Platform Web SDK와의 통합을 파악합니다.
+* Adobe Journey Optimizer 내 의사 결정 관리의 핵심 개념과 Adobe Experience Platform Web SDK과의 통합을 파악합니다.
 
-* Journey Optimizer과의 원활한 통합을 보장하면서 Offer decisioning을 위해 Web SDK를 구성하는 단계별 프로세스에 대해 알아봅니다.
+* Journey Optimizer과의 원활한 통합을 위해 Offer Decisioning용 웹 SDK을 구성하는 단계별 프로세스를 알아봅니다.
 
 * 충성도 상태 오퍼를 중심으로 하는 세부 사용 사례를 탐색하여 오퍼, 의사 결정 및 배치를 효과적으로 만들고 관리하는 데 대한 통찰력을 얻으십시오.
 
@@ -42,7 +42,7 @@ Platform Web SDK를 사용하여 Adobe Journey Optimizer의 의사 결정 관리
 
 이 섹션의 학습 내용을 완료하려면 먼저 다음을 수행해야 합니다.
 
-* 조직에서 Adobe Journey Optimizer Ultimate(Journey Optimizer 및 Offer decisioning) 또는 Adobe Experience Platform과 Offer decisioning 추가 기능에 액세스할 수 있는지 확인합니다.
+* 조직에서 Adobe Journey Optimizer Ultimate(Journey Optimizer 및 Offer Decisioning) 또는 Adobe Experience Platform과 Offer Decisioning 추가 기능에 액세스할 수 있는지 확인합니다.
 
 * Platform Web SDK의 초기 구성에 대한 모든 단원을 완료합니다.
 
@@ -56,13 +56,13 @@ Platform Web SDK를 사용하여 Adobe Journey Optimizer의 의사 결정 관리
 
 ## 의사 결정 관리 액세스 권한 부여
 
-[의사 결정 관리] 기능에 대한 액세스 권한을 부여하려면 **제품 프로필**&#x200B;을 만들고 사용자에게 해당 권한을 할당해야 합니다. [이 섹션에서 Journey Optimizer 사용자 및 권한 관리에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+[의사 결정 관리] 기능에 대한 액세스 권한을 부여하려면 **제품 프로필**&#x200B;을 만들고 사용자에게 해당 권한을 할당해야 합니다. [이 섹션에서 Journey Optimizer 사용자 및 권한 관리에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## 데이터 스트림 구성
 
-Platform Web SDK에서 의사 결정 관리 활동을 제공하려면 먼저 **데이터스트림** 구성에서 Offer decisioning을 사용하도록 설정해야 합니다.
+Platform Web SDK에서 의사 결정 관리 활동을 전달하려면 먼저 **데이터스트림** 구성에서 Offer Decisioning을 활성화해야 합니다.
 
-데이터 스트림에서 Offer decisioning을 구성하려면 다음 작업을 수행하십시오.
+데이터 스트림에서 Offer Decisioning을 구성하려면 다음 작업을 수행하십시오.
 
 1. [데이터 수집](https://experience.adobe.com/#/data-collection) 인터페이스로 이동합니다.
 
@@ -76,7 +76,7 @@ Platform Web SDK에서 의사 결정 관리 활동을 제공하려면 먼저 **�
 
    ![서비스 편집](assets/decisioning-edit-datastream.png)
 
-1. **Offer decisioning** 상자를 선택합니다.
+1. **Offer Decisioning** 상자를 선택합니다.
 
    ![스크린샷 추가](assets/decisioning-check-offer-box.png)
 
@@ -84,12 +84,12 @@ Platform Web SDK에서 의사 결정 관리 활동을 제공하려면 먼저 **�
 
 이렇게 하면 Journey Optimizer에 대한 인바운드 이벤트가 **Adobe Experience Platform Edge**&#x200B;에서 올바르게 처리됩니다.
 
-## 의사 결정 관리에 사용할 SDK 구성
+## 의사 결정 관리를 위한 SDK 구성
 
-의사 결정 관리에는 웹 SDK 구현 유형에 따라 추가 SDK 단계가 필요합니다. 의사 결정 관리에 사용할 SDK를 구성하는 데 사용할 수 있는 두 가지 옵션이 있습니다.
+의사 결정 관리에는 웹 SDK 구현 유형에 따라 추가 SDK 단계가 필요합니다. 의사 결정 관리에 사용할 SDK을 구성하는 데 두 가지 옵션이 있습니다.
 
 * SDK 독립 실행형 설치
-   1. `decisionScopes`(으)로 `sendEvent` 작업을 구성하십시오.
+   1. `sendEvent`(으)로 `decisionScopes` 작업을 구성하십시오.
 
       ```javascript
       alloy("sendEvent", {
@@ -137,13 +137,13 @@ Platform Web SDK에서 의사 결정 관리 활동을 제공하려면 먼저 **�
 
 ## 사용 사례 개요 - 충성도 보상
 
-이 단원에서는 샘플 충성도 보상 사용 사례를 구현하여 Web SDK를 사용한 의사 결정 관리에 대해 이해합니다.
+이 단원에서는 샘플 충성도 보상 사용 사례를 구현하여 웹 SDK을 사용하는 의사 결정 관리를 이해합니다.
 
 이 사용 사례를 통해 Journey Optimizer이 중앙 집중식 오퍼 라이브러리 및 의사 결정 관리 의사 결정 엔진을 활용하여 고객에게 최상의 오퍼를 제공하는 데 어떻게 도움이 되는지 더 잘 이해할 수 있습니다.
 
 >[!NOTE]
 >
-> 이 자습서는 구현자를 대상으로 하므로 이 단원에는 Journey Optimizer의 실질적인 인터페이스 작업이 포함되어 있습니다. 이러한 인터페이스 작업은 일반적으로 마케터가 처리하지만, 구현자가 장기적으로 의사 결정 관리 캠페인 생성에 대한 책임이 없어도 프로세스에 대한 통찰력을 얻는 것이 유익할 수 있습니다.
+> 이 자습서는 구현자를 대상으로 하므로 이 단원에는 Journey Optimizer의 실질적인 인터페이스 작업이 포함되어 있습니다. 이러한 인터페이스 작업은 일반적으로 마케터가 처리하지만, 장기적인 관점에서 의사 결정 관리 캠페인 생성에 대한 책임이 없어도 구현자가 insight을 프로세스에 참여시키는 것이 유용할 수 있습니다.
 
 ## 구성 요소
 
@@ -166,7 +166,7 @@ Platform Web SDK에서 의사 결정 관리 활동을 제공하려면 먼저 **�
 1. 배치의 특성을 정의합니다.
    * **이름**: 배치 이름입니다. 예제 배치 *&#39;홈 페이지 배너&#39;*&#x200B;를 호출해 보겠습니다.
    * **채널 형식**: 배치가 사용되는 채널입니다. 오퍼가 Luma 웹 사이트에 표시되므로 *&#39;Web&#39;*&#x200B;을(를) 사용하겠습니다.
-   * **콘텐츠 형식**: 배치에서 표시할 수 있는 콘텐츠 형식(텍스트, HTML, 이미지 링크 또는 JSON)입니다. 오퍼에 *&#39;* HTML을 사용할 수 있습니다.
+   * **콘텐츠 형식**: 배치에서 표시할 수 있는 콘텐츠 형식(텍스트, HTML, 이미지 링크 또는 JSON)입니다. 오퍼에 *&#39;HTML&#39;*&#x200B;을(를) 사용할 수 있습니다.
    * **설명**: 배치에 대한 설명입니다(선택 사항).
 
    ![세부 정보 추가](assets/decisioning-placement-details.png)
@@ -240,15 +240,15 @@ Platform Web SDK에서 의사 결정 관리 활동을 제공하려면 먼저 **�
 
    ![오퍼 세부 정보 추가](assets/decisioning-add-offer-details.png)
 
-1. 이제 오퍼가 표시되는 위치를 정의하려면 **표현**&#x200B;을 추가해야 합니다. **웹 채널**&#x200B;을 선택하겠습니다. 이전에 구성한 &#39;*홈 페이지 배너*&#39; **배치**&#x200B;도 선택하십시오. 선택한 **HTML**&#x200B;은(는) 배치 유형이므로 편집기에 HTML, JSON 또는 TEXT 콘텐츠를 직접 추가하여 **사용자 지정** 라디오 단추를 사용하여 오퍼를 빌드할 수 있습니다.
+1. 이제 오퍼가 표시되는 위치를 정의하려면 **표현**&#x200B;을 추가해야 합니다. **웹 채널**&#x200B;을 선택하겠습니다. 이전에 구성한 &#39;*홈 페이지 배너*&#39; **배치**&#x200B;도 선택하십시오. 선택한 **배치**&#x200B;는 HTML 유형이므로 편집기에 HTML, JSON 또는 TEXT 콘텐츠를 직접 추가하여 **사용자 지정** 라디오 단추를 사용하여 오퍼를 빌드할 수 있습니다.
 
    ![표시 세부 정보 추가](assets/decisioning-add-representation-details.png)
 
-1. **표현식 편집기**&#x200B;를 사용하여 오퍼 콘텐츠를 직접 편집합니다. 이 배치에 HTML, JSON 또는 TEXT 컨텐츠를 추가할 수 있습니다. 콘텐츠 유형에 따라 편집기 하단에서 올바른 **모드**&#x200B;을(를) 선택하십시오. **유효성 검사**&#x200B;를 눌러 오류가 없는지 확인할 수도 있습니다.
+1. **표현식 편집기**&#x200B;를 사용하여 오퍼 콘텐츠를 직접 편집합니다. 이 배치에 HTML, JSON 또는 TEXT 콘텐츠를 추가할 수 있습니다. 콘텐츠 유형에 따라 편집기 하단에서 올바른 **모드**&#x200B;을(를) 선택하십시오. **유효성 검사**&#x200B;를 눌러 오류가 없는지 확인할 수도 있습니다.
 
    ![오퍼 HTML 추가](assets/decisioning-add-offer-html.png)
 
-1. 또한 표현식 편집기를 사용하여 Adobe Experience Platform에 저장된 속성을 검색할 수 있습니다. 1:1 수준에서 충성도 멤버를 더 잘 개인화하기 위해 오퍼 컨텐츠에 프로필 이름을 추가하겠습니다.
+1. 또한 표현식 편집기를 사용하여 Adobe Experience Platform에 저장된 속성을 검색할 수 있습니다. 1:1 수준의 충성도 구성원을 더 잘 개인화하기 위해 프로필 이름을 오퍼 콘텐츠에 추가하겠습니다.
 
    ![오퍼 개인화 추가](assets/decisioning-add-offer-personalization.png)
 
@@ -339,7 +339,7 @@ Luma 충성도 보상 사용 사례에 대한 결정을 만들어 보겠습니�
 
 ### 충성도 오퍼 테스트
 
-1. 시뮬레이션에 사용할 테스트 프로필을 선택합니다. **프로필 관리**&#x200B;를 클릭합니다. [오퍼 테스트를 위한 새 테스트 프로필을 만들거나 지정하려면 이 안내서를 따르십시오](https://experienceleague.adobe.com/ko/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. 시뮬레이션에 사용할 테스트 프로필을 선택합니다. **프로필 관리**&#x200B;를 클릭합니다. [오퍼 테스트를 위한 새 테스트 프로필을 만들거나 지정하려면 이 안내서를 따르십시오](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Chrome과 Firefox 모두에서 사용할 수 있는 **Adobe Experience Platform 
 
 Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 논리의 유효성을 검사할 수 있습니다. 이러한 유효성 검사는 충성도 보상 사용 사례가 실행되고 나면 모든 것이 올바르게 구성되도록 하는 것이 좋습니다.
 
-[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아보세요](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/debugger/overview).
+[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아보세요](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 디버거를 사용하여 유효성 검사를 시작하려면 다음을 수행하십시오.
 
@@ -383,7 +383,7 @@ Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. **요약**(으)로 이동합니다. **데이터 스트림 ID**&#x200B;이(가) Offer decisioning을 사용하도록 설정한 **Adobe 데이터 수집**&#x200B;의 **데이터 스트림**&#x200B;과(와) 일치하는지 확인하십시오.
+1. **요약**(으)로 이동합니다. **데이터 스트림 ID**&#x200B;이(가) Offer Decisioning을 사용하도록 설정한 **Adobe 데이터 수집**&#x200B;의 **데이터 스트림**&#x200B;과(와) 일치하는지 확인하십시오.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -395,13 +395,11 @@ Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 그런 다음 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 **Adobe Experience Platform Edge 네트워크**&#x200B;에 전송된 요청의 유효성을 검사할 수 있습니다. 이러한 모든 요청은 로그 추적을 위해 **Assurance**&#x200B;에 캡처해야 합니다.
+1. 그런 다음 다양한 Luma 충성도 계정으로 사이트에 로그인하고 디버거를 사용하여 **Adobe Experience Platform Edge 네트워크**&#x200B;에 전송된 요청의 유효성을 검사할 수 있습니다. 이러한 모든 요청은 로그 추적을 위해 **Assurance**&#x200B;에서 캡처해야 합니다.
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
-[다음: ](setup-consent.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.

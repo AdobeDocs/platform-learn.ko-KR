@@ -3,9 +3,9 @@ title: Platform Web SDK을 사용하여 Adobe Experience Platform에 데이터 �
 description: 웹 SDK을 사용하여 Adobe Experience Platform에 웹 데이터를 스트리밍하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2306'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용
 
 ## 데이터 세트 만들기
 
-Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. [dataset](https://experienceleague.adobe.com/ko/docs/experience-platform/catalog/datasets/overview)은(는) 데이터 수집을 위한 저장소 및 관리 구성이며, 일반적으로 스키마(열) 및 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
+Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)은(는) 데이터 수집을 위한 저장소 및 관리 구성이며, 일반적으로 스키마(열) 및 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
 
 Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습니다.
 
@@ -60,7 +60,7 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 
    ![스키마에서 데이터 집합 만들기](assets/experience-platform-create-dataset-schema.png)
 
-1. [이전 단원](configure-schemas.md)에서 만든 `Luma Web Event Data` 스키마를 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. `Luma Web Event Data`이전 단원[에서 만든 ](configure-schemas.md) 스키마를 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
    ![데이터 집합, 스키마 선택](assets/experience-platform-create-dataset-schema-selection.png)
 
@@ -105,7 +105,7 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 
 1. [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 열고 [!UICONTROL Experience Platform 디버거] 확장 아이콘을 선택합니다.
 
-1. [디버거를 사용하여 유효성 검사](validate-with-debugger.md) 단원에서 설명한 대로 태그 속성을 *사용자* 개발 환경에 매핑하도록 디버거를 구성합니다.
+1. *디버거를 사용하여 유효성 검사* 단원에서 설명한 대로 태그 속성을 [사용자](validate-with-debugger.md) 개발 환경에 매핑하도록 디버거를 구성합니다.
 
    ![디버거에 표시된 Launch 개발 환경](assets/experience-platform-debugger-dev.png)
 
@@ -160,14 +160,14 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 
 >[!INFO]
 >
->  Adobe Experience Platform의 쿼리 서비스에 대한 자세한 내용은 Platform 튜토리얼 섹션에서 [데이터 탐색](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/queries/explore-data)을 참조하세요.
+>  Adobe Experience Platform의 쿼리 서비스에 대한 자세한 내용은 Platform 튜토리얼 섹션에서 [데이터 탐색](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)을 참조하세요.
 
 
 ## 실시간 고객 프로필에 대한 데이터 세트 및 스키마 활성화
 
 Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 단계는 실시간 고객 프로필에 대한 데이터 세트 및 스키마를 활성화하는 것입니다. 웹 SDK에서 데이터 스트리밍은 플랫폼으로 유입되는 여러 데이터 소스 중 하나이며 웹 데이터를 다른 데이터 소스와 결합하여 360도 고객 프로필을 빌드하려고 합니다. 실시간 고객 프로필에 대해 자세히 알아보려면 다음 짧은 비디오를 시청하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/31709?learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -246,7 +246,7 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 �
    >참고 프로파일 ID의 하이퍼링크를 선택할 수도 있고, 행을 선택하면 프로파일 ID 하이퍼링크를 선택할 수 있는 오른쪽 메뉴가 열립니다
    > ![고객 프로필](assets/experience-platform-select-profileId.png)
 
-   여기에서 `ECID`과(와) 같이 `lumaCRMId`에 연결된 모든 ID를 볼 수 있습니다.
+   여기에서 `lumaCRMId`과(와) 같이 `ECID`에 연결된 모든 ID를 볼 수 있습니다.
 
    ![고객 프로필](assets/experience-platform-validate-dataset-custProfile.png)
 
@@ -269,7 +269,7 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 �
 1. 스키마 이름을 `Luma Loyalty Schema`로 지정합니다.
 1. [!UICONTROL 충성도 세부 정보] 필드 그룹 추가
 1. [!UICONTROL 인구 통계 세부 정보] 필드 그룹 추가
-1. `Person ID` 필드를 선택하고 `Luma CRM Id` [!UICONTROL ID 네임스페이스]를 사용하여 [!UICONTROL ID] 및 [!UICONTROL 기본 ID]&#x200B;(으)로 표시합니다.
+1. `Person ID` 필드를 선택하고 ID 네임스페이스[!UICONTROL 를 사용하여 ]ID`Luma CRM Id` 및 [!UICONTROL 기본 ID]&#x200B;(으)로 표시합니다.
 1. [!UICONTROL 프로필]에 대한 스키마를 사용하도록 설정하십시오. 프로필 토글을 찾을 수 없는 경우 왼쪽 상단의 스키마 이름을 클릭해 보십시오.
 1. 스키마 저장
 
@@ -305,7 +305,7 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 �
 1. **[!UICONTROL 다음]** 선택
 
    ![대상자 만들기](assets/merge-policy-set-active-on-edge.png)
-1. 워크플로우의 다른 단계를 계속하려면 **[!UICONTROL 다음]**&#x200B;을(를) 계속 선택하고 설정을 저장하려면 **[!UICONTROL 마침]**&#x200B;을(를) 선택하십시오
+1. 워크플로우의 다른 단계를 계속하려면 **[!UICONTROL 다음]**&#x200B;을(를) 계속 선택하고 설정을 저장하려면 **[!UICONTROL 마침]**을(를) 선택하십시오
    ![대상자 만들기](assets/merge-policy-finish.png)
 
 이제 Edge에서 평가할 대상을 만들 수 있습니다.
@@ -338,8 +338,6 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 �
 이는 매우 간단한 대상이므로 Edge 평가 방법을 사용할 수 있습니다. Edge 대상자는 에지에서 평가되므로 웹 SDK에서 Platform Edge Network으로 보낸 동일한 요청에서 대상 정의를 평가하고 사용자가 자격이 있는지 즉시 확인할 수 있습니다.
 
 
-[다음: ](setup-analytics.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.

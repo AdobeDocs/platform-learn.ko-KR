@@ -4,16 +4,16 @@ description: 데이터 수집 인터페이스에서 Platform Web SDK 태그 확�
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 11%
 
 ---
 
 # Adobe Experience Platform Web SDK 태그 확장 설치
 
-Adobe Experience Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 웹 SDK을 구현하는 가장 쉬운 방법은 Adobe의 태그 관리자인 태그(이전 이름: Launch)를 사용하는 것입니다. Platform Web SDK 태그 확장은 [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform 및 [Journey Optimizer](setup-web-channel.md)을 포함하여 _모든 Adobe Experience Cloud 응용 프로그램_&#x200B;에 데이터를 보내는 데 필요한 _유일한 태그 확장_&#x200B;입니다!
+Adobe Experience Platform Web SDK 태그 확장 기능을 설치하고 구성하는 방법에 대해 알아봅니다. 웹 SDK을 구현하는 가장 쉬운 방법은 Adobe의 태그 관리자인 태그(이전 이름: Launch)를 사용하는 것입니다. Platform Web SDK 태그 확장은 _Analytics_, _Target_, [Audience Manager](setup-analytics.md), Real-Time Customer Data Platform 및 [Journey Optimizer](setup-target.md)을 포함하여 [모든 Adobe Experience Cloud 응용 프로그램](setup-audience-manager.md)에 데이터를 보내는 데 필요한 [유일한 태그 확장](setup-web-channel.md)입니다!
 
 ## 학습 목표
 
@@ -71,7 +71,7 @@ Adobe Experience Platform Web SDK 태그 확장 기능을 설치하고 구성하
 
    ![데이터 스트림 선택](assets/extension-luma-web-sdk-datastream-extension.png)
 
-확장의 각 섹션에 대한 자세한 내용은 [Adobe Experience Platform Web SDK 확장 구성](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)을 참조하십시오.
+확장의 각 섹션에 대한 자세한 내용은 [Adobe Experience Platform Web SDK 확장 구성](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)을 참조하십시오.
 
 >[!NOTE]
 >
@@ -83,8 +83,6 @@ Adobe Experience Platform Web SDK 태그 확장 기능을 설치하고 구성하
 
 이제 Platform Web SDK을 설치하고 데이터 스트림과 연결했으므로 데이터 수집을 시작할 준비가 되었습니다.
 
-[다음: ](create-data-elements.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.

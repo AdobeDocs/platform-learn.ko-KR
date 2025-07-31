@@ -4,9 +4,9 @@ description: 데이터스트림을 활성화하고 Experience Cloud 솔루션을
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 Adobe Experience Platform Web SDK의 데이터스트림을 구성하는 방법을 알아봅니다.
 
-[데이터스트림](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)은(는) Platform Web SDK에서 수집한 데이터를 보낼 위치를 Adobe Experience Platform Edge Network에 알려줍니다. 데이터스트림 구성에서 Experience Cloud 애플리케이션, Experience Platform 계정 및 이벤트 전달을 활성화합니다.
+[데이터스트림](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)은(는) Platform Web SDK에서 수집한 데이터를 보낼 위치를 Adobe Experience Platform Edge Network에 알려줍니다. 데이터스트림 구성에서 Experience Cloud 애플리케이션, Experience Platform 계정 및 이벤트 전달을 활성화합니다.
 
 ![웹 SDK, 데이터스트림 및 Edge Network 다이어그램](assets/dc-websdk-datastreams.png)
 
@@ -65,7 +65,7 @@ Adobe Experience Platform Web SDK의 데이터스트림을 구성하는 방법�
 
 ## 데이터 스트림 재정의
 
-[데이터 스트림 재정의](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overrides)를 사용하면 데이터 스트림에 대한 추가 구성을 정의한 다음 특정 조건에서 기본 구성을 재정의할 수 있습니다.
+[데이터 스트림 재정의](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides)를 사용하면 데이터 스트림에 대한 추가 구성을 정의한 다음 특정 조건에서 기본 구성을 재정의할 수 있습니다.
 
 데이터 스트림 구성 재정의는 2단계 프로세스입니다.
 
@@ -76,8 +76,6 @@ Adobe Experience Platform Web SDK의 데이터스트림을 구성하는 방법�
 
 이제 태그 속성에 Platform Web SDK 확장을 설치할 준비가 되었습니다!
 
-[다음: ](install-web-sdk.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.

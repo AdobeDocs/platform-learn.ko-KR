@@ -1,12 +1,12 @@
 ---
 title: Platform Web SDK 데이터를 사용하여 이벤트 전달 설정
-description: Experience Platform 웹 SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법에 대해 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
+description: Experience Platform Web SDK 데이터를 사용하여 이벤트 전달 속성을 사용하는 방법을 알아봅니다. 이 수업은 Web SDK를 사용하여 Adobe Experience Cloud 구현 튜토리얼의 일부입니다.
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 Adobe Experience Platform Web SDK 데이터로 이벤트 전달을 사용하는 방법을 알아봅니다.
 
-이벤트 전달은 데이터 수집에서 사용할 수 있는 새로운 유형의 속성입니다. 이벤트 전달을 사용하면 기존의 클라이언트측 Edge Network 대신 Adobe Experience Platform 브라우저에서 직접 서드파티 비 Adobe 공급업체에 데이터를 전송할 수 있습니다. [이벤트 전달 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/event-forwarding/overview)에서 이벤트 전달의 장점에 대해 자세히 알아보세요.
+이벤트 전달은 데이터 수집에서 사용할 수 있는 새로운 유형의 속성입니다. 이벤트 전달을 사용하면 기존의 클라이언트측 브라우저 대신 Adobe Experience Platform Edge Network에서 직접 타사, Adobe 이외의 공급업체에 데이터를 보낼 수 있습니다. [이벤트 전달 개요](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)에서 이벤트 전달의 장점에 대해 자세히 알아보세요.
 
 
 ![웹 SDK 및 이벤트 전달 다이어그램](assets/dc-websdk-eventforwarding.png)
@@ -24,13 +24,13 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 * [Adobe Experience Platform 웹 SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/ko/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
->Platform 웹 SDK 및 Platform Mobile SDK는 태그를 통해 배포할 필요가 없지만 태그를 사용하여 이러한 SDK를 배포하는 것이 좋습니다.
+>Platform Web SDK 및 Platform Mobile SDK은 태그를 통해 배포할 필요가 없지만 태그를 사용하여 이러한 SDK를 배포하는 것이 좋습니다.
 
-이 자습서의 이전 단원을 완료한 후에는 웹 SDK를 사용하여 Platform Edge Network에 데이터를 전송해야 합니다. 데이터가 플랫폼 Edge Network에 있으면 이벤트 전달을 활성화하고 이벤트 전달 속성을 사용하여 Adobe이 아닌 솔루션으로 데이터를 전송할 수 있습니다.
+이 자습서의 이전 단원을 완료한 후에는 웹 SDK을 사용하여 Platform Edge Network에 데이터를 전송해야 합니다. 데이터가 Platform Edge Network에 있으면 이벤트 전달을 활성화하고 이벤트 전달 속성을 사용하여 데이터를 Adobe이 아닌 솔루션으로 보낼 수 있습니다.
 
 ## 학습 목표
 
@@ -51,7 +51,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 * 이벤트 전달에 대한 사용자 권한. ([Admin Console](https://adminconsole.adobe.com/)의 Adobe Experience Platform Launch 제품에서 [!UICONTROL 플랫폼] > [!UICONTROL Edge] 및 모든 [!UICONTROL 속성 권한]에 대한 권한 항목). 권한이 부여되면 데이터 수집 인터페이스의 왼쪽 탐색 영역에 [!UICONTROL 이벤트 전달]이 표시됩니다.
   ![이벤트 전달 속성](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform 웹 또는 Mobile SDK가 데이터를 Edge Network으로 보내도록 구성되었습니다. 이 자습서의 다음 단원을 완료해야 합니다.
+* Adobe Experience Platform 웹 또는 모바일 SDK이 Edge Network으로 데이터를 전송하도록 구성되어 있습니다. 이 자습서의 다음 단원을 완료해야 합니다.
 
    * 초기 구성
 
@@ -74,17 +74,17 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 1. [데이터 수집 인터페이스](https://experience.adobe.com/#/data-collection) 열기
 1. 왼쪽 탐색에서 **[!UICONTROL 이벤트 전달]** 선택
-1. **[!UICONTROL 새 속성]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 새 속성]**을 선택합니다.
    ![이벤트 전달 속성](assets/event-forwarding-new.png)
 
 1. 속성 이름을 지정합니다. 이 경우 `Server-Side - Web SDK Course`
 
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 저장]**을 선택합니다.
    ![이벤트 전달 속성 저장](assets/event-forwarding-save.png)
 
 ## 데이터 스트림 구성
 
-이벤트 전달에서 플랫폼 Edge Network으로 전송하는 데이터를 사용하려면 새로 만든 이벤트 전달 속성을 Adobe 솔루션으로 데이터를 전송하는 데 사용되는 동일한 데이터 스트림에 연결해야 합니다.
+Platform Edge Network으로 전송하는 데이터를 이벤트 전달에서 사용하려면 새로 만든 이벤트 전달 속성을 Adobe 솔루션으로 데이터를 전송하는 데 사용되는 동일한 데이터 스트림에 연결해야 합니다.
 
 데이터 스트림에서 Target을 구성하려면 다음 작업을 수행하십시오.
 
@@ -112,7 +112,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 게시 플로우를 통해 변경 사항을 승격할 준비가 되면 스테이징 및 프로덕션 데이터스트림에 대해 이 단계를 반복합니다.
 
-## 플랫폼 Edge Network에서 Adobe이 아닌 솔루션으로 데이터 전달
+## Platform Edge Network에서 Adobe이 아닌 솔루션으로 데이터 전달
 
 이 연습에서는 [Webhook.site](https://webhook.site/)라는 세 번째 부분 도구를 사용하여 이벤트 전달 데이터 요소를 설정하고 이벤트 전달 규칙을 구성하고 유효성을 검사하는 방법을 알아봅니다.
 
@@ -122,7 +122,7 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 >[!IMPORTANT]
 >
->계속 진행하려면 이미 데이터 요소를 만들어 XDM 개체에 매핑하고, 구성된 태그 규칙과 라이브러리 내에서 이러한 변경 사항을 태그 환경에 빌드했어야 합니다. 그렇지 않은 경우 [필수 구성 요소](setup-event-forwarding.md#prerequisites) 섹션에서 **태그 구성** 단계를 참조하세요. 이러한 단계에서는 데이터가 Platform Edge Network으로 전송되고, 여기에서 Adobe 전달 속성을 구성하여 데이터를 비이벤트 솔루션으로 전달할 수 있습니다.
+>계속 진행하려면 이미 데이터 요소를 만들어 XDM 개체에 매핑하고, 구성된 태그 규칙과 라이브러리 내에서 이러한 변경 사항을 태그 환경에 빌드했어야 합니다. 그렇지 않은 경우 **필수 구성 요소** 섹션에서 [태그 구성](setup-event-forwarding.md#prerequisites) 단계를 참조하세요. 이러한 단계에서는 데이터가 Platform Edge Network으로 전송되고 여기에서 이벤트 전달 속성을 구성하여 데이터를 Adobe이 아닌 솔루션으로 전달할 수 있습니다.
 
 
 ### 이벤트 전달 데이터 요소 만들기
@@ -143,7 +143,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 >[!TIP]
 >
 >웹 브라우저 네트워크 도구를 사용하고, `/ee` 요청을 필터링하고, 비콘 [!UICONTROL **페이로드**]를 열고, 원하는 변수로 드릴다운하여 XDM 개체 경로를 찾을 수도 있습니다. 그런 다음 마우스로 마우스 오른쪽 단추를 클릭하고 &quot;속성 경로 복사&quot;를 선택합니다. 다음은 브라우저 뷰포트 높이에 대한 예입니다.
-> ![이벤트 전달 XDM 경로](assets/event-forwarding-xdm-path.png)
+>> ![이벤트 전달 XDM 경로](assets/event-forwarding-xdm-path.png)
 
 1. 최근에 만든 **[!UICONTROL 이벤트 전달]** 속성으로 이동합니다.
 
@@ -153,7 +153,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
    ![이벤트 전달 새 데이터 요소](assets/event-forwarding-new-dataelement.png)
 
-1. 데이터 요소 `environment.browserDetails.viewportHeight`의 **[!UICONTROL 이름]**
+1. 데이터 요소 **[!UICONTROL 의]**&#x200B;이름`environment.browserDetails.viewportHeight`
 
 1. **[!UICONTROL 확장]**&#x200B;에서 `CORE` 나가기
 
@@ -168,13 +168,13 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 1. 다른 데이터 요소 만들기
 
-1. `ecid`에 대해 **[!UICONTROL 이름]**
+1. **[!UICONTROL 에 대해]**&#x200B;이름`ecid`
 
 1. **[!UICONTROL 확장]**&#x200B;에서 `CORE` 나가기
 
 1. **[!UICONTROL 데이터 요소 형식]**&#x200B;에서 `Path`을(를) 선택합니다.
 
-1. Experience Cloud ID `arc.event.xdm.identityMap.ECID.0.id`이(가) 포함된 XDM 개체 경로를 입력하십시오.
+1. Experience Cloud ID `arc.event.xdm.identityMap.ECID.0.id`이(가) 포함된 XDM 개체 경로를 입력합니다.
 
 1. **[!UICONTROL 저장]** 선택
 
@@ -192,13 +192,13 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 ### Adobe Cloud Connector 확장 설치
 
-데이터를 타사 위치로 보내려면 먼저 [!UICONTROL Adobe 클라우드 커넥터] 확장을 설치합니다.
+데이터를 타사 위치로 보내려면 먼저 [!UICONTROL Adobe Cloud Connector] 확장을 설치합니다.
 
 1. 왼쪽 탐색에서 **[!UICONTROL 확장]** 선택
 
 1. **[!UICONTROL 카탈로그]** 탭 선택
 
-1. **[!UICONTROL Adobe 클라우드 커넥터]**&#x200B;를 검색하고 **[!UICONTROL 설치]**&#x200B;를 선택합니다.
+1. **[!UICONTROL Adobe Cloud Connector]**&#x200B;를 검색하고 **[!UICONTROL 설치]**&#x200B;를 선택하십시오.
 
    ![이벤트 전달 ECID 경로](assets/event-forwarding-adobe-cloud-connector.png)
 
@@ -211,7 +211,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 * **[!UICONTROL 이벤트] 및 [!UICONTROL 조건]**:
 
    * **태그**: 모든 규칙은 규칙에 지정해야 하는 이벤트(예: `Library Loaded - Page Top`)에 의해 트리거됩니다. 조건은 선택 사항입니다.
-   * **이벤트 전달**: 플랫폼 Edge Network에 전송된 모든 이벤트는 데이터를 전달하는 트리거라고 가정합니다. 따라서 이벤트 전달 규칙에서 선택해야 하는 [!UICONTROL 이벤트]가 없습니다. 이벤트 전달 규칙을 트리거하는 이벤트를 관리하려면 조건을 구성해야 합니다.
+   * **이벤트 전달**: Platform Edge Network으로 전송된 모든 이벤트는 데이터를 전달하는 트리거인 것으로 간주됩니다. 따라서 이벤트 전달 규칙에서 선택해야 하는 [!UICONTROL 이벤트]가 없습니다. 이벤트 전달 규칙을 트리거하는 이벤트를 관리하려면 조건을 구성해야 합니다.
 
 * **데이터 요소 토큰화**:
 
@@ -230,7 +230,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 데이터를 웹후크에 전달하는 규칙을 구성하려면 먼저 개인 웹후크를 얻어야 합니다.
 
-1. [Webhook.site](https://webhook.site)(으)로 이동
+1. [Webhook.site](https://webhook.site)&#x200B;(으)로 이동
 
 1. **고유 URL**&#x200B;을(를) 찾으십시오. 이벤트 전달 규칙에서 URL 요청으로 사용합니다.
 
@@ -250,7 +250,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 1. 작업 추가
 
-1. **[!UICONTROL 확장]**&#x200B;에서 **[!UICONTROL Adobe 클라우드 커넥터]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 확장]**&#x200B;에서 **[!UICONTROL Adobe Cloud Connector]**&#x200B;를 선택합니다.
 
 1. **[!UICONTROL 작업 유형]**&#x200B;에서 **[!UICONTROL 가져오기 호출 수행]**&#x200B;을 선택합니다.
 
@@ -260,11 +260,11 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 1. **[쿼리 매개 변수]**&#x200B;에서 이전에 만든 데이터 요소를 모두 추가합니다.
 
-1. `viewPortHeight`의 **[!UICONTROL Key]** 열 형식에서. **[!UICONTROL 값]** 열에서 `{{environment.browserDetails.viewportHeight}}` 데이터 요소를 입력하거나 데이터 요소 선택기 아이콘에서 선택하여 입력합니다
+1. **[!UICONTROL 의]** Key`viewPortHeight` 열 형식에서. **[!UICONTROL 값]** 열에서 `{{environment.browserDetails.viewportHeight}}` 데이터 요소를 입력하거나 데이터 요소 선택기 아이콘에서 선택하여 입력합니다
 
 1. 다른 쿼리 매개 변수를 추가하려면 [!UICONTROL **+ 다른 쿼리 매개 변수 추가**]&#x200B;를 선택하십시오.
 
-1. `ecid`의 **[!UICONTROL Key]** 열 형식에서. 값 열에서 `{{ecid}}` 데이터 요소를 입력합니다
+1. **[!UICONTROL 의]** Key`ecid` 열 형식에서. 값 열에서 `{{ecid}}` 데이터 요소를 입력합니다
 
 1. **[!UICONTROL 변경 내용 유지]** 선택
 
@@ -290,9 +290,9 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 이제 Platform Debugger 및 Webhook.site를 사용하여 이벤트 전달 속성을 확인할 수 있습니다.
 
-1. [&#128279;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)태그 라이브러리를 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en/men.html)에서 을(를) 데이터 스트림에서 이벤트 전달 속성을 매핑한 Web SDK 태그 속성으로 전환하려면 단계를 따르십시오.
+1. [태그 라이브러리를 ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Luma 데모 사이트[에서 ](https://luma.enablementadobe.com/content/luma/us/en/men.html)을(를) 데이터 스트림에서 이벤트 전달 속성을 매핑한 Web SDK 태그 속성으로 전환합니다.
 
-1. 페이지를 다시 로드하기 전에 Experience Platform 디버거에서 왼쪽 탐색에서 **[!UICONTROL 로그]**&#x200B;를 엽니다.
+1. 페이지를 다시 로드하기 전에 Experience Platform Debugger에서 왼쪽 탐색에서 **[!UICONTROL 로그]**&#x200B;를 엽니다.
 
 1. **[!UICONTROL Edge]** 탭을 선택한 다음 **[!UICONTROL 연결]**&#x200B;을 선택하여 Platform Edge Network 요청을 봅니다
 
@@ -300,7 +300,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 1. 페이지 다시 로드
 
-1. Platform Edge Network이 WebHook으로 전송하는 서버측 요청을 확인할 수 있는 추가 요청이 표시됩니다
+1. Platform Edge Network에서 WebHook으로 전송되는 서버측 요청을 볼 수 있는 추가 요청이 표시됩니다
 
 1. 포커스 유효성 검사 요청은 Edge 네트워크에서 전송하는 완전히 구성된 URL을 표시하는 요청입니다
 
@@ -321,8 +321,6 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 축하합니다! 이벤트 전달을 구성했습니다!
 
-[다음: ](conclusion.md)
-
 >[!NOTE]
 >
->Adobe Experience Platform Web SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
