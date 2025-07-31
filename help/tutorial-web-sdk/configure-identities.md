@@ -15,9 +15,9 @@ ht-degree: 12%
 
 Adobe Experience Platform Web SDK와 함께 사용할 ID 네임스페이스를 구성하는 방법을 알아봅니다.
 
-[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home)은(는) SDK 기반 Adobe 응용 프로그램에서 공통 방문자 ID(ECID)를 설정하여 응용 프로그램 간 대상 공유와 같은 Experience Cloud 기능을 지원합니다. 또한 고유한 고객 ID를 서비스로 보내어 장치 간 타깃팅 및 CRM(고객 관계 관리) 시스템과 같은 다른 시스템과의 통합을 가능하게 할 수 있습니다.
+[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/ko/docs/id-service/using/home)은(는) SDK 기반 Adobe 응용 프로그램에서 공통 방문자 ID(ECID)를 설정하여 응용 프로그램 간 대상 공유와 같은 Experience Cloud 기능을 지원합니다. 또한 고유한 고객 ID를 서비스로 보내어 장치 간 타깃팅 및 CRM(고객 관계 관리) 시스템과 같은 다른 시스템과의 통합을 가능하게 할 수 있습니다.
 
-[Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)&#x200B;(예, 두 개 있음)에서는 ECID와 고객 ID를 사용하여 ID 그래프를 생성하므로 속성과 동작을 실시간 고객 프로필에 병합할 수 있습니다.
+[Adobe Experience Platform ID 서비스](https://experienceleague.adobe.com/ko/docs/experience-platform/identity/home)&#x200B;(예, 두 개 있음)에서는 ECID와 고객 ID를 사용하여 ID 그래프를 생성하므로 속성과 동작을 실시간 고객 프로필에 병합할 수 있습니다.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Adobe Experience Platform Web SDK와 함께 사용할 ID 네임스페이스를 �
 >
 >웹 Experience Cloud JavaScript 라이브러리에는 방문자 ID 서비스 기능이 포함되어 있으므로 Adobe Experience Platform Web SDK을 구현할 때는 [SDK ID 확장](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension)이 필요하지 않습니다.
 >
-> 웹 사이트에서 이미 방문자 API 또는 Experience Cloud ID 서비스 태그 확장 기능을 통해 웹 사이트에서 Experience Cloud ID 서비스를 사용하고 있으며 Adobe Experience Platform Web SDK으로 마이그레이션하는 동안 계속 사용하려면 최신 버전의 방문자 API 또는 Experience Cloud ID 서비스 태그 확장 기능을 사용해야 합니다. 자세한 내용은 [ID 마이그레이션](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)을 참조하십시오.
+> 웹 사이트에서 이미 방문자 API 또는 Experience Cloud ID 서비스 태그 확장 기능을 통해 웹 사이트에서 Experience Cloud ID 서비스를 사용하고 있으며 Adobe Experience Platform Web SDK으로 마이그레이션하는 동안 계속 사용하려면 최신 버전의 방문자 API 또는 Experience Cloud ID 서비스 태그 확장 기능을 사용해야 합니다. 자세한 내용은 [ID 마이그레이션](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/identity/overview)을 참조하십시오.
 
 ## ID 네임스페이스 만들기
 
@@ -98,4 +98,4 @@ ID가 준비되었으므로 데이터 스트림을 구성할 수 있습니다.
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.

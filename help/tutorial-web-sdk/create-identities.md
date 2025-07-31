@@ -38,7 +38,7 @@ Adobe Experience Platform Web SDK를 사용하여 ID를 캡처하는 방법을 �
 
 ## Experience Cloud ID
 
-[Experience Cloud ID(ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)은(는) Adobe Experience Platform 및 Adobe Experience Cloud 응용 프로그램에서 사용되는 공유 ID 네임스페이스입니다. ECID는 고객 ID의 기반을 제공하며 디지털 속성의 기본 ID입니다. ECID는 항상 존재하므로 인증되지 않은 사용자 행동을 추적하는 데 이상적인 식별자입니다.
+[Experience Cloud ID(ECID)](https://experienceleague.adobe.com/ko/docs/experience-platform/identity/features/ecid)은(는) Adobe Experience Platform 및 Adobe Experience Cloud 응용 프로그램에서 사용되는 공유 ID 네임스페이스입니다. ECID는 고객 ID의 기반을 제공하며 디지털 속성의 기본 ID입니다. ECID는 항상 존재하므로 인증되지 않은 사용자 행동을 추적하는 데 이상적인 식별자입니다.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -47,7 +47,7 @@ Adobe Experience Platform Web SDK를 사용하여 ID를 캡처하는 방법을 �
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Platform Web SDK[를 사용하여 ](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)ECID를 추적하는 방법에 대해 자세히 알아보십시오.
+Platform Web SDK[를 사용하여 ](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/identity/overview)ECID를 추적하는 방법에 대해 자세히 알아보십시오.
 
 ECID는 자사 쿠키와 Platform Edge Network의 조합을 사용하여 설정됩니다. 기본적으로 자사 ID 쿠키는 웹 SDK에 의해 클라이언트측에서 설정됩니다. 쿠키 수명에 대한 브라우저 제한 사항을 고려하려면 대신 고유한 자사 ID 쿠키 서버측을 설정하도록 선택할 수 있습니다. 이러한 ID 쿠키를 자사 디바이스 ID(FPID)라고 합니다.
 
@@ -61,7 +61,7 @@ FPID는 자사 쿠키 _Adobe에서 웹 SDK에 의해 설정된 자사 쿠키를 
 
 FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수집될 때 Adobe으로 전송할 수 있습니다. 수집된 FPID는 Platform Edge Network에서 ECID를 생성하는 시드로 사용되며 Adobe Experience Cloud 애플리케이션에서 계속 기본 식별자입니다.
 
-이 자습서에서는 FPID를 사용하지 않지만 자체 웹 SDK 구현에서는 FPID를 사용하는 것이 좋습니다. Platform Web SDK의 [자사 장치 ID에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
+이 자습서에서는 FPID를 사용하지 않지만 자체 웹 SDK 구현에서는 FPID를 사용하는 것이 좋습니다. Platform Web SDK의 [자사 장치 ID에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -71,7 +71,7 @@ FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수�
 
 위에서 언급했듯이 Platform Web SDK을 사용할 때 Adobe에서 디지털 속성에 대한 모든 방문자에게 ECID를 할당합니다. ECID는 인증되지 않은 디지털 동작을 추적하기 위한 기본 ID입니다.
 
-또한 인증된 사용자 ID를 전송하여 플랫폼에서 [ID 그래프](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)를 만들 수 있고 Target에서 [타사 ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id)를 설정할 수 있습니다. 인증된 ID를 설정하는 작업은 [!UICONTROL ID 맵] 데이터 요소 유형을 사용하여 수행됩니다.
+또한 인증된 사용자 ID를 전송하여 플랫폼에서 [ID 그래프](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)를 만들 수 있고 Target에서 [타사 ID](https://experienceleague.adobe.com/ko/docs/target/using/audiences/visitor-profiles/3rd-party-id)를 설정할 수 있습니다. 인증된 ID를 설정하는 작업은 [!UICONTROL ID 맵] 데이터 요소 유형을 사용하여 수행됩니다.
 
 [!UICONTROL ID 맵] 데이터 요소를 만들려면:
 
@@ -149,4 +149,4 @@ FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수�
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.

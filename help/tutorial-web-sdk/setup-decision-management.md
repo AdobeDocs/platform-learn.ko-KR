@@ -56,7 +56,7 @@ Platform Web SDK을 사용하여 Adobe Journey Optimizer의 의사 결정 관리
 
 ## 의사 결정 관리 액세스 권한 부여
 
-[의사 결정 관리] 기능에 대한 액세스 권한을 부여하려면 **제품 프로필**&#x200B;을 만들고 사용자에게 해당 권한을 할당해야 합니다. [이 섹션에서 Journey Optimizer 사용자 및 권한 관리에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
+[의사 결정 관리] 기능에 대한 액세스 권한을 부여하려면 **제품 프로필**&#x200B;을 만들고 사용자에게 해당 권한을 할당해야 합니다. [이 섹션에서 Journey Optimizer 사용자 및 권한 관리에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## 데이터 스트림 구성
 
@@ -339,7 +339,7 @@ Luma 충성도 보상 사용 사례에 대한 결정을 만들어 보겠습니�
 
 ### 충성도 오퍼 테스트
 
-1. 시뮬레이션에 사용할 테스트 프로필을 선택합니다. **프로필 관리**&#x200B;를 클릭합니다. [오퍼 테스트를 위한 새 테스트 프로필을 만들거나 지정하려면 이 안내서를 따르십시오](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. 시뮬레이션에 사용할 테스트 프로필을 선택합니다. **프로필 관리**&#x200B;를 클릭합니다. [오퍼 테스트를 위한 새 테스트 프로필을 만들거나 지정하려면 이 안내서를 따르십시오](https://experienceleague.adobe.com/ko/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Chrome과 Firefox 모두에서 사용할 수 있는 **Adobe Experience Platform 
 
 Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 논리의 유효성을 검사할 수 있습니다. 이러한 유효성 검사는 충성도 보상 사용 사례가 실행되고 나면 모든 것이 올바르게 구성되도록 하는 것이 좋습니다.
 
-[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아보세요](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
+[여기 안내서를 사용하여 브라우저에서 디버거를 구성하는 방법을 알아보세요](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/debugger/overview).
 
 디버거를 사용하여 유효성 검사를 시작하려면 다음을 수행하십시오.
 
@@ -402,4 +402,4 @@ Luma 사이트에서 디버거를 사용하여 프로덕션에서 의사 결정 
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.

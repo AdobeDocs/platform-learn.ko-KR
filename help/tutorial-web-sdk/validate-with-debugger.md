@@ -143,7 +143,7 @@ ID 맵 세부 정보의 유효성을 검사할 수도 있습니다.
 
 [데이터 스트림 구성](configure-datastream.md) 단원에서 학습한 대로 Platform Web SDK은 먼저 디지털 속성에서 Platform Edge Network으로 데이터를 전송합니다. 그런 다음 Platform Edge Network에서 데이터 스트림에 활성화된 해당 서비스에 대한 추가 서버측 요청을 수행합니다. 디버거에서 Edge Trace 를 사용하여 Platform Edge Network에서 수행한 서버측 요청의 유효성을 검사할 수 있습니다.
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/home). -->
 
 
 ### Edge 추적 활성화
@@ -167,4 +167,4 @@ Edge 추적을 활성화하려면 다음을 수행하십시오.
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
