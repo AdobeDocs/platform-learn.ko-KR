@@ -1,13 +1,14 @@
 ---
-title: 메타로 GenStudio for Performance Marketing Campaign 활성화
-description: 메타로 GenStudio for Performance Marketing Campaign 활성화
+title: GenStudio for Performance Marketing AJO을 위한 이메일 경험 만들기
+description: GenStudio for Performance Marketing AJO을 위한 이메일 경험 만들기
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->이 연습의 모든 단계를 실행하려면 기존 Adobe Workfront 환경에 액세스할 수 있어야 하며 해당 환경에서는 프로젝트 및 승인 워크플로우를 만들어야 합니다. [Adobe Workfront을 통한 워크플로우 관리](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} 연습을 수행하면 필요한 설정을 사용할 수 있습니다.
+>이 연습의 모든 단계를 실행하려면 기존 Adobe Workfront 환경에 액세스할 수 있어야 하며 해당 환경에서는 프로젝트 및 승인 워크플로우를 만들어야 합니다. [Adobe Workfront을 통한 워크플로우 관리](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"} 연습을 수행하면 필요한 설정을 사용할 수 있습니다.
 
 ## 1.3.4.1 전자 메일 환경 만들기 및 승인
 
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 - **브랜드**: `--aepUserLdap-- - CitiSignal`
 - **언어**: `English (US)`
-- **사용자**: `--aepUserLdap-- - Smart Home Families`
+- **사용자**: `--aepUserLdap-- - Online Gamers`
 - **제품**: `--aepUserLdap-- - CitiSignal Fiber Max`
 
 **콘텐츠에서 선택**&#x200B;을 클릭합니다.

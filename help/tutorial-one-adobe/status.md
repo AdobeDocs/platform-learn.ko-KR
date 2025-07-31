@@ -3,9 +3,9 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '406'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 12%
 
 | 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
 | ---------------------- | ------------ | ------------ |------------ |
-| - | - | - | - |
+| [1.1 Adobe Workfront 계획](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 29/07/2025 | 아니요 | 아직 완료되지 않은 콘텐츠 |
+| Adobe Workfront을 사용한 [1.2 워크플로 관리](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 29/07/2025 | 아니요 | 아직 완료되지 않은 콘텐츠 |
 
 ## &#x200B;2. 제작 및 제작
 
@@ -41,7 +42,6 @@ ht-degree: 12%
 | 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
 | ---------------------- | ------------ | ------------ |------------ |
 | [2.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 2025년 1월 5일 | 예 | - |
-| Adobe Workfront을 사용한 [2.2 워크플로 관리](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"} | 16/01/2025 | 아니요 | 아직 완료되지 않은 콘텐츠 |
 
 ## &#x200B;4. 배달 및 활성화
 
@@ -61,7 +61,7 @@ ht-degree: 12%
 | [3.3 Adobe Journey Optimizer: 푸시 및 인앱 메시지](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 03/07/2025/2025 | 예 | - |
 | [3.4 Adobe Journey Optimizer: 이벤트 기반 여정](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | 예 | - |
 | [3.5 Adobe Journey Optimizer: 번역 서비스](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | 예 | - |
-| [3.6 Adobe Journey Optimizer: 컨텐츠 관리](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | 아니요 | 개발 중인 콘텐츠 |
+| [3.6 Adobe Journey Optimizer: 컨텐츠 관리](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | 예 | - |
 | [3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | 아니요 | 개발 중인 콘텐츠 |
 | [3.8 Adobe Journey Optimizer: 캠페인](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | 아니요 | 개발 중인 콘텐츠 |
 

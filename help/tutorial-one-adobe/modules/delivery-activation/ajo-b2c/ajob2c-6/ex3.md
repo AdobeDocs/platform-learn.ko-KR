@@ -4,7 +4,7 @@ description: AJO 및 GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
 exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->이 연습의 모든 단계를 실행하려면 기존 Adobe Workfront 환경에 액세스할 수 있어야 하며 해당 환경에서는 프로젝트 및 승인 워크플로우를 만들어야 합니다. [Adobe Workfront을 통한 워크플로우 관리](./../../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} 연습을 수행하면 필요한 설정을 사용할 수 있습니다.
+>이 연습의 모든 단계를 실행하려면 기존 Adobe Workfront 환경에 액세스할 수 있어야 하며 해당 환경에서는 프로젝트 및 승인 워크플로우를 만들어야 합니다. [Adobe Workfront을 통한 워크플로우 관리](./../../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"} 연습을 수행하면 필요한 설정을 사용할 수 있습니다.
 
 ## 1.3.4.1 Adobe GenStudio에서 이메일 경험 만들기 및 승인
 

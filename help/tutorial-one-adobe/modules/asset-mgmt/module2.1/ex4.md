@@ -4,7 +4,7 @@ description: AEM CS - 기본 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -259,7 +259,7 @@ AEM Sites 개요에서 **CitiSignal** > **조각**(으)로 이동하여 **헤더
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-**URL** `/us/en//citisignal-fiber`에 입력한 다음 **V** 아이콘을 클릭하여 확인합니다.
+**URL** `/us/en/citisignal-fiber`에 입력한 다음 **V** 아이콘을 클릭하여 확인합니다.
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -271,7 +271,7 @@ AEM Sites 개요에서 **CitiSignal** > **조각**(으)로 이동하여 **헤더
 
 ![AEMCS](./images/nav5.png){zoomable="yes"}
 
-이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en/` 및/또는 `main--citisignal--XXX.aem.live/us/en/`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `main--citisignal--XXX.aem.page/us/en/`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.live/us/en/` 및/또는 `woutervangeluwe`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
 이 예에서 전체 URL은 다음과 같이 됩니다.
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
