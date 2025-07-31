@@ -22,7 +22,7 @@ Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 
 
 이전에 디버거를 사용한 적이 없는 경우 5분 분량의 개요 비디오를 시청해 보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36114?learn=on&enablevpops&captions=kor)
 
 이 단원에서는 [Adobe Experience Platform Debugger 확장](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)을 사용하여 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)에서 하드코딩된 태그 속성을 자신의 속성으로 바꿉니다.
 

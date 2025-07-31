@@ -70,7 +70,7 @@ ht-degree: 2%
 
 이 비디오에서는 프로세스에 대한 개요를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454034/?learn=on&enablevpops&captions=kor)
 
 ### 전역 구성 필드
 
