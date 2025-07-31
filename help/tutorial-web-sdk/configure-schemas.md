@@ -113,7 +113,7 @@ XDM 스키마는 Experience Platform의 데이터를 설명하는 표준 방법�
 
 >[!TIP]
 > 
->이 연습에서는 웹 데이터 수집에 대해 권장되는 사전 정의된 필드 그룹인 _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ 및 _**[!UICONTROL 소비자 경험 이벤트]**_&#x200B;을(를) 추가합니다.
+>이 연습에서는 웹 데이터 수집에 대해 권장되는 사전 정의된 필드 그룹인 _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_ 및 _&#x200B;**[!UICONTROL 소비자 경험 이벤트]**&#x200B;_&#x200B;을(를) 추가합니다.
 >
 
 
@@ -151,7 +151,7 @@ XDM 스키마는 Experience Platform의 데이터를 설명하는 표준 방법�
 >
 >
 >이 설정은 [Experience Platform 설정](setup-experience-platform.md) 단원에서 자세히 설명합니다.
->>![프로필 스키마](assets/schema-profile.png)
+>&#x200B;>![프로필 스키마](assets/schema-profile.png)
 
 이 단원을 완료하려면 오른쪽 상단의 **[!UICONTROL 저장]**&#x200B;을 선택하세요.
 

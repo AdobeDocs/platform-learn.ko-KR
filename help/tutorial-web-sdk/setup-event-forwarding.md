@@ -74,12 +74,12 @@ Adobe Experience Platform에서 이벤트 전달을 사용하려면 먼저 다�
 
 1. [데이터 수집 인터페이스](https://experience.adobe.com/#/data-collection) 열기
 1. 왼쪽 탐색에서 **[!UICONTROL 이벤트 전달]** 선택
-1. **[!UICONTROL 새 속성]**을 선택합니다.
+1. **[!UICONTROL 새 속성]**&#x200B;을 선택합니다.
    ![이벤트 전달 속성](assets/event-forwarding-new.png)
 
 1. 속성 이름을 지정합니다. 이 경우 `Server-Side - Web SDK Course`
 
-1. **[!UICONTROL 저장]**을 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    ![이벤트 전달 속성 저장](assets/event-forwarding-save.png)
 
 ## 데이터 스트림 구성
@@ -143,7 +143,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 >[!TIP]
 >
 >웹 브라우저 네트워크 도구를 사용하고, `/ee` 요청을 필터링하고, 비콘 [!UICONTROL **페이로드**]를 열고, 원하는 변수로 드릴다운하여 XDM 개체 경로를 찾을 수도 있습니다. 그런 다음 마우스로 마우스 오른쪽 단추를 클릭하고 &quot;속성 경로 복사&quot;를 선택합니다. 다음은 브라우저 뷰포트 높이에 대한 예입니다.
->> ![이벤트 전달 XDM 경로](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![이벤트 전달 XDM 경로](assets/event-forwarding-xdm-path.png)
 
 1. 최근에 만든 **[!UICONTROL 이벤트 전달]** 속성으로 이동합니다.
 

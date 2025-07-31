@@ -174,16 +174,16 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://luma.enablementad
 
 동일한 단계를 수행하여 이러한 추가 데이터 요소를 만듭니다.
 
-* **`page.pageInfo.server`**이(가) 다음에 매핑됨
+* **`page.pageInfo.server`**&#x200B;이(가) 다음에 매핑됨
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**이(가) 다음에 매핑됨
+* **`page.pageInfo.hierarchie1`**&#x200B;이(가) 다음에 매핑됨
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**이(가) 다음에 매핑됨
+* **`user.profile.attributes.username`**&#x200B;이(가) 다음에 매핑됨
   `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`**이(가) 다음에 매핑됨
+* **`user.profile.attributes.loggedIn`**&#x200B;이(가) 다음에 매핑됨
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`product.productInfo.sku`**&#x200B;이(가) `digitalData.product.0.productInfo.sku`에 매핑됨

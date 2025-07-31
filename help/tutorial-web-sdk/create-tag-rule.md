@@ -98,7 +98,7 @@ ht-degree: 2%
    >
    > 주문 번호가 낮을수록 더 빨리 실행됩니다. 따라서 &quot;글로벌 구성&quot;에 낮은 주문 번호를 제공합니다.
 
-1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**를 선택하십시오.
+1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택하십시오.
    ![로드된 라이브러리 트리거 선택](assets/create-tag-rule-trigger-loaded.png)
 
 1. **[!UICONTROL 작업]** 섹션에서 **[!UICONTROL 추가]**&#x200B;를 선택합니다.
@@ -238,7 +238,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 >[!IMPORTANT]
 >
 >`price` 및 `qty`과(와) 같은 데이터 레이어의 문자열 값이 데이터 요소의 숫자로 다시 포맷되어 숫자 변수가 변환되는 방법을 참고하십시오. 이러한 형식 요구 사항은 플랫폼의 데이터 무결성에 중요하며 [스키마 구성](configure-schemas.md) 단계에서 결정됩니다. 이 예제에서 **[!UICONTROL quantity]**&#x200B;은(는) **[!UICONTROL Integer]** 데이터 형식을 사용합니다.
->> ![XDM 스키마 데이터 형식](assets/set-up-analytics-quantity-integer.png)
+>&#x200B;> ![XDM 스키마 데이터 형식](assets/set-up-analytics-quantity-integer.png)
 
 이제 배열을 XDM 개체에 매핑하겠습니다.
 
@@ -344,7 +344,7 @@ Luma의 제품 세부 사항 페이지에서 제품 보기를 추적하여 시�
 
 1. **[!UICONTROL 고급]** 드롭다운을 선택하고 `50`순서&#x200B;**[!UICONTROL 에]**&#x200B;을(를) 입력하십시오. 이렇게 하면 `1` 또는 `20`을(를) [!UICONTROL Order]&#x200B;(으)로 설정한 다른 모든 규칙 이후에 이 규칙이 실행됩니다.
 
-1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**를 선택하십시오.
+1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택하십시오.
    ![로드된 라이브러리 트리거 선택](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. **[!UICONTROL 작업]** 섹션에서 **[!UICONTROL 추가]**&#x200B;를 선택합니다.

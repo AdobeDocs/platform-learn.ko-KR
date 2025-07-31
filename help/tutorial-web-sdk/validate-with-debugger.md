@@ -90,7 +90,7 @@ Experience Platform Debugger에는 기존 태그 라이브러리를 다른 태�
 
    ![Adobe Experience Platform Web SDK 요청](assets/validate-aep-screen.png)
 
-1. `web.webpagedetails.pageView`변수 업데이트[!UICONTROL  작업에 지정한 ] 이벤트 형식과 `AEP Web SDK ExperienceEvent` 필드 그룹을 준수하는 기타 기본 제공 변수를 확인하는 방법에 대해 알아보십시오
+1. `web.webpagedetails.pageView`변수 업데이트[!UICONTROL &#x200B; 작업에 지정한 &#x200B;] 이벤트 형식과 `AEP Web SDK ExperienceEvent` 필드 그룹을 준수하는 기타 기본 제공 변수를 확인하는 방법에 대해 알아보십시오
 
    ![이벤트 세부 사항](assets/validate-event-pageViews.png)
 

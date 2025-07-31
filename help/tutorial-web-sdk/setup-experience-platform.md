@@ -269,7 +269,7 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 �
 1. 스키마 이름을 `Luma Loyalty Schema`로 지정합니다.
 1. [!UICONTROL 충성도 세부 정보] 필드 그룹 추가
 1. [!UICONTROL 인구 통계 세부 정보] 필드 그룹 추가
-1. `Person ID` 필드를 선택하고 ID 네임스페이스[!UICONTROL 를 사용하여 ]ID`Luma CRM Id` 및 [!UICONTROL 기본 ID]&#x200B;(으)로 표시합니다.
+1. `Person ID` 필드를 선택하고 ID 네임스페이스[!UICONTROL 를 사용하여 &#x200B;]ID`Luma CRM Id` 및 [!UICONTROL 기본 ID]&#x200B;(으)로 표시합니다.
 1. [!UICONTROL 프로필]에 대한 스키마를 사용하도록 설정하십시오. 프로필 토글을 찾을 수 없는 경우 왼쪽 상단의 스키마 이름을 클릭해 보십시오.
 1. 스키마 저장
 
@@ -305,7 +305,7 @@ Real-Time Customer Data Platform 및 Journey Optimizer 고객의 경우 다음 �
 1. **[!UICONTROL 다음]** 선택
 
    ![대상자 만들기](assets/merge-policy-set-active-on-edge.png)
-1. 워크플로우의 다른 단계를 계속하려면 **[!UICONTROL 다음]**&#x200B;을(를) 계속 선택하고 설정을 저장하려면 **[!UICONTROL 마침]**을(를) 선택하십시오
+1. 워크플로우의 다른 단계를 계속하려면 **[!UICONTROL 다음]**&#x200B;을(를) 계속 선택하고 설정을 저장하려면 **[!UICONTROL 마침]**&#x200B;을(를) 선택하십시오
    ![대상자 만들기](assets/merge-policy-finish.png)
 
 이제 Edge에서 평가할 대상을 만들 수 있습니다.
