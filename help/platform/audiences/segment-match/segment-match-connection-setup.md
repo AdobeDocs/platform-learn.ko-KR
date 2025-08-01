@@ -18,4 +18,4 @@ ht-degree: 1%
 
 이 비디오에서는 대상을 공유할 수 있도록 귀하와 파트너 간의 연결을 설정하는 방법에 대해 알아봅니다. 이 세그먼트 일치 기능을 구성하면 데이터 파트너와 데이터를 주고받을 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346354/?learn=on&enablevpops&captions=kor)

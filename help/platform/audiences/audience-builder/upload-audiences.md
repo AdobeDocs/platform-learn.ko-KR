@@ -18,4 +18,4 @@ ht-degree: 0%
 
 CSV 형식으로 대상을 Adobe Experience Platform에 업로드하는 방법을 알아봅니다. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/ui/audience-portal#import-audience)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423360/?learn=on&enablevpops&captions=kor)

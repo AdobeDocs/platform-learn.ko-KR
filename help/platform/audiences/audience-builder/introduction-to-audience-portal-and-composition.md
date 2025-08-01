@@ -19,4 +19,4 @@ ht-degree: 1%
 
 대상을 가져오고, 빌드하고, 관리하는 방법을 포함하여 Adobe에서 Adobe Experience Platform의 대상을 재정의하는 방법에 대해 알아보십시오. 자세한 내용은 [세그먼트 빌더 설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423369/?learn=on&enablevpops&captions=kor)

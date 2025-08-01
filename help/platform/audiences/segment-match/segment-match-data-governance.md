@@ -18,4 +18,4 @@ ht-degree: 1%
 
 데이터 파트너와 공유할 수 있는 데이터 세트(및 해당 데이터 세트를 사용하는 세그먼트)를 제한할 수 있도록 Real-Time CDP에서 데이터 거버넌스 컨트롤을 설정하고 사용하는 방법에 대해 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346361/?learn=on&enablevpops&captions=kor)
