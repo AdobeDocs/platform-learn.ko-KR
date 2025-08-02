@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ## Adobe Premiere Pro
 
-[https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)에서 컴퓨터에 Adobe Premiere Pro Beta 버전 설치
+[https://helpx.adobe.com/kr/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/kr/premiere-pro/using/premiere-pro-beta.html)에서 컴퓨터에 Adobe Premiere Pro Beta 버전 설치
 
 ![Adobe I/O 새 통합](./images/prpro.png)
 
