@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->이 연습을 완료하려면 AEM Content Hub이 활성화된 작동 중인 AEM Assets CS 작성 환경에 액세스할 수 있어야 합니다. 연습 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}을(를) 수행하면 이러한 환경에 액세스할 수 있습니다.
+>이 연습을 완료하려면 AEM Assets Content Hub이 활성화된 작동 중인 AEM Assets CS 작성 환경에 액세스할 수 있어야 합니다.
+>
+>다음 두 가지 옵션을 고려할 수 있습니다.
+>
+>- GenStudio for CSC Technical Enablement 워크샵에 참석하는 경우 강사가 AEM Assets CS 작성 환경을 마련했습니다. 그들에게 이름이 무엇인지, 어떻게 진행해야 하는지 확인해 주세요.
+>
+>- 전체 원 Adobe 자습서 경로를 따르는 경우 연습 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}로 이동합니다. 거기에 있는 지침을 따르십시오, 그러면 당신은 이러한 환경에 액세스 할 수 있습니다.
 
 >[!IMPORTANT]
 >

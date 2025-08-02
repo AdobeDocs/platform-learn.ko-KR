@@ -3,14 +3,15 @@ title: Adobe Workfront을 사용한 워크플로우 관리
 description: Adobe Workfront을 사용한 워크플로우 관리
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
 
-# 1.2 Adobe Workfront을 사용한 워크플로우 관리
+# 1.2 Adobe Workfront 워크플로우를 통한 워크플로우 관리
 
 ## 학습 목표
 
@@ -22,13 +23,17 @@ ht-degree: 2%
 
 ## 연습
 
-[1.2.1 Workfront 시작하기](./ex1.md){target="_blank"}
+[1.2.1 Workfront + AEM Assets CS 메타데이터 통합](./ex1.md){target="_blank"}
 
-이 연습에서는 Workfront에 다양한 기본 설정을 제공합니다.
+이 연습에서는 Workfront + AEM Assets CS 통합을 설정합니다.
 
 [1.2.2 Workfront을 사용한 증명](./ex2.md)
 
 이 연습에서는 증명 승인 작업 과정을 구성하고 사용합니다.
+
+[1.2.4 Workfront + AEM Sites CS 통합](./ex4.md){target="_blank"}
+
+이 연습에서는 Adobe Experience Manager Cloud Service Sites를 Adobe Workfront과 연결하는 플러그인을 설정하고 사용하기 시작합니다.
 
 [1.2.5 Workfront + Photoshop 통합](./ex5.md){target="_blank"}
 

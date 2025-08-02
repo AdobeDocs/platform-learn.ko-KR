@@ -3,9 +3,10 @@ title: Workfront Planning 시작하기
 description: Workfront Planning 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1084'
 ht-degree: 1%
 
 ---
@@ -196,7 +197,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront 계획](./images/wfpl35.png)
 
-## 1.1.1.7 자동화 만들기
+## 1.1.1.7 Portfolio 및 사용자 정의 양식 만들기
 
 다음 단계에서는 Workfront Planning에서 만든 캠페인에서 정보를 가져오고 Workfront에서 해당 정보를 사용하여 프로그램을 만드는 자동화를 만듭니다. 자동화를 만들려면 먼저 Workfront에서 포트폴리오와 사용자 정의 양식의 두 가지 사항을 구성해야 합니다.
 
@@ -224,7 +225,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront 계획](./images/wfplss6.png)
 
-양식 이름을 `--aepUserLdap-- Program Information`(으)로 변경합니다.
+양식 이름을 `--aepUserLdap-- - Program Information`(으)로 변경합니다.
 
 ![Workfront 계획](./images/wfplss7.png)
 

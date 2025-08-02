@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 이 튜토리얼은 매우 다양하며 다음 애플리케이션에 대한 명확한 통찰력을 제공합니다.
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe 프레임 I/O, Adobe Substance 3D 스테이징
-- Adobe Workfront, Adobe Workfront Planning &amp; Adobe Workfront Fusion
+- Adobe Workfront 워크플로, Adobe Workfront 계획 및 Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets, Forms 및 Edge Delivery Services
 - AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
@@ -43,9 +43,9 @@ ht-degree: 2%
 
 이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
 
-- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**&#x200B;에 합격할 수 있습니다.
+- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**에 합격할 수 있습니다.
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
-- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**&#x200B;을(를) 참여하여 통과할 수 있습니다.
+- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**을(를) 참여하여 통과할 수 있습니다.
   [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## 컨텐츠 상태
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 이 모듈에서는 Adobe Workfront Planning을 구성 및 사용하여 새 작업 영역을 만들고, 레코드 유형을 정의하고, 레코드를 관리하고, 새 요청 양식을 만들고, AI 비서를 활용합니다.
 
-Adobe Workfront을 사용한 [1.2 워크플로 관리](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 이 모듈에서는 Adobe Workfront을 구성 및 사용하여 승인 흐름을 관리하고 Adobe Experience Manager Assets, 유니버설 편집기, Photoshop 등과의 통합을 사용합니다.
 
