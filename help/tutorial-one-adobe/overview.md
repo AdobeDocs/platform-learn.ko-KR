@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1166'
 ht-degree: 2%
 
 ---
@@ -43,9 +43,9 @@ ht-degree: 2%
 
 이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
 
-- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**&#x200B;에 합격할 수 있습니다.
+- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**에 합격할 수 있습니다.
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
-- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**&#x200B;을(를) 참여하여 통과할 수 있습니다.
+- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**을(를) 참여하여 통과할 수 있습니다.
   [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## 컨텐츠 상태
@@ -84,7 +84,11 @@ Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workf
 
 [1.4 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
-이 기본 모듈에서는 Adobe Express을 사용하여 이미지와 비디오를 만들고 이러한 에셋을 더 광범위한 Adobe Experience Cloud 에코시스템을 위해 공유합니다.
+이 모듈에서는 Adobe Express을 사용하여 이미지와 비디오를 만들고 이러한 에셋을 더 광범위한 Adobe Experience Cloud 에코시스템을 위해 공유합니다.
+
+[1.5 Frame.io를 사용하여 작업 과정 능률화](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+이 모듈에서는 Adobe Frame.io와 Adobe Premiere Pro을 함께 사용하여 이미지와 비디오를 공동 작업하고 검토합니다.
 
 ### &#x200B;3. 자산 관리
 
@@ -185,6 +189,12 @@ Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workf
 [2.1 쿼리 서비스](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 이 모듈에서는 Adobe Experience Platform 쿼리 서비스를 사용하는 방법을 알아봅니다.
+
+#### Content Analytics
+
+[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+이 모듈에서는 Adobe Content Analytics을 구현하고 사용하는 방법을 배웁니다.
 
 ![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 

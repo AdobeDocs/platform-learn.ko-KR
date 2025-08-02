@@ -3,9 +3,9 @@ title: 시작하기 - 설치할 애플리케이션
 description: 시작하기 - 설치할 애플리케이션
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,26 @@ ht-degree: 1%
 **Adobe Creative Cloud** 앱을 열고 **앱**(으)로 이동합니다. 컴퓨터에 Illustrator을 설치합니다.
 
 ![Adobe I/O 새 통합](./images/psd.png)
+
+## Adobe Premiere Pro
+
+[https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)에서 컴퓨터에 Adobe Premiere Pro Beta 버전 설치
+
+![Adobe I/O 새 통합](./images/prpro.png)
+
+**Creative Cloud 데스크톱 앱 열기**&#x200B;를 클릭합니다.
+
+![Adobe I/O 새 통합](./images/prpro1.png)
+
+**Premiere Pro(Beta)** 앱용 카드에서 **설치**&#x200B;를 클릭합니다.
+
+![Adobe I/O 새 통합](./images/prpro2.png)
+
+## Frame.io 전송 앱
+
+[https://frame.io/transfer](https://frame.io/transfer)&#x200B;(으)로 이동하여 컴퓨터의 버전을 다운로드합니다.
+
+![Frame.io](./images/frameio11.png)
 
 ## Visual Studio 코드
 

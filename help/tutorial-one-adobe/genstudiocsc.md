@@ -2,9 +2,10 @@
 title: GenStudio for Content Supply Chain 기술 지원
 description: GenStudio for Content Supply Chain 기술 지원
 doc-type: multipage-overview
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -57,6 +58,10 @@ ht-degree: 1%
 
 이 기본 모듈에서는 Adobe Express을 사용하여 이미지와 비디오를 만들고 이러한 에셋을 더 광범위한 Adobe Experience Cloud 에코시스템을 위해 공유합니다.
 
+[Frame.io를 사용하여 작업 과정을 간소화](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+이 모듈에서는 Adobe Frame.io와 Adobe Premiere Pro을 함께 사용하여 이미지와 비디오를 공동 작업하고 검토합니다.
+
 ### 자산 관리
 
 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -67,9 +72,9 @@ ht-degree: 1%
 
 #### Adobe Content Analytics
 
-[Content Analytics](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
+[Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
 
-이 모듈에서는 Content Analytics을 설정하고 구성합니다.
+이 모듈에서는 Adobe Content Analytics을 구현하고 사용하는 방법을 배웁니다.
 
 ![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 

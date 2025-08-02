@@ -4,9 +4,9 @@ description: Workfront 증명
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -224,6 +224,14 @@ ht-degree: 0%
 1~2분 후 문서가 이제 AEM Assets에 게시됩니다. 문서 이름 옆에 AEM 아이콘이 표시됩니다.
 
 ![WF](./images/wfp37a.png)
+
+이 작업을 완료하려면 **완료로 표시**&#x200B;를 클릭하십시오.
+
+![WF](./images/wfp37b.png)
+
+그럼 이걸 보셔야죠
+
+![WF](./images/wfp37c.png)
 
 ## 1.2.2.5 AEM Assets에서 내 파일 보기
 
