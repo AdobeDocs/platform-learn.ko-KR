@@ -65,6 +65,6 @@ ht-degree: 3%
 
 **참고:** 정품 인증을 위해 다운스트림 플랫폼으로 신용 점수와 같은 중요한 데이터를 이동하지 않은 대상을 만들기 위해 제품 및 신용 정보를 사용했습니다.
 
-대상 구성에 대한 자세한 내용을 보려면 [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}을(를) 방문하세요.
+대상 구성에 대한 자세한 내용을 보려면 [Experience League](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}을(를) 방문하세요.
 
 페더레이션 대상이 생성되었으므로 [S3 계정에 매핑](map-federated-audience-to-s3.md)을 사용하여 진행하겠습니다.
