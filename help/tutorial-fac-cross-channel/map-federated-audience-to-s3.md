@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ ht-degree: 0%
 
 5. **예약** 섹션에서 모든 기본 설정을 그대로 두고 **다음**&#x200B;을 클릭합니다.
 
-6. **매핑** 단계에서 다음 항목이 포함되어 있고 **중복 제거 키**(으)로 선택되었는지 확인하십시오. **다음**&#x200B;을 클릭합니다.
-   - `xdm: personalEmail.address`
+6. **매핑** 단계에서 `xdm: personalEmail.address`이(가) 포함되어 있고 **중복 제거 키**(으)로 선택되었는지 확인하십시오. **다음**&#x200B;을 클릭합니다.
 
    ![중복 제거 키](assets/deduplication-key.png)
 

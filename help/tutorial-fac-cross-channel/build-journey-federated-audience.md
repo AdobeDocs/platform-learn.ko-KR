@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -27,13 +27,13 @@ ht-degree: 0%
 
    ![여정 만들기](assets/create-journey.png)
 
-2. 여정 속성을 새 이름으로 업데이트하십시오. `SecurFinancial - Home Loan Offer - [your lab user ID]`.
+2. 여정 속성을 새 이름으로 업데이트하십시오. **`SecurFinancial - Home Loan Offer`**.
 
 3. **오케스트레이션**&#x200B;을 클릭한 다음 **대상자 읽기** 타일을 캔버스로 끌어서 놓습니다.
 
 4. 화면 오른쪽의 대상 상자 옆에 있는 **연필 아이콘**&#x200B;을 클릭합니다.
 
-5. 검색 창에서 `SecureFinancial Customers - No Loans, Good Credit`을(를) 검색한 다음 **저장**&#x200B;을(를) 클릭합니다.
+5. 검색 창에서 **`SecureFinancial Customers - No Loans, Good Credit`**&#x200B;을(를) 검색한 다음 **저장**&#x200B;을(를) 클릭합니다.
 
    ![여정 만들기](assets/select-audience.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 2. 오른쪽 메뉴에서 **이메일 구성**&#x200B;을 클릭하고 **이메일 마케팅**&#x200B;을 선택합니다. 그런 다음 **콘텐츠 편집**&#x200B;을 클릭합니다.
 
-3. 제목 줄에 `Learn more about SecurFinancial Home Loan`을(를) 추가합니다. **전자 메일 본문 편집**&#x200B;을 클릭합니다.
+3. 제목 줄에 **`Learn more about SecurFinancial Home Loan`**&#x200B;을(를) 추가합니다. **전자 메일 본문 편집**&#x200B;을 클릭합니다.
 
 4. 오른쪽 상단의 **콘텐츠 템플릿** 단추를 클릭합니다. `SecureFinancial Template`을(를) 찾아 선택한 다음 **확인**&#x200B;을 클릭합니다.
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 6. 이제 이메일 Designer에 있게 됩니다. `{profile.person.name.firstName}` 매크로를 마우스로 가리키고 **개인화 아바타**&#x200B;를 클릭합니다.
 
-7. 개인화 창에서 `[sandbox] > audienceEnrichment > CustomerAudienceUpload` 폴더 경로로 드릴다운합니다.
+7. 개인화 창에서 **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`** 폴더 경로로 드릴다운합니다.
 
 8. **대상자 읽기** 폴더를 클릭합니다. 페더레이션 대상의 데이터 보강 속성은 여기에서 찾을 수 있습니다.
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 11. 이름 개인화가 추가되었으므로 개인화 변수 앞에 `Hi, `을(를) 추가하십시오. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
-    ![여정-이메일 저장](assets/journey-email-save.png)
+   ![여정-이메일 저장](assets/journey-email-save.png)
 
 12. 여정 캔버스로 돌아가려면 **뒤로** 단추를 두 번 클릭하십시오. 그런 다음 오른쪽의 **작업: 전자 메일** 메뉴에서 **저장**&#x200B;을 클릭합니다.
 
