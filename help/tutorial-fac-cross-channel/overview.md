@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 개요
 
-Federated Audience Composition은 Adobe Real-Time Customer Data Platform(Real-Time CDP) 및 Adobe Journey Optimizer 환경에서 사용할 수 있는 강력한 기능입니다. 이를 통해 데이터 설계자와 데이터 엔지니어는 Adobe Experience Platform에 데이터를 복제하지 않고도 [지원되는 타사 데이터 웨어하우스](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}에서 직접 대상을 구축하고 강화할 수 있습니다. 이 튜토리얼에서는 기술 사용자가 엔터프라이즈 데이터 웨어하우스를 연결하고 대상을 만들고 보강하며 개인화된 마케팅 경험을 위해 활성화할 수 있는 실습 지침을 제공합니다.
+Federated Audience Composition은 Adobe Real-Time Customer Data Platform(Real-Time CDP) 및 Adobe Journey Optimizer 환경에서 사용할 수 있는 강력한 기능입니다. 이를 통해 데이터 설계자와 데이터 엔지니어는 Adobe Experience Platform에 데이터를 복제하지 않고도 [지원되는 타사 데이터 웨어하우스](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}에서 직접 대상을 구축하고 강화할 수 있습니다. 이 튜토리얼에서는 기술 사용자가 엔터프라이즈 데이터 웨어하우스를 연결하고 대상을 만들고 보강하며 개인화된 마케팅 경험을 위해 활성화할 수 있는 실습 지침을 제공합니다.
 
 ## 시각적 안내서
 
@@ -51,10 +51,10 @@ SecurFinancial은 양호한 크레딧을 기반으로 대출 자격이 주어지
 
 - Real-Time CDP 또는 Journey Optimizer으로 프로비저닝된 Adobe Experience Platform 계정에 대한 액세스 권한.
 - 시스템 관리자 권한 또는 권한을 구성할 수 있는 기능입니다.
-- 스키마, 데이터 세트 및 대상자와 같은 Adobe Experience Platform 개념에 익숙합니다(권장: Experience League에서 [Adobe Experience Platform 재생 목록 소개](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"}를 완료합니다).
+- 스키마, 데이터 세트 및 대상자와 같은 Adobe Experience Platform 개념에 익숙합니다(권장: Experience League에서 [Adobe Experience Platform 재생 목록 소개](https://experienceleague.adobe.com/ko/playlists/experience-platform-introduction?lang=en){target="_blank"}를 완료합니다).
 - 지원되는 엔터프라이즈 데이터 웨어하우스(예: Amazon Redshift, Azure Synapse Analytics, Snowflake 또는 Google BigQuery)에 액세스합니다.
 - 데이터 웨어하우스 쿼리를 위한 SQL에 대한 기본 지식.
 - **샌드박스 환경**: 조직의 Real-Time CDP 인스턴스에서 샌드박스를 만들어 프로덕션 데이터에 영향을 주지 않고 안전하게 실험합니다.
-- **Data Warehouse 연결**: 이 자습서에서는 Snowflake 연결을 사용하지만 [지원되는 클라우드 웨어하우스](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites)를 사용할 수 있습니다.
+- **Data Warehouse 연결**: 이 자습서에서는 Snowflake 연결을 사용하지만 [지원되는 클라우드 웨어하우스](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/start/access-prerequisites)를 사용할 수 있습니다.
 
 [Data Warehouse 연결](data-warehouse-connection.md)(으)로 시작하겠습니다.

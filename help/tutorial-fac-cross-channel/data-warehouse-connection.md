@@ -18,7 +18,7 @@ ht-degree: 0%
 
 먼저 Federated Audience Composition을 활성화하기 위해 Adobe Experience Platform과 Enterprise Data Warehouse 간의 연결을 구성하겠습니다. 이렇게 하면 복제 없이 지원되는 웨어하우스에서 직접 데이터를 쿼리할 수 있습니다. 또한 Data Warehouse 테이블을 기반으로 스키마 및 데이터 모델을 생성합니다.
 
-보여주기 위해 Snowflake 계정에 연결합니다. Federated Audience Composition은 클라우드 웨어하우스 연결의 증가하는 목록을 지원합니다. [업데이트된 통합 목록](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}을 참조하세요.
+보여주기 위해 Snowflake 계정에 연결합니다. Federated Audience Composition은 클라우드 웨어하우스 연결의 증가하는 목록을 지원합니다. [업데이트된 통합 목록](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}을 참조하세요.
 
 ## 단계
 
