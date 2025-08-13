@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
+source-git-commit: 0b596d45409b5033cec132edcb75d90b679f9c7d
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '82'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 + [Federated Audience Composition 튜토리얼](overview.md)
 + [&#x200B;1. Data Warehouse 연결](data-warehouse-connection.md)
-+ [&#x200B;2. 대상자 만들기 연습](audience-creation-exercise.md)
++ [&#x200B;2. 연결된 대상 만들기](audience-creation-exercise.md)
 + [&#x200B;3. Federated Audience를 S3에 매핑](map-federated-audience-to-s3.md)
 + [&#x200B;4. 연합 대상 데이터를 사용하여 여정 구축](build-journey-federated-audience.md)
 + [&#x200B;5. Federated Data로 대상자 강화](federated-audience-composition.md)
