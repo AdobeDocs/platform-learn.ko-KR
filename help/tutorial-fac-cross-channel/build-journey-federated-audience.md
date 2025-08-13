@@ -6,9 +6,8 @@ description: 이 시각적 연습에서는 Journey Optimizer 여정에서 연결
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
-hide: true
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '421'
 ht-degree: 1%
@@ -71,7 +70,7 @@ SecurFinancial 스토리, 특히 고객 재타겟팅 및 개인화 사용 사례
 
 11. 이름 개인화가 추가되었으므로 개인화 변수 앞에 `Hi, `을(를) 추가하십시오. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
-    ![여정-이메일 저장](assets/journey-email-save.png)
+   ![여정-이메일 저장](assets/journey-email-save.png)
 
 12. 여정 캔버스로 돌아가려면 **뒤로** 단추를 두 번 클릭하십시오. 그런 다음 오른쪽의 **작업: 전자 메일** 메뉴에서 **저장**&#x200B;을 클릭합니다.
 
