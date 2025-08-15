@@ -4,9 +4,9 @@ description: 시작하기 - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 53b252df80801e521ad3df2fe4c158039adfa365
+source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ ht-degree: 0%
 
 ![Adobe I/O 새 통합](./images/adobe_io_access_api.png)
 
-화면이 다음과 같아야 합니다.
-
-![Adobe I/O 새 통합](./images/api1.png)
-
 **Adobe Firefly Services**&#x200B;을(를) 선택하고 **Firefly - Firefly Services**&#x200B;을(를) 선택한 후 **다음**&#x200B;을(를) 선택합니다.
 
 ![Adobe I/O 새 통합](./images/api3.png)
@@ -67,7 +63,7 @@ ht-degree: 0%
 >
 >선택한 학습 경로에 따라 Photoshop Services API에 대한 액세스 권한이 없을 수도 있습니다. 학습 과정(**Photoshop Services**, **Workfront Fusion**, **모두**)에 있거나 **실시간 대면 워크숍**&#x200B;에 참석하는 경우에만 Firefly API에 액세스할 수 있습니다. 이 학습 경로 중 하나에 있지 않은 경우 이 단계를 건너뛸 수 있습니다.
 >
->**+ 프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
+**+ 프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
 
 ![Azure 저장소](./images/ps2.png)
 
