@@ -1,0 +1,55 @@
+---
+title: Federated Audience Composition을 사용하여 Data Warehouse의 대상과 소통
+description: Federated Audience Composition은 데이터 설계자 및 데이터 엔지니어가 서드파티 데이터 웨어하우스에서 직접 대상을 구축하고 강화할 수 있는 강력한 기능입니다.
+breadcrumb-title: 개요
+role: Data Architect, Data Engineer
+jira: KT-18743
+thumbnail: 18743-overview.jpg
+recommendations: catalog, noDisplay
+last-substantial-update: 2025-08-11T00:00:00Z
+exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
+source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 0%
+
+---
+
+# Federated Audience Composition을 사용하여 Data Warehouse의 대상과 소통
+
+FAC(Federated Audience Composition)는 Adobe Real-Time Customer Data Platform(Real-Time CDP) 및 Adobe Journey Optimizer 환경에서 사용할 수 있는 강력한 기능입니다. 데이터 설계자 및 데이터 엔지니어는 고객 데이터를 Adobe Experience Platform(AEP)로 복사하거나 이동하지 않고도 [지원되는 엔터프라이즈 데이터 웨어하우스](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}에서 직접 고부가가치 대상자를 선별하고 활성화할 수 있습니다. 이 컴포저블 CDP 접근 방식(고객에 맞는 솔루션)은 업계 동향에 맞게 조정되므로 기업이 데이터 거버넌스를 유지하면서 개인화된 디지털 경험을 위해 데이터 인프라를 활용할 수 있습니다.
+
+## 비즈니스 컨텍스트
+
+SecurFinancial은 대표적인 금융 서비스 회사입니다. 다양한 소스에 걸쳐 풍부한 고객 데이터를 활용하여 다양한 세그먼트에 대한 오퍼와 캠페인을 개인화할 수 있습니다. 또한 Adobes Real-Time CDP Federated Audience Composition 기능을 사용하여 데이터 웨어하우스에서 대상자를 큐레이션하는 동시에 Adobe Experience PlatformAdobe Journey Optimizer 의 대상에 맞게 대상자를 활성화하여 개인화된 고객 경험을 제공할 수 있는 맞춤형 솔루션을 제공할 계획입니다.
+
+## 비즈니스 시나리오
+
+SecurFinancial은 양호한 크레딧을 기반으로 대출 자격이 주어지고 SecurFinancial 포트폴리오에 활성 대출이 없는 고객을 재타겟팅하기 위해 이메일 캠페인을 시작하려고 합니다. 온라인 행동 데이터를 실시간으로 섭취하는 동안 AEP에 대한 신용 정보 섭취가 제한되므로 고객 사전 자격을 식별하는 데 어려움을 겪습니다. 제한된 데이터를 이동하지 않고 사전 자격을 갖춘 고객을 우대하기 위해 Federated Audience Composition을 사용하여 AEP 행동 대상을 보강합니다.
+
+## 안내서
+
+이 안내서에서는 SecureFinancial 비즈니스 시나리오를 지원하는 방법을 보여 줍니다. 특히 S3 스토리지 계정, 이메일 캠페인을 실행하기 위한 Journey Optimizer의 여정, 사전 대출 승인을 받은 고객에 대한 온사이트 리타기팅 등 이러한 대상자를 필요로 하는 시스템에 대상자를 노출하는 방법을 다룹니다.
+
+단계는 다음과 같습니다.
+
+1. Adobe Experience Platform을 엔터프라이즈 데이터 웨어하우스에 연결합니다.
+2. Federated Audience Composition을 사용하여 대상을 만듭니다.
+3. 페더레이션 대상을 외부 Amazon S3 대상에 매핑합니다.
+4. 페더레이션 대상 데이터를 사용하여 고객 여정을 작성합니다.
+5. 페더레이션 데이터로 대상자를 보강합니다.
+6. Edge에서 &quot;즉각적인&quot; 개인화를 촉진합니다.
+
+## 전제 조건
+
+환경에서 유사한 활동을 수행하려면 다음을 수행해야 합니다.
+
+- Real-Time CDP 또는 Journey Optimizer으로 프로비저닝된 Adobe Experience Platform 계정에 대한 액세스 권한.
+- 시스템 관리자 권한 또는 권한을 구성할 수 있는 기능입니다.
+- 스키마, 데이터 세트 및 대상자와 같은 Adobe Experience Platform 개념에 익숙합니다(권장: Experience League에서 [Adobe Experience Platform 재생 목록 소개](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"}를 완료합니다).
+- 지원되는 [Enterprise Data Warehouse](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}에 액세스합니다.
+- 데이터 웨어하우스 쿼리를 위한 SQL에 대한 기본 지식.
+- **샌드박스 환경**: 프로덕션 데이터에 영향을 주지 않고 안전하게 실험하려면 조직의 인스턴스에 샌드박스를 만드십시오.
+- **Data Warehouse 연결**: 이 자습서에서는 Snowflake 연결을 사용하지만 [지원되는 데이터 웨어하우스](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites)를 사용할 수 있습니다.
+
+먼저 [Federated Audience Composition에 대한 높은 수준의 아키텍처 및 흐름](fac-architecture-and-flow.md)을 검토해 보겠습니다.
