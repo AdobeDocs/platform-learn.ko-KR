@@ -1,13 +1,13 @@
 ---
 title: 연합 대상자를 사용하여 여정 구축
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 연합 대상자를 사용하여 여정 구축
 description: 이 연습에서는 Journey Optimizer 여정에서 연결된 대상을 사용합니다.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Federated 대상은 Adobe Journey Optimizer(AJO) 내의 여정에서 사용할 수 있습니다. 여기에는 Federated Audience Composition에서 쿼리된 속성을 사용하여 메시지를 개인화하는 작업이 포함됩니다.
 
-SecurFinancial 스토리, 특히 고객 재타겟팅 및 개인화 사용 사례를 계속하려면 자격이 있는 고객을 위한 여정을 오케스트레이션합니다. 목표는 SecurFinancial의 Data Warehouse에서 페더레이션된 특성을 기반으로 개인화된 이메일을 보내는 것입니다.
+SecurFinancial 스토리, 특히 고객 재타겟팅 및 개인화 사용 사례를 계속하려면 자격이 있는 고객을 위한 여정을 오케스트레이션합니다. 목표는 SecurFinancial의 데이터 웨어하우스에서 페더레이션된 속성을 기반으로 개인화된 이메일을 보내는 것입니다.
 
 ## 단계
 
@@ -70,7 +70,7 @@ SecurFinancial 스토리, 특히 고객 재타겟팅 및 개인화 사용 사례
 
 11. 이름 개인화가 추가되었으므로 개인화 변수 앞에 `Hi, `을(를) 추가하십시오. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
-    ![여정-이메일 저장](assets/journey-email-save.png)
+   ![여정-이메일 저장](assets/journey-email-save.png)
 
 12. 여정 캔버스로 돌아가려면 **뒤로** 단추를 두 번 클릭하십시오. 그런 다음 오른쪽의 **작업: 전자 메일** 메뉴에서 **저장**&#x200B;을 클릭합니다.
 

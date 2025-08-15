@@ -1,24 +1,24 @@
 ---
 title: Edge Network을 사용하여 "즉각적인" 개인화 제공
-seo-title: Deliver "in-the moment" personalization using Edge Network | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Deliver "in-the moment" personalization using Edge Network | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Edge Network을 사용하여 "즉각적인" 개인화 제공
 description: 이 연습에서는 즉각적인 "즉시" 재타겟팅을 위해 Edge에서 페더레이션 대상을 평가합니다.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-drive-in-the-moment-personalization.jpg
 exl-id: 20bfafb1-1d1b-48d8-84eb-97d4c9e03b76
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
 
 # Edge Network을 사용하여 &quot;즉각적인&quot; 개인화 제공
 
-Federated Audience Composition을 사용하면 Enterprise Data Warehouse에서 페더레이션된 구성된 대상 데이터를 활용하여 Adobe Experience Platform(AEP)의 기존 대상을 강화할 수 있습니다. 이 데이터는 Adobe Experience Platform에서 유지되지 않습니다.
+Federated Audience Composition을 사용하면 Enterprise Data Warehouse에서 페더레이션된 구성된 대상 데이터를 활용하여 Adobe Experience Platform(AEP)의 기존 대상을 강화할 수 있습니다. 이 데이터는 Adobe Experience Platform에서 유지되지 않지만 [이벤트 전달](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} 기능을 사용하여 이 데이터를 데이터 웨어하우스로 바로 보낼 수 있습니다.
 
-이 시각적 연습에서는 신용 점수 및 대출 활동으로 쿼리된 연합 대상을 사용하여 대출 애플리케이션 웹 페이지 방문자의 행동 대상을 보강합니다.
+이 연습에서는 신용 점수 및 대출 활동으로 쿼리된 연합 대상을 사용하여 대출 애플리케이션 웹 페이지 방문자의 행동 대상을 보강합니다.
 
 Edge에서 이 대상자를 평가하면 사전 승인된 대출 신청 페이지 방문자를 즉시 재타겟팅하여 사이트에 개인화된 오퍼를 제공합니다.
 

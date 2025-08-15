@@ -1,22 +1,22 @@
 ---
 title: 페더레이션 대상 만들기
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 페더레이션 대상 만들기
-description: 이 연습에서는 Federated Audience Composition을 활성화하기 위해 Adobe Experience Platform과 Enterprise Data Warehouse 간의 연결을 구성합니다.
+description: 이 연습에서는 Federated Audience Composition을 사용하여 Snowflake Data Warehouse에서 대상을 만듭니다.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # 페더레이션 대상 만들기
 
-다음으로, Federated Audience Composition을 사용하여 Data Warehouse에서 대상을 만드는 과정을 안내합니다. 대상은 신용 점수가 650점 이상이고 현재 SecurFinancial 포트폴리오에 대출이 없는 SecurFinancial 고객으로 구성됩니다.
+다음으로, Federated Audience Composition을 사용하여 Snowflake 데이터 웨어하우스에서 대상을 만드는 과정을 안내합니다. 대상은 신용 점수가 650점 이상이고 현재 SecurFinancial 포트폴리오에 대출이 없는 SecurFinancial 고객으로 구성됩니다.
 
 ## 단계
 
@@ -64,6 +64,6 @@ ht-degree: 0%
 >
 > 이 예에서는 제품 및 신용 정보를 사용하여 Adobe Experience Platform의 사본을 만들지 않고 Snowflake에서 엔터프라이즈 데이터에 직접 액세스하여 대상자를 빌드했습니다. 외부 시스템이 쿼리를 처리하고 나면 관련 이메일, 현재 제품 및 이름 값만 다운스트림 활성화를 위해 대상 정의로 가져옵니다. 이는 RTCDP이 지원하는 모든 대상에 적용됩니다.
 
-대상 구성에 대한 자세한 내용을 보려면 [Experience League](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}을(를) 방문하세요.
+대상 구성에 대한 자세한 내용을 보려면 [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}을(를) 방문하세요.
 
 페더레이션 대상이 만들어졌으므로 [S3 계정에 매핑](map-federated-audience-to-s3.md)합니다.

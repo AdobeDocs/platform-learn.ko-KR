@@ -1,12 +1,13 @@
 ---
 title: Federated Audience Composition 높은 수준의 아키텍처 및 플로우
-seo-title: Federated Audience Composition High-level Architecture & Flow | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Federated Audience Composition 높은 수준의 아키텍처 및 플로우
+seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: 높은 수준의 아키텍처 및 흐름으로 통합 대상 구성
 description: 높은 수준의 아키텍처 및 Federated Audience Composition의 흐름에 대한 개요입니다.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+exl-id: 4cb0b730-4206-476b-93d9-776dfbd464ff
+source-git-commit: 0564f516cfba7ea09ac9da19d94f46d984e9e00a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Federated Audience Composition 높은 수준의 아키텍처 및 플로우
+# 높은 수준의 아키텍처 및 흐름으로 통합 대상 구성
 
 SecurFinancial의 비즈니스 시나리오를 지원하기 위한 단계를 살펴보기 전에 이 구성 가능한 CDP 접근 방식에 대한 높은 수준의 아키텍처와 흐름을 검토하겠습니다.
 
@@ -27,4 +28,3 @@ Adobe Experience Platform의 Federated Audience Composition 모듈은 기본 데
 ![fac-architecture](assets/fac-architecture.png)
 
 이제 [Data Warehouse 연결](data-warehouse-connection.md)을 만드는 단계로 넘어갑니다.
-

@@ -1,20 +1,20 @@
 ---
-title: S3에 페더레이션 대상 매핑
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: S3에 페더레이션 대상 매핑
+title: S3 대상에 페더레이션 대상 매핑
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: S3에 연결된 대상 매핑
 description: 이 연습에서는 개인화된 오프라인 경험을 지원하기 위해 페더레이션 대상을 다운스트림 Real-Time CDP 대상에 매핑합니다.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Federated Audience를 S3에 매핑하여 데이터 강화를 위한 대상 속성 활용
+# 통합 대상을 S3 대상에 매핑하여 데이터 보강 대상 속성을 활용합니다.
 
 데이터 웨어하우스의 대상 속성을 활용하여 RTCDP 대상을 사용하는 다운스트림 활성화 워크플로에서 대상의 경험을 강화할 수 있습니다. SecurFinancial의 경우 이러한 페더레이션 속성을 사용하여 오프라인에서 고객 대상의 개인화 경험을 향상시킬 수 있습니다. 아래에서 페더레이션 대상은 사전 구성된 Amazon S3 대상에 매핑됩니다.
 
@@ -50,6 +50,6 @@ ht-degree: 0%
 
 >[**!SUMMARY**]
 >
-> 대상을 성공적으로 빌드하고 S3 대상에 쉽게 활성화했습니다. 사용자에게 친숙한 인터페이스를 통해 마케팅 팀은 기본 데이터를 이동하지 않고도 대상을 신속하게 구축하고 활성화할 수 있습니다.
+> 대상을 성공적으로 빌드하고 S3 대상에 쉽게 활성화했습니다. 다른 모든 솔루션은 이 대상을 선택하여 즉시 사용할 수 있습니다. 사용자에게 친숙한 인터페이스를 통해 마케팅 팀은 기본 데이터를 이동하지 않고도 대상을 신속하게 구축하고 활성화할 수 있습니다. 이 접근 방식을 사용하는 고객은 약 한 달 만에 첫 사용을 시작했습니다.
 
 이제 [여정을 빌드](build-journey-federated-audience.md)합니다.
