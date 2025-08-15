@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 7%
@@ -34,4 +34,4 @@ Federated Audience Composition을 사용하면 Enterprise Data Warehouse에서 �
 
 ![federated-method-1-2](assets/federated-method-1-2.png)
 
-[현재 개인화 지원](deliver-in-the-moment-personalization.md)을 위해 페더레이션 데이터를 사용하는 다른 예를 살펴보겠습니다.
+[현재 개인화 제공](deliver-in-the-moment-personalization.md)에 페더레이션 데이터를 사용하는 다른 예를 살펴보겠습니다.

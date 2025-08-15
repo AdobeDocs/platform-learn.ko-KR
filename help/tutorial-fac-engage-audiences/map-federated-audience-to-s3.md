@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ ht-degree: 0%
 
 >[**!SUMMARY**]
 >
-> 대상을 성공적으로 빌드하고 S3 대상에 쉽게 활성화했습니다. 다른 모든 솔루션은 이 대상을 선택하여 즉시 사용할 수 있습니다. 사용자에게 친숙한 인터페이스를 통해 마케팅 팀은 기본 데이터를 이동하지 않고도 대상을 신속하게 구축하고 활성화할 수 있습니다. 이 접근 방식을 사용하는 고객은 약 한 달 만에 첫 사용을 시작했습니다.
+> 대상을 성공적으로 빌드하고 S3 대상에 쉽게 활성화했습니다. 다른 모든 솔루션은 이 대상을 선택하여 즉시 사용할 수 있습니다. 사용자에게 친숙한 인터페이스를 통해 마케팅 팀은 기본 데이터를 이동하지 않고도 대상을 신속하게 구축하고 활성화할 수 있습니다. 이 접근 방식을 사용하는 고객은 약 한 달 만에 첫 번째 사용 사례를 LIVE로 사용할 수 있게 되었습니다.
+
 
 이제 [여정을 빌드](build-journey-federated-audience.md)합니다.

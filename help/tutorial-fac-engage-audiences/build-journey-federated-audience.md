@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ SecurFinancial 스토리, 특히 고객 재타겟팅 및 개인화 사용 사례
 
 11. 이름 개인화가 추가되었으므로 개인화 변수 앞에 `Hi, `을(를) 추가하십시오. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
-    ![여정-이메일 저장](assets/journey-email-save.png)
+   ![여정-이메일 저장](assets/journey-email-save.png)
 
 12. 여정 캔버스로 돌아가려면 **뒤로** 단추를 두 번 클릭하십시오. 그런 다음 오른쪽의 **작업: 전자 메일** 메뉴에서 **저장**&#x200B;을 클릭합니다.
 
@@ -78,4 +78,4 @@ SecurFinancial 스토리, 특히 고객 재타겟팅 및 개인화 사용 사례
 
 페더레이션 대상 및 페더레이션 데이터 보강 속성을 사용하여 AJO에서 여정을 만들었습니다.
 
-이제 Data Warehouse의 페더레이션 데이터를 사용하여 Experience Platform에서 [기존 대상을 보강](federated-audience-composition.md)하는 방법에 대해 알아보겠습니다.
+이제 데이터 웨어하우스의 데이터를 사용하여 Experience Platform에서 대상을 [강화](federated-audience-composition.md)하는 방법을 살펴보겠습니다.
