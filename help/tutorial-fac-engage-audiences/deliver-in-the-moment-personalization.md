@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Edge Network을 사용하여 &quot;즉각적인&quot; 개인화 제공
 
-Federated Audience Composition을 사용하면 Enterprise Data Warehouse에서 페더레이션된 구성된 대상 데이터를 활용하여 Adobe Experience Platform(AEP)의 기존 대상을 강화할 수 있습니다. 이 데이터는 Adobe Experience Platform에서 유지되지 않지만 [이벤트 전달](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} 기능을 사용하여 이 데이터를 데이터 웨어하우스로 바로 보낼 수 있습니다.
+Federated Audience Composition을 사용하면 Enterprise Data Warehouse에서 페더레이션된 구성된 대상 데이터를 활용하여 Adobe Experience Platform(AEP)의 기존 대상을 강화할 수 있습니다. 이 데이터는 Adobe Experience Platform에서 유지되지 않지만 [이벤트 전달](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/event-forwarding/overview){target="_blank"} 기능을 사용하여 이 데이터를 데이터 웨어하우스로 바로 보낼 수 있습니다.
 
 이 연습에서는 신용 점수 및 대출 활동으로 쿼리된 연합 대상을 사용하여 대출 애플리케이션 웹 페이지 방문자의 행동 대상을 보강합니다.
 
