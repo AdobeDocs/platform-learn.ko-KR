@@ -4,9 +4,9 @@ description: Workfront Planning 시작하기
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 ![Workfront 계획](./images/wfpl10.png)
 
-새로 만든 레코드 유형에 아직 정의된 필드가 없으므로 이제 빈 테이블 보기가 표시됩니다.
+새로 만든 레코드 유형에 아직 정의된 비즈니스 단위 레코드가 없기 때문에 빈 테이블 보기가 표시됩니다.
 
 ![Workfront 계획](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 ![Workfront 계획](./images/wfpl17.png)
 
-이제 새 레코드 유형을 만들었고 필드를 삭제하고 만들었습니다. 왼쪽 상단 모서리에 있는 화살표를 클릭하여 Workspace 개요 화면으로 돌아갑니다.
+첫 번째 레코드에서 세 점 **..**&#x200B;을(를) 클릭하고 **보기**&#x200B;를 선택합니다.
+
+![Workfront 계획](./images/wfpla1.png)
+
+**Name**&#x200B;을(를) `Consumer Services`(으)로 설정합니다.
+
+**설명**&#x200B;을(를) `Handles residential offerings like mobile plans, internet packages, and customer support.`(으)로 설정합니다.
+
+**사업부 리드**&#x200B;을(를) 자기 자신으로 설정합니다.
+
+완료되면 화살표를 클릭하여 이전 화면으로 돌아갑니다.
+
+![Workfront 계획](./images/wfpla2.png)
+
+두 번째 레코드에서 세 점 **..**&#x200B;을(를) 클릭하고 **보기**&#x200B;를 선택합니다.
+
+![Workfront 계획](./images/wfpla3.png)
+
+**이름**&#x200B;을(를) `Enterprise & Business Solutions`(으)로 설정
+
+**설명**&#x200B;을(를) `Provides connectivity, cloud, and managed services to corporate clients and government entities.`(으)로 설정
+
+**사업부 리드**&#x200B;을(를) 자기 자신으로 설정합니다.
+
+완료되면 화살표를 클릭하여 이전 화면으로 돌아갑니다.
+
+![Workfront 계획](./images/wfpla4.png)
+
+세 번째 레코드에서 세 점 **..**&#x200B;을(를) 클릭하고 **보기**&#x200B;를 선택합니다.
+
+![Workfront 계획](./images/wfpla5.png)
+
+**이름**&#x200B;을(를) `Sales & Marketing`(으)로 설정
+
+**설명**&#x200B;을(를) `Drives customer acquisition, brand strategy, advertising, and market segmentation.`(으)로 설정
+
+**사업부 리드**&#x200B;을(를) 자기 자신으로 설정합니다.
+
+완료되면 화살표를 클릭하여 이전 화면으로 돌아갑니다.
+
+![Workfront 계획](./images/wfpla6.png)
+
+이제 새 레코드 유형을 만들었고, 필드를 삭제 및 만들었고, 3개의 비즈니스 단위를 만들었습니다. 왼쪽 상단 모서리에 있는 화살표를 클릭하여 Workspace 개요 화면으로 돌아갑니다.
 
 ![Workfront 계획](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 ![Workfront 계획](./images/wfpl20.png)
 
-새 필드를 만들려면 **+** 아이콘을 클릭하십시오. **새 연결**&#x200B;을 선택한 다음 **가상 사용자**&#x200B;을 선택합니다.
+새 필드를 만들려면 **+** 아이콘을 클릭하십시오. **새 연결**&#x200B;을 선택한 다음 **사업부**&#x200B;를 선택합니다.
 
 ![Workfront 계획](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 ![Workfront 계획](./images/wfpl25.png)
 
-이름을 `Campaign Request Form`(으)로 변경합니다. **저장**&#x200B;을 클릭합니다.
+이름을 `Campaign Request Form`(으)로 변경합니다. **만들기**&#x200B;를 클릭합니다.
 
 ![Workfront 계획](./images/wfpl26.png)
 
@@ -186,6 +228,8 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 ```
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
+
+다른 필드는 원하는 대로 입력하십시오.
 
 **요청 제출**&#x200B;을 클릭합니다.
 
@@ -297,19 +341,15 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront 계획](./images/wfpl47.png)
 
-Workfront에서 프로그램을 확인하려면 메뉴를 열고 **포트폴리오**&#x200B;를 클릭합니다.
+Workfront에서 프로그램을 확인하려면 오른쪽으로 스크롤하여 **연결된 프로그램** 열에서 프로그램을 클릭합니다.
 
 ![Workfront 계획](./images/wfpl48.png)
 
-`--aepUserLdap-- - Marketing`(으)로 지정해야 하는 포트폴리오를 엽니다.
-
-![Workfront 계획](./images/wfpl49.png)
-
-**프로그램**(으)로 이동한 다음 구성한 자동화에 의해 방금 만든 프로그램을 볼 수 있습니다.
+그러면 구성한 자동화에 의해 방금 만들어진 프로그램이 표시됩니다.
 
 ![Workfront 계획](./images/wfpl50.png)
 
-다음 단계: [1.2.2 TBD](./ex1.md){target="_blank"}
+다음 단계: [요약 및 이점](./summary.md){target="_blank"}
 
 [Workfront 계획 소개](./wfplanning.md){target="_blank"}(으)로 돌아가기
 

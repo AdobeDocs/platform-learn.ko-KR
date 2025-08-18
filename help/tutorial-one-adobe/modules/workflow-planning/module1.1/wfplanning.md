@@ -3,22 +3,31 @@ title: Adobe Workfront 계획
 description: Adobe Workfront 계획
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 4%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
 # 1.1 Adobe Workfront 계획
 
+이 연습에서는 작업 공간 만들기, 레코드 유형 정의, 레코드 관리 및 간소화된 작업을 위한 AI Assistant 활용 등 Workfront Planning의 기본 측면을 안내합니다. 이 실습을 통해 이 강력한 솔루션에 대해 숙지하고 향후 기능을 탐색할 수 있는 시작점을 마련할 수 있습니다.
+
 ## 학습 목표
 
-- Adobe Workfront Planning 사용 방법을 알아봅니다.
+이 실습을 완료하면 다음 항목에 익숙해질 수 있습니다.
+
+- 작업 공간, 레코드 유형 및 레코드와 같은 Workfront Planning의 핵심 구성 요소를 이해합니다.
+- 특정 운영 라이프사이클에 맞춘 새로운 Workspace을 만듭니다.
+- Workspace 내에서 레코드 유형을 정의하고 사용자 지정합니다.
+- 항목 생성, 업데이트 및 삭제를 포함하여 레코드를 관리합니다.
+- AI Assistant를 활용하여 작업을 효율적으로 수행할 수 있습니다.
 
 ## 전제 조건
 
-- Workfront Planning 액세스 권한.
+- Workfront Planning 패키지를 사용하여 Adobe Workfront 계정에 액세스합니다.
 
 ## 연습
 
