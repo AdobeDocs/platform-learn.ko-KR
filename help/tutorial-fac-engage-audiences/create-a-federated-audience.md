@@ -64,6 +64,6 @@ ht-degree: 0%
 
 이 예에서는 제품 및 신용 정보를 사용하여 Adobe Experience Platform의 사본을 만들지 않고 Snowflake에서 엔터프라이즈 데이터에 직접 액세스하여 대상자를 빌드했습니다. 외부 시스템이 쿼리를 처리하고 나면 관련 이메일, 현재 제품 및 이름 값만 다운스트림 활성화를 위해 대상 정의로 가져옵니다. 이는 RTCDP이 지원하는 모든 대상에 적용됩니다.
 
-대상 구성에 대한 자세한 내용을 보려면 [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}을(를) 방문하세요.
+대상 구성에 대한 자세한 내용을 보려면 [Experience League](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}을(를) 방문하세요.
 
 페더레이션 대상이 생성되었으므로 이제 [Experience Platform의 S3 대상에 매핑합니다](map-federated-audience-to-s3.md).

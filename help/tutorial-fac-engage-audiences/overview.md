@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Federated Audience Composition 개요를 사용하여 Data Warehouse에서 직접 대상과 소통
 
-FAC(Federated Audience Composition)는 Adobe Real-Time Customer Data Platform(Real-Time CDP) 및 Adobe Journey Optimizer용 모듈입니다. 또한 Adobe Real-Time CDP 구성 가능한 대상( 구성 가능한 CDP로서 고객을 위한 맞춤형 솔루션)에서도 사용할 수 있습니다. 데이터 설계자 및 데이터 엔지니어는 고객 데이터를 Adobe Experience Platform(AEP)로 복사하거나 이동하지 않고도 [지원되는 엔터프라이즈 데이터 웨어하우스](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}에서 직접 고부가가치 대상자를 선별하고 활성화할 수 있습니다. 이 컴포저블 CDP 접근 방식(고객에 맞는 솔루션)은 업계 동향에 맞게 조정되므로 기업이 데이터 거버넌스를 유지하면서 개인화된 디지털 경험을 위해 데이터 인프라를 활용할 수 있습니다.
+FAC(Federated Audience Composition)는 Adobe Real-Time Customer Data Platform(Real-Time CDP) 및 Adobe Journey Optimizer용 모듈입니다. 또한 Adobe Real-Time CDP 구성 가능한 대상( 구성 가능한 CDP로서 고객을 위한 맞춤형 솔루션)에서도 사용할 수 있습니다. 데이터 설계자 및 데이터 엔지니어는 고객 데이터를 Adobe Experience Platform(AEP)로 복사하거나 이동하지 않고도 [지원되는 엔터프라이즈 데이터 웨어하우스](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}에서 직접 고부가가치 대상자를 선별하고 활성화할 수 있습니다. 이 컴포저블 CDP 접근 방식(고객에 맞는 솔루션)은 업계 동향에 맞게 조정되므로 기업이 데이터 거버넌스를 유지하면서 개인화된 디지털 경험을 위해 데이터 인프라를 활용할 수 있습니다.
 
 ## 비즈니스 컨텍스트
 
@@ -51,10 +51,10 @@ SecurFinancial은 양호한 크레딧을 기반으로 대출 자격이 주어지
 
 - Real-Time CDP 또는 Journey Optimizer으로 프로비저닝된 Adobe Experience Platform 계정에 대한 액세스 권한.
 - 시스템 관리자 권한 또는 권한을 구성할 수 있는 기능입니다.
-- 스키마, 데이터 세트 및 대상자와 같은 Adobe Experience Platform 개념에 익숙합니다(권장: Experience League에서 [Adobe Experience Platform 재생 목록 소개](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"}를 완료합니다).
-- 지원되는 [Enterprise Data Warehouse](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}에 액세스합니다.
+- 스키마, 데이터 세트 및 대상자와 같은 Adobe Experience Platform 개념에 익숙합니다(권장: Experience League에서 [Adobe Experience Platform 재생 목록 소개](https://experienceleague.adobe.com/ko/playlists/experience-platform-introduction?lang=en){target="_blank"}를 완료합니다).
+- 지원되는 [Enterprise Data Warehouse](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}에 액세스합니다.
 - 데이터 웨어하우스 쿼리를 위한 SQL에 대한 기본 지식.
 - **샌드박스 환경**: 프로덕션 데이터에 영향을 주지 않고 안전하게 실험하려면 조직의 인스턴스에 샌드박스를 만드십시오.
-- **Data Warehouse 연결**: 이 자습서에서는 Snowflake 연결을 사용하지만 [지원되는 데이터 웨어하우스](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites)를 사용할 수 있습니다.
+- **Data Warehouse 연결**: 이 자습서에서는 Snowflake 연결을 사용하지만 [지원되는 데이터 웨어하우스](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/start/access-prerequisites)를 사용할 수 있습니다.
 
 먼저 [Federated Audience Composition에 대한 높은 수준의 아키텍처 및 흐름](fac-architecture-and-flow.md)을 검토해 보겠습니다.
