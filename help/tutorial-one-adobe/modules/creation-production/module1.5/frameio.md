@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+exl-id: 2b22fc2b-ce95-4860-8ba6-71163bacf5e7
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 2%
+source-wordcount: '126'
+ht-degree: 1%
 
 ---
 
@@ -25,6 +26,14 @@ ht-degree: 2%
 [1.5.1 Frame.io 시작하기](./ex1.md){target="_blank"}
 
 이 연습에서는 Frame.io를 탐색하고 해당 기능을 이해합니다.
+
+Frame.io로 [1.5.2 승인](./ex2.md){target="_blank"}
+
+이 연습에서는 Frame.io의 표준 승인 흐름을 거치게 됩니다.
+
+[1.5.3 Frame.io 및 Premiere Pro](./ex3.md){target="_blank"}
+
+이 연습에서는 Frame.io와 Adobe Premiere Pro 간의 통합에 대해 알아봅니다.
 
 [요약 및 이점](./summary.md){target="_blank"}
 

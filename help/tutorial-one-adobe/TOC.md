@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1298'
 ht-degree: 3%
 
 ---
@@ -78,6 +78,8 @@ ht-degree: 3%
    + 1.5 Frame.io로 워크플로우 능률화 {#crpr5}
       + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
       + [1.5.1 Frame.io 시작하기](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+      + [Frame.io를 사용한 1.5.2 승인](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
+      + [1.5.3 Frame.io 및 Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + 자산 관리 {#assetmgmt}
@@ -90,6 +92,10 @@ ht-degree: 3%
       + [1.1.5 고급 사용자 지정 블록](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [1.1.6 AEM Edge Delivery Services MarTech 플러그인](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
+   + 1.2 Adobe Experience Manager Assets {#assetm2}
+      + [개요](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
+      + [1.2.1 AEM Assets 시작하기](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
+      + [요약 및 이점](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + 게재 및 활성화 {#activation}
    + 데이터 수집 {#dc}
@@ -108,7 +114,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}

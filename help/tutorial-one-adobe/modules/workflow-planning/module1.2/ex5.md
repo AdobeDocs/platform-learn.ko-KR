@@ -3,16 +3,17 @@ title: Photoshop + Workfront 플러그인 설정
 description: Photoshop + Workfront 플러그인 설정
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 0695845e-d18e-416d-a8f4-34464618995a
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
 
 ---
 
-# 2.2.5 Photoshop + Workfront 플러그인 설정
+# 1.2.5 Photoshop + Workfront 플러그인 설정
 
-## 2.2.5.1 Photoshop 플러그인용 Workfront 설치
+## 1.2.5.1 Photoshop 플러그인용 Workfront 설치
 
 Workfront과 Photoshop 간의 통합을 설정하려면 컴퓨터에 Creative Cloud 애플리케이션을 설치하십시오. Adobe ID을 사용하여 로그인합니다.
 
@@ -42,7 +43,7 @@ Workfront과 Photoshop 간의 통합을 설정하려면 컴퓨터에 Creative Cl
 
 ![WF](./images/wf7.png)
 
-## 2.2.5.2 Photoshop에서 플러그인 구성
+## 1.2.5.2 Photoshop에서 플러그인 구성
 
 Photoshop을 엽니다. 작업 표시줄에서 **Plugins** > **Adobe Photoshop용 Workfront** > **Adobe Workfront**&#x200B;을(를) 클릭합니다.
 

@@ -4,7 +4,7 @@ description: Workfront 증명
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -197,7 +197,7 @@ CitiSignal의 사용 사례의 경우 **통합 캠페인 실행** 블루프린�
 
 이 작업의 일부로, 새 이미지를 만든 다음 Workfront에서 문서로 업로드해야 합니다. 이제 Adobe Express을 사용하여 해당 에셋을 직접 만듭니다.
 
-## 1.2.2.5 Adobe Firely Services 및 Adobe Express을 사용하여 자산 만들기
+## 1.2.2.5 Adobe Firefly Services 및 Adobe Express을 사용하여 자산 만들기
 
 [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}(으)로 이동합니다. `a neon rabbit running very fast through space` 프롬프트를 입력하고 **생성**&#x200B;을 클릭합니다.
 
