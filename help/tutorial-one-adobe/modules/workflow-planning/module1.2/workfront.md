@@ -4,10 +4,10 @@ description: Adobe Workfront을 사용한 워크플로우 관리
 kt: 5342
 doc-type: tutorial
 exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,17 @@ ht-degree: 2%
 
 ## 학습 목표
 
-- 다양한 방법으로 Adobe Workfront을 사용하는 방법을 알아봅니다.
+이 실습을 완료하면 다음 항목에 익숙해질 수 있습니다.
+
+- 포트폴리오, 프로그램, 프로젝트 및 작업을 포함한 Workfront 개체의 계층 구조를 이해합니다
+- 마케팅 캠페인에 맞게 맞춤화된 템플릿을 사용하여 새 프로젝트를 만듭니다.
+- 역할 및 가용성별로 자원에 작업 할당
+- 문서 업로드 및 승인 요청
+- 기본 제공 통합으로 승인된 문서를 AEM Assets CS로 전송
 
 ## 전제 조건
 
-- Workfront 및 Workfront Fusion 액세스
+- Workfront standard/planner 라이선스로 Adobe Workfront에 액세스합니다.
 
 ## 연습
 
