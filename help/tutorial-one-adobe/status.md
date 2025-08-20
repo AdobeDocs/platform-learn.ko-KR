@@ -3,9 +3,9 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '432'
 ht-degree: 12%
 
 ---
@@ -36,13 +36,15 @@ ht-degree: 12%
 | [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025 | 예 | - |
 | [1.4 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 2025년 1월 4일 | 예 | - |
 | [1.5 Frame.io를 사용하여 작업 과정 능률화](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 2025/08/02 | 예 | - |
+| [1.6 GenStudio for Performance Marketing - 확장성](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 20/08/2025 | - | - |
 
 
 ## &#x200B;3. 자산 관리
 
 | 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
 | ---------------------- | ------------ | ------------ |------------ |
-| [2.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 2025년 1월 5일 | 예 | - |
+| [1.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 2025년 1월 5일 | 예 | - |
+| [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | 예 | - |
 
 ## &#x200B;4. 배달 및 활성화
 

@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
+source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1339'
 ht-degree: 3%
 
 ---
@@ -81,6 +81,13 @@ ht-degree: 3%
       + [Frame.io를 사용한 1.5.2 승인](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
       + [1.5.3 Frame.io 및 Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
+   + 1.6 GenStudio for Performance Marketing - 확장성 {#crpr6}
+      + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
+      + [1.6.1 Adobe IO 및 App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
+      + [1.6.2 AWS S3 버킷 만들기](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
+      + [1.6.3 외부 DAM 앱 만들기](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4 코드를 배포하고 앱을 비공개로 게시합니다](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [요약 및 이점](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + 자산 관리 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -114,7 +121,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}

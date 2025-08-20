@@ -4,16 +4,20 @@ description: Workfront Planning 시작하기
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Workfront Planning 시작하기
 
-## 1.1.1.1 Workfront 계획 용어
+## 1.1.1.1 CitiSignal 캠페인 개요
+
+CitiSignal의 컨텍스트와 달성하고자 하는 바를 이해하려면 [CitiSignal-Fiber-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf)에서 CitiSignal의 캠페인 개요를 다운로드하고 읽어 보십시오.
+
+## 1.1.1.2 Workfront 계획 용어
 
 다음은 주요 Workfront Planning 개체 및 개념입니다.
 
@@ -31,7 +35,7 @@ ht-degree: 1%
 
 이제 실습으로 이동하여 이러한 개체 중 일부를 직접 만들기 시작합니다.
 
-## 1.1.1.2 Workspace, 레코드 유형, 필드
+## 1.1.1.3 Workspace, 레코드 유형, 필드
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **Workfront**&#x200B;을(를) 열려면 클릭하세요.
 
@@ -61,7 +65,7 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 ![Workfront 계획](./images/wfpl7a.png)
 
-## 1.1.1.3 분류: 레코드 종류 및 필드
+## 1.1.1.4 분류: 레코드 종류 및 필드
 
 **분류**&#x200B;에서 **+ 레코드 종류 추가**&#x200B;를 클릭한 다음 **수동으로 추가**&#x200B;를 선택하십시오.
 
@@ -165,7 +169,7 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 ![Workfront 계획](./images/wfpl19.png)
 
-## 1.1.1.4 작업 레코드 종류: 필드
+## 1.1.1.5 작업 레코드 종류: 필드
 
 **캠페인**&#x200B;을 열려면 클릭하세요.
 
@@ -187,7 +191,7 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 ![Workfront 계획](./images/wfpl24.png)
 
-## 1.1.1.5 요청 양식 만들기
+## 1.1.1.6 요청 양식 만들기
 
 캠페인 개요 화면에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **요청 양식 만들기**&#x200B;를 선택합니다.
 
@@ -209,7 +213,7 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 ![Workfront 계획](./images/wfpl29.png)
 
-## 1.1.1.6 요청 양식을 사용하여 새 레코드 제출
+## 1.1.1.7 요청 양식을 사용하여 새 레코드 제출
 
 캠페인 개요 화면에서 **+ 새 레코드**&#x200B;을(를) 클릭합니다.
 
@@ -243,7 +247,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront 계획](./images/wfpl35.png)
 
-## 1.1.1.7 Portfolio 및 사용자 정의 양식 만들기
+## 1.1.1.8 Portfolio 및 사용자 정의 양식 만들기
 
 다음 단계에서는 Workfront Planning에서 만든 캠페인에서 정보를 가져오고 Workfront에서 해당 정보를 사용하여 프로그램을 만드는 자동화를 만듭니다. 자동화를 만들려면 먼저 Workfront에서 포트폴리오와 사용자 정의 양식의 두 가지 사항을 구성해야 합니다.
 
