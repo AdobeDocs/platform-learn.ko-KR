@@ -20,4 +20,4 @@ ht-degree: 0%
 
 브랜드에서 브랜드 공동 작업에 지원하는 사용 사례와 이러한 워크플로를 지원하기 위해 도입된 특정 기능에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470943/?learn=on&enablevpops&captions=kor)
