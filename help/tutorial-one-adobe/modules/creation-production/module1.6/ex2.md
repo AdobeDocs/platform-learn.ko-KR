@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 6%
+source-wordcount: '502'
+ht-degree: 7%
 
 ---
 
@@ -139,19 +140,39 @@ AWS 리소스에 대한 액세스는 Amazon Identity and Access Management(IAM)�
 
 ![ETL](./images/bucket4.png)
 
-CitiSignal 이미지 파일 [여기](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"}를 다운로드할 수 있습니다.
+CitiSignal 이미지 파일 [여기](./images/package.zip){target="_blank"}를 다운로드할 수 있습니다.
 
 파일을 바탕 화면으로 내보냅니다.
 
 ![ETL](./images/bucket5.png)
 
-해당 폴더에 있는 2개의 이미지 파일을 가져와 S3 버킷 업로드 창에 놓습니다. **업로드**&#x200B;를 클릭합니다.
+**폴더 추가**&#x200B;를 클릭합니다.
 
 ![ETL](./images/bucket6.png)
 
-그럼 이걸 보셔야죠 이제 S3 버킷, 이미지 파일 및 IAM 사용자를 외부 DAM 앱에서 사용할 준비가 되었습니다.
+다운로드 폴더 **패키지**&#x200B;에서 **자산** 폴더를 선택하십시오. **업로드**&#x200B;를 클릭합니다.
 
 ![ETL](./images/bucket7.png)
+
+그럼 이걸 보셔야죠 **폴더 추가**&#x200B;를 다시 클릭합니다.
+
+![ETL](./images/bucket8.png)
+
+다운로드 폴더 **패키지**&#x200B;에서 폴더 **축소판**&#x200B;을(를) 선택합니다. **업로드**&#x200B;를 클릭합니다.
+
+![ETL](./images/bucket9.png)
+
+그럼 이걸 보셔야죠 **업로드**&#x200B;를 클릭합니다.
+
+![ETL](./images/bucket10.png)
+
+이제 업로드가 완료되었습니다. Click **Close**.
+
+![ETL](./images/bucket11.png)
+
+이제 S3 버킷에 이 폴더 구조가 있어야 합니다.
+
+![ETL](./images/bucket12.png)
 
 ## 다음 단계
 
