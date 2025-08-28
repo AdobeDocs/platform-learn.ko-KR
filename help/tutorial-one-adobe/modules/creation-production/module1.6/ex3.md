@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '912'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ AWS_REGION=us-west-2
 AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ```
 
-이제 이 텍스트를 `.env.dev`과(와) `.env.prod` 파일에 모두 붙여 넣어야 합니다. 변경 사항을 저장하는 것을 잊지 마십시오.
+이제 이 텍스트를 `.env` 파일에 붙여 넣어야 합니다. 변경 사항을 저장하는 것을 잊지 마십시오.
 
 ![외부 DAM](./images/extdam21.png)
 
@@ -152,6 +152,10 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ## 1.6.3.5 외부 DAM 앱 실행
 
 터미널 창에서 `aio app run` 명령을 실행합니다. 그러면 1-2분 후에 보게 될 거예요.
+
+>[!NOTE]
+>
+>`aio app run`을(를) 처음 실행하면 새 인증서를 수락하도록 브라우저로 리디렉션될 수 있습니다. 이 경우 인증서를 허용하면 아래 단계를 계속할 수 있습니다.
 
 ![외부 DAM](./images/extdam24.png)
 

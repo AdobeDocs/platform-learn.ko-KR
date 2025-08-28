@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 5a77ccdd-4000-4fb7-b696-dec40d01b41b
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 1%
 ![GSPeM 확장성](./images/gspemextpub6.png)
 
 ## 1.6.4.2 앱 승인
+
+>[!IMPORTANT]
+>
+>이 단계는 Adobe Admin Console의 시스템 관리자만 실행할 수 있습니다. 시스템 관리자가 아닌 경우 이 작업을 실행할 수 없습니다. 대신 시스템 관리자에게 문의하여 앱 승인을 요청하십시오.
 
 개발자가 게시를 위해 새 앱을 제출하면 조직의 시스템 관리자에게 알림이 전송되고 검토 및 승인을 요청받습니다.
 
