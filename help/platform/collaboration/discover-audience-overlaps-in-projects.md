@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # Collaboration 프로젝트 내에서 대상자 중복 검색
 
-Real-Time CDP Collaboration 프로젝트 내의 대상 중복을 비교하는 방법을 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}를 참조하세요.
+Real-Time CDP Collaboration 프로젝트 내의 대상 중복을 비교하는 방법을 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
