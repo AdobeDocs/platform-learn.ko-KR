@@ -25,5 +25,5 @@ ht-degree: 1%
 
 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection)를 검토하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440165?learn=on&enablevpops&captions=kor)
 
