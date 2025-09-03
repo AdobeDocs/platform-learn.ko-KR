@@ -23,7 +23,7 @@ ht-degree: 1%
 
 [!DNL Marketo Engage] 대상이 대상 데이터와 프로필 속성을 매끄럽게 실시간 동기화하여 기술 스택 전반에 통합 마케팅을 강화하는 방법에 대해 알아봅니다. 유연한 동기화 옵션과 간소화된 설정을 통해 리드 다시 참여, 프로필 업데이트 및 개인화된 B2B 여정에 대한 도달 범위 확장과 같은 사용 사례를 지원합니다.
 
-자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection)를 검토하세요.
+자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection)를 검토하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 
