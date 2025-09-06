@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Real-Time CDP Collaboration 프로젝트에서 공동 작업 파트너에게 대상자를 활성화하는 방법을 알아봅니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"}를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3471677/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471685/?learn=on&enablevpops&captions=kor)

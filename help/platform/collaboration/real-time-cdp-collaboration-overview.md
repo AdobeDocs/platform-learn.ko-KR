@@ -41,7 +41,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration 인트로" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1756504084960" alt="Real-Time CDP Collaboration 인트로"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446808/?format=jpeg&nocache=1756504084960&captions=kor" alt="Real-Time CDP Collaboration 인트로"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -64,7 +64,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="에이전시 전문가를 위한 Real-Time CDP 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1756504084963" alt="에이전시 전문가를 위한 Real-Time CDP 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464665/?format=jpeg&nocache=1756504084963&captions=kor" alt="에이전시 전문가를 위한 Real-Time CDP 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration - 프로세스 및 사람" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1756504084955" alt="Real-Time CDP Collaboration - 프로세스 및 사람"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464676/?format=jpeg&nocache=1756504084955&captions=kor" alt="Real-Time CDP Collaboration - 프로세스 및 사람"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423936?format=jpeg&nocache=1756504085478&captions=kor" alt="Adobe Experience Platform 기반 애플리케이션을 위한 제품 관리자 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="Real-Time CDP Collaboration에 대한 권한 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1756504085453" alt="Real-Time CDP Collaboration에 대한 권한 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452237/?format=jpeg&nocache=1756504085453&captions=kor" alt="Real-Time CDP Collaboration에 대한 권한 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -260,7 +260,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="Real-Time CDP Collaboration에서 프로젝트 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1756504085943" alt="Real-Time CDP Collaboration에서 프로젝트 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464041/?format=jpeg&nocache=1756504085943&captions=kor" alt="Real-Time CDP Collaboration에서 프로젝트 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -283,7 +283,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discover-audience-overlaps-in-projects.md" title="Collaboration 프로젝트 내에서 대상자 중복 검색" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471675/?format=jpeg&nocache=1756504085916" alt="Collaboration 프로젝트 내에서 대상자 중복 검색"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471696/?format=jpeg&nocache=1756504085916&captions=kor" alt="Collaboration 프로젝트 내에서 대상자 중복 검색"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -306,7 +306,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="activate-audiences-in-projects.md" title="Collaboration 프로젝트에서 대상 활성화" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471677/?format=jpeg&nocache=1756504085925" alt="Collaboration 프로젝트에서 대상 활성화"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471685/?format=jpeg&nocache=1756504085925&captions=kor" alt="Collaboration 프로젝트에서 대상 활성화"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -329,7 +329,7 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="브랜드에서 브랜드로 Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1756504085934" alt="브랜드에서 브랜드로 Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470943/?format=jpeg&nocache=1756504085934&captions=kor" alt="브랜드에서 브랜드로 Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
