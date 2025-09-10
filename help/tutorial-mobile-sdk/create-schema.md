@@ -25,11 +25,11 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 
 데이터를 Platform에 수집하려면 먼저 데이터의 구조를 설명하고 각 필드 내에 포함할 수 있는 데이터 유형에 제약 조건을 제공하는 스키마를 구성해야 합니다. 스키마는 기본 클래스와 0개 이상의 스키마 필드 그룹으로 구성됩니다.
 
-디자인 원칙 및 모범 사례를 포함한 스키마 구성 모델에 대한 자세한 내용은 [스키마 구성의 기본 사항](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition) 또는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)을 참조하십시오.
+디자인 원칙 및 모범 사례를 포함한 스키마 구성 모델에 대한 자세한 내용은 [스키마 구성의 기본 사항](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/schema/composition) 또는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/ko/playlists/experience-platform-model-your-customer-experience-data-with-xdm)을 참조하십시오.
 
 >[!TIP]
 >
->Analytics 솔루션 디자인 참조(SDR)에 익숙하다면 스키마를 더 강력한 SDR로 생각할 수 있습니다. 자세한 내용은 [솔루션 디자인 참조(SDR) 문서 만들기 및 유지 관리](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)를 참조하십시오.
+>Analytics 솔루션 디자인 참조(SDR)에 익숙하다면 스키마를 더 강력한 SDR로 생각할 수 있습니다. 자세한 내용은 [솔루션 디자인 참조(SDR) 문서 만들기 및 유지 관리](https://experienceleague.adobe.com/ko/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)를 참조하십시오.
 
 ## 전제 조건
 
@@ -70,7 +70,7 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 * **클래스**&#x200B;은(는) 스키마에 포함된 데이터의 동작 측면을 정의합니다. 예를 들어 `XDM ExperienceEvent`은(는) 시계열, 이벤트 데이터를 캡처하고 `XDM Individual Profile`은(는) 개인에 대한 특성 데이터를 캡처합니다.
 * **데이터 형식**&#x200B;은(는) 기본 리터럴 필드와 같은 방식으로 클래스 또는 필드 그룹의 참조 필드 형식으로 사용됩니다.
 
-위의 설명은 높은 수준의 개요입니다. 자세한 내용은 [스키마 빌딩 블록](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks) 비디오를 참조하거나 제품 설명서에서 [스키마 컴포지션의 기본 사항](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)을 읽어 보십시오.
+위의 설명은 높은 수준의 개요입니다. 자세한 내용은 [스키마 빌딩 블록](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/schemas/schema-building-blocks) 비디오를 참조하거나 제품 설명서에서 [스키마 컴포지션의 기본 사항](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/schema/composition)을 읽어 보십시오.
 
 이 자습서에서는 소비자 경험 이벤트 필드 그룹을 사용하여 프로세스를 보여 주는 사용자 지정 이벤트 그룹을 만듭니다.
 
@@ -242,6 +242,6 @@ Experience Platform은 스키마를 사용하여 데이터의 구조를 일관�
 >
 >이제 자습서의 나머지 부분에서 사용할 스키마가 있습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[[!UICONTROL 데이터스트림 만들기]](create-datastream.md)**

@@ -15,7 +15,7 @@ ht-degree: 5%
 
 Experience Platform에서 datastream을 만드는 방법에 대해 알아봅니다.
 
-데이터 스트림은 Platform Edge Network의 서버측 구성입니다. 데이터스트림을 사용하면 Platform Edge Network으로 들어오는 데이터가 Adobe Experience Cloud 애플리케이션 및 서비스로 적절하게 라우팅됩니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) 또는 이 [비디오](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams)를 참조하세요.
+데이터 스트림은 Platform Edge Network의 서버측 구성입니다. 데이터스트림을 사용하면 Platform Edge Network으로 들어오는 데이터가 Adobe Experience Cloud 애플리케이션 및 서비스로 적절하게 라우팅됩니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview) 또는 이 [비디오](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/edge-network/configure-datastreams)를 참조하세요.
 
 ![아키텍쳐](assets/architecture.png){zoomable="yes"}
 
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->조직에서 사용하는 각 서비스를 활성화하면 모바일 앱에서 수집한 데이터를 어디에서나 사용할 수 있습니다. 자세한 내용은 [데이터스트림 설정](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)을 참조하세요.
+>조직에서 사용하는 각 서비스를 활성화하면 모바일 앱에서 수집한 데이터를 어디에서나 사용할 수 있습니다. 자세한 내용은 [데이터스트림 설정](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/overview)을 참조하세요.
 
 자체 앱에서 Platform Mobile SDK을 구현할 때 궁극적으로 세 개의 데이터 스트림을 만들어 세 개의 태그 환경(개발, 스테이지 및 프로덕션)에 매핑해야 합니다. Adobe Real-Time Customer Data Platform 또는 Adobe Journey Optimizer과 같은 플랫폼 기반 애플리케이션과 함께 Platform Mobile SDK을 사용하는 경우 적절한 샌드박스에서 이러한 데이터스트림을 만들어야 합니다.
 
@@ -110,6 +110,6 @@ You might also want to enable the Adobe Experience Platform service.
 >
 >이제 자습서의 나머지 부분에서 사용할 데이터 스트림이 있습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[태그 속성 구성](configure-tags.md)**

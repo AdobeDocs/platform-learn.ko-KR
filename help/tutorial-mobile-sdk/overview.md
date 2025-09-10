@@ -64,7 +64,7 @@ Experience Platform Mobile SDK은 Adobe Experience Cloud 고객이 Adobe Experie
    * **[!UICONTROL 속성 권한]**—권한 항목으로서 **[!UICONTROL 개발]**, **[!UICONTROL 승인]**, **[!UICONTROL 게시]**, **[!UICONTROL 확장 관리]** 및 **[!UICONTROL 환경 관리]**&#x200B;를 수행할 수 있습니다.
    * **[!UICONTROL 회사 권한]**—**[!UICONTROL 속성 관리]**&#x200B;에 대한 권한 항목
 
-     태그 권한에 대한 자세한 내용은 제품 설명서에서 [태그에 대한 사용자 권한](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}을 참조하세요.
+     태그 권한에 대한 자세한 내용은 제품 설명서에서 [태그에 대한 사용자 권한](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/admin/user-permissions){target="_blank"}을 참조하세요.
 * Experience Platform에서 다음을 수행해야 합니다.
    * **[!UICONTROL 데이터 모델링]**—스키마를 관리하고 볼 수 있는 권한 항목입니다.
    * **[!UICONTROL Identity Management]**—id 네임스페이스를 관리하고 볼 수 있는 권한 항목입니다.
@@ -74,7 +74,7 @@ Experience Platform Mobile SDK은 Adobe Experience Cloud 고객이 Adobe Experie
       * **[!UICONTROL 데이터 관리]**—데이터 집합을 관리하고 볼 수 있는 권한 항목입니다.
       * 이 자습서에 사용할 수 있는 개발 **샌드박스**.
 
-   * Journey Optimizer 단원의 경우 **푸시 알림 서비스**&#x200B;를 구성하고 **앱 표면**, **여정**, **메시지** 및 **메시지 사전 설정**&#x200B;을 만들 수 있는 권한이 필요합니다. 또한 의사 결정 관리의 경우 **권한 수준**&#x200B;에 설명된 대로 **오퍼를 관리** 및 [의사 결정](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions)할 수 있는 적절한 권한이 필요합니다.
+   * Journey Optimizer 단원의 경우 **푸시 알림 서비스**&#x200B;를 구성하고 **앱 표면**, **여정**, **메시지** 및 **메시지 사전 설정**&#x200B;을 만들 수 있는 권한이 필요합니다. 또한 의사 결정 관리의 경우 **권한 수준**&#x200B;에 설명된 대로 **오퍼를 관리** 및 [의사 결정](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/access-control/high-low-permissions)할 수 있는 적절한 권한이 필요합니다.
 
 * Adobe Analytics의 경우 이 자습서를 완료하는 데 사용할 수 있는 **보고서 세트**&#x200B;를 알고 있어야 합니다.
 
@@ -129,6 +129,6 @@ Google Play에서 앱의 최종 프로덕션 테스트 버전을 다운로드할
 
 >[!SUCCESS]
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[XDM 스키마 만들기](create-schema.md)**
