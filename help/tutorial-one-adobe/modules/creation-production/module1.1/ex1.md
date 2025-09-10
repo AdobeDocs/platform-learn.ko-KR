@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ API를 사용하여 작업할 때 다양한 API 엔드포인트에서 응답 코
 
 ## 1.1.1.3 탐색 firefly.adobe.com - 1단계
 
-Adobe Firefly Services을 살펴보도록 하겠습니다. 자세한 내용은 CitiSignal 이미지 생성 예제를 참조하십시오. CitiSignal 디자인 팀이 CitiSignal 브랜드 이름의 네온 버전을 생성하려고 합니다. 이를 위해 Adobe Firefly Services을 사용하고 싶어합니다.
+Adobe Firefly Services을 살펴보도록 하겠습니다. 탐색을 위해 CitiSignal 이미지 생성 예제로 시작합니다. CitiSignal 디자인 팀이 CitiSignal 브랜드 이름의 네온 버전을 생성하려고 합니다. 이를 위해 Adobe Firefly Services을 사용하고 싶어합니다.
 
 이를 실현하기 위해 가장 먼저 필요한 것은 CitiSignal 브랜드 이름의 흑백 버전이며 다음과 같은 모습입니다.
 
@@ -158,7 +158,7 @@ Adobe Firefly Services을 살펴보도록 하겠습니다. 자세한 내용은 C
 
 [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image)&#x200B;(으)로 이동합니다. 그럼 이걸 보셔야죠 **모델** 드롭다운 목록을 클릭합니다. Adobe Firefly Services에는 3개의 사용 가능한 버전이 있습니다.
 
-- Firefly 이미지 3
+- Firefly Image 3
 - Firefly 이미지 4
 - Firefly Image 4 Ultra
 
@@ -166,9 +166,9 @@ Adobe Firefly Services을 살펴보도록 하겠습니다. 자세한 내용은 C
 
 >[!NOTE]
 >
->Firefly Image 3 및 Image 4는 Adobe Firefly Services을 사용하는 모든 사용자가 사용할 수 있으며 Firefly Image 4 Ultra에는 Firefly Pro 라이센스가 필요합니다.
+>Firefly Image 3 및 이미지 4는 Adobe Firefly Services을 사용하는 모든 사용자가 사용할 수 있으며, Firefly 이미지 4 Ultra에는 Firefly Pro 라이선스가 필요합니다.
 
-이 연습에 사용할 **Firefly 이미지 3**&#x200B;을(를) 선택하려면 클릭하세요.
+이 연습에 대해 **Firefly Image 3**&#x200B;을(를) 선택하려면 클릭하세요.
 
 ![Postman](./images/ffui1a.png)
 
@@ -403,13 +403,13 @@ UI를 다시 살펴보십시오. **종횡비**&#x200B;을 **와이드스크린(1
 
 ## 1.1.1.8 Firefly Services API, 텍스트 2 이미지, 이미지 4 및 이미지 4 Ultra
 
-Firefly Image Model 4의 최신 릴리스에서는 몇 가지 기능이 개선되었습니다.
+Firefly Image Model 4의 최근 릴리스를 통해 다음과 같은 몇 가지 사항이 개선되었습니다.
 
-- Firefly Image Model 4는 향상된 정의 및 세부 사항을 통해 2K 해상도 출력을 제공합니다.
-- Firefly Image Model 4는 텍스트 렌더링, 인간, 동물 및 아키텍처에서 상당한 개선을 제공합니다.
+- Firefly Image Model 4은 향상된 정의 및 세부 사항을 통해 2K 해상도 출력을 제공합니다.
+- Firefly Image Model 4은 텍스트 렌더링, 인간, 동물 및 아키텍처에서 상당한 개선을 제공합니다.
 - Firefly Image Model 4는 IP 친화적이고 상업적으로 안전한 생성 AI에 대한 Adobe의 약속을 유지합니다.
 
-Firefly Image Model 4는 사람, 동물 및 세부 장면에 대한 뛰어난 이미지를 제공하며 Image Model 4 Ultra를 사용하여 초현실적인 인간 상호 작용, 건축 요소 및 복잡한 풍경을 통한 이미지를 생성할 수 있습니다&#x200B;.
+Firefly Image Model 4은 사람, 동물 및 세부 장면에 대한 뛰어난 이미지를 제공하며 Image Model 4 Ultra를 사용하여 초현실적인 인간 상호 작용, 건축 요소 및 복잡한 풍경을 통한 이미지를 생성할 수 있습니다&#x200B;.
 
 ### 1.1.1.8.1 image4_standard
 
