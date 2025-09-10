@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 4c9ac30ecc0f41b7d6cd9a6653bca50e602cbc13
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '2475'
-ht-degree: 2%
+source-wordcount: '2882'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +19,9 @@ Experience Platform Mobile SDK을 사용하여 모바일 앱에서 Journey Optim
 
 Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모든 접점에서 고객에게 최상의 오퍼와 경험을 제공할 수 있습니다. 디자인한 후에는 개인화된 오퍼로 대상을 타기팅하십시오.
 
-![아키텍쳐](assets/architecture-ajo.png)
+![아키텍쳐](assets/architecture-ajo.png){zoomable="yes"}
 
-의사 결정 관리를 사용하면 마케팅 오퍼의 중앙 라이브러리와 Adobe Experience Platform에서 만든 풍부한 실시간 프로필에 규칙과 제한을 적용하는 의사 결정 엔진을 통해 손쉽게 개인화할 수 있습니다. 따라서 고객에게 적절한 시기에 적절한 오퍼를 보낼 수 있습니다. 자세한 내용은 [의사 결정 관리 정보](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=ko)를 참조하세요.
+의사 결정 관리를 사용하면 마케팅 오퍼의 중앙 라이브러리와 Adobe Experience Platform에서 만든 풍부한 실시간 프로필에 규칙과 제한을 적용하는 의사 결정 엔진을 통해 손쉽게 개인화할 수 있습니다. 따라서 고객에게 적절한 시기에 적절한 오퍼를 보낼 수 있습니다. 자세한 내용은 [의사 결정 관리 정보](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/starting-offer-decisioning)를 참조하세요.
 
 
 
@@ -35,7 +35,7 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Adobe Experience Platform용 앱을 설정합니다.
-* [여기](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=ko#decisions-permissions)에 설명된 대로 오퍼 및 결정을 관리할 수 있는 적절한 권한이 있는 Journey Optimizer - 의사 결정 관리에 액세스하십시오.
+* Journey Optimizer 액세스 - 오퍼 및 의사 결정을 관리할 수 있는 [적절한 사용 권한](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions)을 가진 의사 결정 관리.
 
 
 ## 학습 목표
@@ -63,15 +63,13 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 
 1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을(를) 선택하고 데이터스트림(예: **[!DNL Luma Mobile App]**)을 선택합니다.
 1. ![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)에 대해 **[!UICONTROL 자세히]**&#x200B;를 선택하고 상황에 맞는 메뉴에서 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** 화면에서 **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge 세그멘테이션]** 및 **[!UICONTROL Adobe Journey Optimizer]**&#x200B;이 선택되었는지 확인하십시오. Target 단원을 수행하려면 **[!UICONTROL Personalization 대상]**&#x200B;도 선택하십시오. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=ko#aep)을 참조하세요.
+1. **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** 화면에서 **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge 세그멘테이션]** 및 **[!UICONTROL Adobe Journey Optimizer]**&#x200B;이 선택되었는지 확인하십시오. Target 단원을 수행하는 경우 **[!UICONTROL Personalization 대상]**&#x200B;도 선택하십시오. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)을 참조하세요.
 1. 데이터스트림 구성을 저장하려면 **[!UICONTROL 저장]** 을 선택합니다.
 
-   ![AEP 데이터스트림 구성](assets/datastream-aep-configuration-offers.png)
+   ![AEP 데이터스트림 구성](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
 
 
-
-
-### Journey Optimizer - Decisioning 태그 확장 설치
+### Offer Decisioning 및 Target 태그 확장 설치
 
 1. **[!UICONTROL 태그]**(으)로 이동하여 모바일 태그 속성을 찾은 다음 속성을 엽니다.
 1. **[!UICONTROL 확장]**&#x200B;을 선택하십시오.
@@ -79,7 +77,7 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 1. **[!UICONTROL Offer Decisioning 및 Target]** 확장을 검색합니다.
 1. 확장을 설치합니다. 확장은 추가 구성이 필요하지 않습니다.
 
-   ![Offer Decisioning 및 Target 확장 추가](assets/tag-add-decisioning-extension.png)
+   ![Offer Decisioning 및 Target 확장 추가](assets/tag-add-decisioning-extension.png){zoomable="yes"}
 
 
 ### 스키마 업데이트
@@ -88,8 +86,8 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 1. 상단 표시줄에서 **[!UICONTROL 찾아보기]**&#x200B;를 선택합니다.
 1. 스키마를 선택하여 엽니다.
 1. 스키마 편집기에서 필드 그룹 옆에 있는 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 필드 그룹 추가]** 대화 상자에서 ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)을 통해 `proposition`을(를) 검색하고 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]**&#x200B;을 선택하고 **[!UICONTROL 필드 그룹 추가]**&#x200B;를 선택합니다. 이 필드 그룹은 오퍼와 관련된 경험 이벤트 데이터(제공 사항, 수집, 결정 및 기타 매개 변수의 일부)를 수집합니다(이 단원의 뒷부분 참조). 하지만 또한 그 제안은 어떻게 되어가고 있나요? 표시됩니까, 상호 작용합니까, 해제됩니까, 등입니다.
-   ![제안](assets/schema-fieldgroup-proposition.png)
+1. **[!UICONTROL 필드 그룹 추가]** 대화 상자에서 ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)을 통해 `proposition`을(를) 검색하고 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]**&#x200B;을 선택하고 **[!UICONTROL 필드 그룹 추가]**를 선택합니다. 이 필드 그룹은 제공 오퍼와 관련된 경험 이벤트 데이터를 수집, 결정 및 기타 매개 변수의 일부로 수집합니다(이 단원의 뒷부분 참조). 하지만 또한 그 제안은 어떻게 되어가고 있나요? 전시되고, 상호 작용하고, 기각되는 등의 작업을 수행합니까?
+   ![제안](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. **[!UICONTROL 저장]**&#x200B;을 선택하여 스키마에 변경 내용을 저장합니다.
 
 
@@ -100,8 +98,8 @@ Assurance에서 설정의 유효성을 검사하려면:
 1. Assurance UI로 이동합니다.
 1. 왼쪽 레일에서 **[!UICONTROL 구성]**&#x200B;을 선택하고 ![OFFER DECISIONING 및 TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래의 **[!UICONTROL 설치 확인]** 옆에 있는 **[!UICONTROL 추가]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. 왼쪽 레일에서 **[!UICONTROL 설정 유효성 검사]**&#x200B;를 선택합니다. 애플리케이션의 데이터 스트림 설정과 SDK 설정이 모두 검증됩니다.
-   ![AJO 의사 결정 유효성 검사](assets/ajo-decisioning-validation.png)
+1. 왼쪽 레일에서 **[!UICONTROL 설정 유효성 검사]**를 선택합니다. 애플리케이션의 데이터 스트림 설정과 SDK 설정이 모두 검증됩니다.
+   ![AJO 의사 결정 유효성 검사](assets/ajo-decisioning-validation.png){zoomable="yes"}
 
 
 ## 배치 생성
@@ -121,7 +119,7 @@ Assurance에서 설정의 유효성을 검사하려면:
    1. **[!UICONTROL 세부 정보]** 섹션에서 `Mobile JSON`을(를) **[!UICONTROL 이름]**(으)로 입력하고 **[!UICONTROL 채널 유형]**&#x200B;에서 **[!UICONTROL 모바일]**&#x200B;을(를) 선택하고 **[!UICONTROL 콘텐츠 유형]**&#x200B;에서 **[!UICONTROL JSON]**&#x200B;을(를) 선택합니다.
    1. 배치를 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택하십시오.
 
-   ![배치 만들기](assets/ajo-create-placement.png)
+   ![배치 만들기](assets/ajo-create-placement.png){zoomable="yes"}
 
 
 
@@ -132,10 +130,9 @@ Assurance에서 설정의 유효성을 검사하려면:
 1. **[!UICONTROL 오퍼 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 새 오퍼]** 대화 상자에서 **[!UICONTROL 개인 맞춤화된 오퍼]**&#x200B;을 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 새 맞춤형 오퍼 만들기]**&#x200B;의 **[!UICONTROL 세부 정보]** 단계에서:
-   1. 오퍼의 **[!UICONTROL 이름]**(예: `Luma - Juno Jacket`)을 입력하고 **[!UICONTROL 시작 날짜 및 시간]** 및 **[!UICONTROL 종료 날짜 및 시간]**&#x200B;을 입력하십시오. 이 날짜 외에는 의사 결정 엔진에서 해당 오퍼가 선택되지 않습니다.
-   1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
-
-      ![오퍼 - 세부 정보](assets/ajo-offers-details.png)
+   1. 오퍼의 **[!UICONTROL 이름]**(예: `Luma - Juno Jacket`)을 입력하고 **[!UICONTROL 시작 날짜 및 시간]** 및 **[!UICONTROL 종료 날짜 및 시간]**&#x200B;을 입력하십시오. 이 날짜 내의 오퍼만 Decisioning 엔진에서 선택합니다.
+   1. **[!UICONTROL 다음]**을 선택합니다.
+      ![오퍼 - 세부 정보](assets/ajo-offers-details.png){zoomable="yes"}
 
 1. **[!UICONTROL 새 맞춤형 오퍼 만들기]**&#x200B;의 **[!UICONTROL 표시 추가]** 단계에서:
    1. ![채널](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) 목록에서 **[!UICONTROL 모바일]** **[!UICONTROL 모바일]**&#x200B;을 선택하고 **[!UICONTROL 배치]** 목록에서 **[!UICONTROL 모바일 JSON]**&#x200B;을 선택합니다.
@@ -152,19 +149,16 @@ Assurance에서 설정의 유효성을 검사하려면:
          }  
          ```
 
-      1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-
-         ![오퍼 - 사용자 지정 콘텐츠](assets/ajo-offers-customcontent.png)
-   1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
-
-      ![오퍼 표시](assets/ajo-offers-representations.png)
+      1. **[!UICONTROL 저장]**을 선택합니다.
+         ![오퍼 - 사용자 지정 콘텐츠](assets/ajo-offers-customcontent.png){zoomable="yes"}
+   1. **[!UICONTROL 다음]**을 선택합니다.
+      ![오퍼 표시](assets/ajo-offers-representations.png){zoomable="yes"}
 
 1. **[!UICONTROL 개인 맞춤화된 새 오퍼 만들기]**&#x200B;의 **[!UICONTROL 제약 조건 추가]** 단계에서:
    1. **[!UICONTROL 우선 순위]**&#x200B;을(를) `10`(으)로 설정합니다.
    1. **[!UICONTROL 한도 포함]**&#x200B;을 해제합니다.
-   1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
-
-      ![오퍼 - 제한](assets/ajo-offers-constraints.png)
+   1. **[!UICONTROL 다음]**을 선택합니다.
+      ![오퍼 - 제한](assets/ajo-offers-constraints.png){zoomable="yes"}
 
 1. **[!UICONTROL 새 개인 맞춤화된 오퍼 만들기]**&#x200B;의 **[!UICONTROL 검토]** 단계에서:
    1. 오퍼를 검토한 다음 **[!UICONTROL 마침]**&#x200B;을 선택합니다.
@@ -214,7 +208,7 @@ Assurance에서 설정의 유효성을 검사하려면:
    1. **[!UICONTROL 오퍼 저장]** 대화 상자에서 **[!UICONTROL 저장 및 승인]**&#x200B;을 선택합니다.
 
 이제 다음 오퍼 목록이 있어야 합니다.
-![오퍼 목록](assets/ajo-offers-list.png)
+![오퍼 목록](assets/ajo-offers-list.png){zoomable="yes"}
 
 
 ## 컬렉션 만들기
@@ -228,7 +222,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 1. **[!DNL Luma - Mobile App Collection]**&#x200B;에서 컬렉션에 포함할 오퍼를 선택합니다. 이 자습서에서는 만든 오퍼 5개를 선택합니다. **[!DNL Luma]**&#x200B;을(를) 입력하는 등의 방법으로 검색 필드를 사용하여 목록을 쉽게 필터링할 수 있습니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
-   ![오퍼 - 컬렉션](assets/ajo-collection-offersselected.png)
+   ![오퍼 - 컬렉션](assets/ajo-collection-offersselected.png){zoomable="yes"}
 
 
 ## 의사 결정 만들기
@@ -243,7 +237,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 * 자격 규칙: 예를 들어, 오퍼는 특정 대상에만 사용할 수 있습니다.
 * 순위 방법: 여러 오퍼를 사용할 수 있는 경우 순위를 매기는 데 사용할 방법(예: 오퍼 우선 순위, 공식 또는 AI 모델 사용)을 선택합니다.
 
-배치, 규칙, 등급, 오퍼, 표시, 컬렉션, 의사 결정 등이 서로 상호 작용하고 관계를 맺는 방식을 더 잘 이해하려면 [오퍼를 만들고 관리하는 주요 단계](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=ko)를 참조하십시오. 이 단원은 Journey Optimizer - 의사 결정 관리 내에서 결정을 정의하는 유연성보다는 의사 결정의 결과를 사용하는 데에만 중점을 둡니다.
+배치, 규칙, 등급, 오퍼, 표시, 컬렉션, 의사 결정 등이 서로 상호 작용하고 관계를 맺는 방법을 이해하려면 [오퍼를 만들고 관리하는 주요 단계](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/decisioning/offer-decisioning/get-started-decision/key-steps)를 참조하십시오. 이 단원은 Journey Optimizer - 의사 결정 관리 내에서 결정을 정의하는 유연성보다는 의사 결정의 결과를 사용하는 데에만 중점을 둡니다.
 
 1. Journey Optimizer UI의 왼쪽 레일에서 **[!UICONTROL 오퍼]**&#x200B;를 선택합니다.
 1. 상단 표시줄에서 **[!UICONTROL 결정]**&#x200B;을 선택합니다.
@@ -258,11 +252,13 @@ Assurance에서 설정의 유효성을 검사하려면:
       1. **[!UICONTROL 오퍼 컬렉션 추가]** 대화 상자에서 오퍼 컬렉션을 선택합니다. 예: **[!DNL Luma - Mobile App Collection]**.
       1. **[!UICONTROL 추가]**&#x200B;를 선택합니다.
 
-         ![결정 - 컬렉션 선택](assets/ajo-decision-selectcollection.png)
+         ![결정 - 컬렉션 선택](assets/ajo-decision-selectcollection.png){zoomable="yes"}
+
    1. **[!UICONTROL 자격 요건]**&#x200B;에 대해 **[!UICONTROL 없음]**&#x200B;을 선택하고 **[!UICONTROL 오퍼 우선 순위]**&#x200B;를 **[!UICONTROL 순위 지정 방법]**&#x200B;으로 선택하십시오.
    1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
-      ![결정 범위](assets/ajo-decision-scopes.png).
+      ![결정 범위](assets/ajo-decision-scopes.png){zoomable="yes"}
+
 1. **[!UICONTROL 새 오퍼 결정 만들기]**&#x200B;의 **[!UICONTROL 대체 오퍼 추가]** 단계에서:
    1. 대체 오퍼(예: **[!DNL Luma - Fallback offer]**)를 선택하십시오.
    1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
@@ -278,7 +274,9 @@ Assurance에서 설정의 유효성을 검사하려면:
 1. 결정을 선택합니다(예: **[!DNL Luma - Mobile App Decision]**).
 1. **[!UICONTROL 결정 범위]** 타일에서 ![복사](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 복사]**&#x200B;를 선택합니다.
 1. 상황별 메뉴에서 **[!UICONTROL 결정 범위]**&#x200B;를 선택합니다.
-   ![결정 범위 복사](assets/ajo-copy-decisionscope.png)
+
+   ![결정 범위 복사](assets/ajo-copy-decisionscope.png){zoomable="yes"}
+
 1. 텍스트 편집기를 사용하여 나중에 사용할 수 있도록 결정 범위를 붙여넣습니다. 결정 범위에는 다음과 같은 JSON 형식이 있습니다.
 
    ```json
@@ -296,6 +294,10 @@ Assurance에서 설정의 유효성을 검사하려면:
 >
 >[SDK 설치](install-sdks.md) 섹션을 완료한 경우 SDK이 이미 설치되어 있으므로 이 단계를 건너뛸 수 있습니다.
 >
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Xcode에서 패키지 종속 항목의 패키지 목록에 [AEP 최적화](https://github.com/adobe/aepsdk-messaging-ios)가 추가되었는지 확인합니다. [Swift 패키지 관리자](install-sdks.md#swift-package-manager)를 참조하세요.
 1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]**(으)로 이동합니다.
@@ -329,13 +331,17 @@ Assurance에서 설정의 유효성을 검사하려면:
 
    ```swift
    // set up the XDM dictionary, define decision scope and call update proposition API
-   Task {  
+   Task {
       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
       let identityMap = ["identityMap" : ecid]
       let xdmData = ["xdm" : identityMap]
       let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
       Optimize.clearCachedPropositions()
-      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData) { data, error in
+            if let error = error {
+               Logger.aepMobileSDK.error("MobileSDK - updatePropositionsAT: Error updating propositions: \(error.localizedDescription)")
+            }
+      }
    }
    ```
 
@@ -344,7 +350,7 @@ Assurance에서 설정의 유효성을 검사하려면:
    * 오퍼를 제공해야 하는 프로필을 식별하는 ECID가 포함된 XDM 사전 `xdmData`을(를) 설정합니다.
    * `decisionScope`을(를) 정의합니다. 이 개체는 Journey Optimizer - 의사 결정 관리 인터페이스에서 정의한 결정에 기반하며 [의사 결정 만들기](#create-a-decision)에서 복사한 의사 결정 범위를 사용하여 정의합니다.  Luma 앱은 다음 JSON 형식을 기반으로 범위 매개 변수를 검색하는 구성 파일(`decisions.json`)을 사용합니다.
 
-     ```swift
+     ```json
      "scopes": [
          {
              "name": "name of the scope",
@@ -355,9 +361,9 @@ Assurance에서 설정의 유효성을 검사하려면:
      ]
      ```
 
-     그러나 Optimize API가 적절한 매개 변수(`activityId`, `placementId` 및 `itemCount`)를 가져오도록 모든 종류의 구현을 사용하여 구현에 올바른 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 개체를 만들 수 있습니다. <br/>참고: `decisions.json` 파일의 다른 키 값은 나중에 사용하기 위한 것이며 관련성이 없으며 현재 이 단원에서 자습서의 일부로 사용됩니다.
+     그러나 Optimize API가 적절한 매개 변수(`activityId`, `placementId` 및 `itemCount`)를 가져오도록 모든 종류의 구현을 사용하여 구현에 올바른 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 개체를 만들 수 있습니다. <br/>자세한 정보: `decisions.json` 파일의 다른 키 값은 나중에 사용하기 위한 것이며 관련성이 없으며 현재 이 단원 및 자습서의 일부로 사용됩니다.
 
-   * [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac) 및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions) API를 호출합니다.  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
+   * [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) 및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler) API를 호출합니다.  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
 
 1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]**(으)로 이동합니다. `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 함수를 찾아 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출입니다.
 
@@ -382,15 +388,114 @@ Assurance에서 설정의 유효성을 검사하려면:
    await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
    ```
 
+>[!TAB Android]
 
+
+1. Android Studio에서 [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android)이(가) **[!UICONTROL Android:app]** VDown **[!UICONTROL >]** Gradle Scripts![의 ](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
+1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]**(으)로 이동합니다.
+1. `Optimize`이(가) 가져오기 목록의 일부인지 확인하십시오.
+
+   ```kotlin
+   import com.adobe.marketing.mobile.optimize.Optimize
+   ```
+
+1. `Optimize.EXTENSION`이(가) 등록 중인 확장 배열의 일부인지 확인하십시오.
+
+   ```kotlin
+   val extensions = listOf(
+      Identity.EXTENSION,
+      Lifecycle.EXTENSION,
+      Signal.EXTENSION,
+      Edge.EXTENSION,
+      Consent.EXTENSION,
+      UserProfile.EXTENSION,
+      Places.EXTENSION,
+      Messaging.EXTENSION,
+      Optimize.EXTENSION,
+      Assurance.EXTENSION
+   )
+   ```
+
+1. Xcode 프로젝트 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decisions.json]**(으)로 이동합니다. Journey Optimizer 인터페이스에서 복사한 결정 범위 세부 정보로 `activityId` 및 `placementId` 값을 업데이트합니다.
+
+1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL 모델]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) ` 함수를 찾습니다. 다음 코드를 추가합니다.
+
+   ```kotlin
+   // set up the XDM dictionary, define decision scope and call update proposition API
+   withContext(Dispatchers.IO) {
+      val ecidMap = mapOf("ECID" to mapOf("id" to ecid, "primary" to true))
+      val identityMap = mapOf("identityMap" to ecidMap)
+      val xdmData = mapOf("xdm" to identityMap)
+      val decisionScope = DecisionScope(activityId, placementId, itemCount)
+      Optimize.clearCachedPropositions()
+      Optimize.updatePropositions(listOf(decisionScope), xdmData, null, object :
+            AdobeCallbackWithOptimizeError<MutableMap<DecisionScope?, OptimizeProposition?>?> {
+            override fun fail(optimizeError: AEPOptimizeError?) {
+               val responseError = optimizeError
+               Log.i("MobileSDK", "updatePropositionsOD error: ${responseError}")
+            }
+            override fun call(propositionsMap: MutableMap<DecisionScope?, OptimizeProposition?>?) {
+               val responseMap = propositionsMap
+               Log.i("MobileSDK", "updatePropositionsOD call: ${responseMap}")
+            }
+      })
+   }
+   ```
+
+   이 함수:
+
+   * 오퍼를 제공해야 하는 프로필을 식별하는 ECID가 포함된 XDM 사전 `xdmData`을(를) 설정합니다.
+   * `decisionScope`을(를) 정의합니다. 이 개체는 Journey Optimizer - 의사 결정 관리 인터페이스에서 정의한 결정에 기반하며 [의사 결정 만들기](#create-a-decision)에서 복사한 의사 결정 범위를 사용하여 정의합니다.  Luma 앱은 다음 JSON 형식을 기반으로 범위 매개 변수를 검색하는 구성 파일(`decisions.json`)을 사용합니다.
+
+     ```json
+     "scopes": [
+         {
+             "name": "name of the scope",
+             "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
+             "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
+             "itemCount": 2
+         }
+     ]
+     ```
+
+     그러나 Optimize API가 적절한 매개 변수(`activityId`, `placementId` 및 `itemCount`)를 가져오도록 모든 종류의 구현을 사용하여 구현에 올바른 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 개체를 만들 수 있습니다. <br/>자세한 정보: `decisions.json` 파일의 다른 키 값은 나중에 사용하기 위한 것이며 관련성이 없으며 현재 이 단원 및 자습서의 일부로 사용됩니다.
+
+   * [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) 및 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler) API를 호출합니다.  이러한 함수는 캐시된 모든 제안을 지우고 이 프로필에 대한 제안을 업데이트합니다.
+
+1. Xcode 프로젝트 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL 보기]** > **[!UICONTROL EdgeOffers.kt]**(으)로 이동합니다. `suspend fun onPropositionsUpdateOD(ecid: String, activityId: String, placementId: String, itemCount: Int)` 함수를 찾아 이 함수의 코드를 검사합니다. 이 함수에서 가장 중요한 부분은 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API 호출입니다.
+
+   * 의사 결정 범위(Journey Optimizer - 의사 결정 관리에서 정의함)를 기반으로 현재 프로필에 대한 제안을 검색합니다.
+   * 제안에서 오퍼를 검색합니다.
+   * 앱에서 제대로 표시될 수 있도록 오퍼의 콘텐츠를 래핑 해제합니다.
+   * 오퍼를 반환합니다.
+
+1. **[!DNL EdgeOffers.kt]**&#x200B;에서 `LaunchedEffect` 함수를 추가하여 Personalization 탭을 시작할 때 오퍼가 새로 고쳐지도록 합니다.
+
+   ```kotlin
+   // recompose the view when the number of received offers changes
+   LaunchedEffect(offersOD.count()) {
+       updatePropositionsOD(
+           currentEcid,
+           decision.activityId,
+           decision.placementId,
+           decision.itemCount
+       )
+       offersOD =
+           onPropositionsUpdateOD(decision.activityId, decision.placementId, decision.itemCount)
+   }
+   ```
+
+>[!ENDTABS]
 
 ## 앱을 사용하여 유효성 검사
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg)을 사용하여 시뮬레이터나 Xcode의 실제 장치에서 앱을 다시 빌드하고 실행합니다.
 
-1. **[!DNL Personalisation]** 탭으로 이동합니다.
-
-1. **[!DNL Edge Personalisation]**&#x200B;를 선택합니다.
+1. **[!DNL Personalization]** 탭으로 이동합니다.
 
 1. 맨 위로 스크롤하면 **[!DNL DECISION LUMA - MOBILE APP DECISION]** 타일에서 정의한 컬렉션에서 두 개의 무작위 오퍼가 표시됩니다.
 
@@ -398,6 +503,20 @@ Assurance에서 설정의 유효성을 검사하려면:
 
    모든 오퍼에 동일한 우선 순위를 부여했으므로 오퍼는 임의적이며 의사 결정 순위는 우선 순위를 기반으로 합니다.
 
+
+>[!TAB Android]
+
+1. ![재생](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg)을 사용하여 시뮬레이터 또는 Android Studio의 실제 장치에서 앱을 다시 빌드하고 실행합니다.
+
+1. **[!DNL Personalization]** 탭으로 이동합니다.
+
+1. 맨 위로 스크롤하면 **[!DNL DECISION LUMA - MOBILE APP DECISION]** 타일에서 정의한 컬렉션의 맨 위 상자에 두 개의 무작위 오퍼가 표시됩니다.
+
+   <img src="assets/ajo-app-offers-android.png" width="300">
+
+   모든 오퍼에 동일한 우선 순위를 부여했으므로 오퍼는 임의적이며 의사 결정 순위는 우선 순위를 기반으로 합니다.
+
+>[!ENDTABS]
 
 ## Assurance에서 구현의 유효성 검사
 
@@ -408,7 +527,7 @@ Assurance에서 오퍼 구현의 유효성을 검사하려면:
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. 왼쪽 레일에서 **[!UICONTROL 검토 및 시뮬레이션]**&#x200B;을 선택합니다. 두 데이터 스트림 설정의 유효성을 검사하고 애플리케이션에서 SDK 설정을 확인합니다.
 1. 상단 표시줄에서 **[!UICONTROL 요청]**&#x200B;을(를) 선택합니다. **[!UICONTROL 오퍼]** 요청이 표시됩니다.
-   ![AJO 의사 결정 유효성 검사](assets/assurance-decisioning-requests.png)
+   ![AJO 의사 결정 유효성 검사](assets/assurance-decisioning-requests.png){zoomable="yes"}
 
 1. **[!UICONTROL 시뮬레이션]** 및 **[!UICONTROL 이벤트 목록]** 탭을 탐색하여 추가 기능을 사용할 수 있습니다. Journey Optimizer 의사 결정 관리 설정을 확인하세요.
 
@@ -424,6 +543,6 @@ Assurance에서 오퍼 구현의 유효성을 검사하려면:
 >
 >Experience Platform Mobile SDK용 Offer Decisioning 및 Target 확장을 사용하여 오퍼를 표시하도록 앱을 활성화했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[A/B 테스트 수행](target.md)**
