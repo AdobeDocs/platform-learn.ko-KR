@@ -3,7 +3,7 @@ title: Experience Platform Mobile SDK을 사용하여 모바일 앱에서 이벤
 description: 모바일 앱에서 이벤트 데이터를 추적하는 방법에 대해 알아봅니다.
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: a7768dcb056a57f4b170c393525e404f854be774
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '1678'
 ht-degree: 1%
@@ -200,9 +200,9 @@ Edge.sendEvent(productViewEvent, null)
 앱에 서로 다른 상거래 제품 관련 작업이 있으며 사용자가 수행한 다음 작업에 따라 이벤트를 전송하려고 합니다.
 
 * 보기: 사용자가 특정 제품을 볼 때 발생합니다.
-* 장바구니에 추가: 사용자가 탭할 때 제품 세부 정보 화면의 <img src="assets/addtocart.png" width="20"/>,
-* 나중에 저장: 사용자가 탭할 때 <img src="assets/saveforlater.png" width="15"/> / 제품 세부 정보 화면의 <img src="assets/heart.png" width="25"/>,
-* 구매: 사용자가 탭할 때 제품 세부 정보 화면의 <img src="assets/purchase.png" width="20"/>.
+* 장바구니에 추가: 사용자가 탭할 때 제품 세부 정보 화면의 <img src="assets/addtocart.png" width="20" />,
+* 나중에 저장: 사용자가 탭할 때 <img src="assets/saveforlater.png" width="15" /> / 제품 세부 정보 화면의 <img src="assets/heart.png" width="25" />,
+* 구매: 사용자가 탭할 때 제품 세부 정보 화면의 <img src="assets/purchase.png" width="20" />.
 
 재사용 가능한 방식으로 상거래 관련 경험 이벤트 전송을 구현하려면 전용 함수를 사용합니다.
 
@@ -249,23 +249,23 @@ Edge.sendEvent(productViewEvent, null)
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. 각 버튼에 대해(<img src="assets/saveforlater.png" width="15"/>, <img src="assets/addtocart.png" width="20"/> 및 <img src="assets/purchase.png" width="20"/>) 도구 모음에서 `ATTrackingManager.trackingAuthorizationStatus == .authorized` 종료 내에 관련 호출을 추가합니다.
+   1. 각 버튼에 대해(<img src="assets/saveforlater.png" width="15" />, <img src="assets/addtocart.png" width="20" /> 및 <img src="assets/purchase.png" width="20" />) 도구 모음에서 `ATTrackingManager.trackingAuthorizationStatus == .authorized` 종료 내에 관련 호출을 추가합니다.
 
-      1. 대상 <img src="assets/saveforlater.png" width="15"/>:
+      1. 대상 <img src="assets/saveforlater.png" width="15" />:
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. 대상 <img src="assets/addtocart.png" width="20"/>:
+      1. 대상 <img src="assets/addtocart.png" width="20" />:
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. 대상 <img src="assets/purchase.png" width="20"/>:
+      1. 대상 <img src="assets/purchase.png" width="20" />:
 
          ```swift
          // Send purchase commerce experience event
@@ -308,23 +308,23 @@ Edge.sendEvent(productViewEvent, null)
       MobileSDK.shared.sendCommerceExperienceEvent("productViews", product)
       ```
 
-   1. 각 버튼에 대해(<img src="assets/heart.png" width="25"/>, <img src="assets/addtocart.png" width="20"/> 및 <img src="assets/purchase.png" width="20"/>) 도구 모음에서 `scope.launch`의 `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement` 내에 관련 호출을 추가합니다.
+   1. 각 버튼에 대해(<img src="assets/heart.png" width="25" />, <img src="assets/addtocart.png" width="20" /> 및 <img src="assets/purchase.png" width="20" />) 도구 모음에서 `scope.launch`의 `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement` 내에 관련 호출을 추가합니다.
 
-      1. 대상 <img src="assets/heart.png" width="25"/>:
+      1. 대상 <img src="assets/heart.png" width="25" />:
 
          ```kotlin
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("saveForLaters", product)
          ```
 
-      1. 대상 <img src="assets/addtocart.png" width="20"/>:
+      1. 대상 <img src="assets/addtocart.png" width="20" />:
 
          ```kotlin
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("productListAdds", product)
          ```
 
-      1. 대상 <img src="assets/purchase.png" width="20"/>:
+      1. 대상 <img src="assets/purchase.png" width="20" />:
 
          ```kotlin
          // Send purchase commerce experience event
@@ -610,7 +610,7 @@ Edge.sendEvent(event, null)
       * 맵을 사용하여 경험 이벤트를 설정합니다.
       * [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API를 사용하여 경험 이벤트를 보냅니다.
 
-1. **[!UICONTROL Android]** ![V자형 화살표&#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;보기&#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**&#x200B;로 이동합니다.
+1. **[!UICONTROL Android]** ![V자형 화살표&#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;보기&#x200B;]**>**[!UICONTROL  LoginSheet.kt ]**로 이동합니다.
 
    1. **[!UICONTROL Button]** **[!UICONTROL onClick]** 이벤트에 다음 강조 표시된 코드를 추가합니다.
 
@@ -638,9 +638,9 @@ Edge.sendEvent(event, null)
    1. 탭 표시줄에서 **[!UICONTROL 홈]**&#x200B;을(를) 선택하고 홈 화면에 **[!UICONTROL ECID]**, **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]**&#x200B;이 표시되는지 확인하십시오.
    1. 탭 표시줄에서 **[!DNL Products]**&#x200B;을(를) 선택합니다.
    1. 제품을 선택합니다.
-   1. 선택 <img src="assets/saveforlater.png" width="15"/>&#x200B;(iOS) 또는 <img src="assets/heart.png" width="25"/>&#x200B;(Android).
-   1. 선택 <img src="assets/addtocart.png" width="20"/>.
-   1. 선택 <img src="assets/purchase.png" width="15"/>.
+   1. 선택 <img src="assets/saveforlater.png" width="15" />&#x200B;(iOS) 또는 <img src="assets/heart.png" width="25" />&#x200B;(Android).
+   1. 선택 <img src="assets/addtocart.png" width="20" />.
+   1. 선택 <img src="assets/purchase.png" width="15" />.
 
 >[!BEGINTABS]
 
@@ -681,6 +681,6 @@ Edge.sendEvent(event, null)
 >
 >이제 Adobe Experience Platform Edge Network에 대한 상거래, 앱 상호 작용 및 화면 추적 이벤트를 추적하도록 앱을 설정했습니다. 그리고 데이터스트림에 정의한 모든 서비스에 연결합니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[WebViews 처리](web-views.md)**

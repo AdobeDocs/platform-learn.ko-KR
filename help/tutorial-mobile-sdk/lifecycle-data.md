@@ -3,7 +3,7 @@ title: Platform Mobile SDK으로 라이프사이클 데이터 수집
 description: 모바일 앱에서 라이프사이클 데이터를 수집하는 방법에 대해 알아봅니다.
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -86,7 +86,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 1. 앱이 백그라운드로 전환되면 앱의 `override fun onActivityPaused` 함수에서 라이프사이클 데이터 수집을 일시 중지하려고 합니다. `override fun onActivityPaused(activity: Activity)`에 이 코드 추가:
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
@@ -106,25 +106,25 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 이전 연습에서는 전경 및 배경 이벤트를 Adobe Experience Platform Mobile SDK에 전달했습니다. 이러한 이벤트를 Platform Edge Network에 전달하려면 다음을 수행하십시오.
 
-1. Tags 속성에서 **[!UICONTROL 규칙]**&#x200B;을(를) 선택합니다.
+1. Tags 속성에서 **[!UICONTROL 규칙]**을(를) 선택합니다.
    ![규칙 만들기](assets/rule-create.png){zoomable="yes"}
 1. 사용할 라이브러리로 **[!UICONTROL 초기 빌드]**&#x200B;를 선택하십시오.
-1. **[!UICONTROL 새 규칙 만들기]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 새 규칙 만들기]**를 선택합니다.
    ![새 규칙 만들기](assets/rules-create-new.png){zoomable="yes"}
 1. **[!UICONTROL 규칙 만들기]** 화면에서 `Application Status`이름&#x200B;**[!UICONTROL 에 대해]**&#x200B;을(를) 입력하십시오.
-1. ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래에서 **[!UICONTROL 추가]** **[!UICONTROL 추가]**&#x200B;를 선택합니다.
+1. ![이벤트](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래에서 **[!UICONTROL 추가]** **[!UICONTROL 추가]**를 선택합니다.
    ![규칙 만들기 대화 상자](assets/rule-create-name.png){zoomable="yes"}
 1. **[!UICONTROL 이벤트 구성]** 단계:
    1. **[!UICONTROL Mobile Core]**&#x200B;을(를) **[!UICONTROL Extension]**(으)로 선택합니다.
    1. **[!UICONTROL 전경]**&#x200B;을(를) **[!UICONTROL 이벤트 유형]**(으)로 선택합니다.
-   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
+   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
       ![규칙 이벤트 구성](assets/rule-event-configuration.png){zoomable="yes"}
-1. **[!UICONTROL 규칙 만들기]** 화면으로 돌아가서 ![모바일 코어 - 전경](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 옆에 있는 **[!UICONTROL 추가]** **[!UICONTROL 추가]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 규칙 만들기]** 화면으로 돌아가서 ![모바일 코어 - 전경](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 옆에 있는 **[!UICONTROL 추가]** **[!UICONTROL 추가]**를 선택합니다.
    ![다음 이벤트 구성](assets/rule-event-configuration-next.png){zoomable="yes"}
 1. **[!UICONTROL 이벤트 구성]** 단계:
    1. **[!UICONTROL Mobile Core]**&#x200B;을(를) **[!UICONTROL Extension]**(으)로 선택합니다.
    1. **[!UICONTROL Background]**&#x200B;을(를) **[!UICONTROL 이벤트 유형]**(으)로 선택합니다.
-   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
+   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
       ![규칙 이벤트 구성](assets/rule-event-configuration-background.png){zoomable="yes"}
 1. **[!UICONTROL 규칙 만들기]** 화면으로 돌아가서 ![작업](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래의 **[!UICONTROL 추가]** **[!UICONTROL 추가]**&#x200B;를 선택하십시오.
 
@@ -133,11 +133,11 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 1. **[!UICONTROL 작업 구성]** 단계:
    1. **[!UICONTROL Adobe Experience Edge Network]**&#x200B;을(를) **[!UICONTROL 확장]**(으)로 선택합니다.
    1. **[!UICONTROL 이벤트를 Edge Network에 전달]**&#x200B;을(를) **[!UICONTROL 작업 형식]**(으)로 선택합니다.
-   1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
+   1. **[!UICONTROL 변경 내용 유지]**를 선택합니다.
       ![규칙 작업 구성](assets/rule-action-configuration.png){zoomable="yes"}
-1. **[!UICONTROL 라이브러리에 저장]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 라이브러리에 저장]**을 선택합니다.
    ![규칙 - 라이브러리에 저장](assets/rule-save-to-library.png){zoomable="yes"}
-1. 라이브러리를 다시 빌드하려면 **[!UICONTROL 빌드]**&#x200B;를 선택하십시오.
+1. 라이브러리를 다시 빌드하려면 **[!UICONTROL 빌드]**를 선택하십시오.
    ![규칙 - 빌드](assets/rule-build.png){zoomable="yes"}
 
 속성을 성공적으로 빌드하면 이벤트가 Platform Edge Network으로 전송되고 이벤트는 데이터 스트림 구성에 따라 다른 애플리케이션 및 서비스로 전달됩니다.
@@ -150,6 +150,6 @@ Assurance에서 XDM 데이터를 포함하는 **[!UICONTROL 응용 프로그램 
 >
 >이제 앱을 설정하여 애플리케이션 상태(전경, 배경) 이벤트를 Adobe Experience Platform Edge Network 및 데이터 스트림에 정의한 모든 서비스로 보냅니다.
 >
-> Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+> Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[이벤트 데이터 추적](events.md)**
