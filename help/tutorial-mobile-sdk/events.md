@@ -610,7 +610,7 @@ Edge.sendEvent(event, null)
       * 맵을 사용하여 경험 이벤트를 설정합니다.
       * [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API를 사용하여 경험 이벤트를 보냅니다.
 
-1. **[!UICONTROL Android]** ![V자형 화살표&#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;보기&#x200B;]**>**[!UICONTROL  LoginSheet.kt ]**로 이동합니다.
+1. **[!UICONTROL Android]** ![V자형 화살표&#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;보기&#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**&#x200B;로 이동합니다.
 
    1. **[!UICONTROL Button]** **[!UICONTROL onClick]** 이벤트에 다음 강조 표시된 코드를 추가합니다.
 
