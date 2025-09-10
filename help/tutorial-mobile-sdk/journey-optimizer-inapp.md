@@ -180,10 +180,10 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 ## Assurance으로 설정 유효성 검사
 
 1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
-1. Assurance UI에서 **[!UICONTROL 구성]**을 선택합니다.
+1. Assurance UI에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
    ![클릭 구성](assets/push-validate-config.png){zoomable="yes"}
 1. ![인앱 메시지](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 옆에 있는 **[!UICONTROL Plus]** 단추를 선택하세요.
-1. **[!UICONTROL 저장]**을 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    ![저장](assets/assurance-in-app-config.png){zoomable="yes"}
 1. 왼쪽 탐색에서 **[!UICONTROL 인앱 메시지]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 유효성 검사]** 탭을 선택합니다. 오류가 발생하지 않는지 확인합니다.
@@ -207,7 +207,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 1. Journey Optimizer UI의 왼쪽 레일에서 **[!UICONTROL 캠페인]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 캠페인 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 캠페인 만들기]** 대화 상자에서 ![시계](/help/assets/icons/Clock.svg) **[!UICONTROL 예약 - 마케팅]**&#x200B;을 선택하고 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
-1. **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**화면에서:
+1. **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**&#x200B;화면에서:
 
    1. **[!UICONTROL 속성]** 탭에서:
 
@@ -252,7 +252,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 1. **[!UICONTROL 활성화하려면 검토]**&#x200B;를 선택하십시오. **[!UICONTROL 콘텐츠]**, **[!UICONTROL 속성]**, **[!UICONTROL 작업]** 이상의 구성을 선택적으로 편집하려면 ![편집](/help/assets/icons/Edit.svg)을 선택하세요.
 1. **[!UICONTROL 활성화 검토(*캠페인 이름*)]** 화면에서 **[!UICONTROL 활성화]**&#x200B;를 선택합니다.
-1. 잠시 후 **_캠페인_** 목록에 상태가 **[!UICONTROL 라이브]**&#x200B;인 **[!UICONTROL 캠페인 이름]**이 표시됩니다.
+1. 잠시 후 **_캠페인_** 목록에 상태가 **[!UICONTROL 라이브]**&#x200B;인 **[!UICONTROL 캠페인 이름]**&#x200B;이 표시됩니다.
    ![캠페인 목록](assets/ajo-campaign-list.png){zoomable="yes"}
 
 
@@ -264,7 +264,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 >[!TAB iOS]
 
-1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action``data` 함수를 호출하는 다음 코드를 추가합니다.
+1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action` `data` 함수를 호출하는 다음 코드를 추가합니다.
 
 
    ```swift
@@ -283,7 +283,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 >[!TAB Android]
 
-1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `fun sendTrackAction(action: String, data: Map<String, String>?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action``data` 함수를 호출하는 다음 코드를 추가합니다.
+1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `fun sendTrackAction(action: String, data: Map<String, String>?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action` `data` 함수를 호출하는 다음 코드를 추가합니다.
 
 
    ```kotlin

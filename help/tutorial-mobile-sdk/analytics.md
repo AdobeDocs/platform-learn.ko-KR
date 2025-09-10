@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >사용자 지정 필드는 Experience Cloud 조직 식별자 아래에 위치합니다.
 >
-테넌트 이름 `_techmarketingdemos`이(가) 조직의 고유 값으로 대체되었습니다.
+>테넌트 이름 `_techmarketingdemos`이(가) 조직의 고유 값으로 대체되었습니다.
 
 
 
@@ -313,7 +313,7 @@ Analytics 설정에서 [머천다이징 eVar](https://experienceleague.adobe.com
 
 권장되는 Edge Network을 사용하도록 마이그레이션하고자 하는 경우 다음과 같은 옵션이 있습니다.
 
-* [이벤트 데이터 추적](configure-tags.md#extension-configuration) 방법에 대한 단원에서 설명한 대로 [`Edge.sendEvent`Edge Network 확장](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent)을 구현하고 [](events.md) API를 사용합니다. 이 자습서에서는 이 구현에 중점을 둡니다.
+* [이벤트 데이터 추적](configure-tags.md#extension-configuration) 방법에 대한 단원에서 설명한 대로 [`Edge.sendEvent`Edge Network 확장](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent)을 구현하고 [&#128279;](events.md) API를 사용합니다. 이 자습서에서는 이 구현에 중점을 둡니다.
 * [Edge Bridge 확장](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)을 구현하고 [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) 및 [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API 호출을 계속 사용합니다. 자세한 내용 및 별도의 자습서는 [Edge Bridge 확장 구현](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)을 참조하십시오.
 
 

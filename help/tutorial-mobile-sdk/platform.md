@@ -52,18 +52,18 @@ Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데�
 
 1. ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 데이터 집합 만들기]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL 스키마에서 데이터 집합 만들기]**를 선택합니다.
+1. **[!UICONTROL 스키마에서 데이터 집합 만들기]**&#x200B;를 선택합니다.
    ![데이터 집합 홈](assets/dataset-create.png){zoomable="yes"}
 
 1. 스키마를 검색합니다. 예를 들어 검색 필드에서 `Luma Mobile`을(를) 사용하는 경우가 있습니다.
 1. 스키마를 선택하세요(예: **[!DNL Luma Mobile App Event Schema]**).
 
-1. **[!UICONTROL 다음]**을 선택합니다.
+1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
    ![데이터 집합 구성](assets/dataset-configure.png){zoomable="yes"}
 
 1. **[!UICONTROL 이름]**(예: `Luma Mobile App Events Dataset` 및 **[!UICONTROL 설명]**)을 제공하십시오.
 
-1. **[!UICONTROL 마침]**을 선택합니다.
+1. **[!UICONTROL 마침]**&#x200B;을 선택합니다.
    ![데이터 집합 완료](assets/dataset-finish.png){zoomable="yes"}
 
 
@@ -144,7 +144,7 @@ Platform 인터페이스에서
 
 ![ID 값 조회](assets/platform-profile-lookup.png){zoomable="yes"}
 
-**[!UICONTROL 세부 정보]** 화면에서 **[!UICONTROL **&#x200B;연결된 ID **]**를 포함하여 사용자에 대한 기본 정보를 볼 수 있습니다.
+**[!UICONTROL 세부 정보]** 화면에서 **[!UICONTROL **&#x200B;연결된 ID &#x200B;**]**&#x200B;를 포함하여 사용자에 대한 기본 정보를 볼 수 있습니다.
 ![프로필 세부 정보](assets/platform-profile-details.png){zoomable="yes"}
 
 **[!UICONTROL 이벤트]**&#x200B;에서 이 사용자의 모바일 앱 구현에서 수집된 이벤트를 볼 수 있습니다.

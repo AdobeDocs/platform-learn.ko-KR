@@ -86,7 +86,7 @@ Journey Optimizer 의사 결정 관리를 사용하면 적절한 시기에 모�
 1. 상단 표시줄에서 **[!UICONTROL 찾아보기]**&#x200B;를 선택합니다.
 1. 스키마를 선택하여 엽니다.
 1. 스키마 편집기에서 필드 그룹 옆에 있는 ![추가](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 추가]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 필드 그룹 추가]** 대화 상자에서 ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)을 통해 `proposition`을(를) 검색하고 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]**&#x200B;을 선택하고 **[!UICONTROL 필드 그룹 추가]**를 선택합니다. 이 필드 그룹은 제공 오퍼와 관련된 경험 이벤트 데이터를 수집, 결정 및 기타 매개 변수의 일부로 수집합니다(이 단원의 뒷부분 참조). 하지만 또한 그 제안은 어떻게 되어가고 있나요? 전시되고, 상호 작용하고, 기각되는 등의 작업을 수행합니까?
+1. **[!UICONTROL 필드 그룹 추가]** 대화 상자에서 ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg)을 통해 `proposition`을(를) 검색하고 **[!UICONTROL 경험 이벤트 - 제안 상호 작용]**&#x200B;을 선택하고 **[!UICONTROL 필드 그룹 추가]**&#x200B;를 선택합니다. 이 필드 그룹은 제공 오퍼와 관련된 경험 이벤트 데이터를 수집, 결정 및 기타 매개 변수의 일부로 수집합니다(이 단원의 뒷부분 참조). 하지만 또한 그 제안은 어떻게 되어가고 있나요? 전시되고, 상호 작용하고, 기각되는 등의 작업을 수행합니까?
    ![제안](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. **[!UICONTROL 저장]**&#x200B;을 선택하여 스키마에 변경 내용을 저장합니다.
 
@@ -98,7 +98,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 1. Assurance UI로 이동합니다.
 1. 왼쪽 레일에서 **[!UICONTROL 구성]**&#x200B;을 선택하고 ![OFFER DECISIONING 및 TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 아래의 **[!UICONTROL 설치 확인]** 옆에 있는 **[!UICONTROL 추가]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
-1. 왼쪽 레일에서 **[!UICONTROL 설정 유효성 검사]**를 선택합니다. 애플리케이션의 데이터 스트림 설정과 SDK 설정이 모두 검증됩니다.
+1. 왼쪽 레일에서 **[!UICONTROL 설정 유효성 검사]**&#x200B;를 선택합니다. 애플리케이션의 데이터 스트림 설정과 SDK 설정이 모두 검증됩니다.
    ![AJO 의사 결정 유효성 검사](assets/ajo-decisioning-validation.png){zoomable="yes"}
 
 
@@ -131,7 +131,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 1. **[!UICONTROL 새 오퍼]** 대화 상자에서 **[!UICONTROL 개인 맞춤화된 오퍼]**&#x200B;을 선택하고 **[!UICONTROL 다음]**&#x200B;을 클릭합니다.
 1. **[!UICONTROL 새 맞춤형 오퍼 만들기]**&#x200B;의 **[!UICONTROL 세부 정보]** 단계에서:
    1. 오퍼의 **[!UICONTROL 이름]**(예: `Luma - Juno Jacket`)을 입력하고 **[!UICONTROL 시작 날짜 및 시간]** 및 **[!UICONTROL 종료 날짜 및 시간]**&#x200B;을 입력하십시오. 이 날짜 내의 오퍼만 Decisioning 엔진에서 선택합니다.
-   1. **[!UICONTROL 다음]**을 선택합니다.
+   1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
       ![오퍼 - 세부 정보](assets/ajo-offers-details.png){zoomable="yes"}
 
 1. **[!UICONTROL 새 맞춤형 오퍼 만들기]**&#x200B;의 **[!UICONTROL 표시 추가]** 단계에서:
@@ -149,15 +149,15 @@ Assurance에서 설정의 유효성을 검사하려면:
          }  
          ```
 
-      1. **[!UICONTROL 저장]**을 선택합니다.
+      1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
          ![오퍼 - 사용자 지정 콘텐츠](assets/ajo-offers-customcontent.png){zoomable="yes"}
-   1. **[!UICONTROL 다음]**을 선택합니다.
+   1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
       ![오퍼 표시](assets/ajo-offers-representations.png){zoomable="yes"}
 
 1. **[!UICONTROL 개인 맞춤화된 새 오퍼 만들기]**&#x200B;의 **[!UICONTROL 제약 조건 추가]** 단계에서:
    1. **[!UICONTROL 우선 순위]**&#x200B;을(를) `10`(으)로 설정합니다.
    1. **[!UICONTROL 한도 포함]**&#x200B;을 해제합니다.
-   1. **[!UICONTROL 다음]**을 선택합니다.
+   1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
       ![오퍼 - 제한](assets/ajo-offers-constraints.png){zoomable="yes"}
 
 1. **[!UICONTROL 새 개인 맞춤화된 오퍼 만들기]**&#x200B;의 **[!UICONTROL 검토]** 단계에서:

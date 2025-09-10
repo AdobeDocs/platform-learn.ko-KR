@@ -64,7 +64,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
       ![라이브러리 빌드](assets/tags-save-library.png){zoomable="yes"}
 
-   1. 마지막으로 **[!UICONTROL 작업 라이브러리 선택]** 메뉴에서 **[!UICONTROL 초기 빌드]**를 작업 라이브러리로 선택합니다.
+   1. 마지막으로 **[!UICONTROL 작업 라이브러리 선택]** 메뉴에서 **[!UICONTROL 초기 빌드]**&#x200B;를 작업 라이브러리로 선택합니다.
       ![작업 라이브러리로 선택](assets/tags-working-library.png){zoomable="yes"}
 1. 확장 확인:
 
