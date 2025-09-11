@@ -77,7 +77,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
    ![새 키 만들기](assets/mobile-push-apple-dev-new-key.png){zoomable="yes"}
 
 1. **[!UICONTROL 키 이름]**&#x200B;을 입력하십시오.
-1. **[!UICONTROL Apple 푸시 알림 서비스](APNs)**&#x200B;를 선택하고 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
+1. **[!UICONTROL Apple 푸시 알림 서비스] (APNs)**&#x200B;를 선택하고 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
    1. **[!UICONTROL 키 구성]** 화면의 **[!UICONTROL 환경]** 드롭다운 메뉴에서 **[!UICONTROL 샌드박스 및 프로덕션]**&#x200B;을(를) 선택합니다.
    1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 계속]**&#x200B;을 선택하세요.
@@ -87,7 +87,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 1. 구성을 검토하고 **[!UICONTROL 등록]**&#x200B;을 선택하세요.
 1. `.p8` 개인 키를 다운로드합니다. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
 1. **[!UICONTROL 키 ID]**&#x200B;을(를) 메모하세요. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다.
-1. **[!UICONTROL 팀 ID]**를 메모하세요. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다. 팀 ID는 화면 오른쪽 상단의 로그인 이름 옆에 있습니다.
+1. **[!UICONTROL 팀 ID]**&#x200B;를 메모하세요. 다음 연습에서는 Journey Optimizer 푸시 자격 증명을 구성할 때 사용됩니다. 팀 ID는 화면 오른쪽 상단의 로그인 이름 옆에 있습니다.
    ![키 세부 정보](assets/push-apple-dev-key-details.png){zoomable="yes"}
 
 추가 설명서는 [여기에서 찾을 수 있음](https://help.apple.com/developer-account/#/devcdfbb56a3).
@@ -223,7 +223,7 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 1. **[!UICONTROL 확장 설치]** 대화 상자에서
    1. 환경을 선택하십시오(예: **[!UICONTROL 개발]**).
    1. **[!UICONTROL 이벤트 데이터 세트]** 목록에서 **[!UICONTROL AJO 푸시 추적 경험 이벤트 데이터 세트]** 데이터 세트를 선택합니다.
-   1. **[!UICONTROL 라이브러리 및 빌드에 저장]**을 선택합니다.
+   1. **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 선택합니다.
       ![AJO 확장 설정](assets/push-tags-ajo.png){zoomable="yes"}
 
 >[!NOTE]
@@ -234,10 +234,10 @@ Journey Optimizer을 사용하면 여정을 만들고 타겟팅된 대상자에�
 ## Assurance으로 설정 유효성 검사
 
 1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
-1. Assurance UI에서 **[!UICONTROL 구성]**을 선택합니다.
+1. Assurance UI에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
    ![클릭 구성](assets/push-validate-config.png){zoomable="yes"}
 1. ![디버그 푸시](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 옆에 있는 **[!UICONTROL 플러스]**&#x200B;를 선택합니다.
-1. **[!UICONTROL 저장]**을 선택합니다.
+1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
    ![저장](assets/push-validate-save.png){zoomable="yes"}
 1. 왼쪽 탐색에서 **[!UICONTROL 디버그 푸시]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 설정 유효성 검사]** 탭을 선택합니다.
@@ -357,7 +357,7 @@ Android 푸시 알림은 앱과 푸시 알림을 전송할 때 모두 알림 채
 
 >[!TAB Android]
 
-1. Android Studio에서 [aepsdk-messaging-android](https://github.com/adobe/aepsdk-messaging-android)이(가) **[!UICONTROL Android:app]** VBoxDown **** Gradle Scripts![의 ](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
+1. Android Studio에서 [aepsdk-messaging-android](https://github.com/adobe/aepsdk-messaging-android)이(가) **[!UICONTROL Android:app]** VBoxDown **&#x200B;**&#x200B;Gradle Scripts![의 ](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
 1. Android Studio 프로젝트 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**&#x200B;으로 이동합니다.
 1. `com.adobe.marketing.mobile.Messaging`이(가) 가져오기 목록의 일부인지 확인하십시오.
 
@@ -419,7 +419,7 @@ Android 푸시 알림은 앱과 푸시 알림을 전송할 때 모두 알림 채
 >[!IMPORTANT]
 >
 >**iOS 전용**: `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])`은(는) 푸시 알림이 푸시 알림을 전송하기 위해 APNs 샌드박스 또는 프로덕션 서버를 사용하는지 여부를 결정합니다. 시뮬레이터 또는 장치에서 앱을 테스트할 때 푸시 알림을 받을 수 있도록 `messaging.useSandbox`이 `true`(으)로 설정되어 있는지 확인하십시오. Apple의 Testflight를 사용하여 테스트하기 위해 프로덕션 앱을 배포할 때 `messaging.useSandbox`을(를) `false`(으)로 설정해야 합니다. 그렇지 않으면 프로덕션 앱에서 푸시 알림을 받을 수 없습니다.<br/><br/>
->>Firebase Cloud Messaging(FCM)은 푸시 알림에 대한 샌드박스 개념을 지원하지 **않습니다**.
+>&#x200B;>Firebase Cloud Messaging(FCM)은 푸시 알림에 대한 샌드박스 개념을 지원하지 **않습니다**.
 
 
 ## 나만의 푸시 알림 만들기
@@ -475,11 +475,11 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 
       1. **[!UICONTROL 이벤트 ID 조건 추가]** 대화 상자에서 **[!UICONTROL 이벤트 유형(eventType)]**&#x200B;을(를) **[!UICONTROL 여기에 요소 끌어다 놓기]**&#x200B;로 끌어다 놓습니다.
       1. 팝오버에서 아래쪽으로 스크롤하여 **[!UICONTROL application.test]**(스키마 업데이트[의 일부로 이벤트 유형 목록에 이전에 추가한 이벤트 유형)을 선택합니다. ](#update-your-schema) 그런 다음 위로 스크롤하여 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
-      1. **[!UICONTROL 확인]**을 선택하여 조건을 저장합니다.
+      1. **[!UICONTROL 확인]**&#x200B;을 선택하여 조건을 저장합니다.
          ![이벤트 조건 편집](assets/ajo-edit-condition.png){zoomable="yes"}
 
    1. **[!UICONTROL 네임스페이스]** 목록에서 **[!UICONTROL ECID(ECID)]**&#x200B;을(를) 선택합니다. 자동으로 **[!UICONTROL 프로필 식별자]** 필드가 **[!UICONTROL 맵 identityMap에 대한 키 ECID의 첫 번째 요소의 ID]**(으)로 채워집니다.
-   1. **[!UICONTROL 저장]**을 선택합니다.
+   1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
       ![이벤트 편집 단계 2](assets/ajo-edit-event2.png){zoomable="yes"}
 
 이 자습서의 일부로 이전에 만든 모바일 앱 경험 이벤트 스키마를 기반으로 하는 이벤트 구성을 방금 만들었습니다. 이 이벤트 구성은 특정 이벤트 유형(`application.test`)을 사용하여 들어오는 경험 이벤트를 필터링하므로, 모바일 앱에서 시작된 해당 특정 유형의 이벤트만 다음 단계에서 빌드하는 여정을 트리거합니다. 실제 시나리오에서는 외부 서비스에서 푸시 알림을 전송할 수 있습니다. 그러나 동일한 개념이 적용됩니다. 외부 애플리케이션에서 경험 이벤트를 특정 필드가 있는 Experience Platform으로 보내면 이러한 이벤트가 여정을 트리거하기 전에 조건을 적용할 수 있습니다.
@@ -495,7 +495,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
    1. 여정의 **[!UICONTROL 이름]**(예: `Luma - Test Push Notification Journey`)을 입력하십시오.
    1. 여정에 대한 **[!UICONTROL 설명]**&#x200B;을(를) 입력하십시오(예: `Journey for test push notifications in Luma mobile app`).
    1. **[!UICONTROL 다시 입력 허용]**&#x200B;을 선택하고 **[!UICONTROL 다시 입력 대기 기간]**&#x200B;을 **[!UICONTROL 30]** **[!UICONTROL 초]**(으)로 설정하십시오.
-   1. **[!UICONTROL 확인]**을 선택합니다.
+   1. **[!UICONTROL 확인]**&#x200B;을 선택합니다.
       ![여정 속성](assets/ajo-journey-properties.png){zoomable="yes"}
 
 1. 여정 캔버스로 돌아가서 **[!UICONTROL EVENTS]**&#x200B;에서 ![Event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]**&#x200B;을(를) 캔버스에 끌어다 놓습니다. 캔버스에는 **[!UICONTROL 시작 이벤트 또는 대상자 읽기 활동 선택]**&#x200B;이 표시됩니다.
@@ -519,7 +519,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 
    1. 푸시 알림 정의를 저장하고 완료하려면 **[!UICONTROL 확인]**&#x200B;을 선택하세요.
 
-1. 여정은 다음과 같아야 합니다. 여정을 게시하고 활성화하려면 **[!UICONTROL 게시]**를 선택하십시오.
+1. 여정은 다음과 같아야 합니다. 여정을 게시하고 활성화하려면 **[!UICONTROL 게시]**&#x200B;를 선택하십시오.
    ![완료된 여정](assets/ajo-journey-finished.png){zoomable="yes"}
 
 
