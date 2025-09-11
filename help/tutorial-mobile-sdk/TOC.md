@@ -8,10 +8,10 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
+source-git-commit: 323702d37425b22b0a5270d410e8b000aa0d5434
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 67%
+source-wordcount: '79'
+ht-degree: 68%
 
 ---
 
@@ -25,12 +25,12 @@ ht-degree: 67%
    + [태그 구성](configure-tags.md)
 + 앱 구현{#app-implementation}
    + [SDK 설치](install-sdks.md)
-   + [보증](assurance.md)
+   + [Assurance](assurance.md)
    + [동의](consent.md)
    + [라이프사이클 데이터](lifecycle-data.md)
    + [이벤트 데이터](events.md)
    + [웹 보기 수](web-views.md)
-   + [신원](identity.md)
+   + [ID](identity.md)
    + [프로필](profile.md)
    + [장소](places.md)
 + Experience Cloud{#experience-cloud}
@@ -42,5 +42,6 @@ ht-degree: 67%
       + [의사 결정 관리](journey-optimizer-offers.md)
    + [Target](target.md)
    + [Customer Journey Analytics](customer-journey-analytics.md)
+   + [테스트](test.md)
 + [결론](conclusion.md)
 
