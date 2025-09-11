@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자�
 
 ![아키텍쳐](assets/architecture-ajo.png){zoomable="yes"}
 
-Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한 구성 및 통합이 제대로 되어 있는지 확인해야 합니다. Journey Optimizer의 인앱 메시지 데이터 흐름을 이해하려면 [설명서](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/in-app/inapp-configuration)를 참조하세요.
+Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한 구성 및 통합이 제대로 되어 있는지 확인해야 합니다. Journey Optimizer의 인앱 메시지 데이터 흐름을 이해하려면 [설명서](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration)를 참조하세요.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Adobe Experience Platform용 앱을 설정합니다.
-* Journey Optimizer 및 [푸시 알림에 대한 충분한 권한](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/push/push-config/push-configuration)에 액세스할 수 있습니다. 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
+* Journey Optimizer 및 [푸시 알림에 대한 충분한 권한](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration)에 액세스할 수 있습니다. 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
    * 캠페인을 관리합니다.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
 
@@ -67,11 +67,11 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
    >
    > 이름은 문자(A-Z)로 시작해야 합니다. 영숫자만 포함할 수 있습니다. 밑줄 `_`, 점 `.`, 하이픈 `-`도 사용할 수 있습니다.
 
-1. 구성에 사용자 지정 또는 핵심 데이터 사용 레이블을 할당하려면 **[!UICONTROL 액세스 관리]**&#x200B;를 선택할 수 있습니다. [OLAC(개체 수준 액세스 제어)에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/access-control/object-based-access).
+1. 구성에 사용자 지정 또는 핵심 데이터 사용 레이블을 할당하려면 **[!UICONTROL 액세스 관리]**&#x200B;를 선택할 수 있습니다. [OLAC(개체 수준 액세스 제어)에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. **인앱 메시지** 채널을 선택하십시오.
 
-1. 이 구성을 사용하여 동의 정책을 메시지와 연결하려면 **[!UICONTROL 마케팅 액션]**&#x200B;을(를) 선택하십시오. 마케팅 액션과 관련된 모든 동의 정책은 고객의 선호도를 존중하도록 활용됩니다. [마케팅 액션에 대해 자세히 알아보기](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). 예: 푸시 타깃팅.
+1. 이 구성을 사용하여 동의 정책을 메시지와 연결하려면 **[!UICONTROL 마케팅 액션]**&#x200B;을(를) 선택하십시오. 마케팅 액션과 관련된 모든 동의 정책은 고객의 선호도를 존중하도록 활용됩니다. [마케팅 액션에 대해 자세히 알아보기](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). 예: 푸시 타깃팅.
 
 1. 설정을 정의할 플랫폼을 선택합니다. 이 설정을 사용하면 각 플랫폼에 대한 대상 앱을 지정할 수 있으며, 여러 플랫폼에서 일관되게 콘텐츠를 게재할 수 있습니다.
 
@@ -93,7 +93,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을(를) 선택하고 데이터스트림(예: **[!DNL Luma Mobile App]**)을 선택합니다.
 1. ![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)에 대해 **[!UICONTROL 자세히]**&#x200B;를 선택하고 상황에 맞는 메뉴에서 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** 화면에서 **[!UICONTROL Adobe Journey Optimizer]**&#x200B;을(를) 선택했는지 확인하십시오. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/configure)을 참조하세요.
+1. **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** 화면에서 **[!UICONTROL Adobe Journey Optimizer]**&#x200B;을(를) 선택했는지 확인하십시오. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)을 참조하세요.
 1. 데이터스트림 구성을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 
@@ -180,10 +180,10 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 ## Assurance으로 설정 유효성 검사
 
 1. [설치 지침](assurance.md#connecting-to-a-session) 섹션을 검토하여 시뮬레이터 또는 장치를 Assurance에 연결하십시오.
-1. Assurance UI에서 **[!UICONTROL 구성]**&#x200B;을 선택합니다.
+1. Assurance UI에서 **[!UICONTROL 구성]**을 선택합니다.
    ![클릭 구성](assets/push-validate-config.png){zoomable="yes"}
 1. ![인앱 메시지](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 옆에 있는 **[!UICONTROL Plus]** 단추를 선택하세요.
-1. **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 저장]**을 선택합니다.
    ![저장](assets/assurance-in-app-config.png){zoomable="yes"}
 1. 왼쪽 탐색에서 **[!UICONTROL 인앱 메시지]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 유효성 검사]** 탭을 선택합니다. 오류가 발생하지 않는지 확인합니다.
@@ -207,7 +207,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 1. Journey Optimizer UI의 왼쪽 레일에서 **[!UICONTROL 캠페인]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 캠페인 만들기]**&#x200B;를 선택합니다.
 1. **[!UICONTROL 캠페인 만들기]** 대화 상자에서 ![시계](/help/assets/icons/Clock.svg) **[!UICONTROL 예약 - 마케팅]**&#x200B;을 선택하고 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
-1. **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**&#x200B;화면에서:
+1. **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**화면에서:
 
    1. **[!UICONTROL 속성]** 탭에서:
 
@@ -252,7 +252,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 1. **[!UICONTROL 활성화하려면 검토]**&#x200B;를 선택하십시오. **[!UICONTROL 콘텐츠]**, **[!UICONTROL 속성]**, **[!UICONTROL 작업]** 이상의 구성을 선택적으로 편집하려면 ![편집](/help/assets/icons/Edit.svg)을 선택하세요.
 1. **[!UICONTROL 활성화 검토(*캠페인 이름*)]** 화면에서 **[!UICONTROL 활성화]**&#x200B;를 선택합니다.
-1. 잠시 후 **_캠페인_** 목록에 상태가 **[!UICONTROL 라이브]**&#x200B;인 **[!UICONTROL 캠페인 이름]**&#x200B;이 표시됩니다.
+1. 잠시 후 **_캠페인_** 목록에 상태가 **[!UICONTROL 라이브]**&#x200B;인 **[!UICONTROL 캠페인 이름]**이 표시됩니다.
    ![캠페인 목록](assets/ajo-campaign-list.png){zoomable="yes"}
 
 
@@ -264,7 +264,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 >[!TAB iOS]
 
-1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action` `data` 함수를 호출하는 다음 코드를 추가합니다.
+1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action``data` 함수를 호출하는 다음 코드를 추가합니다.
 
 
    ```swift
@@ -283,7 +283,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 >[!TAB Android]
 
-1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `fun sendTrackAction(action: String, data: Map<String, String>?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action` `data` 함수를 호출하는 다음 코드를 추가합니다.
+1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `fun sendTrackAction(action: String, data: Map<String, String>?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action``data` 함수를 호출하는 다음 코드를 추가합니다.
 
 
    ```kotlin
@@ -317,7 +317,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 1. **[!UICONTROL 인앱 메시지]**&#x200B;를 탭합니다. 인앱 메시지가 앱에 표시되는 것을 볼 수 있습니다.
 
-   <img src="assets/ajo-in-app-message.png" width="300" />
+   <img src="assets/ajo-in-app-message.png" width="300">
 
 
 >[!TAB Android]
@@ -328,7 +328,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 1. **[!UICONTROL 인앱 메시지]**&#x200B;를 탭합니다. 인앱 메시지가 앱에 표시되는 것을 볼 수 있습니다.
 
-   <img src="assets/ajo-in-app-message-android.png" width="300" />
+   <img src="assets/ajo-in-app-message-android.png" width="300">
 
 
 >[!ENDTABS]
@@ -354,6 +354,6 @@ Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 >
 >Journey Optimizer 및 Experience Platform Mobile SDK용 Journey Optimizer 확장을 사용하여 인앱 메시지를 활성화하고 인앱 메시지 캠페인을 추가했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[오퍼 만들기 및 표시](journey-optimizer-offers.md)**

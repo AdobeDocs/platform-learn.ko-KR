@@ -3,7 +3,7 @@ title: Platform Mobile SDK으로 프로필 데이터 수집
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 2%
@@ -122,8 +122,8 @@ ht-degree: 2%
 
    이 코드:
 
-   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
-   1. 그런 다음 `isPaidUser` 특성의 값을 확인하고 `yes`이(가) 오른쪽 상단의 도구 모음에 있는 <img src="assets/paiduser.png" width="20" /> 아이콘
+   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser``attributeNames` API를 호출합니다.
+   1. 그런 다음 `isPaidUser` 특성의 값을 확인하고 `yes`이(가) 오른쪽 상단의 도구 모음에 있는 <img src="assets/paiduser.png" width="20"> 아이콘
 
 >[!TAB Android]
 
@@ -138,8 +138,8 @@ ht-degree: 2%
 
    이 코드:
 
-   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
-   1. 그런 다음 `isPaidUser` 특성의 값을 확인합니다. `yes`에서 코드는 개인 아이콘을 오른쪽 상단의 도구 모음에 있는 <img src="assets/paiduser.png" width="20" /> 아이콘
+   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser``attributeNames` API를 호출합니다.
+   1. 그런 다음 `isPaidUser` 특성의 값을 확인합니다. `yes`에서 코드는 개인 아이콘을 오른쪽 상단의 도구 모음에 있는 <img src="assets/paiduser.png" width="20"> 아이콘
 
 >[!ENDTABS]
 
@@ -168,7 +168,7 @@ ht-degree: 2%
 1. 탭 표시줄에서 **[!DNL Products]**&#x200B;을(를) 선택합니다.
 1. 제품 하나를 선택하십시오.
 1. 선택 <img src="assets/saveforlater.png" width="15" />.
-1. 선택 <img src="assets/addtocart.png" width="20" />.
+1. 선택 <img src="assets/addtocart.png" width="20">.
 1. 선택 <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3.png" width="300">
@@ -193,8 +193,8 @@ ht-degree: 2%
 
 1. 탭 표시줄에서 **[!DNL Products]**&#x200B;을(를) 선택합니다.
 1. 제품 하나를 선택하십시오.
-1. 선택<img src="assets/heart.png" width="25" />.
-1. 선택 <img src="assets/addtocart.png" width="20" />.
+1. 선택<img src="assets/heart.png" width="25">.
+1. 선택 <img src="assets/addtocart.png" width="20">.
 1. 선택 <img src="assets/purchase.png" width="15" />.
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
@@ -214,6 +214,6 @@ Assurance UI에 업데이트된 **[!UICONTROL 값이 있는]** UserProfileUpdate
 >
 >이제 Adobe Experience Platform 및 (설정 시) Edge Network에서 프로필의 속성을 업데이트하도록 앱을 설정했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[위치 사용](places.md)**

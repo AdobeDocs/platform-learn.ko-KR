@@ -3,7 +3,7 @@ title: Platform Mobile SDK으로 WebViews 처리
 description: 모바일 앱에서 WebViews를 사용하여 데이터 수집을 처리하는 방법에 대해 알아봅니다.
 jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 잠재적 추적 문제
 
-앱의 기본 부분과 앱 내의 WebView에서 데이터를 보낼 때 별도의 (Experience Cloud Identity) ECID가 생성됩니다. 이렇게 별도의 ECID를 사용하면 히트 수가 끊기고 방문 및 방문자 데이터가 부풀려집니다. ECID에 대한 자세한 내용은 [ECID 개요](https://experienceleague.adobe.com/ko/docs/experience-platform/identity/features/ecid)를 참조하십시오.
+앱의 기본 부분과 앱 내의 WebView에서 데이터를 보낼 때 별도의 (Experience Cloud Identity) ECID가 생성됩니다. 이렇게 별도의 ECID를 사용하면 히트 수가 끊기고 방문 및 방문자 데이터가 부풀려집니다. ECID에 대한 자세한 내용은 [ECID 개요](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)를 참조하십시오.
 
 연결이 끊긴 히트와 부풀려진 데이터를 해결하려면 앱의 기본 부분에서 사용자의 ECID를 앱에서 사용할 수 있는 WebView에 전달해야 합니다.
 
@@ -110,11 +110,11 @@ Identity.getUrlVariables {
 
 >[!TAB iOS]
 
-<img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+<img src="./assets/tou1.png" width="300"> <img src="./assets/tou2.png" width="300">
 
 >[!TAB Android]
 
-<img src="./assets/tou1-android.png" width="300" /> <img src="./assets/tou2-android.png" width="300" />
+<img src="./assets/tou1-android.png" width="300"> <img src="./assets/tou2-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -151,6 +151,6 @@ Identity.getUrlVariables {
 >
 >이제 Adobe Experience Platform Mobile SDK에서 이미 발급한 ECID와 동일한 ECID를 사용하여 웹 보기에서 URL을 기반으로 콘텐츠를 표시하도록 앱을 설정했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[ID](identity.md)**
