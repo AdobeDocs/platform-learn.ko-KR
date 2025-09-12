@@ -3,9 +3,9 @@ title: Platform Mobile SDK으로 프로필 데이터 수집
 description: 모바일 앱에서 프로필 데이터를 수집하는 방법을 알아봅니다.
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ ht-degree: 1%
 
    이 코드:
 
-   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
+   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser``attributeNames` API를 호출합니다.
    1. 그런 다음 `isPaidUser` 특성 값을 확인하고 `yes`일 때 오른쪽 상단의 도구 모음에 있는 ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) 아이콘에 배지를 넣습니다.
 
 >[!TAB Android]
@@ -138,7 +138,7 @@ ht-degree: 1%
 
    이 코드:
 
-   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
+   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser``attributeNames` API를 호출합니다.
    1. 그런 다음 `isPaidUser` 특성의 값을 확인합니다. `yes`에서 코드는 오른쪽 상단의 도구 모음에 있는 사람 아이콘을 배지 아이콘으로 바꿉니다.
 
 >[!ENDTABS]
@@ -160,7 +160,7 @@ ht-degree: 1%
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. 임의의 이메일과 고객 ID를 삽입하려면 > 버튼 을 선택합니다.
+1. 임의의 전자 메일과 고객 ID를 삽입하려면 **[!UICONTROL A를 선택합니다. |]** 단추 .
 1. **[!UICONTROL 로그인]**&#x200B;을 선택합니다.
 
    <img src="./assets/mobile-app-events-2.png" width="300">
@@ -214,6 +214,6 @@ Assurance UI에 업데이트된 **[!UICONTROL 값이 있는]** UserProfileUpdate
 >
 >이제 Adobe Experience Platform 및 (설정 시) Edge Network에서 프로필의 속성을 업데이트하도록 앱을 설정했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[위치 사용](places.md)**
