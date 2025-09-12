@@ -122,7 +122,7 @@ ht-degree: 1%
 
    이 코드:
 
-   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser``attributeNames` API를 호출합니다.
+   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
    1. 그런 다음 `isPaidUser` 특성 값을 확인하고 `yes`일 때 오른쪽 상단의 도구 모음에 있는 ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) 아이콘에 배지를 넣습니다.
 
 >[!TAB Android]
@@ -138,7 +138,7 @@ ht-degree: 1%
 
    이 코드:
 
-   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser``attributeNames` API를 호출합니다.
+   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
    1. 그런 다음 `isPaidUser` 특성의 값을 확인합니다. `yes`에서 코드는 오른쪽 상단의 도구 모음에 있는 사람 아이콘을 배지 아이콘으로 바꿉니다.
 
 >[!ENDTABS]
