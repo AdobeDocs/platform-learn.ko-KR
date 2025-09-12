@@ -6,7 +6,7 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 hidefromtoc: true
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 2b2267e84b26f8c2571e40d7f4c0e08281d36c6c
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 2%
@@ -93,6 +93,6 @@ ht-degree: 2%
 1. 탭 표시줄에서 **[!UICONTROL 홈]**&#x200B;을(를) 선택하고 홈 화면에 **[!UICONTROL ECID]**, **[!UICONTROL 이메일]** 및 **[!UICONTROL CRM ID]**&#x200B;이 표시되는지 확인하십시오.
 1. 탭 표시줄에서 **[!DNL Products]**&#x200B;을(를) 선택합니다.
 1. 제품을 선택합니다.
-1. ![나중에 저장](assets/saveforlater.png)(iOS) 또는 ![나중에 저장](assets/heart.png){width=25}(Android)을 선택합니다.
+1. ![나중에 저장](assets/saveforlater.png)(iOS) 또는 ![나중에 저장](assets/heart.png)(Android)을 선택합니다.
 1. ![장바구니에 추가](assets/addtocart.png)를 선택합니다.
 1. ![구매](assets/purchase.png)를 선택하십시오.
