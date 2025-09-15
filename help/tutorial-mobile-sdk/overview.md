@@ -4,9 +4,9 @@ description: Adobe Experience Cloud 모바일 애플리케이션을 구현하는
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 9129d7ab2ac33626240b0375e6424c0f6943290f
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Experience Platform Mobile SDK은 Adobe Experience Cloud 고객이 Adobe Experie
 ![아키텍쳐](assets/architecture.png){zoomable="yes"}
 
 
-이 튜토리얼에서는 Luma라는 샘플 앱에서 Platform Mobile SDK을 구현하는 과정을 안내합니다. [Luma 앱](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App)에는 사실적인 구현을 만들 수 있는 기능이 있습니다. 이 자습서를 완료한 후에는 자체 모바일 앱에서 Experience Platform Mobile SDK을 통해 모든 마케팅 솔루션 구현을 시작할 준비가 되어 있어야 합니다.
+이 튜토리얼에서는 Luma라는 샘플 앱에서 Platform Mobile SDK을 구현하는 과정을 안내합니다. Luma 앱에는 사실적인 구현을 구축할 수 있는 기능이 있습니다. 이 자습서를 완료한 후에는 자체 모바일 앱에서 Experience Platform Mobile SDK을 통해 모든 마케팅 솔루션 구현을 시작할 준비가 되어 있어야 합니다.
 
 단원은 다음을 위해 설계되었습니다.
 
@@ -64,7 +64,7 @@ Experience Platform Mobile SDK은 Adobe Experience Cloud 고객이 Adobe Experie
    * **[!UICONTROL 속성 권한]**—권한 항목으로서 **[!UICONTROL 개발]**, **[!UICONTROL 승인]**, **[!UICONTROL 게시]**, **[!UICONTROL 확장 관리]** 및 **[!UICONTROL 환경 관리]**&#x200B;를 수행할 수 있습니다.
    * **[!UICONTROL 회사 권한]**—**[!UICONTROL 속성 관리]**&#x200B;에 대한 권한 항목
 
-     태그 권한에 대한 자세한 내용은 제품 설명서에서 [태그에 대한 사용자 권한](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/admin/user-permissions){target="_blank"}을 참조하세요.
+     태그 권한에 대한 자세한 내용은 제품 설명서에서 [태그에 대한 사용자 권한](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}을 참조하세요.
 * Experience Platform에서 다음을 수행해야 합니다.
    * **[!UICONTROL 데이터 모델링]**—스키마를 관리하고 볼 수 있는 권한 항목입니다.
    * **[!UICONTROL Identity Management]**—id 네임스페이스를 관리하고 볼 수 있는 권한 항목입니다.
@@ -74,7 +74,7 @@ Experience Platform Mobile SDK은 Adobe Experience Cloud 고객이 Adobe Experie
       * **[!UICONTROL 데이터 관리]**—데이터 집합을 관리하고 볼 수 있는 권한 항목입니다.
       * 이 자습서에 사용할 수 있는 개발 **샌드박스**.
 
-   * Journey Optimizer 단원의 경우 **푸시 알림 서비스**&#x200B;를 구성하고 **앱 표면**, **여정**, **메시지** 및 **메시지 사전 설정**&#x200B;을 만들 수 있는 권한이 필요합니다. 또한 의사 결정 관리의 경우 **권한 수준**&#x200B;에 설명된 대로 **오퍼를 관리** 및 [의사 결정](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/access-control/high-low-permissions)할 수 있는 적절한 권한이 필요합니다.
+   * Journey Optimizer 단원의 경우 **푸시 알림 서비스**&#x200B;를 구성하고 **앱 표면**, **여정**, **메시지** 및 **메시지 사전 설정**&#x200B;을 만들 수 있는 권한이 필요합니다. 또한 의사 결정 관리의 경우 **권한 수준**&#x200B;에 설명된 대로 **오퍼를 관리** 및 [의사 결정](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions)할 수 있는 적절한 권한이 필요합니다.
 
 * Adobe Analytics의 경우 이 자습서를 완료하는 데 사용할 수 있는 **보고서 세트**&#x200B;를 알고 있어야 합니다.
 
@@ -119,9 +119,8 @@ App Store에서 최종 프로덕션 버전의 앱을 다운로드할 수 있습�
 
 플랫폼으로 Android, 프로그래밍 언어로 [!DNL Kotlin]+[!DNL Java], UI 프레임워크로 [!DNL JetPack Compose], IDE(통합 개발 환경)로 [!DNL Android Studio]을(를) 사용합니다. 그러나 설명된 구현 개념의 대부분은 다른 개발 플랫폼에 대해 유사합니다. 많은 사람들이 이미 이전의 Android / Kotlin+Java / JetPack 작성 경험이 거의 없는 상태에서 이 자습서를 성공적으로 완료했습니다. 전문가가 아니어도 단원을 완료할 수는 있지만, 코드를 읽고 이해할 수 있으면 단원을 최대한 활용할 수 있습니다.
 
-Google Play에서 앱의 최종 프로덕션 테스트 버전을 다운로드할 수 있습니다.
+원하는 경우 Google Play에서 [만들어진 버전에 대한 테스트에 참여](https://play.google.com/apps/internaltest/4700642199234438150)할 수 있습니다.
 
-[![다운로드](assets/download-app-android.svg)](https://play.google.com/store/apps/details?id=com.adobe.luma.tutorial.android)
 
 >[!ENDTABS]
 
@@ -129,6 +128,6 @@ Google Play에서 앱의 최종 프로덕션 테스트 버전을 다운로드할
 
 >[!SUCCESS]
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 다음: **[XDM 스키마 만들기](create-schema.md)**
