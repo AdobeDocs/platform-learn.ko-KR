@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 소셜 대상 구성
 
-대상을 소셜 대상에 연결하고 활성화하는 방법을 알아봅니다. 이 비디오에서는 Adobe Real-Time Customer Data Platform에서 LinkedIn Matched Audiences 대상을 사용하는 워크플로를 보여 줍니다.  자세한 내용은 [설명서](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/overview)를 검토하세요.
+대상을 소셜 대상에 연결하고 활성화하는 방법을 알아봅니다. 이 비디오에서는 Adobe Real-Time Customer Data Platform에서 LinkedIn Matched Audiences 대상을 사용하는 워크플로를 보여 줍니다.  자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/destinations/catalog/social/overview)를 검토하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 
