@@ -4,9 +4,9 @@ description: Adobe Experience Manager Cloud Service 및 Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -27,23 +27,19 @@ ht-degree: 1%
 
 이 연습에서는 사이트, Assets 및 Edge Delivery Services 제품을 만드는 Cloud Manager 프로그램을 만듭니다.
 
-[1.1.2 문서 기반 웹 사이트 만들기](./ex2.md){target="_blank"}
-
-이 시작 연습에서는 기존 웹 사이트 템플릿을 복사하여 고유한 문서 기반 웹 사이트를 설정합니다.
-
-[1.1.3 AEM CS 환경 설정](./ex3.md){target="_blank"}
+[1.1.2 AEM CS 환경 설정](./ex3.md){target="_blank"}
 
 이 연습에서는 AEM CS 환경을 설정하고 CitiSignal 웹 사이트에 액세스합니다.
 
-[1.1.4 기본 사용자 지정 블록](./ex4.md){target="_blank"}
+[1.1.3 기본 사용자 지정 블록](./ex4.md){target="_blank"}
 
 이 연습에서는 웹 사이트에 대한 기본 사용자 지정 블록을 개발합니다.
 
-[1.1.5 고급 사용자 지정 블록](./ex5.md){target="_blank"}
+[1.1.4 고급 사용자 지정 블록](./ex5.md){target="_blank"}
 
 이 연습에서는 웹 사이트에 대한 고급 사용자 지정 블록을 개발합니다.
 
-[1.1.6 AEM Edge Delivery Services MarTech 플러그인](./ex6.md){target="_blank"}
+[1.1.5 AEM Edge Delivery Services MarTech 플러그인](./ex6.md){target="_blank"}
 
 이 연습에서는 AEM MarTech 플러그인을 구현합니다. AEM MarTech 플러그인을 사용하면 AEM 프로젝트에 대한 전체 MarTech 스택을 빠르게 설정할 수 있습니다.
 

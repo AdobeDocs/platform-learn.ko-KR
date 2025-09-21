@@ -4,16 +4,16 @@ description: AEM CS - 기본 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
 
-# 1.1.4 기본 사용자 지정 블록 개발
+# 1.1.3 기본 사용자 지정 블록 개발
 
-## 1.1.4.1 로컬 개발 환경 설정
+## 1.1.3.1 로컬 개발 환경 설정
 
 [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}(으)로 이동하여 **Github Desktop**&#x200B;을 다운로드하여 설치하십시오.
 
@@ -43,7 +43,7 @@ GitHub 설정에서 **citsignal**&#x200B;에 사용하는 폴더를 선택하십
 
 ![차단](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2 기본 사용자 지정 블록 만들기
+## 1.1.3.2 기본 사용자 지정 블록 만들기
 
 Adobe에서는 3단계 접근 방식으로 블록을 개발할 것을 권장합니다.
 
@@ -145,7 +145,7 @@ Visual Studio 코드에서 **component-filters.json** 파일을 엽니다.
 
 ![차단](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3 변경 내용 커밋
+## 1.1.3.3 변경 내용 커밋
 
 이제 프로젝트에서 GitHub 저장소로 다시 커밋해야 하는 몇 가지 변경 사항을 만들었습니다. 이렇게 하려면 **GitHub Desktop**&#x200B;을 엽니다.
 
@@ -169,7 +169,7 @@ PR 이름 `Fiber Offer custom block`을(를) 입력하십시오. **주 데이터
 
 ![차단](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4 블록에 블록 추가
+## 1.1.3.4 블록에 블록 추가
 
 기본 견적 블록이 정의되어 CitiSignal 프로젝트에 커밋되었으므로 기존 페이지에 **fiberoffer** 블록을 추가할 수 있습니다.
 
@@ -249,7 +249,7 @@ PR 이름 `Fiber Offer custom block`을(를) 입력하십시오. **주 데이터
 
 이제 새 페이지가 게시되었습니다.
 
-## 1.1.4.5 탐색 메뉴에 새 페이지 추가
+## 1.1.3.5 탐색 메뉴에 새 페이지 추가
 
 AEM Sites 개요에서 **CitiSignal** > **조각**(으)로 이동하여 **헤더**&#x200B;에 대한 확인란을 선택합니다. **편집**&#x200B;을 클릭합니다.
 
@@ -284,7 +284,7 @@ AEM Sites 개요에서 **CitiSignal** > **조각**(으)로 이동하여 **헤더
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-다음 단계: [1.1.5 고급 사용자 지정 블록](./ex5.md){target="_blank"}
+다음 단계: [고급 사용자 지정 블록](./ex5.md){target="_blank"}
 
 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services으로 돌아가기](./aemcs.md){target="_blank"}
 

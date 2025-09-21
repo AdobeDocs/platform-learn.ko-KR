@@ -3,10 +3,10 @@ title: Adobe Commerce as a Cloud Service 시작하기
 description: Adobe Commerce as a Cloud Service 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 16%
+source-wordcount: '688'
+ht-degree: 15%
 
 ---
 
@@ -100,6 +100,16 @@ ht-degree: 16%
 그러면 이 메시지가 표시됩니다. **확인**&#x200B;을 클릭합니다.
 
 ![AEM Assets](./images/accs15.png)
+
+그럼 다시 오셔야 합니다 **CitiSignal** 웹 사이트를 클릭하여 엽니다.
+
+![AEM Assets](./images/accs16.png)
+
+이 웹 사이트를 기본 웹 사이트로 설정하려면 확인란을 선택하십시오.
+
+**웹 사이트 저장**&#x200B;을 클릭합니다.
+
+![AEM Assets](./images/accs16a.png)
 
 그럼 다시 오셔야 합니다
 

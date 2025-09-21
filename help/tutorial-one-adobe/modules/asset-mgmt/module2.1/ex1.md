@@ -4,9 +4,9 @@ description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '344'
 ht-degree: 3%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcs1.png)
 
-**프로그램 이름**&#x200B;의 경우 `--aepUserLdap-- - CitiSignal`을(를) 사용하십시오. **샌드박스 설정** 옵션을 선택하십시오. **계속을 클릭합니다**.
+**프로그램 이름**&#x200B;의 경우 `--aepUserLdap-- - CitiSignal AEM+ACCS`을(를) 사용하십시오. **샌드박스 설정** 옵션을 선택하십시오. **계속**&#x200B;을 클릭합니다.
 
 ![AEMCS](./images/aemcs2.png)
 
 다음 옵션이 선택되어 있는지 확인합니다.
 
 - 사이트
-- Forms
+- 양식
 - 자산
 
 옵션 목록을 열려면 **Assets**&#x200B;의 화살표를 클릭하십시오.
@@ -51,8 +51,6 @@ ht-degree: 3%
 환경을 만드는 데 10~20분 정도 소요됩니다.
 
 ![AEMCS](./images/aemcs4.png)
-
-기다리는 동안 연습 [1.1.2](./ex2.md){target="_blank"}(으)로 시작할 수 있습니다.
 
 환경이 만들어지고 사용할 준비가 되면 이메일 확인을 받게 되며 그 후 다시 여기로 돌아올 수 있습니다.
 
@@ -88,7 +86,7 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcsact2.png)
 
-약 10분 후에 **Content Hub**&#x200B;의 활성화가 완료됩니다.
+약 10분 후에 **Content Hub**의 활성화가 완료됩니다.
 그런 다음 **Dynamic Media** 줄을 보고 **활성화하려면 클릭**&#x200B;을 선택하세요.
 
 ![AEMCS](./images/aemcsact3.png)
@@ -107,7 +105,7 @@ ht-degree: 3%
 
 파이프라인 실행이 완료되면 다음 연습을 계속할 수 있습니다.
 
-다음 단계: [1.1.2 문서 기반 웹 사이트 만들기](./ex2.md){target="_blank"}
+다음 단계: [AEM CS 환경 설정](./ex3.md){target="_blank"}
 
 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services으로 돌아가기](./aemcs.md){target="_blank"}
 

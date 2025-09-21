@@ -4,14 +4,14 @@ description: AEM CS - 고급 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
-# 1.1.5 고급 사용자 지정 블록
+# 1.1.4 고급 사용자 지정 블록
 
 이전 연습에서는 웹 사이트에 **오퍼 텍스트**, **오퍼 CTA** 및 **오퍼 이미지**&#x200B;와 같은 필드를 표시하는 기본 사용자 지정 블록인 **파이버 오퍼**&#x200B;를 구성했습니다.
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1 내 블록 스타일 지정
+## 1.1.4.1 내 블록 스타일 지정
 
 작업 중인 **fiberoffer** 블록이 있으므로 스타일을 적용할 수 있습니다.
 
@@ -106,7 +106,7 @@ PR 이름 `js css`을(를) 입력하십시오. **주 데이터베이스에 커�
 
 ![차단](./images/blockadv12.png){zoomable="yes"}
 
-이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en/` 및/또는 `main--citisignal--XXX.aem.live/us/en/`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `main--citisignal--XXX.aem.page/us/en/`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.live/us/en/` 및/또는 `woutervangeluwe`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
 이 예에서 전체 URL은 다음과 같이 됩니다.
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
@@ -115,7 +115,7 @@ PR 이름 `js css`을(를) 입력하십시오. **주 데이터베이스에 커�
 
 ![차단](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2 외부 끝점에서 논리 추가 및 데이터 로드
+## 1.1.4.2 외부 끝점에서 논리 추가 및 데이터 로드
 
 이 연습에서는 Adobe의 웹 SDK에 대한 &#39;원시&#39; 구성을 수행하고 Adobe Journey Optimizer Offer Decisioning에 다음 최상의 오퍼를 요청합니다.
 
@@ -336,7 +336,7 @@ async function getOffer(ECID) {
 
 ![차단](./images/blockadv19.png){zoomable="yes"}
 
-이제 GitHub 사용자 계정(이 예에서는 `woutervangeluwe`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.page/us/en/` 및/또는 `main--citisignal--XXX.aem.live/us/en/`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `main--citisignal--XXX.aem.page/us/en/`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.live/us/en/` 및/또는 `woutervangeluwe`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
 이 예에서 전체 URL은 다음과 같이 됩니다.
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
@@ -345,7 +345,7 @@ async function getOffer(ECID) {
 
 ![차단](./images/blockadv20.png){zoomable="yes"}
 
-다음 단계: [1.1.6 AEM Edge Delivery Services MarTech 플러그인](./ex6.md){target="_blank"}
+다음 단계: [AEM Edge Delivery Services MarTech 플러그인](./ex6.md){target="_blank"}
 
 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services으로 돌아가기](./aemcs.md){target="_blank"}
 

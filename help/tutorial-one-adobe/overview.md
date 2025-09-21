@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1246'
 ht-degree: 2%
 
 ---
@@ -43,9 +43,9 @@ ht-degree: 2%
 
 이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
 
-- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**&#x200B;에 합격할 수 있습니다.
+- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**에 합격할 수 있습니다.
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
-- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**&#x200B;을(를) 참여하여 통과할 수 있습니다.
+- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**을(를) 참여하여 통과할 수 있습니다.
   [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## 컨텐츠 상태
@@ -94,7 +94,7 @@ Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workf
 
 이 모듈에서는 Adobe IO 및 App Builder을 사용하여 GenStudio for Performance Marketing의 기능을 확장하는 사용자 지정 애플리케이션을 빌드합니다.
 
-### &#x200B;3. 자산 관리
+### &#x200B;3. 자산 관리 및 사이트
 
 [1.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
@@ -103,6 +103,10 @@ Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workf
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 이 모듈에서는 AEM Assets을 살펴보게 됩니다.
+
+[1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
+
+이 모듈에서는 Adobe Commerce as a Cloud Service 인스턴스를 만듭니다. Commerce 인스턴스를 AEM Sites CS Storefront 및 AEM Assets CS 환경에 연결합니다.
 
 ### &#x200B;4. 배달 및 활성화
 
