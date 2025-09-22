@@ -3,9 +3,9 @@ title: AEM Assets CS에 ACCS 연결
 description: AEM Assets CS에 ACCS 연결
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca895385f5c1f318a7c4d0b338dcfa4e91763005
+source-git-commit: 58448049d54ee6124985159577df0e307896a312
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >이전에 AEM Sites 및 Assets CS 환경에서 AEM CS 프로그램을 구성한 경우 AEM CS 샌드박스가 최대 절전 모드일 수 있습니다. 이러한 샌드박스의 최대 절전 모드 해제 시간이 10~15분 정도 걸리는 점을 감안할 때, 나중에 최대 절전 모드 해제 프로세스를 기다릴 필요가 없도록 지금 시작하는 것이 좋습니다.
+
+이전 연습을 마친 후에는 ACCS에서 제품을 반품한 것을 웹사이트에 올릴 수 있었지만 아직 이미지가 남아 있지 않았다. 이 연습이 끝나면 이미지가 반환되는 것을 볼 수 있습니다.
+
+![ACCS+AEM Sites](./images/accsaemsites11.png)
 
 ## 1.5.3.1 파이프라인 구성 업데이트
 
@@ -172,6 +176,10 @@ ACCS 인스턴스로 돌아갑니다. 왼쪽 메뉴에서 **스토어**(으)로 
 
 ![ACCS+AEM Assets](./images/accsaemassets51.png)
 
+그럼 이걸 보셔야죠
+
+![ACCS+AEM Assets](./images/accsaemassets52.png)
+
 ## 1.5.3.3 config.json 업데이트
 
 AEM Sites CS/EDS 환경을 설정할 때 작성된 GitHub 저장소로 이동합니다. 해당 저장소는 연습 [1.1.2 AEM CS 환경 설정](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}에서 만들어졌으며, 이름은 **citisignal-aem-accs**&#x200B;이어야 합니다.
@@ -252,37 +260,139 @@ AEM CS 작성자 환경에 로그인하고 **Assets**(으)로 이동합니다.
 
 ![ACCS+AEM Assets](./images/accsaemassets41.png)
 
-그러면 폴더에서 이미지를 사용할 수 있습니다.
+그러면 폴더에서 이미지를 사용할 수 있습니다. **iPhone-Air-Light-Gold.png** 제품 위로 마우스를 가져간 후 **속성** 아이콘을 클릭합니다.
 
 ![ACCS+AEM Assets](./images/accsaemassets42.png)
 
-첫 번째 제품 이미지를 클릭하여 엽니다.
-
-![ACCS+AEM Assets](./images/accsaemassets43.png)
-
-제품 이미지의 상태를 **승인됨**(으)로 설정합니다. AEM Assets CS - ACCS 통합은 승인된 이미지에만 작동합니다.
+아래로 스크롤하여 필드 **검토 상태**&#x200B;를 **승인됨**(으)로 설정합니다. AEM Assets CS - ACCS 통합은 승인된 이미지에만 작동합니다.
 
 ![ACCS+AEM Assets](./images/accsaemassets44.png)
 
-**Commerce** 탭으로 이동한 다음 **제품 sku**&#x200B;에서 **추가**&#x200B;를 클릭합니다.
+위로 스크롤하여 **Commerce** 탭으로 이동한 다음 **제품 sku**&#x200B;에서 **추가**&#x200B;를 클릭합니다.
 
 ![ACCS+AEM Assets](./images/accsaemassets45.png)
 
-이미지 파일 이름에서 제품 SKU를 가져오고 값을 1로 늘린 다음 **사용량** 드롭다운 목록에서 모든 옵션을 선택합니다.
+이 제품에 대해 다음 SKU를 추가합니다.
 
-![ACCS+AEM Assets](./images/accsaemassets46.png)
+| 키 | 값 | 사용 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Light-Gold` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
 그럼 이걸 드셔보세요 **저장 및 닫기**&#x200B;를 클릭합니다.
 
+![ACCS+AEM Assets](./images/accsaemassets46.png)
+
+**iPhone-Air-Space-Black.png** 제품 위로 마우스를 가져간 후 **속성** 아이콘을 클릭합니다.
+
 ![ACCS+AEM Assets](./images/accsaemassets47.png)
 
-에셋을 승인하고 이 폴더에서 가져온 모든 이미지에 대해 Commerce 탭을 설정하는 이 작업을 반복합니다. 완료되면 모든 이미지에 자산이 승인되었음을 나타내는 **녹색 엄지 손가락 위로**&#x200B;가 표시됩니다.
+아래로 스크롤하여 필드 **검토 상태**&#x200B;를 **승인됨**(으)로 설정합니다. AEM Assets CS - ACCS 통합은 승인된 이미지에만 작동합니다.
 
 ![ACCS+AEM Assets](./images/accsaemassets48.png)
 
+위로 스크롤하여 **Commerce** 탭으로 이동한 다음 **제품 sku**&#x200B;에서 **추가**&#x200B;를 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets201.png)
+
+이 제품에 대해 다음 SKU를 추가합니다.
+
+| 키 | 값 | 사용 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Space-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+그럼 이걸 드셔보세요 **저장 및 닫기**&#x200B;를 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets202.png)
+
+**iPhone-Air-Sky-Blue.png** 제품 위로 마우스를 가져간 후 **속성** 아이콘을 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets203.png)
+
+아래로 스크롤하여 필드 **검토 상태**&#x200B;를 **승인됨**(으)로 설정합니다. AEM Assets CS - ACCS 통합은 승인된 이미지에만 작동합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets204.png)
+
+위로 스크롤하여 **Commerce** 탭으로 이동한 다음 **제품 sku**&#x200B;에서 **추가**&#x200B;를 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets205.png)
+
+이 제품에 대해 다음 SKU를 추가합니다.
+
+| 키 | 값 | 사용 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Sky-Blue` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+그럼 이걸 드셔보세요 **저장 및 닫기**&#x200B;를 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets206.png)
+
+**iPhone-Air-Cloud-White.png** 제품 위로 마우스를 가져간 후 **속성** 아이콘을 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets207.png)
+
+아래로 스크롤하여 필드 **검토 상태**&#x200B;를 **승인됨**(으)로 설정합니다. AEM Assets CS - ACCS 통합은 승인된 이미지에만 작동합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets208.png)
+
+위로 스크롤하여 **Commerce** 탭으로 이동한 다음 **제품 sku**&#x200B;에서 **추가**&#x200B;를 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets209.png)
+
+이 제품에 대해 다음 SKU를 추가합니다.
+
+| 키 | 값 | 사용 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Cloud-White` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+그럼 이걸 드셔보세요 **저장 및 닫기**&#x200B;를 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets210.png)
+
+이제 모든 **iPhone Air** 이미지에 자산이 승인되었음을 나타내는 **녹색 엄지손가락 위로**&#x200B;가 표시됩니다.
+
+![ACCS+AEM Assets](./images/accsaemassets250.png)
+
 ## 1.5.3.5 AEM Sites CS/EDS Storefront에서 제품 이미지 확인
 
+>[!NOTE]
+>
+>위에서 변경한 사항이 성공적으로 배포되기까지 최대 15분이 소요될 수 있습니다. 이미지가 아직 표시되지 않는 경우 15분 정도 기다린 후 다시 시도하십시오.
 
+통합이 작동하는지 확인하려면 CitiSignal 웹 사이트를 열어야 합니다.
+
+웹 사이트에 액세스하려면 GitHub 사용자 계정으로 XXX를 바꾼 후 `main--citisignal-aem-accs--XXX.aem.page` 및/또는 `main--citisignal-aem-accs--XXX.aem.live`(이 예에서는 `woutervangeluwe`)로 이동하십시오.
+
+따라서 이 예에서 전체 URL은 다음과 같이 됩니다.
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` 및/또는 `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
+
+그럼 이걸 보셔야죠 **휴대폰**(으)로 이동합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets150.png)
+
+그러면 **iPhone Air**&#x200B;에 대한 제품 이미지가 표시됩니다. **iPhone Air**&#x200B;을(를) 클릭합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets151.png)
+
+그럼 이걸 보셔야죠 색상 및 저장 옵션을 변경하면 선택한 내용에 따라 이미지가 동적으로 변경되는 것을 볼 수 있습니다.
+
+![ACCS+AEM Assets](./images/accsaemassets152.png)
+
+다음은 색상을 **Light-Gold**(으)로 변경하고 저장소 크기를 **256GB**(으)로 변경하는 예입니다.
+
+![ACCS+AEM Assets](./images/accsaemassets153.png)
 
 다음 단계: [요약 및 이점](./summary.md){target="_blank"}
 
