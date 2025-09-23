@@ -3,9 +3,9 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '467'
 ht-degree: 12%
 
 ---
@@ -77,6 +77,13 @@ ht-degree: 12%
 | [1.2 Customer Journey Analytics: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 2025/07/01 | 아니요 | 소스 데이터에 대한 데이터 준비 모델링에 문제가 있습니다. 이 문제를 해결하기 위해 보류 중입니다. |
 | [2.1 쿼리 서비스](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 2024년 4월 12일 | 예 | - |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 2025/08/02 | 아니요 | 개발 중인 콘텐츠 |
+
+## &#x200B;6. 아젠틱 AI
+
+| 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 아니요 | - |
+| [1.2 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 아니요 | - |
 
 {style="table-layout:auto"}
 

@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1403'
 ht-degree: 3%
 
 ---
@@ -93,10 +93,10 @@ ht-degree: 3%
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [개요](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1 Cloud Manager 프로그램 만들기](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-      + [1.1.2 AEM CS 환경 설정](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-      + [1.1.3 기본 사용자 지정 블록](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-      + [1.1.4 고급 사용자 지정 블록](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-      + [1.1.5 AEM Edge Delivery Services MarTech 플러그인](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+      + [1.1.2 AEM CS 환경 설정](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
+      + [1.1.3 기본 사용자 지정 블록](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+      + [1.1.4 고급 사용자 지정 블록](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+      + [1.1.5 AEM Edge Delivery Services MarTech 플러그인](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Adobe Experience Manager Assets {#assetm2}
       + [개요](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
@@ -126,7 +126,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
@@ -270,3 +270,11 @@ ht-degree: 3%
          + [개요](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics 시작하기](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
++ [WIP - Agentic AI](/help/tutorial-one-adobe/ai.md)
++ WIP - Agentic AI {#agenticai}
+   + 1.1 에이전트 및 AI 시작하기 {#agenticai1}
+      + [개요](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
+      + [1.1.1 Agentic AI 시작하기](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
+   + 1.2 에이전트 Collaboration {#agenticai2}
+      + [개요](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
+      + [1.2.1 Collaboration 에이전트 시작하기](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)
