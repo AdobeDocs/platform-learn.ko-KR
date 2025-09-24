@@ -4,7 +4,7 @@ description: Cloud Manager 프로그램 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 3%
@@ -86,7 +86,7 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcsact2.png)
 
-약 10분 후에 **Content Hub**&#x200B;의 활성화가 완료됩니다.
+약 10분 후에 **Content Hub**의 활성화가 완료됩니다.
 그런 다음 **Dynamic Media** 줄을 보고 **활성화하려면 클릭**&#x200B;을 선택하세요.
 
 ![AEMCS](./images/aemcsact3.png)
@@ -105,7 +105,7 @@ ht-degree: 3%
 
 파이프라인 실행이 완료되면 다음 연습을 계속할 수 있습니다.
 
-다음 단계: [AEM CS 환경 설정](./ex3.md){target="_blank"}
+다음 단계: [AEM CS 환경 설정](./ex2.md){target="_blank"}
 
 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services으로 돌아가기](./aemcs.md){target="_blank"}
 

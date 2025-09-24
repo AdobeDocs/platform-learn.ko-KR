@@ -3,10 +3,10 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: 47d036564be9c009e26903b20778e61fd1c78635
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 12%
+source-wordcount: '473'
+ht-degree: 14%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 12%
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 2025년 1월 5일 | 예 | - |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | 예 | - |
-| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 19/09/2025 | 예 | - |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | 예 | - |
 
 ## &#x200B;4. 배달 및 활성화
 
@@ -82,8 +82,8 @@ ht-degree: 12%
 
 | 이름 | 마지막 업데이트 | 100% 작업 | 비고 |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 아니요 | - |
-| [1.2 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 아니요 | - |
+| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 아니요 | 진행 중인 작업 |
+| [1.2 에이전트 Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 23/09/2025 | 아니요 | 진행 중인 작업 |
 
 {style="table-layout:auto"}
 

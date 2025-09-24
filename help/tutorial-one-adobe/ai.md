@@ -2,7 +2,8 @@
 title: Agentic AI Tech Labs 개요
 description: Agentic AI Tech Labs 개요
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 아젠틱 AI 테크랩은 진행 중인 작업으로 2025년 11월/12월에 출시될 예정이다.
 
-## 1.1 에이전트 및 AI 시작하기
+[1.1 에이전트 및 AI 시작하기](./modules/agentic-ai/module1.1/agenticai.md)
 
 **목표**
 
@@ -37,7 +38,7 @@ ht-degree: 0%
 - MCP 서버, Python Notebook
 - ADOBE API
 
-## 1.2 에이전트 Collaboration
+[1.2 에이전트 Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **목표**
 

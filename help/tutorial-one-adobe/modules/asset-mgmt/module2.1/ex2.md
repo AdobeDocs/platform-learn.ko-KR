@@ -4,9 +4,9 @@ description: AEM CS 환경 설정
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ ZZZ = `citisignal-aem-accs`
 
 `fstab.yaml` 파일이 업데이트되었습니다.
 
-## 1.1.2.3 CitiSignal 자산 업로드
+## 1.1.2.3 CitiSignal 자산 및 사이트 업로드
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
 
@@ -163,11 +163,11 @@ URL은 다음과 같이 표시됩니다. `https://author-p166717-e1786231.adobea
 
 업로드할 패키지를 찾으려면 **찾아보기**&#x200B;를 클릭하세요.
 
-업로드할 패키지는 **citsignal-assets.zip**&#x200B;이며 [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}에서 다운로드할 수 있습니다.
+업로드할 패키지는 **citsignal-assets.zip**&#x200B;이며 [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}에서 다운로드할 수 있습니다.
 
 ![AEMCS](./images/aemcssetup23.png)
 
-패키지를 선택하고 **열기**&#x200B;를 클릭합니다.
+패키지 `citisignal_aem_accs.zip`을(를) 선택하고 **열기**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcssetup24.png)
 
@@ -175,11 +175,7 @@ URL은 다음과 같이 표시됩니다. `https://author-p166717-e1786231.adobea
 
 ![AEMCS](./images/aemcssetup25.png)
 
-그러면 패키지가 업로드됩니다.
-
-![AEMCS](./images/aemcssetup26.png)
-
-그런 다음 방금 업로드한 패키지에서 **설치**&#x200B;를 클릭합니다.
+그러면 패키지가 업로드됩니다. 그런 다음 방금 업로드한 패키지에서 **설치**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcssetup27.png)
 
@@ -229,61 +225,66 @@ URL은 다음과 같이 표시됩니다. `https://author-p166717-e1786231.adobea
 
 이제 자산이 게시되었습니다.
 
-## 1.1.2.5 CitiSignal 웹 사이트 만들기
+## 1.1.2.5 CitiSignal 웹 사이트 게시
 
-[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. **프로그램**&#x200B;을 클릭하여 엽니다.
+화면 왼쪽 상단 모서리에서 **Adobe Experience Manager** 제품 이름을 클릭한 다음 **Assets** 옆에 있는 **화살표**&#x200B;를 클릭합니다.
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcssetup30a.png)
 
-그런 다음 작성자 환경의 URL을 클릭합니다.
-
-![AEMCS](./images/aemcssetup18.png)
-
-**Adobe으로 로그인**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup19.png)
-
-그러면 작성자 환경이 표시됩니다. **사이트**&#x200B;를 클릭합니다.
+**사이트**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcssetup30.png)
 
-**만들기**&#x200B;를 클릭한 다음 **템플릿의 사이트**&#x200B;를 클릭합니다.
+그러면 이전에 패키지를 설치한 후 만든 **CitiSignal** 웹 사이트가 표시됩니다.
 
 ![AEMCS](./images/aemcssetup31.png)
 
-**가져오기**&#x200B;를 클릭합니다.
+이전에 만든 GitHub 저장소에 사이트를 연결하려면 **Edge Delivery Services 구성**&#x200B;을 만들어야 합니다.
+
+이를 수행하기 위한 첫 번째 단계는 **클라우드 구성**&#x200B;을 만드는 것입니다.
+
+이렇게 하려면 화면 왼쪽 상단 모서리에서 **Adobe Experience Manager** 제품 이름을 클릭한 다음 **도구** 아이콘을 클릭한 다음 **일반**&#x200B;을(를) 선택합니다. **구성 브라우저**&#x200B;를 열려면 클릭하세요.
+
+![AEMCS](./images/aemcssetup31a.png)
+
+그럼 이걸 보셔야죠 **만들기** 클릭
+
+![AEMCS](./images/aemcssetup31b.png)
+
+필드 **제목** 및 **이름**&#x200B;을(를) `CitiSignal`(으)로 설정합니다. **클라우드 구성**&#x200B;에 대한 확인란을 사용하도록 설정합니다.
+
+**만들기**&#x200B;를 클릭합니다.
+
+![AEMCS](./images/aemcssetup31c.png)
+
+그럼 이걸 드셔보세요
+
+![AEMCS](./images/aemcssetup31d.png)
+
+이제 방금 만든 **클라우드 구성**&#x200B;의 일부 필드를 업데이트해야 합니다.
+
+이렇게 하려면 화면 왼쪽 상단 모서리에서 **Adobe Experience Manager** 제품 이름을 클릭한 다음 **도구** 아이콘을 클릭한 다음 **클라우드 서비스**&#x200B;를 선택하십시오. **Edge Delivery Services 구성**&#x200B;을 열려면 클릭하세요.
 
 ![AEMCS](./images/aemcssetup32.png)
 
-이제 사이트에 대해 사전 구성된 템플릿을 가져와야 합니다. [여기](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"}에서 템플릿을 다운로드할 수 있습니다. 파일을 바탕 화면에 저장합니다.
+**CitiSignal**&#x200B;을 선택하고 **만들기**&#x200B;를 클릭한 다음 **구성**&#x200B;을 선택합니다.
 
-그런 다음 `citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip` 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
+![AEMCS](./images/aemcssetup31e.png)
+
+이제 **조직** 및 **사이트 이름** 필드를 입력해야 합니다. 이렇게 하려면 먼저 GitHub 저장소의 URL을 찾습니다.
+
+![AEMCS](./images/aemcssetup31f.png)
+
+- **조직**: GitHub 조직 이름을 사용하십시오. 이 예제에서는 `woutervangeluwe`입니다.
+- **사이트 이름**: `citisignal-aem-accs`이어야 하는 GitHub 리포지토리의 이름을 사용합니다.
+
+**저장 및 닫기**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcssetup33.png)
 
-그러면 이걸 보게 될 거야. 업로드한 템플릿을 클릭하여 선택한 다음 **다음**&#x200B;을 클릭합니다.
+그럼 이걸 드셔보세요 새로 만든 Edge 클라우드 구성 앞의 확인란을 활성화하고 **게시**&#x200B;를 클릭합니다.
 
 ![AEMCS](./images/aemcssetup34.png)
-
-이제 세부 사항을 작성해야 합니다.
-
-- 사이트 제목: **CitiSignal** 사용
-- 사이트 이름: **CitiSignal** 사용
-- GitHub URL: 이전에 사용 중이던 GitHub 저장소의 URL을 복사합니다.
-
-![AEMCS](./images/aemcssetup35.png)
-
-그럼 이걸로 드셔보세요 **만들기**&#x200B;를 클릭합니다.
-
-![AEMCS](./images/aemcssetup36.png)
-
-이제 사이트를 만드는 중입니다. 몇 분 정도 걸릴 수 있습니다. **확인**&#x200B;을 클릭합니다.
-
-![AEMCS](./images/aemcssetup37.png)
-
-몇 분 후에 화면을 새로 고치면 새로 만든 CitiSignal 웹 사이트가 표시됩니다.
-
-![AEMCS](./images/aemcssetup38.png)
 
 ## 1.1.2.6 파일 경로.json 업데이트
 
@@ -308,6 +309,10 @@ GitHub 리포지토리에서 을(를) 클릭하여 `paths.json` 파일을 엽니
 `paths.json` 파일이 업데이트되었습니다.
 
 ## 1.1.2.7 CitiSignal 웹 사이트 게시
+
+화면 왼쪽 상단 모서리에서 **Adobe Experience Manager** 제품 이름을 클릭한 다음 **사이트**&#x200B;를 선택합니다.
+
+![AEMCS](./images/aemcssetup38.png)
 
 **CitiSignal** 앞의 확인란을 클릭합니다. 그런 다음 **게시 관리**&#x200B;를 클릭합니다.
 
@@ -364,7 +369,7 @@ GitHub 리포지토리에서 을(를) 클릭하여 `paths.json` 파일을 엽니
 
 ![AEMCS](./images/aemcssetup50.png)
 
-다음 단계: [사용자 지정 블록 개발](./ex4.md){target="_blank"}
+다음 단계: [사용자 지정 블록 개발](./ex3.md){target="_blank"}
 
 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services으로 돌아가기](./aemcs.md){target="_blank"}
 

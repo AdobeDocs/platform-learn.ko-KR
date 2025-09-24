@@ -4,7 +4,7 @@ description: Real-Time CDP - 대상 구축 및 조치 - 대상을 Adobe Target�
 kt: 5342
 doc-type: tutorial
 exl-id: 2a9a982b-0ffd-468d-9b71-77224e2c7e1d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 2.3.5 조치 취하기: 대상자를 Adobe Target으로 보내기
 
-[Adobe Experience Platform](https://experience.adobe.com/platform)(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
+[Adobe Experience Platform](https://experience.adobe.com/platform)&#x200B;(으)로 이동합니다. 로그인하면 Adobe Experience Platform 홈페이지에 접속하게 됩니다.
 
 ![데이터 수집](./../../../../modules/delivery-activation/datacollection/dc1.2/images/home.png)
 
@@ -107,7 +107,7 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 
 이제 Real-Time CDP 대상자가 Adobe Target으로 전송되도록 구성되었으므로 Adobe Target에서 경험 타깃팅 활동을 구성할 수 있습니다. 이 연습에서는 양식 기반 활동을 구성합니다.
 
-[https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/)(으)로 이동하여 Adobe Experience Cloud 홈페이지로 이동합니다. **Target**&#x200B;을 클릭하여 엽니다.
+[https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/)&#x200B;(으)로 이동하여 Adobe Experience Cloud 홈페이지로 이동합니다. **Target**&#x200B;을 클릭하여 엽니다.
 
 ![RTCDP](./images/excl.png)
 
@@ -146,7 +146,7 @@ Adobe Target은 Real-Time CDP에서 대상으로 사용할 수 있습니다. Ado
 다음 코드를 붙여넣습니다.
 
 ```javascript
-<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
+<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
 document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > div > div > p").innerHTML="What about 10% off of your next Galaxy S24 smartphone?";
 </script>
 ```

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Firefly 맞춤형 모델을 사용하여 다음을 수행할 수 있습니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm5.png){zoomable="yes"}
 
-그럼 이걸 보셔야죠 **계속을 클릭합니다**.
+그럼 이걸 보셔야죠 **계속**&#x200B;을 클릭합니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm6.png){zoomable="yes"}
 
@@ -87,7 +87,7 @@ Firefly 맞춤형 모델을 사용하여 다음을 수행할 수 있습니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm7.png){zoomable="yes"}
 
-참조 이미지 [여기](https://tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip)를 다운로드하십시오. 다운로드 파일의 압축을 풀고 해당 파일을 제공합니다.
+참조 이미지 [여기](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip)를 다운로드하십시오. 다운로드 파일의 압축을 풀고 해당 파일을 제공합니다.
 
 ![Firefly 사용자 지정 모델](./images/ffcm8.png){zoomable="yes"}
 

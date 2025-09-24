@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 510e9f59-1399-4a52-ad51-67e3f407037f
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '840'
 ht-degree: 13%
 
 ---
 
 # 1.4.2 Adobe Express의 애니메이션 및 비디오
 
-이 연습을 시작하기 전에 [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"}에서 필요한 자산을 다운로드하고 바탕 화면에서 압축을 풉니다.
+이 연습을 시작하기 전에 [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"}에서 필요한 자산을 다운로드하고 바탕 화면에서 압축을 풉니다.
 
 ![Adobe Express](./images/expressassets.png)
 

@@ -3,10 +3,11 @@ title: Collaboration 요원
 description: Collaboration 요원
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 96f8490e-a7f4-4b81-8e7a-1ae2cab158fe
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 7%
+source-wordcount: '71'
+ht-degree: 5%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 ## 학습 목표
 
-- ...
+이 모듈에서는 이전에 만든 에이전트가 다양한 Adobe 에이전트와 함께 작동하게 됩니다.
 
 ## 전제 조건
 

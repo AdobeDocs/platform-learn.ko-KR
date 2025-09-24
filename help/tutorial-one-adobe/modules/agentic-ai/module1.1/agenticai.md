@@ -3,10 +3,11 @@ title: 에이전틱 AI
 description: 에이전틱 AI
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 434e7c16-92ef-4c2f-b958-3549d5150301
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 14%
+source-wordcount: '74'
+ht-degree: 10%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 14%
 
 ## 학습 목표
 
-- ...
+이 모듈에서는 고유한 에이전트를 만들고 에이전트를 구성하는 다양한 아키텍처 요소를 살펴봅니다.
 
 ## 전제 조건
 

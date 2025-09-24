@@ -4,7 +4,7 @@ description: 고객 AI - 데이터 준비(수집)
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 1%
@@ -112,7 +112,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 이 연습에서 경험 이벤트를 위해 준비된 데이터는 [소비자 경험 이벤트 XDM 필드 그룹](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md)의 요구 사항 및 스키마를 준수해야 합니다.
 
-다음 위치에서 데모 데이터가 포함된 zip 파일을 다운로드하십시오. [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
+다음 위치에서 데모 데이터가 포함된 zip 파일을 다운로드하십시오. [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
 이제 **CUSTOM-CAI-EVENTS-WEB.zip** 파일을 다운로드했습니다. 컴퓨터의 바탕 화면에 파일을 놓고 압축을 해제하면 **CUSTOM-CAI-EVENTS-WEB**(이)라는 폴더가 표시됩니다.
 
