@@ -75,12 +75,12 @@ Campaigns
    + [엔드 투 엔드 데모](rtcdp/demo.md)
    + [B2B edition 개요](rtcdp/b2b-overview.md)
    + [Marketo Engage을 사용하여 캠페인 오케스트레이션](rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [시작: 데이터 설계자 및 데이터 엔지니어](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
++ [시작: 데이터 설계자 및 데이터 엔지니어](https://experienceleague.adobe.com/ko/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
 + [Experience Platform으로 샘플 데이터 가져오기](/help/platform/data-generator/import-sample-data.md)
 + 관리 {#admin}
    + [개요](/help/platform/admin/overview.md)
    + [사용자 추가](/help/platform/admin/add-users.md)
-   + [데이터 수집에 사용자 추가](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
+   + [데이터 수집에 사용자 추가](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/users-and-permissions)
    + [개발자 추가](/help/platform/admin/add-developers.md)
    + [제품 관리자 추가](/help/platform/admin/add-product-administrators.md)
    + [속성 기반 액세스 제어 구성](/help/platform/admin/configure-attribute-based-access-control.md)
@@ -138,11 +138,11 @@ Campaigns
       + [세그먼트 매치 사전 공유 인사이트](/help/platform/audiences/segment-match/segment-match-pre-share-insights.md)
       + [수신 데이터와 일치하는 세그먼트](/help/platform/audiences/segment-match/segment-match-receiving-data.md)
    + 튜토리얼{#audience-tutorials}
-      + [대상 규칙 평가](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
-      + [데이터를 내보낼 데이터 집합을 만듭니다](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment){target="_blank"}
-      + [Data Warehouse의 대상과 소통](https://experienceleague.adobe.com/en/docs/platform-learn/engage-with-audiences-from-your-data-warehouse-using-fac/overview){target="_blank"}
+      + [대상 규칙 평가](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
+      + [데이터를 내보낼 데이터 집합을 만듭니다](https://experienceleague.adobe.com/ko/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment){target="_blank"}
+      + [Data Warehouse의 대상과 소통](https://experienceleague.adobe.com/ko/docs/platform-learn/engage-with-audiences-from-your-data-warehouse-using-fac/overview){target="_blank"}
 + [감사 로그](/help/platform/governance/audit-logs.md)
-+ [데이터 수집](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview){target="_blank"}
++ [데이터 수집](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/overview){target="_blank"}
 + 공동 작업 {#collaboration}
    + [Real-Time CDP Collaboration 개요](collaboration/real-time-cdp-collaboration-overview.md)
    + [Collaboration 소개](collaboration/real-time-cdp-collaboration-intro.md)
@@ -170,27 +170,27 @@ Campaigns
    + [개요](/help/platform/data-hygiene/overview.md)
    + [데이터 위생을 위한 데이터 준비](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [데이터 세트 및 배치 삭제](/help/platform/data-hygiene/delete-datasets-and-batches.md)
-   + [데이터 세트 만료](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [데이터 세트 만료](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [익명 프로필 및 이벤트 만료(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [프로필 삭제](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/profiles/delete-profiles)
-   + [프로필 특성 업데이트](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
+   + [프로필 특성 업데이트](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 데이터 수집 {#data-ingestion}
    + [개요](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [일괄 처리 수집 개요](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [데이터 세트 만들기 및 채우기](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [데이터 세트 및 배치 삭제](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema){target="_blank"}
-   + [소스 개요](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/overview)
-   + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
-   + [Audience Manager에서 데이터 수집](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
-   + [클라우드 저장소에서 데이터 수집](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage)
-   + [CRM에서 데이터 수집](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-crm)
-   + [데이터베이스로부터 데이터 수집](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-databases)
+   + [XDM에 CSV 파일 매핑](https://experienceleague.adobe.com/ko/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema){target="_blank"}
+   + [소스 개요](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/overview)
+   + [Adobe Analytics에서 데이터 수집](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
+   + [Audience Manager에서 데이터 수집](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
+   + [클라우드 저장소에서 데이터 수집](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage)
+   + [CRM에서 데이터 수집](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/ingest-data-from-crm)
+   + [데이터베이스로부터 데이터 수집](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/ingest-data-from-databases)
    + [스트리밍 수집 개요](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [HTTP API로 데이터 스트리밍](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api)
-   + [소스 커넥터를 사용하여 데이터 스트리밍](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector)
-   + [웹 SDK 자습서](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview){target="_blank"}
-   + [모바일 SDK 자습서](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/mobile-sdk/overview){target="_blank"}
+   + [HTTP API로 데이터 스트리밍](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api)
+   + [소스 커넥터를 사용하여 데이터 스트리밍](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector)
+   + [웹 SDK 자습서](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/web-sdk/overview){target="_blank"}
+   + [모바일 SDK 자습서](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/mobile-sdk/overview){target="_blank"}
 + 데이터 라이프사이클 {#data-lifecycle}
    + [데이터 세트 만료](/help/platform/data-lifecycle/expire-datasets.md)
 + 대상 {#destinations}
@@ -243,7 +243,7 @@ Campaigns
    + [실시간 고객 프로필 이해](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [프로필 개요 다이어그램](/help/platform/profiles/overview-diagram.md)
    + [프로필로 데이터 가져오기](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [프로필 보기 세부 정보 사용자 지정](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/profile-customization){target="_blank"}
+   + [프로필 보기 세부 정보 사용자 지정](https://experienceleague.adobe.com/ko/docs/experience-platform/profile/ui/profile-customization){target="_blank"}
    + [계정 프로필 보기](/help/platform/profiles/view-account-profiles.md)
    + [병합 정책 만들기](/help/platform/profiles/create-merge-policies.md)
    + [결합 스키마 개요](/help/platform/profiles/union-schemas-overview.md)
@@ -272,12 +272,12 @@ Campaigns
    + [쿼리 서비스 API](/help/platform/queries/query-service-api.md)
    + [Adobe 정의 함수](/help/platform/queries/adobe-defined-functions.md)
    + [데이터 사용 패턴](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
-   + [쿼리 결과에서 데이터 세트 생성](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets){target="_blank"}
+   + [쿼리 결과에서 데이터 세트 생성](https://experienceleague.adobe.com/ko/docs/experience-platform/query/ui/create-datasets){target="_blank"}
    + [타블로](/help/platform/queries/psql-client-tableau.md)
    + [데이터 분석 및 시각화](/help/platform/queries/analyze-and-visualize.md)
    + [BI 도구를 사용하여 대시보드 빌드](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [고객 데이터 충전](/help/platform/queries/recharge-your-customer-data.md)
-   + [클라이언트를 쿼리 서비스에 연결](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview){target="_blank"}
+   + [클라이언트를 쿼리 서비스에 연결](https://experienceleague.adobe.com/ko/docs/experience-platform/query/clients/overview){target="_blank"}
    + [데이터 레이크에서 데이터 유효성 검사](/help/platform/queries/validate-data-in-the-datalake.md)
 + 스키마 {#schemas}
    + [개요](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -293,7 +293,7 @@ Campaigns
    + [열거형 필드 및 제안 값 사용](/help/platform/schemas/use-enumerated-fields.md)
    + [샌드박스 간에 스키마 복사](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [스키마 업데이트](/help/platform/schemas/update-schemas.md)
-   + [임시 스키마 만들기](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc){target="_blank"}
+   + [임시 스키마 만들기](https://experienceleague.adobe.com/ko/docs/experience-platform/xdm/tutorials/ad-hoc){target="_blank"}
 + 소스 {#sources}
    + [개요](/help/platform/sources/overview.md)
    + [Adobe Analytics에서 데이터 수집](/help/platform/sources/ingest-data-from-adobe-analytics.md)
@@ -310,11 +310,11 @@ Campaigns
    + [플레이북 샌드박스 구성](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [플레이북 인스턴스 만들기 및 게시](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud 통합 {#experience-cloud}
-   + [Analytics](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
-   + [Audience Manager](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
+   + [Analytics](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
+   + [Audience Manager](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
-   + [Marketo Engage](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage)
-   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+   + [Marketo Engage](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage)
+   + [Target](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 + 업계 동향 {#industry}
    + [데이터 관리의 미래와 변화하는 환경](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [두 가지 인식에 대한 이야기 - 브랜드 대 소비자](/help/platform/industry/brands-vs-consumers.md)
