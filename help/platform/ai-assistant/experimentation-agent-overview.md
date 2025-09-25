@@ -17,6 +17,6 @@ ht-degree: 35%
 
 # 실험 에이전트 개요
 
-실험 에이전트는 통찰력, 가이드 설정 및 마케터, 분석가 및 관리자를 위한 자동화된 분석을 통해 디지털 최적화의 속도를 높입니다. 자세한 내용은 [Experiment Accelerator 설명서](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)를 참조하십시오.
+실험 에이전트는 통찰력, 가이드 설정 및 마케터, 분석가 및 관리자를 위한 자동화된 분석을 통해 디지털 최적화의 속도를 높입니다. 자세한 내용은 [Experiment Accelerator 설명서](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)를 참조하십시오.
 
 >[!SLIDE](experimentation-agent-overview)

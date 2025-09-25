@@ -16,6 +16,6 @@ ht-degree: 4%
 
 # Adobe Experience Platform Agent Orchestrator 개요
 
-Agent Orchestrator은 특별히 빌드된 에이전트, 고급 추론 엔진 및 강력한 대화 인터페이스로 고객 experience orchestration을 지원하는 Adobe Experience Platform의 에이전트 계층입니다. 자세한 내용은 [Agent Orchestrator 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)를 참조하세요.
+Agent Orchestrator은 특별히 빌드된 에이전트, 고급 추론 엔진 및 강력한 대화 인터페이스로 고객 experience orchestration을 지원하는 Adobe Experience Platform의 에이전트 계층입니다. 자세한 내용은 [Agent Orchestrator 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)를 참조하세요.
 
 >[!SLIDE](agent-orchestrator-overview)
