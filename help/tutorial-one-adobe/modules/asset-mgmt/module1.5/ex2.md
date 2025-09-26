@@ -3,9 +3,10 @@ title: AEM Sites CS/EDS Storefront에 ACCS 연결
 description: AEM Sites CS/EDS Storefront에 ACCS 연결
 kt: 5342
 doc-type: tutorial
-source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
+exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -75,6 +76,11 @@ AEM Sites CS/EDS 환경을 설정할 때 작성된 GitHub 저장소로 이동합
 ![ACCS+AEM Sites](./images/accsaemsites10.png)
 
 **config.json** 파일이 업데이트되었습니다. 몇 분 안에 웹 사이트에서 변경 사항을 볼 수 있습니다. 변경 사항이 정상적으로 선택되었는지 확인하는 방법은 **휴대폰** 제품 페이지로 이동하는 것입니다. 이제 페이지에 **iPhone Air**&#x200B;이(가) 표시됩니다.
+
+웹 사이트에 액세스하려면 GitHub 사용자 계정으로 XXX를 바꾼 후 `main--citisignal-aem-accs--XXX.aem.page` 및/또는 `main--citisignal-aem-accs--XXX.aem.live`(으)로 이동해야 합니다(이 예에서는 `woutervangeluwe`).
+
+이 예에서 전체 URL은 다음과 같이 됩니다.
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` 및/또는 `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 

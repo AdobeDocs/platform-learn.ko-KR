@@ -3,9 +3,10 @@ title: AEM Assets CS에 ACCS 연결
 description: AEM Assets CS에 ACCS 연결
 kt: 5342
 doc-type: tutorial
-source-git-commit: 58448049d54ee6124985159577df0e307896a312
+exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -90,7 +91,9 @@ Cloud Manager 프로그램(`--aepUserLdap-- - CitiSignal AEM+ACCS`)을 열려면
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
-[https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce)&#x200B;(으)로 이동합니다.
+[https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce)&#x200B;(으)로 이동합니다. **&lt;> 코드**&#x200B;를 클릭한 다음 **ZIP 다운로드**&#x200B;를 선택합니다. 파일을 다운로드한 다음 바탕 화면에 놓습니다.
+
+![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
 그런 다음 **assets-commerce-main.zip** 파일을 바탕 화면에 복사하고 압축을 풉니다. **assets-commerce-main** 폴더를 엽니다.
 

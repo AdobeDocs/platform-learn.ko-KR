@@ -3,10 +3,11 @@ title: Adobe Commerce as a Cloud Service 시작하기
 description: Adobe Commerce as a Cloud Service 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +182,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs30.png)
 
-3개 열 모두에서 이름 `1TB`을(를) 사용하여 세 번째 옵션을 구성한 다음 **옵션 추가**&#x200B;를 다시 클릭합니다.
+3개 열 모두에서 이름 `1TB`을(를) 사용하여 세 번째 옵션을 구성합니다.
 
 ![AEM Assets](./images/accs31.png)
 
@@ -234,7 +235,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs42.png)
 
-**저장**&#x200B;을 클릭합니다.
+각 제품의 **수량**&#x200B;을(를) `10000`(으)로 설정합니다. **저장**&#x200B;을 클릭합니다.
 
 ![AEM Assets](./images/accs43.png)
 
@@ -255,7 +256,6 @@ ht-degree: 15%
 이제 제품 카탈로그에 제품 **iPhone Air** 및 해당 변형이 표시됩니다.
 
 ![AEM Assets](./images/accs47.png)
-
 
 다음 단계: [AEM Sites CS/EDS Storefront에 ACCS 연결](./ex2.md){target="_blank"}
 
