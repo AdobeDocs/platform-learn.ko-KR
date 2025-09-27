@@ -18,6 +18,6 @@ ht-degree: 34%
 
 # Audience Agent 개요
 
-Audience Agent은 B2B/B2C 앱 전반에서 대화형 생성, 최적화, 통찰력 및 보안 통합을 통해 고객 관리를 간소화합니다. 자세한 내용은 [Audience Agent 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience)를 참조하세요.
+Audience Agent은 B2B/B2C 앱 전반에서 대화형 생성, 최적화, 통찰력 및 보안 통합을 통해 고객 관리를 간소화합니다. 자세한 내용은 [Audience Agent 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/audience)를 참조하세요.
 
 >[!SLIDE](audience-agent-overview)
