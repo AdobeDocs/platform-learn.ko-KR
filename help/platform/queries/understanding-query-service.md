@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 기능을 통해 사용할 수 있는 데이터 출력 및 예약과 같은 향상된 기능을 통해 SQL을 사용하여 데이터 레이크에 저장된 고객 경험 데이터를 탐색, 유효성 검사 및 변환할 수 있습니다. 이 비디오는 사용자가 다양한 플랫폼 기반 애플리케이션에서 쿼리 서비스를 활용하는 방법을 이해하는 데 도움이 되는 핵심 기능에 대한 개요를 제공합니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/query/home)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32949?learn=on&enablevpops&captions=kor)
 
 ## 기본 사용
 
@@ -35,7 +35,7 @@ Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="쿼리 서비스로 쿼리 실행" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="쿼리 서비스로 쿼리 실행"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32942?format=jpeg&nocache=1759180596408&captions=kor" alt="쿼리 서비스로 쿼리 실행"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="쿼리 서비스로 데이터 유효성 검사" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="쿼리 서비스로 데이터 유효성 검사"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414058?format=jpeg&nocache=1759180596397&captions=kor" alt="쿼리 서비스로 데이터 유효성 검사"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -81,7 +81,7 @@ Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="Data Distiller을 사용하여 데이터 가져오기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="Data Distiller을 사용하여 데이터 가져오기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414070?format=jpeg&nocache=1759180596403&captions=kor" alt="Data Distiller을 사용하여 데이터 가져오기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="쿼리 서비스에 타블로 연결" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1759180596876" alt="쿼리 서비스에 타블로 연결"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414046?format=jpeg&nocache=1759180596876&captions=kor" alt="쿼리 서비스에 타블로 연결"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="고객 데이터를 재충전하여 혁신적인 경험 제공" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="고객 데이터를 재충전하여 혁신적인 경험 제공"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454951?format=jpeg&nocache=1759180596865&captions=kor" alt="고객 데이터를 재충전하여 혁신적인 경험 제공"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -19,4 +19,4 @@ ht-degree: 1%
 
 Adobe Experience Platform의 쿼리 서비스를 사용하여 데이터가 데이터 레이크에 성공적으로 수집되었는지 확인하는 방법을 알아봅니다. 자세한 제품 설명서는 [쿼리 편집기 UI 안내서](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ko)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445684?learn=on&enablevpops&captions=kor)

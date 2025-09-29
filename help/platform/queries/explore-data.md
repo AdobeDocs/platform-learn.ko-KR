@@ -18,4 +18,4 @@ ht-degree: 0%
 
 SQL 함수를 사용하여 수집된 데이터의 유효성을 검사하는 방법을 알아봅니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/query/home)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414058?learn=on&enablevpops&captions=kor)
