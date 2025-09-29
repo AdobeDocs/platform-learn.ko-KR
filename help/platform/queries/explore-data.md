@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 쿼리 서비스로 데이터 유효성 검사
 
-SQL 함수를 사용하여 수집된 데이터의 유효성을 검사하는 방법을 알아봅니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)를 참조하세요.
+SQL 함수를 사용하여 수집된 데이터의 유효성을 검사하는 방법을 알아봅니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/query/home)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
