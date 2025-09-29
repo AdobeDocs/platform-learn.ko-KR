@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Data Distiller을 사용하여 데이터 가져오기
 
-데이터 엔지니어가 쿼리 서비스를 사용하여 데이터를 변환하고 새 데이터 세트를 출력하는 방법에 대해 알아봅니다. 이러한 쿼리를 일정에 따라 실행하여 자동화된 대시보드 및 세분화를 향상시킵니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)를 참조하세요.
+데이터 엔지니어가 쿼리 서비스를 사용하여 데이터를 변환하고 새 데이터 세트를 출력하는 방법에 대해 알아봅니다. 이러한 쿼리를 일정에 따라 실행하여 자동화된 대시보드 및 세분화를 향상시킵니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/query/home)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
