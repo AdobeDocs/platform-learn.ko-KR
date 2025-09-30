@@ -66,7 +66,7 @@ Platform Web SDK을 처음 사용하는 경우 걱정하지 마십시오. 아래
 >
 >지정된 페이지에 대한 기존 AppMeasurement SDK 구현을 유지하면서 Target을 Platform Web Adobe Analytics으로 마이그레이션하는 기능은 지원되지 않습니다.
 >
-> at.js(및 AppMeasurement.js) 구현을 한 번에 한 페이지씩 Platform Web SDK으로 마이그레이션할 수 있습니다. 이 방법을 사용하는 경우 [`idMigrationEnabled` 명령을 사용하여 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled)[`targetMigrationEnabled` 및 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled)`true` 옵션을 `configure`(으)로 설정하는 것이 좋습니다.
+> at.js(및 AppMeasurement.js) 구현을 한 번에 한 페이지씩 Platform Web SDK으로 마이그레이션할 수 있습니다. 이 방법을 사용하는 경우 [`idMigrationEnabled` 명령을 사용하여 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) [`targetMigrationEnabled` 및 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled)`true` 옵션을 `configure`(으)로 설정하는 것이 좋습니다.
 
 ## at.js 함수 및 이에 해당하는 Platform Web SDK
 
