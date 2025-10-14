@@ -125,7 +125,7 @@ ht-degree: 0%
 1. **[!UICONTROL 프로필]** 스위치 전환
 1. 확인 모달에서 **[!UICONTROL 사용]** 단추를 눌러 확인합니다
 
-   ![ 프로필 전환](assets/profile-loyalty-enableDataset.png)
+   ![&#x200B; 프로필 전환](assets/profile-loyalty-enableDataset.png)
 
 이러한 다른 데이터 세트에 대해 위의 단계를 반복합니다.
 

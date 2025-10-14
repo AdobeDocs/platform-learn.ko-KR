@@ -391,7 +391,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 >[!TAB Android]
 
 
-1. Android Studio에서 [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android)이(가) **[!UICONTROL Android:app]** VDown **[!UICONTROL >]** Gradle Scripts![의 ](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
+1. Android Studio에서 [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android)이(가) **[!UICONTROL Android:app]** VDown **[!UICONTROL >]** Gradle Scripts![의 &#x200B;](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
 1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]**(으)로 이동합니다.
 1. `Optimize`이(가) 가져오기 목록의 일부인지 확인하십시오.
 

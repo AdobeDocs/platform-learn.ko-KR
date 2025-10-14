@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## 슬라이드 데크
 
-이 설명서는 이 부트캠프의 개념과 콘텐츠 공급망에 익숙해지는 데 도움이 될 수 있습니다. 하지만 우리가 보여주고 싶었지만 더 이상 포함시키지 못한 것들이 항상 있습니다. 이 정보는 [다음 슬라이드 데크](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU) 및 [가능한 데모 기술](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen)에서 찾을 수 있습니다.
+이 설명서는 이 부트캠프의 개념과 콘텐츠 공급망에 익숙해지는 데 도움이 될 수 있습니다. 하지만 우리가 보여주고 싶었지만 더 이상 포함시키지 못한 것들이 항상 있습니다. 이 정보는 [다음 슬라이드 데크](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&csf=1&web=1&e=57aFUU) 및 [가능한 데모 기술](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen)에서 찾을 수 있습니다.
 
 ## 아도비케를 만나다
 

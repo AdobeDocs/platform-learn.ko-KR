@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## PostBuster 설치
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542)(으)로 이동합니다.
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542)(으)로 이동합니다.
 
 **PostBuster**&#x200B;의 최신 릴리스를 다운로드하려면 클릭하세요.
 

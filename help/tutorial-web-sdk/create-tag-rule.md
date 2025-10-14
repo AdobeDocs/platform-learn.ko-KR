@@ -107,7 +107,7 @@ ht-degree: 2%
 
 1. **[!UICONTROL 작업 유형]**(으)로 **[!UICONTROL 변수 업데이트]**&#x200B;를 선택합니다.
 
-1. **[!UICONTROL 데이터 요소]**(으)로 `xdm.variable.content`데이터 요소 만들기[ 단원에서 만든 ](create-data-elements.md)을(를) 선택합니다.
+1. **[!UICONTROL 데이터 요소]**(으)로 `xdm.variable.content`데이터 요소 만들기[&#x200B; 단원에서 만든 &#x200B;](create-data-elements.md)을(를) 선택합니다.
 
    ![변수 스키마 업데이트](assets/create-rule-update-variable.png)
 

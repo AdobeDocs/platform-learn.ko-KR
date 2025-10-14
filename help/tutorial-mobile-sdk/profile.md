@@ -60,7 +60,7 @@ ht-degree: 1%
 
    1. `attributeName`(예: `isPaidUser`) 및 `attributeValue`(예: `yes`)을(를) 사용하여 사전에 요소를 추가합니다.
 
-   1. `profileMap` 사전을 `attributeDict`[`UserProfile.updateUserAttributes` API 호출의 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) 매개 변수에 대한 값으로 사용합니다.
+   1. `profileMap` 사전을 `attributeDict`[`UserProfile.updateUserAttributes` API 호출의 &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) 매개 변수에 대한 값으로 사용합니다.
 
 1. Xcode Project 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]**(으)로 이동하여 `updateUserAttributes`(구매 ![신용 카드](/help/assets/icons/CreditCard.svg) 단추 코드 내)에 대한 호출을 찾습니다. 다음 코드를 추가합니다.
 
@@ -85,7 +85,7 @@ ht-degree: 1%
 
    1. `attributeName`(예: `isPaidUser`) 및 `attributeValue`(예: `yes`)을(를) 사용하여 맵에 요소를 추가합니다.
 
-   1. `profileMap` 맵을 `attributeDict`[`UserProfile.updateUserAttributes` API 호출의 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) 매개 변수에 대한 값으로 사용합니다.
+   1. `profileMap` 맵을 `attributeDict`[`UserProfile.updateUserAttributes` API 호출의 &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) 매개 변수에 대한 값으로 사용합니다.
 
 1. **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL 보기]** > **[!UICONTROL ProductView.kt]**(으)로 이동하여 `updateUserAttributes`(구매 ![신용 카드](/help/assets/icons/CreditCard.svg) 단추 코드 내)에 대한 호출을 찾습니다. 다음 코드를 추가합니다.
 
@@ -122,7 +122,7 @@ ht-degree: 1%
 
    이 코드:
 
-   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
+   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
    1. 그런 다음 `isPaidUser` 특성 값을 확인하고 `yes`일 때 오른쪽 상단의 도구 모음에 있는 ![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg) 아이콘에 배지를 넣습니다.
 
 >[!TAB Android]
@@ -138,7 +138,7 @@ ht-degree: 1%
 
    이 코드:
 
-   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 ](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
+   1. [`UserProfile.getUserAttributes` 배열에서 단일 요소로 &#x200B;](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 특성 이름이 있는 `isPaidUser` `attributeNames` API를 호출합니다.
    1. 그런 다음 `isPaidUser` 특성의 값을 확인합니다. `yes`에서 코드는 오른쪽 상단의 도구 모음에 있는 사람 아이콘을 배지 아이콘으로 바꿉니다.
 
 >[!ENDTABS]

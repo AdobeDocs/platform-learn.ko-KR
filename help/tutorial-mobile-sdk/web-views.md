@@ -66,7 +66,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API는 URL에 대해 ECID 등과 같은 모든 관련 정보를 포함하도록 변수를 설정합니다. 이 예에서는 로컬 파일을 사용하고 있지만 원격 페이지에도 동일한 개념이 적용됩니다.
 
-`Identity.getUrlVariables`Edge Network 확장 API 참조 안내서[에서 ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API에 대해 자세히 알아볼 수 있습니다.
+`Identity.getUrlVariables`Edge Network 확장 API 참조 안내서[에서 &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API에 대해 자세히 알아볼 수 있습니다.
 
 
 >[!TAB Android]
@@ -94,7 +94,7 @@ Identity.getUrlVariables {
 
 [`Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API는 URL에 대해 ECID 등과 같은 모든 관련 정보를 포함하도록 변수를 설정합니다. 이 예에서는 로컬 파일을 사용하고 있지만 원격 페이지에도 동일한 개념이 적용됩니다.
 
-`Identity.getUrlVariables`Edge Network 확장 API 참조 안내서[에서 ](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API에 대해 자세히 알아볼 수 있습니다.
+`Identity.getUrlVariables`Edge Network 확장 API 참조 안내서[에서 &#x200B;](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API에 대해 자세히 알아볼 수 있습니다.
 
 >[!ENDTABS]
 

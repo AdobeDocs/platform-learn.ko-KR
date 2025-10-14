@@ -60,13 +60,13 @@ Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습�
 
    ![스키마에서 데이터 집합 만들기](assets/experience-platform-create-dataset-schema.png)
 
-1. `Luma Web Event Data`이전 단원[에서 만든 ](configure-schemas.md) 스키마를 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. `Luma Web Event Data`이전 단원[에서 만든 &#x200B;](configure-schemas.md) 스키마를 선택한 후 **[!UICONTROL 다음]**&#x200B;을 선택합니다.
 
    ![데이터 집합, 스키마 선택](assets/experience-platform-create-dataset-schema-selection.png)
 
 1. 데이터 집합에 대해 **[!UICONTROL 이름]** 및 선택적 **[!UICONTROL 설명]**&#x200B;을 제공하십시오. 이 연습에서는 `Luma Web Event Data`을(를) 사용한 다음 **[!UICONTROL 마침]**&#x200B;을 선택하세요.
 
-   ![데이터 집합 이름 ](assets/experience-platform-create-dataset-schema-name.png)
+   ![데이터 집합 이름 &#x200B;](assets/experience-platform-create-dataset-schema-name.png)
 
 이제 Platform Web SDK 구현에서 데이터 수집을 시작하도록 데이터 세트가 구성되었습니다.
 

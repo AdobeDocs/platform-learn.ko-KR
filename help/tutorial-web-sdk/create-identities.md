@@ -47,7 +47,7 @@ Adobe Experience Platform Web SDK를 사용하여 ID를 캡처하는 방법을 �
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Platform Web SDK[를 사용하여 ](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/identity/overview)ECID를 추적하는 방법에 대해 자세히 알아보십시오.
+Platform Web SDK[를 사용하여 &#x200B;](https://experienceleague.adobe.com/ko/docs/experience-platform/edge/identity/overview)ECID를 추적하는 방법에 대해 자세히 알아보십시오.
 
 ECID는 자사 쿠키와 Platform Edge Network의 조합을 사용하여 설정됩니다. 기본적으로 자사 ID 쿠키는 웹 SDK에 의해 클라이언트측에서 설정됩니다. 쿠키 수명에 대한 브라우저 제한 사항을 고려하려면 대신 고유한 자사 ID 쿠키 서버측을 설정하도록 선택할 수 있습니다. 이러한 ID 쿠키를 자사 디바이스 ID(FPID)라고 합니다.
 
@@ -87,9 +87,9 @@ FPID 쿠키가 설정되면 해당 값을 가져와 이벤트 데이터가 수�
 
    ![데이터 수집 인터페이스](assets/identity-identityMap-setup.png)
 
-1. **[!UICONTROL 네임스페이스]**(으)로 `lumaCrmId`ID 구성[ 단원에서 이전에 만든 ](configure-identities.md) 네임스페이스를 선택합니다. 드롭다운에 표시되지 않으면 을 입력합니다.
+1. **[!UICONTROL 네임스페이스]**(으)로 `lumaCrmId`ID 구성[&#x200B; 단원에서 이전에 만든 &#x200B;](configure-identities.md) 네임스페이스를 선택합니다. 드롭다운에 표시되지 않으면 을 입력합니다.
 
-1. **[!UICONTROL 네임스페이스]**&#x200B;을(를) 선택한 후에는 ID를 설정해야 합니다. 사용자가 Luma 사이트에 로그인하면 ID를 캡처하는 `user.profile.attributes.username`데이터 요소 만들기[ 단원에서 이전에 만든 ](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 데이터 요소를 선택합니다.
+1. **[!UICONTROL 네임스페이스]**&#x200B;을(를) 선택한 후에는 ID를 설정해야 합니다. 사용자가 Luma 사이트에 로그인하면 ID를 캡처하는 `user.profile.attributes.username`데이터 요소 만들기[&#x200B; 단원에서 이전에 만든 &#x200B;](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 데이터 요소를 선택합니다.
 
    <!--  >[!TIP]
     >

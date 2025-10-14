@@ -175,7 +175,7 @@ Platform Web SDK에서 의사 결정 관리 활동을 전달하려면 먼저 **�
 1. 배치가 생성되면 배치 목록에 표시됩니다.
 1. 새 배치가 포함된 행을 선택하고 배치 ID를 메모하십시오. 결정 범위 내의 구성에 필요할 수 있습니다.
 
-   ![배치 ID ](assets/decisioning-placement-id.png) 참조
+   ![배치 ID &#x200B;](assets/decisioning-placement-id.png) 참조
 
 ### 충성도 상태에 대한 의사 결정 규칙
 

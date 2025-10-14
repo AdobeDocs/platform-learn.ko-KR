@@ -64,7 +64,7 @@ Experience Platform Web SDK은 Adobe Experience Cloud 고객이 Adobe Experience
 
      플랫폼 액세스 제어에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/access-control/home)를 참조하세요.
 
-* 선택적 **Adobe Analytics** 단원의 경우 보고서 세트 설정, 처리 규칙 및 Analysis Workspace[에 대한 ](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-console/home)관리자 액세스 권한이 있어야 합니다.
+* 선택적 **Adobe Analytics** 단원의 경우 보고서 세트 설정, 처리 규칙 및 Analysis Workspace[에 대한 &#x200B;](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-console/home)관리자 액세스 권한이 있어야 합니다.
 
 * 선택적 **Adobe Target** 단원의 경우 [편집자 또는 승인자](https://experienceleague.adobe.com/ko/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) 액세스 권한이 있어야 합니다.
 

@@ -218,7 +218,7 @@ ht-degree: 0%
 
 축하합니다. 방금 프로필을 병합했습니다!
 
-![병합된 프로필 ](assets/ingestion-crm-profileLinkedIdentities.png)
+![병합된 프로필 &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### 데이터 수집 이벤트로 유효성 검사
 

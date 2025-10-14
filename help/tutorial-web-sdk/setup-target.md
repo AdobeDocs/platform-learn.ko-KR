@@ -176,7 +176,7 @@ ID 기호는 **데이터 수집** > **[!UICONTROL 고객]** > **[!UICONTROL ID]*
 
 ![ID 목록](assets/target-identities.png)
 
-Luma 사이트를 사용하는 이 자습서에서는 `lumaCrmId`ID[에 대한 단원 중에 설정된 ID 기호 ](configure-identities.md)을(를) 사용하십시오.
+Luma 사이트를 사용하는 이 자습서에서는 `lumaCrmId`ID[에 대한 단원 중에 설정된 ID 기호 &#x200B;](configure-identities.md)을(를) 사용하십시오.
 
 
 

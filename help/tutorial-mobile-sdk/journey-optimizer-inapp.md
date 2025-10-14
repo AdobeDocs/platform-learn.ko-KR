@@ -264,7 +264,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 >[!TAB iOS]
 
-1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action` `data` 함수를 호출하는 다음 코드를 추가합니다.
+1. Xcode 프로젝트 탐색기에서 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `func sendTrackAction(action: String, data: [String: Any]?)` 함수를 찾고 [`MobileCore.track` 및 &#x200B;](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action` `data` 함수를 호출하는 다음 코드를 추가합니다.
 
 
    ```swift
@@ -283,7 +283,7 @@ SDK 이벤트 허브는 등록된 확장에서 이벤트 데이터를 게시하�
 
 >[!TAB Android]
 
-1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `fun sendTrackAction(action: String, data: Map<String, String>?)` 함수를 찾고 [`MobileCore.track` 및 ](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action` `data` 함수를 호출하는 다음 코드를 추가합니다.
+1. Android Studio 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**(으)로 이동합니다. `fun sendTrackAction(action: String, data: Map<String, String>?)` 함수를 찾고 [`MobileCore.track` 및 &#x200B;](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 매개 변수를 기반으로 `action` `data` 함수를 호출하는 다음 코드를 추가합니다.
 
 
    ```kotlin

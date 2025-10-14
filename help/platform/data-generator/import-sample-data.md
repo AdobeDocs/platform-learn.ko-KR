@@ -187,7 +187,7 @@ Experience Platform 비즈니스 사용자는 Experience Platform에서 제공�
 
 Adobe Journey Optimizer에 대해 알아보려면 이 샌드박스에는 [Journey Optimizer 과제](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=ko)를 수행하는 데 필요한 모든 것이 포함되어 있습니다.
 
-병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 데이터 설계자 및 데이터 엔지니어 시작하기 자습서[의 ](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=ko)단원 11로 건너뜁니다. 이 다른 자습서의 이전 단원을 통해 이러한 Postman 컬렉션에서 방금 채운 모든 항목을 수동으로 빌드할 수 있습니다. 바로 시작할 수 있습니다.
+병합 정책, 데이터 거버넌스, 쿼리 서비스 및 세그먼트 빌더에 대해 알아보려면 데이터 설계자 및 데이터 엔지니어 시작하기 자습서[의 &#x200B;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=ko)단원 11로 건너뜁니다. 이 다른 자습서의 이전 단원을 통해 이러한 Postman 컬렉션에서 방금 채운 모든 항목을 수동으로 빌드할 수 있습니다. 바로 시작할 수 있습니다.
 
 이 샌드박스에 연결되는 샘플 웹 SDK 구현을 빌드하려면 다음을 수행하십시오.
 [Web SDK 자습서를 사용하여 Adobe Experience Cloud 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=ko-KR). 웹 SDK 자습서의 &quot;초기 구성&quot;, &quot;태그 구성&quot; 및 &quot;Experience Platform 설정&quot; 단원을 설정한 후 `luma-crm.json` 파일의 처음 10개 이메일 주소를 사용하여 Luma 웹 사이트에 로그인(`test` 암호 사용)하여 프로필 조각이 이 이 자습서에서 업로드한 데이터와 병합되는 것을 확인합니다.

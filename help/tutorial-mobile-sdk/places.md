@@ -166,7 +166,7 @@ Places 서비스에서 일부 관심 영역을 정의합니다.
       }
       ```
 
-      `{%% ... %%}`데이터![을(를) 선택하여 JSON에 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 데이터 요소 자리 표시자 값을 삽입할 수도 있습니다. 팝업 대화 상자를 통해 만든 데이터 요소를 선택할 수 있습니다.
+      `{%% ... %%}`데이터![을(를) 선택하여 JSON에 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) 데이터 요소 자리 표시자 값을 삽입할 수도 있습니다. 팝업 대화 상자를 통해 만든 데이터 요소를 선택할 수 있습니다.
 
    1. **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택합니다.
       ![태그 작업](assets/tags-action-mobile-core.png){zoomable="yes"}
@@ -325,7 +325,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 
 >[!TAB Android]
 
-1. Android Studio에서 [aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)이(가) **[!UICONTROL Android:app]** V자 축소&#x200B;**&#x200B;** Gradle Scripts![의 ](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
+1. Android Studio에서 [aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)이(가) **[!UICONTROL Android:app]** V자 축소&#x200B;**&#x200B;** Gradle Scripts![의 &#x200B;](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
 1. Android Studio 프로젝트 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**&#x200B;으로 이동합니다.
 1. `com.adobe.marketing.mobile.Messaging`이(가) 가져오기 목록의 일부인지 확인하십시오.
 
@@ -440,7 +440,7 @@ Assurance에서 설정의 유효성을 검사하려면:
 
 이 자습서의 Journey Optimizer 섹션에서 여정을 트리거하는 데 경험 이벤트를 사용할 수 있습니다(Journey Optimizer으로 [푸시 알림](journey-optimizer-inapp.md) 및 [인앱 메시지](journey-optimizer-push.md) 참조). 예를 들어 앱 사용자가 실제 스토어의 geofence에 들어오면 일부 제품 프로모션과 함께 푸시 알림을 전송하는 일반적인 사례입니다.
 
-앱에 대한 지리적 위치 기능의 이러한 구현으로 코드가 최소화됩니다. 태그 속성에서 정의한 Places 서비스, 데이터 요소 및 규칙은 대부분의 기능을 제공합니다. 또는 채워진 [`Edge.sendEvent` 개체가 포함된 XDM 페이로드와 함께 ](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) [ API(자세한 내용은 ](events.md)이벤트`placeContext` 참조)를 사용하여 앱에서 직접 동일한 기능을 구현할 수 있습니다.
+앱에 대한 지리적 위치 기능의 이러한 구현으로 코드가 최소화됩니다. 태그 속성에서 정의한 Places 서비스, 데이터 요소 및 규칙은 대부분의 기능을 제공합니다. 또는 채워진 [`Edge.sendEvent` 개체가 포함된 XDM 페이로드와 함께 &#x200B;](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) [&#x200B; API(자세한 내용은 &#x200B;](events.md)이벤트`placeContext` 참조)를 사용하여 앱에서 직접 동일한 기능을 구현할 수 있습니다.
 
 >[!SUCCESS]
 >

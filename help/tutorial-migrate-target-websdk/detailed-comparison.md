@@ -66,7 +66,7 @@ Platform Web SDK을 처음 사용하는 경우 걱정하지 마십시오. 아래
 >
 >지정된 페이지에 대한 기존 AppMeasurement SDK 구현을 유지하면서 Target을 Platform Web Adobe Analytics으로 마이그레이션하는 기능은 지원되지 않습니다.
 >
-> at.js(및 AppMeasurement.js) 구현을 한 번에 한 페이지씩 Platform Web SDK으로 마이그레이션할 수 있습니다. 이 방법을 사용하는 경우 [`idMigrationEnabled` 명령을 사용하여 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#id-migration-enabled) [`targetMigrationEnabled` 및 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#targetMigrationEnabled)`true` 옵션을 `configure`(으)로 설정하는 것이 좋습니다.
+> at.js(및 AppMeasurement.js) 구현을 한 번에 한 페이지씩 Platform Web SDK으로 마이그레이션할 수 있습니다. 이 방법을 사용하는 경우 [`idMigrationEnabled` 명령을 사용하여 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#id-migration-enabled) [`targetMigrationEnabled` 및 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#targetMigrationEnabled)`true` 옵션을 `configure`(으)로 설정하는 것이 좋습니다.
 
 ## at.js 함수 및 이에 해당하는 Platform Web SDK
 
@@ -76,7 +76,7 @@ Platform Web SDK을 처음 사용하는 경우 걱정하지 마십시오. 아래
 | --- | --- | 
 | `getOffer()` 및 `getOffers()` | Target VEC 기반 경험을 요청하고 [자동으로 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko#automatically-rendering-content)하려면 `sendEvent` 명령을 사용하고 `renderDecisions` 옵션을 true로 설정하십시오.<br><br>양식 기반 경험을 요청하거나 [수동으로 렌더링](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko#manually-rendering-content) 콘텐츠를 요청하려면 `decisionScopes` 명령을 사용하여 `sendEvent`(mbox)의 배열을 지정하십시오. |
 | `applyOffer()` 및 `applyOffers()` | 콘텐츠를 적용하려면 [`applyPropositions`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=ko#applypropositions) 명령을 사용하십시오. HTML을 특정 선택기로 설정, 대체 또는 추가하도록 선택할 수 있습니다. |
-| `triggerView()` | [ 명령의 ](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=ko#how-to-trigger-a-view-change-in-a-single-page-application) 옵션 아래에 `web.webPageDetails.viewName` 속성이 설정된 경우 SPA VEC를 위해 Platform Web SDK에서 `xdm`보기 변경`sendEvent`을 자동으로 트리거합니다. |
+| `triggerView()` | [&#x200B; 명령의 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=ko#how-to-trigger-a-view-change-in-a-single-page-application) 옵션 아래에 `web.webPageDetails.viewName` 속성이 설정된 경우 SPA VEC를 위해 Platform Web SDK에서 `xdm`보기 변경`sendEvent`을 자동으로 트리거합니다. |
 | `trackEvent()` 및 `sendNotifications()` | `sendEvent` 명령을 [특정 `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=ko#how-to-track-events) 집합과 함께 사용하면:<br><br>`decisioning.propositionDisplay` 활동을 렌더링한다는 신호를 보냅니다<br><br>`decisioning.propositionInteract` 마우스 클릭과 같은 활동과 사용자 상호 작용을 한다는 신호를 보냅니다. |
 | `targetGlobalSettings()` | 직접 동등 항목 없음. 자세한 내용은 [대상 설정 비교](detailed-comparison.md)를 참조하세요. |
 | `targetPageParams()` 및 `targetPageParamsAll()` | `xdm` 명령의 `sendEvent` 옵션에서 전달된 모든 데이터가 Target mbox 매개 변수에 매핑됩니다. mbox 매개 변수는 직렬화된 점 표기법을 사용하여 이름이 지정되므로 Platform Web SDK으로 마이그레이션하려면 기존 대상과 활동을 업데이트하여 새 mbox 매개 변수 이름을 사용해야 할 수 있습니다. <br><br> 명령의 `data.__adobe.target` 일부로 전달된 `sendEvent`데이터가 [Target 프로필 및 권장 사항 관련 매개 변수](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=ko#single-profile-update)에 매핑됩니다. |
@@ -88,7 +88,7 @@ Target UI의 다양한 설정을 사용하여 at.js 라이브러리를 구성하
 
 | at.js 설정 | Platform Web SDK 동등 항목 |
 | --- | --- |
-| `bodyHiddenStyle` | [`prehidingStyle` 명령을 사용하여 ](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#prehidingStyle)`configure` 설정 |
+| `bodyHiddenStyle` | [`prehidingStyle` 명령을 사용하여 &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=ko#prehidingStyle)`configure` 설정 |
 | `bodyHidingEnabled` | `prehidingStyle` 명령으로 `configure`이(가) 정의된 경우 이 기능을 사용할 수 있습니다. 스타일이 정의되지 않은 경우 Platform Web SDK은 컨텐츠를 숨기지 않습니다. |
 | `clientCode` | 자동으로 구성됨 |
 | `cookieDomain` | 적용할 수 없음 |

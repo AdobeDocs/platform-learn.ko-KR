@@ -113,7 +113,7 @@ ID 네임스페이스 `Luma CRM Id`을(를) 만들어 보겠습니다.
    ![ID 네임스페이스](assets/identity-createUsingApi.png)
 
 이제 사용자 인터페이스로 돌아가면 세 개의 새 사용자 정의 네임스페이스가 표시됩니다.
-![ID 네임스페이스 ](assets/identity-newIdentities.png)
+![ID 네임스페이스 &#x200B;](assets/identity-newIdentities.png)
 
 
 ## 스키마의 레이블 ID 필드
@@ -136,7 +136,7 @@ ID 네임스페이스 `Luma CRM Id`을(를) 만들어 보겠습니다.
 1. **[!UICONTROL 적용]** 선택
 1. **[!UICONTROL 저장]** 선택
 
-   ![기본 ID ](assets/identity-loyalty-primary.png)
+   ![기본 ID &#x200B;](assets/identity-loyalty-primary.png)
 
 다른 스키마 일부에 대해 다음 프로세스를 반복합니다.
 

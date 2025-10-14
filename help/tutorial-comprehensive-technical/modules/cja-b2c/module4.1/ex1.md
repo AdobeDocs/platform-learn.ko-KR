@@ -98,7 +98,7 @@ Adobe Experience Platform에서 이러한 스키마 및 데이터 세트를 살�
 
 ![데모](./images/commerce.png)
 
-- 모든 [데이터 세트](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created)를 미리 보고 데이터를 확인합니다
+- 모든 [데이터 세트](https://experience.adobe.com/platform/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created)를 미리 보고 데이터를 확인합니다
 
 이제 Customer Journey Analytics UI 사용을 시작할 준비가 되었습니다.
 

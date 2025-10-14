@@ -111,7 +111,7 @@ Adobe Experience Platform의 태그는 Adobe의 차세대 태그 관리 기능�
 
 1. ![검색](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 검색]** 필드를 사용하여 **Adobe Experience Platform Edge Network** 확장을 찾아 설치합니다.
 
-   1. **[!UICONTROL 데이터스트림]**&#x200B;에서 각 환경(예: **[!UICONTROL )에 대해]**&#x200B;이전 단계[에서 만든 ](create-datastream.md)데이터스트림&#x200B;**[!DNL Luma Mobile App]**&#x200B;을(를) 선택합니다.
+   1. **[!UICONTROL 데이터스트림]**&#x200B;에서 각 환경(예: **[!UICONTROL )에 대해]**&#x200B;이전 단계[에서 만든 &#x200B;](create-datastream.md)데이터스트림&#x200B;**[!DNL Luma Mobile App]**&#x200B;을(를) 선택합니다.
 
    1. 아직 채우지 않은 경우 **[!UICONTROL 도메인 구성]** 내에서 **[!UICONTROL Edge Network 도메인]**&#x200B;을 지정하십시오. Edge Network 도메인은 조직의 이름이며 `data.adobedc.net`(예: `techmarketingdemos.data.adobedc.net`)이 옵니다.
 

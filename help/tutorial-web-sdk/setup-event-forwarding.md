@@ -290,7 +290,7 @@ Platform Web SDK 태그 확장을 사용하여 이전에 구성한 XDM 개체는
 
 이제 Platform Debugger 및 Webhook.site를 사용하여 이벤트 전달 속성을 확인할 수 있습니다.
 
-1. [태그 라이브러리를 ](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Luma 데모 사이트[에서 ](https://luma.enablementadobe.com/content/luma/us/en/men.html)을(를) 데이터 스트림에서 이벤트 전달 속성을 매핑한 Web SDK 태그 속성으로 전환합니다.
+1. [태그 라이브러리를 &#x200B;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Luma 데모 사이트[에서 &#x200B;](https://luma.enablementadobe.com/content/luma/us/en/men.html)을(를) 데이터 스트림에서 이벤트 전달 속성을 매핑한 Web SDK 태그 속성으로 전환합니다.
 
 1. 페이지를 다시 로드하기 전에 Experience Platform Debugger에서 왼쪽 탐색에서 **[!UICONTROL 로그]**&#x200B;를 엽니다.
 

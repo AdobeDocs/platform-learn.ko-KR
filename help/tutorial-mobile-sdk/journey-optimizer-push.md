@@ -357,7 +357,7 @@ Android 푸시 알림은 앱과 푸시 알림을 전송할 때 모두 알림 채
 
 >[!TAB Android]
 
-1. Android Studio에서 [aepsdk-messaging-android](https://github.com/adobe/aepsdk-messaging-android)이(가) **[!UICONTROL Android:app]** VBoxDown **&#x200B;**&#x200B;Gradle Scripts![의 ](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
+1. Android Studio에서 [aepsdk-messaging-android](https://github.com/adobe/aepsdk-messaging-android)이(가) **[!UICONTROL Android:app]** VBoxDown **&#x200B;**&#x200B;Gradle Scripts![의 &#x200B;](/help/assets/icons/ChevronDown.svg)build.gradle.kts(모듈 **[!UICONTROL )]**&#x200B;에 있는 종속성의 일부인지 확인하십시오. [Gradle](install-sdks.md#gradle)을(를) 참조하세요.
 1. Android Studio 프로젝트 탐색기에서 **[!UICONTROL Android]** ![VDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**&#x200B;으로 이동합니다.
 1. `com.adobe.marketing.mobile.Messaging`이(가) 가져오기 목록의 일부인지 확인하십시오.
 
@@ -474,7 +474,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
    1. ![이벤트 ID 조건](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 필드 옆에 있는 **[!UICONTROL 편집]**&#x200B;을 선택합니다.
 
       1. **[!UICONTROL 이벤트 ID 조건 추가]** 대화 상자에서 **[!UICONTROL 이벤트 유형(eventType)]**&#x200B;을(를) **[!UICONTROL 여기에 요소 끌어다 놓기]**&#x200B;로 끌어다 놓습니다.
-      1. 팝오버에서 아래쪽으로 스크롤하여 **[!UICONTROL application.test]**(스키마 업데이트[의 일부로 이벤트 유형 목록에 이전에 추가한 이벤트 유형)을 선택합니다. ](#update-your-schema) 그런 다음 위로 스크롤하여 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
+      1. 팝오버에서 아래쪽으로 스크롤하여 **[!UICONTROL application.test]**(스키마 업데이트[의 일부로 이벤트 유형 목록에 이전에 추가한 이벤트 유형)을 선택합니다. &#x200B;](#update-your-schema) 그런 다음 위로 스크롤하여 **[!UICONTROL 확인]**&#x200B;을 선택합니다.
       1. **[!UICONTROL 확인]**&#x200B;을 선택하여 조건을 저장합니다.
          ![이벤트 조건 편집](assets/ajo-edit-condition.png){zoomable="yes"}
 
@@ -502,7 +502,7 @@ Journey Optimizer의 이벤트를 사용하면 푸시 알림과 같은 메시지
 
    * **[!UICONTROL 이벤트: LumaTestEvent]** 패널에서 **[!UICONTROL 레이블]**(예: `Luma Test Event`)을(를) 입력하십시오.
 
-1. **[!UICONTROL ACTIONS]** 드롭다운에서 ![ 활동의 오른쪽에 나타나는 ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg)Add **[!UICONTROL 에서]** Push![ ](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)Push **[!DNL LumaTestEvent]**&#x200B;을(를) 끌어서 놓습니다. **[!UICONTROL 작업: 푸시]** 창에서:
+1. **[!UICONTROL ACTIONS]** 드롭다운에서 ![&#x200B; 활동의 오른쪽에 나타나는 &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg)Add **[!UICONTROL 에서]** Push![&#x200B; &#x200B;](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)Push **[!DNL LumaTestEvent]**&#x200B;을(를) 끌어서 놓습니다. **[!UICONTROL 작업: 푸시]** 창에서:
 
    1. **[!UICONTROL 레이블]**(예: `Luma Test Push Notification`)을 제공하고 **[!UICONTROL 설명]**(예: `Test push notification for Luma mobile app`)을 제공하고 **[!UICONTROL 범주]** 목록에서 **[!UICONTROL 트랜잭션]**&#x200B;을(를) 선택한 다음 **[!DNL Luma]**&#x200B;푸시 표면&#x200B;**[!UICONTROL 에서]**&#x200B;을(를) 선택합니다.
    1. 실제 푸시 알림의 편집을 시작하려면 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 콘텐츠 편집]**&#x200B;을(를) 선택하십시오.
