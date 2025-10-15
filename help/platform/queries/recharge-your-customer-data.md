@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->이 비디오는 Adobe Summit 2020 세션 *[환경을 전기화하기 위한 옴니채널 데이터 충전](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*&#x200B;에서 발췌한 것입니다.
+>이 비디오는 Adobe Summit 2020 세션 *[환경을 전기화하기 위한 옴니채널 데이터 충전](https://business.adobe.com/kr/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*&#x200B;에서 발췌한 것입니다.

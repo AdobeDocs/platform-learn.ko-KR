@@ -52,7 +52,7 @@ _Source:_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/uk
 
 이상적으로 마케팅 팀은 다양한 분야의 사람들과 협업하고 프로젝트를 데이터 중심의 계획된 성과에 연결할 수 있는 작업 관리 솔루션을 사용해야 합니다. 또한 마케팅 팀이 작업의 우선 순위를 전략적으로 결정하고 이러한 우선 순위를 크리에이티브 팀에 알릴 수 있도록 권한을 부여해야 합니다. 여기에서 크리에이티브 개요, 콘텐츠 버전 및 피드백은 각 프로젝트 내에서 함께 연결되어야 하므로 팀이 찾고 있는 내용을 찾기 위해 이전 이메일을 검색할 필요가 없습니다.
 
-크리에이티브 팀은 크리에이티브 및 작업 관리 도구와 통합된 [우수한 디지털 에셋 관리](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [시스템](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)(으)로 설정해야 합니다. 이렇게 하면 관련 에셋을 쉽게 찾고, 사용하고, 업데이트하거나, 용도를 변경할 수 있습니다. 이러한 모든 작업을 통해 시장 출시 속도를 높이고 내부 운영 및 프로세스를 단순화할 수 있습니다.
+크리에이티브 팀은 크리에이티브 및 작업 관리 도구와 통합된 [우수한 디지털 에셋 관리](https://business.adobe.com/kr/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/kr/products/experience-manager/assets/digital-asset-management.html) [시스템](https://business.adobe.com/kr/products/experience-manager/assets/digital-asset-management.html)(으)로 설정해야 합니다. 이렇게 하면 관련 에셋을 쉽게 찾고, 사용하고, 업데이트하거나, 용도를 변경할 수 있습니다. 이러한 모든 작업을 통해 시장 출시 속도를 높이고 내부 운영 및 프로세스를 단순화할 수 있습니다.
 
 ### 원활한 워크플로우를 통해 생산 효율성 향상
 
@@ -70,9 +70,9 @@ _Source:_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/uk
 
 ## Adobe에서 업계 최고의 콘텐츠 공급망을 구축하고 있습니다
 
-당사의 [Adobe Experience Cloud 비즈니스](https://business.adobe.com/)는 이전에 설명한 단계에 따라 캠페인을 발전시키고 여러 세그먼트를 지원하는 데 중점을 두고 있습니다. Dell의 비전은 캠페인 프레임워크 및 메시지에 부합하는 매력적인 콘텐츠를 전 세계에 제공하는 것이었습니다.
+당사의 [Adobe Experience Cloud 비즈니스](https://business.adobe.com/kr/)는 이전에 설명한 단계에 따라 캠페인을 발전시키고 여러 세그먼트를 지원하는 데 중점을 두고 있습니다. Dell의 비전은 캠페인 프레임워크 및 메시지에 부합하는 매력적인 콘텐츠를 전 세계에 제공하는 것이었습니다.
 
-전체 콘텐츠 만들기 프로세스의 핵심은 [Adobe Workfront](https://business.adobe.com/products/workfront/main.html)과(와) [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html)의 쌍입니다. 이와 동일한 세 가지 높은 수준의 단계로 프로세스에 어떻게 접근했는지 살펴보겠습니다.
+전체 콘텐츠 만들기 프로세스의 핵심은 [Adobe Workfront](https://business.adobe.com/kr/products/workfront/main.html)과(와) [Adobe Experience Manager Assets](https://business.adobe.com/kr/products/experience-manager/assets/aem-assets.html)의 쌍입니다. 이와 동일한 세 가지 높은 수준의 단계로 프로세스에 어떻게 접근했는지 살펴보겠습니다.
 
 **계획**&#x200B;부터 시작하여 비즈니스 전반에 걸쳐 수백 개의 콘텐츠 요청을 받은 다음 분기별 우선 순위에 따라 우선 순위를 지정합니다. 그런 다음 Workfront의 콘텐츠 제안 대시보드를 사용하여 이해 당사자와 의견을 조율하고 마케팅, 크리에이티브, 웹 및 영업 팀 간의 승인을 신속하게 얻을 수 있는 투명성을 제공합니다. 이를 통해 당사는 해당 분기에 대해 약속하고 있는 작업에 대한 기록을 생성하고 크리에이티브 팀과 웹 팀이 리소스 조달 계획을 수립할 수 있도록 전체 요청 볼륨을 파악할 수 있도록 합니다. 또한 관리자는 팀의 워크로드를 쉽게 모니터링할 수 있습니다.
 

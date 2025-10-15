@@ -47,7 +47,7 @@ API는 소프트웨어로 비즈니스 문제를 해결하는 방법입니다. �
 
 대부분의 브라우저에는 웹 페이지에 대한 &quot;주소&quot;의 일부 또는 모두를 표시하는 &quot;주소 표시줄&quot;이 있습니다. 브라우저가 클릭한 링크에 대한 페이지를 &quot;가져오기&quot;하면 이 주소 표시줄에 페이지의 &quot;주소&quot;가 표시됩니다. 그렇다면 웹 페이지의 &quot;주소&quot;는 무엇입니까?
 
-위의 `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`은(는) 웹 페이지의 주소이며 URL 또는 Uniform Resource Locator라고 합니다. URL은 이 파일, 이미지 파일, 비디오 또는 기타 파일 형식과 같은 페이지를 의미할 수 있습니다.
+위의 `https://business.adobe.com/kr/products/experience-platform/adobe-experience-platform.html`은(는) 웹 페이지의 주소이며 URL 또는 Uniform Resource Locator라고 합니다. URL은 이 파일, 이미지 파일, 비디오 또는 기타 파일 형식과 같은 페이지를 의미할 수 있습니다.
 
 ![URL의 일부](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ _host_&#x200B;이라는 용어가 `business.adobe.com`과(와) 같은 하위 도
 
 **Origin**
 
-Origin은 URL의 부분과 밀접하게 관련되어 있음을 알아야 하는 또 다른 용어입니다. 기본 수준에서 원본은 대략 `scheme` 더하기 `host` 더하기 `domain`과(와) 같은 `https://business.adobe.com`입니다. `https://business.adobe.com`과(와) `http://business.adobe.com`은(는) 다른 체계를 가지고 있으므로 같은 원본이 아닌 것처럼 다른 값이 다른 원본을 나타내는 경우가 많습니다. `https://www.adobe.com`과(와) `https://business.adobe.com`은(는) 하위 도메인이 달라서 많은 사용 시 동일한 원본이 아닙니다.
+Origin은 URL의 부분과 밀접하게 관련되어 있음을 알아야 하는 또 다른 용어입니다. 기본 수준에서 원본은 대략 `scheme` 더하기 `host` 더하기 `domain`과(와) 같은 `https://business.adobe.com/kr`입니다. `https://business.adobe.com/kr`과(와) `http://business.adobe.com/kr`은(는) 다른 체계를 가지고 있으므로 같은 원본이 아닌 것처럼 다른 값이 다른 원본을 나타내는 경우가 많습니다. `https://www.adobe.com`과(와) `https://business.adobe.com/kr`은(는) 하위 도메인이 달라서 많은 사용 시 동일한 원본이 아닙니다.
 
 **경로**
 
@@ -133,13 +133,13 @@ Adobe Experience Platform Data Access API는 프로그래머가 Adobe Experience
 
 이제 API와 관련된 기본 용어, 개념 및 단계를 살펴보았으므로, 실제 API 요청 예를 살펴보겠습니다.
 
-브라우저 예제의 페이지에 `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` URL이 있습니다. Adobe Experience Platform 링크를 클릭하면 브라우저가 이 페이지에 대해 `GET` 요청을 합니다. 당사는 브라우저에서 작업을 수행하므로 클릭만 하면 되지만, 프로그래머가 소프트웨어 애플리케이션에서 해당 요청이 발생하기를 원하는 경우 API 요청이 성공적으로 이행되는 데 필요한 모든 세부 정보를 제공해야 합니다.
+브라우저 예제의 페이지에 `https://business.adobe.com/kr/products/experience-platform/adobe-experience-platform.html` URL이 있습니다. Adobe Experience Platform 링크를 클릭하면 브라우저가 이 페이지에 대해 `GET` 요청을 합니다. 당사는 브라우저에서 작업을 수행하므로 클릭만 하면 되지만, 프로그래머가 소프트웨어 애플리케이션에서 해당 요청이 발생하기를 원하는 경우 API 요청이 성공적으로 이행되는 데 필요한 모든 세부 정보를 제공해야 합니다.
 
 다음은 코드에서 표시되는 방식입니다.
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/kr/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:

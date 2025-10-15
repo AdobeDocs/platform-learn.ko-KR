@@ -24,4 +24,4 @@ Experience Platform, Analytics, Audience Manager 및 Target으로 데이터를 �
 
 >[!NOTE]
 >
->이 비디오는 Adobe Summit 2020 세션 *[eVar 또는 Mbox에 대해 다시 Alloy.js를 만나고 태그를 지정하지 않음](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*&#x200B;에서 발췌한 것입니다.
+>이 비디오는 Adobe Summit 2020 세션 *[eVar 또는 Mbox에 대해 다시 Alloy.js를 만나고 태그를 지정하지 않음](https://business.adobe.com/kr/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*&#x200B;에서 발췌한 것입니다.

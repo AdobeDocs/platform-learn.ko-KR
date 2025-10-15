@@ -24,7 +24,7 @@ Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScrip
 
 >[!NOTE]
 >
->이 비디오는 Adobe Summit 2020 세션 *[eVar 또는 Mbox에 대해 다시 Alloy.js를 만나고 태그를 지정하지 않음](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*&#x200B;에서 발췌한 것입니다.
+>이 비디오는 Adobe Summit 2020 세션 *[eVar 또는 Mbox에 대해 다시 Alloy.js를 만나고 태그를 지정하지 않음](https://business.adobe.com/kr/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*&#x200B;에서 발췌한 것입니다.
 >
 >이 비디오에서 설명한 서버측 전달 기능은 이제 모든 라이센스 고객이 일반적으로 사용할 수 있습니다. [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko) 보기
 
