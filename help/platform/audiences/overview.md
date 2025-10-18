@@ -290,7 +290,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="페더레이션 대상 구성 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="페더레이션 대상 구성 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450890/?captions=kor&format=jpeg&nocache=1740173579477" alt="페더레이션 대상 구성 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Federated Audience 컴포지션 연결 및 구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Federated Audience 컴포지션 연결 및 구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451563/?captions=kor&format=jpeg&nocache=1740173579488" alt="Federated Audience 컴포지션 연결 및 구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -60,7 +60,7 @@ ID 그래프 연결 규칙이 데이터 설계자가 정확한 고객 프로필�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="ID 그래프 연결 규칙 - ID 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="ID 그래프 연결 규칙 - ID 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475969/?captions=kor&format=jpeg&nocache=1747355376336" alt="ID 그래프 연결 규칙 - ID 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

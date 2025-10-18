@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Data Warehouse에 연결하고 Federated Audience Composition에 대한 해당 연결을 구성하는 방법에 대해 알아봅니다. 자세한 내용은 [Federated Audience Composition 설명서](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/home){target="_blank"}를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451563/?captions=kor&learn=on&enablevpops)

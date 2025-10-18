@@ -38,7 +38,7 @@ AI Assistant를 설정하고 기본 기능을 살펴보십시오.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="AI Assistant 액세스" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="AI Assistant 액세스"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475926/?captions=kor&format=jpeg&nocache=1748392732990" alt="AI Assistant 액세스"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ AI Assistant는 새로운 제품을 학습하거나 익숙한 제품에 대한 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="AI Assistant를 사용하여 온보딩 시간 단축" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="AI Assistant를 사용하여 온보딩 시간 단축"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475937/?captions=kor&format=jpeg&nocache=1748392735030" alt="AI Assistant를 사용하여 온보딩 시간 단축"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

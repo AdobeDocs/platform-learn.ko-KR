@@ -20,4 +20,4 @@ ht-degree: 45%
 
 Experience Platform 페더레이션된 대상자 구성은 Adobe Real-Time CDP 및 Adobe Journey Optimizer 사용자에게 데이터 관리 유연성과 효율성을 제공합니다. Federated Audience Composition을 사용하면 데이터 웨어하우스에서 Experience Platform으로 모든 데이터를 가져오지 않고도 마케터에게 친숙한 UI를 사용하여 Enterprise Data Warehouse에 액세스하여 대상을 구축하고 Adobe Experience Platform 워크플로우의 데이터 세트를 활용할 수 있습니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3432261/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450890/?captions=kor&learn=on&enablevpops)
