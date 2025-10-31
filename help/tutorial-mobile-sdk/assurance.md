@@ -4,9 +4,9 @@ description: 모바일 앱에서 Assurance 확장 기능을 구현하는 방법�
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
+source-git-commit: 2784282b91692832786aa478363374f5f4066662
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1661'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 
 ## 액세스 확인
 
-조직에서 Assurance에 액세스할 수 있는지 확인합니다. 사용자는 Adobe Experience Platform의 프로필에 추가되어 있어야 합니다. 자세한 내용은 Assurance 안내서의 [사용자 액세스](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/user-access)를 참조하십시오.
+조직에서 Assurance에 액세스할 수 있는지 확인합니다. 사용자는 Adobe Experience Platform의 프로필에 추가되어 있어야 합니다. 자세한 내용은 Assurance 안내서의 [사용자 액세스](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)를 참조하십시오.
 
 ## 구현
 
@@ -172,7 +172,7 @@ Assurance은 브라우저나 QR 코드를 통해 URL을 열어 작동합니다. 
 
 `android:scheme`을(를) 지정하십시오(예: ). `lumatutorialandroid`)과(와) `android:host`(예: `default`)(으)로 기본 URL을 정의합니다.
 
-Android의 딥링크에 대한 자세한 내용은 [앱 콘텐츠에 대한 딥링크 만들기](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}를 참조하십시오.
+Android의 딥링크에 대한 자세한 내용은 Android 설명서에서 [딥링크 만들기](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"}를 참조하십시오.
 
 Assurance은 브라우저나 QR 코드를 통해 URL을 열어 작동합니다. 해당 URL은 기본 URL로 시작하며, 기본 URL은 앱을 열고 추가 매개 변수를 포함합니다. 이러한 고유한 매개 변수는 세션을 연결하는 데 사용됩니다.  예제 앱에서 딥링크는 `lumatutorialandroid://default`입니다.
 
@@ -220,7 +220,7 @@ Xcode에서:
 1. **[!UICONTROL 새 세션 만들기]**&#x200B;와 옵션 **[!UICONTROL 딥링크 연결]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 시작]**&#x200B;을 선택하세요.
 1. **[!UICONTROL 과(와) 같은]**&#x200B;세션 이름`Luma Mobile App Session`과(와) Xcode에 입력한 URL 체계인 **[!UICONTROL 기본 URL]**&#x200B;을(를) 제공한 다음 `://`을(를) 제공하십시오(예: `lumatutorialswiftui://`).
-1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 다음]**을 선택합니다.
    ![확인 세션 만들기](assets/assurance-create-session.png){zoomable="yes"}
 1. **[!UICONTROL 새 세션 만들기]** 모달 대화 상자에서:
 
@@ -299,7 +299,7 @@ Android Studio에서:
 1. **[!UICONTROL 새 세션 만들기]**&#x200B;와 옵션 **[!UICONTROL 딥링크 연결]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 시작]**&#x200B;을 선택하세요.
 1. **[!UICONTROL 과(와) 같은]**&#x200B;세션 이름`Luma Mobile App Session`과(와) Android Studio의 **[!UICONTROL AndroidManifest.xml]**&#x200B;에서 정의한 `android:scheme` 및 `android:host`인 **[!UICONTROL 기본 URL]**&#x200B;을(를) `://`(으)로 구분하여 제공하십시오. 예: `lumatutorialandroid://default`
-1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 다음]**을 선택합니다.
    ![확인 세션 만들기](assets/assurance-create-session-android.png){zoomable="yes"}
 
 1. **[!UICONTROL 새 세션 만들기]** 모달 대화 상자에서:
@@ -388,7 +388,7 @@ Android Studio에서:
 >
 >이제 자습서의 나머지 부분에서 Assurance을 사용하도록 앱을 설정했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
 
 
 다음: **[동의 구현](consent.md)**
