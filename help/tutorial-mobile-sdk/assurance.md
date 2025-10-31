@@ -220,7 +220,7 @@ Xcode에서:
 1. **[!UICONTROL 새 세션 만들기]**&#x200B;와 옵션 **[!UICONTROL 딥링크 연결]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 시작]**&#x200B;을 선택하세요.
 1. **[!UICONTROL 과(와) 같은]**&#x200B;세션 이름`Luma Mobile App Session`과(와) Xcode에 입력한 URL 체계인 **[!UICONTROL 기본 URL]**&#x200B;을(를) 제공한 다음 `://`을(를) 제공하십시오(예: `lumatutorialswiftui://`).
-1. **[!UICONTROL 다음]**을 선택합니다.
+1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
    ![확인 세션 만들기](assets/assurance-create-session.png){zoomable="yes"}
 1. **[!UICONTROL 새 세션 만들기]** 모달 대화 상자에서:
 
@@ -299,7 +299,7 @@ Android Studio에서:
 1. **[!UICONTROL 새 세션 만들기]**&#x200B;와 옵션 **[!UICONTROL 딥링크 연결]**&#x200B;을 선택합니다.
 1. **[!UICONTROL 시작]**&#x200B;을 선택하세요.
 1. **[!UICONTROL 과(와) 같은]**&#x200B;세션 이름`Luma Mobile App Session`과(와) Android Studio의 **[!UICONTROL AndroidManifest.xml]**&#x200B;에서 정의한 `android:scheme` 및 `android:host`인 **[!UICONTROL 기본 URL]**&#x200B;을(를) `://`(으)로 구분하여 제공하십시오. 예: `lumatutorialandroid://default`
-1. **[!UICONTROL 다음]**을 선택합니다.
+1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
    ![확인 세션 만들기](assets/assurance-create-session-android.png){zoomable="yes"}
 
 1. **[!UICONTROL 새 세션 만들기]** 모달 대화 상자에서:
