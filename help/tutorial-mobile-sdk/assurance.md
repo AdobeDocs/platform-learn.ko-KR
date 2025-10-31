@@ -35,7 +35,7 @@ Assurance를 통해 Adobe Experience Platform Mobile SDK에서 생성된 원시 
 
 ## 액세스 확인
 
-조직에서 Assurance에 액세스할 수 있는지 확인합니다. 사용자는 Adobe Experience Platform의 프로필에 추가되어 있어야 합니다. 자세한 내용은 Assurance 안내서의 [사용자 액세스](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)를 참조하십시오.
+조직에서 Assurance에 액세스할 수 있는지 확인합니다. 사용자는 Adobe Experience Platform의 프로필에 추가되어 있어야 합니다. 자세한 내용은 Assurance 안내서의 [사용자 액세스](https://experienceleague.adobe.com/ko/docs/experience-platform/assurance/user-access)를 참조하십시오.
 
 ## 구현
 
@@ -388,7 +388,7 @@ Android Studio에서:
 >
 >이제 자습서의 나머지 부분에서 Assurance을 사용하도록 앱을 설정했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 
 다음: **[동의 구현](consent.md)**
