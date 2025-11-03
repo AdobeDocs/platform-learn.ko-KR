@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,16 @@ GenStudio for Performance Marketing 추가 기능은 조직의 콘텐츠 작성 
 - Adobe GenStudio for Performance Marketing 액세스
 - App Builder 액세스
 - Amazon AWS S3 버킷에 액세스
+
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!NOTE]
+>
+>이 비디오에는 아직 오디오가 없습니다. 오디오를 사용할 수 있게 되면 새 버전이 업로드됩니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476498?quality=12&learn=on)
 
 ## 연습
 

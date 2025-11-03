@@ -1,39 +1,45 @@
 ---
-title: Adobe Firefly 서비스
-description: Adobe Firefly 서비스
+title: Adobe Firefly Services
+description: Adobe Firefly Services
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '176'
 ht-degree: 2%
 
 ---
 
-# 1.1 Adobe Firefly 서비스 개요
+# 1.1 Adobe Firefly Services 개요
 
-Adobe Firefly 서비스를 사용하는 다양한 방법을 알아봅니다.
+Adobe Firefly Services을 사용할 수 있는 다양한 방법을 알아봅니다.
 
 ## 전제 조건
 
 Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)에 액세스
 
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476493?quality=12&learn=on)
+
 ## 연습
 
-[1.1.1 Firefly 서비스 시작](./ex1.md){target="_blank"}
+[1.1.1 Firefly Services 시작하기](./ex1.md){target="_blank"}
 
-이 연습에서는 Firefly Services를 살펴보고 그 기능에 대해 알아봅니다.
+이 연습에서는 Firefly Services을 살펴보고 그 기능에 대해 알아봅니다.
 
 [1.1.2 Microsoft Azure 및 사전 서명된 URL을 사용하여 Firefly 프로세스 최적화](./ex2.md){target="_blank"}
 
-이 연습에서는 Firefly Services를 살펴보고 그 기능에 대해 알아봅니다.
+이 연습에서는 Firefly Services을 살펴보고 그 기능에 대해 알아봅니다.
 
 [1.1.3 Photoshop API 작업](./ex3.md){target="_blank"}
 
-이 연습에서는 Adobe Photoshop과 함께 Firefly 서비스를 사용하는 방법을 알아봅니다.
+이 연습에서는 Adobe Photoshop과 함께 Firefly Services을 사용하는 방법을 알아봅니다.
 
 [1.1.4 Firefly 사용자 지정 모델 API](./ex4.md){target="_blank"}
 
@@ -41,7 +47,7 @@ Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)에 액세
 
 [요약 및 이점](./summary.md){target="_blank"}
 
-Firefly 서비스의 요약 및 이점에 대해 알아봅니다.
+Firefly Services의 요약 및 이점에 대해 알아봅니다.
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

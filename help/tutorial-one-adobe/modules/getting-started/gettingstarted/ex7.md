@@ -4,10 +4,10 @@ description: 시작하기 - Postman 설정
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 0%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,12 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >Adobe 직원인 경우 지침을 따라 [PostBuster 설치](./ex8.md){target="_blank"}하세요!
+
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476495?quality=12&learn=on)
 
 ## Postman 환경 다운로드
 

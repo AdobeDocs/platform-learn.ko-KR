@@ -4,9 +4,9 @@ description: Workfront 증명
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -197,66 +197,11 @@ CitiSignal의 사용 사례의 경우 **통합 캠페인 실행** 블루프린�
 
 이 작업의 일부로, 새 이미지를 만든 다음 Workfront에서 문서로 업로드해야 합니다. 이제 Adobe Express을 사용하여 해당 에셋을 직접 만듭니다.
 
-## 1.2.2.5 Adobe Firefly Services 및 Adobe Express을 사용하여 자산 만들기
+## 1.2.2.5 작업에 새 문서를 추가하고 승인 흐름을 시작합니다.
 
-[https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}(으)로 이동합니다. `a neon rabbit running very fast through space` 프롬프트를 입력하고 **생성**&#x200B;을 클릭합니다.
+이 연습에서는 다음 자산을 다운로드하여 사용해야 합니다. [timetravelnow.png](./images/timetravelnow.png)
 
-![GSPeM](./images/gsasset1.png)
-
-그런 다음 여러 이미지가 생성되는 것을 볼 수 있습니다. 가장 좋아하는 이미지를 선택하고 **공유** 아이콘을 클릭한 다음 **Adobe Express에서 열기**&#x200B;를 선택합니다.
-
-![GSPeM](./images/gsasset2.png)
-
-그러면 방금 생성한 이미지를 Adobe Express에서 편집할 수 있게 됩니다. 이제 이미지에 CitiSignal 로고를 추가해야 합니다. 이렇게 하려면 **브랜드**(으)로 이동하십시오.
-
-![GSPeM](./images/gsasset3.png)
-
-그러면 CitiSignal 브랜드 템플릿이 표시됩니다. GenStudio for Performance Marketing에서 만든 이 이름은 Adobe Express에 나타납니다. 이름에 `CitiSignal`이(가) 있는 브랜드 템플릿을 선택하려면 클릭하세요.
-
-![GSPeM](./images/gsasset4.png)
-
-**로고**(으)로 이동한 다음 **흰색** Citigsignal 로고를 클릭하여 이미지에 놓습니다.
-
-![GSPeM](./images/gsasset5.png)
-
-CitiSignal 로고를 중간에서 너무 멀지 않은 이미지 맨 위에 배치합니다.
-
-![GSPeM](./images/gsasset6.png)
-
-**텍스트**(으)로 이동합니다.
-
-![GSPeM](./images/gsasset6a.png)
-
-**텍스트 추가**&#x200B;를 클릭합니다.
-
-![GSPeM](./images/gsasset6b.png)
-
-`Timetravel now!` 텍스트를 입력하고 글꼴 색상과 글꼴 크기를 변경하고 이 텍스트와 유사한 이미지를 갖도록 텍스트를 **굵게**(으)로 설정합니다.
-
-![GSPeM](./images/gsasset6c.png)
-
-**공유**&#x200B;를 클릭합니다.
-
-![GSPeM](./images/gsasset7.png)
-
-**AEM Assets**&#x200B;을(를) 선택합니다.
-
-![GSPeM](./images/gsasset8.png)
-
-파일 이름을 `CitiSignal - Neon Rabbit - Timetravel now!`(으)로 변경합니다.
-**폴더 선택**&#x200B;을 클릭합니다.
-
-![GSPeM](./images/gsasset9.png)
-
-`--aepUserLdap-- - CitiSignal`(이)라는 이름의 AEM Assets CS 저장소를 선택한 다음 `--aepUserLdap-- - CitiSignal Fiber Campaign` 폴더를 선택하십시오. **선택**&#x200B;을 클릭합니다.
-
-![GSPeM](./images/gsasset11.png)
-
-그럼 이걸 보셔야죠 **1개 에셋 업로드**&#x200B;를 클릭합니다. 이제 이미지가 AEM Assets CS에 업로드됩니다.
-
-![GSPeM](./images/gsasset12.png)
-
-## 1.2.2.6 작업에 새 문서를 추가하고 승인 흐름을 시작합니다.
+![WF](./images/timetravelnow.png)
 
 **작업 세부 정보** 화면으로 돌아갑니다. **문서**(으)로 이동합니다. **+ 새 항목 추가**&#x200B;를 클릭한 다음 `--aepUserLdap-- - CitiSignal`(으)로 지정되어야 하는 AEM Assets CS 저장소를 선택합니다.
 
@@ -300,35 +245,11 @@ CitiSignal 로고를 중간에서 너무 멀지 않은 이미지 맨 위에 배�
 
 이제 디자인을 변경해야 합니다. 이 작업은 Adobe Express에서 수행합니다.
 
-## 1.2.2.7 Adobe Express에서 디자인 변경
+## 1.2.2.6 작업에 새 버전의 문서를 추가합니다.
 
-[https://new.express.adobe.com/your-stuff/files](https://new.express.adobe.com/your-stuff/files)&#x200B;(으)로 이동하여 이전에 만든 이미지를 다시 엽니다.
+이 연습에서는 다음 자산을 다운로드하여 사용해야 합니다. [getonboard.png](./images/getonboard.png)
 
-![WF](./images/wfp25a.png)
-
-CTA 텍스트를 `Get On Board Now!`(으)로 변경합니다.
-
-![WF](./images/wfp25b.png)
-
-**공유**&#x200B;를 클릭한 다음 **AEM Assets**&#x200B;을(를) 선택합니다.
-
-![WF](./images/wfp25c.png)
-
-`CitiSignal - Neon Rabbit - Get On Board Now!` 이름을 입력한 다음 **폴더 선택**&#x200B;을 클릭하여 대상 폴더를 선택하십시오.
-
-![WF](./images/wfp25d.png)
-
-`--aepUserLdap-- - CitiSignal`(이)라는 이름의 AEM Assets CS 저장소를 선택한 다음 `--aepUserLdap-- - CitiSignal Fiber Campaign` 폴더를 선택하십시오. **선택**&#x200B;을 클릭합니다.
-
-![WF](./images/wfp25e.png)
-
-**1개 에셋 업로드**&#x200B;를 클릭합니다.
-
-![WF](./images/wfp25f.png)
-
-이제 새 에셋이 생성되어 AEM Assets에 저장됩니다.
-
-## 1.2.2.8 작업에 새 버전의 문서를 추가합니다.
+![WF](./images/getonboard.png)
 
 Adobe Workfront의 작업 보기에서 승인되지 않은 이전 이미지 파일을 선택합니다. 그런 다음 **+ 새로 추가**&#x200B;를 클릭하고 **버전**&#x200B;을 선택한 다음 AEM Assets CS 저장소를 선택합니다. 해당 저장소의 이름은 `--aepUserLdap-- - CitiSignal`입니다.
 
@@ -394,7 +315,7 @@ Adobe Workfront의 작업 보기에서 승인되지 않은 이전 이미지 파�
 
 ![WF](./images/wfp37c.png)
 
-## 1.2.2.9 AEM Assets에서 내 파일 보기
+## 1.2.2.7 AEM Assets에서 내 파일 보기
 
 이름이 `--aepUserLdap-- - CitiSignal Fiber Launch Assets`인 AEM Assets CS의 폴더로 이동합니다.
 

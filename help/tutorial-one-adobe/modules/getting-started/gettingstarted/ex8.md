@@ -4,9 +4,9 @@ description: 시작하기 - Postman 설정
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,15 @@ ht-degree: 3%
 >
 >Adobe 직원이 아닌 경우 지침을 따라 [Postman 설치](./ex7.md){target="_blank"}하십시오. 아래 지침은 Adobe 직원만을 대상으로 합니다.
 
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476496?quality=12&learn=on)
+
 ## PostBuster 설치
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}(으)로 이동합니다.
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}(으)로 이동합니다.
 
 **PostBuster**&#x200B;의 최신 릴리스를 다운로드하려면 클릭하세요.
 

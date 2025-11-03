@@ -4,14 +4,20 @@ description: 시작하기 - Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # Adobe I/O 프로젝트 구성
+
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476494?quality=12&learn=on)
 
 ## Adobe I/O 프로젝트 만들기
 
@@ -63,7 +69,7 @@ ht-degree: 0%
 >
 >선택한 학습 경로에 따라 Photoshop Services API에 대한 액세스 권한이 없을 수도 있습니다. 학습 과정(**Photoshop Services**, **Workfront Fusion**, **모두**)에 있거나 **실시간 대면 워크숍**&#x200B;에 참석하는 경우에만 Firefly API에 액세스할 수 있습니다. 이 학습 경로 중 하나에 있지 않은 경우 이 단계를 건너뛸 수 있습니다.
 >
->**+ 프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
+**+ 프로젝트에 추가**&#x200B;를 선택한 다음 **API**&#x200B;를 선택합니다.
 
 ![Azure 저장소](./images/ps2.png)
 

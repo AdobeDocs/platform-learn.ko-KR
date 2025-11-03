@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 2%
 
 ---
@@ -34,6 +34,16 @@ GenStudio for Performance Marketing은 브랜드 및 시장에 대한 정보를 
 - Adobe Workfront 및 Adobe Workfront Planning 액세스
 - Content Hub이 활성화된 Adobe Experience Manager Cloud Service 샌드박스에 액세스
 
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!NOTE]
+>
+>이 비디오에는 아직 오디오가 없습니다. 오디오를 사용할 수 있게 되면 새 버전이 업로드됩니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
+
 ## 연습
 
 [1.3.1 구성: 브랜드](./ex1.md){target="_blank"}
@@ -44,9 +54,9 @@ GenStudio for Performance Marketing은 브랜드 및 시장에 대한 정보를 
 
 이 연습에서는 GenStudio for Performance Marketing에서 가상 사용자, 제품 및 템플릿을 구성합니다.
 
-[1.3.3 메타로 캠페인 활성화](./ex3.md){target="_blank"}
+Meta에 대한 [1.3.3 Campaign 활성화](./ex3.md){target="_blank"}
 
-이 연습에서는 Campaign을 만듭니다. 또한 Meta에 대한 연결을 구성하고 광고를 만들고, Adobe Workfront을 사용하여 광고를 승인하고, 광고를 Meta에 게시하는 데 필요한 모든 단계를 설명합니다.
+이 연습에서는 Campaign을 만듭니다. 또한 Meta에 대한 연결을 구성하고 광고를 만들고, Adobe Workfront을 사용하여 광고를 승인하고, Meta에 광고를 게시하는 데 필요한 모든 단계를 거치게 됩니다.
 
 [1.3.4 AJO에 대한 전자 메일 환경 만들기](./ex4.md){target="_blank"}
 
