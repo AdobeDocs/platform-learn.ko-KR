@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 0%
+source-wordcount: '184'
+ht-degree: 1%
 
 ---
 
@@ -27,23 +27,15 @@ Workfront Fusion을 사용하여 크리에이티브 워크플로를 자동으로
 
 이 연습에서는 Firefly Services과 함께 Workfront Fusion을 살펴보고 그 기능에 대해 알아봅니다.
 
-[1.2.2 Workfront Fusion 내에서 Adobe API 사용](./ex2.md){target="_blank"}
-
-이 연습에서는 Workfront Fusion의 기능을 살펴보면서 Workfront Fusion 내에서 Firefly Services API 및 Photoshop API를 구성하고 사용하는 방법에 대해 알아봅니다.
-
-Workfront Fusion을 사용한 [1.2.3 프로세스 자동화](./ex3.md){target="_blank"}
+[커넥터를 사용하는 1.2.2 자동화](./ex4.md){target="_blank"}
 
 이 연습에서는 이미지 생성 프로세스를 자동화하기 위해 여정을 계속 세분화합니다.
 
-[커넥터를 사용하는 1.2.4 자동화](./ex4.md){target="_blank"}
-
-이 연습에서는 이미지 생성 프로세스를 자동화하기 위해 여정을 계속 세분화합니다.
-
-[1.2.5 Frame.io 및 Workfront Fusion](./ex5.md){target="_blank"}
+[1.2.3 Frame.io 및 Workfront Fusion](./ex5.md){target="_blank"}
 
 이 연습에서는 Frame.io를 Workfront Fusion 시나리오에 연결합니다.
 
-Workfront Fusion에서 AEM Assets으로 [1.2.6 Frame.io](./ex6.md){target="_blank"}
+Workfront Fusion에서 AEM Assets으로 [1.2.4 Frame.io](./ex6.md){target="_blank"}
 
 이 연습에서는 설정을 더 세분화하여 Frame.io에서 승인된 에셋이 Workfront Fusion 시나리오를 사용하여 에셋의 PNG 렌디션을 AEM Assets으로 내보내도록 합니다.
 

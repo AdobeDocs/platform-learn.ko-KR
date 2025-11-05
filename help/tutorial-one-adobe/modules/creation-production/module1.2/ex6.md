@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
 
-# 1.2.6 프레임 I/O - Workfront Fusion - AEM Assets
+# 1.2.4 프레임 I/O - Workfront Fusion - AEM Assets
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 그러나 비즈니스 팀에는 PSD 파일이 필요하지 않으며 PNG 파일 또는 JPG 파일이 필요합니다. 이 연습에서는 프레임 I/O의 자산이 승인되면 PNG 파일이 생성되고 이 PNG 파일이 AEM Assets에 자동으로 저장되는 새 자동화를 구성합니다.
 
-## 1.2.6.1 새 시나리오 만들기
+## 1.2.4.1 새 시나리오 만들기
 
 [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **Workfront Fusion**&#x200B;을 엽니다.
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ![프레임 IO](./images/aemf6.png)
 
-## 1.2.6.2 Frame.io에서 Webhook 구성
+## 1.2.4.2 Frame.io에서 Webhook 구성
 
 Postman으로 이동하여 컬렉션 **Adobe IO - OAuth**&#x200B;에서 요청 **POST - 액세스 토큰 가져오기**&#x200B;를 엽니다. 그런 다음 **보내기**&#x200B;를 클릭하여 새 **access_token**&#x200B;을(를) 요청합니다.
 
@@ -101,7 +101,7 @@ Workfront Fusion으로 다시 전환하고 **사용자 지정 Webhook** 모듈�
 
 ![프레임 IO](./images/aemf16.png)
 
-## 1.2.6.3 Frame.io에서 자산 세부 정보 가져오기
+## 1.2.4.3 Frame.io에서 자산 세부 정보 가져오기
 
 이제 사용자 지정 웹후크를 통해 Frame.io와 Workfront Fusion 간의 통신이 설정되었으므로 상태 레이블이 업데이트된 에셋에 대한 자세한 내용을 살펴봐야 합니다. 이렇게 하려면 이전 연습과 유사하게 Workfront Fusion에서 Frame.io 커넥터를 다시 사용합니다.
 
@@ -178,7 +178,7 @@ Workfront Fusion으로 돌아가서 **Frame.io - 사용자 지정 API 호출 만
 
 ![프레임 IO](./images/aemf35a.png)
 
-## 1.2.6.4 PNG로 변환
+## 1.2.4.4 PNG로 변환
 
 **Frame.io 모듈 위로 마우스를 가져갑니다. 사용자 지정 API를 호출하십시오**. **+** 아이콘을 클릭하십시오.
 
@@ -224,7 +224,7 @@ Workfront Fusion으로 돌아갑니다. 이제 시나리오의 모든 모듈이 
 
 ![프레임 IO](./images/aemf39.png)
 
-## AEM Assets CS의 1.2.6.5 스토어 PNG
+## AEM Assets CS의 1.2.4.5 스토어 PNG
 
 **Adobe Photoshop - 이미지 형식 변환** 모듈에 마우스를 가져다 대고 **+** 아이콘을 클릭합니다.
 
@@ -281,7 +281,7 @@ Workfront Fusion으로 돌아갑니다. 이제 시나리오의 모든 모듈이 
 
 ![프레임 IO](./images/aemf50.png)
 
-Workfront Fusion으로 돌아가서 전체 JSON 페이로드를 JSON 형식의 **기술 계정 자격 증명** 필드에 붙여 넣으십시오. **계속을 클릭합니다**.
+Workfront Fusion으로 돌아가서 전체 JSON 페이로드를 JSON 형식의 **기술 계정 자격 증명** 필드에 붙여 넣으십시오. **계속**&#x200B;을 클릭합니다.
 
 ![프레임 IO](./images/aemf49.png)
 
@@ -390,3 +390,4 @@ AEM Assets CS로 돌아가 `--aepUserLdap-- - Frame.io PNG` 폴더를 엽니다.
 [Workfront Fusion을 사용한 Creative 워크플로 자동화로 돌아가기](./automation.md){target="_blank"}
 
 [모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기
+1.2.4

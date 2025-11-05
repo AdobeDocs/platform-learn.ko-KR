@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ![WF Fusion](./images/wffusion11.png)
 
-**변수 이름**: **CONST_client_id** 및 해당 **변수 값**&#x200B;을(를) 입력하고 **추가**&#x200B;를 선택합니다.
+**변수 이름**: **`CONST_client_id`**&#x200B;과(와) 해당 **변수 값**&#x200B;을(를) 입력하고 **추가**&#x200B;를 선택합니다.
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -91,7 +91,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ![WF Fusion](./images/wffusion13.png)
 
-**변수 이름**: **CONST_client_secret** 및 해당 **변수 값**&#x200B;을(를) 입력하고 **추가**&#x200B;를 선택하십시오.
+**변수 이름**: **`CONST_client_secret`**&#x200B;과(와) 해당 **변수 값**&#x200B;을(를) 입력하고 **추가**&#x200B;를 선택합니다.
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -99,7 +99,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ![WF Fusion](./images/wffusion15.png)
 
-**변수 이름**: **CONST_scope** 및 해당 **변수 값**&#x200B;을(를) 입력하고 **추가**&#x200B;를 선택합니다.
+**변수 이름**: **`CONST_scope`**&#x200B;과(와) 해당 **변수 값**&#x200B;을(를) 입력하고 **추가**&#x200B;를 선택합니다.
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -230,7 +230,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ![WF Fusion](./images/wffusion45.png)
 
-그런 다음 시나리오 이름을 `--aepUserLdap-- - Adobe I/O Authentication`(으)로 변경합니다.
+그런 다음 시나리오 이름을 `--aepUserLdap-- - Firefly + Photoshop`(으)로 변경합니다.
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,7 +240,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ## 다음 단계
 
-[Workfront Fusion 내에서 Adobe API 사용](./ex2.md){target="_blank"}(으)로 이동
+[커넥터를 사용한 자동화](./ex4.md){target="_blank"}(으)로 이동
 
 [Workfront Fusion을 사용한 Creative 워크플로 자동화로 돌아가기](./automation.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Workfront 증명
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -197,25 +197,25 @@ CitiSignal의 사용 사례의 경우 **통합 캠페인 실행** 블루프린�
 
 이 작업의 일부로, 새 이미지를 만든 다음 Workfront에서 문서로 업로드해야 합니다. 이제 Adobe Express을 사용하여 해당 에셋을 직접 만듭니다.
 
-## 1.2.2.5 작업에 새 문서를 추가하고 승인 흐름을 시작합니다.
+## 1.2.2.5 프로젝트에 새 문서를 추가하고 승인 흐름을 시작합니다.
 
 이 연습에서는 다음 자산을 다운로드하여 사용해야 합니다. [timetravelnow.png](./images/timetravelnow.png)
 
 ![WF](./images/timetravelnow.png)
 
-**작업 세부 정보** 화면으로 돌아갑니다. **문서**(으)로 이동합니다. **+ 새 항목 추가**&#x200B;를 클릭한 다음 `--aepUserLdap-- - CitiSignal`(으)로 지정되어야 하는 AEM Assets CS 저장소를 선택합니다.
+**프로젝트 세부 정보** 화면으로 돌아갑니다. **문서**(으)로 이동합니다. **+ 새로 추가**&#x200B;를 클릭한 다음 **문서**&#x200B;을(를) 선택합니다.
 
 ![WF](./images/wfp10.png)
 
-`--aepUserLdap-- CitiSignal Fiber Campaign` 폴더를 두 번 클릭하여 엽니다.
+`timetravelnow.png` 파일을 선택하려면 클릭하세요. **열기를 클릭합니다**.
 
 ![WF](./images/wfp10a.png)
 
-이전 단계에서 만든 파일(**CitiSignal - Neon rabbit - Timetravel Now!)을 선택하십시오.png**. **선택**&#x200B;을 클릭합니다.
+그럼 이걸 드셔보세요
 
-![WF](./images/2048x2048.png){width="50px" align="left"}
+![WF](./images/wfp10b.png)
 
-그럼 이걸 드셔보세요 업로드된 문서 위로 마우스를 가져갑니다. **증명 만들기**&#x200B;를 클릭한 다음 **고급 증명**&#x200B;을 선택합니다.
+업로드된 문서 위로 마우스를 가져갑니다. **증명 만들기**&#x200B;를 클릭한 다음 **고급 증명**&#x200B;을 선택합니다.
 
 ![WF](./images/wfp13.png)
 
