@@ -4,9 +4,9 @@ description: Workfront 증명
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -203,7 +203,7 @@ CitiSignal의 사용 사례의 경우 **통합 캠페인 실행** 블루프린�
 
 ![WF](./images/timetravelnow.png)
 
-**프로젝트 세부 정보** 화면으로 돌아갑니다. **문서**(으)로 이동합니다. **+ 새로 추가**&#x200B;를 클릭한 다음 **문서**&#x200B;을(를) 선택합니다.
+작업의 **문서**(으)로 이동합니다. **+ 새로 추가**&#x200B;를 클릭한 다음 **문서**&#x200B;을(를) 선택합니다.
 
 ![WF](./images/wfp10.png)
 
@@ -243,7 +243,7 @@ CitiSignal의 사용 사례의 경우 **통합 캠페인 실행** 블루프린�
 
 ![WF](./images/wfp25.png)
 
-이제 디자인을 변경해야 합니다. 이 작업은 Adobe Express에서 수행합니다.
+이제 디자인을 변경하고 새 버전의 이미지를 업로드해야 합니다.
 
 ## 1.2.2.6 작업에 새 버전의 문서를 추가합니다.
 
@@ -251,11 +251,11 @@ CitiSignal의 사용 사례의 경우 **통합 캠페인 실행** 블루프린�
 
 ![WF](./images/getonboard.png)
 
-Adobe Workfront의 작업 보기에서 승인되지 않은 이전 이미지 파일을 선택합니다. 그런 다음 **+ 새로 추가**&#x200B;를 클릭하고 **버전**&#x200B;을 선택한 다음 AEM Assets CS 저장소를 선택합니다. 해당 저장소의 이름은 `--aepUserLdap-- - CitiSignal`입니다.
+Adobe Workfront의 작업 보기에서 승인되지 않은 이전 이미지 파일을 선택합니다. **+ 새로 추가**&#x200B;를 클릭하고 **버전**&#x200B;을 선택한 다음 **문서**&#x200B;를 선택하십시오.
 
 ![WF](./images/wfp26.png)
 
-`--aepUserLdap-- CitiSignal Fiber Campaign` 폴더로 이동하고 `CitiSignal - Neon Rabit - Get On Board Now!.png` 파일을 선택합니다. **선택**&#x200B;을 클릭합니다.
+`getonboardnow.png` 파일을 선택하려면 클릭하세요. **열기를 클릭합니다**.
 
 ![WF](./images/wfp26a.png)
 
@@ -291,11 +291,11 @@ Adobe Workfront의 작업 보기에서 승인되지 않은 이전 이미지 파�
 
 ![WF](./images/wfp34.png)
 
-승인된 문서를 선택합니다. **공유 화살표** 아이콘을 클릭하고 `--aepUserLdap-- - CitiSignal AEM`(이)라는 AEM Assets 통합을 선택합니다.
+승인된 문서를 선택합니다. **공유 화살표** 아이콘을 클릭하고 `--aepUserLdap-- - CitiSignal AEM+ACCS`(이)라는 AEM Assets 통합을 선택합니다.
 
 ![WF](./images/wfp35.png)
 
-이전에 만든 폴더(`--aepUserLdap-- - CitiSignal Fiber Launch Assets`)를 두 번 클릭합니다.
+이전에 만든 폴더(`--aepUserLdap-- - CitiSignal Fiber Campaign`)를 두 번 클릭합니다.
 
 ![WF](./images/wfp36.png)
 
@@ -317,7 +317,7 @@ Adobe Workfront의 작업 보기에서 승인되지 않은 이전 이미지 파�
 
 ## 1.2.2.7 AEM Assets에서 내 파일 보기
 
-이름이 `--aepUserLdap-- - CitiSignal Fiber Launch Assets`인 AEM Assets CS의 폴더로 이동합니다.
+이름이 `--aepUserLdap-- - CitiSignal Fiber Campaign`인 AEM Assets CS의 폴더로 이동합니다.
 
 ![WF](./images/wfppaem1.png)
 

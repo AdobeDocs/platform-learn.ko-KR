@@ -4,7 +4,7 @@ description: Workfront 시작하기
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 1%
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem3a.png)
 
-폴더 이름을 `--aepUserLdap-- - CitiSignal Fiber Launch Assets`로 지정하고 **만들기**&#x200B;를 클릭합니다.
+폴더 이름을 `--aepUserLdap-- - CitiSignal Fiber Campaign`로 지정하고 **만들기**&#x200B;를 클릭합니다.
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem11a.png)
 
-그러면 이 팝업이 다시 표시됩니다. 검색 필드에 `wm:document`을(를) 입력한 다음 **프로젝트 ID** 필드를 선택합니다. **선택**&#x200B;을 클릭합니다.
+그러면 이 팝업이 다시 표시됩니다. 검색 필드에 `wm:document`을(를) 입력한 다음 **문서 상태** 필드를 선택합니다. **선택**&#x200B;을 클릭합니다.
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem103.png)
 
-그러면 이 팝업이 다시 표시됩니다. 검색 필드에 `wm:document`을(를) 입력한 다음 **프로젝트 ID** 필드를 선택합니다. **선택**&#x200B;을 클릭합니다.
+그러면 이 팝업이 다시 표시됩니다. 검색 필드에 `wm:document`을(를) 입력한 다음 **문서 이름** 필드를 선택합니다. **선택**&#x200B;을 클릭합니다.
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem15.png)
 
-폴더 이름을 `--aepUserLdap-- - CitiSignal Fiber Launch Assets`(으)로 지정합니다. **할당**&#x200B;을 클릭합니다.
+폴더 이름을 `--aepUserLdap-- - CitiSignal Fiber Campaign`(으)로 지정합니다. **할당**&#x200B;을 클릭합니다.
 
 ![WF](./images/wfbaem16.png)
 
