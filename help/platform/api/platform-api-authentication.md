@@ -33,7 +33,7 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 첫 번
 >자세한 지침은 [개발자 추가 및 API 자격 증명에 대한 권한 부여 튜토리얼](../admin/add-developers.md)을 참조하세요.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31705/?captions=kor&learn=on&enablevpops)
 
 <!-- CARDS
 * generate-an-access-token.md
@@ -46,7 +46,7 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 첫 번
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Postman을 사용하여 Experience Platform API 액세스 토큰 생성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Postman을 사용하여 Experience Platform API 액세스 토큰 생성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32728/?captions=kor&format=jpeg&nocache=1752259602830" alt="Postman을 사용하여 Experience Platform API 액세스 토큰 생성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +69,7 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 첫 번
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="Postman에서 Experience Platform API 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="Postman에서 Experience Platform API 사용"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32722/?captions=kor&format=jpeg&nocache=1752259602844" alt="Postman에서 Experience Platform API 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

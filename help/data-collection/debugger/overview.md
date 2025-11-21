@@ -19,7 +19,7 @@ ht-degree: 54%
 
 Adobe Experience Platform Debugger [Chrome 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 및 [Firefox 추가 기능](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/)을(를) 사용하여 Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, 태그 등의 웹 구현을 디버깅하는 방법에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36114?captions=kor&learn=on&enablevpops)
 
 ## 추가 리소스
 
