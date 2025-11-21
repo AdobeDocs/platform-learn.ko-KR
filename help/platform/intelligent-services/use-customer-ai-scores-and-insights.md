@@ -17,7 +17,7 @@ ht-degree: 51%
 
 # 고객 AI 스코어 및 인사이트 사용
 
-고객 AI 성향 점수와 인사이트를 사용하여 고객을 전환하고 유지하는 방법을 알아봅니다. 자세한 내용은 [고객 AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=ko)를 참조하세요.
+고객 AI 성향 점수와 인사이트를 사용하여 고객을 전환하고 유지하는 방법을 알아봅니다. 자세한 내용은 [고객 AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/36613?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
 

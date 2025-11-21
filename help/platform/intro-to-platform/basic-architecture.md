@@ -18,6 +18,6 @@ ht-degree: 80%
 
 개요 다이어그램 개요에서 Adobe Experience Platform의 수준 높은 아키텍처에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3422784?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on&enablevpops)
 
 

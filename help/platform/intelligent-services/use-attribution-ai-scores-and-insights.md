@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # Attribution AI 스코어 및 인사이트 사용
 
-Attribution AI 인사이트 페이지를 사용하여 마케팅 채널 및 캠페인의 ROI를 파악하는 방법을 알아봅니다. 자세한 내용은 [Attribution AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=ko)를 참조하십시오.
+Attribution AI 인사이트 페이지를 사용하여 마케팅 채널 및 캠페인의 ROI를 파악하는 방법을 알아봅니다. 자세한 내용은 [Attribution AI 설명서](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)를 참조하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/345103?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)

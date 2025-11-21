@@ -17,6 +17,6 @@ ht-degree: 31%
 
 # Real-Time Customer Data Platform 사용자 인터페이스 및 워크플로를 사용하는 방법
 
-Real-Time Customer Data Platform(CDP) 사용자 인터페이스를 탐색하는 방법에 대해 살펴보고 여러 기능이 통합되어 디지털 고객 여정 전반에 걸쳐 실시간 활성화를 제공하는 방법에 대해 알아보십시오. 자세한 내용은 [Real-Time Customer Data Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=ko)를 참조하세요.
+Real-Time Customer Data Platform(CDP) 사용자 인터페이스를 탐색하는 방법에 대해 살펴보고 여러 기능이 통합되어 디지털 고객 여정 전반에 걸쳐 실시간 활성화를 제공하는 방법에 대해 알아보십시오. 자세한 내용은 [Real-Time Customer Data Platform 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/37043?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on&enablevpops)

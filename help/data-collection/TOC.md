@@ -9,7 +9,7 @@ role: Developer, Data Engineer
 source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 24%
+ht-degree: 29%
 
 ---
 
@@ -28,25 +28,25 @@ ht-degree: 24%
    + [스택 규칙](tags/stack-rules.md)
    + [라이브러리 빌드 및 게시](tags/build-and-publish-a-library.md)
    + [웹 SDK을 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [솔루션 SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=ko){target="_blank"}
-   + [모바일 앱에서 구현](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
-+ 웹 SDK{#web-sdk}
+   + [솔루션 SDK를 사용하여 웹 사이트에서 구현](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [모바일 앱에서 구현](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
++ Web SDK{#web-sdk}
    + [개요](web-sdk/overview.md)
    + [데모](web-sdk/demo.md)
    + [구현 자습서(태그 포함)](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [대상 마이그레이션 자습서](https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
-   + [Analytics 튜토리얼 마이그레이션](https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
+   + [대상 마이그레이션 자습서](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [Analytics 마이그레이션 자습서](https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + 동의{#consent}
       + [개요](web-sdk/consent/overview.md)
       + [Adobe 표준을 사용하여 동의 값 설정](web-sdk/consent/set-consent-adobe.md)
       + [IAB TCF 2.0 표준을 사용하여 동의 값 설정](web-sdk/consent/set-consent-iab.md)
       + [동의 데이터 검사 및 유효성 검사](web-sdk/consent/inspect.md)
       + [동의 처리 전체 튜토리얼](web-sdk/consent/tutorial.md)
-+ 모바일 SDK{#mobile-sdk}
++ Mobile SDK{#mobile-sdk}
    + [개요](mobile-sdk/overview.md)
    + [모바일 속성 만들기](mobile-sdk/create-mobile-properties.md)
    + [종속성 관리자 사용](mobile-sdk/use-dependency-managers.md)
-   + [모바일 앱에서 구현](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [모바일 앱에서 구현](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
    + [대상 마이그레이션 자습서](https://experienceleague.adobe.com/ko/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + 서버 API{#server-api}
@@ -69,5 +69,5 @@ ht-degree: 24%
    + [데이터 준비](edge/data-prep.md)
    + [중요 데이터 관리](edge/manage-sensitive-data-in-datastreams.md)
    + [자사 디바이스 ID](edge/generate-first-party-device-ids.md)
-+ 디버거{#debugger}
++ Debugger{#debugger}
    + [개요](debugger/overview.md)
