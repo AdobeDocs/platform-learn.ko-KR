@@ -4,9 +4,9 @@ description: Workfront 증명
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,8 @@ CitiSignal의 사용 사례의 경우 **통합 캠페인 실행** 블루프린�
 
 ![WF](./images/blueprint3.png)
 
+**프로젝트 템플릿 이름**&#x200B;을(를) `--aepUserLdap-- - Integrated Campaign Execution`(으)로 변경합니다.
+
 **다음으로 설치...**&#x200B;를 클릭합니다.
 
 ![WF](./images/blueprint4.png)
@@ -89,7 +91,7 @@ CitiSignal의 사용 사례의 경우 **통합 캠페인 실행** 블루프린�
 
 ![WF](./images/wfp6.png)
 
-**통합 캠페인 실행** 템플릿을 선택하고 **템플릿 사용**&#x200B;을 클릭합니다.
+`--aepUserLdap-- - Integrated Campaign Execution` 템플릿을 선택하고 **템플릿 사용**&#x200B;을 클릭합니다.
 
 ![WF](./images/wfp6g.png)
 

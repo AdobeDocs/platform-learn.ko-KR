@@ -4,7 +4,7 @@ description: Workfront Planning 시작하기
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 42c9c3bbf0958794d5a65c37d4771345c6ff584c
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 1%
@@ -115,7 +115,7 @@ Workfront에서 클릭하여 메뉴를 연 다음 **계획**&#x200B;을 선택�
 
 필드의 **Name**&#x200B;을(를) `Business Unit Lead`(으)로 설정하고 필드의 설명을 `Business Unit Lead responsible for budget and resources (VP, Head).`(으)로 설정합니다.
 
-**저장**&#x200B;을 클릭합니다.
+**만들기**&#x200B;를 클릭합니다.
 
 ![Workfront 계획](./images/wfpl17.png)
 

@@ -4,7 +4,7 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 + [튜토리얼 개요](/help/tutorial-one-adobe/overview.md)
 + [GenStudio for Content Supply chain 기술 지원](/help/tutorial-one-adobe/genstudiocsc.md)
 + [컨텐츠 상태](/help/tutorial-one-adobe/status.md)
-+ [완료](/help/tutorial-one-adobe/completion.md)
++ [아키텍처](/help/tutorial-one-adobe/architecture.md)
 
 + 시작하기 {#gettingstarted}
    + 시작하기 {#gettingstarted}
@@ -124,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
@@ -268,8 +268,8 @@ ht-degree: 3%
          + [개요](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics 시작하기](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ [WIP - Agentic AI](/help/tutorial-one-adobe/ai.md)
-+ WIP - Agentic AI {#agenticai}
++ (WIP) 아젠틱 AI {#agenticai}
+   + [Agentic AI 개요](/help/tutorial-one-adobe/ai.md)
    + 1.1 에이전트 및 AI 시작하기 {#agenticai1}
       + [개요](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
       + [1.1.1 Agentic AI 시작하기](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)

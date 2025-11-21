@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -67,7 +67,7 @@ Postman으로 돌아가서 **환경 변수**&#x200B;를 열어 변수를 찾을 
 
 ![WF Fusion](./images/wffusion217b.png)
 
-그럼 이걸 보셔야죠 **사용자 지정 Webhook** 모듈을 클릭합니다.
+그럼 이걸 보셔야죠 그런 다음 **사용자 지정 Webhook** 모듈을 클릭합니다.
 
 ![WF Fusion](./images/wffusion217c.png)
 
@@ -266,7 +266,7 @@ Workfront Fusion 대화 상자에 이름 **2048x2048-background**&#x200B;을(를
 
 ![WF Fusion](./images/wffc31.png)
 
-**고급 설정**&#x200B;에서 **예**&#x200B;를 선택하여 같은 이름의 파일을 덮어씁니다.
+**고급 설정**&#x200B;에서 **예**를 선택하여 같은 이름의 파일을 덮어씁니다.
 **추가를 클릭합니다**.
 
 ![WF Fusion](./images/wffc32.png)

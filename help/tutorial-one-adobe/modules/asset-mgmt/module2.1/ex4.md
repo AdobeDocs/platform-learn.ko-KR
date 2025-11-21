@@ -4,7 +4,7 @@ description: AEM CS - 고급 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
@@ -106,10 +106,10 @@ PR 이름 `js css`을(를) 입력하십시오. **주 데이터베이스에 커�
 
 ![차단](./images/blockadv12.png){zoomable="yes"}
 
-이제 GitHub 사용자 계정(이 예에서는 `main--citisignal--XXX.aem.page/us/en/`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.live/us/en/` 및/또는 `woutervangeluwe`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `main--citisignal-aem-accs--XXX.aem.page`)으로 XXX를 바꾼 후 `main--citisignal-aem-accs--XXX.aem.live` 및/또는 `woutervangeluwe`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
 이 예에서 전체 URL은 다음과 같이 됩니다.
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` 및/또는 `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 그러면 페이지에 스타일이 적용된 상태로 이 항목이 표시됩니다.
 
@@ -336,10 +336,10 @@ async function getOffer(ECID) {
 
 ![차단](./images/blockadv19.png){zoomable="yes"}
 
-이제 GitHub 사용자 계정(이 예에서는 `main--citisignal--XXX.aem.page/us/en/`)으로 XXX를 바꾼 후 `main--citisignal--XXX.aem.live/us/en/` 및/또는 `woutervangeluwe`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
+이제 GitHub 사용자 계정(이 예에서는 `main--citisignal-aem-accs--XXX.aem.page`)으로 XXX를 바꾼 후 `main--citisignal-aem-accs--XXX.aem.live` 및/또는 `woutervangeluwe`(으)로 이동하여 웹 사이트에 대한 변경 사항을 볼 수 있습니다.
 
 이 예에서 전체 URL은 다음과 같이 됩니다.
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/` 및/또는 `https://main--citisignal--woutervangeluwe.aem.live/us/en/`.
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` 및/또는 `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 그럼 이걸 보셔야죠
 

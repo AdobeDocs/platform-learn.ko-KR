@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -170,11 +170,11 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ![WF Fusion](./images/wffusion30.png)
 
-**여러 변수 설정** 개체에서 **물음표** 아이콘을 선택하여 해당 개체가 실행될 때 발생한 상황을 확인합니다.
+**여러 변수 설정** 개체에서 **돋보기** 아이콘을 선택하여 해당 개체가 실행될 때 발생한 상황을 확인합니다.
 
 ![WF Fusion](./images/wffusion31.png)
 
-**HTTP - 요청 만들기** 개체에서 **물음표** 아이콘을 선택하여 해당 개체가 실행될 때 발생한 상황을 확인합니다. **OUTPUT**&#x200B;에서 Adobe I/O에서 반환되는 **access_token**&#x200B;을(를) 참조하십시오.
+**HTTP - 요청 만들기** 개체에서 **돋보기** 아이콘을 선택하여 해당 개체가 실행될 때 발생한 상황을 확인합니다. **OUTPUT**&#x200B;에서 Adobe I/O에서 반환되는 **access_token**&#x200B;을(를) 참조하십시오.
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -206,7 +206,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 
 ![WF Fusion](./images/wffusion39.png)
 
-시나리오가 실행되면 마지막 **여러 변수 설정** 개체에서 **물음표** 아이콘을 선택합니다. access_token이 변수 `bearer_token`에 저장되어 있습니다.
+시나리오가 실행되면 마지막 **여러 변수 설정** 개체에서 **돋보기** 아이콘을 선택합니다. access_token이 변수 `bearer_token`에 저장되어 있습니다.
 
 ![WF Fusion](./images/wffusion40.png)
 
