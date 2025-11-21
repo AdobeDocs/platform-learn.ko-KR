@@ -24,13 +24,13 @@ Adobe Experience Platform Web SDK 및 Edge Network를 통해 하나의 JavaScrip
 
 >[!NOTE]
 >
->이 비디오는 Adobe Summit 2020 세션 *[eVar 또는 Mbox에 대해 다시 Alloy.js를 만나고 태그를 지정하지 않음](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*&#x200B;에서 발췌한 것입니다.
+>이 비디오는 Adobe Summit 2020 세션 *[eVar 또는 Mbox에 대해 다시 Alloy.js를 만나고 태그를 지정하지 않음](https://business.adobe.com/kr/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*&#x200B;에서 발췌한 것입니다.
 >
->이 비디오에서 설명한 서버측 전달 기능은 이제 모든 라이센스 고객이 일반적으로 사용할 수 있습니다. [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) 보기
+>이 비디오에서 설명한 서버측 전달 기능은 이제 모든 라이센스 고객이 일반적으로 사용할 수 있습니다. [이벤트 전달 설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko) 보기
 
 ## 추가 리소스
 
-* [Adobe Experience Platform Web SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Adobe Experience Platform Web SDK 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=ko)
 * [Adobe Experience Platform Web SDK 블로그 게시물을 통해 고객 워크플로 단순화](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
 * [Adobe Experience Platform Experience Edge 블로그 게시물을 통한 클라이언트-서버 통합 간소화](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 * [Adobe Experience Platform 서비스와 Adobe Experience Platform Web SDK 블로그 게시물 통합](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
