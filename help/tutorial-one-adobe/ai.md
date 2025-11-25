@@ -3,9 +3,9 @@ title: Agentic AI Tech Labs 개요
 description: Agentic AI Tech Labs 개요
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,22 @@ ht-degree: 0%
 
 ## 개요 - 진행 중인 작업
 
-아젠틱 AI 테크랩은 진행 중인 작업으로 2025년 11월/12월에 출시될 예정이다.
+[1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
-[1.1 에이전트 및 AI 시작하기](./modules/agentic-ai/module1.1/agenticai.md)
+**목표**
+
+Adobe Experience Platform 에이전트 및 Agent Orchestrator을 사용하여 다음을 수행하는 방법에 대해 알아봅니다.
+
+- 구매 트렌드 분석
+- 성향이 높은 대상자 식별
+- 여정 성능 확인
+- CitiSignal 파이버 최대 롤아웃을 위한 새 여정 만들기
+
+[1.2 에이전트 및 AI 시작하기](./modules/agents/module1.2/agenticai.md)
+
+>[!NOTE]
+>
+>이 모듈은 아직 릴리스되지 않았습니다.
 
 **목표**
 
@@ -38,7 +51,11 @@ ht-degree: 0%
 - MCP 서버, Python Notebook
 - ADOBE API
 
-[1.2 에이전트 Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 에이전트 Collaboration](./modules/agents/module1.3/agentcollaboration.md)
+
+>[!NOTE]
+>
+>이 모듈은 아직 릴리스되지 않았습니다.
 
 **목표**
 
