@@ -3,9 +3,9 @@ title: Agent Orchestrator 시작하기
 description: Agent Orchestrator 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
+source-git-commit: ffdc6b34a82c945c142f433f65a4f2f8d5cdcd18
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -373,7 +373,7 @@ SciFi 애호가를 위한 동적 복사본(지연 시간/4K 스트리밍 후크)
 
 옵트아웃 환경 설정을 준수합니다.
 
-측정 계획(CJA):
+**측정 계획(CJA)**:
 
 추적: 게재, 열기, 클릭, PDP 보기, 체크아웃 시작, 주문 완료.
 
@@ -381,13 +381,11 @@ KPI: Fibre Max로의 전환율, 제어 대비 업그레이드, 시간 초과 설
 
 진단: 장치/장르 세그먼트별 폴아웃 보고서.
 
-모양
-
 이 모든 것이 일치하는 방식(마케터의 정신 모델)
 
 수요 진단(Fibre→ 전체 범주)
 
-전환 신호에 대한 콘텐츠(장르별 주문)를 증명합니다.
+콘텐츠를 전환 신호(장르별 주문)로 증명합니다.
 
 지뢰에 성공한 여정(Fibernamed 여정 및 SciFi 프로모션 대상자 찾기).
 
@@ -395,11 +393,103 @@ KPI: Fibre Max로의 전환율, 제어 대비 업그레이드, 시간 초과 설
 
 성향 세그먼트(대규모 다운로드 ∩ SciFi)에 대해 활성화합니다.
 
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
+
+그럼 이걸 보셔야죠 조직 **Experience Platform International**&#x200B;에 있는지 확인하세요.
+
+**컨텍스트** 창을 클릭합니다.
+
+![Agent Orchestrator](./images/ao2.png)
+
+컨텍스트를 다음으로 설정합니다.
+
+- **설명서 Source**: **Journey Optimizer**
+- **샌드박스**: **가속화**
+- **데이터 보기**: **2026년 B2C 가속화**
+
+**컨텍스트 설정**&#x200B;을 클릭합니다.
+
+![Agent Orchestrator](./images/aoea3.png)
+
 다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
+
+![Agent Orchestrator](./images/aocj1.png)
+
+그럼 이걸 보셔야죠 `yes`을(를) 입력하고 생성을 클릭합니다.
+
+![Agent Orchestrator](./images/aocj2.png)
+
+그럼 이걸 보셔야죠 `yes`을(를) 입력하고 생성을 클릭합니다.
+
+![Agent Orchestrator](./images/aocj3.png)
+
+그럼 이걸 보셔야죠 `The first one`을(를) 입력하고 생성을 클릭합니다.
+
+![Agent Orchestrator](./images/aocj4.png)
+
+그럼 이걸 보셔야죠 `yes`을(를) 입력하고 생성을 클릭합니다.
+
+![Agent Orchestrator](./images/aocj5.png)
+
+응답을 검토합니다. `yes`을(를) 입력하고 생성을 클릭합니다.
+
+![Agent Orchestrator](./images/aocj6.png)
+
+**검토**&#x200B;를 클릭합니다.
+
+![Agent Orchestrator](./images/aocj7.png)
+
+LDAP로 여정 이름을 업데이트하여 고유한 이름을 만듭니다. **저장**&#x200B;을 클릭합니다.
+
+![Agent Orchestrator](./images/aocj8.png)
+
+이제 여정이 초안 모드에서 생성되었습니다.
+
+![Agent Orchestrator](./images/aocj9.png)
+
+## 1.1.1.10개 실험
+
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
+
+그럼 이걸 보셔야죠 조직 **Experience Platform International**&#x200B;에 있는지 확인하세요.
+
+**컨텍스트** 창을 클릭합니다.
+
+![Agent Orchestrator](./images/ao2.png)
+
+컨텍스트를 다음으로 설정합니다.
+
+- **설명서 Source**: **Journey Optimizer**
+- **샌드박스**: **가속화**
+- **데이터 보기**: **2026년 B2C 가속화**
+
+**컨텍스트 설정**&#x200B;을 클릭합니다.
+
+![Agent Orchestrator](./images/aoea3.png)
+
+다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+
+```javascript
+How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+```
+
+![Agent Orchestrator](./images/aoea0.png)
+
+그런 다음 이 메시지가 표시됩니다.
+
+![Agent Orchestrator](./images/aoea1.png)
+
+각 치료의 전환율을 비교하려면 제안을 클릭한 다음 **생성**&#x200B;을 클릭합니다.
+
+![Agent Orchestrator](./images/aoea2.png)
+
+그러면 다음과 같은 자세한 비교가 표시됩니다.
+
+![Agent Orchestrator](./images/aoea4.png)
 
 [Agent Orchestrator](./agentorchestrator.md){target="_blank"}(으)로 돌아가기
 
