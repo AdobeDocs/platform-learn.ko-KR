@@ -3,9 +3,9 @@ title: Agent Orchestrator 시작하기
 description: Agent Orchestrator 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: ffdc6b34a82c945c142f433f65a4f2f8d5cdcd18
+source-git-commit: dee5b0855eeeb455bf22f511d11cd13f7e904889
 workflow-type: tm+mt
-source-wordcount: '1514'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -34,29 +34,13 @@ ht-degree: 0%
 
 ![Agent Orchestrator](./images/ao3.png)
 
->[!NOTE]
->
->이 실습에서는 분석과 오케스트레이션 간에 이동할 때 컨텍스트를 전환합니다.
-
 ## 1.1.1.2 전체 구매 트렌드로 시작하여 컨텍스트를 고정하고 파이버 확대
 
-**의도**: 특히 최근 60일 동안 모바일, 유선전화, 인터넷, TV, 파이버 등 범주 요구 사항에 대한 전체 펄스 받기. 이는 NY 롤아웃 이후의 계절성, 프로모션 효과 및 지역 차이에 대한 기준선을 설정합니다.
+**의도**
 
-**생각 중**:
+특히 최근 60일 동안 모바일, 유선전화, 인터넷, TV, 파이버 등 카테고리 요구 사항에 대한 최고 수준의 펄스 수신 이는 뉴욕 롤아웃 이후 계절성, 프로모션 효과 및 지역 분산에 대한 기준선을 설정합니다.
 
-&quot;Fibre가 postNY에서 점유율을 높이고 있습니까? 우리는 Copper/DSL 인터넷의 조립을 보고 있습니까? Shift 키와 TV 번들의 혼합은 무엇입니까?&quot;
-
-&quot;이는 비엔나의 대응 가능 대상을 평가하고 현실적인 목표를 설정하는 데 도움이 될 것입니다.&quot;
-
-마케터가 예상하는 **실행 가능한 읽기 횟수**:
-
-메인 범주별 누적 막대/라인 구매 차트(일별/주별 그레인).
-
-이전 기간과의 범주별 구매 비율.
-
-프로모션 날짜와 관련된 주목할 만한 급증.
-
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
 Show me purchases by mainCategory over the last 2 months.
@@ -66,13 +50,9 @@ Show me purchases by mainCategory over the last 2 months.
 
 그런 다음 이 메시지가 표시됩니다.
 
->[!NOTE]
->
->지연 특성 파악 - 일부 기존 스키마의 &quot;인터넷&quot;에서 Fibre 주문이 캡처될 수 있습니다. 그렇다면 결정 전에 분류를 조정하십시오.
-
 ![Agent Orchestrator](./images/ao5.png)
 
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 `Show me purchases by mainCategory = Fiber over the last 2 months per week`
 
@@ -86,29 +66,11 @@ Show me purchases by mainCategory over the last 2 months.
 
 ## 1.1.1.3에서 주문과 콘텐츠 환경 설정의 상관 관계를 지정합니다.
 
-**의도**: 콘텐츠 환경 설정(예: SciFi, Sports, Drama)이 특히 고대역폭 요구 사항에 맞게 광대역 업그레이드 동작을 예측한다는 가설을 테스트합니다.
-
-**생각 중**
-
-&quot;SciFi 팬들은 종종 4K를 시청하고 여러 디바이스에서 스트리밍하므로 짧은 지연 시간을 중요시할 수 있습니다.&quot;
-
-&quot;SciFi(및 Sports)가 최근 주문과 관련이 있는지 여부를 수치화하겠습니다.&quot;
-
-**예상 출력**
-
-최근 2개월로 제한된, 기본 장르 별로 분류된 주문 피벗(YTD 필터 적용됨).
-
-주문 전환율 및 AOV(평균 주문 값)로 장르의 등급을 지정합니다.
-
-의사 결정: SciFi가 강력한 신호를 보여주는 경우, 이는 비엔나의 Fibre Max 출시(예: &quot;다시 버퍼링 안 함&quot; 메시지, 프리미엄 번들)의 주요 크리에이티브 기둥이 됩니다.
-
 **의도**
 
-장르별 전환 분석 (예: 공상 과학, 스포츠).
+컨텐츠 환경 설정(예: SciFi, Sports, Drama)이 특히 고대역폭 요구 사항에 대한 광대역 업그레이드 동작을 예측한다는 가설을 테스트합니다.
 
-**목표** 파이버 업그레이드를 위한 Sci-Fi 팬 색인 초과 여부를 확인합니다.
-
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
 Show me ordersYTD by preferredGenre for the last 2 months
@@ -122,33 +84,11 @@ Show me ordersYTD by preferredGenre for the last 2 months
 
 ## 1.1.1.4 기존 파이버 여정 식별
 
-**컨텍스트** 창을 클릭합니다.
+**의도**
 
-![Agent Orchestrator](./images/ao10.png)
+제목에 &quot;파이버&quot;가 포함된 활성 여정 또는 최근에 체결된 세그먼트를 확인합니다(예: &quot;파이버 업그레이드 NYC - 9월&quot;, &quot;파이버 평가판 - 스트리밍 번들&quot;).
 
-컨텍스트를 다음으로 설정합니다.
-
-- **설명서 Source**: **Adobe Journey Optimizer**
-- **샌드박스**: **가속화**
-- **데이터 보기**: **2026년 B2C 가속화**
-
-![Agent Orchestrator](./images/ao11.png)
-
-**의도** 제목에 &quot;파이버&quot;가 포함된 활성 여정 또는 최근에 체결된 세그먼트를 검색합니다(예: &quot;파이버 업그레이드 NYC - 9월&quot;, &quot;파이버 평가판 - 스트리밍 번들&quot;).
-
-**생각 중**
-
-&quot;이들 여정 중 어떤 것이 잘 수행되었고, 그 유발인자는 무엇이었습니까?&quot;
-
-&quot;Vienna에서 가장 뛰어난 오케스트레이션 논리를 재사용할 수 있습니까?&quot;
-
-**예상 출력**
-
-상태(활성, 일시 정지됨, 종료됨), 날짜 범위, 대상 여정, KPI(열람율, CTR, 전환)가 있는 세그먼트 목록입니다.
-
-다음으로 이동: 복제/적응을 위해 하나 또는 두 개의 성공적인 파이버 여정을 후보 목록에 추가합니다.
-
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
 What journeys exist? 
@@ -164,7 +104,7 @@ What journeys exist?
 
 작업: 복제할 고성능 여정을 목록에 추가합니다.
 
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
 Which of these journeys has 'Fiber' in its name?
@@ -182,46 +122,25 @@ Which of these journeys has 'Fiber' in its name?
 
 CitiSignal - Fibre Max Launch Promotion 여정의 초기 정의(예: &quot;SciFi 장르 환경 설정&quot;, &quot;4+ 장치&quot;, &quot;스트림 ≥ 300GB/month&quot;)를 대상으로 한 특성)를 이해합니다.
 
-**생각 중**
-
-&quot;검증된 SciFi 크리에이티브를 Fibre Max 성능 메시지와 결합하고자 합니다.&quot;
-
-&quot;만약 청중들이 무거운 다운로드자들과 겹친다면, 우리는 그 성향을 쌓을 수 있다.&quot;
-
-**예상 출력**
-
-대상 기준(포함/제외), 대상 크기, 영역 필터, 최신성, 빈도 임계값.
-
->[!NOTE]
->
->컨텍스트를 CJA으로 변경
-
-이 시점에서부터 마케터는 올바른 보고를 위해 분석 모드로 전환합니다.
-
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+자동 완성을 사용하려면 다음 **Prompt**&#x200B;을(를) 입력한 다음 **+CitiSignal fib**&#x200B;을(를) 입력하십시오. 여정 **CitiSignal - 파이버 최대 시작 승격**&#x200B;을 선택하십시오.
 
 ```javascript
-What was the initial audience in the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+What was the initial audience in the journey named 
 ```
 
 ![Agent Orchestrator](./images/ao16.png)
-대상 기준(스트리밍 습관, 장치 수)을 검토합니다.
 
-**목표**: 고대역폭 요구 사항에 대한 특성을 이해합니다.
+그럼 이걸 보셔야죠 **보내기** 단추를 클릭합니다.
+
+![Agent Orchestrator](./images/ao17.png)
+
+그럼 이걸 보셔야죠
+
+![Agent Orchestrator](./images/ao18.png)
 
 ## 1.1.1.6 폴아웃 분석을 통해 여정 성능의 유효성 검사
 
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
-
-```javascript
-Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
-```
-
->[!NOTE]
->
->컨텍스트를 CJA으로 변경)
-
-**의도**:
+**의도**
 
 Customer Journey Analytics에서 단계별 funnel 구축
 
@@ -229,99 +148,119 @@ Customer Journey Analytics에서 단계별 funnel 구축
 
 파이버 관련 SKU 보기를 분기로 포함합니다.
 
-**생각 중**:
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-&quot;이메일 열기, 랜딩 페이지 로드, PDP, 체크아웃 마찰 등 인력이 손실되는 곳은 어디입니까?&quot;
+```javascript
+Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
+```
 
-&quot;Fibre PDP에서 SciFi 사용자가 평균보다 많거나 적거나 바운스됩니까?&quot;
+![Agent Orchestrator](./images/ao19.png)
 
-**예상 출력**:
+## 1.1.1.7 새 대상 만들기
 
-각 단계에서 드롭오프 비율이 있는 폴아웃 시각화.
+**의도**
 
-세그먼트 오버레이(SciFi와 스포츠 및 기타).
+위 연구 결과에 따르면, 많은 데이터를 소비하고 공상과학 또는 판타지 장르를 선호하는 고객 사이에 상관 관계가 있습니다. 이제 대상에서 이러한 속성을 결합합니다.
 
-기술적인 마찰에 대한 장치/브라우저 분류.
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
 
-**결정**:
-
-체크아웃 드롭오프가 높은 경우 제품/UX와 조정하여 결제 플로우를 수정합니다.
-
-PDP 종료가 높으면 재작업 요구 명확성(속도, 설치 시간, 번들 값)을 나타냅니다.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 >[!NOTE]
 >
->JO로 컨텍스트 변경
-
-이제 마케팅 담당자는 오케스트레이션 및 대상 작업을 위해 Adobe Journey Optimizer으로 이동합니다.
-
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+>도우미의 컨텍스트가 샌드박스 **가속화** 및 데이터 보기 **2026 B2C 가속화**&#x200B;를 가리키는지 확인하십시오.
 
 ```javascript
-Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey 
+Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
-funnel 시각화 작성: 주문→ 체크아웃→ 클릭한 →으로 →.
+![Agent Orchestrator](./images/ao32.png)
 
-**작업**: 드롭오프 지점을 식별하고 메시지 또는 UX를 최적화합니다.
+계획을 검토합니다. `yes`을(를) 입력하고 **보내기**&#x200B;를 클릭합니다.
 
-## 1.1.1.7 사용량이 많은 기존 대상 찾기
+![Agent Orchestrator](./images/ao33.png)
 
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+세그먼트 쿼리 표현식을 검토합니다. `yes`을(를) 입력하고 **보내기** 단추를 클릭합니다.
+
+![Agent Orchestrator](./images/ao34.png)
+
+세그먼트 크기 추정을 검토합니다. `yes`을(를) 입력하고 **보내기** 단추를 클릭합니다.
+
+![Agent Orchestrator](./images/ao35.png)
+
+**검토**&#x200B;를 클릭합니다.
+
+![Agent Orchestrator](./images/ao36.png)
+
+세그먼트 정의를 검토합니다. **만들기**&#x200B;를 클릭합니다.
+
+![Agent Orchestrator](./images/ao37.png)
+
+이제 대상자가 생성되었습니다.
+
+![Agent Orchestrator](./images/ao38.png)
+
+>[!NOTE]
+>
+>새 대상을 만들 때 24시간 후에 도우미에서 추가 용도로 대상을 사용할 수 있습니다.
+
+## 1.1.1.8 사용량이 많은 기존 대상을 찾아 사용 중인지 확인
+
+**의도**:
+
+월별 데이터 사용 임계값으로 정의된 &quot;대량 다운로드&quot;를 사용하여 이름이 지정된 대상을 찾습니다.
+
+>[!NOTE]
+>
+>이전 단계에서 새 대상을 만든 경우, 도우미가 대상을 추가로 사용할 수 있으려면 24시간이 걸립니다. 이제 다른 기존 대상을 대신 사용해야 합니다.
+
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
+
+그럼 이걸 보셔야죠 조직 **Experience Platform International**&#x200B;에 있는지 확인하세요.
+
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
+
+>[!NOTE]
+>
+>도우미의 컨텍스트가 샌드박스 **가속화** 및 데이터 보기 **2026 B2C 가속화**&#x200B;를 가리키는지 확인하십시오.
 
 ```javascript
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
->[!NOTE]
->
->컨텍스트를 Adobe Journey Optimizer으로 변경
+![Agent Orchestrator](./images/ao30.png)
 
-**의도**:
+그럼 이걸 보셔야죠
 
-월별 데이터 사용 임계값, 스트리밍 시간 또는 디바이스 동시성으로 정의될 수 있는 &quot;대량 다운로드&quot;가 포함된 JO 대상을 찾습니다.
+![Agent Orchestrator](./images/ao31.png)
 
-**생각 중**:
+이미 &quot;헤비 다운로더&quot;에 대한 일부 기존 대상자가 있습니다. 이미 사용 중인지 알아보겠습니다.
 
-&quot;Heavy Downloaders와 같은 대상이 있다면 속도, 신뢰성, 계층 제한 없는 Fibre Max 포지셔닝에 적합합니다.&quot;
-
-**예상 출력**:
-
-대상 메타데이터: 정의 기준, 크기, 마지막 새로 고침, 거버넌스 태그, 지역 가용성
-
-데이터 사용량이 많은 대상을 찾습니다.
-
-**목표**: 파이버 최대 타깃팅을 위한 Sf 환경 설정과 결합합니다.
-
-## 1.1.1.8 해당 대상이 이미 사용 중인지 여부를 확인합니다.
-
-**의도**:
-
-대상자와 여정 간의 연계 확인 - 메시지가 중복되거나 현재 프로그램과 충돌하지 않도록 합니다.
-
-**생각 중**:
-
-&quot;Heavy Downloaders가 이미 유지 여정에 있는 경우 피로를 방지하기 위해 억제 논리나 빈도 제한이 필요합니다.&quot;
-
-**예상 출력**:
-
-매핑: 대상자 → 여정 이름, 상태, 연락처 정책, 마지막 전송, 성능.
-
-**결정**:
-
-사용 중인 경우 Vienna 실행에 대한 제외 또는 공유 제외를 만듭니다.
-
-사용하지 않는 경우 새 여정의 경우 녹색 표시등입니다.
-
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
 Which of the above are used in a journey? 
 ```
 
-활성 캠페인과 겹치지 않도록 합니다.
+![Agent Orchestrator](./images/ao50.png)
 
-**Action**: 필요한 경우 제외를 적용합니다.
+그러면 이와 비슷한 것을 볼 수 있을 겁니다.
+
+![Agent Orchestrator](./images/ao51.png)
+
+이제 해당 여정이 활성 상태인지 확인해야 합니다. 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
+
+```javascript
+Which of the above are used in a journey? 
+```
+
+![Agent Orchestrator](./images/ao52.png)
+
+그러면 이와 비슷한 것을 볼 수 있을 겁니다. 해당 여정은 현재 실행되고 있지 않습니다.
+
+![Agent Orchestrator](./images/ao53.png)
+
+Fibre Max를 출시하려면 이제 새 여정을 만들어야 합니다.
 
 ## 1.1.1.9 파이버 최대 시작에 대한 새 여정 만들기
 
@@ -331,87 +270,15 @@ Which of the above are used in a journey?
 
 대규모 다운로드 ∩ SciFi 환경 설정(kbaa_5207bf 대상 키).
 
-**생각 중**:
-
-&quot;이는 높은 성향 및 창의적 관련성, Fibre Max의 좋은 점입니다.&quot;
-
-&quot;Vienna의 가용성과 관련된 멀티 터치 경험을 조율할 것입니다.&quot;
-
-**여정 디자인(JO)**:
-
-시작 기준:
-
-대상: Heavy Downloaders - Sf Preference_kbaa_5207bf
-
-지역: 비엔나 지하철(ZIP/우편 번호 목록 또는 지역 다각형)
-
-자격 조건: 현재 파이버 구독자가 아니라 활성 &quot;파이버 업그레이드 NYC - 9월&quot; 캠페인에 없음.
-
-트리거 및 시간:
-
-Vienna 출시 14일 전(2026년 1월): 이메일 미리 보기—&quot;Fibre Max 출시 예정&quot;
-
-시작 주: 기본 이메일 + 인앱 배너 + 유료 미디어 동기화(CDP 대상을 통해).
-
-T+3일: 비헤이비어 분할 - 클릭이 없는 경우 SMS를 살짝 밉니다. 클릭했지만 주문하지 않은 경우 설치 관리자 가용성 CTA으로 다시 타깃팅합니다.
-
-T+10일: 무료 설치와 1개월 할인 비교(A/B).
-
-Personalization:
-
-SciFi 애호가를 위한 동적 복사본(지연 시간/4K 스트리밍 후크).
-
-장치 조합(게임 콘솔, 스트리밍 박스)에 적합한 속도/지연 클레임입니다.
-
-번들 권장 사항: Fibre Max + 프리미엄 TV scifi 콘텐츠 팩.
-
-거버넌스
-
-빈도 상한: 10일당 최대 3번의 터치
-
-현재 파이버 구독자가 있는지 또는 설치할 티켓이 있는지 표시하지 않습니다.
-
-옵트아웃 환경 설정을 준수합니다.
-
-**측정 계획(CJA)**:
-
-추적: 게재, 열기, 클릭, PDP 보기, 체크아웃 시작, 주문 완료.
-
-KPI: Fibre Max로의 전환율, 제어 대비 업그레이드, 시간 초과 설치
-
-진단: 장치/장르 세그먼트별 폴아웃 보고서.
-
-이 모든 것이 일치하는 방식(마케터의 정신 모델)
-
-수요 진단(Fibre→ 전체 범주)
-
-콘텐츠를 전환 신호(장르별 주문)로 증명합니다.
-
-지뢰에 성공한 여정(Fibernamed 여정 및 SciFi 프로모션 대상자 찾기).
-
-마찰 지점 유효성 검사(Sf 여정에서 CJA 폴아웃).
-
-성향 세그먼트(대규모 다운로드 ∩ SciFi)에 대해 활성화합니다.
-
 [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
 
 그럼 이걸 보셔야죠 조직 **Experience Platform International**&#x200B;에 있는지 확인하세요.
 
-**컨텍스트** 창을 클릭합니다.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-![Agent Orchestrator](./images/ao2.png)
-
-컨텍스트를 다음으로 설정합니다.
-
-- **설명서 Source**: **Journey Optimizer**
-- **샌드박스**: **가속화**
-- **데이터 보기**: **2026년 B2C 가속화**
-
-**컨텍스트 설정**&#x200B;을 클릭합니다.
-
-![Agent Orchestrator](./images/aoea3.png)
-
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+>[!NOTE]
+>
+>도우미의 컨텍스트가 샌드박스 **가속화** 및 데이터 보기 **2026 B2C 가속화**&#x200B;를 가리키는지 확인하십시오.
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
@@ -451,27 +318,59 @@ LDAP로 여정 이름을 업데이트하여 고유한 이름을 만듭니다. **
 
 ![Agent Orchestrator](./images/aocj9.png)
 
-## 1.1.1.10개 실험
+## 1.1.1.10 여정 충돌 관리
 
 [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
 
 그럼 이걸 보셔야죠 조직 **Experience Platform International**&#x200B;에 있는지 확인하세요.
 
-**컨텍스트** 창을 클릭합니다.
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-![Agent Orchestrator](./images/ao2.png)
+>[!NOTE]
+>
+>도우미의 컨텍스트가 설명서 소스 **Journey Optimizer**, 샌드박스 **가속화** 및 데이터 보기 **2026년 B2C 가속화**&#x200B;를 가리키는지 확인하십시오.
 
-컨텍스트를 다음으로 설정합니다.
+```javascript
+How can I manage journey conflicts?
+```
 
-- **설명서 Source**: **Journey Optimizer**
-- **샌드박스**: **가속화**
-- **데이터 보기**: **2026년 B2C 가속화**
+![Agent Orchestrator](./images/aocj80.png)
 
-**컨텍스트 설정**&#x200B;을 클릭합니다.
+정보를 검토하십시오.
 
-![Agent Orchestrator](./images/aoea3.png)
+![Agent Orchestrator](./images/aocj81.png)
 
-다음 **프롬프트**&#x200B;를 입력하고 **생성** 단추를 클릭하십시오.
+아래로 스크롤하고 **소스**&#x200B;를 선택하여 Experience League에서 가져온 정보를 확인합니다.
+
+![Agent Orchestrator](./images/aocj82.png)
+
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
+
+```javascript
+List any conflicts for "CitiSignal - Fiber Max Launch Promotion" journey
+```
+
+![Agent Orchestrator](./images/aocj70.png)
+
+여정 충돌 정보를 검토합니다.
+
+![Agent Orchestrator](./images/aocj71.png)
+
+아래로 스크롤하여 더 많은 여정 충돌 세부 정보를 찾습니다.
+
+![Agent Orchestrator](./images/aocj72.png)
+
+## 1.1.1.11개 실험
+
+[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
+
+그럼 이걸 보셔야죠 조직 **Experience Platform International**&#x200B;에 있는지 확인하세요.
+
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
+
+>[!NOTE]
+>
+>도우미의 컨텍스트가 샌드박스 **가속화** 및 데이터 보기 **2026 B2C 가속화**&#x200B;를 가리키는지 확인하십시오.
 
 ```javascript
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
@@ -483,7 +382,7 @@ How are the experiments performing for the journey named 'CitiSignal - Fiber Max
 
 ![Agent Orchestrator](./images/aoea1.png)
 
-각 치료의 전환율을 비교하려면 제안을 클릭한 다음 **생성**&#x200B;을 클릭합니다.
+각 치료의 전환율을 비교하려면 제안을 클릭한 다음 **보내기**&#x200B;를 클릭하십시오.
 
 ![Agent Orchestrator](./images/aoea2.png)
 
