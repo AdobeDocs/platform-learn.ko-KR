@@ -3,14 +3,20 @@ title: Agent Orchestrator 시작하기
 description: Agent Orchestrator 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: bb31fe8a36f1c9ee9d212500e2e58e01be1129b8
+source-git-commit: 121cbb5ea8f8b713c6ebae008f7f0d9b3a79e476
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1393'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Agent Orchestrator 시작하기
+
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477257?quality=12&learn=on)
 
 ## Agent Orchestrator에서 1.1.1.1 컨텍스트 설정
 
@@ -62,7 +68,9 @@ Show me purchases by mainCategory over the last 2 months.
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-`Show me purchases by mainCategory = Fiber over the last 2 months per week`
+```javascript
+Show me purchases by mainCategory = Fiber over the last 2 months per week
+```
 
 ![Agent Orchestrator](./images/ao6.png)
 
@@ -213,7 +221,7 @@ AI Assistant는 관찰 및 권장 사항을 제공합니다.
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
 ![Agent Orchestrator](./images/ao32.png)
