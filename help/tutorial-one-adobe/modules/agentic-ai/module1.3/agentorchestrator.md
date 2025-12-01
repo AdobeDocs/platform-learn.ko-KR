@@ -3,10 +3,10 @@ title: Agent Orchestrator
 description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: e90dee164dfe098c9fc56a04c481a733c0843858
+source-git-commit: 69a0bdd4d8150f3e0a9a294a409eab958211388e
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 7%
+source-wordcount: '96'
+ht-degree: 8%
 
 ---
 
@@ -26,14 +26,6 @@ Adobe Experience Platform 에이전트 및 Agent Orchestrator을 사용하여 �
 - Adobe Journey Optimizer 및 Customer Journey Analytics 액세스
 - [Agent Orchestrator 개념](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)에 익숙함
 - CitiSignal 데모 데이터에 액세스: 구매, 주문, 대상, 여정
-
-## 연습
-
-[1.1.1 Agent Orchestrator 시작하기](./ex1.md){target="_blank"}
-
-이 연습에서는 Fibre Max용 CitiSignal 출시 캠페인의 배경에 대한 Agent Orchestrator의 기능을 살펴봅니다.
-
-![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
