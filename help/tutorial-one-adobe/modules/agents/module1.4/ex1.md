@@ -3,18 +3,14 @@ title: Brand Concierge 시작하기
 description: Brand Concierge 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
+source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Brand Concierge 시작하기
-
->[!IMPORTANT]
->
->이 연습은 진행 중이며 아직 끝나지 않았습니다.
 
 ## 비디오
 
@@ -211,6 +207,34 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc25.png)
 
+10-20분 후에는 두 기술 자료의 **상태**&#x200B;가 **완료**&#x200B;여야 합니다. **홈**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/bc27.png)
+
+그럼 이걸 보셔야죠 **웹 사이트 링크** 카드에서 **+ 연결**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/bc28.png)
+
+기술 자료 원본 **CitiSignal 웹 사이트**&#x200B;를 선택하고 **저장**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/bc29.png)
+
+그럼 이걸 보셔야죠 **제품 카탈로그** 카드에서 **+ 연결**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/bc30.png)
+
+기술 자료 원본 **CitiSignal 제품**&#x200B;을 선택하고 **저장**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/bc31.png)
+
+그럼 이걸 보셔야죠 Brand Concierge과 상호 작용하려면 **미리 보기**&#x200B;를 클릭하세요.
+
+![Brand Concierge](./images/bc32.png)
+
+이제 제공된 지식 소스와 관련된 질문을 시작할 수 있습니다.
+
+![Brand Concierge](./images/bc33.png)
+
 ## 1.4.1.3 AEP 온보딩 단계
 
 Brand Concierge은 Adobe Experience Platform을 사용하여 대화의 상호 작용 데이터를 저장합니다. Brand Concierge과 Experience Platform을 연결하려면 Brand Concierge에서 구성하고 사용하는 데이터 스트림이 필요합니다.
@@ -242,6 +266,10 @@ Brand Concierge은 Adobe Experience Platform을 사용하여 대화의 상호 �
 ### Brand Concierge 구성 관리 API
 
 다음 단계는 Brand Concierge 구성 관리 API를 활성화하여 방금 생성한 데이터 스트림을 구성하는 것입니다. 요청을 처리하는 동안 IMS 조직 ID 및 샌드박스 세부 정보와 같은 문제를 해결하는 데 필요합니다.
+
+이는 현재 수행해야 하는 내부 Adobe 단계입니다. 이 단계는 필수입니다. 그렇지 않은 경우에는 데이터 스트림의 설정이 Brand Concierge에서 사용하기에 적합하지 않습니다.
+
+다음 단계: [웹 사이트에서 Brand Concierge 구현](./ex2.md){target="_blank"}
 
 [Brand Concierge](./brandconcierge.md){target="_blank"}(으)로 돌아가기
 

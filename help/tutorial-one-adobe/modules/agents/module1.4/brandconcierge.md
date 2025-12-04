@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 69a0bdd4d8150f3e0a9a294a409eab958211388e
+source-git-commit: b384842ce17731e241a1404a1d5c41cc70b434ff
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '193'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ Adobe Experience Platform 에이전트 및 Brand Concierge을 사용하여 다�
 ## 전제 조건
 
 - Adobe Journey Optimizer 및 Customer Journey Analytics 액세스
-- [Brand Concierge 개념](https://experienceleague.adobe.com/ko/docs/brand-concierge/content/home)에 익숙함
+- [Brand Concierge 개념](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)에 익숙함
 - CitiSignal 데모 데이터에 액세스: 구매, 주문, 대상, 여정
 
 ## 연습
@@ -29,6 +29,10 @@ Adobe Experience Platform 에이전트 및 Brand Concierge을 사용하여 다�
 [1.4.1 Brand Concierge 시작하기](./ex1.md){target="_blank"}
 
 이 연습에서는 Brand Concierge의 능력을 살펴보게 됩니다.
+
+[1.4.2 웹 사이트에서 Brand Concierge 구현](./ex1.md){target="_blank"}
+
+이 연습에서는 웹 사이트에 Brand Concierge 인스턴스를 구현합니다.
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
