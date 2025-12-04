@@ -3,14 +3,18 @@ title: Brand Concierge 시작하기
 description: Brand Concierge 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
+source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Brand Concierge 시작하기
+
+>[!IMPORTANT]
+>
+>이 연습은 진행 중이며 아직 끝나지 않았습니다.
 
 ## 비디오
 
@@ -73,7 +77,7 @@ Brand Concierge을 구성하는 동안 사용할 2가지 주요 요소는 다음
 
 ![Brand Concierge](./images/bc2.png)
 
-나에게 할당된 샌드박스를 선택합니다. 해당 샌드박스의 이름은 `--aepUserLdap--`이어야 합니다.
+나에게 할당된 샌드박스를 선택합니다. 해당 샌드박스의 이름은 `--aepUserLdap-- - bc`이어야 합니다.
 
 ![Brand Concierge](./images/bc3.png)
 
@@ -129,15 +133,21 @@ Brand Concierge should help customers find their best device, plan or entertainm
 
 ![Brand Concierge](./images/bc12.png)
 
+그럼 이걸 보셔야죠 아래 텍스트를 사용하여 다음 필드를 채웁니다.
 
+**컨시어지가 추천하기 전에 제품 또는 대상자에 대해 알아야 할 사항은 무엇입니까?**
 
 ```
 CitiSignal is a telecommunications company that sells devices such as phones and watches and that sells internet services such as their lead product CitiSignal Fiber Max. On top of that, CitiSignal sells entertainment services that offer premium streaming services at a discounted price. CitiSignal is targeting these 3 personas primarily: Smart Home Families, Online Gamers and Remote Professionals.
 ```
 
+**컨시어지가 추천할 때 따라야 하는 비즈니스 규칙이나 제한이 있습니까?**
+
 ```
 Prioritize positioning the CitiSignal Fiber Max offering.
 ```
+
+**컨시어지가 팔로우하거나 피해야 하는 특정 키워드나 구문이 있습니까?**
 
 ```
 Competitor pricing, competitor products
@@ -151,7 +161,7 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc14.png)
 
-**브랜드 표현식** 페이지에서 직접 선택할 수 있습니다.
+**브랜드 표현식** 페이지에서 직접 선택할 수 있습니다. 각 질문에 대해 옵션이 선택되어 있는지 확인하십시오.
 
 ![Brand Concierge](./images/bc15.png)
 
@@ -165,6 +175,73 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc17.png)
 
+그럼 다시 여기로 오십시오. **기술 자료 원본**&#x200B;을 클릭하세요.
+
+![Brand Concierge](./images/bc18.png)
+
+**기술 자료 원본 만들기**&#x200B;를 클릭합니다.
+
+![Brand Concierge](./images/bc19.png)
+
+**제품 카탈로그**&#x200B;를 선택하고 **계속**&#x200B;을 클릭하세요.
+
+![Brand Concierge](./images/bc20.png)
+
+그럼 이걸 보셔야죠 기술 자료 원본의 이름으로 `CitiSignal Products`을(를) 입력하십시오.
+
+![Brand Concierge](./images/bc21.png)
+
+이제 웹 사이트의 링크가 포함된 csv 파일을 업로드해야 합니다. 데스크톱에 [CitiSignal 제품 카탈로그](./assets/CitiSignal-catalog.json.zip)를 다운로드하고 압축을 풉니다.
+
+![Brand Concierge](./images/bc26.png)
+
+**파일 찾아보기**&#x200B;를 클릭한 다음 **장치에서 찾아보기**&#x200B;를 선택합니다.
+
+![Brand Concierge](./images/bc22.png)
+
+**CitiSignal-catalog.json** 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
+
+![Brand Concierge](./images/bc23.png)
+
+그럼 이걸 보셔야죠 **추가를 클릭합니다**.
+
+![Brand Concierge](./images/bc24.png)
+
+그럼 다시 여기로 오십시오.
+
+![Brand Concierge](./images/bc25.png)
+
+## 1.4.1.3 AEP 온보딩 단계
+
+Brand Concierge은 Adobe Experience Platform을 사용하여 대화의 상호 작용 데이터를 저장합니다. Brand Concierge과 Experience Platform을 연결하려면 Brand Concierge에서 구성하고 사용하는 데이터 스트림이 필요합니다.
+
+### 데이터스트림
+
+[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}(으)로 이동합니다. **Experience Platform**&#x200B;을(를) 엽니다.
+
+![Brand Concierge](./images/aep1.png)
+
+올바른 샌드박스를 선택했는지 확인하십시오. 샌드박스 이름은 `--aepUserLdap-- - bc`이어야 합니다. 왼쪽 메뉴에서 아래로 스크롤하여 **데이터스트림**&#x200B;을 선택합니다.
+
+![Brand Concierge](./images/aep2.png)
+
+**새 데이터 스트림**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/aep3.png)
+
+**데이터 스트림 이름** `--aepUserLdap-- - Brand Concierge`을(를) 입력한 다음 **매핑 스키마** `cja-brand-concierge-sb-XXX`을(를) 선택하십시오.
+
+**저장**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/aep4.png)
+
+이제 데이터 스트림이 구성되었습니다. 데이터 스트림 이름과 데이터 스트림 ID를 복사하고 컴퓨터의 텍스트 파일에 기록합니다.
+
+![Brand Concierge](./images/aep5.png)
+
+### Brand Concierge 구성 관리 API
+
+다음 단계는 Brand Concierge 구성 관리 API를 활성화하여 방금 생성한 데이터 스트림을 구성하는 것입니다. 요청을 처리하는 동안 IMS 조직 ID 및 샌드박스 세부 정보와 같은 문제를 해결하는 데 필요합니다.
 
 [Brand Concierge](./brandconcierge.md){target="_blank"}(으)로 돌아가기
 
