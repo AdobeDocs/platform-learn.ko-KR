@@ -25,5 +25,5 @@ Adobe Experience Platform Debugger [Chrome 확장](https://chrome.google.com/web
 
 * [Firefox 추가 기능 다운로드](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome 확장 다운로드](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [Experience Platform Debugger 설명서](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html)
-* [태그 구현 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [Experience Platform Debugger 설명서](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=ko)
+* [태그 구현 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=ko)
