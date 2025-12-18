@@ -4,10 +4,10 @@ description: Adobe Experience Manager Cloud Service 및 Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 1%
+source-wordcount: '227'
+ht-degree: 2%
 
 ---
 
@@ -16,6 +16,12 @@ ht-degree: 1%
 ## 학습 목표
 
 - 다양한 방법으로 Adobe Experience Manager Cloud Service을 사용하는 방법을 알아봅니다.
+
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478142?quality=12&learn=on)
 
 ## 전제 조건
 

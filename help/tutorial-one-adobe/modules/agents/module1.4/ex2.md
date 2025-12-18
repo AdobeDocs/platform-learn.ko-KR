@@ -3,9 +3,9 @@ title: 웹 사이트에서 Brand Concierge 구현
 description: 웹 사이트에서 Brand Concierge 구현
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,9 @@ export default function decorate(block) {
 
 >[!NOTE]
 >
->환경이 최대 절전 모드일 수 있습니다. 이 경우 먼저 환경의 최대 절전 모드를 해제해야 합니다.
+>환경이 최대 절전 모드일 수 있습니다. 이 경우 먼저 환경의 최대 절전 모드를 해제해야 합니다. 아래 비디오에서 최대 절전 모드 해제 방법에 대한 지침을 확인할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 

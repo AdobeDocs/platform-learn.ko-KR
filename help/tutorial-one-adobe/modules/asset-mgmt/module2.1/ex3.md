@@ -4,9 +4,9 @@ description: AEM CS - 기본 사용자 지정 블록
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,9 @@ PR 이름 `Fiber Offer custom block`을(를) 입력하십시오. **주 데이터
 
 >[!NOTE]
 >
->환경이 최대 절전 모드일 수 있습니다. 이 경우 먼저 환경의 최대 절전 모드를 해제해야 합니다.
+>환경이 최대 절전 모드일 수 있습니다. 이 경우 먼저 환경의 최대 절전 모드를 해제해야 합니다. 아래 비디오에서 최대 절전 모드 해제 방법에 대한 지침을 확인할 수 있습니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 
