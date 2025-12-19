@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: 0bbc806a4eb41ac8e51a10f6418cfa4795543316
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,10 @@ ht-degree: 2%
 
 Brand Concierge은 브랜드가 웹 사이트 방문자와 참여하는 방식을 혁신하는 AI 기반의 디지털 동반자입니다. 일반적인 챗봇과 달리 Brand Concierge은 각 방문자의 의도에 맞게 개인화된 대화 경험을 제공합니다. 방문자가 제품을 검색하고 옵션을 비교하며 즉각적인 답변을 얻고 실시간으로 가이드 추천을 받을 수 있도록 지원합니다. 플랫폼은 B2C와 B2B를 모두 제공하며, 브랜드 음성, 콘텐츠 무결성 및 규정 준수를 유지하면서 모든 디지털 채널에서 브랜드를 지능적으로 확장하는 역할을 합니다.
 
-Adobe Experience Platform 에이전트 및 Brand Concierge을 사용하여 다음을 수행하는 방법에 대해 알아봅니다.
+이 연습에서는 다음 방법을 배웁니다.
+
+- Adobe Experience Platform 샌드박스에서 Brand Concierge 인스턴스 구성
+- AEM CS/EDS 웹 사이트에서 Brand Concierge 구현
 
 ## 비디오
 
@@ -27,7 +30,7 @@ Adobe Experience Platform 에이전트 및 Brand Concierge을 사용하여 다�
 ## 전제 조건
 
 - Adobe Journey Optimizer 및 Customer Journey Analytics 액세스
-- [Brand Concierge 개념](https://experienceleague.adobe.com/ko/docs/brand-concierge/content/home)에 익숙함
+- [Brand Concierge 개념](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)에 익숙함
 - CitiSignal 데모 데이터에 액세스: 구매, 주문, 대상, 여정
 
 ## 연습
