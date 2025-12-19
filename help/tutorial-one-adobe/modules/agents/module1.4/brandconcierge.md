@@ -30,7 +30,7 @@ Brand Concierge은 브랜드가 웹 사이트 방문자와 참여하는 방식�
 ## 전제 조건
 
 - Adobe Journey Optimizer 및 Customer Journey Analytics 액세스
-- [Brand Concierge 개념](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)에 익숙함
+- [Brand Concierge 개념](https://experienceleague.adobe.com/ko/docs/brand-concierge/content/home)에 익숙함
 - CitiSignal 데모 데이터에 액세스: 구매, 주문, 대상, 여정
 
 ## 연습
