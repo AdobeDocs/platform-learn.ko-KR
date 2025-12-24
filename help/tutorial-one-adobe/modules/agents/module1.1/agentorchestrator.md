@@ -3,10 +3,10 @@ title: Agent Orchestrator
 description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
 workflow-type: tm+mt
-source-wordcount: '143'
-ht-degree: 6%
+source-wordcount: '176'
+ht-degree: 5%
 
 ---
 
@@ -38,6 +38,10 @@ Adobe Experience Platform 에이전트 및 Agent Orchestrator을 사용하여 �
 [1.1.1 Agent Orchestrator 시작하기](./ex1.md){target="_blank"}
 
 이 연습에서는 Fibre Max용 CitiSignal 출시 캠페인의 배경에 대한 Agent Orchestrator의 기능을 살펴봅니다.
+
+ChatGPT가 포함된 [1.1.2 Adobe Marketing Agent](./ex2.md){target="_blank"}
+
+이 연습에서는 ChatGPT와 함께 Adobe Marketing Agent을 사용하여 파이버 맥스에 대한 CitiSignal 시작 캠페인의 배경에 대한 Agent Orchestrator의 기능을 살펴봅니다.
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
