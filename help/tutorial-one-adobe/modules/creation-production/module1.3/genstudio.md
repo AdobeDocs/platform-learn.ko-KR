@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 815bea1378de139f8d19b6f46669f4d53b5775b4
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
@@ -37,10 +37,6 @@ GenStudio for Performance Marketing은 브랜드 및 시장에 대한 정보를 
 ## 비디오
 
 이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
-
->[!NOTE]
->
->이 비디오에는 아직 오디오가 없습니다. 오디오를 사용할 수 있게 되면 새 버전이 업로드됩니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476497?quality=12&learn=on)
 
