@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: fff1930bed3b8b0a059217b67f0a0b00a359a019
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,15 @@ Workfront Fusion을 사용하여 크리에이티브 워크플로를 자동으로
 
 ## 전제 조건
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}에 액세스
+- Adobe Firefly 액세스
+- Adobe Workfront Fusion 액세스
+- Adobe Frame.io에 액세스
+
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478697?quality=12&learn=on)
 
 ## 연습
 
