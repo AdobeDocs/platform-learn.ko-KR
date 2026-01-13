@@ -3,14 +3,18 @@ title: ChatGPT가 포함된 Adobe Marketing Agent
 description: ChatGPT가 포함된 Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent(ChatGPT 포함)
+
+>[!IMPORTANT]
+>
+>이 실습에서는 아직 릴리스되지 않은 기능을 사용합니다. 기능은 아직 개발 중이어서 아직 사용 단계는 아닙니다.
 
 ## 비디오
 
