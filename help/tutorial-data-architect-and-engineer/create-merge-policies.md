@@ -11,9 +11,9 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe Experience Platform을 사용하면 여러 소스에서 데이터를 결�
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 병합 정책을 만들어야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 병합 정책에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/345079?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 권한 필요
 
@@ -55,7 +55,7 @@ Adobe Experience Platform을 사용하면 여러 소스에서 데이터를 결�
 
 ![병합 정책 화면](assets/mergepolicies-default.png)
 
-프로필에 대해 여러 스키마를 사용하도록 설정하면 기본 클래스를 공유하는 모든 프로필이 사용하도록 설정된 레코드 스키마에 대해 [!UICONTROL 유니온 스키마]이(가) 자동으로 만들어집니다. **[!UICONTROL 유니온 스키마]** 탭으로 이동하여 [!UICONTROL 유니온 스키마]를 볼 수 있습니다.
+프로필에 대해 여러 스키마를 사용하도록 설정하면 기본 클래스를 공유하는 모든 프로필이 사용하도록 설정된 레코드 스키마에 대해 [!UICONTROL 유니온 스키마]이(가) 자동으로 만들어집니다. [!UICONTROL 유니온 스키마] 탭으로 이동하여 **[!UICONTROL 유니온 스키마]**&#x200B;를 볼 수 있습니다.
 
 ![병합 정책 화면](assets/mergepolicies-unionSchema.png)
 
@@ -122,7 +122,7 @@ CRM ID는 `Luma Loyalty Dataset`의 ID 필드이지만 기본 ID만 프로필을
 1. **[!UICONTROL 프로필 표시]** 단추 선택
 1. 프로필 ID를 선택하여 프로필 열기
 1. **[!UICONTROL 특성]** 탭으로 이동
-1. 휴대폰 번호 및 이메일 주소와 같은 CRM 데이터 세트의 다른 프로필 세부 정보는 다음 이유 때문에 사용할 수 없습니다
+1. `Loyalty Only` 병합 정책에 CRM 데이터 세트가 포함되어 있지 않으므로 휴대폰 번호 및 전자 메일 주소와 같은 CRM 데이터 세트의 다른 프로필 세부 정보를 사용할 수 없습니다.
    ![충성도 전용 정책에 CRM 데이터를 볼 수 없습니다](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. **[!UICONTROL 이벤트]** 탭으로 이동
 1. ExperienceEvent 데이터는 병합 정책 데이터 세트에 명시적으로 포함하지 않더라도 사용할 수 있습니다.
@@ -140,7 +140,7 @@ CRM ID는 `Luma Loyalty Dataset`의 ID 필드이지만 기본 ID만 프로필을
 
 ## 추가 리소스
 
-* [병합 정책 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ko)
+* [병합 정책 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [병합 정책 API(실시간 고객 프로필 API의 일부) 참조](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 이제 [데이터 거버넌스 프레임워크](apply-data-governance-framework.md)(으)로 이동하겠습니다.
