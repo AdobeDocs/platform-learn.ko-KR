@@ -16,4 +16,4 @@ ht-degree: 33%
 
 웹 및 모바일 SDK 구현을 위한 데이터스트림을 만들고 구성하는 방법에 대해 알아봅니다. 자세한 내용은 [데이터스트림 설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344995?captions=kor&learn=on&enablevpops)

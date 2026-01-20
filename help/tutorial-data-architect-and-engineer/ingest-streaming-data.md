@@ -31,9 +31,9 @@ ht-degree: 0%
 
 연습을 시작하기 전에 다음 두 개의 짧은 비디오를 통해 스트리밍 데이터 수집 및 웹 SDK에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31706?captions=kor&learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37266?captions=kor&learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Experience Platform Debugger는 웹 페이지에 구현된 Adobe 기술을 확�
 
 이전에 Debugger를 사용한 적이 없고 이전 Adobe Experience Cloud Debugger와 다른 경우 다음 5분 길이의 개요 비디오를 시청해 보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36114?captions=kor&learn=on&enablevpops)
 
 ### Luma 웹 사이트를 엽니다.
 

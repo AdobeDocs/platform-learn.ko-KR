@@ -18,7 +18,7 @@ ht-degree: 52%
 
 Adobe Experience Platform Debugger [Chrome 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)이(가) Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager, 태그 등을 지원하는 라이브러리인 Adobe Experience Platform Web SDK, AppMeasurement.js 및 at.js의 구현을 디버깅하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36114?captions=kor&learn=on&enablevpops)
 
 ## 추가 리소스
 
