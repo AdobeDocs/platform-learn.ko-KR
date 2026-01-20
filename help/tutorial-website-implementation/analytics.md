@@ -67,13 +67,13 @@ Analytics 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
    >[!TIP]
    >
-   >[!UICONTROL  라이브러리를 더 쉽게 최신 상태로 유지할 수 있도록 ]Manage the library for me 옵션[!UICONTROL 을 ]Library Management`AppMeasurement.js` 설정으로 사용하는 것이 좋습니다.
+   >[!UICONTROL &#x200B; 라이브러리를 더 쉽게 최신 상태로 유지할 수 있도록 &#x200B;]Manage the library for me 옵션[!UICONTROL 을 &#x200B;]Library Management`AppMeasurement.js` 설정으로 사용하는 것이 좋습니다.
 
 1. [!UICONTROL 일반 > 추적 서버]에서 추적 서버(예: `tmd.sc.omtrdc.net`)를 입력하십시오. 사이트가 `https://`를 지원하는 경우 SSL 추적 서버를 입력합니다.
 
    ![추적 서버 입력](images/analytics-config-trackingServer.png)
 
-1. [!UICONTROL 전역 변수 섹션]의 [!UICONTROL 추가 설정]에서 [!UICONTROL  데이터 요소를 사용하여 ]페이지 이름`Page Name` 변수를 설정합니다. ![data element 아이콘](images/icon-dataElement.png) 아이콘을 클릭하여 모달을 열고 페이지 `Page Name` 데이터 요소를 선택합니다.
+1. [!UICONTROL 전역 변수 섹션]의 [!UICONTROL 추가 설정]에서 [!UICONTROL &#x200B; 데이터 요소를 사용하여 &#x200B;]페이지 이름`Page Name` 변수를 설정합니다. ![data element 아이콘](images/icon-dataElement.png) 아이콘을 클릭하여 모달을 열고 페이지 `Page Name` 데이터 요소를 선택합니다.
 
 1. **[!UICONTROL 라이브러리에 저장]** 클릭
 
@@ -201,7 +201,7 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 **`Adobe Analytics Product String` 확장을 추가하려면**
 
 1. [!UICONTROL Extensions > Catalog] 페이지로 이동합니다.
-1. Adobe Consulting 서비스에서 `Adobe Analytics Product String` 확장을 찾아 **[!UICONTROL 설치]**를 클릭합니다.
+1. Adobe Consulting 서비스에서 `Adobe Analytics Product String` 확장을 찾아 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
    ![Adobe Consulting의 Adobe Analytics Product String 확장 추가](images/analytics-addProductStringExtension.png)
 1. 잠시 지침을 읽어 보십시오
 1. **[!UICONTROL 라이브러리에 저장]** 클릭
@@ -302,7 +302,7 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 
 ### 태그에 규칙 만들기
 
-1. 왼쪽 탐색에서 **[!UICONTROL 규칙]** 섹션으로 이동한 다음 **[!UICONTROL 규칙 추가]**를 클릭합니다
+1. 왼쪽 탐색에서 **[!UICONTROL 규칙]** 섹션으로 이동한 다음 **[!UICONTROL 규칙 추가]**&#x200B;를 클릭합니다
    ![규칙 추가](images/analytics-addRule3.png)
 1. 규칙 이름을 지정합니다 `Homepage - Featured Products enters Viewport`
 1. **[!UICONTROL 이벤트 > 추가]**&#x200B;를 클릭하여 `Event Configuration` 화면을 엽니다.
