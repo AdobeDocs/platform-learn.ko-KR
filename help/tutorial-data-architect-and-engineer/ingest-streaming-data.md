@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
-source-wordcount: '3272'
+source-wordcount: '3266'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ ht-degree: 0%
 
 연습을 시작하기 전에 다음 두 개의 짧은 비디오를 통해 스트리밍 데이터 수집 및 웹 SDK에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/31706?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/37266?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -157,9 +157,9 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. 태그에 사용할 수 있는 확장 프로그램이 많이 있습니다. 용어 `Web SDK`(으)로 카탈로그 필터링
 1. **[!UICONTROL Adobe Experience Platform Web SDK]** 확장에서 **[!UICONTROL 설치]** 단추를 선택합니다
    ![Adobe Experience Platform Web SDK 확장 설치](assets/websdk-property-addExtension.png)
-1. 웹 SDK 확장에는 몇 가지 구성이 사용할 수 있지만, 이 자습서에서는 두 가지 구성만 사용할 수 있습니다. **[!UICONTROL Edge 도메인]**&#x200B;을(를) `data.enablementadobe.com`(으)로 업데이트합니다. 이 설정을 사용하면 웹 SDK 구현을 사용하여 자사 쿠키를 설정할 수 있습니다. 이는 권장되는 현상입니다. 이 단원의 뒷부분에서 `enablementadobe.com` 도메인의 웹 사이트를 태그 속성에 매핑합니다. `data.enablementadobe.com`이(가) Adobe 서버로 전달하도록 `enablementadobe.com` 도메인의 CNAME이 이미 구성되었습니다. 웹 사이트에서 웹 SDK을 구현하는 경우 데이터 수집을 위한 CNAME을 만들어야 합니다(예: `data.YOUR_DOMAIN.com`).
+1. 웹 SDK 확장에는 몇 가지 구성이 사용할 수 있지만, 이 자습서에서는 두 가지 구성만 사용할 수 있습니다. **[!UICONTROL Edge 도메인]**&#x200B;을(를) `data.enablementadobe.com`(으)로 업데이트합니다. 이 설정을 사용하면 웹 SDK 구현을 사용하여 자사 쿠키를 설정할 수 있습니다. 이는 권장되는 현상입니다. 이 단원의 뒷부분에서 `enablementadobe.com` 도메인의 웹 사이트를 태그 속성에 매핑합니다. `enablementadobe.com`이(가) Adobe 서버로 전달하도록 `data.enablementadobe.com` 도메인의 CNAME이 이미 구성되었습니다. 웹 사이트에서 웹 SDK을 구현하는 경우 데이터 수집을 위한 CNAME을 만들어야 합니다(예: `data.YOUR_DOMAIN.com`).
 1. **[!UICONTROL 데이터스트림]** 드롭다운에서 `Luma Platform Tutorial` 데이터스트림을 선택합니다.
-1. 언제든지 다른 구성 옵션을 보고 **[!UICONTROL 저장]**&#x200B;을 선택하세요.
+1. 언제든지 다른 구성 옵션을 보고 **[!UICONTROL 저장]**을 선택하세요.
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
@@ -177,13 +177,13 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. **[!UICONTROL 이벤트]**&#x200B;에서 **[!UICONTROL 추가]** 단추를 선택합니다.
    ![규칙 이름을 지정하고 이벤트를 추가합니다](assets/websdk-property-nameRule.png)
 1. **[!UICONTROL Core]** **[!UICONTROL Extension]**&#x200B;을(를) 사용하고 **[!UICONTROL Library Loaded(Page Top)]**&#x200B;을(를) **[!UICONTROL 이벤트 유형]**(으)로 선택하십시오. 이 설정은 Launch 라이브러리가 페이지에 로드될 때마다 규칙이 실행됨을 의미합니다.
-1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택하십시오.
+1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**를 선택하십시오.
    ![Library Loaded 이벤트 추가](assets/websdk-property-addEvent.png)
 1. 지정한 이름에 따라 모든 페이지에서 이 규칙을 실행하려면 **[!UICONTROL 조건]**&#x200B;을 비워 둡니다.
 1. **[!UICONTROL 작업]**&#x200B;에서 **[!UICONTROL 추가]** 단추를 선택합니다.
 1. **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL 확장]**&#x200B;을 사용하고 **[!UICONTROL 작업 유형]**&#x200B;으로 **[!UICONTROL 이벤트 보내기]**&#x200B;를 선택합니다.
 1. 오른쪽의 **[!UICONTROL Type]** 드롭다운에서 **[!UICONTROL web.webpagedetails.pageViews]**&#x200B;을(를) 선택합니다. `Luma Web Events Schema`의 XDM 필드 중 하나입니다.
-1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**&#x200B;를 선택하십시오.
+1. 기본 규칙 화면으로 돌아가려면 **[!UICONTROL 변경 내용 유지]**를 선택하십시오.
    ![이벤트 보내기 작업 추가](assets/websdk-property-addAction.png)
 1. 규칙을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택하십시오.\
    ![규칙 저장](assets/websdk-property-saveRule.png)
@@ -248,14 +248,13 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 
 ### Adobe Experience Platform Debugger 추가
 
-Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 수 있는 확장으로, 웹 페이지에서 Adobe 기술이 구현된 것을 볼 수 있도록 도와줍니다. 원하는 브라우저용 버전을 다운로드합니다.
+Experience Platform Debugger는 웹 페이지에 구현된 Adobe 기술을 확인하는 데 도움이 되는 Chrome에서 사용할 수 있는 확장 프로그램입니다. 원하는 브라우저용 버전을 다운로드합니다.
 
-* [Firefox 확장 프로그램](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 이전에 Debugger를 사용한 적이 없고 이전 Adobe Experience Cloud Debugger와 다른 경우 다음 5분 길이의 개요 비디오를 시청해 보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/36114?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### Luma 웹 사이트를 엽니다.
 
@@ -264,7 +263,7 @@ Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 
 1. 새 브라우저 탭에서 [Luma 웹 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
 1. 자습서의 나머지 부분에서 사용할 페이지에 책갈피를 지정합니다
 
-이 호스팅된 웹 사이트는 초기 태그 속성 구성의 [!UICONTROL 도메인] 필드에서 `enablementadobe.com`을(를) 사용한 이유와 [!UICONTROL Adobe Experience Platform Web SDK] 확장에서 `data.enablementadobe.com`을(를) 자사 도메인으로 사용한 이유입니다. 난 계획이 있었어!
+이 호스팅된 웹 사이트는 초기 태그 속성 구성의 `enablementadobe.com`도메인[!UICONTROL  필드에서 ]을(를) 사용한 이유와 `data.enablementadobe.com`Adobe Experience Platform Web SDK[!UICONTROL  확장에서 ]을(를) 자사 도메인으로 사용한 이유입니다. 난 계획이 있었어!
 
 ![Luma 홈 페이지](assets/websdk-luma-homepage.png)
 
@@ -278,7 +277,7 @@ Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 �
 1. 인증하려면 오른쪽 상단의 **[!UICONTROL 로그인]** 단추를 선택하십시오.
 1. 이제 왼쪽 탐색에서 **[!UICONTROL 시작]**(으)로 이동
 1. 구성 탭을 선택합니다.
-1. **[!UICONTROL 페이지 포함 코드]**&#x200B;를 표시하는 오른쪽의 **[!UICONTROL 작업]** 드롭다운을 열고 **[!UICONTROL 바꾸기]**&#x200B;를 선택합니다
+1. **[!UICONTROL 페이지 포함 코드]**&#x200B;를 표시하는 오른쪽의 **[!UICONTROL 작업]** 드롭다운을 열고 **[!UICONTROL 바꾸기]**를 선택합니다
    ![작업 > 바꾸기](assets/websdk-debugger-replaceLibrary.png) 선택
 1. 사용자가 인증되었으므로 디버거는 사용 가능한 Launch 속성 및 환경을 가져옵니다. `Luma Platform Tutorial` 속성 선택
 1. `Development` 환경 선택
@@ -286,13 +285,13 @@ Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 �
    ![대체 태그 속성 선택](assets/websdk-debugger-selectProperty.png)
 1. 이제 Luma 웹 사이트가 _을(를) 태그 속성으로 다시 로드합니다_. 도와줘요, 해킹당했습니다! 농담입니다.
    ![태그 속성이 대체됨](assets/websdk-debugger-propertyReplaced.png)
-1. [!UICONTROL Launch] 속성의 세부 정보를 보려면 왼쪽 탐색에서 **[!UICONTROL 요약]**(으)로 이동하십시오.
+1. **[!UICONTROL Launch]** 속성의 세부 정보를 보려면 왼쪽 탐색에서 [!UICONTROL 요약]&#x200B;(으)로 이동하십시오.
    ![요약 탭](assets/websdk-debugger-summary.png)
 1. 이제 왼쪽 탐색 영역에서 **[!UICONTROL AEP Web SDK]**(으)로 이동하여 **[!UICONTROL 네트워크 요청]**&#x200B;을 확인합니다.
 1. **[!UICONTROL 이벤트]** 행 열기
 
    ![Adobe Experience Platform Web SDK 요청](assets/websdk-debugger-platformNetwork.png)
-1. [!UICONTROL 이벤트 보내기] 작업에 지정한 `web.webpagedetails.pageView` 이벤트 형식과 `AEP Web SDK ExperienceEvent Mixin` 형식을 준수하는 기타 기본 변수를 확인하는 방법을 참고하십시오.
+1. `web.webpagedetails.pageView`이벤트 보내기[!UICONTROL  작업에 지정한 ] 이벤트 형식과 `AEP Web SDK ExperienceEvent Mixin` 형식을 준수하는 기타 기본 변수를 확인하는 방법을 참고하십시오.
    ![이벤트 세부 사항](assets/websdk-debugger-eventDetails.png)
 1. 이러한 유형의 요청 세부 정보는 브라우저의 웹 개발자 도구 **네트워크** 탭에도 표시됩니다. 페이지를 열고 다시 로드합니다. `interact`(으)로 호출을 필터링하여 호출을 찾아 선택한 다음 **헤더** 탭, **페이로드 요청** 영역에서 찾습니다.
    ![네트워크 탭](assets/websdk-debugger-networkTab.png)
@@ -318,7 +317,7 @@ Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 �
 
 1. Platform 사용자 인터페이스에서 왼쪽 탐색 메뉴의 **[!UICONTROL 프로필]**(으)로 이동합니다.
 1. **[!UICONTROL ECID]** 네임스페이스를 선택하고 ECID 값을 검색합니다(응답에서 복사). 프로필에는 ECID와 별도의 자체 ID가 있습니다.
-1. **[!UICONTROL 프로필 ID]**&#x200B;을(를) 선택하여 프로필 열기
+1. **[!UICONTROL 프로필 ID]**을(를) 선택하여 프로필 열기
    ![프로필 찾기 및 열기](assets/websdk-platform-openProfile.png)
 1. 본 페이지를 보려면 **[!UICONTROL 이벤트]** 탭을 선택하십시오.
    ![프로필 이벤트](assets/websdk-platform-profileEvents.png)\
@@ -347,8 +346,8 @@ Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 �
 
 >[!IMPORTANT]
 >
->이 작업을 완료하려면 먼저 사용자가 Prod 샌드박스에 액세스할 수 있는지 확인해야 합니다. 다른 제품 프로필에서 Prod 샌드박스에 액세스할 수 없는 경우 `Luma Tutorial Platform` 프로필을 빠르게 열고 권한 항목 **[!UICONTROL 샌드박스]** > **[!UICONTROL Prod]**&#x200B;를 추가하십시오. 그런 다음 데이터 요소 페이지에서 SHIFT 키를 누른 상태로 다시 로드하여 캐시를 지웁니다
->&#x200B;>![Prod 샌드박스 추가](assets/websdk-property-permissionToLoadSchema.png)
+>이 작업을 완료하려면 먼저 사용자가 Prod 샌드박스에 액세스할 수 있는지 확인해야 합니다. 다른 제품 프로필에서 Prod 샌드박스에 액세스할 수 없는 경우 `Luma Tutorial Platform` 프로필을 빠르게 열고 권한 항목 **[!UICONTROL 샌드박스]** > **[!UICONTROL Prod]**를 추가하십시오. 그런 다음 데이터 요소 페이지에서 SHIFT 키를 누른 상태로 다시 로드하여 캐시를 지웁니다
+>![Prod 샌드박스 추가](assets/websdk-property-permissionToLoadSchema.png)
 
 **[!UICONTROL 데이터 요소]** 페이지에서:
 
@@ -375,7 +374,7 @@ Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 �
 1. **[!UICONTROL XDM 데이터]**&#x200B;로서 아이콘을 선택하여 데이터 요소 선택 모달을 열고 `XDM Object` 데이터 요소를 선택합니다
 1. **[!UICONTROL 변경 내용 유지]** 단추 선택
    ![이벤트 보내기 작업에 XDM 데이터 추가](assets/websdk-property-addXDMtoSendEvent.png)
-1. 이제 지난 몇 번의 연습에서 `Luma Platform Tutorial`을(를) 작업 라이브러리로 선택했기 때문에 최근 변경 내용이 라이브러리에 직접 저장되었습니다. 게시 플로우 화면을 통해 변경 사항을 게시하지 않고 파란색 버튼의 드롭다운을 열고 **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 선택하면 됩니다.
+1. 이제 지난 몇 번의 연습에서 `Luma Platform Tutorial`을(를) 작업 라이브러리로 선택했기 때문에 최근 변경 내용이 라이브러리에 직접 저장되었습니다. 게시 플로우 화면을 통해 변경 사항을 게시하지 않고 파란색 버튼의 드롭다운을 열고 **[!UICONTROL 라이브러리 및 빌드에 저장]**을 선택하면 됩니다.
    ![라이브러리 및 빌드에 저장](assets/websdk-property-saveAndBuildUpdatedSendEvent.png)
 
 이렇게 하면 방금 변경한 세 가지 사항으로 새 태그 라이브러리를 빌드하기 시작합니다.
@@ -410,7 +409,7 @@ Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 �
 1. 이름이 `Identities`인 데이터 요소 추가
 1. **[!UICONTROL 확장]**(으)로 **[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;을(를) 선택합니다.
 1. **[!UICONTROL 데이터 요소 형식]**(으)로 **[!UICONTROL ID 맵]**&#x200B;을(를) 선택하십시오.
-1. **[!UICONTROL 네임스페이스]**(으)로, 이전 단원에서 만든 [!UICONTROL 네임스페이스]인 `Luma CRM Id`을(를) 입력하십시오.
+1. **[!UICONTROL 네임스페이스]**(으)로, 이전 단원에서 만든 `Luma CRM Id`네임스페이스[!UICONTROL 인 ]을(를) 입력하십시오.
 
    >[!WARNING]
    >
@@ -440,7 +439,7 @@ Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 �
 1. XDM 개체 데이터 요소를 엽니다.
 1. IdentityMap XDM 필드 열기
 1. **[!UICONTROL 데이터 요소]**(으)로 아이콘을 선택하여 데이터 요소 선택 모달을 열고 `Identities` 데이터 요소를 선택합니다
-1. 이제 지난 몇 번의 연습에서 `Luma Platform Tutorial`을(를) 작업 라이브러리로 선택했기 때문에 최근 변경 내용이 라이브러리에 직접 저장되었습니다. 게시 플로우 화면을 통해 변경 내용을 게시하지 않고 파란색 버튼의 드롭다운을 열고 **[!UICONTROL 라이브러리 및 빌드에 저장]**&#x200B;을 선택할 수 있습니다.
+1. 이제 지난 몇 번의 연습에서 `Luma Platform Tutorial`을(를) 작업 라이브러리로 선택했기 때문에 최근 변경 내용이 라이브러리에 직접 저장되었습니다. 게시 플로우 화면을 통해 변경 내용을 게시하지 않고 파란색 버튼의 드롭다운을 열고 **[!UICONTROL 라이브러리 및 빌드에 저장]**을 선택할 수 있습니다.
    ![XDM 개체에 IdentityMap 데이터 요소 추가](assets/websdk-property-dataElement-addIdentitiesToXDMObject.png)
 
 
@@ -468,7 +467,7 @@ Experience Platform Debugger에는 기존 태그 속성을 다른 속성으로 �
 
 >[!NOTE]
 >
->스트리밍 수집 단원을 완료했으므로 이제 `Luma Tutorial Platform` 제품 프로필에서 [!UICONTROL Prod] 샌드박스를 제거할 수 있습니다
+>스트리밍 수집 단원을 완료했으므로 이제 [!UICONTROL  제품 프로필에서 ]Prod`Luma Tutorial Platform` 샌드박스를 제거할 수 있습니다
 
 
 데이터 엔지니어의 경우 [쿼리 실행 단원](run-queries.md)으로 건너뛸 수 있습니다.

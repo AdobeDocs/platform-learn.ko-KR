@@ -6,12 +6,11 @@ short-description: Adobe Experience Platform Web SDK 및 Experience Cloud 애플
 feature: Debugger
 level: Beginner
 jira: KT-4723
-thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 89a8c57fb50ac02382e4e33d7dcdaac046821867
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 51%
+source-wordcount: '136'
+ht-degree: 52%
 
 ---
 
@@ -19,11 +18,10 @@ ht-degree: 51%
 
 Adobe Experience Platform Debugger [Chrome 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)이(가) Real-Time CDP, Journey Optimizer, Customer Journey Analytics, Adobe Analytics, Adobe Target, Adobe Audience Manager, 태그 등을 지원하는 라이브러리인 Adobe Experience Platform Web SDK, AppMeasurement.js 및 at.js의 구현을 디버깅하는 데 어떻게 도움이 되는지에 대해 알아봅니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36114?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## 추가 리소스
 
-* [Firefox 추가 기능 다운로드](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome 확장 다운로드](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [Experience Platform Debugger 설명서](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=ko)
-* [태그 구현 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=ko)
+* [Experience Platform Debugger 설명서](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html)
+* [태그 구현 디버깅](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

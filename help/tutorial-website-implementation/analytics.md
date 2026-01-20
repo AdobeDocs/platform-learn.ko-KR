@@ -1,9 +1,9 @@
 ---
 title: Adobe Analytics 추가
-description: Adobe Analytics 태그 확장을 사용하여 Adobe Analytics을 구현하고, 페이지 보기 비콘을 보내고, 변수를 추가하고, 이벤트를 추적하고, 플러그인을 추가하는 방법을 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
+description: Adobe Analytics 태그 확장을 사용하여 Adobe Analytics을 구현하고, 페이지 보기 비콘을 보내고, 변수를 추가하고, 이벤트를 추적하고, 플러그인을 추가하는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
 solution: Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
 source-wordcount: '3827'
 ht-degree: 69%
@@ -12,17 +12,17 @@ ht-degree: 69%
 
 # Adobe Analytics 추가
 
-이 단원에서는 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko)을 구현하고 데이터를 Adobe Analytics에 전송하는 규칙을 만듭니다.
+이 단원에서는 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)을 구현하고 데이터를 Adobe Analytics에 전송하는 규칙을 만듭니다.
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=ko-KR)는 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 솔루션입니다.
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=ko)는 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 솔루션입니다.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)**&#x200B;입니다.
-> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)**&#x200B;입니다.
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)**&#x200B;입니다.
+> * 이제 Platform Launch(Client Side)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
+> * 이제 Platform Launch Server Side가 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -41,7 +41,7 @@ ht-degree: 69%
 
 [태그 구성](create-a-property.md) 및 [ID 서비스 추가](id-service.md)의 학습 내용을 이미 완료했어야 합니다.
 
-추가적으로, 하나 이상의 보고서 세트 ID와 추적 서버가 필요합니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 만드십시오. 방법을 잘 모르는 경우 [설명서](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html?lang=ko-KR)를 참조하십시오. 현재 구현, Adobe 컨설턴트 또는 고객 지원 담당자로부터 추적 서버를 검색할 수 있습니다.
+추가적으로, 하나 이상의 보고서 세트 ID와 추적 서버가 필요합니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 만드십시오. 방법을 잘 모르는 경우 [설명서](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)를 참조하십시오. 현재 구현, Adobe 컨설턴트 또는 고객 지원 담당자로부터 추적 서버를 검색할 수 있습니다.
 
 ## Analytics 확장 구성 추가
 
@@ -67,13 +67,13 @@ Analytics 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 
    >[!TIP]
    >
-   >`AppMeasurement.js` 라이브러리를 더 쉽게 최신 상태로 유지할 수 있도록 [!UICONTROL Manage the library for me 옵션]을 [!UICONTROL Library Management] 설정으로 사용하는 것이 좋습니다.
+   >[!UICONTROL  라이브러리를 더 쉽게 최신 상태로 유지할 수 있도록 ]Manage the library for me 옵션[!UICONTROL 을 ]Library Management`AppMeasurement.js` 설정으로 사용하는 것이 좋습니다.
 
 1. [!UICONTROL 일반 > 추적 서버]에서 추적 서버(예: `tmd.sc.omtrdc.net`)를 입력하십시오. 사이트가 `https://`를 지원하는 경우 SSL 추적 서버를 입력합니다.
 
    ![추적 서버 입력](images/analytics-config-trackingServer.png)
 
-1. [!UICONTROL 전역 변수 섹션]의 [!UICONTROL 추가 설정]에서 `Page Name` 데이터 요소를 사용하여 [!UICONTROL 페이지 이름] 변수를 설정합니다. ![data element 아이콘](images/icon-dataElement.png) 아이콘을 클릭하여 모달을 열고 페이지 `Page Name` 데이터 요소를 선택합니다.
+1. [!UICONTROL 전역 변수 섹션]의 [!UICONTROL 추가 설정]에서 [!UICONTROL  데이터 요소를 사용하여 ]페이지 이름`Page Name` 변수를 설정합니다. ![data element 아이콘](images/icon-dataElement.png) 아이콘을 클릭하여 모달을 열고 페이지 `Page Name` 데이터 요소를 선택합니다.
 
 1. **[!UICONTROL 라이브러리에 저장]** 클릭
 
@@ -127,8 +127,8 @@ Analytics 확장은 다음 두 가지 주요 부분으로 구성됩니다.
 Analytics 비콘을 보내는 규칙을 만들었으면 이제 Experience Cloud Debugger에서 요청을 볼 수 있습니다.
 
 1. Chrome 브라우저에서 [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
-1. 디버거 아이콘 ![Experience Cloud Debugger 열기](images/analytics-debuggerIcon.png)를 클릭하여 **[!UICONTROL Adobe Experience Cloud Debugger]**&#x200B;를 엽니다.
-1. [이전 단원](switch-environments.md)에 설명된 대로 Debugger가 태그 속성을 *사용자* 개발 환경에 매핑하는지 확인합니다.
+1. 디버거 아이콘 ![Experience Cloud Debugger 열기](images/analytics-debuggerIcon.png)을 클릭하여 **[!UICONTROL Adobe Experience Cloud Debugger를 엽니다]**
+1. *이전 단원*&#x200B;에 설명된 대로 Debugger가 태그 속성을 [사용자](switch-environments.md) 개발 환경에 매핑하는지 확인합니다.
 
    ![디버거에 태그 개발 환경이 표시됨](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -196,12 +196,12 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 
 ### Adobe Analytics 제품 문자열 확장 추가
 
-이미 Adobe Analytics 구현에 익숙하다면 [제품 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=ko)에도 익숙할 것입니다. 제품 변수는 매우 특정한 구문을 사용하며, 컨텍스트에 따라 약간 다른 방식으로 사용됩니다. 태그에서 제품 변수를 더 쉽게 입력할 수 있도록 지원하기 위해 태그 확장 마켓플레이스에서 이미 3개의 추가 확장을 만들었습니다! 이 섹션에서는 제품 세부 정보 페이지에서 사용할 Adobe 컨설팅 팀이 만든 확장을 추가합니다.
+이미 Adobe Analytics 구현에 익숙하다면 [제품 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html)에도 익숙할 것입니다. 제품 변수는 매우 특정한 구문을 사용하며, 컨텍스트에 따라 약간 다른 방식으로 사용됩니다. 태그에서 제품 변수를 더 쉽게 입력할 수 있도록 지원하기 위해 태그 확장 마켓플레이스에서 이미 3개의 추가 확장을 만들었습니다! 이 섹션에서는 제품 세부 정보 페이지에서 사용할 Adobe 컨설팅 팀이 만든 확장을 추가합니다.
 
 **`Adobe Analytics Product String` 확장을 추가하려면**
 
 1. [!UICONTROL Extensions > Catalog] 페이지로 이동합니다.
-1. Adobe Consulting 서비스에서 `Adobe Analytics Product String` 확장을 찾아 **[!UICONTROL 설치]**&#x200B;를 클릭합니다.
+1. Adobe Consulting 서비스에서 `Adobe Analytics Product String` 확장을 찾아 **[!UICONTROL 설치]**를 클릭합니다.
    ![Adobe Consulting의 Adobe Analytics Product String 확장 추가](images/analytics-addProductStringExtension.png)
 1. 잠시 지침을 읽어 보십시오
 1. **[!UICONTROL 라이브러리에 저장]** 클릭
@@ -281,7 +281,7 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 
 1. Chrome 브라우저에서 [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
 1. 제품 세부 사항 페이지로 이동합니다
-1. 디버거 아이콘 ![Experience Cloud Debugger 열기](images/analytics-debuggerIcon.png)를 클릭하여 **[!UICONTROL Adobe Experience Cloud Debugger]**&#x200B;를 엽니다.
+1. 디버거 아이콘 ![Experience Cloud Debugger 열기](images/analytics-debuggerIcon.png)을 클릭하여 **[!UICONTROL Adobe Experience Cloud Debugger를 엽니다]**
 1. Analytics 탭을 클릭하여 엽니다.
 1. 보고서 세트를 확장합니다.
 1. 이제 디버거에 있는 제품 세부 사항 변수를 확인합니다. 즉 `eVar1`이 &quot;product detail page&quot;로 설정되었고, `Events` 변수가 &quot;event1&quot; 및 &quot;prodView&quot;로 설정되었고, 제품 변수가 사용자가 보고 있는 제품의 제품 ID로 설정되었고, 페이지 이름을 아직 Analytics 확장에서 설정하는지 확인합니다.
@@ -302,7 +302,7 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 
 ### 태그에 규칙 만들기
 
-1. 왼쪽 탐색에서 **[!UICONTROL 규칙]** 섹션으로 이동한 다음 **[!UICONTROL 규칙 추가]**&#x200B;를 클릭합니다
+1. 왼쪽 탐색에서 **[!UICONTROL 규칙]** 섹션으로 이동한 다음 **[!UICONTROL 규칙 추가]**를 클릭합니다
    ![규칙 추가](images/analytics-addRule3.png)
 1. 규칙 이름을 지정합니다 `Homepage - Featured Products enters Viewport`
 1. **[!UICONTROL 이벤트 > 추가]**&#x200B;를 클릭하여 `Event Configuration` 화면을 엽니다.
@@ -360,7 +360,7 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 이제 당사 사이트 홈 페이지의 주요 제품 섹션으로 스크롤할 때 이 히트가 발생하는지 확인하려고 합니다. 홈 페이지를 처음 로드할 때 요청이 만들어지지 않지만 아래로 스크롤하여 섹션이 표시되면 새 값으로 히트가 실행됩니다.
 
 1. Chrome 브라우저에서 [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 열고 현재 위치가 홈 페이지의 상단인지 확인합니다.
-1. **[!UICONTROL 디버거 아이콘]** ![Experience Cloud Debugger 열기](images/analytics-debuggerIcon.png)를 클릭하여 [!UICONTROL Adobe Experience Cloud 디버거]를 엽니다.
+1. **[!UICONTROL 디버거 아이콘]** ![Experience Cloud Debugger 열기](images/analytics-debuggerIcon.png)을 클릭하여 [!UICONTROL Adobe Experience Cloud Debugger]를 엽니다.
 1. Analytics 탭을 클릭하여 엽니다.
 1. 보고서 세트의 히트를 확장합니다.
 1. 페이지 이름 등이 있는 홈 페이지의 일반 페이지 보기 히트에 주목합니다(하지만 eVar3 또는 prop3에는 아무 것도 없음).
@@ -426,7 +426,7 @@ doPlugins 함수(아래)를 추가하고 플러그인을 사용하려는 경우 
 
 이 플러그인의 목적은 방문자가 페이지를 새로 고치거나 브라우저의 뒤로 단추를 사용하여 값이 설정된 페이지로 돌아갈 때 코드에서 값이 잘못 중복되는 것을 방지하기 위한 것입니다. 이 단원에서는 이 플러그인을 사용하여 `clickthrough` 이벤트가 중복되지 않도록 합니다.
 
-이 플러그인의 코드는 [Analytics 설명서](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=ko)에 나와 있지만 쉽게 복사/붙여넣기를 할 수 있도록 여기에 포함되어 있습니다.
+이 플러그인의 코드는 [Analytics 설명서](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html)에 나와 있지만 쉽게 복사/붙여넣기를 할 수 있도록 여기에 포함되어 있습니다.
 
 1. 다음 코드를 복사합니다.
 
@@ -476,7 +476,7 @@ doPlugins 함수(아래)를 추가하고 플러그인을 사용하려는 경우 
 **플러그인의 유효성을 검사하려면**
 
 1. Chrome 브라우저에서 [Luma 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
-1. 디버거 아이콘 ![Experience Cloud Debugger 열기](images/analytics-debuggerIcon.png)를 클릭하여 **[!UICONTROL Adobe Experience Cloud Debugger]**&#x200B;를 엽니다.
+1. 디버거 아이콘 ![Experience Cloud Debugger 열기](images/analytics-debuggerIcon.png)을 클릭하여 **[!UICONTROL Adobe Experience Cloud Debugger를 엽니다]**
 1. Analytics 탭을 클릭하여 엽니다.
 1. 보고서 세트를 확장합니다.
 1. Analytics 히트에 캠페인 변수가 없다는 점에 주목합니다.
