@@ -39,7 +39,7 @@ Adobe Experience Platform Debugger은 Google Chrome에 설치할 수 있습니�
 
 Chrome 확장 또는 Firefox 추가 기능을 설치하면 확장 모음에 아이콘(![](assets/start-icon.jpg))이 추가됩니다. 이 아이콘을 선택하여 확장을 엽니다.
 
-[Adobe Experience Platform Debugger 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 및 모든 Adobe 웹 응용 프로그램을 디버깅하는 방법에 대한 자세한 내용은 전용 안내서를 참조하십시오.
+[Adobe Experience Platform Debugger 확장](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=ko) 및 모든 Adobe 웹 응용 프로그램을 디버깅하는 방법에 대한 자세한 내용은 전용 안내서를 참조하십시오.
 
 ## QA URL을 사용하여 Target 활동 미리 보기
 
@@ -51,7 +51,7 @@ at.js 또는 Platform Web SDK에서 `at_qa_mode` 브라우저에 특정 쿠키�
 >
 >Target QA 모드 기능은 Platform Web SDK 버전 2.13.0 이상에서 지원됩니다. 대상 QA 모드는 `xdm.web.webPageDetails.URL` 호출에서 전달된 `sendEvent` 값을 기반으로 활성화됩니다. 모든 문자의 소문자로 시작하는 등 이 값을 수정하면 Target QA 모드가 제대로 작동하지 않을 수 있습니다.
 
-[Target 활동 QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html)에 대한 자세한 내용은 전용 안내서를 참조하세요.
+[Target 활동 QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=ko)에 대한 자세한 내용은 전용 안내서를 참조하세요.
 
 ## Target 구현 디버그
 
@@ -129,7 +129,7 @@ Adobe Experience Platform Debugger을 사용하여 Platform Web SDK Target 추�
 - 요청 세부 정보
 - 프로필 스냅샷
 
-Target 추적에 대한 자세한 내용은 [Target 콘텐츠 게재 디버깅](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html)에 대한 전용 안내서를 참조하십시오.
+Target 추적에 대한 자세한 내용은 [Target 콘텐츠 게재 디버깅](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=ko)에 대한 전용 안내서를 참조하십시오.
 
 ### Assurance 문제 해결
 
@@ -180,4 +180,4 @@ Platform 웹 SDK `sendEvent` 호출의 요청 페이로드 및 응답이 at.js�
 
 >[!NOTE]
 >
->at.js에서 웹 SDK으로 Target을 성공적으로 이전할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)에 게시하여 알려 주십시오.
+>at.js에서 웹 SDK으로 Target을 성공적으로 이전할 수 있도록 지원하기 위해 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=ko#M463)에 게시하여 알려 주십시오.

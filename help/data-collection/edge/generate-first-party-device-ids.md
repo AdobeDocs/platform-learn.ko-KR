@@ -20,7 +20,7 @@ Adobe Experience Cloud 애플리케이션은 전통적으로 다음을 포함한
 1. 도메인 이름의 CNAME 구성을 사용하여 Adobe 서버에서 설정한 자사 쿠키
 1. JavaScript에서 설정한 자사 쿠키
 
-최근 브라우저 변경 사항은 이러한 유형의 쿠키의 기간을 제한합니다. 자사 쿠키는 DNS CNAME이 아닌 DNS A/AAAA 레코드를 사용하여 고객 소유 서버를 사용할 때 가장 효과적입니다. [자사 장치 ID(FPID) 기능](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids)을 통해 Adobe Experience Platform Web SDK을 구현하는 고객은 DNS A/AAAA 레코드를 사용하는 서버의 쿠키에 장치 ID를 사용할 수 있습니다. 그런 다음 이러한 ID를 Adobe으로 전송하여 Adobe Experience Cloud 애플리케이션에서 기본 식별자로 남아 있는 ECID(Experience Cloud ID)를 생성하기 위한 시드로 사용할 수 있습니다.
+최근 브라우저 변경 사항은 이러한 유형의 쿠키의 기간을 제한합니다. 자사 쿠키는 DNS CNAME이 아닌 DNS A/AAAA 레코드를 사용하여 고객 소유 서버를 사용할 때 가장 효과적입니다. [자사 장치 ID(FPID) 기능](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/identity/first-party-device-ids)을 통해 Adobe Experience Platform Web SDK을 구현하는 고객은 DNS A/AAAA 레코드를 사용하는 서버의 쿠키에 장치 ID를 사용할 수 있습니다. 그런 다음 이러한 ID를 Adobe으로 전송하여 Adobe Experience Cloud 애플리케이션에서 기본 식별자로 남아 있는 ECID(Experience Cloud ID)를 생성하기 위한 시드로 사용할 수 있습니다.
 
 다음은 기능이 작동하는 방식에 대한 빠른 예입니다.
 
@@ -151,4 +151,4 @@ PHP에는 UUID 생성을 위한 기본 라이브러리가 없으므로 이러한
 1. Platform Edge Network에 다른 요청을 보냅니다.
 1. `AMCV_<IMSORGID@AdobeOrg>` 쿠키의 값이 삭제된 `ECID` 쿠키와 동일한 `AMCV_` 값인지 확인합니다. 쿠키 값이 주어진 FPID에 대해 동일한 경우 ECID에 대한 시드 프로세스가 성공했습니다.
 
-이 기능에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)를 참조하세요.
+이 기능에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=ko)를 참조하세요.

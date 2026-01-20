@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 이벤트 전달 속성 만들기
 
-데이터 수집에서 이벤트 전달 속성을 만드는 방법을 알아봅니다. 자세한 내용은 [이벤트 전달 속성 만들기](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property)를 참조하세요.
+데이터 수집에서 이벤트 전달 속성을 만드는 방법을 알아봅니다. 자세한 내용은 [이벤트 전달 속성 만들기](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=ko#create-an-event-forwarding-property)를 참조하세요.
 
 >[!NOTE]
 >

@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # Adobe Analytics 추가
 
-이 단원에서는 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)을 구현하고 데이터를 Adobe Analytics에 전송하는 규칙을 만듭니다.
+이 단원에서는 [Adobe Analytics 확장](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=ko)을 구현하고 데이터를 Adobe Analytics에 전송하는 규칙을 만듭니다.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=ko)는 고객 인텔리전스로 고객을 사람으로 이해하고 고객 인텔리전스로 비즈니스를 이끌어 나갈 수 있는 업계 선도적인 솔루션입니다.
 
@@ -20,9 +20,9 @@ ht-degree: 69%
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * 이제 Platform Launch(Client Side)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
-> * 이제 Platform Launch Server Side가 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
+> * 이제 Platform Launch(Client Side)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)**&#x200B;입니다.
+> * 이제 Platform Launch Server Side가 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -41,7 +41,7 @@ ht-degree: 69%
 
 [태그 구성](create-a-property.md) 및 [ID 서비스 추가](id-service.md)의 학습 내용을 이미 완료했어야 합니다.
 
-추가적으로, 하나 이상의 보고서 세트 ID와 추적 서버가 필요합니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 만드십시오. 방법을 잘 모르는 경우 [설명서](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)를 참조하십시오. 현재 구현, Adobe 컨설턴트 또는 고객 지원 담당자로부터 추적 서버를 검색할 수 있습니다.
+추가적으로, 하나 이상의 보고서 세트 ID와 추적 서버가 필요합니다. 이 자습서에 사용할 수 있는 테스트/개발 보고서 세트가 없는 경우 만드십시오. 방법을 잘 모르는 경우 [설명서](https://experienceleague.adobe.com/ko/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)를 참조하십시오. 현재 구현, Adobe 컨설턴트 또는 고객 지원 담당자로부터 추적 서버를 검색할 수 있습니다.
 
 ## Analytics 확장 구성 추가
 
@@ -196,7 +196,7 @@ PDP(Product Detail Page)는 소매 사이트에서 데이터 수집을 위한 �
 
 ### Adobe Analytics 제품 문자열 확장 추가
 
-이미 Adobe Analytics 구현에 익숙하다면 [제품 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html)에도 익숙할 것입니다. 제품 변수는 매우 특정한 구문을 사용하며, 컨텍스트에 따라 약간 다른 방식으로 사용됩니다. 태그에서 제품 변수를 더 쉽게 입력할 수 있도록 지원하기 위해 태그 확장 마켓플레이스에서 이미 3개의 추가 확장을 만들었습니다! 이 섹션에서는 제품 세부 정보 페이지에서 사용할 Adobe 컨설팅 팀이 만든 확장을 추가합니다.
+이미 Adobe Analytics 구현에 익숙하다면 [제품 변수](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=ko)에도 익숙할 것입니다. 제품 변수는 매우 특정한 구문을 사용하며, 컨텍스트에 따라 약간 다른 방식으로 사용됩니다. 태그에서 제품 변수를 더 쉽게 입력할 수 있도록 지원하기 위해 태그 확장 마켓플레이스에서 이미 3개의 추가 확장을 만들었습니다! 이 섹션에서는 제품 세부 정보 페이지에서 사용할 Adobe 컨설팅 팀이 만든 확장을 추가합니다.
 
 **`Adobe Analytics Product String` 확장을 추가하려면**
 
@@ -426,7 +426,7 @@ doPlugins 함수(아래)를 추가하고 플러그인을 사용하려는 경우 
 
 이 플러그인의 목적은 방문자가 페이지를 새로 고치거나 브라우저의 뒤로 단추를 사용하여 값이 설정된 페이지로 돌아갈 때 코드에서 값이 잘못 중복되는 것을 방지하기 위한 것입니다. 이 단원에서는 이 플러그인을 사용하여 `clickthrough` 이벤트가 중복되지 않도록 합니다.
 
-이 플러그인의 코드는 [Analytics 설명서](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html)에 나와 있지만 쉽게 복사/붙여넣기를 할 수 있도록 여기에 포함되어 있습니다.
+이 플러그인의 코드는 [Analytics 설명서](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=ko)에 나와 있지만 쉽게 복사/붙여넣기를 할 수 있도록 여기에 포함되어 있습니다.
 
 1. 다음 코드를 복사합니다.
 

@@ -14,7 +14,7 @@ ht-degree: 23%
 
 # 이벤트 전달 개요
 
-이벤트 전달이 Adobe Experience Platform Edge Network을 통해 데이터 수집을 중앙 집중화하고, 웹 및 모바일 앱에서 필요한 코드의 양을 줄이고, Adobe 이외의 솔루션으로 데이터를 스트리밍하는 방법에 대해 알아봅니다. 자세한 내용은 [이벤트 전달 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)를 참조하세요.
+이벤트 전달이 Adobe Experience Platform Edge Network을 통해 데이터 수집을 중앙 집중화하고, 웹 및 모바일 앱에서 필요한 코드의 양을 줄이고, Adobe 이외의 솔루션으로 데이터를 스트리밍하는 방법에 대해 알아봅니다. 자세한 내용은 [이벤트 전달 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/tags/event-forwarding/overview)를 참조하세요.
 
 >[!NOTE]
 >
