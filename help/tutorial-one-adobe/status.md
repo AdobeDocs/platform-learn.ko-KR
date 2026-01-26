@@ -3,10 +3,10 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
+source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 10%
+source-wordcount: '545'
+ht-degree: 9%
 
 ---
 
@@ -82,10 +82,10 @@ ht-degree: 10%
 
 | 이름 | 마지막 업데이트 | 100% 작업 | 비고 | 시간 투자 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 25/11/2025 | 예 | - | 30분 |
-| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 25/11/2025 | 아니요 | 진행 중인 작업 | 추가 예정 |
-| [1.3 에이전트 Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 25/11/2025 | 아니요 | 진행 중인 작업 | 추가 예정 |
-| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 25/11/2025 | 아니요 | 진행 중인 작업 | 추가 예정 |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | 예 | - | 90분 |
+| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | 아니요 | 개발 중인 콘텐츠 | 추가 예정 |
+| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | 예 | - | 90분 |
+| [1.5 Analytics 및 에이전트](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | 아니요 | 개발 중인 콘텐츠 | 추가 예정 |
 
 {style="table-layout:auto"}
 

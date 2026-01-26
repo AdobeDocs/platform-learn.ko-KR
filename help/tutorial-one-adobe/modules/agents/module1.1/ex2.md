@@ -3,14 +3,21 @@ title: ChatGPT가 포함된 Adobe Marketing Agent
 description: ChatGPT가 포함된 Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
 
 # 1.1.2 Adobe Marketing Agent(ChatGPT 포함)
+
+[!BADGE Beta]
+
++++세부 정보 보기
+ChatGPT Beta과 함께 Adobe Marketing Agent을 사용함으로써 귀하는 Beta이 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공된다는 것을 인정합니다. Adobe은 Beta을 유지, 수정, 업데이트, 변경, 수정 또는 지원할 의무가 없습니다. 이러한 Beta 및/또는 동봉된 자료의 올바른 기능이나 성능에 어떤 식으로든 의존하지 말고 주의하는 것이 좋습니다. Beta은 Adobe의 기밀 정보로 간주됩니다.  귀하가 Adobe에 제공한 모든 &quot;피드백&quot;(Beta 사용 중 발생하는 문제 또는 결함, 제안, 개선 사항 및 권장 사항을 포함하되 이에 국한되지 않는 Beta 관련 정보)은 이에 따라 해당 피드백에 대한 모든 권한, 제목 및 관심을 포함하여 Adobe에 할당됩니다.
+
++++
 
 >[!IMPORTANT]
 >
@@ -30,7 +37,7 @@ ht-degree: 0%
 >- OpenAI의 ChatGPT의 유료 버전
 >- ChatGPT 웹 클라이언트 사용
 
-https://chatgpt.com/으로 이동한 다음 계정 세부 정보를 사용하여 로그인합니다. 로그인하면 이 메시지가 표시됩니다. 사용자 이름을 클릭합니다.
+[https://chatgpt.com/](https://chatgpt.com/){target="_blank"}(으)로 이동한 다음 계정 세부 정보를 사용하여 로그인합니다. 로그인하면 이 메시지가 표시됩니다. 사용자 이름을 클릭합니다.
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -86,11 +93,11 @@ ChatGPT를 통해 Adobe Marketing Agent과 상호 작용하기 전에 컨텍스�
 
 - **샌드박스**: **프로덕션 - 가속화(VA7)**
 
-샌드박스 설정은 질문을 할 때 AI Assistant가 확인해야 하는 샌드박스 를 식별하는 데 도움이 됩니다.
+샌드박스 설정은 질문을 할 때 ChatGPT가 확인해야 하는 샌드박스를 식별하는 데 도움이 됩니다.
 
 - **데이터 보기**: **2026년 B2C 가속화**
 
-데이터 보기 설정은 질문을 할 때 AI Assistant가 확인해야 하는 데이터 보기를 식별하는 데 도움이 됩니다.
+Dataview 설정은 ChatGPT가 질문을 할 때 확인해야 하는 데이터 보기를 식별하는 데 도움이 됩니다.
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
@@ -122,9 +129,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-그러면 사용 가능한 비슷한 샌드박스 목록이 표시됩니다. 이 예제의 현재 샌드박스는 **prod**(으)로 설정됩니다.
+그러면 사용 가능한 유사한 데이터 보기 목록이 표시됩니다.
 
-이를 사용해야 하는 샌드박스로 변경하려면 다음 **프롬프트**&#x200B;를 입력하고 **보내기** 단추를 클릭하십시오.
+사용해야 하는 데이터 보기를 설정하려면 다음 **Prompt**&#x200B;을(를) 입력하고 **보내기** 단추를 클릭하십시오.
 
 ```javascript
 switch to Accelerate 2026 B2C

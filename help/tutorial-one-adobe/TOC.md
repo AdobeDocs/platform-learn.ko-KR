@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1446'
 ht-degree: 3%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 3%
 + [컨텐츠 상태](/help/tutorial-one-adobe/status.md)
 + [아키텍처](/help/tutorial-one-adobe/architecture.md)
 
-+ 시작하기 {#gettingstarted}
-   + 시작하기 {#gettingstarted}
++ 시작 {#gettingstarted}
+   + 시작 {#gettingstarted}
       + [개요](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [Experience League 설명서용 Chrome 확장 설치](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정하려면 옆에 있는 데모 시스템을 사용하십시오.](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -124,7 +124,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
@@ -274,13 +274,16 @@ ht-degree: 3%
       + [개요](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Agent Orchestrator 시작하기](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2 Adobe Marketing Agent(ChatGPT 포함)](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent 및 Microsoft Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
    + 1.2 에이전트 및 AI 시작하기 {#agents2}
       + [개요](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI 시작하기](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.3 에이전트 Collaboration {#agents3}
-      + [개요](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
-      + [1.3.1 Collaboration 에이전트 시작하기](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
    + 1.4 Brand Concierge {#agents4}
       + [개요](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
       + [1.4.1 Brand Concierge 시작하기](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
       + [1.4.2 웹 사이트에서 Brand Concierge 구현](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analytics 및 에이전트 {#agents5}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA 및 ChatGPT(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA &amp; Claude.ai(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics 및 ChatGPT(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)

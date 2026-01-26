@@ -3,9 +3,9 @@ title: Agentic AI Tech Labs 개요
 description: Agentic AI Tech Labs 개요
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -51,25 +51,16 @@ Adobe Experience Platform 에이전트 및 Agent Orchestrator을 사용하여 �
 - MCP 서버, Python Notebook
 - ADOBE API
 
-[1.3 에이전트 Collaboration](./modules/agents/module1.3/agentcollaboration.md)
-
->[!NOTE]
->
->이 모듈은 아직 릴리스되지 않았습니다.
+[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **목표**
 
-자체 에이전트를 Adobe 에이전트에 연결합니다. 학습자는 자신의 에이전트를 AEP Agent Orchestrator과 연결하기 위해 A2A(Agent2Agent) 프로토콜을 설정합니다.
+Brand Concierge은 브랜드가 웹 사이트 방문자와 참여하는 방식을 혁신하는 AI 기반의 디지털 동반자입니다. 일반적인 챗봇과 달리 Brand Concierge은 각 방문자의 의도에 맞게 개인화된 대화 경험을 제공합니다. 방문자가 제품을 검색하고 옵션을 비교하며 즉각적인 답변을 얻고 실시간으로 가이드 추천을 받을 수 있도록 지원합니다. 플랫폼은 B2C와 B2B를 모두 제공하며, 브랜드 음성, 콘텐츠 무결성 및 규정 준수를 유지하면서 모든 디지털 채널에서 브랜드를 지능적으로 확장하는 역할을 합니다.
 
-- 에이전트 체인
-- Collaboration 요원
+이 연습에서는 다음 방법을 배웁니다.
 
-Adobe 에이전트의 뒤에는 어떤 아키텍처가 있습니까?
-A2A 뒤에 있는 건축물은 무엇인가요?
-
-기술 요소:
-
-- Google A2A 프로토콜과의 에이전트 상호 운용성
+- Adobe Experience Platform 샌드박스에서 Brand Concierge 인스턴스 구성
+- AEM CS/EDS 웹 사이트에서 Brand Concierge 구현
 
 ![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 
