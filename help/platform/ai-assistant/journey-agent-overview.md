@@ -18,6 +18,6 @@ ht-degree: 46%
 
 # Journey 에이전트 개요
 
-Journey Agent은 AI를 사용하여 대화형 인터페이스를 통해 B2B/B2C 여정을 만들고 분석하고 최적화합니다. 자세한 내용은 [Journey Agent 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)를 참조하세요.
+Journey Agent은 AI를 사용하여 대화형 인터페이스를 통해 B2B/B2C 여정을 만들고 분석하고 최적화합니다. 자세한 내용은 [Journey Agent 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)를 참조하세요.
 
 >[!SLIDE](journey-agent-overview)
