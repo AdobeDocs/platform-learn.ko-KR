@@ -1,27 +1,27 @@
 ---
-title: ChatGPT가 포함된 Adobe Marketing Agent
-description: ChatGPT가 포함된 Adobe Marketing Agent
+title: Adobe Marketing Agent for ChatGPT Enterprise
+description: Adobe Marketing Agent for ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
+source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
 
-# 1.1.2 Adobe Marketing Agent(ChatGPT 포함)
-
-[!BADGE Beta]
-
-+++세부 정보 보기
-ChatGPT Beta과 함께 Adobe Marketing Agent을 사용함으로써 귀하는 Beta이 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공된다는 것을 인정합니다. Adobe은 Beta을 유지, 수정, 업데이트, 변경, 수정 또는 지원할 의무가 없습니다. 이러한 Beta 및/또는 동봉된 자료의 올바른 기능이나 성능에 어떤 식으로든 의존하지 말고 주의하는 것이 좋습니다. Beta은 Adobe의 기밀 정보로 간주됩니다.  귀하가 Adobe에 제공한 모든 &quot;피드백&quot;(Beta 사용 중 발생하는 문제 또는 결함, 제안, 개선 사항 및 권장 사항을 포함하되 이에 국한되지 않는 Beta 관련 정보)은 이에 따라 해당 피드백에 대한 모든 권한, 제목 및 관심을 포함하여 Adobe에 할당됩니다.
-
-+++
+# 1.1.2 Adobe Marketing Agent for ChatGPT Enterprise
 
 >[!IMPORTANT]
 >
 >이 실습에서는 아직 릴리스되지 않은 기능을 사용합니다. 기능은 아직 개발 중이어서 아직 사용 단계는 아닙니다.
+
+[!BADGE 개발 중]
+
++++개발 세부 정보
+ChatGPT Enterprise Beta용 Adobe Marketing Agent을 사용함으로써 귀하는 Beta이 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공된다는 것을 인정합니다. Adobe은 Beta을 유지, 수정, 업데이트, 변경, 수정 또는 지원할 의무가 없습니다. 이러한 Beta 및/또는 동봉된 자료의 올바른 기능이나 성능에 어떤 식으로든 의존하지 말고 주의하는 것이 좋습니다. Beta은 Adobe의 기밀 정보로 간주됩니다.  귀하가 Adobe에 제공한 모든 &quot;피드백&quot;(Beta 사용 중 발생하는 문제 또는 결함, 제안, 개선 사항 및 권장 사항을 포함하되 이에 국한되지 않는 Beta 관련 정보)은 이에 따라 해당 피드백에 대한 모든 권한, 제목 및 관심을 포함하여 Adobe에 할당됩니다.
+
++++
 
 ## 비디오
 
@@ -29,13 +29,13 @@ ChatGPT Beta과 함께 Adobe Marketing Agent을 사용함으로써 귀하는 Bet
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478410?quality=12&learn=on)
 
-## 1.1.2.1 Adobe Marketing Agent용 ChatGPT에서 사용자 지정 앱 만들기
+## 1.1.2.1 Adobe Marketing Agent용 ChatGPT Enterprise에서 사용자 지정 앱 만들기
 
 >[!NOTE]
 >
 >ChatGPT에서 Adobe Marketing Agent을 사용하려면 다음 요구 사항이 있습니다.
->- OpenAI의 ChatGPT의 유료 버전
->- ChatGPT 웹 클라이언트 사용
+>- OpenAI의 ChatGPT Enterprise 유료 버전
+>- ChatGPT Enterprise 웹 클라이언트 사용
 
 [https://chatgpt.com/](https://chatgpt.com/){target="_blank"}(으)로 이동한 다음 계정 세부 정보를 사용하여 로그인합니다. 로그인하면 이 메시지가 표시됩니다. 사용자 이름을 클릭합니다.
 

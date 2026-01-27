@@ -1,27 +1,27 @@
 ---
-title: Microsoft Copilot이 포함된 Adobe Marketing Agent
-description: Microsoft Copilot이 포함된 Adobe Marketing Agent
+title: Adobe Marketing Agent for Microsoft 365 Copilot
+description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
+source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
-# 1.1.3 Adobe Marketing Agent 및 Microsoft Copilot
-
-[!BADGE Beta]
-
-+++세부 정보 보기
-Microsoft Copilot Beta과 함께 Adobe Marketing Agent을 사용함으로써 귀하는 Beta이 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공된다는 것을 인정합니다. Adobe은 Beta을 유지, 수정, 업데이트, 변경, 수정 또는 지원할 의무가 없습니다. 이러한 Beta 및/또는 동봉된 자료의 올바른 기능이나 성능에 어떤 식으로든 의존하지 말고 주의하는 것이 좋습니다. Beta은 Adobe의 기밀 정보로 간주됩니다.  귀하가 Adobe에 제공한 모든 &quot;피드백&quot;(Beta 사용 중 발생하는 문제 또는 결함, 제안, 개선 사항 및 권장 사항을 포함하되 이에 국한되지 않는 Beta 관련 정보)은 이에 따라 해당 피드백에 대한 모든 권한, 제목 및 관심을 포함하여 Adobe에 할당됩니다.
-
-+++
+# 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
 
 >[!IMPORTANT]
 >
 >이 실습에서는 아직 릴리스되지 않은 기능을 사용합니다. 기능은 아직 개발 중이어서 아직 사용 단계는 아닙니다.
+
+[!BADGE Beta]
+
++++Beta 세부 정보
+Adobe Marketing Agent과 Microsoft 365 Copilot Beta을 함께 사용함으로써 귀하는 Beta이 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공된다는 것을 인정합니다. Adobe은 Beta을 유지, 수정, 업데이트, 변경, 수정 또는 지원할 의무가 없습니다. 이러한 Beta 및/또는 동봉된 자료의 올바른 기능이나 성능에 어떤 식으로든 의존하지 말고 주의하는 것이 좋습니다. Beta은 Adobe의 기밀 정보로 간주됩니다.  귀하가 Adobe에 제공한 모든 &quot;피드백&quot;(Beta 사용 중 발생하는 문제 또는 결함, 제안, 개선 사항 및 권장 사항을 포함하되 이에 국한되지 않는 Beta 관련 정보)은 이에 따라 해당 피드백에 대한 모든 권한, 제목 및 관심을 포함하여 Adobe에 할당됩니다.
+
++++
 
 ## 전제 조건
 
@@ -30,7 +30,7 @@ Microsoft Copilot Beta과 함께 Adobe Marketing Agent을 사용함으로써 귀
 - Real-Time CDP, Journey Optimizer 및 Customer Journey Analytics 액세스
 - Adobe Experience Cloud의 AI Assistant 액세스
 - AEP Agent Orchestrator 액세스
-- Microsoft Copilot 액세스
+- Microsoft 365 Copilot 액세스
 
 ## 비디오
 
@@ -38,7 +38,7 @@ Microsoft Copilot Beta과 함께 Adobe Marketing Agent을 사용함으로써 귀
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
-## 1.1.3.1 Microsoft Teams 및 Copilot에 Adobe Marketing Agent 추가
+## 1.1.3.1 Microsoft 365개 팀 및 Copilot에 Adobe Marketing Agent 추가
 
 Microsoft Teams을 열고 계정 세부 사항을 사용하여 로그인합니다. 로그인하면 이 메시지가 표시됩니다.
 
@@ -98,7 +98,7 @@ Copilot의 Adobe Marketing Agent 창에 코드를 붙여 넣고 **보내기** �
 
 ![ChatGPT](./images/copilotlogin6.png)
 
-그러면 이와 비슷한 것을 볼 수 있을 겁니다. 이제 Microsoft Copilot에서 Adobe Marketing Agent에 성공적으로 로그인했습니다.
+그러면 이와 비슷한 것을 볼 수 있을 겁니다. 이제 Microsoft 365 Copilot에서 Adobe Marketing Agent에 성공적으로 로그인했습니다.
 
 ![ChatGPT](./images/copilotlogin7.png)
 
