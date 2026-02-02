@@ -3,9 +3,9 @@ title: MCP 서버가 있는 CJA 및 Claude.ai
 description: MCP 서버가 있는 CJA 및 Claude.ai
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ MCP 서버 Alpha과 함께 CJA &amp; Claude.ai를 사용함으로써 귀하는 A
 
 이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/3479159?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479561?quality=12&learn=on)
 
-## 1.5.1.1 CJA용 Claude.ai에서 사용자 지정 앱 만들기
+## 1.5.2.1 CJA용 Claude.ai에서 사용자 지정 앱 만들기
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ MCP 서버 Alpha과 함께 CJA &amp; Claude.ai를 사용함으로써 귀하는 A
 
 ![클라우드.ai](./images/claude4.png)
 
-그럼 이걸 보셔야죠 **추가를 클릭합니다**.
+그럼 이걸 보셔야죠 **연결**&#x200B;을 클릭합니다.
 
 ![클라우드.ai](./images/claude5.png)
 
@@ -75,8 +75,7 @@ MCP 서버 Alpha과 함께 CJA &amp; Claude.ai를 사용함으로써 귀하는 A
 
 ![클라우드.ai](./images/claude7.png)
 
-
-## CJA에서 1.5.1.2 컨텍스트 설정
+## CJA에서 1.5.2.2 컨텍스트 설정
 
 Claude.ai를 통해 CJA과 더 상호 작용하기 전에 컨텍스트를 설정해야 합니다.
 
@@ -120,7 +119,7 @@ switch to dataview --aepUserLdap-- - Omnichannel Data View
 
 이제 컨텍스트가 제대로 설정되었으므로 다음에 특정 프롬프트 전송을 시작할 수 있습니다.
 
-## 1.5.1.3 데이터 보기 탐색
+## 1.5.2.3 데이터 보기 탐색
 
 >[!NOTE]
 >
@@ -142,7 +141,7 @@ list the available metrics and dimensions
 
 ![Claude.ai 및 CJA](./images/claude102.png)
 
-## 1.5.1.4 자유 형식 테이블 - 제품 보기
+## 1.5.2.4 자유 형식 테이블 - 제품 보기
 
 이제 데이터 탐색을 시작할 수 있습니다. 먼저 아래 프롬프트를 입력하고 **보내기**&#x200B;를 클릭하여 보고서 요청을 제출합니다.
 
@@ -212,7 +211,7 @@ can you breakdown product views by user agent?
 
 ![Claude.ai 및 CJA](./images/claude117.png)
 
-## 1.5.1.5 폴아웃 시각화
+## 1.5.2.5 폴아웃 시각화
 
 다음 **프롬프트**&#x200B;를 입력하고 **보내기** 단추를 클릭하십시오.
 
@@ -225,6 +224,8 @@ can you create a fallout visualization for the product interaction funnel, start
 그런 다음 Customer Journey Analytics에서 제공한 데이터를 기반으로 Claude.ai가 생성한 시각화가 포함된 것과 같은 것을 볼 수 있습니다.
 
 ![Claude.ai 및 CJA](./images/claude119.png)
+
+다음 단계: [MCP 서버가 있는 Adobe Analytics 및 Claude.ai](./ex3.md){target="_blank"}
 
 [분석 및 에이전트](./analyticsagents.md){target="_blank"}(으)로 돌아가기
 

@@ -3,9 +3,9 @@ title: CJA 및 ChatGPT(MCP 서버 포함)
 description: CJA 및 ChatGPT(MCP 서버 포함)
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -251,17 +251,7 @@ can you show me a visualization of the above fallout analysis?
 
 ![ChatGPT 및 CJA](./images/chatgpt122.png)
 
-다음 **프롬프트**&#x200B;를 입력하고 **보내기** 단추를 클릭하십시오.
-
-```javascript
-break down the fallout analysis at the touchpoint of the add to carts
-```
-
-![ChatGPT 및 CJA](./images/chatgpt123.png)
-
-**RunReport**&#x200B;를 선택하십시오.
-
-![ChatGPT 및 CJA](./images/chatgpt124.png)
+다음 단계: [MCP 서버가 있는 CJA 및 Claude.ai](./ex2.md){target="_blank"}
 
 [분석 및 에이전트](./analyticsagents.md){target="_blank"}(으)로 돌아가기
 

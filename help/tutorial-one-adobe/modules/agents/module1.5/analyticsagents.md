@@ -3,7 +3,7 @@ title: Analytics 및 에이전트
 description: Analytics 및 에이전트
 kt: 5342
 doc-type: tutorial
-source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 1%
@@ -31,9 +31,9 @@ ht-degree: 1%
 
 이 연습에서는 Claude.ai에 맞춤형 MCP 서버를 설정하여 Claude.ai를 Customer Journey Analytics에 직접 연결하고 Adobe Customer Journey Analytics(CJA)에서 호스팅되는 데이터를 Claude.ai에서 직접 분석합니다.
 
-[1.5.3 Adobe Analytics 및 ChatGPT(MCP 서버 포함)](./ex3.md){target="_blank"}
+[1.5.3 MCP 서버가 있는 Adobe Analytics 및 Claude.ai](./ex3.md){target="_blank"}
 
-이 연습에서는 ChatGPT에 사용자 지정 MCP 서버를 설정하여 ChatGPT를 Adobe Analytics에 직접 연결하고 ChatGPT에서 직접 Adobe Analytics(AA)에 호스팅된 데이터를 분석합니다.
+이 연습에서는 Claude.ai에 맞춤형 MCP 서버를 설정하여 Claude.ai를 Adobe Analytics에 직접 연결하고 Claude.ai에서 직접 Adobe Analytics(AA)에 호스팅된 데이터를 분석합니다.
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

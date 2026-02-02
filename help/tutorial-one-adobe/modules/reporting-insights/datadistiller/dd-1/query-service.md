@@ -4,9 +4,9 @@ description: 쿼리 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -32,10 +32,6 @@ ht-degree: 1%
 - 데이터 세트 (실습 중에 사용된 데이터 세트, 사전 로드됨)
 - PostgreSQL
 - 타블로 또는 Microsoft Power BI 데스크탑
-- **이 에셋 다운로드**:
-   - [JSON - 샘플 데이터: 웹 사이트 상호 작용](./../../../../assets/json/ee.json)
-   - [JSON - 샘플 데이터: 콜 센터 상호 작용](./../../../../assets/json/callcenter.json)
-   - [JSON - 샘플 데이터: 충성도](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >
