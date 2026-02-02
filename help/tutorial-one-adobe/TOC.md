@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1459'
 ht-degree: 3%
 
 ---
@@ -86,6 +86,9 @@ ht-degree: 3%
       + [1.6.3 외부 DAM 앱 만들기 및 배포](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4 앱을 비공개로 게시](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+   + 1.7 Workflow Builder {#crpr7}
+      + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+      + [1.7.1 Workflow Builder 시작하기](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
 + 에셋 관리 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -124,7 +127,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
@@ -268,6 +271,7 @@ ht-degree: 3%
          + [개요](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics 시작하기](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + 에이전트 {#agents}
    + [Agentic AI 개요](/help/tutorial-one-adobe/ai.md)
    + 1.1 Agent Orchestrator {#agents1}

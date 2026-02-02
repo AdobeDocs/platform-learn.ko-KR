@@ -4,9 +4,9 @@ description: 시작하기 - Postman 설정
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '462'
 ht-degree: 3%
 
 ---
@@ -25,15 +25,19 @@ ht-degree: 3%
 
 ## PostBuster 설치
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}(으)로 이동합니다.
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}(으)로 이동합니다.
 
 **PostBuster**&#x200B;의 최신 릴리스를 다운로드하려면 클릭하세요.
 
 ![PostBuster](./images/pb1.png)
 
-OS에 맞는 버전을 다운로드하십시오.
+OS에 맞는 버전을 클릭합니다.
 
 ![PostBuster](./images/pb2.png)
+
+파일을 다운로드합니다.
+
+![PostBuster](./images/pb2a.png)
 
 다운로드가 완료되고 설치되면 PostBuster를 엽니다. 그럼 이걸 보셔야죠 **가져오기**&#x200B;를 클릭합니다.
 

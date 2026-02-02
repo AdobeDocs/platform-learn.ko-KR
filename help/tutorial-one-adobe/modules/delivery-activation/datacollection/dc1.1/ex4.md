@@ -4,9 +4,9 @@ description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확
 kt: 5342
 doc-type: tutorial
 exl-id: 6ba82c35-1087-45c5-85a3-8bca7408cfec
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,11 @@ ht-degree: 0%
 
 Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 수 있는 확장으로, 웹 페이지에서 Adobe 기술이 구현된 것을 볼 수 있도록 도와줍니다. 기본 브라우저에 대한 버전을 설치합니다.
 
-- [Firefox 확장 프로그램](https://addons.mozilla.org/ko-KR/firefox/addon/adobe-experience-platform-dbg/)
-
 - [Chrome 확장](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 이전에 디버거를 사용한 적이 없고 이전 Adobe Experience Cloud 디버거와 다른 경우 5분 분량의 개요 비디오를 시청하면 됩니다.
 
->[!VIDEO](https://video.tv.adobe.com/v/36114?quality=12&learn=on&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
 
 시크릿 모드에서 데모 웹 사이트를 로드할 경우 Experience Platform Debugger를 시크릿 모드에서도 사용할 수 있는지 확인해야 합니다. 이렇게 하려면 브라우저에서 **chrome://extensions**(으)로 이동하여 Experience Platform Debugger 확장을 엽니다.
 
@@ -38,7 +36,7 @@ Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 
 
 ### 데모 웹 사이트 열기
 
-[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)&#x200B;(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
 ![DSN](./images/web8.png)
 
@@ -72,29 +70,29 @@ Experience Platform Debugger는 Chrome 및 Firefox 브라우저에서 사용할 
 
 인증하려면 오른쪽 상단의 **[!UICONTROL 로그인]** 단추를 클릭하십시오. Adobe Experience Platform 데이터 수집 인터페이스로 이미 브라우저 탭이 열려 있는 경우 인증 단계가 자동으로 실행되므로 사용자 이름과 암호를 다시 입력할 필요가 없습니다.
 
-![AEP 디버거](./images/validate2.png)
+![AEP Debugger](./images/validate2.png)
 
 그러면 디버거에 로그인됩니다.
 
-![AEP 디버거](./images/validate2ab.png)
+![AEP Debugger](./images/validate2ab.png)
 
 데모 웹 사이트의 다시 로드 단추를 눌러 해당 특정 탭에 디버거를 연결합니다.
 
-![AEP 디버거](./images/validate2a.png)
+![AEP Debugger](./images/validate2a.png)
 
 위의 그림과 같이 디버거가 **[!UICONTROL 홈에 연결됨]**&#x200B;인지 확인한 다음 **[!UICONTROL 잠금]** 아이콘을 클릭하여 디버거를 데모 웹 사이트로 잠급니다. 이 작업을 수행하지 않으면 디버거가 초점을 맞추고 있는 모든 브라우저 탭의 구현 세부 사항이 표시되도록 계속 전환하므로 혼동을 줄 수 있습니다. 디버거가 잠기면 아이콘이 **잠금 해제**(으)로 변경됩니다.
 
-![AEP 디버거](./images/validate3.png)
+![AEP Debugger](./images/validate3.png)
 
 그런 다음 데모 웹 사이트의 **플랜** 범주 페이지와 같은 페이지로 이동합니다.
 
-![AEP 디버거 AEP 웹 SDK 확장](./images/validate4.png)
+![AEP Debugger AEP 웹 SDK 확장 프로그램](./images/validate4.png)
 
 이제 왼쪽 탐색에서 **[!UICONTROL Experience Platform Web SDK]**&#x200B;을 클릭하여 **[!UICONTROL 네트워크 요청]**&#x200B;을 확인합니다.
 
 각 요청에 **[!UICONTROL events]** 행이 있습니다.
 
-![AEP 디버거 AEP 웹 SDK 확장](./images/validate5.png)
+![AEP Debugger AEP 웹 SDK 확장 프로그램](./images/validate5.png)
 
 **[!UICONTROL 이벤트]** 행을 열려면 클릭하세요. **web.webpagedetails.pageViews** 이벤트와 **Web SDK ExperienceEvent XDM** 형식을 준수하는 기본 제공 다른 변수를 보는 방법을 참고하십시오.
 

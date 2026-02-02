@@ -3,19 +3,21 @@ title: CJA 및 ChatGPT(MCP 서버 포함)
 description: CJA 및 ChatGPT(MCP 서버 포함)
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca2812e14a22b80b7f00066f9cc482e708b4ac6a
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # 1.5.1 CJA 및 ChatGPT(MCP 서버 포함)
 
->[!IMPORTANT]
->
->이 실습에서는 아직 릴리스되지 않은 기능을 사용합니다. 기능은 아직 개발 중이어서 아직 사용 단계는 아닙니다.
+[!BADGE Alpha]
 
++++Alpha 세부 정보
+MCP 서버 Alpha과 함께 CJA &amp; Claude.ai를 사용함으로써 귀하는 Alpha이 어떠한 종류의 보증도 없이 &quot;있는 그대로&quot; 제공된다는 것을 인정합니다. Adobe은 Alpha을 유지, 수정, 업데이트, 변경, 수정 또는 지원할 의무가 없습니다. 이러한 Alpha 및/또는 동봉된 자료의 올바른 기능이나 성능에 어떤 식으로든 의존하지 말고 주의하는 것이 좋습니다. Alpha은 Adobe의 기밀 정보로 간주됩니다. 귀하가 Adobe에 제공한 모든 &quot;피드백&quot;(Alpha 사용 중 발생하는 문제 또는 결함, 제안, 개선 사항 및 권장 사항을 포함하되 이에 국한되지 않는 Alpha 관련 정보)은 이에 따라 해당 피드백에 대한 모든 권한, 제목 및 관심을 포함하여 Adobe에 할당됩니다.
+
++++
 
 >[!NOTE]
 >

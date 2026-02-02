@@ -3,9 +3,9 @@ title: Agentic AI Tech Labs 개요
 description: Agentic AI Tech Labs 개요
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Adobe Experience Platform 에이전트 및 Agent Orchestrator을 사용하여 �
 - MCP 서버, Python Notebook
 - ADOBE API
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **목표**
 
@@ -61,6 +61,17 @@ Brand Concierge은 브랜드가 웹 사이트 방문자와 참여하는 방식�
 
 - Adobe Experience Platform 샌드박스에서 Brand Concierge 인스턴스 구성
 - AEM CS/EDS 웹 사이트에서 Brand Concierge 구현
+
+[1.5 Analytics 및 에이전트](./modules/agents/module1.5/analyticsagents.md)
+
+**목표**
+
+데이터 분석가, AI 개발자 또는 AI 애플리케이션 설계자는 보고서 생성, 외부 에이전트를 사용한 분석 예약 등과 같은 보고 작업을 자동화하는 방법을 배울 수 있습니다. 새로운 캠페인 데이터, 대상자 데이터 또는 성능 데이터를 에이전트 워크플로우로 가져오는 방법을 배웁니다.
+
+이 연습에서는 다음 방법을 배웁니다.
+
+- ChatGPT 및/또는 Claude.ai를 **Customer Journey Analytics**&#x200B;에 연결하고 데이터 분석 작업을 수행합니다
+- ChatGPT 및/또는 Claude.ai를 **Adobe Analytics**&#x200B;에 연결하고 데이터 분석 작업을 수행합니다
 
 ![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 
