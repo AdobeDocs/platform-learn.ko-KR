@@ -3,9 +3,9 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 9%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 9%
 | [1.4 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 2025년 1월 4일 | 예 | - | 45분 |
 | [1.5 Frame.io를 사용하여 작업 과정 능률화](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 2025/08/02 | 예 | - | 1시간 |
 | [1.6 GenStudio for Performance Marketing - 확장성](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | 예 | - | 1시간 30분 |
+| [1.7 워크플로우 빌더](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 2026/02/02 | 아니요 | 개발 중인 콘텐츠 | - |
+| [1.8 엔터프라이즈 스토리지 관리](./modules/creation-production/module1.8/esm.md){target="_blank"} | 2026/02/02 | 아니요 | 개발 중인 콘텐츠 | - |
 
 
 ## &#x200B;3. 자산 관리
@@ -82,10 +84,10 @@ ht-degree: 9%
 
 | 이름 | 마지막 업데이트 | 100% 작업 | 비고 | 시간 투자 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | 예 | - | 90분 |
-| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | 아니요 | 개발 중인 콘텐츠 | 추가 예정 |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 2026/02/02 | 예 | - | 60분 |
+| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 2026/02/02 | 아니요 | 개발 중인 콘텐츠 | 추가 예정 |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | 예 | - | 90분 |
-| [1.5 Analytics 및 에이전트](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | 아니요 | 개발 중인 콘텐츠 | 추가 예정 |
+| [1.5 Analytics 및 에이전트](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 2026/02/02 | 예 | - | 45분 |
 
 {style="table-layout:auto"}
 

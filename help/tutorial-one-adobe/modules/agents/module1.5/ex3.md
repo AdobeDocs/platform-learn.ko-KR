@@ -3,9 +3,9 @@ title: MCP 서버가 있는 Adobe Analytics 및 Claude.ai
 description: MCP 서버가 있는 Adobe Analytics 및 Claude.ai
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -191,6 +191,26 @@ Analyze different metrics by marketing channel
 그럼 이런 걸 보셔야겠네요
 
 ![Claude.ai 및 CJA](./images/claudeaa113.png)
+
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
+
+```javascript
+which tracking codes drove the most visits and purchases?
+```
+
+![Claude.ai 및 CJA](./images/claudeaa114.png)
+
+그런 다음 **방문별 상위 추적 코드**&#x200B;를 먼저 표시하는 것과 같은 내용이 표시됩니다.
+
+![Claude.ai 및 CJA](./images/claudeaa115.png)
+
+그러면 **주문(구매)별 상위 추적 코드** 보고서에서 가장 많은 구매를 유도한 추적 코드를 확인할 수 있습니다.
+
+![Claude.ai 및 CJA](./images/claudeaa116.png)
+
+그런 다음 Adobe Analytics에서 얻은 데이터를 기반으로 Claude.ai가 제공하는 추가 인사이트를 찾습니다.
+
+![Claude.ai 및 CJA](./images/claudeaa117.png)
 
 이제 이 연습을 완료했습니다.
 
