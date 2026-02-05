@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
+source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1501'
 ht-degree: 3%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
@@ -296,3 +296,9 @@ ht-degree: 3%
       + [1.5.1 CJA 및 ChatGPT(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
       + [1.5.2 CJA &amp; Claude.ai(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
       + [1.5.3 Adobe Analytics &amp; Claude.ai(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+   + 1.6 AEM 및 에이전트 {#agents6}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+      + [1.6.1 Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+   + 1.7 Adobe Commerce용 지능형 개발자 도구 {#agents7}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+      + [1.7.1 개발 환경 설정](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
