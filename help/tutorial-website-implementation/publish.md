@@ -1,25 +1,30 @@
 ---
-title: 태그 속성 Publish
-description: 개발 환경의 태그 속성을 스테이징 및 프로덕션 환경에 게시하는 방법을 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
+title: 태그 속성 게시
+description: 개발 환경의 태그 속성을 스테이징 및 프로덕션 환경에 게시하는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 54%
+source-wordcount: '603'
+ht-degree: 51%
 
 ---
 
-# 태그 속성 Publish
+# 태그 속성 게시
 
-이제 개발 환경에서 Adobe Experience Cloud의 몇 가지 주요 솔루션을 구현했으므로 게시 작업 과정을 학습할 차례입니다.
+이제 개발 환경에서 Adobe Experience Cloud의 몇 가지 주요 솔루션을 구현했으므로 게시 워크플로를 학습할 차례입니다.
+
+
+>[!WARNING]
+>
+> 이 자습서에 사용된 Luma 웹 사이트는 2026년 2월 16일이 있는 주에 교체될 예정입니다. 이 자습서의 일부로 수행된 작업은 새 웹 사이트에 적용되지 않을 수 있습니다.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)**&#x200B;입니다.
-> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)**&#x200B;입니다.
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)**&#x200B;입니다.
+> * 이제 Platform Launch(Client Side)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
+> * 이제 Platform Launch Server Side가 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -61,7 +66,7 @@ ht-degree: 54%
 
    ![Environments 페이지로 이동하고 클릭하여 모달 열기](images/publishing-getStagingCode.png)
 
-1. Copy 아이콘 ![Copy 아이콘](images/launch-copyIcon.png)을 클릭하여 포함 코드를 클립보드에 복사합니다.
+1. Copy 아이콘 ![Copy 아이콘](images/launch-copyIcon.png)을 클릭하여 임베드 코드를 클립보드에 복사합니다.
 
 1. 모달을 닫으려면 **[!UICONTROL 닫기]**&#x200B;를 클릭하십시오.
 
@@ -69,13 +74,13 @@ ht-degree: 54%
 
 1. Chrome 브라우저에서 [Luma 데모 사이트](https://luma.enablementadobe.com/content/luma/us/en.html)를 엽니다.
 
-1. ![디버거 아이콘](images/icon-debugger.png) 아이콘을 클릭하여 [Experience Platform 디버거 확장](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)을 엽니다.
+1. [디버거 아이콘](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 아이콘을 클릭하여 ![Experience Platform Debugger 확장 프로그램](images/icon-debugger.png)을 엽니다.
 
    ![Debugger 아이콘 클릭](images/switchEnvironments-openDebugger.png)
 
 1. Tools 탭으로 이동합니다.
 
-1. **[!UICONTROL Launch Adobe > Launch 포함 코드 바꾸기]** 섹션에서 클립보드에 있는 스테이징 포함 코드를 붙여 넣습니다.
+1. **[!UICONTROL Adobe Launch > Launch 포함 코드 바꾸기]** 섹션에서 클립보드에 있는 스테이징 포함 코드를 붙여 넣습니다.
 1. **[!UICONTROL Apply across luma.enablementadobe.com]** 스위치를 켭니다.
 
 1. 디스크 아이콘을 클릭하여 저장합니다.
@@ -102,11 +107,11 @@ ht-degree: 54%
 
 1. 이제 라이브러리가 [!UICONTROL Approved] 열에 빌드되지 않은 상태(노란색 점)로 나타납니다.
 
-1. 드롭다운을 열고 **[!UICONTROL 프로덕션에 빌드 및 Publish]**&#x200B;을(를) 선택합니다.
+1. 드롭다운을 열고 **[!UICONTROL Build and Publish to Production]**&#x200B;을 선택합니다.
 
-   ![Build &amp; Publish to Production 클릭](images/publishing-buildAndPublishToProduction.png)
+   ![프로덕션에 빌드 및 게시 클릭](images/publishing-buildAndPublishToProduction.png)
 
-1. 대화 상자에서 **[!UICONTROL Publish]**&#x200B;을 클릭합니다.
+1. 대화 상자에서 **[!UICONTROL 게시]**&#x200B;를 클릭합니다.
 
    ![Publish 클릭](images/publishing-publish.png)
 

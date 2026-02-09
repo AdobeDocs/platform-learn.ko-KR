@@ -1,11 +1,11 @@
 ---
 title: 데이터 요소, 규칙 및 라이브러리 추가
-description: 태그에서 데이터 요소, 규칙 및 라이브러리를 만드는 방법을 알아봅니다. 이 단원은 웹 사이트에 Experience Cloud 구현 자습서의 일부입니다.
+description: 태그에서 데이터 요소, 규칙 및 라이브러리를 만드는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 52%
+source-wordcount: '1473'
+ht-degree: 51%
 
 ---
 
@@ -13,15 +13,20 @@ ht-degree: 52%
 
 이 단원에서는 첫 번째 데이터 요소, 규칙 및 라이브러리를 만듭니다.
 
-데이터 요소 및 규칙 은 태그의 기본 구성 요소입니다. 데이터 요소는 마케팅 및 광고 솔루션에 전송할 특성을 저장하는 반면, 규칙은 올바른 조건에서 해당 솔루션에 대한 요청을 실행합니다.  라이브러리는 모든 작업을 수행하기 위해 페이지에 로드되는 JavaScript 파일입니다. 이 단원에서는 세 가지 방법을 모두 사용하여 샘플 페이지에서 작업이 수행되게 합니다.
+데이터 요소 및 규칙 은 태그의 기본 구성 요소입니다. 데이터 요소는 마케팅 및 광고 솔루션에 전송할 속성을 저장하는 반면, 규칙은 올바른 조건에서 해당 솔루션에 대한 요청을 실행합니다.  라이브러리는 모든 작업을 수행하기 위해 페이지에 로드되는 JavaScript 파일입니다. 이 단원에서는 세 가지 방법을 모두 사용하여 샘플 페이지에서 작업이 수행되게 합니다.
+
+
+>[!WARNING]
+>
+> 이 자습서에 사용된 Luma 웹 사이트는 2026년 2월 16일이 있는 주에 교체될 예정입니다. 이 자습서의 일부로 수행된 작업은 새 웹 사이트에 적용되지 않을 수 있습니다.
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
 >
-> * Platform launch(Client Side)가 이제 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)**&#x200B;입니다.
-> * 이제 platform launch 서버측이 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)**&#x200B;입니다.
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)**&#x200B;입니다.
+> * 이제 Platform Launch(Client Side)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**&#x200B;입니다.
+> * 이제 Platform Launch Server Side가 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**&#x200B;입니다.
+> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -123,7 +128,7 @@ ht-degree: 52%
 
 데이터 수집 인터페이스에서 확장, 데이터 요소 및 규칙 컬렉션을 구성한 후에는 이러한 기능과 로직을 웹 사이트에 배포할 수 있는 JavaScript 코드 세트에 패키지화 해야 방문자가 사이트를 방문할 때 마케팅 태그가 실행됩니다. 라이브러리는 이 작업을 수행하는 JavaScript 코드 세트입니다.
 
-이전 단원에서 샘플 페이지에 개발 환경의 포함 코드를 구현했습니다. 샘플 페이지를 로드할 때 태그 라이브러리가 환경에 아직 빌드 및 할당되지 않았기 때문에 포함 코드 URL에 대해 404 오류가 반환되었습니다. 이제 샘플 페이지에서 작업을 수행할 수 있도록 새로운 데이터 요소와 규칙을 라이브러리에 추가합니다.
+이전 단원에서 샘플 페이지에 개발 환경의 임베드 코드를 구현했습니다. 샘플 페이지를 로드할 때 태그 라이브러리가 환경에 아직 빌드 및 할당되지 않았기 때문에 포함 코드 URL에 대해 404 오류가 반환되었습니다. 이제 샘플 페이지에서 작업을 수행할 수 있도록 새로운 데이터 요소와 규칙을 라이브러리에 추가합니다.
 
 **라이브러리를 추가하고 만들려면**
 
@@ -195,4 +200,4 @@ console.log('The page name is: '+_satellite.getVar('Page Name'));
 
 이 방법이 훨씬 더 빨리 작업할 수 있으므로 이 자습서의 나머지 부분에서 이 접근 방식을 사용하겠습니다.
 
-[다음 &quot;Experience Cloud Debugger으로 환경 전환&quot; >](switch-environments.md)
+[다음 &quot;Experience Cloud 디버거를 사용하여 환경 전환&quot; >](switch-environments.md)
