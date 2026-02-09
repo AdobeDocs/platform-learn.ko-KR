@@ -3,10 +3,11 @@ title: Adobe Experience Manager Assets 및 Dynamic Media
 description: Adobe Experience Manager Assets 및 Dynamic Media
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8c2abe62aa14af103f90eac71b57261846d3346a
+exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
+source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 4%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
@@ -19,12 +20,18 @@ ht-degree: 4%
 ## 전제 조건
 
 - AEM Assets 및 Dynamic Media 액세스
+- Adobe Photoshop 액세스
+- Adobe Journey Optimizer 액세스
 
 ## 연습
 
-[1.4.1 AEM Assets 및 Dynamic Media 시작하기](./ex1.md){target="_blank"}
+[1.4.1 에셋 및 Dynamic Media 템플릿 만들기](./ex1.md){target="_blank"}
 
-TBC
+이 연습에서는 Adobe Photoshop을 사용하여 다양한 이미지를 만든 다음 AEM Assets Dynamic Media를 사용하여 동적 템플릿으로 설정합니다.
+
+[1.4.2 Adobe Journey Optimizer에서 Dynamic Media 템플릿 사용](./ex2.md){target="_blank"}
+
+이 연습에서는 Adobe Journey Optimizer에서 AEM Assets Dynamic Media로 만든 템플릿을 사용하여 이메일을 매우 개인화합니다.
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
