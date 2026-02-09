@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![AEM Assets Dynamic Media](./images/aaemassdmcomp4.png)
 
-이제 아래 이메일과 같이 임시 암호가 포함된 이메일을 받게 됩니다. 암호를 변경하거나 메일을 받지 못한 경우 암호를 검색하려면 **Adobe Dynamic Media Classic 데스크톱 앱**&#x200B;을 설치해야 합니다. 설치 지침은 [https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app)에서 확인할 수 있습니다.
+이제 아래 이메일과 같이 임시 암호가 포함된 이메일을 받게 됩니다. 암호를 변경하거나 메일을 받지 못한 경우 암호를 검색하려면 **Adobe Dynamic Media Classic 데스크톱 앱**&#x200B;을 설치해야 합니다. 설치 지침은 [https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app)에서 확인할 수 있습니다.
 
 지침을 따르고, 앱이 시스템에 설치되면 여기로 돌아오십시오.
 
