@@ -4,10 +4,10 @@ description: 에셋 및 Dynamic Media 템플릿 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 3867f23b-9b88-4971-a892-5821800e39ac
-source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 1%
+source-wordcount: '2241'
+ht-degree: 0%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![AEM Assets Dynamic Media](./images/aaemassdmcomp4.png)
 
-이제 아래 이메일과 같이 임시 암호가 포함된 이메일을 받게 됩니다. 암호를 변경하거나 메일을 받지 못한 경우 암호를 검색하려면 **Adobe Dynamic Media Classic 데스크톱 앱**&#x200B;을 설치해야 합니다. 설치 지침은 [https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/ko/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app)에서 확인할 수 있습니다.
+이제 아래 이메일과 같이 임시 암호가 포함된 이메일을 받게 됩니다. 암호를 변경하거나 메일을 받지 못한 경우 암호를 검색하려면 **Adobe Dynamic Media Classic 데스크톱 앱**&#x200B;을 설치해야 합니다. 설치 지침은 [https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app)에서 확인할 수 있습니다.
 
 지침을 따르고, 앱이 시스템에 설치되면 여기로 돌아오십시오.
 
@@ -134,17 +134,63 @@ Cloud Manager 프로그램(`--aepUserLdap-- - CitiSignal AEM+ACCS`)을 열려면
 
 앞으로 CitiSignal에서 Fibre Max를 롤아웃할 다른 도시도 많이 있을 것이므로 이 파일에 새로운 계층이 생성될 수 있습니다. 현재로서는 이미 언급한 3개 도시에 초점을 맞추고 있다.
 
-이러한 변형을 AEM Assets Dynamic Media와 함께 사용하려면 각 도시의 레이어를 이미지로 내보내야 합니다. 이렇게 하려면 **파일** > **내보내기** > **레이어를 파일로 이동...**.
+이러한 변형을 AEM Assets Dynamic Media와 함께 사용하려면 각 도시에 대한 레이어를 배경 파일 없이 별도로 이미지로 내보내야 하며 도시를 포함하지 않는 배경 레이어에 대해 다른 내보내기를 수행해야 합니다.
+
+이제 한 레이어만 숨기고 표시해야 합니다. 표시할 첫 번째 레이어는 **파리** 레이어이며 다른 모든 레이어는 숨겨야 합니다.
+
+해당 레이어를 내보내려면 **파일** > **내보내기** > **다른 이름으로 내보내기...**(으)로 이동합니다.
 
 ![AEM Assets Dynamic Media](./images/aemdm4.png)
 
-그럼 이런 걸 보셔야겠네요 파일을 내보낼 위치를 선택하고 **PNG-8** 파일 형식을 선택한 다음 **실행**&#x200B;을 클릭합니다.
+그럼 이걸 보셔야죠 파일 형식 **PNG**&#x200B;을(를) 선택하고 **투명도**&#x200B;가 활성화되어 있는지 확인한 다음 **내보내기**&#x200B;를 클릭합니다.
 
 ![AEM Assets Dynamic Media](./images/aemdm5.png)
 
-몇 초 후에 이 메시지가 표시됩니다. **확인**&#x200B;을 클릭합니다.
+파일 이름을 `citisignal-fiber-max-is-coming-paris.png`(으)로 변경하고 **내보내기**&#x200B;를 클릭합니다.
 
 ![AEM Assets Dynamic Media](./images/aemdm6.png)
+
+표시할 다음 레이어는 **Dubai** 레이어이며 다른 모든 레이어는 숨겨야 합니다.
+
+해당 레이어를 내보내려면 **파일** > **내보내기** > **다른 이름으로 내보내기...**(으)로 이동합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm4a.png)
+
+그럼 이걸 보셔야죠 파일 형식 **PNG**&#x200B;을(를) 선택하고 **투명도**&#x200B;가 활성화되어 있는지 확인한 다음 **내보내기**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm5a.png)
+
+파일 이름을 `citisignal-fiber-max-is-coming-dubai.png`(으)로 변경하고 **내보내기**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm6a.png)
+
+표시할 다음 레이어는 **New York** 레이어이며 다른 모든 레이어는 숨겨야 합니다.
+
+해당 레이어를 내보내려면 **파일** > **내보내기** > **다른 이름으로 내보내기...**(으)로 이동합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm4b.png)
+
+그럼 이걸 보셔야죠 파일 형식 **PNG**&#x200B;을(를) 선택하고 **투명도**&#x200B;가 활성화되어 있는지 확인한 다음 **내보내기**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm5b.png)
+
+파일 이름을 `citisignal-fiber-max-is-coming-newyork.png`(으)로 변경하고 **내보내기**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm6b.png)
+
+표시할 다음 레이어는 **background** 레이어이며 다른 모든 레이어는 숨겨야 합니다.
+
+해당 레이어를 내보내려면 **파일** > **내보내기** > **다른 이름으로 내보내기...**(으)로 이동합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm4c.png)
+
+그럼 이걸 보셔야죠 파일 형식 **PNG**&#x200B;을(를) 선택하고 **투명도**&#x200B;가 활성화되어 있는지 확인한 다음 **내보내기**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm5c.png)
+
+파일 이름을 `citisignal-fiber-max-is-coming-background`(으)로 변경하고 **내보내기**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm6c.png)
 
 그런 다음 선택한 내보내기 위치에서 이러한 파일을 사용할 수 있습니다.
 
@@ -318,9 +364,72 @@ Cloud Manager 프로그램(`--aepUserLdap-- - CitiSignal AEM+ACCS`)을 열려면
 
 이제 변수를 더 변경하여 다른 이미지가 표시됩니다.
 
-![AEM Assets Dynamic Media](./images/aemdm48.png)
+Adobe Journey Optimizer에서 이 템플릿을 사용하고 이 사용 사례의 요구 사항을 충족하려면 Adobe Experience Platform에서 실시간 고객 프로필의 일부인 필드를 기반으로 표시해야 하는 파일의 경로를 동적으로 변경하는 데 사용할 레이어를 하나 더 추가해야 합니다.
 
-이제 Dynamic Media 템플릿이 성공적으로 구성되었습니다. 다음 연습에서는 해당 템플릿을 Adobe Journey Optimizer의 이메일 캠페인과 함께 사용합니다.
+Dataprep 동안 고객의 **가장 가까운 롤아웃 도시**&#x200B;를 저장하기 위한 필드가 Adobe Experience Platform 스키마에 생성되었습니다. 필드의 경로는 `--aepTenantId--.individualCharacteristics.fiber_rollout.closest_rollout_city`입니다.
+
+>[!NOTE]
+>
+>Adobe Experience Platform 스키마 아래의 스크린샷은 정보 전용입니다. 이를 직접 시각화하기 위해 AEP으로 이동할 필요가 없습니다.
+
+![AEM Assets Dynamic Media](./images/aemdm50.png)
+
+다음 연습에서는 해당 필드를 사용하여 고객에게 표시할 이미지를 동적으로 선택합니다.
+
+이를 위해서는 새 이미지 레이어를 추가해야 합니다.
+
+먼저 롤아웃 도시에 대한 이미지가 포함된 다른 레이어를 숨깁니다.
+
+![AEM Assets Dynamic Media](./images/aemdm51.png)
+
+그런 다음 **이미지**(으)로 이동하여 도시의 임의의 이미지를 선택하여 캔버스에 추가한 다음 전체 캔버스에 맞는지 확인합니다. 다음 연습에서는 AJO에 의해 경로가 동적으로 변경되므로 선택한 도시 이미지는 중요하지 않습니다.
+
+![AEM Assets Dynamic Media](./images/aemdm52.png)
+
+
+![AEM Assets Dynamic Media](./images/aemdm53.png)
+
+**매개 변수**(으)로 이동합니다.
+
+필드 **숨기기**&#x200B;을 사용하도록 **전환기** 아이콘을 클릭합니다. **매개 변수 이름**&#x200B;을(를) `dynamic_city_hide`(으)로 변경합니다.
+
+필드 **숨기기**&#x200B;을 사용하도록 **전환기** 아이콘을 클릭합니다. **매개 변수 이름**&#x200B;을(를) `dynamic_city_image`(으)로 변경합니다.
+
+**저장**&#x200B;을 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm54.png)
+
+**미리 보기**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm55.png)
+
+그럼 이걸 보셔야죠 전환기 아이콘을 사용하여 **모든 매개 변수를 포함**&#x200B;합니다. 스크린샷에 표시된 대로 일부 입력 변수를 변경합니다. 제공된 입력에 따라 이미지가 동적으로 변경되는 것을 보아야 합니다. 정적 필드 **city_paris**, **city_dubai** 및 **city_ny**&#x200B;을(를) 1로 설정해야 합니다. 즉, 이 이미지는 숨겨집니다.
+
+필드 **dynamic_city_hide**&#x200B;을(를) 0으로 설정해야 합니다. 즉, 필드가 표시됩니다.
+
+이제 필드 **dynamic_city_image**&#x200B;에 다음과 같은 Paris 이미지의 URL이 있습니다. `vangeluwCitiSignalDM/citisignal-fiber-max-is-coming_citisignal-paris-1`.
+
+![AEM Assets Dynamic Media](./images/aemdm56.png)
+
+URL에서 **paris** 단어를 선택하십시오.
+
+![AEM Assets Dynamic Media](./images/aemdm57.png)
+
+**paris**&#x200B;을(를) `newyork`(으)로 변경한 다음 UI의 다른 위치를 클릭하여 뉴욕 시 이미지로 변경된 이미지를 확인합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm58.png)
+
+**newyork**&#x200B;이라는 단어를 선택하고 `dubai`(으)로 변경한 다음 UI의 다른 위치를 클릭하여 두바이 도시 이미지로 변경된 이미지를 확인합니다.
+
+마지막으로 **게시**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm60.png)
+
+그럼 이걸 보셔야죠 **예**&#x200B;를 클릭합니다.
+
+![AEM Assets Dynamic Media](./images/aemdm61.png)
+
+이제 Dynamic Media 템플릿이 성공적으로 구성 및 게시되었습니다. 다음 연습에서는 해당 템플릿을 Adobe Journey Optimizer의 이메일 캠페인과 함께 사용합니다.
 
 ## 다음 단계
 
