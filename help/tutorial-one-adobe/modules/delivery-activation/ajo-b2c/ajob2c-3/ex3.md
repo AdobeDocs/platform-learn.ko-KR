@@ -4,9 +4,9 @@ description: 인앱 메시지로 캠페인 구성
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -124,8 +124,6 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 ![InApp](./images/inapp22.png)
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md){target="_blank"}(으)로 이동
 
 [Adobe Journey Optimizer: 푸시 및 인앱 메시지](ajopushinapp.md){target="_blank"}(으)로 돌아가기
 

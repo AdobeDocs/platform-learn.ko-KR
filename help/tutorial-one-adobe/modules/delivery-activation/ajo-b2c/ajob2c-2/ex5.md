@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer - 외부 데이터 소스 및 사용자 지
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '633'
 ht-degree: 1%
 
 ---
@@ -120,8 +120,6 @@ ht-degree: 1%
 ![데모](./images/smsdemo4.png)
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md){target="_blank"}(으)로 이동
 
 [Adobe Journey Optimizer: 외부 데이터 원본 및 사용자 지정 작업으로 돌아가기](journey-orchestration-external-weather-api-sms.md){target="_blank"}
 

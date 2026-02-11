@@ -4,9 +4,9 @@ description: Foundation - FAC - 통합 컴포지션 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -146,8 +146,6 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 ![FAC](./images/fedcomp22.png)
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md){target="_blank"}(으)로 이동
 
 [Federated Audience Composition](./fac.md){target="_blank"}(으)로 돌아가기
 

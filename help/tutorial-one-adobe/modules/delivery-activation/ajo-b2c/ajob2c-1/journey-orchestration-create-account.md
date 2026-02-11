@@ -4,16 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: d5eb2a8d-f6cb-4f35-b8d7-ac0b92ba9f85
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer: 오케스트레이션
 
-이 모듈에서는 Adobe Journey Optimizer을 사용하는 단계를 안내합니다. AEP로 전송된 경험 이벤트의 트리거를 기반으로 시작하는 이벤트 및 여정을 구성합니다.
+이 모듈에서는 Adobe Journey Optimizer을 사용하는 단계를 안내합니다. AEP으로 전송된 경험 이벤트의 트리거를 기반으로 시작하는 이벤트 및 여정을 구성합니다.
 
 ## 학습 목표
 
@@ -46,10 +46,6 @@ ht-degree: 3%
 [3.1.3 데이터 수집 속성 업데이트 및 여정 테스트](./ex4.md)
 
 이 작업은 이벤트를 트리거하고 올바른 페이로드를 제공하는 Launch의 구성을 안내하며, 마지막으로 전자 메일을 보낼 수 있습니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

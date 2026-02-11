@@ -1,12 +1,12 @@
 ---
-title: Audience Activation에서 Microsoft Azure Event Hub로 - 작업
-description: Audience Activation에서 Microsoft Azure Event Hub로 - 작업
+title: Audience Activation에서 Microsoft Azure 이벤트 허브 - 작업
+description: Audience Activation에서 Microsoft Azure 이벤트 허브 - 작업
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## Azure 이벤트 허브 트리거 시작
 
-대상 자격 조건 시 Adobe Experience Platform Real-time CDP에서 Azure Event Hub로 보내는 페이로드를 표시하려면 간단한 Azure Event Hub 트리거 기능을 시작해야 합니다. 이 함수는 Visual Studio 코드의 콘솔에 페이로드를 &quot;덤프&quot;합니다. 그러나 이 함수는 전용 API 및 프로토콜을 사용하여 모든 종류의 환경과 상호 작용할 수 있도록 어떤 방식으로든 확장할 수 있습니다.
+대상 자격 조건 시 Adobe Experience Platform Real-time CDP로 Azure 이벤트 허브에 전송하는 페이로드를 표시하려면 간단한 Azure 이벤트 허브 트리거 기능을 시작해야 합니다. 이 함수는 Visual Studio 코드의 콘솔에 페이로드를 &quot;덤프&quot;합니다. 그러나 이 함수는 전용 API 및 프로토콜을 사용하여 모든 종류의 환경과 상호 작용할 수 있도록 어떤 방식으로든 확장할 수 있습니다.
 
 ### Visual Studio 코드를 시작하고 프로젝트를 시작합니다.
 
 Visual Studio 코드 프로젝트가 열려 있고 실행 중인지 확인합니다.
 
-Visual Studio 코드에서 Azure 기능을 시작/중지/다시 시작하려면 이전 연습을 참조하십시오.
+Visual Studio 코드에서 Azure 함수를 시작/중지/다시 시작하려면 이전 연습을 참조하십시오.
 
 Visual Studio 코드의 **터미널**&#x200B;에서는 다음과 유사한 내용을 언급해야 합니다.
 
@@ -41,7 +41,7 @@ For detailed output, run func with --verbose flag.
 
 ## Citi Signal 웹 사이트 로드
 
-[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)&#x200B;(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. 웹 사이트 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **실행**&#x200B;을(를) 클릭하여 엽니다.
 
 ![DSN](./../../datacollection/dc1.1/images/web8.png)
 
@@ -110,8 +110,6 @@ Visual Studio 코드로 다시 전환하고 **TERMINAL** 탭을 보면 특정 **
 
 ## 다음 단계
 
-[요약 및 혜택](./summary.md){target="_blank"}(으)로 이동
-
-[Real-Time CDP: Audience Activation에서 Microsoft Azure Event Hub로 이동](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+[Real-Time CDP: Audience Activation에서 Microsoft Azure 이벤트 허브로 이동](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
 [모든 모듈](./../../../../overview.md){target="_blank"}(으)로 돌아가기

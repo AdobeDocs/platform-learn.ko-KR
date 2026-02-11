@@ -4,10 +4,10 @@ description: 콜 센터에서 실시간 고객 프로필을 확인할 수 있습
 kt: 5342
 doc-type: tutorial
 exl-id: d3bd34a1-5577-4da7-a5a5-0f186b1a73c2
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 3%
+source-wordcount: '315'
+ht-degree: 6%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## CX 앱 사용
 
-[https://dsn.adobe.com](https://dsn.adobe.com)(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. CX 앱 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을(를) 클릭하여 엽니다.
+[https://dsn.adobe.com](https://dsn.adobe.com)&#x200B;(으)로 이동합니다. Adobe ID으로 로그인하면 이 메시지가 표시됩니다. CX 앱 프로젝트에서 세 점 **..**&#x200B;을(를) 클릭한 다음 **편집**&#x200B;을(를) 클릭하여 엽니다.
 
 ![데모](./images/cxapp3.png)
 
@@ -45,8 +45,8 @@ CX 앱 프로젝트에서 **통합**(으)로 이동합니다. **환경 선택**&
 
 | ID | 네임스페이스 |
 |:-------------:| :---------------:|
-| Experience Cloud ID (ECID) | 79943948563923140522865572770524243489 |
-| Experience Cloud ID (ECID) | 70559351147248820114888181867542007989 |
+| ECID(Experience Cloud ID) | 79943948563923140522865572770524243489 |
+| ECID(Experience Cloud ID) | 70559351147248820114888181867542007989 |
 | 이메일 ID | woutervangeluwe+18112024-01@gmail.com |
 | 모바일 번호 ID | +32473622044+18112024-01 |
 
@@ -57,8 +57,6 @@ CX 앱 프로젝트에서 **통합**(으)로 이동합니다. **환경 선택**&
 ![데모](./images/20.png)
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md){target="_blank"}(으)로 이동
 
 [실시간 고객 프로필](./real-time-customer-profile.md){target="_blank"}(으)로 돌아가기
 

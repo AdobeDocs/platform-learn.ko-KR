@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -55,10 +55,6 @@ ht-degree: 1%
 [1.2.5 데이터 랜딩 영역](./ex5.md)
 
 Azure Blob 저장소를 사용하여 데이터 랜딩 영역 Source 커넥터를 설정합니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

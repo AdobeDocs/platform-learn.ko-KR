@@ -3,14 +3,26 @@ title: Adobe Journey Optimizer 캠페인
 description: Adobe Journey Optimizer 캠페인
 kt: 5342
 doc-type: tutorial
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '97'
-ht-degree: 4%
+source-wordcount: '170'
+ht-degree: 5%
 
 ---
 
-# 3.8 Adobe Journey Optimizer: 캠페인
+# 3.8 Adobe Journey Optimizer: Campaign 오케스트레이션
+
+Adobe Journey Optimizer Campaign Orchestration을 사용하면 브랜드가 시작한 고객 참여에 초점을 맞춘 정교한 캠페인 오케스트레이션 사용 사례를 해결하여 매출과 고객 충성도를 높일 수 있습니다.
+
+Adobe Journey Optimizer Campaign Orchestration은 다음을 지원합니다.
+
+- 온디맨드 대상자
+- 다중 엔티티 세그멘테이션
+- 사전 전송 가시성 및 정밀도
+- 여러 단계 캠페인 워크플로
+
+Adobe Journey Optimizer Campaign Orchestration에는 캠페인 오케스트레이션 사용 사례를 사용할 수 있도록 기존 아키텍처에 추가된 관계형 XDM 스키마가 포함되어 있습니다.
 
 ## 학습 목표
 
@@ -22,13 +34,13 @@ ht-degree: 4%
 
 ## 연습
 
-[3.8.1 캠페인 시작하기](./ex1.md)
+[3.8.1 관계형 데이터 기반 설정](./ex1.md)
 
 이 연습에서는 Adobe Journey Optimizer에서 캠페인을 구성하고 사용합니다.
 
-[요약 및 이점](./summary.md)
+[3.8.2 오케스트레이션된 캠페인 만들기](./ex2.md)
 
-이 단원의 요약 및 이점 개요
+이 연습에서는 오케스트레이션된 캠페인을 만듭니다.
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

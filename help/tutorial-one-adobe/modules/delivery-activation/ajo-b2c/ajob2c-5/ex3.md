@@ -4,16 +4,16 @@ description: AJO 번역 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: fff315ce-88d2-407f-b8c4-c24517688e60
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
 
 # 3.5.3 이메일에 언어 추가
 
-[https://experience.adobe.com/](https://experience.adobe.com/)(으)로 이동합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
+[https://experience.adobe.com/](https://experience.adobe.com/)&#x200B;(으)로 이동합니다. **Journey Optimizer**&#x200B;을(를) 클릭합니다.
 
 ![번역](./images/ajolp1.png)
 
@@ -58,7 +58,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 ![Journey Optimizer](./images/camplocs4.png)
 
-**`[es] Spanish`** 번역을 클릭합니다. 그러면 전자 메일 미리 보기와 **제목 줄**&#x200B;에도 업데이트된 텍스트가 표시됩니다.
+**`[es] Spanish`** 번역을 클릭합니다. 그러면 전자 메일 미리 보기와 **제목 줄**에도 업데이트된 텍스트가 표시됩니다.
 필요한 경우 **제목 줄** 필드에서 직접 번역을 검토하고 업데이트할 수 있습니다.
 
 전자 메일 내의 번역을 검토하려면 **전자 메일 본문 편집**&#x200B;을 클릭하세요.
@@ -88,8 +88,6 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 이제 이 연습을 완료했습니다.
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md)(으)로 이동
 
 [Adobe Journey Optimizer: 번역 서비스](./ajotranslationsvcs.md){target="_blank"}로 돌아가기
 

@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f427235f-a7ee-49fb-af46-c0e8baf47789
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '282'
 ht-degree: 1%
 
 ---
@@ -58,10 +58,6 @@ Real-Time CDP UI를 사용하여 광고 대상을 구성하는 방법을 알아�
 [2.3.6 대상 SDK](./ex6.md)
 
 대상 SDK을 사용하여 고유한 대상을 구성합니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

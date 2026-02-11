@@ -4,9 +4,9 @@ description: 기초 - 데이터 수집 - 오프라인 소스에서 데이터 수
 kt: 5342
 doc-type: tutorial
 exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '767'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 이 연습의 목표는 Azure Blob 저장소를 사용하여 데이터 랜딩 영역 Source 커넥터를 설정하는 것입니다.
 
-데이터 랜딩 영역 은 Adobe Experience Platform에서 프로비저닝한 Azure Blob 스토리지 인터페이스로, 파일을 플랫폼으로 가져올 수 있는 안전한 클라우드 기반 파일 스토리지 시설에 액세스할 수 있습니다. 데이터 랜딩 영역 은 SAS 기반 인증을 지원하며 표준 Azure Blob 저장 공간 보안 메커니즘을 통해 데이터를 보호합니다. SAS 기반 인증을 사용하면 공용 인터넷 연결을 통해 데이터 랜딩 영역 컨테이너에 안전하게 액세스할 수 있습니다.
+데이터 랜딩 영역 은 Adobe Experience Platform에서 프로비저닝한 Azure Blob 스토리지 인터페이스로, 파일을 플랫폼으로 가져올 수 있는 안전한 클라우드 기반 파일 스토리지 시설에 액세스할 수 있습니다. 데이터 랜딩 영역 은 SAS 기반 인증을 지원하며 표준 Azure Blob 스토리지 보안 메커니즘을 통해 데이터를 보호하여 전송 중이거나 사용하지 못할 경우에도 안전하게 보호할 수 있습니다. SAS 기반 인증을 사용하면 공용 인터넷 연결을 통해 데이터 랜딩 영역 컨테이너에 안전하게 액세스할 수 있습니다.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ URL [https://experience.adobe.com/platform](https://experience.adobe.com/platfor
 
 ![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
 
-## AEP 데이터 랜딩 영역에 csv 파일 복사
+## csv 파일을 AEP 데이터 랜딩 영역에 복사합니다.
 
 이제 AZCopy를 사용하여 Azure 명령줄 도구를 사용하여 Adobe Experience Platform에 데이터를 수집합니다.
 
@@ -138,7 +138,7 @@ Adobe Experience Platform의 데이터 랜딩 영역으로 이동합니다.
 
 두 개의 다른 필드를 매핑해야 합니다. **+ 새 필드 유형**, **새 필드 추가**&#x200B;를 차례로 클릭하고 이 매핑에 대한 필드를 추가하십시오.
 
-| 소스 | 대상 |
+| 소스 | target |
 |---|---|
 | resource.info.pagename | web.webPageDetails.name |
 | 타임스탬프 | 타임스탬프 |
@@ -169,8 +169,6 @@ Adobe Experience Platform의 데이터 랜딩 영역으로 이동합니다.
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md){target="_blank"}(으)로 이동
 
 [데이터 수집](./data-ingestion.md){target="_blank"}으로 돌아가기
 

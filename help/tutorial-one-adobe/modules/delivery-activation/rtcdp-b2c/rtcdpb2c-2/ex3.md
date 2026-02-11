@@ -4,9 +4,9 @@ description: 고객 AI - 점수 대시보드 및 세분화(예측 및 조치 수
 kt: 5342
 doc-type: tutorial
 exl-id: a6df3ff1-f907-4185-8189-f0b39c67c943
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '269'
 ht-degree: 1%
 
 ---
@@ -60,8 +60,6 @@ Customer AI 대시보드를 사용하면 한 번의 클릭으로 세그먼트를
 ![프로필](./images/cleanup.png)
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md){target="_blank"}(으)로 이동
 
 [지능형 서비스](./intelligent-services.md){target="_blank"}(으)로 돌아가기
 

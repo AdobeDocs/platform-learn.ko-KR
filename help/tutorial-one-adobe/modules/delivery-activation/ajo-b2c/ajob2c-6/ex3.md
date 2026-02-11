@@ -4,9 +4,9 @@ description: AJO 및 GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
 exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -234,8 +234,6 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 이제 이 연습을 완료했습니다.
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md)(으)로 이동
 
 [Adobe Journey Optimizer: 콘텐츠 관리](./ajocontent.md){target="_blank"}(으)로 돌아가기
 

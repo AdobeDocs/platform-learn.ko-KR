@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer 컨텐츠 관리
 description: Adobe Journey Optimizer 컨텐츠 관리
 kt: 5342
 doc-type: tutorial
-source-git-commit: 37e7d88e77f424d30e4f7c210f703cd1748a6c13
+exl-id: 43161ace-b2bc-418c-8f2b-a8fe0e3d0ebf
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '185'
 ht-degree: 2%
 
 ---
@@ -35,10 +36,6 @@ ht-degree: 2%
 [3.6.3 AJO 및 GenStudio for Performance Marketing](./ex3.md)
 
 이 연습에서는 GenStudio for Performance Marketing에서 Brand 템플릿을 가져와 Adobe Journey Optimizer에서 사용하고, GenStudio for Performance Marketing에서 Generative AI를 사용하여 이메일 경험을 만들고 Adobe Journey Optimizer에서 사용합니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

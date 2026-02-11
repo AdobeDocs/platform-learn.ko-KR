@@ -1,19 +1,19 @@
 ---
-title: Audience Activation에서 Microsoft Azure Event Hub로
-description: Audience Activation에서 Microsoft Azure Event Hub로
+title: Audience Activation - Microsoft Azure 이벤트 허브
+description: Audience Activation - Microsoft Azure 이벤트 허브
 kt: 5342
 doc-type: tutorial
 exl-id: c1f5566d-0f57-4554-95ee-950d66373716
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # 2.4 Real-Time CDP: Audience Activation에서 Microsoft Azure Event Hub로
 
-이 모듈에서는 Microsoft Azure EventHub 대상을 Adobe Experience Platform Real-time CDP의 실시간 대상으로 설정합니다. 또한 Adobe Experience Platform이 대상 페이로드를 Azure EventHub 대상에 전달할 때마다 실시간으로 트리거되는 Azure 기능을 설정하고 배포합니다. 트리거할 Azure 기능은 Adobe Experience Platform Real-time CDP의 활성화 기능의 메커니즘을 보여 줍니다.
+이 모듈에서는 Microsoft Azure EventHub 대상을 Adobe Experience Platform Real-time CDP의 실시간 대상으로 설정합니다. 또한 Adobe Experience Platform이 Azure EventHub 대상에 대상 페이로드를 전달할 때마다 실시간으로 트리거되는 Azure 기능을 설정하고 배포합니다. 트리거할 Azure 함수는 Adobe Experience Platform Real-time CDP의 활성화 기능의 메커니즘을 보여 줍니다.
 
 또한 이 모듈의 일부로 Real-Time CDP를 트리거하여 실제로 페이로드를 지정된 대상에 전달하는 방법에 대해 이해할 수 있습니다. 또한 대상 자격 상태와 작동 방식과 관련된 부분에 대해서도 설명합니다.
 
@@ -23,11 +23,11 @@ Microsoft Azure Event Hubs는 단순하고 신뢰할 수 있으며 확장 가능
 
 ## 학습 목표
 
-- Microsoft Azure 이벤트 허브에 익숙해지십시오.
+- Microsoft Azure 이벤트 허브에 익숙해지십시오
 - Microsoft Azure 이벤트 허브에 RTCDP 대상 설정
 - Real-Time CDP가 활성화되는 시기와 활성화 페이로드의 모습을 이해합니다
-- Azure 프로젝트를 개발, 테스트 및 배포하려면 Visual Studio 코드를 설정합니다.
-- RTCDP로 실시간으로 제공되는 대상 자격을 사용하는 Azure 함수 생성 및 배포
+- Visual Studio 코드를 설정하여 Azure 프로젝트 개발, 테스트 및 배포
+- RTCDP에서 실시간으로 제공하는 대상 자격을 사용하는 Azure 함수를 만들고 배포합니다
 
 ## 전제 조건
 
@@ -62,15 +62,11 @@ Microsoft Azure Event Hubs는 단순하고 신뢰할 수 있으며 확장 가능
 
 [2.4.6 Microsoft Azure 프로젝트 만들기](./ex6.md)
 
-이 연습에서는 Adobe Experience Platform이 대상 자격을 해당 Azure Event Hub 대상에 전달할 때 실시간으로 트리거되는 Azure 기능을 만듭니다.
+이 연습에서는 Azure Experience Platform이 대상 자격을 해당 Azure Event Hub 대상에 제공할 때 실시간으로 트리거되는 Adobe 기능을 만듭니다.
 
 [2.4.7 전체 시나리오](./ex7.md)
 
-이 시점에서 모든 설정이 이루어집니다. 이제 데모 웹 사이트에서 일부 검색을 수행하고 Microsoft Azure Event Hub 트리거 기능에 대상 자격을 제공할 수 있습니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
+이 시점에서 모든 설정이 이루어집니다. 이제 데모 웹 사이트에서 일부 검색을 수행하고 Microsoft Azure 이벤트 허브 트리거 기능에 대상 자격을 제공할 수 있습니다.
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer 번역 서비스
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 전제 조건
 
 - Adobe Journey Optimizer 액세스
-- Microsoft Azure 번역기에 액세스
+- Microsoft Azure 번역기에 대한 액세스
 
 ## 연습
 
@@ -35,10 +35,6 @@ ht-degree: 2%
 [3.5.3 이메일에 언어 추가](./ex3.md)
 
 이 연습에서는 캠페인의 이메일에 언어를 추가합니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

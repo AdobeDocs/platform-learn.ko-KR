@@ -4,9 +4,9 @@ description: 기초 - Adobe Experience Platform 데이터 수집 및 웹 SDK 확
 kt: 5342
 doc-type: tutorial
 exl-id: 8c613648-9007-49fb-898f-039c366297da
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 - 브랜드가 Adobe 제품으로 데이터를 수집하는 데 사용하는 데이터 흐름에 대해 알아봅니다.
 - Adobe Experience Platform Edge Network을 통해 Adobe Experience Platform 및 기타 제품에 데이터를 전송하는 방법을 알아봅니다.
 - 웹 및 모바일에서 데이터를 수집하는 데이터 요소 및 규칙을 만드는 방법을 알아봅니다.
-- [Web SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home) 추적 이벤트와 해당 콘텐츠를 디버깅하는 방법에 대해 알아봅니다.
+- [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) 추적 이벤트와 해당 콘텐츠를 디버깅하는 방법에 대해 알아봅니다.
 - 데이터 계층이 무엇이고 데이터 계층을 구현할 때 Adobe이 권장하는 사항을 알아봅니다.
-- [웹 SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)을(를) 처음부터 구현하는 단계에 대해 알아봅니다.
+- [웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)을(를) 처음부터 구현하는 단계에 대해 알아봅니다.
 - 웹 구현과 모바일 구현의 차이점에 대해 알아봅니다.
 
 ## 전제 조건
@@ -67,10 +67,6 @@ ht-degree: 0%
 [Adobe Experience Platform의 1.1.7 XDM 스키마 요구 사항](./ex7.md)
 
 웹 SDK에서 Adobe Experience Platform으로 데이터를 수집할 수 있도록 하려면 Adobe Experience Platform에서 특정 XDM mixin이 XDM 스키마의 일부가 되어야 합니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

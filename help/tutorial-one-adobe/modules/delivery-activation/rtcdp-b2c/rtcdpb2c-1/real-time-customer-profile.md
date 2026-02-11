@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -53,10 +53,6 @@ ht-degree: 1%
 [2.1.5 콜 센터에서 실시간 고객 프로필 확인](./ex5.md)
 
 이 연습에서는 고객으로부터 전화를 받는 콜센터 직원을 가장하게 됩니다. 이 고객의 경험에 실제로 영향을 미치려면 사용 가능한 모든 정보에 실시간으로 액세스해야 합니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f18a0ec9-ee56-42b9-98bd-b5e433d77043
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,6 @@ Adobe Journey Optimizer을 사용하여 외부 작업을 정의하는 방법을 
 [3.2.5 여정 트리거](./ex5.md)
 
 특정 여정을 트리거합니다.
-
-[요약 및 이점](./summary.md)
-
-이 단원의 요약 및 이점 개요
 
 ![기술 내부자](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

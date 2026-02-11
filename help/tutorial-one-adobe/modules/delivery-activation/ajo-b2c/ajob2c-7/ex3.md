@@ -3,9 +3,10 @@ title: Offer Decisioning - 의사 결정 테스트
 description: Offer Decisioning - 의사 결정 테스트
 kt: 5342
 doc-type: tutorial
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 8cfe3d33-9451-46f4-b468-b93cd37d0806
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '148'
 ht-degree: 2%
 
 ---
@@ -29,8 +30,6 @@ ht-degree: 2%
 다음 연습에서는 Adobe Journey Optimizer에서 만든 오퍼 및 의사 결정을 Adobe Target 경험 타깃팅 활동과 결합하는 방법을 알아봅니다.
 
 ## 다음 단계
-
-[요약 및 혜택](./summary.md){target="_blank"}(으)로 이동
 
 [경험 의사 결정](ajo-decisioning.md){target="_blank"}(으)로 돌아가기
 
