@@ -4,7 +4,7 @@ description: 개발 환경 설정
 kt: 5342
 doc-type: tutorial
 exl-id: c9bfb327-362f-4475-89da-8e9788940d56
-source-git-commit: ce3ee3dde103383a6f7897cba36d548058879ea7
+source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![GSPeM 확장성](./images/commerceagent2.png)
 
-이름 `--aepUserLdap-- vangeluw Commerce Events`을(를) 입력하십시오. **저장**&#x200B;을 클릭합니다.
+이름 `--aepUserLdap-- Commerce Events`을(를) 입력하십시오. **저장**&#x200B;을 클릭합니다.
 
 ![GSPeM 확장성](./images/commerceagent4.png)
 
@@ -175,7 +175,7 @@ Adobe I/O CLI용 Adobe Commerce 플러그인을 설치하려면 터미널 창에
 
 ## 다음 단계
 
-[Cursor.ai를 사용하여 프로젝트 개발](./ex2.md){target="_blank"}(으)로 이동
+[커서를 사용하여 프로젝트 개발](./ex2.md){target="_blank"}(으)로 이동
 
 [Adobe Commerce용 지능형 개발자 도구로 돌아가기](./aiassisteddev.md){target="_blank"}
 
