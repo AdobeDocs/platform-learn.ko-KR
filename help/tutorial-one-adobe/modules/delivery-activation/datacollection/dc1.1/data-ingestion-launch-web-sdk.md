@@ -23,9 +23,9 @@ ht-degree: 0%
 - 브랜드가 Adobe 제품으로 데이터를 수집하는 데 사용하는 데이터 흐름에 대해 알아봅니다.
 - Adobe Experience Platform Edge Network을 통해 Adobe Experience Platform 및 기타 제품에 데이터를 전송하는 방법을 알아봅니다.
 - 웹 및 모바일에서 데이터를 수집하는 데이터 요소 및 규칙을 만드는 방법을 알아봅니다.
-- [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) 추적 이벤트와 해당 콘텐츠를 디버깅하는 방법에 대해 알아봅니다.
+- [Web SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home) 추적 이벤트와 해당 콘텐츠를 디버깅하는 방법에 대해 알아봅니다.
 - 데이터 계층이 무엇이고 데이터 계층을 구현할 때 Adobe이 권장하는 사항을 알아봅니다.
-- [웹 SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)을(를) 처음부터 구현하는 단계에 대해 알아봅니다.
+- [웹 SDK](https://experienceleague.adobe.com/ko/docs/experience-platform/web-sdk/home)을(를) 처음부터 구현하는 단계에 대해 알아봅니다.
 - 웹 구현과 모바일 구현의 차이점에 대해 알아봅니다.
 
 ## 전제 조건

@@ -160,7 +160,7 @@ Postman의 **대상 작성 API**&#x200B;에서 **대상 구성**(으)로 이동�
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=ko",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
