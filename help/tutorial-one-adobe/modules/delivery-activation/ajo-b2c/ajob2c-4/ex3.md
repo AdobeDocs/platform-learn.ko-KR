@@ -71,12 +71,12 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 계속하려면 *
 
 그런 다음 첫 번째 줄을 그대로 두고 2행과 3행을 다음 코드로 바꿉니다.
 
-``
+&grave;&grave;
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-``
+&grave;&grave;
 
 그럼 이걸로 드셔보세요 **저장**&#x200B;을 클릭합니다.
 

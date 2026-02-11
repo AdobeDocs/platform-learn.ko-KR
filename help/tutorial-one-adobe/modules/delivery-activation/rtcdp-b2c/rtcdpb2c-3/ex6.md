@@ -117,7 +117,7 @@ Adobe Experience Platform에서 고유한 대상을 만드는 첫 번째 단계�
 >
 >Adobe I/O에 요청을 보내기 전에 유효한 `access_token`이(가) 있어야 합니다. 올바른 `access_token`을(를) 가져오려면 컬렉션 **Adobe IO - OAuth**&#x200B;에서 요청 **POST - 액세스 토큰 가져오기**&#x200B;를 실행하십시오.
 
-**보내기**&#x200B;를 클릭하면 서버 템플릿이 만들어지고 응답의 일부로 **instanceId**(이)라는 필드가 표시됩니다. 다음 단계에서 필요하므로 적어 두십시오. 이 예제에서 **instanceId**은
+**보내기**&#x200B;를 클릭하면 서버 템플릿이 만들어지고 응답의 일부로 **instanceId**(이)라는 필드가 표시됩니다. 다음 단계에서 필요하므로 적어 두십시오. 이 예제에서 **instanceId**&#x200B;은
 `52482c90-8a1e-42fc-b729-7f0252e5cebd`.
 
 ![데이터 수집](./images/sdkpm6.png)
