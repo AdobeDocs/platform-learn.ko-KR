@@ -1,22 +1,39 @@
 ---
-title: 워크플로 빌더
-description: 워크플로 빌더
+title: Firefly 사용자 지정 워크플로
+description: Firefly 사용자 지정 워크플로
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
+source-git-commit: d5008825c083357b5b1479157cb01f795120d409
 workflow-type: tm+mt
-source-wordcount: '75'
-ht-degree: 4%
+source-wordcount: '239'
+ht-degree: 1%
 
 ---
 
-# 1.7 Workflow Builder
+# 1.7 Firefly 사용자 지정 워크플로
+
+Firefly 맞춤형 워크플로의 주요 초점은 워크플로를 만들고 구성하는 크리에이티브 기술 전문가 및 솔루션 빌더에 있습니다.
+
+Firefly 사용자 지정 워크플로를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+
+- 워크플로 빌드: 수동 또는 AI 지원이 있는 시각적 인터페이스를 사용하여 여러 단계로 구성된 프로덕션 워크플로를 만듭니다.
+- 워크플로우 실행: 브라우저 외부에서 실행되는 강력한 런타임으로 일괄 처리를 포함하여 규모에 맞게 워크플로우를 실행합니다.
+- 워크플로우 배포: 다른 도구 및 시스템에 통합하기 위해 워크플로우를 API 엔드포인트 또는 프로그래밍 방식 UI로 게시합니다.
+- 워크플로우 통합: 워크플로우를 DAM, 활성화 스트림 및 콘텐츠 공급망과 같은 엔터프라이즈 시스템에 연결합니다.
+
+지원되는 주요 사용 사례는 다음과 같습니다.
+
+- 모든 소셜 미디어 플랫폼 및 유형에 대한 크기 변형을 만드는 것과 같은 소셜 미디어 채널 적응입니다.
+- 인쇄 또는 웹과 같은 추가 표면에 사용할 자산 준비와 같은 자산 준비.
+- 관심 있는 대상을 다시 참여시키기 위해 시각적 개체를 새로 고치고 다시 사용하는 것과 같은 콘텐츠 재타겟팅.
+- 제품 이미지를 표준화하고 서로 다른 대상에 대한 세그먼트별 변형 생성과 같은 전자 상거래.
 
 ## 전제 조건
 
-- ...
+- Firefly 사용자 지정 워크플로우에 액세스
 
 ## 비디오
 
@@ -26,7 +43,7 @@ ht-degree: 4%
 
 ## 연습
 
-[1.7.1 Workflow Builder 시작하기](./ex1.md){target="_blank"}
+[1.7.1 Firefly 사용자 지정 워크플로 시작](./ex1.md){target="_blank"}
 
 이 연습에서는 Workflow Builder를 사용합니다.
 
