@@ -3,9 +3,9 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
@@ -43,9 +43,9 @@ ht-degree: 2%
 
 이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
 
-- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**&#x200B;에 합격할 수 있습니다.
+- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**에 합격할 수 있습니다.
   [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
-- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**&#x200B;을(를) 참여하여 통과할 수 있습니다.
+- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**을(를) 참여하여 통과할 수 있습니다.
   [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## 컨텐츠 상태
@@ -94,9 +94,9 @@ Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workf
 
 이 모듈에서는 Adobe IO 및 App Builder을 사용하여 GenStudio for Performance Marketing의 기능을 확장하는 사용자 지정 애플리케이션을 빌드합니다.
 
-[1.7 워크플로우 빌더](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+[1.7 Firefly 사용자 지정 워크플로](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
 
-이 모듈에서는 Workflow Builder를 사용하여 반복 가능한 크리에이티브 디자인 및 자동화 사용 사례를 해결합니다.
+이 모듈에서는 Firefly의 사용자 지정 워크플로우를 사용하여 반복 가능한 크리에이티브 디자인 및 자동화 사용 사례를 해결합니다.
 
 [1.8 Workfront, Frame.io 및 엔터프라이즈 스토리지 관리를 통한 통합 검토 및 승인](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
