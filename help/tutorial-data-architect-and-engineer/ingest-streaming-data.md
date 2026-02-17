@@ -44,7 +44,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 자습서에서는 웹 SDK을 사용하여 웹 사이트에서 스트리밍하는 데 중점을 두고 있지만 [Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview) 및 [HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http)를 사용하여 데이터를 스트리밍할 수도 있습니다.
+>이 자습서에서는 웹 SDK을 사용하여 웹 사이트에서 스트리밍하는 데 중점을 두고 있지만 [Mobile SDK](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-mobile-sdk/overview), [Edge Network Server API](https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/server-api/overview) 및 [HTTP API](https://experienceleague.adobe.com/ko/docs/experience-platform/sources/connectors/streaming/http)를 사용하여 데이터를 스트리밍할 수도 있습니다.
 
 ## 권한 필요
 
