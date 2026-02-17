@@ -127,7 +127,7 @@ ht-degree: 0%
 
 ### 데이터 다운로드 및 준비
 
-1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [&#x200B; 폴더에 &#x200B;](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 2. 텍스트 편집기에서 `luma-crm.json`을(를) 열고 스키마에 표시된 대로 `_techmarketingdemos`의 모든 인스턴스를 고유한 밑줄 테넌트 ID로 바꾸십시오.
 3. 업데이트된 파일 저장
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 이제 데이터 세트에 일괄 처리를 만들 수 있습니다.
 
-1. [ 폴더에 ](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)데이터 수집 API.postman_collection.json`Luma Tutorial Assets` 다운로드
+1. [&#x200B; 폴더에 &#x200B;](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)데이터 수집 API.postman_collection.json`Luma Tutorial Assets` 다운로드
 1. 컬렉션을 [!DNL Postman]&#x200B;(으)로 가져오기
 1. **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]** 요청 선택
 1. 다음을 요청의 **본문**(으)로 붙여 넣습니다. ***datasetId 값을 자신의 값으로 바꾸기***:
@@ -218,7 +218,7 @@ ht-degree: 0%
 
 축하합니다. 방금 프로필을 병합했습니다!
 
-![병합된 프로필 ](assets/ingestion-crm-profileLinkedIdentities.png)
+![병합된 프로필 &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### 데이터 수집 이벤트로 유효성 검사
 
@@ -234,7 +234,7 @@ ht-degree: 0%
 
 ### 데이터 다운로드 및 준비
 
-1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [&#x200B; 폴더에 &#x200B;](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 1. `luma-products.csv`이(가) 있는지 확인
 
 ### 워크플로 만들기
@@ -286,7 +286,7 @@ ht-degree: 0%
 
 ### 원하는 클라우드 스토리지 공급업체에 데이터 다운로드, 준비 및 업로드
 
-1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [&#x200B; 폴더에 &#x200B;](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 1. 텍스트 편집기에서 `luma-offline-purchases.json`을(를) 열고 스키마에 표시된 대로 `_techmarketingdemos`의 모든 인스턴스를 고유한 밑줄 테넌트 ID로 바꾸십시오.
 1. 이벤트가 지난 달에 발생하도록 모든 타임스탬프를 업데이트합니다(예: `"timestamp":"2022-06`을(를) 검색하고 연도 및 월을 대체).
 1. 선호하는 클라우드 저장소 공급자를 선택하여 [!UICONTROL 원본] 카탈로그에서 사용할 수 있는지 확인하세요.
