@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer 캠페인
 kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 2e4808654f285b21ea2dcc4570ea879b98a772b0
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '211'
 ht-degree: 4%
 
 ---
@@ -33,6 +33,12 @@ Adobe Journey Optimizer Campaign Orchestration에는 캠페인 오케스트레�
 ## 전제 조건
 
 - Adobe Journey Optimizer 오케스트레이션된 캠페인 액세스
+
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479938?quality=12&learn=on)
 
 ## 연습
 

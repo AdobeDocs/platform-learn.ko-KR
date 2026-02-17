@@ -4,9 +4,9 @@ description: Adobe Commerce용 지능형 개발자 도구
 kt: 5342
 doc-type: tutorial
 exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
-source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
+source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,12 @@ ht-degree: 1%
 - 커서에 액세스합니다.
 - 종속성이 있으므로 이 모듈을 완료했어야 합니다. [Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md).
 - 종속성이 있으므로 이 모듈을 완료했어야 합니다. [Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md).
+
+## 비디오
+
+이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479939?quality=12&learn=on)
 
 ## 연습
 
