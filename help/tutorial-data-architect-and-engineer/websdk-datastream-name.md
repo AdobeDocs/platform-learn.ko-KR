@@ -10,7 +10,7 @@ thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,7 @@ ht-degree: 0%
 
 [!UICONTROL 데이터스트림]을 만들려면:
 
-1. [Experience Platform 데이터 수집 사용자 인터페이스에 로그인](https://experience.adobe.com/launch/)
-   <!--when will the edge config go live?-->
-
+1. 아직 ` Luma Tutorial` 샌드박스에 있는지 확인하십시오
 1. 왼쪽 탐색에서 **[!UICONTROL 데이터스트림]** 선택
 1. 오른쪽 상단에서 **[!UICONTROL 새 데이터 스트림]** 단추를 선택합니다.
 
@@ -105,18 +103,19 @@ ht-degree: 0%
 
    ![데이터 스트림 이름 지정 및 저장](assets/websdk-edgeConfig-name.png)
 
-다음 화면에서는 데이터를 보낼 위치를 지정합니다. Experience Platform에 데이터를 보내려면 다음을 수행하십시오.
+데이터가 Edge에 도착하면 [!UICONTROL 데이터스트림]이 데이터를 구성된 [!UICONTROL 서비스]에 전달합니다. Experience Platform에 데이터를 보내려면 다음을 수행하십시오.
 
-1. 추가 필드를 표시하려면 **[!UICONTROL Adobe Experience Platform]**&#x200B;을(를) 켜십시오.
-1. **[!UICONTROL 샌드박스]**&#x200B;의 경우 `Luma Tutorial`을(를) 선택하십시오.
-1. **[!UICONTROL 이벤트 데이터 세트]**&#x200B;에 대해 `Luma Web Events Dataset`을(를) 선택합니다.
-1. 다른 Adobe 애플리케이션을 사용하는 경우 언제든지 다른 섹션을 탐색하여 이러한 다른 솔루션의 Edge 구성에 필요한 정보를 확인하십시오. 웹 SDK은 데이터를 Experience Platform으로 스트리밍할 뿐만 아니라 다른 Adobe 애플리케이션에서 사용하는 모든 이전 JavaScript 라이브러리를 대체하기 위해 개발되었습니다. Edge 구성 을 사용하여 데이터를 전송하려는 각 애플리케이션의 계정 세부 정보를 지정합니다.
+1. **[!UICONTROL 서비스 추가]** 선택
+   ![서비스 추가](assets/websdk-datastream-addService.png)
+
+1. `Luma Web Events Dataset` 선택
 1. **[!UICONTROL 저장]** 선택
-   ![데이터 스트림 구성 및 저장](assets/websdk-edgeConfig-addEnvironment.png)
 
-Edge 구성이 저장되면 결과 화면에 개발, 스테이징 및 프로덕션용으로 만들어진 세 가지 환경이 표시됩니다. 추가 개발 환경을 추가할 수 있습니다.
-![각 Edge 구성에는 여러 환경이 있을 수 있습니다](assets/websdk-edgeConfig-environments.png)
-세 가지 환경 모두 방금 입력한 플랫폼 세부 정보를 포함합니다. 하지만 이러한 세부 정보는 환경별로 다르게 구성할 수 있습니다. 예를 들어 각 환경에서 데이터를 다른 Platform 샌드박스로 보내도록 할 수 있습니다. 이 자습서에서는 데이터 스트림에 대한 추가 사용자 지정을 수행하지 않습니다.
+   ![데이터 세트 선택 및 저장](assets/websdk-datastream-addPlatformService.png)
+
+데이터 스트림 구성에 프로필 데이터 세트 옵션이 있지만 일반 XDM 개별 프로필 데이터를 플랫폼으로 전송하는 데 사용해서는 안 됩니다. 이 설정은 동의, 푸시 토큰 및 사용자 활동 영역 세부 정보를 보내는 데만 사용해야 합니다.
+
+[!UICONTROL Offer Decisioning], [!UICONTROL Edge 세분화], [!UICONTROL Personalization 대상] 및 [!UICONTROL Adobe Journey Optimizer]의 확인란을 사용하여 Edge에서 데이터를 활성화할 수 있지만 이 자습서에서는 사용되지 않습니다.
 
 ## 웹 SDK 확장 설치
 

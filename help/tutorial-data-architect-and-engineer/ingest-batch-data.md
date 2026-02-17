@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2445'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 데이터 수집에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/346834?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## 권한 필요
@@ -56,7 +56,7 @@ ht-degree: 0%
 >
 >[luma-data.zip](assets/luma-data.zip) 파일에 포함된 데이터는 가상 데이터이며 데모용으로만 사용됩니다.
 
-1. **Luma 튜토리얼 Assets** 폴더에 [luma-data.zip](assets/luma-data.zip)을(를) 다운로드합니다.
+1. [Luma 튜토리얼 Assets](assets/luma-data.zip) 폴더에 **luma-data.zip**&#x200B;을(를) 다운로드합니다.
 1. 파일의 압축을 풀고 이 단원에서 사용할 4개의 데이터 파일이 포함된 `luma-data` 폴더를 만듭니다.
 1. 텍스트 편집기에서 `luma-loyalty.json`을(를) 열고 `_techmarketingdemos`의 모든 인스턴스를 고유한 스키마에 표시된 대로 고유한 밑줄 테넌트 ID로 바꿉니다.
    ![밑줄 테넌트 ID](assets/ingestion-underscoreTenant.png)
@@ -79,8 +79,8 @@ ht-degree: 0%
 >
 >이 단원의 다양한 화면에서 볼 수 있는 몇 가지 옵션인 **[!UICONTROL 오류 진단]** 및 **[!UICONTROL 부분 수집]**&#x200B;이 있습니다. 이러한 옵션은 자습서에서 다루지 않습니다. 몇 가지 빠른 정보:
 >
->* 오류 진단을 활성화하면 데이터 수집에 대한 데이터가 생성되고 이 데이터는 Data Access API를 사용하여 검토할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=ko)를 참조하세요.
->* 부분 수집을 사용하면 지정 가능한 특정 임계값까지, 오류가 포함된 데이터를 수집할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=ko)를 참조하세요.
+>* 오류 진단을 활성화하면 데이터 수집에 대한 데이터가 생성되고 이 데이터는 Data Access API를 사용하여 검토할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html)를 참조하세요.
+>* 부분 수집을 사용하면 지정 가능한 특정 임계값까지, 오류가 포함된 데이터를 수집할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)를 참조하세요.
 
 ### 데이터 유효성 검사
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 1. 왼쪽 탐색에서 **[!UICONTROL 프로필]**(으)로 이동
 1. **[!UICONTROL ID 네임스페이스 선택]** 필드 옆의 아이콘을 선택하여 모달을 엽니다.
 1. `Luma Loyalty Id` 네임스페이스 선택
-1. 그런 다음 데이터 집합 `5625458`에서 `loyaltyId` 값 중 하나를 입력하십시오.
+1. 그런 다음 데이터 집합 `loyaltyId`에서 `5625458` 값 중 하나를 입력하십시오.
 1. **[!UICONTROL 보기]** 선택
    ![데이터 집합에서 프로필 확인](assets/ingestion-loyalty-profile.png)
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![데이터 수집 Webhook](assets/ingestion-loyalty-webhook.png)
 
-알림에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ko#available-status-notification-events)를 참조하세요.
+알림에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)를 참조하세요.
 
 ## Platform API를 사용하여 데이터 배치 수집
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 ### 데이터 다운로드 및 준비
 
-1. `Luma Tutorial Assets` 폴더에 [luma-data.zip](assets/luma-data.zip)을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 2. 텍스트 편집기에서 `luma-crm.json`을(를) 열고 스키마에 표시된 대로 `_techmarketingdemos`의 모든 인스턴스를 고유한 밑줄 테넌트 ID로 바꾸십시오.
 3. 업데이트된 파일 저장
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 먼저 데이터를 수집할 데이터 세트의 데이터 세트 ID를 가져옵니다.
 
 1. [!DNL Postman] 열기
-1. 액세스 토큰이 없는 경우 [!DNL Postman] 단원에서 수행한 것처럼 **[!DNL OAuth: Request Access Token]** 요청을 열고 **보내기**&#x200B;를 선택하여 새 액세스 토큰을 요청합니다.
+1. 액세스 토큰이 없는 경우 **[!DNL OAuth: Request Access Token]** 단원에서 수행한 것처럼 **요청을 열고**&#x200B;보내기[!DNL Postman]를 선택하여 새 액세스 토큰을 요청합니다.
 1. 환경 변수를 열고 **CONTAINER_ID**&#x200B;의 값이 여전히 `tenant`인지 확인하십시오
 1. **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** 요청을 열고 **보내기**&#x200B;를 선택합니다.
 1. `200 OK` 응답을 받아야 합니다.
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 이제 데이터 세트에 일괄 처리를 만들 수 있습니다.
 
-1. `Luma Tutorial Assets` 폴더에 [데이터 수집 API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json) 다운로드
+1. [ 폴더에 ](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)데이터 수집 API.postman_collection.json`Luma Tutorial Assets` 다운로드
 1. 컬렉션을 [!DNL Postman]&#x200B;(으)로 가져오기
 1. **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]** 요청 선택
 1. 다음을 요청의 **본문**(으)로 붙여 넣습니다. ***datasetId 값을 자신의 값으로 바꾸기***:
@@ -172,9 +172,9 @@ ht-degree: 0%
 
 1. **[!DNL Data Ingestion API > Batch Ingestion > Upload a file to a dataset in a batch.]** 요청 선택
 1. **매개 변수** 탭에서 각 필드에 데이터 세트 ID와 배치 ID를 입력합니다
-1. **매개 변수** 탭에서 **filePath**(으)로 `luma-crm.json`을(를) 입력하십시오.
+1. **매개 변수** 탭에서 `luma-crm.json`filePath **(으)로**&#x200B;을(를) 입력하십시오.
 1. **본문** 탭에서 **이진** 옵션을 선택합니다.
-1. 로컬 `Luma Tutorial Assets` 폴더에서 다운로드한 `luma-crm.json` 선택
+1. 로컬 `luma-crm.json` 폴더에서 다운로드한 `Luma Tutorial Assets` 선택
 1. **보내기**&#x200B;를 선택하면 응답 본문에 &#39;1&#39;이 있는 200 OK 응답을 받게 됩니다.
 
    ![데이터 업로드됨](assets/ingestion-crm-uploadFile.png)
@@ -189,7 +189,7 @@ ht-degree: 0%
 배치를 완료하려면
 
 1. **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]** 요청 선택
-1. **매개 변수** 탭에서 **작업**(으)로 `COMPLETE`을(를) 입력하십시오.
+1. **매개 변수** 탭에서 `COMPLETE`작업&#x200B;**(으)로**&#x200B;을(를) 입력하십시오.
 1. **매개 변수** 탭에서 배치 ID를 입력합니다. 데이터 세트 ID 또는 filePath가 있는 경우 걱정하지 마십시오.
 1. 게시물의 URL이 `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE`이고 `datasetId` 또는 `filePath`에 대한 불필요한 참조가 없는지 확인하십시오
 1. **보내기**&#x200B;를 선택하면 응답 본문에 &#39;1&#39;이 있는 200 OK 응답을 받게 됩니다.
@@ -210,7 +210,7 @@ ht-degree: 0%
 
 ![일괄 처리 미리 보기](assets/ingestion-crm-preview.png)
 
-마지막으로, `Luma CRM Id` 네임스페이스(예: `b642b4217b34b1e8d3bd915fc65c4452`)별로 프로필 중 하나를 조회하여 프로필 중 하나가 생성되었는지 확인합니다
+마지막으로, `Luma CRM Id` 네임스페이스(예: `f660ab912ec121d1b1e928a0bb4bc61b`)별로 프로필 중 하나를 조회하여 프로필 중 하나가 생성되었는지 확인합니다
 
 ![수집된 프로필](assets/ingestion-crm-profile.png)
 
@@ -218,7 +218,7 @@ ht-degree: 0%
 
 축하합니다. 방금 프로필을 병합했습니다!
 
-![병합된 프로필 &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
+![병합된 프로필 ](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### 데이터 수집 이벤트로 유효성 검사
 
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ![데이터 수집 Webhook](assets/ingestion-crm-webhook.png)
 
-알림에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ko#available-status-notification-events)를 참조하세요.
+알림에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)를 참조하세요.
 
 ## 워크플로우를 사용하여 데이터 수집
 
@@ -234,7 +234,7 @@ ht-degree: 0%
 
 ### 데이터 다운로드 및 준비
 
-1. `Luma Tutorial Assets` 폴더에 [luma-data.zip](assets/luma-data.zip)을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 1. `luma-products.csv`이(가) 있는지 확인
 
 ### 워크플로 만들기
@@ -282,11 +282,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 연습에서 사용할 오프라인 구매 데이터에는 날짜/시간 데이터가 포함되어 있습니다. 날짜/시간 데이터는 [ISO 8061 형식의 문자열](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;) 또는 밀리초 형식의 Unix 시간(1531263959000)이어야 하며 수집 시간에 대상 XDM 유형으로 변환됩니다. 데이터 변환 및 기타 제약 조건에 대한 자세한 내용은 [일괄 처리 수집 API 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=ko#types)를 참조하십시오.
+>이 연습에서 사용할 오프라인 구매 데이터에는 날짜/시간 데이터가 포함되어 있습니다. 날짜/시간 데이터는 [ISO 8061 형식의 문자열](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;) 또는 밀리초 형식의 Unix 시간(1531263959000)이어야 하며 수집 시간에 대상 XDM 유형으로 변환됩니다. 데이터 변환 및 기타 제약 조건에 대한 자세한 내용은 [일괄 처리 수집 API 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)를 참조하십시오.
 
 ### 원하는 클라우드 스토리지 공급업체에 데이터 다운로드, 준비 및 업로드
 
-1. `Luma Tutorial Assets` 폴더에 [luma-data.zip](assets/luma-data.zip)을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 1. 텍스트 편집기에서 `luma-offline-purchases.json`을(를) 열고 스키마에 표시된 대로 `_techmarketingdemos`의 모든 인스턴스를 고유한 밑줄 테넌트 ID로 바꾸십시오.
 1. 이벤트가 지난 달에 발생하도록 모든 타임스탬프를 업데이트합니다(예: `"timestamp":"2022-06`을(를) 검색하고 연도 및 월을 대체).
 1. 선호하는 클라우드 저장소 공급자를 선택하여 [!UICONTROL 원본] 카탈로그에서 사용할 수 있는지 확인하세요.
@@ -326,7 +326,7 @@ ht-degree: 0%
 
 웹후크에 대한 세 개의 히트를 볼 수 있습니다.
 
-`loyaltyId` 네임스페이스에 값이 `5625458`인 프로필을 다시 검색하여 프로필에 구매 이벤트가 있는지 확인하십시오. 한 번 구매하시는 게 보일 겁니다. **[!UICONTROL JSON 보기]**&#x200B;를 선택하여 구매 세부 정보를 살펴볼 수 있습니다.
+`5625458` 네임스페이스에 값이 `loyaltyId`인 프로필을 다시 검색하여 프로필에 구매 이벤트가 있는지 확인하십시오. 한 번 구매하시는 게 보일 겁니다. **[!UICONTROL JSON 보기]**&#x200B;를 선택하여 구매 세부 정보를 살펴볼 수 있습니다.
 
 ![프로필의 구매 이벤트](assets/ingestion-offline-eventInProfile.png)
 
@@ -334,12 +334,12 @@ ht-degree: 0%
 
 Adobe은 여러 ETL 공급업체와 협력하여 Experience Platform으로의 데이터 수집을 지원합니다. 다양한 서드파티 공급업체로 인해 ETL은 이 자습서에서 다루지 않지만, 다음 리소스 중 일부를 검토할 수 있습니다.
 
-* [Adobe Experience Platform을 위한 ETL 통합 개발](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=ko)
+* [Adobe Experience Platform을 위한 ETL 통합 개발](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [[!DNL Snaplogic] Adobe Experience Platform 스냅 팩](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 추가 리소스
 
-* [일괄 처리 수집 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=ko)
+* [일괄 처리 수집 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [일괄 처리 수집 API 참조](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 이제 웹 SDK을 사용하여 데이터를 [스트리밍](ingest-streaming-data.md)하겠습니다.
