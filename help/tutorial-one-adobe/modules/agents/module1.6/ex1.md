@@ -4,9 +4,9 @@ description: AEM 에이전트 시작
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: abec60dbd2a67228fb5bbcedaadc7494e0057eda
+source-git-commit: c7108c2818ee7fad820af33b99f277181bcf6a02
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1674'
 ht-degree: 1%
 
 ---
@@ -461,7 +461,24 @@ On the page XXX, please make the following changes:
 
 ### 콘텐츠 업데이트 - 양식 만들기
 
-양식 작성 기술을 사용하면 개발이나 IT 팀에 의존하지 않고 자연어 프롬프트를 통해 적응형 양식을 작성할 수 있습니다. 이 기능은 브랜드 일관성을 유지하면서 양식 개발을 가속화하고 비즈니스 사용자가 깊이 있는 기술 제품 지식 없이도 양식을 만들 수 있도록 합니다.
+[Edge Delivery Services이 있는 Adobe Experience Manager Forms](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"} 모듈에서 수동으로 양식을 만드는 단계를 찾을 수 있습니다.
+
+이제 양식 작성 기술을 사용하여 사용자가 개발 또는 IT 팀에 종속되지 않고 자연어 프롬프트를 통해 적응형 양식을 작성할 수 있습니다. 이 기능은 브랜드 일관성을 유지하면서 양식 개발을 가속화하고 비즈니스 사용자가 깊이 있는 기술 제품 지식 없이도 양식을 만들 수 있도록 합니다.
+
+[https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat)&#x200B;(으)로 이동합니다.
+
+![AEM 에이전트](./images/aemagentsforms1.png)
+
+다음 메시지를 입력하고 **보내기**&#x200B;를 클릭합니다.
+
+```
+Create a new adaptive form using Edge Delivery Services with the following details:
+- Form name: "citisignal-fiber-max-interest-2"
+- Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
+- When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
+```
+
+
 
 ## 다음 단계
 
