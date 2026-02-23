@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44a7679ab3eab5fbc24c86a31fec620e789acffe
+source-git-commit: 7315383e72017a9922cc5f06b727c465c07f4052
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1525'
 ht-degree: 3%
 
 ---
@@ -107,6 +107,9 @@ ht-degree: 3%
       + [개요](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
       + [1.2.1 AEM Assets 시작하기](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [요약 및 이점](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+   + 1.3 Adobe Experience Manager Forms 및 Edge Delivery Services {#assetm5}
+      + [개요](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/aemforms.md)
+      + [1.3.1 첫 번째 양식 만들기](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/ex1.md)
    + 1.4 Adobe Experience Manager Assets 및 Dynamic Media {#assetm4}
       + [개요](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
       + [1.4.1 에셋 및 Dynamic Media 템플릿 만들기](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
@@ -134,7 +137,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
          + [개요](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)

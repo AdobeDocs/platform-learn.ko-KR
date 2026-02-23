@@ -1,22 +1,22 @@
 ---
-title: GenStudio for Content Supply Chain 기술 지원
-description: GenStudio for Content Supply Chain 기술 지원
+title: GenStudio for Content Supply chain 기술 지원
+description: GenStudio for Content Supply chain 기술 지원
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: 9ff92b0c295f854219631f1463c3ccabc1a65938
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 개요 - 콘텐츠 공급망 기술 지원을 위한 GenStudio
+# 개요 - GenStudio for Content Supply chain 기술 지원
 
 ![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 개요
 
-콘텐츠 공급망 기술 지원 라이브 워크숍을 위한 GenStudio에 참석하는 경우 기술 연구소의 시작점이 됩니다.
+집중 GenStudio for Content Supply chain Technical Enablement 라이브 워크샵에 참석하는 경우 여기에서 기술 랩을 시작할 수 있습니다.
 
 이 기술 지원 워크샵의 일환으로 Tech Labs에서 다음 애플리케이션에 대해 직접 배울 수 있습니다.
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 곧 소개될 기술 실습은 광범위한 Adobe 자습서의 일부이며, 여기에서 광범위한 Adobe Creative Cloud 및 Adobe Experience Cloud 솔루션에 대해 더 자세히 알아볼 수 있습니다. 사용 가능한 항목을 보려면 다음을 살펴보십시오. [One Adobe 자습서 개요](./overview.md)
 
-## GenStudio for Content Supply Chain 기술 랩
+## GenStudio for Content Supply chain 기술 랩
 
 다음은 이 기술 지원 워크숍의 일부로 참여할 기술 연구소입니다.
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 이 모듈에서는 Adobe Frame.io와 Adobe Premiere Pro을 함께 사용하여 이미지와 비디오를 공동 작업하고 검토합니다.
 
-### 자산 관리
+### 에셋 관리
 
 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
