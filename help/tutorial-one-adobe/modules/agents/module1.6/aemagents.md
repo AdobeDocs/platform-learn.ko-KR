@@ -4,10 +4,10 @@ description: Adobe Experience Manager 및 에이전트
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: 7ea3bdc9557ea9e88ddd9693f9ffbfbc634857f8
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 2%
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,11 @@ ht-degree: 2%
 [1.6.1 AEM 에이전트 시작](./ex1.md){target="_blank"}
 
 이 연습에서는 **검색 에이전트** 및 **경험 프로덕션 에이전트**&#x200B;를 살펴봅니다.
+
+[1.6.2 AEM MCP 서버 및 커서](./ex2.md)
+
+이 연습에서는 AEM MCP 서버를 사용하여 Cursor 환경을 AEM에 연결합니다.
+
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -3,7 +3,8 @@ title: 첫 번째 양식 만들기
 description: 첫 번째 양식 만들기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9aad8cb1fdfa739d1660bc25376b874fa8ed8c89
+exl-id: 288e113f-2e9e-4352-8ddd-ca231b552b70
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 9%
@@ -100,7 +101,7 @@ if (block.dataset.aueModel === 'form') {
 
 이러한 요구 사항을 충족하면 첫 번째 양식을 만들 수 있습니다.
 
-## 1.3.1.1 양식 만들기
+## 1.3.1.2 양식 만들기
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. 선택해야 하는 조직은 `--aepImsOrgName--`입니다. 환경을 엽니다.
 
@@ -270,7 +271,7 @@ if (block.dataset.aueModel === 'form') {
 
 ![AEM Forms](./images/aemforms29.png)
 
-## 1.3.1.2 양식 제출
+## 1.3.1.3 양식 제출
 
 양식을 제출하려면 다음 두 가지 사항이 필요합니다.
 
