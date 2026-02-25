@@ -20,7 +20,7 @@ ht-degree: 0%
 Adobe App Builder Webhook 프록시와 통합하여 Slack에서 Experience Platform 알림을 받는 방법을 알아봅니다. 데이터 엔지니어와 관리자는 Adobe Experience Platform에서 Slack의 사전 알림을 수신하여 플랫폼 구현의 상태를 모니터링할 수 있습니다. 이 튜토리얼에서는 Adobe App Builder을 사용하여 Adobe I/O Events을 Slack에 연결하는 아키텍처 및 구현 단계에 대해 설명합니다.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480183?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3480202?captions=kor&learn=on)
 
 ## Webhook 프록시의 이유는 무엇입니까?
 
