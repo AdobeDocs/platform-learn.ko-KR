@@ -4,9 +4,9 @@ description: 오케스트레이션된 캠페인 만들기
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 0328260e8699107bc82103af98caae684319a60d
+source-git-commit: 72aee2daa489f00dfc753e6986f0cab2271c6a7f
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -578,6 +578,30 @@ ht-degree: 2%
 **전자 메일 본문 편집**&#x200B;을 클릭합니다.
 
 ![AJO OC](./images/ajooc126.png)
+
+데스크톱에 [family_account_review.zip](./assets/family_account_review.zip) 파일을 다운로드합니다.
+
+![AJO OC](./images/ajooc127.png)
+
+**HTML 가져오기**&#x200B;를 클릭합니다.
+
+![AJO OC](./images/ajooc128.png)
+
+을(를) 클릭하여 파일을 선택합니다.
+
+![AJO OC](./images/ajooc129.png)
+
+**`family_account_review.zip`** 파일을 선택하십시오.
+
+![AJO OC](./images/ajooc130.png)
+
+**다음**&#x200B;을 클릭합니다.
+
+![AJO OC](./images/ajooc131.png)
+
+그럼 이걸 보셔야죠
+
+![AJO OC](./images/ajooc132.png)
 
 ## 다음 단계
 
