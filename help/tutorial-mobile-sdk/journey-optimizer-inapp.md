@@ -21,7 +21,7 @@ Journey Optimizer을 사용하면 캠페인을 만들어 타깃팅된 대상자�
 
 ![아키텍쳐](assets/architecture-ajo.png){zoomable="yes"}
 
-Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한 구성 및 통합이 제대로 되어 있는지 확인해야 합니다. Journey Optimizer의 인앱 메시지 데이터 흐름을 이해하려면 [설명서](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration)를 참조하세요.
+Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한 구성 및 통합이 제대로 되어 있는지 확인해야 합니다. Journey Optimizer의 인앱 메시지 데이터 흐름을 이해하려면 [설명서](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/in-app/inapp-configuration)를 참조하세요.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 * SDK가 설치 및 구성된 앱을 빌드하고 실행했습니다.
 * Adobe Experience Platform용 앱을 설정합니다.
-* Journey Optimizer 및 [푸시 알림에 대한 충분한 권한](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration)에 액세스할 수 있습니다. 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
+* Journey Optimizer 및 [푸시 알림에 대한 충분한 권한](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/push/push-config/push-configuration)에 액세스할 수 있습니다. 또한 다음 Journey Optimizer 기능에 대한 충분한 권한이 필요합니다.
    * 캠페인을 관리합니다.
 * 테스트를 위한 물리적 iOS 장치 또는 시뮬레이터.
 
@@ -67,11 +67,11 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
    >
    > 이름은 문자(A-Z)로 시작해야 합니다. 영숫자만 포함할 수 있습니다. 밑줄 `_`, 점 `.`, 하이픈 `-`도 사용할 수 있습니다.
 
-1. 구성에 사용자 지정 또는 핵심 데이터 사용 레이블을 할당하려면 **[!UICONTROL 액세스 관리]**&#x200B;를 선택할 수 있습니다. [OLAC(개체 수준 액세스 제어)에 대해 자세히 알아보세요](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+1. 구성에 사용자 지정 또는 핵심 데이터 사용 레이블을 할당하려면 **[!UICONTROL 액세스 관리]**&#x200B;를 선택할 수 있습니다. [OLAC(개체 수준 액세스 제어)에 대해 자세히 알아보세요](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. **인앱 메시지** 채널을 선택하십시오.
 
-1. 이 구성을 사용하여 동의 정책을 메시지와 연결하려면 **[!UICONTROL 마케팅 액션]**&#x200B;을(를) 선택하십시오. 마케팅 액션과 관련된 모든 동의 정책은 고객의 선호도를 존중하도록 활용됩니다. [마케팅 액션에 대해 자세히 알아보기](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). 예: 푸시 타깃팅.
+1. 이 구성을 사용하여 동의 정책을 메시지와 연결하려면 **[!UICONTROL 마케팅 액션]**&#x200B;을(를) 선택하십시오. 마케팅 액션과 관련된 모든 동의 정책은 고객의 선호도를 존중하도록 활용됩니다. [마케팅 액션에 대해 자세히 알아보기](https://experienceleague.adobe.com/ko/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). 예: 푸시 타깃팅.
 
 1. 설정을 정의할 플랫폼을 선택합니다. 이 설정을 사용하면 각 플랫폼에 대한 대상 앱을 지정할 수 있으며, 여러 플랫폼에서 일관되게 콘텐츠를 게재할 수 있습니다.
 
@@ -93,7 +93,7 @@ Journey Optimizer을 사용하여 인앱 메시지를 보내기 전에 적절한
 
 1. 데이터 수집 UI에서 **[!UICONTROL 데이터스트림]**&#x200B;을(를) 선택하고 데이터스트림(예: **[!DNL Luma Mobile App]**)을 선택합니다.
 1. ![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)에 대해 **[!UICONTROL 자세히]**&#x200B;를 선택하고 상황에 맞는 메뉴에서 ![편집](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 편집]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** 화면에서 **[!UICONTROL Adobe Journey Optimizer]**&#x200B;을(를) 선택했는지 확인하십시오. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)을 참조하세요.
+1. **[!UICONTROL 데이터스트림]** > ![폴더](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]** 화면에서 **[!UICONTROL Adobe Journey Optimizer]**&#x200B;을(를) 선택했는지 확인하십시오. 자세한 내용은 [Adobe Experience Platform 설정](https://experienceleague.adobe.com/ko/docs/experience-platform/datastreams/configure)을 참조하세요.
 1. 데이터스트림 구성을 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
 
 
@@ -354,6 +354,6 @@ Assurance UI에서 인앱 메시지의 유효성을 검사할 수 있습니다.
 >
 >Journey Optimizer 및 Experience Platform Mobile SDK용 Journey Optimizer 확장을 사용하여 인앱 메시지를 활성화하고 인앱 메시지 캠페인을 추가했습니다.
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[오퍼 만들기 및 표시](journey-optimizer-offers.md)**
