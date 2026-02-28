@@ -176,10 +176,10 @@ XDM 개체를 만들기 전에 [Luma 데모 사이트](https://newluma.enablemen
 
 동일한 단계를 수행하여 이러한 추가 데이터 요소를 만듭니다.
 
-* **`User Id`**이(가) 다음에 매핑됨
+* **`User Id`**&#x200B;이(가) 다음에 매핑됨
   `adobeDataLayer.0.user.id`
 
-* **`User Logged In`**이(가) 다음에 매핑됨
+* **`User Logged In`**&#x200B;이(가) 다음에 매핑됨
   `adobeDataLayer.0.user.loggedIn`
 
 * **`Ecommerce Product Id`**&#x200B;이(가) `adobeDataLayer.0.ecommerce.detail.products.0.id`에 매핑됨
