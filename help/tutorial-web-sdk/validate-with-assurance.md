@@ -4,7 +4,7 @@ description: Adobe Experience Platform Assurance를 사용하여 Platform Web SD
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 7%
@@ -95,4 +95,4 @@ Debugger 단원에서 이 작업을 수행하는 방법 검토:
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)에서 공유하십시오.
