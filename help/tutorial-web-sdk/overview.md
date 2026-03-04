@@ -70,7 +70,7 @@ Experience Platform Web SDK은 Adobe Experience Cloud 고객이 Adobe Experience
   * See the documentation for more information on [Journey Optimizer permission configuration](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions#campaign-capability).
   -->
 
-* 선택적 **Adobe Analytics** 단원의 경우 보고서 세트 설정, 처리 규칙 및 Analysis Workspace[에 대한 ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)관리자 액세스 권한이 있어야 합니다.
+* 선택적 **Adobe Analytics** 단원의 경우 보고서 세트 설정, 처리 규칙 및 Analysis Workspace[에 대한 &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)관리자 액세스 권한이 있어야 합니다.
 
 * 선택적 **Adobe Target** 단원의 경우 [편집자 또는 승인자](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) 액세스 권한이 있어야 합니다.
 
