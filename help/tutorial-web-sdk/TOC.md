@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: cecf8a4dcbf41ce23fd6b04c8401ba2dbb824f39
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 31%
@@ -26,7 +26,7 @@ ht-degree: 31%
 + 태그 구성 {#tags-configuration}
    + [웹 SDK 확장 기능 설치](install-web-sdk.md)
    + [데이터 요소 만들기](create-data-elements.md)
-   + [ID 만들기](create-identities.md)
+   + [ID 캡처](create-identities.md)
    + [태그 규칙 만들기](create-tag-rule.md)
    + [디버거를 사용하여 유효성 검사](validate-with-debugger.md)
    + [Assurance를 사용한 유효성 검사](validate-with-assurance.md)
