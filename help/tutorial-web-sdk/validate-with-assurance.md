@@ -4,7 +4,7 @@ description: Adobe Experience Platform Assurance를 사용하여 Platform Web SD
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 4e5fe50c1ec7a867fed57700b35851b859680fef
+source-git-commit: da65f13f95a6d1258655e8eebc76cf024221a610
 workflow-type: tm+mt
 source-wordcount: '833'
 ht-degree: 5%
@@ -29,7 +29,7 @@ ht-degree: 5%
 
 ## 전제 조건
 
-데이터 수집 태그 및 [Luma 데모 사이트](https://luma.enablementadobe.com){target="_blank"}에 익숙하고 자습서의 이전 단원을 완료했습니다.
+데이터 수집 태그 및 [Luma 데모 웹 사이트](https://luma.enablementadobe.com){target="_blank"}에 익숙하고 자습서의 이전 단원을 완료했습니다.
 
 * [XDM 스키마 구성](configure-schemas.md)
 * [ID 네임스페이스 구성](configure-identities.md)
@@ -50,7 +50,7 @@ Assurance 세션을 시작하는 방법에는 여러 가지가 있습니다.
 
 Edge 추적을 활성화하려면 다음을 수행하십시오.
 
-1. [Luma 데모 사이트](https://luma.enablementadobe.com)&#x200B;(으)로 이동하여 디버거를 사용하여 [사이트의 태그 속성을 자신의 개발 속성으로 전환](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)합니다.
+1. [Luma 데모 웹 사이트](https://luma.enablementadobe.com)&#x200B;(으)로 이동하여 디버거를 사용하여 [사이트의 태그 속성을 자신의 개발 속성으로 전환](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)합니다.
 1. 조직 이름이 표시된 디버거에 로그인되어 있는지 확인하십시오. 사용자 이름이 대신 표시되는 경우 로그아웃한 후 다시 로그인해 보십시오.
 1. **[!UICONTROL Experience Platform Debugger]**&#x200B;의 왼쪽 탐색에서 **[!UICONTROL 로그]**&#x200B;를 선택합니다.
 1. **[!UICONTROL Edge]** 탭을 선택하고 **[!UICONTROL 연결]**&#x200B;을 선택합니다.
@@ -124,4 +124,4 @@ Web SDK에서 들어오는 히트가 에지에 수신되면 볼 수 있습니다
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=ko)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)에서 공유하십시오.

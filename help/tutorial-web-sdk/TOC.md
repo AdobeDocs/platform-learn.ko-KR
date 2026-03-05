@@ -7,10 +7,10 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: 5645331be467c4128d9267b8c2656f46bada25c2
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 31%
+source-wordcount: '95'
+ht-degree: 29%
 
 ---
 
@@ -33,10 +33,11 @@ ht-degree: 31%
 
 + 응용 프로그램 설정 {#applications-setup}
    + [Experience Platform 설정](setup-experience-platform.md)
+   + [프로필 및 Edge 세그멘테이션 설정](setup-profile-and-edge-segmentation.md)
+   + [Journey Optimizer 웹 채널 설정](setup-web-channel.md)
    + [Adobe Analytics 설정](setup-analytics.md)
    + [Audience Manager 설정](setup-audience-manager.md)
    + [Target 설정](setup-target.md)
-   + [Journey Optimizer 웹 채널 설정](setup-web-channel.md)
 
 + 동의 관리 {#consent-management}
    + [동의 설정](setup-consent.md)
