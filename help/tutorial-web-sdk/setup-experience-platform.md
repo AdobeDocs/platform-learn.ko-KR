@@ -44,7 +44,7 @@ Experience Platform은 이전에 만든 것과 동일한 XDM 스키마를 사용
 
 ## 데이터 세트 만들기
 
-Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)은(는) 데이터 수집을 위한 저장소 및 관리 구성이며, 일반적으로 스키마(열) 및 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
+Adobe Experience Platform에 성공적으로 수집된 모든 데이터는 데이터 세트로 데이터 레이크 내에 유지됩니다. [dataset](https://experienceleague.adobe.com/ko/docs/experience-platform/catalog/datasets/overview)은(는) 데이터 수집을 위한 저장소 및 관리 구성이며, 일반적으로 스키마(열) 및 필드(행)를 포함하는 테이블입니다. 데이터 세트에는 저장하는 데이터의 다양한 측면을 설명하는 메타데이터도 포함됩니다.
 
 Luma 웹 이벤트 데이터에 대한 데이터 세트를 설정해 보겠습니다.
 
@@ -177,9 +177,9 @@ Platform Edge Network에서 요청을 수신하고 Platform 데이터 세트로 
 
 >[!INFO]
 >
->  쿼리 서비스는 데이터 엔지니어와 분석가를 위한 매우 강력한 도구입니다. Adobe Experience Platform의 쿼리 서비스에 대한 자세한 내용은 Platform 튜토리얼 섹션에서 [데이터 탐색](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)을 참조하세요.
+>  쿼리 서비스는 데이터 엔지니어와 분석가를 위한 매우 강력한 도구입니다. Adobe Experience Platform의 쿼리 서비스에 대한 자세한 내용은 Platform 튜토리얼 섹션에서 [데이터 탐색](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorials/queries/explore-data)을 참조하세요.
 
 
 >[!NOTE]
 >
->Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)에서 공유하십시오.
+>Adobe Experience Platform 웹 SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=ko)에서 공유하십시오.
