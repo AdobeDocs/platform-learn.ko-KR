@@ -26,4 +26,4 @@ Adobe Experience Platform의 데이터 위생 기능을 사용하여 데이터 �
 
 >[!NOTE]
 >
-> 모든 플랫폼 고객은 [요청 시 데이터 세트를 삭제](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete)할 수 있습니다. 데이터 세트 삭제 예약은 현재 Healthcare Shield 또는 Privacy and Security Shield 고객만 사용할 수 있습니다.
+> 모든 플랫폼 고객은 [요청 시 데이터 세트를 삭제](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=ko#delete)할 수 있습니다. 데이터 세트 삭제 예약은 현재 Healthcare Shield 또는 Privacy and Security Shield 고객만 사용할 수 있습니다.

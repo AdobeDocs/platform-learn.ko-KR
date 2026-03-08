@@ -82,7 +82,7 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 개인 ID 필드의 값이 일치하는 경우 개인 ID 필드의 이름은 중요하지 않습니다. 개인 ID로 정의된 한 데이터 세트에 `email`이(가) 있고 다른 데이터 세트에 `emailAddress`이(가) 있다고 가정해 보겠습니다. `delaigle@adobe.com`이(가) 두 데이터 세트의 개인 ID 필드에 대한 동일한 값이면 CJA에서 데이터를 연결할 수 있습니다.
 
-여기에서 CJA FAQ를 검토하여 ID 결합과 관련된 뉘앙스를 이해하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
+여기에서 CJA FAQ를 검토하여 ID 결합과 관련된 뉘앙스를 이해하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ko).
 
 ### 개인 ID를 사용하여 데이터 결합
 

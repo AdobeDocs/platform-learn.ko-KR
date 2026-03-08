@@ -16,7 +16,7 @@ ht-degree: 10%
 
 # 쿼리 서비스 및 데이터 Distiller 개요
 
-Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 기능을 통해 사용할 수 있는 데이터 출력 및 예약과 같은 향상된 기능을 통해 SQL을 사용하여 데이터 레이크에 저장된 고객 경험 데이터를 탐색, 유효성 검사 및 변환할 수 있습니다. 이 비디오는 사용자가 다양한 플랫폼 기반 애플리케이션에서 쿼리 서비스를 활용하는 방법을 이해하는 데 도움이 되는 핵심 기능에 대한 개요를 제공합니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)를 참조하세요.
+Adobe Experience Platform Query Service를 사용하면 Data Distiller 추가 기능을 통해 사용할 수 있는 데이터 출력 및 예약과 같은 향상된 기능을 통해 SQL을 사용하여 데이터 레이크에 저장된 고객 경험 데이터를 탐색, 유효성 검사 및 변환할 수 있습니다. 이 비디오는 사용자가 다양한 플랫폼 기반 애플리케이션에서 쿼리 서비스를 활용하는 방법을 이해하는 데 도움이 되는 핵심 기능에 대한 개요를 제공합니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/query/home)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 

@@ -81,7 +81,7 @@ ht-degree: 1%
 ## 추가 리소스
 
 * [Webhook.site](https://webhook.site/)
-* [데이터 수집 알림 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [데이터 수집 알림 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ko)
 * [Adobe I/O Events 설명서 시작](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 이제 [데이터 수집](ingest-batch-data.md)을 시작합니다.

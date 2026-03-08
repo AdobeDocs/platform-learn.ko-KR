@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Adobe Audience Manager Data Connector를 사용하여 데이터 수집
 
-이 통합 비디오에서는 Audience Manager Data Connector를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고 다른 풍부한 데이터와 결합하는 방법을 알아봅니다. 자세한 내용은 [Audience Manager 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)를 참조하세요.
+이 통합 비디오에서는 Audience Manager Data Connector를 사용하여 AAM의 트레이트 및 세그먼트를 플랫폼으로 가져오고 다른 풍부한 데이터와 결합하는 방법을 알아봅니다. 자세한 내용은 [Audience Manager 소스 커넥터 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

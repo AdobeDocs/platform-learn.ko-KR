@@ -16,6 +16,6 @@ ht-degree: 28%
 
 # 쿼리 서비스를 사용하여 타블로에서 옴니채널 인사이트 분석 및 시각화
 
-이탈 분석 예제를 사용하여 외부 데이터 시각화 도구와 함께 Adobe Experience Platform 쿼리 서비스를 사용하는 방법을 알아봅니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)를 참조하세요.
+이탈 분석 예제를 사용하여 외부 데이터 시각화 도구와 함께 Adobe Experience Platform 쿼리 서비스를 사용하는 방법을 알아봅니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/ko/docs/experience-platform/query/home)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)

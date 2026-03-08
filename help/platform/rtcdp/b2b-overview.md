@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Real-Time Customer Data Platform(CDP), B2B edition 개요
 
-B2B(Business-to-Business) 마케터가 여러 시스템에서 사용자와 계정 프로필을 통합하고 고객을 완전히 이해하는 방법에 대해 알아봅니다. 자세한 내용은 [Real-Time CDP B2B edition 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html)를 참조하세요.
+B2B(Business-to-Business) 마케터가 여러 시스템에서 사용자와 계정 프로필을 통합하고 고객을 완전히 이해하는 방법에 대해 알아봅니다. 자세한 내용은 [Real-Time CDP B2B edition 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on&enablevpops)

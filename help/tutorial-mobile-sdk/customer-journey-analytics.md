@@ -18,7 +18,7 @@ Customer Journey Analytics과의 모바일 앱 상호 작용을 보고하고 분
 
 Adobe Analytics과 달리 Customer Journey Analytics은 Experience Platform에서 만든 데이터 세트의 데이터를 *사용*&#x200B;합니다. 데이터는 Adobe Experience Platform Mobile SDK을 사용하여 Customer Journey Analytics으로 직접 전송되지 않고 데이터 세트로 전송됩니다. 그런 다음 Customer Journey Analytics에서 연결을 구성하여 보고 및 분석 프로젝트에서 사용할 데이터 세트를 선택합니다.
 
-자습서의 이 단원은 Luma 자습서 앱에서 캡처한 데이터를 보고하고 분석하는 데 중점을 둡니다. Customer Journey Analytics의 고유한 기능 중 하나는 고객 여정에 대한 심도 있는 통찰력을 얻기 위해 여러 소스(CRM, 판매 지점, 로열티 애플리케이션, 콜 센터)와 채널(웹, 모바일, 오프라인)의 데이터를 결합하는 것입니다. 이 기능은 이 단원에서 다루지 않습니다. 자세한 내용은 [Customer Journey Analytics 개요](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)를 참조하십시오.
+자습서의 이 단원은 Luma 자습서 앱에서 캡처한 데이터를 보고하고 분석하는 데 중점을 둡니다. Customer Journey Analytics의 고유한 기능 중 하나는 고객 여정에 대한 심도 있는 통찰력을 얻기 위해 여러 소스(CRM, 판매 지점, 로열티 애플리케이션, 콜 센터)와 채널(웹, 모바일, 오프라인)의 데이터를 결합하는 것입니다. 이 기능은 이 단원에서 다루지 않습니다. 자세한 내용은 [Customer Journey Analytics 개요](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-overview/cja-overview)를 참조하십시오.
 
 
 ## 전제 조건
@@ -113,7 +113,7 @@ Customer Journey Analytics의 연결은 보고 및 분석에 사용할 Experienc
 
 데이터 보기는 Customer Journey Analytics과 관련된 컨테이너입니다. 이를 통해 연결에서 데이터를 해석하는 방법을 결정할 수 있습니다. 연결에서 Analysis Workspace의 구성 요소(차원, 지표)로 정의한 데이터 세트에서 표준 및 스키마 필드를 구성할 수 있습니다.
 
-Customer Journey Analytics의 데이터 보기는 연결에서 데이터를 올바르게 설정하고 정의하는 데 엄청난 유연성을 제공합니다. 이 자습서에서는 보고 및 분석에 필요한 기능만 사용합니다. 자세한 내용은 [데이터 보기](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)를 참조하세요.
+Customer Journey Analytics의 데이터 보기는 연결에서 데이터를 올바르게 설정하고 정의하는 데 엄청난 유연성을 제공합니다. 이 자습서에서는 보고 및 분석에 필요한 기능만 사용합니다. 자세한 내용은 [데이터 보기](https://experienceleague.adobe.com/ko/docs/analytics-platform/using/cja-dataviews/data-views)를 참조하세요.
 
 
 데이터 보기를 만들려면 다음을 수행하십시오.
@@ -213,7 +213,7 @@ Customer Journey Analytics의 데이터 보기는 연결에서 데이터를 올�
 
 ## 프로젝트 만들기
 
-Workspace 프로젝트는 Customer Journey Analytics에서 보고서 및 시각화를 빌드하는 데 사용됩니다. 포괄적인 보고서와 매력적인 시각화를 구축할 수 있는 가능성은 여러 가지가 있지만, 이는 이 자습서의 범위를 벗어납니다. 자세한 내용은 [Workspace 개요](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) 및 [새 프로젝트 빌드](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)를 참조하십시오.
+Workspace 프로젝트는 Customer Journey Analytics에서 보고서 및 시각화를 빌드하는 데 사용됩니다. 포괄적인 보고서와 매력적인 시각화를 구축할 수 있는 가능성은 여러 가지가 있지만, 이는 이 자습서의 범위를 벗어납니다. 자세한 내용은 [Workspace 개요](https://experienceleague.adobe.com/ko/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) 및 [새 프로젝트 빌드](https://experienceleague.adobe.com/ko/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)를 참조하십시오.
 
 단원의 이 섹션에서는 다음에 대한 보고서 및 시각화를 표시하는 프로젝트를 만듭니다.
 
@@ -468,6 +468,6 @@ Commerce 이벤트 보고서가 완료되었습니다.
 >[!SUCCESS]
 >
 >
->Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)에서 공유하십시오.
+>Adobe Experience Platform Mobile SDK에 대해 학습하는 데 시간을 투자해 주셔서 감사합니다. 질문이 있거나 일반적인 피드백을 공유하고 싶거나 향후 콘텐츠에 대한 제안이 있는 경우 이 [Experience League 커뮤니티 토론 게시물](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=ko)에서 공유하십시오.
 
 다음: **[결론 및 다음 단계](conclusion.md)**

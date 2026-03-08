@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 계정 프로필 보기
 
-Real-Time Customer Data Platform, B2B edition 및 Adobe Experience Platform에서 계정 프로필 및 기회를 보는 방법에 대해 알아봅니다. 자세한 내용은 [프로필 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html)를 참조하세요.
+Real-Time Customer Data Platform, B2B edition 및 Adobe Experience Platform에서 계정 프로필 및 기회를 보는 방법에 대해 알아봅니다. 자세한 내용은 [프로필 설명서](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=ko)를 참조하세요.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338251?learn=on&enablevpops)
 

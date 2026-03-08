@@ -26,7 +26,7 @@ ht-degree: 0%
 
 정말 놀랍습니다. 프로필에 대해 *모든 데이터*&#x200B;를 활성화할 필요가 없습니다. 실제로 활성화 사용 사례에 필요한 데이터만 활성화해야 합니다. 강력한 고객 프로필에 빠르게 액세스해야 하는 마케팅 사용 사례, 콜 센터 통합 등에 사용할 데이터를 활성화합니다. 분석용으로만 데이터를 업로드하는 경우에는 프로필에 대해 활성화해서는 안 됩니다.
 
-실시간 고객 프로필 데이터에 사용할 수 있는 중요한 [보호 기능](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)이 있습니다. 이러한 보호 기능은 프로필에 사용할 수 있는 데이터를 결정할 때 검토해야 합니다.
+실시간 고객 프로필 데이터에 사용할 수 있는 중요한 [보호 기능](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ko)이 있습니다. 이러한 보호 기능은 프로필에 사용할 수 있는 데이터를 결정할 때 검토해야 합니다.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
