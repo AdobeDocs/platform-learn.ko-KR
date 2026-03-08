@@ -3,12 +3,12 @@ title: Adobe Experience Platform의 대상
 description: Adobe Experience Platform의 대상자 만들기 옵션에 대해 알아보기
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 feature: Audiences
-role: Users
+role: User
 level: Beginner
-source-git-commit: 7050388c3dcda84981f7dffd5cd6df21a101e9ad
+source-git-commit: 0ffafaa23a1305811a8c1063d90ca1a0059a6ca6
 workflow-type: tm+mt
 source-wordcount: '920'
-ht-degree: 16%
+ht-degree: 22%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="Audience Portal 및 구성 소개" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423369/?format=jpeg&nocache=1740173577252&captions=kor" alt="Audience Portal 및 구성 소개"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="Audience Portal 및 구성 소개"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +52,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Adobe Experience Platform에 대상자 업로드" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423360/?format=jpeg&nocache=1740173577237&captions=kor" alt="Adobe Experience Platform에 대상자 업로드"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Adobe Experience Platform에 대상자 업로드"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -94,7 +94,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-audiences.md" title="대상자 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31708?format=jpeg&nocache=1740173578323&captions=kor" alt="대상자 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27254?format=jpeg&nocache=1740173578323" alt="대상자 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/audience-rule-builder-overview.md" title="대상 규칙 빌더 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413204/?format=jpeg&nocache=1740173578357&captions=kor" alt="대상 규칙 빌더 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333301/?format=jpeg&nocache=1740173578357" alt="대상 규칙 빌더 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -140,7 +140,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-content-based-audiences.md" title="콘텐츠 기반 대상 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413209/?format=jpeg&nocache=1740173578346&captions=kor" alt="콘텐츠 기반 대상 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333302/?format=jpeg&nocache=1740173578346" alt="콘텐츠 기반 대상 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-conversion-audiences.md" title="전환 대상자 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413194/?format=jpeg&nocache=1740173578309&captions=kor" alt="전환 대상자 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333303/?format=jpeg&nocache=1740173578309" alt="전환 대상자 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-dynamic-audiences.md" title="동적 대상자 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34357?format=jpeg&nocache=1740173578383&captions=kor" alt="동적 대상자 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27428?format=jpeg&nocache=1740173578383" alt="동적 대상자 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-multi-entity-audiences.md" title="다중 엔티티 대상 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345110?format=jpeg&nocache=1740173578335&captions=kor" alt="다중 엔티티 대상 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32179?format=jpeg&nocache=1740173578335" alt="다중 엔티티 대상 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,7 +232,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-sequential-audiences.md" title="순차적 대상자 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413214/?format=jpeg&nocache=1740173578395&captions=kor" alt="순차적 대상자 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333305/?format=jpeg&nocache=1740173578395" alt="순차적 대상자 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -276,7 +276,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## 페더레이션된 대상자 구성
+## 페더레이션된 대상자 컴포지션
 
 <!-- CARDS
 * fac/overview-of-federated-audience-composition.md
@@ -290,7 +290,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="페더레이션 대상 구성 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450890/?captions=kor&format=jpeg&nocache=1740173579477" alt="페더레이션 대상 구성 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="페더레이션 대상 구성 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -300,7 +300,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="fac/overview-of-federated-audience-composition.md" target="_blank" rel="referrer" title="페더레이션 대상 구성 개요">Federated Audience 컴포지션 개요</a>
                     </p>
-                    <p class="is-size-6">Experience Platform 페더레이션된 대상자 구성이 Adobe Real-Time CDP 및 Adobe Journey Optimizer 사용자에게 데이터 관리 유연성과 효율성을 제공하는 방법에 대해 알아봅니다.</p>
+                    <p class="is-size-6">Experience Platform 페더레이션된 대상자 컴포지션이 Adobe Real-Time CDP 및 Adobe Journey Optimizer 사용자에게 데이터 관리 유연성과 효율성을 제공하는 방법에 대해 알아봅니다.</p>
                 </div>
                 <a href="fac/overview-of-federated-audience-composition.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">시청</span>
@@ -313,7 +313,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Federated Audience 컴포지션 연결 및 구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451563/?captions=kor&format=jpeg&nocache=1740173579488" alt="Federated Audience 컴포지션 연결 및 구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Federated Audience 컴포지션 연결 및 구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -336,7 +336,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="페더레이션 대상 컴포지션 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448585/?format=jpeg&nocache=1740173579467&captions=kor" alt="페더레이션 대상 컴포지션 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="페더레이션 대상 컴포지션 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -369,7 +369,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-segmentation-demo.md" title="스트리밍 세분화 데모" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40068?format=jpeg&nocache=1740173579663&captions=kor" alt="스트리밍 세분화 데모"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36184?format=jpeg&nocache=1740173579663" alt="스트리밍 세분화 데모"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -406,7 +406,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-configuration-flow.md" title="세그먼트 매치 구성 플로우" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346708/?format=jpeg&nocache=1740173579850&captions=kor" alt="세그먼트 매치 구성 플로우"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342336/?format=jpeg&nocache=1740173579850" alt="세그먼트 매치 구성 플로우"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -416,7 +416,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="../segments/segment-match-configuration-flow.md" target="_blank" rel="referrer" title="세그먼트 매치 구성 플로우">세그먼트 매치 구성 플로우</a>
                     </p>
-                    <p class="is-size-6">데이터 파트너와의 세그먼트 공유가 연결되면 파트너와의 데이터 공유를 탐색하고 시작할 수 있습니다. 이 비디오는... 프로세스를 안내합니다(설명은 60~160자 사이여야 함).</p>
+                    <p class="is-size-6">데이터 파트너와의 세그먼트 공유가 연결되면 파트너와 데이터 공유를 탐색하고 시작할 수 있습니다. 이 비디오는... 프로세스를 안내합니다(설명은 60~160자 사이여야 함).</p>
                 </div>
                 <a href="../segments/segment-match-configuration-flow.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">자세히 알아보기</span>
@@ -429,7 +429,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-connection-setup.md" title="세그먼트 매치 연결 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346354/?format=jpeg&nocache=1740173579840&captions=kor" alt="세그먼트 매치 연결 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342211/?format=jpeg&nocache=1740173579840" alt="세그먼트 매치 연결 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -452,7 +452,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-data-governance.md" title="세그먼트 매치 데이터 거버넌스" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346361/?format=jpeg&nocache=1740173579862&captions=kor" alt="세그먼트 매치 데이터 거버넌스"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342212/?format=jpeg&nocache=1740173579862" alt="세그먼트 매치 데이터 거버넌스"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -475,7 +475,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-pre-share-insights.md" title="세그먼트 매치 사전 공유 인사이트" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346347/?format=jpeg&nocache=1740173579872&captions=kor" alt="세그먼트 매치 사전 공유 인사이트"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342378/?format=jpeg&nocache=1740173579872" alt="세그먼트 매치 사전 공유 인사이트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -498,7 +498,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-receiving-data.md" title="세그먼트 일치 수신 데이터" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3411143/?format=jpeg&nocache=1740173579825&captions=kor" alt="세그먼트 일치 수신 데이터"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/344419/?format=jpeg&nocache=1740173579825" alt="세그먼트 일치 수신 데이터"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -506,7 +506,7 @@ Adobe Experience Platform의 대상자에 대해 알아봅니다.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="../segments/segment-match-receiving-data.md" target="_blank" rel="referrer" title="세그먼트 일치 수신 데이터">세그먼트 일치 수신 데이터</a>
+                        <a href="../segments/segment-match-receiving-data.md" target="_blank" rel="referrer" title="세그먼트 일치 수신 데이터">세그먼트 매치 수신 데이터</a>
                     </p>
                     <p class="is-size-6">세그먼트 일치 기능을 사용하면 전략적 파트너가 데이터를 공유할 수 있습니다. 이 비디오에서는 데이터를 승인하고 수신하는 방법 및 데이터를 보고 고유한 세그먼트에 추가할 수 있는 위치에 대해 알아봅니다.</p>
                 </div>

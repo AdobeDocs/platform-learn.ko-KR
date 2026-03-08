@@ -3,11 +3,11 @@ title: Federated Audience Composition 높은 수준의 아키텍처 및 플로�
 seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 높은 수준의 아키텍처 및 흐름으로 통합 대상 구성
 description: 높은 수준의 아키텍처 및 Federated Audience Composition의 흐름에 대한 개요입니다.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
 exl-id: 4cb0b730-4206-476b-93d9-776dfbd464ff
-source-git-commit: 0564f516cfba7ea09ac9da19d94f46d984e9e00a
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%

@@ -2,12 +2,12 @@
 title: Privacy Service 인터페이스 사용
 description: UI에서 개인 정보 보호 요청을 만들고 대시보드에서 상태를 모니터링/검토하는 방법을 알아봅니다.
 feature: Privacy
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7719
 thumbnail: 336079.png
 exl-id: 8436345a-7e0b-40af-8bd8-534fdf1f8e44
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 1%

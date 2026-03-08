@@ -2,9 +2,9 @@
 title: SDK 바꾸기 - 모바일 앱의 Adobe Target 구현을 Offer Decisioning 및 Target 확장으로 마이그레이션합니다.
 description: Adobe Target에서 SDK 및 Target Mobile 확장 기능으로 마이그레이션할 때 Offer Decisioning을 교체하는 방법을 알아봅니다.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '725'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 ## 종속성 업데이트
 
-+++Android 예
++++Android example
 
 >[!BEGINTABS]
 
@@ -62,7 +62,7 @@ implementation 'com.adobe.marketing.mobile:userprofile'
 
 >[!ENDTABS]
 
-+++
++++ 
 
 +++ iOS 예
 
@@ -269,7 +269,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 많은 Target 확장 API에는 아래 표에 설명된 Offer Decisioning 및 Target 확장을 사용하는 동일한 접근 방식이 있습니다. [함수](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/)에 대한 자세한 내용은 API 참조를 참조하십시오.
 
 | Target 확장 | Offer Decisioning 및 Target 확장 | 참고 |
-| --- | --- | --- | 
+| --- | --- | --- |
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | `getPropositions` API를 사용할 때 SDK에서 캐시되지 않은 범위를 가져오기 위한 원격 호출이 수행되지 않습니다. |
 | [displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [오퍼 -> 표시됨()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | 또한 `generateDisplayInteractionXdm` Offer 메서드를 사용하여 항목 표시용 XDM을 생성할 수 있습니다. 그런 다음 Edge 네트워크 SDK의 sendEvent API를 사용하여 추가 XDM, 자유 형식 데이터를 첨부하고 경험 이벤트를 원격으로 전송할 수 있습니다. |
@@ -288,4 +288,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 >[!NOTE]
 >
->Target 확장에서 Offer Decisioning 및 Target 확장으로 모바일 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ko#M625)에 게시하여 알려 주십시오.
+>Target 확장에서 Offer Decisioning 및 Target 확장으로 모바일 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)에 게시하여 알려 주십시오.

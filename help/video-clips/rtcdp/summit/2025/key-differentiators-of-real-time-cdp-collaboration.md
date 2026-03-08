@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: d71025d9-1aa0-4b84-a802-ceb7f67c6a0f
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 마케터 친화적인 UI, 상호 운용성 및 개인정보 보호 중심 디자인을 포함하여 Adobe Real-Time CDP Collaboration의 고유한 기능을 살펴보십시오.
 
 <!-- 62_OS511_3442426_75_key-differentiators-of-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3460548/?learn=on&enablevpops=true&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/3458280/?learn=on&enablevpops=true)

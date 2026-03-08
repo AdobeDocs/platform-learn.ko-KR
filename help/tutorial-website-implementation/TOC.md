@@ -4,14 +4,14 @@ breadcrumb-title: 웹 튜토리얼
 user-guide-description: 태그를 사용하여 웹 사이트에서 Adobe Experience Cloud 솔루션을 구현하는 방법에 대해 알아봅니다.
 solution: Data Collection
 feature: Tags
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-2179
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 51%
+ht-degree: 53%
 
 ---
 
@@ -30,5 +30,5 @@ ht-degree: 51%
    + [Adobe Analytics 추가](analytics.md)
    + [Adobe Audience Manager 추가](audience-manager.md)
    + [Experience Cloud 통합](integrations.md)
-+ Publish 내 속성{#publish}
-   + [속성 Publish](publish.md)
++ 속성 게시{#publish}
+   + [속성 게시](publish.md)

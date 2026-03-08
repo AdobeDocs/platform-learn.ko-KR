@@ -4,10 +4,10 @@ description: AEM Assets CS에 ACCS 연결
 kt: 5342
 doc-type: tutorial
 exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1671'
+ht-degree: 1%
 
 ---
 
@@ -278,7 +278,7 @@ AEM CS 작성자 환경에 로그인하고 **Assets**(으)로 이동합니다.
 이 제품에 대해 다음 SKU를 추가합니다.
 
 | 키 | 값 | 사용 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Light-Gold` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Light-Gold-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Light-Gold-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
@@ -303,7 +303,7 @@ AEM CS 작성자 환경에 로그인하고 **Assets**(으)로 이동합니다.
 이 제품에 대해 다음 SKU를 추가합니다.
 
 | 키 | 값 | 사용 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Space-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Space-Black-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Space-Black-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
@@ -329,7 +329,7 @@ AEM CS 작성자 환경에 로그인하고 **Assets**(으)로 이동합니다.
 이 제품에 대해 다음 SKU를 추가합니다.
 
 | 키 | 값 | 사용 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Sky-Blue` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Sky-Blue-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Sky-Blue-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
@@ -354,7 +354,7 @@ AEM CS 작성자 환경에 로그인하고 **Assets**(으)로 이동합니다.
 이 제품에 대해 다음 SKU를 추가합니다.
 
 | 키 | 값 | 사용 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Cloud-White` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Cloud-White-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Cloud-White-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |

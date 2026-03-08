@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -66,7 +66,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 다음 변수를 정의해야 합니다.
 
 | 키 | 값 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `CONST_client_id` | Adobe I/O 프로젝트 클라이언트 ID |
 | `CONST_client_secret` | Adobe I/O 프로젝트 클라이언트 암호 |
 | `CONST_scope` | Adobe I/O 프로젝트 범위 |
@@ -124,7 +124,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 ![WF Fusion](./images/wffusion20.png)
 
 | 키 | 값 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
 | `Method` | `POST` |
 | `Body Type` | `x-www-form-urlencoded` |
@@ -136,7 +136,7 @@ Workfront Fusion 및 Adobe I/O을 사용하여 Adobe Firefly Services API를 쿼
 아래 각 값에 대한 항목을 추가합니다.
 
 | 키 | 값 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `client_id` | `CONST_client_id`에 대해 미리 정의된 변수 |
 | `client_secret` | `CONST_client_secret`에 대해 미리 정의된 변수 |
 | `scope` | `CONST_scope`에 대해 미리 정의된 변수 |

@@ -2,15 +2,15 @@
 title: 데이터 수집 개요
 description: Adobe Experience Platform의 데이터 수집 기능을 사용하면 통합 프로필 관리를 위해 데이터를 하나의 개방적이고 확장 가능한 플랫폼으로 통합할 수 있습니다.
 feature: Data Ingestion
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-2699
 thumbnail: 27106.jpg
 exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '729'
-ht-degree: 16%
+ht-degree: 19%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 16%
 
 Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 고객 프로필 관리를 위해 데이터를 하나의 개방적이고 확장 가능한 플랫폼으로 통합할 수 있습니다. 자세한 내용은 [데이터 수집 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/346834?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 ## 데이터 수집 방법
 
@@ -35,7 +35,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/overview.md" title="소스 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329862?format=jpeg&nocache=1740414616559&captions=kor" alt="소스 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29694?format=jpeg&nocache=1740414616559" alt="소스 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Adobe Experience Platform Web SDK 및 Edge Network 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37266?format=jpeg&nocache=1740414616573&captions=kor" alt="Adobe Experience Platform Web SDK 및 Edge Network 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616573" alt="Adobe Experience Platform Web SDK 및 Edge Network 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -95,7 +95,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="batch-ingestion-overview.md" title="일괄 데이터 수집 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345664?format=jpeg&nocache=1740414616813&captions=kor" alt="일괄 데이터 수집 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330995?format=jpeg&nocache=1740414616813" alt="일괄 데이터 수집 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -118,7 +118,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-streaming-ingestion.md" title="스트리밍 데이터 수집 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31706?format=jpeg&nocache=1740414616825&captions=kor" alt="스트리밍 데이터 수집 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28425?format=jpeg&nocache=1740414616825" alt="스트리밍 데이터 수집 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -141,7 +141,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Adobe Experience Platform Web SDK 및 Edge Network 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37266?format=jpeg&nocache=1740414616799&captions=kor" alt="Adobe Experience Platform Web SDK 및 Edge Network 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616799" alt="Adobe Experience Platform Web SDK 및 Edge Network 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-crm.md" title="CRM Source 커넥터를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32138?format=jpeg&nocache=1740414616941&captions=kor" alt="CRM Source 커넥터를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740414616941" alt="CRM Source 커넥터를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +201,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-cloud-storage.md" title="클라우드 스토리지 Source 커넥터를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32137?format=jpeg&nocache=1740414616962&captions=kor" alt="클라우드 스토리지 Source 커넥터를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740414616962" alt="클라우드 스토리지 Source 커넥터를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -224,7 +224,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-source-connector.md" title="Source 커넥터를 사용하여 데이터 스트리밍" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410106?format=jpeg&nocache=1740414616930&captions=kor" alt="Source 커넥터를 사용하여 데이터 스트리밍"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740414616930" alt="Source 커넥터를 사용하여 데이터 스트리밍"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -247,7 +247,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-http-api.md" title="스트리밍 연결 HTTP API 끝점을 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410931?format=jpeg&nocache=1740414616952&captions=kor" alt="스트리밍 연결 HTTP API 끝점을 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740414616952" alt="스트리밍 연결 HTTP API 끝점을 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -284,7 +284,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="Adobe Analytics 소스 커넥터를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430256?format=jpeg&nocache=1740414617197&captions=kor" alt="Adobe Analytics 소스 커넥터를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="Adobe Analytics 소스 커넥터를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +307,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="Marketo Engage에서 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451867?format=jpeg&nocache=1740414617186&captions=kor" alt="Marketo Engage에서 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="Marketo Engage에서 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -330,7 +330,7 @@ Adobe Experience Platform의 데이터 수집 기능을 사용하면 실시간 �
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-aam.md" title="Adobe Audience Manager Data Connector를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346987/?format=jpeg&nocache=1740414617207&captions=kor" alt="Adobe Audience Manager Data Connector를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740414617207" alt="Adobe Audience Manager Data Connector를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -3,7 +3,8 @@ title: Workfront 시작하기
 description: Workfront 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: 4d431d9d-2e4b-41a4-a31d-b641e2369ced
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -35,7 +36,7 @@ ht-degree: 1%
 **확장 구성** 팝업이 표시됩니다. 이 플러그인을 사용하도록 다음 필드를 구성합니다.
 
 | 키 | 값 |
-| --------------- | ------------------------------ | 
+| --------------- | ------------------------------ |
 | **`IMS_ENV`** | **PROD** |
 | **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
 | **`SHOW_CUSTOM_FORMS`** | **&#39;{&quot;previewUrl&quot;: true, &quot;publishUrl&quot;: true}&#39;** |

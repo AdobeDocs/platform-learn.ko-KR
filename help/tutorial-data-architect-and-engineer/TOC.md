@@ -1,12 +1,12 @@
 ---
 user-guide-title: 데이터 설계자 및 데이터 엔지니어를 위한 Experience Platform 시작하기
 breadcrumb-title: 데이터 설계자 및 엔지니어 시작하기
-user-guide-description: 플랫폼 구현을 시작하기 위한 실습 튜토리얼입니다. 제공된 샘플 데이터 및 에셋.
-role: Data Architect, Data Engineer, Developer
+user-guide-description: 플랫폼 구현을 시작하기 위한 실습 튜토리얼입니다. 제공된 샘플 데이터 및 자산.
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 40%

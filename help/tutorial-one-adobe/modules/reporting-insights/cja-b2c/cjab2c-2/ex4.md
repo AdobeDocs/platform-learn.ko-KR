@@ -4,9 +4,9 @@ description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: f58af1cf-6f2e-420c-9eed-29382806a9f4
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '720'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 2%
 이 연습을 수행하려면 아래 매핑 테이블을 사용하십시오.
 
 | 소스 필드 | 대상 필드 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `_id` | `_id` |
 | `_id` | 채널._ID |
 | `timeStamp` | 타임스탬프 |
@@ -88,7 +88,7 @@ ht-degree: 2%
 일부 필드의 경우 원래 매핑을 제거하고 **계산된 필드**&#x200B;에 대해 새 매핑을 만들어야 합니다.
 
 | 계산된 필드 | 대상 필드 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value |
 | `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value |
 | `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value |
@@ -129,7 +129,7 @@ ht-degree: 2%
 
 **delta** 필드는 연결을 예약하고 BigQuery 데이터 집합에 들어오는 새 행만 업로드하는 데 사용됩니다. 델타 필드는 일반적으로 항상 타임스탬프 열입니다. 따라서 향후 예약된 데이터 수집의 경우 새로운 최신 타임스탬프가 있는 행만 수집됩니다.
 
-델타 필드로 **timeStamp**&#x200B;을(를) 선택하십시오.
+델타 필드로 **timeStamp**을(를) 선택하십시오.
 **다음**&#x200B;을 클릭합니다.
 
 ![데모](./images/ex437.png)

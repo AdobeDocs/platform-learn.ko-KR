@@ -1,16 +1,16 @@
 ---
-user-guide-title: Target을 at.js 2.x에서 Web SDK로 마이그레이션
-breadcrumb-title: Target을 at.js 2.x에서 Web SDK로 마이그레이션
-user-guide-description: at.js에서 Web SDK 구현으로 성공적으로 마이그레이션하는 방법에 대해 설명하는 Target 고객을 위한 실습 튜토리얼입니다.
+user-guide-title: Target을 at.js 2.x에서 Web SDK으로 마이그레이션
+breadcrumb-title: Target을 at.js 2.x에서 Web SDK으로 마이그레이션
+user-guide-description: at.js에서 웹 SDK 구현으로 성공적으로 마이그레이션하는 방법에 대해 설명하는 Target 고객을 위한 실습 튜토리얼입니다.
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-role: Data Engineer, Developer
+role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-11159
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 5%
@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# Target을 at.js 2.x에서 Platform Web SDK로 마이그레이션 {#migrate-target-to-websdk}
+# Target을 at.js 2.x에서 Platform Web SDK으로 마이그레이션 {#migrate-target-to-websdk}
 
 + [튜토리얼 소개](introduction.md)
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 + [마이그레이션 계획](plan-migration.md)
 
-+ [at.js와 Platform Web SDK 비교](detailed-comparison.md)
++ [Platform Web SDK에 at.js 비교](detailed-comparison.md)
 
 + [초기 설정 수행](initial-setup.md)
 

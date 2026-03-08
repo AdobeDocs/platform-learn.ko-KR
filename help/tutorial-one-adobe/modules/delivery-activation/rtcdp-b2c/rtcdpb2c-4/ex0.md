@@ -1,13 +1,13 @@
 ---
-title: Microsoft Azure Event Hub에 대한 세그먼트 활성화 - Microsoft Azure 환경 구성
-description: Microsoft Azure Event Hub에 대한 세그먼트 활성화 - Microsoft Azure 환경 구성
+title: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - Microsoft Azure 환경 구성
+description: Microsoft Azure 이벤트 허브에 대한 세그먼트 활성화 - Microsoft Azure 환경 구성
 kt: 5342
 doc-type: tutorial
 exl-id: 71200024-a56b-4705-adde-c109b4e86ea1
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '31'
-ht-degree: 6%
+source-wordcount: '26'
+ht-degree: 7%
 
 ---
 
@@ -15,4 +15,6 @@ ht-degree: 6%
 
 테스트
 
-[모든 모듈로 돌아가기](./../../../overview.md)
+<!--
+[Go Back to All Modules](./../../../overview.md)
+-->

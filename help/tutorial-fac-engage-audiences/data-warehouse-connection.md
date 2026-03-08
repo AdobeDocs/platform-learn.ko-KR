@@ -3,11 +3,11 @@ title: Data Warehouse 연결
 seo-title: Configure a data warehouse connection | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Data Warehouse 연결
 description: 이 연습에서는 Federated Audience Composition을 활성화하기 위해 Adobe Experience Platform과 Enterprise Data Warehouse 간의 연결을 구성합니다.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 먼저 Adobe Experience Platform과 엔터프라이즈 Data Warehouse 간에 연결을 구성하겠습니다. 쿼리 빌드를 지원하기 위해 Data Warehouse에 데이터가 있는 방법을 기반으로 스키마와 데이터 모델을 사용합니다.
 
-보여주기 위해 Snowflake 계정에 연결합니다. Federated Audience Composition은 데이터 웨어하우스 연결의 증가하는 목록을 지원합니다. [업데이트된 통합 목록](https://experienceleague.adobe.com/ko/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}을 참조하세요.
+보여주기 위해 Snowflake 계정에 연결합니다. Federated Audience Composition은 데이터 웨어하우스 연결의 증가하는 목록을 지원합니다. [업데이트된 통합 목록](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}을 참조하세요.
 
 ## 단계
 

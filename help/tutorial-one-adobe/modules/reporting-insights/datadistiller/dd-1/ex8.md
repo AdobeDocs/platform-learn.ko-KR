@@ -4,9 +4,9 @@ description: 쿼리 서비스 - 쿼리 서비스 API
 kt: 5342
 doc-type: tutorial
 exl-id: c3afc4fe-df10-4d0e-8c2a-0b056ff797ea
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 설명서
 
-- [Adobe Experience Platform 쿼리 서비스 도움말](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=ko)
+- [Adobe Experience Platform 쿼리 서비스 도움말](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
 - [쿼리 서비스 API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## 쿼리 서비스 API
@@ -93,9 +93,9 @@ limit 10;
 ```sql
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "--aepSandboxName--:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "--aepSandboxName--:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
@@ -106,15 +106,15 @@ limit 10;
 ```json
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "tech-insiders:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "tech-insiders:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
 >[!NOTE]
 >
->위의 JSON 본문의 키 **dbName**&#x200B;은(는) Adobe Experience Platform 인스턴스에서 사용되는 샌드박스를 참조합니다. PROD 샌드박스를 사용하는 경우 dbName은 **prod:all**&#x200B;이어야 하고, **tech-insiders** 등의 다른 샌드박스를 사용하는 경우 dbName은 **tech-insiders:all**&#x200B;이어야 합니다.
+>위의 JSON 본문의 키 **dbName**&#x200B;은(는) Adobe Experience Platform 인스턴스에서 사용되는 샌드박스를 참조합니다. PROD 샌드박스를 사용하는 경우 dbName은 **prod:all**&#x200B;여야 하고, **tech-insiders** 인스턴스와 같은 다른 샌드박스를 사용하는 경우 dbName은 **tech-insiders:all**&#x200B;와 같아야 합니다.
 
 그런 다음 파란색 **보내기** 단추를 클릭하여 세그먼트를 만들고 그 결과를 확인합니다.
 

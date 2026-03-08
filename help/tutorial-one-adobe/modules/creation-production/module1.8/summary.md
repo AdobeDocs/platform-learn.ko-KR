@@ -4,9 +4,9 @@ description: GenStudio for Performance Marketing의 요약 및 이점 - 확장�
 kt: 5342
 doc-type: tutorial
 exl-id: f5b9f7bf-ea95-410f-a2ae-e244641e2412
-source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '45'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,6 @@ Adobe GenStudio for Performance Marketing - 확장성을 학습하는 데 시간
 
 ## 다음 단계
 
-[GenStudio for Performance Marketing - 확장성](./genstudioext.md){target="_blank"}(으)로 돌아가기
+<!--[GenStudio for Performance Marketing - Extensibility](./genstudioext.md){target="_blank"}-->(으)로 돌아가기
 
 [모든 모듈](./../../../overview.md){target="_blank"}(으)로 돌아가기

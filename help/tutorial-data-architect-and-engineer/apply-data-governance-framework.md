@@ -3,12 +3,12 @@ title: 데이터 거버넌스 프레임워크 적용
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 데이터 거버넌스 프레임워크 적용
 description: 이 단원에서는 데이터 거버넌스 프레임워크를 샌드박스에 수집한 데이터에 적용합니다.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -24,9 +24,9 @@ ht-degree: 1%
 Adobe Experience Platform 데이터 거버넌스를 사용하면 고객 데이터를 관리하고 데이터 사용에 적용되는 규정, 제한 사항 및 정책을 준수할 수 있습니다. 데이터 사용 제어를 포함하여 다양한 수준에서 Experience Platform 내에서 핵심적인 역할을 수행합니다.
 
 연습을 시작하기 전에 데이터 거버넌스에 대한 다음 짧은 비디오를 시청하십시오.
->[!VIDEO](https://video.tv.adobe.com/v/41326?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/32135?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
 
 <!--
 ## Permissions required

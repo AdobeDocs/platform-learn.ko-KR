@@ -3,15 +3,15 @@ title: 세그먼트 작성
 seo-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 세그먼트 작성
 description: 이 단원에서는 이전 단원에서 수집한 프로필 데이터를 기반으로 몇 가지 세그먼트를 빌드합니다.
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 세그먼트를 만들고 이 작업으로 동료를 지원해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 세그먼트 만들기에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/31708?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
 ## 권한 필요
@@ -108,7 +108,7 @@ ht-degree: 0%
 왼쪽 탐색에서 **[!UICONTROL 세그먼트]**&#x200B;를 클릭하고 잠시 다음 세 가지 세그먼트를 검토해 보겠습니다.
 
 * 세그먼트 중 두 개는 일괄 처리 세그먼트이고 한 개는 스트리밍 세그먼트입니다.
-* Platform은 가능하면 기본적으로 스트리밍 세그먼테이션으로 설정하므로 기준을 충족하는 즉시 세그먼트를 얻을 수 있습니다. 세그먼트 정의가 스트리밍하기에 너무 복잡한 경우 자동으로 배치로 변환됩니다. 이 경우, 구매 이벤트의 전환 확인 기간이 7일 이상이었으므로 두 세그먼트는 뱃치로 기본 설정되었습니다. 스트리밍 제한 사항의 전체 및 최신 목록은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=ko)를 참조하세요.
+* Platform은 가능하면 기본적으로 스트리밍 세그먼테이션으로 설정하므로 기준을 충족하는 즉시 세그먼트를 얻을 수 있습니다. 세그먼트 정의가 스트리밍하기에 너무 복잡한 경우 자동으로 배치로 변환됩니다. 이 경우, 구매 이벤트의 전환 확인 기간이 7일 이상이었으므로 두 세그먼트는 뱃치로 기본 설정되었습니다. 스트리밍 제한 사항의 전체 및 최신 목록은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html)를 참조하세요.
 * 배치 작업은 매일 일정으로 실행되며 전환할 수 있습니다.
 
 ![지난 30일 동안 동일한 제품을 구입함](assets/segment-review.png)

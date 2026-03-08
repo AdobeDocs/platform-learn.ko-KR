@@ -2,12 +2,12 @@
 title: 고객 데이터를 재충전하여 혁신적인 경험 제공
 description: 다양한 사용 사례에 동일한 데이터를 사용하여 저품질 데이터의 영향을 완화하고, 가치 창출 시간을 줄이고, ROI를 증대하는 방법에 대해 알아봅니다.
 feature: Queries
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 * 활용할 수 있는 Adobe Experience Platform 데이터 준비 기능
 * Adobe Real-Time CDP, Adobe Journey Optimizer 및 Customer Journey Analytics의 ROI 향상
 
->[!VIDEO](https://video.tv.adobe.com/v/3454951?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## SQL 예
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->이 비디오는 Adobe Summit 2020 세션 *[환경을 전기화하기 위한 옴니채널 데이터 충전](https://business.adobe.com/kr/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*&#x200B;에서 발췌한 것입니다.
+>이 비디오는 Adobe Summit 2020 세션 *[환경을 전기화하기 위한 옴니채널 데이터 충전](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*&#x200B;에서 발췌한 것입니다.

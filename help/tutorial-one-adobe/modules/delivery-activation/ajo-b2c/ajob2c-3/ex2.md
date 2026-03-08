@@ -4,7 +4,7 @@ description: 푸시 메시지로 여정 구성
 kt: 5342
 doc-type: tutorial
 exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -33,7 +33,7 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 그러면 빈 이벤트 구성이 표시됩니다.
 먼저 이벤트에 다음과 같은 이름(`--aepUserLdap--StoreEntryEvent`)을 지정하고 설명을 `Store Entry Event`(으)로 설정하십시오.
-다음은 **이벤트 유형** 선택입니다. **단일**&#x200B;을(를) 선택합니다.
+다음은 **이벤트 유형** 선택입니다. **단일**을(를) 선택합니다.
 다음은 **이벤트 ID 유형** 선택 항목입니다. **시스템 생성**&#x200B;을 선택하십시오.
 
 ![AOP](./images/eventname.png)
@@ -103,11 +103,11 @@ Journey Optimizer의 **Home** 보기로 리디렉션됩니다. 먼저 올바른 
 
 그러면 이걸 보게 될 거야. 이제 실시간 고객 프로필에서 프로필 속성을 직접 선택할 수 있습니다.
 
-**이름** 필드를 검색한 다음 **이름** 필드 옆에 있는 **+** 아이콘을 클릭합니다. 그러면 이름 **{{profile.person.name.firstName}}**&#x200B;에 대한 개인화 토큰이 추가됩니다.
+**이름** 필드를 검색한 다음 **이름** 필드 옆에 있는 **+** 아이콘을 클릭합니다. 그러면 이름 **`{{profile.person.name.firstName}}`**&#x200B;에 대한 개인화 토큰이 추가됩니다.
 
 ![푸시](./images/bp9.png)
 
-**텍스트를 추가합니다. 스토어에 오신 것을 환영합니다!** 뒤에 **{{profile.person.name.firstName}}**&#x200B;이(가) 있습니다.
+**텍스트를 추가합니다. 스토어에 오신 것을 환영합니다!** 뒤에 **`{{profile.person.name.firstName}}`**&#x200B;이(가) 있습니다.
 
 **저장**&#x200B;을 클릭합니다.
 

@@ -3,14 +3,14 @@ title: 실시간 고객 프로필 활성화
 seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 실시간 고객 프로필 활성화
 description: 이 단원에서는 실시간 고객 프로필에 대해 스키마 및 데이터 세트를 활성화합니다.
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -26,14 +26,14 @@ ht-degree: 0%
 
 정말 놀랍습니다. 프로필에 대해 *모든 데이터*&#x200B;를 활성화할 필요가 없습니다. 실제로 활성화 사용 사례에 필요한 데이터만 활성화해야 합니다. 강력한 고객 프로필에 빠르게 액세스해야 하는 마케팅 사용 사례, 콜 센터 통합 등에 사용할 데이터를 활성화합니다. 분석용으로만 데이터를 업로드하는 경우에는 프로필에 대해 활성화해서는 안 됩니다.
 
-실시간 고객 프로필 데이터에 사용할 수 있는 중요한 [보호 기능](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ko)이 있습니다. 이러한 보호 기능은 프로필에 사용할 수 있는 데이터를 결정할 때 검토해야 합니다.
+실시간 고객 프로필 데이터에 사용할 수 있는 중요한 [보호 기능](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)이 있습니다. 이러한 보호 기능은 프로필에 사용할 수 있는 데이터를 결정할 때 검토해야 합니다.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 실시간 고객 프로필을 활성화해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 실시간 고객 프로필에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/31709?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## 권한 필요
 
@@ -82,19 +82,19 @@ ht-degree: 0%
 
 ### 스키마의 meta:altId 가져오기
 
-먼저 `Luma CRM Schema`의 `meta:altId`을(를) 가져오겠습니다.
+먼저 `meta:altId`의 `Luma CRM Schema`을(를) 가져오겠습니다.
 
 1. [!DNL Postman] 열기
-1. 액세스 토큰이 없는 경우 [!DNL Postman] 단원에서 수행한 것처럼 **[!DNL OAuth: Request Access Token]** 요청을 열고 **보내기**&#x200B;를 선택하여 새 액세스 토큰을 요청합니다.
+1. 액세스 토큰이 없는 경우 **[!DNL OAuth: Request Access Token]** 단원에서 수행한 것처럼 **요청을 열고**&#x200B;보내기[!DNL Postman]를 선택하여 새 액세스 토큰을 요청합니다.
 1. **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]** 요청 열기
 1. **보내기** 단추 선택
 1. 200개의 응답을 받아야 합니다.
 1. `Luma CRM Schema` 항목에 대한 응답을 찾은 다음 `meta:altId` 값을 복사합니다.
-   ![meta:altId 복사](assets/profile-crm-getMetaAltId.png)
+   ![메타 복사:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### 스키마 활성화
 
-스키마의 meta:altId가 있으므로 프로필에 대해 활성화할 수 있습니다.
+스키마의 meta:altId이(가) 있으므로 프로필에 대해 활성화할 수 있습니다.
 
 1. **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** 요청 열기
 1. **매개 변수**&#x200B;에서 `meta:altId` 값을 `SCHEMA_ID` 매개 변수 값으로 붙여 넣습니다.
@@ -111,7 +111,7 @@ ht-degree: 0%
 1. **보내기** 단추 선택
 1. 200개의 응답을 받아야 합니다.
 
-   ![SCHEMA_ID 매개 변수로 사용되는 사용자 지정 meta:altId를 사용하여 프로필에 대한 CRM 스키마를 사용하도록 설정](assets/profile-crm-enableProfile.png)
+   ![SCHEMA_ID 매개 변수로 사용되는 사용자 지정 메타를 사용하는 프로필에 대해 CRM 스키마를 사용하도록 설정:altIid](assets/profile-crm-enableProfile.png)
 
 사용자 인터페이스에서 프로필에 대해 5개의 모든 스키마가 활성화되었음을 확인할 수 있어야 합니다. `Luma CRM Schema`이(가) 활성화되었는지 확인하려면 SHIFT 키를 누른 상태에서 다시 로드해야 할 수 있습니다.
 ![모든 스키마가 활성화됨](assets/profile-allSchemasEnabled.png)
@@ -125,7 +125,7 @@ ht-degree: 0%
 1. **[!UICONTROL 프로필]** 스위치 전환
 1. 확인 모달에서 **[!UICONTROL 사용]** 단추를 눌러 확인합니다
 
-   ![&#x200B; 프로필 전환](assets/profile-loyalty-enableDataset.png)
+   ![ 프로필 전환](assets/profile-loyalty-enableDataset.png)
 
 이러한 다른 데이터 세트에 대해 위의 단계를 반복합니다.
 
@@ -143,10 +143,10 @@ ht-degree: 0%
 
 ### 데이터 세트 ID 가져오기
 
-먼저 `Luma CRM Dataset`의 `id`을(를) 가져와야 합니다.
+먼저 `id`의 `Luma CRM Dataset`을(를) 가져와야 합니다.
 
 1. [!DNL Postman] 열기
-1. 액세스 토큰이 없는 경우 [!DNL Postman] 단원에서 수행한 것처럼 **[!DNL OAuth: Request Access Token]** 요청을 열고 **보내기**&#x200B;를 선택하여 새 액세스 토큰을 요청합니다.
+1. 액세스 토큰이 없는 경우 **[!DNL OAuth: Request Access Token]** 단원에서 수행한 것처럼 **요청을 열고**&#x200B;보내기[!DNL Postman]를 선택하여 새 액세스 토큰을 요청합니다.
 1. **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** 요청 열기
 1. **보내기** 단추 선택
 1. 200개의 응답을 받아야 합니다.

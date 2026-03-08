@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 exl-id: ce04fa00-0247-4693-ba60-efc1746b9fec
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 1 초에 Adobe Experience Platform을 통해 탐색한 모든 데이터 세트는 SQL 인터페이스를 통해 표로 액세스할 수도 있습니다. 이러한 테이블을 나열하려면 **테이블 표시;** 명령을 사용할 수 있습니다.
 
-**PSQL 명령줄 인터페이스**&#x200B;에서 `show tables;`을(를) 실행합니다. (세미콜론으로 명령을 종료하는 것을 잊지 마십시오.)
+`show tables;`PSQL 명령줄 인터페이스&#x200B;**에서**&#x200B;을(를) 실행합니다. (세미콜론으로 명령을 종료하는 것을 잊지 마십시오.)
 
 `show tables;` 명령을 복사하여 프롬프트에 붙여넣습니다.
 
@@ -41,14 +41,14 @@ ht-degree: 0%
 tech-insiders:all=> show tables;
                                name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
 ------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
- ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
- ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             |
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             |
  ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset                  :
                                name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
 ------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
- ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
- ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             |
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             |
  ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset   
 ```
@@ -140,9 +140,9 @@ and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
-Adobe Experience Platform UI로 돌아가거나(브라우저에서 열어야 함) [Adobe Experience Platform](https://experience.adobe.com/platform)(으)로 이동합니다.
+Adobe Experience Platform UI로 돌아가거나(브라우저에서 열어야 함) [Adobe Experience Platform](https://experience.adobe.com/platform)&#x200B;(으)로 이동합니다.
 
-**스키마**&#x200B;을(를) 선택하고 **검색** 필드에 `Demo System - Event Schema for Website`을(를) 입력한 다음 클릭하여 스키마 `Demo System - Event Schema for Website (Global v1.1) Schema`을(를) 엽니다.
+**스키마**&#x200B;을(를) 선택하고 `Demo System - Event Schema for Website`검색&#x200B;**필드에**&#x200B;을(를) 입력한 다음 클릭하여 스키마 `Demo System - Event Schema for Website (Global v1.1) Schema`을(를) 엽니다.
 
 ![browse-schema.png](./images/browseschema.png)
 

@@ -3,12 +3,12 @@ title: 권한 구성
 seo-title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 권한 구성
 description: 이 단원에서는 Adobe의 Admin Console을 사용하여 Adobe Experience Platform 사용자 권한을 구성합니다.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Access Control
 jira: KT-4348
 thumbnail: 4348-configure-permissions.jpg
 exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1196'
 ht-degree: 1%
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 이 단원에서는 Platform 인터페이스의 [!DNL Adobe's Admin Console] 및 [!UICONTROL 권한] 화면을 사용하여 Adobe Experience Platform 사용자 권한을 구성합니다.
 
-액세스 제어는 Experience Platform의 주요 개인 정보 보호 기능이며, 직원들이 직무 기능을 수행하는 데 필요한 최소한으로 권한을 제한하는 것이 좋습니다. 자세한 내용은 [액세스 제어 설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko)를 참조하세요.
+액세스 제어는 Experience Platform의 주요 개인 정보 보호 기능이며, 사람들이 자신의 작업 기능을 수행하는 데 필요한 최소값으로 권한을 제한하는 것이 좋습니다. 자세한 내용은 [액세스 제어 설명서](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=ko)를 참조하세요.
 
 데이터 설계자 및 데이터 엔지니어는 Adobe Experience Platform의 고급 사용자이며, 이 자습서를 완료하고 일상적인 작업을 나중에 수행하려면 많은 권한이 필요합니다. 데이터 설계자는 마케터, 분석가 및 데이터 과학자와 같은 회사에서 *다른 플랫폼 사용자*&#x200B;의 관리에 관여할 수 있습니다. 이 단원을 완료하면서 이러한 기능을 사용하여 회사의 다른 사용자를 관리하는 방법에 대해 생각해 보십시오.
 
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## Admin Console 정보
 
-[!DNL Admin Console]은(는) 모든 Adobe Experience Cloud 제품에 대한 사용자 액세스를 관리하는 데 사용되는 인터페이스입니다. 플랫폼에 액세스하려면 Admin Console에 사용자 또는 을 추가해야 하며 이렇게 하면 세분화된 모든 권한 항목이 Adobe Experience Platform의 권한 화면에서 관리됩니다.
+[!DNL Admin Console]은(는) 모든 Adobe Experience Cloud 제품에 대한 사용자 액세스를 관리하는 데 사용되는 인터페이스입니다. Platform에 액세스하려면 Admin Console에 사용자 또는 을 추가해야 하며 이렇게 하면 세분화된 모든 권한 항목이 Adobe Experience Platform의 권한 화면에서 관리됩니다.
 
 
 다음은 플랫폼에 존재하는 역할에 대한 간략한 요약입니다.
@@ -49,9 +49,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->이 자습서를 보는 동료를 지원하는 시스템 관리자인 경우 동료를 Adobe Experience Platform의 *제품 관리자*(으)로 추가하는 것이 좋습니다. 제품 관리자는 이러한 단계를 직접 수행하고 향후 다른 Experience Platform 사용자를 관리할 수 있습니다.
+>이 자습서를 보는 동료를 지원하는 시스템 관리자인 경우 동료를 Adobe Experience Platform의 *제품 관리자*(으)로 추가하는 것이 좋습니다. 제품 관리자는 이러한 단계를 스스로 완료하고 향후 다른 Experience Platform 사용자를 관리할 수 있습니다.
 
-튜토리얼 참가자를 [!UICONTROL 사용자] 및 [!UICONTROL 개발자] (으)로 추가하려면:
+튜토리얼 참가자를 [!UICONTROL 사용자] 및 [!UICONTROL 개발자]&#x200B;(으)로 추가하려면:
 
 1. [Adobe Admin Console](https://adminconsole.adobe.com)에 로그인
 1. 위쪽 탐색에서 **[!UICONTROL 제품]** 선택
@@ -141,11 +141,11 @@ Experience Platform에 대한 세분화된 권한은 Platform 인터페이스의
 1. **[!UICONTROL 권한]** 탭으로 이동
 1. **[!UICONTROL 플랫폼]** 열기
 1. 사용 가능한 모든 플랫폼이 선택되어 있는지 확인합니다(라이센스에 따라 다른 옵션이 표시될 수 있음)
-1. 모든 변경 내용을 **[!UICONTROL 저장]**&#x200B;합니다.
+1. 모든 변경 내용을 **[!UICONTROL 저장]**합니다.
    ![플랫폼 추가](assets/adminconsole-launch-addPlatforms.png)
 1. **[!UICONTROL 속성]** 열기
 1. 속성에 액세스할 수 없도록 **[!UICONTROL 자동 포함]** 토글이 꺼졌는지 확인하십시오(나중에 추가함)
-1. 모든 변경 내용을 **[!UICONTROL 저장]**&#x200B;합니다.
+1. 모든 변경 내용을 **[!UICONTROL 저장]**합니다.
    ![속성 제거](assets/adminconsole-launch-removeProperties.png)
 1. **[!UICONTROL 속성 권한]** 열기
 1. 모든 속성 권한을 추가하려면 **[!UICONTROL 모두 추가]**&#x200B;를 선택하십시오.
@@ -168,4 +168,4 @@ Experience Platform에 대한 세분화된 권한은 Platform 인터페이스의
 
 데이터 수집을 위해 자신을 개발자로 추가할 필요는 없습니다.
 
-이제 자습서를 완료하는 데 필요한 거의 모든 권한이 있습니다! [샌드박스를 만들고](create-a-sandbox.md)한 다음 하나를 포함하여 [!DNL Adobe Admin Console] 내에서 두 번만 더 변경할 수 있습니다.
+이제 자습서를 완료하는 데 필요한 거의 모든 권한이 있습니다! [!DNL Adobe Admin Console]샌드박스를 만들고[한 다음 하나를 포함하여 ](create-a-sandbox.md) 내에서 두 번만 더 변경할 수 있습니다.

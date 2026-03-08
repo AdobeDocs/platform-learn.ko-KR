@@ -2,11 +2,11 @@
 user-guide-title: Federated Audience Composition을 사용하여 Data Warehouse에서 직접 대상과 소통
 breadcrumb-title: 페더레이션된 대상자 컴포지션
 user-guide-description: 기존 기술 스택을 활용하여 Federated Audience Composition을 사용하여 대상을 구축하고 강화함으로써 데이터 복사를 최소화하는 안내서입니다.
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 3%

@@ -2,9 +2,9 @@
 title: 마이그레이션 계획 - 모바일 앱의 Adobe Target 구현을 Offer Decisioning 및 Target 확장으로 마이그레이션
 description: at.js와 Platform Web SDK 간의 주요 차이점과 마이그레이션 노력을 계획하는 방법에 대해 알아봅니다.
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,8 @@ Target 확장에서 Offer Decisioning 및 Target 확장으로 마이그레이션
 > * **SDK 최적화**&#x200B;에서 **Offer Decisioning 및 Target 확장 구현**
 
 
-그런 다음 Target 확장과 Offer Decisioning 및 Target 확장의 자세한 [비교](detailed-comparison.md)를 검토하여 기술적인 차이점을 더 잘 이해하고 추가 포커스가 필요한 영역을 식별하십시오.
+그런 다음 자세한 <!--[comparison of the Target extension and the Offer Decisioning and Target extension](detailed-comparison.md)-->을(를) 검토하여 기술적인 차이점을 더 잘 이해하고 추가 집중이 필요한 영역을 식별하십시오.
 
 >[!NOTE]
 >
->Target 확장에서 Offer Decisioning 및 Target 확장으로 모바일 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=ko#M625)에 게시하여 알려 주십시오.
+>Target 확장에서 Offer Decisioning 및 Target 확장으로 모바일 Target 마이그레이션을 성공적으로 수행할 수 있도록 최선을 다하고 있습니다. 마이그레이션에 문제가 발생하거나 이 안내서에 중요한 정보가 누락된 것 같은 느낌이 드는 경우 [이 커뮤니티 토론](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)에 게시하여 알려 주십시오.

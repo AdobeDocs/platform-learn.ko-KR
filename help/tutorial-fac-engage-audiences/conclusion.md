@@ -3,10 +3,10 @@ title: 결론
 seo-title: Conclusion | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 결론
 description: 결론적으로, 우리는 학습과 주요 요점을 요약한다.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 3%

@@ -3,15 +3,15 @@ title: 샌드박스 만들기
 seo-title: Create a sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 샌드박스 만들기
 description: 이 단원에서는 자습서의 나머지 부분에서 사용할 수 있는 개발 환경 샌드박스를 만듭니다.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 2%
 **데이터 설계자** 및 **데이터 엔지니어**&#x200B;는 이 자습서 외부에서 샌드박스를 만들어야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 샌드박스에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/3430298/?learn=on&enablevpops&captions=kor)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
 
 ## 권한 필요
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 1. [!UICONTROL 권한] 화면으로 이동
 1. `Luma Tutorial Platform` 역할 열기
-1. 역할에서 `Prod` 샌드박스를 선택적으로 _제거_&#x200B;합니다.
+1. 역할에서 _샌드박스를 선택적으로_&#x200B;제거`Prod`합니다.
 1. `Luma Tutorial` 샌드박스 추가
 1. **[!UICONTROL 저장]** 선택
 1. [!UICONTROL 샌드박스] 행에서 **[!UICONTROL 편집]**&#x200B;을 선택합니다.

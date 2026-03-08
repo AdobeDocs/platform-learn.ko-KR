@@ -3,11 +3,11 @@ title: 연합 대상자를 사용하여 여정 구축
 seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 연합 대상자를 사용하여 여정 구축
 description: 이 연습에서는 Journey Optimizer 여정에서 연결된 대상을 사용합니다.
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '419'
 ht-degree: 1%
@@ -70,7 +70,7 @@ SecurFinancial 스토리, 특히 고객 재타겟팅 및 개인화 사용 사례
 
 11. 이름 개인화가 추가되었으므로 개인화 변수 앞에 `Hi, `을(를) 추가하십시오. 그런 다음 **저장**&#x200B;을 클릭합니다.
 
-    ![여정-이메일 저장](assets/journey-email-save.png)
+   ![여정-이메일 저장](assets/journey-email-save.png)
 
 12. 여정 캔버스로 돌아가려면 **뒤로** 단추를 두 번 클릭하십시오. 그런 다음 오른쪽의 **작업: 전자 메일** 메뉴에서 **저장**&#x200B;을 클릭합니다.
 

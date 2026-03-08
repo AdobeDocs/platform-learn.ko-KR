@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Customer Journey Analytics에서 Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 1%
@@ -82,7 +82,7 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 
 개인 ID 필드의 값이 일치하는 경우 개인 ID 필드의 이름은 중요하지 않습니다. 개인 ID로 정의된 한 데이터 세트에 `email`이(가) 있고 다른 데이터 세트에 `emailAddress`이(가) 있다고 가정해 보겠습니다. `delaigle@adobe.com`이(가) 두 데이터 세트의 개인 ID 필드에 대한 동일한 값이면 CJA에서 데이터를 연결할 수 있습니다.
 
-여기에서 CJA FAQ를 검토하여 ID 결합과 관련된 뉘앙스를 이해하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=ko).
+여기에서 CJA FAQ를 검토하여 ID 결합과 관련된 뉘앙스를 이해하십시오. [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
 ### 개인 ID를 사용하여 데이터 결합
 
@@ -97,7 +97,7 @@ Customer Journey Analytics 홈페이지에서 **연결**(으)로 이동합니다
 두 데이터 세트를 결합하면 계속할 준비가 된 것입니다.
 
 | 데이터 세트 | 개인 ID |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | 데모 시스템 - 웹 사이트에 대한 이벤트 데이터 세트(전역 v1.1) | 이메일 |
 | 데모 시스템 - 콜 센터용 이벤트 데이터 세트(글로벌 v1.1) | 이메일 |
 

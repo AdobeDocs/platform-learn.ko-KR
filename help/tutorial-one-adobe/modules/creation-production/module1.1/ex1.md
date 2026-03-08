@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3787'
 ht-degree: 0%
@@ -248,7 +248,7 @@ UI를 다시 살펴보십시오. **종횡비**&#x200B;을 **와이드스크린(1
 **FF - Firefly Services 기술 내부자** 컬렉션에서 **POST - Firefly - T2I V3 비동기**(이)라는 요청을 선택합니다. **Headers**(으)로 이동하여 키/값 쌍 조합을 확인하십시오.
 
 | 키 | 값 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `x-api-key` | `{{API_KEY}}` |
 | `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
 
@@ -407,7 +407,7 @@ Firefly Image Model 4의 최근 릴리스를 통해 다음과 같은 몇 가지 
 
 - Firefly Image Model 4은 향상된 정의 및 세부 사항을 통해 2K 해상도 출력을 제공합니다.
 - Firefly Image Model 4은 텍스트 렌더링, 인간, 동물 및 아키텍처에서 상당한 개선을 제공합니다.
-- Firefly Image Model 4는 IP 친화적이고 상업적으로 안전한 생성 AI에 대한 Adobe의 약속을 유지합니다.
+- Firefly Image Model 4은 IP 친화적이고 상업적으로 안전한 생성 AI에 대한 Adobe의 약속을 유지합니다.
 
 Firefly Image Model 4은 사람, 동물 및 세부 장면에 대한 뛰어난 이미지를 제공하며 Image Model 4 Ultra를 사용하여 초현실적인 인간 상호 작용, 건축 요소 및 복잡한 풍경을 통한 이미지를 생성할 수 있습니다&#x200B;.
 

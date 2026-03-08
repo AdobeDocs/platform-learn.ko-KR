@@ -4,7 +4,7 @@ description: 시작하기 - Postman 설정
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## PostBuster 설치
 
-[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}(으)로 이동합니다.
+[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}(으)로 이동합니다.
 
 **PostBuster**&#x200B;의 최신 릴리스를 다운로드하려면 클릭하세요.
 
@@ -83,31 +83,31 @@ OS에 맞는 버전을 클릭합니다.
 
 ```json
 {
-	"CLIENT_SECRET": "",
-	"API_KEY": "",
-	"ACCESS_TOKEN": "",
-	"SCOPES": [
-		"openid",
-		"AdobeID",
-		"read_organizations", 
-		"additional_info.projectedProductContext", 
-		"session",
-		"ff_apis",
-		"firefly_api",
-		"frame.s2s.all"
-	],
-	"TECHNICAL_ACCOUNT_ID": "",
-	"IMS": "ims-na1.adobelogin.com",
-	"IMS_ORG": "",
-	"access_token": "",
-	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": "",
-	"FRAME_IO_BASE_URL": "https://api.frame.io",
-	"FRAME_IO_ACCOUNT_ID": "",
-	"FRAME_IO_WORKSPACE_ID": ""
+    "CLIENT_SECRET": "",
+    "API_KEY": "",
+    "ACCESS_TOKEN": "",
+    "SCOPES": [
+        "openid",
+        "AdobeID",
+        "read_organizations", 
+        "additional_info.projectedProductContext", 
+        "session",
+        "ff_apis",
+        "firefly_api",
+        "frame.s2s.all"
+    ],
+    "TECHNICAL_ACCOUNT_ID": "",
+    "IMS": "ims-na1.adobelogin.com",
+    "IMS_ORG": "",
+    "access_token": "",
+    "IMS_TOKEN": "",
+    "AZURE_STORAGE_URL": "",
+    "AZURE_STORAGE_CONTAINER": "",
+    "AZURE_STORAGE_SAS_READ": "",
+    "AZURE_STORAGE_SAS_WRITE": "",
+    "FRAME_IO_BASE_URL": "https://api.frame.io",
+    "FRAME_IO_ACCOUNT_ID": "",
+    "FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -137,7 +137,7 @@ OS에 맞는 버전을 클릭합니다.
 위의 변수를 하나씩 복사하여 PostBuster의 **기본 환경**&#x200B;에 붙여 넣으십시오.
 
 | Adobe I/O의 변수 이름 | PostBuster 기본 환경의 변수 이름 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | 클라이언트 ID | `API_KEY` |
 | 클라이언트 암호 | `CLIENT_SECRET` |
 | 기술 계정 ID | `TECHNICAL_ACCOUNT_ID` |
@@ -156,7 +156,7 @@ Click **Close**.
 다음 정보가 포함된 유사한 응답이 표시됩니다.
 
 | 키 | 값 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **전달자** |
 | access_token | **eyJhbGciOiJS...** |
 | expires_in | **86399** |

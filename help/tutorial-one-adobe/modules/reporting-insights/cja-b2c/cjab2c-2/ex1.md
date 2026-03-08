@@ -4,9 +4,9 @@ description: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 exl-id: ba830c8c-e3e6-4e7e-ab53-5b7eb031ad29
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -32,15 +32,15 @@ Google Analytics 데이터는 매일 일괄 처리 메커니즘을 사용하여 
 - 웹 사이트에서 모든 고객 행동을 추적하고 실시간 활성화가 필요 없는 분석, 데이터 과학 및 개인화 사용 사례를 위해 Adobe Experience Platform에 해당 데이터를 로드합니다.
 - 분석 및 데이터 과학 사용 사례를 위해 Google Analytics 내역 데이터를 Adobe Experience Platform에 다시 로드
 
-## 1.2.1.2 Google 계정
+## Google 계정 1.2.1.2
 
 >[!NOTE]
 >
 >이 연습을 수행하려면 Google 클라우드 플랫폼 환경에 액세스해야 합니다. 아직 GCP에 액세스할 수 없는 경우 개인 이메일 주소를 사용하여 새 계정을 만드십시오.
 
-## 1.2.1.3 프로젝트 선택 또는 생성
+## 1.2.1.3 프로젝트 선택 또는 만들기
 
-[https://console.cloud.google.com/](https://console.cloud.google.com/)(으)로 이동합니다.
+[https://console.cloud.google.com/](https://console.cloud.google.com/)&#x200B;(으)로 이동합니다.
 
 **프로젝트 선택**&#x200B;을 클릭하거나 기존 프로젝트를 클릭합니다.
 

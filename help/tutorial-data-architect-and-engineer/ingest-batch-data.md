@@ -3,12 +3,12 @@ title: 일괄 처리 데이터 수집
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 일괄 처리 데이터 수집
 description: 이 단원에서는 다양한 방법을 사용하여 배치 데이터를 Experience Platform에 수집합니다.
-role: Data Engineer
+role: Developer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2445'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 연습을 시작하기 전에 이 짧은 비디오를 시청하여 데이터 수집에 대해 자세히 알아보십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/346834?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## 권한 필요
@@ -79,8 +79,8 @@ ht-degree: 0%
 >
 >이 단원의 다양한 화면에서 볼 수 있는 몇 가지 옵션인 **[!UICONTROL 오류 진단]** 및 **[!UICONTROL 부분 수집]**&#x200B;이 있습니다. 이러한 옵션은 자습서에서 다루지 않습니다. 몇 가지 빠른 정보:
 >
->* 오류 진단을 활성화하면 데이터 수집에 대한 데이터가 생성되고 이 데이터는 Data Access API를 사용하여 검토할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=ko)를 참조하세요.
->* 부분 수집을 사용하면 지정 가능한 특정 임계값까지, 오류가 포함된 데이터를 수집할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=ko)를 참조하세요.
+>* 오류 진단을 활성화하면 데이터 수집에 대한 데이터가 생성되고 이 데이터는 Data Access API를 사용하여 검토할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html)를 참조하세요.
+>* 부분 수집을 사용하면 지정 가능한 특정 임계값까지, 오류가 포함된 데이터를 수집할 수 있습니다. 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)를 참조하세요.
 
 ### 데이터 유효성 검사
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![데이터 수집 Webhook](assets/ingestion-loyalty-webhook.png)
 
-알림에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ko#available-status-notification-events)를 참조하세요.
+알림에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)를 참조하세요.
 
 ## Platform API를 사용하여 데이터 배치 수집
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 ### 데이터 다운로드 및 준비
 
-1. [&#x200B; 폴더에 &#x200B;](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 2. 텍스트 편집기에서 `luma-crm.json`을(를) 열고 스키마에 표시된 대로 `_techmarketingdemos`의 모든 인스턴스를 고유한 밑줄 테넌트 ID로 바꾸십시오.
 3. 업데이트된 파일 저장
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 이제 데이터 세트에 일괄 처리를 만들 수 있습니다.
 
-1. [&#x200B; 폴더에 &#x200B;](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)데이터 수집 API.postman_collection.json`Luma Tutorial Assets` 다운로드
+1. [ 폴더에 ](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Data%20Ingestion%20API.postman_collection.json)데이터 수집 API.postman_collection.json`Luma Tutorial Assets` 다운로드
 1. 컬렉션을 [!DNL Postman]&#x200B;(으)로 가져오기
 1. **[!DNL Data Ingestion API > Batch Ingestion > Create a new batch in Catalog Service.]** 요청 선택
 1. 다음을 요청의 **본문**(으)로 붙여 넣습니다. ***datasetId 값을 자신의 값으로 바꾸기***:
@@ -218,7 +218,7 @@ ht-degree: 0%
 
 축하합니다. 방금 프로필을 병합했습니다!
 
-![병합된 프로필 &#x200B;](assets/ingestion-crm-profileLinkedIdentities.png)
+![병합된 프로필 ](assets/ingestion-crm-profileLinkedIdentities.png)
 
 #### 데이터 수집 이벤트로 유효성 검사
 
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ![데이터 수집 Webhook](assets/ingestion-crm-webhook.png)
 
-알림에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ko#available-status-notification-events)를 참조하세요.
+알림에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)를 참조하세요.
 
 ## 워크플로우를 사용하여 데이터 수집
 
@@ -234,7 +234,7 @@ ht-degree: 0%
 
 ### 데이터 다운로드 및 준비
 
-1. [&#x200B; 폴더에 &#x200B;](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 1. `luma-products.csv`이(가) 있는지 확인
 
 ### 워크플로 만들기
@@ -282,11 +282,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->이 연습에서 사용할 오프라인 구매 데이터에는 날짜/시간 데이터가 포함되어 있습니다. 날짜/시간 데이터는 [ISO 8061 형식의 문자열](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;) 또는 밀리초 형식의 Unix 시간(1531263959000)이어야 하며 수집 시간에 대상 XDM 유형으로 변환됩니다. 데이터 변환 및 기타 제약 조건에 대한 자세한 내용은 [일괄 처리 수집 API 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=ko#types)를 참조하십시오.
+>이 연습에서 사용할 오프라인 구매 데이터에는 날짜/시간 데이터가 포함되어 있습니다. 날짜/시간 데이터는 [ISO 8061 형식의 문자열](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;) 또는 밀리초 형식의 Unix 시간(1531263959000)이어야 하며 수집 시간에 대상 XDM 유형으로 변환됩니다. 데이터 변환 및 기타 제약 조건에 대한 자세한 내용은 [일괄 처리 수집 API 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)를 참조하십시오.
 
 ### 원하는 클라우드 스토리지 공급업체에 데이터 다운로드, 준비 및 업로드
 
-1. [&#x200B; 폴더에 &#x200B;](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
+1. [ 폴더에 ](assets/luma-data.zip)luma-data.zip`Luma Tutorial Assets`을(를) 이미 다운로드하고 압축 해제했어야 합니다.
 1. 텍스트 편집기에서 `luma-offline-purchases.json`을(를) 열고 스키마에 표시된 대로 `_techmarketingdemos`의 모든 인스턴스를 고유한 밑줄 테넌트 ID로 바꾸십시오.
 1. 이벤트가 지난 달에 발생하도록 모든 타임스탬프를 업데이트합니다(예: `"timestamp":"2022-06`을(를) 검색하고 연도 및 월을 대체).
 1. 선호하는 클라우드 저장소 공급자를 선택하여 [!UICONTROL 원본] 카탈로그에서 사용할 수 있는지 확인하세요.
@@ -334,12 +334,12 @@ ht-degree: 0%
 
 Adobe은 여러 ETL 공급업체와 협력하여 Experience Platform으로의 데이터 수집을 지원합니다. 다양한 서드파티 공급업체로 인해 ETL은 이 자습서에서 다루지 않지만, 다음 리소스 중 일부를 검토할 수 있습니다.
 
-* [Adobe Experience Platform을 위한 ETL 통합 개발](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=ko)
+* [Adobe Experience Platform을 위한 ETL 통합 개발](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [[!DNL Snaplogic] Adobe Experience Platform 스냅 팩](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 추가 리소스
 
-* [일괄 처리 수집 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=ko)
+* [일괄 처리 수집 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [일괄 처리 수집 API 참조](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 이제 웹 SDK을 사용하여 데이터를 [스트리밍](ingest-streaming-data.md)하겠습니다.

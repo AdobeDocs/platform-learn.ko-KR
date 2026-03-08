@@ -3,7 +3,7 @@ title: 병합 정책 만들기
 seo-title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 병합 정책 만들기
 description: 이 단원에서는 병합 정책을 만들어 데이터가 프로필로 병합되는 방법을 결정합니다.
-role: Data Architect, Data Engineer
+role: Developer
 feature: Profiles
 jira: KT-4348
 audience: data architect
@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 48a38fd96ea9072d207173a1b51153c6498090e0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '991'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Adobe Experience Platform을 사용하면 여러 소스에서 데이터를 결�
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 병합 정책을 만들어야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 병합 정책에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/345079?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 권한 필요
 
@@ -140,7 +140,7 @@ CRM ID는 `Luma Loyalty Dataset`의 ID 필드이지만 기본 ID만 프로필을
 
 ## 추가 리소스
 
-* [병합 정책 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=ko)
+* [병합 정책 설명서](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [병합 정책 API(실시간 고객 프로필 API의 일부) 참조](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 이제 [데이터 거버넌스 프레임워크](apply-data-governance-framework.md)(으)로 이동하겠습니다.
