@@ -141,11 +141,11 @@ Experience Platform에 대한 세분화된 권한은 Platform 인터페이스의
 1. **[!UICONTROL 권한]** 탭으로 이동
 1. **[!UICONTROL 플랫폼]** 열기
 1. 사용 가능한 모든 플랫폼이 선택되어 있는지 확인합니다(라이센스에 따라 다른 옵션이 표시될 수 있음)
-1. 모든 변경 내용을 **[!UICONTROL 저장]**합니다.
+1. 모든 변경 내용을 **[!UICONTROL 저장]**&#x200B;합니다.
    ![플랫폼 추가](assets/adminconsole-launch-addPlatforms.png)
 1. **[!UICONTROL 속성]** 열기
 1. 속성에 액세스할 수 없도록 **[!UICONTROL 자동 포함]** 토글이 꺼졌는지 확인하십시오(나중에 추가함)
-1. 모든 변경 내용을 **[!UICONTROL 저장]**합니다.
+1. 모든 변경 내용을 **[!UICONTROL 저장]**&#x200B;합니다.
    ![속성 제거](assets/adminconsole-launch-removeProperties.png)
 1. **[!UICONTROL 속성 권한]** 열기
 1. 모든 속성 권한을 추가하려면 **[!UICONTROL 모두 추가]**&#x200B;를 선택하십시오.
@@ -168,4 +168,4 @@ Experience Platform에 대한 세분화된 권한은 Platform 인터페이스의
 
 데이터 수집을 위해 자신을 개발자로 추가할 필요는 없습니다.
 
-이제 자습서를 완료하는 데 필요한 거의 모든 권한이 있습니다! [!DNL Adobe Admin Console]샌드박스를 만들고[한 다음 하나를 포함하여 ](create-a-sandbox.md) 내에서 두 번만 더 변경할 수 있습니다.
+이제 자습서를 완료하는 데 필요한 거의 모든 권한이 있습니다! [!DNL Adobe Admin Console]샌드박스를 만들고[한 다음 하나를 포함하여 &#x200B;](create-a-sandbox.md) 내에서 두 번만 더 변경할 수 있습니다.

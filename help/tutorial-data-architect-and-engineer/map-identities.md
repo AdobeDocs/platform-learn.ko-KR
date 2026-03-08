@@ -94,7 +94,7 @@ API를 통해 CRM 네임스페이스를 만듭니다.
 
 ID 네임스페이스 `Luma CRM Id`을(를) 만들어 보겠습니다.
 
-1. [ 폴더에 ](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json)Identity Service.postman_collection.json`Luma Tutorial Assets` 다운로드
+1. [&#x200B; 폴더에 &#x200B;](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json)Identity Service.postman_collection.json`Luma Tutorial Assets` 다운로드
 1. 컬렉션을 [!DNL Postman]&#x200B;(으)로 가져오기
 1. 액세스 토큰이 없는 경우 **[!DNL OAuth: Request Access Token]** 요청을 열고 **보내기**&#x200B;를 선택하여 새 액세스 토큰을 요청하세요.
 1. 요청 **[!UICONTROL ID 서비스] > [!UICONTROL ID 네임스페이스] > [!UICONTROL 새 ID 네임스페이스 만들기]를 선택합니다.**
@@ -113,7 +113,7 @@ ID 네임스페이스 `Luma CRM Id`을(를) 만들어 보겠습니다.
    ![ID 네임스페이스](assets/identity-createUsingApi.png)
 
 이제 사용자 인터페이스로 돌아가면 세 개의 새 사용자 정의 네임스페이스가 표시됩니다.
-![ID 네임스페이스 ](assets/identity-newIdentities.png)
+![ID 네임스페이스 &#x200B;](assets/identity-newIdentities.png)
 
 
 ## 스키마의 레이블 ID 필드
@@ -136,7 +136,7 @@ ID 네임스페이스 `Luma CRM Id`을(를) 만들어 보겠습니다.
 1. **[!UICONTROL 적용]** 선택
 1. **[!UICONTROL 저장]** 선택
 
-   ![기본 ID ](assets/identity-loyalty-primary.png)
+   ![기본 ID &#x200B;](assets/identity-loyalty-primary.png)
 
 다른 스키마 일부에 대해 다음 프로세스를 반복합니다.
 
