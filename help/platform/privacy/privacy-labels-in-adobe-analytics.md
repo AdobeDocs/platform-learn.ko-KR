@@ -18,4 +18,4 @@ ht-degree: 1%
 
 각 레이블 유형의 의미 및 사용 시기를 포함하여 Analytics 변수에 데이터 개인정보 보호 레이블을 추가하는 프로세스에 대해 알아봅니다. 자세한 내용은 [Privacy Services 설명서](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450669?captions=kor&learn=on&enablevpops)

@@ -25,5 +25,5 @@ ht-degree: 1%
 >
 > 이제 Magento을 Adobe Commerce라고 합니다
 
->[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328484?captions=kor&learn=on&enablevpops)
 
