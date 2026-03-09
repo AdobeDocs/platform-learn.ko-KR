@@ -4,9 +4,9 @@ description: Adobe Experience Manager 및 에이전트
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '279'
 ht-degree: 1%
 
 ---
@@ -47,6 +47,9 @@ ht-degree: 1%
 
 이 연습에서는 AEM MCP 서버를 사용하여 Cursor 환경을 AEM에 연결합니다.
 
+[1.6.3 ChatGPT 및 MCP 서버를 사용하여 콘텐츠 조각 크기 조정](./ex3.md)
+
+이 연습에서는 ChatGPT와 사용자 지정 MCP 서버 기능을 사용하여 콘텐츠 조각을 만들고, 관리하고, 번역합니다.
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

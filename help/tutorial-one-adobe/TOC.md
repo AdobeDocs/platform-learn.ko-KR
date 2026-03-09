@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 13a411645ea4e06d06ee6ab27e4f726e87dbbf22
+source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1540'
 ht-degree: 3%
 
 ---
@@ -137,7 +137,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
          + [개요](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
@@ -290,6 +290,7 @@ ht-degree: 3%
       + [개요](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
       + [1.6.1 AEM 에이전트 시작하기](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
       + [1.6.2 AEM MCP 서버 및 커서](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3 ChatGPT 및 MCP 서버를 사용하여 콘텐츠 조각 크기 조정](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
    + 1.7 Adobe Commerce용 지능형 개발자 도구 {#agents7}
       + [개요](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1 개발 환경 설정](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
