@@ -3,18 +3,15 @@ title: Brand Concierge 시작하기
 description: Brand Concierge 시작하기
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
+source-git-commit: 1f4b945658834b7fd4f52f297fe761c49edd28fe
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1119'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Brand Concierge 시작하기
-
-## 비디오
-
-이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
 
 ## 1.4.1.1 Brand Concierge 개요
 
@@ -263,11 +260,121 @@ Brand Concierge은 Adobe Experience Platform을 사용하여 대화의 상호 �
 
 ![Brand Concierge](./images/aep5.png)
 
-### Brand Concierge 구성 관리 API
+### 데이터 스트림 구성 관리
 
 다음 단계는 Brand Concierge 구성 관리 API를 활성화하여 방금 생성한 데이터 스트림을 구성하는 것입니다. 요청을 처리하는 동안 IMS 조직 ID 및 샌드박스 세부 정보와 같은 문제를 해결하는 데 필요합니다.
 
-이는 현재 수행해야 하는 내부 Adobe 단계입니다. 이 단계는 필수입니다. 그렇지 않은 경우에는 데이터 스트림의 설정이 Brand Concierge에서 사용하기에 적합하지 않습니다.
+**관리자 컨트롤**(으)로 이동합니다.
+
+![Brand Concierge](./images/admincontrols1.png)
+
+**데이터 스트림 구성 관리**(으)로 이동한 다음 **구성 추가**&#x200B;를 클릭합니다.
+
+![Brand Concierge](./images/admincontrols2.png)
+
+이전에 만든 데이터 스트림의 **데이터 스트림 ID**&#x200B;을(를) 붙여 넣습니다. **저장**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/admincontrols3.png)
+
+그럼 이런 걸 보셔야겠네요
+
+![Brand Concierge](./images/admincontrols4.png)
+
+## 1.4.1.4 스타일 구성 관리
+
+**스타일 구성 관리**(으)로 이동합니다. **스타일 구성 초기화**&#x200B;를 클릭합니다.
+
+![Brand Concierge](./images/admincontrols7.png)
+
+**브랜드 이름** `CitiSignal`을(를) 입력한 다음 **스타일 구성 초기화**&#x200B;를 클릭합니다.
+
+![Brand Concierge](./images/admincontrols8.png)
+
+그럼 이걸 보셔야죠
+
+![Brand Concierge](./images/admincontrols9.png)
+
+## 1.4.1.5 Agent Orchestrator 매니페스트
+
+**매니페스트 업데이트**(으)로 이동합니다. 그럼 이걸 보셔야죠
+
+![Brand Concierge](./images/admincontrols5.png)
+
+이제 매니페스트의 필드를 업데이트해야 합니다. 아래 입력을 사용하십시오.
+
+**에이전트 이름**:
+
+```
+CitiSignal Sales Assistant
+```
+
+**소개**:
+
+```
+Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
+```
+
+**역할 및 책임**:
+
+```
+You are CitiSignal's AI Sales Assistant focused on:
+1. **Primary Goal**: Selling connectivity products from the knowledge base
+2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
+3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
+4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
+
+- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
+- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
+- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
+- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
+- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
+```
+
+**범위**:
+
+```
+You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
+
+# Your Primary Objectives:
+1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
+2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
+3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
+
+# Sales Strategy:
+- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
+- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
+- Use natural transition phrases to introduce entertainment upsells.
+- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
+- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
+
+# Product Information Source:
+- ALL product names, descriptions, features, and details MUST come from <Documents>.
+- Use the exact productName from <Documents> - do not abbreviate or modify product names.
+- Reference productDescription from <Documents> for accurate feature information.
+- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
+```
+
+**매니페스트 업데이트**&#x200B;를 클릭합니다.
+
+![Brand Concierge](./images/admincontrols6.png)
+
+**홈**&#x200B;을 클릭합니다.
+
+![Brand Concierge](./images/admincontrols10.png)
+
+그럼 이걸 보셔야죠 Brand Concierge과 상호 작용하려면 **미리 보기**&#x200B;를 클릭하세요.
+
+![Brand Concierge](./images/bc101.png)
+
+이제 제공된 지식 소스와 관련된 질문을 시작할 수 있습니다. `what products do you sell?` 질문을 입력하고 **보내기**&#x200B;를 클릭합니다.
+
+![Brand Concierge](./images/bc102.png)
+
+그런 다음 유사한 응답을 다시 받아야 합니다.
+
+![Brand Concierge](./images/bc103.png)
+
+이제 Brand Concierge 인스턴스를 웹 사이트에 구현할 준비가 되었습니다.
 
 다음 단계: [웹 사이트에서 Brand Concierge 구현](./ex2.md){target="_blank"}
 
