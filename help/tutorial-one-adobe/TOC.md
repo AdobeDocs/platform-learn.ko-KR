@@ -4,10 +4,10 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 4%
+source-wordcount: '1557'
+ht-degree: 3%
 
 ---
 
@@ -117,6 +117,7 @@ ht-degree: 4%
    + 1.7 Firefly 사용자 지정 워크플로 {#crpr7}
       + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Firefly 사용자 지정 워크플로우 시작하기](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.2 프로그래밍 방식으로 사용자 지정 워크플로우 실행](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8 Workfront, Frame.io 및 엔터프라이즈 스토리지 관리를 통한 통합 검토 및 승인 {#crpr8}
       + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Workfront, Frame.io 및 ESM 시작하기](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
@@ -168,7 +169,7 @@ ht-degree: 4%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
          + [개요](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '260'
 ht-degree: 1%
 
 ---
@@ -46,6 +46,10 @@ Firefly 사용자 지정 워크플로를 사용하여 다음과 같은 작업을
 [1.7.1 Firefly 사용자 지정 워크플로 시작](./ex1.md){target="_blank"}
 
 이 연습에서는 Workflow Builder를 사용합니다.
+
+[1.7.2 사용자 지정 워크플로를 프로그래밍 방식으로 실행](./ex2.md){target="_blank"}
+
+이 연습에서는 Postman 및 Workfront Fusion을 사용하여 프로그래밍 방식으로 사용자 지정 워크플로우를 실행합니다.
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
