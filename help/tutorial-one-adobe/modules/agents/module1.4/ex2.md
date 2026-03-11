@@ -4,9 +4,9 @@ description: 웹 사이트에서 Brand Concierge 구현
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -412,6 +412,8 @@ window["alloy"]("sendEvent", {
 그러면 프롬프트를 입력할 수 있는 이 Brand Concierge이 표시됩니다.
 
 ![Brand Concierge](./images/aem14.png)
+
+## 다음 단계
 
 [Brand Concierge](./brandconcierge.md){target="_blank"}(으)로 돌아가기
 

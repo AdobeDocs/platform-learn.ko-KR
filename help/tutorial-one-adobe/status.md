@@ -3,9 +3,9 @@ title: 컨텐츠 상태
 description: 컨텐츠 상태
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 10%
 | 이름 | 마지막 업데이트 | 100% 작업 | 비고 | 시간 투자 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Workfront 계획](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 2025/08/02 | 예 | - | 45분 |
-| Adobe Workfront을 사용한 [1.2 워크플로 관리](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 2025/08/02 | 예 | 아직 완료되지 않은 콘텐츠 | 1시간 30분 |
+| Adobe Workfront을 사용한 [1.2 워크플로 관리](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 2025/08/02 | 예 | - | 1시간 30분 |
 
 ## 제작 및 프로덕션
 
@@ -37,8 +37,9 @@ ht-degree: 10%
 | [1.4 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 2025년 1월 4일 | 예 | - | 45분 |
 | [1.5 Frame.io를 사용하여 작업 과정 능률화](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 2025/08/02 | 예 | - | 1시간 |
 | [1.6 GenStudio for Performance Marketing - 확장성](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | 예 | - | 1시간 30분 |
-| [1.7 Firefly 사용자 지정 워크플로](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 17/02/2026 | 예 | - | - |
-| [1.8 엔터프라이즈 스토리지 관리](./modules/creation-production/module1.8/esm.md){target="_blank"} | 17/02/2026 | 예 | - | - |
+| [1.7 Firefly 사용자 지정 워크플로](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 17/02/2026 | 예 | - | 45분 |
+| [1.8 엔터프라이즈 스토리지 관리](./modules/creation-production/module1.8/esm.md){target="_blank"} | 17/02/2026 | 예 | - | 45분 |
+| [1.9 Firefly 보드](./modules/creation-production/module1.9/fireflyboards.md){target="_blank"} | 11/03/2026 | 아니요 | 개발 중인 콘텐츠 | - |
 
 
 ## 에셋 관리
@@ -90,7 +91,7 @@ ht-degree: 10%
 | [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 2026/02/02 | 아니요 | 개발 중인 콘텐츠 | 추가 예정 |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | 예 | - | 90분 |
 | [1.5 Analytics 및 에이전트](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 2026/02/02 | 예 | - | 45분 |
-| [1.6 Adobe Experience Manager 및 에이전트](./modules/agents/module1.6/aemagents.md){target="_blank"} | 17/02/2026 | 아니요 | 개발 중인 콘텐츠 | 추가 예정 |
+| [1.6 Adobe Experience Manager 및 에이전트](./modules/agents/module1.6/aemagents.md){target="_blank"} | 11/03/2026 | 예 | - | 90분 |
 | [1.7 Adobe Commerce용 지능형 개발자 도구](./modules/agents/module1.7/aiassisteddev.md){target="_blank"} | 17/02/2026 | 예 | - | 45분 |
 
 {style="table-layout:auto"}

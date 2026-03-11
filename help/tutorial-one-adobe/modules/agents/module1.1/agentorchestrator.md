@@ -3,9 +3,10 @@ title: Agent Orchestrator
 description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '248'
 ht-degree: 4%
 
 ---
@@ -46,6 +47,10 @@ ChatGPT Enterprise용 [1.1.2 Adobe Marketing Agent](./ex2.md){target="_blank"}
 [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"}
 
 이 연습에서는 Microsoft Copilot과 함께 Adobe Marketing Agent을 사용하여 Fibre Max에 대한 CitiSignal 시작 캠페인의 배경에 대한 Agent Orchestrator의 능력을 살펴봅니다.
+
+Google Gemini용 [1.1.4 Adobe Marketing Agent](./ex4.md){target="_blank"}
+
+이 연습에서는 Google Gemini와 함께 Adobe Marketing Agent을 사용하여 파이버 맥스에 대한 CitiSignal 시작 캠페인의 배경에 대한 Agent Orchestrator의 기능을 살펴봅니다.
 
 ![기술 내부자](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

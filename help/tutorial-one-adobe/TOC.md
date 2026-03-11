@@ -4,10 +4,10 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 3%
+source-wordcount: '1550'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 3%
 # 원 Adobe 기술 튜토리얼 {#tutorial-one-adobe}
 
 + [튜토리얼 개요](/help/tutorial-one-adobe/overview.md)
-+ [GenStudio for Content Supply chain 기술 지원](/help/tutorial-one-adobe/genstudiocsc.md)
 + [컨텐츠 상태](/help/tutorial-one-adobe/status.md)
 + [아키텍처](/help/tutorial-one-adobe/architecture.md)
 
@@ -31,6 +30,35 @@ ht-degree: 3%
       + [옵션 1: Postman 설정](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [옵션 2: PostBuster 설정](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [설치할 애플리케이션](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+
++ 에이전틱 AI {#agents}
+   + 1.1 Agent Orchestrator {#agents1}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+      + [1.1.1 Agent Orchestrator 시작하기](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+      + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
+      + [1.1.4 Google Gemini용 Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+   + 1.2 에이전트 및 AI 시작하기 {#agents2}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+      + [1.2.1 Agentic AI 시작하기](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+   + 1.4 Brand Concierge {#agents4}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
+      + [1.4.1 Brand Concierge 시작하기](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+      + [1.4.2 웹 사이트에서 Brand Concierge 구현](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analytics 및 에이전트 {#agents5}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA 및 ChatGPT(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA &amp; Claude.ai(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics &amp; Claude.ai(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+   + 1.6 AEM 및 에이전트 {#agents6}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+      + [1.6.1 AEM 에이전트 시작하기](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.2 AEM MCP 서버 및 커서](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3 ChatGPT 및 MCP 서버를 사용하여 콘텐츠 조각 크기 조정](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
+   + 1.7 Adobe Commerce용 지능형 개발자 도구 {#agents7}
+      + [개요](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+      + [1.7.1 개발 환경 설정](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
+      + [1.7.2 커서를 사용하여 프로젝트 개발](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
 
 + 워크플로우 및 계획 {#wfplanning}
    + 1.1 Workfront 계획 {#wfpl1}
@@ -93,6 +121,9 @@ ht-degree: 3%
       + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Workfront, Frame.io 및 ESM 시작하기](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
       + [1.8.2 새 에셋 만들기, 검토 및 승인](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
+   + 1.9 Firefly 보드 {#crpr9}
+      + [개요](/help/tutorial-one-adobe/modules/creation-production/module1.9/fireflyboards.md)
+      + [1.9.1 Firefly 보드 시작하기](/help/tutorial-one-adobe/modules/creation-production/module1.9/ex1.md)
 
 + 에셋 관리 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -137,7 +168,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
          + [개요](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
@@ -266,32 +297,3 @@ ht-degree: 3%
          + [개요](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics 시작하기](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [요약 및 이점](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-
-+ 에이전트 {#agents}
-   + [Agentic AI 개요](/help/tutorial-one-adobe/ai.md)
-   + 1.1 Agent Orchestrator {#agents1}
-      + [개요](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
-      + [1.1.1 Agent Orchestrator 시작하기](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
-      + [1.1.2 Adobe Marketing Agent for ChatGPT Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
-      + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
-   + 1.2 에이전트 및 AI 시작하기 {#agents2}
-      + [개요](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
-      + [1.2.1 Agentic AI 시작하기](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.4 Brand Concierge {#agents4}
-      + [개요](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
-      + [1.4.1 Brand Concierge 시작하기](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
-      + [1.4.2 웹 사이트에서 Brand Concierge 구현](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
-   + 1.5 Analytics 및 에이전트 {#agents5}
-      + [개요](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
-      + [1.5.1 CJA 및 ChatGPT(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
-      + [1.5.2 CJA &amp; Claude.ai(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-      + [1.5.3 Adobe Analytics &amp; Claude.ai(MCP 서버 포함)](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
-   + 1.6 AEM 및 에이전트 {#agents6}
-      + [개요](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-      + [1.6.1 AEM 에이전트 시작하기](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
-      + [1.6.2 AEM MCP 서버 및 커서](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
-      + [1.6.3 ChatGPT 및 MCP 서버를 사용하여 콘텐츠 조각 크기 조정](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
-   + 1.7 Adobe Commerce용 지능형 개발자 도구 {#agents7}
-      + [개요](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
-      + [1.7.1 개발 환경 설정](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
-      + [1.7.2 커서를 사용하여 프로젝트 개발](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)

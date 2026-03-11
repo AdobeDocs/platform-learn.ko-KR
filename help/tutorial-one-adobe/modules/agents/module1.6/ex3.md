@@ -3,9 +3,10 @@ title: ChatGPT 및 MCP 서버를 사용하여 콘텐츠 조각 크기 조정
 description: ChatGPT 및 MCP 서버를 사용하여 콘텐츠 조각 크기 조정
 kt: 5342
 doc-type: tutorial
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+exl-id: b7105351-e9de-4b2c-b3d7-2d4c8627f852
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
@@ -280,6 +281,34 @@ find the content fragment --aepUserLdap-- - CitiSignal Fiber Max and make a vari
 이제 AEM UI에서 새로운 변형을 확인할 수도 있습니다.
 
 ![Agent Orchestrator](./images/chatgpt17.png)
+
+그런 다음 ChatGPT를 사용하여 콘텐츠 조각을 더 많은 변형으로 변환합니다. 다음 메시지를 입력하고 **보내기**&#x200B;를 클릭합니다.
+
+```
+now do the same thing for the 5 top country's languages that CitiSignal does business with
+```
+
+![Agent Orchestrator](./images/chatgpt18.png)
+
+언어 선택을 확인합니다.
+
+![Agent Orchestrator](./images/chatgpt23.png)
+
+**CreateFragmentVariation**&#x200B;을 클릭합니다.
+
+![Agent Orchestrator](./images/chatgpt22.png)
+
+**UpdateFragment**&#x200B;을 클릭합니다.
+
+![Agent Orchestrator](./images/chatgpt24.png)
+
+선택한 각 언어에 대해 이 프로세스를 반복합니다. 완료되면 다음과 같은 항목을 볼 수 있습니다.
+
+![Agent Orchestrator](./images/chatgpt26.png)
+
+AEM UI로 돌아가서 화면을 새로 고칩니다. 이제 콘텐츠 조각에서 새 변형을 볼 수 있습니다.
+
+![Agent Orchestrator](./images/chatgpt27.png)
 
 ## 다음 단계
 
