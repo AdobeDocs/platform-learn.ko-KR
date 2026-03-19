@@ -22,7 +22,7 @@ ht-degree: 52%
 
 ## 전제 조건
 
-다음 몇 가지 단원을 완료하려면 태그에서 개발, 승인, 게시, 확장 관리 및 환경 관리에 대한 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. 태그 사용자 권한에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)를 참조하세요.
+다음 몇 가지 단원을 완료하려면 태그에서 개발, 승인, 게시, 확장 관리 및 환경 관리에 대한 권한이 있어야 합니다. 사용자 인터페이스 옵션을 사용할 수 없어서 이러한 단계를 완료할 수 없는 경우 Experience Cloud 관리자에게 연락하여 액세스 권한을 요청하십시오. 태그 사용자 권한에 대한 자세한 내용은 [설명서](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=ko)를 참조하세요.
 
 
 ## 학습 목표
@@ -49,7 +49,7 @@ ht-degree: 52%
 
 ## 속성 만들기
 
-속성은 사이트에 태그를 배포할 때 기본적으로 확장, 규칙, 데이터 요소 및 라이브러리로 채우는 컨테이너입니다. 속성은 하나 이상의 도메인과 하위 도메인을 그룹화한 것일 수 있습니다. 이 자산들은 유사하게 관리 및 추적할 수 있습니다. 예를 들어 하나의 템플릿을 기반으로 한 여러 개의 웹 사이트가 있고 이러한 웹 사이트 모두에서 동일한 자산을 추적하려 하는 경우, 여러 도메인에 하나의 속성을 적용할 수 있습니다. 속성 만들기에 대한 자세한 내용은 제품 설명서의 [&quot;회사 및 속성&quot;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html)을 참조하십시오.
+속성은 사이트에 태그를 배포할 때 기본적으로 확장, 규칙, 데이터 요소 및 라이브러리로 채우는 컨테이너입니다. 속성은 하나 이상의 도메인과 하위 도메인을 그룹화한 것일 수 있습니다. 이 자산들은 유사하게 관리 및 추적할 수 있습니다. 예를 들어 하나의 템플릿을 기반으로 한 여러 개의 웹 사이트가 있고 이러한 웹 사이트 모두에서 동일한 자산을 추적하려 하는 경우, 여러 도메인에 하나의 속성을 적용할 수 있습니다. 속성 만들기에 대한 자세한 내용은 제품 설명서의 [&quot;회사 및 속성&quot;](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=ko)을 참조하십시오.
 
 **속성을 만들려면**
 
