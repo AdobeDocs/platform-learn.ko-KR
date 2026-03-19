@@ -2,10 +2,10 @@
 title: 포함 코드 추가
 description: 태그 속성의 포함 코드를 가져와 웹 사이트에서 구현하는 방법을 알아봅니다. 이 단원은 웹 사이트에서 Experience Cloud 구현 자습서의 일부입니다.
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 42%
+source-wordcount: '1016'
+ht-degree: 44%
 
 ---
 
@@ -16,15 +16,8 @@ ht-degree: 42%
 
 >[!WARNING]
 >
-> 이 자습서에 사용된 Luma 웹 사이트는 2026년 2월 16일이 있는 주에 교체될 예정입니다. 이 자습서의 일부로 수행된 작업은 새 웹 사이트에 적용되지 않을 수 있습니다.
+> 이 자습서와 해당 Luma 웹 사이트 연습은 더 이상 유지 관리되지 않으며 이전 JavaScript 라이브러리를 사용합니다. 현재 모범 사례에 대해 알아보려면 [Web SDK을 사용하여 Adobe Experience Cloud 구현 자습서](https://experienceleague.adobe.com/ko/docs/platform-learn/implement-web-sdk/overview)를 사용하십시오.
 
->[!NOTE]
->
->Adobe Experience Platform Launch은 데이터 수집 기술군으로 Adobe Experience Platform에 통합되고 있습니다. 이 콘텐츠를 사용하는 동안 알아야 하는 몇 가지 용어 변경 사항이 인터페이스에 롤아웃되었습니다.
->
-> * 이제 Platform Launch(Client Side)가 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=ko)**&#x200B;입니다.
-> * 이제 Platform Launch Server Side가 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=ko)**&#x200B;입니다.
-> * 이제 Edge 구성이 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=ko)**&#x200B;입니다.
 
 ## 학습 목표
 
@@ -109,7 +102,7 @@ ht-degree: 42%
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/ko-KR/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```
