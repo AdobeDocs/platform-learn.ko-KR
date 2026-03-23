@@ -1,23 +1,23 @@
 ---
-title: Firefly 사용자 지정 워크플로
-description: Firefly 사용자 지정 워크플로
+title: Firefly Creative Production for Enterprise
+description: Firefly Creative Production for Enterprise
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f2447270-3ca1-4c60-abf4-c1276a2a8750
-source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
 
-# 1.7 Firefly 사용자 지정 워크플로
+# 1.7 Firefly Creative Production for Enterprise
 
-Firefly 맞춤형 워크플로의 주요 초점은 워크플로를 만들고 구성하는 크리에이티브 기술 전문가 및 솔루션 빌더에 있습니다.
+Firefly Creative Production for Enterprise의 주요 초점은 워크플로우를 만들고 구성하는 크리에이티브 기술 전문가 및 솔루션 빌더에 있습니다.
 
-Firefly 사용자 지정 워크플로를 사용하여 다음과 같은 작업을 수행할 수 있습니다.
+Firefly Creative Production for Enterprise을 사용하여 다음과 같은 작업을 수행할 수 있습니다.
 
 - 워크플로 빌드: 수동 또는 AI 지원이 있는 시각적 인터페이스를 사용하여 여러 단계로 구성된 프로덕션 워크플로를 만듭니다.
 - 워크플로우 실행: 브라우저 외부에서 실행되는 강력한 런타임으로 일괄 처리를 포함하여 규모에 맞게 워크플로우를 실행합니다.
@@ -33,7 +33,7 @@ Firefly 사용자 지정 워크플로를 사용하여 다음과 같은 작업을
 
 ## 전제 조건
 
-- Firefly 사용자 지정 워크플로우에 액세스
+- Firefly Creative Production for Enterprise 액세스
 
 ## 비디오
 
@@ -43,7 +43,7 @@ Firefly 사용자 지정 워크플로를 사용하여 다음과 같은 작업을
 
 ## 연습
 
-[1.7.1 Firefly 사용자 지정 워크플로 시작](./ex1.md){target="_blank"}
+[1.7.1 Firefly Creative Production for Enterprise 시작하기](./ex1.md){target="_blank"}
 
 이 연습에서는 Workflow Builder를 사용합니다.
 
