@@ -3,10 +3,10 @@ title: 개요 - 포괄적인 기술 튜토리얼 - One Adobe
 description: 포괄적인 기술 튜토리얼 - One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 1%
+source-wordcount: '606'
+ht-degree: 6%
 
 ---
 
@@ -21,15 +21,18 @@ ht-degree: 1%
 - Adobe Firefly Services, Adobe Photoshop, Adobe 프레임 I/O, Adobe Substance 3D 스테이징
 - Adobe Workfront 워크플로, Adobe Workfront 계획 및 Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets, Forms 및 Edge Delivery Services
-- AEM Assets Dynamic Media, Content Hub
+- Adobe Experience Manager Assets Dynamic Media, Content Hub
+- Adobe Commerce as a Cloud Service
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
 - Adobe Customer Journey Analytics
 - Adobe Content Analytics
+- Adobe AEP Agent Orchestrator, Adobe Marketing Agent, Brand Concierge
 
 이 튜토리얼은 Adobe 애플리케이션에만 중점을 두지 않고 브랜드가 작동하는 광범위한 에코시스템을 고려합니다. 이를 위해 일부 단원에서는 Adobe이 아닌 애플리케이션을 Adobe 애플리케이션과 통합하는 방법에 중점을 두고 있습니다. 따라서 다음 애플리케이션이 Adobe Experience Platform과 함께 작동하는 방식을 깊이 이해할 수 있습니다.
 
+- ChatGPT Enterprise, Claude, Cursor, Microsoft 365 Copilot, Google Gemini for Enterprise
 - Amazon AWS
 - Google Cloud 플랫폼
 - Microsoft Azure
@@ -37,192 +40,69 @@ ht-degree: 1%
 - Snowflake
 - ...
 
-## 지식 표시
+## 아키텍처 개요
 
-![Adobe 적격](./assets/images/badge.png){width="100px" align="left"}
+이 비디오에서는 전체 통합 One Adobe 자습서 뒤의 아키텍처에 대해 알아봅니다.
 
-이 자습서에서 일부 모듈을 완료한 후 Adobe 자격 증명 시험에 응시하여 **Adobe 적격** 배지를 받을 수 있습니다.
+>[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-- [Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} 단원을 완료하면 **Adobe 적격** 시험을 통과하고 **AD2-E901**&#x200B;에 합격할 수 있습니다.
-  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
-- [Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"} 모듈을 완료하면 **Adobe Qualified** 시험에 **AD2-E902**&#x200B;을(를) 참여하여 통과할 수 있습니다.
-  [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
+## 컨텐츠 Supply chain란 무엇입니까?
 
-## 컨텐츠 상태
+One Adobe 자습서는 캠페인 계획부터 마케팅 활동의 성과를 측정하는 것까지 마케팅 활동의 모든 단계를 간소화하도록 설계된 컨텐츠 supply chain의 5단계에 대해 구성되어 있습니다. 각 기술 실습은 컨텐츠 supply chain의 단계 중 하나에 매핑됩니다.
 
-아래 콘텐츠의 상태를 확인하려면 [상태 페이지](./status.md){target="_blank"}(으)로 이동하세요.
+- **워크플로 및 계획**: Adobe Workfront과 같은 도구를 사용하여 콘텐츠 이니셔티브를 전략하고 오케스트레이션하여 팀을 조정하고, 콘텐츠를 정의하고, 프로젝트 타임라인을 관리합니다.
 
-### 시작하기
+- **만들기 및 프로덕션**: 작업을 자동화하고 프로덕션 속도를 높이는 Adobe Creative Cloud 및 Adobe Firefly(generative AI)과 같은 애플리케이션을 통해 콘텐츠 에셋을 제작합니다.
 
-[시작](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+- **자산 관리**: 중복 작업을 방지하기 위해 Adobe Experience Manager Assets을 통해 자산을 구성하고, 저장하고, 액세스할 수 있도록 합니다.
 
-이 기본 모듈에서는 데모 환경에 액세스하고 사용할 수 있도록 모든 것을 준비합니다.
+- **게재 및 활성화**: 최적화된 환경을 위해 Dynamic Media를 사용하여 채널(웹 사이트, 소셜 미디어) 간에 콘텐츠를 배포합니다.
 
-### &#x200B;1. 워크플로 및 계획
+- **보고 및 인사이트**: Adobe Analytics을 사용하여 콘텐츠 성능을 분석하여 향후 전략에 대한 인사이트를 얻습니다.
 
-[1.1 Adobe Workfront 계획](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+## 학습 경로
 
-이 모듈에서는 Adobe Workfront Planning을 구성 및 사용하여 새 작업 영역을 만들고, 레코드 유형을 정의하고, 레코드를 관리하고, 새 요청 양식을 만들고, AI 비서를 활용합니다.
+3개의 학습 경로가 있습니다.
 
-Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+### Agentic AI Labs
 
-이 모듈에서는 Adobe Workfront을 구성 및 사용하여 승인 흐름을 관리하고 Adobe Experience Manager Assets, 유니버설 편집기, Photoshop 등과의 통합을 사용합니다.
+여기에서 시작: [Agentic AI Labs](./ai.md){target="_blank"}
 
-### &#x200B;2. 제작 및 제작
+이 학습 경로에 포함된 애플리케이션:
 
-[1.1 Adobe Firefly Services 개요](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+- Adobe Experience Manager Cloud Service
+- Adobe Experience Platform
+- Adobe Real-Time CDP
+- Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe AEP Agent Orchestrator, Adobe Marketing Agent, Brand Concierge
 
-이 모듈에서는 Adobe Firefly Services API, Photoshop API 및 Microsoft Azure Storage Services를 사용하여 이미지를 생성하고 프로그래밍 방식으로 저장합니다.
+### GenStudio 랩
 
-[1.2 Workfront Fusion을 사용한 Creative 워크플로 자동화](./modules/creation-production/module1.2/automation.md){target="_blank"}
+여기에서 시작: [GenStudio Labs](./genstudiocsc.md){target="_blank"}
 
-이 모듈에서는 Adobe Workfront Fusion을 사용하여 콘텐츠 제작 워크플로를 자동화하고 확장하게 됩니다.
+이 학습 경로에서 콘텐츠 Supply chain 최적화를 중심으로 하는 Adobe의 GenStudio 오퍼링에 대한 학습에 집중할 수 있습니다. 마케터들은 전례 없는 속도와 규모로 더 많은 캠페인을 제공해야 한다는 압박에 직면해 있습니다. 이를 위해서는 엄청난 양의 콘텐츠가 필요합니다. 대부분의 조직은 지역, 대상 및 채널 전반에 걸쳐 개인화할 필요성이 증가함에 따라 성장만 기대되는 수요에 보조를 맞추려고 애쓰고 있습니다.
 
-[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+Adobe GenStudio을 통해 기업은 콘텐츠의 계획, 생성, 관리, 활성화 및 측정을 포함하여 디지털 콘텐츠 supply chain의 모든 측면을 변환할 수 있습니다.
 
-이 모듈에서는 마케팅 및 크리에이티브 팀이 옴니채널 컨텐츠를 생성하고 활성화하고 디지털 마케팅 캠페인을 위한 엔터프라이즈 거버넌스를 통해 최적화할 수 있는 Gen AI-first-end인 Adobe GenStudio for Performance Marketing의 최종 워크플로 애플리케이션을 사용합니다.
+이 학습 경로에 포함된 애플리케이션:
 
-[1.4 Adobe Express 및 Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
+- Adobe Firefly Services, Adobe Photoshop, Adobe 프레임 I/O, Adobe Substance 3D 스테이징
+- Adobe Workfront 워크플로, Adobe Workfront 계획 및 Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service, Sites, Assets, Forms 및 Edge Delivery Services
+- Adobe Experience Manager Assets Dynamic Media, Content Hub
+- Adobe Commerce as a Cloud Service
 
-이 모듈에서는 Adobe Express을 사용하여 이미지와 비디오를 만들고 이러한 에셋을 더 광범위한 Adobe Experience Cloud 에코시스템을 위해 공유합니다.
+### AEP 및 앱 랩
 
-[1.5 Frame.io를 사용하여 작업 과정 능률화](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+여기에서 시작: [AEP 및 앱 Labs](./aepapps.md){target="_blank"}
 
-이 모듈에서는 Adobe Frame.io와 Adobe Premiere Pro을 함께 사용하여 이미지와 비디오를 공동 작업하고 검토합니다.
+이 학습 경로에 포함된 애플리케이션:
 
-[1.6 GenStudio for Performance Marketing - 확장성](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
-
-이 모듈에서는 Adobe IO 및 App Builder을 사용하여 GenStudio for Performance Marketing의 기능을 확장하는 사용자 지정 애플리케이션을 빌드합니다.
-
-[1.7 Firefly 사용자 지정 워크플로](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
-
-이 모듈에서는 Firefly의 사용자 지정 워크플로우를 사용하여 반복 가능한 크리에이티브 디자인 및 자동화 사용 사례를 해결합니다.
-
-[1.8 Workfront, Frame.io 및 엔터프라이즈 스토리지 관리를 통한 통합 검토 및 승인](./modules/creation-production/module1.8/esm.md){target="_blank"}
-
-이 모듈에서는 Workfront의 프로젝트 및 작업 관리 기능을 Frame.io의 실시간 검토 및 공동 작업 경험과 직접 연결합니다.
-
-### &#x200B;3. 자산 관리 및 사이트
-
-[1.1 Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
-
-이 모듈에서는 Adobe Experience Manager Cloud Service 프로그램, 사이트 및 Assets 저장소를 설정합니다.
-
-[1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
-
-이 모듈에서는 AEM Assets을 살펴보게 됩니다.
-
-[1.3 Edge Delivery Services 포함 Adobe Experience Manager Forms](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"}
-
-이 모듈에서는 Edge Delivery Services을 사용하여 Adobe Experience Manager Forms을 살펴보게 됩니다.
-
-[1.4 Adobe Experience Manager Assets 및 Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
-
-이 모듈에서는 AEM Assets Dynamic Media를 설정하고 Adobe Journey Optimizer에서 Dynamic Media 템플릿을 사용합니다.
-
-[1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
-
-이 모듈에서는 Adobe Commerce as a Cloud Service 인스턴스를 만듭니다. Commerce 인스턴스를 AEM Sites CS Storefront 및 AEM Assets CS 환경에 연결합니다.
-
-### &#x200B;4. 배달 및 활성화
-
-#### 데이터 수집
-
-[1.1 Foundation - Adobe Experience Platform 데이터 수집 및 웹 SDK 설정](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
-
-이 기본 모듈에서는 Adobe Experience Platform 데이터 수집 및 새로운 웹 SDK 확장에 대해 알아봅니다.
-
-[1.2 Foundation - 데이터 수집](./modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
-
-이 기본 모듈에서는 다양한 소스의 데이터를 Adobe Experience Platform으로 수집합니다
-
-[1.3 페더레이션 대상 구성](./modules/delivery-activation/datacollection/dc1.3/fac.md)
-
-이 모듈에서는 Federated Audiences 모델을 설정하고 Federated Data를 사용하여 대상을 생성하는 방법에 대해 알아봅니다.
-
-#### Real-Time CDP
-
-[2.1 Foundation - 실시간 고객 프로필](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
-
-이 기본 모듈에서는 UI 및 API를 사용하여 Adobe Experience Platform의 실시간 고객 프로필을 살펴봅니다.
-
-[2.2 지능형 서비스](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
-
-이 모듈에서는 Adobe Experience Platform Intelligent Services를 설정, 구성 및 사용하는 방법을 배웁니다.
-
-[2.3 Real-Time CDP - 대상 구축 및 조치](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
-
-이 모듈에서는 대상을 구성하고 Google DV360, Adobe Target 및 AWS S3을 포함한 여러 대상에 대상을 활성화합니다.
-
-[2.4 Real-Time CDP: Audience Activation에서 Microsoft Azure Event Hub로](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
-
-이 모듈에서는 Microsoft Azure EventHub 대상을 Adobe Experience Platform Real-time CDP의 실시간 대상으로 설정합니다.
-
-[2.5 Real-Time CDP 연결: 이벤트 전달](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
-
-이 모듈에서는 서버측에서 Google Cloud Platform Pub/Sub 및 AWS Kinesis와 같은 여러 엔드포인트로 데이터를 전달합니다.
-
-[2.6 Apache Kafka에서 Real-Time CDP으로 데이터 스트리밍](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
-
-이 모듈에서는 고유한 Apache Kafka 클러스터를 설정하고 데이터를 Adobe Experience Platform에 스트리밍하는 방법에 대해 알아봅니다.
-
-#### Adobe Journey Optimizer
-
-[3.1 Adobe Journey Optimizer: 오케스트레이션](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
-
-이 모듈에서는 Adobe Journey Optimizer을 사용하여 트리거 기반 여정을 빌드합니다.
-
-[3.2 Adobe Journey Optimizer: 외부 데이터 소스 및 사용자 지정 작업](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
-
-이 모듈에서는 Adobe Journey Optimizer을 사용하여 온라인과 오프라인 모두에서 고객 행동을 청취하고 다양한 채널을 통해 지능적이고 상황에 맞는 실시간 방식으로 응답합니다.
-
-[3.3 Adobe Journey Optimizer: 푸시 및 인앱 메시지](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
-
-이 모듈에서는 Adobe Journey Optimizer을 사용하여 푸시 알림 및 인앱 메시지를 구성합니다.
-
-[3.4 Adobe Journey Optimizer: 이벤트 기반 여정](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
-
-이 모듈에서는 기업이 고객에게 연관성 있고 상황에 맞는 개인화된 경험을 디자인하고 제공하는 데 도움이 되는 Journey Optimizer에 대해 알아야 할 모든 사항을 알아봅니다.
-
-[3.5 Adobe Journey Optimizer: 번역 서비스](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
-
-이 모듈에서는 Adobe Journey Optimizer 내에서 번역 서비스를 설정하고 사용하여 고객에게 메시지를 현지화하는 방법에 대해 알아봅니다.
-
-[3.6 Adobe Journey Optimizer: 컨텐츠 관리](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
-
-이 모듈에서는 Adobe Journey Optimizer 내에서 컨텐츠 카드 및 랜딩 페이지를 설정하고 사용하는 방법을 배우고 Adobe Journey Optimizer과 GenStudio for Performance Marketing 간의 통합에 대해 자세히 알아봅니다.
-
-[3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
-
-이 모듈에서는 Adobe Journey Optimizer 내에서 Decisioning 및 코드 기반 경험을 설정하고 사용하는 방법을 알아봅니다.
-
-[3.8 Adobe Journey Optimizer: 캠페인](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
-
-이 모듈에서는 Adobe Journey Optimizer 내에서 캠페인을 설정하고 사용하는 방법에 대해 알아봅니다.
-
-### &#x200B;5. 보고 및 통찰력
-
-#### Adobe Customer Journey Analytics
-
-[1.1 Customer Journey Analytics: Adobe Experience Platform 맨 위에서 Analysis Workspace을 사용하여 대시보드 빌드](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
-
-이 모듈에서는 옴니채널 데이터가 포함된 대시보드를 구성하여 오프라인 통찰력을 얻을 수 있습니다.
-
-[1.2 Customer Journey Analytics: BigQuery Source 커넥터를 사용하여 Adobe Experience Platform에서 Google Analytics 데이터 수집 및 분석](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
-
-이 모듈에서는 고유한 Google Cloud Platform 인스턴스를 설정하고 Google Cloud Platform에서 데모 데이터를 로드한 다음 BigQuery Source 커넥터를 사용하여 해당 데이터를 Google Cloud Platform에서 Adobe Experience Platform으로 수집합니다.
-
-#### Data Distiller
-
-[2.1 쿼리 서비스](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
-
-이 모듈에서는 Adobe Experience Platform 쿼리 서비스를 사용하는 방법을 알아봅니다.
-
-#### Content Analytics
-
-[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
-
-이 모듈에서는 Adobe Content Analytics을 구현하고 사용하는 방법을 배웁니다.
+- Adobe Experience Platform
+- Adobe Real-Time CDP
+- Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
 
 ![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 

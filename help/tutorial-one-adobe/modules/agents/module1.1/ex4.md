@@ -4,9 +4,9 @@ description: Google Gemini Enterprise용 Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: 2b80701ddfd40896bc4dc149de1008f3ff86df4b
+source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -34,8 +34,6 @@ Google Gemini Enterprise Beta과 함께 Adobe Marketing Agent을 사용함으로
 이 비디오에서는 이 연습과 관련된 모든 단계에 대한 설명과 데모를 제공합니다.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481322?quality=12&learn=on)
-
-이 실험실은 개발 중입니다.
 
 ## Google Gemini Enterprise에 대한 1.1.4.1 액세스
 
@@ -361,6 +359,10 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 이제 이 실습을 완료했습니다.
 
-[Agent Orchestrator](./agentorchestrator.md){target="_blank"}(으)로 돌아가기
+## 다음 단계
+
+[1.1.5 Adobe Marketing Agent for Claude](./ex5.md){target="_blank"}(으)로 이동
+
+[Agent Orchestrator](./agentorchestrator.md){target="_blank"}로 돌아가기
 
 [모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}

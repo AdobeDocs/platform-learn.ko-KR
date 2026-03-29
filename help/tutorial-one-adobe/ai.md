@@ -1,11 +1,11 @@
 ---
-title: Agentic AI Tech Labs 개요
-description: Agentic AI Tech Labs 개요
+title: Agentic AI Tech Labs
+description: Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,23 @@ ht-degree: 0%
 
 ![기술 내부자](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## 개요 - 진행 중인 작업
+## 아젠틱 AI 아키텍처
+
+이 비디오에서는 One Adobe 자습서의 Agentic AI 부분에 있는 아키텍처에 대해 알아봅니다.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
+아래의 아키텍처 개요 이미지를 다운로드하십시오.
+
+![기술 내부자](./assets/images/architecture_agentic.jpg)
+
+### 시작하기
+
+[시작](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+
+이 기본 모듈에서는 데모 환경에 액세스하고 사용할 수 있도록 모든 것을 준비합니다.
+
+### Agentic AI Tech Labs
 
 [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
@@ -26,6 +42,8 @@ Adobe Experience Platform 에이전트 및 Agent Orchestrator을 사용하여 �
 - 성향이 높은 대상자 식별
 - 여정 성능 확인
 - CitiSignal 파이버 최대 롤아웃을 위한 새 여정 만들기
+
+또한 Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise 및 Claude와 같은 도구와 함께 Adobe Marketing Agent을 사용하는 방법에 대해 알아봅니다.
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
