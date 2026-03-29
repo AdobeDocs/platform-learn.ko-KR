@@ -3,9 +3,9 @@ title: GenStudio 테크랩
 description: GenStudio 테크랩
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
 
-아래의 아키텍처 개요 이미지를 다운로드하십시오.
-
-![기술 내부자](./assets/images/architecture_content.jpg)
+아키텍처 개요 이미지 [여기](./assets/images/architecture_content.jpg)를 다운로드합니다.
 
 ## GenStudio 테크랩
 

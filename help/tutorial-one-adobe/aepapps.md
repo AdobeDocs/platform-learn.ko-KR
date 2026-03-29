@@ -2,9 +2,9 @@
 title: AEP 및 앱 Tech Labs
 description: AEP 및 앱 Tech Labs
 doc-type: multipage-overview
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
 
-아래의 아키텍처 개요 이미지를 다운로드하십시오.
-
-![기술 내부자](./assets/images/architecture_data.jpeg)
+아키텍처 개요 이미지 [여기](./assets/images/architecture_data.jpeg)를 다운로드합니다.
 
 ### 시작하기
 

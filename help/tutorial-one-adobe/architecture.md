@@ -3,9 +3,9 @@ title: 원 Adobe 자습서 - 아키텍처 개요
 description: 원 Adobe 자습서 - 아키텍처 개요
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-아래의 아키텍처 개요 이미지를 다운로드하십시오.
+아키텍처 개요 이미지 [여기](./assets/images/architecture_all.jpg)를 다운로드합니다.
 
-![기술 내부자](./assets/images/architecture_all.jpg)
+## 스크립트
+
+스크립트는 곧 여기에서 사용할 수 있습니다.
 
 >[!NOTE]
 >
