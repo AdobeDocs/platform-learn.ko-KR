@@ -4,7 +4,7 @@ description: 웹 사이트에서 Brand Concierge 구현
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
-source-git-commit: f3a365b1453ee34d9649202bdb523624a469b623
+source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
 workflow-type: tm+mt
 source-wordcount: '1349'
 ht-degree: 0%
@@ -415,6 +415,6 @@ window["alloy"]("sendEvent", {
 
 ## 다음 단계
 
-[Brand Concierge](./brandconcierge.md){target="_blank"}(으)로 돌아가기
+[Brand Concierge](./brandconcierge.md){target="_blank"}로 돌아가기
 
 [모든 모듈로 돌아가기](./../../../overview.md){target="_blank"}
