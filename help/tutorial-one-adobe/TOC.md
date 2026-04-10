@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: a1578a5205fd17a6aaf362145c78e19343255d93
+source-git-commit: bd6a5ccb155195f12552e24000b7a6d152eada39
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1579'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 3%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise용 Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 Agent Orchestrator v2](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 —](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2 에이전트 및 AI 시작하기 {#agents2}
       + [개요](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI 시작하기](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -173,7 +173,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
          + [개요](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
