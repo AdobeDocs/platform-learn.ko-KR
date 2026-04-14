@@ -21,9 +21,9 @@ Adobe Real-Time CDP Collaboration을 사용하면 서드파티 쿠키에 의존�
 
 아래에는 Real-Time CDP Collaboration을 설정하고, 사용하고, 가치를 창출하는 방법을 학습하는 데 도움이 되는 비디오 및 기타 리소스가 있습니다. 이 페이지 및 사이트에 추가 자산이 추가되므로 자주 다시 확인하십시오. 즐거운 학습되시길 바랍니다!
 
-자세한 내용은 Real-Time CDP Collaboration [설명서](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}를 참조하세요.
+자세한 내용은 Real-Time CDP Collaboration [설명서](https://experienceleague.adobe.com/ko/docs/real-time-cdp-collaboration/using/home){target="_blank"}를 참조하세요.
 
-[![ExL LIVE 2025년 4월 10일](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 2025년 4월 10일](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/ko/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## 시작
 

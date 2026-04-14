@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # AI 크레딧 사용 모니터링
 
-첫날부터 사용량을 추적하고 관리할 수 있도록 Experience Platform AI 크레딧이 작동하는 방식을 알아봅니다. 자세한 내용은 [Adobe Experience Platform 에이전트 작업 및 AI 크레딧 사용 설명서](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption)를 참조하십시오.
+첫날부터 사용량을 추적하고 관리할 수 있도록 Experience Platform AI 크레딧이 작동하는 방식을 알아봅니다. 자세한 내용은 [Adobe Experience Platform 에이전트 작업 및 AI 크레딧 사용 설명서](https://experienceleague.adobe.com/ko/docs/core-services/interface/features/ai-credit-consumption)를 참조하십시오.
 
 >[!SLIDE](ai-credits)

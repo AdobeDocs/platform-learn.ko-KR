@@ -42,11 +42,11 @@ Adobe Experience Platform은 고객 경험을 주도하는 완벽한 솔루션�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ko">
       <img alt="&apos;데이터 설계자 및 데이터 엔지니어 시작하기&apos; 자습서에 대한 썸네일 이미지" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ko">
     <strong>데이터 설계자 및 데이터 엔지니어 시작하기</strong>
     </a>
     </div>
