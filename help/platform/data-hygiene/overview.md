@@ -5,10 +5,11 @@ solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimiz
 feature: Data Hygiene
 role: Developer
 level: Intermediate
-source-git-commit: 9c15708f7300672caa963c0635179dd2855e5fed
+exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -36,7 +37,8 @@ holistic fashion.
 
 데이터 준비 기능은 데이터 소스에서 필요한 필드만 수집하는 데 도움이 됩니다.
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * data-prep-for-data-hygiene.md
 -->
@@ -47,7 +49,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="데이터 위생을 위한 데이터 준비" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449282/?format=jpeg&nocache=1740251397387&captions=kor" alt="데이터 위생을 위한 데이터 준비"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="데이터 위생을 위한 데이터 준비"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +73,8 @@ holistic fashion.
 ## 시스템에서 데이터 제거
 
 시스템에서 데이터를 제거하는 데 도움이 되는 다양한 기능이 있습니다. 온디맨드 또는 일정에 따라 전체 데이터 세트를 삭제하고, 유지 시간 설정이 있는 레코드 및 프로필을 만료하고, 개별 프로필을 삭제하고, 개인 정보 보호 요청을 처리할 수 있습니다.
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * delete-datasets-and-batches.md
 * ../data-lifecycle/expire-datasets.md
@@ -109,7 +112,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="데이터 세트 삭제 예약" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430308?format=jpeg&nocache=1740251397716&captions=kor" alt="데이터 세트 삭제 예약"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="데이터 세트 삭제 예약"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +135,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="익명 프로필 및 경험 이벤트 만료" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449862?format=jpeg&nocache=1740251397705&captions=kor" alt="익명 프로필 및 경험 이벤트 만료"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="익명 프로필 및 경험 이벤트 만료"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -205,7 +208,8 @@ holistic fashion.
 
 ## 시스템의 데이터 조정
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../profiles/update-a-specific-attribute-with-upsert.md
 -->
@@ -216,7 +220,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443448/?format=jpeg&nocache=1740251398874&captions=kor" alt="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

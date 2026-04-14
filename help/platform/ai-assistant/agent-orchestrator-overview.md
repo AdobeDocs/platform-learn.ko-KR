@@ -1,6 +1,6 @@
 ---
 title: Agent Orchestrator 개요
-description: Agent Orchestrator은 특별히 빌드된 에이전트, 고급 추론 엔진 및 강력한 대화 인터페이스로 고객 experience orchestration을 지원하는 Adobe Experience Platform의 에이전트 계층입니다.
+description: Agent Orchestrator는 Adobe Experience Platform의 에이전트 계층으로, 특별히 고안된 에이전트, 고급 추론 엔진, 강력한 대화형 인터페이스를 통해 고객 경험 오케스트레이션을 지원합니다.
 feature: AI Assistant
 role: User, Developer, Leader, Admin
 level: Beginner
@@ -8,10 +8,10 @@ last-substantial-update: 2025-09-25T00:00:00Z
 jira: KT-19103
 hide: false
 exl-id: 41040b76-199f-45b9-a347-a9611c60c1e1
-source-git-commit: b88b40779d00d6ea939a11f799ed735e5dc6296d
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '72'
-ht-degree: 5%
+ht-degree: 51%
 
 ---
 

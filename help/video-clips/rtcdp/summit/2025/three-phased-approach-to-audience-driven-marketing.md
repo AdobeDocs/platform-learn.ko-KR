@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: d9dbfe17-c6b1-4320-b0cd-a2e8e0aa6987
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 Real-Time CDP을 사용하여 대상 전략을 구축, 확장 및 최적화하는 간단한 3단계 프레임워크를 살펴보십시오.
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3462997/?captions=kor&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)

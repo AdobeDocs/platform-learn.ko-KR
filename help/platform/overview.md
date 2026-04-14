@@ -4,7 +4,7 @@ description: Adobe Experience Platform에 대해 알아보기
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 7%
@@ -42,11 +42,11 @@ Adobe Experience Platform은 고객 경험을 주도하는 완벽한 솔루션�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ko">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
       <img alt="&apos;데이터 설계자 및 데이터 엔지니어 시작하기&apos; 자습서에 대한 썸네일 이미지" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=ko">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
     <strong>데이터 설계자 및 데이터 엔지니어 시작하기</strong>
     </a>
     </div>
@@ -93,7 +93,8 @@ Adobe Experience Platform은 고객 경험을 주도하는 완벽한 솔루션�
     <p>
     <em>Build segments based on your data.</em>
     <p>
-  </td>-->
+  </td>
+  -->
 </tr>
 </table>
 

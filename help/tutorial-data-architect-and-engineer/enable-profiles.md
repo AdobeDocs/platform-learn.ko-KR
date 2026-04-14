@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 0%
@@ -26,21 +26,22 @@ ht-degree: 0%
 
 정말 놀랍습니다. 프로필에 대해 *모든 데이터*&#x200B;를 활성화할 필요가 없습니다. 실제로 활성화 사용 사례에 필요한 데이터만 활성화해야 합니다. 강력한 고객 프로필에 빠르게 액세스해야 하는 마케팅 사용 사례, 콜 센터 통합 등에 사용할 데이터를 활성화합니다. 분석용으로만 데이터를 업로드하는 경우에는 프로필에 대해 활성화해서는 안 됩니다.
 
-실시간 고객 프로필 데이터에 사용할 수 있는 중요한 [보호 기능](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=ko)이 있습니다. 이러한 보호 기능은 프로필에 사용할 수 있는 데이터를 결정할 때 검토해야 합니다.
+실시간 고객 프로필 데이터에 사용할 수 있는 중요한 [보호 기능](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)이 있습니다. 이러한 보호 기능은 프로필에 사용할 수 있는 데이터를 결정할 때 검토해야 합니다.
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 실시간 고객 프로필을 활성화해야 합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 실시간 고객 프로필에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/31709?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## 권한 필요
 
 [권한 구성](configure-permissions.md) 단원에서 이 단원을 완료하는 데 필요한 모든 액세스 제어를 설정합니다.
 
 
-<!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
+<!--
+* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -125,7 +126,7 @@ ht-degree: 0%
 1. **[!UICONTROL 프로필]** 스위치 전환
 1. 확인 모달에서 **[!UICONTROL 사용]** 단추를 눌러 확인합니다
 
-   ![&#x200B; 프로필 전환](assets/profile-loyalty-enableDataset.png)
+   ![ 프로필 전환](assets/profile-loyalty-enableDataset.png)
 
 이러한 다른 데이터 세트에 대해 위의 단계를 반복합니다.
 

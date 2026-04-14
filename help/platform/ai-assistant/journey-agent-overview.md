@@ -9,7 +9,7 @@ last-substantial-update: 2025-09-23T00:00:00Z
 jira: KT-19109
 hide: false
 exl-id: 46a251ce-4de2-4c35-800d-fdc6c3a162d4
-source-git-commit: 04931dd0e459a3dc74aaa11ac8be5edc5a269e27
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 46%
@@ -18,6 +18,6 @@ ht-degree: 46%
 
 # Journey 에이전트 개요
 
-Journey Agent은 AI를 사용하여 대화형 인터페이스를 통해 B2B/B2C 여정을 만들고 분석하고 최적화합니다. 자세한 내용은 [Journey Agent 설명서](https://experienceleague.adobe.com/ko/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)를 참조하세요.
+Journey Agent은 AI를 사용하여 대화형 인터페이스를 통해 B2B/B2C 여정을 만들고 분석하고 최적화합니다. 자세한 내용은 [Journey Agent 설명서](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)를 참조하세요.
 
 >[!SLIDE](journey-agent-overview)

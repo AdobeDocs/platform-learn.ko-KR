@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 1%
@@ -21,15 +21,14 @@ ht-degree: 1%
 
 이 단원에서는 Adobe Developer Console 및 온라인 Webhook 개발 도구를 사용하여 Webhook을 설정하여 데이터 수집 이벤트에 가입합니다. 이러한 이벤트를 사용하여 후속 단원에서 데이터 수집 작업의 상태를 모니터링합니다.
 
-**데이터 엔지니어**&#x200B;는 이 자습서 외부에서 데이터 수집 이벤트를 구독하려고 합니다.
+**데이터 엔지니어**는 이 자습서 외부에서 데이터 수집 이벤트를 구독하려고 합니다.
 **데이터 설계자** _이 단원을 건너뛰고_&#x200B;다음 [일괄 처리 수집 단원](ingest-batch-data.md)(으)로 이동할 수 있습니다.
 
 ## 권한 필요
 
 [권한 구성](configure-permissions.md) 단원에서 이 단원을 완료하는 데 필요한 모든 액세스 제어, 특히 다음을 설정합니다.
 
-<!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
--->
+<!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
 
 >[!IMPORTANT]
 >
@@ -81,7 +80,7 @@ ht-degree: 1%
 ## 추가 리소스
 
 * [Webhook.site](https://webhook.site/)
-* [데이터 수집 알림 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=ko)
+* [데이터 수집 알림 설명서](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
 * [Adobe I/O Events 설명서 시작](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 이제 [데이터 수집](ingest-batch-data.md)을 시작합니다.

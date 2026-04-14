@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 375b9072-fbb8-4f99-ba8f-968dd9256c06
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 효율적인 구현을 위해 Adobe Experience Platform을 구조화하고 중앙 집중화와 분산 접근 방식의 균형을 잡는 방법에 대해 알아봅니다.
 
 <!-- 62_S601_3442532_176_architecting-adobe-experience-platform-for-scalability -->
->[!VIDEO](https://video.tv.adobe.com/v/3459711/?captions=kor&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458321/?learn=on&enablevpops=true)

@@ -1,6 +1,6 @@
 ---
 title: Audience Agent 개요
-description: Audience 에이전트는 대화 생성, 최적화, 인사이트, B2B/B2C 앱 전반의 안전한 통합으로 고객 관리를 간소화합니다.
+description: Audience 에이전트는 대화 생성, 최적화, 인사이트, B2B/B2C 앱 전반의 안전한 통합으로 대상자 관리를 간소화합니다.
 feature: AI Assistant, Audiences
 role: User, Developer, Leader, Admin
 level: Beginner
@@ -8,7 +8,7 @@ last-substantial-update: 2025-09-23T00:00:00Z
 jira: KT-19108
 hide: false
 exl-id: 35878e5b-b716-42c7-bcf3-a4ccbe32abc5
-source-git-commit: b88b40779d00d6ea939a11f799ed735e5dc6296d
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '49'
 ht-degree: 36%

@@ -9,7 +9,7 @@ thumbnail: 333700.jpg
 hide: true
 hidefromtoc: true
 exl-id: dd9a2521-e1e5-44b4-bd10-c460ed895e52
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '60'
 ht-degree: 1%
@@ -20,4 +20,4 @@ ht-degree: 1%
 
 Adobe Experience Platform 쿼리 서비스 API를 사용하여 쿼리를 작성 및 실행하고, 일정 쿼리를 만들기, 쿼리 템플릿을 만드는 방법에 대해 알아봅니다. 자세한 내용은 [쿼리 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/3414088?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/333700?learn=on&enablevpops)

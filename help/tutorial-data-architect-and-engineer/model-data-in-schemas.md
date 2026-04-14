@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -43,22 +43,24 @@ Key terms:
 **데이터 설계자**&#x200B;는 이 자습서 외부에서 스키마를 만들어야 하지만 **데이터 엔지니어**&#x200B;는 데이터 설계자가 만든 스키마와 긴밀하게 작업합니다.
 
 연습을 시작하기 전에 이 짧은 비디오를 통해 스키마 및 XDM(Experience Data Model)에 대해 자세히 알아보십시오.
->[!VIDEO](https://video.tv.adobe.com/v/38515?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> Experience Platform에서 데이터 모델링에 대해 자세히 알아보려면 Experience League에서 무료로 사용할 수 있는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/ko/playlists/experience-platform-model-your-customer-experience-data-with-xdm)을 시청하는 것이 좋습니다.
+> Experience Platform에서 데이터 모델링에 대해 자세히 알아보려면 Experience League에서 무료로 사용할 수 있는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)을 시청하는 것이 좋습니다.
 
 ## 권한 필요
 
 [권한 구성](configure-permissions.md) 단원에서 이 단원을 완료하는 데 필요한 모든 액세스 제어를 설정합니다.
 
-<!--, specifically:
+<!--
+, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 
 <!--
@@ -75,22 +77,22 @@ Key terms:
    ![OOTB 필드 그룹이 있는 스키마](assets/schemas-loyaltyCreateSchema.png)
 
 1. 개별 고객의 특성(포인트, 상태 등)을 모델링하게 되므로 스키마 만들기 워크플로에서 스키마의 기본 클래스로 **[!UICONTROL 개별 프로필]**&#x200B;을 선택합니다.
-1. **[!UICONTROL 다음]**&#x200B;을 선택합니다.
+1. **[!UICONTROL 다음]**을 선택합니다.
    ![기본 클래스 선택](assets/schemas-loyaltySelectBaseClass.png)
 
 1. `Luma Loyalty Schema`스키마 표시 이름&#x200B;**[!UICONTROL 텍스트 필드에]**&#x200B;을(를) 입력하십시오. 아래 캔버스에서 선택한 클래스에서 제공하는 기본 스키마 구조를 검토하고 확인할 수도 있습니다.
-1. 스키마를 만들려면 **[!UICONTROL 완료]**&#x200B;를 선택하십시오.
+1. 스키마를 만들려면 **[!UICONTROL 완료]**를 선택하십시오.
    ![충성도 스키마 만들기 완료](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 표준 필드 그룹 추가
 
 스키마가 만들어지면 스키마에 필드를 추가할 수 있는 스키마 편집기로 리디렉션됩니다. 스키마에 개별 필드를 직접 추가하거나 필드 그룹을 사용할 수 있습니다. 모든 개별 필드는 여전히 클래스 또는 필드 그룹과 연결되어 있다는 점에 유의해야 합니다. Adobe에서 제공하는 다양한 산업 표준 필드 그룹 세트에서 선택하거나 직접 생성할 수 있습니다. Experience Platform에서 고유한 데이터를 모델링하기 시작할 때 Adobe에서 제공하는 업계 표준 필드 그룹에 익숙해지는 것이 좋습니다. 가능하면 Customer AI, Attribution AI 및 Adobe Analytics과 같은 다운스트림 서비스를 제공할 때 이를 사용하는 것이 좋습니다.
 
-자체 데이터를 사용하여 작업할 때 중요한 단계는 플랫폼에서 캡처해야 하는 자체 데이터와 이를 모델링하는 방법을 결정하는 것입니다. 이 큰 주제는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/ko/playlists/experience-platform-model-your-customer-experience-data-with-xdm)에서 자세히 설명합니다. 이 자습서에서는 미리 결정된 몇 가지 스키마의 구현을 안내하겠습니다.
+자체 데이터를 사용하여 작업할 때 중요한 단계는 플랫폼에서 캡처해야 하는 자체 데이터와 이를 모델링하는 방법을 결정하는 것입니다. 이 큰 주제는 재생 목록 [XDM으로 고객 경험 데이터 모델링](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)에서 자세히 설명합니다. 이 자습서에서는 미리 결정된 몇 가지 스키마의 구현을 안내하겠습니다.
 
 필드 그룹을 추가하려면:
 
-1. **[!UICONTROL 필드 그룹]** 제목 아래에서 **[!UICONTROL 추가]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 필드 그룹]** 제목 아래에서 **[!UICONTROL 추가]**를 선택합니다.
    ![새 필드 그룹 추가](assets/schemas-loyalty-addFieldGroup.png)
 1. **[!UICONTROL 필드 그룹 추가]** 모달에서 다음 필드 그룹을 선택합니다.
    1. 이름 및 생일과 같은 기본 고객 데이터에 대한 **[!UICONTROL 인구 통계 세부 정보]**
@@ -100,13 +102,13 @@ Key terms:
 
 1. 산업별 필드 그룹을 표시하려면 **[!UICONTROL Industry]** > **[!UICONTROL Retail]** 상자를 선택합니다.
 1. 충성도 프로그램 필드를 추가하려면 **[!UICONTROL 충성도 세부 정보]**&#x200B;를 선택하십시오.
-1. 스키마에 세 개의 필드 그룹을 모두 추가하려면 **[!UICONTROL 필드 그룹 추가]**&#x200B;를 선택하십시오.
+1. 스키마에 세 개의 필드 그룹을 모두 추가하려면 **[!UICONTROL 필드 그룹 추가]**를 선택하십시오.
    ![충성도 스키마에 표준 필드 그룹 추가](assets/schemas-loyalty-saveOotbMixins.png)
 
 
 이제 잠시 시간을 내어 스키마의 현재 상태를 살펴보십시오. 필드 그룹에는 사용자, 연락처 세부 정보 및 고객 충성도 프로그램 상태와 관련된 표준 필드가 추가되었습니다. 이러한 두 필드 그룹은 회사 데이터에 대한 스키마를 만들 때 유용할 수 있습니다. 특정 필드 그룹 행을 선택하거나 필드 그룹 이름 옆에 있는 상자를 선택하여 시각화가 변경되는 방식을 확인합니다.
 
-스키마를 저장하려면 **[!UICONTROL 저장]**&#x200B;을 선택합니다.
+스키마를 저장하려면 **[!UICONTROL 저장]**을 선택합니다.
 ![스키마 저장](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
@@ -128,7 +130,7 @@ Key terms:
 
 필드 그룹을 만들려면 다음 작업을 수행하십시오.
 
-1. **[!UICONTROL 스키마 필드 그룹]** 머리글 아래에서 **[!UICONTROL 추가]**&#x200B;를 선택합니다.
+1. **[!UICONTROL 스키마 필드 그룹]** 머리글 아래에서 **[!UICONTROL 추가]**를 선택합니다.
    ![새 필드 그룹 추가](assets/schemas-loyalty-addFieldGroup.png)
 1. **[!UICONTROL 새 필드 그룹 만들기]** 선택
 1. `Luma Identity profile field group`을(를) **[!UICONTROL 표시 이름]**(으)로 사용
@@ -143,7 +145,7 @@ Key terms:
    1. **[!UICONTROL 필드 이름]**: `systemIdentifier`
    1. **[!UICONTROL 표시 이름]**: `System Identifier`
    1. **[!UICONTROL 유형]**: **[!UICONTROL 개체]**
-   1. **[!UICONTROL 필드 그룹]** 드롭다운에서 만든 **Luma ID 프로필 필드 그룹**&#x200B;을 선택합니다.
+   1. **[!UICONTROL 필드 그룹]** 드롭다운에서 만든 **Luma ID 프로필 필드 그룹**을 선택합니다.
       ![새 필드 그룹 추가](assets/schemas-loyalty-addSystemIdentifier.png)
    1. **[!UICONTROL 적용]** 선택
       ![새 필드 속성 적용](assets/schemas-loyalty-applySystemIdentifier.png)
@@ -351,14 +353,14 @@ Luma는 [!UICONTROL Commerce 세부 정보] 및 [!UICONTROL 소비자 경험 이
 1. **[!UICONTROL 동작]**&#x200B;을 **[!UICONTROL 레코드]**(으)로 남기기
 1. **[!UICONTROL 만들기]** 단추를 선택하십시오.
    ![새 클래스 만들기](assets/schemas-productClass.png)
-1. 만든 **Luma 제품 카탈로그 클래스**&#x200B;가 아래 클래스 표에 나타납니다. 클래스를 선택한 다음 **[!UICONTROL 다음]**&#x200B;을(를) 선택하십시오.
+1. 만든 **Luma 제품 카탈로그 클래스**&#x200B;가 아래 클래스 표에 나타납니다. 클래스를 선택한 다음 **[!UICONTROL 다음]**을(를) 선택하십시오.
    ![새 클래스 추가됨](assets/schemas-productClassSelected.png)
 1. 스키마 이름을 `Luma Product Catalog Schema`(으)로 지정합니다.
-1. 다음 필드가 있는 [!UICONTROL (이)라는 새 &#x200B;]필드 그룹`Luma Product Catalog field group`을(를) 만듭니다.
+1. 다음 필드가 있는 [!UICONTROL (이)라는 새 ]필드 그룹`Luma Product Catalog field group`을(를) 만듭니다.
    1. productName: 제품 이름: 문자열
    1. productCategory: 제품 범주: 문자열
    1. productColor: 제품 색상: 문자열
-   1. productSku: 제품 SKU: 문자열 | 필수
+   1. productSku: Product SKU: 문자열 | 필수
    1. productSize: 제품 크기: 문자열
    1. productPrice: 제품 가격: Double
 1. 스키마를 **[!UICONTROL 저장]**

@@ -9,7 +9,7 @@ duration: 226
 last-substantial-update: 2023-06-21T00:00:00Z
 jira: KT-3688
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 311b296d67cf39867e7c9f3fd9f0458dfefcfdfd
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 8%
@@ -26,16 +26,17 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 첫 번
 
 >[!IMPORTANT]
 >
->[Adobe Developer Console](https://developer.adobe.com/console/home)에 액세스하려면 [Adobe Admin Console](https://helpx.adobe.com/kr/enterprise/using/admin-roles.html)의 [시스템 관리자](https://helpx.adobe.com/kr/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) 또는 [개발자](https://adminconsole.adobe.com)여야 합니다.
+>[Adobe Developer Console](https://developer.adobe.com/console/home)에 액세스하려면 [Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)의 [시스템 관리자](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) 또는 [개발자](https://adminconsole.adobe.com)여야 합니다.
 >
 > API 자격 증명을 만든 후 시스템 관리자는 자격 증명을 Experience Platform의 역할에 연결해야 합니다.
 >
 >자세한 지침은 [개발자 추가 및 API 자격 증명에 대한 권한 부여 튜토리얼](../admin/add-developers.md)을 참조하세요.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/31705/?captions=kor&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
-<!-- CARDS
+<!--
+CARDS
 * generate-an-access-token.md
 * use-apis-with-postman.md
 -->
@@ -46,7 +47,7 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 첫 번
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="Postman을 사용하여 Experience Platform API 액세스 토큰 생성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32728/?captions=kor&format=jpeg&nocache=1752259602830" alt="Postman을 사용하여 Experience Platform API 액세스 토큰 생성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="Postman을 사용하여 Experience Platform API 액세스 토큰 생성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +70,7 @@ Adobe Experience Platform API를 시작하는 방법을 알아봅니다. 첫 번
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="Postman에서 Experience Platform API 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32722/?captions=kor&format=jpeg&nocache=1752259602844" alt="Postman에서 Experience Platform API 사용"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="Postman에서 Experience Platform API 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
