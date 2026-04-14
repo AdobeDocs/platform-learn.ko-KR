@@ -30,7 +30,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="Audience Portal 및 구성 소개" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="Audience Portal 및 구성 소개"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423369/?captions=kor&format=jpeg&nocache=1740173577252" alt="Audience Portal 및 구성 소개"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -53,7 +53,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="Adobe Experience Platform에 대상자 업로드" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="Adobe Experience Platform에 대상자 업로드"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423360/?captions=kor&format=jpeg&nocache=1740173577237" alt="Adobe Experience Platform에 대상자 업로드"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -96,7 +96,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-audiences.md" title="대상자 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27254?format=jpeg&nocache=1740173578323" alt="대상자 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31708?captions=kor&format=jpeg&nocache=1740173578323" alt="대상자 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -119,7 +119,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/audience-rule-builder-overview.md" title="대상 규칙 빌더 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333301/?format=jpeg&nocache=1740173578357" alt="대상 규칙 빌더 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413204/?captions=kor&format=jpeg&nocache=1740173578357" alt="대상 규칙 빌더 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -142,7 +142,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-content-based-audiences.md" title="콘텐츠 기반 대상 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333302/?format=jpeg&nocache=1740173578346" alt="콘텐츠 기반 대상 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413209/?captions=kor&format=jpeg&nocache=1740173578346" alt="콘텐츠 기반 대상 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-conversion-audiences.md" title="전환 대상자 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333303/?format=jpeg&nocache=1740173578309" alt="전환 대상자 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413194/?captions=kor&format=jpeg&nocache=1740173578309" alt="전환 대상자 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-dynamic-audiences.md" title="동적 대상자 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/27428?format=jpeg&nocache=1740173578383" alt="동적 대상자 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34357?captions=kor&format=jpeg&nocache=1740173578383" alt="동적 대상자 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -211,7 +211,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-multi-entity-audiences.md" title="다중 엔티티 대상 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32179?format=jpeg&nocache=1740173578335" alt="다중 엔티티 대상 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345110?captions=kor&format=jpeg&nocache=1740173578335" alt="다중 엔티티 대상 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -234,7 +234,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="audience-builder/create-sequential-audiences.md" title="순차적 대상자 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333305/?format=jpeg&nocache=1740173578395" alt="순차적 대상자 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3413214/?captions=kor&format=jpeg&nocache=1740173578395" alt="순차적 대상자 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -293,7 +293,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="페더레이션 대상 구성 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="페더레이션 대상 구성 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450890/?captions=kor&format=jpeg&nocache=1740173579477" alt="페더레이션 대상 구성 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -316,7 +316,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="Federated Audience 컴포지션 연결 및 구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="Federated Audience 컴포지션 연결 및 구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451563/?captions=kor&format=jpeg&nocache=1740173579488" alt="Federated Audience 컴포지션 연결 및 구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -339,7 +339,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="페더레이션 대상 컴포지션 만들기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="페더레이션 대상 컴포지션 만들기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448585/?captions=kor&format=jpeg&nocache=1740173579467" alt="페더레이션 대상 컴포지션 만들기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -373,7 +373,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-segmentation-demo.md" title="스트리밍 세분화 데모" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36184?format=jpeg&nocache=1740173579663" alt="스트리밍 세분화 데모"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40068?captions=kor&format=jpeg&nocache=1740173579663" alt="스트리밍 세분화 데모"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -411,7 +411,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-configuration-flow.md" title="세그먼트 매치 구성 플로우" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342336/?format=jpeg&nocache=1740173579850" alt="세그먼트 매치 구성 플로우"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346708/?captions=kor&format=jpeg&nocache=1740173579850" alt="세그먼트 매치 구성 플로우"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -434,7 +434,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-connection-setup.md" title="세그먼트 매치 연결 설정" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342211/?format=jpeg&nocache=1740173579840" alt="세그먼트 매치 연결 설정"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346354/?captions=kor&format=jpeg&nocache=1740173579840" alt="세그먼트 매치 연결 설정"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -457,7 +457,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-data-governance.md" title="세그먼트 매치 데이터 거버넌스" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342212/?format=jpeg&nocache=1740173579862" alt="세그먼트 매치 데이터 거버넌스"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346361/?captions=kor&format=jpeg&nocache=1740173579862" alt="세그먼트 매치 데이터 거버넌스"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -480,7 +480,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-pre-share-insights.md" title="세그먼트 매치 사전 공유 인사이트" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342378/?format=jpeg&nocache=1740173579872" alt="세그먼트 매치 사전 공유 인사이트"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346347/?captions=kor&format=jpeg&nocache=1740173579872" alt="세그먼트 매치 사전 공유 인사이트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -503,7 +503,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../segments/segment-match-receiving-data.md" title="세그먼트 일치 수신 데이터" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/344419/?format=jpeg&nocache=1740173579825" alt="세그먼트 일치 수신 데이터"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3411143/?captions=kor&format=jpeg&nocache=1740173579825" alt="세그먼트 일치 수신 데이터"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

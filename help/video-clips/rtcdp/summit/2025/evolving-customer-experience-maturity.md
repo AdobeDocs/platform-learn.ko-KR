@@ -20,4 +20,4 @@ ht-degree: 0%
 크롤링, 산책, 데이터 실행, 여정 및 콘텐츠 개인화 탐색
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460178/?captions=kor&learn=on&enablevpops=true)

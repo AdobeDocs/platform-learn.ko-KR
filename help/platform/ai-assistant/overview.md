@@ -39,7 +39,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="AI Assistant 액세스" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1770666472991" alt="AI Assistant 액세스"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475926/?captions=kor&format=jpeg&nocache=1770666472991" alt="AI Assistant 액세스"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="AI Assistant의 검색 기능 패널 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1770666473011" alt="AI Assistant의 검색 기능 패널 사용"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440969/?captions=kor&format=jpeg&nocache=1770666473011" alt="AI Assistant의 검색 기능 패널 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="AI Assistant의 응답 유효성 검사" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1770666473002" alt="AI Assistant의 응답 유효성 검사"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441746/?captions=kor&format=jpeg&nocache=1770666473002" alt="AI Assistant의 응답 유효성 검사"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -354,7 +354,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="AI Assistant를 통해 운영 인사이트 확보" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1770666474551" alt="AI Assistant를 통해 운영 인사이트 확보"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444039/?captions=kor&format=jpeg&nocache=1770666474551" alt="AI Assistant를 통해 운영 인사이트 확보"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -377,7 +377,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI Assistant - 대상 정리 사용 사례" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1770666474555" alt="AI Assistant - 대상 정리 사용 사례"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441994/?captions=kor&format=jpeg&nocache=1770666474555" alt="AI Assistant - 대상 정리 사용 사례"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -400,7 +400,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="AI Assistant를 사용한 영향 분석" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1770666474559" alt="AI Assistant를 사용한 영향 분석"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441687/?captions=kor&format=jpeg&nocache=1770666474559" alt="AI Assistant를 사용한 영향 분석"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -437,7 +437,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="AI Assistant를 사용하여 Experience Platform 애플리케이션 학습" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1770666474659" alt="AI Assistant를 사용하여 Experience Platform 애플리케이션 학습"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441031/?captions=kor&format=jpeg&nocache=1770666474659" alt="AI Assistant를 사용하여 Experience Platform 애플리케이션 학습"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -460,7 +460,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="AI Assistant를 사용하여 온보딩 시간 단축" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1770666474665" alt="AI Assistant를 사용하여 온보딩 시간 단축"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475937/?captions=kor&format=jpeg&nocache=1770666474665" alt="AI Assistant를 사용하여 온보딩 시간 단축"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -497,7 +497,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="제품 지원 에이전트" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1770666474768" alt="제품 지원 에이전트"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443190/?captions=kor&format=jpeg&nocache=1770666474768" alt="제품 지원 에이전트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -557,7 +557,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="AI Assistant 보안 개요" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1770666475529" alt="AI Assistant 보안 개요"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441087/?captions=kor&format=jpeg&nocache=1770666475529" alt="AI Assistant 보안 개요"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -18,7 +18,7 @@ ht-degree: 13%
 
 Adobe Experience Platform 인터페이스에서 소스 또는 소스 커넥터를 사용하는 방법을 알아봅니다. 소스는 간편하게 구성 가능한 통합 기능으로, 이를 통해 Adobe, 자사 및 서드파티 애플리케이션에서 플랫폼의 실시간 고객 프로필 및 데이터 레이크로 데이터를 수집할 수 있습니다. 자세한 내용은 [소스 설명서](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=ko)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/329862?captions=kor&learn=on&enablevpops)
 
 <!--should have a whole section for data prep-->
 
@@ -39,7 +39,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-crm.md" title="CRM Source 커넥터를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740415500926" alt="CRM Source 커넥터를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32138?captions=kor&format=jpeg&nocache=1740415500926" alt="CRM Source 커넥터를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-cloud-storage.md" title="클라우드 스토리지 Source 커넥터를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740415500914" alt="클라우드 스토리지 Source 커넥터를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32137?captions=kor&format=jpeg&nocache=1740415500914" alt="클라우드 스토리지 Source 커넥터를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="데이터베이스 소스 커넥터를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="데이터베이스 소스 커넥터를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345124?captions=kor&format=jpeg&nocache=1740415500936" alt="데이터베이스 소스 커넥터를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -108,7 +108,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-source-connector.md" title="Source 커넥터를 사용하여 데이터 스트리밍" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740415500903" alt="Source 커넥터를 사용하여 데이터 스트리밍"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410106?captions=kor&format=jpeg&nocache=1740415500903" alt="Source 커넥터를 사용하여 데이터 스트리밍"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -131,7 +131,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-http-api.md" title="스트리밍 연결 HTTP API 끝점을 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740415500889" alt="스트리밍 연결 HTTP API 끝점을 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410931?captions=kor&format=jpeg&nocache=1740415500889" alt="스트리밍 연결 HTTP API 끝점을 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -167,7 +167,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="Adobe Analytics 소스 커넥터를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="Adobe Analytics 소스 커넥터를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430256?captions=kor&format=jpeg&nocache=1740415502122" alt="Adobe Analytics 소스 커넥터를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -190,7 +190,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="Marketo Engage에서 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="Marketo Engage에서 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451867?captions=kor&format=jpeg&nocache=1740415502109" alt="Marketo Engage에서 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -213,7 +213,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-aam.md" title="Adobe Audience Manager Data Connector를 사용하여 데이터 수집" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740415502093" alt="Adobe Audience Manager Data Connector를 사용하여 데이터 수집"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346987/?captions=kor&format=jpeg&nocache=1740415502093" alt="Adobe Audience Manager Data Connector를 사용하여 데이터 수집"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -247,7 +247,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="문제 해결 - SFTP 소스 커넥터에 연결할 수 없음" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="문제 해결 - SFTP 소스 커넥터에 연결할 수 없음"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443479?captions=kor&format=jpeg&nocache=1740415502267" alt="문제 해결 - SFTP 소스 커넥터에 연결할 수 없음"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

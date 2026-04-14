@@ -49,7 +49,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="데이터 위생을 위한 데이터 준비" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="데이터 위생을 위한 데이터 준비"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449282/?captions=kor&format=jpeg&nocache=1740251397387" alt="데이터 위생을 위한 데이터 준비"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +112,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="데이터 세트 삭제 예약" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="데이터 세트 삭제 예약"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430308?captions=kor&format=jpeg&nocache=1740251397716" alt="데이터 세트 삭제 예약"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -135,7 +135,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="익명 프로필 및 경험 이벤트 만료" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="익명 프로필 및 경험 이벤트 만료"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449862?captions=kor&format=jpeg&nocache=1740251397705" alt="익명 프로필 및 경험 이벤트 만료"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -220,7 +220,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443448/?captions=kor&format=jpeg&nocache=1740251398874" alt="&apos;업데이트&apos;를 사용하여 특정 프로필 속성 업데이트"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

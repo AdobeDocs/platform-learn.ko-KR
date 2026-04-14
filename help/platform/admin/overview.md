@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="사용자 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="사용자 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475980?captions=kor&format=jpeg&nocache=1740173302150" alt="사용자 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="개발자 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="개발자 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446405?captions=kor&format=jpeg&nocache=1740173302176" alt="개발자 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="관리자 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="관리자 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475948?captions=kor&format=jpeg&nocache=1740173302208" alt="관리자 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="속성 기반 액세스 제어 구성" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="속성 기반 액세스 제어 구성"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451845?captions=kor&format=jpeg&nocache=1740173302190" alt="속성 기반 액세스 제어 구성"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/ko/docs/platform-learn/data-collection/users-and-permissions" title="데이터 수집에 사용자 추가" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="데이터 수집에 사용자 추가"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33397/?captions=kor&format=jpeg&nocache=1740173302543" alt="데이터 수집에 사용자 추가"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -166,7 +166,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="샌드박스 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="샌드박스 사용"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430298/?captions=kor&format=jpeg&nocache=1740173302789" alt="샌드박스 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -189,7 +189,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="샌드박스 간 구성 복사" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="샌드박스 간 구성 복사"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446093/?captions=kor&format=jpeg&nocache=1740173302776" alt="샌드박스 간 구성 복사"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -212,7 +212,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="IMS 조직 간 패키지 공유" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="IMS 조직 간 패키지 공유"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443924/?captions=kor&format=jpeg&nocache=1740173302764" alt="IMS 조직 간 패키지 공유"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -281,7 +281,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-alerts.md" title="경고 사용" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336218?format=jpeg&nocache=1740173305172" alt="경고 사용"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423921?captions=kor&format=jpeg&nocache=1740173305172" alt="경고 사용"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -18,7 +18,7 @@ ht-degree: 15%
 
 Adobe Experience Platform에서 ID 확인의 주요 기능(ID 수집, ID 그래프 및 API)에 대해 알아봅니다. ID 서비스에서 연결이 끊긴 ID를 연결하여 통합 프로필을 구성하여 일관된 연결 경험을 제공하는 방법에 대해 알아봅니다. 자세한 내용은 [ID 서비스 설명서](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=ko-KR)를 참조하세요.
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422775?captions=kor&learn=on&enablevpops)
 
 ## ID 구성
 
@@ -33,7 +33,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="ID 데이터 레이블 지정, 처리 및 확인" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="ID 데이터 레이블 지정, 처리 및 확인"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31707?captions=kor&format=jpeg&nocache=1740414775790" alt="ID 데이터 레이블 지정, 처리 및 확인"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -67,7 +67,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="ID 그래프 연결 규칙 - 그래프 시뮬레이션" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="ID 그래프 연결 규칙 - 그래프 시뮬레이션"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444050/?captions=kor&format=jpeg&nocache=1740414776009" alt="ID 그래프 연결 규칙 - 그래프 시뮬레이션"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -101,7 +101,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-identity-graphs.md" title="ID 그래프 보기" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331030?format=jpeg&nocache=1740414776113" alt="ID 그래프 보기"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345657?captions=kor&format=jpeg&nocache=1740414776113" alt="ID 그래프 보기"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
