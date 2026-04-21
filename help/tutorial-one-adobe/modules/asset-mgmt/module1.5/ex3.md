@@ -4,9 +4,9 @@ description: AEM Assets CS에 ACCS 연결
 kt: 5342
 doc-type: tutorial
 exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1688'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,11 @@ ht-degree: 1%
 
 [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}(으)로 이동합니다. 선택해야 하는 조직은 `--aepImsOrgName--`입니다.
 
-Cloud Manager 프로그램(`--aepUserLdap-- - CitiSignal AEM+ACCS`)을 열려면 클릭하세요.
+을 클릭하여 아래 이름 중 하나와 같은 Cloud Manager 프로그램을 엽니다.
+
+- `--aepUserLdap-- - CitiSignal AEM+ACCS`
+- 직접 기술 랩 세션의 경우: **기술 인사이더 - AEM + ACCS XX**(XX를 사용자에게 할당된 번호로 바꾸기)
+- 주문형 세션 가이드: **주문형 기술 인사이트 - AEM + ACCS XX**(XX를 사용자에게 할당된 번호로 바꾸기)
 
 ![ACCS+AEM Assets](./images/accsaemassets1.png)
 
@@ -107,7 +111,7 @@ Cloud Manager 프로그램(`--aepUserLdap-- - CitiSignal AEM+ACCS`)을 열려면
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
-왼쪽 메뉴에서 **검색**(으)로 이동하여 `<my-app>`을(를) 검색합니다. `<my-app>`의 모든 발생 횟수를 `--aepUserLdap--citisignalaemaccs`(으)로 바꾸어야 합니다.
+왼쪽 메뉴에서 **검색**(으)로 이동하여 `<my-app>`을(를) 검색합니다. `<my-app>`의 모든 발생 횟수를 `techinsiderscitisignalaemaccs`(으)로 바꾸어야 합니다.
 
 **모두 바꾸기** 아이콘을 클릭합니다.
 
@@ -121,15 +125,27 @@ Cloud Manager 프로그램(`--aepUserLdap-- - CitiSignal AEM+ACCS`)을 열려면
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
-그럼 이걸 보셔야죠 `git add .` 명령을 붙여 넣고 **enter**&#x200B;를 누르십시오.
+그럼 이걸 보셔야죠 다음 명령을 붙여 넣고 **enter**&#x200B;를 누르십시오.
+
+```
+git add .
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets22.png)
 
-그럼 이걸 보셔야죠 `git commit -m "add assets integration"` 명령을 붙여 넣고 **enter**&#x200B;를 누르십시오.
+그럼 이걸 보셔야죠 다음 명령을 붙여 넣고 **enter**&#x200B;를 누르십시오.
+
+```
+git commit -m "add assets integration"
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets23.png)
 
-그럼 이걸 보셔야죠 `git push origin main` 명령을 붙여 넣고 **enter**&#x200B;를 누르십시오.
+그럼 이걸 보셔야죠 다음 명령을 붙여 넣고 **enter**&#x200B;를 누르십시오.
+
+```
+git push origin main
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets24.png)
 
@@ -159,19 +175,14 @@ ACCS 인스턴스로 돌아갑니다. 왼쪽 메뉴에서 **스토어**(으)로 
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
-다음 변수를 입력합니다.
+**AEM 환경**&#x200B;의 드롭다운 목록에서 환경을 선택합니다.
 
-- **AEM Assets 프로그램 ID**: AEM CS 작성자 URL에서 프로그램 ID를 가져올 수 있습니다. 이 예제에서 프로그램 ID는 `166717`입니다.
+그런 다음 **시각화 소유자**&#x200B;를 `AEM Assets`(필요한 경우 **시스템 값 사용** 확인란 사용 안 함)으로 설정합니다.
 
-![ACCS+AEM Assets](./images/accsaemassets50a.png)
+그런 다음 **동기화 사용**&#x200B;을(를) `Yes`(필요한 경우 **시스템 값 사용** 확인란 사용 안 함)으로 설정합니다.
 
-- **AEM Assets 환경 ID**: AEM CS 작성자 URL에서 환경 ID를 가져올 수 있습니다. 이 예제에서 환경 ID는 `1786231`입니다.
+이러한 설정이 다음과 같이 설정되어 있는지 확인합니다.
 
-![ACCS+AEM Assets](./images/accsaemassets50b.png)
-
-- **자산 선택기 IMS 클라이언트 ID**: `1`(으)로 설정됨
-- **동기화 사용**: `Yes`(으)로 설정
-- **시각화 소유자**: `AEM Assets`(으)로 설정
 - **자산 일치 규칙**: `Match by product SKU`
 - **제품 SKU 특성 이름별 일치**: `commerce:skus`
 
@@ -185,29 +196,19 @@ ACCS 인스턴스로 돌아갑니다. 왼쪽 메뉴에서 **스토어**(으)로 
 
 ## 1.5.3.3 config.json 업데이트
 
-AEM Sites CS/EDS 환경을 설정할 때 작성된 GitHub 저장소로 이동합니다. 해당 저장소는 연습 [1.1.2 AEM CS 환경 설정](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}에서 만들어졌으며, 이름은 **citisignal-aem-accs**&#x200B;이어야 합니다.
+AEM Sites CS/EDS 환경을 설정할 때 작성된 GitHub 저장소로 이동합니다.
 
-루트 디렉터리에서 아래로 스크롤하고 클릭하여 **config.json** 파일을 엽니다. 파일을 변경하려면 **편집** 아이콘을 클릭하십시오.
+루트 디렉터리에서 아래로 스크롤하고 클릭하여 **config.json** 파일을 엽니다.
 
-![ACCS+AEM Assets](./images/accsaemassets101.png)
-
-5 `"commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XXX/graphql",`행 아래에 아래 코드 조각을 추가하십시오.
+**config.json** 파일(이 이미지의 17행)에 아래 줄이 표시됩니다. **true**(으)로 설정되어 있는지 확인하십시오.
 
 ```json
  "commerce-assets-enabled": "true",
 ```
 
-**변경 내용 커밋...**&#x200B;을 클릭합니다.
+![ACCS+AEM Assets](./images/accsaemassets101.png)
 
-![ACCS+AEM Assets](./images/accsaemassets102.png)
-
-**변경 내용 커밋**&#x200B;을 클릭합니다.
-
-![ACCS+AEM Assets](./images/accsaemassets103.png)
-
-이제 변경 사항이 저장되었으며 곧 게시됩니다. 변경 사항이 상점 전면에서 보이려면 몇 분 정도 걸릴 수 있습니다.
-
-![ACCS+AEM Assets](./images/accsaemassets104.png)
+**commerce-assets-enabled**&#x200B;의 값이 **false**(으)로 설정된 경우 파일을 업데이트하고 값을 **true**(으)로 설정하십시오. 그런 다음 변경 사항을 커밋합니다.
 
 ## 1.5.3.4 AEM Assets CS에서 Commerce 필드 확인
 
@@ -368,6 +369,22 @@ AEM CS 작성자 환경에 로그인하고 **Assets**(으)로 이동합니다.
 
 ![ACCS+AEM Assets](./images/accsaemassets250.png)
 
+이제 아래 표를 사용하여 나머지 제품에 대해 이 단계를 반복해야 합니다. 각 이미지를 승인한 다음 을(를) 구성하는 것을 잊지 마십시오. **Commerce** 탭의 SKU 설정 아래에 있습니다.
+
+| 제품 이름 | 키 | 값 | 사용 |
+|:-------------:|:-------------:| :---------------:| :---------------:|
+| Apple Watch Ultra 3-Black | `Apple-Watch-Ultra-3-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple 워치 울트라 3-내추럴 | `Apple-Watch-Ultra-3-Natural` | `1` | `thumbnail, image, swatch_image, small_image` |
+| CitiSignal 파이버 최대 | `CitiSignal-Fiber-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple 원 | `Apple-One` | `1` | `thumbnail, image, swatch_image, small_image` |
+| YouTube Premium | `YouTube-Premium` | `1` | `thumbnail, image, swatch_image, small_image` |
+| 디즈니 플러스 | `Disney` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Netflix + HBO 최대 | `Netflix-HBO-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+그런 다음 모든 이미지를 승인해야 합니다.
+
+![ACCS+AEM Assets](./images/accsaemassets251.png)
+
 ## 1.5.3.5 AEM Sites CS/EDS Storefront에서 제품 이미지 확인
 
 >[!NOTE]
@@ -375,11 +392,6 @@ AEM CS 작성자 환경에 로그인하고 **Assets**(으)로 이동합니다.
 >위에서 변경한 사항이 성공적으로 배포되기까지 최대 15분이 소요될 수 있습니다. 이미지가 아직 표시되지 않는 경우 15분 정도 기다린 후 다시 시도하십시오.
 
 통합이 작동하는지 확인하려면 CitiSignal 웹 사이트를 열어야 합니다.
-
-웹 사이트에 액세스하려면 GitHub 사용자 계정으로 XXX를 바꾼 후 `main--citisignal-aem-accs--XXX.aem.page` 및/또는 `main--citisignal-aem-accs--XXX.aem.live`(이 예에서는 `woutervangeluwe`)로 이동하십시오.
-
-따라서 이 예에서 전체 URL은 다음과 같이 됩니다.
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` 및/또는 `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
 
 그럼 이걸 보셔야죠 **휴대폰**(으)로 이동합니다.
 
@@ -396,8 +408,6 @@ AEM CS 작성자 환경에 로그인하고 **Assets**(으)로 이동합니다.
 다음은 색상을 **Light-Gold**(으)로 변경하고 저장소 크기를 **256GB**(으)로 변경하는 예입니다.
 
 ![ACCS+AEM Assets](./images/accsaemassets153.png)
-
-다음 단계: [요약 및 이점](./summary.md){target="_blank"}
 
 [Adobe Commerce as a Cloud Service](./accs.md){target="_blank"}(으)로 돌아가기
 

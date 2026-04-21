@@ -4,10 +4,10 @@ description: Adobe Commerce as a Cloud Service 시작하기
 kt: 5342
 doc-type: tutorial
 exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '891'
+ht-degree: 15%
 
 ---
 
@@ -25,7 +25,12 @@ ht-degree: 0%
 
 다음과 같이 필드를 채웁니다.
 
-- **인스턴스 이름**: `--aepUserLdap-- - ACCS`
+- **인스턴스 이름**:
+
+```
+--aepUserLdap-- - ACCS
+```
+
 - **환경**: `Sandbox`
 - **지역**: `North America`
 
@@ -33,7 +38,7 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs3.png)
 
-현재 인스턴스를 만들고 있습니다. 5~10분 정도 소요될 수 있습니다.
+이제 인스턴스가 생성 중입니다. 5~10분 정도 소요될 수 있습니다.
 
 ![AEM Assets](./images/accs4.png)
 
@@ -61,8 +66,17 @@ ht-degree: 0%
 
 다음과 같이 필드를 채웁니다.
 
-- **이름**: `CitiSignal`
-- **코드**: `citisignal`
+- **이름**:
+
+```
+CitiSignal
+```
+
+- **코드**:
+
+```
+citisignal
+```
 
 **웹 사이트 저장**&#x200B;을 클릭합니다.
 
@@ -74,9 +88,24 @@ ht-degree: 0%
 
 다음과 같이 필드를 채웁니다.
 
-- **웹 사이트**: `CitiSignal`
-- **이름**: `CitiSignal`
-- **코드**: `citisignal`
+- **웹 사이트**:
+
+```
+CitiSignal
+```
+
+- **이름**:
+
+```
+CitiSignal
+```
+
+- **코드**:
+
+```
+citisignal
+```
+
 - **루트 범주**: `Default Category`
 
 **스토어 저장**&#x200B;을 클릭합니다.
@@ -89,9 +118,24 @@ ht-degree: 0%
 
 다음과 같이 필드를 채웁니다.
 
-- **스토어**: `CitiSignal`
-- **이름**: `CitiSignal`
-- **코드**: `citisignal`
+- **스토어**:
+
+```
+CitiSignal
+```
+
+- **이름**:
+
+```
+CitiSignal
+```
+
+- **코드**:
+
+```
+citisignal
+```
+
 - **상태**: `Enabled`
 
 **스토어 보기 저장**&#x200B;을 클릭합니다.
@@ -126,7 +170,11 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs18.png)
 
-`Phones` 이름을 입력한 다음 **저장**&#x200B;을 클릭합니다.
+다음 이름을 입력한 다음 **저장**&#x200B;을 클릭합니다.
+
+```
+Phones
+```
 
 ![AEM Assets](./images/accs19.png)
 
@@ -134,11 +182,39 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs20.png)
 
-`Watches` 이름을 입력한 다음 **저장**&#x200B;을 클릭합니다.
+다음 이름을 입력한 다음 **저장**&#x200B;을 클릭합니다.
+
+```
+Watches
+```
 
 ![AEM Assets](./images/accs21.png)
 
-그런 다음 2개의 카테고리를 만들어야 합니다.
+**기본 범주**&#x200B;을 선택한 다음 **하위 범주 추가**&#x200B;를 다시 클릭합니다.
+
+![AEM Assets](./images/accs20a.png)
+
+다음 이름을 입력한 다음 **저장**&#x200B;을 클릭합니다.
+
+```
+Plans
+```
+
+![AEM Assets](./images/accs21a.png)
+
+**기본 범주**&#x200B;을 선택한 다음 **하위 범주 추가**&#x200B;를 다시 클릭합니다.
+
+![AEM Assets](./images/accs20b.png)
+
+다음 이름을 입력한 다음 **저장**&#x200B;을 클릭합니다.
+
+```
+Entertainment
+```
+
+![AEM Assets](./images/accs21b.png)
+
+그러면 4개의 카테고리가 생성됩니다.
 
 ![AEM Assets](./images/accs22.png)
 
@@ -152,10 +228,34 @@ ht-degree: 0%
 
 다음과 같이 제품을 구성합니다.
 
-- **제품 이름**: `iPhone Air`
-- **SKU**: `iPhone-Air`
-- **가격**: `999`
-- **수량**: `10000`
+- **제품 이름**:
+
+```
+iPhone Air
+```
+
+- **SKU**:
+
+>[!NOTE]
+>
+>SKU 필드가 아래 값과 동일한지 확인하고 이 필드에 공백이 없는지 확인하십시오.
+
+```
+iPhone-Air
+```
+
+- **가격**:
+
+```
+999
+```
+
+- **수량**:
+
+```
+10000
+```
+
 - **범주**: `Phones` 선택
 
 **저장**&#x200B;을 클릭합니다.
@@ -170,19 +270,35 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs27.png)
 
-**기본 레이블**&#x200B;을(를) `Storage`(으)로 설정한 다음 **옵션 관리**&#x200B;에서 **옵션 추가**&#x200B;를 클릭합니다.
+**기본 레이블**&#x200B;을(를) 아래 값으로 설정한 다음 **옵션 관리**&#x200B;에서 **옵션 추가**&#x200B;를 클릭합니다.
+
+```
+Storage
+```
 
 ![AEM Assets](./images/accs28.png)
 
-3개 열 모두에서 이름 `256GB`을(를) 사용하여 첫 번째 옵션을 구성한 다음 **옵션 추가**&#x200B;를 다시 클릭합니다.
+3개 열 모두에서 아래 값을 사용하여 첫 번째 옵션을 구성한 다음 **옵션 추가**&#x200B;를 다시 클릭합니다.
+
+```
+256GB
+```
 
 ![AEM Assets](./images/accs29.png)
 
-3개 열 모두에서 이름 `512GB`을(를) 사용하여 두 번째 옵션을 구성한 다음 **옵션 추가**&#x200B;를 다시 클릭합니다.
+3개 열 모두에서 아래 값을 사용하여 두 번째 옵션을 구성한 다음 **옵션 추가**&#x200B;를 다시 클릭합니다.
+
+```
+512GB
+```
 
 ![AEM Assets](./images/accs30.png)
 
-3개 열 모두에서 이름 `1TB`을(를) 사용하여 세 번째 옵션을 구성합니다.
+3개 열 모두에서 아래 값을 사용하여 세 번째 옵션을 구성합니다.
+
+```
+1TB
+```
 
 ![AEM Assets](./images/accs31.png)
 
@@ -235,19 +351,21 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs42.png)
 
-각 제품의 **수량**&#x200B;을(를) `10000`(으)로 설정합니다. **저장**&#x200B;을 클릭합니다.
+각 제품의 **수량**&#x200B;을(를) `10000`(으)로 설정합니다. 또한 **SKU** 열에 SKU의 공백이 없는지 확인하십시오.
+
+**저장**&#x200B;을 클릭합니다.
 
 ![AEM Assets](./images/accs43.png)
+
+**확인**&#x200B;을 클릭합니다.
+
+![AEM Assets](./images/accs45.png)
 
 **웹 사이트의 제품**(으)로 스크롤한 다음 **CitiSignal**&#x200B;에 대한 확인란을 선택하십시오.
 
 **저장**&#x200B;을 클릭합니다.
 
 ![AEM Assets](./images/accs44.png)
-
-**확인**&#x200B;을 클릭합니다.
-
-![AEM Assets](./images/accs45.png)
 
 그럼 이걸 보셔야죠 **뒤로**&#x200B;를 클릭합니다.
 
@@ -256,6 +374,52 @@ ht-degree: 0%
 이제 제품 카탈로그에 제품 **iPhone Air** 및 해당 변형이 표시됩니다.
 
 ![AEM Assets](./images/accs47.png)
+
+## 1.5.1.4 제품 가져오기
+
+CitiSignal은 더 많은 제품을 판매하므로 제품 카탈로그에 나머지 제품을 만들려면 이제 해당 제품을 가져와야 합니다.
+
+**시스템**(으)로 이동한 다음 **가져오기**(으)로 이동합니다.
+
+![AEM Assets](./images/accsimp1.png)
+
+다음 값을 선택합니다.
+
+- **엔터티 형식**: `Products`
+- **가져오기 동작**: `Add/Update`
+- **유효성 검사 전략**: `Skip error entries`
+
+**파일 선택**&#x200B;을 클릭합니다.
+
+![AEM Assets](./images/accsimp2.png)
+
+이 파일을 컴퓨터에 다운로드합니다. [product_catalog_import.csv.zip](./assets/product_catalog_import.csv.zip). 바탕 화면에서 파일의 압축을 풉니다.
+
+![AEM Assets](./images/accsimp7.png)
+
+**`product_catalog_import.csv`** 파일을 선택하고 **열기**&#x200B;를 클릭합니다.
+
+![AEM Assets](./images/accsimp3.png)
+
+그럼 이걸 보셔야죠 **데이터 확인**&#x200B;을 클릭합니다.
+
+![AEM Assets](./images/accsimp4.png)
+
+그럼 이걸 보셔야죠 **가져오기**&#x200B;를 클릭합니다.
+
+![AEM Assets](./images/accsimp5.png)
+
+그럼 이걸 보셔야죠
+
+![AEM Assets](./images/accsimp6.png)
+
+**카탈로그**(으)로 이동한 다음 **제품**(으)로 이동합니다.
+
+![AEM Assets](./images/accsimp8.png)
+
+아래로 스크롤하여 방금 가져온 제품을 찾습니다.
+
+![AEM Assets](./images/accsimp9.png)
 
 다음 단계: [AEM Sites CS/EDS Storefront에 ACCS 연결](./ex2.md){target="_blank"}
 

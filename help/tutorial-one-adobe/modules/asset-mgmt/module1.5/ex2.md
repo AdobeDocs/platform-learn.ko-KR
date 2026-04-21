@@ -4,9 +4,9 @@ description: AEM Sites CS/EDS Storefront에 ACCS 연결
 kt: 5342
 doc-type: tutorial
 exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 이 연습에서는 AEM Sites CS/EDS Storefront를 ACCS 백엔드에 연결합니다. 현재 AEM Sites CS/EDS Storefront를 열고 **휴대폰** 제품 목록 페이지로 이동하면 아직 제품이 표시되지 않습니다.
 
-이 연습을 마치면 AEM Sites CS/EDS Storefront의 **휴대폰** 제품 목록 페이지에 이전 연습에서 구성한 제품이 표시됩니다.
+이 연습을 마치면 AEM Sites CS/EDS 상점의 **전화/시계/플랜/엔터테인먼트** 제품 목록 페이지에 이전 연습에서 구성한 제품이 표시됩니다.
 
 ![ACCS+AEM Sites](./images/accsaemsites0.png)
 
@@ -49,11 +49,11 @@ ACCS 인스턴스 옆에 있는 **정보** 아이콘을 클릭합니다(이름: 
 
 ![ACCS+AEM Sites](./images/accsaemsites4.png)
 
-전체 생성된 JSON 페이로드를 복사합니다.
+전체 생성된 JSON 페이로드를 복사하려면 **복사**&#x200B;를 클릭하십시오.
 
 ![ACCS+AEM Sites](./images/accsaemsites5.png)
 
-AEM Sites CS/EDS 환경을 설정할 때 작성된 GitHub 저장소로 이동합니다. 해당 저장소는 연습 [1.1.2 AEM CS 환경 설정](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}에서 만들어졌으며, 이름은 **citisignal-aem-accs**&#x200B;이어야 합니다.
+AEM Sites CS/EDS 환경을 설정할 때 작성된 GitHub 저장소로 이동합니다. 해당 리포지토리는 연습 [1.1.2 AEM CS 환경 설정](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}에서 만들어졌으며 이름은 **citsignal-aem-accs** 또는 **techinsidersodXX-citsignal-aem-accs** 또는 실시간 교육에 참석하는 경우 이름은 **techinsidersXX-citsignal-aem-accs**&#x200B;이어야 합니다.
 
 ![ACCS+AEM Sites](./images/accsaemsites6.png)
 
@@ -67,24 +67,33 @@ AEM Sites CS/EDS 환경을 설정할 때 작성된 GitHub 저장소로 이동합
 
 현재 텍스트를 모두 제거하고 **구성 생성기** 페이지에 복사한 JSON 페이로드를 붙여 넣으십시오.
 
-**변경 위임...**&#x200B;을 클릭합니다.
+**변경 내용 커밋...**&#x200B;을 클릭합니다.
 
 ![ACCS+AEM Sites](./images/accsaemsites9.png)
 
-**변경 위임**&#x200B;을 클릭합니다.
+**변경 내용 커밋**&#x200B;을 클릭합니다.
 
 ![ACCS+AEM Sites](./images/accsaemsites10.png)
 
 **config.json** 파일이 업데이트되었습니다. 몇 분 안에 웹 사이트에서 변경 사항을 볼 수 있습니다. 변경 사항이 정상적으로 선택되었는지 확인하는 방법은 **휴대폰** 제품 페이지로 이동하는 것입니다. 이제 페이지에 **iPhone Air**&#x200B;이(가) 표시됩니다.
 
-웹 사이트에 액세스하려면 GitHub 사용자 계정으로 XXX를 바꾼 후 `main--citisignal-aem-accs--XXX.aem.page` 및/또는 `main--citisignal-aem-accs--XXX.aem.live`(으)로 이동해야 합니다(이 예에서는 `woutervangeluwe`).
-
-이 예에서 전체 URL은 다음과 같이 됩니다.
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page` 및/또는 `https://main--citisignal-aem-accs--woutervangeluwe.aem.live`.
+**.page** 또는 **.live** URL을 사용하여 웹 사이트를 연 다음 **휴대폰**(으)로 이동하세요. 이걸 보셔야죠
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
-이제 제품이 성공적으로 표시되지만 아직 제품에 사용할 수 있는 이미지가 없습니다. 다음 연습에서는 제품 이미지에 대해 AEM Assets CS와 링크를 설정합니다.
+**시계**(으)로 이동합니다. 이걸 보셔야죠
+
+![ACCS+AEM Sites](./images/accsaemsites12.png)
+
+**계획**(으)로 이동합니다. 이걸 보셔야죠
+
+![ACCS+AEM Sites](./images/accsaemsites13.png)
+
+**엔터테인먼트**(으)로 이동합니다. 이걸 보셔야죠
+
+![ACCS+AEM Sites](./images/accsaemsites14.png)
+
+이제 제품이 성공적으로 표시되지만 아직 이러한 제품에 사용할 수 있는 이미지가 없습니다. 다음 연습에서는 제품 이미지에 대해 AEM Assets CS와 링크를 설정합니다.
 
 다음 단계: [AEM Assets CS에 ACCS 연결](./ex3.md){target="_blank"}
 

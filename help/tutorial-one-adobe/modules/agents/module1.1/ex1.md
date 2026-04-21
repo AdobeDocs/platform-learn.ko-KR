@@ -4,9 +4,9 @@ description: Agent Orchestrator 시작하기
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 [https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
 
-그럼 이걸 보셔야죠 조직 **Experience Platform International**&#x200B;에 있는지 확인하세요.
+그럼 이걸 보셔야죠 `--aepImsOrgName--` 조직에 있는지 확인하세요.
 
 ![Agent Orchestrator](./images/ao1.png)
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 설명서 Source 설정을 통해 제품 지식/Experience League과 관련된 질문을 확인할 Experience League 문서 세트를 기본 설정할 수 있습니다.
 
-- **샌드박스**: **프로덕션 - 가속화(VA7)**
+- **샌드박스**: **프로덕션 - 하나의 Adobe(VA7)**
 
 샌드박스 설정은 질문을 할 때 AI Assistant가 확인해야 하는 샌드박스 를 식별하는 데 도움이 됩니다.
 
-- **데이터 보기**: **2026년 B2C 가속화**
+- **데이터 보기**: **AdobeOne 통합 고객 데이터 보기**
 
 데이터 보기 설정은 질문을 할 때 AI Assistant가 확인해야 하는 데이터 보기를 식별하는 데 도움이 됩니다.
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/ao4.png)
@@ -70,7 +70,7 @@ Show me purchases by mainCategory over the last 7 months.
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/ao6.png)
@@ -95,7 +95,7 @@ Which field is used to store the preferred genre?
 
 ![Agent Orchestrator](./images/ao7a.png)
 
-그러면 장르에 사용되는 필드가 **_experienceplatform.individualCharacteristics.preferences.preferredGenre**&#x200B;임을 보여주는 이 메시지가 표시됩니다.
+그러면 장르에 사용되는 필드가 **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**&#x200B;임을 보여주는 이 메시지가 표시됩니다.
 
 ![Agent Orchestrator](./images/ao7b.png)
 
@@ -104,7 +104,7 @@ Which field is used to store the preferred genre?
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me ordersYTD by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +131,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-그럼 이걸 보셔야죠 **자세히 표시**&#x200B;를 클릭합니다.
+그럼 이걸 보셔야죠 **모든 결과 표시**&#x200B;를 클릭합니다.
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -151,7 +151,19 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-그럼 이걸 보셔야죠 여정 중 하나에서 링크를 클릭하고 **여정 세부 정보**&#x200B;를 선택합니다.
+그럼 이런 걸 보셔야겠네요
+
+![Agent Orchestrator](./images/ao14a.png)
+
+다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
+
+```javascript
+give more details about the first one
+```
+
+![Agent Orchestrator](./images/ao14b.png)
+
+그럼 이걸 보셔야죠 링크를 클릭하여 여정을 엽니다.
 
 ![Agent Orchestrator](./images/ao15.png)
 
