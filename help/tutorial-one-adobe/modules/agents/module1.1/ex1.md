@@ -4,7 +4,7 @@ description: AI Assistant 및 Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
+source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -65,7 +65,7 @@ Show me purchases by mainCategory over the last 2 months.
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -85,7 +85,7 @@ Show me purchases by mainCategory = Fiber over the last 2 months per week
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -99,7 +99,7 @@ Which field is used to store the preferred genre?
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Show me purchases by preferred genre for the last 2 months
 ```
 
@@ -121,7 +121,7 @@ Show me purchases by preferred genre for the last 2 months
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -141,7 +141,7 @@ What journeys exist?
 
 오른쪽 창을 닫으려면 를 클릭합니다. 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -153,7 +153,7 @@ Which of these journeys has 'Fiber' in its name?
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 give more details about the first one
 ```
 
@@ -175,7 +175,7 @@ CitiSignal - Fibre Max Launch Promotion 여정의 초기 정의(예: &quot;SciFi
 
 다음 **프롬프트**&#x200B;를 입력하십시오.
 
-```javascript
+```
 Which audiences are used by the journey named
 ```
 
@@ -199,7 +199,7 @@ Which audiences are used by the journey named
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -229,7 +229,7 @@ AI Assistant는 관찰 및 권장 사항을 제공합니다.
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
@@ -283,7 +283,7 @@ Create an audience that combines people with an average download usage per month
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
@@ -297,7 +297,7 @@ Is there an audience that has "heavy downloaders" in the title?
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 List how much all my audiences changed over the last few days.
 ```
 
@@ -319,7 +319,7 @@ List how much all my audiences changed over the last few days.
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Which of the above are used in a journey? 
 ```
 
@@ -331,7 +331,7 @@ Which of the above are used in a journey?
 
 이제 해당 여정이 활성 상태인지 확인해야 합니다. 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Are these journeys active? 
 ```
 
@@ -353,8 +353,8 @@ SciFi를 선호하는 ∩이 많은 다운로드 업체.
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
 ![Agent Orchestrator](./images/aocj1.png)
@@ -395,7 +395,7 @@ LDAP로 여정 이름을 업데이트하여 고유한 이름을 만듭니다. **
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 How can I manage journey conflicts?
 ```
 
@@ -411,7 +411,7 @@ How can I manage journey conflicts?
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 List any conflicts for the journey +CitiSignal Fiber Max
 ```
 
@@ -431,7 +431,7 @@ List any conflicts for the journey +CitiSignal Fiber Max
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
