@@ -4,9 +4,9 @@ description: Google Gemini Enterprise용 Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
+source-git-commit: 8e6a4b67dc8c1ec19d81a25a6c1a51f17255fc6e
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -197,11 +197,11 @@ Copilot을 통해 Adobe Marketing Agent과 더 상호 작용하기 전에 컨텍
 
 이 연습에서는 다음을 사용하도록 컨텍스트를 설정해야 합니다.
 
-- **샌드박스**: **프로덕션 - 가속화(VA7)**
+- **샌드박스**: **프로덕션 - 하나의 Adobe(VA7)**
 
   샌드박스 설정은 질문을 할 때 AI Assistant가 확인해야 하는 샌드박스 를 식별하는 데 도움이 됩니다.
 
-- **데이터 보기**: **2026년 B2C 가속화**
+- **데이터 보기**: **AdobeOne - 통합 고객 데이터 보기**
 
 데이터 보기 설정은 질문을 할 때 AI Assistant가 확인해야 하는 데이터 보기 를 식별하는 데 도움이 됩니다.
 
@@ -213,19 +213,27 @@ list sandboxes
 
 ![Agent Orchestrator](./images/gemini28.png)
 
-그러면 이와 비슷한 것을 볼 수 있을 겁니다. `switch to sandbox accelerate` 명령을 입력하고 **보내기** 단추를 클릭합니다.
+그러면 이와 비슷한 것을 볼 수 있을 겁니다. 다음 명령을 입력하고 **보내기** 단추를 클릭합니다.
+
+```
+switch to sandbox One Adobe
+```
 
 ![Agent Orchestrator](./images/geminilab10.png)
 
 그럼 이걸 보셔야죠 데이터 보기를 변경하려면 다음 명령을 입력하고 **보내기** 단추를 클릭하십시오.
 
-```javascript
+```
 list dataviews
 ```
 
 ![Agent Orchestrator](./images/geminilab11.png)
 
-그러면 이와 비슷한 것을 볼 수 있을 겁니다. `switch dataview to Accelerate 2026 B2C` 명령을 입력하고 **보내기** 단추를 클릭합니다.
+그러면 이와 비슷한 것을 볼 수 있을 겁니다. 다음 명령을 입력하고 **보내기** 단추를 클릭합니다.
+
+```
+switch to AdobeOne - Unified Customer Data View
+```
 
 ![Agent Orchestrator](./images/geminilab12.png)
 
@@ -242,7 +250,7 @@ list dataviews
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab18.png)
@@ -254,7 +262,7 @@ Show me purchases by mainCategory over the last 7 months.
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 2 months until today, broken down by week
 ```
 
 ![Agent Orchestrator](./images/geminilab20.png)
@@ -279,7 +287,7 @@ Which field is used to store the preferred genre
 
 ![Agent Orchestrator](./images/geminilab22.png)
 
-그러면 장르에 사용되는 필드가 **_experienceplatform.individualCharacteristics.preferences.preferredGenre**&#x200B;임을 보여주는 이 메시지가 표시됩니다.
+그러면 장르에 사용되는 필드가 **`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**&#x200B;임을 보여주는 이 메시지가 표시됩니다.
 
 ![Agent Orchestrator](./images/geminilab23.png)
 
@@ -288,7 +296,7 @@ Which field is used to store the preferred genre
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab24.png)
