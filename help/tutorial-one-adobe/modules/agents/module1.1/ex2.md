@@ -4,7 +4,7 @@ description: Adobe Marketing Agent for ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
@@ -93,7 +93,7 @@ Dataview 설정은 ChatGPT가 질문을 할 때 확인해야 하는 데이터 �
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 change context
 ```
 
@@ -113,7 +113,7 @@ change context
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -125,7 +125,7 @@ Show me purchases by mainCategory over the last 2 months.
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -145,7 +145,7 @@ Show me purchases by mainCategory = Fiber over the last 2 months per week
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -159,7 +159,7 @@ Which field is used to store the preferred genre?
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Show me purchases by favouriteGenre for the last 2 months
 ```
 
@@ -177,7 +177,7 @@ Show me purchases by favouriteGenre for the last 2 months
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -189,7 +189,7 @@ What journeys exist?
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -201,7 +201,7 @@ Which of these journeys has 'Fiber' in its name?
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -219,7 +219,7 @@ show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
