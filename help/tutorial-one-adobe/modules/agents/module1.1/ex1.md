@@ -1,17 +1,17 @@
 ---
-title: Agent Orchestrator 시작하기
-description: Agent Orchestrator 시작하기
+title: AI Assistant 및 Agent Orchestrator
+description: AI Assistant 및 Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
-# 1.1.1 Agent Orchestrator 시작하기
+# 1.1.1 AI Assistant 및 Agent Orchestrator
 
 ## 비디오
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Agent Orchestrator에서 1.1.1.1 컨텍스트 설정
 
-[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)&#x200B;(으)로 이동합니다.
+[https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat)&#x200B;(으)로 이동합니다.
 
 그럼 이걸 보셔야죠 `--aepImsOrgName--` 조직에 있는지 확인하세요.
 
@@ -32,10 +32,6 @@ ht-degree: 0%
 ![Agent Orchestrator](./images/ao2.png)
 
 컨텍스트를 다음으로 설정합니다.
-
-- **설명서 Source**: **Journey Optimizer**
-
-설명서 Source 설정을 통해 제품 지식/Experience League과 관련된 질문을 확인할 Experience League 문서 세트를 기본 설정할 수 있습니다.
 
 - **샌드박스**: **프로덕션 - 하나의 Adobe(VA7)**
 
@@ -104,7 +100,7 @@ Which field is used to store the preferred genre?
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-Show me ordersYTD by preferred genre for the last 2 months
+Show me purchases by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +127,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-그럼 이걸 보셔야죠 **모든 결과 표시**&#x200B;를 클릭합니다.
+그럼 이걸 보셔야죠 **미리 보기** 아이콘을 클릭합니다.
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -180,7 +176,7 @@ CitiSignal - Fibre Max Launch Promotion 여정의 초기 정의(예: &quot;SciFi
 다음 **프롬프트**&#x200B;를 입력하십시오.
 
 ```javascript
-What was the initial audience in the journey named 
+Which audiences are used by the journey named
 ```
 
 그런 다음 자동 완성을 활성화하려면 `+CitiSignal fib`을(를) 수동으로 입력하십시오. 여정 **CitiSignal - 파이버 최대 시작 승격**&#x200B;을 선택하십시오.
@@ -217,11 +213,11 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 AI Assistant는 관찰 및 권장 사항을 제공합니다.
 
-**결과를 얻은 방법은 다음과 같습니다** 문장을 클릭하십시오.
+**설명** 문장을 클릭합니다.
 
 ![Agent Orchestrator](./images/ao21.png)
 
-그런 다음 AI 어시스턴트의 단계를 따라 결과를 확인할 수 있습니다.
+그런 다음 몇 가지 추가 정보와 컨텍스트를 볼 수 있습니다.
 
 ![Agent Orchestrator](./images/ao22.png)
 
@@ -247,7 +243,7 @@ Create an audience that combines people with an average download usage per month
 
 ![Agent Orchestrator](./images/ao33.png)
 
-세그먼트 쿼리 표현식을 검토합니다. `yes`을(를) 입력하고 **보내기** 단추를 클릭합니다.
+**대상 정의**&#x200B;를 검토하십시오. `yes`을(를) 입력하고 **보내기** 단추를 클릭합니다.
 
 ![Agent Orchestrator](./images/ao34.png)
 
@@ -259,17 +255,21 @@ Create an audience that combines people with an average download usage per month
 
 ![Agent Orchestrator](./images/ao36.png)
 
-세그먼트 정의를 검토합니다. **만들기**&#x200B;를 클릭합니다.
+**대상 제안**&#x200B;을 검토합니다. **만들기**&#x200B;를 클릭합니다.
 
 ![Agent Orchestrator](./images/ao37.png)
 
-이제 대상자가 생성되었습니다.
+이제 대상자가 생성되었습니다. 링크를 클릭하여 대상자를 엽니다.
 
 ![Agent Orchestrator](./images/ao38.png)
 
 >[!NOTE]
 >
 >새 대상을 만들 때 AI Assistant에서 추가 용도로 대상을 사용할 수 있으려면 24시간이 걸립니다.
+
+그럼 이걸 보셔야죠
+
+![Agent Orchestrator](./images/ao38a.png)
 
 ## 1.1.1.8 사용량이 많은 기존 대상을 찾아 사용 중인지 확인
 
@@ -289,17 +289,21 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-그럼 이걸 보셔야죠 이제 모든 대상과 지난 며칠 동안 변경된 양을 확인하려고 합니다.
+그럼 이걸 보셔야죠
+
+![Agent Orchestrator](./images/ao30a.png)
+
+이제 모든 대상과 지난 며칠 동안 변경된 양을 확인하려고 합니다.
 
 다음 **확인**&#x200B;을 입력하고 **보내기** 단추를 클릭하세요.
 
 ```javascript
-List how much these audiences changed over the last few days.
+List how much all my audiences changed over the last few days.
 ```
 
 ![Agent Orchestrator](./images/ao31.png)
 
-그럼 이걸 보셔야죠 **자세히 표시**&#x200B;를 클릭합니다.
+그럼 이걸 보셔야죠 **모든 결과 표시**&#x200B;를 클릭합니다.
 
 ![Agent Orchestrator](./images/ao31a.png)
 
@@ -355,25 +359,21 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj1.png)
 
-그럼 이걸 보셔야죠 `yes`을(를) 입력하고 생성을 클릭합니다.
+그럼 이걸 보셔야죠 `yes`을(를) 입력하고 [보내기]를 클릭하십시오.
 
 ![Agent Orchestrator](./images/aocj2.png)
 
-그럼 이걸 보셔야죠 `yes`을(를) 입력하고 생성을 클릭합니다.
+그럼 이걸 보셔야죠 `yes`을(를) 입력하고 [보내기]를 클릭하십시오.
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-그럼 이걸 보셔야죠 `The first one`을(를) 입력하고 [보내기]를 클릭하십시오.
+그럼 이걸 보셔야죠 `the first one`을(를) 입력하고 [보내기]를 클릭하십시오.
 
 ![Agent Orchestrator](./images/aocj4.png)
 
 그럼 이걸 보셔야죠 `yes`을(를) 입력하고 [보내기]를 클릭하십시오.
 
 ![Agent Orchestrator](./images/aocj5.png)
-
-응답을 검토합니다. `yes`을(를) 입력하고 [보내기]를 클릭하십시오.
-
-![Agent Orchestrator](./images/aocj6.png)
 
 **검토**&#x200B;를 클릭합니다.
 
@@ -383,9 +383,13 @@ LDAP로 여정 이름을 업데이트하여 고유한 이름을 만듭니다. **
 
 ![Agent Orchestrator](./images/aocj8.png)
 
-이제 여정이 초안 모드에서 생성되었습니다.
+이제 여정이 초안 모드에서 생성되었습니다. 여정을 클릭하여 엽니다.
 
 ![Agent Orchestrator](./images/aocj9.png)
+
+그럼 이걸 보셔야죠
+
+![Agent Orchestrator](./images/aocj10.png)
 
 ## 1.1.1.10 여정 충돌 관리
 
@@ -419,13 +423,9 @@ List any conflicts for the journey +CitiSignal Fiber Max
 
 ![Agent Orchestrator](./images/aocj70a.png)
 
-여정 충돌 정보를 검토합니다.
+잠재적인 여정 충돌 정보를 검토하십시오.
 
 ![Agent Orchestrator](./images/aocj71.png)
-
-아래로 스크롤하여 더 많은 여정 충돌 세부 정보를 찾습니다.
-
-![Agent Orchestrator](./images/aocj72.png)
 
 ## 1.1.1.11개 실험
 
