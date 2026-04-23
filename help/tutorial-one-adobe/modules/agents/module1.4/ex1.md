@@ -4,9 +4,9 @@ description: Brand Concierge 시작하기
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
+source-git-commit: a333ddbf1ed0c51dd9ae1d9a5eff3f0c569a1d1f
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -136,15 +136,38 @@ Competitor pricing, competitor products
 
 이제 웹 사이트의 링크가 포함된 csv 파일을 업로드해야 합니다. 데스크톱에 [CitiSignal 웹 사이트 링크](./assets/citisignal-website-links.csv)를 다운로드합니다.
 
+![Brand Concierge](./images/bc8z.png)
+
 **파일 찾아보기**&#x200B;를 클릭합니다.
 
 ![Brand Concierge](./images/bc8.png)
 
 **citissignal-website-links.csv** 파일을 열고 링크를 업데이트하여 자신의 CitiSignal 웹 사이트를 가리키도록 합니다.
 
+기술 인사이더 기술 랩 게재의 일부로 이 기술 랩을 수행하는 경우, 할당된 번호를 기반으로 기존 데모 웹 사이트에 대한 액세스 권한이 부여됩니다. 이러한 데모 웹 사이트에는 다음과 같은 사용자 정의 도메인이 함께 제공됩니다. 여기서 XX는 사용자에게 제공된 숫자를 나타냅니다.
+
+**https://techinsidersXX.adobedemosystem.com/**(강의실 교육용)
+
+또는
+
+**https://techinsidersodXX.adobedemosystem.com/**(온디맨드 교육용)
+
+아래 이미지에서는 기본 URL을 웹 사이트의 URL로 바꾸어야 합니다.
+
+아래 파일의 제품 링크는 모듈에서 연습 1 의 일부로 구성한 제품과 관련이 있습니다
+[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}.
+
 ![Brand Concierge](./images/bc8a.png)
 
-다운로드 및 편집한 **citisignal-website-links.csv** 파일을 선택하십시오. **열기를 클릭합니다**.
+번호가 **1**&#x200B;인 경우 파일은 다음과 같이 표시됩니다.
+
+![Brand Concierge](./images/bc8b.png)
+
+번호가 **90**&#x200B;인 경우 파일은 다음과 같이 표시됩니다.
+
+![Brand Concierge](./images/bc8c.png)
+
+위의 지침에 따라 파일을 업데이트했으면 다음에 **citsignal-website-links.csv** 파일을 선택하십시오. **열기를 클릭합니다**.
 
 ![Brand Concierge](./images/bc9.png)
 
