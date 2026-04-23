@@ -3,9 +3,10 @@ title: Adobe Marketing Agent 포 클로드
 description: Adobe Marketing Agent 포 클로드
 kt: 5342
 doc-type: tutorial
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
+source-git-commit: 2339a3a9c122a3e757c59eec3a9be54acf8d9c1e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -62,7 +63,7 @@ Claude Beta과 함께 Adobe Marketing Agent을 사용함으로써 귀하는 Beta
 다음과 같이 필드를 채웁니다.
 
 - **이름**: `Adobe Marketing Agent`
-- **MCP 서버 URL**: Adobe 담당자에게 확인
+- **MCP 서버 URL**: Adobe 담당자에게 문의하십시오.
 
 **추가를 클릭합니다**.
 
@@ -72,7 +73,7 @@ Claude Beta과 함께 Adobe Marketing Agent을 사용함으로써 귀하는 Beta
 
 ![클라우드.ai](./images/claude5.png)
 
-**+** 아이콘을 클릭하고 **커넥터**(으)로 이동한 다음 **Adobe Marketing Agent**&#x200B;이(가) 활성화되어 있는지 **.
+**+** 아이콘을 클릭하고 **커넥터**(으)로 이동한 다음 **Adobe Marketing Agent**&#x200B;이(가) 활성화되어 있는지 확인하십시오.
 
 ![클라우드.ai](./images/claude6.png)
 

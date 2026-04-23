@@ -4,9 +4,9 @@ description: Adobe Marketing Agent for ChatGPT Enterprise
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
+source-git-commit: d732dd6abdacc0ebcfa0ab8a09a49dc4b0f2b56b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 다음과 같이 필드를 채웁니다.
 
 - **이름**: `Adobe Marketing Agent`
-- **MCP 서버 URL**: `https://aep-ai-ama.adobe.io/mcp`
+- **MCP 서버 URL**: Adobe 담당자에게 문의하십시오.
 - **인증**: `OAuth`
 
 **이해하고 계속하겠습니다**&#x200B;에 대한 확인란을 선택하세요.
