@@ -4,10 +4,10 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 19e1d50fdab39f507b91df9e244323e2f54a95ad
+source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 3%
+source-wordcount: '1462'
+ht-degree: 4%
 
 ---
 
@@ -32,6 +32,11 @@ ht-degree: 3%
       + [옵션 1: Postman 설정](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [옵션 2: PostBuster 설정](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [설치할 애플리케이션](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+   + 시작하기 - Agentic AI {#gettingstartedagenticai}
+      + [개요](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md)
+      + [Experience League 설명서용 Chrome 확장 설치](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
+      + [설치할 애플리케이션](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
+      + [웹 사이트 사용](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
 
 + 에이전틱 AI {#agents}
    + 1.1 Agent Orchestrator {#agents1}
@@ -41,7 +46,7 @@ ht-degree: 3%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise용 Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5 Adobe Marketing Agent for Claude](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 —](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 ---](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2 에이전트 및 AI 시작하기 {#agents2}
       + [개요](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI 시작하기](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -172,7 +177,7 @@ ht-degree: 3%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
          + [개요](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
