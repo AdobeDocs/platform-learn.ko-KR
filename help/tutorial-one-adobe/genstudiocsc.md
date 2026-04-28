@@ -3,10 +3,10 @@ title: GenStudio 테크랩
 description: GenStudio 테크랩
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 1%
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 1%
 
 다음은 이 기술 지원 워크숍의 일부로 참여할 기술 연구소입니다.
 
-### 시작하기
+### 시작하기 - GenStudio
 
-[시작](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[시작](./modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md){target="_blank"}
 
 이 기본 모듈에서는 데모 환경에 액세스하고 사용할 수 있도록 모든 것을 준비합니다.
 
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 이 모듈에서는 Adobe Workfront Planning을 구성 및 사용하여 새 작업 영역을 만들고, 레코드 유형을 정의하고, 레코드를 관리하고, 새 요청 양식을 만들고, AI 비서를 활용합니다.
 
-Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2 Adobe Workfront 워크플로우를 통한 워크플로우 관리](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 이 모듈에서는 Adobe Workfront을 구성 및 사용하여 승인 흐름을 관리하고 Adobe Experience Manager Assets, 유니버설 편집기, Photoshop 등과의 통합을 사용합니다.
 
@@ -74,7 +74,7 @@ Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workf
 
 이 모듈에서는 Adobe Express을 사용하여 이미지와 비디오를 만들고 이러한 에셋을 더 광범위한 Adobe Experience Cloud 에코시스템을 위해 공유합니다.
 
-[1.5 Frame.io를 사용하여 작업 과정 능률화](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+[1.5 Frame.io로 워크플로우 능률화](./modules/creation-production/module1.5/frameio.md){target="_blank"}
 
 이 모듈에서는 Adobe Frame.io와 Adobe Premiere Pro을 함께 사용하여 이미지와 비디오를 공동 작업하고 검토합니다.
 
@@ -100,7 +100,7 @@ Adobe Workfront 워크플로를 통한 [1.2 워크플로 관리](./modules/workf
 
 이 모듈에서는 AEM Assets을 살펴보게 됩니다.
 
-[1.3 Edge Delivery Services 포함 Adobe Experience Manager Forms](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"}
+[1.3 Adobe Experience Manager Forms 및 Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"}
 
 이 모듈에서는 Edge Delivery Services을 사용하여 Adobe Experience Manager Forms을 살펴보게 됩니다.
 

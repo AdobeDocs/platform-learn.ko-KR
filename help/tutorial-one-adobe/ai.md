@@ -3,9 +3,9 @@ title: Agentic AI Tech Labs
 description: Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 아키텍처 개요 이미지 [여기](./assets/images/architecture_agentic.jpg)를 다운로드합니다.
 
-### 시작하기
+### 시작하기 - Agentic AI
 
-[시작](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[시작](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"}
 
 이 기본 모듈에서는 데모 환경에 액세스하고 사용할 수 있도록 모든 것을 준비합니다.
 

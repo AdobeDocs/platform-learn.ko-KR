@@ -4,9 +4,9 @@ breadcrumb-title: 원 Adobe 기술 튜토리얼
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
+source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 + [AEP 및 앱 랩](/help/tutorial-one-adobe/aepapps.md)
 
 + 시작 {#gettingstarted}
-   + 시작 {#gettingstarted}
+   + 시작하기 - AEP 및 앱 {#gettingstarted}
       + [개요](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [Experience League 설명서용 Chrome 확장 설치](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [Adobe Experience Platform 데이터 수집 클라이언트 속성을 설정하려면 옆에 있는 데모 시스템을 사용하십시오.](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -37,6 +37,13 @@ ht-degree: 4%
       + [Experience League 설명서용 Chrome 확장 설치](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
       + [설치할 애플리케이션](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
       + [웹 사이트 사용](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
+   + 시작하기 - GenStudio {#gettingstartedgenstudio}
+      + [개요](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md)
+      + [Experience League 설명서용 Chrome 확장 설치](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex1.md)
+      + [Adobe I/O 프로젝트 구성](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex2.md)
+      + [옵션 1: Postman 설정](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex3.md)
+      + [옵션 2: PostBuster 설정](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex4.md)
+      + [설치할 애플리케이션](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex5.md)
 
 + 에이전틱 AI {#agents}
    + 1.1 Agent Orchestrator {#agents1}
@@ -177,7 +184,7 @@ ht-degree: 4%
          + [1.2.1 웹 사이트 탐색](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2 스키마 및 식별자 설정](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
          + [1.2.3 데이터 세트 구성](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
-         + [오프라인 원본에서 1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
+         + 오프라인 원본에서 [1.2.4 데이터 수집](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5 데이터 랜딩 영역](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
       + 1.3 페더레이션 대상 구성 {#dc13}
          + [개요](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
