@@ -3,9 +3,10 @@ title: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 description: 시작하기 - Experience League 설명서용 Chrome 확장 설치
 kt: 5342
 doc-type: tutorial
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: a6057d20-b005-47c9-b294-263eaaf78084
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '700'
 ht-degree: 1%
 
 ---
@@ -23,7 +24,7 @@ ht-degree: 1%
 | 이름 | 키 | 예 |
 |:-------------:| :---------------:| :---------------:|
 | IMS 조직 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| IMS 조직 이름 | `--aepImsOrgName--` | `Experience Platform International` |
+| IMS 조직 이름 | `--aepImsOrgName--` | `Adobe Tech Insiders` |
 | AEP 테넌트 ID | `--aepTenantId--` | `_experienceplatform` |
 | AEP 샌드박스 이름 | `--aepSandboxName--` | `one-adobe` |
 | 학습자 프로필 LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ ht-degree: 1%
 
 ## Chrome 확장 구성
 
-[https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
+[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}(으)로 이동한 다음 확장 아이콘을 클릭하여 엽니다.
 
 ![DSN](./images/tuthome.png)
 
@@ -70,9 +71,21 @@ ht-degree: 1%
 
 ![DSN](./images/c8.png)
 
-**내 LDAP**
+아래 이벤트 중 하나에 참석하는 경우 아래 표시된 값을 사용하십시오.
 
-자습서의 일부로 사용할 사용자 이름입니다. 이 예에서 LDAP는 이 사용자의 이메일 주소를 기반으로 합니다. 전자 메일 주소가 **vangeluw@adobe.com**&#x200B;이므로 LDAP가 **vangeluw**&#x200B;이 됩니다.
+| 이름 | Partner Tech Labs 뉴올리언스 | 기술 인사이더 대면 워크숍 | 기술 인사이더 On-Demand 지원 |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| IMS 조직 ID | `907075E95BF479EC0A495C73@AdobeOrg` | `907075E95BF479EC0A495C73@AdobeOrg` | `0B6930256441790E0A495FFE@AdobeOrg` |
+| IMS 조직 이름 | `Adobe Tech Insiders` | `Adobe Tech Insiders` | `CXO Enablement Training LAB` |
+| AEP 테넌트 ID | `_experienceplatform` | `_experienceplatform` | `_acsultimatesupport` |
+| AEP 샌드박스 이름 | `one-adobe` | `one-adobe` | `one-adobe` |
+| 학습자 프로필 LDAP | `XXX` | `XXX` | `XXX` |
+
+**학습자 프로필 LDAP**
+
+자습서의 일부로 사용할 사용자 이름입니다. 이 예에서 LDAP는 이 사용자의 이메일 주소를 기반으로 합니다. 전자 메일 주소가 **vangeluw@adobe.com**&#x200B;이면 LDAP는 **vangeluw**&#x200B;이 됩니다.
+
+뉴올리언스에서 Partner Tech Labs 이벤트에 참석하는 경우 동일한 논리를 적용하고 이메일 주소의 첫 부분을 LDAP로 사용하십시오.
 
 LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사용되며 사용 중인 인스턴스와 샌드박스를 사용하고 있는 다른 사용자와 충돌하지 않습니다.
 
@@ -91,7 +104,7 @@ LDAP는 수행할 구성이 사용자에게 연결되는지 확인하는 데 사
 
 ## 튜토리얼 콘텐츠 확인
 
-테스트로 [이 페이지](https://experienceleague.adobe.com/ko/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}(으)로 이동하세요.
+테스트로 [이 페이지](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}(으)로 이동하세요.
 
 이제 이 페이지의 모든 **환경 변수**&#x200B;가 chrome 확장에서 활성화된 환경을 기반으로 실제 값으로 대체되었습니다.
 

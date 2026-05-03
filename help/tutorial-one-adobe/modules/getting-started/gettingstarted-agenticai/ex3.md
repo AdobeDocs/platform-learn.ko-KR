@@ -2,9 +2,10 @@
 title: 시작하기 - Agentic AI - AEM 웹 사이트 및 AEP 샌드박스 사용
 description: 시작하기 - Agentic AI - AEM 웹 사이트 및 AEP 샌드박스 사용
 doc-type: multipage-overview
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -30,9 +31,11 @@ ht-degree: 0%
 >
 >아래 스크린샷은 모두 그림 용도로만 숫자 1을 사용합니다. 아래 단계를 진행하는 동안 받은 이메일의 일부로 할당된 번호를 사용해야 합니다.
 
-AEM 프로그램은 해당 이름에 할당된 번호를 사용합니다. AEM 프로그램의 이름은 다음과 같아야 합니다.
+AEM 프로그램은 해당 이름에 할당된 번호를 사용합니다. AEM 프로그램의 이름은 다음 중 하나여야 합니다.
 
-- **기술 내부 직원 - AEM + ACCS X**. 여기서 X는 사용자에게 할당된 번호를 나타냅니다.
+- **`Tech Insiders - AEM + ACCS X`**&#x200B;입니다. 여기서 X는 사용자에게 할당된 숫자를 나타냅니다.
+- **`Tech Insiders On Demand - AEM + ACCS X`**&#x200B;입니다. 여기서 X는 사용자에게 할당된 숫자를 나타냅니다.
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**. 이 경우 직접 만든 AEM 프로그램을 사용하고 있으므로 번호가 없습니다.
 
 ![DSN](./images/aem1.png)
 
@@ -70,14 +73,14 @@ GitHub 리포지토리는 다음과 같아야 합니다.
 
 웹 사이트에 액세스하려면 다음 기본 URL을 사용할 수 있습니다.
 
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/**
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
 
 이러한 URL의 X를 할당된 번호로 대체해야 합니다.
 
 또한 다음 URL을 사용하여 액세스할 수 있는 각 웹 사이트에 대해 사용자 정의 도메인 이름이 생성되었습니다.
 
-- **https://techinsidersX.adobedemosystem.com/**
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 이러한 URL의 X를 할당된 번호로 대체해야 합니다.
 
