@@ -4,7 +4,7 @@ description: Adobe Experience Manager 및 에이전트
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: 22691d40708e3b48b9365841dff0d3643e041481
+source-git-commit: 7eef01795c1c5e994a4c40e7779e730a7998776c
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
@@ -22,10 +22,12 @@ ht-degree: 1%
 - **Development Agent**&#x200B;는 AI 지원 문제 해결 및 성능 조정을 통해 개발자를 가속화합니다.
 
 이러한 에이전트를 함께 사용하면 AEM이 기존의 CMS 기능을 훨씬 넘어 자동화된 경험 작업으로 이동합니다. 이러한 모든 에이전트는 정확성, 신뢰 및 감독을 보장하기 위해 인간이 통제하도록 설계되었습니다.
+
 >[!IMPORTANT]
-&#x200B;>>
-이 연습을 완료하려면 EDS 환경이 있는 작업 중인 AEM Sites 및 Assets CS에 액세스할 수 있어야 하며 사용 중인 IMS Org에 대해 다양한 AEM 에이전트를 활성화해야 합니다.>
-아직 이러한 환경이 없다면 연습 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}로 이동하십시오. 거기에 있는 지침을 따르십시오, 그러면 당신은 이러한 환경에 액세스 할 수 있습니다.
+>
+>이 연습을 완료하려면 EDS 환경이 있는 작업 중인 AEM Sites 및 Assets CS에 액세스할 수 있어야 하며 사용 중인 IMS Org에 대해 다양한 AEM 에이전트를 활성화해야 합니다.
+>
+>아직 이러한 환경이 없다면 연습 [Adobe Experience Manager Cloud Service 및 Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}로 이동하십시오. 거기에 있는 지침을 따르십시오, 그러면 당신은 이러한 환경에 액세스 할 수 있습니다.
 
 ## 학습 목표
 
