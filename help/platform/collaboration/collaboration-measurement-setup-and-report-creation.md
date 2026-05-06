@@ -20,4 +20,4 @@ ht-degree: 0%
 
 Real-Time CDP Collaboration에서 측정을 구성하는 방법을 알아봅니다. 이 안내서에서는 게시자 캠페인 데이터에 연결된 보고서를 만들 수 있도록 온보딩 이벤트 데이터를 다룹니다. 정확한 측정을 통해 캠페인 성과를 분석하고 향후 전략을 최적화할 수 있습니다. 포함된 비디오를 통해 자세한 단계 및 통찰력을 확인하십시오.
 
->[!VIDEO](https://video.tv.adobe.com/v/3486343/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486353/?captions=kor&learn=on&enablevpops)
