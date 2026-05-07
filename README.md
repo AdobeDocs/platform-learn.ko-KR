@@ -1,12 +1,10 @@
 ---
-source-git-commit: d60206d6bf4373ffdba8292c7169d1e3e961a74c
+source-git-commit: 43d59df61305bf6aba739580d28e1ada4a566989
 workflow-type: tm+mt
-source-wordcount: '13'
+source-wordcount: '7'
 ht-degree: 0%
 
 ---
-# platform-learn.en
+# 보관됨
 
-Platform을 위한 공동 작업 튜토리얼 및 지원 자료.
-
-크기를 줄이기 위해 보고서를 정리했습니다.
+이 리포지토리가 <https://github.com/Adobe-Enterprise-Docs/platform-learn.en>(으)로 마이그레이션되었습니다.
